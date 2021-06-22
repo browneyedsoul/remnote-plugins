@@ -2,3 +2,41 @@
 
 
 
+
+
+#hierarchy-editor 
+.TreeNode {
+ 	border-width: 1px;					/* TreeNode 뚱뚱조절 */
+	border-color: #F7F6F3 !important;	/* 최외각 Treenode*/
+ 	transition-timing-function: linear;
+ 	position: relative;
+ 	background-color: transparent;
+ 	padding-left: 20px;					/* TreeNode 간격 */
+ 	padding-top: 0px;
+ 	padding-bottom: 0px;
+ 	margin-top: 0px;
+ 	margin-bottom: 0px;
+}
+
+#hierarchy-editor 
+.TreeNode--dark-indent-line {
+	border-width: 1px;
+	background-color: transparent;
+}
+
+.hierarchy-editor--ltr 
+.TreeNode {
+	margin-left: 2.5px;
+	padding-left: 20px;
+	border-left-style: solid;
+}
+
+.TreeNodeLeftBorder {
+	border-color: #FF2600 ;
+    border-width: 1px;
+}
+
+.tree-node-container {
+	border-color: #FF2600
+    border-width: 1px;
+}
