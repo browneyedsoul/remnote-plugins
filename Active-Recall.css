@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+/* Hide Clozes */
+
+[data-rem-tags~="active-recall"]
+:not(.rem-focused)
+:not(:hover)
+:not([data-rem-tags~="learned"])
+    .cloze {
+    background-color: white;
+    filter: var(--hide-answer-filter);
+}
+
+/* Hide Clozes - Container */
+
+[data-rem-container-tags~="active-recall"].tree-node-container
+:not(.rem-container--focused)
+:not(:hover)
+:not([data-rem-container-tags~="learned"])
+    > div:first-child
+    .cloze {
+    background-color: white;
+    filter: var(--hide-answer-filter);
+}
+
+
+
