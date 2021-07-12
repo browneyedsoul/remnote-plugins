@@ -1,0 +1,8 @@
+[data-rem-container-tags~="callout"] {
+    background-color: var(--callout-background-color, rgb(254, 247, 247));	
+    padding: 15px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 0px;
+    border-radius: 5px;
+}
