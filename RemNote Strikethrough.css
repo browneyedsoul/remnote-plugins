@@ -1,0 +1,12 @@
+[data-rem-tags~="strikethrough"] .rem-text .highlight-color--red,
+[data-rem-tags~="strikethrough"] .rem-text .highlight-color--orange,
+[data-rem-tags~="strikethrough"] .rem-text .highlight-color--yellow,
+[data-rem-tags~="strikethrough"] .rem-text .highlight-color--green,
+[data-rem-tags~="strikethrough"] .rem-text .highlight-color--blue,
+[data-rem-tags~="strikethrough"] .rem-text .highlight-color--purple {
+	background-color: unset;
+	color: ;
+	border-bottom: ;
+	text-decoration:line-through;
+	text-decoration-style: double;
+}
