@@ -1,0 +1,120 @@
+/* No Bullets Default Setting */
+
+:root {
+    --bullet-main:#53555f;
+    --bullet-doc:#50fa7b;
+    --bullet-folder:#53555f;
+    --bullet-concept:#53555f;
+    --bullet-descriptor:#53555f;
+}
+
+.rem-bullet {
+	border-color: black;
+  	background-color: transparent;
+	border-radius: 2px;
+	margin-top: 4px;
+ 	margin-left: ;
+}
+
+/* No Bullets Default Setting for Opened Rem Container Bullet */
+
+.rem-bullet__container 
+.rem-bullet.rem-bullet--all-children-visible {
+	border: 0.1px solid var(--bullet-main) ;
+	background-color: transparent;
+	height: 4px ;
+	width: 4px ;
+}
+
+.rem-bullet__container-undefined 
+.rem-bullet.rem-bullet {
+	border: transparent ;
+	background-color: transparent;
+}
+
+/* No Bullets Default Setting for Hidden Rem container Bullet */
+
+.rem-bullet__container
+.rem-bullet.rem-bullet--hidden-children {
+	border: 0.1px solid var(--bullet-main) !important;
+	background-color: black;
+	height: 4px !important;
+	width: 4px !important;
+}
+
+/* Make Unordered Bullet list by Intentional Tagging */
+
+[data-rem-tags~="bulletlist"] .rem-bullet { 	
+	background-color: #2B3137 !important; 
+	border-color: #CC0000 !important; 
+	border-radius: 4px !important;
+	height: 4px !important;
+	width: 4px !important;
+	margin-left: px !important;
+}
+
+[data-rem-tags~="bullet"] .rem-bullet { 	
+	border: 0.1px solid var(--bullet-main) !important;
+	background-color: transparent;
+	height: 4px ;
+	width: 4px ;
+}
+
+/* Setting for Flashcard Rem Exception */
+
+/* Concept-Rem-Type Bullet by Henrik */
+.rem-container--concept-rem-type 
+.rem-bullet__container
+.rem-bullet__container-undefined :hover :not(document), 
+
+.rem-container--concept-rem-type 
+.rem-bullet__container.rem-bullet__container-undefined 
+.rem-bullet{
+	background: green !important;
+	width: 16px !important;
+	height: 12px !important;
+	position: relative !important;
+	top: 1px !important;
+	left: 2px !important;
+	-webkit-mask-image: url("https://justtolook.github.io/remnote-theme/concept.svg");
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-size: contain;
+}
+
+/* Descriptor-Rem-Type Bullet by Henrik */
+.rem-container--descriptor-rem-type 
+.rem-bullet__container
+.rem-bullet__container-undefined :hover:not(document), 
+
+.rem-container--descriptor-rem-type 
+.rem-bullet__container.rem-bullet__container-undefined 
+.rem-bullet {
+	background: blue !important;
+	width: 14px !important;	
+	height: 12px !important;
+	position: relative !important;
+	top: 1px !important;
+	left: 1px !important;
+	-webkit-mask-image: url("https://justtolook.github.io/remnote-theme/descriptor.svg");
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-size: contain;
+}
+
+/* Question-Rem-Type Bullet by Henrik */
+.rem-container--question-rem-type 
+.rem-bullet__container
+.rem-bullet__container-undefined :hover :not(document), 
+
+.rem-container--question-rem-type 
+.rem-bullet__container.rem-bullet__container-undefined 
+.rem-bullet{
+	background: purple !important;
+	width: 14px !important;
+	height: 12px !important;
+	position: relative !important;
+	top: 1px !important;
+	left: 1px !important;
+	-webkit-mask-image: url("https://justtolook.github.io/remnote-theme/question.svg");
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-size: contain;
+}
