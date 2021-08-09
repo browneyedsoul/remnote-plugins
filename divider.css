@@ -1,0 +1,45 @@
+[data-rem-tags~="divider"] {
+	color: transparent;
+	padding: 0px 15px;
+	background-color: ;
+	height:10px;
+	margin-right: 45px;
+}
+
+[data-rem-tags~="divider"] .rem-container--focused {
+	display: none;
+	height: 10px;
+}
+
+[data-rem-tags~="divider"]:before {
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	border-bottom: var(--divider-style, 2px solid #eeefee);
+	padding: 0px 15px;
+}
+
+[data-rem-tags~="divider"]:not(:focus-within) {
+	color: transparent;
+	position: relative;
+	padding: 0px 15px;
+}
+
+[data-rem-tags~="divider"]:not(:focus-within) .rem-bullet__container {
+ 	display: none;
+}
+
+[data-rem-tags~="divider"]:not(:focus-within):before {
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	border-bottom: var(--divider-style, 2px solid #eeefee);
+}
+
+[data-rem-container-tags~="divider"] .rem:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar {
+	display: none; 
+}
