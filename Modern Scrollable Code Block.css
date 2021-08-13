@@ -1,0 +1,78 @@
+.quote {
+	color: #e64400;
+	border: black;
+    padding-right: 5px !important;
+}
+
+#code-node,
+#quote,
+.quote {
+	font-family: Roboto Mono; /* Roboto Mono / Fira code */
+    background-color: #F7F6F3;
+    border: 0;
+    color: rgba(240, 240, 239, );
+    padding: 4px;
+    padding-right: 40px;	/* change yourself */
+    font-size: 0.9em !important; 
+    line-height: 180%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 0px !important;
+    border-radius: 0.3em;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: pre;
+}
+
+/* Codeblock Line Numbers */
+
+:root {
+    --line-number-width: 40px;
+    --line-number-color: 
+    --line-number-background-color: ;
+    --code-node-border-radius: 2px;
+}
+
+.codeLine {
+    counter-increment: codeLineNumber;
+}
+
+.codeLine:before {
+    position: absolute;
+    left: 0px;
+    width: var(--line-number-width);
+    box-sizing: border-box;
+    padding-right: 5px;
+    padding-top: 1px;
+    content: counters(codeLineNumber, ".") " ";
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 13px
+}
+
+#code-node {
+    padding-left: var(--line-number-width) !important;
+}
+
+/* Background of number bar */
+#code-node:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    color: 				var(--line-number-color, black);
+    background-color: 	var(--line-number-background-color, rgba(0, 0, 0, 0.04));
+    border-radius: 		var(--code-node-border-radius, 7px) 0 0;
+    width: 				calc(var(--line-number-width, 45px) - 7px);
+}
+
+#code-node .codeLine:after {
+    content: " ";
+    visibility: hidden;
+}
+
+#code-node__change-language-dropdown {
+	position: sticky;
+}
