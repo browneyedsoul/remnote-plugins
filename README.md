@@ -1,6 +1,6 @@
 # Remnote-CSS-Library
 
-This library is just for my personal use.
-Anytime, Anywhere you can help or advise everything that could be enhanced
+This library is for personal use only. 
+Anytime, anywhere, you can help or advise on anything that could be improved.
 
-I will be excited about your suggestion.
+Any suggestions are welcome.
