@@ -1,0 +1,247 @@
+/************** Document Title **************/
+#document .document-title {
+ 	font-size: 36px !important;
+ 	font-weight: bold !important;
+ 	font-family: Sans-Serif Workhorse !important;
+}
+
+/*
+.document-source {
+	background-color: transparent;
+	color: #2B3137;
+	position: relative;
+	top: -65px;
+	zoom: 125%;
+	padding-top: 5px;
+	font-weight: 700;
+}
+*/
+
+#DocumentTitle .tumbnail--with-width {
+	display: inline-block;
+	height: 36px !important;
+	width: auto !important;
+	margin-top: 4.2px;
+}
+#DocumentTitle .react-resizable {
+	display: inline-block;
+	height: 36px !important;
+	width: auto !important;
+	padding-right: 15px;
+}
+
+#DocumentTitle .react-resizable-handle {
+	display: none;
+}
+
+/************** Page Hierarchy Style **************/
+#document-parents .parent-link .tumbnail--with-width {
+	height: 16px !important;
+	width: auto !important;
+ 	color: #2B3137;
+ 	padding-right: 15px;
+}
+
+#document-parents .parent-link .react-resizable-handle {
+	display: inline-block;
+	height: 16px !important;
+	width: auto !important;
+	padding-right: 15px;
+}
+
+#document-parents .parent-link .react-resizable-handle {
+	display: none;
+}
+
+/************** Document Sidebar **************/
+#documentList .tumbnail--with-width {
+	display: inline-block;
+	height: 16px !important;
+	width: auto !important;
+	padding-right: 5px;
+}
+
+/************** Document Sidebar Hover Preview**************/
+#document-hover-preview #DocumentTitle {
+	height: 28px !important;
+	padding: 10px;
+}
+
+#document-hover-preview .tumbnail--with-width {
+ 	display: inline-block;
+	height: 18px !important;
+	width: auto !important;
+	padding-right: 5px;
+}
+
+#document-hover-preview .hierarchy-editor__tag-bar {
+	position: relative;
+	z-index: 2;
+	top: -2px;
+	left: ;
+}
+
+
+
+/************** Document Sidebar Hover Preview Header **************/
+#document-hover-preview .rem-header--1 .tumbnail--with-width  {
+	display: inline-block;
+	height: 36px !important;
+	width: auto !important;
+	margin-right: 5px;
+}
+
+#document-hover-preview .rem-header--2 .tumbnail--with-width  {
+	display: inline-block;
+	height: 28px !important;
+	width: auto !important;
+	margin-right: 5px;
+}
+
+#document-hover-preview .rem-header--3 .tumbnail--with-width  {
+	display: inline-block;
+	height: 20px !important;
+	width: auto !important;
+	margin-right: 5px;
+}
+
+
+
+/************** Document Sidebar Hover Preview Image Thumbnail **************/
+[data-rem-tags*="thumbnail"] #document-hover-preview .tumbnail--with-width, 
+[data-rem-tags*="thumbnail"] #document-hover-preview .react-resizable {
+	display: inline-block;
+	height: 18px !important;
+	width: auto !important;
+	padding-right: 5px;
+}
+
+[data-rem-tags*="thumbnail"] .react-resizable-handle {
+	display: none;
+}
+
+
+
+/************** Reference Hover Preview Header **************/
+.EditorContainer.EditorContainerInline .tumbnail--with-width {
+	height: 18px !important;
+	width: auto !important;
+ 	color: #2B3137;
+ 	padding-right: 5px;
+}
+
+/************** Document Hidden children **************/
+hierarchy-editor__hidden-children .rem-header--1 .tumbnail--with-width  {
+	display: inline-block;
+	height: 36px !important;
+	width: auto !important;
+	margin-right: 5px;
+}
+
+/************** Header **************/
+.rem-header--1 .tumbnail--with-width ,
+.rem-header--1 .react-resizable {
+	display: inline-block;
+	height: 36px !important;
+	width: auto !important;
+	margin-right: 5px;
+}
+
+.rem-header--1 .react-resizable-handle {
+	display: none;
+}
+
+.rem-header--2 .tumbnail--with-width,
+.rem-header--2 .react-resizable {
+	display: inline-block;
+	height: 28px !important;
+	width: auto !important;
+	padding-right: 5px;
+}
+
+.rem-header--2 .react-resizable-handle {
+	display: none;
+}
+
+.rem-header--3 .tumbnail--with-width,
+.rem-header--3 .react-resizable {
+	display: inline-block;
+	height: 20px !important;
+	width: auto !important;
+	padding-right: 5px;
+}
+
+.rem-header--3 .react-resizable-handle {
+	display: none;
+}
+
+
+/************** Normal Rem **************/
+[data-rem-tags*="thumbnail"] .tumbnail--with-width, 
+[data-rem-tags*="thumbnail"] .react-resizable {
+	display: inline-block;
+	height: 18px !important;
+	width: auto !important;
+	padding-right: 5px;
+}
+
+[data-rem-tags*="thumbnail"] .react-resizable-handle {
+	display: none;
+}
+
+
+/************** Tag bar **************/
+.hierarchy-editor__tag-bar__tag .tumbnail--with-width {
+	display: inline-block;
+	height: 18px !important;
+	width: auto !important;
+	padding-right: 5px;
+}
+
+.popup .tumbnail--with-width  {
+	display: inline-block;
+	height: 18px !important;
+	width: auto !important;
+	padding-right: 5px;
+}
+
+/************** Search Result **************/
+.search-result__rem-breadcrumbs .tumbnail--with-width {
+	display: inline-block;
+	height: 16px !important;
+	width: auto !important;
+	padding-right: 5px;
+}
+
+/************** Queue Title bar **************/
+.queue__middle .tumbnail--with-width, 
+.queue__middle .react-resizable {
+	height: 36px !important;
+	width: auto !important;
+ 	color: #2B3137;
+ 	padding-right: 5px;
+}
+
+.queue__middle .react-resizable-handle {
+	display: none;
+}
+
+/************** Queue breadcrumbs **************/
+.spaced-repetition__prompt__breadcrumbs .tumbnail--with-width {
+	height: 18px !important;
+	width: auto !important;
+ 	color: #2B3137;
+ 	padding-right: 5px;
+}
+
+/************** Queue Contents **************/
+.spacedRepetitionContent .indented-rem .tumbnail--with-width {
+	height: 16px !important;
+	width: auto !important;
+ 	color: #2B3137;
+ 	padding-right: 5px;
+}
+
+.indented-rem .react-transform-component.TransformComponent-module_container {
+	vertical-align: middle;
+}
