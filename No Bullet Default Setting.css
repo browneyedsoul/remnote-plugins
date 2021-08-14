@@ -1,13 +1,5 @@
 /* No Bullets Default Setting */
 
-:root {
-    --bullet-main:#53555f;
-    --bullet-doc:#50fa7b;
-    --bullet-folder:#53555f;
-    --bullet-concept:#53555f;
-    --bullet-descriptor:#53555f;
-}
-
 .rem-bullet {
 	border-color: black;
   	background-color: transparent;
@@ -16,11 +8,11 @@
  	margin-left: ;
 }
 
-/* No Bullets Default Setting for Opened Rem Container Bullet */
+/* Setting for Opened Rem Container Bullet */
 
 .rem-bullet__container 
-.rem-bullet.rem-bullet--all-children-visible {
-	border: 0.1px solid var(--bullet-main) ;
+.rem-bullet. rem-bullet--all-children-visible {
+	border: 0.1px solid #53555f ;
 	background-color: transparent;
 	height: 4px ;
 	width: 4px ;
@@ -32,19 +24,17 @@
 	background-color: transparent;
 }
 
-/* No Bullets Default Setting for Hidden Rem container Bullet */
+/* Setting for Hidden Rem container Bullet */
 
 .rem-bullet__container
 .rem-bullet.rem-bullet--hidden-children {
-	border: 0.1px solid var(--bullet-main) !important;
+	border: 0.1px solid #53555f !important;
 	background-color: black;
 	height: 4px !important;
 	width: 4px !important;
 }
 
-/* Make Unordered Bullet list by Intentional Tagging */
-
-[data-rem-tags~="bulletlist"] .rem-bullet { 	
+[data-rem-container-tags~="bulletlist"] .rem-bullet { 	
 	background-color: #2B3137 !important; 
 	border-color: #CC0000 !important; 
 	border-radius: 4px !important;
@@ -54,19 +44,18 @@
 }
 
 [data-rem-tags~="bullet"] .rem-bullet { 	
-	border: 0.1px solid var(--bullet-main) !important;
+	border: 0.1px solid #53555f !important;
 	background-color: transparent;
 	height: 4px ;
 	width: 4px ;
 }
 
-/* Setting for Flashcard Rem Exception */
+/*********** Settings for Flashcard Rem Exception ***********/
 
-/* Concept-Rem-Type Bullet by Henrik */
+/*********** Concept-Rem-Type Bullet by Henrik ***********/
 .rem-container--concept-rem-type 
 .rem-bullet__container
 .rem-bullet__container-undefined :hover :not(document), 
-
 .rem-container--concept-rem-type 
 .rem-bullet__container.rem-bullet__container-undefined 
 .rem-bullet{
@@ -81,11 +70,10 @@
 	-webkit-mask-size: contain;
 }
 
-/* Descriptor-Rem-Type Bullet by Henrik */
+/*********** Descriptor-Rem-Type Bullet by Henrik ***********/
 .rem-container--descriptor-rem-type 
 .rem-bullet__container
 .rem-bullet__container-undefined :hover:not(document), 
-
 .rem-container--descriptor-rem-type 
 .rem-bullet__container.rem-bullet__container-undefined 
 .rem-bullet {
@@ -100,11 +88,10 @@
 	-webkit-mask-size: contain;
 }
 
-/* Question-Rem-Type Bullet by Henrik */
+/*********** Question-Rem-Type Bullet by Henrik ***********/
 .rem-container--question-rem-type 
 .rem-bullet__container
 .rem-bullet__container-undefined :hover :not(document), 
-
 .rem-container--question-rem-type 
 .rem-bullet__container.rem-bullet__container-undefined 
 .rem-bullet{
@@ -117,4 +104,39 @@
 	-webkit-mask-image: url("https://justtolook.github.io/remnote-theme/question.svg");
 	-webkit-mask-repeat: no-repeat;
 	-webkit-mask-size: contain;
+}
+
+/*********** TreeNode Distraction Free ***********/
+#hierarchy-editor .TreeNode {
+ 	border-width: 1px;
+	border-color: #F7F6F3 !important;
+ 	transition-timing-function: linear;
+ 	position: relative;
+ 	background-color: transparent;
+ 	padding-left: 1.45em;
+ 	padding-top: 0px;
+ 	padding-bottom: 0px;
+ 	margin-top: 0px;
+ 	margin-bottom: 0px;
+}
+
+#hierarchy-editor .TreeNode--dark-indent-line {
+	border-width: 1px;
+	background-color: transparent;
+}
+
+.hierarchy-editor--ltr .TreeNode {
+	margin-left: 2.5px;
+	padding-left: 20px;
+	border-left-style: solid;
+}
+
+.TreeNodeLeftBorder {
+	border-color: #FF2600;
+	border-width: 1px;
+}
+
+.tree-node-container {
+	border-color: #FF2600;
+	border-width: 1px;
 }
