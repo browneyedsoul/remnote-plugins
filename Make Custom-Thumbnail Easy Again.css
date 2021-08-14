@@ -1,3 +1,44 @@
+/***************** Header 1 *****************/
+.rem-header--1 {
+	font-size: 36px !important;
+	color: ; /*#E6F3F7*/
+	background-color: transparent; /*#2B3137*/
+}
+
+.rem-bullet__container .rem-header__bullet--1 {
+	margin-top: 18px;
+}
+
+.rem-header--1 .rem-checkbox {
+	margin-top: 16px;
+}
+
+/***************** Header 2 *****************/
+.rem-header--2 {
+	font-size: 28px !important;
+}
+
+.rem-bullet__container .rem-header__bullet--2 {
+	margin-top: 10px;
+}
+
+.rem-header--2 .rem-checkbox {
+	margin-top: 10px;
+}
+
+/***************** Header 3 *****************/
+.rem-header--3 {
+	font-size: 20px !important;
+}
+
+.rem-bullet__container .rem-header__bullet--3 {
+	margin-top: 7px;
+}
+
+.rem-header--3 .rem-checkbox {
+	margin-top: 4px;
+}
+
 /************** Document Title **************/
 #document .document-title {
  	font-size: 36px !important;
@@ -244,4 +285,17 @@ hierarchy-editor__hidden-children .rem-header--1 .tumbnail--with-width  {
 
 .indented-rem .react-transform-component.TransformComponent-module_container {
 	vertical-align: middle;
+}
+
+/************** Rem Reference **************/
+.rem-reference .tumbnail--with-width, .rem-reference .react-resizable {
+	display: inline-block;
+	height: 16px !important;
+	width: auto !important;
+	margin-top: 1px;
+	padding-right: 5px;
+}
+
+.rem-reference .react-resizable-handle {
+	display: none;
 }
