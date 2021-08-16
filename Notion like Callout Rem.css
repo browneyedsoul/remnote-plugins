@@ -1,8 +1,53 @@
-[data-rem-container-tags~="callout"] {
-    background-color: var(--callout-background-color, rgb(254, 247, 247));	
+[data-rem-container-tags~="calloutred"] {
+    background-color: #FEF7F7;	
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
-    margin-left: 0px;
+    margin-left: 14px;
+    border-radius: 5px;
+}
+
+[data-rem-container-tags~="calloutorange"] {
+    background-color: #FDF9F4;	
+    padding: 15px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
+    border-radius: 5px;
+}
+
+[data-rem-container-tags~="calloutyellow"] {
+    background-color: #FEFCF4;	
+    padding: 15px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
+    border-radius: 5px;
+}
+
+[data-rem-container-tags~="calloutgreen"] {
+    background-color: #EDFAFB;	
+    padding: 15px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
+    border-radius: 5px;
+}
+
+[data-rem-container-tags~="calloutblue"] {
+    background-color: #E6F3F6;	
+    padding: 15px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
+    border-radius: 5px;
+}
+
+[data-rem-container-tags~="calloutpurple"] {
+    background-color: #F9F7FB;	
+    padding: 15px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
     border-radius: 5px;
 }
