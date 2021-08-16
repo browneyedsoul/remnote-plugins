@@ -3,23 +3,43 @@
 Anytime, anywhere, you can help or advise on anything that could be improved.
 
 Any suggestions are welcome.
+https://forum.remnote.io/c/developers-api/9
 
 ## No Bullet Default RemNote Editor Setting
+
+
 
 ## Notion like Callout Rem
 ![CleanShot 2021-08-16 at 23 21 45](https://user-images.githubusercontent.com/56161102/129578910-f5bdf063-dc52-400d-97ff-5a327fa00819.png)
 
 
+
+
 ## Modern Divider
 ![b3f69bae4dfd9824c2ccabe58d67a0ea497514f2](https://user-images.githubusercontent.com/56161102/129580147-c0507bcc-a4d1-4522-b48d-d7efdf831e0f.gif)
 
+
+
+
 ## Modern Scrollable Codeblock
+![CleanShot 2021-08-16 at 23 50 02](https://user-images.githubusercontent.com/56161102/129583382-39f2a2f3-ae8d-4011-832d-640abb9e0aca.gif)
+
+
+
 
 ## Modern Table Row
 
+
+
 ## Simple Column Table
+![6f55ee80750348fc0c5a0beec224da939aa2f3d6_2_572x499](https://user-images.githubusercontent.com/56161102/129581987-d9833334-3031-43c1-88fa-1cb3d1820238.png)
+![78312fab6e3fdb1741c56f901f633c5a75901aac](https://user-images.githubusercontent.com/56161102/129582005-5bd6eccf-6553-43f5-8753-8e0e66e91673.gif)
+
+
 
 ## Strikethrough Workaround
+
+
 
 ## Make Custom-Thumbnail Easy Again
 ![69f4ab54dd1c030791535327f2e740feecf277a7](https://user-images.githubusercontent.com/56161102/129581292-e4fd666b-4ead-4411-b9ec-1cb4831fc80e.gif)
@@ -30,15 +50,16 @@ Using this snippet, You can make any image to Thumbnail especially in RemNote Si
 All you need to do is just copy & paste your image.
 
 It is Optimized for fixed pixel so I recommend you to use
+- header-1 size to 36px
+- header-2 size to 28px
+- header-3 size to 20px
+- normal rem-text to 16px → You have to Tag Thumbnail for normal rem-text
 
-header-1 size to 36px
-header-2 size to 28px
-header-3 size to 20px
-normal rem-text to 16px
-→ You have to Tag Thumbnail for normal rem-text
 or Customize on your tastes!
 
 If you find some bugs or something to improve, please let me know!
+
+
 
 
 ## Make Cover Photo Easy Again
@@ -60,8 +81,8 @@ Try these steps one by one.
   	![5e97a8160321b914f6e84aceef038fd244c826d6_2_690x341](https://user-images.githubusercontent.com/56161102/129580770-bab49a86-f72c-4313-b172-4d3a4e1d383e.jpeg)
 
  4. Adjust `background-size` on your tastes
-	➊ background-size: 100% 100%; ➞ Full responsive but the image can be ugly.
-	➋ background-size: contain; ➞ Height fixed, Responsive to width but some margins can be made.
-	➌ background-size: cover; ➞ I don’t care about the cover image cropped.
+ - ➊ background-size: 100% 100%; ➞ Full responsive but the image can be ugly.
+ - ➋ background-size: contain; ➞ Height fixed, Responsive to width but some margins can be made.
+ - ➌ background-size: cover; ➞ I don’t care about the cover image cropped.
 
 Hope new revamped big update version could be more intuitive. :slightly_smiling_face:
