@@ -38,7 +38,7 @@
 /*********** Codeblock Line Number Bar ***********/
 :root {
     --line-number-width: 40px;
-    --line-number-color: 
+    --line-number-color: ;
     --line-number-background-color: ;
     --code-node-border-radius: 2px;
 }
