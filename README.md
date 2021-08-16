@@ -30,14 +30,14 @@ So I made easier one.
 Try these steps one by one.
 
  1. Make CSS Template on Custom CSS
-  ![b2166effbe4016d88c592ea9ceef6ab72ed8d53a_2_690x429](https://user-images.githubusercontent.com/56161102/129580692-22c7710d-af5c-4939-b44b-a8857493965d.png)
+	![b2166effbe4016d88c592ea9ceef6ab72ed8d53a_2_690x429](https://user-images.githubusercontent.com/56161102/129580692-22c7710d-af5c-4939-b44b-a8857493965d.png)
 
  2. Adding image url, Naming the tag
-  ![cf4804d784ceb2e7104955bb6dd0c0ed5216b010_2_461x500](https://user-images.githubusercontent.com/56161102/129580723-950620ac-7077-4cee-9f52-79329713f98a.jpeg)
+ 	![cf4804d784ceb2e7104955bb6dd0c0ed5216b010_2_461x500](https://user-images.githubusercontent.com/56161102/129580723-950620ac-7077-4cee-9f52-79329713f98a.jpeg)
 
  3. Tagging to the Rem-title
-  ![2ddd2062525cbb69d7a5a6649e35d8459f9505ea_2_561x500](https://user-images.githubusercontent.com/56161102/129580757-d230aa8c-537e-4965-8c9d-931862c51e58.jpeg)
-  ![5e97a8160321b914f6e84aceef038fd244c826d6_2_690x341](https://user-images.githubusercontent.com/56161102/129580770-bab49a86-f72c-4313-b172-4d3a4e1d383e.jpeg)
+	![2ddd2062525cbb69d7a5a6649e35d8459f9505ea_2_561x500](https://user-images.githubusercontent.com/56161102/129580757-d230aa8c-537e-4965-8c9d-931862c51e58.jpeg)
+  	![5e97a8160321b914f6e84aceef038fd244c826d6_2_690x341](https://user-images.githubusercontent.com/56161102/129580770-bab49a86-f72c-4313-b172-4d3a4e1d383e.jpeg)
 
  4. Adjust `background-size` on your tastes
 	➊ background-size: 100% 100%; ➞ Full responsive but the image can be ugly.
