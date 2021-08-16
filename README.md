@@ -22,6 +22,24 @@ Any suggestions are welcome.
 ## Strikethrough Workaround
 
 ## Make Custom-Thumbnail Easy Again
+![69f4ab54dd1c030791535327f2e740feecf277a7](https://user-images.githubusercontent.com/56161102/129581292-e4fd666b-4ead-4411-b9ec-1cb4831fc80e.gif)
+![8f16098e374ee9a24d7103aef83798e60c384558_2_401x499](https://user-images.githubusercontent.com/56161102/129581310-86760ddf-23f6-47cf-9061-67bbdcc16f29.png)
+
+Using this snippet, You can make any image to Thumbnail especially in RemNote Sidebar or Document Title!
+
+All you need to do is just copy & paste your image.
+
+It is Optimized for fixed pixel so I recommend you to use
+
+header-1 size to 36px
+header-2 size to 28px
+header-3 size to 20px
+normal rem-text to 16px
+→ You have to Tag Thumbnail for normal rem-text
+or Customize on your tastes!
+
+If you find some bugs or something to improve, please let me know!
+
 
 ## Make Cover Photo Easy Again
 I thought this thread could be hard for so called RemNote newbies.
