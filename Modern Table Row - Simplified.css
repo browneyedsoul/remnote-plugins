@@ -1,0 +1,92 @@
+[data-rem-container-tags~="table150"] {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	overflow: auto;
+	white-space: pre;
+}
+
+[data-rem-container-tags~="table150"] 
+> .TreeNode {
+	display: grid;
+	grid-auto-rows: auto;
+}
+
+[data-rem-container-tags~="table150"] 
+> :first-child {
+	border: 0.1em solid #EEEEEB;
+	margin-left: 1.65em;
+	background-color: #EEEEEB;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	overflow: auto;
+}
+
+[data-rem-container-tags~="table150"] 
+> .TreeNode 
+> .tree-node-container {
+	border: 0.1em solid #F7F6F3;
+	background-color: #F7F6F3;
+	overflow: auto;
+	white-space: pre;
+}
+
+[data-rem-container-tags~="table150"]
+> .TreeNode
+> .tree-node-container:not(:first-child) {
+	border-top-width: 0em;
+}
+
+[data-rem-container-tags~="table150"]
+> .TreeNode
+> .tree-node-container
+> .TreeNode
+> .tree-node-container {
+	color: ;
+	background-color: #ffffff !important;
+	border-left: 0.05em solid #EEEEEB;
+	overflow: auto;
+	white-space: pre;
+}
+
+/* remove indentation marker */
+[data-rem-container-tags~="table150"] 
+> .TreeNode {
+	border-left: unset !important;
+}
+
+[data-rem-container-tags~="table-150"] .rem-bullet__container {
+	visibility: hidden;
+}
+
+[data-rem-container-tags~="table150"]
+> .TreeNode
+> .tree-node-container
+> :first-child {
+    float: left;
+    width: 150px;
+    font-weight: bold;
+  	background-color: #F7F6F3;
+	text-align: left;
+	padding: 0em;
+	overflow: auto;
+	white-space: pre;
+}
+
+[data-rem-container-tags~="table150"]
+> .TreeNode
+> .tree-node-container
+> .TreeNode {
+	display: flex;
+	flex-direction: rows;
+	text-align: left;
+}
+
+[data-rem-container-tags~="table150"]
+> .TreeNode
+> .tree-node-container
+> .TreeNode
+> .tree-node-container {
+	flex: 1 1 0;
+}
+
+
