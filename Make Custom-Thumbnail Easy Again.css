@@ -179,6 +179,7 @@ hierarchy-editor__hidden-children .rem-header--1 .tumbnail--with-width  {
 	margin-right: 5px;
 }
 
+
 /************** Header **************/
 .rem-header--1 .tumbnail--with-width ,
 .rem-header--1 .react-resizable {
@@ -186,6 +187,15 @@ hierarchy-editor__hidden-children .rem-header--1 .tumbnail--with-width  {
 	height: 36px !important;
 	width: auto !important;
 	margin-right: 5px;
+}
+
+.rem-header--1 .tumbnail--with-width:focus:not(:focus),
+.rem-header--1 .tumbnail--with-width:focus:hover,
+.rem-header--1 .react-resizable:not(:focus) {
+	display: inline-block;
+	height: 36px !important;
+	width: auto !important;
+	margin-right: 0px;
 }
 
 .rem-header--1 .react-resizable-handle {
@@ -197,7 +207,16 @@ hierarchy-editor__hidden-children .rem-header--1 .tumbnail--with-width  {
 	display: inline-block;
 	height: 28px !important;
 	width: auto !important;
-	padding-right: 5px;
+	margin-right: 5px;
+}
+
+.rem-header--2 .tumbnail--with-width:focus:not(:focus),
+.rem-header--2 .tumbnail--with-width:focus:hover,
+.rem-header--2 .react-resizable:not(:focus) {
+	display: inline-block;
+	height: 28px !important;
+	width: auto !important;
+	margin-right: 0px;
 }
 
 .rem-header--2 .react-resizable-handle {
@@ -209,13 +228,21 @@ hierarchy-editor__hidden-children .rem-header--1 .tumbnail--with-width  {
 	display: inline-block;
 	height: 20px !important;
 	width: auto !important;
-	padding-right: 5px;
+	margin-right: 5px;
+}
+
+.rem-header--3 .tumbnail--with-width:focus:not(:focus),
+.rem-header--3 .tumbnail--with-width:focus:hover,
+.rem-header--3 .react-resizable:not(:focus) {
+	display: inline-block;
+	height: 20px !important;
+	width: auto !important;
+	margin-right: 0px;
 }
 
 .rem-header--3 .react-resizable-handle {
 	display: none;
 }
-
 
 /************** Normal Rem **************/
 [data-rem-tags*="thumbnail"] .tumbnail--with-width, 
@@ -223,7 +250,16 @@ hierarchy-editor__hidden-children .rem-header--1 .tumbnail--with-width  {
 	display: inline-block;
 	height: 18px !important;
 	width: auto !important;
-	padding-right: 5px;
+	margin-right: 5px;
+}
+
+[data-rem-tags*="thumbnail"] .tumbnail--with-width:focus:not(:focus),
+[data-rem-tags*="thumbnail"] .tumbnail--with-width:focus:hover,
+[data-rem-tags*="thumbnail"] .react-resizable:not(:focus) {
+	display: inline-block;
+	height: 18px !important;
+	width: auto !important;
+	margin-right: 0px;
 }
 
 [data-rem-tags*="thumbnail"] .react-resizable-handle {
