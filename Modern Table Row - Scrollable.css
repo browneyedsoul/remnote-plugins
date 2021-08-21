@@ -1,375 +1,87 @@
-/*********** TABLE Color Tag for Each Column ***********/
-	[data-rem-tags~="tablecolor"] {
-		background-color: #F7F6F3;
-		font-weight: bold;
-		text-align: center;
-	}
-	
-	[data-rem-container-tags~="tablecolor"]:not([data-rem-container-tags~="show-tags"]) .hierarchy-editor__tag-bar {
-	   display: none;
-	}
+[data-rem-container-tags~="table150"] {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	margin-left: 1rem;
+	background-color: #F7F6F3;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	overflow: auto;	
+	white-space: pre;
+}
 
-/*********** TABLE WIDTH90 ***********/
-	[data-rem-container-tags~="table90"] {
-		margin-top: 0.5em;
-		margin-bottom: 0.5em;
-		overflow: auto;
-		white-space: pre;
-	}
+[data-rem-container-tags~="table150"] 
+> .TreeNode {
+	display: grid;
+	grid-auto-rows: auto;
+	border-left: unset !important;	
+	overflow: auto;	
+	white-space: pre;
+}
 
-	[data-rem-container-tags~="table90"] 
-	> .TreeNode {
-		display: grid;
-		grid-auto-rows: auto;
-	}
+/*********** Table Title ***********/
+[data-rem-container-tags~="table150"] 
+> :first-child {
+	border: 0.1em solid #EEEEEB;
+	background-color: #EEEEEB;
+	background-size: 100% 100%;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
 
-	[data-rem-container-tags~="table90"] 
-	> :first-child {
-		border: 0.1em solid #EEEEEB;
-		margin-left: 1.65em;
-		background-color: #EEEEEB;
-		border-top-left-radius: 4px;
-		border-top-right-radius: 4px;
-		overflow: auto;
-	}
+/*********** Table left Property Column ***********/
+[data-rem-container-tags~="table150"]
+> .TreeNode
+> .tree-node-container
+> :first-child {
+    float: left;
+    width: 150px !important;
+    font-weight: bold;
+  	background-color: #F7F6F3;
+	text-align: left;
+	padding-left: 0em;
+	position: relative;
+	z-index: 1;
+}
 
-	[data-rem-container-tags~="table90"] 
-	> .TreeNode 
-	> .tree-node-container {
-		border: 0.1em solid #F7F6F3;
-		background-color: #F7F6F3;
-		overflow: auto;
-		white-space: pre;
-	}
+/*********** Table 1st Column ***********/
+[data-rem-container-tags~="table150"]
+> .TreeNode
+> .tree-node-container
+> .TreeNode
+> :nth-child(2) {
 
-	[data-rem-container-tags~="table90"]
-	> .TreeNode
-	> .tree-node-container:not(:first-child) {
-		border-top-width: 0em;
-	}
+}
 
-	[data-rem-container-tags~="table90"]
-	> .TreeNode
-	> .tree-node-container
-	> .TreeNode
-	> .tree-node-container {
-		color: ;
-		background-color: #ffffff !important;
-		border-left: 0.05em solid #EEEEEB;
-		overflow: auto;
-		white-space: pre;
-	}
+/*********** Table all the horizontal line ***********/
+[data-rem-container-tags~="table150"]
+> .TreeNode
+> .tree-node-container:not(:first-child) {
+	border-top-width: 0em;
+	border: 0.01rem solid #F7F6F3;
+}
 
-	/* remove indentation marker */
-	[data-rem-container-tags~="table90"] 
-	> .TreeNode {
-		border-left: unset !important;
-	}
+/*********** Table Content Cell Configuration ***********/
+[data-rem-container-tags~="table150"]
+> .TreeNode
+> .tree-node-container
+> .TreeNode {
+	display: flex;
+	flex-direction: rows;
+	text-align: left;
+	overflow: auto;	
+	white-space: pre;
+}
 
-	[data-rem-container-tags~="table90"] .rem-bullet__container {
-		visibility: hidden;
-	}
-
-	[data-rem-container-tags~="table90"]
-	> .TreeNode
-	> .tree-node-container
-	> :first-child {
-	    float: left;
-	    width: 90px;
-	    font-weight: bold;
-	  	background-color: #F7F6F3;
-		text-align: left;
-		padding: 0em;
-		overflow: auto;
-		white-space: pre;
-	}
-
-	[data-rem-container-tags~="table90"]
-	> .TreeNode
-	> .tree-node-container
-	> .TreeNode {
-		display: flex;
-		flex-direction: rows;
-		text-align: left;
-	}
-
-	[data-rem-container-tags~="table90"]
-	> .TreeNode
-	> .tree-node-container
-	> .TreeNode
-	> .tree-node-container {
-		flex: 1 1 0;
-	}
-/*********** TABLE WIDTH120 ***********/
-	[data-rem-container-tags~="table120"] {
-		margin-top: 0.5em;
-		margin-bottom: 0.5em;
-		overflow: auto;
-		white-space: pre;
-	}
-
-	[data-rem-container-tags~="table120"] 
-	> .TreeNode {
-		display: grid;
-		grid-auto-rows: auto;
-	}
-
-	[data-rem-container-tags~="table120"] 
-	> :first-child {
-		border: 0.1em solid #EEEEEB;
-		margin-left: 1.65em;
-		background-color: #EEEEEB;
-		border-top-left-radius: 4px;
-		border-top-right-radius: 4px;
-		overflow: auto;
-	}
-
-	[data-rem-container-tags~="table120"] 
-	> .TreeNode 
-	> .tree-node-container {
-		border: 0.1em solid #F7F6F3;
-		background-color: #F7F6F3;
-		overflow: auto;
-		white-space: pre;
-	}
-
-	[data-rem-container-tags~="table120"]
-	> .TreeNode
-	> .tree-node-container:not(:first-child) {
-		border-top-width: 0em;
-	}
-
-	[data-rem-container-tags~="table120"]
-	> .TreeNode
-	> .tree-node-container
-	> .TreeNode
-	> .tree-node-container {
-		color: ;
-		background-color: #ffffff !important;
-		border-left: 0.05em solid #EEEEEB;
-		overflow: auto;
-		white-space: pre;
-	}
-
-	/* remove indentation marker */
-	[data-rem-container-tags~="table120"] 
-	> .TreeNode {
-		border-left: unset !important;
-	}
-
-	[data-rem-container-tags~="table120"] .rem-bullet__container {
-		visibility: hidden;
-	}
-
-	[data-rem-container-tags~="table120"]
-	> .TreeNode
-	> .tree-node-container
-	> :first-child {
-	    float: left;
-	    width: 120px;
-	    font-weight: bold;
-	  	background-color: #F7F6F3;
-		text-align: left;
-		padding: 0em;
-		overflow: auto;
-		white-space: pre;
-	}
-
-	[data-rem-container-tags~="table120"]
-	> .TreeNode
-	> .tree-node-container
-	> .TreeNode {
-		display: flex;
-		flex-direction: rows;
-		text-align: left;
-	}
-
-	[data-rem-container-tags~="table120"]
-	> .TreeNode
-	> .tree-node-container
-	> .TreeNode
-	> .tree-node-container {
-		flex: 1 1 0;
-	}
-/*********** TABLE WIDTH150 ***********/
-	[data-rem-container-tags~="table150"] {
-		margin-top: 0.5em;
-		margin-bottom: 0.5em;
-		overflow: auto;
-		white-space: pre;
-	}
-
-	[data-rem-container-tags~="table150"] 
-	> .TreeNode {
-		display: grid;
-		grid-auto-rows: auto;
-	}
-
-	[data-rem-container-tags~="table150"] 
-	> :first-child {
-		border: 0.1em solid #EEEEEB;
-		margin-left: 1.65em;
-		background-color: #EEEEEB;
-		border-top-left-radius: 4px;
-		border-top-right-radius: 4px;
-		overflow: auto;
-	}
-
-	[data-rem-container-tags~="table150"] 
-	> .TreeNode 
-	> .tree-node-container {
-		border: 0.1em solid #F7F6F3;
-		background-color: #F7F6F3;
-		overflow: auto;
-		white-space: pre;
-	}
-
-	[data-rem-container-tags~="table150"]
-	> .TreeNode
-	> .tree-node-container:not(:first-child) {
-		border-top-width: 0em;
-	}
-
-	[data-rem-container-tags~="table150"]
-	> .TreeNode
-	> .tree-node-container
-	> .TreeNode
-	> .tree-node-container {
-		color: ;
-		background-color: #ffffff !important;
-		border-left: 0.05em solid #EEEEEB;
-		overflow: auto;
-		white-space: pre;
-	}
-
-	/* remove indentation marker */
-	[data-rem-container-tags~="table150"] 
-	> .TreeNode {
-		border-left: unset !important;
-	}
-
-	[data-rem-container-tags~="table150"] .rem-bullet__container {
-		visibility: hidden;
-	}
-
-	[data-rem-container-tags~="table150"]
-	> .TreeNode
-	> .tree-node-container
-	> :first-child {
-	    float: left;
-	    width: 150px;
-	    font-weight: bold;
-	  	background-color: #F7F6F3;
-		text-align: left;
-		padding: 0em;
-		overflow: auto;
-		white-space: pre;
-	}
-
-	[data-rem-container-tags~="table150"]
-	> .TreeNode
-	> .tree-node-container
-	> .TreeNode {
-		display: flex;
-		flex-direction: rows;
-		text-align: left;
-	}
-
-	[data-rem-container-tags~="table150"]
-	> .TreeNode
-	> .tree-node-container
-	> .TreeNode
-	> .tree-node-container {
-		flex: 1 1 0;
-	}
-/*********** TABLE WIDTH180 ***********/
-	[data-rem-container-tags~="table180"] {
-		margin-top: 0.5em;
-		margin-bottom: 0.5em;
-		overflow: auto;
-		white-space: pre;
-	}
-
-	[data-rem-container-tags~="table180"] 
-	> .TreeNode {
-		display: grid;
-		grid-auto-rows: auto;
-	}
-
-	[data-rem-container-tags~="table180"] 
-	> :first-child {
-		border: 0.1em solid #EEEEEB;
-		margin-left: 1.65em;
-		background-color: #EEEEEB;
-		border-top-left-radius: 4px;
-		border-top-right-radius: 4px;
-		overflow: auto;
-	}
-
-	[data-rem-container-tags~="table180"] 
-	> .TreeNode 
-	> .tree-node-container {
-		border: 0.1em solid #F7F6F3;
-		background-color: #F7F6F3;
-		overflow: auto;
-		white-space: pre;
-	}
-
-	[data-rem-container-tags~="table180"]
-	> .TreeNode
-	> .tree-node-container:not(:first-child) {
-		border-top-width: 0em;
-	}
-
-	[data-rem-container-tags~="table180"]
-	> .TreeNode
-	> .tree-node-container
-	> .TreeNode
-	> .tree-node-container {
-		color: ;
-		background-color: #ffffff !important;
-		border-left: 0.05em solid #EEEEEB;
-		overflow: auto;
-		white-space: pre;
-	}
-
-	/* remove indentation marker */
-	[data-rem-container-tags~="table180"] 
-	> .TreeNode {
-		border-left: unset !important;
-	}
-
-	[data-rem-container-tags~="table180"] .rem-bullet__container {
-		visibility: hidden;
-	}
-
-	[data-rem-container-tags~="table180"]
-	> .TreeNode
-	> .tree-node-container
-	> :first-child {
-	    float: left;
-	    width: 180px;
-	    font-weight: bold;
-	  	background-color: #F7F6F3;
-		text-align: left;
-		padding: 0em;
-		overflow: auto;
-		white-space: pre;
-	}
-
-	[data-rem-container-tags~="table180"]
-	> .TreeNode
-	> .tree-node-container
-	> .TreeNode {
-		display: flex;
-		flex-direction: rows;
-		text-align: left;
-	}
-
-	[data-rem-container-tags~="table180"]
-	> .TreeNode
-	> .tree-node-container
-	> .TreeNode
-	> .tree-node-container {
-		flex: 1 1 0;
-	}
+/*********** Table Content Cell ***********/
+[data-rem-container-tags~="table150"]
+> .TreeNode
+> .tree-node-container
+> .TreeNode
+> .tree-node-container {
+	color: ;
+	background-color: #FFFFFF;
+	border-left: 0.05em solid #EEEEEB;
+	width: 420px;
+	flex: 1 1 0;
+	overflow: auto;
+}
