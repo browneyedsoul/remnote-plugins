@@ -332,6 +332,14 @@ hierarchy-editor__hidden-children .rem-header--1 .tumbnail--with-width  {
 	padding-right: 5px;
 }
 
+.popup-meue__item--static .tumbnail--with-width {
+	display: inline-block;
+	height: 16px !important;
+	width: auto !important;
+	margin-top: 1px;
+	padding-right: 5px;
+}
+
 .rem-reference .react-resizable-handle {
 	display: none;
 }
