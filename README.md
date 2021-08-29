@@ -86,3 +86,8 @@ Try these steps one by one.
  - ➌ background-size: cover; ➞ I don’t care about the cover image cropped.
 
 Hope new revamped big update version could be more intuitive. :slightly_smiling_face:
+
+## Terminal
+![CleanShot 2021-08-29 at 15 07 51](https://user-images.githubusercontent.com/56161102/131240536-c039347c-3fce-4cc4-a568-048606a4d383.png)
+
+
