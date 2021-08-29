@@ -6,12 +6,12 @@
     margin-right: 0px;  
 }
 
-[data-rem-container-tags~="terminal"] > .TreeNode {
+[data-rem-container-tags~="terminal"] > .TreeNode,
+[data-rem-container-tags~="terminal"] > .TreeNode > .tree-node-container > .TreeNode,
+[data-rem-container-tags~="terminal"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+[data-rem-container-tags~="terminal"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode {
 	border-left: unset;
-}
-
-[data-rem-container-tags~="terminal"] #hierarchy-editor .TreeNodeLeftBorder {
-	border-color: #2B3137 !important;
+	border-left: inherit;
 }
 
 [data-rem-container-tags~="terminal"] .rem-text .quote {
