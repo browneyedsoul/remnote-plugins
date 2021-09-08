@@ -1,5 +1,14 @@
+:root {
+    --calloutred-background-color: #FEF7F7;
+    --calloutorange-background-color: #FDF9F4;
+    --calloutyellow-background-color: #FEFCF4;
+    --calloutgreen-background-color: #EDFAFB;
+    --calloutblue-background-color: #E6F3F6;
+    --calloutpurple-background-color: #F9F7FB;
+}
+
 [data-rem-container-tags~="calloutred"] {
-    background-color: #FEF7F7;	
+    background-color: var(--calloutred-background-color);   
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
@@ -8,7 +17,7 @@
 }
 
 [data-rem-container-tags~="calloutorange"] {
-    background-color: #FDF9F4;	
+    background-color: var(--calloutorange-background-color);    
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
@@ -17,7 +26,7 @@
 }
 
 [data-rem-container-tags~="calloutyellow"] {
-    background-color: #FEFCF4;	
+    background-color: var(--calloutyellow-background-color);    
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
@@ -26,7 +35,7 @@
 }
 
 [data-rem-container-tags~="calloutgreen"] {
-    background-color: #EDFAFB;	
+    background-color: var(--calloutgreen-background-color); 
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
@@ -35,7 +44,7 @@
 }
 
 [data-rem-container-tags~="calloutblue"] {
-    background-color: #E6F3F6;	
+    background-color: var(--calloutblue-background-color);  
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
@@ -44,7 +53,7 @@
 }
 
 [data-rem-container-tags~="calloutpurple"] {
-    background-color: #F9F7FB;	
+    background-color: var(--calloutpurple-background-color);    
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
