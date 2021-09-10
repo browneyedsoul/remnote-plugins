@@ -7,56 +7,62 @@
     --calloutpurple-background-color: #F9F7FB;
 }
 
-[data-rem-container-tags~="calloutred"] {
+[data-rem-tags~="calloutred"] .rem-container {
     background-color: var(--calloutred-background-color);   
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
+    margin-right: 10px;
     border-radius: 5px;
 }
 
-[data-rem-container-tags~="calloutorange"] {
+[data-rem-tags~="calloutorange"] .rem-container {
     background-color: var(--calloutorange-background-color);    
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
+    margin-right: 10px;
     border-radius: 5px;
 }
 
-[data-rem-container-tags~="calloutyellow"] {
+[data-rem-tags~="calloutyellow"] .rem-container {
     background-color: var(--calloutyellow-background-color);    
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
+    margin-right: 10px;
     border-radius: 5px;
 }
 
-[data-rem-container-tags~="calloutgreen"] {
+[data-rem-tags~="calloutgreen"] .rem-container {
     background-color: var(--calloutgreen-background-color); 
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
+    margin-right: 10px;
     border-radius: 5px;
 }
 
-[data-rem-container-tags~="calloutblue"] {
+[data-rem-tags~="calloutblue"] .rem-container {
     background-color: var(--calloutblue-background-color);  
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
+    margin-right: 10px;
     border-radius: 5px;
 }
 
-[data-rem-container-tags~="calloutpurple"] {
+[data-rem-tags~="calloutpurple"] .rem-container {
     background-color: var(--calloutpurple-background-color);    
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
+    margin-right: 10px;
     border-radius: 5px;
 }
