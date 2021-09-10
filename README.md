@@ -10,6 +10,8 @@ https://forum.remnote.io/c/developers-api/9
 
 
 ## Notion like Callout Rem
+![CleanShot 2021-09-10 at 23 14 51](https://user-images.githubusercontent.com/56161102/132867817-d2a67b52-e39a-4c30-bbd0-c413020fe859.gif)
+
 ![CleanShot 2021-08-16 at 23 21 45](https://user-images.githubusercontent.com/56161102/129578910-f5bdf063-dc52-400d-97ff-5a327fa00819.png)
 
 
