@@ -1,10 +1,21 @@
+/*********** Divider Container Adjustment ***********/
+[data-rem-tags~="divider"] .rem-button__container {
+	top: -10px;
+	left: -58px;
+}
+
+/*********** Hide "Type / for Commands" ***********/
+[data-rem-tags~="divider"] .rich-text-editor-placeholder {
+	display: none;
+}
+
 [data-rem-tags~="divider"] {
 	color: transparent;
 	padding: 0px 15px;
 	background-color: ;
-	height:10px;
-	margin-right: 45px;
-	cursor: no-drop;
+	height: 7px;
+	margin-right: 30px;
+	margin-left: 10px;
 }
 
 [data-rem-tags~="divider"]:before {
@@ -14,12 +25,15 @@
 	width: 100%;
 	top: 50%;
 	border-bottom: var(--divider-style, 2px solid #EEEFEE);
-	padding: 0px 15px;
+	margin-right: 20px;
 }
 
-[data-rem-container-tags~="divider"]:focus-within {
+[data-rem-tags~="divider"]:focus-within {
 	background: #DCF3FF;
-	margin-left: 15px;
+	margin-left: 25px;
+	margin-right: 0px;
+	position: relative;
+	left: -15px;
 }
 
 [data-rem-tags~="divider"]:not(:focus-within) {
@@ -38,12 +52,14 @@
 }
 
 /********** Hide **********/
-[data-rem-tags~="divider"] .rem-container--focused, .rem-bullet__icon, .rem-bullet__container {
+[data-rem-tags~="divider"] .rem-container--focused, 
+[data-rem-tags~="divider"] .rem-bullet__icon,
+[data-rem-tags~="divider"] .rem-bullet__container {
 	display: none;
 	height: 10px;
 }
 
-[data-rem-container-tags~="divider"] .rem:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar {
+[data-rem-tags~="divider"] .rem:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar {
 	display: none; 
 }
 
