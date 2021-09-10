@@ -7,6 +7,85 @@
     --calloutpurple-background-color: #F9F7FB;
 }
 
+/*********** Custom rem bullet icon ***********/
+[data-rem-tags~="warning"] .rem-bullet__container::before {
+  content: "🚨";
+  font-size: large; /* change symbol size here */
+  visibility: visible;
+  position: relative;
+  left: 25px;
+}
+
+[data-rem-tags~="idea"] .rem-bullet__container::before {
+  content: "💡";
+  font-size: large; /* change symbol size here */
+  visibility: visible;
+  position: relative;
+  left: 25px;
+}
+
+/*********** Callout Rem Block Color Variable ***********/
+[data-rem-tags~="callout"] .highlight-color--red {
+    background-color: var(--calloutred-background-color);   
+    padding: 15px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+[data-rem-tags~="callout"] .highlight-color--orange {
+    background-color: var(--calloutorange-background-color);    
+    padding: 15px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+[data-rem-tags~="callout"] .highlight-color--yellow {
+    background-color: var(--calloutyellow-background-color);    
+    padding: 15px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+[data-rem-tags~="callout"] .highlight-color--green {
+    background-color: var(--calloutgreen-background-color); 
+    padding: 15px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+[data-rem-tags~="callout"] .highlight-color--blue {
+    background-color: var(--calloutblue-background-color);  
+    padding: 15px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+[data-rem-tags~="callout"] .highlight-color--purple {
+    background-color: var(--calloutpurple-background-color);    
+    padding: 15px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/********** Precolored Callout for Text Highlighting **********/
 [data-rem-tags~="calloutred"] .rem-container {
     background-color: var(--calloutred-background-color);   
     padding: 15px 20px;
