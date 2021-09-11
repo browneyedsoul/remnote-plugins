@@ -7,6 +7,16 @@
     --calloutpurple-background-color: #F9F7FB;
 }
 
+[data-rem-tags~="callout"] .hierarchy-editor__tag-bar__tag span, 
+[data-rem-tags~="calloutred"] .hierarchy-editor__tag-bar__tag span, 
+[data-rem-tags~="calloutorange"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-tags~="calloutyellow"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-tags~="calloutgreen"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-tags~="calloutblue"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-tags~="calloutpurple"] .hierarchy-editor__tag-bar__tag span {
+    display: none;
+}
+
 /*********** Custom rem bullet icon ***********/
 [data-rem-tags~="warning"] .rem-bullet__container::before {
   content: "🚨";
