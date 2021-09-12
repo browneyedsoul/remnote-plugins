@@ -6,6 +6,7 @@
     padding-bottom: 0px;
     line-height:    160%;
 }
+
 #code-node {
     padding-left:   40px !important;
     position:       relative;
@@ -36,8 +37,8 @@
 /*********** Codeblock Line Number Bar ***********/
 :root {
     --line-number-width: 40px;
-    --line-number-color: ;
-    --line-number-background-color: #EDECE9;
+    --line-number-color: #C7CCCF;
+    --line-number-background-color: #F7F6F3; /*#EDECE9*/
     --code-node-border-radius: 2px;
 }
 
@@ -46,6 +47,7 @@
 }
 
 .codeLine:before {
+    color:          var(--line-number-color);
     position:       absolute;
     left:           0px;
     width:          var(--line-number-width);
@@ -55,7 +57,8 @@
     content:        counters(codeLineNumber, ".") " ";
     text-align:     center;
     font-family:    Helvetica;
-    font-size:      13px
+    font-size:      13px;
+    font-weight:    100;
 }
 
 #code-node:before {
@@ -65,16 +68,12 @@
     left:               0;
     top:                0;
     bottom:             0;
-    color:              var(--line-number-color, black);
     background-color:   var(--line-number-background-color, rgba(0, 0, 0, 0.04));
     border-radius:      var(--code-node-border-radius, 7px) 0 0;
     width:              calc(var(--line-number-width, 45px) - 7px);
 }
 
-#code-node .codeLine:after {
-    content: " ";
-    visibility: hidden;
-}
+
 
 /*********** Language Converter ***********/
 #code-node__change-language-dropdown {
