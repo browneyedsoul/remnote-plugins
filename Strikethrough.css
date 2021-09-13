@@ -4,6 +4,10 @@
 	text-decoration-style: double;
 }
 
+[data-rem-tags~="strikethrough"] .hierarchy-editor__tag-bar__tag {
+	background-color: transparent;
+}
+
 [data-rem-tags~="strikethrough"] .hierarchy-editor__tag-bar__tag span {
 	display: none;
 }
