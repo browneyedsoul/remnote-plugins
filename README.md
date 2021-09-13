@@ -41,6 +41,7 @@ https://forum.remnote.io/c/developers-api/9
 
 
 ## Strikethrough Workaround
+![CleanShot 2021-09-13 at 23 35 19](https://user-images.githubusercontent.com/56161102/133103309-48413153-3b7a-4efa-835d-43489c08ab41.png)
 
 
 
