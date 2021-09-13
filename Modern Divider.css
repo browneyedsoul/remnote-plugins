@@ -2,6 +2,7 @@
 [data-rem-tags~="divider"] .rem-button__container {
 	top: -10px;
 	left: -58px;
+	display: none;
 }
 
 /*********** Hide "Type / for Commands" ***********/
@@ -30,7 +31,7 @@
 
 [data-rem-tags~="divider"]:focus-within {
 	background: #DCF3FF;
-	margin-left: 25px;
+	margin-left: 40px;
 	margin-right: 0px;
 	position: relative;
 	left: -15px;
