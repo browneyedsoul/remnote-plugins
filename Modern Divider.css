@@ -5,6 +5,11 @@
 	display: none;
 }
 
+/*********** Hide Merge Sign ***********/
+[data-rem-tags~="divider"] .relative.flex.items-center.float-end {
+	display: none;
+}
+
 /*********** Hide "Type / for Commands" ***********/
 [data-rem-tags~="divider"] .rich-text-editor-placeholder {
 	display: none;
