@@ -7,6 +7,16 @@
     --calloutpurple-background-color: #F9F7FB;
 }
 
+[data-rem-tags~="callout"] .items-center.hierarchy-editor__tag-bar__tag, 
+[data-rem-tags~="calloutred"] .items-center.hierarchy-editor__tag-bar__tag, 
+[data-rem-tags~="calloutorange"] .items-center.hierarchy-editor__tag-bar__tag,
+[data-rem-tags~="calloutyellow"] .items-center.hierarchy-editor__tag-bar__tag,
+[data-rem-tags~="calloutgreen"] .items-center.hierarchy-editor__tag-bar__tag,
+[data-rem-tags~="calloutblue"] .items-center.hierarchy-editor__tag-bar__tag,
+[data-rem-tags~="calloutpurple"] .items-center.hierarchy-editor__tag-bar__tag {
+    background-color: transparent;
+}
+
 [data-rem-tags~="callout"] .hierarchy-editor__tag-bar__tag span, 
 [data-rem-tags~="calloutred"] .hierarchy-editor__tag-bar__tag span, 
 [data-rem-tags~="calloutorange"] .hierarchy-editor__tag-bar__tag span,
@@ -17,10 +27,31 @@
     display: none;
 }
 
+[data-rem-tags~="callout"] .hierarchy-editor__tag-bar, 
+[data-rem-tags~="calloutred"] .hierarchy-editor__tag-bar, 
+[data-rem-tags~="calloutorange"] .hierarchy-editor__tag-bar,
+[data-rem-tags~="calloutyellow"] .hierarchy-editor__tag-bar,
+[data-rem-tags~="calloutgreen"] .hierarchy-editor__tag-bar,
+[data-rem-tags~="calloutblue"] .hierarchy-editor__tag-bar,
+[data-rem-tags~="calloutpurple"] .hierarchy-editor__tag-bar {
+    position: relative;
+    right: -30px;
+}
+
 /*********** Custom rem bullet icon ***********/
+[data-rem-tags~="callout"] .rem-bullet__container,
+[data-rem-tags~="calloutred"] .rem-bullet__container,
+[data-rem-tags~="calloutorange"] .rem-bullet__container,
+[data-rem-tags~="calloutyellow"] .rem-bullet__container,
+[data-rem-tags~="calloutgreen"] .rem-bullet__container,
+[data-rem-tags~="calloutblue"] .rem-bullet__container,
+[data-rem-tags~="calloutpurple"] .rem-bullet__container {
+  visibility: hidden;
+}
+
 [data-rem-tags~="warning"] .rem-bullet__container::before {
   content: "🚨";
-  font-size: large; /* change symbol size here */
+  font-size: large;
   visibility: visible;
   position: relative;
   left: 25px;
@@ -28,70 +59,70 @@
 
 [data-rem-tags~="idea"] .rem-bullet__container::before {
   content: "💡";
-  font-size: large; /* change symbol size here */
+  font-size: large;
   visibility: visible;
   position: relative;
   left: 25px;
 }
 
 /*********** Callout Rem Block Color Variable ***********/
-[data-rem-tags~="callout"] .highlight-color--red {
+[data-rem-tags~="callout"] .rem-container.highlight-color--red {
     background-color: var(--calloutred-background-color);   
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
-    margin-right: 10px;
+    margin-right: 3px;
     border-radius: 5px;
 }
 
-[data-rem-tags~="callout"] .highlight-color--orange {
+[data-rem-tags~="callout"] .rem-container.highlight-color--orange {
     background-color: var(--calloutorange-background-color);    
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
-    margin-right: 10px;
+    margin-right: 3px;
     border-radius: 5px;
 }
 
-[data-rem-tags~="callout"] .highlight-color--yellow {
+[data-rem-tags~="callout"] .rem-container.highlight-color--yellow {
     background-color: var(--calloutyellow-background-color);    
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
-    margin-right: 10px;
+    margin-right: 3px;
     border-radius: 5px;
 }
 
-[data-rem-tags~="callout"] .highlight-color--green {
+[data-rem-tags~="callout"] .rem-container.highlight-color--green {
     background-color: var(--calloutgreen-background-color); 
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
-    margin-right: 10px;
+    margin-right: 3px;
     border-radius: 5px;
 }
 
-[data-rem-tags~="callout"] .highlight-color--blue {
+[data-rem-tags~="callout"] .rem-container.highlight-color--blue {
     background-color: var(--calloutblue-background-color);  
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
-    margin-right: 10px;
+    margin-right: 3px;
     border-radius: 5px;
 }
 
-[data-rem-tags~="callout"] .highlight-color--purple {
+[data-rem-tags~="callout"] .rem-container.highlight-color--purple {
     background-color: var(--calloutpurple-background-color);    
     padding: 15px 20px;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
-    margin-right: 10px;
+    margin-right: 3px;
     border-radius: 5px;
 }
 
@@ -102,7 +133,7 @@
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
-    margin-right: 10px;
+    margin-right: 3px;
     border-radius: 5px;
 }
 
@@ -112,7 +143,7 @@
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
-    margin-right: 10px;
+    margin-right: 3px;
     border-radius: 5px;
 }
 
@@ -122,7 +153,7 @@
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
-    margin-right: 10px;
+    margin-right: 3px;
     border-radius: 5px;
 }
 
@@ -132,7 +163,7 @@
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
-    margin-right: 10px;
+    margin-right: 3px;
     border-radius: 5px;
 }
 
@@ -142,7 +173,7 @@
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
-    margin-right: 10px;
+    margin-right: 3px;
     border-radius: 5px;
 }
 
@@ -152,6 +183,6 @@
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 14px;
-    margin-right: 10px;
+    margin-right: 3px;
     border-radius: 5px;
 }
