@@ -73,6 +73,7 @@
 /*********** Turn Codeblock into Console Terminal ***********/
 [data-rem-tags~="ter"] #code-node {
     background-color:   #2B3137;
+    caret-color: white;
 }
 
 [data-rem-tags~="ter"] span {
