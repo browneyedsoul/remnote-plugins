@@ -10,9 +10,7 @@
 #code-node {
     padding-left:   40px !important;
     position:       relative;
-    z-index:        0;
-    overflow-x:     auto;
-    overflow-y:     auto;
+    overflow:       auto;
     white-space:    pre;
 }
 
@@ -20,7 +18,7 @@
     font-family:        Roboto Mono, Fira code;
     background-color:   #F7F6F3;
     border:             0;
-    padding-right:      40px;
+    padding-right:      50px;
     font-size:          0.9em !important; 
     line-height:        160%;
     margin-top:         2px;
@@ -29,9 +27,8 @@
     border-radius:      0.3em;
 }
 
-#EditorContainer .rem-text {
-    position: relative;
-    z-index: 0;
+#code-node + div {
+    display:  none;
 }
 
 /*********** Codeblock Line Number Bar ***********/
@@ -73,68 +70,53 @@
     width:              calc(var(--line-number-width, 45px) - 7px);
 }
 
-
-
 /*********** Language Converter ***********/
 #code-node__change-language-dropdown {
-    position:   fixed;
-    right:      40px;
-    bottom:     0px;
 }
 
-#code-node .ui.upward.dropdown {
-    position:       absolute;
-    right:          100px;
-    top:            0px;
-    z-index:        10;
+#code-node__change-language-dropdown .divider.text {
+    opacity: 50%;
 }
 
-#code-node .ui.active.visible.dropdown {
-    position:   absolute;
-    right:      100px;
-    top:        0px;
-    z-index:    10;
+#code-node .dropdown.icon {
+    opacity: 50%;
 }
 
 #code-node .copy.outline.icon.code-node__copy-button {
+    opacity: 50%;
+}
+
+#code-node .ui.upward.dropdown {
+}
+
+#code-node .ui.active.visible.dropdown {
+}
+
+#code-node .ui.dropdown {
 }
 
 #code-node .ui.dropdown .menu {
-    color:              black;
-    background-color:   #282a36;
-    white-space:        pre;
 }
 
 #code-node .ui.dropdown .menu >.item {
-    font-size:      16px !important;
-    font-family:    Sans Serif Workhorse;
-    font-weight:    500;
-    border-radius:  1px;
-    color:          #2B3137;
 }
 
 #code-node .ui.dropdown .menu >.item:hover {
-    color:              black;
-    background-color:   #44475A;
-    border-radius:      1px;
-    background-color:   #F1FA8C;
-    border-radius:      1px;
 }
 
 #code-node .visible.menu.transition {
     position:           absolute;
-    z-index:            10;
-    right:              240px !important;
     background-color:   #F5F4F0 !important;
-    color:              ;
     position:           relative;
     height:             240px !important;
-    overflow:           auto;
+    width:              100px !important;
+    z-index:            10 !important;
 }
 
 #code-node .visible.menu.transition .selected.item, 
 #code-node .visible.menu.transition .ui.header.text {
     background-color:   #FD8A88 !important;
     color:              yellow !important;
-    border-radius:      1px;
-}  
+    border-radius:      3px;
+    text-align:         center;
+}
