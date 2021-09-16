@@ -43,7 +43,7 @@
     counter-increment: codeLineNumber;
 }
 
-.codeLine:before {
+.codeLine::before {
     color:          var(--line-number-color);
     position:       absolute;
     left:           0px;
@@ -58,7 +58,7 @@
     font-weight:    100;
 }
 
-#code-node:before {
+#code-node::before {
     content:            "";
     display:            block;
     position:           absolute;
@@ -70,40 +70,75 @@
     width:              calc(var(--line-number-width, 45px) - 7px);
 }
 
-/*********** Language Converter ***********/
-#code-node__change-language-dropdown {
+/*********** Turn Codeblock into Console Terminal ***********/
+[data-rem-tags~="ter"] #code-node {
+    background-color:   #2B3137;
 }
 
+[data-rem-tags~="ter"] span {
+    filter: invert(1);
+}
+
+[data-rem-tags~="ter"] .hierarchy-editor__tag-bar {
+    position: relative;
+    z-index: 5;
+    right: 15px;
+}
+
+[data-rem-tags~="ter"] .hierarchy-editor__tag-bar__tag span {
+    display: none;
+}
+
+[data-rem-tags~="ter"] .items-center.hierarchy-editor__tag-bar__tag {
+    background-color: transparent;
+}
+
+[data-rem-tags~="ter"] .mr-1.cursor-pointer {
+    display: none;
+}
+
+[data-rem-tags~="ter"] #code-node__change-language-dropdown .divider.text {
+    color: yellow;
+    opacity: 100%;
+}
+
+[data-rem-tags~="ter"] #code-node .dropdown.icon {
+    color: yellow;
+    opacity: 100%;
+}
+
+[data-rem-tags~="ter"] #code-node .copy.outline.icon.code-node__copy-button {
+    color: yellow;
+    opacity: 100%;
+}
+
+[data-rem-tags~="ter"] #code-node::before {
+    display:  none;
+}
+
+[data-rem-tags~="ter"] .rem-button__container .plus-button__icon {
+    color: unset;
+    background-color: transparent;
+}
+
+[data-rem-tags~="ter"] #code-node .visible.menu.transition .item .text {
+    color: white !important;
+}
+
+[data-rem-tags~="ter"] .codeLine::before {
+    opacity: 20%;
+}
+
+/*********** Language Converter ***********/
 #code-node__change-language-dropdown .divider.text {
     opacity: 50%;
 }
-
 #code-node .dropdown.icon {
     opacity: 50%;
 }
-
 #code-node .copy.outline.icon.code-node__copy-button {
     opacity: 50%;
 }
-
-#code-node .ui.upward.dropdown {
-}
-
-#code-node .ui.active.visible.dropdown {
-}
-
-#code-node .ui.dropdown {
-}
-
-#code-node .ui.dropdown .menu {
-}
-
-#code-node .ui.dropdown .menu >.item {
-}
-
-#code-node .ui.dropdown .menu >.item:hover {
-}
-
 #code-node .visible.menu.transition {
     position:           absolute;
     background-color:   #F5F4F0 !important;
@@ -119,4 +154,4 @@
     color:              yellow !important;
     border-radius:      3px;
     text-align:         center;
-}
+}  
