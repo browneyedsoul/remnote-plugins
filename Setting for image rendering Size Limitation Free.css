@@ -1,0 +1,19 @@
+.Queue .indented-rem div {
+	min-width: 100% !important;
+}
+
+.Queue .inline-block,
+.Queue .inline-block.align-text-top group,
+.Queue .tumbnail--with-width {
+	min-width: fit-content;
+	height: auto !important;
+	max-height: 100% !important;
+}
+
+[data-rem-tags~="ori"] .inline-block,
+[data-rem-tags~="ori"] .inline-block.align-text-top group,
+[data-rem-tags~="ori"] .tumbnail--with-width {
+	min-width: fit-content;
+	height: auto !important;
+	max-height: 100% !important;
+}
