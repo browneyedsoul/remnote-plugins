@@ -14,6 +14,9 @@ https://forum.remnote.io/c/developers-api/9
 
 ![CleanShot 2021-08-16 at 23 21 45](https://user-images.githubusercontent.com/56161102/129578910-f5bdf063-dc52-400d-97ff-5a327fa00819.png)
 
+## Setting for image rendering Size Limitation Free
+![7263e14d295f5d6c232d44d9e115db33a243d340](https://user-images.githubusercontent.com/56161102/133884634-a67a9cfd-f9f8-47c3-b2bf-f0d27f3c4ec7.gif)
+![0b9bd70668dbd1042eee85d22416202462b6ca50_2_619x500](https://user-images.githubusercontent.com/56161102/133884643-7d81d70e-0158-4da2-95a7-80efcce911cd.jpg)
 
 
 
