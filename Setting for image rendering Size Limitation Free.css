@@ -24,3 +24,11 @@
 	height: auto !important;
 	max-height: 100% !important;
 }
+
+[data-rem-tags~="ori"] .items-center.hierarchy-editor__tag-bar__tag {
+	background-color: transparent;
+}
+
+[data-rem-tags~="ori"] .hierarchy-editor__tag-bar__tag span {
+	display: none;
+}
