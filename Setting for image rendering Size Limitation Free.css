@@ -9,16 +9,14 @@
 }
 
 .Queue .inline-block,
-.Queue .inline-block.align-text-top group,
 .Queue .tumbnail--with-width {
-	min-width: fit-content;
+	min-width: fit-content !important;
 	height: auto !important;
 	max-height: 100% !important;
 }
 
 /*********** Original Image ***********/
 [data-rem-tags~="card-item"] .inline-block,
-[data-rem-tags~="card-item"] .inline-block.align-text-top group,
 [data-rem-tags~="card-item"] .tumbnail--with-width {
 	min-width: fit-content;
 	height: auto !important;
@@ -26,7 +24,6 @@
 }
 
 [data-rem-tags~="ori"] .inline-block,
-[data-rem-tags~="ori"] .inline-block.align-text-top group,
 [data-rem-tags~="ori"] .tumbnail--with-width {
 	min-width: fit-content;
 	height: auto !important;
