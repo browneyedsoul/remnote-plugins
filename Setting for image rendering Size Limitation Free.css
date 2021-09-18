@@ -17,6 +17,14 @@
 }
 
 /*********** Original Image ***********/
+[data-rem-tags~="card-item"] .inline-block,
+[data-rem-tags~="card-item"] .inline-block.align-text-top group,
+[data-rem-tags~="card-item"] .tumbnail--with-width {
+	min-width: fit-content;
+	height: auto !important;
+	max-height: 100% !important;
+}
+
 [data-rem-tags~="ori"] .inline-block,
 [data-rem-tags~="ori"] .inline-block.align-text-top group,
 [data-rem-tags~="ori"] .tumbnail--with-width {
