@@ -1,3 +1,9 @@
+/*********** Full Size Flashcard ***********/
+.Queue {
+    width: calc(100% - 15%) !important;
+    min-height: calc(100% - 20%) !important;
+}
+
 .Queue .indented-rem div {
 	min-width: 100% !important;
 }
@@ -10,6 +16,7 @@
 	max-height: 100% !important;
 }
 
+/*********** Original Image ***********/
 [data-rem-tags~="ori"] .inline-block,
 [data-rem-tags~="ori"] .inline-block.align-text-top group,
 [data-rem-tags~="ori"] .tumbnail--with-width {
