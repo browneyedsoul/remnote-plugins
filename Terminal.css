@@ -1,54 +1,73 @@
-[data-rem-container-tags~="terminal"] {
-    background-color: var(--console-background-color, #3A3A3A);
+[data-rem-tags~="terminal"] .EditorContainer {
+	padding-left: 15px;
+}
+
+[data-rem-tags~="terminal"] .rem-bullet__container {
+	padding-left: 10px;
+}
+
+[data-rem-tags~="terminal"] .rem-bullet {
+	filter: invert(1);
+}
+
+div.rem[data-rem-tags~="terminal"] {
+	background-color: var(--console-background-color, #3A3A3A);
 	color: #D0D0CD;
 	font-family: Roboto Mono, Fira code;
-    margin-left: 15px;       
+    margin-left: 25px;       
     margin-right: 0px;  
 }
 
-[data-rem-container-tags~="terminal"] > .TreeNode,
-[data-rem-container-tags~="terminal"] > .TreeNode > .tree-node-container > .TreeNode,
-[data-rem-container-tags~="terminal"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
-[data-rem-container-tags~="terminal"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode {
-	border-left: unset;
-	border-left: inherit;
-}
+/*********** Terminal Text Color ***********/
+	[data-rem-tags~="terminal"] .rem-text .quote {
+		background-color: unset;
+		color: #647280; 
+	}
+	
+	[data-rem-tags~="terminal"] .rem-text .highlight-color--red {
+		background-color: unset !important;
+		color: #FF7E61; 
+	}
+	
+	[data-rem-tags~="terminal"] .rem-text .highlight-color--orange {
+	 	background-color: unset !important;
+	 	color: #FCB42E;
+	}
+	
+	[data-rem-tags~="terminal"] .rem-text .highlight-color--yellow {
+		background-color: unset !important;
+		color: #FFFB00;
+	}
+	
+	[data-rem-tags~="terminal"] .rem-text .highlight-color--green {
+		background-color: unset !important;
+		color: #53FC00;
+	}
+	
+	[data-rem-tags~="terminal"] .rem-text .highlight-color--blue {
+		background-color: unset !important;
+		color: #00F9FC;
+	}
+	
+	[data-rem-tags~="terminal"] .rem-text .highlight-color--purple {
+		background-color: unset !important;
+		color: #FF60FE;
+	} 
+	
+	.TreeNode--list--in-card-content {
+		border-left: 0.1px solid white !important;
+	}
 
-[data-rem-container-tags~="terminal"] .rem-text .quote {
-	background-color: unset;
-	color: #647280; 
-}
-
-[data-rem-container-tags~="terminal"] .rem-text .highlight-color--red {
-	background-color: unset;
-	color: #FF7E61; 
-}
-
-[data-rem-container-tags~="terminal"] .rem-text .highlight-color--orange {
- 	background-color: unset;
- 	color: #FCB42E;
-}
-
-[data-rem-container-tags~="terminal"] .rem-text .highlight-color--yellow {
-	background-color: unset;
-	color: #FFFB00;
-}
-
-[data-rem-container-tags~="terminal"] .rem-text .highlight-color--green {
-	background-color: unset;
-	color: #53FC00;
-}
-
-[data-rem-container-tags~="terminal"] .rem-text .highlight-color--blue {
-	background-color: unset;
-	color: #00F9FC;
-}
-
-[data-rem-container-tags~="terminal"] .rem-text .highlight-color--purple {
-	background-color: unset;
-	color: #FF60FE;
-} 
-
-[data-rem-container-tags~="terminal"]:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar {
-	display: none;
-}
+/*********** Declutter Tag ***********/
+	[data-rem-tags~="terminal"] .hierarchy-editor__tag-bar__tag {
+		color: transparent;
+		background-color: transparent;
+	}
+	
+	[data-rem-tags~="terminal"] .hierarchy-editor__tag-bar__tag span {
+		display: none;
+	}
+	
+	[data-rem-tags~="terminal"] .items-center.hierarchy-editor__tag-bar__tag {
+		background-color: transparent !important;
+	}
