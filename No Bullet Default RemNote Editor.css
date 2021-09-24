@@ -1,0 +1,270 @@
+/*********** Root ***********/
+	:root {
+	    /*********** Basic Color ***********/
+	    --bullet-main:#53555F;
+	    --bullet-doc:#50FA7B;
+	    --bullet-folder:#53555F;
+	    --bullet-concept:#53555F;
+	    --bullet-descriptor:#53555F;
+	    /*********** Practice direction ***********/
+	    --forward-practice-color: red;
+	    --backward-practice-color: purple;
+	    --both-practice-color: orange;
+	    --disabled-practice-color: gray;
+	}
+/*********** Rem Bullet for Normal Rem-text & Header ***********/
+	/*********** Header 1 ***********/
+		.rem-container--header-1 .rem-bullet__container {
+			position: relative;
+			top: 1px;
+		}
+
+		.rem-header--1 {
+			font-size: 36px !important;
+			color: ; /*#E6F3F7*/
+			background-color: transparent; /*#2B3137*/
+		}
+
+		.rem-text.rem-header--1 {
+			border-radius: 5px;
+		}
+
+		.rem-container--header-1 .rem-button__container {
+			top: 6px;
+		}
+
+		.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--1 {
+			border: transparent;
+			background-color: transparent;
+			height: 4px !important;
+			width: 4px !important;
+		}
+
+		.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1 {
+			border: 0.1px solid var(--bullet-main) !important;
+			background-color: var(--bullet-main);
+			height: 4px;
+			width: 4px;
+		}
+	/*********** Header 2 ***********/
+		.rem-container--header-2 .rem-bullet__container {
+			position: relative;
+			top: ;
+		}
+
+		.rem-header--2 {
+			font-size: 24px !important;
+		}
+
+		.rem-text.rem-header--2 {
+			border-radius: 5px;
+			margin-bottom: 2px;
+		}
+
+		.rem-bullet__container.rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--2 {
+			border: 0.1px solid var(--bullet-main);
+			background-color: transparent;
+			height: 4px !important;
+			width: 4px !important;
+		}
+
+		.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2 {
+			border: 0.1px solid var(--bullet-main) !important;
+			background-color: var(--bullet-main);
+			height: 4px !important;
+			width: 4px !important;
+		}
+	/*********** Header 3 ***********/
+		.rem-container--header-3 .rem-bullet__container {
+			position: relative;
+			top: ;
+		}
+
+		.rem-header--3 {
+			font-size: 20px !important;
+		}
+
+		.rem-text.rem-header--3 {
+			border-radius: 5px;
+			margin-bottom: 2px;
+		}
+
+		.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--3 {
+			border: transparent;
+			background-color: transparent;
+			height: 4px !important;
+			width: 4px !important;
+		}
+
+		.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+			border: 0.1px solid var(--bullet-main) !important;
+			background-color: var(--bullet-main);
+			height: 4px !important;
+			width: 4px !important;
+		}
+	/*********** Rem Container ALL Children Visible Bullet ***********/
+		.rem-bullet__container {
+			position: relative;
+			top: -2px;
+		}
+
+		.rem-bullet__container.rem-bullet.rem-bullet--all-children-visible {
+			border: 0.1px solid var(--bullet-main);
+			background-color: transparent;
+			height: 4px;
+			width: 4px;
+		}
+
+		.rem-bullet__container-undefined .rem-bullet.rem-bullet {
+			border:  transparent;
+			background-color: transparent;
+			margin-bottom: -2px;
+		}
+
+		.rem-text.rem-text {
+			border-radius: 5px;
+		}
+
+		.EditorContainer {
+			line-height: 140%;
+		}
+
+		.rem-bullet.rem-bullet:hover {
+			background-color: black;
+			margin-bottom: 3px;
+		}
+
+		.rem-bullet.rem-bullet--hidden-children {
+			margin-top: 4px;
+		}
+	/*********** Rem Container Children Hidden Bullet ***********/
+		.rem-bullet__container .rem-bullet.rem-bullet--hidden-children {
+			border: 0.1px solid var(--bullet-main) !important;
+			background-color: var(--bullet-main);
+			height: 4px;
+			width: 4px;
+		}
+/*********** Flashcard Bullet ***********/
+	/*********** Basic & Concept-Rem-Type Bullet ***********/
+		.rem-container--question-rem-type.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet,
+		.rem-container--concept-rem-type.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet,
+		.rem-container--descriptor-rem-type.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet,
+		.rem-container--no_content-rem-type.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
+			background: var(--both-practice-color) !important;
+		}
+
+		.rem-container--forwards-practice-enabled .rem-bullet {
+			background: var(--forward-practice-color) !important;
+			width: 26px;
+			height: 18px;
+			position: relative;
+			left: 4px;
+			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.png");
+			-webkit-mask-repeat: no-repeat;
+			-webkit-mask-size: contain;
+			overflow: visible !important;
+		}
+
+		.rem-container--backwards-practice-enabled .rem-bullet {
+			background: var(--backward-practice-color) !important;
+			width: 26px;
+			height: 18px;
+			position: relative;
+			left: 4px;
+			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.png");
+			-webkit-mask-repeat: no-repeat;
+			-webkit-mask-size: contain;
+			overflow: visible !important;
+		}
+
+		.rem-container--forwards-practice-disabled .rem-bullet {
+			background: var(--disabled-practice-color);
+			width: 26px;
+			height: 18px;
+			position: relative;
+			left: 4px;
+			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.png");
+			-webkit-mask-repeat: no-repeat;
+			-webkit-mask-size: contain;
+		}
+	/*********** Descriptor-Rem-Type Bullet ***********/
+		.rem-container--descriptor-rem-type .rem-bullet {
+			width: 14px !important;	
+			height: 12px !important;
+			position: relative !important;
+			top: 1px !important;
+			left: -1px !important;
+			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
+			-webkit-mask-repeat: no-repeat;
+			-webkit-mask-size: contain;
+		}
+	/*********** List-Type Bullet ***********/
+		.rem-container--concept-rem-type.rem-container--forwards-practice-enabled .rem-bullet.rem-bullet--hidden-children,
+		.rem-container--concept-rem-type.rem-container--backwards-practice-enabled .rem-bullet.rem-bullet--hidden-children,
+		.rem-container--no_content-rem-type.rem-container--forwards-practice-disabled .rem-bullet.rem-bullet--hidden-children {
+			border-radius: 0px !important;
+			position: relative;
+			top: -1.2px;
+			left: 0px;
+		    zoom: 3;
+		    -webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg") !important;
+			-webkit-mask-repeat: no-repeat;
+			-webkit-mask-size: contain;
+		}
+/*********** Document ***********/
+	/* Current Page [Parent > Child] Hierarchy Style */
+		#document-parents .parent-link {
+		 	color: #2B3137;
+		}
+	/* Document Title */
+		#document .document-title {
+		 	font-size: 36px;
+		 	font-weight: 700 !important;
+		 	font-family: Sans-Serif Workhorse;
+		}
+
+		#document .document-title .bold {
+		 	font-weight: 700 !important;
+		 	font-family: Sans-Serif Workhorse;
+		}
+
+		.rem-is-custom-rem-type.rem-is-custom-rem-type--in-body {
+			position: relative;
+			top: 4px;
+		}
+/*********** Make Bullet-list by Intentional Tagging ***********/
+	[data-rem-tags~="bulletlist"] {
+	    margin-left: 15px;
+	    padding-top: 1px;
+		padding-bottom: 5px;
+		left: 10px;
+	}
+
+	[data-rem-tags~="bulletlist"] .rem-bullet { 	
+		background-color: #2B3137 !important; 
+		border-color: ;
+		border-radius: 4px !important;
+		height: 4px !important;
+		width: 4px !important;
+		margin-left: px !important;
+		padding: 1px;
+		position: relative;
+		top: -1px;
+	}
+/*********** Direction Arrows ***********/
+	.separator-symbol {
+		color: red;
+	}
+
+	.separator-symbol.disabled_card {
+		color: #CACFD3;
+	}
+/*********** TreeNode Distraction Free ***********/
+	#hierarchy-editor .TreeNode {
+	    border-color: #F7F6F3 !important;
+	    border-width: 1px;
+	    transition-timing-function: linear;
+	    position: relative;
+	    background-color: transparent;
+	    padding-left: 25px;
+	}

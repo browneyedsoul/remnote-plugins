@@ -20,7 +20,7 @@
 	padding-right: 15px;
 	background-color: ;
 	height: 7px;
-	margin-right: 30px;
+	margin-right: 20px;
 	margin-left: 10px;
 }
 
@@ -37,7 +37,7 @@
 [data-rem-tags~="divider"]:focus-within {
 	background: #DCF3FF;
 	margin-left: 40px;
-	margin-right: 0px;
+	margin-right: -10px;
 	position: relative;
 	left: -15px;
 }
@@ -70,27 +70,7 @@
 }
 
 /********** Reference Hover Preview **********/
-[data-rem-tags~="divider"] .EditorContainer.EditorContainerInline {
-	color: transparent;
-	padding: 0px 15px;
-	background-color: ;
-	height:10px;
-	margin-right: 45px;
-	cursor: no-drop;
-}
-
-[data-rem-tags~="divider"]:not(:focus-within) .EditorContainer.EditorContainerInline {
-	color: transparent;
+#document-hover-preview__popup [data-rem-tags~="divider"] {
 	position: relative;
-	padding: 0px 15px;
-}
-
-[data-rem-tags~="divider"]:before .EditorContainer.EditorContainerInline {
-	content: " ";
-	display: block;
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	border-bottom: var(--divider-style, 2px solid #EEEFEE);
-	padding: 0px 15px;
+	top: -15px;
 }
