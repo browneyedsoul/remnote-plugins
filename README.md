@@ -3,7 +3,8 @@
 Any suggestions are welcome.
 https://forum.remnote.io/c/developers-api/9
 
-## No Bullet Default RemNote Editor Setting
+## Notion like No Bullet Editor Mode
+![CleanShot 2021-09-25 at 03 30 21](https://user-images.githubusercontent.com/56161102/134723496-75675c26-b36d-41eb-b209-f948cd17a9d0.png)
 
 
 
@@ -44,7 +45,7 @@ https://forum.remnote.io/c/developers-api/9
 
 
 
-## Make Custom-Thumbnail Easy Again
+## Rem Thumbnail
 ![69f4ab54dd1c030791535327f2e740feecf277a7](https://user-images.githubusercontent.com/56161102/129581292-e4fd666b-4ead-4411-b9ec-1cb4831fc80e.gif)
 ![8f16098e374ee9a24d7103aef83798e60c384558_2_401x499](https://user-images.githubusercontent.com/56161102/129581310-86760ddf-23f6-47cf-9061-67bbdcc16f29.png)
 
