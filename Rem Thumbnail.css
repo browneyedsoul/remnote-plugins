@@ -91,6 +91,13 @@
         }
     
     /*********** Reference Popup ***********/
+		#document-hover-preview__popup .bold .inline-block,
+		#document-hover-preview__popup .bold .tumbnail--with-width {
+			height: 16px !important;
+		    width: auto !important;
+			min-width: auto !important;
+		}
+    
         .popup-menu.fixed .popup-menu__item--static .inline-block, 
         .popup-menu.fixed .popup-menu__item--static .tumbnail--with-width {
             height: 16px !important;
