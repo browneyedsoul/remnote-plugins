@@ -1,4 +1,4 @@
-![Main](https://user-images.githubusercontent.com/56161102/133889162-4457527e-e257-4f47-8647-6a131777acdc.png)
+![RemNote CSS Library](https://user-images.githubusercontent.com/56161102/134761779-cd39ce14-3ea5-433f-9a14-d642f52c7e5e.png)
 
 Any suggestions are welcome.
 https://forum.remnote.io/c/developers-api/9
