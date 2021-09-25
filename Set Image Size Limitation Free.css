@@ -1,9 +1,4 @@
-/*********** Full Size Flashcard ***********/
-.Queue {
-    width: calc(100% - 15%) !important;
-    min-height: calc(100% - 20%) !important;
-}
-
+/*********** Flashcard ***********/
 .Queue .indented-rem div {
 	min-width: 100% !important;
 }
@@ -13,6 +8,8 @@
 	min-width: fit-content !important;
 	height: auto !important;
 	max-height: 100% !important;
+	overflow: auto;
+	white-space: pre;
 }
 
 /*********** Original Image ***********/
@@ -21,6 +18,15 @@
 	min-width: fit-content;
 	height: auto !important;
 	max-height: 100% !important;
+}
+
+[data-rem-tags~="ori"] .bg-blue-100.border-2 {
+	display: none;
+}
+
+[data-rem-tags~="ori"] {
+	overflow: auto;
+	white-space: pre;
 }
 
 [data-rem-tags~="ori"] .inline-block,
