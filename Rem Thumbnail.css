@@ -98,7 +98,7 @@
             min-width: auto !important;
             padding-right: 2px;
         }
-    
+
 		#document-hover-preview__popup .bold .inline-block,
 		#document-hover-preview__popup .bold .tumbnail--with-width {
 			height: 16px !important;
@@ -193,6 +193,14 @@
             background-color: transparent !important;
         }
 /*********** Tag bar ***********/
+    #DropToOpenAsDocument .inline-block, 
+    #DropToOpenAsDocument .tumbnail--with-width {
+        height: 16px !important;
+        width: auto !important;
+        min-width: auto !important;
+        padding-right: 2px;
+    }
+
     .hierarchy-editor__tag-bar__tag .tumbnail--with-width,
     .hierarchy-editor__tag-bar__tag .inline-block {
         height: 16px;
