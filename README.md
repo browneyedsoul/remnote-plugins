@@ -25,6 +25,8 @@ https://forum.remnote.io/c/developers-api/9
 ![b3f69bae4dfd9824c2ccabe58d67a0ea497514f2](https://user-images.githubusercontent.com/56161102/129580147-c0507bcc-a4d1-4522-b48d-d7efdf831e0f.gif)
 
 
+## Sidebar Darkmode for Light-theme User
+![CleanShot 2021-09-26 at 18 52 47](https://user-images.githubusercontent.com/56161102/134802986-1db76d66-b057-49bf-8121-5933c66f7466.png)
 
 
 ## Modern Scrollable Codeblock
