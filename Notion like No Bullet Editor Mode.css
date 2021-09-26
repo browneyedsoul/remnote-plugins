@@ -252,5 +252,7 @@
 	    transition-timing-function: linear;
 	    position: relative;
 	    background-color: transparent;
-	    padding-left: 25px;
+	    padding-left: 5px;
+	    left: 20px;
+		margin-right: 20px;
 	}
