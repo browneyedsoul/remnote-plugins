@@ -1,0 +1,161 @@
+/*********** Basic ***********/
+#document-sidebar {
+ 	background-color: #2B3137;
+}
+
+#document-sidebar + div > div {
+	color: yellow !important;
+	background-color: #2B3137 !important;
+}
+
+/*********** Navigation Bar ***********/
+.navigation-bar  {
+    background-color: #2B3137;
+}
+
+.hierarchy-editor-list__sticky-top__rem-container {
+	position: relative;
+	top: -10px;	
+}
+
+.hierarchy-editor-list__sticky-top__rem-container .EditorContainer {
+	zoom: 90%;
+}
+
+.hierarchy-editor-list__sticky-top__rem-container .rem-is-custom-rem-type--in-body {
+	zoom: 90%;
+}
+
+/*********** RemNote Help Page Top ***********/
+.css-bBkpDG {
+	filter: invert(1);
+}
+
+/*********** Account Capsule ***********/
+#document-sidebar__account-capsule {
+	background-color: #FFFFFF;
+}
+
+/*********** All Notes & Flashcards ***********/
+#document-sidebar_top .flex.items-center.mb-1 {
+	font-family: Roboto Mono, Firacode, Monospace;
+	color: yellow;
+	zoom: 125%;
+	margin-left: 5px;
+	background-color: #2B3137; /* fix hover color*/
+}
+
+#document-sidebar_top .css-fqRAnH {
+	color: yellow;
+	zoom: 150%;
+}
+
+#document-sidebar_top .block .css-pUlLN {
+	zoom: 150%;
+	color: yellow;
+}
+
+#document-sidebar_top .block .flex-grow {
+	font-family: Roboto Mono, Firacode, Monospace;
+	color: yellow;
+}
+
+/*********** Sidebar Top Level Pinned, Draft, Archive Symbol ***********/
+#document-sidebar .title.cursor-pointer .css-fqRAnH {
+	zoom: 150%;
+	color: black;
+}
+
+#document-sidebar .title.cursor-pointer .css-pUlLN {
+	color: black;
+}
+
+.accordion.ui.fluid .title.cursor-pointer {
+	background-color: #FFFFFF;
+	zoom: 150%;
+	max-height: 5px !important;
+	border-radius: 5px;
+}
+
+/*********** Power-up Symbol ***********/
+#document-sidebar .rem-is-custom-rem-type {
+	filter: invert(1);
+	position: relative;
+	top: 2px !important;
+}
+
+/*********** Sidebar Document lists ***********/
+#document-sidebar .p-2.flex.group-hover-bg-hover-bg-transparent {
+	height: 20px !important;
+}
+
+#document-sidebar .bg-white.cursor-pointer {
+	display: none;
+}
+
+#document-sidebar .RichTextViewer {
+	color: #C7C7C7;
+	position: relative;
+	top: 1px;
+}
+
+#document-sidebar .tumbnail--with-width + button {
+	display: none;
+}
+
+#document-sidebar .highlight-color--red,
+#document-sidebar .highlight-color--orange,
+#document-sidebar .highlight-color--yellow,
+#document-sidebar .highlight-color--green,
+#document-sidebar .highlight-color--blue,
+#document-sidebar .highlight-color--purple {
+	margin-left: 5px;
+	padding: 1px !important;
+	border-radius: 3px;
+}
+
+#document-sidebar .RichTextViewer .quote {
+	margin-left: 5px !important;
+	font-family: Roboto Mono !important;
+	font-size: 14px !important;
+	border-radius: 6px !important;
+	padding: 1px !important;
+	padding-top: 		1px;
+	padding-bottom: 	1px;
+}
+
+.document-list-item__folder-icon {
+	color: #C7C7C7;
+}
+
+#document-sidebar .float-right {
+	color: yellow;
+}
+
+#document-sidebar .rounded-md.text-primary-70 {
+	background-color: transparent !important;
+	border: 2px solid yellow !important;
+}
+
+.flex-grow.nowrap-RichTextViewer:only-child {
+	margin-left: 25px;
+}
+
+/*********** RemNote Help Page Sidebar Document lists ***********/
+.block.group.cursor-pointer .highlight-color--red .RichTextViewer, 
+.block.group.cursor-pointer .highlight-color--orange .RichTextViewer,
+.block.group.cursor-pointer .highlight-color--yellow .RichTextViewer,
+.block.group.cursor-pointer .highlight-color--green .RichTextViewer,
+.block.group.cursor-pointer .highlight-color--blue .RichTextViewer,
+.block.group.cursor-pointer .highlight-color--purple .RichTextViewer {
+	color: black !important;
+}
+
+.block.group.cursor-pointer .highlight-color--red .document-list-item__folder-icon,
+.block.group.cursor-pointer .highlight-color--orange .document-list-item__folder-icon,
+.block.group.cursor-pointer .highlight-color--yellow .document-list-item__folder-icon,
+.block.group.cursor-pointer .highlight-color--green .document-list-item__folder-icon,
+.block.group.cursor-pointer .highlight-color--blue .document-list-item__folder-icon,
+.block.group.cursor-pointer .highlight-color--purple .document-list-item__folder-icon {
+	filter: invert(1);
+}
