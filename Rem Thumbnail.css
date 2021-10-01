@@ -25,10 +25,11 @@
         
         #DocumentTitle .inline-block, 
         #DocumentTitle .tumbnail--with-width {
-            display: inline-block;
-            height: 36px !important;
+            min-height: 36px !important;
             width: auto !important;
-            margin-top: 4.2px;
+            min-width: auto !important;
+            position: relative;
+            top: 9px;
         }
         
         #DocumentTitle .inline-block {
@@ -90,21 +91,28 @@
             padding-right: 2px;
         }
     
-    /*********** Reference Popup ***********/
-        .popup-menu.fixed .EditorContainer .inline-block, 
-        .popup-menu.fixed .EditorContainer .tumbnail--with-width {
-            height: auto !important;
+    /*********** Reference & Tag Popup ***********/
+        .popup-menu .inline-block, 
+        .popup-menu .tumbnail--with-width {
+            height: 16px !important;
             width: auto !important;
             min-width: auto !important;
             padding-right: 2px;
         }
-
-		#document-hover-preview__popup .bold .inline-block,
-		#document-hover-preview__popup .bold .tumbnail--with-width {
-			height: 16px !important;
-		    width: auto !important;
-			min-width: auto !important;
-		}
+        
+        .popup-menu.fixed .bold .inline-block {
+            height: 16px !important;
+            width: 16px !important;
+            min-width: auto !important;
+            padding-right: 2px;
+        }
+    
+        #document-hover-preview__popup .bold .inline-block,
+        #document-hover-preview__popup .bold .tumbnail--with-width {
+            height: 16px !important;
+            width: auto !important;
+            min-width: auto !important;
+        }
     
         .popup-menu.fixed .popup-menu__item--static .inline-block, 
         .popup-menu.fixed .popup-menu__item--static .tumbnail--with-width {
@@ -267,51 +275,51 @@
         max-height: 100% !important;
     }
 /*********** Portal ***********/
-	.popup-menu.fixed .inline-block,
-	.popup-menu.fixed .tumbnail--with-width {
-		height: 16px !important;
-		width: auto !important;
-		min-width: auto !important;
-		padding-right: 2px;
-	}
-	
-	/* Portal Popup for Hidden rems */
-	#search-results__result .inline-block,
-	#search-results__result .tumbnail--with-width {
-		height: 16px !important;
-		width: auto !important;
-		min-width: auto !important;
-		padding-right: 2px;
-	}
-	
-	/* Portal-Tree-Node-Box (Tagged Rem Box ...) */
-	.portal-tree-node-box .rem-text .inline-block, 
-	.portal-tree-node-box .rem-text .tumbnail--with-width {
-	    height: 16px !important;
-	    min-width: auto !important;
-	    width: auto !important;
-	}
-	
-	.portal-tree-node-box .rem-text.rem-header--1 .inline-block, 
-	.portal-tree-node-box .rem-text.rem-header--1 .tumbnail--with-width {
-	    height: 36px !important;
-	    min-width: auto !important;
-	    width: auto !important;
-	}
-	
-	.portal-tree-node-box .rem-text.rem-header--2 .inline-block, 
-	.portal-tree-node-box .rem-text.rem-header--2 .tumbnail--with-width {
-	    height: 24px !important;
-	    min-width: auto !important;
-	    width: auto !important;
-	}
-	
-	.portal-tree-node-box .rem-text.rem-header--3 .inline-block, 
-	.portal-tree-node-box .rem-text.rem-header--3 .tumbnail--with-width {
-	    height: 18px !important;
-	    min-width: auto !important;
-	    width: auto !important;
-	}
+    .popup-menu.fixed .inline-block,
+    .popup-menu.fixed .tumbnail--with-width {
+        height: 16px !important;
+        width: auto !important;
+        min-width: auto !important;
+        padding-right: 2px;
+    }
+    
+    /* Portal Popup for Hidden rems */
+    #search-results__result .inline-block,
+    #search-results__result .tumbnail--with-width {
+        height: 16px !important;
+        width: auto !important;
+        min-width: auto !important;
+        padding-right: 2px;
+    }
+    
+    /* Portal-Tree-Node-Box (Tagged Rem Box ...) */
+    .portal-tree-node-box .rem-text .inline-block, 
+    .portal-tree-node-box .rem-text .tumbnail--with-width {
+        height: 16px !important;
+        min-width: auto !important;
+        width: auto !important;
+    }
+    
+    .portal-tree-node-box .rem-text.rem-header--1 .inline-block, 
+    .portal-tree-node-box .rem-text.rem-header--1 .tumbnail--with-width {
+        height: 36px !important;
+        min-width: auto !important;
+        width: auto !important;
+    }
+    
+    .portal-tree-node-box .rem-text.rem-header--2 .inline-block, 
+    .portal-tree-node-box .rem-text.rem-header--2 .tumbnail--with-width {
+        height: 24px !important;
+        min-width: auto !important;
+        width: auto !important;
+    }
+    
+    .portal-tree-node-box .rem-text.rem-header--3 .inline-block, 
+    .portal-tree-node-box .rem-text.rem-header--3 .tumbnail--with-width {
+        height: 18px !important;
+        min-width: auto !important;
+        width: auto !important;
+    }
 /*********** Rem Reference ***********/
     .rem-reference .tumbnail--with-width, 
     .rem-reference .inline-block {
