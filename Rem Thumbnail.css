@@ -91,16 +91,25 @@
             padding-right: 2px;
         }
     
-    /*********** Reference & Tag Popup ***********/
+    /*********** Reference & Tag & Portal Popup ***********/
         .popup-menu .inline-block, 
-        .popup-menu .tumbnail--with-width {
+        .popup-menu .w-full.h-full.tumbnail--with-width {
             height: 16px !important;
             width: auto !important;
             min-width: auto !important;
+            max-width: auto !important;
             padding-right: 2px;
         }
         
         .popup-menu.fixed .bold .inline-block {
+            height: 16px !important;
+            width: 16px !important;
+            min-width: auto !important;
+            padding-right: 2px;
+        }
+        
+        .portal-tree-node-box .rem-text .inline-block,
+        .portal-tree-node-box .rem-text .tumbnail--with-width {
             height: 16px !important;
             width: 16px !important;
             min-width: auto !important;
