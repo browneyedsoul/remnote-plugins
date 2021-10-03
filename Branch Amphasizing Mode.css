@@ -1,7 +1,7 @@
 .rem-bullet::before {
 	content: "";	
-	border-bottom: 1px solid black;
-	border-left: 1px solid black;
+	border-bottom: 1px dotted black;
+	border-left: 1px dotted black;
 	padding-right: 22px;
 	padding-top: 14px;
 	padding-bottom: px;
@@ -11,10 +11,11 @@
 }
 
 .TreeNode {
-	border-left: 1px solid black !important;
+	border-left: 1px dotted black !important;
 }
 
-/*.rem-bullet::after {
+/*
+.rem-bullet::after {
 	content: "";	
 	display: block;
 	border-left: 1px solid white;
