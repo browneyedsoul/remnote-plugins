@@ -69,6 +69,10 @@
 	display: none; 
 }
 
+[data-rem-tags~="divider"] .rem-checkbox {
+	display: none; 
+}
+
 /********** Reference Hover Preview **********/
 #document-hover-preview__popup [data-rem-tags~="divider"] {
 	position: relative;
