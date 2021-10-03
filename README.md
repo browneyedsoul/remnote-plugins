@@ -8,7 +8,7 @@ https://forum.remnote.io/c/developers-api/9
 ## Notion like No Bullet Editor Mode
 ![CleanShot 2021-09-26 at 22 37 06](https://user-images.githubusercontent.com/56161102/134810445-378b6e6f-cd62-4a50-a6ea-76b6b04c324c.png)
 
-## Branch Amphasizing Editor Mode
+## Branch Emphasizing Editor Mode
 ![CleanShot 2021-10-03 at 17 14 57](https://user-images.githubusercontent.com/56161102/135745657-5daffdc3-6e95-4bc8-9bd3-14619397be0f.png)
 
 
