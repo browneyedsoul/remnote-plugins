@@ -9,7 +9,7 @@ https://forum.remnote.io/c/developers-api/9
 ![CleanShot 2021-09-26 at 22 37 06](https://user-images.githubusercontent.com/56161102/134810445-378b6e6f-cd62-4a50-a6ea-76b6b04c324c.png)
 
 ## Branch Amphasizing Editor Mode
-![CleanShot 2021-10-03 at 16 57 19](https://user-images.githubusercontent.com/56161102/135745233-acca69d9-34f3-4ee9-a904-8d58266dbd20.png)
+![44eb55b9871cfa9ec5bcc97c060ecb799ad03ef8_2_421x500](https://user-images.githubusercontent.com/56161102/135745638-1ad6c863-c84f-444d-95e8-7661284f3151.png)
 
 
 
