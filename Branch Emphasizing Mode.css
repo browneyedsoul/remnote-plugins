@@ -6,6 +6,7 @@
 	padding-top: 14px;
 	padding-bottom: px;
 	position: relative;
+	z-index: -1;
 	top: -18px;
 	left: -22px;
 }
