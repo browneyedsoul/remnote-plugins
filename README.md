@@ -8,6 +8,8 @@ https://forum.remnote.io/c/developers-api/9
 ## Notion like No Bullet Editor Mode
 ![CleanShot 2021-09-26 at 22 37 06](https://user-images.githubusercontent.com/56161102/134810445-378b6e6f-cd62-4a50-a6ea-76b6b04c324c.png)
 
+## Branch Amphasizing Editor Mode
+![CleanShot 2021-10-03 at 16 57 19](https://user-images.githubusercontent.com/56161102/135745233-acca69d9-34f3-4ee9-a904-8d58266dbd20.png)
 
 
 
@@ -34,11 +36,11 @@ https://forum.remnote.io/c/developers-api/9
 ![CleanShot 2021-09-16 at 17 10 33](https://user-images.githubusercontent.com/56161102/133575648-e3b0311d-da26-4123-b4b2-79bf0a2028af.png)
 
 
-## Modern Table Row
+## Modern Table Row(Deprecated)
 
 
 
-## Simple Column Table
+## Simple Column Table(Deprecated)
 ![6f55ee80750348fc0c5a0beec224da939aa2f3d6_2_572x499](https://user-images.githubusercontent.com/56161102/129581987-d9833334-3031-43c1-88fa-1cb3d1820238.png)
 ![78312fab6e3fdb1741c56f901f633c5a75901aac](https://user-images.githubusercontent.com/56161102/129582005-5bd6eccf-6553-43f5-8753-8e0e66e91673.gif)
 
