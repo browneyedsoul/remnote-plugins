@@ -1,0 +1,28 @@
+.rem-bullet::before {
+	content: "";	
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	padding-right: 22px;
+	padding-top: 14px;
+	padding-bottom: px;
+	position: relative;
+	top: -18px;
+	left: -22px;
+}
+
+.TreeNode {
+	border-left: 1px solid black !important;
+}
+
+/*.rem-bullet::after {
+	content: "";	
+	display: block;
+	border-left: 1px solid white;
+	padding-right: 22px;
+	padding-top: 7px;
+	padding-bottom: 10px;
+	position: relative;
+	top: -18px;
+	left: -22px;
+}
+*/
