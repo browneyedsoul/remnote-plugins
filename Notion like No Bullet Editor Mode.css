@@ -14,6 +14,10 @@
 	} 
 /*********** Rem Bullet for Normal Rem-text & Header ***********/
 	/*********** Normal Rem-text ***********/
+		.rem-text {
+			font-family: "Helvetica Neue";
+		}
+
 		.rem-bullet {
 			border-radius: 2px !important;
 			margin-top: 4px;
