@@ -12,19 +12,5 @@
 }
 
 .TreeNode {
-	border-left: 1px dotted black !important;
+	border-left: 1px dashed; black !important;
 }
-
-/*
-.rem-bullet::after {
-	content: "";	
-	display: block;
-	border-left: 1px solid white;
-	padding-right: 22px;
-	padding-top: 7px;
-	padding-bottom: 10px;
-	position: relative;
-	top: -18px;
-	left: -22px;
-}
-*/
