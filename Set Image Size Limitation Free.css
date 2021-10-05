@@ -1,4 +1,4 @@
-/*********** Flashcard ***********/
+/*********** Get Original Image While Reviewing ***********/
 .Queue .indented-rem div {
 	min-width: 100% !important;
 }
@@ -12,7 +12,6 @@
 	white-space: pre;
 }
 
-/*********** Original Image ***********/
 [data-rem-tags~="card-item"] .inline-block,
 [data-rem-tags~="card-item"] .tumbnail--with-width {
 	min-width: fit-content;
@@ -20,22 +19,15 @@
 	max-height: 100% !important;
 }
 
-[data-rem-tags~="ori"] .bg-blue-100.border-2 {
-	display: none;
-}
-
-[data-rem-tags~="ori"] {
-	overflow: auto;
-	white-space: pre;
-}
-
-[data-rem-tags~="ori"] .inline-block,
-[data-rem-tags~="ori"] .tumbnail--with-width {
+/*********** Get Original Image While Editing ***********/
+[data-rem-tags~="ori"] .inline-block {
 	min-width: fit-content;
 	height: auto !important;
 	max-height: 100% !important;
 }
 
+
+/*********** Tag Declutter ***********/
 [data-rem-tags~="ori"] .items-center.hierarchy-editor__tag-bar__tag {
 	background-color: transparent;
 }
