@@ -12,13 +12,6 @@
 	white-space: pre;
 }
 
-[data-rem-tags~="card-item"] .inline-block,
-[data-rem-tags~="card-item"] .tumbnail--with-width {
-	min-width: fit-content;
-	height: auto !important;
-	max-height: 100% !important;
-}
-
 /*********** Get Original Image While Editing ***********/
 [data-rem-tags~="ori"] .inline-block {
 	min-width: fit-content;
