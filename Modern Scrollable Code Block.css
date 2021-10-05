@@ -1,158 +1,139 @@
 /*********** Basic (Inline)CodeBlock Style ***********/
-.quote {
-    color:          #E64400;
-    padding-right:  3px !important;
-    padding-top:    0px;
-    padding-bottom: 0px;
-    line-height:    160%;
-}
+    .quote {
+        font-family:        "Roboto Mono", "Fira code", "Monospace";
+        font-size:          0.9em !important; 
+        background-color:   #F7F6F3;
+        color:              #E64400;
+        padding-right:      3px;
+        padding-top:        1px;
+        padding-bottom:     1px;
+    }
 
-#code-node {
-    padding-left:   40px !important;
-    position:       relative;
-    overflow:       auto;
-    white-space:    pre;
-}
+    #code-node {
+        font-family:    "Roboto Mono", "Fira code" !important;
+        font-size:      0.9em !important; 
+        border:         0 !important;
+        padding-right:  50px !important;
+        padding-left:   40px !important;
+        overflow:       auto;
+        white-space:    pre;
+    }
 
-#code-node, #quote, .quote {
-    font-family:        Roboto Mono, Fira code;
-    background-color:   #F7F6F3;
-    border:             0;
-    padding-right:      50px;
-    font-size:          0.9em !important; 
-    line-height:        160%;
-    margin-top:         2px;
-    margin-bottom:      2px;
-    margin-left:        0px !important;
-    border-radius:      0.3em;
-}
+    #code-node, #quote, .quote {
+        margin-top:         2px;
+        margin-bottom:      2px;
+        margin-left:        0px !important;
+        border-radius:      0.3em;
+    }
 
-#code-node + div {
-    display:  none;
-}
+    .EditorContainer #code-node {
+        height: ;
+    }
 
-/*********** Codeblock Line Number Bar ***********/
-:root {
-    --line-number-width: 40px;
-    --line-number-color: #C7CCCF;
-    --line-number-background-color: #F7F6F3; /*#EDECE9*/
-    --code-node-border-radius: 2px;
-}
+/*********** Codeblock Line Number ***********/
+    :root {
+        --line-number-width: 40px;
+        --line-number-color: #C7CCCF;
+        --line-number-background-color: #F7F6F3; /*#EDECE9*/
+        --code-node-border-radius: 2px;
+    }
 
-.codeLine {
-    counter-increment: codeLineNumber;
-}
+    .codeLine {
+        counter-increment: codeLineNumber;
+    }
 
-.codeLine::before {
-    color:          var(--line-number-color);
-    position:       absolute;
-    left:           0px;
-    width:          var(--line-number-width);
-    box-sizing:     border-box;
-    padding-right:  5px;
-    padding-top:    1px;
-    content:        counters(codeLineNumber, ".") " ";
-    text-align:     center;
-    font-family:    Helvetica;
-    font-size:      13px;
-    font-weight:    100;
-}
+    .codeLine::before {
+        color:          var(--line-number-color);
+        position:       absolute;
+        left:           0px;
+        width:          var(--line-number-width);
+        box-sizing:     border-box;
+        padding-right:  5px;
+        padding-top:    1px;
+        content:        counters(codeLineNumber, ".") " ";
+        text-align:     center;
+        font-family:    Helvetica;
+        font-size:      13px;
+        font-weight:    100;
+    }
 
-#code-node::before {
-    content:            "";
-    display:            block;
-    position:           absolute;
-    left:               0;
-    top:                0;
-    bottom:             0;
-    background-color:   var(--line-number-background-color, rgba(0, 0, 0, 0.04));
-    border-radius:      var(--code-node-border-radius, 7px) 0 0;
-    width:              calc(var(--line-number-width, 45px) - 7px);
-}
-
-/*********** Turn Codeblock into Console Terminal ***********/
-[data-rem-tags~="ter"] #code-node {
-    background-color:   #2B3137;
-    caret-color: white;
-}
-
-[data-rem-tags~="ter"] span {
-    filter: invert(1);
-}
-
-[data-rem-tags~="ter"] .hierarchy-editor__tag-bar {
-    position: relative;
-    z-index: 5;
-    right: 15px;
-}
-
-[data-rem-tags~="ter"] .hierarchy-editor__tag-bar__tag span {
-    display: none;
-}
-
-[data-rem-tags~="ter"] .items-center.hierarchy-editor__tag-bar__tag {
-    background-color: transparent;
-}
-
-[data-rem-tags~="ter"] .mr-1.cursor-pointer {
-    display: none;
-}
-
-[data-rem-tags~="ter"] #code-node__change-language-dropdown .divider.text {
-    color: yellow;
-    opacity: 100%;
-}
-
-[data-rem-tags~="ter"] #code-node .dropdown.icon {
-    color: yellow;
-    opacity: 100%;
-}
-
-[data-rem-tags~="ter"] #code-node .copy.outline.icon.code-node__copy-button {
-    color: yellow;
-    opacity: 100%;
-}
-
-[data-rem-tags~="ter"] #code-node::before {
-    display:  none;
-}
-
-[data-rem-tags~="ter"] .rem-button__container .plus-button__icon {
-    color: unset;
-    background-color: transparent;
-}
-
-[data-rem-tags~="ter"] #code-node .visible.menu.transition .item .text {
-    color: white !important;
-}
-
-[data-rem-tags~="ter"] .codeLine::before {
-    opacity: 20%;
-}
+    #code-node::before {
+        content:            "";
+        display:            block;
+        position:           absolute;
+        left:               0;
+        top:                0;
+        bottom:             0;
+        background-color:   var(--line-number-background-color, rgba(0, 0, 0, 0.04));
+        border-radius:      var(--code-node-border-radius, 7px) 0 0;
+        width:              calc(var(--line-number-width, 45px) - 7px);
+    }
 
 /*********** Language Converter ***********/
-#code-node__change-language-dropdown .divider.text {
-    opacity: 50%;
-}
-#code-node .dropdown.icon {
-    opacity: 50%;
-}
-#code-node .copy.outline.icon.code-node__copy-button {
-    opacity: 50%;
-}
-#code-node .visible.menu.transition {
-    position:           absolute;
-    background-color:   #F5F4F0 !important;
-    position:           relative;
-    height:             240px !important;
-    width:              100px !important;
-    z-index:            10 !important;
-}
+    #code-node__change-language-dropdown {
+        position: relative;
+        opacity: 20%;
+    }
 
-#code-node .visible.menu.transition .selected.item, 
-#code-node .visible.menu.transition .ui.header.text {
-    background-color:   #FD8A88 !important;
-    color:              yellow !important;
-    border-radius:      3px;
-    text-align:         center;
-}  
+    #code-node__change-language-dropdown:hover {
+        position: relative;
+        opacity: 70%;
+        background-color: #F1FA8C;
+        padding-right: 5px;
+        border-radius: 5px;
+    }
+    
+/*********** Turn Codeblock into Console Terminal ***********/
+    [data-rem-tags~="ter"] #code-node {
+        background-color:   #2B3137;
+        caret-color: white;
+        padding-right: 65px !important;
+    }
+    [data-rem-tags~="ter"] span {
+        filter: invert(1);
+    }
+    [data-rem-tags~="ter"] .hierarchy-editor__tag-bar__tag span {
+        display: none;
+    }
+    [data-rem-tags~="ter"] .items-center.hierarchy-editor__tag-bar__tag {
+        background-color: transparent;
+    }
+    [data-rem-tags~="ter"] .mr-1.cursor-pointer {
+        display: none;
+    }
+    [data-rem-tags~="ter"] #code-node__change-language-dropdown .divider.text {
+        color: yellow;
+        opacity: 100%;
+    }
+    [data-rem-tags~="ter"] #code-node .dropdown.icon {
+        color: yellow;
+        opacity: 100%;
+    }
+    [data-rem-tags~="ter"] #code-node .copy.outline.icon.code-node__copy-button {
+        color: yellow;
+        opacity: 100%;
+    }
+    [data-rem-tags~="ter"] #code-node::before {
+        display:  none;
+    }
+    [data-rem-tags~="ter"] .rem-button__container .plus-button__icon {
+        color: unset;
+        background-color: transparent;
+    }
+    [data-rem-tags~="ter"] #code-node .visible.menu.transition .item .text {
+        color: white !important;
+    }
+    [data-rem-tags~="ter"] .codeLine::before {
+        opacity: 20%;
+    }
+    [data-rem-tags~="ter"] #code-node__change-language-dropdown {
+        position: relative;
+        opacity: 50%;
+    }
+    [data-rem-tags~="ter"] #code-node__change-language-dropdown:hover {
+        position: relative;
+        opacity: 70%;
+        background-color: #5B5E78;
+        padding-right: 5px;
+        border-radius: 5px;
+    }
