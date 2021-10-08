@@ -3,18 +3,19 @@
     .css-jlRuPl .inline-block, 
     .css-jlRuPl .tumbnail--with-width {
         height: 18px !important;
-        min-width: auto !important;
         width: auto !important;
+        min-width: auto !important;
         padding-right: 2px;
     }
     
     .css-dcfFHl .inline-block,
     .css-dcfFHl .tumbnail--with-width {
         height: 18px !important;
-        min-width: auto !important;
         width: auto !important;
+        min-width: auto !important;
         padding-right: 2px;
     }
+
 /*********** Document Title & source & Parent-tree ***********/
     /*********** Document Title ***********/
         #document .document-title {
@@ -49,21 +50,25 @@
     
     /************** Hidden Page Hierarchy Style **************/
         .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
-            min-width: 16px !important;
             width: auto !important;
+            min-width: 16px !important;
         }
+
 /*********** Document Sidebar ***********/
     #document-sidebar .inline-block,
+    #document-sidebar .inline-block.align-text-top.group,
     #document-sidebar .tumbnail--with-width {
         height: 18px !important;
         width: auto !important;
         min-width: auto !important;
+        padding-right: 0px;
     }
+
 /*********** Popup ***********/
     /*********** Header ***********/
         #document-hover-preview__popup .rem-header--1 .inline-block,
         #document-hover-preview__popup .rem-header--1 .tumbnail--with-width {
-            height: 36px !important;
+            height: 32px !important;
             width: auto !important;
             min-width: auto !important;
         }
@@ -153,6 +158,7 @@
             min-width: auto !important;
             padding-right: 2px;
         }
+
 /*********** Document Hidden children ***********/
     .hierarchy-editor__hidden-children .rem-header--1 .inline-block,
     .hierarchy-editor__hidden-children .rem-header--1 .tumbnail--with-width {
@@ -160,14 +166,14 @@
         width: auto !important;
         margin-right: 2px;
     }
+
 /*********** Header & Normal Rem-Text ***********/
     /*********** Header 1 ***********/
         .rem-header--1 .tumbnail--with-width,
         .rem-header--1 .inline-block {
-            display: inline-block;
-            height: 36px !important;
+            height: 32px !important;
             width: auto !important;
-            margin-right: 3px;
+            margin-right: 1px;
         }
     
     /*********** Header 2 ***********/
@@ -197,18 +203,6 @@
             padding-right: 1px;
         }
 
-        [data-rem-tags~="tn"] .hierarchy-editor__tag-bar__tag {
-            color: red;
-            background-color: transparent;
-        }
-
-        [data-rem-tags~="tn"] .hierarchy-editor__tag-bar__tag span {
-            display: none;
-        }
-
-        [data-rem-tags~="tn"] .items-center.hierarchy-editor__tag-bar__tag {
-            background-color: transparent !important;
-        }
 /*********** Tag bar ***********/
     #DropToOpenAsDocument .inline-block, 
     #DropToOpenAsDocument .tumbnail--with-width {
@@ -238,6 +232,7 @@
         min-width: auto !important;
         padding-right: 2px;
     }
+
 /*********** Search Result ***********/
     /*********** Global Search Result (⌘+P Window) ***********/
         .css-ZPdGi .inline-block, 
@@ -247,6 +242,7 @@
             min-width: auto !important;
             padding-right: 2px;
         }
+
         .css-ZPdGi {
             min-width: 80% !important;
             min-height: 80% !important;
@@ -267,6 +263,7 @@
             width: auto !important;
             min-width: auto !important;
         }
+
 /*********** Queue ***********/
     /* Title bar */
     .queue__middle .inline-block,
@@ -283,6 +280,7 @@
         height: auto !important;
         max-height: 100% !important;
     }
+
 /*********** Portal ***********/
     .popup-menu.fixed .inline-block,
     .popup-menu.fixed .tumbnail--with-width {
@@ -305,36 +303,37 @@
     .portal-tree-node-box .rem-text .inline-block, 
     .portal-tree-node-box .rem-text .tumbnail--with-width {
         height: 16px !important;
-        min-width: auto !important;
         width: auto !important;
+        min-width: auto !important;
     }
     
     .portal-tree-node-box .rem-text.rem-header--1 .inline-block, 
     .portal-tree-node-box .rem-text.rem-header--1 .tumbnail--with-width {
         height: 36px !important;
-        min-width: auto !important;
         width: auto !important;
+        min-width: auto !important;
     }
     
     .portal-tree-node-box .rem-text.rem-header--2 .inline-block, 
     .portal-tree-node-box .rem-text.rem-header--2 .tumbnail--with-width {
         height: 24px !important;
-        min-width: auto !important;
         width: auto !important;
+        min-width: auto !important;
     }
     
     .portal-tree-node-box .rem-text.rem-header--3 .inline-block, 
     .portal-tree-node-box .rem-text.rem-header--3 .tumbnail--with-width {
         height: 18px !important;
-        min-width: auto !important;
         width: auto !important;
+        min-width: auto !important;
     }
+
 /*********** Rem Reference ***********/
     .rem-reference .tumbnail--with-width, 
     .rem-reference .inline-block {
         height: 16px !important;
-        min-width: 16px !important;
         width: auto !important;
+        min-width: auto !important;
         margin-top: 1px;
     }
     
@@ -342,23 +341,18 @@
     .popup-meue .inline-block {
         height: 16px !important;
         width: auto !important;
-        min-width: 16px !important;
+        min-width: auto !important;
         margin-top: 1px;
     }
     
     #document-hover-preview__popup .rem-reference .tumbnail--with-width, 
     #document-hover-preview__popup .rem-reference .inline-block {
         height: 16px !important;
-        min-width: 16px !important;
         width: auto !important;
+        min-width: auto !important;
     }
     
     .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
         height: 16px;
-        min-width: 16px !important;
-    }
-    
-    #document-hover-preview__popup [data-rem-tags~="divider"] {
-        position: relative;
-        top: -15px;
+        min-width: auto !important;
     }
