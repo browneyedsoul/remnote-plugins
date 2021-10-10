@@ -12,9 +12,19 @@
 	white-space: pre;
 }
 
-/*********** Get Original Image ***********/
-.animate-zoom-into-bullet .inline-block {
+/*********** Get Original Image While Editing ***********/
+[data-rem-tags~="ori"] .inline-block {
 	min-width: fit-content;
 	height: auto !important;
 	max-height: 100% !important;
+}
+
+
+/*********** Tag Declutter ***********/
+[data-rem-tags~="ori"] .items-center.hierarchy-editor__tag-bar__tag {
+	background-color: transparent;
+}
+
+[data-rem-tags~="ori"] .hierarchy-editor__tag-bar__tag span {
+	display: none;
 }
