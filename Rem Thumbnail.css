@@ -199,7 +199,7 @@
         [data-rem-tags~="tn"] .tumbnail--with-width {
             height: 16px !important;
             width: auto !important;
-            min-width: 16px !important;
+            min-width: auto !important;
             padding-right: 1px;
         }
 
@@ -212,10 +212,11 @@
         padding-right: 2px;
     }
 
+    .hierarchy-editor__tag-bar__tag span,
     .hierarchy-editor__tag-bar__tag .tumbnail--with-width,
     .hierarchy-editor__tag-bar__tag .inline-block {
         height: 16px;
-        width: 16px;
+        width: auto;
     }
     
     .popup-menu .tumbnail--with-width,
