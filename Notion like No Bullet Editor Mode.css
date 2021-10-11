@@ -184,6 +184,7 @@
 			-webkit-mask-repeat: no-repeat;
 			-webkit-mask-size: contain;
 		}
+		
 	/*********** Descriptor-Rem-Type Bullet ***********/
 		.rem-container--descriptor-rem-type .rem-bullet {
 			width: 14px !important;	
@@ -195,6 +196,7 @@
 			-webkit-mask-repeat: no-repeat;
 			-webkit-mask-size: contain;
 		}
+
 	/*********** List-Type Bullet ***********/
 		.rem-container--forwards-practice-enabled .rem-bullet.rem-bullet--hidden-children,
 		.rem-container--backwards-practice-enabled .rem-bullet.rem-bullet--hidden-children,
@@ -208,6 +210,7 @@
 			-webkit-mask-repeat: no-repeat;
 			-webkit-mask-size: contain;
 		}
+
 /*********** Direction Arrows ***********/
 /*********** Documents ***********/
 	/*********** Current Page [Parent > Child] Hierarchy Style ***********/
@@ -230,6 +233,7 @@
 			position: relative;
 			top: 4px;
 		}
+
 /*********** Make Bullet-list by Intentional Tagging ***********/
 	[data-rem-tags~="bulletlist"] {
 	    margin-left: 15px;
@@ -249,6 +253,15 @@
 		position: relative;
 		top: -1px;
 	}
+
+	[data-rem-tags~="bulletlist"] .items-center.hierarchy-editor__tag-bar__tag {
+		background-color: transparent !important;
+	}
+
+	[data-rem-tags~="bulletlist"] .hierarchy-editor__tag-bar__tag span {
+		display: none;
+	}
+
 /*********** TreeNode Distraction Free ***********/
 	#hierarchy-editor .TreeNode {
 	    border-color: #F7F6F3 !important;
