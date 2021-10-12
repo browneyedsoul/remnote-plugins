@@ -30,9 +30,20 @@
       left: 30px;
     }
 
-/*********** Callout Rem Block Color Variable ***********/
-    [data-rem-tags~="callout"] .rem-container.highlight-color--red {
-        background-color: var(--calloutred-background-color) !important;    
+/*********** Callout Rem Block Color-Variable & Pre-Coloured ***********/
+    [data-rem-tags~="callout"] .rem-container
+    [data-rem-tags~="callout"] .rem-container.highlight-color--red,
+    [data-rem-tags~="callout"] .rem-container.highlight-color--orange,
+    [data-rem-tags~="callout"] .rem-container.highlight-color--yellow,
+    [data-rem-tags~="callout"] .rem-container.highlight-color--green,
+    [data-rem-tags~="callout"] .rem-container.highlight-color--blue,
+    [data-rem-tags~="callout"] .rem-container.highlight-color--purple,
+    [data-rem-tags~="calloutred"] .rem-container,
+    [data-rem-tags~="calloutorange"] .rem-container,
+    [data-rem-tags~="calloutyellow"] .rem-container,
+    [data-rem-tags~="calloutgreen"] .rem-container,
+    [data-rem-tags~="calloutblue"] .rem-container,
+    [data-rem-tags~="calloutpurple"] .rem-container {   
         padding: var(--callout-padding);
         margin-top: var(--callout-margin-top);
         margin-bottom: var(--callout-margin-bottom);
@@ -41,115 +52,34 @@
         border-radius: var(--callout-border-radius);
     }
     
-    [data-rem-tags~="callout"] .rem-container.highlight-color--orange {
-        background-color: var(--calloutorange-background-color) !important; 
-        padding: var(--callout-padding);
-        margin-top: var(--callout-margin-top);
-        margin-bottom: var(--callout-margin-bottom);
-        margin-left: var(--callout-margin-left);
-        margin-right: var(--callout-margin-right);
-        border-radius: var(--callout-border-radius);
-    }
-    
-    [data-rem-tags~="callout"] .rem-container.highlight-color--yellow {
-        background-color: var(--calloutyellow-background-color) !important; 
-        padding: var(--callout-padding);
-        margin-top: var(--callout-margin-top);
-        margin-bottom: var(--callout-margin-bottom);
-        margin-left: var(--callout-margin-left);
-        margin-right: var(--callout-margin-right);
-        border-radius: var(--callout-border-radius);
-    }
-    
-    [data-rem-tags~="callout"] .rem-container.highlight-color--green {
-        background-color: var(--calloutgreen-background-color) !important;  
-        padding: var(--callout-padding);
-        margin-top: var(--callout-margin-top);
-        margin-bottom: var(--callout-margin-bottom);
-        margin-left: var(--callout-margin-left);
-        margin-right: var(--callout-margin-right);
-        border-radius: var(--callout-border-radius);
-    }
-    
-    [data-rem-tags~="callout"] .rem-container.highlight-color--blue {
-        background-color: var(--calloutblue-background-color) !important;   
-        padding: var(--callout-padding);
-        margin-top: var(--callout-margin-top);
-        margin-bottom: var(--callout-margin-bottom);
-        margin-left: var(--callout-margin-left);
-        margin-right: var(--callout-margin-right);
-        border-radius: var(--callout-border-radius);
-    }
-    
-    [data-rem-tags~="callout"] .rem-container.highlight-color--purple {
-        background-color: var(--calloutpurple-background-color) !important; 
-        padding: var(--callout-padding);
-        margin-top: var(--callout-margin-top);
-        margin-bottom: var(--callout-margin-bottom);
-        margin-left: var(--callout-margin-left);
-        margin-right: var(--callout-margin-right);
-        border-radius: var(--callout-border-radius);
-    }
-
-/********** Precolored Callout for Text Highlighting **********/
+    [data-rem-tags~="callout"] .rem-container.highlight-color--red,
     [data-rem-tags~="calloutred"] .rem-container {
-        background-color: var(--calloutred-background-color);   
-        padding: var(--callout-padding);
-        margin-top: var(--callout-margin-top);
-        margin-bottom: var(--callout-margin-bottom);
-        margin-left: var(--callout-margin-left);
-        margin-right: var(--callout-margin-right);
-        border-radius: var(--callout-border-radius);
+        background-color: var(--calloutred-background-color) !important;
     }
     
+    [data-rem-tags~="callout"] .rem-container.highlight-color--orange,
     [data-rem-tags~="calloutorange"] .rem-container {
-        background-color: var(--calloutorange-background-color);    
-        padding: var(--callout-padding);
-        margin-top: var(--callout-margin-top);
-        margin-bottom: var(--callout-margin-bottom);
-        margin-left: var(--callout-margin-left);
-        margin-right: var(--callout-margin-right);
-        border-radius: var(--callout-border-radius);
+        background-color: var(--calloutorange-background-color) !important; 
     }
     
+    [data-rem-tags~="callout"] .rem-container.highlight-color--yellow,
     [data-rem-tags~="calloutyellow"] .rem-container {
-        background-color: var(--calloutyellow-background-color);    
-        padding: var(--callout-padding);
-        margin-top: var(--callout-margin-top);
-        margin-bottom: var(--callout-margin-bottom);
-        margin-left: var(--callout-margin-left);
-        margin-right: var(--callout-margin-right);
-        border-radius: var(--callout-border-radius);
+        background-color: var(--calloutyellow-background-color) !important; 
     }
     
+    [data-rem-tags~="callout"] .rem-container.highlight-color--green,
     [data-rem-tags~="calloutgreen"] .rem-container {
-        background-color: var(--calloutgreen-background-color); 
-        padding: var(--callout-padding);
-        margin-top: var(--callout-margin-top);
-        margin-bottom: var(--callout-margin-bottom);
-        margin-left: var(--callout-margin-left);
-        margin-right: var(--callout-margin-right);
-        border-radius: var(--callout-border-radius);
+        background-color: var(--calloutgreen-background-color) !important;  
     }
     
+    [data-rem-tags~="callout"] .rem-container.highlight-color--blue,
     [data-rem-tags~="calloutblue"] .rem-container {
-        background-color: var(--calloutblue-background-color);  
-        padding: var(--callout-padding);
-        margin-top: var(--callout-margin-top);
-        margin-bottom: var(--callout-margin-bottom);
-        margin-left: var(--callout-margin-left);
-        margin-right: var(--callout-margin-right);
-        border-radius: var(--callout-border-radius);
+        background-color: var(--calloutblue-background-color) !important;   
     }
     
+    [data-rem-tags~="callout"] .rem-container.highlight-color--purple,
     [data-rem-tags~="calloutpurple"] .rem-container {
-        background-color: var(--calloutpurple-background-color);    
-        padding: var(--callout-padding);
-        margin-top: var(--callout-margin-top);
-        margin-bottom: var(--callout-margin-bottom);
-        margin-left: var(--callout-margin-left);
-        margin-right: var(--callout-margin-right);
-        border-radius: var(--callout-border-radius);
+        background-color: var(--calloutpurple-background-color) !important; 
     }
     
 /*********** Tag Declutter ***********/
