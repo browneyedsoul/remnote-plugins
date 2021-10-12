@@ -1,4 +1,5 @@
 :root {
+    --callout-background-color: #F7F6F3;
     --calloutred-background-color: #FFE9EC;
     --calloutorange-background-color: #FDEDD9;
     --calloutyellow-background-color: #FDFEDD;
@@ -31,7 +32,7 @@
     }
 
 /*********** Callout Rem Block Color-Variable & Pre-Coloured ***********/
-    [data-rem-tags~="callout"] .rem-container
+    [data-rem-tags~="callout"] .rem-container,
     [data-rem-tags~="callout"] .rem-container.highlight-color--red,
     [data-rem-tags~="callout"] .rem-container.highlight-color--orange,
     [data-rem-tags~="callout"] .rem-container.highlight-color--yellow,
@@ -50,6 +51,10 @@
         margin-left: var(--callout-margin-left);
         margin-right: var(--callout-margin-right);
         border-radius: var(--callout-border-radius);
+    }
+    
+    [data-rem-tags~="callout"] .rem-container {
+        background-color: var(--callout-background-color) !important;
     }
     
     [data-rem-tags~="callout"] .rem-container.highlight-color--red,
