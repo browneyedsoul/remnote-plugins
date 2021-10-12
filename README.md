@@ -60,9 +60,9 @@ Using this snippet, You can make any image to Thumbnail especially in RemNote Si
 All you need to do is just copy & paste your image.
 
 It is Optimized for fixed pixel so I recommend you to use
-- header-1 size to 36px
-- header-2 size to 28px
-- header-3 size to 20px
+- header-1 size to 32px
+- header-2 size to 24px
+- header-3 size to 18px
 - normal rem-text to 16px → You have to Tag Thumbnail for normal rem-text
 
 or Customize on your tastes!
