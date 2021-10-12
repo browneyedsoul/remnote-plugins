@@ -184,7 +184,7 @@
 			-webkit-mask-repeat: no-repeat;
 			-webkit-mask-size: contain;
 		}
-		
+
 	/*********** Descriptor-Rem-Type Bullet ***********/
 		.rem-container--descriptor-rem-type .rem-bullet {
 			width: 14px !important;	
@@ -273,3 +273,8 @@
 	    left: 20px;
 		margin-right: 20px;
 	}
+
+/*********** Rem Right side Button - Merge, Tag ***********/
+	.float-end {
+		zoom: 80%;
+	} 
