@@ -184,6 +184,11 @@
 	padding-left: 3px;
 }
 
+#show-embedded-search-button {
+	filter: invert(1);
+}
+
+
 /*********** Partial Dark Mode Sidebar for Light Mode User ***********/
 /*********** Basic ***********/
 #document-sidebar {
