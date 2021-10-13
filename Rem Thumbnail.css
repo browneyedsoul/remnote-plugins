@@ -282,6 +282,20 @@
         max-height: 100% !important;
     }
 
+    .queue .react-transform-component .inline-block,
+    .queue .react-transform-component .tumbnail--with-width,
+    .queue-cluster-selector .inline-block,
+    .queue-cluster-selector .w-full.h-full.tumbnail--with-width,
+    .queue-cluster-selector .search-result__rem-breadcrumbs .inline-block,
+    .queue-cluster-selector .search-result__rem-breadcrumbs .tumbnail--with-width,
+    .spaced-repetition__prompt__breadcrumbs .inline-block,
+    .spaced-repetition__prompt__breadcrumbs .tumbnail--with-width {
+        display: inline-block;
+        height: 12px !important;
+        width: auto !important;
+        min-width: auto !important;
+    }
+
 /*********** Portal ***********/
     .popup-menu.fixed .inline-block,
     .popup-menu.fixed .tumbnail--with-width {
