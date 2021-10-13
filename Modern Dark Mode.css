@@ -266,7 +266,7 @@
 
 #document-sidebar .RichTextViewer .quote {
 	margin-left: 5px !important;
-	font-family: Roboto Mono !important;
+	font-family: Roboto Mono, monospace; !important;
 	font-size: 14px !important;
 	border-radius: 6px !important;
 	padding: 1px !important;
@@ -308,7 +308,4 @@
 .block.group.cursor-pointer .highlight-color--blue .document-list-item__folder-icon,
 .block.group.cursor-pointer .highlight-color--purple .document-list-item__folder-icon {
 	filter: invert(1);
-}css
-
-
- 
+}
