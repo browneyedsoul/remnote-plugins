@@ -1,0 +1,314 @@
+/*********** Darkmode Background & Text ***********/
+.tile__document {
+	background-color: #2F3437;
+}
+
+.rem-text,
+.rem-text.rem-header--1,
+.rem-text.rem-header--2,
+.rem-text.rem-header--3 {
+	color: #DFDFD5;
+}
+
+/*********** Page Hierarchy Bar ***********/
+.px-6 {
+	background-color: ;
+}
+
+.document-header-top-bar .parent-link {
+	background-color: white;
+}
+
+/*********** Rem-Bullet Container ***********/
+.plus-button,
+.six-dot,
+.toggle-collapse-button {
+	background-color: transparent;
+}
+
+.icon-button,
+.rem-bullet__container .rem-bullet,
+.rem-bullet__container .rem-bullet__icon {
+	filter: invert(1);
+}
+
+[data-rem-tags~="highlight"] .rem-bullet,
+[data-rem-tags~="highlight"] .rem-bullet__icon {
+	filter: invert(0) !important;
+}
+
+/*********** Notion like Callout Rem ***********/
+[data-rem-tags~="callout"] .rem-text,
+[data-rem-tags~="calloutred"] .rem-text,
+[data-rem-tags~="calloutorange"] .rem-text,
+[data-rem-tags~="calloutyellow"] .rem-text,
+[data-rem-tags~="calloutgreen"] .rem-text,
+[data-rem-tags~="calloutblue"] .rem-text,
+[data-rem-tags~="calloutpurple"] .rem-text {
+	color: black;
+}
+
+/*********** Hightlight Red ***********/
+.highlight-color--red {
+	background-color: 	#FF8A88 !important;
+	color: 				black;
+	border-radius: 		3px;
+}
+
+/*********** Hightlight Orange ***********/
+.highlight-color--orange {
+	background-color: 	#FFB86C !important;
+	color: 				black;
+	border-radius: 		3px;
+}
+
+/*********** Hightlight Yellow ***********/
+.highlight-color--yellow {
+	background-color: 	#F1FA8C !important;
+	color: 				black;
+	border-radius: 		3px;
+}
+
+/*********** Hightlight Green ***********/
+.highlight-color--green {
+	background-color: 	#9FE39B !important;
+	color: 				black;
+	border-radius:		3px;
+}
+
+/*********** Hightlight Blue ***********/
+.highlight-color--blue {
+	background-color: #9FC8EB !important;
+	color: 				black;
+	border-radius: 3px;
+}
+
+/*********** Hightlight Purple ***********/
+.highlight-color--purple {
+	background-color: 	#DEAFEB !important;
+	color: 				black;
+	border-radius:		3px;
+}
+
+[data-rem-tags~="color"] .rem-text .highlight-color--red,
+[data-rem-tags~="color"] .rem-text .highlight-color--orange, 
+[data-rem-tags~="color"] .rem-text .highlight-color--yellow,
+[data-rem-tags~="color"] .rem-text .highlight-color--green,
+[data-rem-tags~="color"] .rem-text .highlight-color--blue,
+[data-rem-tags~="color"] .rem-text .highlight-color--purple {
+	background-color: unset !important;
+}
+
+.highlight-color--red .rem-text,
+.highlight-color--red .rem-text.rem-header--1,
+.highlight-color--red .rem-text.rem-header--2,
+.highlight-color--red .rem-text.rem-header--3,
+.highlight-color--orange .rem-text,
+.highlight-color--orange .rem-text.rem-header--1,
+.highlight-color--orange .rem-text.rem-header--2,
+.highlight-color--orange .rem-text.rem-header--3,
+.highlight-color--yellow .rem-text,
+.highlight-color--yellow .rem-text.rem-header--1,
+.highlight-color--yellow .rem-text.rem-header--2,
+.highlight-color--yellow .rem-text.rem-header--3
+.highlight-color--green .rem-text,
+.highlight-color--green .rem-text.rem-header--1,
+.highlight-color--green .rem-text.rem-header--2,
+.highlight-color--green .rem-text.rem-header--3,
+.highlight-color--blue .rem-text,
+.highlight-color--blue .rem-text.rem-header--1,
+.highlight-color--blue .rem-text.rem-header--2,
+.highlight-color--blue .rem-text.rem-header--3,
+.highlight-color--purple .rem-text,
+.highlight-color--purple .rem-text.rem-header--1,
+.highlight-color--purple .rem-text.rem-header--2,
+.highlight-color--purple .rem-text.rem-header--3  {
+	color: black;
+}
+
+/*********** Divider ***********/
+[data-rem-tags~="divider"] {
+	caret-color: transparent;
+}
+
+/*********** Active Recall ***********/
+.cloze {
+	background-color: rgba(210,225,248,0);
+	color: #fff;
+	border-bottom: 2px solid yellow;
+	padding-bottom: 2px;
+	margin-left: 3px;
+	margin-right: 3px;
+	padding-left: 3px;
+}
+
+/*********** Partial Dark Mode Sidebar for Light Mode User ***********/
+/*********** Basic ***********/
+#document-sidebar {
+ 	background-color: #2B3137;
+}
+
+#document-sidebar + div > div {
+	color: yellow !important;
+	background-color: #2B3137 !important;
+}
+
+/*********** Navigation Bar ***********/
+.navigation-bar  {
+    background-color: #2B3137;
+}
+
+.hierarchy-editor-list__sticky-top__rem-container {
+	position: relative;
+	top: -10px;	
+}
+
+.hierarchy-editor-list__sticky-top__rem-container .EditorContainer {
+	zoom: 90%;
+}
+
+.hierarchy-editor-list__sticky-top__rem-container .rem-is-custom-rem-type--in-body {
+	zoom: 90%;
+}
+
+/*********** RemNote Date Picker ***********/
+.react-datepicker.search-results__date-picker {
+	background-color: #ffffff !important;
+}
+
+/*********** RemNote Help Page Top ***********/
+.css-bBkpDG {
+	filter: invert(1);
+}
+
+/*********** Account Capsule ***********/
+#document-sidebar__account-capsule {
+	background-color: #FFFFFF;
+}
+
+/*********** All Notes & Flashcards ***********/
+#document-sidebar_top .flex.items-center.mb-1 {
+	font-family: Roboto Mono, Fira Code, Monospace;
+	color: yellow;
+	zoom: 125%;
+	margin-left: 5px;
+	background-color: #2B3137; /* fix hover color*/
+}
+
+#document-sidebar_top .css-fqRAnH {
+	color: yellow;
+	zoom: 150%;
+}
+
+#document-sidebar_top .block .css-pUlLN {
+	zoom: 150%;
+	color: yellow;
+}
+
+#document-sidebar_top .block .flex-grow {
+	font-family: Roboto Mono, Fira code, Monospace;
+	color: yellow;
+}
+
+/*********** Sidebar Top Level Pinned, Draft, Archive Symbol ***********/
+#document-sidebar .title.cursor-pointer .css-fqRAnH {
+	zoom: 150%;
+	color: black;
+}
+
+#document-sidebar .title.cursor-pointer .css-pUlLN {
+	color: black;
+}
+
+.accordion.ui.fluid .title.cursor-pointer {
+	background-color: #FFFFFF;
+	zoom: 150%;
+	max-height: 5px !important;
+	border-radius: 5px;
+}
+
+/*********** Power-up Symbol ***********/
+#document-sidebar .rem-is-custom-rem-type {
+	filter: invert(1);
+	position: relative;
+	top: 2px !important;
+}
+
+/*********** Sidebar Document lists ***********/
+#document-sidebar .p-2.flex.group-hover-bg-hover-bg-transparent {
+	height: 20px !important;
+}
+
+#document-sidebar .bg-white.cursor-pointer {
+	display: none;
+}
+
+#document-sidebar .RichTextViewer {
+	color: #C7C7C7;
+	position: relative;
+	top: 1px;
+}
+
+#document-sidebar .tumbnail--with-width + button {
+	display: none;
+}
+
+#document-sidebar .highlight-color--red,
+#document-sidebar .highlight-color--orange,
+#document-sidebar .highlight-color--yellow,
+#document-sidebar .highlight-color--green,
+#document-sidebar .highlight-color--blue,
+#document-sidebar .highlight-color--purple {
+	margin-left: 5px;
+	padding: 1px !important;
+	border-radius: 3px;
+}
+
+#document-sidebar .RichTextViewer .quote {
+	margin-left: 5px !important;
+	font-family: Roboto Mono !important;
+	font-size: 14px !important;
+	border-radius: 6px !important;
+	padding: 1px !important;
+	padding-top: 		1px;
+	padding-bottom: 	1px;
+}
+
+.document-list-item__folder-icon {
+	color: #C7C7C7;
+}
+
+#document-sidebar .float-right {
+	color: yellow;
+}
+
+#document-sidebar .rounded-md.text-primary-70 {
+	background-color: transparent !important;
+	border: 2px solid yellow !important;
+}
+
+.flex-grow.nowrap-RichTextViewer:only-child {
+	margin-left: 25px;
+}
+
+/*********** RemNote Help Page Sidebar Document lists ***********/
+.block.group.cursor-pointer .highlight-color--red .RichTextViewer, 
+.block.group.cursor-pointer .highlight-color--orange .RichTextViewer,
+.block.group.cursor-pointer .highlight-color--yellow .RichTextViewer,
+.block.group.cursor-pointer .highlight-color--green .RichTextViewer,
+.block.group.cursor-pointer .highlight-color--blue .RichTextViewer,
+.block.group.cursor-pointer .highlight-color--purple .RichTextViewer {
+	color: black !important;
+}
+
+.block.group.cursor-pointer .highlight-color--red .document-list-item__folder-icon,
+.block.group.cursor-pointer .highlight-color--orange .document-list-item__folder-icon,
+.block.group.cursor-pointer .highlight-color--yellow .document-list-item__folder-icon,
+.block.group.cursor-pointer .highlight-color--green .document-list-item__folder-icon,
+.block.group.cursor-pointer .highlight-color--blue .document-list-item__folder-icon,
+.block.group.cursor-pointer .highlight-color--purple .document-list-item__folder-icon {
+	filter: invert(1);
+}css
+
+
+ 
