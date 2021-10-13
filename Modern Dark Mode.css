@@ -1,4 +1,5 @@
 /*********** Darkmode Background & Text ***********/
+.pane,
 .tile__document {
 	background-color: #2F3437;
 }
