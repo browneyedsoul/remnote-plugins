@@ -66,6 +66,7 @@
 	.highlight-color--green,
 	.highlight-color--blue,
 	.highlight-color--purple {
+		color:  black;
 		border-radius: 		3px;
 	}
 
