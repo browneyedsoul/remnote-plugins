@@ -264,7 +264,7 @@
 
 /*********** TreeNode Distraction Free ***********/
 	#hierarchy-editor .TreeNode {
-	    border-color: #F7F6F3 !important;
+	    border-color: #F7F6F3;
 	    border-width: 1px;
 	    transition-timing-function: linear;
 	    position: relative;
