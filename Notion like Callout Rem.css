@@ -1,11 +1,18 @@
 :root {
     --callout-background-color: #F7F6F3;
+    --callout-background-color-dark: #DFDFDC;
     --calloutred-background-color: #FFE9EC;
+    --calloutred-background-color-dark: #E8D4D8;
     --calloutorange-background-color: #FDEDD9;
+    --calloutorange-background-color-dark: #E8DAC8;
     --calloutyellow-background-color: #FDFEDD;
+    --calloutyellow-background-color-dark: #E9E2BF;
     --calloutgreen-background-color: #E0FBE2;
+    --calloutgreen-background-color-dark: #CDE6D0;
     --calloutblue-background-color: #E6F3F6;
+    --calloutblue-background-color-dark: #D6E2E6;
     --calloutpurple-background-color: #FEEEFC;
+    --calloutpurple-background-color-dark: #E4D5E3;
     --callout-padding: 15px 20px;
     --callout-margin-top: 7px;
     --callout-margin-bottom: 7px;
@@ -61,37 +68,37 @@
     }
     
     [data-rem-tags~="callout"] .rem-container {
-        background-color: var(--callout-background-color) !important;
+        background-color: var(--callout-background-color);
     }
     
     [data-rem-tags~="callout"] .rem-container.highlight-color--red,
     [data-rem-tags~="calloutred"] .rem-container {
-        background-color: var(--calloutred-background-color) !important;
+        background-color: var(--calloutred-background-color);
     }
     
     [data-rem-tags~="callout"] .rem-container.highlight-color--orange,
     [data-rem-tags~="calloutorange"] .rem-container {
-        background-color: var(--calloutorange-background-color) !important; 
+        background-color: var(--calloutorange-background-color);    
     }
     
     [data-rem-tags~="callout"] .rem-container.highlight-color--yellow,
     [data-rem-tags~="calloutyellow"] .rem-container {
-        background-color: var(--calloutyellow-background-color) !important; 
+        background-color: var(--calloutyellow-background-color);    
     }
     
     [data-rem-tags~="callout"] .rem-container.highlight-color--green,
     [data-rem-tags~="calloutgreen"] .rem-container {
-        background-color: var(--calloutgreen-background-color) !important;  
+        background-color: var(--calloutgreen-background-color); 
     }
     
     [data-rem-tags~="callout"] .rem-container.highlight-color--blue,
     [data-rem-tags~="calloutblue"] .rem-container {
-        background-color: var(--calloutblue-background-color) !important;   
+        background-color: var(--calloutblue-background-color);  
     }
     
     [data-rem-tags~="callout"] .rem-container.highlight-color--purple,
     [data-rem-tags~="calloutpurple"] .rem-container {
-        background-color: var(--calloutpurple-background-color) !important; 
+        background-color: var(--calloutpurple-background-color);    
     }
     
 /*********** Tag Declutter ***********/
