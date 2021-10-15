@@ -1,5 +1,6 @@
 :root {
 	--darkmode-background: #2F3437;
+	--darkmode-text: #DFDFD5;
 	--darkmode-line-color: #404648;
 	--highlight-color--red: #FF8A88;
 	--highlight-color--orange: #FFB86C;
@@ -14,6 +15,7 @@
 	--calloutgreen-background-color-dark: #CDE6D0;
 	--calloutblue-background-color-dark: #D6E2E6;
 	--calloutpurple-background-color-dark: #E4D5E3;
+	--text-shadow: 0.01em 0.01em 0.03em #727E84;
 }
 /*********** Darkmode Background & Text & TreeNode***********/
 	.tile__document {
@@ -151,6 +153,7 @@
 	[data-rem-tags~="color"] .rem-text .highlight-color--blue,
 	[data-rem-tags~="color"] .rem-text .highlight-color--purple {
 		background-color: unset !important;
+		text-shadow: var(--text-shadow);
 	}
 
 	.highlight-color--red .rem-text,
