@@ -39,6 +39,14 @@
 	.document-header-top-bar .parent-link {
 		background-color: white;
 	}
+/*********** Quote ***********/
+	[data-rem-tags~="blockquote"] {
+		filter: invert(1);
+	}
+	
+	[data-rem-tags~="blockquote"] .rem-text {
+		filter: invert(1);
+	}
 /*********** Rem-Bullet Container ***********/
 	.plus-button,
 	.six-dot,
