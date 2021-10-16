@@ -16,7 +16,14 @@
 	--calloutblue-background-color-dark: #D6E2E6;
 	--calloutpurple-background-color-dark: #E4D5E3;
 	--text-shadow: 0.01em 0.01em 0.03em #727E84;
+	--code-node-background-color-dark: #E6E6E6;
+	--line-number-color-dark: #BDBEBE;
+	--line-number-background-color-dark: #E6E6E6;
 }
+/*********** Queue ***********/
+	.Queue {
+		color: ;
+	}
 /*********** Darkmode Background & Text & TreeNode***********/
 	.tile__document {
 		background-color: var(--darkmode-background);
@@ -48,6 +55,18 @@
 	
 	[data-rem-tags~="blockquote"] .rem-text {
 		filter: invert(1);
+	}
+/*********** Codeblock ***********/
+	#code-node {
+		background-color: var(--code-node-background-color-dark);
+	}
+	
+	.codeLine::before {
+		color: var(--line-number-color-dark);
+	}
+	
+	#code-node::before {
+		background-color: var(--line-number-background-color-dark);
 	}
 /*********** Rem-Bullet Container ***********/
 	.plus-button,
