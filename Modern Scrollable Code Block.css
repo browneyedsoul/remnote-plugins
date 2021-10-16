@@ -1,16 +1,28 @@
+:root {
+    --inline-code-color: #E64400;
+    --inline-code-background-color: #F7F6F3;
+    --code-node-background-color-dark: #E6E6E6;
+    --line-number-width: 40px;
+    --line-number-color: #C7CCCF;
+    --line-number-color-dark: #BDBEBE;
+    --line-number-background-color: #F7F6F3;
+    --line-number-background-color-dark: #E6E6E6;
+    --code-node-border-radius: 2px;
+}
+
 /*********** Basic (Inline)CodeBlock Style ***********/
     .quote {
-        font-family:        "Roboto Mono", "Fira code", "Monospace";
+        font-family:        "Roboto Mono", "Fira code", Monospace;
         font-size:          0.9em !important; 
-        background-color:   #F7F6F3;
-        color:              #E64400;
+        color:              var(--inline-code-color);
+        background-color:   var(--inline-code-background-color);
         padding-right:      3px;
         padding-top:        1px;
         padding-bottom:     1px;
     }
 
     #code-node {
-        font-family:    "Roboto Mono", "Fira code" !important;
+        font-family:    "Roboto Mono", "Fira code", monospace; !important;
         font-size:      0.9em !important; 
         border:         0 !important;
         padding-right:  50px !important;
@@ -26,18 +38,7 @@
         border-radius:      0.3em;
     }
 
-    .EditorContainer #code-node {
-        height: ;
-    }
-
 /*********** Codeblock Line Number ***********/
-    :root {
-        --line-number-width: 40px;
-        --line-number-color: #C7CCCF;
-        --line-number-background-color: #F7F6F3; /*#EDECE9*/
-        --code-node-border-radius: 2px;
-    }
-
     .codeLine {
         counter-increment: codeLineNumber;
     }
