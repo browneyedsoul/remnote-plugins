@@ -2,6 +2,7 @@
 	--darkmode-background: #2F3437;
 	--darkmode-text: #DFDFD5;
 	--darkmode-line-color: #404648;
+	--link-node-color-dark: #94D2FF;
 	--highlight-color--red: #FF8A88;
 	--highlight-color--orange: #FFB86C;
 	--highlight-color--yellow: #F1FA8C;
@@ -34,6 +35,10 @@
 	.rem-text.rem-header--2,
 	.rem-text.rem-header--3 {
 		color: #DFDFD5;
+	}
+
+	.LinkNode {
+		color: var(--link-node-color-dark) !important;
 	}
 
 	.TreeNode {
