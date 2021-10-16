@@ -26,6 +26,9 @@ https://forum.remnote.io/c/developers-api/9
 ## Modern Divider
 ![b3f69bae4dfd9824c2ccabe58d67a0ea497514f2](https://user-images.githubusercontent.com/56161102/129580147-c0507bcc-a4d1-4522-b48d-d7efdf831e0f.gif)
 
+## Modern Dark Mode
+![CleanShot 2021-10-16 at 12 04 23](https://user-images.githubusercontent.com/56161102/137571467-62a071e9-43b6-42c7-8f75-7046d541ccb1.png)
+
 
 ## Sidebar Darkmode for Light-theme User
 ![CleanShot 2021-09-26 at 18 52 47](https://user-images.githubusercontent.com/56161102/134802986-1db76d66-b057-49bf-8121-5933c66f7466.png)
