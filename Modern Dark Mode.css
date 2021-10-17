@@ -63,15 +63,22 @@
 	#document-hover-preview__popup {
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
-		border: 2px dashed white;
+		border: 1px dashed white;
 	}
 
 	.popup-menu__item, 
-	.popup-menu__item--static {
+	.popup-menu__item--static,
+	.hierarchy-editor__search-portal-section {
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
 	}
-
+	
+	#show-embedded-search-button {
+		color: var(--darkmode-text) !important;
+		background-color: #FFC1BA;
+		border-radius: 5px;
+	}
+	
 	.popup-menu .file.text.small.icon::before {
 		filter: invert(1);
 	}
