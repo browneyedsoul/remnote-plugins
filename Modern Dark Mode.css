@@ -27,12 +27,53 @@
 		color: ;
 	}
 /*********** Darkmode Background & Text & TreeNode***********/
+	.tile__document {
+		background-color: var(--darkmode-background);
+	}
+
+	.rem-text,
+	.rem-text.rem-header--1,
+	.rem-text.rem-header--2,
+	.rem-text.rem-header--3 {
+		color: #DFDFD5;
+	}
+	
+	.LinkNode {
+		color: var(--link-node-color-dark) !important;
+	}
+
+	.TreeNode {
+		border-width: 1.5px !important;
+		border-left-color: var(--darkmode-line-color) !important;
+	}
+	
+	.rem-reference .RichTextViewer {
+		font-weight: 400;
+		padding: 4px 4px;
+	    color: var(--reference-text-dark);
+	}
 /*********** Popup ***********/
 	#document-hover-preview__popup {
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
 		border: 2px dashed white;
-		box-shadow: 5px 5px 30px red;
+	}
+
+	.popup-menu, 
+	#document-hover-preview__popup {
+		color: var(--darkmode-text);
+		background-color: var(--darkmode-background);
+		border: 2px dashed white;
+	}
+
+	.popup-menu__item, 
+	.popup-menu__item--static {
+		color: var(--darkmode-text);
+		background-color: var(--darkmode-background);
+	}
+
+	.popup-menu .file.text.small.icon::before {
+		filter: invert(1);
 	}
 /*********** Page Hierarchy Bar ***********/
 	.px-6 {
