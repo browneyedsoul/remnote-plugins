@@ -38,6 +38,10 @@
 		background-color: var(--darkmode-background);
 	}
 
+	.rem-bullet__queue {
+		background-color: var(--darkmode-text) !important;
+	}
+
 	.spaced-repetition__prompt .rem-bullet__document {
 		color: black;
 	}
