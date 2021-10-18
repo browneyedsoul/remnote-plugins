@@ -53,6 +53,10 @@
 		padding: 4px 4px;
 	    color: var(--reference-text-dark);
 	}
+
+	.rem-calendar-icon--in-editor {
+		color: var(--darkmode-text);
+	}
 /*********** Popup ***********/
 	#document-hover-preview__popup {
 		color: var(--darkmode-text);
