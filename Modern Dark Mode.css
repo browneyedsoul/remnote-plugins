@@ -27,6 +27,24 @@
 	.Queue {
 		color: ;
 	}
+
+	.bg-gray-5,
+	.scroll-drag-component,
+	.spaced-repetition__prompt,
+	.spaced-repetition__prompt__breadcrumbs,
+	.css-exQOrH,
+	.text-base + a {
+		color: var(--darkmode-text);
+		background-color: var(--darkmode-background);
+	}
+
+	.spaced-repetition__prompt .rem-bullet__document {
+		color: black;
+	}
+
+	.spaced-repetition__prompt .rem-bullet__document .file.text.small.icon {
+		color: white;
+	}
 /*********** Darkmode Background & Text & TreeNode***********/
 	.tile__document {
 		background-color: var(--darkmode-background);
