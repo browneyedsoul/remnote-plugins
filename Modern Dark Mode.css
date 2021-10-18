@@ -1,8 +1,9 @@
 :root {
 	--darkmode-background: #2F3437;
+	--darkmode-background-selected: #4A5458;
 	--darkmode-text: #DFDFD5;
-	--darkmode-line-color: #404648;
 	--reference-text-dark: darkred;
+	--darkmode-line-color: #404648;
 	--link-node-color-dark: #94D2FF;
 	--highlight-color--red: #FF8A88;
 	--highlight-color--orange: #FFB86C;
@@ -17,7 +18,7 @@
 	--calloutgreen-background-color-dark: #CDE6D0;
 	--calloutblue-background-color-dark: #D6E2E6;
 	--calloutpurple-background-color-dark: #E4D5E3;
-	--text-shadow: 0.01em 0.01em 0.03em #727E84;
+	--text-shadow: 0.01em 0.01em 0.01em #727E84;
 	--code-node-background-color-dark: #E6E6E6;
 	--line-number-color-dark: #BDBEBE;
 	--line-number-background-color-dark: #E6E6E6;
@@ -60,12 +61,14 @@
 	}
 
 	.popup-menu, 
+	.popup-menu.fixed .bg-white, 
+	.popup-menu.fixed .bg-white .css-kbbFlF, 
 	#document-hover-preview__popup {
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
-		border: 1px dashed white;
+		border: 1px dotted white;
 	}
-
+	
 	.popup-menu__item, 
 	.popup-menu__item--static,
 	.hierarchy-editor__search-portal-section {
@@ -81,6 +84,20 @@
 	
 	.popup-menu .file.text.small.icon::before {
 		filter: invert(1);
+	}
+	/*********** Popup for image control ***********/
+	/* svg icon */
+	.popup-menu.fixed .css-fQFckt {
+		background-color: yellow;
+		border-radius: 5px;
+		opacity: 0.8;
+	}
+	
+	/* Selected item */
+	.popup-menu.fixed .bg-white .css-huwYra {
+		color: var(--darkmode-text);
+		background-color: var(--darkmode-background-selected);
+		border: 1px solid yellow;
 	}
 /*********** Page Hierarchy Bar ***********/
 	.px-6 {
