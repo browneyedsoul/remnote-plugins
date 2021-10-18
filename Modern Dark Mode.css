@@ -54,7 +54,8 @@
 	    color: var(--reference-text-dark);
 	}
 
-	.rem-calendar-icon--in-editor {
+	.rem-calendar-icon--in-editor,
+	.rem-container--not-included-in-document-scope .file.text.small.icon {
 		color: var(--darkmode-text);
 	}
 /*********** Popup ***********/
