@@ -35,10 +35,10 @@ https://forum.remnote.io/c/developers-api/9
 
 ## Easily Discernible Card Layout
 ### Before
-![afe643439f9189205e34e4767aa70a2ca58241e4_2_316x499](https://user-images.githubusercontent.com/56161102/138022974-d68efaac-8239-4703-a654-9a5fe7ed49cd.png)
+![afe643439f9189205e34e4767aa70a2ca58241e4](https://user-images.githubusercontent.com/56161102/138023258-357e00c1-8806-4302-8e1f-4bc4d6499b3f.png)
 
 ### After
-![008536836b289d7997156aedf0ca70fabeb112d3_2_321x500](https://user-images.githubusercontent.com/56161102/138022984-a284f8ec-2e10-4de9-aa8b-923ee58483c6.png)
+![008536836b289d7997156aedf0ca70fabeb112d3](https://user-images.githubusercontent.com/56161102/138023272-01494a0c-9e53-4768-a531-65f62bfcf49e.png)
 
 All you need to do is just guess how much size is fit for a card and then set the width of a Front Card by tagging
 
