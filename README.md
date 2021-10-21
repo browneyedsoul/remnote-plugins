@@ -33,6 +33,29 @@ https://forum.remnote.io/c/developers-api/9
 ## Sidebar Darkmode for Light-theme User
 ![CleanShot 2021-09-26 at 18 52 47](https://user-images.githubusercontent.com/56161102/134802986-1db76d66-b057-49bf-8121-5933c66f7466.png)
 
+## Easily Discernible Card Layout
+### Before
+![afe643439f9189205e34e4767aa70a2ca58241e4](https://user-images.githubusercontent.com/56161102/138023258-357e00c1-8806-4302-8e1f-4bc4d6499b3f.png)
+
+### After
+![008536836b289d7997156aedf0ca70fabeb112d3](https://user-images.githubusercontent.com/56161102/138023272-01494a0c-9e53-4768-a531-65f62bfcf49e.png)
+
+All you need to do is just guess how much size is fit for a card and then set the width of a Front Card by tagging
+
+- `w120` → Front width 120px
+- `w150` → Front width 150px
+- `w180` → Front width 180px
+- `w210` → Front width 210px
+- `w240` → Front width 240px
+- `w270` → Front width 270px
+- `w300` → Front width 300px
+- `w330` → Front width 330px
+- `w360` → Front width 360px
+- `w390` → Front width 390px
+- `w420` → Front width 420px
+- `w450` → Front width 450px
+- `w480` → Front width 480px
+
 
 ## Modern Scrollable Codeblock
 ![CleanShot 2021-09-16 at 17 10 33](https://user-images.githubusercontent.com/56161102/133575648-e3b0311d-da26-4123-b4b2-79bf0a2028af.png)
