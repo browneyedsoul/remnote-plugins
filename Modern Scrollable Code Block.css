@@ -30,6 +30,13 @@
         overflow:       auto;
         white-space:    pre;
     }
+    
+    #code-node + .quote {
+        background-color: unset;
+        color: #8E8D8A;
+        text-style: Sans-Serif Workhorse;
+        font-size: 14px !important;
+    }
 
     #code-node, #quote, .quote {
         margin-top:         2px;
@@ -37,7 +44,6 @@
         margin-left:        0px !important;
         border-radius:      0.3em;
     }
-
 /*********** Codeblock Line Number ***********/
     .codeLine {
         counter-increment: codeLineNumber;
@@ -69,7 +75,6 @@
         border-radius:      var(--code-node-border-radius, 7px) 0 0;
         width:              calc(var(--line-number-width, 45px) - 7px);
     }
-
 /*********** Language Converter ***********/
     #code-node__change-language-dropdown {
         position: relative;
@@ -83,12 +88,12 @@
         padding-right: 5px;
         border-radius: 5px;
     }
-    
 /*********** Turn Codeblock into Console Terminal ***********/
     [data-rem-tags~="ter"] #code-node {
         background-color:   #2B3137;
         caret-color: white;
-        padding-right: 65px !important;
+        padding-right: 60px !important;
+        border: 1px dotted white !important;
     }
     [data-rem-tags~="ter"] span {
         filter: invert(1);
