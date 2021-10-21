@@ -1,6 +1,7 @@
 :root {
 	--darkmode-background: #2F3437;
 	--darkmode-background-selected: #4A5458;
+	--lightmode-background-selected: #C5DFEB;
 	--darkmode-text: #DFDFD5;
 	--reference-text-dark: darkred;
 	--darkmode-line-color: #404648;
@@ -27,7 +28,7 @@
 	.Queue {
 		color: ;
 	}
-
+	
 	.bg-gray-5,
 	.scroll-drag-component,
 	.spaced-repetition__prompt,
@@ -37,15 +38,15 @@
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
 	}
-
+	
 	.rem-bullet__queue {
 		background-color: var(--darkmode-text) !important;
 	}
-
+	
 	.spaced-repetition__prompt .rem-bullet__document {
 		color: black;
 	}
-
+	
 	.spaced-repetition__prompt .rem-bullet__document .file.text.small.icon {
 		color: white;
 	}
@@ -75,10 +76,15 @@
 		padding: 4px 4px;
 	    color: var(--reference-text-dark);
 	}
-
+	
 	.rem-calendar-icon--in-editor,
 	.rem-container--not-included-in-document-scope .file.text.small.icon {
 		color: var(--darkmode-text);
+	}
+/*********** Context Menu ***********/
+	.select-none.rounded.bg-gray-5 {
+		color: black;
+		background-color: var(--lightmode-background-selected);
 	}
 /*********** Popup ***********/
 	#document-hover-preview__popup {
@@ -170,6 +176,47 @@
 	[data-rem-tags~="highlight"] .rem-bullet,
 	[data-rem-tags~="highlight"] .rem-bullet__icon {
 		filter: invert(0) !important;
+	}
+/*********** Settings Page ***********/
+	.settings-page {
+	    background-color: var(--darkmode-background);
+	}
+	
+	.settings-page__sidebar__title {
+	    color: yellow;
+	}
+	
+	.settings-page__sidebar__link--active {
+	    border: 1px solid yellow;
+	}
+	
+	/* Sidebar svg icon */
+	.settings-page .css-drbSAB {
+	    color: yellow;
+	    border: 1px dotted yellow;
+	    border-radius: 5px;
+	}
+	
+	/*********** Setting Page Content ***********/
+	.settings-page .popup__header,
+	.settings-page__content__inner {
+	    background-color: #2E3437;
+	}
+	
+	/* Plan */
+	.settings-page .css-emvqyP {
+	    color: yellow;
+	    font-family: "Roboto Mono", "Fira Code", monospace;
+	    font-weight: 600;
+	    zoom: 125%;
+	}
+	
+	/* Account, Knowledge Base Settings, Danger Zone, Syncing, App Version */
+	.settings-page .items-center,
+	.settings-page .css-jBUFtN,
+	.settings-page .px-6,
+	.settings-page .p-6 {
+	    color: var(--darkmode-text);
 	}
 /*********** Notion like Callout Rem ***********/
 	[data-rem-tags~="callout"] .rem-container {
