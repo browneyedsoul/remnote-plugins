@@ -150,15 +150,15 @@
 	}
 /*********** Codeblock ***********/
 	#code-node {
-		background-color: var(--code-node-background-color-dark);
+		background-color: var(--code-node-background-color-dark) !important;
 	}
 	
 	.codeLine::before {
-		color: var(--line-number-color-dark);
+		color: var(--line-number-color-dark) !important;
 	}
 	
 	#code-node::before {
-		background-color: var(--line-number-background-color-dark);
+		background-color: var(--line-number-background-color-dark) !important;
 	}
 /*********** Rem-Bullet Container ***********/
 	.plus-button,
