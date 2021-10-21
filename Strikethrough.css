@@ -1,5 +1,6 @@
 [data-rem-tags~="strikethrough"] .rem-text .highlight-color--red {
 	background-color: unset !important;
+	color: unset;
 	text-decoration:line-through;
 	text-decoration-style: double;
 }
