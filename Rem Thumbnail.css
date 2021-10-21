@@ -266,34 +266,31 @@
         }
 
 /*********** Queue ***********/
-    /* Title bar */
-    .queue__middle .inline-block,
-    .queue__middle .tumbnail--with-width {
-        height: 36px !important;
-        width: auto !important;
-        color: #2B3137;
-        padding-right: 5px;
-    }
-    
-    .Queue .inline-block,
-    .Queue .tumbnail--with-width {
-        min-width: fit-content !important;
-        height: auto !important;
-        max-height: 100% !important;
-    }
-
-    .queue .react-transform-component .inline-block,
-    .queue .react-transform-component .tumbnail--with-width,
-    .queue-cluster-selector .inline-block,
-    .queue-cluster-selector .w-full.h-full.tumbnail--with-width,
-    .queue-cluster-selector .search-result__rem-breadcrumbs .inline-block,
-    .queue-cluster-selector .search-result__rem-breadcrumbs .tumbnail--with-width,
     .spaced-repetition__prompt__breadcrumbs .inline-block,
     .spaced-repetition__prompt__breadcrumbs .tumbnail--with-width {
-        display: inline-block;
-        height: 12px !important;
+        height: 18px;
         width: auto !important;
         min-width: auto !important;
+        max-width: auto !important;
+    }
+    
+    .rem-bullet__document .inline-block,
+    .rem-bullet__document .inline-block.align-text-top.group,
+    .rem-bullet__document .react-transform-component,
+    .rem-bullet__document .image-node,
+    .rem-bullet__document .tumbnail--with-width {
+        width: auto !important;
+        min-width: auto !important;
+        max-width: auto !important;
+    }
+    
+    .rem-bullet__document > span > div {
+        display: inline;
+     }
+    
+    .Queue .spaced-repetition__prompt [data-rmiz-wrap="visible"] {
+        height: 18px !important;
+        width: auto !important;
     }
 
 /*********** Portal ***********/
