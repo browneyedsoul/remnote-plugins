@@ -11,8 +11,6 @@ https://forum.remnote.io/c/developers-api/9
 ## Branch Emphasizing Editor Mode
 ![CleanShot 2021-10-03 at 17 14 57](https://user-images.githubusercontent.com/56161102/135745657-5daffdc3-6e95-4bc8-9bd3-14619397be0f.png)
 
-
-
 ## Notion like Callout Rem
 ![CleanShot 2021-09-15 at 01 46 01](https://user-images.githubusercontent.com/56161102/133299689-ec0a686b-7377-4871-bf7a-2c49e7e3a62e.gif)
 
@@ -20,8 +18,6 @@ https://forum.remnote.io/c/developers-api/9
 
 ## Setting for image rendering Size Limitation Free
 ![0b9bd70668dbd1042eee85d22416202462b6ca50_2_619x500](https://user-images.githubusercontent.com/56161102/133884643-7d81d70e-0158-4da2-95a7-80efcce911cd.jpg)
-
-
 
 ## Modern Divider
 ![b3f69bae4dfd9824c2ccabe58d67a0ea497514f2](https://user-images.githubusercontent.com/56161102/129580147-c0507bcc-a4d1-4522-b48d-d7efdf831e0f.gif)
@@ -39,6 +35,8 @@ https://forum.remnote.io/c/developers-api/9
 
 ### After
 ![008536836b289d7997156aedf0ca70fabeb112d3](https://user-images.githubusercontent.com/56161102/138023272-01494a0c-9e53-4768-a531-65f62bfcf49e.png)
+![CleanShot 2021-10-22 at 21 20 39](https://user-images.githubusercontent.com/56161102/138453737-cc4e4dac-5aff-4ce4-a320-622d4697e7cd.png)
+
 
 All you need to do is just guess how much size is fit for a card and then set the width of a Front Card by tagging
 
@@ -59,22 +57,10 @@ All you need to do is just guess how much size is fit for a card and then set th
 
 ## Modern Scrollable Codeblock
 ![CleanShot 2021-09-16 at 17 10 33](https://user-images.githubusercontent.com/56161102/133575648-e3b0311d-da26-4123-b4b2-79bf0a2028af.png)
-
-
-## Modern Table Row(Deprecated)
-
-
-
-## Simple Column Table(Deprecated)
-![6f55ee80750348fc0c5a0beec224da939aa2f3d6_2_572x499](https://user-images.githubusercontent.com/56161102/129581987-d9833334-3031-43c1-88fa-1cb3d1820238.png)
-![78312fab6e3fdb1741c56f901f633c5a75901aac](https://user-images.githubusercontent.com/56161102/129582005-5bd6eccf-6553-43f5-8753-8e0e66e91673.gif)
-
-
+![CleanShot 2021-10-22 at 21 46 48](https://user-images.githubusercontent.com/56161102/138455986-b8fd0d40-7dea-4d25-b14b-d394dd5744cc.png)
 
 ## Strikethrough Workaround
 ![CleanShot 2021-09-13 at 23 39 40](https://user-images.githubusercontent.com/56161102/133104105-d94817c9-0ff9-4fdb-b221-da2d8a5c7d50.png)
-
-
 
 
 ## Rem Thumbnail
@@ -94,8 +80,6 @@ It is Optimized for fixed pixel so I recommend you to use
 or Customize on your tastes!
 
 If you find some bugs or something to improve, please let me know!
-
-
 
 
 ## Make Cover Photo Easy Again
@@ -125,5 +109,11 @@ Hope new revamped big update version could be more intuitive. :slightly_smiling_
 
 ## Terminal
 ![CleanShot 2021-08-29 at 15 07 51](https://user-images.githubusercontent.com/56161102/131240536-c039347c-3fce-4cc4-a568-048606a4d383.png)
+
+## Modern Table Row(Deprecated)
+
+## Simple Column Table(Deprecated)
+![6f55ee80750348fc0c5a0beec224da939aa2f3d6_2_572x499](https://user-images.githubusercontent.com/56161102/129581987-d9833334-3031-43c1-88fa-1cb3d1820238.png)
+![78312fab6e3fdb1741c56f901f633c5a75901aac](https://user-images.githubusercontent.com/56161102/129582005-5bd6eccf-6553-43f5-8753-8e0e66e91673.gif)
 
 
