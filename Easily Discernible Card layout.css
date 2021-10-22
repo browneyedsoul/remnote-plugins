@@ -54,8 +54,15 @@
 [data-rem-tags~="w480"] .concept_rem_type,
 [data-rem-tags~="w480"] .descriptor_rem_type,
 [data-rem-tags~="w480"] .separator-symbol {
-    display: inline;
+    display: inline-block;
     vertical-align: top;
+}
+
+[data-slate-node="text"] .basic_card_rem_type,
+[data-slate-node="text"] .concept_rem_type,
+[data-slate-node="text"] .descriptor_rem_type {
+  display: inline;
+  width: auto;
 }
 
 [data-rem-tags~="w90"] .basic_card_rem_type,
@@ -137,20 +144,20 @@
     vertical-align: top;
 }
 
-[data-rem-tags~="w90"] .only_in_answer {width: calc(100% - 120px);}
-[data-rem-tags~="w120"] .only_in_answer {width: calc(100% - 150px);}
-[data-rem-tags~="w150"] .only_in_answer {width: calc(100% - 180px);}
-[data-rem-tags~="w180"] .only_in_answer {width: calc(100% - 210px);}
-[data-rem-tags~="w210"] .only_in_answer {width: calc(100% - 240px);}
-[data-rem-tags~="w240"] .only_in_answer {width: calc(100% - 270px);}
-[data-rem-tags~="w270"] .only_in_answer {width: calc(100% - 300px);}
-[data-rem-tags~="w300"] .only_in_answer {width: calc(100% - 330px);}
-[data-rem-tags~="w330"] .only_in_answer {width: calc(100% - 360px);}
-[data-rem-tags~="w360"] .only_in_answer {width: calc(100% - 390px);}
-[data-rem-tags~="w390"] .only_in_answer {width: calc(100% - 420px);}
-[data-rem-tags~="w420"] .only_in_answer {width: calc(100% - 450px);}
-[data-rem-tags~="w450"] .only_in_answer {width: calc(100% - 480px);}
-[data-rem-tags~="w480"] .only_in_answer {width: calc(100% - 510px);}
+[data-rem-tags~="w90"] .only_in_answer {width: calc(100% - 125px);}
+[data-rem-tags~="w120"] .only_in_answer {width: calc(100% - 155px);}
+[data-rem-tags~="w150"] .only_in_answer {width: calc(100% - 185px);}
+[data-rem-tags~="w180"] .only_in_answer {width: calc(100% - 215px);}
+[data-rem-tags~="w210"] .only_in_answer {width: calc(100% - 245px);}
+[data-rem-tags~="w240"] .only_in_answer {width: calc(100% - 275px);}
+[data-rem-tags~="w270"] .only_in_answer {width: calc(100% - 305px);}
+[data-rem-tags~="w300"] .only_in_answer {width: calc(100% - 335px);}
+[data-rem-tags~="w330"] .only_in_answer {width: calc(100% - 365px);}
+[data-rem-tags~="w360"] .only_in_answer {width: calc(100% - 395px);}
+[data-rem-tags~="w390"] .only_in_answer {width: calc(100% - 425px);}
+[data-rem-tags~="w420"] .only_in_answer {width: calc(100% - 455px);}
+[data-rem-tags~="w450"] .only_in_answer {width: calc(100% - 485px);}
+[data-rem-tags~="w480"] .only_in_answer {width: calc(100% - 515px);}
 
 /*********** Tag Declutter ***********/
 [data-rem-tags~="w90"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
