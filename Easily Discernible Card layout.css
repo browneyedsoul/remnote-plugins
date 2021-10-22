@@ -1,3 +1,7 @@
+[data-rem-tags~="w90"] .basic_card_rem_type,
+[data-rem-tags~="w90"] .concept_rem_type,
+[data-rem-tags~="w90"] .descriptor_rem_type,
+[data-rem-tags~="w90"] .separator-symbol,
 [data-rem-tags~="w120"] .basic_card_rem_type,
 [data-rem-tags~="w120"] .concept_rem_type,
 [data-rem-tags~="w120"] .descriptor_rem_type,
@@ -50,10 +54,13 @@
 [data-rem-tags~="w480"] .concept_rem_type,
 [data-rem-tags~="w480"] .descriptor_rem_type,
 [data-rem-tags~="w480"] .separator-symbol {
-    display: inline-block;
+    display: inline;
     vertical-align: top;
 }
 
+[data-rem-tags~="w90"] .basic_card_rem_type,
+[data-rem-tags~="w90"] .concept_rem_type,
+[data-rem-tags~="w90"] .descriptor_rem_type {width: 90px;}
 [data-rem-tags~="w120"] .basic_card_rem_type,
 [data-rem-tags~="w120"] .concept_rem_type,
 [data-rem-tags~="w120"] .descriptor_rem_type {width: 120px;}
@@ -94,6 +101,7 @@
 [data-rem-tags~="w480"] .concept_rem_type,
 [data-rem-tags~="w480"] .descriptor_rem_type {width: 480px;}
 
+[data-rem-tags~="w90"] .separator-symbol,
 [data-rem-tags~="w120"] .separator-symbol,
 [data-rem-tags~="w150"] .separator-symbol,
 [data-rem-tags~="w180"] .separator-symbol,
@@ -111,6 +119,7 @@
     vertical-align: top;
 }
 
+[data-rem-tags~="w90"] .only_in_answer,
 [data-rem-tags~="w120"] .only_in_answer,
 [data-rem-tags~="w150"] .only_in_answer,
 [data-rem-tags~="w180"] .only_in_answer,
@@ -123,11 +132,12 @@
 [data-rem-tags~="w390"] .only_in_answer,
 [data-rem-tags~="w420"] .only_in_answer,
 [data-rem-tags~="w450"] .only_in_answer,
-[data-rem-tags~="w480"] .only_in_answer  {
+[data-rem-tags~="w480"] .only_in_answer {
     display: inline-block;
     vertical-align: top;
 }
 
+[data-rem-tags~="w90"] .only_in_answer {width: calc(100% - 120px);}
 [data-rem-tags~="w120"] .only_in_answer {width: calc(100% - 150px);}
 [data-rem-tags~="w150"] .only_in_answer {width: calc(100% - 180px);}
 [data-rem-tags~="w180"] .only_in_answer {width: calc(100% - 210px);}
@@ -143,6 +153,8 @@
 [data-rem-tags~="w480"] .only_in_answer {width: calc(100% - 510px);}
 
 /*********** Tag Declutter ***********/
+[data-rem-tags~="w90"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+[data-rem-tags~="w90"] .hierarchy-editor__tag-bar__tag span {display: none;}
 [data-rem-tags~="w120"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
 [data-rem-tags~="w120"] .hierarchy-editor__tag-bar__tag span {display: none;}
 [data-rem-tags~="w150"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
