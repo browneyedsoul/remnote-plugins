@@ -1,5 +1,6 @@
 :root {
 	--darkmode-background: #2F3437;
+	--darkmode-background-sidebar: #2B3137;
 	--darkmode-background-selected: #4A5458;
 	--lightmode-background-selected: #C5DFEB;
 	--darkmode-text: #DFDFD5;
@@ -20,9 +21,9 @@
 	--calloutblue-background-color-dark: #D6E2E6;
 	--calloutpurple-background-color-dark: #E4D5E3;
 	--text-shadow: 0.01em 0.01em 0.01em #727E84;
-	--code-node-background-color-dark: #E6E6E6;
 	--line-number-color-dark: #BDBEBE;
 	--line-number-background-color-dark: #E6E6E6;
+	--code-node-background-color-dark: #E6E6E6;
 }
 /*********** Queue ***********/
 	.Queue {
@@ -446,13 +447,19 @@
 		#document-sidebar__account-capsule {
 			background-color: #FFFFFF;
 		}
-	/*********** All Notes & Flashcards ***********/
+	/*********** Sidebar Top ***********/
+		/* Search and ⚡️*/
+		#document-sidebar_top .flex.items-center.p-2.gap-2 > div {
+			border: 1px solid var(--darkmode-text);
+		}
+
+		/* All Notes & Flashcards */
 		#document-sidebar_top .flex.items-center.mb-1 {
-			font-family: Roboto Mono, Fira Code, Monospace;
+			font-family: "Roboto Mono", "Fira Code", Monospace;
 			color: yellow;
 			zoom: 125%;
 			margin-left: 5px;
-			background-color: #2B3137; /* fix hover color*/
+			background-color: var(--darkmode-background-sidebar);
 		}
 
 		#document-sidebar_top .css-fqRAnH {
@@ -466,10 +473,10 @@
 		}
 
 		#document-sidebar_top .block .flex-grow {
-			font-family: Roboto Mono, Fira code, Monospace;
+			font-family: "Roboto Mono", "Fira code", Monospace;
 			color: yellow;
 		}
-	/*********** Sidebar Top Level Pinned, Draft, Archive Symbol ***********/
+	/*********** Sidebar Pinned, Draft, Archive Symbol (Top Level) ***********/
 		#document-sidebar .title.cursor-pointer .css-fqRAnH {
 			zoom: 150%;
 			color: black;
