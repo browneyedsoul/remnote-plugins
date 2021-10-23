@@ -4,6 +4,8 @@
 	--darkmode-background-selected: #4A5458;
 	--lightmode-background-selected: #C5DFEB;
 	--darkmode-text: #DFDFD5;
+	--quote-text-dark: #F1FA8C;
+	--quote-background-dark: #5E6A70;
 	--reference-text-dark: darkred;
 	--darkmode-line-color: #404648;
 	--link-node-color-dark: #94D2FF;
@@ -70,6 +72,11 @@
 	.TreeNode {
 		border-width: 1.5px !important;
 		border-left-color: var(--darkmode-line-color) !important;
+	}
+	
+	.quote {
+		color: var(--quote-text-dark) !important;
+		background-color: var(--quote-background-dark) !important;
 	}
 	
 	.rem-reference .RichTextViewer {
@@ -218,7 +225,6 @@
 	    color: yellow;
 	    font-family: "Roboto Mono", "Fira Code", monospace;
 	    font-weight: 600;
-	    zoom: 125%;
 	}
 	
 	/* Account, Knowledge Base Settings, Danger Zone, Syncing, App Version */
