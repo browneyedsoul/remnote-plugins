@@ -87,6 +87,15 @@
 		color: black;
 		background-color: var(--lightmode-background-selected);
 	}
+/*********** Find / Filter / Replace - Ctrl(⌘) + F ***********/
+    #hierarchy-editor__ctrl-f .css-exQOrH {
+        color: black;
+        background-color: unset;
+    }
+
+    #rich-text-editor__icon {
+        filter: invert(1);
+    }
 /*********** Popup ***********/
 	#document-hover-preview__popup {
 		color: var(--darkmode-text);
