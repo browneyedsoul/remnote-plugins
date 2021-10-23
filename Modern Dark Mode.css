@@ -224,6 +224,11 @@
 	/* Account, Knowledge Base Settings, Danger Zone, Syncing, App Version */
 	.settings-page .items-center,
 	.settings-page .css-jBUFtN,
+	.settings-page .css-ATSnA,
+	.settings-page .css-dcfFHl,
+	.settings-page .css-cSCrvK,
+	.settings-page .css-exQOrH + a,
+	.settings-page .checkbox,
 	.settings-page .px-6,
 	.settings-page .p-6 {
 	    color: var(--darkmode-text);
