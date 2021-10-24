@@ -9,6 +9,18 @@
 	--reference-text-dark: darkred;
 	--darkmode-line-color: #404648;
 	--link-node-color-dark: #94D2FF;
+	--red-text: #FF4A44;
+	--red-text-dark: #FD6E68;
+	--orange-text: #C26F1C;
+	--orange-text-dark: #F0A264;
+	--yellow-text: #EAB700;
+	--yellow-text-dark: #FFC802;
+	--green-text: #34A853;
+	--green-text-dark: #3CC160;
+	--blue-text: #579AFF;
+	--blue-text-dark: #98BFE2;
+	--purple-text: #A142F4;
+	--purple-text-dark: #BF96F4;
 	--highlight-color--red: #FF8A88;
 	--highlight-color--orange: #FFB86C;
 	--highlight-color--yellow: #F1FA8C;
@@ -67,6 +79,9 @@
 	
 	.LinkNode {
 		color: var(--link-node-color-dark) !important;
+		background-color: var(--darkmode-background-selected);
+		border-radius: 3px;
+		padding: 0px 2px 0px 2px;
 	}
 
 	.TreeNode {
@@ -74,7 +89,7 @@
 		border-left-color: var(--darkmode-line-color) !important;
 	}
 	
-	.quote {
+	.animate-zoom-into-bullet .quote {
 		color: var(--quote-text-dark) !important;
 		background-color: var(--quote-background-dark) !important;
 	}
@@ -89,6 +104,117 @@
 	.rem-container--not-included-in-document-scope .file.text.small.icon {
 		color: var(--darkmode-text);
 	}
+/*********** Document Title Highlight Style ***********/
+	#DocumentTitle .bold.highlight-color--red {
+		background-color: unset !important;
+		color: var(--red-text-dark); 
+	}
+	#DocumentTitle .bold.highlight-color--orange {
+		background-color: unset !important;
+		color: var(--orange-text-dark); 
+	}
+	#DocumentTitle .bold.highlight-color--yellow {
+		background-color: unset !important;
+		color: var(--yellow-text-dark); 
+	}
+	#DocumentTitle .bold.highlight-color--green {
+		background-color: unset !important;
+		color: var(--green-text-dark); 
+	}
+	#DocumentTitle .bold.highlight-color--blue {
+		background-color: unset !important;
+		color: var(--blue-text-dark); 
+	}
+	#DocumentTitle .bold.highlight-color--purple {
+		background-color: unset !important;
+		color: var(--purple-text-dark); 
+	}
+/*********** Hightlight Style ***********/
+	.highlight-color--red,
+	.highlight-color--orange,
+	.highlight-color--yellow,
+	.highlight-color--green,
+	.highlight-color--blue,
+	.highlight-color--purple {
+		color: black;
+		border-radius: 3px;
+		margin-bottom: 1px;
+		padding: 0px 2px 0px 2px;
+	}
+	
+	.highlight-color--red {background-color: var(--highlight-color--red);}
+	.highlight-color--orange {background-color: var(--highlight-color--orange);}
+	.highlight-color--yellow {background-color: var(--highlight-color--yellow);}
+	.highlight-color--green {background-color: var(--highlight-color--green);}
+	.highlight-color--blue {background-color: var(--highlight-color--blue);}
+	.highlight-color--purple {background-color: var(--highlight-color--purple);}
+
+	.highlight-color--red .rem-text,
+	.highlight-color--red .rem-text.rem-header--1,
+	.highlight-color--red .rem-text.rem-header--2,
+	.highlight-color--red .rem-text.rem-header--3,
+	.highlight-color--orange .rem-text,
+	.highlight-color--orange .rem-text.rem-header--1,
+	.highlight-color--orange .rem-text.rem-header--2,
+	.highlight-color--orange .rem-text.rem-header--3,
+	.highlight-color--yellow .rem-text,
+	.highlight-color--yellow .rem-text.rem-header--1,
+	.highlight-color--yellow .rem-text.rem-header--2,
+	.highlight-color--yellow .rem-text.rem-header--3,
+	.highlight-color--green .rem-text,
+	.highlight-color--green .rem-text.rem-header--1,
+	.highlight-color--green .rem-text.rem-header--2,
+	.highlight-color--green .rem-text.rem-header--3,
+	.highlight-color--blue .rem-text,
+	.highlight-color--blue .rem-text.rem-header--1,
+	.highlight-color--blue .rem-text.rem-header--2,
+	.highlight-color--blue .rem-text.rem-header--3,
+	.highlight-color--purple .rem-text,
+	.highlight-color--purple .rem-text.rem-header--1,
+	.highlight-color--purple .rem-text.rem-header--2,
+	.highlight-color--purple .rem-text.rem-header--3  {
+		color: black;
+	}
+	
+/*********** Highlight Color to Text Color ***********/
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--red,
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange, 
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow,
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--green,
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--blue,
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {
+		background-color: unset;
+	}
+	
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--red {
+		font-weight: 500;
+		color: var(--red-text-dark); 
+	}
+	
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange {
+		font-weight: 500;
+	 	color: var(--orange-text-dark);
+	}
+	
+    [data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow {
+		font-weight: 500;
+        color: var(--yellow-text-dark);
+    }
+    
+    [data-rem-tags~="color"] .rem-text .bold.highlight-color--green {
+        font-weight: 500;
+        color: var(--green-text-dark);
+    }
+    
+    [data-rem-tags~="color"] .rem-text .bold.highlight-color--blue {
+		font-weight: 500;
+        color: var(--blue-text-dark);
+    }
+    
+    [data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {
+		font-weight: 500;
+        color: var(--purple-text-dark);
+    }
 /*********** Context Menu ***********/
 	.select-none.rounded.bg-gray-5 {
 		color: black;
@@ -284,78 +410,7 @@
 	[data-rem-tags~="calloutpurple"] .rem-text {
 		color: black;
 	}
-/*********** Hightlight Style ***********/
-	.highlight-color--red,
-	.highlight-color--orange,
-	.highlight-color--yellow,
-	.highlight-color--green,
-	.highlight-color--blue,
-	.highlight-color--purple {
-		color: black;
-		border-radius: 3px;
-		margin-bottom: 1px;
-	}
 
-	.highlight-color--red {
-		background-color: var(--highlight-color--red) !important;
-	}
-
-	.highlight-color--orange {
-		background-color: var(--highlight-color--orange) !important;
-	}
-
-	.highlight-color--yellow {
-		background-color: var(--highlight-color--yellow) !important;
-	}
-
-	.highlight-color--green {
-		background-color: var(--highlight-color--green) !important;
-	}
-
-	.highlight-color--blue {
-		background-color: var(--highlight-color--blue) !important;
-	}
-
-	.highlight-color--purple {
-		background-color: var(--highlight-color--purple) !important;
-	}
-
-	[data-rem-tags~="color"] .rem-text .highlight-color--red,
-	[data-rem-tags~="color"] .rem-text .highlight-color--orange, 
-	[data-rem-tags~="color"] .rem-text .highlight-color--yellow,
-	[data-rem-tags~="color"] .rem-text .highlight-color--green,
-	[data-rem-tags~="color"] .rem-text .highlight-color--blue,
-	[data-rem-tags~="color"] .rem-text .highlight-color--purple {
-		background-color: unset !important;
-		text-shadow: var(--text-shadow);
-	}
-
-	.highlight-color--red .rem-text,
-	.highlight-color--red .rem-text.rem-header--1,
-	.highlight-color--red .rem-text.rem-header--2,
-	.highlight-color--red .rem-text.rem-header--3,
-	.highlight-color--orange .rem-text,
-	.highlight-color--orange .rem-text.rem-header--1,
-	.highlight-color--orange .rem-text.rem-header--2,
-	.highlight-color--orange .rem-text.rem-header--3,
-	.highlight-color--yellow .rem-text,
-	.highlight-color--yellow .rem-text.rem-header--1,
-	.highlight-color--yellow .rem-text.rem-header--2,
-	.highlight-color--yellow .rem-text.rem-header--3,
-	.highlight-color--green .rem-text,
-	.highlight-color--green .rem-text.rem-header--1,
-	.highlight-color--green .rem-text.rem-header--2,
-	.highlight-color--green .rem-text.rem-header--3,
-	.highlight-color--blue .rem-text,
-	.highlight-color--blue .rem-text.rem-header--1,
-	.highlight-color--blue .rem-text.rem-header--2,
-	.highlight-color--blue .rem-text.rem-header--3,
-	.highlight-color--purple .rem-text,
-	.highlight-color--purple .rem-text.rem-header--1,
-	.highlight-color--purple .rem-text.rem-header--2,
-	.highlight-color--purple .rem-text.rem-header--3  {
-		color: black;
-	}
 /*********** Divider ***********/
 	[data-rem-tags~="divider"] {
 		color: transparent;
@@ -415,6 +470,15 @@
 
 	#show-embedded-search-button {
 		filter: invert(1);
+	}
+/*********** Rem Rating System ***********/
+	[data-rem-tags~="1star"] .rem-bullet::before,
+	[data-rem-tags~="2star"] .rem-bullet::before,
+	[data-rem-tags~="3star"] .rem-bullet::before,
+	[data-rem-tags~="4star"] .rem-bullet::before,
+	[data-rem-tags~="5star"] .rem-bullet::before {
+		filter: invert(1);
+		border: 1px solid #CDCECE;
 	}
 /********************* Sidebar *********************/
 	/*********** Basic ***********/
