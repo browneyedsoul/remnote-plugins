@@ -1,8 +1,9 @@
 [data-rem-tags~="strikethrough"] .rem-text .highlight-color--red {
-	background-color: unset !important;
 	color: unset;
+	background-color: unset !important;
 	text-decoration:line-through;
 	text-decoration-style: double;
+	opacity: 0.5;
 }
 
 [data-rem-tags~="strikethrough"] .hierarchy-editor__tag-bar__tag {
@@ -11,4 +12,9 @@
 
 [data-rem-tags~="strikethrough"] .hierarchy-editor__tag-bar__tag span {
 	display: none;
+}
+
+[data-rem-tags~="strikethrough"] .hierarchy-editor__tag-bar {
+	position: relative;
+	right: -24px;
 }
