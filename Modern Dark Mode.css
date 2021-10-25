@@ -92,6 +92,7 @@
 	}
 	
 	/* General Text */
+	.css-bMKjkl, /* Slot icon */
 	.css-crJvPT,
 	.rem-text,
 	.rem-text.rem-header--1,
@@ -117,10 +118,18 @@
 		background-color: var(--quote-background-dark) !important;
 	}
 	
+	/* Reference */
 	.rem-reference .RichTextViewer {
 		font-weight: 400;
 	    color: var(--reference-text-dark);
 	    background-color:
+	}
+	
+	/* Alias */
+	.rem-reference-container .css-kWtKRr {
+		filter: invert(1);
+		position: relative;
+		top: 3px;
 	}
 	
 	.rem-calendar-icon--in-editor,
