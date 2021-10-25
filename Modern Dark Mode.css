@@ -22,11 +22,17 @@
 	--purple-text: #A142F4;
 	--purple-text-dark: #BF96F4;
 	--highlight-color--red: #FF8A88;
+	--highlight-color--red-dark: #;
 	--highlight-color--orange: #FFB86C;
+	--highlight-color--orange-dark: #;
 	--highlight-color--yellow: #F1FA8C;
+	--highlight-color--yellow-dark: #E3E004;
 	--highlight-color--green: #9FE39B;
+	--highlight-color--green-dark: #;
 	--highlight-color--blue: #9FC8EB;
+	--highlight-color--blue-dark: #;
 	--highlight-color--purple: #DEAFEB;
+	--highlight-color--purple-dark: #;
 	--callout-background-color-dark: #DFDFDC;
 	--calloutred-background-color-dark: #E8D4D8;
 	--calloutorange-background-color-dark: #E8DAC8;
@@ -96,8 +102,8 @@
 	
 	.rem-reference .RichTextViewer {
 		font-weight: 400;
-		padding: 4px 4px;
 	    color: var(--reference-text-dark);
+	    background-color:
 	}
 	
 	.rem-calendar-icon--in-editor,
@@ -145,6 +151,7 @@
 	.highlight-color--red {background-color: var(--highlight-color--red);}
 	.highlight-color--orange {background-color: var(--highlight-color--orange);}
 	.highlight-color--yellow {background-color: var(--highlight-color--yellow);}
+	.rem-text .highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
 	.highlight-color--green {background-color: var(--highlight-color--green);}
 	.highlight-color--blue {background-color: var(--highlight-color--blue);}
 	.highlight-color--purple {background-color: var(--highlight-color--purple);}
