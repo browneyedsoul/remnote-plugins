@@ -72,15 +72,27 @@
 		color: white;
 	}
 /*********** Darkmode Background & Text & TreeNode***********/
+	/* General Background */
+	.document-table,
 	.tile__document {
 		background-color: var(--darkmode-background);
 	}
-
+	
+	/* All Notes page list */
+	.css-jlRuPl {
+		padding: 3px 0px 3px 0px;
+	}
+	.css-cLpPvR .RichTextViewer {
+		color: #9191A8 !important;
+	}
+	
+	/* General Text */
+	.css-crJvPT,
 	.rem-text,
 	.rem-text.rem-header--1,
 	.rem-text.rem-header--2,
 	.rem-text.rem-header--3 {
-		color: #DFDFD5;
+		color: var(--darkmode-text);
 	}
 	
 	.LinkNode {
