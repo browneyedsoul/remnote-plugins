@@ -54,7 +54,6 @@
 	.scroll-drag-component,
 	.spaced-repetition__prompt,
 	.spaced-repetition__prompt__breadcrumbs,
-	.css-exQOrH,
 	.text-base + a {
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
@@ -79,6 +78,12 @@
 	}
 	
 	/* All Notes page list */
+	.css-exQOrH {
+		color: var(--darkmode-text);
+		background-color: var(--darkmode-background);
+		padding: 5px;
+		border-radius: 5px;
+	}	
 	.css-jlRuPl {
 		padding: 3px 0px 3px 0px;
 	}
