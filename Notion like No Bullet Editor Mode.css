@@ -1,103 +1,64 @@
 /*********** Root ***********/
 	:root {
-	    /*********** Basic Color ***********/
+		--font-family: "Helvetica Neue";
+		--font-size-header-1: 36px;
+		--font-size-header-2: 26px;
+		--font-size-header-3: 20px;
+	    /* Basic Bullet Color */
 	    --bullet-main:#53555F;
 	    --bullet-doc:#50FA7B;
 	    --bullet-folder:#53555F;
 	    --bullet-concept:#53555F;
 	    --bullet-descriptor:#53555F;
-	    /*********** Practice direction ***********/
-	    --forward-practice-color: red;
-	    --backward-practice-color: purple;
-	    --both-practice-color: orange;
-	    --disabled-practice-color: gray;
+	    
+	    /* Practice Bullet Color */
+	    --both-practice-color: #006FFF;
+	    --forward-practice-color: #00FFFF;
+	    --backward-practice-color: #72C373;
+	    --disabled-practice-color: #959595;
+	} 
+/*********** TreeNode Distraction Free ***********/
+	#hierarchy-editor .TreeNode {
+	    border-color: #F7F6F3;
+	    border-width: 1px;
+	    transition-timing-function: linear;
+	    position: relative;
+	    background-color: transparent;
+	    padding-left: 2px;
+	    left: 20px;
+		margin-right: 20px;
 	} 
 /*********** Rem Bullet for Normal Rem-text & Header ***********/
 	/*********** Normal Rem-text ***********/
-		.rem-text {
-			font-family: "Helvetica Neue";
-		}
-
-		.rem-bullet {
-			border-radius: 2px !important;
-			margin-top: 4px;
-		}
+		.rem-text {font-family: var(--font-family);}
+		.rem-bullet {border-radius: 1px !important;}
+		.rem-bullet.rem-bullet--all-children-visible {background-color: transparent;}
+		.rem-bullet.rem-bullet--hidden-children {margin-top: 4px;}
 		
-		.rem-bullet.rem-bullet--all-children-visible {
-			background-color: transparent;
-		}
 	/*********** Header 1 **********/
-		.rem-header--1 {
-			font-size: 36px !important;
-		}
+		.rem-header--1 {font-size: var(--font-size-header-1) !important;}
+		.rem-header--2 {font-size: var(--font-size-header-2) !important;}
+		.rem-header--3 {font-size: var(--font-size-header-3) !important;}
+		.rem-container--header-1 .rem-button__container {top: 6px;}
 		
-		.rem-text.rem-header--1 {
-			border-radius: 5px;
-		}
-		
-		.rem-container--header-1 .rem-button__container {
-			top: 6px;
-		}
-		
-		.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--1 {
+		.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--1,
+		.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--2,
+		.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--3 {
 			border: transparent;
 			background-color: transparent;
-			height: 4px !important;
-			width: 4px !important;
+			height: 4px;
+			width: 4px;
 		}
-		
-		.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1 {
+		.rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
+		.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+		.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+		.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
 			border: 0.1px solid var(--bullet-main) !important;
 			background-color: var(--bullet-main);
 			height: 4px;
 			width: 4px;
 		}
-	/*********** Header 2 ***********/
-		.rem-header--2 {
-			font-size: 24px !important;
-		}
 		
-		.rem-text.rem-header--2 {
-			border-radius: 5px;
-			margin-bottom: 2px;
-		}
-		
-		.rem-bullet__container.rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--2 {
-			border: 0.1px solid var(--bullet-main);
-			background-color: transparent;
-			height: 4px !important;
-			width: 4px !important;
-		}
-		
-		.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2 {
-			border: 0.1px solid var(--bullet-main) !important;
-			background-color: var(--bullet-main);
-			height: 4px !important;
-			width: 4px !important;
-		}
-	/*********** Header 3 ***********/	
-		.rem-header--3 {
-			font-size: 20px !important;
-		}
-		
-		.rem-text.rem-header--3 {
-			border-radius: 5px;
-			margin-bottom: 2px;
-		}
-		
-		.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--3 {
-			border: transparent;
-			background-color: transparent;
-			height: 4px !important;
-			width: 4px !important;
-		}
-		
-		.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
-			border: 0.1px solid var(--bullet-main) !important;
-			background-color: var(--bullet-main);
-			height: 4px !important;
-			width: 4px !important;
-		}
 	/*********** Rem Container ALL Children Visible Bullet ***********/
 		.rem-bullet__container {
 			position: relative;
@@ -117,72 +78,40 @@
 			margin-bottom: -2px;
 		}
 		
-		.rem-text.rem-text {
-			border-radius: 5px;
-		}
-		
-		.EditorContainer {
-			line-height: 140%;
-		}
+
+		.EditorContainer {line-height: 140%;}
 		
 		.rem-bullet.rem-bullet:hover {
 			background-color: black;
 			margin-bottom: 3px;
 		}
-		
-		.rem-bullet.rem-bullet--hidden-children {
-			margin-top: 4px;
-		}
-		
-		/*********** Rem Container Children Hidden Bullet ***********/
-		.rem-bullet__container .rem-bullet.rem-bullet--hidden-children {
-			border: 0.1px solid var(--bullet-main) !important;
-			background-color: var(--bullet-main);
-			height: 4px;
-			width: 4px;
-		}
+
 /*********** Rem Bullet for Flashcard Rem ***********/
 	/*********** Basic & Concept-Rem-Type Bullet ***********/
-		.rem-container--question-rem-type.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet,
-		.rem-container--concept-rem-type.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet,
-		.rem-container--descriptor-rem-type.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet,
-		.rem-container--no_content-rem-type.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
+		.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
 			background: var(--both-practice-color) !important;
 		}
-		
 		.rem-container--forwards-practice-enabled .rem-bullet {
 			background: var(--forward-practice-color) !important;
-			width: 26px;
-			height: 18px;
-			position: relative;
-			left: 4px;
-			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.png");
-			-webkit-mask-repeat: no-repeat;
-			-webkit-mask-size: contain;
-			overflow: visible !important;
 		}
-		
 		.rem-container--backwards-practice-enabled .rem-bullet {
 			background: var(--backward-practice-color) !important;
-			width: 26px;
-			height: 18px;
-			position: relative;
-			left: 4px;
-			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.png");
-			-webkit-mask-repeat: no-repeat;
-			-webkit-mask-size: contain;
-			overflow: visible !important;
 		}
-		
 		.rem-container--forwards-practice-disabled .rem-bullet {
 			background: var(--disabled-practice-color);
+		}
+		
+		.rem-container--forwards-practice-enabled .rem-bullet,
+		.rem-container--backwards-practice-enabled .rem-bullet,
+		.rem-container--forwards-practice-disabled .rem-bullet { 
 			width: 26px;
 			height: 18px;
 			position: relative;
 			left: 4px;
-			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.png");
 			-webkit-mask-repeat: no-repeat;
 			-webkit-mask-size: contain;
+			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.png");
+			overflow: visible !important;
 		}
 
 	/*********** Descriptor-Rem-Type Bullet ***********/
@@ -199,8 +128,8 @@
 
 	/*********** List-Type Bullet ***********/
 		.rem-container--forwards-practice-enabled .rem-bullet.rem-bullet--hidden-children,
-		.rem-container--backwards-practice-enabled .rem-bullet.rem-bullet--hidden-children,
-		.rem-container--no_content-rem-type.rem-container--forwards-practice-disabled .rem-bullet.rem-bullet--hidden-children {
+		.rem-container--forwards-practice-disabled .rem-bullet.rem-bullet--hidden-children,
+		.rem-container--backwards-practice-enabled .rem-bullet.rem-bullet--hidden-children {
 			border-radius: 0px !important;
 			position: relative;
 			top: -1.2px;
@@ -212,28 +141,23 @@
 		}
 
 /*********** Direction Arrows ***********/
+
 /*********** Documents ***********/
 	/*********** Current Page [Parent > Child] Hierarchy Style ***********/
 		#document-parents .parent-link {
 		 	color: #2B3137;
 		}
 	/*********** Document Title ***********/
-		#document .document-title {
+		#document .document-title,
+		#document .document-title .bold {
 		 	font-size: 36px;
 		 	font-weight: 700 !important;
-		 	font-family: Sans-Serif Workhorse;
-		}
-		
-		#document .document-title .bold {
-		 	font-weight: 700 !important;
-		 	font-family: Sans-Serif Workhorse;
 		}
 		
 		.rem-is-custom-rem-type.rem-is-custom-rem-type--in-body {
 			position: relative;
 			top: 4px;
 		}
-
 /*********** Make Bullet-list by Intentional Tagging ***********/
 	[data-rem-tags~="bulletlist"] {
 	    margin-left: 15px;
@@ -253,28 +177,11 @@
 		position: relative;
 		top: -1px;
 	}
-
-	[data-rem-tags~="bulletlist"] .items-center.hierarchy-editor__tag-bar__tag {
-		background-color: transparent !important;
-	}
-
-	[data-rem-tags~="bulletlist"] .hierarchy-editor__tag-bar__tag span {
-		display: none;
-	}
-
-/*********** TreeNode Distraction Free ***********/
-	#hierarchy-editor .TreeNode {
-	    border-color: #F7F6F3;
-	    border-width: 1px;
-	    transition-timing-function: linear;
-	    position: relative;
-	    background-color: transparent;
-	    padding-left: 5px;
-	    left: 20px;
-		margin-right: 20px;
-	}
+	/* Tag Declutter */
+	[data-rem-tags~="bulletlist"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
+	[data-rem-tags~="bulletlist"] .hierarchy-editor__tag-bar__tag span {display: none;}
 
 /*********** Rem Right side Button - Merge, Tag ***********/
 	.float-end {
-		zoom: 80%;
-	} 
+		zoom: 90%;
+	}
