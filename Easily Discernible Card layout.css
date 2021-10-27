@@ -1,159 +1,157 @@
-/*********** Make Question as a Inline Block ***********/
-    [data-rem-tags~="w90"] .basic_card_rem_type,
-    [data-rem-tags~="w90"] .concept_rem_type,
-    [data-rem-tags~="w90"] .descriptor_rem_type,
-    [data-rem-tags~="w90"] .separator-symbol,
-    [data-rem-tags~="w120"] .basic_card_rem_type,
-    [data-rem-tags~="w120"] .concept_rem_type,
-    [data-rem-tags~="w120"] .descriptor_rem_type,
-    [data-rem-tags~="w120"] .separator-symbol,
-    [data-rem-tags~="w150"] .basic_card_rem_type,
-    [data-rem-tags~="w150"] .concept_rem_type,
-    [data-rem-tags~="w150"] .descriptor_rem_type,
-    [data-rem-tags~="w150"] .separator-symbol,
-    [data-rem-tags~="w180"] .basic_card_rem_type,
-    [data-rem-tags~="w180"] .concept_rem_type,
-    [data-rem-tags~="w180"] .descriptor_rem_type,
-    [data-rem-tags~="w180"] .separator-symbol,
-    [data-rem-tags~="w210"] .basic_card_rem_type,
-    [data-rem-tags~="w210"] .concept_rem_type,
-    [data-rem-tags~="w210"] .descriptor_rem_type,
-    [data-rem-tags~="w210"] .separator-symbol,
-    [data-rem-tags~="w240"] .basic_card_rem_type,
-    [data-rem-tags~="w240"] .concept_rem_type,
-    [data-rem-tags~="w240"] .descriptor_rem_type,
-    [data-rem-tags~="w240"] .separator-symbol,
-    [data-rem-tags~="w270"] .basic_card_rem_type,
-    [data-rem-tags~="w270"] .concept_rem_type,
-    [data-rem-tags~="w270"] .descriptor_rem_type,
-    [data-rem-tags~="w270"] .separator-symbol,
-    [data-rem-tags~="w300"] .basic_card_rem_type,
-    [data-rem-tags~="w300"] .concept_rem_type,
-    [data-rem-tags~="w300"] .descriptor_rem_type,
-    [data-rem-tags~="w300"] .separator-symbol,
-    [data-rem-tags~="w330"] .basic_card_rem_type,
-    [data-rem-tags~="w330"] .concept_rem_type,
-    [data-rem-tags~="w330"] .descriptor_rem_type,
-    [data-rem-tags~="w330"] .separator-symbol,
-    [data-rem-tags~="w360"] .basic_card_rem_type,
-    [data-rem-tags~="w360"] .concept_rem_type,
-    [data-rem-tags~="w360"] .descriptor_rem_type,
-    [data-rem-tags~="w360"] .separator-symbol,
-    [data-rem-tags~="w390"] .basic_card_rem_type,
-    [data-rem-tags~="w390"] .concept_rem_type,
-    [data-rem-tags~="w390"] .descriptor_rem_type,
-    [data-rem-tags~="w390"] .separator-symbol,
-    [data-rem-tags~="w420"] .basic_card_rem_type,
-    [data-rem-tags~="w420"] .concept_rem_type,
-    [data-rem-tags~="w420"] .descriptor_rem_type,
-    [data-rem-tags~="w420"] .separator-symbol,
-    [data-rem-tags~="w450"] .basic_card_rem_type,
-    [data-rem-tags~="w450"] .concept_rem_type,
-    [data-rem-tags~="w450"] .descriptor_rem_type,
-    [data-rem-tags~="w450"] .separator-symbol,
-    [data-rem-tags~="w480"] .basic_card_rem_type,
-    [data-rem-tags~="w480"] .concept_rem_type,
-    [data-rem-tags~="w480"] .descriptor_rem_type,
-    [data-rem-tags~="w480"] .separator-symbol {
-        display: inline-block;
-        vertical-align: top
-    }
+[data-rem-tags~="w90"] .basic_card_rem_type,
+[data-rem-tags~="w90"] .concept_rem_type,
+[data-rem-tags~="w90"] .descriptor_rem_type,
+[data-rem-tags~="w90"] .separator-symbol,
+[data-rem-tags~="w120"] .basic_card_rem_type,
+[data-rem-tags~="w120"] .concept_rem_type,
+[data-rem-tags~="w120"] .descriptor_rem_type,
+[data-rem-tags~="w120"] .separator-symbol,
+[data-rem-tags~="w150"] .basic_card_rem_type,
+[data-rem-tags~="w150"] .concept_rem_type,
+[data-rem-tags~="w150"] .descriptor_rem_type,
+[data-rem-tags~="w150"] .separator-symbol,
+[data-rem-tags~="w180"] .basic_card_rem_type,
+[data-rem-tags~="w180"] .concept_rem_type,
+[data-rem-tags~="w180"] .descriptor_rem_type,
+[data-rem-tags~="w180"] .separator-symbol,
+[data-rem-tags~="w210"] .basic_card_rem_type,
+[data-rem-tags~="w210"] .concept_rem_type,
+[data-rem-tags~="w210"] .descriptor_rem_type,
+[data-rem-tags~="w210"] .separator-symbol,
+[data-rem-tags~="w240"] .basic_card_rem_type,
+[data-rem-tags~="w240"] .concept_rem_type,
+[data-rem-tags~="w240"] .descriptor_rem_type,
+[data-rem-tags~="w240"] .separator-symbol,
+[data-rem-tags~="w270"] .basic_card_rem_type,
+[data-rem-tags~="w270"] .concept_rem_type,
+[data-rem-tags~="w270"] .descriptor_rem_type,
+[data-rem-tags~="w270"] .separator-symbol,
+[data-rem-tags~="w300"] .basic_card_rem_type,
+[data-rem-tags~="w300"] .concept_rem_type,
+[data-rem-tags~="w300"] .descriptor_rem_type,
+[data-rem-tags~="w300"] .separator-symbol,
+[data-rem-tags~="w330"] .basic_card_rem_type,
+[data-rem-tags~="w330"] .concept_rem_type,
+[data-rem-tags~="w330"] .descriptor_rem_type,
+[data-rem-tags~="w330"] .separator-symbol,
+[data-rem-tags~="w360"] .basic_card_rem_type,
+[data-rem-tags~="w360"] .concept_rem_type,
+[data-rem-tags~="w360"] .descriptor_rem_type,
+[data-rem-tags~="w360"] .separator-symbol,
+[data-rem-tags~="w390"] .basic_card_rem_type,
+[data-rem-tags~="w390"] .concept_rem_type,
+[data-rem-tags~="w390"] .descriptor_rem_type,
+[data-rem-tags~="w390"] .separator-symbol,
+[data-rem-tags~="w420"] .basic_card_rem_type,
+[data-rem-tags~="w420"] .concept_rem_type,
+[data-rem-tags~="w420"] .descriptor_rem_type,
+[data-rem-tags~="w420"] .separator-symbol,
+[data-rem-tags~="w450"] .basic_card_rem_type,
+[data-rem-tags~="w450"] .concept_rem_type,
+[data-rem-tags~="w450"] .descriptor_rem_type,
+[data-rem-tags~="w450"] .separator-symbol,
+[data-rem-tags~="w480"] .basic_card_rem_type,
+[data-rem-tags~="w480"] .concept_rem_type,
+[data-rem-tags~="w480"] .descriptor_rem_type,
+[data-rem-tags~="w480"] .separator-symbol {
+    display: inline-block;
+    vertical-align: top
+}
 
-/*********** Question Width ***********/
-    [data-rem-tags~="w90"] .basic_card_rem_type,
-    [data-rem-tags~="w90"] .concept_rem_type,
-    [data-rem-tags~="w90"] .descriptor_rem_type {width: 90px;}
-    [data-rem-tags~="w120"] .basic_card_rem_type,
-    [data-rem-tags~="w120"] .concept_rem_type,
-    [data-rem-tags~="w120"] .descriptor_rem_type {width: 120px;}
-    [data-rem-tags~="w150"] .basic_card_rem_type,
-    [data-rem-tags~="w150"] .concept_rem_type,
-    [data-rem-tags~="w150"] .descriptor_rem_type {width: 150px;}
-    [data-rem-tags~="w180"] .basic_card_rem_type,
-    [data-rem-tags~="w180"] .concept_rem_type,
-    [data-rem-tags~="w180"] .descriptor_rem_type {width: 180px;}
-    [data-rem-tags~="w210"] .basic_card_rem_type,
-    [data-rem-tags~="w210"] .concept_rem_type,
-    [data-rem-tags~="w210"] .descriptor_rem_type {width: 210px;}
-    [data-rem-tags~="w240"] .basic_card_rem_type,
-    [data-rem-tags~="w240"] .concept_rem_type,
-    [data-rem-tags~="w240"] .descriptor_rem_type {width: 240px;}
-    [data-rem-tags~="w270"] .basic_card_rem_type,
-    [data-rem-tags~="w270"] .concept_rem_type,
-    [data-rem-tags~="w270"] .descriptor_rem_type {width: 270px;}
-    [data-rem-tags~="w300"] .basic_card_rem_type,
-    [data-rem-tags~="w300"] .concept_rem_type,
-    [data-rem-tags~="w300"] .descriptor_rem_type {width: 300px;}
-    [data-rem-tags~="w330"] .basic_card_rem_type,
-    [data-rem-tags~="w330"] .concept_rem_type,
-    [data-rem-tags~="w330"] .descriptor_rem_type {width: 330px;}
-    [data-rem-tags~="w360"] .basic_card_rem_type,
-    [data-rem-tags~="w360"] .concept_rem_type,
-    [data-rem-tags~="w360"] .descriptor_rem_type {width: 360px;}
-    [data-rem-tags~="w390"] .basic_card_rem_type,
-    [data-rem-tags~="w390"] .concept_rem_type,
-    [data-rem-tags~="w390"] .descriptor_rem_type {width: 390px;}
-    [data-rem-tags~="w420"] .basic_card_rem_type,
-    [data-rem-tags~="w420"] .concept_rem_type,
-    [data-rem-tags~="w420"] .descriptor_rem_type {width: 420px;}
-    [data-rem-tags~="w450"] .basic_card_rem_type,
-    [data-rem-tags~="w450"] .concept_rem_type,
-    [data-rem-tags~="w450"] .descriptor_rem_type {width: 450px;}
-    [data-rem-tags~="w480"] .basic_card_rem_type,
-    [data-rem-tags~="w480"] .concept_rem_type,
-    [data-rem-tags~="w480"] .descriptor_rem_type {width: 480px;}
+[data-rem-tags~="w90"] .basic_card_rem_type,
+[data-rem-tags~="w90"] .concept_rem_type,
+[data-rem-tags~="w90"] .descriptor_rem_type {width: 90px;}
+[data-rem-tags~="w120"] .basic_card_rem_type,
+[data-rem-tags~="w120"] .concept_rem_type,
+[data-rem-tags~="w120"] .descriptor_rem_type {width: 120px;}
+[data-rem-tags~="w150"] .basic_card_rem_type,
+[data-rem-tags~="w150"] .concept_rem_type,
+[data-rem-tags~="w150"] .descriptor_rem_type {width: 150px;}
+[data-rem-tags~="w180"] .basic_card_rem_type,
+[data-rem-tags~="w180"] .concept_rem_type,
+[data-rem-tags~="w180"] .descriptor_rem_type {width: 180px;}
+[data-rem-tags~="w210"] .basic_card_rem_type,
+[data-rem-tags~="w210"] .concept_rem_type,
+[data-rem-tags~="w210"] .descriptor_rem_type {width: 210px;}
+[data-rem-tags~="w240"] .basic_card_rem_type,
+[data-rem-tags~="w240"] .concept_rem_type,
+[data-rem-tags~="w240"] .descriptor_rem_type {width: 240px;}
+[data-rem-tags~="w270"] .basic_card_rem_type,
+[data-rem-tags~="w270"] .concept_rem_type,
+[data-rem-tags~="w270"] .descriptor_rem_type {width: 270px;}
+[data-rem-tags~="w300"] .basic_card_rem_type,
+[data-rem-tags~="w300"] .concept_rem_type,
+[data-rem-tags~="w300"] .descriptor_rem_type {width: 300px;}
+[data-rem-tags~="w330"] .basic_card_rem_type,
+[data-rem-tags~="w330"] .concept_rem_type,
+[data-rem-tags~="w330"] .descriptor_rem_type {width: 330px;}
+[data-rem-tags~="w360"] .basic_card_rem_type,
+[data-rem-tags~="w360"] .concept_rem_type,
+[data-rem-tags~="w360"] .descriptor_rem_type {width: 360px;}
+[data-rem-tags~="w390"] .basic_card_rem_type,
+[data-rem-tags~="w390"] .concept_rem_type,
+[data-rem-tags~="w390"] .descriptor_rem_type {width: 390px;}
+[data-rem-tags~="w420"] .basic_card_rem_type,
+[data-rem-tags~="w420"] .concept_rem_type,
+[data-rem-tags~="w420"] .descriptor_rem_type {width: 420px;}
+[data-rem-tags~="w450"] .basic_card_rem_type,
+[data-rem-tags~="w450"] .concept_rem_type,
+[data-rem-tags~="w450"] .descriptor_rem_type {width: 450px;}
+[data-rem-tags~="w480"] .basic_card_rem_type,
+[data-rem-tags~="w480"] .concept_rem_type,
+[data-rem-tags~="w480"] .descriptor_rem_type {width: 480px;}
 
-    [data-rem-tags~="w90"] .separator-symbol,
-    [data-rem-tags~="w120"] .separator-symbol,
-    [data-rem-tags~="w150"] .separator-symbol,
-    [data-rem-tags~="w180"] .separator-symbol,
-    [data-rem-tags~="w210"] .separator-symbol,
-    [data-rem-tags~="w240"] .separator-symbol,
-    [data-rem-tags~="w270"] .separator-symbol,
-    [data-rem-tags~="w300"] .separator-symbol,
-    [data-rem-tags~="w330"] .separator-symbol,
-    [data-rem-tags~="w360"] .separator-symbol,
-    [data-rem-tags~="w390"] .separator-symbol,
-    [data-rem-tags~="w420"] .separator-symbol,
-    [data-rem-tags~="w450"] .separator-symbol,
-    [data-rem-tags~="w480"] .separator-symbol {
-        display: inline;
-        vertical-align: top;
-    }
+[data-rem-tags~="w90"] .separator-symbol,
+[data-rem-tags~="w120"] .separator-symbol,
+[data-rem-tags~="w150"] .separator-symbol,
+[data-rem-tags~="w180"] .separator-symbol,
+[data-rem-tags~="w210"] .separator-symbol,
+[data-rem-tags~="w240"] .separator-symbol,
+[data-rem-tags~="w270"] .separator-symbol,
+[data-rem-tags~="w300"] .separator-symbol,
+[data-rem-tags~="w330"] .separator-symbol,
+[data-rem-tags~="w360"] .separator-symbol,
+[data-rem-tags~="w390"] .separator-symbol,
+[data-rem-tags~="w420"] .separator-symbol,
+[data-rem-tags~="w450"] .separator-symbol,
+[data-rem-tags~="w480"] .separator-symbol {
+    display: inline;
+    vertical-align: top;
+}
 
-    [data-rem-tags~="w90"] .only_in_answer,
-    [data-rem-tags~="w120"] .only_in_answer,
-    [data-rem-tags~="w150"] .only_in_answer,
-    [data-rem-tags~="w180"] .only_in_answer,
-    [data-rem-tags~="w210"] .only_in_answer,
-    [data-rem-tags~="w240"] .only_in_answer,
-    [data-rem-tags~="w270"] .only_in_answer,
-    [data-rem-tags~="w300"] .only_in_answer,
-    [data-rem-tags~="w330"] .only_in_answer,
-    [data-rem-tags~="w360"] .only_in_answer,
-    [data-rem-tags~="w390"] .only_in_answer,
-    [data-rem-tags~="w420"] .only_in_answer,
-    [data-rem-tags~="w450"] .only_in_answer,
-    [data-rem-tags~="w480"] .only_in_answer {
-        display: inline-block;
-        vertical-align: top;
-    }
+[data-rem-tags~="w90"] .only_in_answer,
+[data-rem-tags~="w120"] .only_in_answer,
+[data-rem-tags~="w150"] .only_in_answer,
+[data-rem-tags~="w180"] .only_in_answer,
+[data-rem-tags~="w210"] .only_in_answer,
+[data-rem-tags~="w240"] .only_in_answer,
+[data-rem-tags~="w270"] .only_in_answer,
+[data-rem-tags~="w300"] .only_in_answer,
+[data-rem-tags~="w330"] .only_in_answer,
+[data-rem-tags~="w360"] .only_in_answer,
+[data-rem-tags~="w390"] .only_in_answer,
+[data-rem-tags~="w420"] .only_in_answer,
+[data-rem-tags~="w450"] .only_in_answer,
+[data-rem-tags~="w480"] .only_in_answer {
+    display: inline-block;
+    vertical-align: top;
+}
 
 /*********** Answer Block ***********/
-    [data-rem-tags~="w90"] .only_in_answer {width: calc(100% - 120px);}
-    [data-rem-tags~="w120"] .only_in_answer {width: calc(100% - 150px);}
-    [data-rem-tags~="w150"] .only_in_answer {width: calc(100% - 180px);}
-    [data-rem-tags~="w180"] .only_in_answer {width: calc(100% - 210px);}
-    [data-rem-tags~="w210"] .only_in_answer {width: calc(100% - 240px);}
-    [data-rem-tags~="w240"] .only_in_answer {width: calc(100% - 270px);}
-    [data-rem-tags~="w270"] .only_in_answer {width: calc(100% - 300px);}
-    [data-rem-tags~="w300"] .only_in_answer {width: calc(100% - 330px);}
-    [data-rem-tags~="w330"] .only_in_answer {width: calc(100% - 360px);}
-    [data-rem-tags~="w360"] .only_in_answer {width: calc(100% - 390px);}
-    [data-rem-tags~="w390"] .only_in_answer {width: calc(100% - 420px);}
-    [data-rem-tags~="w420"] .only_in_answer {width: calc(100% - 450px);}
-    [data-rem-tags~="w450"] .only_in_answer {width: calc(100% - 480px);}
-    [data-rem-tags~="w480"] .only_in_answer {width: calc(100% - 510px);}
+    [data-rem-tags~="w90"] .only_in_answer {width: calc(100% - 125px);}
+    [data-rem-tags~="w120"] .only_in_answer {width: calc(100% - 155px);}
+    [data-rem-tags~="w150"] .only_in_answer {width: calc(100% - 185px);}
+    [data-rem-tags~="w180"] .only_in_answer {width: calc(100% - 215px);}
+    [data-rem-tags~="w210"] .only_in_answer {width: calc(100% - 245px);}
+    [data-rem-tags~="w240"] .only_in_answer {width: calc(100% - 275px);}
+    [data-rem-tags~="w270"] .only_in_answer {width: calc(100% - 305px);}
+    [data-rem-tags~="w300"] .only_in_answer {width: calc(100% - 335px);}
+    [data-rem-tags~="w330"] .only_in_answer {width: calc(100% - 365px);}
+    [data-rem-tags~="w360"] .only_in_answer {width: calc(100% - 395px);}
+    [data-rem-tags~="w390"] .only_in_answer {width: calc(100% - 425px);}
+    [data-rem-tags~="w420"] .only_in_answer {width: calc(100% - 455px);}
+    [data-rem-tags~="w450"] .only_in_answer {width: calc(100% - 485px);}
+    [data-rem-tags~="w480"] .only_in_answer {width: calc(100% - 515px);}
 
 /*********** Disable Focus-within span width event ***********/
     .rich-text-editor .basic_card_rem_type,
@@ -197,6 +195,11 @@
     [data-rem-tags~="w480"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w480"] .hierarchy-editor__tag-bar__tag span {display: none;}  
     
+    /* Tags interspace Shrink */
     .hierarchy-editor__tag-bar .pl-2 {
         padding-left: 0px !important;
+    }
+    /* Hide Chunk of Merge Button space */
+    .mr-1.cursor-pointer.zoom-button > span{
+        display: none;
     }
