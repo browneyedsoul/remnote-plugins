@@ -314,7 +314,9 @@
 	}
 
 	.document-header-top-bar .parent-link {
-		background-color: white;
+		color: var(--darkmode-text);
+		background-color: transparent;
+		border: 1px solid white;
 	}
 /*********** Quote ***********/
 	[data-rem-tags~="blockquote"] {
@@ -578,14 +580,14 @@
 			margin-left: 5px;
 			background-color: var(--darkmode-background-sidebar);
 		}
-
+		/* All Notes icon */
 		#document-sidebar_top .css-fqRAnH {
 			color: yellow;
-			zoom: 150%;
+			zoom: 125%;
 		}
-
+		/* Flashcard icon */
 		#document-sidebar_top .block .css-pUlLN {
-			zoom: 150%;
+			zoom: 125%;
 			color: yellow;
 		}
 
