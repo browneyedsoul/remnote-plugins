@@ -71,6 +71,16 @@
 	.spaced-repetition__prompt .rem-bullet__document .file.text.small.icon {
 		color: white;
 	}
+/*********** Card Browser ***********/
+	#card-table-page {
+		color: var(--darkmode-text);
+	    background-color: var(--darkmode-background);
+	    font-family: "Helvetica Neue";
+	}
+	
+	.card-table__card-title {
+		color: var(--darkmode-text)
+	}
 /*********** Darkmode Background & Text & TreeNode***********/
 	/* General Background */
 	.document-table,
