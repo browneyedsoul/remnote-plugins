@@ -16,6 +16,16 @@
         padding-right: 2px;
     }
 
+/*********** Card Browser ***********/
+    .ReactVirtualized__Table__rowColumn .inline-block,
+    .ReactVirtualized__Table__rowColumn .inline-block.align-text-top.group,
+    .ReactVirtualized__Table__rowColumn .image-node,
+    .ReactVirtualized__Table__rowColumn .tumbnail--with-width {
+        height: 18px;
+        width: auto !important;
+        min-width: auto !important;
+    }
+
 /*********** Document Title & source & Parent-tree ***********/
     /*********** Document Title ***********/
         #document .document-title {
