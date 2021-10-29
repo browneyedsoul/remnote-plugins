@@ -1,6 +1,33 @@
+:root {
+    --width-30: 30px;
+    --width-60: 60px;
+    --width-90: 90px;
+    --width-120: 120px;
+    --width-150: 150px;
+    --width-180: 180px;
+    --width-210: 210px;
+    --width-240: 240px;
+    --width-270: 270px;
+    --width-300: 300px;
+    --width-330: 330px;
+    --width-360: 360px;
+    --width-390: 390px;
+    --width-420: 420px;
+    --width-450: 450px;
+    --width-480: 480px;
+}
+
+[data-rem-tags~="w30"] .basic_card_rem_type,
+[data-rem-tags~="w30"] .concept_rem_type,
+[data-rem-tags~="w30"] .descriptor_rem_typem,
+[data-rem-tags~="w30"] .separator-symbol,
+[data-rem-tags~="w60"] .basic_card_rem_type,
+[data-rem-tags~="w60"] .concept_rem_type,
+[data-rem-tags~="w60"] .descriptor_rem_typem,
+[data-rem-tags~="w60"] .separator-symbol,
 [data-rem-tags~="w90"] .basic_card_rem_type,
 [data-rem-tags~="w90"] .concept_rem_type,
-[data-rem-tags~="w90"] .descriptor_rem_type,
+[data-rem-tags~="w90"] .descriptor_rem_typem,
 [data-rem-tags~="w90"] .separator-symbol,
 [data-rem-tags~="w120"] .basic_card_rem_type,
 [data-rem-tags~="w120"] .concept_rem_type,
@@ -55,52 +82,60 @@
 [data-rem-tags~="w480"] .descriptor_rem_type,
 [data-rem-tags~="w480"] .separator-symbol {
     display: inline-block;
-    vertical-align: top
+    vertical-align: top;
 }
 
+[data-rem-tags~="w30"] .basic_card_rem_type,
+[data-rem-tags~="w30"] .concept_rem_type,
+[data-rem-tags~="w30"] .descriptor_rem_type {width: var(--width-30);}
+[data-rem-tags~="w60"] .basic_card_rem_type,
+[data-rem-tags~="w60"] .concept_rem_type,
+[data-rem-tags~="w60"] .descriptor_rem_type {width: var(--width-60);}
 [data-rem-tags~="w90"] .basic_card_rem_type,
 [data-rem-tags~="w90"] .concept_rem_type,
-[data-rem-tags~="w90"] .descriptor_rem_type {width: 90px;}
+[data-rem-tags~="w90"] .descriptor_rem_type {width: var(--width-90);}
 [data-rem-tags~="w120"] .basic_card_rem_type,
 [data-rem-tags~="w120"] .concept_rem_type,
-[data-rem-tags~="w120"] .descriptor_rem_type {width: 120px;}
+[data-rem-tags~="w120"] .descriptor_rem_type {width: var(--width-120);}
 [data-rem-tags~="w150"] .basic_card_rem_type,
 [data-rem-tags~="w150"] .concept_rem_type,
-[data-rem-tags~="w150"] .descriptor_rem_type {width: 150px;}
+[data-rem-tags~="w150"] .descriptor_rem_type {width: var(--width-150);}
 [data-rem-tags~="w180"] .basic_card_rem_type,
 [data-rem-tags~="w180"] .concept_rem_type,
-[data-rem-tags~="w180"] .descriptor_rem_type {width: 180px;}
+[data-rem-tags~="w180"] .descriptor_rem_type {width: var(--width-180);}
 [data-rem-tags~="w210"] .basic_card_rem_type,
 [data-rem-tags~="w210"] .concept_rem_type,
-[data-rem-tags~="w210"] .descriptor_rem_type {width: 210px;}
+[data-rem-tags~="w210"] .descriptor_rem_type {width: var(--width-210);}
 [data-rem-tags~="w240"] .basic_card_rem_type,
 [data-rem-tags~="w240"] .concept_rem_type,
-[data-rem-tags~="w240"] .descriptor_rem_type {width: 240px;}
+[data-rem-tags~="w240"] .descriptor_rem_type {width: var(--width-240);}
 [data-rem-tags~="w270"] .basic_card_rem_type,
 [data-rem-tags~="w270"] .concept_rem_type,
-[data-rem-tags~="w270"] .descriptor_rem_type {width: 270px;}
+[data-rem-tags~="w270"] .descriptor_rem_type {width: var(--width-270);}
 [data-rem-tags~="w300"] .basic_card_rem_type,
 [data-rem-tags~="w300"] .concept_rem_type,
-[data-rem-tags~="w300"] .descriptor_rem_type {width: 300px;}
+[data-rem-tags~="w300"] .descriptor_rem_type {width: var(--width-300);}
 [data-rem-tags~="w330"] .basic_card_rem_type,
 [data-rem-tags~="w330"] .concept_rem_type,
-[data-rem-tags~="w330"] .descriptor_rem_type {width: 330px;}
+[data-rem-tags~="w330"] .descriptor_rem_type {width: var(--width-330);}
 [data-rem-tags~="w360"] .basic_card_rem_type,
 [data-rem-tags~="w360"] .concept_rem_type,
-[data-rem-tags~="w360"] .descriptor_rem_type {width: 360px;}
+[data-rem-tags~="w360"] .descriptor_rem_type {width: var(--width-360);}
 [data-rem-tags~="w390"] .basic_card_rem_type,
 [data-rem-tags~="w390"] .concept_rem_type,
-[data-rem-tags~="w390"] .descriptor_rem_type {width: 390px;}
+[data-rem-tags~="w390"] .descriptor_rem_type {width: var(--width-390);}
 [data-rem-tags~="w420"] .basic_card_rem_type,
 [data-rem-tags~="w420"] .concept_rem_type,
-[data-rem-tags~="w420"] .descriptor_rem_type {width: 420px;}
+[data-rem-tags~="w420"] .descriptor_rem_type {width: var(--width-420);}
 [data-rem-tags~="w450"] .basic_card_rem_type,
 [data-rem-tags~="w450"] .concept_rem_type,
-[data-rem-tags~="w450"] .descriptor_rem_type {width: 450px;}
+[data-rem-tags~="w450"] .descriptor_rem_type {width: var(--width-450);}
 [data-rem-tags~="w480"] .basic_card_rem_type,
 [data-rem-tags~="w480"] .concept_rem_type,
-[data-rem-tags~="w480"] .descriptor_rem_type {width: 480px;}
+[data-rem-tags~="w480"] .descriptor_rem_type {width: var(--width-480);}
 
+[data-rem-tags~="w30"] .separator-symbol,
+[data-rem-tags~="w60"] .separator-symbol,
 [data-rem-tags~="w90"] .separator-symbol,
 [data-rem-tags~="w120"] .separator-symbol,
 [data-rem-tags~="w150"] .separator-symbol,
@@ -119,6 +154,8 @@
     vertical-align: top;
 }
 
+[data-rem-tags~="w30"] .only_in_answer,
+[data-rem-tags~="w60"] .only_in_answer,
 [data-rem-tags~="w90"] .only_in_answer,
 [data-rem-tags~="w120"] .only_in_answer,
 [data-rem-tags~="w150"] .only_in_answer,
@@ -138,34 +175,61 @@
 }
 
 /*********** Answer Block ***********/
-    [data-rem-tags~="w90"] .only_in_answer {width: calc(100% - 125px);}
-    [data-rem-tags~="w120"] .only_in_answer {width: calc(100% - 155px);}
-    [data-rem-tags~="w150"] .only_in_answer {width: calc(100% - 185px);}
-    [data-rem-tags~="w180"] .only_in_answer {width: calc(100% - 215px);}
-    [data-rem-tags~="w210"] .only_in_answer {width: calc(100% - 245px);}
-    [data-rem-tags~="w240"] .only_in_answer {width: calc(100% - 275px);}
-    [data-rem-tags~="w270"] .only_in_answer {width: calc(100% - 305px);}
-    [data-rem-tags~="w300"] .only_in_answer {width: calc(100% - 335px);}
-    [data-rem-tags~="w330"] .only_in_answer {width: calc(100% - 365px);}
-    [data-rem-tags~="w360"] .only_in_answer {width: calc(100% - 395px);}
-    [data-rem-tags~="w390"] .only_in_answer {width: calc(100% - 425px);}
-    [data-rem-tags~="w420"] .only_in_answer {width: calc(100% - 455px);}
-    [data-rem-tags~="w450"] .only_in_answer {width: calc(100% - 485px);}
-    [data-rem-tags~="w480"] .only_in_answer {width: calc(100% - 515px);}
+    [data-rem-tags~="w30"] .only_in_answer {width: calc(100% - 130px);}
+    [data-rem-tags~="w60"] .only_in_answer {width: calc(100% - 130px);}
+    [data-rem-tags~="w90"] .only_in_answer {width: calc(100% - 130px);}
+    [data-rem-tags~="w120"] .only_in_answer {width: calc(100% - 160px);}
+    [data-rem-tags~="w150"] .only_in_answer {width: calc(100% - 190px);}
+    [data-rem-tags~="w180"] .only_in_answer {width: calc(100% - 220px);}
+    [data-rem-tags~="w210"] .only_in_answer {width: calc(100% - 250px);}
+    [data-rem-tags~="w240"] .only_in_answer {width: calc(100% - 280px);}
+    [data-rem-tags~="w270"] .only_in_answer {width: calc(100% - 310px);}
+    [data-rem-tags~="w300"] .only_in_answer {width: calc(100% - 340px);}
+    [data-rem-tags~="w330"] .only_in_answer {width: calc(100% - 370px);}
+    [data-rem-tags~="w360"] .only_in_answer {width: calc(100% - 400px);}
+    [data-rem-tags~="w390"] .only_in_answer {width: calc(100% - 430px);}
+    [data-rem-tags~="w420"] .only_in_answer {width: calc(100% - 460px);}
+    [data-rem-tags~="w450"] .only_in_answer {width: calc(100% - 490px);}
+    [data-rem-tags~="w480"] .only_in_answer {width: calc(100% - 520px);}
 
-/*********** Disable Focus-within span width event ***********/
-    .rich-text-editor .basic_card_rem_type,
-    .rich-text-editor .concept_rem_type,
-    .rich-text-editor .descriptor_rem_type {
-        width: fit-content !important;
+/*********** Disable Focused Rem Width Stretched ***********/
+    .rich-text-editor .quote.basic_card_rem_type,
+    .rich-text-editor .quote.concept_rem_type,
+    .rich-text-editor .quote.descriptor_rem_type,
+    .rich-text-editor .highlight-color--red.basic_card_rem_type,
+    .rich-text-editor .highlight-color--red.concept_rem_type,
+    .rich-text-editor .highlight-color--red.descriptor_rem_type,
+    .rich-text-editor .highlight-color--orange.basic_card_rem_type,
+    .rich-text-editor .highlight-color--orange.concept_rem_type,
+    .rich-text-editor .highlight-color--orange.descriptor_rem_type,
+    .rich-text-editor .highlight-color--yellow.basic_card_rem_type,
+    .rich-text-editor .highlight-color--yellow.concept_rem_type,
+    .rich-text-editor .highlight-color--yellow.descriptor_rem_type,
+    .rich-text-editor .highlight-color--green.basic_card_rem_type,
+    .rich-text-editor .highlight-color--green.concept_rem_type,
+    .rich-text-editor .highlight-color--green.descriptor_rem_type,
+    .rich-text-editor .highlight-color--blue.basic_card_rem_type,
+    .rich-text-editor .highlight-color--blue.concept_rem_type,
+    .rich-text-editor .highlight-color--blue.descriptor_rem_type,
+    .rich-text-editor .highlight-color--purple.basic_card_rem_type,
+    .rich-text-editor .highlight-color--purple.concept_rem_type,
+    .rich-text-editor .highlight-color--purple.descriptor_rem_type,
+    .rich-text-editor .EditorContainer [data-slate-node="text"]:not(:only-child) .basic_card_rem_type,
+    .rich-text-editor .EditorContainer [data-slate-node="text"]:not(:only-child) .concept_rem_type,
+    .rich-text-editor .EditorContainer [data-slate-node="text"]:not(:only-child) .descriptor_rem_type {
+        width: fit-content;
     }
-
+    
 /*********** Disable Hover event ***********/
     [data-rem-tags~="lock"] {
         pointer-events: none;
     }
     
 /*********** Tag Declutter ***********/
+    [data-rem-tags~="w30"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w30"] .hierarchy-editor__tag-bar__tag span {display: none;}
+    [data-rem-tags~="w60"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w60"] .hierarchy-editor__tag-bar__tag span {display: none;}
     [data-rem-tags~="w90"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w90"] .hierarchy-editor__tag-bar__tag span {display: none;}
     [data-rem-tags~="w120"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
