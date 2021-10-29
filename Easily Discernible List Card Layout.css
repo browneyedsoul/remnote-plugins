@@ -1,150 +1,612 @@
 .TreeNode [data-rem-tags="card-item w30"],
-.TreeNode [data-rem-tags="card-item w30 active-recall"],
+.TreeNode [data-rem-tags="w30 card-item"],
 .TreeNode [data-rem-tags="card-item w30 color"],
+.TreeNode [data-rem-tags="card-item color w30"],
+.TreeNode [data-rem-tags="w30 card-item color"],
+.TreeNode [data-rem-tags="w30 color card-item"],
+.TreeNode [data-rem-tags="color card-item w30"],
+.TreeNode [data-rem-tags="color w30 card-item"],
 .TreeNode [data-rem-tags="card-item w30 color active-recall"],
-.TreeNode [data-rem-tags="card-item w60"],
-.TreeNode [data-rem-tags="card-item w60 active-recall"],
-.TreeNode [data-rem-tags="card-item w60 color"],
-.TreeNode [data-rem-tags="card-item w60 color active-recall"],
-.TreeNode [data-rem-tags="card-item w90"],
-.TreeNode [data-rem-tags="card-item w90 active-recall"],
-.TreeNode [data-rem-tags="card-item w90 color"],
-.TreeNode [data-rem-tags="card-item w90 color active-recall"],
-.TreeNode [data-rem-tags="card-item w120"],
-.TreeNode [data-rem-tags="card-item w120 active-recall"],
-.TreeNode [data-rem-tags="card-item w120 color"],
-.TreeNode [data-rem-tags="card-item w120 color active-recall"],
-.TreeNode [data-rem-tags="card-item w150"],
-.TreeNode [data-rem-tags="card-item w150 active-recall"],
-.TreeNode [data-rem-tags="card-item w150 color"],
-.TreeNode [data-rem-tags="card-item w150 color active-recall"],
-.TreeNode [data-rem-tags="card-item w180"],
-.TreeNode [data-rem-tags="card-item w180 active-recall"],
-.TreeNode [data-rem-tags="card-item w180 color"],
-.TreeNode [data-rem-tags="card-item w180 color active-recall"],
-.TreeNode [data-rem-tags="card-item w210"],
-.TreeNode [data-rem-tags="card-item w210 active-recall"],
-.TreeNode [data-rem-tags="card-item w210 color"],
-.TreeNode [data-rem-tags="card-item w210 color active-recall"],
-.TreeNode [data-rem-tags="card-item w240"],
-.TreeNode [data-rem-tags="card-item w240 active-recall"],
-.TreeNode [data-rem-tags="card-item w240 color"],
-.TreeNode [data-rem-tags="card-item w240 color active-recall"],
-.TreeNode [data-rem-tags="card-item w270"],
-.TreeNode [data-rem-tags="card-item w270 active-recall"],
-.TreeNode [data-rem-tags="card-item w270 color"],
-.TreeNode [data-rem-tags="card-item w270 color active-recall"],
-.TreeNode [data-rem-tags="card-item w300"],
-.TreeNode [data-rem-tags="card-item w300 active-recall"],
-.TreeNode [data-rem-tags="card-item w300 color"],
-.TreeNode [data-rem-tags="card-item w300 color active-recall"],
-.TreeNode [data-rem-tags="card-item w330"],
-.TreeNode [data-rem-tags="card-item w330 active-recall"],
-.TreeNode [data-rem-tags="card-item w330 color"],
-.TreeNode [data-rem-tags="card-item w330 color active-recall"],
-.TreeNode [data-rem-tags="card-item w360"],
-.TreeNode [data-rem-tags="card-item w360 active-recall"],
-.TreeNode [data-rem-tags="card-item w360 color"],
-.TreeNode [data-rem-tags="card-item w360 color active-recall"],
-.TreeNode [data-rem-tags="card-item w390"],
-.TreeNode [data-rem-tags="card-item w390 active-recall"],
-.TreeNode [data-rem-tags="card-item w390 color"],
-.TreeNode [data-rem-tags="card-item w390 color active-recall"],
-.TreeNode [data-rem-tags="card-item w420"],
-.TreeNode [data-rem-tags="card-item w420 active-recall"],
-.TreeNode [data-rem-tags="card-item w420 color"],
-.TreeNode [data-rem-tags="card-item w420 color active-recall"],
-.TreeNode [data-rem-tags="card-item w450"],
-.TreeNode [data-rem-tags="card-item w450 active-recall"],
-.TreeNode [data-rem-tags="card-item w450 color"],
-.TreeNode [data-rem-tags="card-item w450 color active-recall"],
-.TreeNode [data-rem-tags="card-item w480"],
-.TreeNode [data-rem-tags="card-item w480 active-recall"],
-.TreeNode [data-rem-tags="card-item w480 color"],
-.TreeNode [data-rem-tags="card-item w480 color active-recall"] {
+.TreeNode [data-rem-tags="card-item w30 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w30 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w30"],
+.TreeNode [data-rem-tags="card-item active-recall w30 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w30"],
+.TreeNode [data-rem-tags="w30 card-item color active-recall"],
+.TreeNode [data-rem-tags="w30 card-item active-recall color"],
+.TreeNode [data-rem-tags="w30 color card-item active-recall"],
+.TreeNode [data-rem-tags="w30 color active-recall card-item"],
+.TreeNode [data-rem-tags="w30 active-recall card-item color"],
+.TreeNode [data-rem-tags="w30 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w30 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w30"],
+.TreeNode [data-rem-tags="color w30 card-item active-recall"],
+.TreeNode [data-rem-tags="color w30 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w30"],
+.TreeNode [data-rem-tags="color active-recall w30 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w30 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w30"],
+.TreeNode [data-rem-tags="active-recall w30 card-item color"],
+.TreeNode [data-rem-tags="active-recall w30 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w30"],
+.TreeNode [data-rem-tags="active-recall color w30 card-item"] {
     display: inline-block;
     position: relative;
     top: -30px;
+    left: 40px; width: calc(100% - 40px);
 }
 
-.TreeNode [data-rem-tags="card-item w30"] {left: 40px; width: calc(100% - 40px);}
-.TreeNode [data-rem-tags="card-item w30 active-recall"] {left: 40px; width: calc(100% - 40px);}
-.TreeNode [data-rem-tags="card-item w30 color"] {left: 40px; width: calc(100% - 40px);}
-.TreeNode [data-rem-tags="card-item w30 color active-recall"] {left: 40px; width: calc(100% - 40px);}
-.TreeNode [data-rem-tags="card-item w60"] {left: 70px; width: calc(100% - 70px);}
-.TreeNode [data-rem-tags="card-item w60 active-recall"] {left: 70px; width: calc(100% - 70px);}
-.TreeNode [data-rem-tags="card-item w60 color"] {left: 70px; width: calc(100% - 70px);}
-.TreeNode [data-rem-tags="card-item w60 color active-recall"] {left: 70px; width: calc(100% - 70px);}
-.TreeNode [data-rem-tags="card-item w90"] {left: 100px; width: calc(100% - 100px);}
-.TreeNode [data-rem-tags="card-item w90 active-recall"] {left: 100px; width: calc(100% - 100px);}
-.TreeNode [data-rem-tags="card-item w90 color"] {left: 100px; width: calc(100% - 100px);}
-.TreeNode [data-rem-tags="card-item w90 color active-recall"] {left: 100px; width: calc(100% - 100px);}
-.TreeNode [data-rem-tags="card-item w120"] {left: 130px; width: calc(100% - 130px);}
-.TreeNode [data-rem-tags="card-item w120 active-recall"] {left: 130px; width: calc(100% - 130px);}
-.TreeNode [data-rem-tags="card-item w120 color"] {left: 130px; width: calc(100% - 130px);}
-.TreeNode [data-rem-tags="card-item w120 color active-recall"] {left: 130px; width: calc(100% - 130px);}
-.TreeNode [data-rem-tags="card-item w150"] {left: 160px; width: calc(100% - 160px);}
-.TreeNode [data-rem-tags="card-item w150 active-recall"] {left: 160px; width: calc(100% - 160px);}
-.TreeNode [data-rem-tags="card-item w150 color"] {left: 160px; width: calc(100% - 160px);}
-.TreeNode [data-rem-tags="card-item w150 color active-recall"] {left: 160px; width: calc(100% - 160px);}
-.TreeNode [data-rem-tags="card-item w180"] {left: 190px; width: calc(100% - 190px);}
-.TreeNode [data-rem-tags="card-item w180 active-recall"] {left: 190px; width: calc(100% - 190px);}
-.TreeNode [data-rem-tags="card-item w180 color"] {left: 190px; width: calc(100% - 190px);}
-.TreeNode [data-rem-tags="card-item w180 color active-recall"] {left: 190px; width: calc(100% - 190px);}
-.TreeNode [data-rem-tags="card-item w210"] {left: 220px; width: calc(100% - 220px);}
-.TreeNode [data-rem-tags="card-item w210 active-recall"] {left: 220px; width: calc(100% - 220px);}
-.TreeNode [data-rem-tags="card-item w210 color"] {left: 220px; width: calc(100% - 220px);}
-.TreeNode [data-rem-tags="card-item w210 color active-recall"] {left: 220px; width: calc(100% - 220px);}
-.TreeNode [data-rem-tags="card-item w240"] {left: 250px; width: calc(100% - 250px);}
-.TreeNode [data-rem-tags="card-item w240 active-recall"] {left: 250px; width: calc(100% - 250px);}
-.TreeNode [data-rem-tags="card-item w240 color"] {left: 250px; width: calc(100% - 250px);}
-.TreeNode [data-rem-tags="card-item w240 color active-recall"] {left: 250px; width: calc(100% - 250px);}
-.TreeNode [data-rem-tags="card-item w270"] {left: 280px; width: calc(100% - 280px);}
-.TreeNode [data-rem-tags="card-item w270 active-recall"] {left: 280px; width: calc(100% - 280px);}
-.TreeNode [data-rem-tags="card-item w270 color"] {left: 280px; width: calc(100% - 280px);}
-.TreeNode [data-rem-tags="card-item w270 color active-recall"] {left: 280px; width: calc(100% - 280px);}
-.TreeNode [data-rem-tags="card-item w300"] {left: 310px; width: calc(100% - 310px);}
-.TreeNode [data-rem-tags="card-item w300 active-recall"] {left: 310px; width: calc(100% - 310px);}
-.TreeNode [data-rem-tags="card-item w300 color"] {left: 310px; width: calc(100% - 310px);}
-.TreeNode [data-rem-tags="card-item w300 color active-recall"] {left: 310px; width: calc(100% - 310px);}
-.TreeNode [data-rem-tags="card-item w330"] {left: 340px; width: calc(100% - 340px);}
-.TreeNode [data-rem-tags="card-item w330 active-recall"] {left: 340px; width: calc(100% - 340px);}
-.TreeNode [data-rem-tags="card-item w330 color"] {left: 340px; width: calc(100% - 340px);}
-.TreeNode [data-rem-tags="card-item w330 color active-recall"] {left: 340px; width: calc(100% - 340px);}
-.TreeNode [data-rem-tags="card-item w360"] {left: 370px; width: calc(100% - 370px);}
-.TreeNode [data-rem-tags="card-item w360 active-recall"] {left: 370px; width: calc(100% - 370px);}
-.TreeNode [data-rem-tags="card-item w360 color"] {left: 370px; width: calc(100% - 370px);}
-.TreeNode [data-rem-tags="card-item w360 color active-recall"] {left: 370px; width: calc(100% - 370px);}
-.TreeNode [data-rem-tags="card-item w390"] {left: 400px; width: calc(100% - 400px);}
-.TreeNode [data-rem-tags="card-item w390 active-recall"] {left: 400px; width: calc(100% - 400px);}
-.TreeNode [data-rem-tags="card-item w390 color"] {left: 400px; width: calc(100% - 400px);}
-.TreeNode [data-rem-tags="card-item w390 color active-recall"] {left: 400px; width: calc(100% - 400px);}
-.TreeNode [data-rem-tags="card-item w420"] {left: 430px; width: calc(100% - 430px);}
-.TreeNode [data-rem-tags="card-item w420 active-recall"] {left: 430px; width: calc(100% - 430px);}
-.TreeNode [data-rem-tags="card-item w420 color"] {left: 430px; width: calc(100% - 430px);}
-.TreeNode [data-rem-tags="card-item w420 color active-recall"] {left: 430px; width: calc(100% - 430px);}
-.TreeNode [data-rem-tags="card-item w450"] {left: 460px; width: calc(100% - 460px);}
-.TreeNode [data-rem-tags="card-item w450 active-recall"] {left: 460px; width: calc(100% - 460px);}
-.TreeNode [data-rem-tags="card-item w450 color"] {left: 460px; width: calc(100% - 460px);}
-.TreeNode [data-rem-tags="card-item w450 color active-recall"] {left: 460px; width: calc(100% - 460px);}
-.TreeNode [data-rem-tags="card-item w480"] {left: 490px; width: calc(100% - 490px);}
-.TreeNode [data-rem-tags="card-item w480 active-recall"] {left: 490px; width: calc(100% - 490px);}
-.TreeNode [data-rem-tags="card-item w480 color"] {left: 490px; width: calc(100% - 490px);}
-.TreeNode [data-rem-tags="card-item w480 color active-recall"] {left: 490px; width: calc(100% - 490px);}
+.TreeNode [data-rem-tags="card-item w60"],
+.TreeNode [data-rem-tags="w60 card-item"],
+.TreeNode [data-rem-tags="card-item w60 color"],
+.TreeNode [data-rem-tags="card-item color w60"],
+.TreeNode [data-rem-tags="w60 card-item color"],
+.TreeNode [data-rem-tags="w60 color card-item"],
+.TreeNode [data-rem-tags="color card-item w60"],
+.TreeNode [data-rem-tags="color w60 card-item"],
+.TreeNode [data-rem-tags="card-item w60 color active-recall"],
+.TreeNode [data-rem-tags="card-item w60 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w60 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w60"],
+.TreeNode [data-rem-tags="card-item active-recall w60 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w60"],
+.TreeNode [data-rem-tags="w60 card-item color active-recall"],
+.TreeNode [data-rem-tags="w60 card-item active-recall color"],
+.TreeNode [data-rem-tags="w60 color card-item active-recall"],
+.TreeNode [data-rem-tags="w60 color active-recall card-item"],
+.TreeNode [data-rem-tags="w60 active-recall card-item color"],
+.TreeNode [data-rem-tags="w60 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w60 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w60"],
+.TreeNode [data-rem-tags="color w60 card-item active-recall"],
+.TreeNode [data-rem-tags="color w60 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w60"],
+.TreeNode [data-rem-tags="color active-recall w60 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w60 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w60"],
+.TreeNode [data-rem-tags="active-recall w60 card-item color"],
+.TreeNode [data-rem-tags="active-recall w60 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w60"],
+.TreeNode [data-rem-tags="active-recall color w60 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 70px; width: calc(100% - 70px);
+}
 
-.TreeNode [data-rem-tags="card-item w90"] .float-end,
-.TreeNode [data-rem-tags="card-item w120"] .float-end,
-.TreeNode [data-rem-tags="card-item w150"] .float-end,
-.TreeNode [data-rem-tags="card-item w180"] .float-end,
-.TreeNode [data-rem-tags="card-item w210"] .float-end,
-.TreeNode [data-rem-tags="card-item w240"] .float-end,
-.TreeNode [data-rem-tags="card-item w270"] .float-end,
-.TreeNode [data-rem-tags="card-item w300"] .float-end,
-.TreeNode [data-rem-tags="card-item w330"] .float-end,
-.TreeNode [data-rem-tags="card-item w360"] .float-end,
-.TreeNode [data-rem-tags="card-item w390"] .float-end,
-.TreeNode [data-rem-tags="card-item w420"] .float-end,
-.TreeNode [data-rem-tags="card-item w450"] .float-end,
-.TreeNode [data-rem-tags="card-item w480"] .float-end {
+.TreeNode [data-rem-tags="card-item w90"],
+.TreeNode [data-rem-tags="w90 card-item"],
+.TreeNode [data-rem-tags="card-item w90 color"],
+.TreeNode [data-rem-tags="card-item color w90"],
+.TreeNode [data-rem-tags="w90 card-item color"],
+.TreeNode [data-rem-tags="w90 color card-item"],
+.TreeNode [data-rem-tags="color card-item w90"],
+.TreeNode [data-rem-tags="color w90 card-item"],
+.TreeNode [data-rem-tags="card-item w90 color active-recall"],
+.TreeNode [data-rem-tags="card-item w90 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w90 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w90"],
+.TreeNode [data-rem-tags="card-item active-recall w90 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w90"],
+.TreeNode [data-rem-tags="w90 card-item color active-recall"],
+.TreeNode [data-rem-tags="w90 card-item active-recall color"],
+.TreeNode [data-rem-tags="w90 color card-item active-recall"],
+.TreeNode [data-rem-tags="w90 color active-recall card-item"],
+.TreeNode [data-rem-tags="w90 active-recall card-item color"],
+.TreeNode [data-rem-tags="w90 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w90 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w90"],
+.TreeNode [data-rem-tags="color w90 card-item active-recall"],
+.TreeNode [data-rem-tags="color w90 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w90"],
+.TreeNode [data-rem-tags="color active-recall w90 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w90 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w90"],
+.TreeNode [data-rem-tags="active-recall w90 card-item color"],
+.TreeNode [data-rem-tags="active-recall w90 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w90"],
+.TreeNode [data-rem-tags="active-recall color w90 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 100px; width: calc(100% - 100px);
+}
+
+.TreeNode [data-rem-tags="card-item w120"],
+.TreeNode [data-rem-tags="w120 card-item"],
+.TreeNode [data-rem-tags="card-item w120 color"],
+.TreeNode [data-rem-tags="card-item color w120"],
+.TreeNode [data-rem-tags="w120 card-item color"],
+.TreeNode [data-rem-tags="w120 color card-item"],
+.TreeNode [data-rem-tags="color card-item w120"],
+.TreeNode [data-rem-tags="color w120 card-item"],
+.TreeNode [data-rem-tags="card-item w120 color active-recall"],
+.TreeNode [data-rem-tags="card-item w120 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w120 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w120"],
+.TreeNode [data-rem-tags="card-item active-recall w120 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w120"],
+.TreeNode [data-rem-tags="w120 card-item color active-recall"],
+.TreeNode [data-rem-tags="w120 card-item active-recall color"],
+.TreeNode [data-rem-tags="w120 color card-item active-recall"],
+.TreeNode [data-rem-tags="w120 color active-recall card-item"],
+.TreeNode [data-rem-tags="w120 active-recall card-item color"],
+.TreeNode [data-rem-tags="w120 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w120 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w120"],
+.TreeNode [data-rem-tags="color w120 card-item active-recall"],
+.TreeNode [data-rem-tags="color w120 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w120"],
+.TreeNode [data-rem-tags="color active-recall w120 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w120 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w120"],
+.TreeNode [data-rem-tags="active-recall w120 card-item color"],
+.TreeNode [data-rem-tags="active-recall w120 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w120"],
+.TreeNode [data-rem-tags="active-recall color w120 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 130px; width: calc(100% - 130px);
+}
+
+.TreeNode [data-rem-tags="card-item w150"],
+.TreeNode [data-rem-tags="w150 card-item"],
+.TreeNode [data-rem-tags="card-item w150 color"],
+.TreeNode [data-rem-tags="card-item color w150"],
+.TreeNode [data-rem-tags="w150 card-item color"],
+.TreeNode [data-rem-tags="w150 color card-item"],
+.TreeNode [data-rem-tags="color card-item w150"],
+.TreeNode [data-rem-tags="color w150 card-item"],
+.TreeNode [data-rem-tags="card-item w150 color active-recall"],
+.TreeNode [data-rem-tags="card-item w150 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w150 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w150"],
+.TreeNode [data-rem-tags="card-item active-recall w150 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w150"],
+.TreeNode [data-rem-tags="w150 card-item color active-recall"],
+.TreeNode [data-rem-tags="w150 card-item active-recall color"],
+.TreeNode [data-rem-tags="w150 color card-item active-recall"],
+.TreeNode [data-rem-tags="w150 color active-recall card-item"],
+.TreeNode [data-rem-tags="w150 active-recall card-item color"],
+.TreeNode [data-rem-tags="w150 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w150 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w150"],
+.TreeNode [data-rem-tags="color w150 card-item active-recall"],
+.TreeNode [data-rem-tags="color w150 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w150"],
+.TreeNode [data-rem-tags="color active-recall w150 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w150 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w150"],
+.TreeNode [data-rem-tags="active-recall w150 card-item color"],
+.TreeNode [data-rem-tags="active-recall w150 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w150"],
+.TreeNode [data-rem-tags="active-recall color w150 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 160px; width: calc(100% - 160px);
+}
+
+.TreeNode [data-rem-tags="card-item w180"],
+.TreeNode [data-rem-tags="w180 card-item"],
+.TreeNode [data-rem-tags="card-item w180 color"],
+.TreeNode [data-rem-tags="card-item color w180"],
+.TreeNode [data-rem-tags="w180 card-item color"],
+.TreeNode [data-rem-tags="w180 color card-item"],
+.TreeNode [data-rem-tags="color card-item w180"],
+.TreeNode [data-rem-tags="color w180 card-item"],
+.TreeNode [data-rem-tags="card-item w180 color active-recall"],
+.TreeNode [data-rem-tags="card-item w180 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w180 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w180"],
+.TreeNode [data-rem-tags="card-item active-recall w180 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w180"],
+.TreeNode [data-rem-tags="w180 card-item color active-recall"],
+.TreeNode [data-rem-tags="w180 card-item active-recall color"],
+.TreeNode [data-rem-tags="w180 color card-item active-recall"],
+.TreeNode [data-rem-tags="w180 color active-recall card-item"],
+.TreeNode [data-rem-tags="w180 active-recall card-item color"],
+.TreeNode [data-rem-tags="w180 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w180 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w180"],
+.TreeNode [data-rem-tags="color w180 card-item active-recall"],
+.TreeNode [data-rem-tags="color w180 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w180"],
+.TreeNode [data-rem-tags="color active-recall w180 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w180 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w180"],
+.TreeNode [data-rem-tags="active-recall w180 card-item color"],
+.TreeNode [data-rem-tags="active-recall w180 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w180"],
+.TreeNode [data-rem-tags="active-recall color w180 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 190px; width: calc(100% - 190px);
+}
+
+.TreeNode [data-rem-tags="card-item w210"],
+.TreeNode [data-rem-tags="w210 card-item"],
+.TreeNode [data-rem-tags="card-item w210 color"],
+.TreeNode [data-rem-tags="card-item color w210"],
+.TreeNode [data-rem-tags="w210 card-item color"],
+.TreeNode [data-rem-tags="w210 color card-item"],
+.TreeNode [data-rem-tags="color card-item w210"],
+.TreeNode [data-rem-tags="color w210 card-item"],
+.TreeNode [data-rem-tags="card-item w210 color active-recall"],
+.TreeNode [data-rem-tags="card-item w210 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w210 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w210"],
+.TreeNode [data-rem-tags="card-item active-recall w210 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w210"],
+.TreeNode [data-rem-tags="w210 card-item color active-recall"],
+.TreeNode [data-rem-tags="w210 card-item active-recall color"],
+.TreeNode [data-rem-tags="w210 color card-item active-recall"],
+.TreeNode [data-rem-tags="w210 color active-recall card-item"],
+.TreeNode [data-rem-tags="w210 active-recall card-item color"],
+.TreeNode [data-rem-tags="w210 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w210 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w210"],
+.TreeNode [data-rem-tags="color w210 card-item active-recall"],
+.TreeNode [data-rem-tags="color w210 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w210"],
+.TreeNode [data-rem-tags="color active-recall w210 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w210 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w210"],
+.TreeNode [data-rem-tags="active-recall w210 card-item color"],
+.TreeNode [data-rem-tags="active-recall w210 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w210"],
+.TreeNode [data-rem-tags="active-recall color w210 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 220px; width: calc(100% - 220px);
+}
+
+.TreeNode [data-rem-tags="card-item w240"],
+.TreeNode [data-rem-tags="w240 card-item"],
+.TreeNode [data-rem-tags="card-item w240 color"],
+.TreeNode [data-rem-tags="card-item color w240"],
+.TreeNode [data-rem-tags="w240 card-item color"],
+.TreeNode [data-rem-tags="w240 color card-item"],
+.TreeNode [data-rem-tags="color card-item w240"],
+.TreeNode [data-rem-tags="color w240 card-item"],
+.TreeNode [data-rem-tags="card-item w240 color active-recall"],
+.TreeNode [data-rem-tags="card-item w240 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w240 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w240"],
+.TreeNode [data-rem-tags="card-item active-recall w240 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w240"],
+.TreeNode [data-rem-tags="w240 card-item color active-recall"],
+.TreeNode [data-rem-tags="w240 card-item active-recall color"],
+.TreeNode [data-rem-tags="w240 color card-item active-recall"],
+.TreeNode [data-rem-tags="w240 color active-recall card-item"],
+.TreeNode [data-rem-tags="w240 active-recall card-item color"],
+.TreeNode [data-rem-tags="w240 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w240 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w240"],
+.TreeNode [data-rem-tags="color w240 card-item active-recall"],
+.TreeNode [data-rem-tags="color w240 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w240"],
+.TreeNode [data-rem-tags="color active-recall w240 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w240 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w240"],
+.TreeNode [data-rem-tags="active-recall w240 card-item color"],
+.TreeNode [data-rem-tags="active-recall w240 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w240"],
+.TreeNode [data-rem-tags="active-recall color w240 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 250px; width: calc(100% - 250px);
+}
+
+.TreeNode [data-rem-tags="card-item w270"],
+.TreeNode [data-rem-tags="w270 card-item"],
+.TreeNode [data-rem-tags="card-item w270 color"],
+.TreeNode [data-rem-tags="card-item color w270"],
+.TreeNode [data-rem-tags="w270 card-item color"],
+.TreeNode [data-rem-tags="w270 color card-item"],
+.TreeNode [data-rem-tags="color card-item w270"],
+.TreeNode [data-rem-tags="color w270 card-item"],
+.TreeNode [data-rem-tags="card-item w270 color active-recall"],
+.TreeNode [data-rem-tags="card-item w270 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w270 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w270"],
+.TreeNode [data-rem-tags="card-item active-recall w270 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w270"],
+.TreeNode [data-rem-tags="w270 card-item color active-recall"],
+.TreeNode [data-rem-tags="w270 card-item active-recall color"],
+.TreeNode [data-rem-tags="w270 color card-item active-recall"],
+.TreeNode [data-rem-tags="w270 color active-recall card-item"],
+.TreeNode [data-rem-tags="w270 active-recall card-item color"],
+.TreeNode [data-rem-tags="w270 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w270 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w270"],
+.TreeNode [data-rem-tags="color w270 card-item active-recall"],
+.TreeNode [data-rem-tags="color w270 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w270"],
+.TreeNode [data-rem-tags="color active-recall w270 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w270 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w270"],
+.TreeNode [data-rem-tags="active-recall w270 card-item color"],
+.TreeNode [data-rem-tags="active-recall w270 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w270"],
+.TreeNode [data-rem-tags="active-recall color w270 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 280px; width: calc(100% - 250px);
+}
+
+.TreeNode [data-rem-tags="card-item w300"],
+.TreeNode [data-rem-tags="w300 card-item"],
+.TreeNode [data-rem-tags="card-item w300 color"],
+.TreeNode [data-rem-tags="card-item color w300"],
+.TreeNode [data-rem-tags="w300 card-item color"],
+.TreeNode [data-rem-tags="w300 color card-item"],
+.TreeNode [data-rem-tags="color card-item w300"],
+.TreeNode [data-rem-tags="color w300 card-item"],
+.TreeNode [data-rem-tags="card-item w300 color active-recall"],
+.TreeNode [data-rem-tags="card-item w300 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w300 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w300"],
+.TreeNode [data-rem-tags="card-item active-recall w300 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w300"],
+.TreeNode [data-rem-tags="w300 card-item color active-recall"],
+.TreeNode [data-rem-tags="w300 card-item active-recall color"],
+.TreeNode [data-rem-tags="w300 color card-item active-recall"],
+.TreeNode [data-rem-tags="w300 color active-recall card-item"],
+.TreeNode [data-rem-tags="w300 active-recall card-item color"],
+.TreeNode [data-rem-tags="w300 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w300 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w300"],
+.TreeNode [data-rem-tags="color w300 card-item active-recall"],
+.TreeNode [data-rem-tags="color w300 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w300"],
+.TreeNode [data-rem-tags="color active-recall w300 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w300 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w300"],
+.TreeNode [data-rem-tags="active-recall w300 card-item color"],
+.TreeNode [data-rem-tags="active-recall w300 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w300"],
+.TreeNode [data-rem-tags="active-recall color w300 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 310px; width: calc(100% - 310px);
+}
+
+.TreeNode [data-rem-tags="card-item w330"],
+.TreeNode [data-rem-tags="w330 card-item"],
+.TreeNode [data-rem-tags="card-item w330 color"],
+.TreeNode [data-rem-tags="card-item color w330"],
+.TreeNode [data-rem-tags="w330 card-item color"],
+.TreeNode [data-rem-tags="w330 color card-item"],
+.TreeNode [data-rem-tags="color card-item w330"],
+.TreeNode [data-rem-tags="color w330 card-item"],
+.TreeNode [data-rem-tags="card-item w330 color active-recall"],
+.TreeNode [data-rem-tags="card-item w330 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w330 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w330"],
+.TreeNode [data-rem-tags="card-item active-recall w330 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w330"],
+.TreeNode [data-rem-tags="w330 card-item color active-recall"],
+.TreeNode [data-rem-tags="w330 card-item active-recall color"],
+.TreeNode [data-rem-tags="w330 color card-item active-recall"],
+.TreeNode [data-rem-tags="w330 color active-recall card-item"],
+.TreeNode [data-rem-tags="w330 active-recall card-item color"],
+.TreeNode [data-rem-tags="w330 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w330 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w330"],
+.TreeNode [data-rem-tags="color w330 card-item active-recall"],
+.TreeNode [data-rem-tags="color w330 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w330"],
+.TreeNode [data-rem-tags="color active-recall w330 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w330 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w330"],
+.TreeNode [data-rem-tags="active-recall w330 card-item color"],
+.TreeNode [data-rem-tags="active-recall w330 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w330"],
+.TreeNode [data-rem-tags="active-recall color w330 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 340px; width: calc(100% - 340px);
+}
+
+.TreeNode [data-rem-tags="card-item w360"],
+.TreeNode [data-rem-tags="w360 card-item"],
+.TreeNode [data-rem-tags="card-item w360 color"],
+.TreeNode [data-rem-tags="card-item color w360"],
+.TreeNode [data-rem-tags="w360 card-item color"],
+.TreeNode [data-rem-tags="w360 color card-item"],
+.TreeNode [data-rem-tags="color card-item w360"],
+.TreeNode [data-rem-tags="color w360 card-item"],
+.TreeNode [data-rem-tags="card-item w360 color active-recall"],
+.TreeNode [data-rem-tags="card-item w360 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w360 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w360"],
+.TreeNode [data-rem-tags="card-item active-recall w360 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w360"],
+.TreeNode [data-rem-tags="w360 card-item color active-recall"],
+.TreeNode [data-rem-tags="w360 card-item active-recall color"],
+.TreeNode [data-rem-tags="w360 color card-item active-recall"],
+.TreeNode [data-rem-tags="w360 color active-recall card-item"],
+.TreeNode [data-rem-tags="w360 active-recall card-item color"],
+.TreeNode [data-rem-tags="w360 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w360 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w360"],
+.TreeNode [data-rem-tags="color w360 card-item active-recall"],
+.TreeNode [data-rem-tags="color w360 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w360"],
+.TreeNode [data-rem-tags="color active-recall w360 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w360 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w360"],
+.TreeNode [data-rem-tags="active-recall w360 card-item color"],
+.TreeNode [data-rem-tags="active-recall w360 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w360"],
+.TreeNode [data-rem-tags="active-recall color w360 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 370px; width: calc(100% - 370px);
+}
+
+.TreeNode [data-rem-tags="card-item w390"],
+.TreeNode [data-rem-tags="w390 card-item"],
+.TreeNode [data-rem-tags="card-item w390 color"],
+.TreeNode [data-rem-tags="card-item color w390"],
+.TreeNode [data-rem-tags="w390 card-item color"],
+.TreeNode [data-rem-tags="w390 color card-item"],
+.TreeNode [data-rem-tags="color card-item w390"],
+.TreeNode [data-rem-tags="color w390 card-item"],
+.TreeNode [data-rem-tags="card-item w390 color active-recall"],
+.TreeNode [data-rem-tags="card-item w390 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w390 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w390"],
+.TreeNode [data-rem-tags="card-item active-recall w390 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w390"],
+.TreeNode [data-rem-tags="w390 card-item color active-recall"],
+.TreeNode [data-rem-tags="w390 card-item active-recall color"],
+.TreeNode [data-rem-tags="w390 color card-item active-recall"],
+.TreeNode [data-rem-tags="w390 color active-recall card-item"],
+.TreeNode [data-rem-tags="w390 active-recall card-item color"],
+.TreeNode [data-rem-tags="w390 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w390 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w390"],
+.TreeNode [data-rem-tags="color w390 card-item active-recall"],
+.TreeNode [data-rem-tags="color w390 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w390"],
+.TreeNode [data-rem-tags="color active-recall w390 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w390 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w390"],
+.TreeNode [data-rem-tags="active-recall w390 card-item color"],
+.TreeNode [data-rem-tags="active-recall w390 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w390"],
+.TreeNode [data-rem-tags="active-recall color w390 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 400px; width: calc(100% - 400px);
+}
+
+.TreeNode [data-rem-tags="card-item w420"],
+.TreeNode [data-rem-tags="w420 card-item"],
+.TreeNode [data-rem-tags="card-item w420 color"],
+.TreeNode [data-rem-tags="card-item color w420"],
+.TreeNode [data-rem-tags="w420 card-item color"],
+.TreeNode [data-rem-tags="w420 color card-item"],
+.TreeNode [data-rem-tags="color card-item w420"],
+.TreeNode [data-rem-tags="color w420 card-item"],
+.TreeNode [data-rem-tags="card-item w420 color active-recall"],
+.TreeNode [data-rem-tags="card-item w420 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w420 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w420"],
+.TreeNode [data-rem-tags="card-item active-recall w420 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w420"],
+.TreeNode [data-rem-tags="w420 card-item color active-recall"],
+.TreeNode [data-rem-tags="w420 card-item active-recall color"],
+.TreeNode [data-rem-tags="w420 color card-item active-recall"],
+.TreeNode [data-rem-tags="w420 color active-recall card-item"],
+.TreeNode [data-rem-tags="w420 active-recall card-item color"],
+.TreeNode [data-rem-tags="w420 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w420 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w420"],
+.TreeNode [data-rem-tags="color w420 card-item active-recall"],
+.TreeNode [data-rem-tags="color w420 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w420"],
+.TreeNode [data-rem-tags="color active-recall w420 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w420 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w420"],
+.TreeNode [data-rem-tags="active-recall w420 card-item color"],
+.TreeNode [data-rem-tags="active-recall w420 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w420"],
+.TreeNode [data-rem-tags="active-recall color w420 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 430px; width: calc(100% - 430px);
+}
+
+.TreeNode [data-rem-tags="card-item w450"],
+.TreeNode [data-rem-tags="w450 card-item"],
+.TreeNode [data-rem-tags="card-item w450 color"],
+.TreeNode [data-rem-tags="card-item color w450"],
+.TreeNode [data-rem-tags="w450 card-item color"],
+.TreeNode [data-rem-tags="w450 color card-item"],
+.TreeNode [data-rem-tags="color card-item w450"],
+.TreeNode [data-rem-tags="color w450 card-item"],
+.TreeNode [data-rem-tags="card-item w450 color active-recall"],
+.TreeNode [data-rem-tags="card-item w450 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w450 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w450"],
+.TreeNode [data-rem-tags="card-item active-recall w450 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w450"],
+.TreeNode [data-rem-tags="w450 card-item color active-recall"],
+.TreeNode [data-rem-tags="w450 card-item active-recall color"],
+.TreeNode [data-rem-tags="w450 color card-item active-recall"],
+.TreeNode [data-rem-tags="w450 color active-recall card-item"],
+.TreeNode [data-rem-tags="w450 active-recall card-item color"],
+.TreeNode [data-rem-tags="w450 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w450 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w450"],
+.TreeNode [data-rem-tags="color w450 card-item active-recall"],
+.TreeNode [data-rem-tags="color w450 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w450"],
+.TreeNode [data-rem-tags="color active-recall w450 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w450 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w450"],
+.TreeNode [data-rem-tags="active-recall w450 card-item color"],
+.TreeNode [data-rem-tags="active-recall w450 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w450"],
+.TreeNode [data-rem-tags="active-recall color w450 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 460px; width: calc(100% - 460px);
+}
+
+.TreeNode [data-rem-tags="card-item w480"],
+.TreeNode [data-rem-tags="w480 card-item"],
+.TreeNode [data-rem-tags="card-item w480 color"],
+.TreeNode [data-rem-tags="card-item color w480"],
+.TreeNode [data-rem-tags="w480 card-item color"],
+.TreeNode [data-rem-tags="w480 color card-item"],
+.TreeNode [data-rem-tags="color card-item w480"],
+.TreeNode [data-rem-tags="color w480 card-item"],
+.TreeNode [data-rem-tags="card-item w480 color active-recall"],
+.TreeNode [data-rem-tags="card-item w480 active-recall color"],
+.TreeNode [data-rem-tags="card-item color w480 active-recall"],
+.TreeNode [data-rem-tags="card-item color active-recall w480"],
+.TreeNode [data-rem-tags="card-item active-recall w480 color"],
+.TreeNode [data-rem-tags="card-item active-recall color w480"],
+.TreeNode [data-rem-tags="w480 card-item color active-recall"],
+.TreeNode [data-rem-tags="w480 card-item active-recall color"],
+.TreeNode [data-rem-tags="w480 color card-item active-recall"],
+.TreeNode [data-rem-tags="w480 color active-recall card-item"],
+.TreeNode [data-rem-tags="w480 active-recall card-item color"],
+.TreeNode [data-rem-tags="w480 active-recall color card-item"],
+.TreeNode [data-rem-tags="color card-item w480 active-recall"],
+.TreeNode [data-rem-tags="color card-item active-recall w480"],
+.TreeNode [data-rem-tags="color w480 card-item active-recall"],
+.TreeNode [data-rem-tags="color w480 active-recall card-item"],
+.TreeNode [data-rem-tags="color active-recall card-item w480"],
+.TreeNode [data-rem-tags="color active-recall w480 card-item"],
+.TreeNode [data-rem-tags="active-recall card-item w480 color"],
+.TreeNode [data-rem-tags="active-recall card-item color w480"],
+.TreeNode [data-rem-tags="active-recall w480 card-item color"],
+.TreeNode [data-rem-tags="active-recall w480 color card-item"],
+.TreeNode [data-rem-tags="active-recall color card-item w480"],
+.TreeNode [data-rem-tags="active-recall color w480 card-item"] {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 510px; width: calc(100% - 510px);
+}
+
+.float-end {
+    display: inline-block;
     left: 0px;
 }
