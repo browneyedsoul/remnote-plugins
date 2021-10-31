@@ -1,7 +1,11 @@
 :root {
     --inline-code-color: #E64400;
     --inline-code-background-color: #F7F6F3;
+    --darkmode-background: #2F3437;
+    --darkmode-text: #DFDFD5;
     --code-node-background-color-dark: #E6E6E6;
+    --code-font-family: "Roboto Mono", "Fira code", Monospace;
+    --code-font-size: 0.9em;
     --line-number-width: 40px;
     --line-number-color: #C7CCCF;
     --line-number-color-dark: #BDBEBE;
@@ -12,40 +16,40 @@
 
 /*********** Basic (Inline)CodeBlock Style ***********/
     .quote {
-        font-family:        "Roboto Mono", "Fira code", Monospace;
-        font-size:          0.9em !important; 
+        font-family:        var(--code-font-family);
+        font-size:          var(--code-font-size) !important;
         color:              var(--inline-code-color);
         background-color:   var(--inline-code-background-color);
         padding: 1px 3px 1px 3px;
     }
 
     #code-node {
-        font-family:    "Roboto Mono", "Fira code", monospace; !important;
-        font-size:      0.9em !important; 
+        font-family:    var(--code-font-family) !important;
+        font-size:      var(--code-font-size) !important; 
         border:         0 !important;
         padding-right:  50px !important;
         padding-left:   40px !important;
-        overflow:       auto;
-        white-space:    pre;
-    }
-    
-    #code-node + .quote {
-        background-color: unset;
-        color: #8E8D8A;
-        text-style: Sans-Serif Workhorse;
-        font-size: 14px !important;
-    }
-
-    #code-node, #quote, .quote {
         margin-top:         2px;
         margin-bottom:      2px;
         margin-left:        0px !important;
         border-radius:      0.3em;
+        overflow:       auto;
+        white-space:    pre;
     }
+    
+    /* Codeblock Inline Caption */
+    #code-node + span.quote, 
+    #code-node + div span.quote {
+        background-color: unset !important;
+        color: #8E8D8A !important;
+        font-size: 14px !important;
+        position: relative;
+        top: -4px;
+        left: -10px;
+    }
+
 /*********** Codeblock Line Number ***********/
-    .codeLine {
-        counter-increment: codeLineNumber;
-    }
+    .codeLine {counter-increment: codeLineNumber;}
 
     .codeLine::before {
         color:          var(--line-number-color);
@@ -73,43 +77,33 @@
         border-radius:      var(--code-node-border-radius, 7px) 0 0;
         width:              calc(var(--line-number-width, 45px) - 7px);
     }
-/*********** Language Converter ***********/
-    #code-node__change-language-dropdown {
-        position: relative;
-        opacity: 20%;
-    }
 
+/*********** Language Converter ***********/
+    #code-node__change-language-dropdown {opacity: 20%;}
     #code-node__change-language-dropdown:hover {
         position: relative;
         opacity: 70%;
-        background-color: #F1FA8C;
+        background-color: ;
         padding-right: 5px;
         border-radius: 5px;
     }
+    #code-node__change-language-dropdown .css-exQOrH {
+        position: relative;
+        left: 25px;
+    }
     
-    #code-node .css-exQOrH,
-    #code-node .css-exQOrH:hover {
-        filter: invert(1);
-    }  
 /*********** Turn Codeblock into Console Terminal ***********/
     [data-rem-tags~="ter"] #code-node {
-        background-color: #2B3137 !important;
-        caret-color: white;
+        background-color: var(--darkmode-background) !important;
+        caret-color: var(--darkmode-text);
         padding-right: 60px !important;
         border: 1px dotted white !important;
     }
-    [data-rem-tags~="ter"] span {
-        filter: invert(1);
-    }
-    [data-rem-tags~="ter"] .hierarchy-editor__tag-bar__tag span {
-        display: none;
-    }
-    [data-rem-tags~="ter"] .items-center.hierarchy-editor__tag-bar__tag {
-        background-color: transparent;
-    }
-    [data-rem-tags~="ter"] .mr-1.cursor-pointer {
-        display: none;
-    }
+    [data-rem-tags~="ter"] span {filter: invert(1);}
+    
+    [data-rem-tags~="ter"] .hierarchy-editor__tag-bar__tag span {display: none;}
+    [data-rem-tags~="ter"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+
     [data-rem-tags~="ter"] #code-node .dropdown.icon,
     [data-rem-tags~="ter"] #code-node__change-language-dropdown .divider.text,
     [data-rem-tags~="ter"] #code-node .copy.outline.icon.code-node__copy-button {
@@ -117,27 +111,17 @@
         opacity: 100%;
     }
 
-    [data-rem-tags~="ter"] #code-node::before {
-        display:  none;
-    }
+    [data-rem-tags~="ter"] #code-node::before {display: none;}
     [data-rem-tags~="ter"] .rem-button__container .plus-button__icon {
         color: unset;
         background-color: transparent;
     }
-    [data-rem-tags~="ter"] #code-node .visible.menu.transition .item .text {
-        color: white !important;
-    }
-    [data-rem-tags~="ter"] .codeLine::before {
-        opacity: 20%;
-    }
-    [data-rem-tags~="ter"] #code-node__change-language-dropdown {
-        position: relative;
-        opacity: 50%;
-    }
+    [data-rem-tags~="ter"] #code-node .visible.menu.transition .item .text {color: white !important;}
+    [data-rem-tags~="ter"] .codeLine::before {opacity: 20%;}
     [data-rem-tags~="ter"] #code-node__change-language-dropdown:hover {
         position: relative;
         opacity: 70%;
-        background-color: #5B5E78;
+        background-color: ;
         padding-right: 5px;
         border-radius: 5px;
     }
