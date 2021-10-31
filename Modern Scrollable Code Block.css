@@ -17,22 +17,21 @@
 /*********** Basic (Inline)CodeBlock Style ***********/
     .quote {
         font-family:        var(--code-font-family);
-        font-size:          var(--code-font-size) !important;
+        font-size:          var(--code-font-size);
         color:              var(--inline-code-color);
         background-color:   var(--inline-code-background-color);
-        padding: 1px 3px 1px 3px;
+        padding:            1px 3px 1px 3px;
     }
 
     #code-node {
-        font-family:    var(--code-font-family) !important;
-        font-size:      var(--code-font-size) !important; 
-        border:         0 !important;
-        padding-right:  50px !important;
-        padding-left:   40px !important;
-        margin-top:         2px;
-        margin-bottom:      2px;
-        margin-left:        0px !important;
-        border-radius:      0.3em;
+        font-family:    var(--code-font-family);
+        font-size:      var(--code-font-size); 
+        border:         0;
+        padding-right:  50px;
+        padding-left:   40px;
+        margin-top:     2px;
+        margin-bottom:  2px;
+        border-radius:  0.3em;
         overflow:       auto;
         white-space:    pre;
     }
