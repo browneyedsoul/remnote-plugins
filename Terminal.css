@@ -20,13 +20,14 @@ div.rem[data-rem-tags~="terminal"] {
     margin-right: 0px;  
 }
 	[data-rem-tags~="terminal"] .rem-text {
-		font-family: "Roboto Mono", "Fira code", monospace !important;
+		font-family: "Roboto Mono", "Fira code", monospace;
+		font-size: 14px;
 	}
 
 /*********** Terminal Text Color ***********/
 	[data-rem-tags~="terminal"] .rem-text .quote {
-		background-color: unset;
-		color: var(--terminal-comment-text); 
+		background-color: unset !important;
+		color: var(--terminal-comment-text) !important; 
 	}
 	
 	[data-rem-tags~="terminal"] .rem-text .highlight-color--red {
