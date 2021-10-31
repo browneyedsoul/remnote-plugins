@@ -298,7 +298,8 @@
 	
 	#show-embedded-search-button {
 		color: var(--darkmode-text) !important;
-		background-color: #FFC1BA;
+		background-color: var(--darkmode-background-selected);
+		filter: invert(0) !important;
 		border-radius: 5px;
 	}
 	
