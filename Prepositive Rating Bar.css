@@ -1,78 +1,44 @@
-[data-rem-tags~="1star"] .rem-text {
+[data-rem-tags~="1star"] .rem-text,
+[data-rem-tags~="2star"] .rem-text,
+[data-rem-tags~="3star"] .rem-text,
+[data-rem-tags~="4star"] .rem-text,
+[data-rem-tags~="5star"] .rem-text {
 	margin-left: 75px;
+}
+[data-rem-tags~="1star"] .rem-bullet::before,
+[data-rem-tags~="2star"] .rem-bullet::before,
+[data-rem-tags~="3star"] .rem-bullet::before,
+[data-rem-tags~="4star"] .rem-bullet::before,
+[data-rem-tags~="5star"] .rem-bullet::before {
+	color: #F1FA8C;
+	background-color: #2B3137;	
+	border-radius: 5px;
+	padding: 2px;
+	position: relative;
+	top: -9px;
+	left: -4px;
 }
 
 [data-rem-tags~="1star"] .rem-bullet::before {
 	content: "★";	
-	color: #F1FA8C;
-	background-color: #2B3137;	
-	border-radius: 5px;
-	padding: 2px;
 	padding-right: 70px;
-	position: relative;
-	top: -9px;
-	left: -4px;
-}
-
-[data-rem-tags~="2star"] .rem-text {
-	margin-left: 75px;
 }
 
 [data-rem-tags~="2star"] .rem-bullet::before {
 	content: "★★";	
-	color: #F1FA8C;
-	background-color: #2B3137;	
-	border-radius: 5px;
-	padding: 2px;
 	padding-right: 54px;
-	position: relative;
-	top: -9px;
-	left: -4px;
-}
-
-[data-rem-tags~="3star"] .rem-text {
-	margin-left: 75px;
 }
 
 [data-rem-tags~="3star"] .rem-bullet::before {
 	content: "★★★";	
-	color: #F1FA8C;
-	background-color: #2B3137;	
-	border-radius: 5px;
-	padding: 2px;
 	padding-right: 36px;
-	position: relative;
-	top: -9px;
-	left: -4px;
-}
-
-[data-rem-tags~="4star"] .rem-text {
-	margin-left: 75px;
 }
 
 [data-rem-tags~="4star"] .rem-bullet::before {
 	content: "★★★★";	
-	color: #F1FA8C;
-	background-color: #2B3137;	
-	border-radius: 5px;
-	padding: 2px;
 	padding-right: 19px;
-	position: relative;
-	top: -9px;
-	left: -4px;
-}
-
-[data-rem-tags~="5star"] .rem-text {
-	margin-left: 75px;
 }
 
 [data-rem-tags~="5star"] .rem-bullet::before {
 	content: "★★★★★";	
-	color: #F1FA8C;
-	background-color: #2B3137;	
-	border-radius: 5px;
-	padding: 2px;
-	position: relative;
-	top: -9px;
-	left: -4px;
 }
