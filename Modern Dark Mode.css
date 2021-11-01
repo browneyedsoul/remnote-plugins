@@ -84,7 +84,9 @@
 /*********** Darkmode Background & Text & TreeNode***********/
 	/* General Background */
 	.document-table,
-	.tile__document {
+	.tile__document,
+	.multiple-windows__document,
+	#multiple-windows__document {
 		background-color: var(--darkmode-background);
 	}
 	
