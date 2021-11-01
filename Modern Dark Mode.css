@@ -147,6 +147,12 @@
 	.rem-container--not-included-in-document-scope .file.text.small.icon {
 		color: var(--darkmode-text);
 	}
+	
+	/* Source */
+	.rem-reference-link {
+		background-color: var(--calloutyellow-background-color-dark);
+	}
+
 /*********** Document Title Highlight Style ***********/
 	#DocumentTitle .bold.highlight-color--red {
 		background-color: unset !important;
