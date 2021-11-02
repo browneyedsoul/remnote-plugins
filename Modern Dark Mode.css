@@ -71,6 +71,12 @@
 	.spaced-repetition__prompt .rem-bullet__document .file.text.small.icon {
 		color: white;
 	}
+
+	#SearchPopup .rich-text-editor,
+	#SearchPopup .EditorContainer {
+		caret-color: var(--darkmode-text);
+		color: var(--darkmode-text);
+	}
 /*********** Card Browser ***********/
 	#card-table-page {
 		color: var(--darkmode-text);
