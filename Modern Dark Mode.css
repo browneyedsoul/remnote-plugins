@@ -101,12 +101,8 @@
 		padding: 5px;
 		border-radius: 5px;
 	}	
-	.css-jlRuPl {
-		padding: 3px 0px 3px 0px;
-	}
-	.css-cLpPvR .RichTextViewer {
-		color: #9191A8 !important;
-	}
+	.css-jlRuPl {padding: 3px 0px 3px 0px;}
+	.css-cLpPvR .RichTextViewer {color: #9191A8 !important;}
 	
 	/* General Text */
 	.css-bMKjkl, /* Slot icon */
@@ -155,35 +151,23 @@
 	}
 	
 	/* Source */
-	.rem-reference-link {
-		background-color: var(--calloutyellow-background-color-dark);
-	}
+	.rem-reference-link {background-color: var(--calloutyellow-background-color-dark);}
 
 /*********** Document Title Highlight Style ***********/
-	#DocumentTitle .bold.highlight-color--red {
-		background-color: unset !important;
-		color: var(--red-text-dark); 
-	}
-	#DocumentTitle .bold.highlight-color--orange {
-		background-color: unset !important;
-		color: var(--orange-text-dark); 
-	}
-	#DocumentTitle .bold.highlight-color--yellow {
-		background-color: unset !important;
-		color: var(--yellow-text-dark); 
-	}
-	#DocumentTitle .bold.highlight-color--green {
-		background-color: unset !important;
-		color: var(--green-text-dark); 
-	}
-	#DocumentTitle .bold.highlight-color--blue {
-		background-color: unset !important;
-		color: var(--blue-text-dark); 
-	}
+	#DocumentTitle .bold.highlight-color--red,
+	#DocumentTitle .bold.highlight-color--orange,
+	#DocumentTitle .bold.highlight-color--yellow,
+	#DocumentTitle .bold.highlight-color--green,
+	#DocumentTitle .bold.highlight-color--blue,
 	#DocumentTitle .bold.highlight-color--purple {
 		background-color: unset !important;
-		color: var(--purple-text-dark); 
 	}
+	#DocumentTitle .bold.highlight-color--red {color: var(--red-text-dark);}
+	#DocumentTitle .bold.highlight-color--orange {color: var(--orange-text-dark);}
+	#DocumentTitle .bold.highlight-color--yellow {color: var(--yellow-text-dark);}
+	#DocumentTitle .bold.highlight-color--green {color: var(--green-text-dark);}
+	#DocumentTitle .bold.highlight-color--blue {color: var(--blue-text-dark);}
+	#DocumentTitle .bold.highlight-color--purple {color: var(--purple-text-dark);}
 /*********** Hightlight Style ***********/
 	.highlight-color--red,
 	.highlight-color--orange,
@@ -242,35 +226,20 @@
 		background-color: unset;
 	}
 	
-	[data-rem-tags~="color"] .rem-text .bold.highlight-color--red {
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--red,
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange,
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow,
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--green,
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--blue,
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {
 		font-weight: 500;
-		color: var(--red-text-dark); 
 	}
-	
-	[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange {
-		font-weight: 500;
-	 	color: var(--orange-text-dark);
-	}
-	
-    [data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow {
-		font-weight: 500;
-        color: var(--yellow-text-dark);
-    }
-    
-    [data-rem-tags~="color"] .rem-text .bold.highlight-color--green {
-        font-weight: 500;
-        color: var(--green-text-dark);
-    }
-    
-    [data-rem-tags~="color"] .rem-text .bold.highlight-color--blue {
-		font-weight: 500;
-        color: var(--blue-text-dark);
-    }
-    
-    [data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {
-		font-weight: 500;
-        color: var(--purple-text-dark);
-    }
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--red {color: var(--red-text-dark);} 
+	[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange {color: var(--orange-text-dark);}
+    [data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow {color: var(--yellow-text-dark);}
+    [data-rem-tags~="color"] .rem-text .bold.highlight-color--green {color: var(--green-text-dark);}
+    [data-rem-tags~="color"] .rem-text .bold.highlight-color--blue {color: var(--blue-text-dark);}
+    [data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {color: var(--purple-text-dark);}
 /*********** Context Menu ***********/
 	.select-none.rounded.bg-gray-5 {
 		color: black;
@@ -282,9 +251,8 @@
         background-color: unset;
     }
 
-    #rich-text-editor__icon {
-        filter: invert(1);
-    }
+    #rich-text-editor__icon {filter: invert(1);}
+
 /*********** Popup ***********/
 	#document-hover-preview__popup {
 		color: var(--darkmode-text);
@@ -333,35 +301,18 @@
 		border: 1px solid var(--darkmode-contrast);
 	}
 /*********** Page Hierarchy Bar ***********/
-	.px-6 {
-		background-color: ;
-	}
-
 	.document-header-top-bar .parent-link {
 		color: var(--darkmode-text);
 		background-color: transparent;
 		border: 1px solid white;
 	}
-/*********** Quote ***********/
-	[data-rem-tags~="blockquote"] {
-		filter: invert(1);
-	}
-	
-	[data-rem-tags~="blockquote"] .rem-text {
-		filter: invert(1);
-	}
+/*********** Blcokquote ***********/
+	[data-rem-tags~="blockquote"] {filter: invert(1);}
+	[data-rem-tags~="blockquote"] .rem-text {filter: invert(1);}
 /*********** Codeblock ***********/
-	#code-node {
-		background-color: var(--code-node-background-color-dark) !important;
-	}
-	
-	.codeLine::before {
-		color: var(--line-number-color-dark) !important;
-	}
-	
-	#code-node::before {
-		background-color: var(--line-number-background-color-dark) !important;
-	}
+	#code-node {background-color: var(--code-node-background-color-dark) !important;}
+	.codeLine::before {color: var(--line-number-color-dark) !important;}
+	#code-node::before {background-color: var(--line-number-background-color-dark) !important;}
 /*********** Rem-Bullet Container ***********/
 	.plus-button,
 	.six-dot,
@@ -380,17 +331,9 @@
 		filter: invert(0) !important;
 	}
 /*********** Settings Page ***********/
-	.settings-page {
-	    background-color: var(--darkmode-background);
-	}
-	
-	.settings-page__sidebar__title {
-	    color: var(--darkmode-contrast);
-	}
-	
-	.settings-page__sidebar__link--active {
-	    border: 1px solid var(--darkmode-contrast);
-	}
+	.settings-page {background-color: var(--darkmode-background);}
+	.settings-page__sidebar__title {color: var(--darkmode-contrast);}
+	.settings-page__sidebar__link--active {border: 1px solid var(--darkmode-contrast);}
 	
 	/* Sidebar svg icon */
 	.settings-page .css-drbSAB {
@@ -481,9 +424,7 @@
 		margin-left: 10px;
 	}
 
-	[data-rem-tags~="divider"] .rem-text {
-		color: transparent;
-	}
+	[data-rem-tags~="divider"] .rem-text {color: transparent;}
 
 	[data-rem-tags~="divider"]:before {
 		content: " ";
@@ -528,9 +469,8 @@
 		padding-left: 3px;
 	}
 
-	#show-embedded-search-button {
-		filter: invert(1);
-	}
+	#show-embedded-search-button {filter: invert(1);}
+
 /*********** Rem Rating System ***********/
 	[data-rem-tags~="1star"] .rem-bullet::before,
 	[data-rem-tags~="2star"] .rem-bullet::before,
@@ -542,13 +482,10 @@
 	}
 /********************* Sidebar *********************/
 	/*********** Basic ***********/
-		#document-sidebar {
-		 	background-color: #2B3137;
-		}
-
+		#document-sidebar {background-color: var(--darkmode-background-sidebar);}
 		#document-sidebar + div > div {
 			color: var(--darkmode-contrast) !important;
-			background-color: #2B3137 !important;
+			background-color: var(--darkmode-background-sidebar) !important;
 		}
 	/*********** Sidebar Collapsed ***********/
 		.document-sidebar--collapsed--vertical {
@@ -556,48 +493,33 @@
 			width: 25px;
 		}
 
-		.document-sidebar--collapsed--vertical div div{
-			left: -6px;
-		}
-		.document-sidebar--collapsed--vertical {
-			width: 20px;
-		}
+		.document-sidebar--collapsed--vertical div div{left: -6px;}
+		.document-sidebar--collapsed--vertical {width: 20px;}
 	/*********** Navigation Bar ***********/
-		.navigation-bar  {
-		    background-color: #2B3137;
-		}
-
+		.navigation-bar  {background-color: var(--darkmode-background-sidebar);}
 		.hierarchy-editor-list__sticky-top__rem-container {
 			position: relative;
 			top: -10px;	
 		}
 
-		.hierarchy-editor-list__sticky-top__rem-container .EditorContainer {
-			zoom: 90%;
-		}
-
-		.hierarchy-editor-list__sticky-top__rem-container .rem-is-custom-rem-type--in-body {
-			zoom: 90%;
-		}
+		.hierarchy-editor-list__sticky-top__rem-container .EditorContainer {zoom: 90%;}
+		.hierarchy-editor-list__sticky-top__rem-container .rem-is-custom-rem-type--in-body {zoom: 90%;}
 	/*********** RemNote Date Picker ***********/
-		.react-datepicker.search-results__date-picker {
-			background-color: #ffffff !important;
-		}
+		.react-datepicker.search-results__date-picker {background-color: #ffffff !important;}
+
 	/*********** RemNote Help Page Top ***********/
-		.css-bBkpDG {
-			filter: invert(1);
-		}
+		.css-bBkpDG {filter: invert(1);}
+
 	/*********** Account Capsule ***********/
-		#document-sidebar__account-capsule {
-			background-color: #FFFFFF;
-		}
+		#document-sidebar__account-capsule {background-color: #FFFFFF;}
+
 	/*********** Sidebar Top ***********/
 		/* Search and ⚡️*/
 		#document-sidebar_top .flex.items-center.p-2.gap-2 > div {
 			border: 1px solid var(--darkmode-text);
 		}
 
-		/* All Notes & Flashcards */
+		/* All Notes & Flashcards Text*/
 		#document-sidebar_top .flex.items-center.mb-1 {
 			font-family: "Roboto Mono", "Fira Code", Monospace;
 			color: var(--darkmode-contrast);
@@ -620,15 +542,13 @@
 			font-family: "Roboto Mono", "Fira code", Monospace;
 			color: var(--darkmode-contrast);
 		}
-	/*********** Sidebar Pinned, Draft, Archive Symbol (Top Level) ***********/
+	/*********** Sidebar Pinned, Draft, Archive Symbol (Sidebar Item Top Level) ***********/
 		#document-sidebar .title.cursor-pointer .css-fqRAnH {
 			zoom: 150%;
 			color: black;
 		}
 
-		#document-sidebar .title.cursor-pointer .css-pUlLN {
-			color: black;
-		}
+		#document-sidebar .title.cursor-pointer .css-pUlLN {color: black;}
 
 		.accordion.ui.fluid .title.cursor-pointer {
 			background-color: #FFFFFF;
@@ -643,13 +563,9 @@
 			top: 2px !important;
 		}
 	/*********** Sidebar Document lists ***********/
-		#document-sidebar .p-2.flex.group-hover-bg-hover-bg-transparent {
-			height: 20px !important;
-		}
+		#document-sidebar .p-2.flex.group-hover-bg-hover-bg-transparent {height: 20px !important;}
 
-		#document-sidebar .bg-white.cursor-pointer {
-			display: none;
-		}
+		#document-sidebar .bg-white.cursor-pointer {display: none;}
 
 		#document-sidebar .RichTextViewer {
 			color: #C7C7C7;
@@ -657,9 +573,7 @@
 			top: 1px;
 		}
 
-		#document-sidebar .tumbnail--with-width + button {
-			display: none;
-		}
+		#document-sidebar .tumbnail--with-width + button {display: none;}
 
 		#document-sidebar .highlight-color--red,
 		#document-sidebar .highlight-color--orange,
@@ -683,9 +597,7 @@
 		}
 		
 		/* Sidebar list item focused*/
-		#document-sidebar .bg-primary-5 .RichTextViewer {
-			color: white !important;
-		}
+		#document-sidebar .bg-primary-5 .RichTextViewer {color: white !important;} /* Focused Text */
 		
 		#document-sidebar .rounded-md.text-primary-70 {
 			background-color: transparent !important;
@@ -693,18 +605,12 @@
 		}
 		
 		/* Sidebar list item icon */
-		.document-list-item__folder-icon {
-			color: #C7C7C7;
-		}
-
-		#document-sidebar .float-right {
-			color: var(--darkmode-contrast);
-		}
+		.document-list-item__folder-icon {color: #C7C7C7;}
+		#document-sidebar .float-right {color: var(--darkmode-contrast);}
 		
-		/* Sidebar list with no child */
-		.flex-grow.nowrap-RichTextViewer:only-child {
-			margin-left: 25px;
-		}
+		/* Sidebar list Arrow line Alignment */
+		.flex-grow.nowrap-RichTextViewer:only-child {margin-left: 25px;}
+
 	/*********** RemNote Help Page Sidebar Document lists ***********/
 		.block.group.cursor-pointer .highlight-color--red .RichTextViewer, 
 		.block.group.cursor-pointer .highlight-color--orange .RichTextViewer,
