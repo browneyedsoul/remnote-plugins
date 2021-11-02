@@ -47,31 +47,29 @@
 	--code-node-background-color-dark: #E6E6E6;
 }
 /*********** Queue ***********/
-	.Queue {
-		color: ;
-	}
-	
+	.Queue,
 	.bg-gray-5,
 	.scroll-drag-component,
 	.spaced-repetition__prompt,
 	.spaced-repetition__prompt__breadcrumbs,
-	.text-base + a {
+	.text-base + a,
+	.queue__edit-later {
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
 	}
 	
-	.rem-bullet__queue {
-		background-color: var(--darkmode-text) !important;
+	.queue__badge,
+    .queue__title__middle:last-child,
+    .queue__title .overflow-ellipsis,
+    .queue__title .overflow-ellipsis .font-semibold {
+		color: var(--darkmode-text) !important;
+		background-color: var(--darkmode-background-selected) !important;
 	}
 	
-	.spaced-repetition__prompt .rem-bullet__document {
-		color: black;
-	}
+	.rem-bullet__queue {background-color: var(--darkmode-text) !important;}
+	.spaced-repetition__prompt .rem-bullet__document {color: black;}
+	.spaced-repetition__prompt .rem-bullet__document .file.text.small.icon {color: white;}
 	
-	.spaced-repetition__prompt .rem-bullet__document .file.text.small.icon {
-		color: white;
-	}
-
 	#SearchPopup .rich-text-editor,
 	#SearchPopup .EditorContainer {
 		caret-color: var(--darkmode-text);
