@@ -351,30 +351,30 @@
     }
 
 /*********** Rem Reference ***********/
-    .rem-reference .tumbnail--with-width, 
-    .rem-reference .inline-block {
-        height: 16px !important;
+    .rem-reference .inline-block,
+    .rem-reference .tumbnail--with-width {
+        height: 1em !important;
         width: auto !important;
         min-width: auto !important;
         margin-top: 1px;
     }
     
-    .popup-meue .tumbnail--with-width,
-    .popup-meue .inline-block {
-        height: 16px !important;
+    .popup-meue .inline-block,
+    .popup-meue .tumbnail--with-width {
+        height: 1em !important;
         width: auto !important;
         min-width: auto !important;
         margin-top: 1px;
     }
     
-    #document-hover-preview__popup .rem-reference .tumbnail--with-width, 
-    #document-hover-preview__popup .rem-reference .inline-block {
-        height: 16px !important;
+    #document-hover-preview__popup .rem-reference .inline-block,
+    #document-hover-preview__popup .rem-reference .tumbnail--with-width {
+        height: 1em !important;
         width: auto !important;
         min-width: auto !important;
     }
     
     .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
-        height: 16px;
+        height: 1em;
         min-width: auto !important;
     }
