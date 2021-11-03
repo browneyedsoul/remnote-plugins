@@ -1,7 +1,7 @@
 /*********** Root ***********/
 	:root {
 		--font-family: "Helvetica Neue";
-		--font-size-header-1: 36px;
+		--font-size-header-1: 32px;
 		--font-size-header-2: 26px;
 		--font-size-header-3: 20px;
 	    /* Basic Bullet Color */
@@ -29,13 +29,12 @@
 		margin-right: 20px;
 	} 
 /*********** Rem Bullet for Normal Rem-text & Header ***********/
-	/*********** Normal Rem-text ***********/
+	/* Normal Rem-text */
 		.rem-text {font-family: var(--font-family);}
 		.rem-bullet {border-radius: 1px !important;}
 		.rem-bullet.rem-bullet--all-children-visible {background-color: transparent;}
 		.rem-bullet.rem-bullet--hidden-children {margin-top: 4px;}
-		
-	/*********** Header 1 **********/
+	/* Header */
 		.rem-header--1 {font-size: var(--font-size-header-1) !important;}
 		.rem-header--2 {font-size: var(--font-size-header-2) !important;}
 		.rem-header--3 {font-size: var(--font-size-header-3) !important;}
@@ -58,8 +57,7 @@
 			height: 4px;
 			width: 4px;
 		}
-		
-	/*********** Rem Container ALL Children Visible Bullet ***********/
+	/* Rem Container ALL Children Visible Bullet */
 		.rem-bullet__container {
 			position: relative;
 			top: -2px;
@@ -85,21 +83,14 @@
 			background-color: black;
 			margin-bottom: 3px;
 		}
-
 /*********** Rem Bullet for Flashcard Rem ***********/
-	/*********** Basic & Concept-Rem-Type Bullet ***********/
+	/* Basic & Concept-Rem-Type Bullet */
 		.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
 			background: var(--both-practice-color) !important;
 		}
-		.rem-container--forwards-practice-enabled .rem-bullet {
-			background: var(--forward-practice-color) !important;
-		}
-		.rem-container--backwards-practice-enabled .rem-bullet {
-			background: var(--backward-practice-color) !important;
-		}
-		.rem-container--forwards-practice-disabled .rem-bullet {
-			background: var(--disabled-practice-color);
-		}
+		.rem-container--forwards-practice-enabled .rem-bullet {background: var(--forward-practice-color) !important;}
+		.rem-container--backwards-practice-enabled .rem-bullet {background: var(--backward-practice-color) !important;}
+		.rem-container--forwards-practice-disabled .rem-bullet {background: var(--disabled-practice-color);}
 		
 		.rem-container--forwards-practice-enabled .rem-bullet,
 		.rem-container--backwards-practice-enabled .rem-bullet,
@@ -113,8 +104,7 @@
 			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.png");
 			overflow: visible !important;
 		}
-
-	/*********** Descriptor-Rem-Type Bullet ***********/
+	/* Descriptor-Rem-Type Bullet */
 		.rem-container--descriptor-rem-type .rem-bullet {
 			width: 14px !important;	
 			height: 12px !important;
@@ -125,8 +115,7 @@
 			-webkit-mask-repeat: no-repeat;
 			-webkit-mask-size: contain;
 		}
-
-	/*********** List-Type Bullet ***********/
+	/* List-Type Bullet */
 		.rem-container--forwards-practice-enabled .rem-bullet.rem-bullet--hidden-children,
 		.rem-container--forwards-practice-disabled .rem-bullet.rem-bullet--hidden-children,
 		.rem-container--backwards-practice-enabled .rem-bullet.rem-bullet--hidden-children {
@@ -139,15 +128,12 @@
 			-webkit-mask-repeat: no-repeat;
 			-webkit-mask-size: contain;
 		}
-
-/*********** Direction Arrows ***********/
-
 /*********** Documents ***********/
-	/*********** Current Page [Parent > Child] Hierarchy Style ***********/
+	/* Current Page [Parent > Child] Hierarchy Style */
 		#document-parents .parent-link {
 		 	color: #2B3137;
 		}
-	/*********** Document Title ***********/
+	/* Document Title */
 		#document .document-title,
 		#document .document-title .bold {
 		 	font-size: 36px;
@@ -180,7 +166,6 @@
 	/* Tag Declutter */
 	[data-rem-tags~="bulletlist"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
 	[data-rem-tags~="bulletlist"] .hierarchy-editor__tag-bar__tag span {display: none;}
-
 /*********** Rem Right side Button - Merge, Tag ***********/
 	.float-end {
 		zoom: 90%;
