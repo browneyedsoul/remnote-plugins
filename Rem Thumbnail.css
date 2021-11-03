@@ -1,21 +1,26 @@
+:root {
+    --font-size-header-1: 32px;
+    --font-size-header-2: 26px;
+    --font-size-header-3: 20px;
+}
+
 /*********** All Notes Section ***********/
     .css-jlRuPl, 
     .css-jlRuPl .inline-block, 
     .css-jlRuPl .tumbnail--with-width {
-        height: 18px !important;
-        width: auto !important;
+        height: 1em !important;
         min-width: auto !important;
+        width: auto !important;
         padding-right: 2px;
     }
     
     .css-dcfFHl .inline-block,
     .css-dcfFHl .tumbnail--with-width {
         height: 18px !important;
-        width: auto !important;
         min-width: auto !important;
+        width: auto !important;
         padding-right: 2px;
     }
-
 /*********** Card Browser ***********/
     .ReactVirtualized__Table__rowColumn .inline-block,
     .ReactVirtualized__Table__rowColumn .inline-block.align-text-top.group,
@@ -25,260 +30,10 @@
         width: auto !important;
         min-width: auto !important;
     }
-
-/*********** Document Title & source & Parent-tree ***********/
-    /*********** Document Title ***********/
-        #document .document-title {
-            font-size: 36px !important;
-            font-weight: bold !important;
-            font-family: Sans-Serif Workhorse !important;
-        }
-        
-        #DocumentTitle .inline-block, 
-        #DocumentTitle .tumbnail--with-width {
-            min-height: 36px !important;
-            width: auto !important;
-            min-width: auto !important;
-            position: relative;
-            top: 9px;
-        }
-        
-        #DocumentTitle .inline-block {
-            position: relative;
-            top: -3px;
-        }
-    
-    /************** Page Hierarchy Style **************/
-        .document-header-top-bar .inline-block, 
-        .document-header-top-bar .tumbnail--with-width {
-            height: 16px;
-            width: auto;
-            min-width: auto !important;
-            color: #2B3137;
-            padding-right: 2px;
-        }
-    
-    /************** Hidden Page Hierarchy Style **************/
-        .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
-            width: auto !important;
-            min-width: 16px !important;
-        }
-
-/*********** Document Sidebar ***********/
-    #document-sidebar .inline-block,
-    #document-sidebar .inline-block.align-text-top.group,
-    #document-sidebar .tumbnail--with-width {
-        height: 18px !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 0px;
-    }
-
-/*********** Popup ***********/
-    /*********** Header ***********/
-        #document-hover-preview__popup .rem-header--1 .inline-block,
-        #document-hover-preview__popup .rem-header--1 .tumbnail--with-width {
-            height: 32px !important;
-            width: auto !important;
-            min-width: auto !important;
-        }
-        
-        #document-hover-preview__popup .rem-header--2 .inline-block,
-        #document-hover-preview__popup .rem-header--2 .tumbnail--with-width {
-            height: 24px !important;
-            width: auto !important;
-            min-width: auto !important;
-        }
-        
-        #document-hover-preview__popup .rem-header--3 .inline-block,
-        #document-hover-preview__popup .rem-header--3 .tumbnail--with-width {
-            height: 18px !important;
-            width: auto !important;
-            min-width: auto !important;
-        }
-    
-    /*********** Image Thumbnail Tag ***********/
-        [data-rem-tags~="tn"] #document-hover-preview .inline-block, 
-        [data-rem-tags~="tn"] #document-hover-preview .tumbnail--with-width {
-            height: 16px !important;
-            width: auto !important;
-            min-width: auto !important;
-            padding-right: 2px;
-        }
-    
-    /*********** Reference & Tag & Portal Popup ***********/
-        .popup-menu .inline-block, 
-        .popup-menu .w-full.h-full.tumbnail--with-width {
-            height: 16px !important;
-            width: auto !important;
-            min-width: auto !important;
-            max-width: auto !important;
-            padding-right: 2px;
-        }
-        
-        .popup-menu.fixed .bold .inline-block {
-            height: 16px !important;
-            width: 16px !important;
-            min-width: auto !important;
-            padding-right: 2px;
-        }
-        
-        .portal-tree-node-box .rem-text .inline-block,
-        .portal-tree-node-box .rem-text .tumbnail--with-width {
-            height: 16px !important;
-            width: 16px !important;
-            min-width: auto !important;
-            padding-right: 2px;
-        }
-    
-        #document-hover-preview__popup .bold .inline-block,
-        #document-hover-preview__popup .bold .tumbnail--with-width {
-            height: 16px !important;
-            width: auto !important;
-            min-width: auto !important;
-        }
-    
-        .popup-menu.fixed .popup-menu__item--static .inline-block, 
-        .popup-menu.fixed .popup-menu__item--static .tumbnail--with-width {
-            height: 16px !important;
-            width: auto !important;
-            min-width: auto !important;
-            padding-right: 2px;
-        }
-        
-        .EditorContainer.EditorContainerInline .tumbnail--with-width {
-            height: 18px !important;
-            width: auto !important;
-            min-width: auto !important;
-            color: #2B3137;
-            padding-right: 2px;
-        }
-        
-        .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block,
-        .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .tumbnail--with-width {
-            height: 16px !important;
-            width: auto !important;
-            min-width: auto !important;
-        }
-        
-        .rem.isSearchResult .hierarchy-editor__tag-bar .inline-block,
-        .rem.isSearchResult .hierarchy-editor__tag-bar .tumbnail--with-width {
-            height: 16px !important;
-            width: auto !important;
-            min-width: auto !important;
-            padding-right: 2px;
-        }
-
-/*********** Document Hidden children ***********/
-    .hierarchy-editor__hidden-children .rem-header--1 .inline-block,
-    .hierarchy-editor__hidden-children .rem-header--1 .tumbnail--with-width {
-        height: 36px !important;
-        width: auto !important;
-        margin-right: 2px;
-    }
-
-/*********** Header & Normal Rem-Text ***********/
-    /*********** Header 1 ***********/
-        .rem-header--1 .tumbnail--with-width,
-        .rem-header--1 .inline-block {
-            height: 32px !important;
-            width: auto !important;
-            margin-right: 1px;
-        }
-    
-    /*********** Header 2 ***********/
-        .rem-header--2 .inline-block,
-        .rem-header--2 .tumbnail--with-width {
-            height: 24px !important;
-            width: auto !important;
-            min-width: auto !important;
-            margin-right: 3px;
-        }
-    
-    /*********** Header 3 ***********/
-        .rem-header--3 .tumbnail--with-width,
-        .rem-header--3 .inline-block {
-            height: 18px !important;
-            width: auto !important;
-            min-width: auto !important;
-            margin-right: 2px;
-        }
-    
-    /*********** Normal Rem-text with tn tag ***********/
-        [data-rem-tags~="tn"] .inline-block,
-        [data-rem-tags~="tn"] .tumbnail--with-width {
-            height: 16px !important;
-            width: auto !important;
-            min-width: auto !important;
-            padding-right: 1px;
-        }
-
-/*********** Tag bar ***********/
-    #DropToOpenAsDocument .inline-block, 
-    #DropToOpenAsDocument .tumbnail--with-width {
-        height: 16px !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
-    }
-
-    .hierarchy-editor__tag-bar__tag span,
-    .hierarchy-editor__tag-bar__tag .tumbnail--with-width,
-    .hierarchy-editor__tag-bar__tag .inline-block {
-        height: 16px;
-        width: auto;
-    }
-    
-    .popup-menu .tumbnail--with-width,
-    .popup-menu .inline-block {
-        height: 16px !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
-    }
-    
-    .fade-on-hide-ui .inline-block {
-        height: 16px !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
-    }
-
-/*********** Search Result ***********/
-    /*********** Global Search Result (⌘+P Window) ***********/
-        .css-ZPdGi .inline-block, 
-        .css-ZPdGi .tumbnail--with-width {
-            height: 16px !important;
-            width: auto !important;
-            min-width: auto !important;
-            padding-right: 2px;
-        }
-
-        .css-ZPdGi {
-            min-width: 80% !important;
-            min-height: 80% !important;
-        }
-        
-        .css-fUqRpZ .inline-block, 
-        .css-fUqRpZ .tumbnail--with-width {
-            height: 16px !important;
-            width: auto !important;
-            min-width: auto !important;
-            padding-right: 2px;
-        }
-    
-    /*********** Tag Search Result ***********/
-        .search-result__rem-breadcrumbs .inline-block, 
-        .search-result__rem-breadcrumbs .tumbnail--with-width {
-            height: 12px !important;
-            width: auto !important;
-            min-width: auto !important;
-        }
-
 /*********** Queue ***********/
     .spaced-repetition__prompt__breadcrumbs .inline-block,
     .spaced-repetition__prompt__breadcrumbs .tumbnail--with-width {
-        height: 18px;
+        height: 1em;
         width: auto !important;
         min-width: auto !important;
         max-width: auto !important;
@@ -299,23 +54,223 @@
      }
     
     .Queue .spaced-repetition__prompt [data-rmiz-wrap="visible"] {
-        height: 18px !important;
+        height: 1em !important;
         width: auto !important;
     }
+/*********** Document Title ***********/
+    #DocumentTitle .inline-block, 
+    #DocumentTitle .tumbnail--with-width {
+        min-height: 36px !important;
+        width: auto !important;
+        min-width: auto !important;
+    }
+    
+    #DocumentTitle .EditorContainer [data-slate-node="text"] {
+        font-size: 36px !important;
+    }
+    
+    #DocumentTitle .inline-block {
+        position: relative;
+        top: -3px;
+    }
+/*********** Page Hierarchy Style ***********/
+    .document-header-top-bar .inline-block, 
+    .document-header-top-bar .tumbnail--with-width {
+        height: 1em;
+        width: auto;
+        min-width: auto !important;
+        color: #2B3137;
+        padding-right: 2px;
+    }
+/*********** Hidden Page Hierarchy Style ***********/
+    .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
+        min-width: 16px !important;
+        width: auto !important;
+    }
+/*********** Document Sidebar ***********/
+    #document-sidebar .inline-block,
+    #document-sidebar .tumbnail--with-width {
+        height: 1.2em !important;
+        width: auto !important;
+        min-width: auto !important;
+        padding-right: 0px;
+    }
+/*********** Popup - Header ***********/
+    #document-hover-preview__popup .rem-header--1 .inline-block,
+    #document-hover-preview__popup .rem-header--1 .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+    }
+    
+    #document-hover-preview__popup .rem-header--2 .inline-block,
+    #document-hover-preview__popup .rem-header--2 .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+    }
+    
+    #document-hover-preview__popup .rem-header--3 .inline-block,
+    #document-hover-preview__popup .rem-header--3 .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+    }
+/*********** Popup - Image Thumbnail Tag ***********/
+    [data-rem-tags~="tn"] #document-hover-preview .inline-block.align-text-top.group,
+    [data-rem-tags~="tn"] #document-hover-preview .inline-block, 
+    [data-rem-tags~="tn"] #document-hover-preview .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+        padding-right: 2px;
+    }
+/*********** Popup - Reference & Tag & Portal Popup ***********/    
+    /* Portal */
+    .portal-tree-node-box .rem-text .inline-block,
+    .portal-tree-node-box .rem-text .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+        padding-right: 2px;
+    }
 
-/*********** Portal ***********/
-    .popup-menu.fixed .inline-block,
-    .popup-menu.fixed .tumbnail--with-width {
-        height: 16px !important;
+    #document-hover-preview__popup .bold .inline-block,
+    #document-hover-preview__popup .bold .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+    }
+
+    .popup-menu.fixed .popup-menu__item--static .inline-block, 
+    .popup-menu.fixed .popup-menu__item--static .tumbnail--with-width {
+        height: 1em !important;
         width: auto !important;
         min-width: auto !important;
         padding-right: 2px;
     }
     
+    .EditorContainer.EditorContainerInline .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+        color: #2B3137;
+        padding-right: 2px;
+    }
+    
+    .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block,
+    .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+    }
+    
+    .rem.isSearchResult .hierarchy-editor__tag-bar .inline-block,
+    .rem.isSearchResult .hierarchy-editor__tag-bar .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+        padding-right: 2px;
+    }
+/*********** Document Hidden children ***********/
+    .hierarchy-editor__hidden-children .rem-header--1 .inline-block,
+    .hierarchy-editor__hidden-children .rem-header--1 .tumbnail--with-width {
+        height: 36px !important;
+        width: auto !important;
+        margin-right: 2px;
+    }
+/*********** Header & Normal Rem-Text with "tn" Tag***********/
+    .rem-header--1 .inline-block,
+    .rem-header--1 .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+        margin-right: 3px;
+    }
+    .rem-header--2 .inline-block,
+    .rem-header--2 .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+        margin-right: 2px;
+    }
+    .rem-header--3 .inline-block,
+    .rem-header--3 .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+        margin-right: 2px;
+    }
+    /* Normal Rem-text with tn tag */
+    [data-rem-tags~="tn"] .rem-text {
+        height: 1em;
+    }
+    
+    [data-rem-tags~="tn"] .inline-block,
+    [data-rem-tags~="tn"] .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+        padding-right: 1px;
+    }
+/*********** Tag bar ***********/
+    #DropToOpenAsDocument .inline-block, 
+    #DropToOpenAsDocument .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+        padding-right: 2px;
+    }
+    
+    .hierarchy-editor__tag-bar__tag span,
+    .hierarchy-editor__tag-bar__tag .tumbnail--with-width,
+    .hierarchy-editor__tag-bar__tag .inline-block,
+    .hierarchy-editor__tag-bar__tag .inline-block.align-text-top.group {
+        height:  ;
+        width: auto !important;
+        min-width: auto !important;
+    }
+    
+    .fade-on-hide-ui .inline-block {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+        padding-right: 2px;
+    }
+/*********** Search Result - Global Search Result (⌘+P Window) ***********/
+    .css-ZPdGi .inline-block, 
+    .css-ZPdGi .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+        padding-right: 2px;
+    }
+    
+    /* Search Popup Page */
+    .css-ZPdGi {
+        min-width: 80%;
+        min-height: 80%;
+    }
+    
+    .css-fUqRpZ .inline-block, 
+    .css-fUqRpZ .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+        padding-right: 2px;
+    }
+/*********** Search Result - Tag Search Result ***********/
+    .search-result__rem-breadcrumbs .inline-block, 
+    .search-result__rem-breadcrumbs .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+    }
+/*********** Portal ***********/  
     /* Portal Popup for Hidden rems */
     #search-results__result .inline-block,
     #search-results__result .tumbnail--with-width {
-        height: 16px !important;
+        height: 1em !important;
         width: auto !important;
         min-width: auto !important;
         padding-right: 2px;
@@ -324,32 +279,31 @@
     /* Portal-Tree-Node-Box (Tagged Rem Box ...) */
     .portal-tree-node-box .rem-text .inline-block, 
     .portal-tree-node-box .rem-text .tumbnail--with-width {
-        height: 16px !important;
+        height: 1em !important;
         width: auto !important;
         min-width: auto !important;
     }
     
     .portal-tree-node-box .rem-text.rem-header--1 .inline-block, 
     .portal-tree-node-box .rem-text.rem-header--1 .tumbnail--with-width {
-        height: 36px !important;
+        height: 1em !important;
         width: auto !important;
         min-width: auto !important;
     }
     
     .portal-tree-node-box .rem-text.rem-header--2 .inline-block, 
     .portal-tree-node-box .rem-text.rem-header--2 .tumbnail--with-width {
-        height: 24px !important;
+        height: 1em !important;
         width: auto !important;
         min-width: auto !important;
     }
     
     .portal-tree-node-box .rem-text.rem-header--3 .inline-block, 
     .portal-tree-node-box .rem-text.rem-header--3 .tumbnail--with-width {
-        height: 18px !important;
+        height: 1em !important;
         width: auto !important;
         min-width: auto !important;
     }
-
 /*********** Rem Reference ***********/
     .rem-reference .inline-block,
     .rem-reference .tumbnail--with-width {
@@ -359,17 +313,20 @@
         margin-top: 1px;
     }
     
-    .popup-meue .inline-block,
-    .popup-meue .tumbnail--with-width {
-        height: 1em !important;
+    #document-hover-preview__popup #hierarchy-editor .inline-block, 
+    #document-hover-preview__popup #hierarchy-editor .tumbnail--with-width, 
+    #document-hover-preview__popup #hierarchy-editor .rem-reference .inline-block, 
+    #document-hover-preview__popup #hierarchy-editor .rem-reference .tumbnail--with-width {
+        height: auto; /* Do not change this */
         width: auto !important;
         min-width: auto !important;
-        margin-top: 1px;
     }
     
-    #document-hover-preview__popup .rem-reference .inline-block,
+    #document-hover-preview__popup .inline-block, 
+    #document-hover-preview__popup .tumbnail--with-width, 
+    #document-hover-preview__popup .rem-reference .inline-block, 
     #document-hover-preview__popup .rem-reference .tumbnail--with-width {
-        height: 1em !important;
+        height: 1em;
         width: auto !important;
         min-width: auto !important;
     }
@@ -378,3 +335,38 @@
         height: 1em;
         min-width: auto !important;
     }
+    
+    .popup-menu .inline-block,
+    .popup-menu .inline-block.align-text-top.group,
+    .popup-menu .tumbnail--with-width,
+    .popup-menu .image-node {
+        height: 1em;
+        width: auto !important;
+        min-width: auto !important;
+        display: inline-block;
+    }
+    
+    .popup-menu .inline-block,
+    .popup-menu .inline-block.align-text-top.group,
+    .popup-menu .tumbnail--with-width,
+    .popup-menu .image-node {
+        height: 1em;
+        width: auto !important;
+        min-width: auto !important;
+        display: inline-block;
+    }
+    
+    /* Rem reference normal rem-text thumbnail adjustment */
+    .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block,
+    .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block.align-text-top.group,
+    .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .tumbnail--with-width,
+    .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .image-node {
+        position: relative;
+        top: -0.05em;
+    } 
+/*********** Hyperlink Favicon ***********/
+    .LinkNode img {
+        padding-right: 3px;
+        height: 1em;
+        width: 1em;
+    } 
