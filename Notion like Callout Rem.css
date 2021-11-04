@@ -2,7 +2,7 @@
     --callout-background-color: #F7F6F3;
     --callout-background-color-dark: #DFDFDC;
     --calloutred-background-color: #FFE9EC;
-    --calloutred-background-color-dark: #E8D4D8;
+    --calloutred-background-color-dark: #E8CBC8;
     --calloutorange-background-color: #FDEDD9;
     --calloutorange-background-color-dark: #E8DAC8;
     --calloutyellow-background-color: #FDFEDD;
@@ -130,5 +130,5 @@
     [data-rem-tags~="calloutblue"] .hierarchy-editor__tag-bar,
     [data-rem-tags~="calloutpurple"] .hierarchy-editor__tag-bar {
         position: relative;
-        right: -30px;
+        right: -20px;
     }
