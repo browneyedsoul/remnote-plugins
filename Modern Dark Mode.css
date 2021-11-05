@@ -304,9 +304,6 @@
 	
 	.popup-menu .file.text.small.icon::before {filter: invert(1);}
 
-	/* document-hover-preview Page area */
-		.popup-menu, #document-hover-preview__popup {height: 120vw !important;}
-		#document-hover-preview__popup {min-height: 1400px;}
 /*********** Popup for image control ***********/
 	/* svg icon */
 	.popup-menu.fixed .css-fQFckt {
