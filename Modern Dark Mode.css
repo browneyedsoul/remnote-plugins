@@ -167,6 +167,9 @@
 			position: relative;
 			top: 3px;
 		}
+	/* Katex */
+		.katex,
+		.latex-node--focused:not(.latex-node--block) .katex  {background-color: unset;}
 	/* Calendar icon */
 		.rem-calendar-icon--in-editor,
 		.rem-container--not-included-in-document-scope .file.text.small.icon {
