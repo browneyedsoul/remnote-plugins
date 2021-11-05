@@ -132,7 +132,8 @@
 			.css-hBWTgk,
 			.css-edMwoJ {background-color: var(--darkmode-background);}
 		/* Middle Item Text */
-			.css-dcfFHl {color: var(--darkmode-text) !important;} 
+			.css-dcfFHl,
+			.css-jlRuPl {color: var(--darkmode-text) !important;} 
 		/* Search Area*/
 			.css-jQQQnw {border-radius: 5px;}
 		/* Omnibar svg icon */
