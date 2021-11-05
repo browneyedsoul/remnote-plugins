@@ -134,6 +134,10 @@
 		/* Middle Item Text */
 			.css-dcfFHl,
 			.css-jlRuPl {color: var(--darkmode-text) !important;} 
+			.css-jlRuPl .bg-warning-10 {
+				background-color: var(--reference-text-dark);
+				border: 1px solid var(--darkmode-contrast);
+			}
 		/* Search Area*/
 			.css-jQQQnw {border-radius: 5px;}
 		/* Omnibar svg icon */
