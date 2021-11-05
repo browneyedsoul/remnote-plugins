@@ -17,7 +17,7 @@
 	border-radius: 5px;
 	padding: 2px;
 	position: relative;
-	top: -9px;
+	top: -7px;
 	left: -4px;
 }
 
@@ -45,3 +45,15 @@
 	content: "★★★★★";	
 	padding-right: 3px;
 }
+
+/*********** Tag Declutter ***********/
+	[data-rem-tags~="1star"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
+	[data-rem-tags~="2star"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
+	[data-rem-tags~="3star"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
+	[data-rem-tags~="4star"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
+	[data-rem-tags~="5star"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
+	[data-rem-tags~="1star"] .hierarchy-editor__tag-bar__tag span {display: none;}
+	[data-rem-tags~="2star"] .hierarchy-editor__tag-bar__tag span {display: none;}
+	[data-rem-tags~="3star"] .hierarchy-editor__tag-bar__tag span {display: none;}
+	[data-rem-tags~="4star"] .hierarchy-editor__tag-bar__tag span {display: none;}
+	[data-rem-tags~="5star"] .hierarchy-editor__tag-bar__tag span {display: none;}
