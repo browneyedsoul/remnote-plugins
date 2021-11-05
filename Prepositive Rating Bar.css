@@ -4,6 +4,8 @@
 [data-rem-tags~="4star"] .rem-text,
 [data-rem-tags~="5star"] .rem-text {
 	margin-left: 75px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 [data-rem-tags~="1star"] .rem-bullet::before,
 [data-rem-tags~="2star"] .rem-bullet::before,
@@ -26,7 +28,7 @@
 
 [data-rem-tags~="2star"] .rem-bullet::before {
 	content: "★★";	
-	padding-right: 54px;
+	padding-right: 53px;
 }
 
 [data-rem-tags~="3star"] .rem-bullet::before {
@@ -36,9 +38,10 @@
 
 [data-rem-tags~="4star"] .rem-bullet::before {
 	content: "★★★★";	
-	padding-right: 19px;
+	padding-right: 20px;
 }
 
 [data-rem-tags~="5star"] .rem-bullet::before {
 	content: "★★★★★";	
+	padding-right: 3px;
 }
