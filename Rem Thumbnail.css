@@ -226,16 +226,9 @@
     .hierarchy-editor__tag-bar__tag .tumbnail--with-width,
     .hierarchy-editor__tag-bar__tag .inline-block,
     .hierarchy-editor__tag-bar__tag .inline-block.align-text-top.group {
-        height: 1em !important;
+        height: 1rem !important;
         width: auto !important;
         min-width: auto !important;
-    }
-    
-    .fade-on-hide-ui .inline-block {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
     }
 /*********** Search Result - Global Search Result (⌘+P Window) ***********/
     .css-ZPdGi .inline-block, 
