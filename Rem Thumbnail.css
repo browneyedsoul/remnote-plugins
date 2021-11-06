@@ -230,6 +230,12 @@
         width: auto !important;
         min-width: auto !important;
     }
+
+    .fade-on-hide-ui .inline-block {
+        height: 1rem !important;
+        width: auto !important;
+        min-width: auto !important;
+    }
 /*********** Search Result - Global Search Result (⌘+P Window) ***********/
     .css-ZPdGi .inline-block, 
     .css-ZPdGi .tumbnail--with-width {
