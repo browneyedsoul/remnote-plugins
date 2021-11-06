@@ -49,6 +49,20 @@
 	--line-number-color-dark: #BDBEBE;
 	--line-number-background-color-dark: #E6E6E6;
 	--code-node-background-color-dark: #E6E6E6;
+	--code-node-number-color: ;
+	--code-node-number-color-dark: ;
+	--code-node-string-color: ;
+	--code-node-string-color-dark: ;
+	--code-node-punctuation-color: ;
+	--code-node-punctuation-color-dark: ;
+	--code-node-operator-color: ;
+	--code-node-operator-color-dark: ;
+	--code-node-function-color: ;
+	--code-node-function-color-dark: ;
+	--code-node-comment-color: ;
+	--code-node-comment-color-dark: ;
+	--code-node-keyword-color: ;
+	--code-node-keyword-color-dark: ;
 }
 
 /*********** Queue ***********/
@@ -185,6 +199,7 @@
 	.highlight-color--blue,
 	.highlight-color--purple {
 		color: black;
+		font-weight: 600;
 		border-radius: 3px;
 		margin-bottom: 1px;
 		padding: 0px 2px 0px 2px;
@@ -306,7 +321,6 @@
 	}
 	
 	.popup-menu .file.text.small.icon::before {filter: invert(1);}
-
 /*********** Popup for image control ***********/
 	/* svg icon */
 	.popup-menu.fixed .css-fQFckt {
