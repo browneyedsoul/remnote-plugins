@@ -325,7 +325,7 @@
 	.document-header-top-bar .parent-link {
 		color: var(--darkmode-text);
 		background-color: transparent;
-		border: 1px solid white;
+		border: 1px solid #7F8094;
 	}
 /*********** Blcokquote ***********/
 	[data-rem-tags~="blockquote"] {filter: invert(1);}
