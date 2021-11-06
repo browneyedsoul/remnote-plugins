@@ -226,7 +226,7 @@
     .hierarchy-editor__tag-bar__tag .tumbnail--with-width,
     .hierarchy-editor__tag-bar__tag .inline-block,
     .hierarchy-editor__tag-bar__tag .inline-block.align-text-top.group {
-        height:  ;
+        height: 1em !important;
         width: auto !important;
         min-width: auto !important;
     }
