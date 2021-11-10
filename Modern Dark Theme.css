@@ -1,7 +1,7 @@
 :root {
 	--font-size-documenttitle: 36px;
 	--font-size-header-1: 32px;
-	--font-size-header-2: 26px;
+	--font-size-header-2: 24px;
 	--font-size-header-3: 20px;
 	--darkmode-background: #2F3437;
 	--darkmode-background-sidebar: #2B3137;
@@ -12,7 +12,8 @@
 	--quote-text-dark: #F1FA8C;
 	--quote-background-dark: #5E6A70;
 	--reference-text-dark: darkred;
-	--darkmode-line-color: #404648;
+	--line-color: #EEEFEE;
+	--line-color-dark: #404648;
 	--link-node-color-dark: #94D2FF;
 	--red-text: #FF4A44;
 	--red-text-dark: #FD6E68;
@@ -27,17 +28,17 @@
 	--purple-text: #A142F4;
 	--purple-text-dark: #BF96F4;
 	--highlight-color--red: #FF8A88;
-	--highlight-color--red-dark: #;
+	--highlight-color--red-dark: #FF8A88;
 	--highlight-color--orange: #FFB86C;
-	--highlight-color--orange-dark: #;
+	--highlight-color--orange-dark: #FFB86C;
 	--highlight-color--yellow: #F1FA8C;
 	--highlight-color--yellow-dark: #E3E004;
 	--highlight-color--green: #9FE39B;
-	--highlight-color--green-dark: #;
+	--highlight-color--green-dark: #9FE39B;
 	--highlight-color--blue: #9FC8EB;
-	--highlight-color--blue-dark: #;
+	--highlight-color--blue-dark: #9FC8EB;
 	--highlight-color--purple: #DEAFEB;
-	--highlight-color--purple-dark: #;
+	--highlight-color--purple-dark: #DEAFEB;
 	--callout-background-color-dark: #DFDFDC;
 	--calloutred-background-color-dark: #E8D4D8;
 	--calloutorange-background-color-dark: #E8DAC8;
@@ -46,8 +47,9 @@
 	--calloutblue-background-color-dark: #D6E2E6;
 	--calloutpurple-background-color-dark: #E4D5E3;
 	--text-shadow: 0.01em 0.01em 0.01em #727E84;
-	--line-number-color-dark: #BDBEBE;
-	--line-number-background-color-dark: #E6E6E6;
+	--code-node-line-number-color-dark: #BDBEBE;
+	--code-node-line-number-background-color-dark: #E6E6E6;
+	--code-node-background-color: #F7F6F3;
 	--code-node-background-color-dark: #E6E6E6;
 	--code-node-number-color: ;
 	--code-node-number-color-dark: ;
@@ -63,134 +65,177 @@
 	--code-node-comment-color-dark: ;
 	--code-node-keyword-color: ;
 	--code-node-keyword-color-dark: ;
-}
+} 
 
+/*********** The Most important thing ***********/
+	.dark-mode {filter: unset;}
+	.dark-mode {background-color: transparent;} 
 /*********** Queue ***********/
-	.Queue,
-	.bg-gray-5,
-	.scroll-drag-component,
-	.spaced-repetition__prompt,
-	.spaced-repetition__prompt__breadcrumbs,
-	.text-base + a,
-	.queue__edit-later {
+	.dark-mode .Queue,
+	.dark-mode .bg-gray-5,
+	.dark-mode .scroll-drag-component,
+	.dark-mode .spaced-repetition__prompt,
+	.dark-mode .spaced-repetition__prompt__breadcrumbs,
+	.dark-mode .text-base + a,
+	.dark-mode .queue__edit-later {
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
 	}
 	
-	.queue__badge,
-    .queue__title__middle:last-child,
-    .queue__title .overflow-ellipsis,
-    .queue__title .overflow-ellipsis .font-semibold {
+	.dark-mode .queue__badge,
+    .dark-mode .queue__title__middle:last-child,
+    .dark-mode .queue__title .overflow-ellipsis,
+    .dark-mode .queue__title .overflow-ellipsis .font-semibold {
 		color: var(--darkmode-text) !important;
 		background-color: var(--darkmode-background-selected) !important;
 	}
 	
-	.rem-bullet__queue {background-color: var(--darkmode-text) !important;}
-	.spaced-repetition__prompt .rem-bullet__document {color: black;}
-	.spaced-repetition__prompt .rem-bullet__document .file.text.small.icon {color: white;}
+	.dark-mode .rem-bullet__queue {background-color: var(--darkmode-text) !important;}
+	.dark-mode .spaced-repetition__prompt .rem-bullet__document {color: black;}
+	.dark-mode .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon {color: white;}
 	
-	#SearchPopup .rich-text-editor,
-	#SearchPopup .EditorContainer {
+	.dark-mode #SearchPopup .rich-text-editor,
+	.dark-mode #SearchPopup .EditorContainer {
 		caret-color: var(--darkmode-text);
 		color: var(--darkmode-text);
 	}
 /*********** Card Browser ***********/
-	#card-table-page {
+	.dark-mode #card-table-page {
 		color: var(--darkmode-text);
 	    background-color: var(--darkmode-background);
 	    font-family: "Helvetica Neue";
 	}
-	
-	.card-table__card-title {color: var(--darkmode-text);}
+	.dark-mode .card-table__card-title {
+		color: var(--darkmode-text);
+	}
+/*********** Omnibar ***********/
+	/* Selected */
+		.dark-mode .css-cMUIYB {background-color: var(--darkmode-background-selected);}
+	/* Omnibar item text */
+		.dark-mode .css-bwtzVW {color: var(--darkmode-text);}
+	/* Top & Bottom */
+		.dark-mode .css-ZPdGi {background-color: var(--darkmode-background);}
+	/* Middle item including omni search bar */
+		.dark-mode .css-bwtzVW, 
+		.dark-mode .css-hBWTgk,
+		.dark-mode .css-edMwoJ {background-color: var(--darkmode-background);}
+	/* Middle Item Text */
+		.dark-mode .css-dcfFHl,
+		.dark-mode .css-jlRuPl {color: var(--darkmode-text) !important;} 
+		.dark-mode .css-jlRuPl .bg-warning-10 {
+			background-color: var(--reference-text-dark);
+			border: 1px solid var(--darkmode-contrast);
+		}
+	/* Search Area*/
+		.dark-mode .css-jQQQnw {border-radius: 5px;}
+	/* Omnibar svg icon */
+		.dark-mode .css-fQFckt {
+			background-color: var(--darkmode-contrast) !important;
+			border: 1px dotted var(--darkmode-contrast);
+			border-radius: 5px;
+		} 
+/*********** Icon ***********/
+	/* Slot icon */
+	.dark-mode .css-bMKjkl {color: var(--darkmode-text);} 
+/*********** Page Hierarchy Bar ***********/
+	.dark-mode .document-header-top-bar .parent-link {
+		color: var(--darkmode-text);
+		background-color: transparent;
+		border: 1px solid #7F8094;
+	}
 /*********** RemNote Hierarchy Editor ***********/
-	/* General Background */
-		.document-table,
-		.tile__document,
-		.multiple-windows__document,
-		#multiple-windows__document {
+	/* Hierarchy Editor - General Background */
+		.dark-mode .document-table,
+		.dark-mode .tile__document,
+		.dark-mode .multiple-windows__document,
+		.dark-mode #multiple-windows__document {
 			background-color: var(--darkmode-background);
 		}
+	/* image background */
+		
 	/* General Text */
-		.css-bMKjkl, /* Slot icon */
-		.css-crJvPT,
-		.rem-text,
-		.rem-text.rem-header--1,
-		.rem-text.rem-header--2,
-		.rem-text.rem-header--3,
-		.css-ZPdGi /* */,
-		.css-bwtzVW /* Omnibar item*/ {
+		.dark-mode .css-crJvPT,
+		.dark-mode .rem-text,
+		.dark-mode .rem-text.rem-header--1,
+		.dark-mode .rem-text.rem-header--2,
+		.dark-mode .rem-text.rem-header--3,
+		.dark-mode .css-ZPdGi {
 			color: var(--darkmode-text);
 		}
-	/* LinkNode */
-		.LinkNode {
+		
+	/* Hierarchy Editor - LinkNode */
+		.dark-mode .LinkNode {
 			color: var(--link-node-color-dark) !important;
 			background-color: var(--darkmode-background-selected);
 			border-radius: 3px;
 			padding: 0px 2px 0px 2px;
 		}
-	/* TreeNode */
-		.TreeNode {
+	/* Hierarchy Editor - TreeNode */
+		.dark-mode .TreeNode {
 			border-width: 1.5px !important;
-			border-left-color: var(--darkmode-line-color) !important;
+			border-left-color: var(--line-color-dark) !important;
 		}
 		
-		.animate-zoom-into-bullet .quote {
+		.dark-mode .animate-zoom-into-bullet .quote {
 			color: var(--quote-text-dark) !important;
 			background-color: var(--quote-background-dark) !important;
 		}
-	/* Omnibar */
-		/* Top & Bottom */
-			.css-ZPdGi {background-color: var(--darkmode-background);}
-		/* Middle item including omni search bar */
-			.css-bwtzVW, 
-			.css-hBWTgk,
-			.css-edMwoJ {background-color: var(--darkmode-background);}
-		/* Middle Item Text */
-			.css-dcfFHl,
-			.css-jlRuPl {color: var(--darkmode-text) !important;} 
-			.css-jlRuPl .bg-warning-10 {
-				background-color: var(--reference-text-dark);
-				border: 1px solid var(--darkmode-contrast);
-			}
-		/* Search Area*/
-			.css-jQQQnw {border-radius: 5px;}
-		/* Omnibar svg icon */
-			.css-fQFckt {
-				background-color: var(--darkmode-contrast) !important;
-				border: 1px dotted var(--darkmode-contrast);
-				border-radius: 5px;
-			}
+	
 	/* All Notes page list */
-		.css-exQOrH {
+		.dark-mode .css-exQOrH {
 			color: var(--darkmode-text);
 			background-color: var(--darkmode-background);
 			padding: 5px;
 			border-radius: 5px;
 		}	
-		.css-jlRuPl {padding: 3px 0px 3px 0px;}
-		.css-cLpPvR .RichTextViewer {color: #9191A8 !important;}
-	/* Reference */
+		.dark-mode .css-jlRuPl {padding: 3px 0px 3px 0px;}
+		.dark-mode .css-cLpPvR .RichTextViewer {color: #9191A8 !important;}
+	/* Hierarchy Editor - Reference */
 		.rem-reference .RichTextViewer {
 			font-weight: 400;
 		    color: var(--reference-text-dark);
-		    background-color:
+		    background-color: ;
 		}
-	/* Alias */
+	/* Hierarchy Editor - Alias */
 		.rem-reference-container .css-kWtKRr {
 			filter: invert(1);
 			position: relative;
 			top: 3px;
 		}
-	/* Katex */
-		.katex,
-		.latex-node--focused:not(.latex-node--block) .katex  {background-color: unset;}
-	/* Calendar icon */
+		
+	/* Hierarchy Editor - Katex */
+		.dark-mode .katex,
+		.dark-mode .latex-node--focused:not(.latex-node--block) .katex {
+			background-color: unset;
+		}
+		
+	/* Hierarchy Editor - Calendar icon */
 		.rem-calendar-icon--in-editor,
 		.rem-container--not-included-in-document-scope .file.text.small.icon {
 			color: var(--darkmode-text);
 		}
-	/* Source */
-		.rem-reference-link {background-color: var(--calloutyellow-background-color-dark);}
+	/* Hierarchy Editor - Source */
+		.dark-mode .rem-reference-link {
+			background-color: var(--calloutyellow-background-color-dark);
+		}
+	/* Hierarchy Editor - Left-side Hiearchy Editor Margin */
+		.document--ltr {padding: 0px 0px 0px 40px;}
+
+	/* Hierarchy Editor - Source & Tags */
+		.gap-y-2.grid.grid-cols-1.pb-2 {zoom: }
+		.remHierarchyTop {display: ;} 
+/*********** Rem-Bullet Container ***********/
+	.dark-mode .plus-button,
+	.dark-mode .six-dot,
+	.dark-mode .toggle-collapse-button {
+		background-color: transparent;
+	}
+
+	.dark-mode .icon-button,
+	.dark-mode .rem-bullet__container .rem-bullet,
+	.dark-mode .rem-bullet__container .rem-bullet__icon {
+		filter: invert(1);
+	}
 /*********** Hightlight Style ***********/
 	.highlight-color--red,
 	.highlight-color--orange,
@@ -199,19 +244,23 @@
 	.highlight-color--blue,
 	.highlight-color--purple {
 		color: black;
-		font-weight: 600;
 		border-radius: 3px;
 		margin-bottom: 1px;
 		padding: 0px 2px 0px 2px;
 	}
 	
 	.highlight-color--red {background-color: var(--highlight-color--red);}
+	.dark-mode .highlight-color--red {background-color: var(--highlight-color--red-dark);}
 	.highlight-color--orange {background-color: var(--highlight-color--orange);}
+	.dark-mode .highlight-color--orange {background-color: var(--highlight-color--orange-dark);}
 	.highlight-color--yellow {background-color: var(--highlight-color--yellow);}
-	.rem-text .highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
+	.dark-mode .highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
 	.highlight-color--green {background-color: var(--highlight-color--green);}
+	.dark-mode .highlight-color--green {background-color: var(--highlight-color--green-dark);}
 	.highlight-color--blue {background-color: var(--highlight-color--blue);}
+	.dark-mode .highlight-color--blue {background-color: var(--highlight-color--blue-dark);}
 	.highlight-color--purple {background-color: var(--highlight-color--purple);}
+	.dark-mode .highlight-color--purple {background-color: var(--highlight-color--purple-dark); }
 
 	.highlight-color--red .rem-text,
 	.highlight-color--red .rem-text.rem-header--1,
@@ -239,6 +288,7 @@
 	.highlight-color--purple .rem-text.rem-header--3  {
 		color: black;
 	}
+	
 	/* Document Title Highlight Style */
 		#DocumentTitle .bold.highlight-color--red,
 		#DocumentTitle .bold.highlight-color--orange,
@@ -248,12 +298,19 @@
 		#DocumentTitle .bold.highlight-color--purple {
 			background-color: unset !important;
 		}
-		#DocumentTitle .bold.highlight-color--red {color: var(--red-text-dark);}
-		#DocumentTitle .bold.highlight-color--orange {color: var(--orange-text-dark);}
-		#DocumentTitle .bold.highlight-color--yellow {color: var(--yellow-text-dark);}
-		#DocumentTitle .bold.highlight-color--green {color: var(--green-text-dark);}
-		#DocumentTitle .bold.highlight-color--blue {color: var(--blue-text-dark);}
-		#DocumentTitle .bold.highlight-color--purple {color: var(--purple-text-dark);}
+		#DocumentTitle .bold.highlight-color--red {color: var(--red-text);}
+		#DocumentTitle .bold.highlight-color--orange {color: var(--orange-text);}
+		#DocumentTitle .bold.highlight-color--yellow {color: var(--yellow-text);}
+		#DocumentTitle .bold.highlight-color--green {color: var(--green-text);}
+		#DocumentTitle .bold.highlight-color--blue {color: var(--blue-text);}
+		#DocumentTitle .bold.highlight-color--purple {color: var(--purple-text);}
+		.dark-mode #DocumentTitle .bold.highlight-color--red {color: var(--red-text-dark);}
+		.dark-mode #DocumentTitle .bold.highlight-color--orange {color: var(--orange-text-dark);}
+		.dark-mode #DocumentTitle .bold.highlight-color--yellow {color: var(--yellow-text-dark);}
+		.dark-mode #DocumentTitle .bold.highlight-color--green {color: var(--green-text-dark);}
+		.dark-mode #DocumentTitle .bold.highlight-color--blue {color: var(--blue-text-dark);}
+		.dark-mode #DocumentTitle .bold.highlight-color--purple {color: var(--purple-text-dark);}
+	
 	/* Highlight Color to Text Color Using `color` Tag */
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--red,
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange, 
@@ -272,48 +329,55 @@
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {
 			font-weight: 500;
 		}
-		[data-rem-tags~="color"] .rem-text .bold.highlight-color--red {color: var(--red-text-dark);} 
-		[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange {color: var(--orange-text-dark);}
-	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow {color: var(--yellow-text-dark);}
-	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--green {color: var(--green-text-dark);}
-	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--blue {color: var(--blue-text-dark);}
-	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {color: var(--purple-text-dark);}
+		[data-rem-tags~="color"] .rem-text .bold.highlight-color--red {color: var(--red-text);} 
+		[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange {color: var(--orange-text);}
+	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow {color: var(--yellow-text);}
+	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--green {color: var(--green-text);}
+	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--blue {color: var(--blue-text);}
+	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {color: var(--purple-text);}
+	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--red {color: var(--red-text-dark);} 
+		.dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--orange {color: var(--orange-text-dark);}
+	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow {color: var(--yellow-text-dark);}
+	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--green {color: var(--green-text-dark);}
+	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--blue {color: var(--blue-text-dark);}
+	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {color: var(--purple-text-dark);} 
 /*********** Context Menu ***********/
-	.select-none.rounded.bg-gray-5 {
+	.dark-mode .select-none.rounded.bg-gray-5 {
 		color: black;
 		background-color: var(--lightmode-background-selected);
 	}
 /*********** Find / Filter / Replace - Ctrl(⌘) + F ***********/
-    #hierarchy-editor__ctrl-f .css-exQOrH {
+    .dark-mode #hierarchy-editor__ctrl-f .css-exQOrH {
         color: black;
         background-color: unset;
     }
-
-    #rich-text-editor__icon {filter: invert(1);}
+    #rich-text-editor__icon {
+    	filter: invert(1);
+    }
 /*********** Popup ***********/
-	#document-hover-preview__popup {
+	.dark-mode #document-hover-preview__popup {
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
 		border: 2px dashed white;
 	}
 
-	.popup-menu, 
-	.popup-menu.fixed .bg-white, 
-	.popup-menu.fixed .bg-white .css-kbbFlF, 
-	#document-hover-preview__popup {
+	.dark-mode .popup-menu, 
+	.dark-mode .popup-menu.fixed .bg-white, 
+	.dark-mode .popup-menu.fixed .bg-white .css-kbbFlF, 
+	.dark-mode #document-hover-preview__popup {
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
 		border: 1px dotted white;
 	}
 	
-	.popup-menu__item, 
-	.popup-menu__item--static,
-	.hierarchy-editor__search-portal-section {
+	.dark-mode .popup-menu__item, 
+	.dark-mode .popup-menu__item--static,
+	.dark-mode .hierarchy-editor__search-portal-section {
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
 	}
 	
-	#show-embedded-search-button {
+	.dark-mode #show-embedded-search-button {
 		color: var(--darkmode-text) !important;
 		background-color: var(--darkmode-background-selected);
 		filter: invert(0) !important;
@@ -322,176 +386,73 @@
 	
 	.popup-menu .file.text.small.icon::before {filter: invert(1);}
 /*********** Popup for image control ***********/
-	/* svg icon */
-	.popup-menu.fixed .css-fQFckt {
-		background-color: yellow;
-		border-radius: 5px;
-		opacity: 0.8;
-	}
-
-	/* Selected item */
-	.popup-menu.fixed .bg-white .css-huwYra {
-		color: var(--darkmode-text);
-		background-color: var(--darkmode-background-selected);
-		border: 1px solid var(--darkmode-contrast);
-	}
-/*********** Page Hierarchy Bar ***********/
-	.document-header-top-bar .parent-link {
-		color: var(--darkmode-text);
-		background-color: transparent;
-		border: 1px solid #7F8094;
-	}
-/*********** Blcokquote ***********/
-	[data-rem-tags~="blockquote"] {filter: invert(1);}
-	[data-rem-tags~="blockquote"] .rem-text {filter: invert(1);}
-/*********** Codeblock ***********/
-	#code-node {background-color: var(--code-node-background-color-dark) !important;}
-	.codeLine::before {color: var(--line-number-color-dark) !important;}
-	#code-node::before {background-color: var(--line-number-background-color-dark) !important;}
-/*********** Rem-Bullet Container ***********/
-	.plus-button,
-	.six-dot,
-	.toggle-collapse-button {
-		background-color: transparent;
-	}
-
-	.icon-button,
-	.rem-bullet__container .rem-bullet,
-	.rem-bullet__container .rem-bullet__icon {
-		filter: invert(1);
-	}
-
-	[data-rem-tags~="highlight"] .rem-bullet,
-	[data-rem-tags~="highlight"] .rem-bullet__icon {
-		filter: invert(0) !important;
+/*********** Codeblock ***********/	
+	#code-node {background-color: var(--code-node-background-color);}
+	.dark-mode #code-node {background-color: var(--code-node-background-color-dark);}
+	.codeLine::before {color: var(--code-node-line-number-color);}
+	.dark-mode .codeLine::before {color: var(--code-node-line-number-color-dark);}
+	#code-node::before {background-color: var(--line-number-background-color);}
+	.dark-mode #code-node::before {background-color: var(--code-node-line-number-background-color-dark);}
+/*********** Checkbox ***********/	
+	#DocumentTitle .rem-header--1 .rem-checkbox,
+	#DocumentTitle .rem-header--2 .rem-checkbox,
+	#DocumentTitle .rem-header--3 .rem-checkbox {
+		margin-right: 15px;
 	}
 /*********** Settings Page ***********/
-	.settings-page {background-color: var(--darkmode-background);}
-	.settings-page__sidebar__title {color: var(--darkmode-contrast);}
-	.settings-page__sidebar__link--active {border: 1px solid var(--darkmode-contrast);}
-	
+	.dark-mode .settings-page {background-color: var(--darkmode-background);}
+	.dark-mode .settings-page__sidebar__title {color: var(--darkmode-contrast);}
+	.dark-mode .settings-page__sidebar__link--active {border: 1px solid var(--darkmode-contrast);}
 	/* Sidebar svg icon */
-		.settings-page .css-drbSAB {
+	.dark-mode .settings-page .css-drbSAB {
 		    color: var(--darkmode-contrast);
 		    background-color: var(--darkmode-background);
 		    border: 1px dotted var(--darkmode-contrast);
 		    border-radius: 5px;
 		}
-	/*********** Setting Page Content ***********/
-		.settings-page .popup__header,
-		.settings-page__content__inner {
-		    background-color: var(--darkmode-background);
-		}
+	/* Setting Page Content */
+	.dark-mode .settings-page .popup__header,
+	.dark-mode .settings-page__content__inner {
+		background-color: var(--darkmode-background);
+	}
 	/* Plan */
-		.settings-page .css-emvqyP {
-		    color: var(--darkmode-contrast);
-		    font-family: "Roboto Mono", "Fira Code", monospace;
-		    font-weight: 600;
-		}
+	.dark-mode .settings-page .css-emvqyP {
+	    color: var(--darkmode-contrast);
+	    font-family: "Roboto Mono", "Fira Code", monospace;
+	    font-weight: 600;
+	}
 	/* Account, Knowledge Base Settings, Danger Zone, Syncing, App Version */
-		.settings-page .items-center,
-		.settings-page .css-jBUFtN,
-		.settings-page .css-ATSnA,
-		.settings-page .css-dcfFHl,
-		.settings-page .css-cSCrvK,
-		.settings-page .css-exQOrH + a,
-		.settings-page .checkbox,
-		.settings-page .px-6,
-		.settings-page .p-6 {
-		    color: var(--darkmode-text);
-		}
-/*********** Notion like Callout Rem ***********/
-	[data-rem-tags~="callout"] .rem-container {background-color: var(--callout-background-color-dark) !important;}
-	[data-rem-tags~="callout"] .rem-container.highlight-color--red,
-	[data-rem-tags~="calloutred"] .rem-container {background-color: var(--calloutred-background-color-dark) !important;}
-	[data-rem-tags~="callout"] .rem-container.highlight-color--orange,
-	[data-rem-tags~="calloutorange"] .rem-container {background-color: var(--calloutorange-background-color-dark) !important;}
-	[data-rem-tags~="callout"] .rem-container.highlight-color--yellow,
-	[data-rem-tags~="calloutyellow"] .rem-container {background-color: var(--calloutyellow-background-color-dark) !important;}
-	[data-rem-tags~="callout"] .rem-container.highlight-color--green,
-	[data-rem-tags~="calloutgreen"] .rem-container {background-color: var(--calloutgreen-background-color-dark) !important;}
-	[data-rem-tags~="callout"] .rem-container.highlight-color--blue,
-	[data-rem-tags~="calloutblue"] .rem-container {background-color: var(--calloutblue-background-color-dark) !important;}
-	[data-rem-tags~="callout"] .rem-container.highlight-color--purple,
-	[data-rem-tags~="calloutpurple"] .rem-container {background-color: var(--calloutpurple-background-color-dark) !important;}
-	
-	[data-rem-tags~="callout"] .rem-text,
-	[data-rem-tags~="calloutred"] .rem-text,
-	[data-rem-tags~="calloutorange"] .rem-text,
-	[data-rem-tags~="calloutyellow"] .rem-text,
-	[data-rem-tags~="calloutgreen"] .rem-text,
-	[data-rem-tags~="calloutblue"] .rem-text,
-	[data-rem-tags~="calloutpurple"] .rem-text {
-		color: black;
+	.dark-mode .settings-page .items-center,
+	.dark-mode .settings-page .css-jBUFtN,
+	.dark-mode .settings-page .css-ATSnA,
+	.dark-mode .settings-page .css-dcfFHl,
+	.dark-mode .settings-page .css-cSCrvK,
+	.dark-mode .settings-page .css-exQOrH + a,
+	.dark-mode .settings-page .checkbox,
+	.dark-mode .settings-page .px-6,
+	.dark-mode .settings-page .p-6 {
+	    color: var(--darkmode-text);
 	}
-/*********** Divider ***********/
-	[data-rem-tags~="divider"] {
-		color: transparent;
-		padding-right: 15px;
-		background-color: ;
-		height: 7px;
-		margin-right: 20px;
-		margin-left: 10px;
+/*********** Reference ***********/
+	.rem-reference.button.rem-reference-link {
+		color: unset;
+		background-color: #F5FAF9;
+		font-weight: 700;
+		border: 0.1px solid #DEE0E0;
 	}
-
-	[data-rem-tags~="divider"] .rem-text {color: transparent;}
-
-	[data-rem-tags~="divider"]:before {
-		content: " ";
-		display: block;
-		position: absolute;
-		width: 100%;
-		top: 50%;
-		border-bottom: 2px solid #404648 !important;
-		margin-right: 20px;
-	}
-
-	[data-rem-tags~="divider"]:focus-within {
-		background: #2E4E5B;
-		margin-left: 40px;
-		margin-right: -10px;
-		position: relative;
-		left: -15px;
-	}
-
-	[data-rem-tags~="divider"]:not(:focus-within) {
-		color: transparent;
-		position: relative;
-		padding: 0px 15px;
-	}
-
-	[data-rem-tags~="divider"]:not(:focus-within):before {
-		content: " ";
-		display: block;
-		position: absolute;
-		width: 100%;
-		top: 50%;
-		border-bottom: var(--divider-style, 2px solid #EEEFEE);
-	}
-/*********** Active Recall ***********/
-	.cloze {
-		background-color: rgba(210,225,248,0);
-		color: #fff;
-		border-bottom: 2px solid var(--darkmode-contrast);
-		padding-bottom: 2px;
-		margin-left: 3px;
-		margin-right: 3px;
-		padding-left: 3px;
-	}
-
-	#show-embedded-search-button {filter: invert(1);}
-/*********** Rem Rating System ***********/
-	[data-rem-tags~="1star"] .rem-bullet::before,
-	[data-rem-tags~="2star"] .rem-bullet::before,
-	[data-rem-tags~="3star"] .rem-bullet::before,
-	[data-rem-tags~="4star"] .rem-bullet::before,
-	[data-rem-tags~="5star"] .rem-bullet::before {
-		filter: invert(1);
-		border: 1px solid #CDCECE;
+	/* Reference Partial Hiding using inlinequote */
+	.rem-reference.button.rem-reference-link .quote {display: none;}
+	.rem-reference.button.rem-reference-link .alias {color: red;}
+	/* Hide Reference root & > symbol */
+	.rem-reference.button.rem-reference-link .gray,
+	.rem-reference.button.rem-reference-link .join-arrow {
+		display: none;
 	}
 /*********** Sidebar ***********/
 	/* Basic */
 		#document-sidebar {background-color: var(--darkmode-background-sidebar);}
+		.dark-mode #document-sidebar {background-color: var(--darkmode-background-sidebar) !important;}
+		
 		#document-sidebar + div > div {
 			color: var(--darkmode-contrast) !important;
 			background-color: var(--darkmode-background-sidebar) !important;
@@ -504,6 +465,7 @@
 
 		.document-sidebar--collapsed--vertical div div{left: -6px;}
 		.document-sidebar--collapsed--vertical {width: 20px;}
+	
 	/* Navigation Bar */
 		.navigation-bar  {background-color: var(--darkmode-background-sidebar);}
 		.hierarchy-editor-list__sticky-top__rem-container {
@@ -515,6 +477,7 @@
 			.hierarchy-editor-list__sticky-top__rem-container .rem-is-custom-rem-type--in-body {zoom: 90%;}
 	/* RemNote Date Picker */
 		.react-datepicker.search-results__date-picker {background-color: #ffffff !important;}
+		
 	/* RemNote Help Page Top */
 		.css-bBkpDG {filter: invert(1);}
 	/* Account Capsule */
@@ -624,3 +587,5 @@
 		.block.group.cursor-pointer .highlight-color--purple .document-list-item__folder-icon {
 			filter: invert(1);
 		}
+
+
