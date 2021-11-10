@@ -134,11 +134,3 @@ Hope new revamped big update version could be more intuitive. :slightly_smiling_
 
 ## Terminal
 ![CleanShot 2021-08-29 at 15 07 51](https://user-images.githubusercontent.com/56161102/131240536-c039347c-3fce-4cc4-a568-048606a4d383.png)
-
-## Modern Table Row(Deprecated)
-
-## Simple Column Table(Deprecated)
-![6f55ee80750348fc0c5a0beec224da939aa2f3d6_2_572x499](https://user-images.githubusercontent.com/56161102/129581987-d9833334-3031-43c1-88fa-1cb3d1820238.png)
-![78312fab6e3fdb1741c56f901f633c5a75901aac](https://user-images.githubusercontent.com/56161102/129582005-5bd6eccf-6553-43f5-8753-8e0e66e91673.gif)
-
-
