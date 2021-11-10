@@ -386,6 +386,19 @@
 	
 	.popup-menu .file.text.small.icon::before {filter: invert(1);}
 /*********** Popup for image control ***********/
+	/* svg icon */
+	.popup-menu.fixed .css-fQFckt {
+		background-color: yellow;
+		border-radius: 5px;
+		opacity: 0.8;
+	}
+
+	/* Selected item */
+	.popup-menu.fixed .bg-white .css-huwYra {
+		color: var(--darkmode-text);
+		background-color: var(--darkmode-background-selected);
+		border: 1px solid var(--darkmode-contrast);
+	}
 /*********** Codeblock ***********/	
 	#code-node {background-color: var(--code-node-background-color);}
 	.dark-mode #code-node {background-color: var(--code-node-background-color-dark);}
