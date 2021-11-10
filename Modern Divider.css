@@ -1,80 +1,70 @@
-/*********** Divider Container Adjustment ***********/
-[data-rem-tags~="divider"] .rem-button__container {
-	top: -10px;
-	left: -58px;
-	display: none;
-}
-
-/*********** Hide Merge Sign ***********/
-[data-rem-tags~="divider"] .relative.flex.items-center.float-end {
-	display: none;
-}
-
-/*********** Hide "Type / for Commands" ***********/
-[data-rem-tags~="divider"] .rich-text-editor-placeholder {
-	display: none;
-}
-
-[data-rem-tags~="divider"] {
-	color: transparent;
-	padding-right: 15px;
-	background-color: ;
-	height: 7px;
-	margin-right: 20px;
-	margin-left: 10px;
-}
-
-[data-rem-tags~="divider"]:before {
-	content: " ";
-	display: block;
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	border-bottom: var(--divider-style, 2px solid #EEEFEE);
-	margin-right: 20px;
-}
-
-[data-rem-tags~="divider"]:focus-within {
-	background: #DCF3FF;
-	margin-left: 40px;
-	margin-right: -10px;
-	position: relative;
-	left: -15px;
-}
-
-[data-rem-tags~="divider"]:not(:focus-within) {
-	color: transparent;
-	position: relative;
-	padding: 0px 15px;
-}
-
-[data-rem-tags~="divider"]:not(:focus-within):before {
-	content: " ";
-	display: block;
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	border-bottom: var(--divider-style, 2px solid #EEEFEE);
-}
+/*********** Divider ***********/
+	[data-rem-tags~="divider"] {
+		color: transparent;
+		padding-right: 15px;
+		height: 7px;
+		margin-right: 20px;
+		margin-left: 10px;
+	}
+	
+	[data-rem-tags~="divider"]:before {
+		content: " ";
+		display: block;
+		position: absolute;
+		border-bottom: var(--line-color, 2px solid #EEEFEE);
+		margin-right: 20px;
+	}
+	
+	[data-rem-tags~="divider"]:focus-within {
+		background-color: #DCF3FF;
+		margin-left: 40px;
+		margin-right: -10px;
+		position: relative;
+		left: -15px;
+	}
+	
+	[data-rem-tags~="divider"]:not(:focus-within) {
+		color: transparent;
+		position: relative;
+		padding: 0px 15px;
+	}
+	
+	[data-rem-tags~="divider"]:focus-within:before {
+		border-bottom: 2px solid var(--line-color) !important;
+	}
+	
+	[data-rem-tags~="divider"]:not(:focus-within):before {
+		content: " ";
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		border-bottom: 2px solid var(--line-color) !important;
+	}
+	
+/*********** Divider Darkmode Compatibility ***********/
+	.dark-mode [data-rem-tags~="divider"]:focus-within {
+		background-color: #576066;
+	}
+	.dark-mode [data-rem-tags~="divider"]:not(:focus-within):before {
+		border-bottom: 2px solid var(--line-color-dark) !important;
+	} 
 
 /********** Hide **********/
-[data-rem-tags~="divider"] .rem-container--focused, 
-[data-rem-tags~="divider"] .rem-bullet__icon,
-[data-rem-tags~="divider"] .rem-bullet__container {
-	display: none;
-	height: 10px;
-}
+	[data-rem-tags~="divider"] .rem-container--focused, 
+	[data-rem-tags~="divider"] .rem-bullet__icon,
+	[data-rem-tags~="divider"] .rem-bullet__container {
+		display: none;
+	}
 
-[data-rem-tags~="divider"] .rem:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar {
-	display: none; 
-}
+	[data-rem-tags~="divider"] .rem:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar {display: none;}
+	[data-rem-tags~="divider"] .rem-checkbox {display: none;}
+	
+	/* Divider Container */
+		[data-rem-tags~="divider"] .rem-button__container {display: none;}
 
-[data-rem-tags~="divider"] .rem-checkbox {
-	display: none; 
-}
-
-/********** Reference Hover Preview **********/
-#document-hover-preview__popup [data-rem-tags~="divider"] {
-	position: relative;
-	top: -15px;
-}
+	/* Hide Merge Sign */
+		[data-rem-tags~="divider"] .relative.flex.items-center.float-end {display: none;}
+	
+	/* Hide "Type / for Commands" */
+		[data-rem-tags~="divider"] .rich-text-editor-placeholder {display: none;}
