@@ -1,0 +1,25 @@
+/*********** Hide "Type / for Commands"  ***********/
+	.rich-text-editor-placeholder {
+		display: none;
+	}
+/*********** Hide Help Button ***********/
+	#help-button {
+		visibility: hidden;
+	}
+/*********** Hide onClick Popup-menu ***********/
+	.popup-menu.mt-3 {
+		display: none !important;
+	}
+/*********** Disable Bullet Event ***********/
+	.rem-bullet__container {
+		pointer-events: none;
+	}
+/*********** Hide Card Backward Placeholder ***********/
+	[data-rem-tags="card-item"] .text-gray-20 {
+		display: none;
+	}
+/*********** Hide Card Arrow ***********/
+ 	.last_node_down_arrow,
+	.last_node_down_disabled_arrow {
+		display: none;
+	}
