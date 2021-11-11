@@ -407,10 +407,41 @@
 	#code-node::before {background-color: var(--line-number-background-color);}
 	.dark-mode #code-node::before {background-color: var(--code-node-line-number-background-color-dark);}
 /*********** Checkbox ***********/	
+	.rem-header--1 .rem-checkbox {margin-top: 12px;}
+	.rem-header--2 .rem-checkbox {margin-top: 8px;}
+	.rem-header--3 .rem-checkbox {margin-top: 6px;}
+	
 	#DocumentTitle .rem-header--1 .rem-checkbox,
 	#DocumentTitle .rem-header--2 .rem-checkbox,
 	#DocumentTitle .rem-header--3 .rem-checkbox {
 		margin-right: 15px;
+	}
+	
+	.document-title.rem-text .rem-checkbox {
+		margin-right: 1rem;
+		position: relative;
+		top: 7px;
+	}
+	
+	.document-title.rem-header--1 .rem-checkbox {
+		margin-right: 1rem;
+		position: relative;
+		top: 5px;
+	}
+	.document-title.rem-header--2 .rem-checkbox {
+		margin-right: 1rem;
+		position: relative;
+		top: 0px;
+	}
+	.document-title.rem-header--3 .rem-checkbox {
+		margin-right: 1rem;
+		position: relative;
+		top: -0px;
+	}
+	
+	.document-title.rem-header--3 .rem-is-custom-rem-type {
+		position: relative;
+		top: 0px;
 	}
 /*********** Settings Page ***********/
 	.dark-mode .settings-page {background-color: var(--darkmode-background);}
