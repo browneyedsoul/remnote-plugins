@@ -1,132 +1,39 @@
-.TreeNode [data-rem-tags*="w30"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 40px; 
-    width: calc(100% - 40px);
-}
-
-.TreeNode [data-rem-tags*="w60"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 70px; 
-    width: calc(100% - 70px);
-}
-
-.TreeNode [data-rem-tags*="w90"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 100px; 
-    width: calc(100% - 100px);
-}
-
-.TreeNode [data-rem-tags*="w120"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 130px; 
-    width: calc(100% - 130px);
-}
-
-.TreeNode [data-rem-tags*="w150"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 160px; 
-    width: calc(100% - 160px);
-}
-
-.TreeNode [data-rem-tags*="w180"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 190px; 
-    width: calc(100% - 190px);
-}
-
-.TreeNode [data-rem-tags*="w210"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 220px; 
-    width: calc(100% - 220px);
-}
-
-.TreeNode [data-rem-tags*="w240"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 250px; 
-    width: calc(100% - 250px);
-}
-
-.TreeNode [data-rem-tags*="w270"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 280px; 
-    width: calc(100% - 250px);
-}
-
-.TreeNode [data-rem-tags*="w300"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 310px; 
-    width: calc(100% - 310px);
-}
-
-.TreeNode [data-rem-tags*="w330"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 340px; 
-    width: calc(100% - 340px);
-}
-
-.TreeNode [data-rem-tags*="w360"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 370px; 
-    width: calc(100% - 370px);
-}
-
-.TreeNode [data-rem-tags*="w390"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 400px; 
-    width: calc(100% - 400px);
-}
-
-.TreeNode [data-rem-tags*="w420"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 430px; 
-    width: calc(100% - 430px);
-}
-
-.TreeNode [data-rem-tags*="w450"] {
-    display: inline-block;
-    position: relative;
-    top: -30px;
-    left: 460px; 
-    width: calc(100% - 460px);
-}
-
+.TreeNode [data-rem-tags*="w30"],
+.TreeNode [data-rem-tags*="w60"],
+.TreeNode [data-rem-tags*="w90"],
+.TreeNode [data-rem-tags*="w120"],
+.TreeNode [data-rem-tags*="w150"],
+.TreeNode [data-rem-tags*="w180"],
+.TreeNode [data-rem-tags*="w210"],
+.TreeNode [data-rem-tags*="w240"],
+.TreeNode [data-rem-tags*="w270"],
+.TreeNode [data-rem-tags*="w300"],
+.TreeNode [data-rem-tags*="w330"],
+.TreeNode [data-rem-tags*="w360"],
+.TreeNode [data-rem-tags*="w390"],
+.TreeNode [data-rem-tags*="w420"],
+.TreeNode [data-rem-tags*="w450"],
 .TreeNode [data-rem-tags*="w480"] {
     display: inline-block;
     position: relative;
     top: -30px;
-    left: 510px; 
-    width: calc(100% - 510px);
 }
 
-.float-end {
-    display: inline-block;
-    left: 0px;
-}
+.TreeNode [data-rem-tags*="w30"] {left: 40px; width: calc(100% - 40px);}
+.TreeNode [data-rem-tags*="w60"] {left: 70px; width: calc(100% - 70px);}
+.TreeNode [data-rem-tags*="w90"] {left: 100px; width: calc(100% - 100px);}
+.TreeNode [data-rem-tags*="w120"] {left: 130px; width: calc(100% - 130px);}
+.TreeNode [data-rem-tags*="w150"] {left: 160px; width: calc(100% - 160px);}
+.TreeNode [data-rem-tags*="w180"] {left: 190px; width: calc(100% - 190px);}
+.TreeNode [data-rem-tags*="w210"] {left: 220px; width: calc(100% - 220px);}
+.TreeNode [data-rem-tags*="w240"] {left: 250px; width: calc(100% - 250px);}
+.TreeNode [data-rem-tags*="w270"] {left: 280px; width: calc(100% - 250px);}
+.TreeNode [data-rem-tags*="w300"] {left: 310px; width: calc(100% - 310px);}
+.TreeNode [data-rem-tags*="w330"] {left: 340px; width: calc(100% - 340px);}
+.TreeNode [data-rem-tags*="w360"] {left: 370px; width: calc(100% - 370px);}
+.TreeNode [data-rem-tags*="w390"] {left: 400px; width: calc(100% - 400px);}
+.TreeNode [data-rem-tags*="w420"] {left: 430px; width: calc(100% - 430px);}
+.TreeNode [data-rem-tags*="w450"] {left: 460px; width: calc(100% - 460px);}
+.TreeNode [data-rem-tags*="w480"] {left: 510px; width: calc(100% - 510px);}
+
+.float-end {display: inline-block; left: 0px;}
