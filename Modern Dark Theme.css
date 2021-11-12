@@ -399,6 +399,13 @@
 		background-color: var(--darkmode-background-selected);
 		border: 1px solid var(--darkmode-contrast);
 	}
+	
+	/* Image Popup Menu */
+	.popup-menu > div {border: 1px solid white;}
+	.popup-menu .bg-white,
+	.popup-menu .bg-white .css-kbbFlF:not(:hover) {background-color: var(--darkmode-background);}
+	.popup-menu .bg-white .css-kbbFlF:hover {background-color: var(--darkmode-background-selected);}
+	.popup-menu .bg-white .css-kbbFlF > div {color: var(--darkmode-text);}
 /*********** Codeblock ***********/	
 	#code-node {background-color: var(--code-node-background-color);}
 	.dark-mode #code-node {background-color: var(--code-node-background-color-dark);}
