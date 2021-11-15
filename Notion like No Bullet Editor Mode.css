@@ -38,8 +38,11 @@
 		.rem-header--1 {font-size: var(--font-size-header-1) !important;}
 		.rem-header--2 {font-size: var(--font-size-header-2) !important;}
 		.rem-header--3 {font-size: var(--font-size-header-3) !important;}
-		.rem-container--header-1 .rem-button__container {top: 6px;}
-		
+		.rem-container--header-1 .rem-button__container {
+			top: 6px;
+			margin-top: 0px;
+			color: black;
+		}
 		.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--1,
 		.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--2,
 		.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--3 {
@@ -54,6 +57,35 @@
 		.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
 			border: 0.1px solid var(--bullet-main) !important;
 			background-color: var(--bullet-main);
+			height: 4px;
+			width: 4px;
+		}
+		.highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
+		.highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+		.highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+		.highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
+		.highlight-color--orange .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
+		.highlight-color--orange .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+		.highlight-color--orange .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+		.highlight-color--orange .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
+		.highlight-color--yellow .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
+		.highlight-color--yellow .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+		.highlight-color--yellow .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+		.highlight-color--yellow .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
+		.highlight-color--green .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
+		.highlight-color--green .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+		.highlight-color--green .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+		.highlight-color--green .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
+		.highlight-color--blue .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
+		.highlight-color--blue .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+		.highlight-color--blue .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+		.highlight-color--blue .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
+		.highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
+		.highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+		.highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+		.highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+			border: 0.1px solid #FFF !important;
+			background-color: #FFF !important;
 			height: 4px;
 			width: 4px;
 		}
