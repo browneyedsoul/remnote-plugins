@@ -72,17 +72,6 @@
 	.dark-mode {filter: unset;}
 	.dark-mode {background-color: transparent;} 
 /*********** Queue ***********/
-	.dark-mode .Queue,
-	.dark-mode .bg-gray-5,
-	.dark-mode .scroll-drag-component,
-	.dark-mode .spaced-repetition__prompt,
-	.dark-mode .spaced-repetition__prompt__breadcrumbs,
-	.dark-mode .text-base + a,
-	.dark-mode .queue__edit-later {
-		color: var(--darkmode-text);
-		background-color: var(--darkmode-background);
-	}
-	
 	.dark-mode .queue__badge,
     .dark-mode .queue__title__middle:last-child,
     .dark-mode .queue__title .overflow-ellipsis,
@@ -362,11 +351,26 @@
 	.popup-menu #document-hover-preview__popup,
 	.popup-menu__item, 
 	.popup-menu__item--static,
-	.hierarchy-editor__search-portal-section {
+	.hierarchy-editor__search-portal-section 
+	{
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
 	}
 	
+	/* Edit your flashcard Window */
+	.Queue,
+	.bg-gray-5,
+	.scroll-drag-component,
+	.spaced-repetition__prompt,
+	.spaced-repetition__prompt__breadcrumbs,
+	.text-base + a,
+	.queue__edit-later {
+		color: var(--darkmode-text);
+		background-color: var(--darkmode-background);
+	}
+	.scroll-drag-component {border: 1px solid white;}
+	.popup-menu.fixed .css-exQOrH {color: var(--darkmode-text);}
+
 	/* Popup Border*/
 	.popup-menu.fixed {border: 1px solid white;}
 	
@@ -386,27 +390,28 @@
 	}
 	
 	.popup-menu .file.text.small.icon::before {filter: invert(1);}
-/*********** Popup for image control ***********/
-	/* svg icon */
-	.popup-menu.fixed .css-fQFckt {
-		background-color: yellow;
-		border-radius: 5px;
-		opacity: 0.8;
-	}
-
-	/* Selected item */
-	.popup-menu.fixed .bg-white .css-huwYra {
-		color: var(--darkmode-text);
-		background-color: var(--darkmode-background-selected);
-		border: 1px solid var(--darkmode-contrast);
-	}
 	
-	/* Image Popup Menu */
-	.popup-menu > div {border: 1px solid white;}
-	.popup-menu .bg-white,
-	.popup-menu .bg-white .css-kbbFlF:not(:hover) {background-color: var(--darkmode-background);}
-	.popup-menu .bg-white .css-kbbFlF:hover {background-color: var(--darkmode-background-selected);}
-	.popup-menu .bg-white .css-kbbFlF > div {color: var(--darkmode-text);}
+	/* Image Controller */
+		/* svg icon */
+		.popup-menu.fixed .css-fQFckt {
+			background-color: yellow;
+			border-radius: 5px;
+			opacity: 0.8;
+		}
+
+		/* Selected item */
+		.popup-menu.fixed .bg-white .css-huwYra {
+			color: var(--darkmode-text);
+			background-color: var(--darkmode-background-selected);
+			border: 1px solid var(--darkmode-contrast);
+		}
+		
+		/* Image Popup Menu */
+		.popup-menu > div {border: 1px solid white;}
+		.popup-menu .bg-white,
+		.popup-menu .bg-white .css-kbbFlF:not(:hover) {background-color: var(--darkmode-background);}
+		.popup-menu .bg-white .css-kbbFlF:hover {background-color: var(--darkmode-background-selected);}
+		.popup-menu .bg-white .css-kbbFlF > div {color: var(--darkmode-text);}
 /*********** Codeblock ***********/	
 	#code-node {background-color: var(--code-node-background-color);}
 	.dark-mode #code-node {background-color: var(--code-node-background-color-dark);}
