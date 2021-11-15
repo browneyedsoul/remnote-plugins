@@ -47,6 +47,7 @@
 	--calloutblue-background-color-dark: #D6E2E6;
 	--calloutpurple-background-color-dark: #E4D5E3;
 	--text-shadow: 0.01em 0.01em 0.01em #727E84;
+	--text-shadow-dark: 0.01em 0.01em 0.01em #727E84;
 	--code-node-line-number-color-dark: #BDBEBE;
 	--code-node-line-number-background-color-dark: #E6E6E6;
 	--code-node-background-color: #F7F6F3;
@@ -355,29 +356,29 @@
     	filter: invert(1);
     }
 /*********** Popup ***********/
-	.dark-mode #document-hover-preview__popup {
-		color: var(--darkmode-text);
-		background-color: var(--darkmode-background);
-		border: 2px dashed white;
-	}
-
-	.dark-mode .popup-menu, 
-	.dark-mode .popup-menu.fixed .bg-white, 
-	.dark-mode .popup-menu.fixed .bg-white .css-kbbFlF, 
-	.dark-mode #document-hover-preview__popup {
-		color: var(--darkmode-text);
-		background-color: var(--darkmode-background);
-		border: 1px dotted white;
-	}
-	
-	.dark-mode .popup-menu__item, 
-	.dark-mode .popup-menu__item--static,
-	.dark-mode .hierarchy-editor__search-portal-section {
+	.popup-menu, 
+	.popup-menu.fixed .bg-white, 
+	.popup-menu.fixed .bg-white .css-kbbFlF, 
+	.popup-menu #document-hover-preview__popup,
+	.popup-menu__item, 
+	.popup-menu__item--static,
+	.hierarchy-editor__search-portal-section {
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
 	}
 	
-	.dark-mode #show-embedded-search-button {
+	/* Popup Border*/
+	.popup-menu.fixed {border: 1px solid white;}
+	
+	/* Popup Text */
+	.popup-menu .rem-text.rem-header--1,
+	.popup-menu .rem-text.rem-header--2,
+	.popup-menu .rem-text.rem-header--3 {
+		color: var(--darkmode-text);
+	}
+	
+	/* Bottom Backlinks Bar */
+	.popup-menu #show-embedded-search-button {
 		color: var(--darkmode-text) !important;
 		background-color: var(--darkmode-background-selected);
 		filter: invert(0) !important;
