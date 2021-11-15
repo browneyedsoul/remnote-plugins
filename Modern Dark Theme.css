@@ -368,8 +368,13 @@
 		color: var(--darkmode-text);
 		background-color: var(--darkmode-background);
 	}
-	.scroll-drag-component {border: 1px solid white;}
+	
+	.popup-menu .rounded {border-top: 1px solid white;border-bottom: 1px solid white;}
+	.popup-menu .scroll-drag-component {border: 1px solid white;}
 	.popup-menu.fixed .css-exQOrH {color: var(--darkmode-text);}
+	.popup-menu .spaced-repetition__prompt .indented-rem .rem-bullet__document,
+	.popup-menu .spaced-repetition__prompt .indented-rem .rem-bullet__document > i {color: black !important;}
+	.popup-menu .spaced-repetition__prompt .file.text.small.icon::before {filter: invert(0);}
 
 	/* Popup Border*/
 	.popup-menu.fixed {border: 1px solid white;}
