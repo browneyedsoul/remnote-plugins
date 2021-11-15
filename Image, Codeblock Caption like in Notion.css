@@ -1,22 +1,10 @@
-[data-rem-tags~="caption"] .rem-text {
-	background-color: unset;
-	color: #8E8D8A;
-	text-style: Sans-Serif Workhorse;
-	font-size: 14px;
-}
-
-[data-rem-tags~="incaption"] .EditorContainer > div .quote {
-	background-color: unset;
-	color: #8E8D8A;
-	text-style: Sans-Serif Workhorse;
-	font-size: 14px;
-}
-
+[data-rem-tags~="caption"] .rem-text,
+[data-rem-tags~="incaption"] .EditorContainer > div .quote,
 [data-rem-tags~="incaption"] .RichTextViewer .quote {
 	background-color: unset;
 	color: #8E8D8A;
-	text-style: Sans-Serif Workhorse;
-	font-size: 14px !important;
+	font-family: 'Sans-Serif Workhorse';
+	font-size: 14px;
 }
 
 [data-rem-tags~="caption"]:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar, 
