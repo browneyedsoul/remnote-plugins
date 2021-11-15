@@ -1,6 +1,4 @@
-[data-rem-tags~="caption"] .rem-text,
-[data-rem-tags~="incaption"] .EditorContainer > div .quote,
-[data-rem-tags~="incaption"] .RichTextViewer .quote {
+[data-rem-tags~="caption"] .rem-text {
 	background-color: unset;
 	color: #8E8D8A;
 	font-family: 'Sans-Serif Workhorse';
