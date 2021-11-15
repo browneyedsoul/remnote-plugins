@@ -97,7 +97,7 @@
     [data-rem-tags~="calloutgreen"] .rem-text,
     [data-rem-tags~="calloutblue"] .rem-text,
     [data-rem-tags~="calloutpurple"] .rem-text {
-        color: black;
+        color: black !important;
     }   
     
 /*********** Tag Declutter ***********/
