@@ -195,8 +195,9 @@
 		
 	/* Hierarchy Editor - Katex */
 		.dark-mode .katex,
+		.dark-mode .katex-display,
 		.dark-mode .latex-node--focused:not(.latex-node--block) .katex {
-			background-color: unset;
+			background-color: unset !important;
 		}
 		
 	/* Hierarchy Editor - Calendar icon */
