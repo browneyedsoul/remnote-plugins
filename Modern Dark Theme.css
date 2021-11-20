@@ -11,7 +11,10 @@
 	--darkmode-contrast: yellow;
 	--quote-text-dark: #F1FA8C;
 	--quote-background-dark: #5E6A70;
-	--reference-text-dark: darkred;
+	--reference-text: darkred;
+	--reference-text-dark: #FDD7DA;
+	--reference-background: #FFF9D7;
+	--reference-background-dark: #4A5458;
 	--line-color: #EEEFEE;
 	--line-color-dark: #404648;
 	--link-node-color-dark: #94D2FF;
@@ -180,18 +183,6 @@
 		}	
 		.dark-mode .css-jlRuPl {padding: 3px 0px 3px 0px;}
 		.dark-mode .css-cLpPvR .RichTextViewer {color: #9191A8 !important;}
-	/* Hierarchy Editor - Reference */
-		.rem-reference .RichTextViewer {
-			font-weight: 400;
-		    color: var(--reference-text-dark);
-		    background-color: ;
-		}
-	/* Hierarchy Editor - Alias */
-		.rem-reference-container .css-kWtKRr {
-			filter: invert(1);
-			position: relative;
-			top: 3px;
-		}
 		
 	/* Hierarchy Editor - Katex */
 		.dark-mode .katex,
@@ -496,21 +487,24 @@
 	.dark-mode .settings-page .p-6 {
 	    color: var(--darkmode-text);
 	}
-/*********** Reference ***********/
-	.rem-reference.button.rem-reference-link {
-		color: unset;
-		background-color: #F5FAF9;
-		font-weight: 700;
-		border: 0.1px solid #DEE0E0;
-	}
+/*********** Reference & Alias ***********/
+	/* Hierarchy Editor - Reference Style */
+	.rem-reference .RichTextViewer {color: var(--reference-text); font-weight: 400;}
+	.dark-mode .rem-reference .RichTextViewer {color: var(--reference-text-dark);}
+	.rem-reference.button.rem-reference-link {background-color: var(--reference-background);}
+	.dark-mode .rem-reference.button.rem-reference-link {background-color: var(--reference-background-dark);}
+	
+	/* Hierarchy Editor - Alias */
+	.rem-reference-container .css-kWtKRr {filter: invert(0.5); position: relative; top: 4px;}
+	
 	/* Reference Partial Hiding using inlinequote */
 	.rem-reference.button.rem-reference-link .quote {display: none;}
-	.rem-reference.button.rem-reference-link .alias {color: red;}
-	/* Hide Reference root & > symbol */
+	.darkmode .rem-reference.button.rem-reference-link .alias {color: ;}
+
+	/* Hide Reference root and > symbol */
 	.rem-reference.button.rem-reference-link .gray,
-	.rem-reference.button.rem-reference-link .join-arrow {
-		display: none;
-	}
+	.rem-reference.button.rem-reference-link .join-arrow {display: none;}
+	.dark-mode .rem-reference.button.rem-reference-link .RichTextViewer {color: var();}
 /*********** Sidebar ***********/
 	/* Basic */
 		#document-sidebar {background-color: var(--darkmode-background-sidebar);}
