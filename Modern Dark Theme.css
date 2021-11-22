@@ -6,6 +6,7 @@
 	--darkmode-background: #2F3437;
 	--darkmode-background-sidebar: #2B3137;
 	--darkmode-background-selected: #4A5458;
+	--darkmode-background-selected-darker: #1B1F23;
 	--lightmode-background-selected: #C5DFEB;
 	--darkmode-text: #DFDFD5;
 	--darkmode-contrast: yellow;
@@ -155,7 +156,6 @@
 		.dark-mode .css-ZPdGi {
 			color: var(--darkmode-text);
 		}
-		
 	/* Hierarchy Editor - LinkNode */
 		.dark-mode .LinkNode {
 			color: var(--link-node-color-dark) !important;
@@ -173,7 +173,6 @@
 			color: var(--quote-text-dark) !important;
 			background-color: var(--quote-background-dark) !important;
 		}
-	
 	/* All Notes page list */
 		.dark-mode .css-exQOrH {
 			color: var(--darkmode-text);
@@ -190,7 +189,6 @@
 		.dark-mode .latex-node--focused:not(.latex-node--block) .katex {
 			background-color: unset !important;
 		}
-		
 	/* Hierarchy Editor - Calendar icon */
 		.rem-calendar-icon--in-editor,
 		.rem-container--not-included-in-document-scope .file.text.small.icon {
@@ -206,6 +204,10 @@
 	/* Hierarchy Editor - Source & Tags */
 		.gap-y-2.grid.grid-cols-1.pb-2 {zoom: }
 		.remHierarchyTop {display: ;} 
+
+	/* Button Hover Effect */
+		.text-gray-30,
+		.hover\:bg-gray-5:hover {background-color: var(--darkmode-background-selected-darker);}
 /*********** Rem-Bullet Container ***********/
 	.dark-mode .plus-button,
 	.dark-mode .six-dot,
@@ -489,22 +491,28 @@
 	}
 /*********** Reference & Alias ***********/
 	/* Hierarchy Editor - Reference Style */
-	.rem-reference .RichTextViewer {color: var(--reference-text); font-weight: 400;}
-	.dark-mode .rem-reference .RichTextViewer {color: var(--reference-text-dark);}
-	.rem-reference.button.rem-reference-link {background-color: var(--reference-background);}
-	.dark-mode .rem-reference.button.rem-reference-link {background-color: var(--reference-background-dark);}
+		.rem-reference .RichTextViewer {color: var(--reference-text); font-weight: 400;}
+		.dark-mode .rem-reference .RichTextViewer {color: var(--reference-text-dark);}
+		.rem-reference.button.rem-reference-link {background-color: var(--reference-background);}
+		.dark-mode .rem-reference.button.rem-reference-link {background-color: var(--reference-background-dark);}
 	
 	/* Hierarchy Editor - Alias */
-	.rem-reference-container .css-kWtKRr {filter: invert(0.5); position: relative; top: 4px;}
+		.rem-reference-container .css-kWtKRr {filter: invert(0.5); position: relative; top: 4px;}
 	
 	/* Reference Partial Hiding using inlinequote */
-	.rem-reference.button.rem-reference-link .quote {display: none;}
-	.darkmode .rem-reference.button.rem-reference-link .alias {color: ;}
+		.rem-reference.button.rem-reference-link .quote {display: none;}
+		.darkmode .rem-reference.button.rem-reference-link .alias {color: ;}
 
 	/* Hide Reference root and > symbol */
-	.rem-reference.button.rem-reference-link .gray,
-	.rem-reference.button.rem-reference-link .join-arrow {display: none;}
-	.dark-mode .rem-reference.button.rem-reference-link .RichTextViewer {color: var();}
+		.rem-reference.button.rem-reference-link .gray,
+		.rem-reference.button.rem-reference-link .join-arrow {display: none;}
+		.dark-mode .rem-reference.button.rem-reference-link .RichTextViewer {color: var();}
+
+	/* Alias power-up symbol adjustment */
+		[data-rem-tags~="list-item"] .rem-is-custom-rem-type.rem-is-custom-rem-type--in-body {
+			position: relative;
+			top: 2px !important;
+		}
 /*********** Sidebar ***********/
 	/* Basic */
 		#document-sidebar {background-color: var(--darkmode-background-sidebar);}
@@ -644,5 +652,24 @@
 		.block.group.cursor-pointer .highlight-color--purple .document-list-item__folder-icon {
 			filter: invert(1);
 		}
+		/* Sidebar Menu List item Bold for space between Emoji/Thumbnail and Letters */
+	.accordion.ui.fluid .block .RichTextViewer .bold {margin: 0 0 0 5px;}
 
+	/* Shrink/Expand Sidebar Menu item Padding */
+		#document-sidebar .p-2 {padding: 0.3rem;}
 
+	/* Make Menu Background Highlight Compact */
+		#document-sidebar .rounded-md.highlight-color--red,
+		#document-sidebar .rounded-md.highlight-color--orange,
+		#document-sidebar .rounded-md.highlight-color--yellow,
+		#document-sidebar .rounded-md.highlight-color--green,
+		#document-sidebar .rounded-md.highlight-color--blue,
+		#document-sidebar .rounded-md.highlight-color--purple {
+			background-color: transparent;
+		}
+		#document-sidebar .rounded-md.highlight-color--red .p-2 .text-gray-60 {background-color: var(--highlight-color--red-dark); border-radius: 4px;}
+		#document-sidebar .rounded-md.highlight-color--orange .p-2 .text-gray-60 {background-color: var(--highlight-color--orange-dark); border-radius: 4px;}
+		#document-sidebar .rounded-md.highlight-color--yellow .p-2 .text-gray-60 {background-color: var(--highlight-color--yellow-dark); border-radius: 4px;}
+		#document-sidebar .rounded-md.highlight-color--green .p-2 .text-gray-60 {background-color: var(--highlight-color--green-dark); border-radius: 4px;}
+		#document-sidebar .rounded-md.highlight-color--blue .p-2 .text-gray-60 {background-color: var(--highlight-color--blue-dark); border-radius: 4px;}
+		#document-sidebar .rounded-md.highlight-color--purple .p-2 .text-gray-60 {background-color: var(--highlight-color--purple-dark); border-radius: 4px;}
