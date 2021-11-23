@@ -521,7 +521,7 @@
 	/* Sidebar Top */
 		/* Search and ⚡️*/
 			#document-sidebar_top .flex.items-center.p-2.gap-2 > div {
-				border: 1px solid var(--darkmode-text);
+				background-color: var(--darkmode-background-selected-darker);
 			}
 		/* All Notes & Flashcards Text*/
 			#document-sidebar_top .flex.items-center.mb-1 {
@@ -529,7 +529,6 @@
 				color: var(--darkmode-contrast);
 				zoom: 125%;
 				margin-left: 5px;
-				background-color: var(--darkmode-background-sidebar);
 			}
 		/* All Notes icon */
 			#document-sidebar_top .css-fqRAnH {
@@ -588,7 +587,15 @@
 			border-radius: 6px !important;
 		}
 	/* Sidebar list item focused*/
-		#document-sidebar .bg-primary-5 .RichTextViewer {color: white !important;}
+		#document-sidebar .bg-primary-5 .RichTextViewer {color: white;}
+		#document-sidebar .rounded-md.highlight-color--red .RichTextViewer,
+		#document-sidebar .rounded-md.highlight-color--orange .RichTextViewer,
+		#document-sidebar .rounded-md.highlight-color--yellow .RichTextViewer,
+		#document-sidebar .rounded-md.highlight-color--green .RichTextViewer,
+		#document-sidebar .rounded-md.highlight-color--blue .RichTextViewer,
+		#document-sidebar .rounded-md.highlight-color--purple .RichTextViewer {
+			color: black;
+		}
 		#document-sidebar .rounded-md.text-primary-70 {
 			background-color: transparent !important;
 			border: 2px solid var(--darkmode-contrast) !important;
@@ -634,3 +641,18 @@
 		#document-sidebar .rounded-md.highlight-color--green .p-2 .text-gray-60 {background-color: var(--highlight-color--green-dark); border-radius: 4px;}
 		#document-sidebar .rounded-md.highlight-color--blue .p-2 .text-gray-60 {background-color: var(--highlight-color--blue-dark); border-radius: 4px;}
 		#document-sidebar .rounded-md.highlight-color--purple .p-2 .text-gray-60 {background-color: var(--highlight-color--purple-dark); border-radius: 4px;}
+	/* Sidebar Item hover effect */
+		/* Sidebar Search Bar Hover */
+			.hover\:text-gray-50:hover {						
+				color: var(--darkmode-contrast);
+			}
+		/* Sidebar All Notes Flashcards Edit Later Hover */
+			.hover\:bg-hover-bg:hover {
+				background-color: var(--darkmode-background-selected-darker);
+			}							
+		/* Sidebar Menu Item Hover */
+			.group:hover .group-hover-bg-hover-bg-transparent {
+				background-color: var(--darkmode-background-selected-darker);
+			}
+	/* Sidebar Menu List item Bold for space between Emoji/Thumbnail and Letters */
+ 		.accordion.ui.fluid .block .RichTextViewer .bold {margin: 0 0 0 5px;}
