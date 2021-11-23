@@ -71,7 +71,6 @@
 	--code-node-keyword-color: ;
 	--code-node-keyword-color-dark: ;
 } 
-
 /*********** The Most important thing ***********/
 	.dark-mode {filter: unset;}
 	.dark-mode {background-color: transparent;} 
@@ -130,7 +129,7 @@
 		} 
 /*********** Icon ***********/
 	/* Slot icon */
-	.dark-mode .css-bMKjkl {color: var(--darkmode-text);} 
+		.dark-mode .css-bMKjkl {color: var(--darkmode-text);} 
 /*********** Page Hierarchy Bar ***********/
 	.dark-mode .document-header-top-bar .parent-link {
 		color: var(--darkmode-text);
@@ -145,8 +144,7 @@
 		.dark-mode #multiple-windows__document {
 			background-color: var(--darkmode-background);
 		}
-	/* image background */
-		
+	/* image background */	
 	/* General Text */
 		.dark-mode .css-crJvPT,
 		.dark-mode .rem-text,
@@ -168,7 +166,7 @@
 			border-width: 1.5px !important;
 			border-left-color: var(--line-color-dark) !important;
 		}
-		
+	/* Hierarchy Editor - quote */
 		.dark-mode .animate-zoom-into-bullet .quote {
 			color: var(--quote-text-dark) !important;
 			background-color: var(--quote-background-dark) !important;
@@ -182,7 +180,6 @@
 		}	
 		.dark-mode .css-jlRuPl {padding: 3px 0px 3px 0px;}
 		.dark-mode .css-cLpPvR .RichTextViewer {color: #9191A8 !important;}
-		
 	/* Hierarchy Editor - Katex */
 		.dark-mode .katex,
 		.dark-mode .katex-display,
@@ -194,17 +191,14 @@
 		.rem-container--not-included-in-document-scope .file.text.small.icon {
 			color: var(--darkmode-text);
 		}
-	/* Hierarchy Editor - Source */
-		.dark-mode .rem-reference-link {
-			background-color: var(--calloutyellow-background-color-dark);
-		}
 	/* Hierarchy Editor - Left-side Hiearchy Editor Margin */
 		.document--ltr {padding: 0px 0px 0px 40px;}
-
 	/* Hierarchy Editor - Source & Tags */
 		.gap-y-2.grid.grid-cols-1.pb-2 {zoom: }
 		.remHierarchyTop {display: ;} 
-
+		.dark-mode .rem-reference-link {
+			background-color: var(--calloutyellow-background-color-dark);
+		}
 	/* Button Hover Effect */
 		.text-gray-30,
 		.hover\:bg-gray-5:hover {background-color: var(--darkmode-background-selected-darker);}
@@ -214,65 +208,63 @@
 	.dark-mode .toggle-collapse-button {
 		background-color: transparent;
 	}
-
 	.dark-mode .icon-button,
 	.dark-mode .rem-bullet__container .rem-bullet,
 	.dark-mode .rem-bullet__container .rem-bullet__icon {
 		filter: invert(1);
 	}
 /*********** Hightlight Style ***********/
-	.highlight-color--red,
-	.highlight-color--orange,
-	.highlight-color--yellow,
-	.highlight-color--green,
-	.highlight-color--blue,
-	.highlight-color--purple {
-		color: black;
-		border-radius: 3px;
-		margin-bottom: 1px;
-		padding: 0px 2px 0px 2px;
-	}
-	
-	.highlight-color--red {background-color: var(--highlight-color--red);}
-	.dark-mode .highlight-color--red {background-color: var(--highlight-color--red-dark);}
-	.highlight-color--orange {background-color: var(--highlight-color--orange);}
-	.dark-mode .highlight-color--orange {background-color: var(--highlight-color--orange-dark);}
-	.highlight-color--yellow {background-color: var(--highlight-color--yellow);}
-	.dark-mode .highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
-	.highlight-color--green {background-color: var(--highlight-color--green);}
-	.dark-mode .highlight-color--green {background-color: var(--highlight-color--green-dark);}
-	.highlight-color--blue {background-color: var(--highlight-color--blue);}
-	.dark-mode .highlight-color--blue {background-color: var(--highlight-color--blue-dark);}
-	.highlight-color--purple {background-color: var(--highlight-color--purple);}
-	.dark-mode .highlight-color--purple {background-color: var(--highlight-color--purple-dark); }
-
-	.highlight-color--red .rem-text,
-	.highlight-color--red .rem-text.rem-header--1,
-	.highlight-color--red .rem-text.rem-header--2,
-	.highlight-color--red .rem-text.rem-header--3,
-	.highlight-color--orange .rem-text,
-	.highlight-color--orange .rem-text.rem-header--1,
-	.highlight-color--orange .rem-text.rem-header--2,
-	.highlight-color--orange .rem-text.rem-header--3,
-	.highlight-color--yellow .rem-text,
-	.highlight-color--yellow .rem-text.rem-header--1,
-	.highlight-color--yellow .rem-text.rem-header--2,
-	.highlight-color--yellow .rem-text.rem-header--3,
-	.highlight-color--green .rem-text,
-	.highlight-color--green .rem-text.rem-header--1,
-	.highlight-color--green .rem-text.rem-header--2,
-	.highlight-color--green .rem-text.rem-header--3,
-	.highlight-color--blue .rem-text,
-	.highlight-color--blue .rem-text.rem-header--1,
-	.highlight-color--blue .rem-text.rem-header--2,
-	.highlight-color--blue .rem-text.rem-header--3,
-	.highlight-color--purple .rem-text,
-	.highlight-color--purple .rem-text.rem-header--1,
-	.highlight-color--purple .rem-text.rem-header--2,
-	.highlight-color--purple .rem-text.rem-header--3  {
-		color: black;
-	}
-	
+	/* Highlight Style and Font Color */
+		.highlight-color--red,
+		.highlight-color--orange,
+		.highlight-color--yellow,
+		.highlight-color--green,
+		.highlight-color--blue,
+		.highlight-color--purple {
+			color: black;
+			border-radius: 3px;
+			margin-bottom: 1px;
+			padding: 0px 2px 0px 2px;
+		}
+		.highlight-color--red .rem-text,
+		.highlight-color--red .rem-text.rem-header--1,
+		.highlight-color--red .rem-text.rem-header--2,
+		.highlight-color--red .rem-text.rem-header--3,
+		.highlight-color--orange .rem-text,
+		.highlight-color--orange .rem-text.rem-header--1,
+		.highlight-color--orange .rem-text.rem-header--2,
+		.highlight-color--orange .rem-text.rem-header--3,
+		.highlight-color--yellow .rem-text,
+		.highlight-color--yellow .rem-text.rem-header--1,
+		.highlight-color--yellow .rem-text.rem-header--2,
+		.highlight-color--yellow .rem-text.rem-header--3,
+		.highlight-color--green .rem-text,
+		.highlight-color--green .rem-text.rem-header--1,
+		.highlight-color--green .rem-text.rem-header--2,
+		.highlight-color--green .rem-text.rem-header--3,
+		.highlight-color--blue .rem-text,
+		.highlight-color--blue .rem-text.rem-header--1,
+		.highlight-color--blue .rem-text.rem-header--2,
+		.highlight-color--blue .rem-text.rem-header--3,
+		.highlight-color--purple .rem-text,
+		.highlight-color--purple .rem-text.rem-header--1,
+		.highlight-color--purple .rem-text.rem-header--2,
+		.highlight-color--purple .rem-text.rem-header--3  {
+			color: black;
+		}
+	/* Highlight Color */
+		.highlight-color--red {background-color: var(--highlight-color--red);}
+		.dark-mode .highlight-color--red {background-color: var(--highlight-color--red-dark);}
+		.highlight-color--orange {background-color: var(--highlight-color--orange);}
+		.dark-mode .highlight-color--orange {background-color: var(--highlight-color--orange-dark);}
+		.highlight-color--yellow {background-color: var(--highlight-color--yellow);}
+		.dark-mode .highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
+		.highlight-color--green {background-color: var(--highlight-color--green);}
+		.dark-mode .highlight-color--green {background-color: var(--highlight-color--green-dark);}
+		.highlight-color--blue {background-color: var(--highlight-color--blue);}
+		.dark-mode .highlight-color--blue {background-color: var(--highlight-color--blue-dark);}
+		.highlight-color--purple {background-color: var(--highlight-color--purple);}
+		.dark-mode .highlight-color--purple {background-color: var(--highlight-color--purple-dark);}
 	/* Document Title Highlight Style */
 		#DocumentTitle .bold.highlight-color--red,
 		#DocumentTitle .bold.highlight-color--orange,
@@ -294,7 +286,6 @@
 		.dark-mode #DocumentTitle .bold.highlight-color--green {color: var(--green-text-dark);}
 		.dark-mode #DocumentTitle .bold.highlight-color--blue {color: var(--blue-text-dark);}
 		.dark-mode #DocumentTitle .bold.highlight-color--purple {color: var(--purple-text-dark);}
-	
 	/* Highlight Color to Text Color Using `color` Tag */
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--red,
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange, 
@@ -304,7 +295,6 @@
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {
 			background-color: unset;
 		}
-		
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--red,
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange,
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow,
@@ -339,78 +329,69 @@
     	filter: invert(1);
     }
 /*********** Popup ***********/
-	.popup-menu, 
-	.popup-menu.fixed .bg-white, 
-	.popup-menu.fixed .bg-white .css-kbbFlF, 
-	.popup-menu #document-hover-preview__popup,
-	.popup-menu__item, 
-	.popup-menu__item--static,
-	.hierarchy-editor__search-portal-section 
-	{
-		color: var(--darkmode-text);
-		background-color: var(--darkmode-background);
-	}
-	
+	/* Basic */
+		.popup-menu, 
+		.popup-menu.fixed .bg-white, 
+		.popup-menu.fixed .bg-white .css-kbbFlF, 
+		.popup-menu #document-hover-preview__popup,
+		.popup-menu__item, 
+		.popup-menu__item--static,
+		.hierarchy-editor__search-portal-section {
+			color: var(--darkmode-text);
+			background-color: var(--darkmode-background);
+		}	
 	/* Edit your flashcard Window */
-	.Queue,
-	.bg-gray-5,
-	.scroll-drag-component,
-	.spaced-repetition__prompt,
-	.spaced-repetition__prompt__breadcrumbs,
-	.text-base + a,
-	.queue__edit-later {
-		color: var(--darkmode-text);
-		background-color: var(--darkmode-background);
-	}
-	
-	.popup-menu .rounded {border-top: 1px solid white;border-bottom: 1px solid white;}
-	.popup-menu .scroll-drag-component {border: 1px solid white;}
-	.popup-menu.fixed .css-exQOrH {color: var(--darkmode-text);}
-	.popup-menu .spaced-repetition__prompt .indented-rem .rem-bullet__document,
-	.popup-menu .spaced-repetition__prompt .indented-rem .rem-bullet__document > i {color: black !important;}
-	.popup-menu .spaced-repetition__prompt .file.text.small.icon::before {filter: invert(0);}
-
+		.Queue,
+		.bg-gray-5,
+		.scroll-drag-component,
+		.spaced-repetition__prompt,
+		.spaced-repetition__prompt__breadcrumbs,
+		.text-base + a,
+		.queue__edit-later {
+			color: var(--darkmode-text);
+			background-color: var(--darkmode-background);
+		}
+		.popup-menu .rounded {border-top: 1px solid white;border-bottom: 1px solid white;}
+		.popup-menu .scroll-drag-component {border: 1px solid white;}
+		.popup-menu.fixed .css-exQOrH {color: var(--darkmode-text);}
+		.popup-menu .spaced-repetition__prompt .indented-rem .rem-bullet__document,
+		.popup-menu .spaced-repetition__prompt .indented-rem .rem-bullet__document > i {color: black !important;}
+		.popup-menu .spaced-repetition__prompt .file.text.small.icon::before {filter: invert(0);}
 	/* Popup Border*/
-	.popup-menu.fixed {border: 1px solid white;}
-	
+		.popup-menu.fixed {border: 1px solid white;}
 	/* Popup Text */
-	.popup-menu .rem-text.rem-header--1,
-	.popup-menu .rem-text.rem-header--2,
-	.popup-menu .rem-text.rem-header--3 {
-		color: var(--darkmode-text);
-	}
-	
+		.popup-menu .rem-text.rem-header--1,
+		.popup-menu .rem-text.rem-header--2,
+		.popup-menu .rem-text.rem-header--3 {
+			color: var(--darkmode-text);
+		}
 	/* Bottom Backlinks Bar */
-	.popup-menu #show-embedded-search-button {
-		color: var(--darkmode-text) !important;
-		background-color: var(--darkmode-background-selected);
-		filter: invert(0) !important;
-		border-radius: 5px;
-	}
-	
-	.popup-menu .file.text.small.icon::before {filter: invert(1);}
-	
+		.popup-menu #show-embedded-search-button {
+			color: var(--darkmode-text) !important;
+			background-color: var(--darkmode-background-selected);
+			filter: invert(0) !important;
+			border-radius: 5px;
+		}
+		.popup-menu .file.text.small.icon::before {filter: invert(1);}
 	/* Image Controller */
 		/* svg icon */
-		.popup-menu.fixed .css-fQFckt {
-			background-color: yellow;
-			border-radius: 5px;
-			opacity: 0.8;
-		}
-
+			.popup-menu.fixed .css-fQFckt {
+				background-color: yellow;
+				border-radius: 5px;
+				opacity: 0.8;
+			}
 		/* Selected item */
-		.popup-menu.fixed .bg-white .css-huwYra {
-			color: var(--darkmode-text);
-			background-color: var(--darkmode-background-selected);
-			border: 1px solid var(--darkmode-contrast);
-		}
-		
+			.popup-menu.fixed .bg-white .css-huwYra {
+				color: var(--darkmode-text);
+				background-color: var(--darkmode-background-selected);
+				border: 1px solid var(--darkmode-contrast);
+			}
 		/* Image Popup Menu */
-		.popup-menu > div {border: 1px solid white;}
-		.popup-menu .bg-white,
-		.popup-menu .bg-white .css-kbbFlF:not(:hover) {background-color: var(--darkmode-background);}
-		.popup-menu .bg-white .css-kbbFlF:hover {background-color: var(--darkmode-background-selected);}
-		.popup-menu .bg-white .css-kbbFlF > div {color: var(--darkmode-text);}
+			.popup-menu > div {border: 1px solid white;}
+			.popup-menu .bg-white,
+			.popup-menu .bg-white .css-kbbFlF:not(:hover) {background-color: var(--darkmode-background);}
+			.popup-menu .bg-white .css-kbbFlF:hover {background-color: var(--darkmode-background-selected);}
+			.popup-menu .bg-white .css-kbbFlF > div {color: var(--darkmode-text);}
 /*********** Codeblock ***********/	
 	#code-node {background-color: var(--code-node-background-color);}
 	.dark-mode #code-node {background-color: var(--code-node-background-color-dark);}
@@ -428,13 +409,11 @@
 	#DocumentTitle .rem-header--3 .rem-checkbox {
 		margin-right: 15px;
 	}
-	
 	.document-title.rem-text .rem-checkbox {
 		margin-right: 1rem;
 		position: relative;
 		top: 7px;
 	}
-	
 	.document-title.rem-header--1 .rem-checkbox {
 		margin-right: 1rem;
 		position: relative;
@@ -450,64 +429,60 @@
 		position: relative;
 		top: -0px;
 	}
-	
 	.document-title.rem-header--3 .rem-is-custom-rem-type {
 		position: relative;
 		top: 0px;
 	}
 /*********** Settings Page ***********/
-	.dark-mode .settings-page {background-color: var(--darkmode-background);}
-	.dark-mode .settings-page__sidebar__title {color: var(--darkmode-contrast);}
-	.dark-mode .settings-page__sidebar__link--active {border: 1px solid var(--darkmode-contrast);}
+	/* Basic */
+		.dark-mode .settings-page {background-color: var(--darkmode-background);}
+		.dark-mode .settings-page__sidebar__title {color: var(--darkmode-contrast);}
+		.dark-mode .settings-page__sidebar__link--active {border: 1px solid var(--darkmode-contrast);}
 	/* Sidebar svg icon */
-	.dark-mode .settings-page .css-drbSAB {
-		    color: var(--darkmode-contrast);
-		    background-color: var(--darkmode-background);
-		    border: 1px dotted var(--darkmode-contrast);
-		    border-radius: 5px;
-		}
+		.dark-mode .settings-page .css-drbSAB {
+				color: var(--darkmode-contrast);
+				background-color: var(--darkmode-background);
+				border: 1px dotted var(--darkmode-contrast);
+				border-radius: 5px;
+			}
 	/* Setting Page Content */
-	.dark-mode .settings-page .popup__header,
-	.dark-mode .settings-page__content__inner {
-		background-color: var(--darkmode-background);
-	}
+		.dark-mode .settings-page .popup__header,
+		.dark-mode .settings-page__content__inner {
+			background-color: var(--darkmode-background);
+		}
 	/* Plan */
-	.dark-mode .settings-page .css-emvqyP {
-	    color: var(--darkmode-contrast);
-	    font-family: "Roboto Mono", "Fira Code", monospace;
-	    font-weight: 600;
-	}
+		.dark-mode .settings-page .css-emvqyP {
+			color: var(--darkmode-contrast);
+			font-family: "Roboto Mono", "Fira Code", monospace;
+			font-weight: 600;
+		}
 	/* Account, Knowledge Base Settings, Danger Zone, Syncing, App Version */
-	.dark-mode .settings-page .items-center,
-	.dark-mode .settings-page .css-jBUFtN,
-	.dark-mode .settings-page .css-ATSnA,
-	.dark-mode .settings-page .css-dcfFHl,
-	.dark-mode .settings-page .css-cSCrvK,
-	.dark-mode .settings-page .css-exQOrH + a,
-	.dark-mode .settings-page .checkbox,
-	.dark-mode .settings-page .px-6,
-	.dark-mode .settings-page .p-6 {
-	    color: var(--darkmode-text);
-	}
+		.dark-mode .settings-page .items-center,
+		.dark-mode .settings-page .css-jBUFtN,
+		.dark-mode .settings-page .css-ATSnA,
+		.dark-mode .settings-page .css-dcfFHl,
+		.dark-mode .settings-page .css-cSCrvK,
+		.dark-mode .settings-page .css-exQOrH + a,
+		.dark-mode .settings-page .checkbox,
+		.dark-mode .settings-page .px-6,
+		.dark-mode .settings-page .p-6 {
+			color: var(--darkmode-text);
+		}
 /*********** Reference & Alias ***********/
 	/* Hierarchy Editor - Reference Style */
 		.rem-reference .RichTextViewer {color: var(--reference-text); font-weight: 400;}
 		.dark-mode .rem-reference .RichTextViewer {color: var(--reference-text-dark);}
 		.rem-reference.button.rem-reference-link {background-color: var(--reference-background);}
 		.dark-mode .rem-reference.button.rem-reference-link {background-color: var(--reference-background-dark);}
-	
 	/* Hierarchy Editor - Alias */
 		.rem-reference-container .css-kWtKRr {filter: invert(0.5); position: relative; top: 4px;}
-	
 	/* Reference Partial Hiding using inlinequote */
 		.rem-reference.button.rem-reference-link .quote {display: none;}
 		.darkmode .rem-reference.button.rem-reference-link .alias {color: ;}
-
 	/* Hide Reference root and > symbol */
 		.rem-reference.button.rem-reference-link .gray,
 		.rem-reference.button.rem-reference-link .join-arrow {display: none;}
 		.dark-mode .rem-reference.button.rem-reference-link .RichTextViewer {color: var();}
-
 	/* Alias power-up symbol adjustment */
 		[data-rem-tags~="list-item"] .rem-is-custom-rem-type.rem-is-custom-rem-type--in-body {
 			position: relative;
@@ -527,22 +502,18 @@
 			background-color: #000;
 			width: 25px;
 		}
-
 		.document-sidebar--collapsed--vertical div div{left: -6px;}
 		.document-sidebar--collapsed--vertical {width: 20px;}
-	
 	/* Navigation Bar */
 		.navigation-bar  {background-color: var(--darkmode-background-sidebar);}
 		.hierarchy-editor-list__sticky-top__rem-container {
 			position: relative;
 			top: -10px;	
 		}
-
 		.hierarchy-editor-list__sticky-top__rem-container .EditorContainer {zoom: 90%;}
-			.hierarchy-editor-list__sticky-top__rem-container .rem-is-custom-rem-type--in-body {zoom: 90%;}
+		.hierarchy-editor-list__sticky-top__rem-container .rem-is-custom-rem-type--in-body {zoom: 90%;}
 	/* RemNote Date Picker */
 		.react-datepicker.search-results__date-picker {background-color: #ffffff !important;}
-		
 	/* RemNote Help Page Top */
 		.css-bBkpDG {filter: invert(1);}
 	/* Account Capsule */
@@ -570,7 +541,6 @@
 				zoom: 125%;
 				color: var(--darkmode-contrast);
 			}
-
 			#document-sidebar_top .block .flex-grow {
 				font-family: "Roboto Mono", "Fira code", Monospace;
 				color: var(--darkmode-contrast);
@@ -580,9 +550,7 @@
 			zoom: 150%;
 			color: black;
 		}
-
 		#document-sidebar .title.cursor-pointer .css-pUlLN {color: black;}
-
 		.accordion.ui.fluid .title.cursor-pointer {
 			background-color: #FFFFFF;
 			zoom: 150%;
@@ -597,15 +565,12 @@
 		}
 	/* Sidebar Document lists */
 		#document-sidebar .p-2.flex.group-hover-bg-hover-bg-transparent {height: 20px !important;}
-
 		#document-sidebar .bg-white.cursor-pointer {display: none;}
-
 		#document-sidebar .RichTextViewer {
 			color: #C7C7C7;
 			position: relative;
 			top: 1px;
 		}
-
 		#document-sidebar .highlight-color--red,
 		#document-sidebar .highlight-color--orange,
 		#document-sidebar .highlight-color--yellow,
@@ -616,7 +581,6 @@
 			padding: 1px !important;
 			border-radius: 3px;
 		}
-
 		#document-sidebar .RichTextViewer .quote {
 			margin-left: 5px !important;
 			font-family: "Roboto Mono", Monospace !important;
@@ -643,7 +607,6 @@
 		.block.group.cursor-pointer .highlight-color--purple .RichTextViewer {
 			color: black !important;
 		}
-
 		.block.group.cursor-pointer .highlight-color--red .document-list-item__folder-icon,
 		.block.group.cursor-pointer .highlight-color--orange .document-list-item__folder-icon,
 		.block.group.cursor-pointer .highlight-color--yellow .document-list-item__folder-icon,
@@ -653,11 +616,9 @@
 			filter: invert(1);
 		}
 		/* Sidebar Menu List item Bold for space between Emoji/Thumbnail and Letters */
-	.accordion.ui.fluid .block .RichTextViewer .bold {margin: 0 0 0 5px;}
-
+			.accordion.ui.fluid .block .RichTextViewer .bold {margin: 0 0 0 5px;}
 	/* Shrink/Expand Sidebar Menu item Padding */
 		#document-sidebar .p-2 {padding: 0.3rem;}
-
 	/* Make Menu Background Highlight Compact */
 		#document-sidebar .rounded-md.highlight-color--red,
 		#document-sidebar .rounded-md.highlight-color--orange,
