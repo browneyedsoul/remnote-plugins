@@ -194,8 +194,6 @@
 	/* Hierarchy Editor - Left-side Hiearchy Editor Margin */
 		.document--ltr {padding: 0px 0px 0px 40px;}
 	/* Hierarchy Editor - Source & Tags */
-		.gap-y-2.grid.grid-cols-1.pb-2 {zoom: }
-		.remHierarchyTop {display: ;} 
 		.dark-mode .rem-reference-link {
 			background-color: var(--calloutyellow-background-color-dark);
 		}
@@ -478,7 +476,6 @@
 		.rem-reference-container .css-kWtKRr {filter: invert(0.5); position: relative; top: 4px;}
 	/* Reference Partial Hiding using inlinequote */
 		.rem-reference.button.rem-reference-link .quote {display: none;}
-		.darkmode .rem-reference.button.rem-reference-link .alias {color: ;}
 	/* Hide Reference root and > symbol */
 		.rem-reference.button.rem-reference-link .gray,
 		.rem-reference.button.rem-reference-link .join-arrow {display: none;}
@@ -643,7 +640,7 @@
 		#document-sidebar .rounded-md.highlight-color--purple .p-2 .text-gray-60 {background-color: var(--highlight-color--purple-dark); border-radius: 4px;}
 	/* Sidebar Item hover effect */
 		/* Sidebar Search Bar Hover */
-			.hover\:text-gray-50:hover {						
+			.hover\:text-gray-50:hover:not(.accordion.ui.fluid .hover\:text-gray-50:hover) {						
 				color: var(--darkmode-contrast);
 			}
 		/* Sidebar All Notes Flashcards Edit Later Hover */
