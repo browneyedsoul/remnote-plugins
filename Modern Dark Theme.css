@@ -531,6 +531,12 @@
 				zoom: 125%;
 				margin-left: 5px;
 			}
+			/* Selected formatting */
+				.bg-primary-5 {
+					background-color: unset;
+					border: 1px solid yellow;
+					border-radius: 5px;
+				}
 		/* All Notes icon */
 			#document-sidebar_top .css-fqRAnH {
 				color: var(--darkmode-contrast);
