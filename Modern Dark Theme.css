@@ -194,12 +194,16 @@
 	/* Hierarchy Editor - Left-side Hiearchy Editor Margin */
 		.document--ltr {padding: 0px 0px 0px 40px;}
 	/* Hierarchy Editor - Source & Tags */
-		.dark-mode .rem-reference-link {
-			background-color: var(--calloutyellow-background-color-dark);
-		}
+		.dark-mode .rem-reference-link {background-color: var(--calloutyellow-background-color-dark);}
+	/* Hierarchy Editor - Right Side Backlink Numbers */
+			.my-2 {
+				margin-top: .4rem;
+				margin-bottom: ;
+				zoom: 0.85;
+			}
 	/* Button Hover Effect */
 		.text-gray-30,
-		.hover\:bg-gray-5:hover {background-color: var(--darkmode-background-selected-darker);}
+		.hover\:bg-gray-5:hover:not(#search-result__result) {background-color: var(--darkmode-background-selected-darker);}
 /*********** Rem-Bullet Container ***********/
 	.dark-mode .plus-button,
 	.dark-mode .six-dot,
