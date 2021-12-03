@@ -340,7 +340,10 @@
 		.hierarchy-editor__search-portal-section {
 			color: var(--darkmode-text);
 			background-color: var(--darkmode-background);
-		}	
+		}
+	/* Omni Search Popup Window*/
+		/* Focused Text */
+		.dark-mode .css-jlRuPl .bg-warning-10 {color: black;}
 	/* Edit your flashcard Window */
 		.Queue,
 		.bg-gray-5,
