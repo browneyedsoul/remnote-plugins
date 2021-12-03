@@ -198,7 +198,6 @@
 	/* Hierarchy Editor - Right Side Backlink Numbers */
 			.my-2 {
 				margin-top: .4rem;
-				margin-bottom: ;
 				zoom: 0.85;
 			}
 	/* Button Hover Effect */
@@ -524,12 +523,17 @@
 			#document-sidebar_top .flex.items-center.p-2.gap-2 > div {
 				background-color: var(--darkmode-background-selected-darker);
 			}
-		/* All Notes & Flashcards Text*/
+		/* All Notes & Flashcards & Edit Later Text*/
 			#document-sidebar_top .flex.items-center.mb-1 {
 				font-family: "Roboto Mono", "Fira Code", Monospace;
 				color: var(--darkmode-contrast);
 				zoom: 125%;
 				margin-left: 5px;
+			}
+
+			.bg-gray-10-transparent {
+				background-color: var(--darkmode-background-selected-darker);
+				zoom: 1.1;
 			}
 			/* Selected formatting */
 				.bg-primary-5 {
