@@ -321,6 +321,10 @@
 		color: black;
 		background-color: var(--lightmode-background-selected);
 	}
+	/* Slash Command Search Focused Text */
+		.bg-white #search-results__result .text-gray-100 {
+			color: var(--darkmode-text);
+		}
 /*********** Find / Filter / Replace - Ctrl(⌘) + F ***********/
     .dark-mode #hierarchy-editor__ctrl-f .css-exQOrH {
         color: black;
@@ -376,7 +380,7 @@
 			filter: invert(0) !important;
 			border-radius: 5px;
 		}
-		.popup-menu .file.text.small.icon::before {filter: invert(1);}
+		.popup-menu .file.text.small.icon::before {filter: invert(1);} 
 	/* Image Controller */
 		/* svg icon */
 			.popup-menu.fixed .css-fQFckt {
