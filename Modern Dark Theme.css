@@ -17,7 +17,7 @@
 	--reference-background: #FFF9D7;
 	--reference-background-dark: #4A5458;
 	--line-color: #EEEFEE;
-	--line-color-dark: #404648;
+	--line-color-dark: #535353;
 	--link-node-color-dark: #94D2FF;
 	--red-text: #FF4A44;
 	--red-text-dark: #FD6E68;
@@ -198,16 +198,11 @@
 	/* Button Hover Effect */
 		.text-gray-30,
 		.hover\:bg-gray-5:hover:not(#search-result__result) {background-color: var(--darkmode-background-selected-darker);}
-	/*********** Rem-Bullet Container ***********/
+/*********** Rem-Bullet Container ***********/
 	.dark-mode .plus-button,
 	.dark-mode .six-dot,
 	.dark-mode .toggle-collapse-button {
 		background-color: transparent;
-	}
-	.dark-mode .icon-button,
-	.dark-mode .rem-bullet__container .rem-bullet,
-	.dark-mode .rem-bullet__container .rem-bullet__icon {
-		filter: invert(1);
 	}
 /*********** Hightlight Style ***********/
 	/* Highlight Style and Font Color */
