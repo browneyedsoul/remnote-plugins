@@ -159,13 +159,12 @@
 		.rem-container--backwards-practice-enabled .rem-bullet.rem-bullet--hidden-children {
 			border-radius: 0px !important;
 			position: relative;
-			top: -1.2px;
+			top: 2px;
 			left: 0px;
-		    zoom: 3;
+		    zoom: 2;
 		    -webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
 			-webkit-mask-repeat: no-repeat;
 			-webkit-mask-size: contain;
-			z-index: -1;
 		}
 /*********** Documents ***********/
 	/* Current Page [Parent > Child] Hierarchy Style */
