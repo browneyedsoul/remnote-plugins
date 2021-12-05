@@ -82,7 +82,8 @@
 	.highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
 	.highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 	.highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-	.highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+	.highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
+	#hierarchy-editor [data-rem-tags*="highlight"] .rem-container--focused .rem-bullet {
 		width: 0;
 		height: 0;
 		border-style: solid;
