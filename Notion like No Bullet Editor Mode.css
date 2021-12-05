@@ -51,7 +51,8 @@
 	.rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
 	.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 	.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-	.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+	.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
+	#hierarchy-editor .rem-container--focused .rem-bullet {
 		width: 0;
 		height: 0;
 		border-style: solid;
