@@ -198,6 +198,11 @@
 	/* Button Hover Effect */
 		.text-gray-30,
 		.hover\:bg-gray-5:hover:not(#search-result__result) {background-color: var(--darkmode-background-selected-darker);}
+	/* Hierarchy Editor - Right Side Backlink Numbers */
+		.float-end .my-2 {
+			margin-top: .4rem;
+			zoom: 0.85;
+		}
 /*********** Rem-Bullet Container ***********/
 	.dark-mode .plus-button,
 	.dark-mode .six-dot,
