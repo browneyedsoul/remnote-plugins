@@ -3,7 +3,6 @@
 	--font-size-header-2: 24px;
 	--font-size-header-3: 20px;
 }
-
 /*********** All Notes Section ***********/
     .css-jlRuPl, 
     .css-jlRuPl .inline-block, 
@@ -88,6 +87,7 @@
     .hierarchy-editor__hidden-children .rem-header--1 .tumbnail--with-width {
         height: 1em !important;
         width: auto !important;
+        min-width: auto !important;
         margin-right: 2px;
     }
 /*********** Popup ***********/
@@ -97,6 +97,7 @@
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
+            margin-right: 2px;
         }
     /* Header 2 */
         #document-hover-preview__popup .rem-header--2 .inline-block,
@@ -104,6 +105,7 @@
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
+            margin-right: 2px;
         }
     /* Header 3 */
         #document-hover-preview__popup .rem-header--3 .inline-block,
@@ -111,6 +113,7 @@
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
+            margin-right: 2px;
         }
     /* Image Thumbnail Tag */
         [data-rem-tags*="tn"] #document-hover-preview .inline-block, 
@@ -120,60 +123,39 @@
             min-width: auto !important;
             padding-right: 2px;
         }
-/*********** Popup - Reference & Tag & Portal Popup ***********/    
     /* Portal */
-    .portal-tree-node-box .rem-text .inline-block,
-    .portal-tree-node-box .rem-text .tumbnail--with-width {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
-    }
+        .portal-tree-node-box .rem-text .inline-block,
+        .portal-tree-node-box .rem-text .tumbnail--with-width {
+            height: 1em !important;
+            width: auto !important;
+            min-width: auto !important;
+            margin-right: 2px;
+        }
+    /* Tag bar */
+        .rem.isSearchResult .hierarchy-editor__tag-bar .inline-block,
+        .rem.isSearchResult .hierarchy-editor__tag-bar .tumbnail--with-width {
+            height: 1em !important;
+            width: auto !important;
+            min-width: auto !important;
+            margin-right: 2px;
+        }
     /* Reference */
-    #document-hover-preview__popup > span [class*="inline-block"] {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;	
-    }
-    #document-hover-preview__popup .bold .inline-block,
-    #document-hover-preview__popup .bold .tumbnail--with-width {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
-    }
-    .popup-menu.fixed .popup-menu__item--static .inline-block, 
-    .popup-menu.fixed .popup-menu__item--static .tumbnail--with-width {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
-    }
-    
-    .EditorContainer.EditorContainerInline .tumbnail--with-width {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
-        color: #2B3137;
-    }
-    
-    .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block,
-    .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .tumbnail--with-width {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
-    }
-    
-    .rem.isSearchResult .hierarchy-editor__tag-bar .inline-block,
-    .rem.isSearchResult .hierarchy-editor__tag-bar .tumbnail--with-width {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
-    }
+        #document-hover-preview__popup > span [class*="inline-block"],
+        #document-hover-preview__popup .bold .inline-block,
+        #document-hover-preview__popup .bold .tumbnail--with-width,
+        .popup-menu.fixed .popup-menu__item--static .inline-block, 
+        .popup-menu.fixed .popup-menu__item--static .tumbnail--with-width,
+        .EditorContainer.EditorContainerInline .tumbnail--with-width,
+        .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block,
+        .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .tumbnail--with-width
+        {
+            height: 1em !important;
+            width: auto !important;
+            min-width: auto !important;
+            margin-right: 2px;	
+        }
+        
+        .EditorContainer.EditorContainerInline .tumbnail--with-width {color: #2B3137;}
 /*********** Header & Normal Rem-Text with "tn" Tag***********/
     /* Header 1 */
         .rem-header--1 .inline-block,
@@ -228,14 +210,15 @@
         width: auto !important;
         min-width: auto !important;
     }
-/*********** Search Result - Global Search Result (⌘+P Window) ***********/
-    .css-ZPdGi .inline-block, 
-    .css-ZPdGi .tumbnail--with-width {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
-    }
+/*********** Search Result ***********/
+    /* Global Search Result (⌘+P Window) */
+        .css-ZPdGi .inline-block, 
+        .css-ZPdGi .tumbnail--with-width {
+            height: 1em !important;
+            width: auto !important;
+            min-width: auto !important;
+            padding-right: 2px;
+        }
 	/* Search Popup Page */
         .css-ZPdGi {
             min-width: 80%;
@@ -248,13 +231,13 @@
             min-width: auto !important;
             padding-right: 2px;
         }
-/*********** Search Result - Tag Search Result ***********/
-    .search-result__rem-breadcrumbs .inline-block, 
-    .search-result__rem-breadcrumbs .tumbnail--with-width {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-    }
+    /* Tag Search Result */
+        .search-result__rem-breadcrumbs .inline-block, 
+        .search-result__rem-breadcrumbs .tumbnail--with-width {
+            height: 1em !important;
+            width: auto !important;
+            min-width: auto !important;
+        }
 /*********** Portal ***********/  
     /* Portal Popup for Hidden rems */
         #search-results__result .inline-block,
@@ -318,6 +301,7 @@
     
     .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
         height: 1em;
+        width: auto !important;
         min-width: auto !important;
     }
     
@@ -351,7 +335,7 @@
 	} 
 /*********** Hyperlink Favicon ***********/
     .LinkNode img {
-        padding-right: 3px;
         height: 1em;
-        width: 1em;
+        width: auto;
+        padding-right: 3px;
     } 
