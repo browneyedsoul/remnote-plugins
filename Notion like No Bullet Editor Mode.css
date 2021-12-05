@@ -15,6 +15,8 @@
 		--forward-practice-color: #FF2600;
 		--backward-practice-color: #D783FF;
 		--disabled-practice-color: #959595;
+	/* TreeNode Color */
+		--line-color: #DDDDDD;
 } 
 /*********** Move Folder and File to Left Side ***********/
 	.rem-bullet__container .css-jxYBFL {
@@ -88,7 +90,7 @@
 	}
 /*********** TreeNode Distraction Free ***********/
 	#hierarchy-editor .TreeNode {
-	    border-color: #F7F6F3;
+	    border-color: var(--line-color);
 	    border-width: 1px;
 	    transition-timing-function: linear;
 	    position: relative;
