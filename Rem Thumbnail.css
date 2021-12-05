@@ -156,59 +156,35 @@
         }
         
         .EditorContainer.EditorContainerInline .tumbnail--with-width {color: #2B3137;}
-/*********** Header & Normal Rem-Text with "tn" Tag***********/
-    /* Header 1 */
-        .rem-header--1 .inline-block,
-        .rem-header--1 .tumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            margin-right: 3px;
-        }
-    /* Header 2 */
-        .rem-header--2 .inline-block,
-        .rem-header--2 .tumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            margin-right: 2px;
-        }
-    /* Header 3 */
-        .rem-header--3 .inline-block,
-        .rem-header--3 .tumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            margin-right: 2px;
-        }
-    /* Normal Rem-text with Thumbnail(TN) tag */
-        [data-rem-tags*="tn"] .inline-block,
-        [data-rem-tags*="tn"] .tumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            margin-right: 1px;
-        }
+/*********** Header & Normal Rem-Text with "Thumbnail(TN)" Tag***********/
+    .rem-header--1 .inline-block,
+    .rem-header--1 .tumbnail--with-width,
+    .rem-header--2 .inline-block,
+    .rem-header--2 .tumbnail--with-width,
+    .rem-header--3 .inline-block,
+    .rem-header--3 .tumbnail--with-width,
+    [data-rem-tags*="tn"] .inline-block,
+    [data-rem-tags*="tn"] .tumbnail--with-width {
+        height: 1em !important;
+        width: auto !important;
+        min-width: auto !important;
+    }
+    .rem-header--1 .inline-block, .rem-header--1 .tumbnail--with-width {margin-right: 3px;}
+    .rem-header--2 .inline-block, .rem-header--2 .tumbnail--with-width {margin-right: 2px;}
+    .rem-header--3 .inline-block, .rem-header--3 .tumbnail--with-width {margin-right: 2px;}
+    [data-rem-tags*="tn"] .inline-block, [data-rem-tags*="tn"] .tumbnail--with-width {margin-right: 1px;}
 /*********** Tag bar ***********/
     #DropToOpenAsDocument .inline-block, 
-    #DropToOpenAsDocument .tumbnail--with-width {
+    #DropToOpenAsDocument .tumbnail--with-width,
+    .hierarchy-editor__tag-bar__tag span,
+    .hierarchy-editor__tag-bar__tag .tumbnail--with-width,
+    .hierarchy-editor__tag-bar__tag .inline-block,
+    .hierarchy-editor__tag-bar__tag .inline-block.align-text-top.group,
+    .fade-on-hide-ui .inline-block {
         height: 1em !important;
         width: auto !important;
         min-width: auto !important;
         padding-right: 2px;
-    }
-    .hierarchy-editor__tag-bar__tag span,
-    .hierarchy-editor__tag-bar__tag .tumbnail--with-width,
-    .hierarchy-editor__tag-bar__tag .inline-block,
-    .hierarchy-editor__tag-bar__tag .inline-block.align-text-top.group {
-        height: 1rem !important;
-        width: auto !important;
-        min-width: auto !important;
-    }
-    .fade-on-hide-ui .inline-block {
-        height: 1rem !important;
-        width: auto !important;
-        min-width: auto !important;
     }
 /*********** Search Result ***********/
     /* Global Search Result (⌘+P Window) */
@@ -280,7 +256,6 @@
         min-width: auto !important;
         margin-top: 1px;
     }
-    
     #document-hover-preview__popup #hierarchy-editor .inline-block, 
 	#document-hover-preview__popup #hierarchy-editor .tumbnail--with-width, 
 	#document-hover-preview__popup #hierarchy-editor .rem-reference .inline-block, 
@@ -289,7 +264,6 @@
 	    width: auto !important;
 	    min-width: auto !important;
 	}
-    
     #document-hover-preview__popup .inline-block, 
 	#document-hover-preview__popup .tumbnail--with-width, 
 	#document-hover-preview__popup .rem-reference .inline-block, 
@@ -298,13 +272,11 @@
 	    width: auto !important;
 	    min-width: auto !important;
 	}
-    
     .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
         height: 1em;
         width: auto !important;
         min-width: auto !important;
     }
-    
     .popup-menu .inline-block,
 	.popup-menu .inline-block.align-text-top.group,
 	.popup-menu .tumbnail--with-width,
@@ -314,25 +286,14 @@
 		min-width: auto !important;
 		display: inline-block;
 	}
-	
-	.popup-menu .inline-block,
-	.popup-menu .inline-block.align-text-top.group,
-	.popup-menu .tumbnail--with-width,
-	.popup-menu .image-node {
-		height: 1em;
-		width: auto !important;
-		min-width: auto !important;
-		display: inline-block;
-	}
-	
 	/* Rem reference normal rem-text thumbnail adjustment */
-	.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block,
-	.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block.align-text-top.group,
-	.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .tumbnail--with-width,
-	.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .image-node {
-	    position: relative;
-	    top: -0.05em;
-	} 
+        .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block,
+        .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block.align-text-top.group,
+        .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .tumbnail--with-width,
+        .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .image-node {
+            position: relative;
+            top: -0.05em;
+        } 
 /*********** Hyperlink Favicon ***********/
     .LinkNode img {
         height: 1em;
