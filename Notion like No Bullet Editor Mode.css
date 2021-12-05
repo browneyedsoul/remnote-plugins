@@ -1,20 +1,20 @@
 :root {
-	--font-family: "Helvetica Neue";
-	--font-size-header-1: 32px;
-	--font-size-header-2: 24px;
-	--font-size-header-3: 20px;
+	/* Font Style */
+		--font-family: "Helvetica Neue";
+		--font-size-header-1: 32px;
+		--font-size-header-2: 24px;
+		--font-size-header-3: 20px;
 	/* Basic Bullet Color */
-	--bullet-main:#53555F;
-	--bullet-doc:#50FA7B;
-	--bullet-folder:#53555F;
-	--bullet-concept:#53555F;
-	--bullet-descriptor:#53555F;
-	
+		--bullet-main:#ABABAB;
+		--bullet-doc:#50FA7B;
+		--bullet-folder:#53555F;
+		--bullet-concept:#53555F;
+		--bullet-descriptor:#53555F;
 	/* Practice Bullet Color */
-	--both-practice-color: #FFA344;
-	--forward-practice-color: #FF2600;
-	--backward-practice-color: #D783FF;
-	--disabled-practice-color: #959595;
+		--both-practice-color: #FFA344;
+		--forward-practice-color: #FF2600;
+		--backward-practice-color: #D783FF;
+		--disabled-practice-color: #959595;
 } 
 /*********** Move Folder and File to Left Side ***********/
 	.rem-bullet__container .css-jxYBFL {
@@ -54,7 +54,7 @@
 		height: 0;
 		border-style: solid;
 		border-width: 6px 0 6px 6px !important;
-		border-color: transparent transparent transparent #DFDFD5;
+		border-color: transparent transparent transparent var(--bullet-main);
 	}
 	.highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
 	.highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
