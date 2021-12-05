@@ -190,7 +190,6 @@
 		padding-bottom: 5px;
 		left: 10px;
 	}
-
 	[data-rem-tags~="bulletlist"] .rem-bullet { 	
 		background-color: #2B3137 !important; 
 		border-radius: 4px !important;
@@ -198,6 +197,16 @@
 		width: 4px !important;
 		margin-left: px !important;
 		padding: 1px;
+		position: relative;
+		top: 1px;
+	}
+	.dark-mode [data-rem-tags~="bulletlist"] .rem-bullet {
+		background-color: var(--bullet-main) !important; 
+	}
+	[data-rem-tags*="bulletlist"] .rem-button__container .rem-bullet.rem-bullet--hidden-children {
+		border-style: unset;
+		border-width: unset;
+		zoom: 1.5;
 		position: relative;
 		top: -1px;
 	}
