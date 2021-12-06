@@ -26,12 +26,7 @@
 	.css-jxYBFL {
 		pointer-events: none;
 	}
-/*********** Move Folder and File to Left Side ***********/
-	.rem-bullet__container .css-jxYBFL {
-		position: relative;
-		left: -15px;
-	} 
-/*********** Move Toggle Collapse Triangle Mouseout-fade-out-button to Right Side ***********/
+/*********** Move Toggle Foldable Triangle Button to Right Side ***********/
 	#hierarchy-editor .rem-container .rem-button__container .toggle-collapse-button {
 		position: relative !important;
 		left: 24px;
@@ -98,6 +93,51 @@
 		border-width: 6px 0 6px 6px !important;
 		border-color: transparent transparent transparent black;
 	}
+/*********** Forder & File Style ***********/
+	/* Remove Radius Circle */
+		.rem-bullet__icon.rem-bullet--hidden-children,
+		.rem-bullet__icon.rem-bullet--all-children-visible {
+			background-color: unset;
+		}
+	.rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
+	.highlight-color--red .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
+	.highlight-color--orange .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
+	.highlight-color--yellow .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
+	.highlight-color--green .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
+	.highlight-color--blue .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
+	.highlight-color--purple .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
+	.dark-mode .highlight-color--red .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
+	.dark-mode .highlight-color--orange .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
+	.dark-mode .highlight-color--yellow .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
+	.dark-mode .highlight-color--green .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
+	.dark-mode .highlight-color--blue .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
+	.dark-mode .highlight-color--purple .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 8px 0 8px 8px !important;
+		border-color: transparent transparent transparent black;
+	}
+	.highlight-color--red .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
+	.highlight-color--orange .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
+	.highlight-color--yellow .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
+	.highlight-color--green .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
+	.highlight-color--blue .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
+	.highlight-color--purple .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL
+	.dark-mode .highlight-color--red .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
+	.dark-mode .highlight-color--orange .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
+	.dark-mode .highlight-color--yellow .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
+	.dark-mode .highlight-color--green .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
+	.dark-mode .highlight-color--blue .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
+	.dark-mode .highlight-color--purple .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 8px 8px 0 8px !important;
+		border-color: black transparent transparent transparent;
+	}
+	.dark-mode .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL {border-color: transparent transparent transparent white;}
+	.dark-mode .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL {color: white;}
 /*********** TreeNode Distraction Free ***********/
 	#hierarchy-editor .TreeNode {
 	    border-color: var(--line-color);
