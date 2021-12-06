@@ -18,6 +18,8 @@
 	/* TreeNode Color */
 		--line-color: #DDDDDD;
 } 
+/*********** Disable Bullet Event ***********/
+	.rem-bullet__container {pointer-events: none;}
 /*********** Move Folder and File to Left Side ***********/
 	.rem-bullet__container .css-jxYBFL {
 		position: relative;
