@@ -19,7 +19,13 @@
 		--line-color: #DDDDDD;
 } 
 /*********** Disable Bullet Event ***********/
-	.rem-bullet__container {pointer-events: none;}
+	.rem-bullet__container,
+	.rem-bullet__icon,
+	.rem-bullet__icon > path,
+	.rem-bullet--all-children-visible,
+	.css-jxYBFL {
+		pointer-events: none;
+	}
 /*********** Move Folder and File to Left Side ***********/
 	.rem-bullet__container .css-jxYBFL {
 		position: relative;
