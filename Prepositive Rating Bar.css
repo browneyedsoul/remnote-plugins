@@ -8,7 +8,8 @@
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
-	[data-rem-tags~="1star"] .rem-bullet::before,
+	[data-rem-tags*="1star"] .rem-bullet::before,
+	[data-rem-tags*="1star"] .rem-bullet::before,
 	[data-rem-tags~="2star"] .rem-bullet::before,
 	[data-rem-tags~="3star"] .rem-bullet::before,
 	[data-rem-tags~="4star"] .rem-bullet::before,
@@ -21,11 +22,22 @@
 		top: -7px;
 		left: -4px;
 	}
-	[data-rem-tags~="1star"] .rem-bullet::before {content: "★"; padding-right: 70px;}
+	[data-rem-tags*="1star"] .rem-bullet--hidden-children::before,
+	[data-rem-tags*="2star"] .rem-bullet--hidden-children::before,
+	[data-rem-tags*="3star"] .rem-bullet--hidden-children::before,
+	[data-rem-tags*="4star"] .rem-bullet--hidden-children::before,
+	[data-rem-tags*="5star"] .rem-bullet--hidden-children::before {
+		position: relative;
+		top: -12px;
+		left: -10px;
+	}
+	
+	[data-rem-tags*="1star"] .rem-bullet::before {content: "★"; padding-right: 70px;}
 	[data-rem-tags~="2star"] .rem-bullet::before {content: "★★"; padding-right: 53px;}
 	[data-rem-tags~="3star"] .rem-bullet::before {content: "★★★"; padding-right: 36px;}
 	[data-rem-tags~="4star"] .rem-bullet::before {content: "★★★★"; padding-right: 20px;}
 	[data-rem-tags~="5star"] .rem-bullet::before {content: "★★★★★"; padding-right: 3px;}
+	[data-rem-tags~="1star"] .rem-bullet--hidden-children::before {content: "★"; padding-right: 70px;}
 /*********** Darkmode Compatibility ***********/
 	.dark-mode [data-rem-tags~="1star"] .rem-bullet::before,
 	.dark-mode [data-rem-tags~="2star"] .rem-bullet::before,
