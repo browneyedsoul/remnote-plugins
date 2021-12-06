@@ -658,6 +658,15 @@
 		#document-sidebar .rounded-md.highlight-color--green .p-2 .text-gray-60 {background-color: var(--highlight-color--green-dark); border-radius: 4px;}
 		#document-sidebar .rounded-md.highlight-color--blue .p-2 .text-gray-60 {background-color: var(--highlight-color--blue-dark); border-radius: 4px;}
 		#document-sidebar .rounded-md.highlight-color--purple .p-2 .text-gray-60 {background-color: var(--highlight-color--purple-dark); border-radius: 4px;}
+
+		#document-sidebar .highlight-color--red .RichTextViewer,
+		#document-sidebar .highlight-color--orange .RichTextViewer,
+		#document-sidebar .highlight-color--yellow .RichTextViewer,
+		#document-sidebar .highlight-color--green .RichTextViewer,
+		#document-sidebar .highlight-color--blue .RichTextViewer,
+		#document-sidebar .highlight-color--purple .RichTextViewer {
+			padding-left: 3px;
+		}
 	/* Sidebar Item hover effect */
 		/* Sidebar Search Bar Hover */
 			.hover\:text-gray-50:hover:not(.accordion.ui.fluid .hover\:text-gray-50:hover) {						
