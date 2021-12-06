@@ -631,14 +631,6 @@
 		.block.group.cursor-pointer .highlight-color--purple .RichTextViewer {
 			color: black !important;
 		}
-		.block.group.cursor-pointer .highlight-color--red .document-list-item__folder-icon,
-		.block.group.cursor-pointer .highlight-color--orange .document-list-item__folder-icon,
-		.block.group.cursor-pointer .highlight-color--yellow .document-list-item__folder-icon,
-		.block.group.cursor-pointer .highlight-color--green .document-list-item__folder-icon,
-		.block.group.cursor-pointer .highlight-color--blue .document-list-item__folder-icon,
-		.block.group.cursor-pointer .highlight-color--purple .document-list-item__folder-icon {
-			filter: invert(1);
-		}
 		/* Sidebar Menu List item Bold for space between Emoji/Thumbnail and Letters */
 			.accordion.ui.fluid .block .RichTextViewer .bold {margin: 0 0 0 5px;}
 	/* Shrink/Expand Sidebar Menu item Padding */
