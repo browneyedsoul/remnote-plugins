@@ -15,7 +15,7 @@
 	[data-rem-tags~="4star"] .rem-bullet::before,
 	[data-rem-tags~="5star"] .rem-bullet::before {
 		color: #F1FA8C;
-		background-color: #2B3137;	
+		background-color: #181175;	
 		border-radius: 5px;
 		padding: 2px;
 		position: relative;
@@ -27,6 +27,7 @@
 	[data-rem-tags*="3star"] .rem-bullet--hidden-children::before,
 	[data-rem-tags*="4star"] .rem-bullet--hidden-children::before,
 	[data-rem-tags*="5star"] .rem-bullet--hidden-children::before {
+		background-color: #2B3137;
 		position: relative;
 		top: -12px;
 		left: -10px;
