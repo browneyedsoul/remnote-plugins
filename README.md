@@ -6,7 +6,8 @@ https://forum.remnote.io/c/developers-api/9
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fbrowneyedsoul%2FRemNote-CSS-Library&count_bg=%23282A27&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visit&edge_flat=false)](https://hits.seeyoufarm.com)
 
 ## Notion like No Bullet Editor Mode
-![CleanShot 2021-09-26 at 22 37 06](https://user-images.githubusercontent.com/56161102/134810445-378b6e6f-cd62-4a50-a6ea-76b6b04c324c.png)
+![CleanShot 2021-12-06 at 17 19 25](https://user-images.githubusercontent.com/56161102/144811607-55235118-c43c-47f2-8eae-7b2424d4f0db.png)
+![CleanShot 2021-12-06 at 17 10 42](https://user-images.githubusercontent.com/56161102/144810507-83ed2e6a-cb6e-452a-9e26-2eb794e8442e.png)
 
 ## Branch Emphasizing Editor Mode
 ![CleanShot 2021-10-03 at 17 14 57](https://user-images.githubusercontent.com/56161102/135745657-5daffdc3-6e95-4bc8-9bd3-14619397be0f.png)
