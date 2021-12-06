@@ -104,6 +104,8 @@
 /*********** Omnibar ***********/
 	/* Selected */
 		.dark-mode .css-cMUIYB {background-color: var(--darkmode-background-selected);}
+	/* Focused item */
+		.dark-mode .css-cCyKhM {background-color: #6D6D6D !important;}
 	/* Omnibar item text */
 		.dark-mode .css-bwtzVW {color: var(--darkmode-text);}
 	/* Top & Bottom */
