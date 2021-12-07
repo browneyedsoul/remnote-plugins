@@ -372,6 +372,8 @@
 		.popup-menu .rem-text.rem-header--3 {
 			color: var(--darkmode-text);
 		}
+	/* Selected Item */
+		.popup-menu .bg-selected-bg {background-color: #000;}
 	/* Bottom Backlinks Bar */
 		.popup-menu #show-embedded-search-button {
 			color: var(--darkmode-text) !important;
