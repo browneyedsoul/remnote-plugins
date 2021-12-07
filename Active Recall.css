@@ -1,10 +1,9 @@
 :root {
     --hide-answer-filter: contrast(0%) brightness(1.5);
 }
-
-/*********** Hide Cloze ***********/
+/*********** Hide/Show Cloze and Answer Element ***********/
 	[data-rem-tags~="active-recall"] span:not(:hover):not([data-rem-tags~="learned"]).cloze,
-	[data-rem-tags~="active-recall"] .only_in_answer {
+	[data-rem-tags~="active-recall"] .only_in_answer:not(:hover):not([data-rem-tags~="learned"]) {
 	    background-color: white;
 	    filter: var(--hide-answer-filter);
 	    border-radius: 5px;
@@ -13,8 +12,6 @@
 	    position: relative;
 	    top: -2px;
 	}
-	
-
 	[data-rem-tags~="active-recall"] .cloze {
 		background-color: black;
 		color: yellow;
@@ -23,7 +20,6 @@
 		padding: 2px 3px 2px 3px;
 		margin: 0px 3px 0px 3px;
 	}
-
 /*********** Darkmode Compatibility ***********/
 	.dark-mode .cloze {
 		background-color: rgba(210,225,248,0);
@@ -34,17 +30,10 @@
 		margin-right: 3px;
 		padding-left: 3px;
 	}
-
-	.dark-mode #show-embedded-search-button {
-		filter: invert(1);
-	}
-
+	.dark-mode #show-embedded-search-button {filter: invert(1);	}
 /*********** Tag Declutter ***********/
 	[data-rem-tags~="active-recall"] .hierarchy-editor__tag-bar,
 	[data-rem-tags~="active-recall"] .items-center.hierarchy-editor__tag-bar__tag {
 		background-color: transparent !important;
 	}
-	
-	[data-rem-tags~="active-recall"] .hierarchy-editor__tag-bar__tag span {
-		display: none;
-	}
+	[data-rem-tags~="active-recall"] .hierarchy-editor__tag-bar__tag span {display: none;}
