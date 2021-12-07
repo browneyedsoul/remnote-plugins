@@ -258,7 +258,7 @@
 		top: -1px;
 	}
 	/* Avoid Making Focused Bullet Bigger */
-		#hierarchy-editor .rem-container--focused .rem-bullet.rem-bullet--hidden-children {border-style: unset;}
+		#hierarchy-editor [data-rem-tags~="bulletlist"] .rem-container--focused .rem-bullet.rem-bullet--hidden-children {border-style: unset;}
 /*********** Tag Declutter ***********/
 	[data-rem-tags~="bulletlist"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
 	[data-rem-tags~="bulletlist"] .hierarchy-editor__tag-bar__tag span {display: none;}
