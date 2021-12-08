@@ -379,7 +379,11 @@
 			color: var(--darkmode-text);
 			background-color: var(--darkmode-background);
 		}
-		.dark-mode .select-none.rounded.bg-gray-5 {background-color: #000;} /* Selected Item*/
+		/* Selected Item */
+		.dark-mode .select-none.rounded.bg-gray-5 {
+			color: var(--darkmode-text);
+			background-color: #000;
+		} 
 	/* Bottom Backlinks Bar */
 		.popup-menu #show-embedded-search-button {
 			color: var(--darkmode-text) !important;
