@@ -459,8 +459,10 @@
 		.dark-mode .settings-page__content__inner {
 			background-color: var(--darkmode-background);
 		}
-	/* Plan */
-		.dark-mode .settings-page .css-emvqyP {
+	/* Description */
+		.dark-mode .settings-page .css-fAxQcq, 
+		.dark-mode .settings-page .css-eqifkM	/* Plan Details */
+		{
 			color: var(--darkmode-contrast);
 			font-family: "Roboto Mono", "Fira Code", monospace;
 			font-weight: 600;
@@ -474,9 +476,15 @@
 		.dark-mode .settings-page .css-exQOrH + a,
 		.dark-mode .settings-page .checkbox,
 		.dark-mode .settings-page .px-6,
-		.dark-mode .settings-page .p-6 {
-			color: var(--darkmode-text);
+		.dark-mode .settings-page .p-6,
+		.dark-mode .settings-page .css-bOWrRb,	/* Subscription */
+		.dark-mode .settings-page .css-egEQZl,	/* Schedulers Page*/
+		.dark-mode .settings-page .css-fLTnVi,	/* Settings Page Sidebar Text */
+		.dark-mode .settings-page .css-kPXeXo 	/* Account / Plan / Knowledge Base Settings / DangerZone / Syncing / App Version*/
+		{
+			color: var(--darkmode-text) !important;
 		}
+		.dark-mode .settings-page .settings-page__option .p-3.css-fLTnVi{color: black !important;}
 /*********** Reference & Alias ***********/
 	/* Hierarchy Editor - Reference Style */
 		.rem-reference .RichTextViewer {color: var(--reference-text); font-weight: 400;}
