@@ -477,7 +477,44 @@
 		border: 0.01rem solid var(--table-columnrow-background-color-dark);
 	}
 /*********** Table Content Cell Configuration ***********/
-	[data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > .TreeNode {
+	[data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > .TreeNode,
+	[data-rem-container-tags~="table1200"] > .TreeNode > .tree-node-container > .TreeNode {
 		display: flex;
 		flex-direction: rows;
 		text-align: left;
