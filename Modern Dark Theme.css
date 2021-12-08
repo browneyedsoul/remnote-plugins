@@ -374,6 +374,12 @@
 		}
 	/* Selected Item */
 		.popup-menu .bg-selected-bg {background-color: #000;}
+	/* Search Result */
+		.dark-mode #search-results__list {
+			color: var(--darkmode-text);
+			background-color: var(--darkmode-background);
+		}
+		.dark-mode .select-none.rounded.bg-gray-5 {background-color: #000;} /* Selected Item*/
 	/* Bottom Backlinks Bar */
 		.popup-menu #show-embedded-search-button {
 			color: var(--darkmode-text) !important;
