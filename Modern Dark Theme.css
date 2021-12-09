@@ -217,9 +217,12 @@
 		.document--ltr {padding: 0px 0px 0px 40px;}
 	/* Hierarchy Editor - Source & Tags */
 		.dark-mode .rem-reference-link {background-color: var(--calloutyellow-background-color-dark);}
-	/* Button Hover Effect */
+	/* Hover Effect */
 		.text-gray-30,
-		.hover\:bg-gray-5:hover:not(#search-result__result) {background-color: var(--darkmode-background-selected-darker);}
+		.hover\:bg-gray-5:hover:not(#search-result__result) {
+			color: unset;
+			background-color: beige;
+		}
 	/* Hierarchy Editor - Right Side Backlink Numbers */
 		.float-end .my-2 {
 			margin-top: .4rem;
@@ -338,10 +341,12 @@
 	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--blue {color: var(--blue-text-dark);}
 	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {color: var(--purple-text-dark);} 
 /*********** Context Menu ***********/
-	.dark-mode .select-none.rounded.bg-gray-5 {
-		color: black;
-		background-color: var(--lightmode-background-selected);
-	}
+	/* Selected Item */
+		.dark-mode .select-none.rounded.bg-gray-5 {
+			color: var(--darkmode-text);
+			background-color: unset;
+			border: 3px solid yellow;
+		} 
 	/* Slash Command Search Focused Text */
 		.dark-mode .bg-white #search-results__result .text-gray-100 {
 			color: var(--darkmode-text);
@@ -396,15 +401,10 @@
 	/* Selected Item */
 		.popup-menu .bg-selected-bg {background-color: #000;}
 	/* Search Result */
-		.dark-mode #search-results__list {
+		.dark-mode #search-results__list:not(div#search-results__list.p-2) {
 			color: var(--darkmode-text);
 			background-color: var(--darkmode-background);
 		}
-		/* Selected Item */
-		.dark-mode .select-none.rounded.bg-gray-5 {
-			color: var(--darkmode-text);
-			background-color: #000;
-		} 
 	/* Bottom Backlinks Bar */
 		.popup-menu #show-embedded-search-button {
 			color: var(--darkmode-text) !important;
