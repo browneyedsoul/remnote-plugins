@@ -608,6 +608,7 @@
 		border-left: 0.05em solid var(--table-border-color-dark);
 	}
 /*********** Table Column Color Preset ***********/
+	#hierarchy-editor .TreeNode {border-color: var(--table-columnrow-background-color)}
 	[data-rem-tags~="tablecolor"] {
 		background-color: var(--table-columnrow-background-color);
 		font-weight: bold;
