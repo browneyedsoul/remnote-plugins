@@ -125,6 +125,11 @@
 		}
 	/* Search Area*/
 		.dark-mode .css-jQQQnw {border-radius: 5px;}
+	/* Search Item Text */
+		.dark-mode .css-kMEfqE,
+		.dark-mode [aria-label="Omnibar"] .css-fLTnVi {
+			color: var(--darkmode-text);
+		}
 	/* Omnibar svg icon */
 		.dark-mode .css-fQFckt {
 			background-color: var(--darkmode-contrast) !important;
@@ -165,6 +170,8 @@
 			border-radius: 3px;
 			padding: 0px 2px 0px 2px;
 		}
+	/* Hyperlink right click option menu */
+		.popup-menu .css-kbbFlF {background-color: unset}
 	/* Hierarchy Editor - TreeNode */
 		.dark-mode .TreeNode {
 			border-width: 1.5px !important;
