@@ -104,6 +104,10 @@
 		color: var(--darkmode-text);
 	}
 /*********** Omnibar ***********/
+	/* Omnibar text */
+		.dark-mode [aria-label="Omnibar"] .css-eqifkM {
+			color: var(--darkmode-text);
+		}
 	/* Selected */
 		.dark-mode .css-cMUIYB {background-color: var(--darkmode-background-selected);}
 	/* Focused item */
@@ -129,6 +133,10 @@
 		.dark-mode .css-kMEfqE,
 		.dark-mode [aria-label="Omnibar"] .css-fLTnVi {
 			color: var(--darkmode-text);
+		}
+		.dark-mode #search-results__list {
+			border: 1px solid white;
+			text-shadow: var(--text-shadow-dark);
 		}
 	/* Omnibar svg icon */
 		.dark-mode .css-fQFckt {
@@ -171,7 +179,10 @@
 			padding: 0px 2px 0px 2px;
 		}
 	/* Hyperlink right click option menu */
-		.popup-menu .css-kbbFlF {background-color: unset}
+		.popup-menu .css-kbbFlF {
+			color: var(--darkmode-text);
+			background-color: unset;
+		}
 	/* Hierarchy Editor - TreeNode */
 		.dark-mode .TreeNode {
 			border-width: 1.5px !important;
@@ -220,6 +231,10 @@
 	.dark-mode .toggle-collapse-button {
 		background-color: transparent;
 	}
+	/* Toggle Collapse Button Hover effect */
+		.hover\:bg-hover-bg:hover {
+			background-color: unset;
+		}
 /*********** Hightlight Style ***********/
 	/* Highlight Style and Font Color */
 		.highlight-color--red,
@@ -328,7 +343,7 @@
 		background-color: var(--lightmode-background-selected);
 	}
 	/* Slash Command Search Focused Text */
-		.bg-white #search-results__result .text-gray-100 {
+		.dark-mode .bg-white #search-results__result .text-gray-100 {
 			color: var(--darkmode-text);
 		}
 /*********** Find / Filter / Replace - Ctrl(⌘) + F ***********/
@@ -343,7 +358,6 @@
 	/* Basic */
 		.popup-menu, 
 		.popup-menu.fixed .bg-white, 
-		.popup-menu.fixed .bg-white .css-kbbFlF, 
 		.popup-menu #document-hover-preview__popup,
 		.popup-menu__item, 
 		.popup-menu__item--static,
