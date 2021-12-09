@@ -233,7 +233,7 @@
 	}
 	/* Toggle Collapse Button Hover effect */
 		.hover\:bg-hover-bg:hover {
-			background-color: unset;
+			background-color: unset !important;
 		}
 /*********** Hightlight Style ***********/
 	/* Highlight Style and Font Color */
