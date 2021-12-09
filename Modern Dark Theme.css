@@ -76,6 +76,8 @@
 /*********** The Most important thing ***********/
 	.dark-mode {filter: unset;}
 	.dark-mode {background-color: transparent;} 
+	/* Rem Block Selected Area */
+		.hidden-selection {background-color: gray;}
 /*********** Queue ***********/
 	.dark-mode .queue__badge,
     .dark-mode .queue__title__middle:last-child,
