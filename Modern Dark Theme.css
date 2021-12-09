@@ -77,7 +77,8 @@
 	.dark-mode {filter: unset;}
 	.dark-mode {background-color: transparent;} 
 	/* Rem Block Selected Area */
-		.hidden-selection {background-color: gray;}
+		.hidden-selection {background-color:#D8E2F1;}
+		.dark-mode .hidden-selection {background-color: gray;}
 /*********** Queue ***********/
 	.dark-mode .queue__badge,
     .dark-mode .queue__title__middle:last-child,
