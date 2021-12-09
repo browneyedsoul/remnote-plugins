@@ -195,6 +195,10 @@
 			background-color: var(--quote-background-dark) !important;
 		}
 	/* All Notes page list */
+		.dark-mode .document-table .css-gnNRVe,
+		.dark-mode .document-table .css-huFlzA .css-fLTnVi {
+			color: var(--darkmode-text);
+		}
 		.dark-mode .css-exQOrH {
 			color: var(--darkmode-text);
 			background-color: var(--darkmode-background);
