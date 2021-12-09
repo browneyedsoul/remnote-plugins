@@ -134,10 +134,6 @@
 		.dark-mode [aria-label="Omnibar"] .css-fLTnVi {
 			color: var(--darkmode-text);
 		}
-		.dark-mode #search-results__list {
-			border: 1px solid white;
-			text-shadow: var(--text-shadow-dark);
-		}
 	/* Omnibar svg icon */
 		.dark-mode .css-fQFckt {
 			background-color: var(--darkmode-contrast) !important;
@@ -171,6 +167,8 @@
 		.dark-mode .css-ZPdGi {
 			color: var(--darkmode-text);
 		}
+	/* Tag Searching Text */
+		.work-in-progress-tag {color: black;}
 	/* Hierarchy Editor - LinkNode */
 		.dark-mode .LinkNode {
 			color: var(--link-node-color-dark) !important;
@@ -217,12 +215,6 @@
 		.document--ltr {padding: 0px 0px 0px 40px;}
 	/* Hierarchy Editor - Source & Tags */
 		.dark-mode .rem-reference-link {background-color: var(--calloutyellow-background-color-dark);}
-	/* Hover Effect */
-		.text-gray-30,
-		.hover\:bg-gray-5:hover:not(#search-result__result) {
-			color: unset;
-			background-color: beige;
-		}
 	/* Hierarchy Editor - Right Side Backlink Numbers */
 		.float-end .my-2 {
 			margin-top: .4rem;
@@ -340,25 +332,15 @@
 	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--green {color: var(--green-text-dark);}
 	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--blue {color: var(--blue-text-dark);}
 	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {color: var(--purple-text-dark);} 
-/*********** Context Menu ***********/
-	/* Selected Item */
-		.dark-mode .select-none.rounded.bg-gray-5 {
-			color: var(--darkmode-text);
-			background-color: unset;
-			border: 3px solid yellow;
-		} 
-	/* Slash Command Search Focused Text */
-		.dark-mode .bg-white #search-results__result .text-gray-100 {
-			color: var(--darkmode-text);
-		}
+
 /*********** Find / Filter / Replace - Ctrl(⌘) + F ***********/
-    .dark-mode #hierarchy-editor__ctrl-f .css-exQOrH {
-        color: black;
-        background-color: unset;
-    }
-    #rich-text-editor__icon {
-    	filter: invert(1);
-    }
+			.dark-mode #hierarchy-editor__ctrl-f .css-exQOrH {
+				color: black;
+				background-color: unset;
+			}
+			#rich-text-editor__icon {
+				filter: invert(1);
+			}
 /*********** Popup ***********/
 	/* Basic */
 		.popup-menu, 
@@ -400,11 +382,6 @@
 		}
 	/* Selected Item */
 		.popup-menu .bg-selected-bg {background-color: #000;}
-	/* Search Result */
-		.dark-mode #search-results__list:not(div#search-results__list.p-2) {
-			color: var(--darkmode-text);
-			background-color: var(--darkmode-background);
-		}
 	/* Bottom Backlinks Bar */
 		.popup-menu #show-embedded-search-button {
 			color: var(--darkmode-text) !important;
@@ -516,6 +493,10 @@
 			color: var(--darkmode-text) !important;
 		}
 		.dark-mode .settings-page .settings-page__option .p-3.css-fLTnVi{color: black !important;}
+	/* Settings Page Sidebar Hover Effect */
+		.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {
+			background-color: #000;
+		}
 /*********** Reference & Alias ***********/
 	/* Hierarchy Editor - Reference Style */
 		.rem-reference .RichTextViewer {color: var(--reference-text); font-weight: 400;}
@@ -715,3 +696,40 @@
 			}
 	/* Sidebar Menu List item Bold for space between Emoji/Thumbnail and Letters */
  		.accordion.ui.fluid .block .RichTextViewer .bold {margin: 0 0 0 5px;}
+/*********** Hover Effect ***********/
+	/* Selected & Mouseover Item */
+		.dark-mode .select-none.rounded.bg-gray-5,
+		.dark-mode .hover\:bg-gray-5:hover:not(#search-result__result) {
+			color: black;
+			border: 1px solid yellow;
+		} 
+	/* Slash Command */
+		/* Slash Command Text and Background */
+			.dark-mode #search-results__list {
+				border: 3px solid black;
+				border-radius: 5px;
+				z-index: 0;
+			}
+			.dark-mode .search-result__rem-breadcrumb {}
+		/* Slash Command Focused Item */
+			.z-30 [data-search-result="search-result-item"].bg-gray-5 {
+				color: black;
+				background-color: #D1D1D1;
+			}
+		/* Slash Command Search Focused Text */
+			.dark-mode .bg-white #search-results__result .text-gray-100 {}
+	/* Settings Page Sidebar Hover Effect */
+		.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {
+			background-color: #000;
+		}	
+	/* Tag Item Search Result Hover or Selected */
+		[data-search-result="search-result-panel"] .bg-gray-5 {
+			color: black;
+			background-color: #D1D1D1;
+		}
+	.text-gray-30,
+	.hover\:bg-gray-5:hover:not(#search-result__result) {
+		color: unset;
+		background-color: #D1D1D1;
+	}
+	.dark-mode .hover\:bg-gray-5:hover:not(#search-result__result) {}
