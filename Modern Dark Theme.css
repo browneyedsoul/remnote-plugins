@@ -164,6 +164,8 @@
 /*********** Icon ***********/
 	/* Slot icon */
 		.dark-mode .css-bMKjkl {color: var(--darkmode-text);} 
+	/* Power-up icon */
+		.dark-mode .rem-powerup-icon .text-icon {color: var(--darkmode-text) !important;}
 /*********** Page Hierarchy Bar ***********/
 	.dark-mode .document-header-top-bar .parent-link {
 		color: var(--darkmode-text);
