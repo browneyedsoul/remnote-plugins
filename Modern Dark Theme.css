@@ -173,6 +173,8 @@
 		border: 1px solid #7F8094;
 	}
 /*********** RemNote Hierarchy Editor ***********/
+	/* Page Padding */
+		.paddingPage {background-color: var(--darkmode-background)}
 	/* Hierarchy Editor - General Background */
 		.dark-mode .document-table,
 		.dark-mode .tile__document,
