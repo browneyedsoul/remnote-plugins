@@ -1,7 +1,7 @@
 :root {--hide-answer-filter: contrast(0%) brightness(1.5);}
-/*********** Hide Cloze ***********/
+/*********** Hide ***********/
 	[data-rem-container-tags~="active-recall"] span:not(:hover):not([data-rem-tags~="learned"]).cloze,
-	[data-rem-container-tags~="active-recall"] .only_in_answer:not(:hover):not([data-rem-tags~="learned"]) {
+	[data-rem-container-tags~="active-recall"] span.only_in_answer:not(:hover):not([data-rem-tags~="learned"]) {
 	    background-color: white;
 	    filter: var(--hide-answer-filter);
 	    border-radius: 5px;
