@@ -93,6 +93,18 @@
 		border-width: 6px 0 6px 6px !important;
 		border-color: transparent transparent transparent black;
 	}
+	/* Alias Bullet Treatment */
+		[data-rem-tags="aliases"] .rem-bullet__container .rem-bullet.rem-bullet--hidden-children {
+			width: 0 !important;
+			height: 0 !important;
+			border-style: solid;
+			border-width: 6px 0 6px 6px !important;
+			border-color: transparent transparent transparent var(--bullet-main);
+			position: relative;
+			top: -0.02rem !important;
+			left: 0.02rem !important;
+		}
+		[data-rem-tags="aliases"] .rem-container--descriptor-rem-type .rem-bullet {-webkit-mask-image: unset;}
 /*********** Forder & File Style ***********/
 	/* Remove Radius Circle */
 		.rem-bullet__icon.rem-bullet--hidden-children,
