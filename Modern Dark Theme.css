@@ -363,7 +363,7 @@
 			border: 1px solid var(--darkmode-contrast);
 		}
 		.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
-			background-color: var(--darkmode-background-selected-darker);
+			background-color: var(--darkmode-background-selected-darker) !important;
 		}
 /*********** Popup ***********/
 	/* Basic */
