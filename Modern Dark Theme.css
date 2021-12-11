@@ -355,9 +355,16 @@
 				color: black;
 				background-color: unset;
 			}
-			#rich-text-editor__icon {
-				filter: invert(1);
-			}
+			#rich-text-editor__icon {filter: invert(1);}
+/*********** Portal ***********/
+	/* Portal Breadcrumbs */
+		#hierarchy-editor .node-top-level-in-portal-container .node-top-level-in-portal {
+			background-color: var(--darkmode-background);
+			border: 1px solid var(--darkmode-contrast);
+		}
+		.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
+			background-color: var(--darkmode-background-selected-darker);
+		}
 /*********** Popup ***********/
 	/* Basic */
 		.popup-menu, 
