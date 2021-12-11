@@ -194,8 +194,9 @@
 		}
 	/* Tag Searching Text */
 		.work-in-progress-tag {color: black;}
-	/* Hierarchy Editor - LinkNode */
-		.dark-mode .LinkNode {
+	/* Hierarchy Editor - LinkNode, Hyperlink */
+		.dark-mode .LinkNode,
+		.dark-mode .underline.text-blue-60.cursor-pointer  {
 			color: var(--link-node-color-dark) !important;
 			background-color: var(--darkmode-background-selected);
 			border-radius: 3px;
@@ -243,9 +244,7 @@
 		background-color: transparent;
 	}
 	/* Toggle Collapse Button Hover effect */
-		.hover\:bg-hover-bg:hover {
-			background-color: unset !important;
-		}
+		.hover\:bg-hover-bg:hover {background-color: unset !important;}
 /*********** Hightlight Style ***********/
 	/* Highlight Style and Font Color */
 		.highlight-color--red,
@@ -365,8 +364,8 @@
 		.popup-menu__item, 
 		.popup-menu__item--static,
 		.hierarchy-editor__search-portal-section {
-			color: var(--darkmode-text);
-			background-color: var(--darkmode-background);
+			color: black;
+			background-color: var(--darkmode-text);
 		}
 	/* Omni Search Popup Window*/
 		/* Focused Text */
@@ -396,6 +395,13 @@
 		.popup-menu .rem-text.rem-header--3 {
 			color: var(--darkmode-text);
 		}
+	/* Context Menu - Hyperlink Right Click */
+		/* Menu item text */
+			div[color="#292936"] {color: black}
+		/* Search area */
+			.popup-menu .border-solid.border-gray-15 {border-color: #909090;}
+		/* Menu Header - LINKED TO & OPTIONS */
+			.popup-menu .p-2 .text-gray-30 {background-color: unset;}
 	/* Selected Item */
 		.popup-menu .bg-selected-bg {background-color: #000;}
 	/* Bottom Backlinks Bar */
@@ -410,6 +416,7 @@
 		/* svg icon */
 			.popup-menu.fixed .css-fQFckt {
 				background-color: yellow;
+				border: 1px solid black;
 				border-radius: 5px;
 				opacity: 0.8;
 			}
@@ -421,8 +428,6 @@
 			}
 		/* Image Popup Menu */
 			.popup-menu > div {border: 1px solid white;}
-			.popup-menu .bg-white,
-			.popup-menu .bg-white .css-kbbFlF:not(:hover) {background-color: var(--darkmode-background);}
 			.popup-menu .bg-white .css-kbbFlF:hover {background-color: var(--darkmode-background-selected);}
 			.popup-menu .bg-white .css-kbbFlF > div {color: var(--darkmode-text);}
 /*********** Codeblock ***********/	
@@ -510,9 +515,7 @@
 		}
 		.dark-mode .settings-page .settings-page__option .p-3.css-fLTnVi{color: black !important;}
 	/* Settings Page Sidebar Hover Effect */
-		.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {
-			background-color: #000;
-		}
+		.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {background-color: #000;		}
 /*********** Reference & Alias ***********/
 	/* Hierarchy Editor - Reference Style */
 		.rem-reference .RichTextViewer {color: var(--reference-text); font-weight: 400;}
@@ -562,6 +565,7 @@
 		.css-bBkpDG {filter: invert(1);}
 	/* Account Capsule */
 		#document-sidebar__account-capsule {background-color: #FFFFFF;}
+		#document-sidebar__account-capsule:hover {background-color: var(--darkmode-text) !important;}
 	/* Sidebar Top */
 		/* Search and ⚡️*/
 			#document-sidebar_top .flex.items-center.p-2.gap-2 > div {
