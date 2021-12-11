@@ -174,7 +174,7 @@
 	}
 /*********** RemNote Hierarchy Editor ***********/
 	/* Page Padding */
-		.paddingPage {background-color: var(--darkmode-background)}
+		.dark-mode .paddingPage {background-color: var(--darkmode-background)}
 	/* Hierarchy Editor - General Background */
 		.dark-mode .document-table,
 		.dark-mode .tile__document,
@@ -403,7 +403,7 @@
 		/* Menu Header - LINKED TO & OPTIONS */
 			.popup-menu .p-2 .text-gray-30 {background-color: unset;}
 	/* Selected Item */
-		.popup-menu .bg-selected-bg {background-color: #000;}
+		.popup-menu .bg-selected-bg {background-color: var(--lightmode-background-selected);}
 	/* Bottom Backlinks Bar */
 		.popup-menu #show-embedded-search-button {
 			color: var(--darkmode-text) !important;
