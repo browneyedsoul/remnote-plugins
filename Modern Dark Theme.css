@@ -237,6 +237,8 @@
 			margin-top: .4rem;
 			zoom: 0.85;
 		}
+	/* Hierarchy Editor - Upper Right 3dots */
+		.dark-mode .document__options-menu .fill-current {filter: invert(1);}
 /*********** Rem-Bullet Container ***********/
 	.dark-mode .plus-button,
 	.dark-mode .six-dot,
@@ -403,7 +405,9 @@
 		/* Menu Header - LINKED TO & OPTIONS */
 			.popup-menu .p-2 .text-gray-30 {background-color: unset;}
 	/* Selected Item */
-		.popup-menu .bg-selected-bg {background-color: var(--lightmode-background-selected);}
+		.popup-menu .bg-selected-bg,
+		.popup-menu  [icon*="[Object]"]:hover,
+		.popup-menu .bg-selected-bg:hover {background-color: var(--lightmode-background-selected) !important;}
 	/* Bottom Backlinks Bar */
 		.popup-menu #show-embedded-search-button {
 			color: var(--darkmode-text) !important;
