@@ -9,7 +9,7 @@
 	--darkmode-background-sidebar: #2B3137;
 	--darkmode-background-selected: #4A5458;
 	--darkmode-background-selected-darker: #1B1F23;
-	--lightmode-background-selected: #C5DFEB;
+	--lightmode-background-selected: #B7B7B7;
 	--darkmode-text: #DFDFD5;
 	--darkmode-contrast: yellow;
 	--quote-text-dark: #F1FA8C;
@@ -432,7 +432,7 @@
 			}
 		/* Image Popup Menu */
 			.popup-menu > div {border: 1px solid white;}
-			.popup-menu .bg-white .css-kbbFlF:hover {background-color: var(--darkmode-background-selected);}
+			.popup-menu .bg-white .css-kbbFlF:hover {background-color: var(--lightmode-background-selected);}
 			.popup-menu .bg-white .css-kbbFlF > div {color: var(--darkmode-text);}
 /*********** Codeblock ***********/	
 	#code-node {background-color: var(--code-node-background-color);}
