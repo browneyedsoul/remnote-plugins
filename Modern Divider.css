@@ -1,4 +1,6 @@
 /*********** Divider ***********/
+	[data-rem-tags~="divider"] .RichTextViewer,
+	[data-rem-tags~="divider"] [data-slate-node="element"] {visibility: hidden;}
 	[data-rem-tags~="divider"] {
 		color: transparent;
 		padding-right: 15px;
@@ -6,7 +8,6 @@
 		margin-right: 20px;
 		margin-left: 10px;
 	}
-	
 	[data-rem-tags~="divider"]:before {
 		content: " ";
 		display: block;
@@ -14,7 +15,6 @@
 		border-bottom: var(--line-color, 2px solid #EEEFEE);
 		margin-right: 20px;
 	}
-	
 	[data-rem-tags~="divider"]:focus-within {
 		background-color: #DCF3FF;
 		margin-left: 40px;
@@ -22,17 +22,12 @@
 		position: relative;
 		left: -15px;
 	}
-	
 	[data-rem-tags~="divider"]:not(:focus-within) {
 		color: transparent;
 		position: relative;
 		padding: 0px 15px;
 	}
-	
-	[data-rem-tags~="divider"]:focus-within:before {
-		border-bottom: 2px solid var(--line-color) !important;
-	}
-	
+	[data-rem-tags~="divider"]:focus-within:before {border-bottom: 2px solid var(--line-color) !important;	}
 	[data-rem-tags~="divider"]:not(:focus-within):before {
 		content: " ";
 		display: block;
@@ -41,30 +36,18 @@
 		top: 50%;
 		border-bottom: 2px solid var(--line-color) !important;
 	}
-	
 /*********** Divider Darkmode Compatibility ***********/
-	.dark-mode [data-rem-tags~="divider"]:focus-within {
-		background-color: #576066;
-	}
-	.dark-mode [data-rem-tags~="divider"]:not(:focus-within):before {
-		border-bottom: 2px solid var(--line-color-dark) !important;
-	} 
-
+	.dark-mode [data-rem-tags~="divider"]:focus-within {background-color: #576066;}
+	.dark-mode [data-rem-tags~="divider"]:not(:focus-within):before {border-bottom: 2px solid var(--line-color-dark, #535353) !important;} 
 /********** Hide **********/
+	[data-rem-tags~="divider"] .rem-button__container,
 	[data-rem-tags~="divider"] .rem-container--focused, 
 	[data-rem-tags~="divider"] .rem-bullet__icon,
-	[data-rem-tags~="divider"] .rem-bullet__container {
+	[data-rem-tags~="divider"] .rem-bullet__container,
+	[data-rem-tags~="divider"] .rem-checkbox,
+	[data-rem-tags~="divider"] .rem:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar, 
+	[data-rem-tags~="divider"] .relative.flex.items-center.float-end, 	/* Hide Merge Sign */
+	[data-rem-tags~="divider"] .rich-text-editor-placeholder			/* Hide Placeholder "Type / for Commands" */
+	{
 		display: none;
 	}
-
-	[data-rem-tags~="divider"] .rem:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar {display: none;}
-	[data-rem-tags~="divider"] .rem-checkbox {display: none;}
-	
-	/* Divider Container */
-		[data-rem-tags~="divider"] .rem-button__container {display: none;}
-
-	/* Hide Merge Sign */
-		[data-rem-tags~="divider"] .relative.flex.items-center.float-end {display: none;}
-	
-	/* Hide "Type / for Commands" */
-		[data-rem-tags~="divider"] .rich-text-editor-placeholder {display: none;}
