@@ -765,3 +765,5 @@
 		background-color: #D1D1D1;
 	}
 	.dark-mode .hover\:bg-gray-5:hover:not(#search-result__result) {}
+/*********** Metadata Page ***********/
+	#RemPage {color: var(--darkmode-text);}
