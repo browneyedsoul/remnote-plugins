@@ -8,17 +8,17 @@
 	--table-border-color: #EEEEEB;
 	--table-border-color-dark: #535353;
 	--darkmode-text: #DFDFD5;
-	--table-title-left-margin: 1.45em; /* If Table Title bar is dislocated please adjust here*/
+	--table-title-left-margin: 1.45em; /* If the Table Title bar is dislocated please adjust here*/
 }
 /* Interim Measure */
-	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 110%;}
+	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 90%;}
 /* Block Darkmode Color Inversion */
 	.dark-mode {filter: unset;}
 	.dark-mode {background-color: transparent;} 
 /* Basic */
 	[data-rem-container-tags~="table"] > .TreeNode {display: flex;}
 	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container {
-		flex: 1 1 0;
+		flex: 1 0 0;
 		overflow: hidden;
 		white-space: wrap;
 	}
