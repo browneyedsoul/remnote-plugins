@@ -17,7 +17,7 @@
 	}
 	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
 		position: relative;
-		left: -35px;
+		left: -25px;
 		margin-right: -35px;
 	}
 /* Column Table Title */
@@ -32,7 +32,7 @@
 		background-color: var(--table-title-background-color-dark);
 		border: 1px solid var(--table-header-background-color-dark);
 	}
-	[data-rem-container-tags~="table"] > .tree-node--parent {margin-left: 33px;}
+	[data-rem-container-tags~="table"] > .tree-node--parent {margin-left: 1.45rem;}
 /* Column Table Head */
 	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > div:first-child {
 		font-weight: 600;
@@ -125,7 +125,7 @@
 	[data-rem-container-tags~="table"][data-rem-container-tags~="w1140"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
 	[data-rem-container-tags~="table"][data-rem-container-tags~="w1170"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
 	[data-rem-container-tags~="table"][data-rem-container-tags~="w1120"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
-		width: 115%;
+		width: 110%;
 	}
 	[data-rem-container-tags~="w90"] > .TreeNode,
 	[data-rem-container-tags~="w120"] > .TreeNode,
