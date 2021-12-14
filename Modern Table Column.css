@@ -23,7 +23,7 @@
 	}
 	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
 		position: relative;
-		left: -25px;
+		left: -10px;
 		margin-right: -35px;
 	}
 	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > .TreeNode {width: 90% !important;}
