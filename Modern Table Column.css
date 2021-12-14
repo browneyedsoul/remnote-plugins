@@ -8,6 +8,7 @@
 	--table-border-color: #EEEEEB;
 	--table-border-color-dark: #535353;
 	--darkmode-text: #DFDFD5;
+	--table-title-left-margin: 1.45em; /* If Table Title bar is dislocated please adjust here*/
 }
 /* Interim Measure */
 	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 110%;}
@@ -19,7 +20,7 @@
 	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container {
 		flex: 1 1 0;
 		overflow: hidden;
-		white-space: pre-line;
+		white-space: wrap;
 	}
 	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
 		position: relative;
@@ -41,7 +42,7 @@
 		border: 1px solid var(--table-header-background-color-dark);
 	}
 	.dark-mode [data-rem-tags~="table"] .EditorContainer {color: var(--darkmode-text);}
-	[data-rem-container-tags~="table"] > .tree-node--parent {margin-left: 1.45rem;}
+	[data-rem-container-tags~="table"] > .tree-node--parent {margin-left: var(--table-title-left-margin);}
 /* Column Table Head */
 	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > div:first-child {
 		font-weight: 600;
