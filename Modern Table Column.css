@@ -7,19 +7,26 @@
 	--table-cell-background-color-dark: #2F3437;
 	--table-border-color: #EEEEEB;
 	--table-border-color-dark: #535353;
+	--darkmode-text: #DFDFD5;
 }
+/* Interim Measure */
+	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 110%;}
+/* Block Darkmode Color Inversion */
+	.dark-mode {filter: unset;}
+	.dark-mode {background-color: transparent;} 
 /* Basic */
 	[data-rem-container-tags~="table"] > .TreeNode {display: flex;}
 	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container {
 		flex: 1 1 0;
-		overflow: auto;
-		white-space: pre-wrap;
+		overflow: hidden;
+		white-space: pre-line;
 	}
 	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
 		position: relative;
 		left: -25px;
 		margin-right: -35px;
 	}
+	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > .TreeNode {width: 90% !important;}
 /* Column Table Title */
 	[data-rem-tags~="table"] {
 		background-color: var(--table-title-background-color);
@@ -29,9 +36,11 @@
 		border: 1px solid var(--table-header-background-color);
 	}
 	.dark-mode [data-rem-tags~="table"] {
+		color: var(--darkmode-text);
 		background-color: var(--table-title-background-color-dark);
 		border: 1px solid var(--table-header-background-color-dark);
 	}
+	.dark-mode [data-rem-tags~="table"] .EditorContainer {color: var(--darkmode-text);}
 	[data-rem-container-tags~="table"] > .tree-node--parent {margin-left: 1.45rem;}
 /* Column Table Head */
 	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > div:first-child {
@@ -39,7 +48,10 @@
 		background-color: var(--table-header-background-color);
 		text-align: center;
 	}
-	.dark-mode [data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > div:first-child {background-color: var(--table-header-background-color-dark);}
+	.dark-mode [data-rem-container-tags~="table"] > .TreeNode > .tree-node-container > div:first-child {
+		color: var(--darkmode-text);;
+		background-color: var(--table-header-background-color-dark);
+	}
 /* Line Color */
 	[data-rem-container-tags~="table"] > .TreeNode > .tree-node-container {border: 0.1em solid var(--table-header-background-color);}
 	.dark-mode [data-rem-container-tags~="table"] > .TreeNode > .tree-node-container {border: 0.1em solid var(--table-header-background-color-dark);}
@@ -125,7 +137,7 @@
 	[data-rem-container-tags~="table"][data-rem-container-tags~="w1140"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
 	[data-rem-container-tags~="table"][data-rem-container-tags~="w1170"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
 	[data-rem-container-tags~="table"][data-rem-container-tags~="w1120"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
-		width: 110%;
+		width: 100%;
 	}
 	[data-rem-container-tags~="w90"] > .TreeNode,
 	[data-rem-container-tags~="w120"] > .TreeNode,
