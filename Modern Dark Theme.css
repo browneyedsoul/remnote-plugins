@@ -165,7 +165,7 @@
 	/* Slot icon */
 		.dark-mode .css-bMKjkl {color: var(--darkmode-text);} 
 	/* Power-up icon */
-		.dark-mode .rem-powerup-icon .text-icon {color: var(--darkmode-text) !important;}
+		.dark-mode .rem-powerup-icon .text-icon {color: var(--darkmode-text);}
 /*********** Page Hierarchy Bar ***********/
 	.dark-mode .document-header-top-bar .parent-link {
 		color: var(--darkmode-text);
@@ -230,8 +230,16 @@
 		}
 	/* Hierarchy Editor - Left-side Hiearchy Editor Margin */
 		.document--ltr {padding: 0px 0px 0px 40px;}
-	/* Hierarchy Editor - Source & Tags */
+	/* Hierarchy Editor - Source & Tags & Tagbar*/
 		.dark-mode .rem-reference-link {background-color: var(--calloutyellow-background-color-dark);}
+		.dark-mode #DocumentTopRow .flex.flex-row.items-center.justify-center.bg-gray-10.text-gray-70.py-1.px-2.rounded.text-sm.font-medium.cursor-pointer.truncate,
+		.dark-mode .hierarchy-editor__tag-bar__tag {
+			color: var(--darkmode-text);
+			background-color: var(--darkmode-background-selected);
+			border: 1px soild white !important;
+		}
+		.dark-mode .hierarchy-editor__tag-bar {border: 1px soild white !important;}
+		.dark-mode .hierarchy-editor__tag-bar__tag__delete {color: var(--darkmode-contrast);}
 	/* Hierarchy Editor - Right Side Backlink Numbers */
 		.float-end .my-2 {
 			margin-top: .4rem;
