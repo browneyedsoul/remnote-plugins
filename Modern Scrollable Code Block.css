@@ -1,55 +1,100 @@
 :root {
-    --inline-code-color: #E64400;
-    --inline-code-background-color: #F7F6F3;
-    --darkmode-background: #2F3437;
-    --darkmode-text: #DFDFD5;
-    --code-node-background-color-dark: #E6E6E6;
-    --code-font-family: "Roboto Mono", "Fira code", Monospace;
-    --code-font-size: 0.9em;
-    --line-number-width: 40px;
-    --line-number-color: #C7CCCF;
-    --line-number-color-dark: #BDBEBE;
-    --line-number-background-color: #F7F6F3;
-    --line-number-background-color-dark: #E6E6E6;
-    --code-node-border-radius: 2px;
+    /* Global Code Style */
+        --code-font-family: "Roboto Mono", "Fira code", Monospace;
+        --code-font-size: 0.9em;
+    /* Inline Code Style */
+        --inline-code-color: #E64400;
+        --inline-code-background-color: #F7F6F3;
+    /* Code Block Line Number Style */
+        --line-number-width: 40px;
+        --line-number-color: #C7CCCF;
+        --line-number-color-dark: #BDBEBE;
+        --line-number-background-color: #F7F6F3;
+        --line-number-background-color-dark: #E6E6E6;
+    /* Code Block Color */
+        --code-node-border-radius: 2px;
+        --code-node-line-number-color: #BDBEBE;
+        --code-node-line-number-color-dark: #585858;
+        --code-node-line-number-background-color: ;
+        --code-node-line-number-background-color-dark: #242424;
+        --code-node-background-color: #F7F6F3;
+        --code-node-background-color-dark: #242424;
+        --code-node-plain-color: ;
+        --code-node-plain-color-dark: #BDBEBE;
+        --code-node-number-color: ;
+        --code-node-number-color-dark: #ADADAD;
+        --code-node-string-color: ;
+        --code-node-string-color-dark: #059F00;
+        --code-node-selector-color: ;
+        --code-node-selector-color-dark: #BB9CF0;
+        --code-node-important-color: ;
+        --code-node-important-color-dark: #DAD600;
+        --code-node-property-color: ;
+        --code-node-property-color-dark: #FFB47B;
+        --code-node-punctuation-color: ;
+        --code-node-punctuation-color-dark: #FFDC00;
+        --code-node-operator-color: ;
+        --code-node-operator-color-dark: #DD7481;
+        --code-node-builtin-color: ;
+        --code-node-builtin-color-dark: #87CA71;
+        --code-node-function-color: ;
+        --code-node-function-color-dark: #A3CBF7;
+        --code-node-classname-color: ;
+        --code-node-classname-color-dark: #DD4A68;
+        --code-node-comment-color: ;
+        --code-node-comment-color-dark: #757E88;
+        --code-node-keyword-color: ;
+        --code-node-keyword-color-dark: #FA808E;
 }
-
 /*********** Basic (Inline)CodeBlock Style ***********/
-    .quote {
-        font-family:        var(--code-font-family);
-        font-size:          var(--code-font-size);
-        color:              var(--inline-code-color);
-        background-color:   var(--inline-code-background-color);
-        padding:            1px 3px 1px 3px;
-    }
-
-    #code-node {
-        font-family:    var(--code-font-family);
-        font-size:      var(--code-font-size); 
-        border:         0;
-        padding-right:  50px;
-        padding-left:   40px;
-        margin-top:     2px;
-        margin-bottom:  2px;
-        border-radius:  0.3em;
-        overflow:       auto;
-        white-space:    pre;
-    }
-    
+    /* Inline Code */
+        .quote {
+            font-family:        var(--code-font-family);
+            font-size:          var(--code-font-size);
+            color:              var(--inline-code-color);
+            background-color:   var(--inline-code-background-color);
+            padding:            1px 3px 1px 3px;
+        }
+    /* Code Block*/
+        #code-node {
+            font-family:    var(--code-font-family);
+            font-size:      var(--code-font-size); 
+            border:         0;
+            padding-right:  50px;
+            padding-left:   40px;
+            margin-top:     2px;
+            margin-bottom:  2px;
+            border-radius:  0.3em;
+            overflow:       auto;
+            white-space:    pre;
+        }
+        .dark-mode #code-node {border: 1px solid black;}
+        .dark-mode .token.property {color: var(--code-node-property-color-dark);}
+        .dark-mode #code-node:not(.token.property):not(.token.function):not(.token.string):not(.token.builtin):not(.token.comment):not(.token.selector):not(.token.keyword):not(.token.number):not(.token.operator):not(.token.punctuation),
+        .dark-mode .token.plain {color: var(--code-node-plain-color-dark);}
+        .dark-mode .token.function {color: var(--code-node-function-color-dark);}
+        .dark-mode .token.string {color: var(--code-node-string-color-dark) !important;}
+        .dark-mode .token.selector {color: var(--code-node-selector-color-dark);}
+        .dark-mode .token.comment {color: var(--code-node-comment-color-dark);}
+        .dark-mode .token.important {color: var(--code-node-important-color-dark);}
+        .dark-mode .token.keyword {color: var(--code-node-keyword-color-dark);}
+        .dark-mode .token.builtin {color: var(--code-node-builtin-color-dark)}
+        .dark-mode .token.number {color: var(--code-node-number-color-dark);}
+        .dark-mode .token.operator {color: var(--code-node-operator-color-dark);}
+        .dark-mode .token.punctuation {color: var(--code-node-punctuation-color-dark);}
+        .dark-mode .token.class-name {color: var(--code-node-classname-color-dark);}
     /* Codeblock Inline Caption */
-    #code-node + span.quote, 
-    #code-node + div span.quote {
-        background-color: unset !important;
-        color: #8E8D8A !important;
-        font-size: 14px !important;
-        position: relative;
-        top: -4px;
-        left: -10px;
-    }
-
+        #code-node + span.quote, 
+        #code-node + div span.quote {
+            background-color: unset !important;
+            color: #8E8D8A !important;
+            font-size: 14px !important;
+            position: relative;
+            top: -4px;
+            left: -10px;
+        }
 /*********** Codeblock Line Number ***********/
     .codeLine {counter-increment: codeLineNumber;}
-
     .codeLine::before {
         color:          var(--line-number-color);
         position:       absolute;
@@ -64,7 +109,6 @@
         font-size:      13px;
         font-weight:    100;
     }
-
     #code-node::before {
         content:            "";
         display:            block;
@@ -76,9 +120,8 @@
         border-radius:      var(--code-node-border-radius, 7px) 0 0;
         width:              calc(var(--line-number-width, 45px) - 7px);
     }
-
 /*********** Language Converter ***********/
-    #code-node__change-language-dropdown {opacity: 20%;}
+    #code-node__change-language-dropdown {opacity: 40%;}
     #code-node__change-language-dropdown:hover {
         position: relative;
         opacity: 70%;
@@ -86,11 +129,14 @@
         padding-right: 5px;
         border-radius: 5px;
     }
+    .dark-mode #code-node__change-language-dropdown {
+        background-color: #D7DD95;
+        border-radius: 5px;
+    }
     #code-node__change-language-dropdown .css-exQOrH {
         position: relative;
         left: 25px;
     }
-    
 /*********** Turn Codeblock into Console Terminal ***********/
     [data-rem-tags~="ter"] #code-node {
         background-color: var(--darkmode-background) !important;
@@ -100,9 +146,6 @@
     }
     [data-rem-tags~="ter"] span {filter: invert(1);}
     
-    [data-rem-tags~="ter"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="ter"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
-
     [data-rem-tags~="ter"] #code-node .dropdown.icon,
     [data-rem-tags~="ter"] #code-node__change-language-dropdown .divider.text,
     [data-rem-tags~="ter"] #code-node .copy.outline.icon.code-node__copy-button {
@@ -124,3 +167,6 @@
         padding-right: 5px;
         border-radius: 5px;
     }
+    /* Tag Declutter */
+        [data-rem-tags~="ter"] .hierarchy-editor__tag-bar__tag span {display: none;}
+        [data-rem-tags~="ter"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
