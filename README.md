@@ -67,6 +67,7 @@
 	<br>
 	<h2>What is the purpose of this Snippet?</h2>
     <h2>Use case</h2>
+	<img src ="https://user-images.githubusercontent.com/56161102/146404024-09d18a56-5c18-4699-8228-b8db8ba0b3c1.gif">
 	<img src ="https://user-images.githubusercontent.com/56161102/138455986-b8fd0d40-7dea-4d25-b14b-d394dd5744cc.png">
 </details>
 
@@ -156,6 +157,7 @@
 	</summary>
 	<h2>What is the purpose of this Snippet?</h2>
     <h2>Use case</h2>
+	<img src="https://user-images.githubusercontent.com/56161102/146405230-a133fde0-4c0b-48d9-aab3-71ccfc767c70.gif">
 </details>
 
 <details> 
