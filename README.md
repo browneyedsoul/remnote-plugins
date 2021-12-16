@@ -24,7 +24,7 @@
 	<br>
     <h2>Use case</h2>
 	<div>
-		<img src="https://user-images.githubusercontent.com/56161102/137571467-62a071e9-43b6-42c7-8f75-7046d541ccb1.png">
+		<img src="https://raw.githubusercontent.com/browneyedsoul/ImageRepository/main/Modern%20Dark%20Theme.png?token=ANMPGTXQWZX64HU6J6A5LGLBYSH5I">
 	</div>
 </details>
 
@@ -41,6 +41,7 @@
             <li>Combined UX : Block based Notion Editor + Outliner</li>
 		</ul>
 	<h2>Use case</h2>
+		<img src="/Users/minkipark/Documents/GitHub/remnote-css-library/Assets/Notion like No Bullet Editor Mode.gif">
 		<img src="https://user-images.githubusercontent.com/56161102/144811607-55235118-c43c-47f2-8eae-7b2424d4f0db.png"><br>
 		<img src="https://user-images.githubusercontent.com/56161102/144810507-83ed2e6a-cb6e-452a-9e26-2eb794e8442e.png">
 </details>
