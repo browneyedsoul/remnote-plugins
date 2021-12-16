@@ -41,7 +41,7 @@
             <li>Combined UX : Block based Notion Editor + Outliner</li>
 		</ul>
 	<h2>Use case</h2>
-		<img src="/Users/minkipark/Documents/GitHub/remnote-css-library/Assets/Notion like No Bullet Editor Mode.gif">
+		<img src="https://user-images.githubusercontent.com/56161102/146399780-efbefb64-dd60-4878-a7a0-9e84e74ce770.gif">
 		<img src="https://user-images.githubusercontent.com/56161102/144811607-55235118-c43c-47f2-8eae-7b2424d4f0db.png"><br>
 		<img src="https://user-images.githubusercontent.com/56161102/144810507-83ed2e6a-cb6e-452a-9e26-2eb794e8442e.png">
 </details>
