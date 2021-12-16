@@ -54,24 +54,6 @@
 	--calloutpurple-background-color-dark: #E4D5E3;
 	--text-shadow: 0.01em 0.01em 0.01em #727E84;
 	--text-shadow-dark: 0.01em 0.01em 0.01em #727E84;
-	--code-node-line-number-color-dark: #BDBEBE;
-	--code-node-line-number-background-color-dark: #E6E6E6;
-	--code-node-background-color: #F7F6F3;
-	--code-node-background-color-dark: #E6E6E6;
-	--code-node-number-color: ;
-	--code-node-number-color-dark: ;
-	--code-node-string-color: ;
-	--code-node-string-color-dark: ;
-	--code-node-punctuation-color: ;
-	--code-node-punctuation-color-dark: ;
-	--code-node-operator-color: ;
-	--code-node-operator-color-dark: ;
-	--code-node-function-color: ;
-	--code-node-function-color-dark: ;
-	--code-node-comment-color: ;
-	--code-node-comment-color-dark: ;
-	--code-node-keyword-color: ;
-	--code-node-keyword-color-dark: ;
 } 
 /*********** The Most important thing ***********/
 	.dark-mode {filter: unset;}
