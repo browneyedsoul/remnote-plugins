@@ -37,7 +37,7 @@
 	<br>
 	<h2>What is the purpose of this Snippet?</h2> 
 		<ul>
-            <li>For thoese who is thinking of Bullet based Outliner Editor is way too cluttered with crowded bullets.</li>
+            <li>For those who are thinking that Bullet-based Outliner Editor is way too cluttered with crowded bullet points.</li>
             <li>Combined UX : Block based Notion Editor + Outliner</li>
 		</ul>
 	<h2>Use case</h2>
