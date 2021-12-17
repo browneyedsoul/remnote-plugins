@@ -65,8 +65,8 @@
 	<h2>What is the purpose of this Snippet?</h2>
 	<h2>Use case</h2>
 	<img src="https://user-images.githubusercontent.com/56161102/133299689-ec0a686b-7377-4871-bf7a-2c49e7e3a62e.gif">
-	<br>
-	<img src="https://user-images.githubusercontent.com/56161102/129578910-f5bdf063-dc52-400d-97ff-5a327fa00819.png">
+	<img src="https://user-images.githubusercontent.com/56161102/146571056-077600a5-d68e-4328-b06c-d3a144aa97b3.gif">
+	<img src="https://user-images.githubusercontent.com/56161102/146570763-788094df-13e3-472f-af80-859a0250afb3.png">
 </details>
 
 <details> 
