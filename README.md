@@ -57,6 +57,7 @@
 	<h2>What is the purpose of this Snippet?</h2>
 	<h2>Use case</h2>
 	<img src ="https://user-images.githubusercontent.com/56161102/146559784-77b87fb2-6450-43a5-9926-bcd92507ee81.gif">
+	<img src ="https://user-images.githubusercontent.com/56161102/146574898-8c7c725a-ace3-4e4e-98ee-cb61ed72d972.png">
 </details>
 
 <details> 
