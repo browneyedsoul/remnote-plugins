@@ -45,6 +45,8 @@
         --code-node-comment-color-dark: #757E88;
         --code-node-keyword-color: ;
         --code-node-keyword-color-dark: #FA808E;
+        --code-node-url-color: ;
+        --code-node-url-color-dark: #A6FBDE;
 }
 /*********** Basic (Inline)CodeBlock Style ***********/
     /* Inline Code */
@@ -83,6 +85,7 @@
         .dark-mode .token.operator {color: var(--code-node-operator-color-dark);}
         .dark-mode .token.punctuation {color: var(--code-node-punctuation-color-dark);}
         .dark-mode .token.class-name {color: var(--code-node-classname-color-dark);}
+        .dark-mode .token.url {color: var(--code-node-url-color-dark); background-color: unset;}
     /* Codeblock Inline Caption */
         #code-node + span.quote, 
         #code-node + div span.quote {
