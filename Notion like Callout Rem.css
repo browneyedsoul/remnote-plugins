@@ -6,7 +6,7 @@
     --calloutorange-background-color: #FDEDD9;
     --calloutorange-background-color-dark: #8E5F06;
     --calloutyellow-background-color: #FDFEDD;
-    --calloutyellow-background-color-dark: #939000;
+    --calloutyellow-background-color-dark: #7F7C00;
     --calloutgreen-background-color: #E0FBE2;
     --calloutgreen-background-color-dark: #3A623C;
     --calloutblue-background-color: #E6F3F6;
@@ -85,6 +85,7 @@
     .dark-mode [data-rem-tags~="callout"] .rem-container.highlight-color--purple,
     .dark-mode [data-rem-tags~="calloutpurple"] .rem-container {background-color: var(--calloutpurple-background-color-dark) !important;
     }
+    
     .dark-mode [data-rem-tags~="callout"] .rem-text,
     .dark-mode [data-rem-tags~="calloutred"] .rem-text,
     .dark-mode [data-rem-tags~="calloutorange"] .rem-text,
@@ -101,18 +102,16 @@
     [data-rem-tags~="calloutyellow"] .items-center.hierarchy-editor__tag-bar__tag,
     [data-rem-tags~="calloutgreen"] .items-center.hierarchy-editor__tag-bar__tag,
     [data-rem-tags~="calloutblue"] .items-center.hierarchy-editor__tag-bar__tag,
-    [data-rem-tags~="calloutpurple"] .items-center.hierarchy-editor__tag-bar__tag {
-        background-color: transparent !important;
-    }
+    [data-rem-tags~="calloutpurple"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
+
     [data-rem-tags~="callout"] .hierarchy-editor__tag-bar__tag span, 
     [data-rem-tags~="calloutred"] .hierarchy-editor__tag-bar__tag span, 
     [data-rem-tags~="calloutorange"] .hierarchy-editor__tag-bar__tag span,
     [data-rem-tags~="calloutyellow"] .hierarchy-editor__tag-bar__tag span,
     [data-rem-tags~="calloutgreen"] .hierarchy-editor__tag-bar__tag span,
     [data-rem-tags~="calloutblue"] .hierarchy-editor__tag-bar__tag span,
-    [data-rem-tags~="calloutpurple"] .hierarchy-editor__tag-bar__tag span {
-        display: none;
-    }
+    [data-rem-tags~="calloutpurple"] .hierarchy-editor__tag-bar__tag span {display: none;}
+    
     [data-rem-tags~="callout"] .hierarchy-editor__tag-bar, 
     [data-rem-tags~="calloutred"] .hierarchy-editor__tag-bar, 
     [data-rem-tags~="calloutorange"] .hierarchy-editor__tag-bar,
