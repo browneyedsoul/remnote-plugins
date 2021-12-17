@@ -7,7 +7,7 @@
 <details> 
     <summary>How to Use?</summary>
 	<br>
-	<h3>Please check the <a href="https://forum.remnote.io/t/what-is-custom-css-and-how-do-i-use-it/1231">Custom CSS Tutorial</a> first</h3>
+	<h3>Please check the <a href="https://forum.remnote.io/t/what-is-custom-css-and-how-do-i-use-it/1231" target='_blank'>Custom CSS Tutorial</a> first</h3>
     <div markdown="1"></div> 
 </details>
 
