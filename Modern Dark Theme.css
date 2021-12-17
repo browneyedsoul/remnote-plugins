@@ -108,16 +108,16 @@
 	}
 /*********** Omnibar ***********/
 	/* Omnibar text */
-		.dark-mode [aria-label="Omnibar"] .css-eqifkM {
-			color: var(--darkmode-text);
-		}
+		.dark-mode [aria-label="Omnibar"] .css-eqifkM {color: var(--darkmode-text);		}
 	/* Selected */
 		.dark-mode .css-cMUIYB {background-color: var(--darkmode-background-selected);}
+	/* Focused Text */
+		.dark-mode .css-ZPdGi .css-kMEfqE .bg-warning-10 {color: red;}
 	/* Focused item */
 		.dark-mode .css-cCyKhM {background-color: #6D6D6D !important;}
 	/* Omnibar item text */
 		.dark-mode .css-bwtzVW {color: var(--darkmode-text);}
-	/* Top & Bottom */
+	/* Main Window */
 		.dark-mode .css-ZPdGi {background-color: var(--darkmode-background);}
 	/* Middle item including omni search bar */
 		.dark-mode .css-bwtzVW, 
