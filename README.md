@@ -7,7 +7,7 @@
 <details> 
     <summary>How to Use?</summary>
 	<br>
-	<h3>Please check the <a href="https://forum.remnote.io/t/what-is-custom-css-and-how-do-i-use-it/1231">Custom CSS Tutorial</a> first</h3>
+	<h3>Please check the <a href="https://forum.remnote.io/t/what-is-custom-css-and-how-do-i-use-it/1231" target='_blank'>Custom CSS Tutorial</a> first</h3>
     <div markdown="1"></div> 
 </details>
 
@@ -56,6 +56,7 @@
 	<br>
 	<h2>What is the purpose of this Snippet?</h2>
 	<h2>Use case</h2>
+	<img src ="https://user-images.githubusercontent.com/56161102/146559784-77b87fb2-6450-43a5-9926-bcd92507ee81.gif">
 </details>
 
 <details> 
@@ -74,6 +75,7 @@
 	<h2>What is the purpose of this Snippet?</h2>
 	<h2>Use case</h2>
 	<img src="https://user-images.githubusercontent.com/56161102/129580147-c0507bcc-a4d1-4522-b48d-d7efdf831e0f.gif">
+	<img src="https://user-images.githubusercontent.com/56161102/146560349-4c0e41c1-49c5-4ebc-bb15-c1429f6ca7aa.gif">
 </details>
 
 <details> 
@@ -81,6 +83,7 @@
 	<br>
 	<h2>What is the purpose of this Snippet?</h2>
 	<h2>Use case</h2>
+	<img src="https://user-images.githubusercontent.com/56161102/146560418-7044909a-7b8d-4a9a-b6ca-af4325ad556b.gif">
 </details>
 
 <details> 
@@ -166,7 +169,7 @@
 	<br>
 	<h2>What is the purpose of this Snippet?</h2>
 	<h2>Use case</h2>
-	<img src="https://user-images.githubusercontent.com/56161102/133104105-d94817c9-0ff9-4fdb-b221-da2d8a5c7d50.png">
+	<img src="https://user-images.githubusercontent.com/56161102/146559953-0e34a3a8-340c-42f5-b3e2-cd0a8f8afa10.gif">
 </details>
 
 <details> 
