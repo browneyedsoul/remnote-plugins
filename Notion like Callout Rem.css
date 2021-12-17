@@ -2,17 +2,17 @@
     --callout-background-color: #F7F6F3;
     --callout-background-color-dark: #DFDFDC;
     --calloutred-background-color: #FFE9EC;
-    --calloutred-background-color-dark: #E8CBC8;
+    --calloutred-background-color-dark: #931600;
     --calloutorange-background-color: #FDEDD9;
-    --calloutorange-background-color-dark: #E8DAC8;
+    --calloutorange-background-color-dark: #8E5F06;
     --calloutyellow-background-color: #FDFEDD;
-    --calloutyellow-background-color-dark: #E9E2BF;
+    --calloutyellow-background-color-dark: #939000;
     --calloutgreen-background-color: #E0FBE2;
-    --calloutgreen-background-color-dark: #CDE6D0;
+    --calloutgreen-background-color-dark: #3A623C;
     --calloutblue-background-color: #E6F3F6;
-    --calloutblue-background-color-dark: #D6E2E6;
+    --calloutblue-background-color-dark: #21546B;
     --calloutpurple-background-color: #FEEEFC;
-    --calloutpurple-background-color-dark: #E4D5E3;
+    --calloutpurple-background-color-dark: #70286C;
     --callout-padding: 15px 20px;
     --callout-margin-top: 7px;
     --callout-margin-bottom: 7px;
@@ -20,7 +20,6 @@
     --callout-margin-right: 0px;
     --callout-border-radius: 5px;
 }
-
 /*********** Custom rem bullet icon ***********/
     [data-rem-tags~="warning"] .rem-bullet__container,
     [data-rem-tags~="idea"] .rem-bullet__container {
@@ -34,9 +33,8 @@
         position: relative;
         left: 40px;
     }
-    [data-rem-tags~="warning"] .rem-bullet__container::before {content: "🚨" ;}
+    [data-rem-tags~="warning"] .rem-bullet__container::before {content: "🚨";}
     [data-rem-tags~="idea"] .rem-bullet__container::before {content: "💡";}
-
 /*********** Callout Rem Block Color-Variable & Pre-Coloured ***********/
     [data-rem-tags~="callout"] .rem-container,
     [data-rem-tags~="callout"] .rem-container.highlight-color--red,
@@ -58,7 +56,6 @@
         margin-right: var(--callout-margin-right);
         border-radius: var(--callout-border-radius);
     }
-    
     [data-rem-tags~="callout"] .rem-container {background-color: var(--callout-background-color);}
     [data-rem-tags~="callout"] .rem-container.highlight-color--red,
     [data-rem-tags~="calloutred"] .rem-container {background-color: var(--calloutred-background-color);}
@@ -72,7 +69,6 @@
     [data-rem-tags~="calloutblue"] .rem-container {background-color: var(--calloutblue-background-color);}
     [data-rem-tags~="callout"] .rem-container.highlight-color--purple,
     [data-rem-tags~="calloutpurple"] .rem-container {background-color: var(--calloutpurple-background-color);}
-
 /*********** Darkmode Compatibility ***********/
     .dark-mode [data-rem-tags~="callout"] .rem-container {background-color: var(--callout-background-color-dark) !important;}
     .dark-mode [data-rem-tags~="callout"] .rem-container.highlight-color--red,
@@ -89,17 +85,15 @@
     .dark-mode [data-rem-tags~="callout"] .rem-container.highlight-color--purple,
     .dark-mode [data-rem-tags~="calloutpurple"] .rem-container {background-color: var(--calloutpurple-background-color-dark) !important;
     }
-    
-    [data-rem-tags~="callout"] .rem-text,
-    [data-rem-tags~="calloutred"] .rem-text,
-    [data-rem-tags~="calloutorange"] .rem-text,
-    [data-rem-tags~="calloutyellow"] .rem-text,
-    [data-rem-tags~="calloutgreen"] .rem-text,
-    [data-rem-tags~="calloutblue"] .rem-text,
-    [data-rem-tags~="calloutpurple"] .rem-text {
-        color: black !important;
+    .dark-mode [data-rem-tags~="callout"] .rem-text,
+    .dark-mode [data-rem-tags~="calloutred"] .rem-text,
+    .dark-mode [data-rem-tags~="calloutorange"] .rem-text,
+    .dark-mode [data-rem-tags~="calloutyellow"] .rem-text,
+    .dark-mode [data-rem-tags~="calloutgreen"] .rem-text,
+    .dark-mode [data-rem-tags~="calloutblue"] .rem-text,
+    .dark-mode [data-rem-tags~="calloutpurple"] .rem-text {
+        color: #DFDFD5 !important;
     }   
-    
 /*********** Tag Declutter ***********/
     [data-rem-tags~="callout"] .items-center.hierarchy-editor__tag-bar__tag, 
     [data-rem-tags~="calloutred"] .items-center.hierarchy-editor__tag-bar__tag, 
@@ -107,16 +101,18 @@
     [data-rem-tags~="calloutyellow"] .items-center.hierarchy-editor__tag-bar__tag,
     [data-rem-tags~="calloutgreen"] .items-center.hierarchy-editor__tag-bar__tag,
     [data-rem-tags~="calloutblue"] .items-center.hierarchy-editor__tag-bar__tag,
-    [data-rem-tags~="calloutpurple"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
-
+    [data-rem-tags~="calloutpurple"] .items-center.hierarchy-editor__tag-bar__tag {
+        background-color: transparent !important;
+    }
     [data-rem-tags~="callout"] .hierarchy-editor__tag-bar__tag span, 
     [data-rem-tags~="calloutred"] .hierarchy-editor__tag-bar__tag span, 
     [data-rem-tags~="calloutorange"] .hierarchy-editor__tag-bar__tag span,
     [data-rem-tags~="calloutyellow"] .hierarchy-editor__tag-bar__tag span,
     [data-rem-tags~="calloutgreen"] .hierarchy-editor__tag-bar__tag span,
     [data-rem-tags~="calloutblue"] .hierarchy-editor__tag-bar__tag span,
-    [data-rem-tags~="calloutpurple"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    
+    [data-rem-tags~="calloutpurple"] .hierarchy-editor__tag-bar__tag span {
+        display: none;
+    }
     [data-rem-tags~="callout"] .hierarchy-editor__tag-bar, 
     [data-rem-tags~="calloutred"] .hierarchy-editor__tag-bar, 
     [data-rem-tags~="calloutorange"] .hierarchy-editor__tag-bar,
