@@ -1,23 +1,31 @@
 :root {--hide-answer-filter: contrast(0%) brightness(1.5);}
 /*********** Hide ***********/
-	[data-rem-container-tags~="active-recall"] span:not(:hover):not([data-rem-tags~="learned"]).cloze,
-	[data-rem-container-tags~="active-recall"] span.only_in_answer:not(:hover):not([data-rem-tags~="learned"]) {
-	    background-color: white;
-	    filter: var(--hide-answer-filter);
-	    border-radius: 5px;
-	    padding: 2px 3px 2px 3px;
-	    margin: 0px 3px 0px 3px;
-	    position: relative;
-	    top: -2px;
-	}
-	[data-rem-container-tags~="active-recall"] .cloze {
-		background-color: black;
-		color: yellow;
-		border-radius: 5px;
-		border-bottom: 2px solid red;
-		padding: 2px 3px 2px 3px;
-		margin: 0px 3px 0px 3px;
-	}
+	/* Inline Card */
+		[data-rem-container-tags~="active-recall"] span:not(:hover):not([data-rem-tags~="learned"]).cloze,
+		[data-rem-container-tags~="active-recall"] span.only_in_answer:not(:hover):not([data-rem-tags~="learned"]) {
+		    background-color: white;
+		    filter: var(--hide-answer-filter);
+		    border-radius: 5px;
+		    padding: 2px 3px 2px 3px;
+		    margin: 0px 3px 0px 3px;
+		    position: relative;
+		    top: -2px;
+		}
+	/* List Card */
+		[data-rem-container-tags~="active-recall"] > div:last-child .node-card-item:not(:hover) {
+			background-color: white !important;
+		    filter: var(--hide-answer-filter);
+		    border-radius: 5px;
+		}
+	/* Cloze */
+		[data-rem-container-tags~="active-recall"] .cloze {
+			background-color: black;
+			color: yellow;
+			border-radius: 5px;
+			border-bottom: 2px solid red;
+			padding: 2px 3px 2px 3px;
+			margin: 0px 3px 0px 3px;
+		}
 /*********** Darkmode Compatibility ***********/
 	.dark-mode .cloze {
 		background-color: rgba(210,225,248,0);
@@ -31,7 +39,5 @@
 	.dark-mode #show-embedded-search-button {filter: invert(1);}
 /*********** Tag Declutter ***********/
 	[data-rem-tags~="active-recall"] .hierarchy-editor__tag-bar,
-	[data-rem-tags~="active-recall"] .items-center.hierarchy-editor__tag-bar__tag {
-		background-color: transparent !important;
-	}
+	[data-rem-tags~="active-recall"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
 	[data-rem-tags~="active-recall"] .hierarchy-editor__tag-bar__tag span {display: none;}
