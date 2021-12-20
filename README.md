@@ -5,12 +5,15 @@
 
 ### Please check the [Custom CSS Tutorial](https://forum.remnote.io/t/what-is-custom-css-and-how-do-i-use-it/1231) first
 
+### The Standard Way
+- Click the css file and copy the text.
+
 ### The Simpler Way
-1. Copy the CSSs started with `@import` down below
+- Copy the CSSs started with `@import` down below
 
-2. Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CSS power-up page Code Block in which the language button adjusted to CSS.
+↓
 
-3. Then, Your Custom CSS will always be up to date.
+Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CSS power-up page Code Block in which the language button adjusted to CSS. (The latter way makes Your Custom CSS will always be up to date.)
 
 > PS: All the latest snippets are optimized for `Modern Dark Theme`
 
