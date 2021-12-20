@@ -13,62 +13,50 @@
 [data-rem-tags~="terminal"] .rem-bullet__container {padding-left: 10px;}
 [data-rem-tags~="terminal"] .rem-bullet {filter: invert(1);}
 
-div.rem[data-rem-tags~="terminal"] {
-	background-color: var(--console-background-color);
+[data-rem-container-tags~="terminal"] {
+	background-color: #1F1F1F;
 	color: #D0D0CD;
-    margin-left: 25px;       
+    margin-left: 24px;       
     margin-right: 0px;  
 }
-	[data-rem-tags~="terminal"] .rem-text {
+	[data-rem-container-tags~="terminal"] > .TreeNode {
+		border-left-color: #000 !important;
+		left: 10px;
+	}
+	[data-rem-container-tags~="terminal"] .rem-text {
 		font-family: "Roboto Mono", "Fira code", monospace;
-		font-size: 14px;
+		font-size: 0.9em;
 	}
 
 /*********** Terminal Text Color ***********/
-	[data-rem-tags~="terminal"] .rem-text .quote {
+	[data-rem-container-tags~="terminal"] .rem-text .quote,
+	[data-rem-container-tags~="terminal"] .rem-text .highlight-color--red,
+	[data-rem-container-tags~="terminal"] .rem-text .highlight-color--orange,
+	[data-rem-container-tags~="terminal"] .rem-text .highlight-color--yellow,
+	[data-rem-container-tags~="terminal"] .rem-text .highlight-color--green,
+	[data-rem-container-tags~="terminal"] .rem-text .highlight-color--blue,
+	[data-rem-container-tags~="terminal"] .rem-text .highlight-color--purple {
+		background-color: unset !important;
+	}
+	[data-rem-container-tags~="terminal"] .rem-text .quote {
 		background-color: unset !important;
 		color: var(--terminal-comment-text) !important; 
 	}
 	
-	[data-rem-tags~="terminal"] .rem-text .highlight-color--red {
-		background-color: unset !important;
-		color: var(--terminal-red-text); 
-	}
-	
-	[data-rem-tags~="terminal"] .rem-text .highlight-color--orange {
-	 	background-color: unset !important;
-	 	color: var(--terminal-orange-text);
-	}
-	
-	[data-rem-tags~="terminal"] .rem-text .highlight-color--yellow {
-		background-color: unset !important;
-		color: var(--terminal-yellow-text);
-	}
-	
-	[data-rem-tags~="terminal"] .rem-text .highlight-color--green {
-		background-color: unset !important;
-		color: var(--terminal-green-text);
-	}
-	
-	[data-rem-tags~="terminal"] .rem-text .highlight-color--blue {
-		background-color: unset !important;
-		color: var(--terminal-blue-text);
-	}
-	
-	[data-rem-tags~="terminal"] .rem-text .highlight-color--purple {
-		background-color: unset !important;
-		color: var(--terminal-purple-text);
-	} 
+	[data-rem-container-tags~="terminal"] .rem-text .highlight-color--red {color: var(--terminal-red-text) !important;}
+	[data-rem-container-tags~="terminal"] .rem-text .highlight-color--orange {color: var(--terminal-orange-text);}
+	[data-rem-container-tags~="terminal"] .rem-text .highlight-color--yellow {color: var(--terminal-yellow-text);}	
+	[data-rem-container-tags~="terminal"] .rem-text .highlight-color--green {color: var(--terminal-green-text);}
+	[data-rem-container-tags~="terminal"] .rem-text .highlight-color--blue {color: var(--terminal-blue-text);}
+	[data-rem-container-tags~="terminal"] .rem-text .highlight-color--purple {color: var(--terminal-purple-text);} 
 	
 	.TreeNode--list--in-card-content {
 		border-left: 0.1px solid white !important;
 	}
-
 /*********** Declutter Tag ***********/
 	[data-rem-tags~="terminal"] .hierarchy-editor__tag-bar__tag {
 		color: transparent;
 		background-color: transparent;
 	}
-	
 	[data-rem-tags~="terminal"] .hierarchy-editor__tag-bar__tag span {display: none;}
 	[data-rem-tags~="terminal"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
