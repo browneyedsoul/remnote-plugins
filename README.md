@@ -312,6 +312,8 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 		@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Easily%20Discernible%20Inline%20Card%20layout.css");
 	/* Strikethrough Workaround */
 		@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Strikethrough.css");
+	/* Caption */
+		@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Image%2C%20Codeblock%20Caption%20like%20in%20Notion.css");
 	/* Rating Bar */
 		@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Prepositive%20Rating%20Bar.css"); 
 	/* UI Declutter Series */
