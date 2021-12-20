@@ -13,7 +13,7 @@
 
 ↓
 
-Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CSS power-up page Code Block in which the language button adjusted to CSS. (The latter way makes Your Custom CSS will always be up to date.)
+Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CSS power-up page Code Block in which the language button adjusted to CSS. (The latter way makes Your Custom CSS always up to date.)
 
 > PS: All the latest snippets are optimized for `Modern Dark Theme`
 
