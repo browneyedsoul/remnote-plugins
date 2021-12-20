@@ -271,7 +271,7 @@
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/UI%20Declutter%20Series/RemNote%20UIUX-Declutter.css");
 ```
-<img src="https://user-images.githubusercontent.com/56161102/131240536-c039347c-3fce-4cc4-a568-048606a4d383.png">
+<img src="">
 </details>
 
 
