@@ -5,7 +5,6 @@
 	font-size: 14px;
 }
 
-[data-rem-tags~="caption"]:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar, 
-[data-rem-tags~="incaption"]:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar {
-   display: none;
-}
+/*********** Tag Declutter ***********/
+	[data-rem-tags~="caption"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
+	[data-rem-tags~="caption"] .hierarchy-editor__tag-bar__tag span {display: none;}
