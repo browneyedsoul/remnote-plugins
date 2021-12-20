@@ -283,7 +283,7 @@
 	@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Dark%20Theme.css");
 /* Editor Mode */
 	/* Notion like No Bullet Editor Mode */
-		@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/");
+		@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20No%20Bullet%20Editor%20Mode.css"); 
 	/* Branch Emphasizing Editor Mode(need to be polished) */
 		/* @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/"); */
 /* Tricks */
