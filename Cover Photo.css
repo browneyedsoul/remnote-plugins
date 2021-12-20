@@ -1,0 +1,17 @@
+[data-document-tags~=""] #DocumentTopRow::before {
+	content: "";
+	display: block;
+	height: 400px;
+	margin-bottom: 10px;
+	background-size: 100% 100%; 
+	/******************************************************************
+    Change the background-size option to your cover image tastes.**
+	➊ background-size: 100% 100%; ➞ Full responsive but the image can be ugly.
+	➋ background-size: contain; ➞ Height fixed, Responsive to width but some margins can be made.
+	➌ background-size: cover; ➞ I don't care about the cover image cropped.
+	******************************************************************/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("");
+	background-color: ;
+}
