@@ -21,6 +21,8 @@
         --code-node-background-color-dark: #242424;
         --code-node-plain-color: ;
         --code-node-plain-color-dark: #BDBEBE;
+        --code-node-atrule-color: ;
+        --code-node-atrule-color-dark: #AAFF9B;
         --code-node-number-color: ;
         --code-node-number-color-dark: #ADADAD;
         --code-node-string-color: ;
@@ -78,6 +80,7 @@
         .dark-mode .token.property {color: var(--code-node-property-color-dark);}
         .dark-mode #code-node:not(.token.property):not(.token.function):not(.token.string):not(.token.builtin):not(.token.comment):not(.token.selector):not(.token.keyword):not(.token.number):not(.token.operator):not(.token.punctuation),
         .dark-mode .token.plain {color: var(--code-node-plain-color-dark);}
+        .dark-mode .token.atrule {color: var(--code-node-atrule-color-dark);}
         .dark-mode .token.function {color: var(--code-node-function-color-dark);}
         .dark-mode .token.string {color: var(--code-node-string-color-dark) !important;}
         .dark-mode .token.selector {color: var(--code-node-selector-color-dark);}
