@@ -23,6 +23,10 @@
         --code-node-plain-color-dark: #BDBEBE;
         --code-node-atrule-color: ;
         --code-node-atrule-color-dark: #AAFF9B;
+        --code-node-attribute-color: ;
+        --code-node-attribute-color-dark: #B699EB;
+        --code-node-attribute-value-color: ;
+        --code-node-attribute-value-color-dark: #A8D1FF;
         --code-node-number-color: ;
         --code-node-number-color-dark: #ADADAD;
         --code-node-string-color: ;
@@ -34,7 +38,7 @@
         --code-node-property-color: ;
         --code-node-property-color-dark: #FFB47B;
         --code-node-punctuation-color: ;
-        --code-node-punctuation-color-dark: #FFDC00;
+        --code-node-punctuation-color-dark: #E5E8EB;
         --code-node-operator-color: ;
         --code-node-operator-color-dark: #DD7481;
         --code-node-builtin-color: ;
@@ -52,7 +56,7 @@
         --code-node-keyword-color: ;
         --code-node-keyword-color-dark: #FA808E;
         --code-node-tag-color: ;
-        --code-node-tag-color-dark: #F761A6;
+        --code-node-tag-color-dark: #90EBA7;
         --code-node-url-color: ;
         --code-node-url-color-dark: #A6FBDE;
 }
@@ -99,6 +103,14 @@
         .dark-mode .token.class-name {color: var(--code-node-classname-color-dark);}
         .dark-mode .token.class-name {color: var(--code-node-classname-color-dark);}
         .dark-mode .token.url {color: var(--code-node-url-color-dark); background-color: unset;}
+        .dark-mode .token.doctype.punctuation {color: var(--code-node-punctuation-color-dark);}
+		.dark-mode .token.tag.punctuation {color: var(--code-node-punctuation-color-dark);}
+		.dark-mode .token.tag.attr-value.punctuation {color: var(--code-node-punctuation-color-dark);}
+		.dark-mode .token.tag.attr-value.punctuation.attr-equals {color: var(--code-node-punctuation-color-dark);}
+		.dark-mode .token.doctype.doctype-tag {color: var(--code-node-punctuation-color-dark);}
+		.dark-mode .token.doctype.name {color: var(--code-node-punctuation-color-dark);}
+		.dark-mode .token.tag.attr-name {color: var(--code-node-attribute-color-dark);}
+		.dark-mode .token.tag.attr-value {color: var(--code-node-attribute-value-color-dark);}
     /* Codeblock Inline Caption */
         #code-node + span.quote, 
         #code-node + div span.quote {
