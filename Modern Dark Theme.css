@@ -11,13 +11,14 @@
 	--darkmode-background-selected-darker: #1B1F23;
 	--lightmode-background-selected: #B7B7B7;
 	--darkmode-text: #DFDFD5;
+	--darkmode-text-bold: #AEEDED;
 	--darkmode-contrast: yellow;
 	--quote-text-dark: #F1FA8C;
-	--quote-background-dark: #5E6A70;
+	--quote-background-dark: #252525;
 	--reference-text: darkred;
 	--reference-text-dark: #FDD7DA;
 	--reference-background: #FFF9D7;
-	--reference-background-dark: #4A5458;
+	--reference-background-dark: #252525;
 	--line-color: #DDDDDD;
 	--line-color-dark: #535353;
 	--link-node-color-dark: #94D2FF;
@@ -185,6 +186,10 @@
 		.dark-mode .css-ZPdGi {
 			color: var(--darkmode-text);
 		}
+	/* Bold Text */
+		.dark-mode .rem-text .bold:not(.rem-header--1 .bold):not(.rem-header--2 .bold):not(.rem-header--3 .bold):not([data-rem-tags~="highlight"] .bold):not(.bold.highlight-color--red):not(.bold.highlight-color--orange):not(.bold.highlight-color--yellow):not(.bold.highlight-color--green):not(.bold.highlight-color--blue):not(.bold.highlight-color--purple) {
+			color: var(--darkmode-text-bold);
+		}
 	/* Tag Searching Text */
 		.work-in-progress-tag {color: black;}
 	/* Hierarchy Editor - LinkNode, Hyperlink */
@@ -217,9 +222,8 @@
 			background-color: unset !important;
 		}
 	/* Hierarchy Editor - Calendar icon */
-		.rem-calendar-icon--in-editor,
-		.rem-container--not-included-in-document-scope .file.text.small.icon {
-			color: var(--darkmode-text);
+		.text-icon.rem-calendar-icon.rem-calendar-icon--in-reference.fill-current.css-dmBUxZ {
+			color: var(--darkmode-contrast);
 		}
 	/* Hierarchy Editor - Left-side Hiearchy Editor Margin */
 		.document--ltr {padding: 0px 0px 0px 40px;}
@@ -764,4 +768,4 @@
 	}
 	.dark-mode .hover\:bg-gray-5:hover:not(#search-result__result) {}
 /*********** Metadata Page ***********/
-	#RemPage {color: var(--darkmode-text);}
+	#RemPage {color: var(--darkmode-text);
