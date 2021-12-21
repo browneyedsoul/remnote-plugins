@@ -41,6 +41,8 @@
         --code-node-function-color-dark: #A3CBF7;
         --code-node-constant-color: ;
         --code-node-constant-color-dark: #AAE8E8;
+        --code-node-variable-color: ;
+        --code-node-variable-color-dark: #FFA400;
         --code-node-classname-color: ;
         --code-node-classname-color-dark: #DD4A68;
         --code-node-comment-color: ;
@@ -86,6 +88,7 @@
         .dark-mode .token.number {color: var(--code-node-number-color-dark);}
         .dark-mode .token.operator {color: var(--code-node-operator-color-dark);}
         .dark-mode .token.constant {color: var(--code-node-constant-color-dark);}
+        .dark-mode .token.variable {color: var(--code-node-variable-color-dark);}
         .dark-mode .token.class-name {color: var(--code-node-classname-color-dark);}
         .dark-mode .token.class-name {color: var(--code-node-classname-color-dark);}
         .dark-mode .token.url {color: var(--code-node-url-color-dark); background-color: unset;}
@@ -131,7 +134,6 @@
     #code-node__change-language-dropdown:hover {
         position: relative;
         opacity: 70%;
-        background-color: ;
         padding-right: 5px;
         border-radius: 5px;
     }
@@ -169,7 +171,6 @@
     [data-rem-tags~="ter"] #code-node__change-language-dropdown:hover {
         position: relative;
         opacity: 70%;
-        background-color: ;
         padding-right: 5px;
         border-radius: 5px;
     }
