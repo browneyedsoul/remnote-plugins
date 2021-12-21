@@ -51,6 +51,8 @@
         --code-node-comment-color-dark: #757E88;
         --code-node-keyword-color: ;
         --code-node-keyword-color-dark: #FA808E;
+        --code-node-tag-color: ;
+        --code-node-tag-color-dark: #F761A6;
         --code-node-url-color: ;
         --code-node-url-color-dark: #A6FBDE;
 }
@@ -81,6 +83,8 @@
         .dark-mode #code-node:not(.token.property):not(.token.function):not(.token.string):not(.token.builtin):not(.token.comment):not(.token.selector):not(.token.keyword):not(.token.number):not(.token.operator):not(.token.punctuation),
         .dark-mode .token.plain {color: var(--code-node-plain-color-dark);}
         .dark-mode .token.atrule {color: var(--code-node-atrule-color-dark);}
+        .dark-mode .token.tag {color: var(--code-node-tag-color-dark);}
+        .dark-mode .token.tag.punctuation {color: var(--code-node-tag-color-dark);}
         .dark-mode .token.function {color: var(--code-node-function-color-dark);}
         .dark-mode .token.string {color: var(--code-node-string-color-dark) !important;}
         .dark-mode .token.selector {color: var(--code-node-selector-color-dark);}
