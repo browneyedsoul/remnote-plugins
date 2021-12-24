@@ -768,4 +768,4 @@
 	}
 	.dark-mode .hover\:bg-gray-5:hover:not(#search-result__result) {}
 /*********** Metadata Page ***********/
-	#RemPage {color: var(--darkmode-text);
+	#RemPage {color: var(--darkmode-text);}
