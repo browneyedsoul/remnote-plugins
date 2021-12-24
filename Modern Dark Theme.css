@@ -125,7 +125,7 @@
 			color: black;
 		}
 	/* Residue Card Number */
-		.bg-gray-10 {
+		.Queue .bg-gray-10 {
 			background-color: var(--darkmode-selected-darker);
 			border:  1px solid white;
 		}
@@ -300,7 +300,10 @@
 		}
 		.dark-mode .hierarchy-editor__tag-bar {border: 1px soild white !important;}
 		.dark-mode .hierarchy-editor__tag-bar__tag__delete {color: var(--darkmode-contrast);}
-		.dark-mode .backlink-counter.text-gray-70 {color: var(--darkmode-contrast);}
+		.dark-mode .backlink-counter.text-gray-70 {
+			color: var(--darkmode-contrast);
+			background-color: var(--darkmode-selected-darker);
+		}
 	/* Hierarchy Editor - Right Side Backlink Numbers */
 		.float-end .my-2 {
 			margin-top: .4rem;
