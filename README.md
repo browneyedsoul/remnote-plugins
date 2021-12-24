@@ -234,7 +234,7 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Prepositive%20Rating%20Bar.css"); 
 ```
-<img src="">
+<img src="https://user-images.githubusercontent.com/56161102/147358870-9dbf9637-c498-4fb2-8b91-66e13bae8263.gif">
 </details>
 
 <details> 
