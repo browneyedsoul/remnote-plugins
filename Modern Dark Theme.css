@@ -659,6 +659,7 @@
 			font-size: 14px !important;
 			border-radius: 6px !important;
 		}
+		#document-sidebar .highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
 	/* Sidebar list item focused*/
 		#document-sidebar .bg-primary-5 .RichTextViewer {color: white;}
 		#document-sidebar .rounded-md.highlight-color--red .RichTextViewer,
