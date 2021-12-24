@@ -163,14 +163,19 @@
 	    left: 20px;
 		margin-right: 20px;
 	} 
-	.node-card-item:before {
-		margin-left: -0.2rem;
-		background-color: var(--node-card-item-color);
-	}
-	.dark-mode .node-card-item:before {
-		margin-left: -0.2rem;
-		background-color: var(--node-card-item-color-dark);
-	}
+	/* List Card Item */
+		.node-card-item:before {
+			margin-left: -0.2rem;
+			background-color: var(--node-card-item-color);
+		}
+		.dark-mode .node-card-item:before {
+			margin-left: -0.2rem;
+			background-color: var(--node-card-item-color-dark);
+		}
+	/* Portal */
+		#hierarchy-editor .portal-tree-node-box {
+			margin-left: -3px;
+		}
 /*********** Rem Hierarchy Text Editor Line Height ***********/
 	.EditorContainer {line-height: 140%;}
 /*********** Normal Rem-text ***********/
