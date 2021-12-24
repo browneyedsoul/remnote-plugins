@@ -99,16 +99,81 @@
 			background-color: var(--darkmode-background);
 		}
 	/* Card Prompt */
+		.spaced-repetition__prompt .rem-bullet__document {
+			color: black;
+			font-weight: 600;
+		}
 		.dark-mode .spaced-repetition__prompt__breadcrumbs,
 		.dark-mode .spaced-repetition__prompt .rem-bullet__document,
 		.dark-mode .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon,
 		.dark-mode .spaced-repetition__prompt,
 		.dark-mode .spaced-repetition__prompt__breadcrumbs {
 			color: var(--darkmode-text) !important;
-			background-color: var(--darkmode-background);
+			background-color: var(--darkmode-background) !important;
+		}
+	/* Question Span */
+		.queue-text-large-font {
+			font-size: 24px;
+		}
+		.basic_card_rem_type > .RichTextViewer {
+			font-family: 'Helvetica Neue';
 		}
 	/* Answer Part Text */
 		.dark-mode .spaced-repetition__prompt .fill-in-the-blank--revealed {padding: 5px; border-radius: 5px;}
+	/* Select Cluster Hover */
+		.hover\:bg-UI03:hover {
+			color: black;
+		}
+	/* Residue Card Number */
+		.bg-gray-10 {
+			background-color: var(--darkmode-selected-darker);
+			border:  1px solid white;
+		}
+	/* Flashcard for Select Menu */
+		.font-semibold.text-gray-100 {
+			color: var(--darmode-text);
+		}
+		.queue__title .h-6 > svg {
+			color: var(--darkmode-contrast);
+			fill: var(--darkmode-contrast);
+		}
+	/* Border */
+		.Queue {
+			border: 1px solid white;
+		}
+	/* Answer */
+		.fill-in-the-blank.bg-white {
+			padding: 5px;
+			border-radius: 5px;
+		}
+	/* Breadcrumbs Folder and File icon */
+		.mr-1.css-cpJTyT,
+		.icon--document {
+			color: var(--darkmode-text);
+		}
+
+		.Queue .RichTextViewer.px-1.truncate {
+			background-color: var(--darkmode-text);
+		}
+		.Queue .css-dLXVVj {
+			color: var(--darkmode-contrast);
+		}
+	/* Katex */
+		.Queue .katex {
+			background-color: unset;
+		}
+	/* Question Title thumbnail */
+		.rem-bullet__document .RichTextViewer .thumbnail--with-width {
+			height: 1em;
+			width: auto;
+		}
+	/* Cloze */
+		.Queue .RichTextViewer .cloze {
+			background-color: unset;
+			padding: 5px;
+			border-radius: 5px;
+			border-bottom: 2px solid var(--darkmode-contrast);
+		} 
 /*********** Card Browser ***********/
 	.dark-mode #card-table-page {
 		color: var(--darkmode-text);
@@ -156,6 +221,8 @@
 			border-radius: 5px;
 		} 
 /*********** Icon ***********/
+	/* Calendar icon */
+		.dark-mode .rem-calendar-icon.text-text {color: var(--darkmode-text);}
 	/* Slot icon */
 		.dark-mode .css-bMKjkl {color: var(--darkmode-text);} 
 	/* Power-up icon */
@@ -616,6 +683,9 @@
 			#document-sidebar_top .block .flex-grow {
 				font-family: "Roboto Mono", "Fira code", Monospace;
 				color: var(--darkmode-contrast);
+			}
+			#document-sidebar_top .block > div > div.bg-gray-10-transparent {
+				zoom: 0.9;
 			}
 	/* Sidebar Pinned, Draft, Archive Symbol (Sidebar Item Top Level) */
 		#document-sidebar .title.cursor-pointer .css-fqRAnH {
