@@ -47,10 +47,9 @@
     .rem-bullet__document > span > div {
         display: inline;
      }
-    
-    .Queue .spaced-repetition__prompt [data-rmiz-wrap="visible"] {
-        height: 1em !important;
-        width: auto !important;
+    .Queue .fill-in-the-blank {
+        display: inline-flex;
+        vertical-align: top;
     }
 /*********** Document Title ***********/
     #DocumentTitle .inline-block, 
