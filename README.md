@@ -25,10 +25,8 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Dark%20Theme.css");
 ```
-
-<div>
-	<img src="https://raw.githubusercontent.com/browneyedsoul/ImageRepository/main/Modern%20Dark%20Theme.png?token=ANMPGTXQWZX64HU6J6A5LGLBYSH5I">
-</div>
+<img src="https://user-images.githubusercontent.com/56161102/147359607-9d06984a-af5c-4c42-819f-b75c8b38a802.png">
+<img src="https://user-images.githubusercontent.com/56161102/147359654-4681a66a-f774-43f9-93ae-e6057db4cef6.png">
 </details>
 
 
