@@ -179,7 +179,6 @@
 		display: grid;
 		grid-auto-rows: auto;
 		border-left: unset !important;
-
 		overflow: auto;	
 		white-space: pre;
 	}
@@ -692,7 +691,46 @@
 		border-left: 0.05em solid var(--table-border-color-dark);
 	}
 /*********** Table Column Color Preset ***********/
-	#hierarchy-editor .TreeNode {border-color: var(--table-columnrow-background-color)}
+	#hierarchy-editor [data-rem-container-tags~="table90"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table120"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table150"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table180"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table210"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table240"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table270"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table300"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table330"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table360"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table390"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table420"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table450"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table480"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table510"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table540"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table570"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table600"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table630"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table660"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table690"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table720"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table750"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table780"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table810"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table840"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table870"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table900"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table930"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table960"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table990"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table1020"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table1050"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table1080"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table1110"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table1140"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table1170"] .TreeNode,
+	#hierarchy-editor [data-rem-container-tags~="table1200"] .TreeNode {
+		border-color: var(--table-columnrow-background-color);
+	}
 	[data-rem-tags~="tablecolor"] {
 		background-color: var(--table-columnrow-background-color);
 		font-weight: bold;
