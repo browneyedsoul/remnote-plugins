@@ -17,6 +17,8 @@
 		--disabled-practice-color: #959595;
 	/* TreeNode Color */
 		--line-color: #DDDDDD;
+		--node-card-item-color: red;
+		--node-card-item-color-dark: yellow;
 } 
 /*********** Disable Bullet Event ***********/
 	.rem-bullet__container,
@@ -161,6 +163,14 @@
 	    left: 20px;
 		margin-right: 20px;
 	} 
+	.node-card-item:before {
+		margin-left: 0;
+		background-color: var(--node-card-item-color);
+	}
+	.dark-mode .node-card-item:before {
+		margin-left: 0;
+		background-color: var(--node-card-item-color-dark);
+	}
 /*********** Rem Hierarchy Text Editor Line Height ***********/
 	.EditorContainer {line-height: 140%;}
 /*********** Normal Rem-text ***********/
