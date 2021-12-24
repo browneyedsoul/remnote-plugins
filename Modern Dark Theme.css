@@ -288,13 +288,9 @@
 		.dark-mode .latex-node--focused:not(.latex-node--block) .katex {
 			background-color: unset !important;
 		}
-	/* Hierarchy Editor - Calendar icon */
-		.text-icon.rem-calendar-icon.rem-calendar-icon--in-reference.fill-current.css-dmBUxZ {
-			color: var(--darkmode-contrast);
-		}
 	/* Hierarchy Editor - Left-side Hiearchy Editor Margin */
 		.document--ltr {padding: 0px 0px 0px 40px;}
-	/* Hierarchy Editor - Source & Tags & Tagbar*/
+	/* Hierarchy Editor - Source & Tags & Tagbar & Backlinks */
 		.dark-mode .rem-reference-link {background-color: var(--calloutyellow-background-color-dark);}
 		.dark-mode #DocumentTopRow .flex.flex-row.items-center.justify-center.bg-gray-10.text-gray-70.py-1.px-2.rounded.text-sm.font-medium.cursor-pointer.truncate,
 		.dark-mode .hierarchy-editor__tag-bar__tag {
@@ -304,6 +300,7 @@
 		}
 		.dark-mode .hierarchy-editor__tag-bar {border: 1px soild white !important;}
 		.dark-mode .hierarchy-editor__tag-bar__tag__delete {color: var(--darkmode-contrast);}
+		.dark-mode .backlink-counter.text-gray-70 {color: var(--darkmode-contrast);}
 	/* Hierarchy Editor - Right Side Backlink Numbers */
 		.float-end .my-2 {
 			margin-top: .4rem;
@@ -815,14 +812,18 @@
 				border-radius: 5px;
 				z-index: 0;
 			}
-			.dark-mode .search-result__rem-breadcrumb {}
+			.dark-mode .search-result__rem-breadcrumb {
+
+			}
 		/* Slash Command Focused Item */
 			.z-30 [data-search-result="search-result-item"].bg-gray-5 {
 				color: black;
 				background-color: #D1D1D1;
 			}
 		/* Slash Command Search Focused Text */
-			.dark-mode .bg-white #search-results__result .text-gray-100 {}
+			.dark-mode .bg-white #search-results__result .text-gray-100 {
+
+			}
 	/* Settings Page Sidebar Hover Effect */
 		.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {
 			background-color: #000;
@@ -837,6 +838,8 @@
 		color: unset;
 		background-color: #D1D1D1;
 	}
-	.dark-mode .hover\:bg-gray-5:hover:not(#search-result__result) {}
+	.dark-mode .hover\:bg-gray-5:hover:not(#search-result__result) {
+		
+	}
 /*********** Metadata Page ***********/
 	#RemPage {color: var(--darkmode-text);}
