@@ -509,8 +509,6 @@
 			.popup-menu > div {border: 1px solid white;}
 			.popup-menu .bg-white .css-kbbFlF:hover {background-color: var(--lightmode-background-selected);}
 			.popup-menu .bg-white .css-kbbFlF > div {color: var(--darkmode-text);}
-		/* 3 Dots Button for Image Details */
-			.image-node > div > span > div {zoom: 0.6;}
 /*********** Codeblock ***********/	
 	#code-node {background-color: var(--code-node-background-color);}
 	.dark-mode #code-node {background-color: var(--code-node-background-color-dark);}
@@ -642,8 +640,6 @@
 		.hierarchy-editor-list__sticky-top__rem-container .rem-is-custom-rem-type--in-body {zoom: 90%;}
 	/* RemNote Date Picker */
 		.react-datepicker.search-results__date-picker {background-color: #ffffff !important;}
-	/* RemNote Help Page Top */
-		.css-bBkpDG {filter: invert(1);}
 	/* Account Capsule */
 		#document-sidebar__account-capsule {background-color: #FFFFFF;}
 		#document-sidebar__account-capsule:hover {background-color: var(--darkmode-text) !important;}
@@ -846,3 +842,21 @@
 	}
 /*********** Metadata Page ***********/
 	#RemPage {color: var(--darkmode-text);}
+/*********** Help & Tutorial Page ***********/
+	/* RemNote Help Page Container */
+		.dark-mode #HelpPageContainer #HelpPage {
+			filter: invert(1);
+		}
+	/* RemNote Help Page Sidebar Top */
+		.dark-mode #document-sidebar_top .css-cPmPhh {
+			color: var(--darkmode-text);
+		}
+	/* RemNote Help Page Sidebar Bottom */
+		.dark-mode #document-sidebar .w-full > a,
+		#main.dark-mode #content #document-sidebar a {
+			color: var(--darkmode-contrast) !important;
+		}
+	/* Backward icon */
+		.dark-mode [data-icon="backward"] {
+			color: var(--darkmode-contrast);
+		}
