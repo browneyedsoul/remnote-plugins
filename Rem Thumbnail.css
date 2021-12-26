@@ -176,7 +176,6 @@
 /*********** Tag bar ***********/
     #DropToOpenAsDocument .inline-block, 
     #DropToOpenAsDocument .tumbnail--with-width,
-    .hierarchy-editor__tag-bar__tag span,
     .hierarchy-editor__tag-bar__tag .tumbnail--with-width,
     .hierarchy-editor__tag-bar__tag .inline-block,
     .hierarchy-editor__tag-bar__tag .inline-block.align-text-top.group,
