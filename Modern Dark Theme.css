@@ -304,6 +304,14 @@
 			color: var(--darkmode-contrast);
 			background-color: var(--darkmode-selected-darker);
 		}
+		.hierarchy-editor__tag-bar .highlight-color--red,
+		.hierarchy-editor__tag-bar .highlight-color--orange,
+		.hierarchy-editor__tag-bar .highlight-color--yellow,
+		.hierarchy-editor__tag-bar .highlight-color--green,
+		.hierarchy-editor__tag-bar .highlight-color--blue,
+		.hierarchy-editor__tag-bar .highlight-color--purple {
+			color: black;
+		}
 	/* Hierarchy Editor - Right Side Backlink Numbers */
 		.float-end .my-2 {
 			margin-top: .4rem;
