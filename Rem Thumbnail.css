@@ -124,13 +124,13 @@
             padding-right: 2px;
         }
     /* Portal */
-        .portal-tree-node-box .rem-text .inline-block,
+        /* .portal-tree-node-box .rem-text .inline-block,
         .portal-tree-node-box .rem-text .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
             margin-right: 2px;
-        }
+        } */
     /* Tag bar */
         .rem.isSearchResult .hierarchy-editor__tag-bar .inline-block,
         .rem.isSearchResult .hierarchy-editor__tag-bar .thumbnail--with-width {
@@ -231,12 +231,12 @@
             padding-right: 2px;
         }
     /* Portal-Tree-Node-Box (Tagged Rem Box ...) */
-        .portal-tree-node-box .rem-text .inline-block, 
+        /* .portal-tree-node-box .rem-text .inline-block, 
         .portal-tree-node-box .rem-text .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
-        }
+        } */
         .portal-tree-node-box .rem-text.rem-header--1 .inline-block, 
         .portal-tree-node-box .rem-text.rem-header--1 .thumbnail--with-width {
             height: 1em !important;
