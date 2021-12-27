@@ -6,9 +6,9 @@
 /*********** All Notes Section ***********/
     .css-jlRuPl, 
     .css-jlRuPl .inline-block, 
-    .css-jlRuPl .tumbnail--with-width,
+    .css-jlRuPl .thumbnail--with-width,
     .css-dcfFHl .inline-block,
-    .css-dcfFHl .tumbnail--with-width,
+    .css-dcfFHl .thumbnail--with-width,
     .css-cLpPvR .inline-block {
         height: 1em !important;
         min-width: auto !important;
@@ -19,7 +19,7 @@
     .ReactVirtualized__Table__rowColumn .inline-block,
     .ReactVirtualized__Table__rowColumn .inline-block.align-text-top.group,
     .ReactVirtualized__Table__rowColumn .image-node,
-    .ReactVirtualized__Table__rowColumn .tumbnail--with-width {
+    .ReactVirtualized__Table__rowColumn .thumbnail--with-width {
         height: 1em;
         width: auto !important;
         min-width: auto !important;
@@ -27,7 +27,7 @@
     }
 /*********** Queue ***********/
     .spaced-repetition__prompt__breadcrumbs .inline-block,
-    .spaced-repetition__prompt__breadcrumbs .tumbnail--with-width {
+    .spaced-repetition__prompt__breadcrumbs .thumbnail--with-width {
         height: 1em !important;
         width: auto !important;
         min-width: auto !important;
@@ -38,7 +38,7 @@
     .rem-bullet__document .inline-block.align-text-top.group,
     .rem-bullet__document .react-transform-component,
     .rem-bullet__document .image-node,
-    .rem-bullet__document .tumbnail--with-width {
+    .rem-bullet__document .thumbnail--with-width {
         width: auto !important;
         min-width: auto !important;
         max-width: auto !important;
@@ -53,14 +53,14 @@
     }
 /*********** Document Title ***********/
     #DocumentTitle .inline-block, 
-    #DocumentTitle .tumbnail--with-width {
+    #DocumentTitle .thumbnail--with-width {
         min-height: 1em !important;
         width: auto !important;
         min-width: auto !important;
     }
 /*********** Page Hierarchy  ***********/
     .document-header-top-bar .inline-block, 
-    .document-header-top-bar .tumbnail--with-width {
+    .document-header-top-bar .thumbnail--with-width {
         height: 1em;
         width: auto;
         min-width: auto !important;
@@ -76,7 +76,7 @@
     }
 /*********** Document Sidebar ***********/
     #document-sidebar .inline-block,
-    #document-sidebar .tumbnail--with-width {
+    #document-sidebar .thumbnail--with-width {
         height: 1.2em !important;
         width: auto !important;
         min-width: auto !important;
@@ -84,7 +84,7 @@
     }
 /*********** Document Hidden children ***********/
     .hierarchy-editor__hidden-children .rem-header--1 .inline-block,
-    .hierarchy-editor__hidden-children .rem-header--1 .tumbnail--with-width {
+    .hierarchy-editor__hidden-children .rem-header--1 .thumbnail--with-width {
         height: 1em !important;
         width: auto !important;
         min-width: auto !important;
@@ -93,7 +93,7 @@
 /*********** Popup ***********/
     /* Header 1 */
         #document-hover-preview__popup .rem-header--1 .inline-block,
-        #document-hover-preview__popup .rem-header--1 .tumbnail--with-width {
+        #document-hover-preview__popup .rem-header--1 .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
@@ -101,7 +101,7 @@
         }
     /* Header 2 */
         #document-hover-preview__popup .rem-header--2 .inline-block,
-        #document-hover-preview__popup .rem-header--2 .tumbnail--with-width {
+        #document-hover-preview__popup .rem-header--2 .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
@@ -109,7 +109,7 @@
         }
     /* Header 3 */
         #document-hover-preview__popup .rem-header--3 .inline-block,
-        #document-hover-preview__popup .rem-header--3 .tumbnail--with-width {
+        #document-hover-preview__popup .rem-header--3 .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
@@ -117,7 +117,7 @@
         }
     /* Image Thumbnail Tag */
         [data-rem-tags*="tn"] #document-hover-preview .inline-block, 
-        [data-rem-tags*="tn"] #document-hover-preview .tumbnail--with-width {
+        [data-rem-tags*="tn"] #document-hover-preview .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
@@ -125,7 +125,7 @@
         }
     /* Portal */
         .portal-tree-node-box .rem-text .inline-block,
-        .portal-tree-node-box .rem-text .tumbnail--with-width {
+        .portal-tree-node-box .rem-text .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
@@ -133,7 +133,7 @@
         }
     /* Tag bar */
         .rem.isSearchResult .hierarchy-editor__tag-bar .inline-block,
-        .rem.isSearchResult .hierarchy-editor__tag-bar .tumbnail--with-width {
+        .rem.isSearchResult .hierarchy-editor__tag-bar .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
@@ -142,12 +142,12 @@
     /* Reference */
         #document-hover-preview__popup > span [class*="inline-block"],
         #document-hover-preview__popup .bold .inline-block,
-        #document-hover-preview__popup .bold .tumbnail--with-width,
+        #document-hover-preview__popup .bold .thumbnail--with-width,
         .popup-menu.fixed .popup-menu__item--static .inline-block, 
-        .popup-menu.fixed .popup-menu__item--static .tumbnail--with-width,
-        .EditorContainer.EditorContainerInline .tumbnail--with-width,
+        .popup-menu.fixed .popup-menu__item--static .thumbnail--with-width,
+        .EditorContainer.EditorContainerInline .thumbnail--with-width,
         .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block,
-        .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .tumbnail--with-width
+        .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .thumbnail--with-width
         {
             height: 1em !important;
             width: auto !important;
@@ -155,28 +155,36 @@
             margin-right: 2px;	
         }
         
-        .EditorContainer.EditorContainerInline .tumbnail--with-width {color: #2B3137;}
+        .EditorContainer.EditorContainerInline .thumbnail--with-width {color: #2B3137;}
+    /* Delete Confirm Popup */
+        .delete-confirm-popup__rem-section__item .inline-block, 
+        .delete-confirm-popup__rem-section__item .thumbnail--with-width {
+            height: 1em !important;
+            width: auto !important;
+            min-width: auto !important;
+            margin-right: 2px;	
+        }
 /*********** Header & Normal Rem-Text with "Thumbnail(TN)" Tag***********/
     .rem-header--1 .inline-block,
-    .rem-header--1 .tumbnail--with-width,
+    .rem-header--1 .thumbnail--with-width,
     .rem-header--2 .inline-block,
-    .rem-header--2 .tumbnail--with-width,
+    .rem-header--2 .thumbnail--with-width,
     .rem-header--3 .inline-block,
-    .rem-header--3 .tumbnail--with-width,
+    .rem-header--3 .thumbnail--with-width,
     [data-rem-tags*="tn"] .inline-block,
-    [data-rem-tags*="tn"] .tumbnail--with-width {
+    [data-rem-tags*="tn"] .thumbnail--with-width {
         height: 1em !important;
         width: auto !important;
         min-width: auto !important;
     }
-    .rem-header--1 .inline-block, .rem-header--1 .tumbnail--with-width {margin-right: 3px;}
-    .rem-header--2 .inline-block, .rem-header--2 .tumbnail--with-width {margin-right: 2px;}
-    .rem-header--3 .inline-block, .rem-header--3 .tumbnail--with-width {margin-right: 2px;}
-    [data-rem-tags*="tn"] .inline-block, [data-rem-tags*="tn"] .tumbnail--with-width {margin-right: 1px;}
+    .rem-header--1 .inline-block, .rem-header--1 .thumbnail--with-width {margin-right: 3px;}
+    .rem-header--2 .inline-block, .rem-header--2 .thumbnail--with-width {margin-right: 2px;}
+    .rem-header--3 .inline-block, .rem-header--3 .thumbnail--with-width {margin-right: 2px;}
+    [data-rem-tags*="tn"] .inline-block, [data-rem-tags*="tn"] .thumbnail--with-width {margin-right: 1px;}
 /*********** Tag bar ***********/
     #DropToOpenAsDocument .inline-block, 
-    #DropToOpenAsDocument .tumbnail--with-width,
-    .hierarchy-editor__tag-bar__tag .tumbnail--with-width,
+    #DropToOpenAsDocument .thumbnail--with-width,
+    .hierarchy-editor__tag-bar__tag .thumbnail--with-width,
     .hierarchy-editor__tag-bar__tag .inline-block,
     .hierarchy-editor__tag-bar__tag .inline-block.align-text-top.group,
     .fade-on-hide-ui .inline-block {
@@ -188,7 +196,7 @@
 /*********** Search Result ***********/
     /* Global Search Result (⌘+P Window) */
         .css-ZPdGi .inline-block, 
-        .css-ZPdGi .tumbnail--with-width {
+        .css-ZPdGi .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
@@ -200,7 +208,7 @@
             min-height: 80%;
         }
         .css-fUqRpZ .inline-block, 
-        .css-fUqRpZ .tumbnail--with-width {
+        .css-fUqRpZ .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
@@ -208,7 +216,7 @@
         }
     /* Tag Search Result */
         .search-result__rem-breadcrumbs .inline-block, 
-        .search-result__rem-breadcrumbs .tumbnail--with-width {
+        .search-result__rem-breadcrumbs .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
@@ -216,7 +224,7 @@
 /*********** Portal ***********/  
     /* Portal Popup for Hidden rems */
         #search-results__result .inline-block,
-        #search-results__result .tumbnail--with-width {
+        #search-results__result .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
@@ -224,49 +232,49 @@
         }
     /* Portal-Tree-Node-Box (Tagged Rem Box ...) */
         .portal-tree-node-box .rem-text .inline-block, 
-        .portal-tree-node-box .rem-text .tumbnail--with-width {
+        .portal-tree-node-box .rem-text .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
         }
         .portal-tree-node-box .rem-text.rem-header--1 .inline-block, 
-        .portal-tree-node-box .rem-text.rem-header--1 .tumbnail--with-width {
+        .portal-tree-node-box .rem-text.rem-header--1 .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
         }
         .portal-tree-node-box .rem-text.rem-header--2 .inline-block, 
-        .portal-tree-node-box .rem-text.rem-header--2 .tumbnail--with-width {
+        .portal-tree-node-box .rem-text.rem-header--2 .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
         }
         .portal-tree-node-box .rem-text.rem-header--3 .inline-block, 
-        .portal-tree-node-box .rem-text.rem-header--3 .tumbnail--with-width {
+        .portal-tree-node-box .rem-text.rem-header--3 .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
         }
 /*********** Rem Reference ***********/
     .rem-reference .inline-block,
-    .rem-reference .tumbnail--with-width {
+    .rem-reference .thumbnail--with-width {
         height: 1em !important;
         width: auto !important;
         min-width: auto !important;
         margin-top: 1px;
     }
     #document-hover-preview__popup #hierarchy-editor .inline-block, 
-	#document-hover-preview__popup #hierarchy-editor .tumbnail--with-width, 
+	#document-hover-preview__popup #hierarchy-editor .thumbnail--with-width, 
 	#document-hover-preview__popup #hierarchy-editor .rem-reference .inline-block, 
-	#document-hover-preview__popup #hierarchy-editor .rem-reference .tumbnail--with-width {
+	#document-hover-preview__popup #hierarchy-editor .rem-reference .thumbnail--with-width {
 	    height: auto; /* Do not change this */
 	    width: auto !important;
 	    min-width: auto !important;
 	}
     #document-hover-preview__popup .inline-block, 
-	#document-hover-preview__popup .tumbnail--with-width, 
+	#document-hover-preview__popup .thumbnail--with-width, 
 	#document-hover-preview__popup .rem-reference .inline-block, 
-	#document-hover-preview__popup .rem-reference .tumbnail--with-width {
+	#document-hover-preview__popup .rem-reference .thumbnail--with-width {
 	    height: 1em;
 	    width: auto !important;
 	    min-width: auto !important;
@@ -278,7 +286,7 @@
     }
     .popup-menu .inline-block,
 	.popup-menu .inline-block.align-text-top.group,
-	.popup-menu .tumbnail--with-width,
+	.popup-menu .thumbnail--with-width,
 	.popup-menu .image-node {
 		height: 1em;
 		width: auto !important;
@@ -288,7 +296,7 @@
 	/* Rem reference normal rem-text thumbnail adjustment */
         .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block,
         .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block.align-text-top.group,
-        .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .tumbnail--with-width,
+        .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .thumbnail--with-width,
         .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .image-node {
             position: relative;
             top: -0.05em;
