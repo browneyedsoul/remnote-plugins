@@ -8,7 +8,14 @@
 	--table-border-color: #EEEEEB;
 	--table-border-color-dark: #535353;
 }
-/* Interim measure */
+/*********** Table Row LineBreaker (Just hacky method) ***********/
+	[data-rem-container-tags*="lb"] > .TreeNode {left: -15px !important;}
+	[data-rem-tags*="lb"] {height: 5px;}
+	[data-rem-container-tags~="lb"] > .TreeNode {border-left: unset !important;}
+	/* Tag Declutter */
+		[data-rem-tags~="lb"] .hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
+		[data-rem-tags~="lb"] .hierarchy-editor__tag-bar__tag span {display: none;}
+/*********** Interim measure ***********/
 	[data-rem-container-tags~="table90"] > .TreeNode > :first-child,
 	[data-rem-container-tags~="table120"] > .TreeNode > :first-child,
 	[data-rem-container-tags~="table150"] > .TreeNode > :first-child,
@@ -737,15 +744,7 @@
 		text-align: center;
 	}
 	.dark-mode [data-rem-tags~="tablecolor"] {background-color: var(--table-columnrow-background-color-dark);}
-	[data-rem-container-tags~="tablecolor"]:not([data-rem-container-tags~="show-tags"]) .hierarchy-editor__tag-bar {display: none;	}
-/*********** Table Row LineBreaker (Just hacky method) ***********/
-	[data-rem-tags*="lb"] .hierarchy-editor__tag-bar__tag {
-		color: transparent;
-		background-color: transparent;
-	}
-	[data-rem-tags*="lb"] {padding-left: 23px !important;}
-	[data-rem-tags*="lb"] {height: 5px;}
-	[data-rem-container-tags~="lb"] > .TreeNode {border-left: unset !important;}
+	[data-rem-container-tags~="tablecolor"]:not([data-rem-container-tags~="show-tags"]) .hierarchy-editor__tag-bar {display: none;}
 /*********** Width Adjustment of Table Content Cell ***********/
 	[data-rem-container-tags~="w30"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 30px;}
 	[data-rem-container-tags~="w60"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 60px;}
