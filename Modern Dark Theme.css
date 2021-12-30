@@ -236,6 +236,12 @@
 /*********** RemNote Hierarchy Editor ***********/
 	/* Page Padding */
 		.dark-mode .paddingPage {background-color: var(--darkmode-background)}
+	/* Page Breadcrumbs */
+		/* Multi Line */
+			.document-header-top-bar {height: fit-content;}
+			.document-header-top-bar > div > div {flex-wrap: wrap;}
+		/* Scrollable */
+			/* .document-header-top-bar > div {overflow-x: auto;} */
 	/* Hierarchy Editor - General Background */
 		.dark-mode .document-table,
 		.dark-mode .tile__document,
