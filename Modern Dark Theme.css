@@ -15,9 +15,9 @@
 	--darkmode-contrast: yellow;
 	--quote-text-dark: #F1FA8C;
 	--quote-background-dark: #252525;
-	--reference-text: darkred;
-	--reference-text-dark: #FDD7DA;
-	--reference-background: #FFF9D7;
+	--reference-text: #000;
+	--reference-text-dark: #FFF;
+	--reference-background: #D4FBE8;
 	--reference-background-dark: #252525;
 	--line-color: #DDDDDD;
 	--line-color-dark: #535353;
@@ -269,9 +269,9 @@
 		.dark-mode .LinkNode,
 		.dark-mode .underline.text-blue-60.cursor-pointer  {
 			color: var(--link-node-color-dark) !important;
-			background-color: var(--darkmode-background-selected);
+			background-color: var(--darkmode-background-selected-darker);
 			border-radius: 3px;
-			padding: 0px 2px 0px 2px;
+			padding: 1px 2px 1px 2px;
 		}
 	/* Hyperlink right click option menu */
 		.popup-menu .css-kbbFlF {
@@ -611,10 +611,19 @@
 		.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {background-color: #000;		}
 /*********** Reference & Alias ***********/
 	/* Hierarchy Editor - Reference Style */
-		.rem-reference .RichTextViewer {color: var(--reference-text); font-weight: 400;}
-		.dark-mode .rem-reference .RichTextViewer {color: var(--reference-text-dark);}
-		.rem-reference.button.rem-reference-link {background-color: var(--reference-background);}
-		.dark-mode .rem-reference.button.rem-reference-link {background-color: var(--reference-background-dark);}
+		.rem-reference .RichTextViewer {
+			color: var(--reference-text); 
+		}
+		.dark-mode .rem-reference .RichTextViewer {
+			color: var(--reference-text-dark);
+		}
+		.rem-reference.button.rem-reference-link {
+			background-color: var(--reference-background);
+			padding: 1px 2px 1px 2px
+		}
+		.dark-mode .rem-reference.button.rem-reference-link {
+			background-color: var(--reference-background-dark);
+		}
 	/* Hierarchy Editor - Alias */
 		.rem-reference-container .css-kWtKRr {filter: invert(0.5); position: relative; top: 4px;}
 	/* Reference Partial Hiding using inlinequote */
