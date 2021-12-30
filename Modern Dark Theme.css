@@ -17,7 +17,7 @@
 	--quote-background-dark: #252525;
 	--reference-text: #000;
 	--reference-text-dark: #DFDFD5;
-	--reference-background: #F7F6F3;
+	--reference-background: #ECECEC;
 	--reference-background-dark: #252525;
 	--line-color: #DDDDDD;
 	--line-color-dark: #535353;
@@ -624,6 +624,12 @@
 		.dark-mode .rem-reference.button.rem-reference-link {
 			background-color: var(--reference-background-dark);
 		}
+		.dark-mode .rem-reference.rem-reference--focused .RichTextViewer {
+			color: var(--reference-text);
+		}
+		 .work-in-progress-rem {
+			 color: var(--reference-text);
+		 }
 	/* Hierarchy Editor - Alias */
 		.rem-reference-container .css-kWtKRr {filter: invert(0.5); position: relative; top: 4px;}
 	/* Reference Partial Hiding using inlinequote */
