@@ -56,23 +56,33 @@
 		.hidden-selection {background-color:#D8E2F1;}
 		.dark-mode .hidden-selection {background-color: gray;}
 /*********** All Notes page list ***********/
+	/* All notes Menu Style */
 		.dark-mode .document-table .css-gnNRVe,
 		.dark-mode .document-table .css-huFlzA .css-fLTnVi {
 			color: var(--darkmode-text);
 		}
-		/* All Notes Header & Item Hover Effect */
+	/* Reverse Browser Item Header */
+		.document-table .css-cLpPvR {
+			flex-direction: column-reverse;
+		}
+	/* Browser Item Style */
+		.document-table .css-cLpPvR > .css-kMEfqE {
+			zoom: 1.25;
+			margin: 4px;
+		}
+		.dark-mode .css-cLpPvR .RichTextViewer {
+			color: var(--darkmode-text);
+		}
+	/* Shrink Item Breadcrumbs */
+		.document-table .css-eqifkM {
+			zoom: .75;
+			opacity: .25;
+		}	
+	/* All Notes Header & Item Hover Effect */
 		.dark-mode .document-table .css-favSPh:hover,
 		.dark-mode .document-table .css-jcbvum:hover {
 			background-color: var(--darkmode-background-selected-darker);
 		} 
-		.dark-mode .css-exQOrH {
-			color: var(--darkmode-text);
-			background-color: var(--darkmode-background);
-			padding: 5px;
-			border-radius: 5px;
-		}	
-		.dark-mode .css-jlRuPl {padding: 3px 0px 3px 0px;}
-		.dark-mode .css-cLpPvR .RichTextViewer {color: #9191A8 !important;}
 /*********** Queue (Flashcard) ***********/
 	/* Select Cluster */
 		.dark-mode .queue-cluster-selector {color: var(--darkmode-text);}
