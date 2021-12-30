@@ -613,6 +613,7 @@
 	/* Hierarchy Editor - Reference Style */
 		.rem-reference .RichTextViewer {
 			color: var(--reference-text); 
+			font-family: 'Roboto Mono', monospace !important;
 		}
 		.dark-mode .rem-reference .RichTextViewer {
 			color: var(--reference-text-dark);
