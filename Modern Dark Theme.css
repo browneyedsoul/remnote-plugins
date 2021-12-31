@@ -230,6 +230,10 @@
 			border: 1px dotted var(--darkmode-contrast);
 			border-radius: 5px;
 		} 
+	/* Omni Searchbar(⌘+P) hover effect */
+		[aria-label="Omnibar"] .css-khYwOj {
+			background-color: var(--darkmode-background-selected);
+		}
 /*********** Icon ***********/
 	/* Calendar icon */
 		.dark-mode .rem-calendar-icon.text-text {color: var(--darkmode-text);}
@@ -467,9 +471,11 @@
 		.popup-menu__item, 
 		.popup-menu__item--static,
 		.hierarchy-editor__search-portal-section {
-			color: black;
-			background-color: var(--darkmode-text);
+			color: var(--darkmode-text);
+			background-color: var(--darkmode-background);
 		}
+	/* Menu item text */
+		div[color="#292936"] {color: var(--darkmode-text);}
 	/* Omni Search Popup Window*/
 		/* Focused Text */
 		.dark-mode .css-jlRuPl .bg-warning-10 {color: black;}
@@ -497,8 +503,6 @@
 			color: var(--darkmode-text);
 		}
 	/* Context Menu - Hyperlink Right Click */
-		/* Menu item text */
-			div[color="#292936"] {color: black}
 		/* Search area */
 			.popup-menu .border-solid.border-gray-15 {border-color: #909090;}
 		/* Menu Header - LINKED TO & OPTIONS */
@@ -506,7 +510,14 @@
 	/* Selected Item */
 		.popup-menu .bg-selected-bg,
 		.popup-menu  [icon*="[Object]"]:hover,
-		.popup-menu .bg-selected-bg:hover {background-color: var(--lightmode-background-selected) !important;}
+		.popup-menu .bg-selected-bg:hover {
+			background-color: var(--darkmode-background-selected-darker) !important;
+		}
+	/* Image Popup Menu */
+		.popup-menu > div {border: 1px solid white;}
+		.popup-menu .bg-white .css-kbbFlF > div {color: var(--darkmode-text);}
+	/* Hover Effect  */
+		.popup-menu .bg-white .css-kbbFlF:hover {background-color: var(--darkmode-background-selected-darker);}
 	/* Bottom Backlinks Bar */
 		.popup-menu #show-embedded-search-button {
 			color: var(--darkmode-text) !important;
@@ -529,10 +540,6 @@
 				background-color: var(--darkmode-background-selected);
 				border: 1px solid var(--darkmode-contrast);
 			}
-		/* Image Popup Menu */
-			.popup-menu > div {border: 1px solid white;}
-			.popup-menu .bg-white .css-kbbFlF:hover {background-color: var(--lightmode-background-selected);}
-			.popup-menu .bg-white .css-kbbFlF > div {color: var(--darkmode-text);}
 /*********** Codeblock ***********/	
 	#code-node {background-color: var(--code-node-background-color);}
 	.dark-mode #code-node {background-color: var(--code-node-background-color-dark);}
