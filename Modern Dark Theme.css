@@ -858,17 +858,10 @@
 				border-radius: 5px;
 				z-index: 0;
 			}
-			.dark-mode .search-result__rem-breadcrumb {
-
-			}
 		/* Slash Command Focused Item */
 			.z-30 [data-search-result="search-result-item"].bg-gray-5 {
 				color: black;
 				background-color: #D1D1D1;
-			}
-		/* Slash Command Search Focused Text */
-			.dark-mode .bg-white #search-results__result .text-gray-100 {
-
 			}
 	/* Settings Page Sidebar Hover Effect */
 		.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {
@@ -883,9 +876,6 @@
 	.hover\:bg-gray-5:hover:not(#search-result__result) {
 		color: unset;
 		background-color: #D1D1D1;
-	}
-	.dark-mode .hover\:bg-gray-5:hover:not(#search-result__result) {
-		
 	}
 /*********** Metadata Page ***********/
 	#RemPage {color: var(--darkmode-text);}
