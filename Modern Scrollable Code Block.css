@@ -19,6 +19,8 @@
         --code-node-line-number-background-color-dark: #242424;
         --code-node-background-color: #F7F6F3;
         --code-node-background-color-dark: #242424;
+        --code-node-boolean-color: ;
+        --code-node-boolean-color-dark: #F4A6C6;
         --code-node-plain-color: ;
         --code-node-plain-color-dark: #BDBEBE;
         --code-node-atrule-color: ;
@@ -95,7 +97,8 @@
         .dark-mode .token.comment {color: var(--code-node-comment-color-dark);}
         .dark-mode .token.important {color: var(--code-node-important-color-dark);}
         .dark-mode .token.keyword {color: var(--code-node-keyword-color-dark);}
-        .dark-mode .token.builtin {color: var(--code-node-builtin-color-dark)}
+        .dark-mode .token.builtin {color: var(--code-node-builtin-color-dark);}
+        .dark-mode .token.boolean {color: var(--code-node-boolean-color-dark);}
         .dark-mode .token.number {color: var(--code-node-number-color-dark);}
         .dark-mode .token.operator {color: var(--code-node-operator-color-dark);}
         .dark-mode .token.constant {color: var(--code-node-constant-color-dark);}
