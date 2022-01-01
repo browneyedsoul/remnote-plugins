@@ -600,11 +600,22 @@
 		.dark-mode .settings-page__sidebar__link--active {border: 1px solid var(--darkmode-contrast);}
 	/* Sidebar svg icon */
 		.dark-mode .settings-page .css-drbSAB {
-				color: var(--darkmode-contrast);
-				background-color: var(--darkmode-background);
-				border: 1px dotted var(--darkmode-contrast);
-				border-radius: 5px;
-			}
+			color: var(--darkmode-contrast);
+			background-color: var(--darkmode-background);
+			border: 1px dotted var(--darkmode-contrast);
+			border-radius: 5px;
+		}
+	/* Scheduler Type Text */
+		.pl-4.css-kJJQEm {
+			color: var(--darkmode-text);
+		}
+	/* Setting Page Button Style*/
+		.settings-page .button {
+			background-color: unset;
+		}
+		.spaced-repetition-scheduler-form__interaction {
+			color: black;
+		}
 	/* Setting Page Content */
 		.dark-mode .settings-page .popup__header,
 		.dark-mode .settings-page__content__inner {
@@ -635,9 +646,13 @@
 		{
 			color: var(--darkmode-text) !important;
 		}
-		.dark-mode .settings-page .settings-page__option .p-3.css-fLTnVi{color: black !important;}
+		.dark-mode .settings-page .settings-page__option .p-3.css-fLTnVi{
+			color: black !important;
+		}
 	/* Settings Page Sidebar Hover Effect */
-		.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {background-color: #000;		}
+		.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {
+			background-color: #000;
+		}
 /*********** Reference & Alias ***********/
 	/* Hierarchy Editor - Reference Style */
 		.rem-reference .RichTextViewer {
