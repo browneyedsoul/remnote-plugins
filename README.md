@@ -96,7 +96,7 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 ```
 <img src="https://user-images.githubusercontent.com/56161102/133299689-ec0a686b-7377-4871-bf7a-2c49e7e3a62e.gif">
 <img src="https://user-images.githubusercontent.com/56161102/146571056-077600a5-d68e-4328-b06c-d3a144aa97b3.gif">
-<img src="https://user-images.githubusercontent.com/56161102/146570763-788094df-13e3-472f-af80-859a0250afb3.png">
+<img src="https://user-images.githubusercontent.com/56161102/147853105-7acbbd93-e32c-489f-8ccd-ef356995b133.png">
 </details>
 
 <details> 
