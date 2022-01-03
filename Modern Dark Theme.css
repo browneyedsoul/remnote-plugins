@@ -741,15 +741,9 @@
 					border-radius: 5px;
 				}
 		/* All Notes icon */
-			#document-sidebar_top .css-fqRAnH {
-				color: var(--darkmode-contrast);
-				zoom: 125%;
-			}
+			#document-sidebar_top .css-fqRAnH {color: var(--darkmode-contrast);			}
 		/* Flashcard icon */
-			#document-sidebar_top .block .css-pUlLN {
-				zoom: 125%;
-				color: var(--darkmode-contrast);
-			}
+			#document-sidebar_top .block .css-pUlLN {color: var(--darkmode-contrast);}
 			#document-sidebar_top .block .flex-grow {
 				font-family: "Roboto Mono", "Fira code", Monospace;
 				color: var(--darkmode-contrast);
