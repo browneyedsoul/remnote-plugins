@@ -804,6 +804,7 @@
 		#document-sidebar .bold.highlight-color--purple {color: var(--purple-text-dark);}
 		#document-sidebar .RichTextViewer .quote {
 			margin-left: 5px !important;
+			padding: 0 3px;
 			font-family: "Roboto Mono", Monospace !important;
 			font-size: 14px !important;
 			border-radius: 6px !important;
