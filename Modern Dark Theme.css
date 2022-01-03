@@ -777,16 +777,31 @@
 			position: relative;
 			top: 1px;
 		}
-		#document-sidebar .highlight-color--red,
-		#document-sidebar .highlight-color--orange,
-		#document-sidebar .highlight-color--yellow,
-		#document-sidebar .highlight-color--green,
-		#document-sidebar .highlight-color--blue,
-		#document-sidebar .highlight-color--purple {
+		#document-sidebar span.highlight-color--red,
+		#document-sidebar span.highlight-color--orange,
+		#document-sidebar span.highlight-color--yellow,
+		#document-sidebar span.highlight-color--green,
+		#document-sidebar span.highlight-color--blue,
+		#document-sidebar span.highlight-color--purple {
 			margin-left: 5px;
-			padding: 1px !important;
+			padding: 1px 3px;
 			border-radius: 3px;
+			font-weight: 600;
 		}
+		#document-sidebar .bold.highlight-color--red,
+		#document-sidebar .bold.highlight-color--orange,
+		#document-sidebar .bold.highlight-color--yellow,
+		#document-sidebar .bold.highlight-color--green,
+		#document-sidebar .bold.highlight-color--blue,
+		#document-sidebar .bold.highlight-color--purple {
+			background-color: unset;
+		}
+		#document-sidebar .bold.highlight-color--red {color: var(--red-text-dark);}
+		#document-sidebar .bold.highlight-color--orange {color: var(--orange-text-dark);}
+		#document-sidebar .bold.highlight-color--yellow {color: var(--yellow-text-dark);}
+		#document-sidebar .bold.highlight-color--green {color: var(--green-text-dark);}
+		#document-sidebar .bold.highlight-color--blue {color: var(--blue-text-dark);}
+		#document-sidebar .bold.highlight-color--purple {color: var(--purple-text-dark);}
 		#document-sidebar .RichTextViewer .quote {
 			margin-left: 5px !important;
 			font-family: "Roboto Mono", Monospace !important;
