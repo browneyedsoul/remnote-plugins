@@ -26,7 +26,7 @@
 	--red-text-dark: #FD6E68;
 	--orange-text: #C26F1C;
 	--orange-text-dark: #F0A264;
-	--yellow-text: #EAB700;
+	--yellow-text: #FF2600;
 	--yellow-text-dark: #FFDF0B;
 	--green-text: #34A853;
 	--green-text-dark: #3CC160;
@@ -285,7 +285,7 @@
 			color: var(--link-node-color-dark) !important;
 			background-color: var(--darkmode-background-selected-darker);
 			border-radius: 3px;
-			padding: 1px 2px 1px 2px;
+			padding: 0 2px 1px 2px;
 		}
 	/* Hyperlink right click option menu */
 		.popup-menu .css-kbbFlF {
@@ -358,7 +358,7 @@
 			color: black;
 			border-radius: 3px;
 			margin-bottom: 1px;
-			padding: 0px 2px 0px 2px;
+			padding: 0px 2px 1px 2px;
 		}
 		.highlight-color--red .rem-text,
 		.highlight-color--red .rem-text.rem-header--1,
@@ -422,7 +422,7 @@
 		.dark-mode #DocumentTitle .bold.highlight-color--purple {color: var(--purple-text-dark);}
 	/* Highlight Color to Text Color Using `color` Tag */
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--red,
-		[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange, 
+		[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange,
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow,
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--green,
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--blue,
@@ -439,13 +439,13 @@
 		}
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--red {color: var(--red-text);} 
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange {color: var(--orange-text);}
-	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow {color: var(--yellow-text);}
+	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow {color: var(--yellow-text); text-shadow: 2px 2px 2px #FFFC00;}
 	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--green {color: var(--green-text);}
 	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--blue {color: var(--blue-text);}
 	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {color: var(--purple-text);}
 	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--red {color: var(--red-text-dark);} 
 		.dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--orange {color: var(--orange-text-dark);}
-	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow {color: var(--yellow-text-dark);}
+	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow {color: var(--yellow-text-dark); text-shadow: unset;}
 	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--green {color: var(--green-text-dark);}
 	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--blue {color: var(--blue-text-dark);}
 	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {color: var(--purple-text-dark);} 
