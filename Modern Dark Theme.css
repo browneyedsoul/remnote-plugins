@@ -653,6 +653,8 @@
 		.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {
 			background-color: #000;
 		}
+	/* Knowledge Base */
+		.switch-knowledgebase__knowledgebase__button > .icon {color: var(--darkmode-contrast);}
 /*********** Reference & Alias ***********/
 	/* Hierarchy Editor - Reference Style */
 		.rem-reference .RichTextViewer {
