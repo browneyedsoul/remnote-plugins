@@ -581,7 +581,8 @@
 		.dark-mode .rem-container--todo-finished {
 			color: #A1A1A1;
 		}
-		.dark-mode .rem-container--todo-finished .RichTextViewer {
+		.dark-mode .rem-container--todo-finished .RichTextViewer,
+		.dark-mode .rem-container--todo-finished [data-slate-node="text"] {
 			color: #909090;
 		}
 	/* Alignment */
