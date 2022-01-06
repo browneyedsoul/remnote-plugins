@@ -561,6 +561,7 @@
 	.dark-mode #code-node::before {background-color: var(--code-node-line-number-background-color-dark);}
 /*********** Checkbox ***********/	
 	/* Style */
+		/* Check */
 		.rem-checkbox.css-feDyQR,
 		.rem-checkbox.css-fyMhsa {
 			border-radius: unset;
@@ -570,6 +571,18 @@
 		}
 		.dark-mode .rem-checkbox.css-fyMhsa {
 			background-color: #CA1E00;
+		}
+		/* Strikethrough text */
+		.rem-container--todo-finished {
+			color: #A2A2A2;
+			text-decoration: line-through;
+			text-decoration-style: double;
+		}
+		.dark-mode .rem-container--todo-finished {
+			color: #A1A1A1;
+		}
+		.dark-mode .rem-container--todo-finished .RichTextViewer {
+			color: #909090;
 		}
 	/* Alignment */
 		.rem-header--1 .rem-checkbox {margin-top: 12px;}
