@@ -124,8 +124,8 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Blockquote.css");
 ```
-<h2>What is the purpose of this Snippet?</h2>
 <h2>Use case</h2>
+<img src="https://user-images.githubusercontent.com/56161102/148634987-b2608746-5a37-426a-8b16-3380e9abc1d9.png">
 </details>
 
 <details> 
