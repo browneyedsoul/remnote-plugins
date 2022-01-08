@@ -21,20 +21,13 @@
     --callout-border-radius: 5px;
 }
 /*********** Custom rem bullet icon ***********/
-    [data-rem-tags~="warning"] .rem-bullet__container,
-    [data-rem-tags~="idea"] .rem-bullet__container {
+    [data-rem-tags~="warning"] .rem-text::before {content: "🚨"; margin-right: 10px;}
+    [data-rem-container-tags~="idea"] .rem-text::before {content: "💡"; margin-right: 10px;}
+    [data-rem-tags~="warning"] .rem-text,
+    [data-rem-tags~="idea"] .rem-text {
         position: relative;
-        left: -8px;
+        left: -25px;
     }
-    [data-rem-tags~="warning"] .rem-bullet__container::before,
-    [data-rem-tags~="idea"] .rem-bullet__container::before {
-        font-size: large;
-        visibility: visible;
-        position: relative;
-        left: 40px;
-    }
-    [data-rem-tags~="warning"] .rem-bullet__container::before {content: "🚨";}
-    [data-rem-tags~="idea"] .rem-bullet__container::before {content: "💡";}
 /*********** Callout Rem Block Color-Variable & Pre-Coloured ***********/
     [data-rem-container-tags~="callout"],
     [data-rem-tags~="callout"] .rem-container.highlight-color--red,
