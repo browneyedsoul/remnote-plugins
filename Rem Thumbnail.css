@@ -157,6 +157,9 @@
         
         .EditorContainer.EditorContainerInline .thumbnail--with-width {color: #2B3137;}
     /* Delete Confirm Popup */
+        #delete-confirm-popup .inline-block, 
+        #delete-confirm-popup .thumbnail--with-width,
+        #delete-confirm-popup .image-node__container.group.inline-block.align-text-top,
         .delete-confirm-popup__rem-section__item .inline-block, 
         .delete-confirm-popup__rem-section__item .thumbnail--with-width {
             height: 1em !important;
