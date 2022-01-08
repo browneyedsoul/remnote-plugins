@@ -223,7 +223,7 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Image%2C%20Codeblock%20Caption%20like%20in%20Notion.css");
 ```
-<img src="">
+<img src="https://user-images.githubusercontent.com/56161102/148633875-d4a1a849-ca56-4d2d-81dd-ef981efa7da3.gif">
 </details>
 
 <details> 
@@ -272,7 +272,17 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/UI%20Declutter%20Series/RemNote%20UIUX-Declutter.css");
 ```
-<img src="">
+- Hide Placeholder aka "Type / for Commands" <br>
+	![CleanShot 2022-01-08 at 15 30 42](https://user-images.githubusercontent.com/56161102/148634322-f5b10f56-ba00-456b-a33f-a5c5cc577040.gif)<br>
+	![CleanShot 2022-01-08 at 15 31 25](https://user-images.githubusercontent.com/56161102/148634358-b9d0f113-6d20-4c63-bb55-1e3b022c6d76.gif)
+- Hide Help Button <br>
+	![CleanShot 2022-01-08 at 15 23 17](https://user-images.githubusercontent.com/56161102/148634119-6963a464-0297-4ae5-8d63-e275de339215.png)
+- Disable inadvertent Bullet Click Event
+- Hide List Card Arrow <br>
+	![CleanShot 2022-01-08 at 15 27 54](https://user-images.githubusercontent.com/56161102/148634254-5e22440f-da4a-4645-b37d-e950f9e9110a.gif)
+- Hide List Card Placeholder <br>
+	![CleanShot 2022-01-08 at 15 21 28](https://user-images.githubusercontent.com/56161102/148634056-53c0ee40-469c-4218-9407-080ac54ce035.png)<br>
+	![CleanShot 2022-01-08 at 15 34 04](https://user-images.githubusercontent.com/56161102/148634441-b97f1676-d752-47e8-afc6-4aead741e174.gif)
 </details>
 
 
