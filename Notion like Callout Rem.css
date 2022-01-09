@@ -64,20 +64,20 @@
     [data-rem-container-tags~="calloutpurple"] {background-color: var(--calloutpurple-background-color);}
 /*********** Darkmode Compatibility ***********/
     .dark-mode [data-rem-container-tags~="callout"] {background-color: var(--callout-background-color-dark) !important;}
-    .dark-mode [data-rem-tags~="callout"] .rem-container.highlight-color--red,
     .dark-mode [data-rem-container-tags~="calloutred"] {background-color: var(--calloutred-background-color-dark) !important;}
-    .dark-mode [data-rem-tags~="callout"] .rem-container.highlight-color--orange,
-    .dark-mode [data-rem-container-tags~="calloutorange"] {background-color: var(--calloutorange-background-color-dark) !important;
-    }
-    .dark-mode [data-rem-tags~="callout"] .rem-container.highlight-color--yellow,
+    .dark-mode [data-rem-container-tags~="calloutorange"] {background-color: var(--calloutorange-background-color-dark) !important;}
     .dark-mode [data-rem-container-tags~="calloutyellow"] {background-color: var(--calloutyellow-background-color-dark) !important;}
-    .dark-mode [data-rem-tags~="callout"] .rem-container.highlight-color--green,
     .dark-mode [data-rem-container-tags~="calloutgreen"] {background-color: var(--calloutgreen-background-color-dark) !important;}
-    .dark-mode [data-rem-tags~="callout"] .rem-container.highlight-color--blue,
     .dark-mode [data-rem-container-tags~="calloutblue"] {background-color: var(--calloutblue-background-color-dark) !important;}
-    .dark-mode [data-rem-tags~="callout"] .rem-container.highlight-color--purple,
-    .dark-mode [data-rem-container-tags~="calloutpurple"] {background-color: var(--calloutpurple-background-color-dark) !important;
-    }
+    .dark-mode [data-rem-container-tags~="calloutpurple"] {background-color: var(--calloutpurple-background-color-dark) !important;}
+
+    .popup-menu [data-rem-container-tags~="callout"] {background-color: var(--callout-background-color-dark) !important;}
+    .popup-menu [data-rem-container-tags~="calloutred"] {background-color: var(--calloutred-background-color-dark) !important;}
+    .popup-menu [data-rem-container-tags~="calloutorange"] {background-color: var(--calloutorange-background-color-dark) !important;}
+    .popup-menu [data-rem-container-tags~="calloutyellow"] {background-color: var(--calloutyellow-background-color-dark) !important;}
+    .popup-menu [data-rem-container-tags~="calloutgreen"] {background-color: var(--calloutgreen-background-color-dark) !important;}
+    .popup-menu [data-rem-container-tags~="calloutblue"] {background-color: var(--calloutblue-background-color-dark) !important;}
+    .popup-menu [data-rem-container-tags~="calloutpurple"] {background-color: var(--calloutpurple-background-color-dark) !important;}
     
     .dark-mode [data-rem-tags~="callout"] .rem-text,
     .dark-mode [data-rem-tags~="calloutred"] .rem-text,
