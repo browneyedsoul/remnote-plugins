@@ -251,9 +251,16 @@
 	/* Page Padding */
 		.dark-mode .paddingPage {background-color: var(--darkmode-background)}
 	/* Page Breadcrumbs */
-		/* Multi Line */
-			.document-header-top-bar {height: fit-content;}
-			.document-header-top-bar > div > div {flex-wrap: wrap;}
+		/* Multi Line Breadcrumbs */
+			.document-header-top-bar {
+				height: fit-content;
+			}
+			.document-header-top-bar > div > div {
+				flex-wrap: wrap;
+				overflow-wrap: normal;
+			}	
+			.document-header-top-bar .flex-nowrap {flex-wrap: wrap;}
+			.document-header-top-bar .flex {display: inline-block;}
 		/* Scrollable */
 			/* .document-header-top-bar > div {overflow-x: auto;} */
 	/* Hierarchy Editor - General Background */
@@ -488,7 +495,9 @@
 			color: var(--darkmode-text);
 			background-color: var(--darkmode-background);
 		}
-		.popup-menu .rounded {border-top: 1px solid white;border-bottom: 1px solid white;}
+		.popup-menu .rounded {
+			border: 1px solid #9B9E9E;
+		}
 		.popup-menu .scroll-drag-component {border: 1px solid white;}
 		.popup-menu.fixed .css-exQOrH {color: var(--darkmode-text);}
 		.popup-menu .spaced-repetition__prompt .indented-rem .rem-bullet__document,
