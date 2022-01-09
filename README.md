@@ -43,10 +43,10 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20No%20Bullet%20Editor%20Mode.css"); 
 ```
-	<ul>
-		<li>For those who are thinking that Bullet-based Outliner Editor is way too cluttered with crowded bullet points.</li>
-		<li>Combined UX : Block based Notion Editor + Outliner</li>
-	</ul>
+<ul>
+	<li>For those who are thinking that Bullet-based Outliner Editor is way too cluttered with crowded bullet points.</li>
+	<li>Combined UX : Block based Notion Editor + Outliner</li>
+</ul>
 <h2>Use case</h2>
 	<img src="https://user-images.githubusercontent.com/56161102/146399780-efbefb64-dd60-4878-a7a0-9e84e74ce770.gif">
 	<img src="https://user-images.githubusercontent.com/56161102/144811607-55235118-c43c-47f2-8eae-7b2424d4f0db.png"><br>
