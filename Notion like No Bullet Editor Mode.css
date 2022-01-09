@@ -4,6 +4,8 @@
 		--font-size-header-1: 32px;
 		--font-size-header-2: 24px;
 		--font-size-header-3: 20px;
+	/* TreeNode Adjustment */
+		--treenode-line-spacing: 20px;
 	/* Basic Bullet Color */
 		--bullet-main:#ABABAB;
 		--bullet-doc:#50FA7B;
@@ -106,7 +108,7 @@
 			top: -0.02rem !important;
 			left: 0.02rem !important;
 		}
-		[data-rem-tags="aliases"] .rem-container--descriptor-rem-type .rem-bullet {-webkit-mask-image: unset;}
+		[data-rem-tags="aliases"] .rem-container--descriptor-rem-type .rem-bullet {--webkit-mask-image: unset;}
 /*********** Forder & File Style ***********/
 	/* Remove Radius Circle */
 		.rem-bullet__icon.rem-bullet--hidden-children,
@@ -160,8 +162,8 @@
 	    position: relative;
 	    background-color: transparent;
 	    padding-left: 2px;
-	    left: 20px;
-		margin-right: 20px;
+	    left: var(--treenode-line-spacing);
+		margin-right: var(--treenode-line-spacing);
 	} 
 	/* List Card Item */
 		.node-card-item:before {
@@ -211,9 +213,9 @@
 			height: 18px;
 			position: relative;
 			left: 4px;
-			-webkit-mask-repeat: no-repeat;
-			-webkit-mask-size: contain;
-			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.png");
+			--webkit-mask-repeat: no-repeat;
+			--webkit-mask-size: contain;
+			--webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.png");
 			overflow: visible !important;
 			zoom:  80%;
 		}
@@ -224,9 +226,9 @@
 			position: relative !important;
 			top: 2px !important;
 			left: -1px !important;
-			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
-			-webkit-mask-repeat: no-repeat;
-			-webkit-mask-size: contain;
+			--webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
+			--webkit-mask-repeat: no-repeat;
+			--webkit-mask-size: contain;
 		}
 	/* List-Type Bullet */
 		.rem-container--forwards-practice-enabled .rem-bullet.rem-bullet--hidden-children,
@@ -237,9 +239,9 @@
 			top: 2px;
 			left: 0px;
 		    zoom: 2;
-		    -webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-			-webkit-mask-repeat: no-repeat;
-			-webkit-mask-size: contain;
+		    --webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+			--webkit-mask-repeat: no-repeat;
+			--webkit-mask-size: contain;
 		}
 /*********** Documents ***********/
 	/* Current Page [Parent > Child] Hierarchy Style */
