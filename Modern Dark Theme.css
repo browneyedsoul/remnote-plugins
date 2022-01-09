@@ -427,6 +427,87 @@
 		.dark-mode #DocumentTitle .bold.highlight-color--green {color: var(--green-text-dark);}
 		.dark-mode #DocumentTitle .bold.highlight-color--blue {color: var(--blue-text-dark);}
 		.dark-mode #DocumentTitle .bold.highlight-color--purple {color: var(--purple-text-dark);}
+	/* Highlight Color to Header Text Color */
+		.rem-text.rem-header--1 .bold.highlight-color--red,
+		.rem-text.rem-header--2 .bold.highlight-color--red,
+		.rem-text.rem-header--3 .bold.highlight-color--red,
+		.rem-text.rem-header--1 .bold.highlight-color--orange,
+		.rem-text.rem-header--2 .bold.highlight-color--orange,
+		.rem-text.rem-header--3 .bold.highlight-color--orange,
+		.rem-text.rem-header--1 .bold.highlight-color--yellow,
+		.rem-text.rem-header--2 .bold.highlight-color--yellow,
+		.rem-text.rem-header--3 .bold.highlight-color--yellow,
+		.rem-text.rem-header--1 .bold.highlight-color--green,
+		.rem-text.rem-header--2 .bold.highlight-color--green,
+		.rem-text.rem-header--3 .bold.highlight-color--green,
+		.rem-text.rem-header--1 .bold.highlight-color--blue,
+		.rem-text.rem-header--2 .bold.highlight-color--blue,
+		.rem-text.rem-header--3 .bold.highlight-color--blue,
+		.rem-text.rem-header--1 .bold.highlight-color--purple,
+		.rem-text.rem-header--2 .bold.highlight-color--purple,
+		.rem-text.rem-header--3 .bold.highlight-color--purple {
+			background-color: unset;
+		}
+		.rem-text.rem-header--1 .bold.highlight-color--red,
+		.rem-text.rem-header--2 .bold.highlight-color--red,
+		.rem-text.rem-header--3 .bold.highlight-color--red {
+			color: var(--red-text);
+		} 
+		.rem-text.rem-header--1 .bold.highlight-color--orange,
+		.rem-text.rem-header--2 .bold.highlight-color--orange,
+		.rem-text.rem-header--3 .bold.highlight-color--orange {
+			color: var(--orange-text);
+		} 
+		.rem-text.rem-header--1 .bold.highlight-color--yellow,
+		.rem-text.rem-header--2 .bold.highlight-color--yellow,
+		.rem-text.rem-header--3 .bold.highlight-color--yellow {
+			color: var(--yellow-text);
+		} 
+		.rem-text.rem-header--1 .bold.highlight-color--green,
+		.rem-text.rem-header--2 .bold.highlight-color--green,
+		.rem-text.rem-header--3 .bold.highlight-color--green {
+			color: var(--green-text);
+		} 
+		.rem-text.rem-header--1 .bold.highlight-color--blue,
+		.rem-text.rem-header--2 .bold.highlight-color--blue,
+		.rem-text.rem-header--3 .bold.highlight-color--blue {
+			color: var(--blue-text);
+		} 
+		.rem-text.rem-header--1 .bold.highlight-color--purple,
+		.rem-text.rem-header--2 .bold.highlight-color--purple,
+		.rem-text.rem-header--3 .bold.highlight-color--purple {
+			color: var(--purple-text);
+		}
+		.dark-mode .rem-text.rem-header--1 .bold.highlight-color--red,
+		.dark-mode .rem-text.rem-header--2 .bold.highlight-color--red,
+		.dark-mode .rem-text.rem-header--3 .bold.highlight-color--red {
+			color: var(--red-text-dark);
+		} 
+		.dark-mode .rem-text.rem-header--1 .bold.highlight-color--orange,
+		.dark-mode .rem-text.rem-header--2 .bold.highlight-color--orange,
+		.dark-mode .rem-text.rem-header--3 .bold.highlight-color--orange {
+			color: var(--orange-text-dark);
+		} 
+		.dark-mode .rem-text.rem-header--1 .bold.highlight-color--yellow,
+		.dark-mode .rem-text.rem-header--2 .bold.highlight-color--yellow,
+		.dark-mode .rem-text.rem-header--3 .bold.highlight-color--yellow {
+			color: var(--yellow-text-dark);
+		} 
+		.dark-mode .rem-text.rem-header--1 .bold.highlight-color--green,
+		.dark-mode .rem-text.rem-header--2 .bold.highlight-color--green,
+		.dark-mode .rem-text.rem-header--3 .bold.highlight-color--green {
+			color: var(--green-text-dark);
+		} 
+		.dark-mode .rem-text.rem-header--1 .bold.highlight-color--blue,
+		.dark-mode .rem-text.rem-header--2 .bold.highlight-color--blue,
+		.dark-mode .rem-text.rem-header--3 .bold.highlight-color--blue {
+			color: var(--blue-text-dark);
+		} 
+		.dark-mode .rem-text.rem-header--1 .bold.highlight-color--purple,
+		.dark-mode .rem-text.rem-header--2 .bold.highlight-color--purple,
+		.dark-mode .rem-text.rem-header--3 .bold.highlight-color--purple {
+			color: var(--purple-text-dark);
+		}
 	/* Highlight Color to Text Color Using `color` Tag */
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--red,
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange,
