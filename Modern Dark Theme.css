@@ -29,7 +29,7 @@
 	--yellow-text: #FF2600;
 	--yellow-text-dark: #FFDF0B;
 	--green-text: #34A853;
-	--green-text-dark: #3CC160;
+	--green-text-dark: #44DD66;
 	--blue-text: #579AFF;
 	--blue-text-dark: #98BFE2;
 	--purple-text: #A142F4;
@@ -305,7 +305,7 @@
 			border-left-color: var(--line-color-dark) !important;
 		}
 	/* Hierarchy Editor - quote */
-		.dark-mode .animate-zoom-into-bullet .quote {
+		.dark-mode .quote {
 			color: var(--quote-text-dark) !important;
 			background-color: var(--quote-background-dark) !important;
 		}
@@ -922,13 +922,7 @@
 		#document-sidebar .bold.highlight-color--green {color: var(--green-text-dark);}
 		#document-sidebar .bold.highlight-color--blue {color: var(--blue-text-dark);}
 		#document-sidebar .bold.highlight-color--purple {color: var(--purple-text-dark);}
-		#document-sidebar .RichTextViewer .quote {
-			margin-left: 5px !important;
-			padding: 0 3px;
-			font-family: "Roboto Mono", Monospace !important;
-			font-size: 14px !important;
-			border-radius: 6px !important;
-		}
+
 		#document-sidebar .highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
 	/* Sidebar list item focused*/
 		#document-sidebar .bg-primary-5 .RichTextViewer {color: white;}
