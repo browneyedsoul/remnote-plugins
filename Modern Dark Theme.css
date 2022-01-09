@@ -503,6 +503,8 @@
 		.popup-menu .spaced-repetition__prompt .indented-rem .rem-bullet__document,
 		.popup-menu .spaced-repetition__prompt .indented-rem .rem-bullet__document > i {color: black !important;}
 		.popup-menu .spaced-repetition__prompt .file.text.small.icon::before {filter: invert(0);}
+		/* Card Select Button */
+			.popup-menu .css-fLTnVi {color: var(--darkmode-text);}
 	/* Popup Border*/
 		.popup-menu.fixed {border: 1px solid white;}
 	/* Popup Text */
