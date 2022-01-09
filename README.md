@@ -25,6 +25,12 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Dark%20Theme.css");
 ```
+## Hidden Features
+### Highlight Color to Text Color
+- You can change the Highlight color to normal rem-text color by tagging the `color` tag and bolding text.
+- But You don't have to tag the `color` tag to Header 1,2,3
+### Display Long Page Breadcrumbs at a glance even in separated windowed panes
+- You don't have to worry about overflowed pages breadcrumbs hidden
 <img src="https://user-images.githubusercontent.com/56161102/147359607-9d06984a-af5c-4c42-819f-b75c8b38a802.png">
 <img src="https://user-images.githubusercontent.com/56161102/147359654-4681a66a-f774-43f9-93ae-e6057db4cef6.png">
 </details>
@@ -37,7 +43,6 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20No%20Bullet%20Editor%20Mode.css"); 
 ```
-<h2>What is the purpose of this Snippet?</h2> 
 	<ul>
 		<li>For those who are thinking that Bullet-based Outliner Editor is way too cluttered with crowded bullet points.</li>
 		<li>Combined UX : Block based Notion Editor + Outliner</li>
@@ -79,7 +84,6 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Thumbnail.css");
 ```
 <br>
-<h2>What is the purpose of this Snippet?</h2>
 <h2>Use case</h2>
 <img src ="https://user-images.githubusercontent.com/56161102/146559784-77b87fb2-6450-43a5-9926-bcd92507ee81.gif">
 <img src ="https://user-images.githubusercontent.com/56161102/146574898-8c7c725a-ace3-4e4e-98ee-cb61ed72d972.png">
@@ -159,7 +163,6 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Easily%20Discernible%20List%20Card%20Layout.css"); 
 ```
-<h2>What is the purpose of this Snippet?</h2>
 <h2>Use case</h2>
 <img src="https://user-images.githubusercontent.com/56161102/139407710-45d2ba43-d5c0-4314-9719-4676d4b41575.gif">
 <br>
