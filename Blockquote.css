@@ -7,7 +7,6 @@
 }
 /*********** Style ***********/
 	[data-rem-container-tags~="blockquote"] {
-	    background-color: ;
 	    margin: 15px 2px 15px 48px;
 	    border-left: 5px solid var(--blockquote-border-color);
 	    padding: 5px 10px;
@@ -16,7 +15,6 @@
 	}
 /*********** Darkmode Compatibility ***********/
 	.dark-mode [data-rem-container-tags~="blockquote"] {
-		background-color: ;
 		border-left: 5px solid var(--blockquote-border-color-dark);
 	}
 /*********** Tag Declutter ***********/
