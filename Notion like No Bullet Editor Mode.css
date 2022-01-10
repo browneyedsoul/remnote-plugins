@@ -30,9 +30,10 @@
 	.css-jxYBFL {
 		pointer-events: none;
 	}
-/*********** Move Toggle Foldable Triangle Button to Right Side ***********/
-	#hierarchy-editor .rem-container .rem-button__container .toggle-collapse-button {
-		position: relative !important;
+/*********** Move Toggle Foldable Triangle Button and Six Dots Rem Mover to the Right Side ***********/
+	#hierarchy-editor .rem-container .rem-button__container .toggle-collapse-button,
+	#hierarchy-editor .rem-container .rem-button__container .six-dot {
+		position: relative;
 		left: 24px;
 	}
 /*********** Remove Bullet Background Color ***********/
