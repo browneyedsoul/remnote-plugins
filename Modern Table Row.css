@@ -1,782 +1,786 @@
 :root {
-	--table-title-background-color: #EEEEEB;
-	--table-title-background-color-dark: #000;
-	--table-columnrow-background-color: #F7F6F3;
-	--table-columnrow-background-color-dark: #555;
-	--table-cell-background-color: #FFFFFF;
-	--table-cell-background-color-dark: #2F3437;
-	--table-border-color: #EEEEEB;
-	--table-border-color-dark: #535353;
+    --table-title-background-color: #EEEEEB;
+    --table-title-background-color-dark: #000;
+    --table-columnrow-background-color: #F7F6F3;
+    --table-columnrow-background-color-dark: #555;
+    --table-cell-background-color: #FFFFFF;
+    --table-cell-background-color-dark: #2F3437;
+    --table-border-color: #EEEEEB;
+    --table-border-color-dark: #535353;
 }
+/*********** Remove Left Margin ***********/
+    .hierarchy-editor--ltr [data-rem-container-tags~="table90"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table120"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table150"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table180"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table210"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table240"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table270"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table300"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table330"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table360"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table390"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table420"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table450"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table480"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table510"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table540"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table570"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table600"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table630"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table660"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table690"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table720"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table750"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table780"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table810"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table840"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table870"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table900"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table930"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table960"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table990"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table1020"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table1050"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table1080"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table1110"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table1140"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table1170"] .TreeNode,
+    .hierarchy-editor--ltr [data-rem-container-tags~="table1200"] .TreeNode {
+        margin-left: 0;
+    }
 /*********** Table Row LineBreaker (Just hacky method) ***********/
-	[data-rem-container-tags*="lb"] > .TreeNode {left: -15px !important;}
-	[data-rem-tags*="lb"] {height: 5px;}
-	[data-rem-container-tags~="lb"] > .TreeNode {border-left: unset !important;}
-	/* Tag Declutter */
-		[data-rem-tags~="lb"] .hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
-		[data-rem-tags~="lb"] .hierarchy-editor__tag-bar__tag span {display: none;}
-/*********** Interim measure ***********/
-	[data-rem-container-tags~="table90"] > .TreeNode > div,
-	[data-rem-container-tags~="table120"] > .TreeNode > div,
-	[data-rem-container-tags~="table150"] > .TreeNode > div,
-	[data-rem-container-tags~="table180"] > .TreeNode > div,
-	[data-rem-container-tags~="table210"] > .TreeNode > div,
-	[data-rem-container-tags~="table240"] > .TreeNode > div,
-	[data-rem-container-tags~="table270"] > .TreeNode > div,
-	[data-rem-container-tags~="table300"] > .TreeNode > div,
-	[data-rem-container-tags~="table330"] > .TreeNode > div,
-	[data-rem-container-tags~="table360"] > .TreeNode > div,
-	[data-rem-container-tags~="table390"] > .TreeNode > div,
-	[data-rem-container-tags~="table420"] > .TreeNode > div,
-	[data-rem-container-tags~="table450"] > .TreeNode > div,
-	[data-rem-container-tags~="table480"] > .TreeNode > div,
-	[data-rem-container-tags~="table510"] > .TreeNode > div,
-	[data-rem-container-tags~="table540"] > .TreeNode > div,
-	[data-rem-container-tags~="table570"] > .TreeNode > div,
-	[data-rem-container-tags~="table600"] > .TreeNode > div,
-	[data-rem-container-tags~="table630"] > .TreeNode > div,
-	[data-rem-container-tags~="table660"] > .TreeNode > div,
-	[data-rem-container-tags~="table690"] > .TreeNode > div,
-	[data-rem-container-tags~="table720"] > .TreeNode > div,
-	[data-rem-container-tags~="table750"] > .TreeNode > div,
-	[data-rem-container-tags~="table780"] > .TreeNode > div,
-	[data-rem-container-tags~="table810"] > .TreeNode > div,
-	[data-rem-container-tags~="table840"] > .TreeNode > div,
-	[data-rem-container-tags~="table870"] > .TreeNode > div,
-	[data-rem-container-tags~="table900"] > .TreeNode > div,
-	[data-rem-container-tags~="table930"] > .TreeNode > div,
-	[data-rem-container-tags~="table960"] > .TreeNode > div,
-	[data-rem-container-tags~="table990"] > .TreeNode > div,
-	[data-rem-container-tags~="table1020"] > .TreeNode > div,
-	[data-rem-container-tags~="table1050"] > .TreeNode > div,
-	[data-rem-container-tags~="table1080"] > .TreeNode > div,
-	[data-rem-container-tags~="table1110"] > .TreeNode > div,
-	[data-rem-container-tags~="table1140"] > .TreeNode > div,
-	[data-rem-container-tags~="table1170"] > .TreeNode > div,
-	[data-rem-container-tags~="table1200"] > .TreeNode > div {
-		margin-left: 5px;
-		border-right: 1px solid  var(--table-border-color);
-	}
-	.dark-mode [data-rem-container-tags~="table90"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table120"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table150"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table180"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table210"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table240"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table270"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table300"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table330"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table360"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table390"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table420"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table450"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table480"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table510"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table540"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table570"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table600"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table630"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table660"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table690"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table720"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table750"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table780"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table810"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table840"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table870"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table900"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table930"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table960"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table990"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table1020"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table1050"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table1080"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table1110"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table1140"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table1170"] > .TreeNode > :first-child,
-	.dark-mode [data-rem-container-tags~="table1200"] > .TreeNode > :first-child {
-		border-right: 1px solid  var(--table-border-color-dark) !important;
-	}
+    [data-rem-container-tags*="lb"] > .TreeNode {
+        position: relative;
+        left: -10px !important;
+    }
+    [data-rem-tags*="lb"] {height: 5px;}
+    [data-rem-container-tags~="lb"] > .TreeNode {border-left: unset !important;}
+    /* Tag Declutter */
+        [data-rem-tags~="lb"] .hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
+        [data-rem-tags~="lb"] .hierarchy-editor__tag-bar__tag span {display: none;}
 /*********** Whole Table Area ***********/
-	[data-rem-container-tags~="table90"],
-	[data-rem-container-tags~="table120"],
-	[data-rem-container-tags~="table150"],
-	[data-rem-container-tags~="table180"],
-	[data-rem-container-tags~="table210"],
-	[data-rem-container-tags~="table240"],
-	[data-rem-container-tags~="table270"],
-	[data-rem-container-tags~="table300"],
-	[data-rem-container-tags~="table330"],
-	[data-rem-container-tags~="table360"],
-	[data-rem-container-tags~="table390"],
-	[data-rem-container-tags~="table420"],
-	[data-rem-container-tags~="table450"],
-	[data-rem-container-tags~="table480"],
-	[data-rem-container-tags~="table510"],
-	[data-rem-container-tags~="table540"],
-	[data-rem-container-tags~="table570"],
-	[data-rem-container-tags~="table600"],
-	[data-rem-container-tags~="table630"],
-	[data-rem-container-tags~="table660"],
-	[data-rem-container-tags~="table690"],
-	[data-rem-container-tags~="table720"],
-	[data-rem-container-tags~="table750"],
-	[data-rem-container-tags~="table780"],
-	[data-rem-container-tags~="table810"],
-	[data-rem-container-tags~="table840"],
-	[data-rem-container-tags~="table870"],
-	[data-rem-container-tags~="table900"],
-	[data-rem-container-tags~="table930"],
-	[data-rem-container-tags~="table960"],
-	[data-rem-container-tags~="table990"],
-	[data-rem-container-tags~="table1020"],
-	[data-rem-container-tags~="table1050"],
-	[data-rem-container-tags~="table1080"],
-	[data-rem-container-tags~="table1110"],
-	[data-rem-container-tags~="table1140"],
-	[data-rem-container-tags~="table1170"],
-	[data-rem-container-tags~="table1200"] {
-		margin-top: 0.5rem;
-		margin-bottom: 0.5rem;
-		margin-left: 1rem;
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
-	}
-/*********** Table Contents ***********/
-	[data-rem-container-tags~="table90"] > .TreeNode,
-	[data-rem-container-tags~="table120"] > .TreeNode,
-	[data-rem-container-tags~="table150"] > .TreeNode,
-	[data-rem-container-tags~="table180"] > .TreeNode,
-	[data-rem-container-tags~="table210"] > .TreeNode,
-	[data-rem-container-tags~="table240"] > .TreeNode,
-	[data-rem-container-tags~="table270"] > .TreeNode,
-	[data-rem-container-tags~="table300"] > .TreeNode,
-	[data-rem-container-tags~="table330"] > .TreeNode,
-	[data-rem-container-tags~="table360"] > .TreeNode,
-	[data-rem-container-tags~="table390"] > .TreeNode,
-	[data-rem-container-tags~="table420"] > .TreeNode,
-	[data-rem-container-tags~="table450"] > .TreeNode,
-	[data-rem-container-tags~="table480"] > .TreeNode,
-	[data-rem-container-tags~="table510"] > .TreeNode,
-	[data-rem-container-tags~="table540"] > .TreeNode,
-	[data-rem-container-tags~="table570"] > .TreeNode,
-	[data-rem-container-tags~="table600"] > .TreeNode,
-	[data-rem-container-tags~="table630"] > .TreeNode,
-	[data-rem-container-tags~="table660"] > .TreeNode,
-	[data-rem-container-tags~="table690"] > .TreeNode,
-	[data-rem-container-tags~="table720"] > .TreeNode,
-	[data-rem-container-tags~="table750"] > .TreeNode,
-	[data-rem-container-tags~="table780"] > .TreeNode,
-	[data-rem-container-tags~="table810"] > .TreeNode,
-	[data-rem-container-tags~="table840"] > .TreeNode,
-	[data-rem-container-tags~="table870"] > .TreeNode,
-	[data-rem-container-tags~="table900"] > .TreeNode,
-	[data-rem-container-tags~="table930"] > .TreeNode,
-	[data-rem-container-tags~="table960"] > .TreeNode,
-	[data-rem-container-tags~="table990"] > .TreeNode,
-	[data-rem-container-tags~="table1020"] > .TreeNode,
-	[data-rem-container-tags~="table1050"] > .TreeNode,
-	[data-rem-container-tags~="table1080"] > .TreeNode,
-	[data-rem-container-tags~="table1110"] > .TreeNode,
-	[data-rem-container-tags~="table1140"] > .TreeNode,
-	[data-rem-container-tags~="table1170"] > .TreeNode,
-	[data-rem-container-tags~="table1200"] > .TreeNode {
-		display: grid;
-		grid-auto-rows: auto;
-		border-left: unset !important;
-		overflow: auto;
-		white-space: pre;
-		padding-left: 36px;
-	}
+    [data-rem-container-tags~="table90"],
+    [data-rem-container-tags~="table120"],
+    [data-rem-container-tags~="table150"],
+    [data-rem-container-tags~="table180"],
+    [data-rem-container-tags~="table210"],
+    [data-rem-container-tags~="table240"],
+    [data-rem-container-tags~="table270"],
+    [data-rem-container-tags~="table300"],
+    [data-rem-container-tags~="table330"],
+    [data-rem-container-tags~="table360"],
+    [data-rem-container-tags~="table390"],
+    [data-rem-container-tags~="table420"],
+    [data-rem-container-tags~="table450"],
+    [data-rem-container-tags~="table480"],
+    [data-rem-container-tags~="table510"],
+    [data-rem-container-tags~="table540"],
+    [data-rem-container-tags~="table570"],
+    [data-rem-container-tags~="table600"],
+    [data-rem-container-tags~="table630"],
+    [data-rem-container-tags~="table660"],
+    [data-rem-container-tags~="table690"],
+    [data-rem-container-tags~="table720"],
+    [data-rem-container-tags~="table750"],
+    [data-rem-container-tags~="table780"],
+    [data-rem-container-tags~="table810"],
+    [data-rem-container-tags~="table840"],
+    [data-rem-container-tags~="table870"],
+    [data-rem-container-tags~="table900"],
+    [data-rem-container-tags~="table930"],
+    [data-rem-container-tags~="table960"],
+    [data-rem-container-tags~="table990"],
+    [data-rem-container-tags~="table1020"],
+    [data-rem-container-tags~="table1050"],
+    [data-rem-container-tags~="table1080"],
+    [data-rem-container-tags~="table1110"],
+    [data-rem-container-tags~="table1140"],
+    [data-rem-container-tags~="table1170"],
+    [data-rem-container-tags~="table1200"] {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: var(--table-columnrow-background-color);
+    }
+    .dark-mode [data-rem-container-tags~="table90"],
+    .dark-mode [data-rem-container-tags~="table120"],
+    .dark-mode [data-rem-container-tags~="table150"],
+    .dark-mode [data-rem-container-tags~="table180"],
+    .dark-mode [data-rem-container-tags~="table210"],
+    .dark-mode [data-rem-container-tags~="table240"],
+    .dark-mode [data-rem-container-tags~="table270"],
+    .dark-mode [data-rem-container-tags~="table300"],
+    .dark-mode [data-rem-container-tags~="table330"],
+    .dark-mode [data-rem-container-tags~="table360"],
+    .dark-mode [data-rem-container-tags~="table390"],
+    .dark-mode [data-rem-container-tags~="table420"],
+    .dark-mode [data-rem-container-tags~="table450"],
+    .dark-mode [data-rem-container-tags~="table480"],
+    .dark-mode [data-rem-container-tags~="table510"],
+    .dark-mode [data-rem-container-tags~="table540"],
+    .dark-mode [data-rem-container-tags~="table570"],
+    .dark-mode [data-rem-container-tags~="table600"],
+    .dark-mode [data-rem-container-tags~="table630"],
+    .dark-mode [data-rem-container-tags~="table660"],
+    .dark-mode [data-rem-container-tags~="table690"],
+    .dark-mode [data-rem-container-tags~="table720"],
+    .dark-mode [data-rem-container-tags~="table750"],
+    .dark-mode [data-rem-container-tags~="table780"],
+    .dark-mode [data-rem-container-tags~="table810"],
+    .dark-mode [data-rem-container-tags~="table840"],
+    .dark-mode [data-rem-container-tags~="table870"],
+    .dark-mode [data-rem-container-tags~="table900"],
+    .dark-mode [data-rem-container-tags~="table930"],
+    .dark-mode [data-rem-container-tags~="table960"],
+    .dark-mode [data-rem-container-tags~="table990"],
+    .dark-mode [data-rem-container-tags~="table1020"],
+    .dark-mode [data-rem-container-tags~="table1050"],
+    .dark-mode [data-rem-container-tags~="table1080"],
+    .dark-mode [data-rem-container-tags~="table1110"],
+    .dark-mode [data-rem-container-tags~="table1140"],
+    .dark-mode [data-rem-container-tags~="table1170"],
+    .dark-mode [data-rem-container-tags~="table1200"] {
+        background-color: var(--table-columnrow-background-color-dark);
+    }
+/*********** Table Grid Scrollable***********/
+    [data-rem-container-tags~="table180"] > .TreeNode {
+        display: grid;
+        grid-auto-rows: auto;
+        border-left: unset;
+        overflow: auto;
+        white-space: pre;
+    }
+/*********** Table Left Attribute Cell ***********/
+    [data-rem-container-tags~="table90"] > .TreeNode > div,
+    [data-rem-container-tags~="table120"] > .TreeNode > div,
+    [data-rem-container-tags~="table150"] > .TreeNode > div,
+    [data-rem-container-tags~="table180"] > .TreeNode > div,
+    [data-rem-container-tags~="table210"] > .TreeNode > div,
+    [data-rem-container-tags~="table240"] > .TreeNode > div,
+    [data-rem-container-tags~="table270"] > .TreeNode > div,
+    [data-rem-container-tags~="table300"] > .TreeNode > div,
+    [data-rem-container-tags~="table330"] > .TreeNode > div,
+    [data-rem-container-tags~="table360"] > .TreeNode > div,
+    [data-rem-container-tags~="table390"] > .TreeNode > div,
+    [data-rem-container-tags~="table420"] > .TreeNode > div,
+    [data-rem-container-tags~="table450"] > .TreeNode > div,
+    [data-rem-container-tags~="table480"] > .TreeNode > div,
+    [data-rem-container-tags~="table510"] > .TreeNode > div,
+    [data-rem-container-tags~="table540"] > .TreeNode > div,
+    [data-rem-container-tags~="table570"] > .TreeNode > div,
+    [data-rem-container-tags~="table600"] > .TreeNode > div,
+    [data-rem-container-tags~="table630"] > .TreeNode > div,
+    [data-rem-container-tags~="table660"] > .TreeNode > div,
+    [data-rem-container-tags~="table690"] > .TreeNode > div,
+    [data-rem-container-tags~="table720"] > .TreeNode > div,
+    [data-rem-container-tags~="table750"] > .TreeNode > div,
+    [data-rem-container-tags~="table780"] > .TreeNode > div,
+    [data-rem-container-tags~="table810"] > .TreeNode > div,
+    [data-rem-container-tags~="table840"] > .TreeNode > div,
+    [data-rem-container-tags~="table870"] > .TreeNode > div,
+    [data-rem-container-tags~="table900"] > .TreeNode > div,
+    [data-rem-container-tags~="table930"] > .TreeNode > div,
+    [data-rem-container-tags~="table960"] > .TreeNode > div,
+    [data-rem-container-tags~="table990"] > .TreeNode > div,
+    [data-rem-container-tags~="table1020"] > .TreeNode > div,
+    [data-rem-container-tags~="table1050"] > .TreeNode > div,
+    [data-rem-container-tags~="table1080"] > .TreeNode > div,
+    [data-rem-container-tags~="table1110"] > .TreeNode > div,
+    [data-rem-container-tags~="table1140"] > .TreeNode > div,
+    [data-rem-container-tags~="table1170"] > .TreeNode > div,
+    [data-rem-container-tags~="table1200"] > .TreeNode > div {
+        border-right: 1px solid  var(--table-border-color);
+        margin-left: 6px;
+    }
+    .dark-mode [data-rem-container-tags~="table90"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table120"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table150"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table180"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table210"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table240"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table270"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table300"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table330"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table360"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table390"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table420"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table450"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table480"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table510"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table540"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table570"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table600"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table630"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table660"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table690"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table720"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table750"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table780"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table810"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table840"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table870"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table900"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table930"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table960"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table990"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table1020"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table1050"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table1080"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table1110"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table1140"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table1170"] > .TreeNode > :first-child,
+    .dark-mode [data-rem-container-tags~="table1200"] > .TreeNode > :first-child {
+        border-right: 1px solid  var(--table-border-color-dark) !important;
+    }
 /*********** Table Title ***********/
-	[data-rem-container-tags~="table90"] > :first-child,
-	[data-rem-container-tags~="table120"] > :first-child,
-	[data-rem-container-tags~="table150"] > :first-child,
-	[data-rem-container-tags~="table180"] > :first-child,
-	[data-rem-container-tags~="table210"] > :first-child,
-	[data-rem-container-tags~="table240"] > :first-child,
-	[data-rem-container-tags~="table270"] > :first-child,
-	[data-rem-container-tags~="table300"] > :first-child,
-	[data-rem-container-tags~="table330"] > :first-child,
-	[data-rem-container-tags~="table360"] > :first-child,
-	[data-rem-container-tags~="table390"] > :first-child,
-	[data-rem-container-tags~="table420"] > :first-child,
-	[data-rem-container-tags~="table450"] > :first-child,
-	[data-rem-container-tags~="table480"] > :first-child,
-	[data-rem-container-tags~="table510"] > :first-child,
-	[data-rem-container-tags~="table540"] > :first-child,
-	[data-rem-container-tags~="table570"] > :first-child,
-	[data-rem-container-tags~="table600"] > :first-child,
-	[data-rem-container-tags~="table630"] > :first-child,
-	[data-rem-container-tags~="table660"] > :first-child,
-	[data-rem-container-tags~="table690"] > :first-child,
-	[data-rem-container-tags~="table720"] > :first-child,
-	[data-rem-container-tags~="table750"] > :first-child,
-	[data-rem-container-tags~="table780"] > :first-child,
-	[data-rem-container-tags~="table810"] > :first-child,
-	[data-rem-container-tags~="table840"] > :first-child,
-	[data-rem-container-tags~="table870"] > :first-child,
-	[data-rem-container-tags~="table900"] > :first-child,
-	[data-rem-container-tags~="table930"] > :first-child,
-	[data-rem-container-tags~="table960"] > :first-child,
-	[data-rem-container-tags~="table990"] > :first-child,
-	[data-rem-container-tags~="table1020"] > :first-child,
-	[data-rem-container-tags~="table1050"] > :first-child,
-	[data-rem-container-tags~="table1080"] > :first-child,
-	[data-rem-container-tags~="table1110"] > :first-child,
-	[data-rem-container-tags~="table1140"] > :first-child,
-	[data-rem-container-tags~="table1170"] > :first-child,
-	[data-rem-container-tags~="table1200"] > :first-child {
-		border: 0.1em solid var(--table-border-color);
-		background-color: var(--table-title-background-color);
-		background-size: 100% 100%;
-		border-top-left-radius: 4px;
-		border-top-right-radius: 4px;
-	}
-	.dark-mode [data-rem-container-tags~="table90"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table120"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table150"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table180"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table210"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table240"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table270"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table300"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table330"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table360"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table390"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table420"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table450"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table480"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table510"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table540"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table570"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table600"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table630"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table660"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table690"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table720"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table750"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table780"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table810"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table840"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table870"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table900"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table930"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table960"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table990"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table1020"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table1050"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table1080"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table1110"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table1140"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table1170"] > :first-child,
-	.dark-mode [data-rem-container-tags~="table1200"] > :first-child {
-		border: 0.1em solid var(--table-border-color-dark);
-		background-color: var(--table-title-background-color-dark);
-	}
-/*********** Table Row and Column Title Property Column ***********/
-	[data-rem-container-tags~="table90"],
-	[data-rem-container-tags~="table120"],
-	[data-rem-container-tags~="table150"],
-	[data-rem-container-tags~="table180"],
-	[data-rem-container-tags~="table210"],
-	[data-rem-container-tags~="table240"],
-	[data-rem-container-tags~="table270"],
-	[data-rem-container-tags~="table300"],
-	[data-rem-container-tags~="table330"],
-	[data-rem-container-tags~="table360"],
-	[data-rem-container-tags~="table390"],
-	[data-rem-container-tags~="table420"],
-	[data-rem-container-tags~="table450"],
-	[data-rem-container-tags~="table480"],
-	[data-rem-container-tags~="table510"],
-	[data-rem-container-tags~="table540"],
-	[data-rem-container-tags~="table570"],
-	[data-rem-container-tags~="table600"],
-	[data-rem-container-tags~="table630"],
-	[data-rem-container-tags~="table660"],
-	[data-rem-container-tags~="table690"],
-	[data-rem-container-tags~="table720"],
-	[data-rem-container-tags~="table750"],
-	[data-rem-container-tags~="table780"],
-	[data-rem-container-tags~="table810"],
-	[data-rem-container-tags~="table840"],
-	[data-rem-container-tags~="table870"],
-	[data-rem-container-tags~="table900"],
-	[data-rem-container-tags~="table930"],
-	[data-rem-container-tags~="table960"],
-	[data-rem-container-tags~="table990"],
-	[data-rem-container-tags~="table1020"],
-	[data-rem-container-tags~="table1050"],
-	[data-rem-container-tags~="table1080"],
-	[data-rem-container-tags~="table1110"],
-	[data-rem-container-tags~="table1140"],
-	[data-rem-container-tags~="table1170"],
-	[data-rem-container-tags~="table1200"] {
-		background-color: var(--table-columnrow-background-color);
-	}
-	.dark-mode [data-rem-container-tags~="table90"],
-	.dark-mode [data-rem-container-tags~="table120"],
-	.dark-mode [data-rem-container-tags~="table150"],
-	.dark-mode [data-rem-container-tags~="table180"],
-	.dark-mode [data-rem-container-tags~="table210"],
-	.dark-mode [data-rem-container-tags~="table240"],
-	.dark-mode [data-rem-container-tags~="table270"],
-	.dark-mode [data-rem-container-tags~="table300"],
-	.dark-mode [data-rem-container-tags~="table330"],
-	.dark-mode [data-rem-container-tags~="table360"],
-	.dark-mode [data-rem-container-tags~="table390"],
-	.dark-mode [data-rem-container-tags~="table420"],
-	.dark-mode [data-rem-container-tags~="table450"],
-	.dark-mode [data-rem-container-tags~="table480"],
-	.dark-mode [data-rem-container-tags~="table510"],
-	.dark-mode [data-rem-container-tags~="table540"],
-	.dark-mode [data-rem-container-tags~="table570"],
-	.dark-mode [data-rem-container-tags~="table600"],
-	.dark-mode [data-rem-container-tags~="table630"],
-	.dark-mode [data-rem-container-tags~="table660"],
-	.dark-mode [data-rem-container-tags~="table690"],
-	.dark-mode [data-rem-container-tags~="table720"],
-	.dark-mode [data-rem-container-tags~="table750"],
-	.dark-mode [data-rem-container-tags~="table780"],
-	.dark-mode [data-rem-container-tags~="table810"],
-	.dark-mode [data-rem-container-tags~="table840"],
-	.dark-mode [data-rem-container-tags~="table870"],
-	.dark-mode [data-rem-container-tags~="table900"],
-	.dark-mode [data-rem-container-tags~="table930"],
-	.dark-mode [data-rem-container-tags~="table960"],
-	.dark-mode [data-rem-container-tags~="table990"],
-	.dark-mode [data-rem-container-tags~="table1020"],
-	.dark-mode [data-rem-container-tags~="table1050"],
-	.dark-mode [data-rem-container-tags~="table1080"],
-	.dark-mode [data-rem-container-tags~="table1110"],
-	.dark-mode [data-rem-container-tags~="table1140"],
-	.dark-mode [data-rem-container-tags~="table1170"],
-	.dark-mode [data-rem-container-tags~="table1200"] {
-		background-color: var(--table-columnrow-background-color-dark);
-	}
-	[data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > :first-child {width: 90px !important;}
-	[data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > :first-child {width: 120px !important;}
-	[data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > :first-child {width: 150px !important;}
-	[data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > :first-child {width: 180px !important;}
-	[data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > :first-child {width: 210px !important;}
-	[data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > :first-child {width: 240px !important;}
-	[data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > :first-child {width: 270px !important;}
-	[data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > :first-child {width: 300px !important;}
-	[data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > :first-child {width: 330px !important;}
-	[data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > :first-child {width: 360px !important;}
-	[data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > :first-child {width: 390px !important;}
-	[data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > :first-child {width: 420px !important;}
-	[data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > :first-child {width: 450px !important;}
-	[data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > :first-child {width: 480px !important;}
-	[data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > :first-child {width: 510px !important;}
-	[data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > :first-child {width: 540px !important;}
-	[data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > :first-child {width: 570px !important;}
-	[data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > :first-child {width: 600px !important;}
-	[data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > :first-child {width: 630px !important;}
-	[data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > :first-child {width: 660px !important;}
-	[data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > :first-child {width: 690px !important;}
-	[data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > :first-child {width: 720px !important;}
-	[data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > :first-child {width: 750px !important;}
-	[data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > :first-child {width: 780px !important;}
-	[data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > :first-child {width: 810px !important;}
-	[data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > :first-child {width: 840px !important;}
-	[data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > :first-child {width: 870px !important;}
-	[data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > :first-child {width: 900px !important;}
-	[data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > :first-child {width: 930px !important;}
-	[data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > :first-child {width: 960px !important;}
-	[data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > :first-child {width: 990px !important;}
-	[data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > :first-child {width: 1020px !important;}
-	[data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > :first-child {width: 1050px !important;}
-	[data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > :first-child {width: 1080px !important;}
-	[data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > :first-child {width: 1110px !important;}
-	[data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > :first-child {width: 1140px !important;}
-	[data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > :first-child {width: 1170px !important;}
-	[data-rem-container-tags~="table1200"]  > .TreeNode > .tree-node-container > :first-child {width: 1200px !important;}
-	[data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > :first-child,
-	[data-rem-container-tags~="table1200"]  > .TreeNode > .tree-node-container > :first-child {
-		float: left;
-		font-weight: bold;
-		background-color: var(--table-columnrow-background-color);
-		text-align: left;
-		padding-left: 0em;
-		position: relative;
-		z-index: 1;
-	}
-	.dark-mode [data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > :first-child,
-	.dark-mode [data-rem-container-tags~="table1200"]  > .TreeNode > .tree-node-container > :first-child {
-		background-color: var(--table-columnrow-background-color-dark) !important;
-	}
-/*********** Table all the horizontal line ***********/
-	[data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container:not(:first-child),
-	[data-rem-container-tags~="table1200"] > .TreeNode > .tree-node-container:not(:first-child) {
-		border-top-width: 0em;
-		border: 0.01rem solid var(--table-columnrow-background-color);
-	}
-	.dark-mode [data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container:not(:first-child),
-	.dark-mode [data-rem-container-tags~="table1200"] > .TreeNode > .tree-node-container:not(:first-child) {
-		border-top-width: 0em;
-		border: 0.01rem solid var(--table-columnrow-background-color-dark);
-	}
-/*********** Table Content Cell Configuration ***********/
-	[data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > .TreeNode,
-	[data-rem-container-tags~="table1200"] > .TreeNode > .tree-node-container > .TreeNode {
-		display: flex;
-		flex-direction: rows;
-		text-align: left;
-	}
+    [data-rem-container-tags~="table90"] > :first-child,
+    [data-rem-container-tags~="table120"] > :first-child,
+    [data-rem-container-tags~="table150"] > :first-child,
+    [data-rem-container-tags~="table180"] > :first-child,
+    [data-rem-container-tags~="table210"] > :first-child,
+    [data-rem-container-tags~="table240"] > :first-child,
+    [data-rem-container-tags~="table270"] > :first-child,
+    [data-rem-container-tags~="table300"] > :first-child,
+    [data-rem-container-tags~="table330"] > :first-child,
+    [data-rem-container-tags~="table360"] > :first-child,
+    [data-rem-container-tags~="table390"] > :first-child,
+    [data-rem-container-tags~="table420"] > :first-child,
+    [data-rem-container-tags~="table450"] > :first-child,
+    [data-rem-container-tags~="table480"] > :first-child,
+    [data-rem-container-tags~="table510"] > :first-child,
+    [data-rem-container-tags~="table540"] > :first-child,
+    [data-rem-container-tags~="table570"] > :first-child,
+    [data-rem-container-tags~="table600"] > :first-child,
+    [data-rem-container-tags~="table630"] > :first-child,
+    [data-rem-container-tags~="table660"] > :first-child,
+    [data-rem-container-tags~="table690"] > :first-child,
+    [data-rem-container-tags~="table720"] > :first-child,
+    [data-rem-container-tags~="table750"] > :first-child,
+    [data-rem-container-tags~="table780"] > :first-child,
+    [data-rem-container-tags~="table810"] > :first-child,
+    [data-rem-container-tags~="table840"] > :first-child,
+    [data-rem-container-tags~="table870"] > :first-child,
+    [data-rem-container-tags~="table900"] > :first-child,
+    [data-rem-container-tags~="table930"] > :first-child,
+    [data-rem-container-tags~="table960"] > :first-child,
+    [data-rem-container-tags~="table990"] > :first-child,
+    [data-rem-container-tags~="table1020"] > :first-child,
+    [data-rem-container-tags~="table1050"] > :first-child,
+    [data-rem-container-tags~="table1080"] > :first-child,
+    [data-rem-container-tags~="table1110"] > :first-child,
+    [data-rem-container-tags~="table1140"] > :first-child,
+    [data-rem-container-tags~="table1170"] > :first-child,
+    [data-rem-container-tags~="table1200"] > :first-child {
+        border: 0.1em solid var(--table-border-color);
+        background-color: var(--table-title-background-color);
+        background-size: 100% 100%;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    .dark-mode [data-rem-container-tags~="table90"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table120"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table150"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table180"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table210"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table240"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table270"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table300"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table330"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table360"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table390"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table420"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table450"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table480"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table510"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table540"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table570"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table600"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table630"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table660"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table690"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table720"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table750"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table780"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table810"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table840"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table870"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table900"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table930"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table960"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table990"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table1020"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table1050"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table1080"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table1110"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table1140"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table1170"] > :first-child,
+    .dark-mode [data-rem-container-tags~="table1200"] > :first-child {
+        border: 0.1em solid var(--table-border-color-dark);
+        background-color: var(--table-title-background-color-dark);
+    }
+/*********** Table Row and Column Attribute Cell ***********/
+    [data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > :first-child {width: 90px !important;}
+    [data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > :first-child {width: 120px !important;}
+    [data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > :first-child {width: 150px !important;}
+    [data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > :first-child {width: 180px !important;}
+    [data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > :first-child {width: 210px !important;}
+    [data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > :first-child {width: 240px !important;}
+    [data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > :first-child {width: 270px !important;}
+    [data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > :first-child {width: 300px !important;}
+    [data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > :first-child {width: 330px !important;}
+    [data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > :first-child {width: 360px !important;}
+    [data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > :first-child {width: 390px !important;}
+    [data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > :first-child {width: 420px !important;}
+    [data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > :first-child {width: 450px !important;}
+    [data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > :first-child {width: 480px !important;}
+    [data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > :first-child {width: 510px !important;}
+    [data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > :first-child {width: 540px !important;}
+    [data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > :first-child {width: 570px !important;}
+    [data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > :first-child {width: 600px !important;}
+    [data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > :first-child {width: 630px !important;}
+    [data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > :first-child {width: 660px !important;}
+    [data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > :first-child {width: 690px !important;}
+    [data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > :first-child {width: 720px !important;}
+    [data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > :first-child {width: 750px !important;}
+    [data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > :first-child {width: 780px !important;}
+    [data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > :first-child {width: 810px !important;}
+    [data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > :first-child {width: 840px !important;}
+    [data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > :first-child {width: 870px !important;}
+    [data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > :first-child {width: 900px !important;}
+    [data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > :first-child {width: 930px !important;}
+    [data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > :first-child {width: 960px !important;}
+    [data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > :first-child {width: 990px !important;}
+    [data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > :first-child {width: 1020px !important;}
+    [data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > :first-child {width: 1050px !important;}
+    [data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > :first-child {width: 1080px !important;}
+    [data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > :first-child {width: 1110px !important;}
+    [data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > :first-child {width: 1140px !important;}
+    [data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > :first-child {width: 1170px !important;}
+    [data-rem-container-tags~="table1200"]  > .TreeNode > .tree-node-container > :first-child {width: 1200px !important;}
+    [data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > :first-child,
+    [data-rem-container-tags~="table1200"]  > .TreeNode > .tree-node-container > :first-child {
+        float: left;
+        font-weight: bold;
+        background-color: var(--table-columnrow-background-color);
+        text-align: left;
+        padding-left: 0em;
+    }
+    .dark-mode [data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > :first-child,
+    .dark-mode [data-rem-container-tags~="table1200"]  > .TreeNode > .tree-node-container > :first-child {
+        background-color: var(--table-columnrow-background-color-dark) !important;
+    }
+/*********** Table all the horizontal lines ***********/
+    [data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container:not(:first-child),
+    [data-rem-container-tags~="table1200"] > .TreeNode > .tree-node-container:not(:first-child) {
+        border-top-width: 0em;
+        border: 0.01rem solid var(--table-columnrow-background-color);
+    }
+    .dark-mode [data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container:not(:first-child),
+    .dark-mode [data-rem-container-tags~="table1200"] > .TreeNode > .tree-node-container:not(:first-child) {
+        border-top-width: 0em;
+        border: 0.01rem solid var(--table-columnrow-background-color-dark);
+    }
 /*********** Table Content Cell ***********/
-	[data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	[data-rem-container-tags~="table1200"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
-		background-color: var(--table-cell-background-color);
-		border-left: 0.05em solid var(--table-border-color);
-		margin-left: 24px;
-		flex: 1 1 0;
-	}
-	.dark-mode [data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-	.dark-mode [data-rem-container-tags~="table1200"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
-		background-color: var(--table-cell-background-color-dark);
-		border-left: 0.05em solid var(--table-border-color-dark);
-	}
+    [data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1200"] > .TreeNode > .tree-node-container > .TreeNode {
+        display: flex;
+        flex-direction: rows;
+        text-align: left;
+    }
+    [data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    [data-rem-container-tags~="table1200"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
+        background-color: var(--table-cell-background-color);
+        border-left: 0.05em solid var(--table-border-color);
+        flex: 1 1 0;
+        width: calc(100% - 12px);
+    }
+    .dark-mode [data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
+    .dark-mode [data-rem-container-tags~="table1200"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
+        background-color: var(--table-cell-background-color-dark);
+        border-left: 0.05em solid var(--table-border-color-dark);
+    }
+    [data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table150"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table180"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table210"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table240"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table270"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table300"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table330"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table360"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table390"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table420"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table450"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table480"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table510"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table540"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table570"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table600"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table630"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table660"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table690"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table720"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table750"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table780"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table810"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table840"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table870"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table900"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table930"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table960"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table990"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1020"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1050"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1080"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1110"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1140"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode,
+    [data-rem-container-tags~="table1200"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container > .TreeNode {
+        margin-right: 0px !important;
+    }
 /*********** Table Column Color Preset ***********/
-	#hierarchy-editor [data-rem-container-tags~="table90"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table120"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table150"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table180"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table210"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table240"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table270"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table300"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table330"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table360"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table390"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table420"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table450"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table480"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table510"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table540"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table570"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table600"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table630"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table660"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table690"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table720"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table750"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table780"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table810"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table840"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table870"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table900"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table930"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table960"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table990"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table1020"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table1050"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table1080"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table1110"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table1140"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table1170"] .TreeNode,
-	#hierarchy-editor [data-rem-container-tags~="table1200"] .TreeNode {
-		border-color: var(--table-columnrow-background-color);
-		left: 0;
-	}
-	[data-rem-tags~="tablecolor"] {
-		background-color: var(--table-columnrow-background-color);
-		font-weight: bold;
-		text-align: center;
-	}
-	.dark-mode [data-rem-tags~="tablecolor"] {background-color: var(--table-columnrow-background-color-dark);}
-	[data-rem-container-tags~="tablecolor"]:not([data-rem-container-tags~="show-tags"]) .hierarchy-editor__tag-bar {display: none;}
+    #hierarchy-editor [data-rem-container-tags~="table90"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table120"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table150"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table180"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table210"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table240"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table270"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table300"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table330"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table360"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table390"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table420"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table450"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table480"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table510"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table540"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table570"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table600"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table630"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table660"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table690"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table720"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table750"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table780"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table810"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table840"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table870"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table900"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table930"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table960"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table990"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table1020"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table1050"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table1080"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table1110"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table1140"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table1170"] .TreeNode,
+    #hierarchy-editor [data-rem-container-tags~="table1200"] .TreeNode {
+        border-color: var(--table-columnrow-background-color);
+    }
+    [data-rem-tags~="tablecolor"] {
+        background-color: var(--table-columnrow-background-color);
+        font-weight: bold;
+        text-align: center;
+    }
+    .dark-mode [data-rem-tags~="tablecolor"] {background-color: var(--table-columnrow-background-color-dark);}
+    [data-rem-container-tags~="tablecolor"] .hierarchy-editor__tag-bar {display: none;}
 /*********** Width Adjustment of Table Content Cell ***********/
-	[data-rem-container-tags~="w30"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 30px;}
-	[data-rem-container-tags~="w60"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 60px;}
-	[data-rem-container-tags~="w90"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 90px;}
-	[data-rem-container-tags~="w120"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 120px;}
-	[data-rem-container-tags~="w150"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 150px;}
-	[data-rem-container-tags~="w180"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 180px;}
-	[data-rem-container-tags~="w210"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 210px;}
-	[data-rem-container-tags~="w240"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 240px;}
-	[data-rem-container-tags~="w270"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 270px;}
-	[data-rem-container-tags~="w300"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 300px;}
-	[data-rem-container-tags~="w330"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 330px;}
-	[data-rem-container-tags~="w360"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 360px;}
-	[data-rem-container-tags~="w390"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 390px;}
-	[data-rem-container-tags~="w420"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 420px;}
-	[data-rem-container-tags~="w450"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 450px;}
-	[data-rem-container-tags~="w480"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 480px;}
-	[data-rem-container-tags~="w510"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 510px;}
-	[data-rem-container-tags~="w540"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 540px;}
-	[data-rem-container-tags~="w570"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 570px;}
-	[data-rem-container-tags~="w600"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 600px;}
-	[data-rem-container-tags~="w630"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 630px;}
-	[data-rem-container-tags~="w660"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 660px;}
-	[data-rem-container-tags~="w690"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 690px;}
-	[data-rem-container-tags~="w720"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 720px;}
-	[data-rem-container-tags~="w750"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 750px;}
-	[data-rem-container-tags~="w780"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 780px;}
-	[data-rem-container-tags~="w810"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 810px;}
-	[data-rem-container-tags~="w840"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 840px;}
-	[data-rem-container-tags~="w870"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 870px;}
-	[data-rem-container-tags~="w900"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 900px;}
-	[data-rem-container-tags~="w930"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 930px;}
-	[data-rem-container-tags~="w960"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 960px;}
-	[data-rem-container-tags~="w990"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 990px;}
-	[data-rem-container-tags~="w1020"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1020px;}
-	[data-rem-container-tags~="w1050"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1050px;}
-	[data-rem-container-tags~="w1080"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1080px;}
-	[data-rem-container-tags~="w1110"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1110px;}
-	[data-rem-container-tags~="w1140"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1140px;}
-	[data-rem-container-tags~="w1170"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1170px;}
-	[data-rem-container-tags~="w1200"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1200px;}
+    [data-rem-container-tags~="w30"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 30px;}
+    [data-rem-container-tags~="w60"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 60px;}
+    [data-rem-container-tags~="w90"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 90px;}
+    [data-rem-container-tags~="w120"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 120px;}
+    [data-rem-container-tags~="w150"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 150px;}
+    [data-rem-container-tags~="w180"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 180px;}
+    [data-rem-container-tags~="w210"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 210px;}
+    [data-rem-container-tags~="w240"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 240px;}
+    [data-rem-container-tags~="w270"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 270px;}
+    [data-rem-container-tags~="w300"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 300px;}
+    [data-rem-container-tags~="w330"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 330px;}
+    [data-rem-container-tags~="w360"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 360px;}
+    [data-rem-container-tags~="w390"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 390px;}
+    [data-rem-container-tags~="w420"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 420px;}
+    [data-rem-container-tags~="w450"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 450px;}
+    [data-rem-container-tags~="w480"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 480px;}
+    [data-rem-container-tags~="w510"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 510px;}
+    [data-rem-container-tags~="w540"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 540px;}
+    [data-rem-container-tags~="w570"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 570px;}
+    [data-rem-container-tags~="w600"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 600px;}
+    [data-rem-container-tags~="w630"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 630px;}
+    [data-rem-container-tags~="w660"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 660px;}
+    [data-rem-container-tags~="w690"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 690px;}
+    [data-rem-container-tags~="w720"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 720px;}
+    [data-rem-container-tags~="w750"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 750px;}
+    [data-rem-container-tags~="w780"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 780px;}
+    [data-rem-container-tags~="w810"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 810px;}
+    [data-rem-container-tags~="w840"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 840px;}
+    [data-rem-container-tags~="w870"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 870px;}
+    [data-rem-container-tags~="w900"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 900px;}
+    [data-rem-container-tags~="w930"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 930px;}
+    [data-rem-container-tags~="w960"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 960px;}
+    [data-rem-container-tags~="w990"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 990px;}
+    [data-rem-container-tags~="w1020"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1020px;}
+    [data-rem-container-tags~="w1050"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1050px;}
+    [data-rem-container-tags~="w1080"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1080px;}
+    [data-rem-container-tags~="w1110"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1110px;}
+    [data-rem-container-tags~="w1140"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1140px;}
+    [data-rem-container-tags~="w1170"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1170px;}
+    [data-rem-container-tags~="w1200"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {width: 1200px;}
