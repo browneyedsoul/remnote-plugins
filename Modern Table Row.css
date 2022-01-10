@@ -16,45 +16,45 @@
 		[data-rem-tags~="lb"] .hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
 		[data-rem-tags~="lb"] .hierarchy-editor__tag-bar__tag span {display: none;}
 /*********** Interim measure ***********/
-	[data-rem-container-tags~="table90"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table120"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table150"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table180"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table210"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table240"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table270"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table300"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table330"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table360"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table390"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table420"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table450"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table480"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table510"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table540"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table570"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table600"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table630"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table660"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table690"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table720"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table750"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table780"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table810"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table840"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table870"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table900"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table930"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table960"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table990"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table1020"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table1050"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table1080"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table1110"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table1140"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table1170"] > .TreeNode > :first-child,
-	[data-rem-container-tags~="table1200"] > .TreeNode > :first-child {
-		margin-left: 1px;
+	[data-rem-container-tags~="table90"] > .TreeNode > div,
+	[data-rem-container-tags~="table120"] > .TreeNode > div,
+	[data-rem-container-tags~="table150"] > .TreeNode > div,
+	[data-rem-container-tags~="table180"] > .TreeNode > div,
+	[data-rem-container-tags~="table210"] > .TreeNode > div,
+	[data-rem-container-tags~="table240"] > .TreeNode > div,
+	[data-rem-container-tags~="table270"] > .TreeNode > div,
+	[data-rem-container-tags~="table300"] > .TreeNode > div,
+	[data-rem-container-tags~="table330"] > .TreeNode > div,
+	[data-rem-container-tags~="table360"] > .TreeNode > div,
+	[data-rem-container-tags~="table390"] > .TreeNode > div,
+	[data-rem-container-tags~="table420"] > .TreeNode > div,
+	[data-rem-container-tags~="table450"] > .TreeNode > div,
+	[data-rem-container-tags~="table480"] > .TreeNode > div,
+	[data-rem-container-tags~="table510"] > .TreeNode > div,
+	[data-rem-container-tags~="table540"] > .TreeNode > div,
+	[data-rem-container-tags~="table570"] > .TreeNode > div,
+	[data-rem-container-tags~="table600"] > .TreeNode > div,
+	[data-rem-container-tags~="table630"] > .TreeNode > div,
+	[data-rem-container-tags~="table660"] > .TreeNode > div,
+	[data-rem-container-tags~="table690"] > .TreeNode > div,
+	[data-rem-container-tags~="table720"] > .TreeNode > div,
+	[data-rem-container-tags~="table750"] > .TreeNode > div,
+	[data-rem-container-tags~="table780"] > .TreeNode > div,
+	[data-rem-container-tags~="table810"] > .TreeNode > div,
+	[data-rem-container-tags~="table840"] > .TreeNode > div,
+	[data-rem-container-tags~="table870"] > .TreeNode > div,
+	[data-rem-container-tags~="table900"] > .TreeNode > div,
+	[data-rem-container-tags~="table930"] > .TreeNode > div,
+	[data-rem-container-tags~="table960"] > .TreeNode > div,
+	[data-rem-container-tags~="table990"] > .TreeNode > div,
+	[data-rem-container-tags~="table1020"] > .TreeNode > div,
+	[data-rem-container-tags~="table1050"] > .TreeNode > div,
+	[data-rem-container-tags~="table1080"] > .TreeNode > div,
+	[data-rem-container-tags~="table1110"] > .TreeNode > div,
+	[data-rem-container-tags~="table1140"] > .TreeNode > div,
+	[data-rem-container-tags~="table1170"] > .TreeNode > div,
+	[data-rem-container-tags~="table1200"] > .TreeNode > div {
+		margin-left: 5px;
 		border-right: 1px solid  var(--table-border-color);
 	}
 	.dark-mode [data-rem-container-tags~="table90"] > .TreeNode > :first-child,
@@ -95,7 +95,6 @@
 	.dark-mode [data-rem-container-tags~="table1140"] > .TreeNode > :first-child,
 	.dark-mode [data-rem-container-tags~="table1170"] > .TreeNode > :first-child,
 	.dark-mode [data-rem-container-tags~="table1200"] > .TreeNode > :first-child {
-		margin-left: 1px;
 		border-right: 1px solid  var(--table-border-color-dark) !important;
 	}
 /*********** Whole Table Area ***********/
@@ -142,9 +141,8 @@
 		margin-left: 1rem;
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
-		overflow: auto;	
-		white-space: pre;
 	}
+/*********** Table Contents ***********/
 	[data-rem-container-tags~="table90"] > .TreeNode,
 	[data-rem-container-tags~="table120"] > .TreeNode,
 	[data-rem-container-tags~="table150"] > .TreeNode,
@@ -186,8 +184,9 @@
 		display: grid;
 		grid-auto-rows: auto;
 		border-left: unset !important;
-		overflow: auto;	
+		overflow: auto;
 		white-space: pre;
+		padding-left: 36px;
 	}
 /*********** Table Title ***********/
 	[data-rem-container-tags~="table90"] > :first-child,
@@ -274,9 +273,6 @@
 	.dark-mode [data-rem-container-tags~="table1200"] > :first-child {
 		border: 0.1em solid var(--table-border-color-dark);
 		background-color: var(--table-title-background-color-dark);
-		background-size: 100% 100%;
-		border-top-left-radius: 4px;
-		border-top-right-radius: 4px;
 	}
 /*********** Table Row and Column Title Property Column ***********/
 	[data-rem-container-tags~="table90"],
@@ -608,8 +604,6 @@
 		display: flex;
 		flex-direction: rows;
 		text-align: left;
-		overflow: auto;	
-		white-space: pre;
 	}
 /*********** Table Content Cell ***********/
 	[data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
@@ -652,9 +646,8 @@
 	[data-rem-container-tags~="table1200"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
 		background-color: var(--table-cell-background-color);
 		border-left: 0.05em solid var(--table-border-color);
+		margin-left: 24px;
 		flex: 1 1 0;
-		overflow: auto;
-		white-space:pre;
 	}
 	.dark-mode [data-rem-container-tags~="table90"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
 	.dark-mode [data-rem-container-tags~="table120"] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
@@ -737,6 +730,7 @@
 	#hierarchy-editor [data-rem-container-tags~="table1170"] .TreeNode,
 	#hierarchy-editor [data-rem-container-tags~="table1200"] .TreeNode {
 		border-color: var(--table-columnrow-background-color);
+		left: 0;
 	}
 	[data-rem-tags~="tablecolor"] {
 		background-color: var(--table-columnrow-background-color);
