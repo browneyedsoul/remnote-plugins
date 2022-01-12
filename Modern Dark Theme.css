@@ -576,8 +576,8 @@
 			color: var(--darkmode-text);
 			background-color: var(--darkmode-background);
 		}
-		.popup-menu .rounded {
-			border: 1px solid #9B9E9E;
+		.popup-menu .bg-gray-5 .rounded {
+			border: 1px solid var(--line-color-dark);
 		}
 		.popup-menu .scroll-drag-component {border: 1px solid white;}
 		.popup-menu.fixed .css-exQOrH {color: var(--darkmode-text);}
@@ -1025,11 +1025,16 @@
 		}	
 	/* Tag Item Search Result Hover or Selected */
 	/* Hidden item list */
-		.text-gray-30,
-		.hover\:bg-gray-5:hover:not(#search-result__result) {
+		#DocumentTopRow .text-gray-30,
+		#DocumentTopRow .hover\:bg-gray-5:hover:not(#search-result__result) {
 			color: var(--darkmode-contrast) !important;
-			background-color: #000;
+			background-color: var(--darkmode-background-selected-darker);
 		}
+		.text-gray-30,
+ 		.hover\:bg-gray-5:hover:not(#search-result__result) {
+ 			color: unset;
+ 			background-color: #D1D1D1;
+ 		}
 /*********** Metadata Page ***********/
 	#RemPage {color: var(--darkmode-text);}
 /*********** Help & Tutorial Page ***********/
