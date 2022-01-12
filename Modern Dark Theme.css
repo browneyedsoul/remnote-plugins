@@ -563,7 +563,7 @@
 			background-color: var(--darkmode-background);
 		}
 	/* Menu item text */
-		div[color="#292936"] {color: var(--darkmode-text);}
+		.dark-mode div[color="#292936"] {color: var(--darkmode-text);}
 	/* Omni Search Popup Window*/
 		/* Focused Text */
 		.dark-mode .css-jlRuPl .bg-warning-10 {color: black;}
@@ -724,14 +724,14 @@
 			border-radius: 5px;
 		}
 	/* Scheduler Type Text */
-		.pl-4.css-kJJQEm {
+		.dark-mode  .pl-4.css-kJJQEm {
 			color: var(--darkmode-text);
 		}
 	/* Setting Page Button Style*/
-		.settings-page .button {
+		.dark-mode .settings-page .button {
 			background-color: unset;
 		}
-		.spaced-repetition-scheduler-form__interaction {
+		.dark-mode .spaced-repetition-scheduler-form__interaction {
 			color: black;
 		}
 	/* Setting Page Content */
@@ -1006,7 +1006,6 @@
 		.dark-mode .select-none.rounded.bg-gray-5,
 		.dark-mode .hover\:bg-gray-5:hover:not(#search-result__result) {
 			color: black;
-			border: 1px solid yellow;
 		} 
 	/* Slash Command */
 		/* Slash Command Text and Background */
@@ -1028,8 +1027,8 @@
 	/* Hidden item list */
 		.text-gray-30,
 		.hover\:bg-gray-5:hover:not(#search-result__result) {
-			color: unset;
-			background-color: #D1D1D1;
+			color: var(--darkmode-contrast);
+			background-color: #000;
 		}
 /*********** Metadata Page ***********/
 	#RemPage {color: var(--darkmode-text);}
