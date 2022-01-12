@@ -1045,3 +1045,47 @@
 		.dark-mode [data-icon="backward"] {
 			color: var(--darkmode-contrast);
 		}
+/*********** Backlink UI Cleaner ***********/
+	/* Remove Date */
+	.portal-tree-node-box > div:first-child > div > div,
+	.hierarchy-editor__search-portal-section {
+		display: none;
+	}
+	/* Scrollable */
+		/*
+		.portal-tree-transient-node-box [data-rem-tags~="document"] > div > span {
+			overflow-x: auto;
+			white-space: pre;
+		}
+		*/
+	/* inline 3dots */
+		.tree-node--parent .show-embed-search-button--automatic {
+			display: flex;
+			position: relative;
+			left: -16px;
+		}
+	/* Reference Breadcrumbs */
+		#hierarchy-editor .rem-container--not-included-in-document-scope .rem-text {
+			display: inline !important;
+			zoom: 0.75;
+			opacity: 0.6;
+		}
+		#hierarchy-editor .rem-container--not-included-in-document-scope .rem-text .RichTextViewer {
+			display: inline-flex !important;
+		}
+		#hierarchy-editor .portal-tree-transient-node-box .EditorContainerInline,
+		#hierarchy-editor .portal-tree-transient-node-box .EditorContainerInline > span > span {
+			display: inline;
+		}
+	/* Line Color */
+		#hierarchy-editor .rem-container__top-level-rem-in-portal-border .rem-container__top-level-rem-in-portal-border__inner {border-color: var(--line-color);}
+		.dark-mode #hierarchy-editor .rem-container__top-level-rem-in-portal-border .rem-container__top-level-rem-in-portal-border__inner {border-color: var(--line-color-dark);} 
+	/* Hover Effect */
+		span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
+			background-color: #E2E1DF !important;
+			color: black;
+		}
+		.dark-mode span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
+			background-color: var(--darkmode-background-selected-darker) !important;
+			color: var(--darkmode-contrast);
+		}
