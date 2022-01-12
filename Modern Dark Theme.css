@@ -157,8 +157,8 @@
 			border-radius: 5px;
 		}
 	/* Breadcrumbs Folder and File icon */
-		.mr-1.css-cpJTyT,
-		.icon--document {
+		.dark-mode .mr-1.css-cpJTyT,
+		.dark-mode .icon--document {
 			color: var(--darkmode-text);
 		}
 
