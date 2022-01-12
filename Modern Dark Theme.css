@@ -1047,7 +1047,6 @@
 		}
 /*********** Backlink UI Cleaner ***********/
 	/* Remove Date */
-	.portal-tree-node-box > div:first-child > div > div,
 	.hierarchy-editor__search-portal-section {
 		display: none;
 	}
