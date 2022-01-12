@@ -1027,7 +1027,7 @@
 	/* Hidden item list */
 		.text-gray-30,
 		.hover\:bg-gray-5:hover:not(#search-result__result) {
-			color: var(--darkmode-contrast);
+			color: var(--darkmode-contrast) !important;
 			background-color: #000;
 		}
 /*********** Metadata Page ***********/
