@@ -772,7 +772,7 @@
 			background-color: #000;
 		}
 	/* Knowledge Base */
-		.switch-knowledgebase__knowledgebase__button > .icon {color: var(--darkmode-contrast);}
+		.dark-mode .switch-knowledgebase__knowledgebase__button > .icon {color: var(--darkmode-contrast);}
 /*********** Reference & Alias ***********/
 	/* Hierarchy Editor - Reference Style */
 		.rem-reference .RichTextViewer {
@@ -924,6 +924,12 @@
 		#document-sidebar .bold.highlight-color--purple {color: var(--purple-text-dark);}
 
 		#document-sidebar .highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
+
+		#document-sidebar .quote {
+			color: var(--quote-text-dark) !important;
+			background-color: var(--quote-background-dark) !important;
+			margin-left: 5px;
+		}
 	/* Sidebar list item focused*/
 		#document-sidebar .bg-primary-5 .RichTextViewer {color: white;}
 		#document-sidebar .rounded-md.highlight-color--red .RichTextViewer,
