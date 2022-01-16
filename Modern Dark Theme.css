@@ -1033,12 +1033,18 @@
 		}	
 	/* Tag Item Search Result Hover or Selected */
 	/* Hidden item list */
-		#DocumentTopRow .text-gray-30,
-		#DocumentTopRow .hover\:bg-gray-5:hover:not(#search-result__result) {
+		#DocumentTopRow .text-gray-30:hover {
+			background-color: var(--lightmode-background-selected);
+		}
+		.dark-mode #DocumentTopRow .text-gray-30 {
+			color: var(--darkmode-text);
+			background-color: var(--darkmode-background-selected-darker);
+		}
+		.dark-mode #DocumentTopRow .text-gray-30:hover,
+		.dark-mode #DocumentTopRow .hover\:bg-gray-5:hover:not(#search-result__result) {
 			color: var(--darkmode-contrast) !important;
 			background-color: var(--darkmode-background-selected-darker);
 		}
-		.text-gray-30,
  		.hover\:bg-gray-5:hover:not(#search-result__result) {
  			color: unset;
  			background-color: #D1D1D1;
