@@ -170,11 +170,10 @@
 	} 
 	/* List Card Item */
 		.node-card-item:before {
-			margin-left: -0.2rem;
+			margin-left: -0.6rem;
 			background-color: var(--node-card-item-color);
 		}
 		.dark-mode .node-card-item:before {
-			margin-left: -0.2rem;
 			background-color: var(--node-card-item-color-dark);
 		}
 	/* Portal */
