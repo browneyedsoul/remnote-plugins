@@ -15,6 +15,8 @@
 	--darkmode-contrast: yellow;
 	--quote-text-dark: #F1FA8C;
 	--quote-background-dark: #252525;
+	--quote-text-reference: #2711FF;
+	--quote-text-reference-dark: #00FFF9;
 	--reference-text: #000;
 	--reference-text-dark: #DFDFD5;
 	--reference-background: #ECECEC;
@@ -795,6 +797,12 @@
 		 .work-in-progress-rem {
 			 color: var(--reference-text);
 		 }
+		 .rem-reference-container.quote .RichTextViewer {color: var(--quote-text-reference);}
+		.dark-mode .rem-reference-container.quote .RichTextViewer {color: var(--quote-text-reference-dark);}
+		[data-rem-tags~="list-item"] .quote {
+			color: var(--quote-text-dark);
+			background-color: var(--quote-background-dark);
+		}
 	/* Hierarchy Editor - Alias */
 		.rem-reference-container .css-kWtKRr {filter: invert(0.5); position: relative; top: 4px;}
 	/* Reference Partial Hiding using inlinequote */
@@ -1072,6 +1080,9 @@
 			display: flex;
 			position: relative;
 			left: -16px;
+		}
+		.popup-menu .tree-node--parent .show-embed-search-button--automatic {
+			left: 0;
 		}
 	/* Reference Breadcrumbs */
 		#hierarchy-editor .rem-container--not-included-in-document-scope .rem-text {
