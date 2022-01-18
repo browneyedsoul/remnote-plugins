@@ -535,7 +535,8 @@
 	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {color: var(--purple-text);}
 	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--red {color: var(--red-text-dark);} 
 		.dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--orange {color: var(--orange-text-dark);}
-	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow {color: var(--yellow-text-dark); text-shadow: unset;}
+	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow,
+		.popup-menu [data-rem-tags~="color"] .bold.highlight-color--yellow {color: var(--yellow-text-dark); text-shadow: unset;}
 	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--green {color: var(--green-text-dark);}
 	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--blue {color: var(--blue-text-dark);}
 	    .dark-mode [data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {color: var(--purple-text-dark);} 
