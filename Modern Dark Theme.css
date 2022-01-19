@@ -805,7 +805,16 @@
 			background-color: var(--quote-background-dark);
 		}
 	/* Hierarchy Editor - Alias */
-		.rem-reference-container .css-kWtKRr {filter: invert(0.5); position: relative; top: 4px;}
+		.rem-reference-container .css-kWtKRr {
+			filter: invert(0.5); 
+			position: relative; 
+			top: 4px;
+		}
+		[data-rem-container-tags~="aliases"] {
+			border: 0.1rem solid var(--line-color-dark);
+			border-radius: 4px;
+			margin-left: 1.6rem;
+		}
 	/* Reference Partial Hiding using inlinequote */
 		.rem-reference.button.rem-reference-link .quote {display: none;}
 	/* Hide Reference root and > symbol */
@@ -816,6 +825,11 @@
 		[data-rem-tags~="list-item"] .rem-is-custom-rem-type.rem-is-custom-rem-type--in-body {
 			position: relative;
 			top: 2px !important;
+		}
+	/* Favicon Size */
+		.w-4, .h-4 {
+			width: 1em;
+			height: 1em;
 		}
 /*********** Sidebar ***********/
 	/* Basic */
