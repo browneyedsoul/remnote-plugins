@@ -1033,7 +1033,7 @@
 /*********** Hover Effect ***********/
 	/* Selected & Mouseover Item */
 		.dark-mode .select-none.rounded.bg-gray-5,
-		.dark-mode .hover\:bg-gray-5:hover:not(#search-result__result) {
+		.dark-mode .hover\:bg-gray-5:hover:not(#search-results__list .hover\:bg-gray-5:hover) {
 			color: var(--darkmode-text);
 			background-color: var(--darkmode-background-selected-darker);
 		} 
