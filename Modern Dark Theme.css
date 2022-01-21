@@ -1031,12 +1031,6 @@
 	/* Sidebar Menu List item Bold for space between Emoji/Thumbnail and Letters */
  		.accordion.ui.fluid .block .RichTextViewer .bold {margin: 0 0 0 5px;}
 /*********** Hover Effect ***********/
-	/* Selected & Mouseover Item */
-		.dark-mode .select-none.rounded.bg-gray-5,
-		.dark-mode .hover\:bg-gray-5:hover:not(#search-results__list .hover\:bg-gray-5:hover) {
-			color: var(--darkmode-text);
-			background-color: var(--darkmode-background-selected-darker);
-		} 
 	/* Slash Command */
 		/* Slash Command Text and Background */
 			.dark-mode #search-results__list {
