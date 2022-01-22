@@ -837,6 +837,10 @@
 			width: 1em;
 			height: 1em;
 		}
+		.settings-page__sidebar .w-4, .h-4 {
+			width: unset;
+			height: unset;
+		}
 /*********** Sidebar ***********/
 	/* Basic */
 		#document-sidebar {background-color: var(--darkmode-background-sidebar);}
