@@ -653,6 +653,12 @@
 				color: black;
 				background-color: #D1D1D1;
 			}
+	/* Popup for Reference & Alias Static Title*/
+		.popup-menu #document-hover-preview__popup span.bold > span,
+		.popup-menu .popup-menu__item--static > span {
+			color: var(--darkmode-contrast);
+			font-size: 18px;
+		}
 /*********** Codeblock ***********/	
 	#code-node {background-color: var(--code-node-background-color);}
 	.dark-mode #code-node {background-color: var(--code-node-background-color-dark);}
