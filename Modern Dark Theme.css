@@ -721,18 +721,26 @@
 			top: 0px;
 		}
 /*********** Settings Page ***********/
-	/* Basic */
+	/* Settings Page Basic */
 		.dark-mode .settings-page {background-color: var(--darkmode-background);}
 		.dark-mode .settings-page__sidebar__title {color: var(--darkmode-contrast);}
 		.dark-mode .settings-page__sidebar__link--active {border: 1px solid var(--darkmode-contrast);}
-	/* Sidebar svg icon */
+	/* Settings Page Sidebar svg icon */
 		.dark-mode .settings-page .css-drbSAB {
 			color: var(--darkmode-contrast);
 			background-color: var(--darkmode-background);
 			border: 1px dotted var(--darkmode-contrast);
 			border-radius: 5px;
 		}
-	/* Scheduler Type Text */
+	/* Settings Page Subscription page */
+		#subscription-page .css-jbClFc {
+			color: black;
+			font-weight: 650;
+		}
+		#subscription-page .bg-mint-10 {
+			background-color: #8BD1B9;
+		}
+	/* Settings Page Scheduler Type Text */
 		.dark-mode  .pl-4.css-kJJQEm {
 			color: var(--darkmode-text);
 		}
@@ -748,7 +756,7 @@
 		.dark-mode .settings-page__content__inner {
 			background-color: var(--darkmode-background);
 		}
-	/* Description */
+	/* Settings Page Description */
 		.dark-mode .settings-page .css-fAxQcq, 
 		.dark-mode .settings-page .css-eqifkM	/* Plan Details */
 		{
@@ -756,7 +764,7 @@
 			font-family: "Roboto Mono", "Fira Code", monospace;
 			font-weight: 600;
 		}
-	/* Account, Knowledge Base Settings, Danger Zone, Syncing, App Version */
+	/* Settings Page Account, Knowledge Base Settings, Danger Zone, Syncing, App Version */
 		.dark-mode .settings-page .items-center,
 		.dark-mode .settings-page .css-jBUFtN,
 		.dark-mode .settings-page .css-ATSnA,
@@ -780,7 +788,7 @@
 		.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {
 			background-color: #000;
 		}
-	/* Knowledge Base */
+	/* Settings Page Knowledge Base */
 		.dark-mode .switch-knowledgebase__knowledgebase__button > .icon {color: var(--darkmode-contrast);}
 /*********** Reference & Alias ***********/
 	/* Hierarchy Editor - Reference Style */
