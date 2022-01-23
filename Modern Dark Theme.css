@@ -740,6 +740,19 @@
 		#subscription-page .bg-mint-10 {
 			background-color: #8BD1B9;
 		}
+	/* Settings Page Plugin Table */
+		.PluginsConfiguration__table {
+			background-color: var(--darkmode-background);
+		}
+		.PluginsConfiguration__table input {
+			color: var(--darkmode-contrast) !important;
+		}
+		.dark-mode .settings-page .PluginsConfiguration__table .css-fLTnVi {
+			color: black !important;
+		}
+		.dark-mode .ui.table thead th {
+			color: var(--darkmode-text);
+		}
 	/* Settings Page Scheduler Type Text */
 		.dark-mode  .pl-4.css-kJJQEm {
 			color: var(--darkmode-text);
