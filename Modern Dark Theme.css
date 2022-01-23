@@ -837,7 +837,8 @@
 			width: 1em;
 			height: 1em;
 		}
-		.settings-page__sidebar .w-4, .h-4 {
+		.settings-page__sidebar .w-4, 
+		.settings-page__sidebar .h-4 {
 			width: unset;
 			height: unset;
 		}
