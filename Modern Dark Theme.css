@@ -1002,7 +1002,7 @@
 		.document-list-item__folder-icon {color: #C7C7C7;}
 		#document-sidebar .float-right {color: var(--darkmode-contrast);}
 	/* Sidebar list Arrow line Alignment */
-		.flex-grow.nowrap-RichTextViewer:only-child {margin-left: 25px;}
+		#document-sidebar .flex-grow.nowrap-RichTextViewer:only-child {margin-left: 22px;}
 	/* RemNote Help Page Sidebar Document lists */
 		.block.group.cursor-pointer .highlight-color--red .RichTextViewer, 
 		.block.group.cursor-pointer .highlight-color--orange .RichTextViewer,
