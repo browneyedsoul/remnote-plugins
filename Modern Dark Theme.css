@@ -739,7 +739,8 @@
 			background-color: #8BD1B9;
 		}
 	/* Settings Page Plugin Table */
-		.PluginsConfiguration__table {
+		.PluginsConfiguration__table,
+		.PluginsConfiguration__table .ui.table {
 			background-color: var(--darkmode-background);
 		}
 		.PluginsConfiguration__table input {
