@@ -731,19 +731,19 @@
 			border-radius: 5px;
 		}
 	/* Settings Page Subscription page */
-		#subscription-page .css-jbClFc {
+		.dark-mode #subscription-page .css-jbClFc {
 			color: black;
 			font-weight: 650;
 		}
-		#subscription-page .bg-mint-10 {
+		.dark-mode #subscription-page .bg-mint-10 {
 			background-color: #8BD1B9;
 		}
 	/* Settings Page Plugin Table */
-		.PluginsConfiguration__table,
-		.PluginsConfiguration__table .ui.table {
+		.dark-mode .PluginsConfiguration__table,
+		.dark-mode .PluginsConfiguration__table .ui.table {
 			background-color: var(--darkmode-background);
 		}
-		.PluginsConfiguration__table input {
+		.dark-mode .PluginsConfiguration__table input {
 			color: var(--darkmode-contrast) !important;
 		}
 		.dark-mode .settings-page .PluginsConfiguration__table .css-fLTnVi {
