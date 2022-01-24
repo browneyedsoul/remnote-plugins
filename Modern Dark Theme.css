@@ -525,14 +525,6 @@
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {
 			background-color: unset;
 		}
-		[data-rem-tags~="color"] .rem-text .bold.highlight-color--red,
-		[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange,
-		[data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow,
-		[data-rem-tags~="color"] .rem-text .bold.highlight-color--green,
-		[data-rem-tags~="color"] .rem-text .bold.highlight-color--blue,
-		[data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {
-			font-weight: 500;
-		}
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--red {color: var(--red-text);} 
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange {color: var(--orange-text);}
 	    [data-rem-tags~="color"] .rem-text .bold.highlight-color--yellow {color: var(--yellow-text); text-shadow: 2px 2px 2px #FFFC00;}
