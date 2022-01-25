@@ -1,307 +1,289 @@
 :root {
-	/* Font Style */
-		--font-family: "Helvetica Neue";
-		--font-size-header-1: 32px;
-		--font-size-header-2: 24px;
-		--font-size-header-3: 20px;
-	/* TreeNode Adjustment */
-		--treenode-line-spacing: 16px;
-	/* Basic Bullet Color */
-		--bullet-main:#ABABAB;
-		--bullet-doc:#50FA7B;
-		--bullet-folder:#53555F;
-		--bullet-concept:#53555F;
-		--bullet-descriptor:#53555F;
-	/* Practice Bullet Color */
-		--both-practice-color: #FFA344;
-		--forward-practice-color: #FF2600;
-		--backward-practice-color: #D783FF;
-		--disabled-practice-color: #959595;
-	/* TreeNode Color */
-		--line-color: #DDDDDD;
-		--node-card-item-color: red;
-		--node-card-item-color-dark: yellow;
-} 
+  /* TreeNode Adjustment */
+  --treenode-line-spacing: 16px;
+  /* Basic Bullet Color */
+  --bullet-main: #ABABAB;
+  --bullet-doc: #50FA7B;
+  --bullet-folder: #53555F;
+  --bullet-concept: #53555F;
+  --bullet-descriptor: #53555F;
+  /* Practice Bullet Color */
+  --both-practice-color: #FFA344;
+  --forward-practice-color: #FF2600;
+  --backward-practice-color: #D783FF;
+  --disabled-practice-color: #959595;
+  /* TreeNode Color */
+  --line-color: #DDDDDD;
+  --node-card-item-color: red;
+  --node-card-item-color-dark: yellow;
+}
 /*********** Disable Bullet Event ***********/
-	.rem-bullet__container,
-	.rem-bullet__icon,
-	.rem-bullet__icon > path,
-	.rem-bullet--all-children-visible,
-	.css-jxYBFL {
-		pointer-events: none;
-	}
+.rem-button__container .rem-bullet__container .pointer-events-auto {
+  pointer-events: none;
+}
+.rem-button__container .rem-bullet__container .rem-bullet--all-children-visible .perfect-circle__inner > svg {
+  display: none;
+}
+.rem-button__container .rem-bullet__container .rem-bullet--all-children-visible .perfect-circle__inner > svg .rem-bullet__core {
+  display: none;
+}
+.rem-button__container .rem-bullet__container .rem-bullet--hidden-children .perfect-circle__inner > svg {
+  display: none;
+}
+.rem-button__container .rem-bullet__container .rem-bullet--hidden-children .perfect-circle__inner > svg .rem-bullet__core {
+  display: none;
+}
+.rem-button__container .rem-bullet__container .rem-icon-bullet__wrapper {
+  display: none;
+}
 /*********** Move Toggle Foldable Triangle Button and Six Dots Rem Mover to the Right Side ***********/
-	#hierarchy-editor .rem-container .rem-button__container .toggle-collapse-button,
-	#hierarchy-editor .rem-container .rem-button__container .six-dot {
-		position: relative;
-		left: 24px;
-	}
-/*********** Remove Bullet Background Color ***********/
-	.rem-bullet, .rem-bullet--in-list {background-color: unset}
-/*********** Parent Bullet with No children (No Bullet Default State) ***********/
-	.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible,
-	.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--1,
-	.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--2,
-	.rem-bullet__container .rem-bullet.rem-bullet--all-children-visible.rem-header__bullet--3 {
-		border: transparent;
-		background-color: transparent;
-	}
-	.rem-bullet__container-undefined .rem-bullet.rem-bullet {
-		border:  transparent;
-		background-color: transparent;
-		margin-bottom: -2px;
-	}
-	.rem-bullet.rem-bullet:hover {
-		background-color: black;
-		margin-bottom: 3px;
-	}
+#hierarchy-editor .rem-container .rem-button__container .toggle-collapse-button, #hierarchy-editor .rem-container .rem-button__container .six-dot {
+  position: relative;
+  left: 24px;
+}
 /*********** Parent Bullet (Toggle Triangle) ***********/
-	.rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
-	.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
-	.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-	.rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
-	#hierarchy-editor .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 6px 0 6px 6px !important;
-		border-color: transparent transparent transparent var(--bullet-main);
-	}
-	.highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
-	.highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
-	.highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-	.highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
-	.highlight-color--orange .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
-	.highlight-color--orange .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
-	.highlight-color--orange .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-	.highlight-color--orange .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
-	.highlight-color--yellow .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
-	.highlight-color--yellow .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
-	.highlight-color--yellow .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-	.highlight-color--yellow .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
-	.highlight-color--green .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
-	.highlight-color--green .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
-	.highlight-color--green .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-	.highlight-color--green .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
-	.highlight-color--blue .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
-	.highlight-color--blue .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
-	.highlight-color--blue .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-	.highlight-color--blue .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
-	.highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
-	.highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
-	.highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-	.highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3,
-	#hierarchy-editor [data-rem-tags*="highlight"] .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 6px 0 6px 6px !important;
-		border-color: transparent transparent transparent black;
-	}
-	/* Alias Bullet Treatment */
-		[data-rem-tags="aliases"] .rem-bullet__container .rem-bullet.rem-bullet--hidden-children {
-			width: 0 !important;
-			height: 0 !important;
-			border-style: solid;
-			border-width: 6px 0 6px 6px !important;
-			border-color: transparent transparent transparent var(--bullet-main);
-			position: relative;
-			top: -0.02rem !important;
-			left: 0.02rem !important;
-		}
-		[data-rem-tags="aliases"] .rem-container--descriptor-rem-type .rem-bullet {
-			-webkit-mask-image: unset;
-					mask-image: unset;
-		}
+.rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children, .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1, .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2, .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 6px !important;
+  border-color: transparent transparent transparent var(--bullet-main);
+}
+#hierarchy-editor .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 6px !important;
+  border-color: transparent transparent transparent var(--bullet-main);
+}
+#hierarchy-editor [data-rem-tags~="highlight"] .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 6px !important;
+  border-color: transparent transparent transparent black;
+}
+.highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children, .highlight-color--orange .rem-bullet__container .rem-bullet.rem-bullet--hidden-children, .highlight-color--yellow .rem-bullet__container .rem-bullet.rem-bullet--hidden-children, .highlight-color--green .rem-bullet__container .rem-bullet.rem-bullet--hidden-children, .highlight-color--blue .rem-bullet__container .rem-bullet.rem-bullet--hidden-children, .highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children, .highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1, .highlight-color--orange .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1, .highlight-color--yellow .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1, .highlight-color--green .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1, .highlight-color--blue .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1, .highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1, .highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2, .highlight-color--orange .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2, .highlight-color--yellow .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2, .highlight-color--green .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2, .highlight-color--blue .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2, .highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2, .highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3, .highlight-color--orange .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3, .highlight-color--yellow .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3, .highlight-color--green .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3, .highlight-color--blue .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3, .highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 6px !important;
+  border-color: transparent transparent transparent black;
+}
+/* Alias Bullet Treatment */
+[data-rem-tags="aliases"] .rem-bullet__container .rem-bullet.rem-bullet--hidden-children {
+  width: 0 !important;
+  height: 0 !important;
+  border-style: solid;
+  border-width: 6px 0 6px 6px !important;
+  border-color: transparent transparent transparent var(--bullet-main);
+  position: relative;
+  top: -0.02rem !important;
+  left: 0.02rem !important;
+}
+[data-rem-tags="aliases"] .rem-container--descriptor-rem-type .rem-bullet {
+  -webkit-mask-image: unset;
+  mask-image: unset;
+}
 /*********** Forder & File Style ***********/
-	/* Remove Radius Circle */
-		.rem-bullet__icon.rem-bullet--hidden-children,
-		.rem-bullet__icon.rem-bullet--all-children-visible {
-			background-color: unset;
-		}
-	.rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
-	.highlight-color--red .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
-	.highlight-color--orange .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
-	.highlight-color--yellow .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
-	.highlight-color--green .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
-	.highlight-color--blue .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
-	.highlight-color--purple .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
-	.dark-mode .highlight-color--red .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
-	.dark-mode .highlight-color--orange .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
-	.dark-mode .highlight-color--yellow .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
-	.dark-mode .highlight-color--green .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
-	.dark-mode .highlight-color--blue .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL,
-	.dark-mode .highlight-color--purple .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL {
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 8px 0 8px 8px !important;
-		border-color: transparent transparent transparent black;
-	}
-	.highlight-color--red .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
-	.highlight-color--orange .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
-	.highlight-color--yellow .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
-	.highlight-color--green .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
-	.highlight-color--blue .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
-	.highlight-color--purple .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL
-	.dark-mode .highlight-color--red .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
-	.dark-mode .highlight-color--orange .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
-	.dark-mode .highlight-color--yellow .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
-	.dark-mode .highlight-color--green .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
-	.dark-mode .highlight-color--blue .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL,
-	.dark-mode .highlight-color--purple .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL {
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 8px 8px 0 8px !important;
-		border-color: black transparent transparent transparent;
-	}
-	.dark-mode .rem-bullet__icon.rem-bullet--hidden-children.css-jxYBFL {border-color: transparent transparent transparent white;}
-	.dark-mode .rem-bullet__icon.rem-bullet--all-children-visible.css-jxYBFL {color: white;}
+.rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 8px !important;
+  border-color: transparent transparent transparent black;
+}
+.highlight-color--red .rem-icon-bullet.rem-bullet--hidden-children, .highlight-color--orange .rem-icon-bullet.rem-bullet--hidden-children, .highlight-color--yellow .rem-icon-bullet.rem-bullet--hidden-children, .highlight-color--green .rem-icon-bullet.rem-bullet--hidden-children, .highlight-color--blue .rem-icon-bullet.rem-bullet--hidden-children, .highlight-color--purple .rem-icon-bullet.rem-bullet--hidden-children {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 8px !important;
+  border-color: transparent transparent transparent black;
+}
+.highlight-color--red .rem-icon-bullet.rem-bullet--all-children-visible, .highlight-color--orange .rem-icon-bullet.rem-bullet--all-children-visible, .highlight-color--yellow .rem-icon-bullet.rem-bullet--all-children-visible, .highlight-color--green .rem-icon-bullet.rem-bullet--all-children-visible, .highlight-color--blue .rem-icon-bullet.rem-bullet--all-children-visible, .highlight-color--purple .rem-icon-bullet.rem-bullet--all-children-visible {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 0 8px !important;
+  border-color: black transparent transparent transparent;
+}
+.dark-mode .highlight-color--red .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--orange .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--yellow .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--green .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--blue .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--purple .rem-icon-bullet.rem-bullet--hidden-children {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 8px !important;
+  border-color: transparent transparent transparent black;
+}
+.dark-mode .highlight-color--red .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--orange .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--yellow .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--green .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--blue .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--purple .rem-icon-bullet.rem-bullet--all-children-visible {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 0 8px !important;
+  border-color: black transparent transparent transparent;
+}
 /*********** TreeNode Distraction Free ***********/
-	#hierarchy-editor .TreeNode {
-	    border-color: var(--line-color);
-	    border-width: 1px;
-	    transition-timing-function: linear;
-	    position: relative;
-	    background-color: transparent;
-	    left: var(--treenode-line-spacing);
-		margin-right: var(--treenode-line-spacing);
-	} 
-	/* List Card Item */
-		.node-card-item:before {
-			margin-left: -0.7rem;
-			background-color: var(--node-card-item-color);
-		}
-		.dark-mode .node-card-item:before {
-			background-color: var(--node-card-item-color-dark);
-		}
-	/* Portal */
-		#hierarchy-editor .portal-tree-node-box {
-			margin-left: -3px;
-		}
+#hierarchy-editor .TreeNode {
+  border-color: var(--line-color);
+  border-width: 1px;
+  transition-timing-function: linear;
+  position: relative;
+  background-color: transparent;
+  left: var(--treenode-line-spacing);
+  margin-right: var(--treenode-line-spacing);
+  /* Portal */
+}
+#hierarchy-editor .portal-tree-node-box {
+  margin-left: -3px;
+}
+/* List Card Item */
+.node-card-item:before {
+  margin-left: -0.7rem;
+  background-color: var(--node-card-item-color);
+}
+.dark-mode .node-card-item:before {
+  background-color: var(--node-card-item-color-dark);
+}
 /*********** Rem Hierarchy Text Editor Line Height ***********/
-	.EditorContainer {line-height: 140%;}
-/*********** Normal Rem-text ***********/
-	.rem-text {font-family: var(--font-family);}
-	.rem-bullet {border-radius: 1px !important;}
-	.rem-bullet.rem-bullet--all-children-visible {background-color: transparent;}
-	.rem-bullet.rem-bullet--hidden-children {margin-top: 4px;}
-/*********** Font Size ***********/
-	.rem-header--1 {font-size: var(--font-size-header-1) !important;}
-	.rem-header--2 {font-size: var(--font-size-header-2) !important;}
-	.rem-header--3 {font-size: var(--font-size-header-3) !important;}
-/*********** Bullet Position Adjustment	 ***********/
-	.rem-bullet__container {
-		position: relative;
-		top: -2px;
-	}
-	.rem-container--header-1 .rem-button__container {
-		top: 6px;
-		margin-top: 0px;
-		color: black;
-	}
+.EditorContainer {
+  line-height: 140%;
+}
 /*********** Rem Bullet for Flashcard Rem ***********/
-	/* Basic & Concept-Rem-Type Bullet */
-		.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {background: var(--both-practice-color) !important;}
-		.rem-container--forwards-practice-enabled .rem-bullet {background: var(--forward-practice-color) !important;}
-		.rem-container--backwards-practice-enabled .rem-bullet {background: var(--backward-practice-color) !important;}
-		.rem-container--forwards-practice-disabled .rem-bullet {background: var(--disabled-practice-color);}
-		
-		.rem-container--forwards-practice-enabled .rem-bullet,
-		.rem-container--backwards-practice-enabled .rem-bullet,
-		.rem-container--forwards-practice-disabled .rem-bullet { 
-			width: 26px;
-			height: 18px;
-			position: relative;
-			left: 4px;
-			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-					mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-			-webkit-mask-size: contain;
-					mask-size: contain;
-			-webkit-mask-repeat: no-repeat;
-					mask-repeat: no-repeat;
-			zoom:  80%;
-		}
-	/* Descriptor-Rem-Type Bullet */
-		.rem-container--descriptor-rem-type .rem-bullet {
-			width: 14px !important;	
-			height: 12px !important;
-			position: relative !important;
-			top: 2px !important;
-			left: -1px !important;
-			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
-					mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
-			-webkit-mask-size: contain;
-					mask-size: contain;
-			-webkit-mask-repeat: no-repeat;
-					mask-repeat: no-repeat;
-		}
-	/* List-Type Bullet */
-		.rem-container--forwards-practice-enabled .rem-bullet.rem-bullet--hidden-children,
-		.rem-container--forwards-practice-disabled .rem-bullet.rem-bullet--hidden-children,
-		.rem-container--backwards-practice-enabled .rem-bullet.rem-bullet--hidden-children {
-			border-radius: 0px !important;
-			position: relative;
-			top: 2px;
-			left: 0px;
-		    zoom: 2;
-		    -webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-					mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-			-webkit-mask-size: contain;
-					mask-size: contain;
-			-webkit-mask-repeat: no-repeat;
-					mask-repeat: no-repeat;
-		}
-		.rem-container--forwards-practice-enabled .rem-bullet.rem-bullet--hidden-children {
-			fill: #FFA344;
-		}
-/*********** Documents ***********/
-	/* Current Page [Parent > Child] Hierarchy Style */
-		#document-parents .parent-link {
-		 	color: #2B3137;
-		}
-	/* Document Title */
-		#document .document-title,
-		#document .document-title .bold {
-		 	font-weight: 700 !important;
-		}
-		
-		.rem-is-custom-rem-type.rem-is-custom-rem-type--in-body {
-			position: relative;
-			top: 4px;
-		}
+/* Basic & Concept & List Rem-Type Bullet */
+/* Both */
+.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
+  background: var(--both-practice-color) !important;
+}
+/* Forward */
+.rem-container--forwards-practice-enabled .rem-bullet {
+  background: var(--forward-practice-color) !important;
+  width: 26px;
+  height: 18px;
+  position: relative;
+  left: 4px;
+  -webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+  mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  zoom: 80%;
+}
+.rem-container--forwards-practice-enabled .rem-bullet.rem-bullet--hidden-children {
+  border-radius: 0px !important;
+  position: relative;
+  top: 2px;
+  left: 0px;
+  zoom: 2;
+  -webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+  mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.rem-container--forwards-practice-disabled .rem-bullet {
+  background: var(--disabled-practice-color);
+  width: 26px;
+  height: 18px;
+  position: relative;
+  left: 4px;
+  -webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+  mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  zoom: 80%;
+}
+.rem-container--forwards-practice-disabled .rem-bullet.rem-bullet--hidden-children {
+  border-radius: 0px !important;
+  position: relative;
+  top: 2px;
+  left: 0px;
+  zoom: 2;
+  -webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+  mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+/* Backward */
+.rem-container--backwards-practice-enabled .rem-bullet {
+  background: var(--backward-practice-color) !important;
+  width: 26px;
+  height: 18px;
+  position: relative;
+  left: 4px;
+  -webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+  mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  zoom: 80%;
+}
+.rem-container--backwards-practice-enabled .rem-bullet.rem-bullet--hidden-children {
+  border-radius: 0px !important;
+  position: relative;
+  top: 2px;
+  left: 0px;
+  zoom: 2;
+  -webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+  mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+/* Descriptor-Rem-Type Bullet */
+.rem-container--descriptor-rem-type .rem-bullet {
+  width: 14px !important;
+  height: 12px !important;
+  position: relative !important;
+  top: 2px !important;
+  left: -1px !important;
+  -webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
+  mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
 /*********** Make Bullet-list by Intentional Tagging ***********/
-	[data-rem-tags~="bulletlist"] {
-		padding-top: 1px;
-		padding-bottom: 5px;
-	    margin-left: var(--treenode-line-spacing);
-		left: 2px;
-	}
-	[data-rem-tags~="bulletlist"] .rem-bullet { 	
-		background-color: #2B3137 !important; 
-		border-radius: 4px !important;
-		height: 4px !important;
-		width: 4px !important;
-		margin-left: px !important;
-		padding: 1px;
-		position: relative;
-		top: 1px;
-	}
-	.dark-mode [data-rem-tags~="bulletlist"] .rem-bullet {
-		background-color: var(--bullet-main) !important; 
-	}
-	[data-rem-tags*="bulletlist"] .rem-button__container .rem-bullet.rem-bullet--hidden-children {
-		border-style: unset;
-		border-width: unset;
-		zoom: 1.5;
-		position: relative;
-		top: -1px;
-	}
-	/* Avoid Making Focused Bullet Bigger */
-		#hierarchy-editor [data-rem-tags~="bulletlist"] .rem-container--focused .rem-bullet.rem-bullet--hidden-children {border-style: unset;}
-/*********** Tag Declutter ***********/
-	[data-rem-tags~="bulletlist"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
-	[data-rem-tags~="bulletlist"] .hierarchy-editor__tag-bar__tag span {display: none;}
-/*********** Rem Right side Button - Merge, Tag ***********/
-	.float-end {zoom: 90%;}
+[data-rem-tags~="bulletlist"] {
+  padding-top: 1px;
+  padding-bottom: 5px;
+  margin-left: var(--treenode-line-spacing);
+  left: 2px;
+}
+[data-rem-tags~="bulletlist"] .rem-bullet {
+  background-color: #2B3137 !important;
+  border-radius: 4px !important;
+  height: 4px !important;
+  width: 4px !important;
+  margin-left: px !important;
+  padding: 1px;
+  position: relative;
+  top: 1px;
+  /* Tag Declutter */
+}
+[data-rem-tags~="bulletlist"] .items-center.hierarchy-editor__tag-bar__tag {
+  background-color: transparent !important;
+}
+[data-rem-tags~="bulletlist"] .hierarchy-editor__tag-bar__tag span {
+  display: none;
+}
+.dark-mode [data-rem-tags~="bulletlist"] .rem-bullet {
+  background-color: var(--bullet-main) !important;
+}
+[data-rem-tags*="bulletlist"] .rem-button__container .rem-bullet.rem-bullet--hidden-children {
+  border-style: unset;
+  border-width: unset;
+  zoom: 1.5;
+  position: relative;
+  top: -1px;
+}
+#hierarchy-editor [data-rem-tags~="bulletlist"] .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
+  border-style: unset;
+}
