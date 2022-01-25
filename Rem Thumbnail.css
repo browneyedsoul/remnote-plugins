@@ -198,8 +198,8 @@
     }
 /*********** Search Result ***********/
     /* Global Search Result (⌘+P Window) */
-        .css-ZPdGi .inline-block, 
-        .css-ZPdGi .thumbnail--with-width {
+        [aria-label~="Omnibar"] .inline-block, 
+        [aria-label~="Omnibar"] .thumbnail--with-width {
             height: 1em !important;
             width: auto !important;
             min-width: auto !important;
@@ -224,7 +224,7 @@
             width: auto !important;
             min-width: auto !important;
         }
-/*********** Portal ***********/  
+/*********** Portal ***********/
     /* Portal Popup for Hidden rems */
         #search-results__result .inline-block,
         #search-results__result .thumbnail--with-width {
