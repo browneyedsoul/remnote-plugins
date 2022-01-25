@@ -107,14 +107,21 @@
   border-width: 8px 8px 0 8px !important;
   border-color: black transparent transparent transparent;
 }
-.dark-mode .highlight-color--red .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--orange .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--yellow .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--green .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--blue .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--purple .rem-icon-bullet.rem-bullet--hidden-children {
+.dark-mode .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 8px !important;
+  border-color: transparent transparent transparent white;
+}
+.dark-mode .highlight-color--red .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--orange .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--yellow .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--green .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--blue .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children, .dark-mode .highlight-color--purple .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children {
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 8px 0 8px 8px !important;
   border-color: transparent transparent transparent black;
 }
-.dark-mode .highlight-color--red .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--orange .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--yellow .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--green .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--blue .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--purple .rem-icon-bullet.rem-bullet--all-children-visible {
+.dark-mode .highlight-color--red .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--orange .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--yellow .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--green .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--blue .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--all-children-visible, .dark-mode .highlight-color--purple .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--all-children-visible {
   width: 0;
   height: 0;
   border-style: solid;
