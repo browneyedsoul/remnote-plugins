@@ -340,7 +340,9 @@
 	/* Hierarchy Editor - Left-side Hiearchy Editor Margin */
 		.document--ltr {padding: 0px 0px 0px 40px;}
 	/* Hierarchy Editor - Source & Tags & Tagbar & Backlinks */
-		.dark-mode .rem-reference-link {background-color: var(--calloutyellow-background-color-dark);}
+		.dark-mode #DropToOpenAsDocument .pr-1 .RichTextViewer {
+			color: var(--darkmode-text) !important;
+		}
 		.dark-mode #DocumentTopRow .flex.flex-row.items-center.justify-center.bg-gray-10.text-gray-70.py-1.px-2.rounded.text-sm.font-medium.cursor-pointer.truncate,
 		.dark-mode .hierarchy-editor__tag-bar__tag {
 			color: var(--darkmode-text);
