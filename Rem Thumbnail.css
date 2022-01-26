@@ -1,312 +1,266 @@
-:root {
-	--font-size-header-1: 32px;
-	--font-size-header-2: 24px;
-	--font-size-header-3: 20px;
-}
 /*********** All Notes Section ***********/
-    .css-jlRuPl, 
-    .css-jlRuPl .inline-block, 
-    .css-jlRuPl .thumbnail--with-width,
-    .css-dcfFHl .inline-block,
-    .css-dcfFHl .thumbnail--with-width,
-    .css-cLpPvR .inline-block {
-        height: 1em !important;
-        min-width: auto !important;
-        width: auto !important;
-        padding-right: 2px;
-    }
+.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .image-node__container .image-node .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
 /*********** Card Browser ***********/
-    .ReactVirtualized__Table__rowColumn .inline-block,
-    .ReactVirtualized__Table__rowColumn .inline-block.align-text-top.group,
-    .ReactVirtualized__Table__rowColumn .image-node,
-    .ReactVirtualized__Table__rowColumn .thumbnail--with-width {
-        height: 1em;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
-    }
+.ReactVirtualized__Table__rowColumn .image-node {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
+.ReactVirtualized__Table__rowColumn .image-node .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
 /*********** Queue ***********/
-    .spaced-repetition__prompt__breadcrumbs .inline-block,
-    .spaced-repetition__prompt__breadcrumbs .thumbnail--with-width {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
-    }
-    
-    .rem-bullet__document .inline-block,
-    .rem-bullet__document .inline-block.align-text-top.group,
-    .rem-bullet__document .react-transform-component,
-    .rem-bullet__document .image-node,
-    .rem-bullet__document .thumbnail--with-width {
-        width: auto !important;
-        min-width: auto !important;
-        max-width: auto !important;
-    }
-    
-    .rem-bullet__document > span > div {
-        display: inline;
-     }
-    .Queue .fill-in-the-blank {
-        display: inline-flex;
-        vertical-align: top;
-    }
+.spaced-repetition__prompt__breadcrumbs .inline-block, .spaced-repetition__prompt__breadcrumbs .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
+.rem-bullet__document .inline-block, .rem-bullet__document .inline-block.align-text-top.group, .rem-bullet__document .react-transform-component, .rem-bullet__document .image-node, .rem-bullet__document .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  max-width: auto !important;
+}
+.rem-bullet__document > span > div {
+  display: inline;
+}
+.Queue .fill-in-the-blank {
+  display: inline-flex;
+  vertical-align: top;
+}
+.Queue .queue-cluster-selector .image-node, .Queue .queue-cluster-selector .image-node__container.group.inline-block.align-text-top, .Queue .queue-cluster-selector .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
 /*********** Document Title ***********/
-    #DocumentTitle .inline-block, 
-    #DocumentTitle .thumbnail--with-width {
-        min-height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-    }
+#DocumentTitle .inline-block, #DocumentTitle .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
 /*********** Page Hierarchy  ***********/
-    .document-header-top-bar .inline-block, 
-    .document-header-top-bar .thumbnail--with-width {
-        height: 1em;
-        width: auto;
-        min-width: auto !important;
-        padding-right: 2px;
-        color: #2B3137;
-    }
+.document-header-top-bar .inline-block, .document-header-top-bar .thumbnail--with-width {
+  height: 1em;
+  width: auto;
+  min-width: auto !important;
+  padding-right: 2px;
+  color: #2B3137;
+}
 /*********** Hidden Page Hierarchy Style ***********/
-    .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
-        height: 1em;
-        width: auto;
-        min-width: auto !important;
-        padding-right: 2px;
-    }
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
+  height: 1em;
+  width: auto;
+  min-width: auto !important;
+  padding-right: 2px;
+}
 /*********** Document Sidebar ***********/
-    #document-sidebar .inline-block,
-    #document-sidebar .thumbnail--with-width {
-        height: 1.2em !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 0px;
-    }
+#document-sidebar .inline-block, #document-sidebar .thumbnail--with-width {
+  height: 1.2em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 0px;
+}
 /*********** Document Hidden children ***********/
-    .hierarchy-editor__hidden-children .rem-header--1 .inline-block,
-    .hierarchy-editor__hidden-children .rem-header--1 .thumbnail--with-width {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-        margin-right: 2px;
-    }
+.hierarchy-editor__hidden-children .rem-header--1 .inline-block, .hierarchy-editor__hidden-children .rem-header--1 .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-right: 2px;
+}
 /*********** Popup ***********/
-    /* Header 1 */
-        #document-hover-preview__popup .rem-header--1 .inline-block,
-        #document-hover-preview__popup .rem-header--1 .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            margin-right: 2px;
-        }
-    /* Header 2 */
-        #document-hover-preview__popup .rem-header--2 .inline-block,
-        #document-hover-preview__popup .rem-header--2 .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            margin-right: 2px;
-        }
-    /* Header 3 */
-        #document-hover-preview__popup .rem-header--3 .inline-block,
-        #document-hover-preview__popup .rem-header--3 .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            margin-right: 2px;
-        }
-    /* Image Thumbnail Tag */
-        [data-rem-tags*="tn"] #document-hover-preview .inline-block, 
-        [data-rem-tags*="tn"] #document-hover-preview .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            padding-right: 2px;
-        }
-    /* Portal */
-        /* .portal-tree-node-box .rem-text .inline-block,
-        .portal-tree-node-box .rem-text .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            margin-right: 2px;
-        } */
-    /* Tag bar */
-        .rem.isSearchResult .hierarchy-editor__tag-bar .inline-block,
-        .rem.isSearchResult .hierarchy-editor__tag-bar .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            margin-right: 2px;
-        }
-    /* Reference */
-        #document-hover-preview__popup > span [class*="inline-block"],
-        #document-hover-preview__popup .bold .inline-block,
-        #document-hover-preview__popup .bold .thumbnail--with-width,
-        .popup-menu.fixed .popup-menu__item--static .inline-block, 
-        .popup-menu.fixed .popup-menu__item--static .thumbnail--with-width,
-        .EditorContainer.EditorContainerInline .thumbnail--with-width,
-        .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block,
-        .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .thumbnail--with-width
-        {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            margin-right: 2px;	
-        }
-        
-        .EditorContainer.EditorContainerInline .thumbnail--with-width {color: #2B3137;}
-    /* Delete Confirm Popup */
-        #delete-confirm-popup .inline-block, 
-        #delete-confirm-popup .thumbnail--with-width,
-        #delete-confirm-popup .image-node__container.group.inline-block.align-text-top,
-        .delete-confirm-popup__rem-section__item .inline-block, 
-        .delete-confirm-popup__rem-section__item .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            margin-right: 2px;	
-        }
+.popup-menu .inline-block, .popup-menu .inline-block.align-text-top.group, .popup-menu .thumbnail--with-width, .popup-menu .image-node {
+  height: 1em;
+  width: auto !important;
+  min-width: auto !important;
+  display: inline-block;
+}
+.popup-menu #document-hover-preview__popup {
+  /* Header */
+}
+.popup-menu #document-hover-preview__popup .rem-header--1 .inline-block, .popup-menu #document-hover-preview__popup .rem-header--2 .rem-header--3 .inline-block, .popup-menu #document-hover-preview__popup .rem-header--1 .thumbnail--with-width, .popup-menu #document-hover-preview__popup .rem-header--2 .rem-header--3 .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-right: 2px;
+  /* Reference Popup */
+}
+.popup-menu #document-hover-preview__popup > span [class*="inline-block"] {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-right: 2px;
+}
+.popup-menu #document-hover-preview__popup .bold .inline-block, .popup-menu #document-hover-preview__popup .bold .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-right: 2px;
+}
+.popup-menu #document-hover-preview__popup .popup-menu__item--static .inline-block, .popup-menu #document-hover-preview__popup .popup-menu__item--static .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-right: 2px;
+}
+/* Image Thumbnail Tag */
+[data-rem-tags*="tn"] #document-hover-preview .inline-block {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
+[data-rem-tags*="tn"] #document-hover-preview .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
+/* Tag bar */
+.rem.isSearchResult .hierarchy-editor__tag-bar .inline-block, .rem.isSearchResult .hierarchy-editor__tag-bar .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-right: 2px;
+}
+/* Reference */
+.EditorContainer.EditorContainerInline .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-right: 2px;
+  color: #2B3137;
+}
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block, .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-right: 2px;
+}
+/* Delete Confirm Popup */
+#delete-confirm-popup .inline-block, #delete-confirm-popup .image-node__container.group.inline-block.align-text-top, #delete-confirm-popup .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-right: 2px;
+}
+#delete-confirm-popup .delete-confirm-popup__rem-section__item .inline-block, #delete-confirm-popup .delete-confirm-popup__rem-section__item .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-right: 2px;
+}
 /*********** Header & Normal Rem-Text with "Thumbnail(TN)" Tag***********/
-    .rem-header--1 .inline-block,
-    .rem-header--1 .thumbnail--with-width,
-    .rem-header--2 .inline-block,
-    .rem-header--2 .thumbnail--with-width,
-    .rem-header--3 .inline-block,
-    .rem-header--3 .thumbnail--with-width,
-    [data-rem-tags*="tn"] .inline-block,
-    [data-rem-tags*="tn"] .thumbnail--with-width {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-    }
-    .rem-header--1 .inline-block, .rem-header--1 .thumbnail--with-width {margin-right: 3px;}
-    .rem-header--2 .inline-block, .rem-header--2 .thumbnail--with-width {margin-right: 2px;}
-    .rem-header--3 .inline-block, .rem-header--3 .thumbnail--with-width {margin-right: 2px;}
-    [data-rem-tags*="tn"] .inline-block, [data-rem-tags*="tn"] .thumbnail--with-width {margin-right: 1px;}
+.rem-header--1 .inline-block, .rem-header--2 .inline-block, .rem-header--3 .inline-block, [data-rem-tags*="tn"] .inline-block, .rem-header--1 .thumbnail--with-width, .rem-header--2 .thumbnail--with-width, .rem-header--3 .thumbnail--with-width, [data-rem-tags*="tn"] .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-right: 3px;
+}
 /*********** Tag bar ***********/
-    #DropToOpenAsDocument .inline-block, 
-    #DropToOpenAsDocument .thumbnail--with-width,
-    .hierarchy-editor__tag-bar__tag .thumbnail--with-width,
-    .hierarchy-editor__tag-bar__tag .inline-block,
-    .hierarchy-editor__tag-bar__tag .inline-block.align-text-top.group,
-    .fade-on-hide-ui .inline-block {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-        padding-right: 2px;
-    }
+#DropToOpenAsDocument .inline-block, #DropToOpenAsDocument .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
+.hierarchy-editor__tag-bar__tag .inline-block, .hierarchy-editor__tag-bar__tag .inline-block.align-text-top.group, .hierarchy-editor__tag-bar__tag .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
+.fade-on-hide-ui .inline-block {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
 /*********** Search Result ***********/
-    /* Global Search Result (⌘+P Window) */
-        [aria-label~="Omnibar"] .inline-block, 
-        [aria-label~="Omnibar"] .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            padding-right: 2px;
-        }
-	/* Search Popup Page */
-        .css-ZPdGi {
-            min-width: 80%;
-            min-height: 80%;
-        }
-        .css-fUqRpZ .inline-block, 
-        .css-fUqRpZ .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            padding-right: 2px;
-        }
-    /* Tag Search Result */
-        .search-result__rem-breadcrumbs .inline-block, 
-        .search-result__rem-breadcrumbs .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-        }
+/* Global Search Result (⌘+P Window) */
+[aria-label~="Omnibar"] .inline-block, [aria-label~="Omnibar"] .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
+/* Search Popup Page */
+.css-ZPdGi {
+  min-width: 80%;
+  min-height: 80%;
+}
+.css-fUqRpZ .inline-block, .css-fUqRpZ .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
+/* Tag Search Result */
+.search-result__rem-breadcrumbs .inline-block, .search-result__rem-breadcrumbs .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+}
+#search-results__result .inline-block, #search-results__result .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  padding-right: 2px;
+}
 /*********** Portal ***********/
-    /* Portal Popup for Hidden rems */
-        #search-results__result .inline-block,
-        #search-results__result .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-            padding-right: 2px;
-        }
-    /* Portal-Tree-Node-Box (Tagged Rem Box ...) */
-        /* .portal-tree-node-box .rem-text .inline-block, 
-        .portal-tree-node-box .rem-text .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-        } */
-        .portal-tree-node-box .rem-text.rem-header--1 .inline-block, 
-        .portal-tree-node-box .rem-text.rem-header--1 .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-        }
-        .portal-tree-node-box .rem-text.rem-header--2 .inline-block, 
-        .portal-tree-node-box .rem-text.rem-header--2 .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-        }
-        .portal-tree-node-box .rem-text.rem-header--3 .inline-block, 
-        .portal-tree-node-box .rem-text.rem-header--3 .thumbnail--with-width {
-            height: 1em !important;
-            width: auto !important;
-            min-width: auto !important;
-        }
+.portal-tree-node-box .rem-text.rem-header--1 .inline-block, .portal-tree-node-box .rem-text.rem-header--2 .inline-block, .portal-tree-node-box .rem-text.rem-header--3 .inline-block, .portal-tree-node-box .rem-text.rem-header--1 .thumbnail--with-width, .portal-tree-node-box .rem-text.rem-header--2 .thumbnail--with-width, .portal-tree-node-box .rem-text.rem-header--3 .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+}
 /*********** Rem Reference ***********/
-    .rem-reference .inline-block,
-    .rem-reference .thumbnail--with-width {
-        height: 1em !important;
-        width: auto !important;
-        min-width: auto !important;
-        margin-top: 1px;
-    }
-    #document-hover-preview__popup #hierarchy-editor .inline-block, 
-	#document-hover-preview__popup #hierarchy-editor .thumbnail--with-width, 
-	#document-hover-preview__popup #hierarchy-editor .rem-reference .inline-block, 
-	#document-hover-preview__popup #hierarchy-editor .rem-reference .thumbnail--with-width {
-	    height: auto; /* Do not change this */
-	    width: auto !important;
-	    min-width: auto !important;
-	}
-    #document-hover-preview__popup .inline-block, 
-	#document-hover-preview__popup .thumbnail--with-width, 
-	#document-hover-preview__popup .rem-reference .inline-block, 
-	#document-hover-preview__popup .rem-reference .thumbnail--with-width {
-	    height: 1em;
-	    width: auto !important;
-	    min-width: auto !important;
-	}
-    .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
-        height: 1em;
-        width: auto !important;
-        min-width: auto !important;
-    }
-    .popup-menu .inline-block,
-	.popup-menu .inline-block.align-text-top.group,
-	.popup-menu .thumbnail--with-width,
-	.popup-menu .image-node {
-		height: 1em;
-		width: auto !important;
-		min-width: auto !important;
-		display: inline-block;
-	}
-	/* Rem reference normal rem-text thumbnail adjustment */
-        .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block,
-        .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block.align-text-top.group,
-        .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .thumbnail--with-width,
-        .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .image-node {
-            position: relative;
-            top: -0.05em;
-        } 
-/*********** Hyperlink Favicon ***********/
-    .LinkNode img {
-        height: 1em;
-        width: auto;
-        padding-right: 3px;
-    }
+.rem-reference .inline-block, .rem-reference .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-top: 1px;
+}
+#document-hover-preview__popup #hierarchy-editor .inline-block, #document-hover-preview__popup #hierarchy-editor .thumbnail--with-width {
+  height: auto;
+  /* Do not change this */
+  width: auto !important;
+  min-width: auto !important;
+}
+#document-hover-preview__popup #hierarchy-editor .rem-reference .inline-block, #document-hover-preview__popup #hierarchy-editor .rem-reference .thumbnail--with-width {
+  height: auto;
+  /* Do not change this */
+  width: auto !important;
+  min-width: auto !important;
+}
+#document-hover-preview__popup .inline-block, #document-hover-preview__popup .thumbnail--with-width {
+  height: 1em;
+  width: auto !important;
+  min-width: auto !important;
+}
+#document-hover-preview__popup .rem-reference .inline-block, #document-hover-preview__popup .rem-reference .thumbnail--with-width {
+  height: 1em;
+  width: auto !important;
+  min-width: auto !important;
+}
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
+  height: 1em;
+  width: auto !important;
+  min-width: auto !important;
+}
+/* Rem reference normal rem-text thumbnail adjustment */
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block.align-text-top.group, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .image-node, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .thumbnail--with-width {
+  position: relative;
+  top: -0.05em;
+}
