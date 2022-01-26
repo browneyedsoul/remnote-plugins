@@ -719,6 +719,9 @@
 		}
 /*********** Settings Page ***********/
 	/* Interim Measure */
+		.bg-blue-5 {
+			background-color: #518FFF;
+		}
 		.dark-mode #DefaultExampleDocumentActions,
 		.dark-mode .settings-page .spaced-repetition-scheduler-form a,
 		.dark-mode .settings-page [color~="#515167"],	/* Body Text */ 
@@ -746,7 +749,8 @@
 			fill: var(--darkmode-text) !important;
 			color: var(--darkmode-text) !important;
 		}
-		.dark-mode .settings-page .ui.input>input {
+		.dark-mode .settings-page .ui.input>input,
+		.bg-blue-5:hover {
 			background-color: var(--darkmode-background-selected-darker);
 		}
 	/* Settings Page Basic */
@@ -1112,7 +1116,7 @@
 			background-color: var(--darkmode-background-selected-darker);
 		}
 		.dark-mode #DocumentTopRow .text-gray-30:hover,
-		.dark-mode #DocumentTopRow .hover\:bg-gray-5:hover:not(#search-result__result) {
+		.dark-mode .hover\:bg-gray-5:hover:not(#search-result__result) {
 			color: var(--darkmode-contrast) !important;
 			background-color: var(--darkmode-background-selected-darker);
 		}
