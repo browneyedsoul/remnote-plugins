@@ -753,6 +753,18 @@
 		.bg-blue-5:hover {
 			background-color: var(--darkmode-background-selected-darker);
 		}
+		.dark-mode .text-gray-100 {
+			color: unset;
+		}
+		.dark-mode .hover\:bg-gray-5.active:bg-gray-10.active:color-gray-100:hover {
+			background-color: var(--darkmode-background-selected-darker);
+		}
+		.dark-mode .body--show-ui .show-ui-hover\:bg-blue-5:hover {
+			background-color: var(--darkmode-background-selected-darker) !important;
+		}
+		.dark-mode .DocumentLink {
+			color: var(--darkmode-text);
+		}
 	/* Settings Page Basic */
 		.dark-mode .settings-page {background-color: var(--darkmode-background);}
 		.dark-mode .settings-page__sidebar__title {color: var(--darkmode-contrast);}
