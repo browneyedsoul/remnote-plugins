@@ -743,7 +743,8 @@
 		.dark-mode .settings-page .pt-4,
 		.dark-mode .settings-page .pl-4,
 		.dark-mode .settings-page .text-gray-70,
-		.dark-mode .settings-page .spaced-repetition-scheduler-form div,
+		.dark-mode .settings-page .spaced-repetition-scheduler-form .p-6 > div > div,
+		.dark-mode .settings-page .spaced-repetition-scheduler-form .py-1,
 		.dark-mode .settings-page .spaced-repetition-scheduler-form__field > div,
 		.dark-mode .settings-page .spaced-repetition-scheduler-form__field__explanation,
 		.dark-mode .settings-page .pt-8.px-6 > div, /* Header */ 
@@ -820,8 +821,8 @@
 		.dark-mode .settings-page .button {
 			background-color: unset;
 		}
-		.dark-mode .spaced-repetition-scheduler-form__interaction {
-			color: black;
+		.dark-mode .settings-page .spaced-repetition-scheduler-form__interaction {
+			color: black !important;
 		}
 	/* Setting Page Content */
 		.dark-mode .settings-page .popup__header,
