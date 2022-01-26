@@ -1,10 +1,13 @@
 @charset "UTF-8";
 /*********** All Notes Section ***********/
-.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .image-node__container .image-node .thumbnail--with-width {
-  height: 1em !important;
+.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .inline-block,
+.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .inline-block.align-text-top.group,
+.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .thumbnail--with-width,
+.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .image-node {
+  height: 1em;
   width: auto !important;
   min-width: auto !important;
-  padding-right: 2px;
+  display: inline-block;
 }
 
 /*********** Card Browser ***********/
@@ -262,6 +265,7 @@
   width: auto !important;
   min-width: auto !important;
   margin-right: 3px;
+  background-color: transparent;
 }
 
 /*********** Tag bar ***********/

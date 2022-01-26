@@ -2,15 +2,14 @@
     .document-table {
         .ReactVirtualized__Grid__innerScrollContainer {
             .RichTextViewer {
-                .image-node__container {
-                    .image-node {
-                        .thumbnail--with-width {
-                            height: 1em !important;
-                            width: auto !important;
-                            min-width: auto !important;
-                            padding-right: 2px;
-                        }
-                    }
+                .inline-block,
+                .inline-block.align-text-top.group,
+                .thumbnail--with-width,
+                .image-node {
+                    height: 1em;
+                    width: auto !important;
+                    min-width: auto !important;
+                    display: inline-block;
                 }
             }
         }
@@ -298,6 +297,7 @@
             width: auto !important;
             min-width: auto !important;
             margin-right: 3px;
+            background-color: transparent;
         }
     }
 /*********** Tag bar ***********/
