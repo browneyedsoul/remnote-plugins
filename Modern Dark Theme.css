@@ -74,20 +74,25 @@
 		.dark-mode .hidden-selection {background-color: gray;}
 /*********** All Notes page list ***********/
 	/* All notes Menu Style */
-		.dark-mode .document-table .css-gnNRVe,
+		.dark-mode .document-table > div > div,
+		.dark-mode .document-table [color~="gray100"],
 		.dark-mode .document-table .css-huFlzA .css-fLTnVi {
-			color: var(--darkmode-text);
+			color: var(--darkmode-text) !important;
+		}
+	/* Button */
+		.dark-mode .document-table div[color="#292936"] {
+			color: #000;
 		}
 	/* Reverse Browser Item Header */
-		.document-table .css-cLpPvR {
+		/* .document-table .ReactVirtualized__Grid__innerScrollContainer .flex-grow .flex.w-full.h-full div:nth-child(2) {
 			flex-direction: column-reverse;
-		}
+		} */
 	/* Browser Item Style */
 		.document-table .css-cLpPvR > .css-kMEfqE {
 			zoom: 1.25;
 			margin: 4px;
 		}
-		.dark-mode .css-cLpPvR .RichTextViewer {
+		.dark-mode .document-table .RichTextViewer {
 			color: var(--darkmode-text);
 		}
 	/* Shrink Item Breadcrumbs */
