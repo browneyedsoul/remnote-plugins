@@ -63,6 +63,12 @@
 		.dark-mode .thumbnail--with-width {
 			background-color: transparent;
 		}
+		.image-node .bg-white {
+			background-color: unset;
+		}
+		.dark-mode .image-node .text-text {
+			color: var(--darkmode-text);
+		}
 	/* Rem Block Selected Area */
 		.hidden-selection {background-color:#D8E2F1;}
 		.dark-mode .hidden-selection {background-color: gray;}
@@ -785,6 +791,7 @@
 			font-weight: 650;
 		}
 		.dark-mode #subscription-page .bg-mint-10 {
+			color: #000 !important;
 			background-color: #8BD1B9;
 		}
 		.dark-mode .w-min {
