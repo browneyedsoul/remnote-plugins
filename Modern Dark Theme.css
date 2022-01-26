@@ -59,6 +59,10 @@
 } 
 /*********** The Most important thing ***********/
 	.dark-mode {filter: unset;}
+	/* Thumbnail Background */
+		.dark-mode .thumbnail--with-width {
+			background-color: transparent;
+		}
 	/* Rem Block Selected Area */
 		.hidden-selection {background-color:#D8E2F1;}
 		.dark-mode .hidden-selection {background-color: gray;}
