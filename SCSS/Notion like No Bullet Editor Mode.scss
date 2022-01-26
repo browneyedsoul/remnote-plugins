@@ -1,4 +1,4 @@
-&:root {
+:root {
     /* TreeNode Adjustment */
 	    --treenode-line-spacing: 16px;
 	/* Basic Bullet Color */
@@ -20,10 +20,6 @@
 /*********** Disable Bullet Event ***********/
     .rem-button__container {
         .rem-bullet__container {
-            .perfect-circle {
-            } 
-            .rem-bullet {
-            }
             .pointer-events-auto {
                 pointer-events: none;
             } 
@@ -31,9 +27,6 @@
                 .perfect-circle__inner {
                     > svg {
                         display: none;
-                        .rem-bullet__ring {
-
-                        }
                         .rem-bullet__core {
                             display: none;
                         }
@@ -44,9 +37,6 @@
                 .perfect-circle__inner {
                     > svg {
                         display: none;
-                        .rem-bullet__ring {
-
-                        }
                         .rem-bullet__core {
                             display: none;
                         }
