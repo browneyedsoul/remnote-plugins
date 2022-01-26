@@ -553,6 +553,11 @@
 		}
 		.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {background-color: var(--darkmode-background-selected-darker) !important;}
 /*********** Popup ***********/
+	/* Interim Measure */
+		.popup-menu div svg {
+			fill: var(--darkmode-text) !important;
+			color: var(--darkmode-text) !important;
+		}
 	/* Basic */
 		.popup-menu, 
 		.popup-menu.fixed .bg-white, 
@@ -661,15 +666,9 @@
 /*********** Checkbox ***********/	
 	/* Style */
 		/* Check */
-		.rem-checkbox.css-feDyQR,
-		.rem-checkbox.css-fyMhsa {
+		.rem-checkbox {
 			border-radius: unset;
-		}
-		.dark-mode .rem-checkbox.css-feDyQR {
 			background-color: unset;
-		}
-		.dark-mode .rem-checkbox.css-fyMhsa {
-			background-color: #CA1E00;
 		}
 		/* Strikethrough text */
 		.rem-container--todo-finished {
@@ -788,12 +787,12 @@
 		.dark-mode .settings-page .p-6,
 		.dark-mode .settings-page .css-bOWrRb,	/* Subscription */
 		.dark-mode .settings-page .css-egEQZl,	/* Schedulers Page*/
-		.dark-mode .settings-page .css-fLTnVi,	/* Settings Page Sidebar Text */
+		.dark-mode .settings-page .inline-block.h-4,	/* Settings Page Sidebar Text */
 		.dark-mode .settings-page .css-kPXeXo 	/* Account / Plan / Knowledge Base Settings / DangerZone / Syncing / App Version*/
 		{
 			color: var(--darkmode-text) !important;
 		}
-		.dark-mode .settings-page .settings-page__option .p-3.css-fLTnVi{
+		.dark-mode .settings-page .settings-page__option .p-3{
 			color: black !important;
 		}
 	/* Settings Page Sidebar Hover Effect */
