@@ -772,6 +772,10 @@
 		.dark-mode #subscription-page .bg-mint-10 {
 			background-color: #8BD1B9;
 		}
+		.dark-mode .w-min {
+			color: var(--darkmode-text) !important;
+		}
+		.w-min {width: unset;}
 	/* Settings Page Plugin Table */
 		.dark-mode .PluginsConfiguration__table,
 		.dark-mode .PluginsConfiguration__table .ui.table {
