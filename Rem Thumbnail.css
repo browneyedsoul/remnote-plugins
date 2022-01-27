@@ -113,6 +113,17 @@
   margin-right: 2px;
 }
 
+.popup-menu > div .RichTextViewer .inline-block,
+.popup-menu > div .RichTextViewer .inline-block.align-text-top.group,
+.popup-menu > div .RichTextViewer .image-node__container,
+.popup-menu > div .RichTextViewer .image-node,
+.popup-menu > div .RichTextViewer .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-right: 2px;
+}
+
 .popup-menu #document-hover-preview__popup > span .RichTextViewer .inline-block,
 .popup-menu #document-hover-preview__popup > span .RichTextViewer .inline-block.align-text-top.group,
 .popup-menu #document-hover-preview__popup > span .RichTextViewer .image-node__container,

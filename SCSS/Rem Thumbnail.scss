@@ -148,9 +148,8 @@
 // Popup
 	.popup-menu {
 	// Image Thumbnail Tag */
-		#document-hover-preview__popup {
-			> span {
-				.RichTextViewer {
+		> div {
+			.RichTextViewer {
 				.inline-block,
 				.inline-block.align-text-top.group,
 				.image-node__container,
@@ -162,6 +161,21 @@
 					margin-right: 2px;
 				}
 			}
+		}
+		#document-hover-preview__popup {
+			> span {
+				.RichTextViewer {
+					.inline-block,
+					.inline-block.align-text-top.group,
+					.image-node__container,
+					.image-node,
+					.thumbnail--with-width {
+						height: 1em !important;
+						width: auto !important;
+						min-width: auto !important;
+						margin-right: 2px;
+					}
+				}
 			}
 		}
 		[data-rem-tags*="tn"] {
