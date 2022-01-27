@@ -18,7 +18,6 @@
   --node-card-item-color-dark: yellow;
 }
 
-/*********** Disable Bullet Event ***********/
 .rem-button__container .rem-bullet__container .pointer-events-auto {
   pointer-events: none;
 }
@@ -43,14 +42,12 @@
   display: none;
 }
 
-/*********** Move Toggle Foldable Triangle Button and Six Dots Rem Mover to the Right Side ***********/
 #hierarchy-editor .rem-container .rem-button__container .toggle-collapse-button,
 #hierarchy-editor .rem-container .rem-button__container .six-dot {
   position: relative;
   left: 24px;
 }
 
-/*********** Parent Bullet (Toggle Triangle) ***********/
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
@@ -109,7 +106,6 @@
   border-color: transparent transparent transparent black;
 }
 
-/* Alias Bullet Treatment */
 [data-rem-tags="aliases"] .rem-bullet__container .rem-bullet.rem-bullet--hidden-children {
   width: 0 !important;
   height: 0 !important;
@@ -126,7 +122,6 @@
   mask-image: unset;
 }
 
-/*********** Forder & File Style ***********/
 .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children {
   width: 0;
   height: 0;
@@ -195,11 +190,6 @@
   border-color: black transparent transparent transparent;
 }
 
-/*********** TreeNode Distraction Free ***********/
-#hierarchy-editor {
-  /* Portal */
-}
-
 #hierarchy-editor .TreeNode {
   border-color: var(--line-color);
   border-width: 1px;
@@ -215,7 +205,6 @@
   margin-left: -3px;
 }
 
-/* List Card Item */
 .node-card-item:before {
   margin-left: -0.7rem;
   background-color: var(--node-card-item-color);
@@ -225,19 +214,14 @@
   background-color: var(--node-card-item-color-dark);
 }
 
-/*********** Rem Hierarchy Text Editor Line Height ***********/
 .EditorContainer {
   line-height: 140%;
 }
 
-/*********** Rem Bullet for Flashcard Rem ***********/
-/* Basic & Concept & List Rem-Type Bullet */
-/* Both */
 .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
   background: var(--both-practice-color) !important;
 }
 
-/* Forward */
 .rem-container--forwards-practice-enabled .rem-bullet {
   background: var(--forward-practice-color) !important;
   width: 26px;
@@ -296,7 +280,6 @@
   mask-repeat: no-repeat;
 }
 
-/* Backward */
 .rem-container--backwards-practice-enabled .rem-bullet {
   background: var(--backward-practice-color) !important;
   width: 26px;
@@ -326,7 +309,6 @@
   mask-repeat: no-repeat;
 }
 
-/* Descriptor-Rem-Type Bullet */
 .rem-container--descriptor-rem-type .rem-bullet {
   width: 14px !important;
   height: 12px !important;
@@ -341,13 +323,11 @@
   mask-repeat: no-repeat;
 }
 
-/*********** Make Bullet-list by Intentional Tagging ***********/
 [data-rem-tags~="bulletlist"] {
   padding-top: 1px;
   padding-bottom: 5px;
   margin-left: var(--treenode-line-spacing);
   left: 2px;
-  /* Tag Declutter */
 }
 
 [data-rem-tags~="bulletlist"] .rem-bullet {
@@ -361,8 +341,8 @@
   top: 1px;
 }
 
-[data-rem-tags~="bulletlist"] .items-center.hierarchy-editor__tag-bar__tag {
-  background-color: transparent !important;
+[data-rem-tags~="bulletlist"] .hierarchy-editor__tag-bar__tag {
+  background-color: transparent;
 }
 
 [data-rem-tags~="bulletlist"] .hierarchy-editor__tag-bar__tag span {

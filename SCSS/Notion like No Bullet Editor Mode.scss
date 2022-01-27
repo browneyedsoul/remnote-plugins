@@ -17,7 +17,7 @@
         --node-card-item-color: red;
         --node-card-item-color-dark: yellow;
 }
-/*********** Disable Bullet Event ***********/
+// Disable Bullet Event
     .rem-button__container {
         .rem-bullet__container {
             .pointer-events-auto {
@@ -48,7 +48,7 @@
             }
         }
     }
-/*********** Move Toggle Foldable Triangle Button and Six Dots Rem Mover to the Right Side ***********/
+// Move Toggle Foldable Triangle Button and Six Dots Rem Mover to the Right Side
 	#hierarchy-editor {
         .rem-container {
             .rem-button__container {
@@ -60,7 +60,7 @@
             }
         }
     }
-/*********** Parent Bullet (Toggle Triangle) ***********/
+// Parent Bullet (Toggle Triangle)
     .rem-button__container {
         .rem-bullet__container {
             .rem-bullet.rem-bullet--hidden-children,
@@ -116,7 +116,7 @@
             }
         }
     }
-    /* Alias Bullet Treatment */
+    // Alias Bullet Treatment
         [data-rem-tags="aliases"] {
             .rem-bullet__container {
                 .rem-bullet.rem-bullet--hidden-children {
@@ -137,7 +137,7 @@
                 }
             }
         }
-/*********** Forder & File Style ***********/
+// Forder & File Style
     .rem-button__container {
         .rem-bullet__container {
             .rem-icon-bullet.rem-bullet--hidden-children {
@@ -208,7 +208,7 @@
             }
         }
     }
-/*********** TreeNode Distraction Free ***********/
+// TreeNode Distraction Free
     #hierarchy-editor {
         .TreeNode {
             border-color: var(--line-color);
@@ -219,12 +219,12 @@
             left: var(--treenode-line-spacing);
             margin-right: var(--treenode-line-spacing);
         }
-        /* Portal */
+        // Portal
         .portal-tree-node-box {
             margin-left: -3px;
         }
     }
-    /* List Card Item */
+    // List Card TreeNode Alert Color
         .node-card-item {
             &:before {
                 margin-left: -0.7rem;
@@ -238,19 +238,19 @@
                 }
             }
         }
-/*********** Rem Hierarchy Text Editor Line Height ***********/
+// Rem Hierarchy Text Editor Line Height
 	.EditorContainer {
 		line-height: 140%;
 	}
-/*********** Rem Bullet for Flashcard Rem ***********/
-    /* Basic & Concept & List Rem-Type Bullet */
-        /* Both */
+// Rem Bullet for Flashcard Rem
+    // Basic & Concept & List Rem-Type Bullet
+        // Both
             .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled {
                 .rem-bullet {
                     background: var(--both-practice-color) !important;
                 }
             }
-        /* Forward */
+        // Forward
             .rem-container--forwards-practice-enabled {
                 .rem-bullet {
                     background: var(--forward-practice-color) !important;
@@ -309,7 +309,7 @@
                             mask-repeat: no-repeat;
                 }
             }
-        /* Backward */
+        // Backward
             .rem-container--backwards-practice-enabled {
                 .rem-bullet {
                     background: var(--backward-practice-color) !important;
@@ -339,7 +339,7 @@
                             mask-repeat: no-repeat;
                 }
             }
-    /* Descriptor-Rem-Type Bullet */
+    // Descriptor-Rem-Type Bullet
         .rem-container--descriptor-rem-type {
             .rem-bullet {
                 width: 14px !important;
@@ -355,7 +355,7 @@
                         mask-repeat: no-repeat;
             }
         }
-/*********** Make Bullet-list by Intentional Tagging ***********/
+// Make Bullet-list by Intentional Tagging
     [data-rem-tags~="bulletlist"] {
         padding-top: 1px;
         padding-bottom: 5px;
@@ -371,9 +371,9 @@
             position: relative;
             top: 1px;
         }
-        /* Tag Declutter */
-            .items-center.hierarchy-editor__tag-bar__tag {
-                background-color: transparent !important;
+        // Tag Declutter
+            .hierarchy-editor__tag-bar__tag {
+                background-color: transparent;
             }
             .hierarchy-editor__tag-bar__tag {
                 span {
