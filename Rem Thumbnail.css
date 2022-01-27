@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/*********** All Notes Section ***********/
 .document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .inline-block,
 .document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .inline-block.align-text-top.group,
 .document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .thumbnail--with-width,
@@ -10,7 +8,6 @@
   display: inline-block;
 }
 
-/*********** Card Browser ***********/
 .ReactVirtualized__Table__rowColumn .inline-block,
 .ReactVirtualized__Table__rowColumn .inline-block.align-text-top.group,
 .ReactVirtualized__Table__rowColumn .thumbnail--with-width,
@@ -21,13 +18,23 @@
   display: inline-block;
 }
 
-/*********** Queue ***********/
 .spaced-repetition__prompt__breadcrumbs .inline-block,
 .spaced-repetition__prompt__breadcrumbs .thumbnail--with-width {
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
   padding-right: 2px;
+}
+
+.spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .inline-block,
+.spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .inline-block.align-text-top.group,
+.spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .react-transform-component,
+.spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .image-node,
+.spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  max-width: auto !important;
 }
 
 .rem-bullet__document .inline-block,
@@ -61,7 +68,6 @@
   padding-right: 2px;
 }
 
-/*********** Document Title ***********/
 #DocumentTitle .inline-block,
 #DocumentTitle .thumbnail--with-width {
   height: 1em !important;
@@ -70,7 +76,6 @@
   padding-right: 2px;
 }
 
-/*********** Page Hierarchy  ***********/
 .document-header-top-bar .inline-block,
 .document-header-top-bar .thumbnail--with-width {
   height: 1em;
@@ -80,7 +85,6 @@
   color: #2B3137;
 }
 
-/*********** Hidden Page Hierarchy Style ***********/
 .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
   height: 1em;
   width: auto;
@@ -88,7 +92,6 @@
   padding-right: 2px;
 }
 
-/*********** Document Sidebar ***********/
 #document-sidebar .inline-block,
 #document-sidebar .thumbnail--with-width {
   height: 1.2em !important;
@@ -97,7 +100,6 @@
   padding-right: 0px;
 }
 
-/*********** Document Hidden children ***********/
 .hierarchy-editor__hidden-children .rem-header--1 .inline-block,
 .hierarchy-editor__hidden-children .rem-header--1 .thumbnail--with-width {
   height: 1em !important;
@@ -106,7 +108,6 @@
   margin-right: 2px;
 }
 
-/*********** Popup ***********/
 .popup-menu .inline-block,
 .popup-menu .inline-block.align-text-top.group,
 .popup-menu .thumbnail--with-width,
@@ -115,11 +116,6 @@
   width: auto !important;
   min-width: auto !important;
   display: inline-block;
-}
-
-.popup-menu #document-hover-preview__popup {
-  /* Header */
-  /* Reference Popup */
 }
 
 .popup-menu #document-hover-preview__popup .rem-header--1 .inline-block,
@@ -196,7 +192,6 @@
   max-width: fit-content;
 }
 
-/* Image Thumbnail Tag */
 [data-rem-tags*="tn"] #document-hover-preview .inline-block {
   height: 1em !important;
   width: auto !important;
@@ -211,7 +206,6 @@
   padding-right: 2px;
 }
 
-/* Tag bar */
 .rem.isSearchResult .hierarchy-editor__tag-bar .inline-block,
 .rem.isSearchResult .hierarchy-editor__tag-bar .thumbnail--with-width {
   height: 1em !important;
@@ -220,7 +214,6 @@
   margin-right: 2px;
 }
 
-/* Reference */
 .EditorContainer.EditorContainerInline .thumbnail--with-width {
   height: 1em !important;
   width: auto !important;
@@ -237,7 +230,6 @@
   margin-right: 2px;
 }
 
-/* Delete Confirm Popup */
 #delete-confirm-popup .inline-block,
 #delete-confirm-popup .image-node__container.group.inline-block.align-text-top,
 #delete-confirm-popup .thumbnail--with-width {
@@ -255,7 +247,6 @@
   margin-right: 2px;
 }
 
-/* Merge Confirm */
 #Popup #PopupContent .p-4 .RichTextViewer .image-node__container,
 #Popup #PopupContent .p-4 .RichTextViewer .image-node,
 #Popup #PopupContent .p-4 .RichTextViewer .thumbnail--with-width {
@@ -265,7 +256,6 @@
   margin-right: 2px;
 }
 
-/*********** Header & Normal Rem-Text with "Thumbnail(TN)" Tag***********/
 .rem-header--1 .inline-block,
 .rem-header--1 .thumbnail--with-width,
 .rem-header--2 .inline-block,
@@ -281,7 +271,6 @@
   background-color: transparent;
 }
 
-/*********** Tag bar ***********/
 #DropToOpenAsDocument .inline-block,
 #DropToOpenAsDocument .thumbnail--with-width {
   height: 1em !important;
@@ -306,8 +295,6 @@
   padding-right: 2px;
 }
 
-/*********** Search Result ***********/
-/* Global Search Result (⌘+P Window) */
 [aria-label~="Omnibar"] .inline-block,
 [aria-label~="Omnibar"] .thumbnail--with-width {
   height: 1em !important;
@@ -316,7 +303,6 @@
   padding-right: 2px;
 }
 
-/* Search Popup Page */
 .css-ZPdGi {
   min-width: 80%;
   min-height: 80%;
@@ -330,7 +316,6 @@
   padding-right: 2px;
 }
 
-/* Tag Search Result */
 .search-result__rem-breadcrumbs .inline-block,
 .search-result__rem-breadcrumbs .thumbnail--with-width {
   height: 1em !important;
@@ -346,7 +331,6 @@
   padding-right: 2px;
 }
 
-/*********** Portal ***********/
 .portal-tree-node-box .rem-text.rem-header--1 .inline-block,
 .portal-tree-node-box .rem-text.rem-header--1 .thumbnail--with-width,
 .portal-tree-node-box .rem-text.rem-header--2 .inline-block,
@@ -358,7 +342,6 @@
   min-width: auto !important;
 }
 
-/*********** Rem Reference ***********/
 .rem-reference .inline-block,
 .rem-reference .thumbnail--with-width {
   height: 1em !important;
@@ -373,7 +356,6 @@
   min-width: auto !important;
 }
 
-/* Rem reference normal rem-text thumbnail adjustment */
 .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block,
 .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block.align-text-top.group,
 .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .image-node,

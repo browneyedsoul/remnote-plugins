@@ -1,4 +1,4 @@
-/*********** All Notes Section ***********/
+// All Notes Section
 	.document-table {
 		.ReactVirtualized__Grid__innerScrollContainer {
 			.RichTextViewer {
@@ -14,7 +14,7 @@
 			}
 		}
 	}
-/*********** Card Browser ***********/
+// Card Browser
 	.ReactVirtualized__Table__rowColumn {
 		.inline-block,
 		.inline-block.align-text-top.group,
@@ -26,7 +26,7 @@
 			display: inline-block;
 		}
 	}
-/*********** Queue ***********/
+// Queue
 	.spaced-repetition__prompt__breadcrumbs {
 		.inline-block,
 		.thumbnail--with-width {
@@ -34,6 +34,26 @@
 			width: auto !important;
 			min-width: auto !important;
 			padding-right: 2px;
+		}
+	}
+	.spaced-repetition__prompt {
+		.indented-rem {
+			.RichTextViewer {
+				.react-transform-component {
+					.react-transform-element {
+						.inline-block,
+						.inline-block.align-text-top.group,
+						.react-transform-component,
+						.image-node,
+						.thumbnail--with-width {
+							height: 1em !important;
+							width: auto !important;
+							min-width: auto !important;
+							max-width: auto !important;
+						}
+					}
+				}
+			}
 		}
 	}
 	.rem-bullet__document {
@@ -69,7 +89,7 @@
 			}
 		}
 	}
-/*********** Document Title ***********/
+// Document Title
 	#DocumentTitle {
 		.inline-block,
 		.thumbnail--with-width {
@@ -79,7 +99,7 @@
 			padding-right: 2px;
 		}
 	}
-/*********** Page Hierarchy  ***********/
+// Page Hierarchy
 	.document-header-top-bar {
 		.inline-block,
 		.thumbnail--with-width {
@@ -90,7 +110,7 @@
 			color: #2B3137;
 		}
 	}
-/*********** Hidden Page Hierarchy Style ***********/
+// Hidden Page Hierarchy Style
 	.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
 		.inline-block {
 			height: 1em;
@@ -99,7 +119,7 @@
 			padding-right: 2px;
 		}
 	}
-/*********** Document Sidebar ***********/
+// Document Sidebar
 	#document-sidebar {
 		.inline-block,
 		.thumbnail--with-width {
@@ -109,7 +129,7 @@
 			padding-right: 0px;
 		}
 	}
-/*********** Document Hidden children ***********/
+// Document Hidden children
 	.hierarchy-editor__hidden-children {
 		.rem-header--1 {
 			.inline-block,
@@ -121,7 +141,7 @@
 			}
 		}
 	}
-/*********** Popup ***********/
+// Popup
 	.popup-menu {
 		.inline-block,
 		.inline-block.align-text-top.group,
@@ -132,90 +152,89 @@
 			min-width: auto !important;
 			display: inline-block;
 		}
-		
 		#document-hover-preview__popup {
-		/* Header */
-			.rem-header--1,
-			.rem-header--2
-			.rem-header--3 {
-				.inline-block,
-				.thumbnail--with-width {
-					height: 1em !important;
-					width: auto !important;
-					min-width: auto !important;
-					margin-right: 2px;
-				}
-			}
-		/* Reference Popup */
-			#hierarchy-editor {
-				.inline-block,
-				.thumbnail--with-width {
-					height: auto; /* Do not change this */
-					width: 100% !important;
-					min-width: auto !important;
-				}
-				.rem-reference {
+			// Header
+				.rem-header--1,
+				.rem-header--2
+				.rem-header--3 {
 					.inline-block,
 					.thumbnail--with-width {
-						height: unset !important; /* Do not change this */
+						height: 1em !important;
+						width: auto !important;
+						min-width: auto !important;
+						margin-right: 2px;
+					}
+				}
+			// Reference Popup
+				#hierarchy-editor {
+					.inline-block,
+					.thumbnail--with-width {
+						height: auto; /* Do not change this */
 						width: 100% !important;
 						min-width: auto !important;
 					}
+					.rem-reference {
+						.inline-block,
+						.thumbnail--with-width {
+							height: unset !important; /* Do not change this */
+							width: 100% !important;
+							min-width: auto !important;
+						}
+					}
 				}
-			}
-			.inline-block,
-			.thumbnail--with-width {
-				height: 1em;
-				width: auto !important;
-				min-width: auto !important;
-			}
-			.rem-reference {
 				.inline-block,
 				.thumbnail--with-width {
 					height: 1em;
 					width: auto !important;
 					min-width: auto !important;
 				}
-			}
-			> span {
-				[class*="inline-block"] {
-					height: 1em !important;
-					width: auto !important;
-					min-width: auto !important;
-					margin-right: 2px;
-				}
-			}
-			.bold {
-				.inline-block,
-				.thumbnail--with-width {
-					height: 1em !important;
-					width: auto !important;
-					min-width: auto !important;
-					margin-right: 2px;
-				}
-			}
-			.popup-menu__item--static {
-				.inline-block,
-				.thumbnail--with-width {
-					height: 1em !important;
-					width: auto !important;
-					min-width: auto !important;
-					margin-right: 2px;
-				}
-			}
-			#hierarchy-editor {
-				.RichTextViewer {
-					.image-node__container,
-					.image-node__container.group.inline-block.align-text-top,
-					.image-node,
+				.rem-reference {
+					.inline-block,
 					.thumbnail--with-width {
-						max-width: fit-content;
+						height: 1em;
+						width: auto !important;
+						min-width: auto !important;
 					}
 				}
-			}
+				> span {
+					[class*="inline-block"] {
+						height: 1em !important;
+						width: auto !important;
+						min-width: auto !important;
+						margin-right: 2px;
+					}
+				}
+				.bold {
+					.inline-block,
+					.thumbnail--with-width {
+						height: 1em !important;
+						width: auto !important;
+						min-width: auto !important;
+						margin-right: 2px;
+					}
+				}
+				.popup-menu__item--static {
+					.inline-block,
+					.thumbnail--with-width {
+						height: 1em !important;
+						width: auto !important;
+						min-width: auto !important;
+						margin-right: 2px;
+					}
+				}
+				#hierarchy-editor {
+					.RichTextViewer {
+						.image-node__container,
+						.image-node__container.group.inline-block.align-text-top,
+						.image-node,
+						.thumbnail--with-width {
+							max-width: fit-content;
+						}
+					}
+				}
 		}
 	}
-	/* Image Thumbnail Tag */
+	// Image Thumbnail Tag */
 		[data-rem-tags*="tn"] {
 			#document-hover-preview {
 				.inline-block {
@@ -232,7 +251,7 @@
 				}
 			}
 		}
-	/* Tag bar */
+	// Tag bar
 		.rem.isSearchResult {
 			.hierarchy-editor__tag-bar {
 				.inline-block,
@@ -244,7 +263,7 @@
 				}
 			}
 		}
-	/* Reference */
+	// Reference
 		.EditorContainer.EditorContainerInline {
 			.thumbnail--with-width {
 				height: 1em !important;
@@ -263,7 +282,7 @@
 				margin-right: 2px;
 			}
 		}
-	/* Delete Confirm Popup */
+	// Delete Confirm Popup
 		#delete-confirm-popup {
 			.inline-block,
 			.image-node__container.group.inline-block.align-text-top,
@@ -283,7 +302,7 @@
 				}
 			}
 		}
-	/* Merge Confirm */
+	// Merge Confirm Window
 		#Popup {
 			#PopupContent {
 				.p-4 {
@@ -300,7 +319,7 @@
 				}
 			}
 		}
-/*********** Header & Normal Rem-Text with "Thumbnail(TN)" Tag***********/
+// Header & Normal Rem-Text with "Thumbnail(TN)" Tag
 	.rem-header--1,
 	.rem-header--2,
 	.rem-header--3,
@@ -314,7 +333,7 @@
 			background-color: transparent;
 		}
 	}
-/*********** Tag bar ***********/
+// Tag bar
 	#DropToOpenAsDocument {
 		.inline-block,
 		.thumbnail--with-width {
@@ -342,50 +361,50 @@
 			padding-right: 2px;
 		}
 	}
-/*********** Search Result ***********/
-	/* Global Search Result (⌘+P Window) */
-	[aria-label~="Omnibar"] {
-		.inline-block,
-		.thumbnail--with-width {
-			height: 1em !important;
-			width: auto !important;
-			min-width: auto !important;
-			padding-right: 2px;
+// Search Result
+	// Global Search Result (⌘+P Window)
+		[aria-label~="Omnibar"] {
+			.inline-block,
+			.thumbnail--with-width {
+				height: 1em !important;
+				width: auto !important;
+				min-width: auto !important;
+				padding-right: 2px;
+			}
 		}
-	}
-	/* Search Popup Page */
-	.css-ZPdGi {
-		min-width: 80%;
-		min-height: 80%;
-	}
-	.css-fUqRpZ {
-		.inline-block,
-		.thumbnail--with-width {
-			height: 1em !important;
-			width: auto !important;
-			min-width: auto !important;
-			padding-right: 2px;
+	// Search Popup Page
+		.css-ZPdGi {
+			min-width: 80%;
+			min-height: 80%;
 		}
-	}
-	/* Tag Search Result */
-	.search-result__rem-breadcrumbs {
-		.inline-block,
-		.thumbnail--with-width {
-			height: 1em !important;
-			width: auto !important;
-			min-width: auto !important;
+		.css-fUqRpZ {
+			.inline-block,
+			.thumbnail--with-width {
+				height: 1em !important;
+				width: auto !important;
+				min-width: auto !important;
+				padding-right: 2px;
+			}
 		}
-	}
-	#search-results__result {
-		.inline-block,
-		.thumbnail--with-width {
-			height: 1em !important;
-			width: auto !important;
-			min-width: auto !important;
-			padding-right: 2px;
+	// Tag Search Result
+		.search-result__rem-breadcrumbs {
+			.inline-block,
+			.thumbnail--with-width {
+				height: 1em !important;
+				width: auto !important;
+				min-width: auto !important;
+			}
 		}
-	}
-/*********** Portal ***********/
+		#search-results__result {
+			.inline-block,
+			.thumbnail--with-width {
+				height: 1em !important;
+				width: auto !important;
+				min-width: auto !important;
+				padding-right: 2px;
+			}
+		}
+// Portal
 	.portal-tree-node-box {
 		.rem-text.rem-header--1,
 		.rem-text.rem-header--2,
@@ -398,7 +417,7 @@
 			}
 		}
 	}
-/*********** Rem Reference ***********/
+// Rem Reference
 	.rem-reference {
 		.inline-block,
 		.thumbnail--with-width {
@@ -415,7 +434,7 @@
 			min-width: auto !important;
 		}
 	}
-	/* Rem reference normal rem-text thumbnail adjustment */
+	// Rem reference normal rem-text thumbnail adjustment
 		.rem-text {
 			&:not(.rem-header--1) {
 				&:not(.rem-header--2) {
