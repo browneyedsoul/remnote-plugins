@@ -434,6 +434,7 @@
 		#DocumentTitle .bold.highlight-color--blue,
 		#DocumentTitle .bold.highlight-color--purple {
 			background-color: unset !important;
+			font-weight: 700;
 		}
 		#DocumentTitle .bold.highlight-color--red {color: var(--red-text);}
 		#DocumentTitle .bold.highlight-color--orange {color: var(--orange-text);}
@@ -536,6 +537,7 @@
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--blue,
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--purple {
 			background-color: unset;
+			font-weight: 500;
 		}
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--red {color: var(--red-text);} 
 		[data-rem-tags~="color"] .rem-text .bold.highlight-color--orange {color: var(--orange-text);}
