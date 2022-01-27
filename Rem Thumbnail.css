@@ -113,113 +113,36 @@
   margin-right: 2px;
 }
 
-.popup-menu .inline-block,
-.popup-menu .inline-block.align-text-top.group,
-.popup-menu .thumbnail--with-width,
-.popup-menu .image-node {
-  height: 1em;
-  width: auto !important;
-  min-width: auto !important;
-  display: inline-block;
-}
-
-.popup-menu #document-hover-preview__popup .rem-header--1 .inline-block,
-.popup-menu #document-hover-preview__popup .rem-header--1 .thumbnail--with-width,
-.popup-menu #document-hover-preview__popup .rem-header--2
-.rem-header--3 .inline-block,
-.popup-menu #document-hover-preview__popup .rem-header--2
-.rem-header--3 .thumbnail--with-width {
+.popup-menu #document-hover-preview__popup > span .RichTextViewer .inline-block,
+.popup-menu #document-hover-preview__popup > span .RichTextViewer .inline-block.align-text-top.group,
+.popup-menu #document-hover-preview__popup > span .RichTextViewer .image-node__container,
+.popup-menu #document-hover-preview__popup > span .RichTextViewer .image-node,
+.popup-menu #document-hover-preview__popup > span .RichTextViewer .thumbnail--with-width {
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
   margin-right: 2px;
 }
 
-.popup-menu #document-hover-preview__popup #hierarchy-editor .inline-block,
-.popup-menu #document-hover-preview__popup #hierarchy-editor .thumbnail--with-width {
-  height: auto;
-  /* Do not change this */
-  width: 100% !important;
-  min-width: auto !important;
-}
-
-.popup-menu #document-hover-preview__popup #hierarchy-editor .rem-reference .inline-block,
-.popup-menu #document-hover-preview__popup #hierarchy-editor .rem-reference .thumbnail--with-width {
-  height: unset !important;
-  /* Do not change this */
-  width: 100% !important;
-  min-width: auto !important;
-}
-
-.popup-menu #document-hover-preview__popup .inline-block,
-.popup-menu #document-hover-preview__popup .thumbnail--with-width {
-  height: 1em;
-  width: auto !important;
-  min-width: auto !important;
-}
-
-.popup-menu #document-hover-preview__popup .rem-reference .inline-block,
-.popup-menu #document-hover-preview__popup .rem-reference .thumbnail--with-width {
-  height: 1em;
-  width: auto !important;
-  min-width: auto !important;
-}
-
-.popup-menu #document-hover-preview__popup > span [class*="inline-block"] {
+.popup-menu [data-rem-tags*="tn"] #document-hover-preview .RichTextViewer .inline-block,
+.popup-menu [data-rem-tags*="tn"] #document-hover-preview .RichTextViewer .image-node__container,
+.popup-menu [data-rem-tags*="tn"] #document-hover-preview .RichTextViewer .image-node,
+.popup-menu [data-rem-tags*="tn"] #document-hover-preview .RichTextViewer .thumbnail--with-width {
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
   margin-right: 2px;
 }
 
-.popup-menu #document-hover-preview__popup .bold .inline-block,
-.popup-menu #document-hover-preview__popup .bold .thumbnail--with-width {
+.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar .inline-block,
+.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar .thumbnail--with-width {
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
   margin-right: 2px;
 }
 
-.popup-menu #document-hover-preview__popup .popup-menu__item--static .inline-block,
-.popup-menu #document-hover-preview__popup .popup-menu__item--static .thumbnail--with-width {
-  height: 1em !important;
-  width: auto !important;
-  min-width: auto !important;
-  margin-right: 2px;
-}
-
-.popup-menu #document-hover-preview__popup #hierarchy-editor .RichTextViewer .image-node__container,
-.popup-menu #document-hover-preview__popup #hierarchy-editor .RichTextViewer .image-node__container.group.inline-block.align-text-top,
-.popup-menu #document-hover-preview__popup #hierarchy-editor .RichTextViewer .image-node,
-.popup-menu #document-hover-preview__popup #hierarchy-editor .RichTextViewer .thumbnail--with-width {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-
-[data-rem-tags*="tn"] #document-hover-preview .inline-block {
-  height: 1em !important;
-  width: auto !important;
-  min-width: auto !important;
-  padding-right: 2px;
-}
-
-[data-rem-tags*="tn"] #document-hover-preview .thumbnail--with-width {
-  height: 1em !important;
-  width: auto !important;
-  min-width: auto !important;
-  padding-right: 2px;
-}
-
-.rem.isSearchResult .hierarchy-editor__tag-bar .inline-block,
-.rem.isSearchResult .hierarchy-editor__tag-bar .thumbnail--with-width {
-  height: 1em !important;
-  width: auto !important;
-  min-width: auto !important;
-  margin-right: 2px;
-}
-
-.EditorContainer.EditorContainerInline .thumbnail--with-width {
+.popup-menu .EditorContainer.EditorContainerInline .thumbnail--with-width {
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
@@ -227,34 +150,34 @@
   color: #2B3137;
 }
 
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block,
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .thumbnail--with-width {
+.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block,
+.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .thumbnail--with-width {
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
   margin-right: 2px;
 }
 
-#delete-confirm-popup .inline-block,
-#delete-confirm-popup .image-node__container.group.inline-block.align-text-top,
-#delete-confirm-popup .thumbnail--with-width {
+.popup-menu #delete-confirm-popup .inline-block,
+.popup-menu #delete-confirm-popup .image-node__container.group.inline-block.align-text-top,
+.popup-menu #delete-confirm-popup .thumbnail--with-width {
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
   margin-right: 2px;
 }
 
-#delete-confirm-popup .delete-confirm-popup__rem-section__item .inline-block,
-#delete-confirm-popup .delete-confirm-popup__rem-section__item .thumbnail--with-width {
+.popup-menu #delete-confirm-popup .delete-confirm-popup__rem-section__item .inline-block,
+.popup-menu #delete-confirm-popup .delete-confirm-popup__rem-section__item .thumbnail--with-width {
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
   margin-right: 2px;
 }
 
-#Popup #PopupContent .p-4 .RichTextViewer .image-node__container,
-#Popup #PopupContent .p-4 .RichTextViewer .image-node,
-#Popup #PopupContent .p-4 .RichTextViewer .thumbnail--with-width {
+.popup-menu #Popup #PopupContent .p-4 .RichTextViewer .image-node__container,
+.popup-menu #Popup #PopupContent .p-4 .RichTextViewer .image-node,
+.popup-menu #Popup #PopupContent .p-4 .RichTextViewer .thumbnail--with-width {
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;

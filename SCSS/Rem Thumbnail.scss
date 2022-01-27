@@ -147,111 +147,35 @@
 	}
 // Popup
 	.popup-menu {
-		.inline-block,
-		.inline-block.align-text-top.group,
-		.thumbnail--with-width,
-		.image-node {
-			height: 1em;
-			width: auto !important;
-			min-width: auto !important;
-			display: inline-block;
-		}
+	// Image Thumbnail Tag */
 		#document-hover-preview__popup {
-			// Header
-				.rem-header--1,
-				.rem-header--2
-				.rem-header--3 {
-					.inline-block,
-					.thumbnail--with-width {
-						height: 1em !important;
-						width: auto !important;
-						min-width: auto !important;
-						margin-right: 2px;
-					}
-				}
-			// Reference Popup
-				#hierarchy-editor {
-					.inline-block,
-					.thumbnail--with-width {
-						height: auto; /* Do not change this */
-						width: 100% !important;
-						min-width: auto !important;
-					}
-					.rem-reference {
-						.inline-block,
-						.thumbnail--with-width {
-							height: unset !important; /* Do not change this */
-							width: 100% !important;
-							min-width: auto !important;
-						}
-					}
-				}
+			> span {
+				.RichTextViewer {
 				.inline-block,
+				.inline-block.align-text-top.group,
+				.image-node__container,
+				.image-node,
 				.thumbnail--with-width {
-					height: 1em;
+					height: 1em !important;
 					width: auto !important;
 					min-width: auto !important;
+					margin-right: 2px;
 				}
-				.rem-reference {
-					.inline-block,
-					.thumbnail--with-width {
-						height: 1em;
-						width: auto !important;
-						min-width: auto !important;
-					}
-				}
-				> span {
-					[class*="inline-block"] {
-						height: 1em !important;
-						width: auto !important;
-						min-width: auto !important;
-						margin-right: 2px;
-					}
-				}
-				.bold {
-					.inline-block,
-					.thumbnail--with-width {
-						height: 1em !important;
-						width: auto !important;
-						min-width: auto !important;
-						margin-right: 2px;
-					}
-				}
-				.popup-menu__item--static {
-					.inline-block,
-					.thumbnail--with-width {
-						height: 1em !important;
-						width: auto !important;
-						min-width: auto !important;
-						margin-right: 2px;
-					}
-				}
-				#hierarchy-editor {
-					.RichTextViewer {
-						.image-node__container,
-						.image-node__container.group.inline-block.align-text-top,
-						.image-node,
-						.thumbnail--with-width {
-							max-width: fit-content;
-						}
-					}
-				}
+			}
+			}
 		}
-	}
-	// Image Thumbnail Tag */
 		[data-rem-tags*="tn"] {
 			#document-hover-preview {
-				.inline-block {
-					height: 1em !important;
-					width: auto !important;
-					min-width: auto !important;
-					padding-right: 2px;
-				}
-				.thumbnail--with-width {
-					height: 1em !important;
-					width: auto !important;
-					min-width: auto !important;
-					padding-right: 2px;
+				.RichTextViewer {
+					.inline-block,
+					.image-node__container,
+					.image-node,
+					.thumbnail--with-width {
+						height: 1em !important;
+						width: auto !important;
+						min-width: auto !important;
+						margin-right: 2px;
+					}
 				}
 			}
 		}
@@ -323,6 +247,7 @@
 				}
 			}
 		}
+	}
 // Header & Normal Rem-Text with "Thumbnail(TN)" Tag
 	.rem-header--1,
 	.rem-header--2,
