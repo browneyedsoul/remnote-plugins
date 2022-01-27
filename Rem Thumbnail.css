@@ -187,7 +187,10 @@
   margin-right: 2px;
 }
 
-.popup-menu #document-hover-preview__popup #hierarchy-editor .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node .thumbnail--with-width {
+.popup-menu #document-hover-preview__popup #hierarchy-editor .RichTextViewer .image-node__container,
+.popup-menu #document-hover-preview__popup #hierarchy-editor .RichTextViewer .image-node__container.group.inline-block.align-text-top,
+.popup-menu #document-hover-preview__popup #hierarchy-editor .RichTextViewer .image-node,
+.popup-menu #document-hover-preview__popup #hierarchy-editor .RichTextViewer .thumbnail--with-width {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -246,6 +249,16 @@
 
 #delete-confirm-popup .delete-confirm-popup__rem-section__item .inline-block,
 #delete-confirm-popup .delete-confirm-popup__rem-section__item .thumbnail--with-width {
+  height: 1em !important;
+  width: auto !important;
+  min-width: auto !important;
+  margin-right: 2px;
+}
+
+/* Merge Confirm */
+#Popup #PopupContent .p-4 .RichTextViewer .image-node__container,
+#Popup #PopupContent .p-4 .RichTextViewer .image-node,
+#Popup #PopupContent .p-4 .RichTextViewer .thumbnail--with-width {
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
