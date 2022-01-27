@@ -147,9 +147,6 @@
 		.queue-text-large-font {
 			font-size: 24px;
 		}
-		.basic_card_rem_type > .RichTextViewer {
-			font-family: 'Helvetica Neue';
-		}
 	/* Answer Part Text */
 		.dark-mode .spaced-repetition__prompt .fill-in-the-blank--revealed {padding: 5px; border-radius: 5px;}
 	/* Select Cluster Hover */
@@ -210,7 +207,6 @@
 	.dark-mode #card-table-page {
 		color: var(--darkmode-text);
 	    background-color: var(--darkmode-background);
-	    font-family: "Helvetica Neue";
 	}
 	.dark-mode .card-table__card-title {
 		color: var(--darkmode-text);
