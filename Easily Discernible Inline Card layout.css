@@ -226,37 +226,37 @@
     }
     
 /*********** Tag Declutter ***********/
-    [data-rem-tags~="w30"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w30"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w30"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w60"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w60"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w60"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w90"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w90"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w90"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w120"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w120"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w120"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w150"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w150"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w150"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w180"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w180"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w180"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w210"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w210"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w210"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w240"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w240"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w240"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w270"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w270"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w270"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w300"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w300"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w300"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w330"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w330"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w330"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w360"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w360"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w360"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w390"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w390"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w390"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w420"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w420"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w420"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w450"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w450"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w450"] .hierarchy-editor__tag-bar__tag span {display: none;}
-    [data-rem-tags~="w480"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+    [data-rem-tags~="w480"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
     [data-rem-tags~="w480"] .hierarchy-editor__tag-bar__tag span {display: none;}  
     
     /* Tags interspace Shrink */

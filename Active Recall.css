@@ -39,5 +39,5 @@
 	.dark-mode #show-embedded-search-button {filter: invert(1);}
 /*********** Tag Declutter ***********/
 	[data-rem-tags~="active-recall"] .hierarchy-editor__tag-bar,
-	[data-rem-tags~="active-recall"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
+	[data-rem-tags~="active-recall"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
 	[data-rem-tags~="active-recall"] .hierarchy-editor__tag-bar__tag span {display: none;}
