@@ -18,5 +18,5 @@
 		border-left: 5px solid var(--blockquote-border-color-dark);
 	}
 /*********** Tag Declutter ***********/
-	[data-rem-tags~="blockquote"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent;}
+	[data-rem-tags~="blockquote"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
 	[data-rem-tags~="blockquote"] .hierarchy-editor__tag-bar__tag span {display: none;} 

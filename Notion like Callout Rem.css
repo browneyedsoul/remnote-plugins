@@ -89,13 +89,13 @@
         color: #DFDFD5 !important;
     }   
 /*********** Tag Declutter ***********/
-    [data-rem-tags~="callout"] .items-center.hierarchy-editor__tag-bar__tag, 
-    [data-rem-tags~="calloutred"] .items-center.hierarchy-editor__tag-bar__tag, 
-    [data-rem-tags~="calloutorange"] .items-center.hierarchy-editor__tag-bar__tag,
-    [data-rem-tags~="calloutyellow"] .items-center.hierarchy-editor__tag-bar__tag,
-    [data-rem-tags~="calloutgreen"] .items-center.hierarchy-editor__tag-bar__tag,
-    [data-rem-tags~="calloutblue"] .items-center.hierarchy-editor__tag-bar__tag,
-    [data-rem-tags~="calloutpurple"] .items-center.hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
+    [data-rem-tags~="callout"] .hierarchy-editor__tag-bar__tag, 
+    [data-rem-tags~="calloutred"] .hierarchy-editor__tag-bar__tag, 
+    [data-rem-tags~="calloutorange"] .hierarchy-editor__tag-bar__tag,
+    [data-rem-tags~="calloutyellow"] .hierarchy-editor__tag-bar__tag,
+    [data-rem-tags~="calloutgreen"] .hierarchy-editor__tag-bar__tag,
+    [data-rem-tags~="calloutblue"] .hierarchy-editor__tag-bar__tag,
+    [data-rem-tags~="calloutpurple"] .hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
 
     [data-rem-tags~="callout"] .hierarchy-editor__tag-bar__tag span, 
     [data-rem-tags~="calloutred"] .hierarchy-editor__tag-bar__tag span, 
