@@ -26,6 +26,11 @@
   padding-right: 2px;
 }
 
+.spaced-repetition__prompt .indented-rem .RichTextViewer > div {
+  display: inline-block;
+  margin-right: 5px;
+}
+
 .spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .inline-block,
 .spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .inline-block.align-text-top.group,
 .spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .react-transform-component,
