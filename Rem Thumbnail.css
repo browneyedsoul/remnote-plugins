@@ -2,9 +2,10 @@
 .document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .inline-block.align-text-top.group,
 .document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .thumbnail--with-width,
 .document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .image-node {
-  height: 1em;
+  height: 1em !important;
   width: auto !important;
   min-width: auto !important;
+  margin-right: 2px;
   display: inline-block;
 }
 
@@ -12,9 +13,10 @@
 .ReactVirtualized__Table__rowColumn .inline-block.align-text-top.group,
 .ReactVirtualized__Table__rowColumn .thumbnail--with-width,
 .ReactVirtualized__Table__rowColumn .image-node {
-  height: 1em;
+  height: 1em !important;
   width: auto !important;
   min-width: auto !important;
+  margin-right: 2px;
   display: inline-block;
 }
 
@@ -23,12 +25,12 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
-  padding-right: 2px;
+  margin-right: 2px;
 }
 
 .spaced-repetition__prompt .indented-rem .RichTextViewer > div {
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 3px;
 }
 
 .spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .inline-block,
@@ -39,6 +41,7 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
+  margin-right: 2px;
   max-width: auto !important;
 }
 
@@ -50,7 +53,7 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
-  max-width: auto !important;
+  margin-right: 2px;
 }
 
 .rem-bullet__document > span > div {
@@ -70,7 +73,7 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
-  padding-right: 2px;
+  margin-right: 2px;
 }
 
 #DocumentTitle .inline-block,
@@ -78,31 +81,31 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
-  padding-right: 2px;
+  margin-right: 2px;
 }
 
 .document-header-top-bar .inline-block,
 .document-header-top-bar .thumbnail--with-width {
-  height: 1em;
-  width: auto;
+  height: 1em !important;
+  width: auto !important;
   min-width: auto !important;
-  padding-right: 2px;
+  margin-right: 2px;
   color: #2B3137;
 }
 
 .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
-  height: 1em;
-  width: auto;
+  height: 1em !important;
+  width: auto !important;
   min-width: auto !important;
-  padding-right: 2px;
+  margin-right: 2px;
 }
 
 #document-sidebar .inline-block,
 #document-sidebar .thumbnail--with-width {
-  height: 1.2em !important;
+  height: 1em !important;
   width: auto !important;
   min-width: auto !important;
-  padding-right: 0px;
+  margin-right: 0px;
 }
 
 .hierarchy-editor__hidden-children .rem-header--1 .inline-block,
@@ -206,7 +209,7 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
-  margin-right: 3px;
+  margin-right: 2px;
   background-color: transparent;
 }
 
@@ -215,7 +218,7 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
-  padding-right: 2px;
+  margin-right: 2px;
 }
 
 .hierarchy-editor__tag-bar__tag .inline-block,
@@ -224,14 +227,14 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
-  padding-right: 2px;
+  margin-right: 2px;
 }
 
 .fade-on-hide-ui .inline-block {
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
-  padding-right: 2px;
+  margin-right: 2px;
 }
 
 [aria-label~="Omnibar"] .inline-block,
@@ -239,7 +242,7 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
-  padding-right: 2px;
+  margin-right: 2px;
 }
 
 .css-ZPdGi {
@@ -252,7 +255,7 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
-  padding-right: 2px;
+  margin-right: 2px;
 }
 
 .search-result__rem-breadcrumbs .inline-block,
@@ -260,6 +263,7 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
+  margin-right: 2px;
 }
 
 #search-results__result .inline-block,
@@ -267,7 +271,7 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
-  padding-right: 2px;
+  margin-right: 2px;
 }
 
 .portal-tree-node-box .rem-text.rem-header--1 .inline-block,
@@ -279,6 +283,7 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
+  margin-right: 2px;
 }
 
 .rem-reference .inline-block,
@@ -286,13 +291,15 @@
   height: 1em !important;
   width: auto !important;
   min-width: auto !important;
+  margin-right: 2px;
   margin-top: 1px;
 }
 
 .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
-  height: 1em;
+  height: 1em !important;
   width: auto !important;
   min-width: auto !important;
+  margin-right: 2px;
 }
 
 .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block,

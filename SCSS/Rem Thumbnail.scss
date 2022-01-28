@@ -1,3 +1,10 @@
+@mixin thumbnail-set($margin-right: 2px) {
+	height: 1em !important;
+	width: auto !important;
+	min-width: auto !important;
+	margin-right: $margin-right;
+}
+
 // All Notes Section
 	.document-table {
 		.ReactVirtualized__Grid__innerScrollContainer {
@@ -6,9 +13,7 @@
 				.inline-block.align-text-top.group,
 				.thumbnail--with-width,
 				.image-node {
-					height: 1em;
-					width: auto !important;
-					min-width: auto !important;
+					@include thumbnail-set;
 					display: inline-block;
 				}
 			}
@@ -20,9 +25,7 @@
 		.inline-block.align-text-top.group,
 		.thumbnail--with-width,
 		.image-node {
-			height: 1em;
-			width: auto !important;
-			min-width: auto !important;
+			@include thumbnail-set;
 			display: inline-block;
 		}
 	}
@@ -30,10 +33,7 @@
 	.spaced-repetition__prompt__breadcrumbs {
 		.inline-block,
 		.thumbnail--with-width {
-			height: 1em !important;
-			width: auto !important;
-			min-width: auto !important;
-			padding-right: 2px;
+			@include thumbnail-set;
 		}
 	}
 	.spaced-repetition__prompt {
@@ -41,7 +41,7 @@
 			.RichTextViewer {
 				> div {
 					display: inline-block;
-					margin-right: 5px;
+					margin-right: 3px;
 				}
 				.react-transform-component {
 					.react-transform-element {
@@ -50,9 +50,7 @@
 						.react-transform-component,
 						.image-node,
 						.thumbnail--with-width {
-							height: 1em !important;
-							width: auto !important;
-							min-width: auto !important;
+							@include thumbnail-set;
 							max-width: auto !important;
 						}
 					}
@@ -66,10 +64,7 @@
 		.react-transform-component,
 		.image-node,
 		.thumbnail--with-width {
-			height: 1em !important;
-			width: auto !important;
-			min-width: auto !important;
-			max-width: auto !important;
+			@include thumbnail-set;
 		}
 		> span {
 			> div {
@@ -86,10 +81,7 @@
 			.image-node,
 			.image-node__container.group.inline-block.align-text-top,
 			.thumbnail--with-width {
-				height: 1em !important;
-				width: auto !important;
-				min-width: auto !important;
-				padding-right: 2px;
+				@include thumbnail-set;
 			}
 		}
 	}
@@ -97,40 +89,28 @@
 	#DocumentTitle {
 		.inline-block,
 		.thumbnail--with-width {
-			height: 1em !important;
-			width: auto !important;
-			min-width: auto !important;
-			padding-right: 2px;
+			@include thumbnail-set;
 		}
 	}
 // Page Hierarchy
 	.document-header-top-bar {
 		.inline-block,
 		.thumbnail--with-width {
-			height: 1em;
-			width: auto;
-			min-width: auto !important;
-			padding-right: 2px;
+			@include thumbnail-set;
 			color: #2B3137;
 		}
 	}
 // Hidden Page Hierarchy Style
 	.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
 		.inline-block {
-			height: 1em;
-			width: auto;
-			min-width: auto !important;
-			padding-right: 2px;
+			@include thumbnail-set;
 		}
 	}
 // Document Sidebar
 	#document-sidebar {
 		.inline-block,
 		.thumbnail--with-width {
-			height: 1.2em !important;
-			width: auto !important;
-			min-width: auto !important;
-			padding-right: 0px;
+			@include thumbnail-set(0px);
 		}
 	}
 // Document Hidden children
@@ -138,10 +118,7 @@
 		.rem-header--1 {
 			.inline-block,
 			.thumbnail--with-width {
-				height: 1em !important;
-				width: auto !important;
-				min-width: auto !important;
-				margin-right: 2px;
+				@include thumbnail-set;
 			}
 		}
 	}
@@ -185,10 +162,7 @@
 					.image-node__container,
 					.image-node,
 					.thumbnail--with-width {
-						height: 1em !important;
-						width: auto !important;
-						min-width: auto !important;
-						margin-right: 2px;
+						@include thumbnail-set;
 					}
 				}
 			}
@@ -198,30 +172,21 @@
 			.hierarchy-editor__tag-bar {
 				.inline-block,
 				.thumbnail--with-width {
-					height: 1em !important;
-					width: auto !important;
-					min-width: auto !important;
-					margin-right: 2px;
+					@include thumbnail-set;
 				}
 			}
 		}
 	// Reference
 		.EditorContainer.EditorContainerInline {
 			.thumbnail--with-width {
-				height: 1em !important;
-				width: auto !important;
-				min-width: auto !important;
-				margin-right: 2px;
+				@include thumbnail-set;
 				color: #2B3137;
 			}
 		}
 		.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
 			.inline-block,
 			.thumbnail--with-width {
-				height: 1em !important;
-				width: auto !important;
-				min-width: auto !important;
-				margin-right: 2px;
+				@include thumbnail-set;
 			}
 		}
 	// Delete Confirm Popup
@@ -229,18 +194,12 @@
 			.inline-block,
 			.image-node__container.group.inline-block.align-text-top,
 			.thumbnail--with-width {
-				height: 1em !important;
-				width: auto !important;
-				min-width: auto !important;
-				margin-right: 2px;
+				@include thumbnail-set;
 			}
 			.delete-confirm-popup__rem-section__item {
 				.inline-block,
 				.thumbnail--with-width {
-					height: 1em !important;
-					width: auto !important;
-					min-width: auto !important;
-					margin-right: 2px;
+					@include thumbnail-set;
 				}
 			}
 		}
@@ -252,10 +211,7 @@
 						.image-node__container,
 						.image-node,
 						.thumbnail--with-width {
-							height: 1em !important;
-							width: auto !important;
-							min-width: auto !important;
-							margin-right: 2px;
+							@include thumbnail-set;
 						}
 					}
 				}
@@ -269,10 +225,7 @@
 	[data-rem-tags*="tn"] {
 		.inline-block,
 		.thumbnail--with-width {
-			height: 1em !important;
-			width: auto !important;
-			min-width: auto !important;
-			margin-right: 3px;
+			@include thumbnail-set;
 			background-color: transparent;
 		}
 	}
@@ -280,28 +233,19 @@
 	#DropToOpenAsDocument {
 		.inline-block,
 		.thumbnail--with-width {
-			height: 1em !important;
-			width: auto !important;
-			min-width: auto !important;
-			padding-right: 2px;
+			@include thumbnail-set;
 		}
 	}
 	.hierarchy-editor__tag-bar__tag {
 		.inline-block,
 		.inline-block.align-text-top.group,
 		.thumbnail--with-width {
-			height: 1em !important;
-			width: auto !important;
-			min-width: auto !important;
-			padding-right: 2px;
+			@include thumbnail-set;
 		}
 	}
 	.fade-on-hide-ui {
 		.inline-block {
-			height: 1em !important;
-			width: auto !important;
-			min-width: auto !important;
-			padding-right: 2px;
+			@include thumbnail-set;
 		}
 	}
 // Search Result
@@ -309,10 +253,7 @@
 		[aria-label~="Omnibar"] {
 			.inline-block,
 			.thumbnail--with-width {
-				height: 1em !important;
-				width: auto !important;
-				min-width: auto !important;
-				padding-right: 2px;
+				@include thumbnail-set;
 			}
 		}
 	// Search Popup Page
@@ -323,28 +264,20 @@
 		.css-fUqRpZ {
 			.inline-block,
 			.thumbnail--with-width {
-				height: 1em !important;
-				width: auto !important;
-				min-width: auto !important;
-				padding-right: 2px;
+				@include thumbnail-set;
 			}
 		}
 	// Tag Search Result
 		.search-result__rem-breadcrumbs {
 			.inline-block,
 			.thumbnail--with-width {
-				height: 1em !important;
-				width: auto !important;
-				min-width: auto !important;
+				@include thumbnail-set;
 			}
 		}
 		#search-results__result {
 			.inline-block,
 			.thumbnail--with-width {
-				height: 1em !important;
-				width: auto !important;
-				min-width: auto !important;
-				padding-right: 2px;
+				@include thumbnail-set;
 			}
 		}
 // Portal
@@ -354,9 +287,7 @@
 		.rem-text.rem-header--3 {
 			.inline-block,
 			.thumbnail--with-width {
-				height: 1em !important;
-				width: auto !important;
-				min-width: auto !important;
+				@include thumbnail-set;
 			}
 		}
 	}
@@ -364,17 +295,13 @@
 	.rem-reference {
 		.inline-block,
 		.thumbnail--with-width {
-			height: 1em !important;
-			width: auto !important;
-			min-width: auto !important;
+			@include thumbnail-set;
 			margin-top: 1px;
 		}
 	}
 	.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
 		.inline-block {
-			height: 1em;
-			width: auto !important;
-			min-width: auto !important;
+			@include thumbnail-set;
 		}
 	}
 	// Rem reference normal rem-text thumbnail adjustment
