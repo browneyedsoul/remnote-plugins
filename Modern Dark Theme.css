@@ -877,6 +877,9 @@
 		.dark-mode .rem-reference .RichTextViewer {
 			color: var(--reference-text-dark);
 		}
+		.dark-mode .rem-reference.show-ui-hover\:bg-blue-5:hover {
+			background-color: var(--darkmode-background-selected-darker);
+		}
 		.rem-reference.button.rem-reference-link {
 			background-color: var(--reference-background);
 			padding: 1px 2px 1px 2px
