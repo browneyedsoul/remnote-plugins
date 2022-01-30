@@ -62,6 +62,16 @@
 	display: inline-flex;
 	vertical-align: top;
 }
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element .inline-block,
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element .inline-block.align-text-top.group,
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element .react-transform-component,
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element .image-node,
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element .thumbnail--with-width {
+	width: auto !important;
+	height: auto !important;
+	min-width: auto !important;
+	min-height: auto !important;
+}
 .Queue .queue-cluster-selector .image-node,
 .Queue .queue-cluster-selector .image-node__container.group.inline-block.align-text-top,
 .Queue .queue-cluster-selector .thumbnail--with-width {
