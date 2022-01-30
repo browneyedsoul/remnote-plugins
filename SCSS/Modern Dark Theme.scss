@@ -734,6 +734,26 @@
 				background-color: var(--darkmode-background);
 			}
 		// Edit your flashcard Window
+			// Card Type button
+				.rounded {
+					.p-3 {
+						color: var(--darkmode-text) !important;
+					}
+				}
+			// Card Direction Button
+				> div {
+					> div.p-4 {
+						div.ml-2 {
+							> div {
+								background-color: unset !important;
+							}
+						}
+					}
+				}
+				.hover\:bg-cyan-15.active\:bg-cyan-20 {
+					background-color: #1C3259 !important;
+					border: 1px solid var(--darkmode-contrast);
+				}
 			.bg-gray-5 .rounded {
 				border: 1px solid var(--line-color-dark);
 			}
@@ -948,9 +968,6 @@
 		}
 // Settings Page
 	/* Interim Measure */
-		.bg-blue-5 {
-			background-color: #518FFF;
-		}
 		.dark-mode #DefaultExampleDocumentActions,
 		.dark-mode .settings-page .spaced-repetition-scheduler-form a,
 		.dark-mode .settings-page [color~="#515167"],	/* Body Text */ 
@@ -995,8 +1012,10 @@
 		.dark-mode .DocumentLink {
 			color: var(--darkmode-text);
 		}
-	
 	.dark-mode {
+		.bg-blue-5 {
+			background-color: #233E6F;
+		}
 		.settings-page {
 			// Settings Page Basic
 				background-color: var(--darkmode-background);
