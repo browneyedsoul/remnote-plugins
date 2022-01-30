@@ -524,6 +524,13 @@
 			padding: 0px 2px 1px 2px;
 			color: black;
 		}
+		[data-rem-tags~=highlight] {
+			.rem-text.rem-header--1,
+			.rem-text.rem-header--2,
+			.rem-text.rem-header--3 {
+				color: black;
+			}
+		}
 	// Highlight Color
 		.highlight-color--red {background-color: var(--highlight-color--red);}
 		.highlight-color--orange {background-color: var(--highlight-color--orange);}

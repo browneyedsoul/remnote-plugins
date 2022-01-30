@@ -429,6 +429,12 @@
 	color: black;
 }
 
+[data-rem-tags~=highlight] .rem-text.rem-header--1,
+[data-rem-tags~=highlight] .rem-text.rem-header--2,
+[data-rem-tags~=highlight] .rem-text.rem-header--3 {
+	color: black;
+}
+
 .highlight-color--red {
 	background-color: var(--highlight-color--red);
 }
