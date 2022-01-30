@@ -81,6 +81,13 @@
 	margin-right: 2px;
 }
 
+.document-popup-preview #DocumentTitle .thumbnail--with-width {
+	width: 100% !important;
+	height: auto !important;
+	min-width: auto !important;
+	min-height: auto !important;
+}
+
 #DocumentTitle .inline-block,
 #DocumentTitle .thumbnail--with-width {
 	height: 1em !important;
