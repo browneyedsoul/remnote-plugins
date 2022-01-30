@@ -102,3 +102,38 @@
         }
     }
 ```
+# RemNote Help Page Sidebar
+```scss
+    #document-sidebar {
+        // Sidebar Top Area [← RemNote Help]
+            #document-sidebar_top {
+                .m-3 {
+                    > div {
+                        
+                    }
+                }
+            }
+        // Sidebar Item
+            .overflow-x-hidden {
+                [data-type~="document_list_item"] {
+                    div.block.group.cursor-pointer {
+                        div.rounded-md.text-sm.overflow-hidden.text-gray-60 {
+                            div.p-2.flex.group-hover-bg-hover-bg-transparent {
+                                div.flex-grow.overflow-hidden.select-none.overflow-ellipsis.whitespace-nowrap.nowrap-RichTextViewer.text-gray-60.leading-[17px] {
+                                    .RichTextViewer {
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        // Sidebar Bottom Area [← Back]
+            .w-full {
+                a {
+                    
+                }
+            }
+    }
+```
