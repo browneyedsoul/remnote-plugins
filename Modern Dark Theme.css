@@ -215,6 +215,9 @@
 	border-radius: 5px;
 	border-bottom: 2px solid var(--darkmode-contrast);
 }
+.dark-mode .document-popup-preview {
+	background-color: var(--darkmode-background);
+}
 
 .dark-mode #card-table-page {
 	color: var(--darkmode-text);

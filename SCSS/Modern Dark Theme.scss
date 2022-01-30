@@ -216,58 +216,63 @@
 					}
                 }
             }
-		.Queue {
-			// Style
+		// Flashcard
+			.Queue {
+				// Style
+					background-color: var(--darkmode-background);
+				// Question Span
+					.queue-text-large-font {
+						font-size: 24px;
+					}
+				// Select Cluster Hover
+					.hover\:bg-UI03:hover {
+						color: black;
+					}
+				// Flashcard for Select Menu
+					.font-semibold.text-gray-100 {
+						color: var(--darmode-text);
+					}
+					.queue__title .h-6 > svg {
+						color: var(--darkmode-contrast);
+						fill: var(--darkmode-contrast);
+					}
+				// Border
+					border: 1px solid white;
+				// Residue Card Number
+					.bg-gray-10 {
+						background-color: var(--darkmode-selected-darker);
+						border:  1px solid white;
+					}
+				// Katex
+					.katex {
+						background-color: unset;
+					}
+				// Breadcrumbs Folder and File icon
+					.mr-1.css-cpJTyT,
+					.icon--document,
+					.RichTextViewer.px-1.truncate {
+						color: var(--darkmode-text);
+					}
+					.css-dLXVVj {
+						color: var(--darkmode-contrast);
+					}
+				// Question Title thumbnail
+					.rem-bullet__document .RichTextViewer .thumbnail--with-width {
+						height: 1em;
+						width: auto;
+					}
+				// Cloze
+					.RichTextViewer .cloze {
+						background-color: unset;
+						padding: 5px;
+						border-radius: 5px;
+						border-bottom: 2px solid var(--darkmode-contrast);
+					}
+			}
+		// Preview
+			.document-popup-preview {
 				background-color: var(--darkmode-background);
-			// Question Span
-				.queue-text-large-font {
-					font-size: 24px;
-				}
-			// Select Cluster Hover
-				.hover\:bg-UI03:hover {
-					color: black;
-				}
-			// Flashcard for Select Menu
-				.font-semibold.text-gray-100 {
-					color: var(--darmode-text);
-				}
-				.queue__title .h-6 > svg {
-					color: var(--darkmode-contrast);
-					fill: var(--darkmode-contrast);
-				}
-			// Border
-				border: 1px solid white;
-			// Residue Card Number
-				.bg-gray-10 {
-					background-color: var(--darkmode-selected-darker);
-					border:  1px solid white;
-				}
-			// Katex
-				.katex {
-					background-color: unset;
-				}
-			// Breadcrumbs Folder and File icon
-				.mr-1.css-cpJTyT,
-				.icon--document,
-				.RichTextViewer.px-1.truncate {
-					color: var(--darkmode-text);
-				}
-				.css-dLXVVj {
-					color: var(--darkmode-contrast);
-				}
-			// Question Title thumbnail
-				.rem-bullet__document .RichTextViewer .thumbnail--with-width {
-					height: 1em;
-					width: auto;
-				}
-			// Cloze
-				.RichTextViewer .cloze {
-					background-color: unset;
-					padding: 5px;
-					border-radius: 5px;
-					border-bottom: 2px solid var(--darkmode-contrast);
-				}
-		}	
+			}
 	}
 // Card Browser
 	.dark-mode{
