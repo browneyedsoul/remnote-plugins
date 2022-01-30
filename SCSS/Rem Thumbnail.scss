@@ -189,20 +189,7 @@
 				@include thumbnail-set;
 			}
 		}
-	// Delete Confirm Popup
-		#delete-confirm-popup {
-			.inline-block,
-			.image-node__container.group.inline-block.align-text-top,
-			.thumbnail--with-width {
-				@include thumbnail-set;
-			}
-			.delete-confirm-popup__rem-section__item {
-				.inline-block,
-				.thumbnail--with-width {
-					@include thumbnail-set;
-				}
-			}
-		}
+	}
 	// Merge Confirm Window
 		#Popup {
 			#PopupContent {
@@ -217,7 +204,29 @@
 				}
 			}
 		}
-	}
+	// Delete Confirm Popup
+		#Popup {
+			#PopupContent {
+				#delete-confirm-popup {
+					.inline-block,
+					.image-node__container.group.inline-block.align-text-top,
+					.thumbnail--with-width {
+						@include thumbnail-set;
+					}
+					
+					.delete-confirm-popup__rem-section__item {
+						.RichTextViewer {
+							.inline-block,
+							.image-node__container,
+							.image-node,
+							.thumbnail--with-width {
+								@include thumbnail-set;
+							}
+						}
+					}
+				}
+			}
+		}
 // Header & Normal Rem-Text with "Thumbnail(TN)" Tag
 	.rem-header--1,
 	.rem-header--2,
