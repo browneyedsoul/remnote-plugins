@@ -442,6 +442,7 @@
 	color: black;
 }
 
+[data-rem-tags~=highlight] .rem-text,
 [data-rem-tags~=highlight] .rem-text.rem-header--1,
 [data-rem-tags~=highlight] .rem-text.rem-header--2,
 [data-rem-tags~=highlight] .rem-text.rem-header--3 {
@@ -1065,7 +1066,7 @@
 
 .dark-mode .rem-reference .RichTextViewer {
 	color: var(--reference-text-dark);
-	background-color: #131313;
+	background-color: #202020;
 }
 .dark-mode [data-rem-tags~=highlight] .rem-text .RichTextViewer {
 	color: var(--reference-text);
