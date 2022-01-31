@@ -1431,11 +1431,17 @@
 .dark-mode #HelpPageContainer #HelpPage {
 	filter: invert(1);
 }
+.dark-mode #document-sidebar_top .m-3 > div {
+	color: var(--darkmode-contrast) !important;
+}
 .dark-mode #document-sidebar_top .css-cPmPhh {
 	color: var(--darkmode-text);
 }
 .dark-mode [data-icon=backward] {
-	color: var(--darkmode-contrast);
+	color: var(--darkmode-contrast) !important;
+}
+.dark-mode #document-sidebar .w-full > a {
+	color: var(--darkmode-contrast) !important;
 }
 .dark-mode #APIKeys a {
 	color: var(--link-node-color-dark);
@@ -1449,11 +1455,6 @@
 }
 .dark-mode #APIKeys #ApiVoid {
 	background-color: var(--darkmode-background);
-}
-
-.dark-mode #document-sidebar .w-full > a,
-#main.dark-mode #content #document-sidebar a {
-	color: var(--darkmode-contrast) !important;
 }
 
 #APIKeys .ApiCommand {

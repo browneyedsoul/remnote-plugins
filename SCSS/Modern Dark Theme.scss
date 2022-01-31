@@ -1613,13 +1613,26 @@
 			}
 		// RemNote Help Page Sidebar Top
 			#document-sidebar_top {
+				.m-3 {
+					> div {
+						color: var(--darkmode-contrast) !important;
+					}
+				}
 				.css-cPmPhh {
 					color: var(--darkmode-text);
 				}
 			}
 		// Backward icon
 			[data-icon="backward"] {
-				color: var(--darkmode-contrast);
+				color: var(--darkmode-contrast) !important;
+			}
+		// RemNote Help Page Sidebar Bottom
+			#document-sidebar {
+				.w-full {
+					> a {
+						color: var(--darkmode-contrast) !important;
+					}
+				}
 			}
 		// API
 			#APIKeys {
@@ -1652,12 +1665,6 @@
 				}
 			}
 	}
-
-	// RemNote Help Page Sidebar Bottom
-		.dark-mode #document-sidebar .w-full > a,
-		#main.dark-mode #content #document-sidebar a {
-			color: var(--darkmode-contrast) !important;
-		}
 	// API
 		#APIKeys {
 			.ApiCommand {
