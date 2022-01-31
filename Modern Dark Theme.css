@@ -320,6 +320,7 @@
 }
 
 .dark-mode .paddingPage {
+	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
 }
 .dark-mode .document-table,
@@ -1436,10 +1437,28 @@
 .dark-mode [data-icon=backward] {
 	color: var(--darkmode-contrast);
 }
+.dark-mode #APIKeys a {
+	color: var(--link-node-color-dark);
+}
+.dark-mode #APIKeys .ApiCommand .ui.table {
+	color: var(--darkmode-text);
+	background-color: var(--darkmode-background);
+}
+.dark-mode #APIKeys .ApiCommand .ui.table thead tr th {
+	color: var(--darkmode-text-bold);
+}
+.dark-mode #APIKeys #ApiVoid {
+	background-color: var(--darkmode-background);
+}
 
 .dark-mode #document-sidebar .w-full > a,
 #main.dark-mode #content #document-sidebar a {
 	color: var(--darkmode-contrast) !important;
+}
+
+#APIKeys .ApiCommand {
+	overflow-x: auto;
+	white-space: pre;
 }
 
 .hierarchy-editor__search-portal-section {

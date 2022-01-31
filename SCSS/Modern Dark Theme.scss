@@ -106,14 +106,14 @@
 			> div {
 				span.flex-grow {
 					> div.flex.w-full.h-full {
-						> div:first-child {
-							> svg[data-icon~="documents-top-level-rem"] {
-								// > rect,
-								// > circle {
-								// 	display: none;
-								// }
-							}
-						}
+						// > div:first-child {
+						// 	> svg[data-icon~="documents-top-level-rem"] {
+						// 		> rect,
+						// 		> circle {
+						// 			display: none;
+						// 		}
+						// 	}
+						// }
 						> div:nth-child(2) {
 							flex-direction: column-reverse !important;
 							overflow-x: auto;
@@ -409,6 +409,7 @@
 	.dark-mode {
 		// Page Padding
 			.paddingPage {
+				color: var(--darkmode-text);
 				background-color: var(--darkmode-background)
 			}
 		// Hierarchy Editor - General Background
@@ -1620,12 +1621,49 @@
 			[data-icon="backward"] {
 				color: var(--darkmode-contrast);
 			}
+		// API
+			#APIKeys {
+				a {
+					color: var(--link-node-color-dark);
+				}
+				.ApiCommand {
+					.ui.table {
+						color: var(--darkmode-text);
+						background-color: var(--darkmode-background);
+
+						thead {
+							tr {
+								
+								th {
+									color: var(--darkmode-text-bold);
+								}
+							}
+							
+						}
+						// tbody {
+						// 	tr {
+								
+						// 	}
+						// }
+					}
+				}
+				#ApiVoid {
+					background-color: var(--darkmode-background);
+				}
+			}
 	}
 
 	// RemNote Help Page Sidebar Bottom
 		.dark-mode #document-sidebar .w-full > a,
 		#main.dark-mode #content #document-sidebar a {
 			color: var(--darkmode-contrast) !important;
+		}
+	// API
+		#APIKeys {
+			.ApiCommand {
+				overflow-x: auto;
+				white-space: pre;
+			}
 		}
 // Backlink
 	// Remove Date
