@@ -797,9 +797,13 @@
 					background-color: #1C3259 !important;
 					border: 1px solid var(--darkmode-contrast);
 				}
-			.bg-gray-5 .rounded {
-				border: 1px solid var(--line-color-dark);
-			}
+			> .bg-gray-5 {
+				background-color: var(--darkmode-background);
+
+				.rounded {
+					border: 1px solid var(--line-color-dark);
+				}
+			} 
 			.scroll-drag-component {
 				border: 1px solid white;
 			}

@@ -739,7 +739,10 @@
 	background-color: #1C3259 !important;
 	border: 1px solid var(--darkmode-contrast);
 }
-.popup-menu.dark-mode .bg-gray-5 .rounded {
+.popup-menu.dark-mode > .bg-gray-5 {
+	background-color: var(--darkmode-background);
+}
+.popup-menu.dark-mode > .bg-gray-5 .rounded {
 	border: 1px solid var(--line-color-dark);
 }
 .popup-menu.dark-mode .scroll-drag-component {
