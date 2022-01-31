@@ -1169,7 +1169,7 @@
 }
 
 #document-sidebar {
-	background-color: var(--darkmode-background-sidebar);
+	background-color: var(--darkmode-background);
 }
 #document-sidebar + div > div {
 	color: var(--darkmode-contrast) !important;
