@@ -454,6 +454,15 @@
 				color: var(--darkmode-contrast);
 				background-color: var(--darkmode-selected-darker);
 			}
+			[data-rem-tags~="source-list"] {
+				.RichTextViewer {
+					color: var(--darkmode-text);
+				}
+				[data-icon~="add"] {
+					color: var(--darkmode-text) !important;
+					fill: var(--darkmode-text) !important;
+				}
+			}
 		// Hierarchy Editor - Upper Right 3dots
 			.document__options-menu .fill-current {
 				filter: invert(1);

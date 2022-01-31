@@ -373,6 +373,13 @@
 	color: var(--darkmode-contrast);
 	background-color: var(--darkmode-selected-darker);
 }
+.dark-mode [data-rem-tags~=source-list] .RichTextViewer {
+	color: var(--darkmode-text);
+}
+.dark-mode [data-rem-tags~=source-list] [data-icon~=add] {
+	color: var(--darkmode-text) !important;
+	fill: var(--darkmode-text) !important;
+}
 .dark-mode .document__options-menu .fill-current {
 	filter: invert(1);
 }
