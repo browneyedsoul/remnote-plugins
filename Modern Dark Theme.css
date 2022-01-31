@@ -670,6 +670,24 @@
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--purple {
 	color: var(--purple-text-dark);
 }
+.dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--red {
+	background-color: var(--red-text-dark);
+}
+.dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--orange {
+	background-color: var(--orange-text-dark);
+}
+.dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--yellow {
+	background-color: var(--yellow-text-dark);
+}
+.dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--green {
+	background-color: var(--green-text-dark);
+}
+.dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--blue {
+	background-color: var(--blue-text-dark);
+}
+.dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--purple {
+	background-color: var(--purple-text-dark);
+}
 
 .popup-menu [data-rem-tags~=color] .bold.highlight-color--yellow {
 	color: var(--yellow-text-dark);

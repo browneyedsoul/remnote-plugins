@@ -693,6 +693,15 @@
 					.bold.highlight-color--green {color: var(--green-text-dark);}
 					.bold.highlight-color--blue {color: var(--blue-text-dark);}
 					.bold.highlight-color--purple {color: var(--purple-text-dark);} 
+
+					.rem-reference-container {
+						.bold.highlight-color--red {background-color: var(--red-text-dark);}
+						.bold.highlight-color--orange {background-color: var(--orange-text-dark);}
+						.bold.highlight-color--yellow {background-color: var(--yellow-text-dark);}
+						.bold.highlight-color--green {background-color: var(--green-text-dark);}
+						.bold.highlight-color--blue {background-color: var(--blue-text-dark);}
+						.bold.highlight-color--purple {background-color: var(--purple-text-dark);}
+					}
 				}
 			}
 		}
@@ -718,6 +727,7 @@
 				}
 			}
 		}
+		
 		#document-hover-preview__popup {
 			.RichTextViewer {
 				.bold.highlight-color--red,
