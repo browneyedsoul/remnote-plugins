@@ -812,6 +812,11 @@
 	color: black;
 }
 
+#document-hover-preview__popup span.bold > span,
+.popup-menu__item--static > span {
+	font-size: 18px;
+}
+
 .hierarchy-editor__hidden-children__list,
 [data-search-result~=search-result-panel] {
 	color: black;
@@ -1051,13 +1056,18 @@
 
 .rem-reference .RichTextViewer {
 	color: var(--reference-text);
+	background-color: #E1E5F8;
 	font-family: "Roboto Mono", monospace !important;
+	padding: 2px 4px;
+	margin: 0 2px;
+	border-radius: 4px;
 }
 
 .dark-mode .rem-reference .RichTextViewer {
 	color: var(--reference-text-dark);
+	background-color: #131313;
 }
-.dark-mode [data-rem-tags~=highlight] > div > span .rem-text .RichTextViewer {
+.dark-mode [data-rem-tags~=highlight] .rem-text .RichTextViewer {
 	color: var(--reference-text);
 }
 
@@ -1111,7 +1121,6 @@
 [data-rem-container-tags~=aliases] {
 	border: 0.1rem solid var(--line-color-dark);
 	border-radius: 4px;
-	margin-left: 1.6rem;
 }
 
 .rem-reference.button.rem-reference-link .gray, .rem-reference.button.rem-reference-link .join-arrow {

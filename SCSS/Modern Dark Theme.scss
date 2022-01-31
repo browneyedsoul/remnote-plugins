@@ -886,7 +886,11 @@
 					}
 				}
 	}
-	
+	// Popup for Reference & Alias Static Title
+			#document-hover-preview__popup span.bold > span,
+			.popup-menu__item--static > span {
+				font-size: 18px;
+			}
 	// Hidden Item List
 		// Style
 			.hierarchy-editor__hidden-children__list,
@@ -1144,7 +1148,11 @@
 	.rem-reference {
 		.RichTextViewer {
 			color: var(--reference-text); 
+			background-color: #E1E5F8;
 			font-family: 'Roboto Mono', monospace !important;
+			padding: 2px 4px;
+			margin: 0 2px;
+			border-radius: 4px;
 		}
 	}	
 	// Hierarchy Editor - Reference Style
@@ -1152,16 +1160,13 @@
 			.rem-reference {
 				.RichTextViewer {
 					color: var(--reference-text-dark);
+					background-color: #131313;
 				}
 			}
 			[data-rem-tags~=highlight] {
-				> div {
-					> span {
-						.rem-text {
-							.RichTextViewer {
-								color: var(--reference-text);
-							}
-						}
+				.rem-text {
+					.RichTextViewer {
+						color: var(--reference-text);
 					}
 				}
 			}
@@ -1232,7 +1237,6 @@
 		[data-rem-container-tags~="aliases"] {
 			border: 0.1rem solid var(--line-color-dark);
 			border-radius: 4px;
-			margin-left: 1.6rem;
 		}
 	// Hide Reference root and > symbol
 		.rem-reference.button.rem-reference-link {
