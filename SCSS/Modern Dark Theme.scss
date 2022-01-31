@@ -501,6 +501,10 @@
 				.flex {
 					display: inline-block;
 				}
+				// Merge Button
+					.w-max[color="#292936"] {
+						color: unset;
+					}
 			}
 		// Scrollable
 			// .document-header-top-bar > div {overflow-x: auto;}
@@ -976,24 +980,26 @@
 		}
 	}
 // Checkbox
-	// Style
-		// Check
+	// Box Style
 		.rem-checkbox {
 			border-radius: unset !important;
 			background-color: unset;
 		}
-		// Strikethrough text
+	// Strikethrough Style
 		.rem-container--todo-finished {
 			color: #A2A2A2;
 			text-decoration: line-through;
 			text-decoration-style: double;
 		}
-		.dark-mode .rem-container--todo-finished {
-			color: #A1A1A1;
-		}
-		.dark-mode .rem-container--todo-finished .RichTextViewer,
-		.dark-mode .rem-container--todo-finished [data-slate-node="text"] {
-			color: #909090;
+		.dark-mode {
+			.rem-container--todo-finished {
+				color: #A1A1A1;
+
+				.RichTextViewer,
+				[data-slate-node="text"] {
+					color: #909090;
+				}
+			}
 		}
 	// Alignment
 		.rem-header--1 .rem-checkbox {margin-top: 12px;}
@@ -1001,27 +1007,16 @@
 		.rem-header--3 .rem-checkbox {margin-top: 6px;}
 		
 		#DocumentTitle {
+			.rem-text,
 			.rem-header--1,
 			.rem-header--2,
 			.rem-header--3 {
 				.rem-checkbox {
-					margin-right: 15px;
+					display: inline-block;
+					margin: 12px 15px 10px 0;
 				}
 			}
 		}
-		.document-title.rem-text,
-		.document-title.rem-header--1,
-		.document-title.rem-header--2,
-		.document-title.rem-header--3 {
-			.rem-checkbox {
-				margin-right: 1rem;
-				position: relative;
-			}
-		}
-		.document-title.rem-text .rem-checkbox {top: 7px;}
-		.document-title.rem-header--1 .rem-checkbox {top: 5px;}
-		.document-title.rem-header--2 .rem-checkbox {top: 0px;}
-		.document-title.rem-header--3 .rem-checkbox {top: -0px;}
 		.document-title.rem-header--3 {
 			.rem-is-custom-rem-type {
 				position: relative;

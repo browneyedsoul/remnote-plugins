@@ -403,6 +403,9 @@
 .document-header-top-bar .flex {
 	display: inline-block;
 }
+.document-header-top-bar .w-max[color="#292936"] {
+	color: unset;
+}
 
 .work-in-progress-tag {
 	color: black;
@@ -885,7 +888,6 @@
 .dark-mode .rem-container--todo-finished {
 	color: #A1A1A1;
 }
-
 .dark-mode .rem-container--todo-finished .RichTextViewer,
 .dark-mode .rem-container--todo-finished [data-slate-node=text] {
 	color: #909090;
@@ -903,34 +905,12 @@
 	margin-top: 6px;
 }
 
+#DocumentTitle .rem-text .rem-checkbox,
 #DocumentTitle .rem-header--1 .rem-checkbox,
 #DocumentTitle .rem-header--2 .rem-checkbox,
 #DocumentTitle .rem-header--3 .rem-checkbox {
-	margin-right: 15px;
-}
-
-.document-title.rem-text .rem-checkbox,
-.document-title.rem-header--1 .rem-checkbox,
-.document-title.rem-header--2 .rem-checkbox,
-.document-title.rem-header--3 .rem-checkbox {
-	margin-right: 1rem;
-	position: relative;
-}
-
-.document-title.rem-text .rem-checkbox {
-	top: 7px;
-}
-
-.document-title.rem-header--1 .rem-checkbox {
-	top: 5px;
-}
-
-.document-title.rem-header--2 .rem-checkbox {
-	top: 0px;
-}
-
-.document-title.rem-header--3 .rem-checkbox {
-	top: 0px;
+	display: inline-block;
+	margin: 12px 15px 10px 0;
 }
 
 .document-title.rem-header--3 .rem-is-custom-rem-type {
