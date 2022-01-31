@@ -95,6 +95,8 @@
 
 .ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) {
 	flex-direction: column-reverse !important;
+	overflow-x: auto;
+	white-space: pre !important;
 }
 .ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) > div:first-child {
 	zoom: 1.2;
@@ -753,7 +755,6 @@
 	filter: invert(0);
 }
 .popup-menu.dark-mode .Queue,
-.popup-menu.dark-mode .bg-gray-5,
 .popup-menu.dark-mode .scroll-drag-component,
 .popup-menu.dark-mode .text-base + a,
 .popup-menu.dark-mode .queue__edit-later {
@@ -787,6 +788,10 @@
 }
 .popup-menu.dark-mode .bg-white .css-kbbFlF:hover {
 	background-color: var(--darkmode-background-selected-darker);
+}
+.popup-menu.dark-mode #SearchPopup .search-results #search-results__list #search-results__result:hover {
+	color: unset !important;
+	background-color: #BCBBB3;
 }
 .popup-menu.dark-mode #show-embedded-search-button {
 	color: var(--darkmode-text) !important;
@@ -1482,35 +1487,29 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 	color: var(--darkmode-contrast);
 }
 
-.pdf-viewer__highlight-container--red .Highlight__part,
-.pdf-viewer__highlight-container--orange .Highlight__part,
-.pdf-viewer__highlight-container--yellow .Highlight__part,
-.pdf-viewer__highlight-container--green .Highlight__part,
-.pdf-viewer__highlight-container--blue .Highlight__part,
-.pdf-viewer__highlight-container--purple .Highlight__part {
+.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--red .Highlight__part,
+.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--orange .Highlight__part,
+.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--yellow .Highlight__part,
+.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--green .Highlight__part,
+.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--blue .Highlight__part,
+.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--purple .Highlight__part {
 	border-radius: 5px;
 }
-
-.pdf-viewer__highlight-container--red .Highlight__part {
+.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--red .Highlight__part {
 	background: var(--pdf-highlight-color-red);
 }
-
-.pdf-viewer__highlight-container--orange .Highlight__part {
+.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--orange .Highlight__part {
 	background: var(--pdf-highlight-color-orange);
 }
-
-.pdf-viewer__highlight-container--yellow .Highlight__part {
+.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--yellow .Highlight__part {
 	background: var(--pdf-highlight-color-yellow);
 }
-
-.pdf-viewer__highlight-container--green .Highlight__part {
+.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--green .Highlight__part {
 	background: var(--pdf-highlight-color-green);
 }
-
-.pdf-viewer__highlight-container--blue .Highlight__part {
+.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--blue .Highlight__part {
 	background: var(--pdf-highlight-color-blue);
 }
-
-.pdf-viewer__highlight-container--purple .Highlight__part {
+.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--purple .Highlight__part {
 	background: var(--pdf-highlight-color-purple);
 }
