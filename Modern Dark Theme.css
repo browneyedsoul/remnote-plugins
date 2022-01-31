@@ -92,16 +92,17 @@
 .dark-mode .document-table .css-jcbvum:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode .document-table .ReactVirtualized__Grid__innerScrollContainer .flex-grow .flex.w-full.h-full div:nth-child(2) {
-	flex-direction: column-reverse;
+
+.ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) {
+	flex-direction: column-reverse !important;
 }
-.dark-mode .document-table .css-cLpPvR > .css-kMEfqE {
-	zoom: 1.25;
-	margin: 4px;
+.ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) > div:first-child {
+	zoom: 1.2;
 }
-.dark-mode .document-table .css-eqifkM {
+.ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) > div:last-child {
 	zoom: 0.75;
-	opacity: 0.25;
+	opacity: 0.4;
+	margin-bottom: 0.5rem;
 }
 
 .dark-mode .queue-cluster-selector {
