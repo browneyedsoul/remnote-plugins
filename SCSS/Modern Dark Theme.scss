@@ -457,30 +457,92 @@
 				background-color: unset !important;
 			}
 		// Hierarchy Editor - Source & Tags & Tagbar & Backlinks
-			#DropToOpenAsDocument .pr-1 .RichTextViewer {
-				color: var(--darkmode-text) !important;
-			}
-			#DocumentTopRow .flex.flex-row.items-center.justify-center.bg-gray-10.text-gray-70.py-1.px-2.rounded.text-sm.font-medium.cursor-pointer.truncate,
-			.hierarchy-editor__tag-bar__tag {
-				color: var(--darkmode-text);
-				background-color: var(--darkmode-background-selected);
-				border: 1px soild white !important;
-			}
-			.hierarchy-editor__tag-bar {border: 1px soild white !important;}
-			.hierarchy-editor__tag-bar__tag__delete {color: var(--darkmode-contrast);}
-			.backlink-counter.text-gray-70 {
-				color: var(--darkmode-contrast);
-				background-color: var(--darkmode-selected-darker);
-			}
-			[data-rem-tags~="source-list"] {
+			#DropToOpenAsDocument {
 				.RichTextViewer {
-					color: var(--darkmode-text);
-				}
-				[data-icon~="add"] {
 					color: var(--darkmode-text) !important;
-					fill: var(--darkmode-text) !important;
 				}
 			}
+			// Top Tag
+				#DocumentTopRow {
+					.rounded-md {
+						span[contenteditable="false"] {
+							> div {
+								color: var(--darkmode-text);
+								background-color: var(--darkmode-background-selected);
+							}
+						}
+					}		
+				}
+			// Tag Bar
+				.hierarchy-editor__tag-bar {
+					.hierarchy-editor__tag-bar__tag {
+						color: var(--darkmode-text);
+						background-color: var(--darkmode-background-selected-darker);
+					}
+
+					.hierarchy-editor__tag-bar__tag.highlight-color--red {
+						color: #000;
+						background-color: var(--highlight-color--red-dark);
+						.hierarchy-editor__tag-bar__tag__delete {
+							color: unset;
+						}
+					}
+					.hierarchy-editor__tag-bar__tag.highlight-color--orange {
+						color: #000;
+						background-color: var(--highlight-color--orange-dark);
+						.hierarchy-editor__tag-bar__tag__delete {
+							color: unset;
+						}
+					}
+					.hierarchy-editor__tag-bar__tag.highlight-color--yellow {
+						color: #000;
+						background-color: var(--highlight-color--yellow-dark);
+						.hierarchy-editor__tag-bar__tag__delete {
+							color: unset;
+						}
+					}
+					.hierarchy-editor__tag-bar__tag.highlight-color--green {
+						color: #000;
+						background-color: var(--highlight-color--green-dark);
+						.hierarchy-editor__tag-bar__tag__delete {
+							color: unset;
+						}
+					}
+					.hierarchy-editor__tag-bar__tag.highlight-color--blue {
+						color: #000;
+						background-color: var(--highlight-color--blue-dark);
+						.hierarchy-editor__tag-bar__tag__delete {
+							color: unset;
+						}
+					}
+					.hierarchy-editor__tag-bar__tag.highlight-color--purple {
+						color: #000;
+						background-color: var(--highlight-color--purple);
+						.hierarchy-editor__tag-bar__tag__delete {
+							color: unset;
+						}
+					}
+					
+					.hierarchy-editor__tag-bar__tag__delete {
+						color: unset;
+					}
+				}
+				
+			// Backlinks
+				.backlink-counter.text-gray-70 {
+					color: var(--darkmode-contrast);
+					background-color: var(--darkmode-selected-darker);
+				}
+			// Source
+				[data-rem-tags~="source-list"] {
+					.RichTextViewer {
+						color: var(--darkmode-text);
+					}
+					[data-icon~="add"] {
+						color: var(--darkmode-text) !important;
+						fill: var(--darkmode-text) !important;
+					}
+				}
 		// Hierarchy Editor - Upper Right 3dots
 			.document__options-menu .fill-current {
 				filter: invert(1);
@@ -520,14 +582,6 @@
 	// Hierarchy Editor - Left-side Hiearchy Editor Margin
 		.document--ltr {
 			padding: 0px 0px 0px 40px;
-		}
-		.hierarchy-editor__tag-bar .highlight-color--red,
-		.hierarchy-editor__tag-bar .highlight-color--orange,
-		.hierarchy-editor__tag-bar .highlight-color--yellow,
-		.hierarchy-editor__tag-bar .highlight-color--green,
-		.hierarchy-editor__tag-bar .highlight-color--blue,
-		.hierarchy-editor__tag-bar .highlight-color--purple {
-			color: black;
 		}
 	// Hierarchy Editor - Right Side Backlink Numbers
 		.float-end .my-2 {

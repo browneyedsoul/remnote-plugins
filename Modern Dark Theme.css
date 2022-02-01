@@ -358,20 +358,61 @@
 .dark-mode .latex-node--focused:not(.latex-node--block) .katex {
 	background-color: unset !important;
 }
-.dark-mode #DropToOpenAsDocument .pr-1 .RichTextViewer {
+.dark-mode #DropToOpenAsDocument .RichTextViewer {
 	color: var(--darkmode-text) !important;
 }
-.dark-mode #DocumentTopRow .flex.flex-row.items-center.justify-center.bg-gray-10.text-gray-70.py-1.px-2.rounded.text-sm.font-medium.cursor-pointer.truncate,
-.dark-mode .hierarchy-editor__tag-bar__tag {
+.dark-mode #DocumentTopRow .rounded-md span[contenteditable=false] > div {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background-selected);
-	border: 1px soild white !important;
 }
-.dark-mode .hierarchy-editor__tag-bar {
-	border: 1px soild white !important;
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag {
+	color: var(--darkmode-text);
+	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode .hierarchy-editor__tag-bar__tag__delete {
-	color: var(--darkmode-contrast);
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red {
+	color: #000;
+	background-color: var(--highlight-color--red-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange {
+	color: #000;
+	background-color: var(--highlight-color--orange-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow {
+	color: #000;
+	background-color: var(--highlight-color--yellow-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green {
+	color: #000;
+	background-color: var(--highlight-color--green-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue {
+	color: #000;
+	background-color: var(--highlight-color--blue-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple {
+	color: #000;
+	background-color: var(--highlight-color--purple);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
 }
 .dark-mode .backlink-counter.text-gray-70 {
 	color: var(--darkmode-contrast);
@@ -418,15 +459,6 @@
 
 .document--ltr {
 	padding: 0px 0px 0px 40px;
-}
-
-.hierarchy-editor__tag-bar .highlight-color--red,
-.hierarchy-editor__tag-bar .highlight-color--orange,
-.hierarchy-editor__tag-bar .highlight-color--yellow,
-.hierarchy-editor__tag-bar .highlight-color--green,
-.hierarchy-editor__tag-bar .highlight-color--blue,
-.hierarchy-editor__tag-bar .highlight-color--purple {
-	color: black;
 }
 
 .float-end .my-2 {
