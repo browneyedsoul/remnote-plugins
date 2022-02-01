@@ -1684,6 +1684,11 @@
 				.css-cPmPhh {
 					color: var(--darkmode-text);
 				}
+				.help-knowledge-base-search {
+					.rich-text-editor {
+						background-color: unset;
+					}
+				}
 			}
 		// Backward icon
 			[data-icon="backward"] {

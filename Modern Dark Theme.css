@@ -1470,6 +1470,9 @@
 .dark-mode #document-sidebar_top .css-cPmPhh {
 	color: var(--darkmode-text);
 }
+.dark-mode #document-sidebar_top .help-knowledge-base-search .rich-text-editor {
+	background-color: unset;
+}
 .dark-mode [data-icon=backward] {
 	color: var(--darkmode-contrast) !important;
 }
