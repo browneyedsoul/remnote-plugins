@@ -1121,9 +1121,12 @@
 
 .dark-mode #StatsPage #StatsPageContent {
 	background-color: var(--darkmode-background);
+	max-width: 90%;
 }
 .dark-mode #StatsPage #StatsPageContent .chartjs-render-monitor {
 	filter: invert(1);
+	height: auto !important;
+	width: calc(100% - 50px) !important;
 }
 
 .rem-reference .RichTextViewer {

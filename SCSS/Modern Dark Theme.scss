@@ -1294,9 +1294,12 @@
 		#StatsPage {
 			#StatsPageContent {
 				background-color: var(--darkmode-background);
+				max-width: 90%;
 
 				.chartjs-render-monitor {
 					filter: invert(1);
+					height: auto !important;
+					width: calc(100% - 50px) !important;
 				}
 			}
 		}
