@@ -412,6 +412,19 @@
 				color: var(--darkmode-text);
 				background-color: var(--darkmode-background)
 			}
+		// Mosaic Windowed panes
+			.mosaic.mosaic-blueprint-theme {
+				.mosaic-preview,
+				.mosaic-window {
+					.mosaic-window-toolbar.draggable {
+						background-color: var(--darkmode-background-sidebar);
+
+						&:hover {
+							background-color: var(--darkmode-background-sidebar);
+						}
+					}
+				}
+			}
 		// Hierarchy Editor - General Background
 			.document-table,
 			.tile__document,

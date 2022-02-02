@@ -323,6 +323,14 @@
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
 }
+.dark-mode .mosaic.mosaic-blueprint-theme .mosaic-preview .mosaic-window-toolbar.draggable,
+.dark-mode .mosaic.mosaic-blueprint-theme .mosaic-window .mosaic-window-toolbar.draggable {
+	background-color: var(--darkmode-background-sidebar);
+}
+.dark-mode .mosaic.mosaic-blueprint-theme .mosaic-preview .mosaic-window-toolbar.draggable:hover,
+.dark-mode .mosaic.mosaic-blueprint-theme .mosaic-window .mosaic-window-toolbar.draggable:hover {
+	background-color: var(--darkmode-background-sidebar);
+}
 .dark-mode .document-table,
 .dark-mode .tile__document,
 .dark-mode .multiple-windows__document,
