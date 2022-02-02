@@ -325,7 +325,7 @@
 	top: 1px;
 }
 [data-rem-tags~=bulletlist] .hierarchy-editor__tag-bar__tag {
-	background-color: transparent;
+	background-color: transparent !important;
 }
 [data-rem-tags~=bulletlist] .hierarchy-editor__tag-bar__tag span {
 	display: none;
