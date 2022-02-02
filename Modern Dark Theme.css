@@ -1121,10 +1121,15 @@
 
 .dark-mode #StatsPage #StatsPageContent {
 	background-color: var(--darkmode-background);
-	max-width: 90%;
 }
 .dark-mode #StatsPage #StatsPageContent .chartjs-render-monitor {
 	filter: invert(1);
+}
+
+#StatsPage #StatsPageContent {
+	max-width: 90% !important;
+}
+#StatsPage #StatsPageContent .chartjs-render-monitor {
 	height: auto !important;
 	width: calc(100% - 50px) !important;
 }
