@@ -968,8 +968,9 @@
 	top: 0px;
 }
 
-/* Interim Measure */
-.dark-mode #DefaultExampleDocumentActions,
+.dark-mode #DefaultExampleDocumentActions {
+	color: var(--darkmode-contrast) !important;
+}
 .dark-mode .settings-page .spaced-repetition-scheduler-form a,
 .dark-mode .settings-page [color~="#515167"],
 .dark-mode .settings-page [data-cy~=loading-spinner] > div,
@@ -978,7 +979,7 @@
 	color: var(--darkmode-contrast) !important;
 }
 
-.dark-mode settings-page__sidebar .inline-block.h-4,
+.dark-mode .settings-page .settings-page__sidebar .inline-block.h-4,
 .dark-mode .settings-page .pt-4,
 .dark-mode .settings-page .pl-4,
 .dark-mode .settings-page .text-gray-70,
@@ -1426,6 +1427,15 @@
 	margin: 0 0 0 5px;
 }
 
+.w-\[calc\(100\%-16px\)\] {
+	width: unset;
+}
+
+::-webkit-scrollbar {
+	background-color: transparent;
+	width: unset;
+}
+
 .dark-mode [data-search-result~=search-result-panel] {
 	border: 3px solid black;
 	border-radius: 5px;
@@ -1568,4 +1578,8 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 }
 .pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--purple .Highlight__part {
 	background: var(--pdf-highlight-color-purple);
+}
+
+.dark-mode .separator-symbol:not(:empty):hover {
+	background-color: var(--darkmode-background-selected-darker);
 }
