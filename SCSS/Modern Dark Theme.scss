@@ -995,6 +995,11 @@
 				color: var(--darkmode-contrast);
 				font-size: 18px;
 			}
+			.rich-text-editor__popup-text-editor-alias-container {
+				.bg-gray-5 {
+					background-color: var(--darkmode-background-selected-darker);
+				}
+			}
 	}
 	
 	.dark-mode {

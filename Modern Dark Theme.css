@@ -883,6 +883,9 @@
 	color: var(--darkmode-contrast);
 	font-size: 18px;
 }
+.popup-menu.dark-mode .rich-text-editor__popup-text-editor-alias-container .bg-gray-5 {
+	background-color: var(--darkmode-background-selected-darker);
+}
 
 .dark-mode div[color="#292936"] {
 	color: var(--darkmode-text);
