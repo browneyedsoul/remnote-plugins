@@ -87,7 +87,19 @@
     .dark-mode [data-rem-tags~="calloutblue"] .rem-text,
     .dark-mode [data-rem-tags~="calloutpurple"] .rem-text {
         color: #DFDFD5 !important;
-    }   
+    }
+/*********** Alignment for Card Item Callout ***********/
+    .node-card-item[data-rem-container-tags~="callout"]::before,
+    .node-card-item[data-rem-container-tags~="calloutred"]::before,
+    .node-card-item[data-rem-container-tags~="calloutorange"]::before,
+    .node-card-item[data-rem-container-tags~="calloutyellow"]::before,
+    .node-card-item[data-rem-container-tags~="calloutgreen"]::before,
+    .node-card-item[data-rem-container-tags~="calloutblue"]::before,
+    .node-card-item[data-rem-container-tags~="calloutpurple"]::before {
+        top: -10px;
+        left: -24px;
+        height: 130%;
+    }
 /*********** Tag Declutter ***********/
     [data-rem-tags~="callout"] .hierarchy-editor__tag-bar__tag, 
     [data-rem-tags~="calloutred"] .hierarchy-editor__tag-bar__tag, 

@@ -17,6 +17,12 @@
 	.dark-mode [data-rem-container-tags~="blockquote"] {
 		border-left: 5px solid var(--blockquote-border-color-dark);
 	}
+/*********** Alignment for Card Item Blockquote ***********/
+	.node-card-item[data-rem-container-tags~="blockquote"]::before {
+		top: -24px;
+		left: -53px;
+		height: 200%;
+	}
 /*********** Tag Declutter ***********/
 	[data-rem-tags~="blockquote"] .hierarchy-editor__tag-bar__tag {background-color: transparent !important;}
 	[data-rem-tags~="blockquote"] .hierarchy-editor__tag-bar__tag span {display: none;} 
