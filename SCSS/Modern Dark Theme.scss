@@ -1108,12 +1108,18 @@
 			}
 			.settings-page {
 				.spaced-repetition-scheduler-form a,
-				[color~="#515167"],	/* Body Text */ 
+				// Body Text
+				[color~="#515167"],
+				// Spinner
 				[data-cy~="loading-spinner"] > div,
-				.divider.text, /* Plugin Option */
-				.dropdown {
+				// Plugin Option
+				.divider.text {
 					color: var(--darkmode-contrast) !important;
 				}
+			}
+			[data-icon~="dropdown"] {
+				color: #000 !important;
+				fill: #000 !important;
 			}
 		}
 		.dark-mode {
@@ -1126,9 +1132,11 @@
 				.spaced-repetition-scheduler-form .py-1,
 				.spaced-repetition-scheduler-form__field > div,
 				.spaced-repetition-scheduler-form__field__explanation,
-				.pt-8.px-6 > div, /* Header */ 
+				// Header
+				.pt-8.px-6 > div,
 				.pb-1,
-				.pr-1, /* $ */
+				// Pricing $
+				.pr-1,
 				.mt-4.mr-6 > div,
 				.feature-checklist-element > div,
 				.settings__pricing-option-item > div > div > div {
@@ -1212,9 +1220,20 @@
 					color: black !important;
 				}
 			// Setting Page Content
-				.popup__header,
-				.settings-page__content__inner {
-					background-color: var(--darkmode-background);
+				.settings-page__content {
+					.settings-page__content__inner {
+						background-color: var(--darkmode-background);
+						.popup__header {
+							background-color: var(--darkmode-background);
+						}
+						.settings-page__option {
+							.ml-4 {
+								> div {
+									color: var(--darkmode-text) !important;
+								}
+							}
+						}
+					}
 				}
 			// Settings Page Content Description
 				.css-fAxQcq, 
@@ -1268,6 +1287,18 @@
 				.switch-knowledgebase__knowledgebase__button > .icon {
 					color: var(--darkmode-contrast);
 				}
+		}
+	}
+// Statistic
+	.dark-mode {
+		#StatsPage {
+			#StatsPageContent {
+				background-color: var(--darkmode-background);
+
+				.chartjs-render-monitor {
+					filter: invert(1);
+				}
+			}
 		}
 	}
 // Reference & Alias

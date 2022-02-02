@@ -982,9 +982,12 @@
 .dark-mode .settings-page .spaced-repetition-scheduler-form a,
 .dark-mode .settings-page [color~="#515167"],
 .dark-mode .settings-page [data-cy~=loading-spinner] > div,
-.dark-mode .settings-page .divider.text,
-.dark-mode .settings-page .dropdown {
+.dark-mode .settings-page .divider.text {
 	color: var(--darkmode-contrast) !important;
+}
+.dark-mode [data-icon~=dropdown] {
+	color: #000 !important;
+	fill: #000 !important;
 }
 
 .dark-mode .settings-page .settings-page__sidebar .inline-block.h-4,
@@ -1070,9 +1073,14 @@
 .dark-mode .settings-page .spaced-repetition-scheduler-form__interaction {
 	color: black !important;
 }
-.dark-mode .settings-page .popup__header,
-.dark-mode .settings-page .settings-page__content__inner {
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner {
 	background-color: var(--darkmode-background);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .popup__header {
+	background-color: var(--darkmode-background);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .settings-page__option .ml-4 > div {
+	color: var(--darkmode-text) !important;
 }
 .dark-mode .settings-page .css-fAxQcq,
 .dark-mode .settings-page .css-eqifkM {
@@ -1109,6 +1117,13 @@
 }
 .dark-mode .settings-page .switch-knowledgebase__knowledgebase__button > .icon {
 	color: var(--darkmode-contrast);
+}
+
+.dark-mode #StatsPage #StatsPageContent {
+	background-color: var(--darkmode-background);
+}
+.dark-mode #StatsPage #StatsPageContent .chartjs-render-monitor {
+	filter: invert(1);
 }
 
 .rem-reference .RichTextViewer {
