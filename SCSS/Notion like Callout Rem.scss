@@ -1,0 +1,120 @@
+:root {
+    --callout-background-color: #F7F6F3;
+    --callout-background-color-dark: #505050;
+    --calloutred-background-color: #FFE9EC;
+    --calloutred-background-color-dark: #572924;
+    --calloutorange-background-color: #FDEDD9;
+    --calloutorange-background-color-dark: #553D24;
+    --calloutyellow-background-color: #FDFEDD;
+    --calloutyellow-background-color-dark: #453E1E;
+    --calloutgreen-background-color: #E0FBE2;
+    --calloutgreen-background-color-dark: #2B492D;
+    --calloutblue-background-color: #E6F3F6;
+    --calloutblue-background-color-dark: #183C4D;
+    --calloutpurple-background-color: #FEEEFC;
+    --calloutpurple-background-color-dark: #43273F;
+    --callout-padding: 15px 20px;
+    --callout-margin-top: 7px;
+    --callout-margin-bottom: 7px;
+    --callout-margin-left: 24px;
+    --callout-margin-right: 0px;
+    --callout-border-radius: 5px;
+}
+// Custom rem bullet icon
+    [data-rem-tags~="warning"] .rem-text::before {content: "🚨"; margin-right: 10px;}
+    [data-rem-tags~="idea"] .rem-text::before {content: "💡"; margin-right: 10px;}
+
+    [data-rem-tags~="warning"],
+    [data-rem-tags~="idea"] {
+        .rem-text {
+            position: relative;
+            left: -25px;
+        }
+    }
+// Callout Rem Block Color-Variable & Pre-Coloured
+    [data-rem-container-tags~="callout"],
+    [data-rem-container-tags~="calloutred"],
+    [data-rem-container-tags~="calloutorange"],
+    [data-rem-container-tags~="calloutyellow"],
+    [data-rem-container-tags~="calloutgreen"],
+    [data-rem-container-tags~="calloutblue"],
+    [data-rem-container-tags~="calloutpurple"] {   
+        padding: var(--callout-padding);
+        margin-top: var(--callout-margin-top);
+        margin-bottom: var(--callout-margin-bottom);
+        margin-left: var(--callout-margin-left);
+        margin-right: var(--callout-margin-right);
+        border-radius: var(--callout-border-radius);
+    }
+    [data-rem-container-tags~="callout"] {background-color: var(--callout-background-color);}
+    [data-rem-container-tags~="calloutred"] {background-color: var(--calloutred-background-color);}
+    [data-rem-container-tags~="calloutorange"] {background-color: var(--calloutorange-background-color);}
+    [data-rem-container-tags~="calloutyellow"] {background-color: var(--calloutyellow-background-color);}
+    [data-rem-container-tags~="calloutgreen"] {background-color: var(--calloutgreen-background-color);}    
+    [data-rem-container-tags~="calloutblue"] {background-color: var(--calloutblue-background-color);}
+    [data-rem-container-tags~="calloutpurple"] {background-color: var(--calloutpurple-background-color);}
+// Darkmode Compatibility
+    .dark-mode {
+        [data-rem-container-tags~="callout"] {background-color: var(--callout-background-color-dark) !important;}
+        [data-rem-container-tags~="calloutred"] {background-color: var(--calloutred-background-color-dark) !important;}
+        [data-rem-container-tags~="calloutorange"] {background-color: var(--calloutorange-background-color-dark) !important;}
+        [data-rem-container-tags~="calloutyellow"] {background-color: var(--calloutyellow-background-color-dark) !important;}
+        [data-rem-container-tags~="calloutgreen"] {background-color: var(--calloutgreen-background-color-dark) !important;}
+        [data-rem-container-tags~="calloutblue"] {background-color: var(--calloutblue-background-color-dark) !important;}
+        [data-rem-container-tags~="calloutpurple"] {background-color: var(--calloutpurple-background-color-dark) !important;}
+
+        [data-rem-tags~="callout"] .rem-text,
+        [data-rem-tags~="calloutred"] .rem-text,
+        [data-rem-tags~="calloutorange"] .rem-text,
+        [data-rem-tags~="calloutyellow"] .rem-text,
+        [data-rem-tags~="calloutgreen"] .rem-text,
+        [data-rem-tags~="calloutblue"] .rem-text,
+        [data-rem-tags~="calloutpurple"] .rem-text {
+            color: #DFDFD5 !important;
+        }
+    }
+    .popup-menu.dark-mode {
+        [data-rem-container-tags~="callout"] {background-color: var(--callout-background-color-dark) !important;}
+        [data-rem-container-tags~="calloutred"] {background-color: var(--calloutred-background-color-dark) !important;}
+        [data-rem-container-tags~="calloutorange"] {background-color: var(--calloutorange-background-color-dark) !important;}
+        [data-rem-container-tags~="calloutyellow"] {background-color: var(--calloutyellow-background-color-dark) !important;}
+        [data-rem-container-tags~="calloutgreen"] {background-color: var(--calloutgreen-background-color-dark) !important;}
+        [data-rem-container-tags~="calloutblue"] {background-color: var(--calloutblue-background-color-dark) !important;}
+        [data-rem-container-tags~="calloutpurple"] {background-color: var(--calloutpurple-background-color-dark) !important;}
+    }
+// Alignment for Card Item Callout
+    .node-card-item[data-rem-container-tags~="callout"],
+    .node-card-item[data-rem-container-tags~="calloutred"],
+    .node-card-item[data-rem-container-tags~="calloutorange"],
+    .node-card-item[data-rem-container-tags~="calloutyellow"],
+    .node-card-item[data-rem-container-tags~="calloutgreen"],
+    .node-card-item[data-rem-container-tags~="calloutblue"],
+    .node-card-item[data-rem-container-tags~="calloutpurple"] {
+        &::before {
+            top: -10px;
+            left: -24px;
+            height: 130%;
+        }
+    }
+// Tag Declutter
+    [data-rem-tags~="callout"], 
+    [data-rem-tags~="calloutred"], 
+    [data-rem-tags~="calloutorange"],
+    [data-rem-tags~="calloutyellow"],
+    [data-rem-tags~="calloutgreen"],
+    [data-rem-tags~="calloutblue"],
+    [data-rem-tags~="calloutpurple"] {
+        .hierarchy-editor__tag-bar {
+            position: relative;
+            right: -20px;
+
+            span.hierarchy-editor__tag-bar__tag {
+                background-color: transparent !important;
+
+                > div:first-of-type,
+                > span {
+                    display: none;
+                }
+            }
+        }
+    }
