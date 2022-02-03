@@ -1,0 +1,221 @@
+:root {
+	--table-title-background-color: #EEEEEB;
+	--table-title-background-color-dark: #000;
+	--table-header-background-color: #EAEAEA;
+	--table-header-background-color-dark: #555;
+	--table-cell-background-color: #FFFFFF;
+	--table-cell-background-color-dark: #2F3437;
+	--table-border-color: #EEEEEB;
+	--table-border-color-dark: #535353;
+	--darkmode-text: #DFDFD5;
+	--table-title-left-margin: 1.45em; /* If the Table Title bar is dislocated please adjust here*/
+}
+
+[data-rem-container-tags~="table"] {
+    // Title Bar Adjustment
+    > .tree-node--parent {
+        margin-left: var(--table-title-left-margin);
+    }
+    // Remove Left TreeNode Line
+    .TreeNode.tree-node--children  {
+        border-width: 0 !important;
+    }
+    // Structure
+    > .TreeNode {
+        display: flex;
+
+        > .tree-node-container {
+            flex: 1 0 0;
+            overflow: hidden;
+            white-space: wrap;
+            // Line Color
+            border: 0.1em solid var(--table-header-background-color);
+            
+            > .TreeNode {
+                 width: 90% !important;
+
+                 > .tree-node-container {
+                    position: relative;
+                    left: -10px;
+                    margin-right: -35px;
+                    width: 90%;
+                 }
+            }
+            // Column Table Head
+            > div:first-child {
+                font-weight: 600;
+                background-color: var(--table-header-background-color);
+                text-align: center;
+            }
+            // Line Grid Adjustment
+            &:nth-child(n+2) {
+                margin-left: -1px;
+            }
+        }
+    }
+}
+// Dark Mode Compatibility
+    .dark-mode {
+        [data-rem-container-tags~="table"] {
+            > .TreeNode {
+                > .tree-node-container {
+                    // Line Color
+                    border: 0.1em solid var(--table-header-background-color-dark);
+
+                    // Column Table Head
+                    > div:first-child {
+                        color: var(--darkmode-text);;
+                        background-color: var(--table-header-background-color-dark);
+                    }
+                }
+            }       
+        }
+    }
+// Column Table Title
+	[data-rem-tags~="table"] {
+		background-color: var(--table-title-background-color);
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		padding-right: 5px;
+		border: 1px solid var(--table-header-background-color);
+	}
+    .dark-mode {
+        [data-rem-tags~="table"] {
+            color: var(--darkmode-text);
+            background-color: var(--table-title-background-color-dark);
+            border: 1px solid var(--table-header-background-color-dark);
+
+            .EditorContainer {
+                color: var(--darkmode-text);
+            }
+        }
+    }
+// Custom Table Cell Width Setting
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w90"] > .TreeNode > div {min-width: 90px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w120"] > .TreeNode > div {min-width: 120px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w150"] > .TreeNode > div {min-width: 150px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w180"] > .TreeNode > div {min-width: 180px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w210"] > .TreeNode > div {min-width: 210px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w240"] > .TreeNode > div {min-width: 240px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w270"] > .TreeNode > div {min-width: 270px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w300"] > .TreeNode > div {min-width: 300px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w330"] > .TreeNode > div {min-width: 330px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w360"] > .TreeNode > div {min-width: 360px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w390"] > .TreeNode > div {min-width: 390px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w420"] > .TreeNode > div {min-width: 420px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w450"] > .TreeNode > div {min-width: 450px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w480"] > .TreeNode > div {min-width: 480px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w510"] > .TreeNode > div {min-width: 510px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w540"] > .TreeNode > div {min-width: 540px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w570"] > .TreeNode > div {min-width: 570px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w600"] > .TreeNode > div {min-width: 600px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w630"] > .TreeNode > div {min-width: 630px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w660"] > .TreeNode > div {min-width: 660px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w690"] > .TreeNode > div {min-width: 690px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w720"] > .TreeNode > div {min-width: 720px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w750"] > .TreeNode > div {min-width: 750px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w780"] > .TreeNode > div {min-width: 780px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w810"] > .TreeNode > div {min-width: 810px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w840"] > .TreeNode > div {min-width: 840px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w870"] > .TreeNode > div {min-width: 870px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w900"] > .TreeNode > div {min-width: 900px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w930"] > .TreeNode > div {min-width: 930px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w960"] > .TreeNode > div {min-width: 960px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w990"] > .TreeNode > div {min-width: 990px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w1020"] > .TreeNode > div {min-width: 1020px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w1050"] > .TreeNode > div {min-width: 1050px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w1080"] > .TreeNode > div {min-width: 1080px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w1110"] > .TreeNode > div {min-width: 1110px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w1140"] > .TreeNode > div {min-width: 1140px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w1170"] > .TreeNode > div {min-width: 1170px;}
+	[data-rem-container-tags~="table"][data-rem-container-tags~="w1200"] > .TreeNode > div {min-width: 1200px;}
+	
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w90"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w120"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w150"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w180"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w210"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w240"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w270"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w300"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w330"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w360"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w390"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w420"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w450"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w480"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w510"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w540"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w570"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w600"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w630"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w660"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w690"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w720"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w750"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w780"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w810"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w840"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w870"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w900"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w930"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w960"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w990"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w1020"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w1050"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w1080"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w1110"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w1140"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w1170"],
+    [data-rem-container-tags~="table"][data-rem-container-tags~="w1120"] {
+        > .TreeNode {
+            > .tree-node-container {
+                > .TreeNode {
+                    > .tree-node-container {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+	[data-rem-container-tags~="w90"],
+    [data-rem-container-tags~="w120"],
+    [data-rem-container-tags~="w150"],
+    [data-rem-container-tags~="w180"],
+    [data-rem-container-tags~="w210"],
+    [data-rem-container-tags~="w240"],
+    [data-rem-container-tags~="w270"],
+    [data-rem-container-tags~="w300"],
+    [data-rem-container-tags~="w330"],
+    [data-rem-container-tags~="w360"],
+    [data-rem-container-tags~="w390"],
+    [data-rem-container-tags~="w420"],
+    [data-rem-container-tags~="w450"],
+    [data-rem-container-tags~="w480"],
+    [data-rem-container-tags~="w510"],
+    [data-rem-container-tags~="w540"],
+    [data-rem-container-tags~="w570"],
+    [data-rem-container-tags~="w600"],
+    [data-rem-container-tags~="w630"],
+    [data-rem-container-tags~="w660"],
+    [data-rem-container-tags~="w690"],
+    [data-rem-container-tags~="w720"],
+    [data-rem-container-tags~="w750"],
+    [data-rem-container-tags~="w780"],
+    [data-rem-container-tags~="w810"],
+    [data-rem-container-tags~="w840"],
+    [data-rem-container-tags~="w870"],
+    [data-rem-container-tags~="w900"],
+    [data-rem-container-tags~="w930"],
+    [data-rem-container-tags~="w960"],
+    [data-rem-container-tags~="w990"],
+    [data-rem-container-tags~="w1020"],
+    [data-rem-container-tags~="w1050"],
+    [data-rem-container-tags~="w1080"],
+    [data-rem-container-tags~="w1110"],
+    [data-rem-container-tags~="w1140"],
+    [data-rem-container-tags~="w1170"],
+    [data-rem-container-tags~="w1200"] {
+        overflow: auto;
+		white-space: pre;
+    }
