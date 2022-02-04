@@ -1,0 +1,74 @@
+// Divider
+	[data-rem-tags~="divider"] {
+		color: transparent;
+		padding-right: 15px;
+		height: 7px;
+		margin-right: 20px;
+		margin-left: 10px;
+
+        &::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            border-bottom: var(--line-color, 2px solid #EEEFEE);
+            margin-right: 20px;
+        }
+
+        &:focus-within {
+            background-color: #DCF3FF;
+            margin-left: 40px;
+            margin-right: -10px;
+            position: relative;
+            left: -15px;
+
+            &::before {
+                border-bottom: 2px solid var(--line-color) !important;
+            }
+        }
+
+        &:not(:focus-within) {
+            color: transparent;
+            position: relative;
+            padding: 0px 15px;
+
+            &::before {
+                content: " ";
+                display: block;
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                border-bottom: 2px solid var(--line-color) !important;
+            }
+        }
+	}
+// Divider Darkmode Compatibility
+    .dark-mode {
+        [data-rem-tags~="divider"] {
+            &:focus-within {
+                background-color: #576066;
+            }
+            &:not(:focus-within):before {
+                border-bottom: 2px solid var(--line-color-dark, #535353) !important;
+            } 
+        }
+    }
+// Hide
+    [data-rem-tags~="divider"] {
+        .RichTextViewer,
+        [data-slate-node="element"] {
+            visibility: hidden;
+        }
+
+        .rem-button__container,
+        .rem-container--focused, 
+        .rem-bullet__icon,
+        .rem-bullet__container,
+        .rem-checkbox,
+        .rem:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar, 
+        // Hide Merge Sign
+        .relative.flex.items-center.float-end,       
+        // Hide Placeholder "Type / for Commands"
+        .rich-text-editor-placeholder {
+                display: none;
+        }
+    }
