@@ -152,21 +152,23 @@
 	}
 // Popup
 	.popup-menu {
-	// Image Thumbnail Tag */
-		> div {
-			.RichTextViewer {
-				.inline-block,
-				.inline-block.align-text-top.group,
-				.image-node__container,
-				.image-node,
-				.thumbnail--with-width {
-					height: 1em !important;
-					width: auto !important;
-					min-width: auto !important;
-					margin-right: 2px;
+		// Static Popup
+		.popup-menu__item--static {
+			span.RichTextViewer {
+				.image-node__container {
+					@include thumbnail-set;
+					
+					.image-node {
+						@include thumbnail-set;
+
+						.thumbnail--with-width {
+							@include thumbnail-set;
+						}
+					}
 				}
 			}
 		}
+		// Hover Preview
 		#document-hover-preview__popup {
 			> span {
 				.RichTextViewer {
@@ -175,14 +177,12 @@
 					.image-node__container,
 					.image-node,
 					.thumbnail--with-width {
-						height: 1em !important;
-						width: auto !important;
-						min-width: auto !important;
-						margin-right: 2px;
+						@include thumbnail-set;
 					}
 				}
 			}
 		}
+		// Image Thumbnail Tag
 		[data-rem-tags*="tn"] {
 			#document-hover-preview {
 				.RichTextViewer {
@@ -195,7 +195,7 @@
 				}
 			}
 		}
-	// Tag bar
+		// Tag bar
 		.rem.isSearchResult {
 			.hierarchy-editor__tag-bar {
 				.inline-block,
@@ -204,7 +204,7 @@
 				}
 			}
 		}
-	// Reference
+		// Reference
 		.EditorContainer.EditorContainerInline {
 			.thumbnail--with-width {
 				@include thumbnail-set;
@@ -218,21 +218,21 @@
 			}
 		}
 	}
-	// Merge Confirm Window
-		#Popup {
-			#PopupContent {
-				.p-4 {
-					.RichTextViewer {
-						.image-node__container,
-						.image-node,
-						.thumbnail--with-width {
-							@include thumbnail-set;
-						}
+// Popup - Merge Confirm Window
+	#Popup {
+		#PopupContent {
+			.p-4 {
+				.RichTextViewer {
+					.image-node__container,
+					.image-node,
+					.thumbnail--with-width {
+						@include thumbnail-set;
 					}
 				}
 			}
 		}
-	// Delete Confirm Popup
+	}
+// Popup - Delete Confirm Popup
 		#Popup {
 			#PopupContent {
 				#delete-confirm-popup {
@@ -352,7 +352,6 @@
 							.image-node,
 							.thumbnail--with-width {
 								position: relative;
-								top: -0.05em;
 							}
 						}
 					}

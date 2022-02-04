@@ -121,11 +121,19 @@
 	margin-right: 2px;
 }
 
-.popup-menu > div .RichTextViewer .inline-block,
-.popup-menu > div .RichTextViewer .inline-block.align-text-top.group,
-.popup-menu > div .RichTextViewer .image-node__container,
-.popup-menu > div .RichTextViewer .image-node,
-.popup-menu > div .RichTextViewer .thumbnail--with-width {
+.popup-menu .popup-menu__item--static span.RichTextViewer .image-node__container {
+	height: 1em !important;
+	width: auto !important;
+	min-width: auto !important;
+	margin-right: 2px;
+}
+.popup-menu .popup-menu__item--static span.RichTextViewer .image-node__container .image-node {
+	height: 1em !important;
+	width: auto !important;
+	min-width: auto !important;
+	margin-right: 2px;
+}
+.popup-menu .popup-menu__item--static span.RichTextViewer .image-node__container .image-node .thumbnail--with-width {
 	height: 1em !important;
 	width: auto !important;
 	min-width: auto !important;
@@ -308,5 +316,4 @@
 .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .image-node,
 .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .thumbnail--with-width {
 	position: relative;
-	top: -0.05em;
 }
