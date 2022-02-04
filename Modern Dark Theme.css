@@ -287,6 +287,32 @@
 	color: var(--darkmode-text);
 }
 
+.document-header-top-bar {
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	padding: 0.2rem 0.2rem 0 0.2rem;
+}
+.document-header-top-bar div.fadein-delayed > div {
+	flex-wrap: wrap;
+	overflow-wrap: normal;
+}
+.document-header-top-bar div.fadein-delayed .flex {
+	display: inline;
+}
+.document-header-top-bar div.fadein-delayed .flex > span {
+	vertical-align: middle;
+}
+.document-header-top-bar .flex-nowrap {
+	flex-wrap: wrap;
+}
+.document-header-top-bar div.justify-end .document__options-menu .icon-button .fill-current {
+	color: #2A2A36;
+}
+.document-header-top-bar .w-max[color="#292936"] {
+	color: unset;
+}
+
 .dark-mode .document-header-top-bar .parent-link {
 	color: var(--darkmode-text);
 	background-color: transparent;
@@ -437,41 +463,12 @@
 	filter: invert(1);
 }
 
-.document-header-top-bar {
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
-	height: fit-content;
-}
-.document-header-top-bar > div > div {
-	flex-wrap: wrap;
-	overflow-wrap: normal;
-}
-.document-header-top-bar .flex-nowrap {
-	flex-wrap: wrap;
-}
-.document-header-top-bar .flex {
-	display: inline-block;
-}
-.document-header-top-bar .w-max[color="#292936"] {
-	color: unset;
-}
-
 .work-in-progress-tag {
 	color: black;
 }
 
-.popup-menu .css-kbbFlF {
-	color: var(--darkmode-text);
-	background-color: unset;
-}
-
 .document--ltr {
 	padding: 0px 0px 0px 40px;
-}
-
-.float-end .my-2 {
-	margin-top: 0.4rem;
-	zoom: 0.85;
 }
 
 .dark-mode .plus-button,

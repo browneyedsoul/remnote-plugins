@@ -379,32 +379,75 @@
 				.text-icon {color: var(--darkmode-text);}
 			} 
 	}
-// Page Hierarchy Bar
-	.dark-mode {
+// Page Breadcrumbs
+	
 		.document-header-top-bar {
-			.parent-link {
-				color: var(--darkmode-text);
-				background-color: transparent;
-				border: 1px solid #7F8094;
-			}
-			.RichTextViewer {
-				.bold.highlight-color--red,
-				.bold.highlight-color--orange,
-				.bold.highlight-color--yellow,
-				.bold.highlight-color--green,
-				.bold.highlight-color--blue,
-				.bold.highlight-color--purple {
-					background-color: transparent;
+			height: fit-content;
+			padding: 0.2rem 0.2rem 0 0.2rem;
+
+			// Page Hierarchy
+			div.fadein-delayed {
+				> div {
+					flex-wrap: wrap;
+					overflow-wrap: normal;
 				}
-				.bold.highlight-color--red {color: var(--red-text-dark);}
-				.bold.highlight-color--orange {color: var(--orange-text-dark);}
-				.bold.highlight-color--yellow {color: var(--yellow-text-dark);}
-				.bold.highlight-color--green {color: var(--green-text-dark);}
-				.bold.highlight-color--blue {color: var(--blue-text-dark);}
-				.bold.highlight-color--purple {color: var(--purple-text-dark);}
+
+				.flex {
+					display: inline;
+
+					> span {
+						vertical-align: middle;
+					}
+				}
+				
 			}
+			// Multi Line Breadcrumbs
+			.flex-nowrap {
+				flex-wrap: wrap;
+			}
+			//  3-Dots
+			div.justify-end {
+				.document__options-menu {
+					.icon-button {
+						.fill-current {
+							color: #2A2A36;
+						}
+					}
+				}
+			}
+			// Merge Button
+				.w-max[color="#292936"] {
+					color: unset;
+				}
 		}
-	} 
+		// Scrollable
+			// .document-header-top-bar > div {overflow-x: auto;}
+	// Darkmode Compatibility
+		.dark-mode {
+			.document-header-top-bar {
+				.parent-link {
+					color: var(--darkmode-text);
+					background-color: transparent;
+					border: 1px solid #7F8094;
+				}
+				.RichTextViewer {
+					.bold.highlight-color--red,
+					.bold.highlight-color--orange,
+					.bold.highlight-color--yellow,
+					.bold.highlight-color--green,
+					.bold.highlight-color--blue,
+					.bold.highlight-color--purple {
+						background-color: transparent;
+					}
+					.bold.highlight-color--red {color: var(--red-text-dark);}
+					.bold.highlight-color--orange {color: var(--orange-text-dark);}
+					.bold.highlight-color--yellow {color: var(--yellow-text-dark);}
+					.bold.highlight-color--green {color: var(--green-text-dark);}
+					.bold.highlight-color--blue {color: var(--blue-text-dark);}
+					.bold.highlight-color--purple {color: var(--purple-text-dark);}
+				}
+			}
+		} 
 // RemNote Hierarchy Editor
 	.dark-mode {
 		// Page Padding
@@ -557,49 +600,19 @@
 					}
 				}
 		// Hierarchy Editor - Upper Right 3dots
-			.document__options-menu .fill-current {
-				filter: invert(1);
+			.document__options-menu {
+				.fill-current {
+					filter: invert(1);
+				}
 			}
 	}
-	// Page Breadcrumbs
-		// Multi Line Breadcrumbs
-			.document-header-top-bar {
-				height: fit-content;
-
-				> div > div {
-					flex-wrap: wrap;
-					overflow-wrap: normal;
-				}	
-				.flex-nowrap {
-					flex-wrap: wrap;
-				}
-				.flex {
-					display: inline-block;
-				}
-				// Merge Button
-					.w-max[color="#292936"] {
-						color: unset;
-					}
-			}
-		// Scrollable
-			// .document-header-top-bar > div {overflow-x: auto;}
 	// Tag Searching Text
 		.work-in-progress-tag {
 			color: black;
 		}
-	// Hyperlink right click option menu
-		.popup-menu .css-kbbFlF {
-			color: var(--darkmode-text);
-			background-color: unset;
-		}
 	// Hierarchy Editor - Left-side Hiearchy Editor Margin
 		.document--ltr {
 			padding: 0px 0px 0px 40px;
-		}
-	// Hierarchy Editor - Right Side Backlink Numbers
-		.float-end .my-2 {
-			margin-top: .4rem;
-			zoom: 0.85;
 		}
 // Rem-Bullet Container
 	.dark-mode {
