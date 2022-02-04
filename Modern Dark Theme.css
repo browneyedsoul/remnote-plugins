@@ -672,61 +672,61 @@
 	font-weight: 600;
 }
 [data-rem-tags~=color] .rem-text .bold.highlight-color--red {
-	color: var(--red-text);
+	color: var(--red-text) !important;
 }
 [data-rem-tags~=color] .rem-text .bold.highlight-color--orange {
-	color: var(--orange-text);
+	color: var(--orange-text) !important;
 }
 [data-rem-tags~=color] .rem-text .bold.highlight-color--yellow {
-	color: var(--yellow-text);
+	color: var(--yellow-text) !important;
 	text-shadow: 2px 2px 2px #FFFC00;
 }
 [data-rem-tags~=color] .rem-text .bold.highlight-color--green {
-	color: var(--green-text);
+	color: var(--green-text) !important;
 }
 [data-rem-tags~=color] .rem-text .bold.highlight-color--blue {
-	color: var(--blue-text);
+	color: var(--blue-text) !important;
 }
 [data-rem-tags~=color] .rem-text .bold.highlight-color--purple {
-	color: var(--purple-text);
+	color: var(--purple-text) !important;
 }
 
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--red {
-	color: var(--red-text-dark);
+	color: var(--red-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--orange {
-	color: var(--orange-text-dark);
+	color: var(--orange-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--yellow {
-	color: var(--yellow-text-dark);
+	color: var(--yellow-text-dark) !important;
 	text-shadow: unset;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--green {
-	color: var(--green-text-dark);
+	color: var(--green-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--blue {
-	color: var(--blue-text-dark);
+	color: var(--blue-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--purple {
-	color: var(--purple-text-dark);
+	color: var(--purple-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--red {
-	background-color: var(--red-text-dark);
+	background-color: var(--red-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--orange {
-	background-color: var(--orange-text-dark);
+	background-color: var(--orange-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--yellow {
-	background-color: var(--yellow-text-dark);
+	background-color: var(--yellow-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--green {
-	background-color: var(--green-text-dark);
+	background-color: var(--green-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--blue {
-	background-color: var(--blue-text-dark);
+	background-color: var(--blue-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--purple {
-	background-color: var(--purple-text-dark);
+	background-color: var(--purple-text-dark) !important;
 }
 
 .popup-menu [data-rem-tags~=color] .bold.highlight-color--yellow {
