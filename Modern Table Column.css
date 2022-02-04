@@ -20,6 +20,8 @@
 }
 [data-rem-container-tags~=table] > .TreeNode {
 	display: flex;
+	left: 0px !important;
+	margin-right: 0px !important;
 }
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container {
 	flex: 1 0 0;
@@ -34,7 +36,7 @@
 	position: relative;
 	left: -10px;
 	margin-right: -35px;
-	width: 90%;
+	width: 100%;
 }
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > div:first-child {
 	font-weight: 600;

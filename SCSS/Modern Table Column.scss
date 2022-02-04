@@ -23,11 +23,13 @@
     // Structure
     > .TreeNode {
         display: flex;
+        left: 0px !important;
+        margin-right: 0px !important;
 
         > .tree-node-container {
             flex: 1 0 0;
             overflow: hidden;
-            white-space: wrap;
+	        white-space: wrap;
             // Line Color
             border: 0.1em solid var(--table-header-background-color);
             
@@ -38,7 +40,7 @@
                     position: relative;
                     left: -10px;
                     margin-right: -35px;
-                    width: 90%;
+                    width: 100%;
                  }
             }
             // Column Table Head
