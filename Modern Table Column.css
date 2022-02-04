@@ -34,7 +34,6 @@
 }
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container {
 	flex: 1 0 0;
-	overflow: hidden;
 	white-space: wrap;
 	border: 0.1em solid var(--table-header-background-color);
 }
