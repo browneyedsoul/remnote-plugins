@@ -73,6 +73,14 @@
 		// Rem Block Selected Area
 			.hidden-selection {background-color: gray;}
 	}
+	// Document
+		#document {
+			width: calc(100% - 2 * var(--document-margin) - 30px);
+		}
+		// Hierarchy Editor - Left-side Hiearchy Editor Margin
+		.document--ltr {
+			padding: 0px 0px 0px 30px;
+		}
 	// Rem Block Selected Area
 		.hidden-selection {
 			background-color:#D8E2F1;
@@ -380,48 +388,47 @@
 			} 
 	}
 // Page Breadcrumbs
-	
-		.document-header-top-bar {
-			height: fit-content;
-			padding: 0.2rem 0.2rem 0 0.2rem;
+	.document-header-top-bar {
+		height: fit-content;
+		padding: 0.2rem 0.2rem 0 0.2rem;
 
-			// Page Hierarchy
-			div.fadein-delayed {
-				> div {
-					flex-wrap: wrap;
-					overflow-wrap: normal;
-				}
-
-				.flex {
-					display: inline;
-
-					> span {
-						vertical-align: middle;
-					}
-				}
-				
-			}
-			// Multi Line Breadcrumbs
-			.flex-nowrap {
+		// Page Hierarchy
+		div.fadein-delayed {
+			> div {
 				flex-wrap: wrap;
+				overflow-wrap: normal;
 			}
-			//  3-Dots
-			div.justify-end {
-				.document__options-menu {
-					.icon-button {
-						.fill-current {
-							color: #2A2A36;
-						}
+
+			.flex {
+				display: inline;
+
+				> span {
+					vertical-align: middle;
+				}
+			}
+			
+		}
+		// Multi Line Breadcrumbs
+		.flex-nowrap {
+			flex-wrap: wrap;
+		}
+		//  3-Dots
+		div.justify-end {
+			.document__options-menu {
+				.icon-button {
+					.fill-current {
+						color: #2A2A36;
 					}
 				}
 			}
-			// Merge Button
-				.w-max[color="#292936"] {
-					color: unset;
-				}
 		}
-		// Scrollable
-			// .document-header-top-bar > div {overflow-x: auto;}
+		// Merge Button
+			.w-max[color="#292936"] {
+				color: unset;
+			}
+	}
+	// Scrollable
+		// .document-header-top-bar > div {overflow-x: auto;}
 	// Darkmode Compatibility
 		.dark-mode {
 			.document-header-top-bar {
@@ -513,22 +520,6 @@
 				background-color: unset !important;
 			}
 		// Hierarchy Editor - Source & Tags & Tagbar & Backlinks
-			#DropToOpenAsDocument {
-				.RichTextViewer {
-					color: var(--darkmode-text) !important;
-				}
-			}
-			// Top Tag
-				#DocumentTopRow {
-					.rounded-md {
-						span[contenteditable="false"] {
-							> div {
-								color: var(--darkmode-text);
-								background-color: var(--darkmode-background-selected);
-							}
-						}
-					}		
-				}
 			// Tag Bar
 				.hierarchy-editor__tag-bar {
 					.hierarchy-editor__tag-bar__tag {
@@ -583,20 +574,36 @@
 						color: unset;
 					}
 				}
-				
 			// Backlinks
 				.backlink-counter.text-gray-70 {
 					color: var(--darkmode-contrast);
 					background-color: var(--darkmode-selected-darker);
 				}
 			// Source
-				[data-rem-tags~="source-list"] {
-					.RichTextViewer {
-						color: var(--darkmode-text);
-					}
-					[data-icon~="add"] {
-						color: var(--darkmode-text) !important;
-						fill: var(--darkmode-text) !important;
+				[data-document-tags*="source-list"] {
+					#DocumentTopRow {
+						#DropToOpenAsDocument {
+							[data-icon~="add"] {
+								color: var(--darkmode-text) !important;
+								fill: var(--darkmode-text) !important;
+							}
+							// Top Tag
+							.rounded-md {
+								.pr-1 {
+									&:hover {
+										background-color: var(--darkmode-background-selected-darker);
+									}
+								}
+								span[contenteditable~="false"] {
+									.text-gray-60 {
+										color: var(--darkmode-text);
+									}
+									&:hover {
+										background-color: var(--darkmode-background-selected-darker);
+									}
+								}
+							}
+						}
 					}
 				}
 		// Hierarchy Editor - Upper Right 3dots
@@ -609,10 +616,6 @@
 	// Tag Searching Text
 		.work-in-progress-tag {
 			color: black;
-		}
-	// Hierarchy Editor - Left-side Hiearchy Editor Margin
-		.document--ltr {
-			padding: 0px 0px 0px 40px;
 		}
 // Rem-Bullet Container
 	.dark-mode {
