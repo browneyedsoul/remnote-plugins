@@ -12,6 +12,15 @@
 	/* If the Table Title bar is dislocated please adjust here*/
 }
 
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .rem-text,
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .EditorContainer,
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .rich-text-editor,
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .RichTextViewer {
+	overflow-wrap: anywhere;
+	flex-grow: 1;
+	max-width: 100%;
+}
+
 [data-rem-container-tags~=table] > .tree-node--parent {
 	margin-left: var(--table-title-left-margin);
 }
@@ -28,6 +37,14 @@
 	overflow: hidden;
 	white-space: wrap;
 	border: 0.1em solid var(--table-header-background-color);
+}
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .rem-text,
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .EditorContainer,
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .rich-text-editor,
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .RichTextViewer {
+	overflow-wrap: anywhere;
+	flex-grow: 1;
+	max-width: 100%;
 }
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode {
 	width: 90% !important;

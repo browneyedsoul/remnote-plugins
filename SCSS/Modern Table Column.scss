@@ -10,7 +10,14 @@
 	--darkmode-text: #DFDFD5;
 	--table-title-left-margin: 1.45em; /* If the Table Title bar is dislocated please adjust here*/
 }
-
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .rem-text,
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .EditorContainer,
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .rich-text-editor,
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .RichTextViewer {
+	overflow-wrap: anywhere;
+	flex-grow: 1;
+	max-width: 100%;
+}
 [data-rem-container-tags~="table"] {
     // Title Bar Adjustment
     > .tree-node--parent {
@@ -32,6 +39,15 @@
 	        white-space: wrap;
             // Line Color
             border: 0.1em solid var(--table-header-background-color);
+            // Constant Width
+            .rem-text,
+            .EditorContainer,
+            .rich-text-editor,
+            .RichTextViewer {
+                overflow-wrap: anywhere;
+                flex-grow: 1;
+                max-width: 100%;
+            }
             
             > .TreeNode {
                  width: 90% !important;
