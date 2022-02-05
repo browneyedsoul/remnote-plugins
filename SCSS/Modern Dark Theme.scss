@@ -958,6 +958,12 @@
 						background-color: unset;
 					}
 				}
+		// Context Menu
+			.bg-white {
+				.bg-gray-5 {
+					background-color: unset;
+				}	
+			}
 		// Selected Item
 			.bg-selected-bg,
 			[icon*="[Object]"]:hover,

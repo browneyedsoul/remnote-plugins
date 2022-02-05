@@ -848,6 +848,9 @@
 .popup-menu.dark-mode .p-2 .text-gray-30 {
 	background-color: unset;
 }
+.popup-menu.dark-mode .bg-white .bg-gray-5 {
+	background-color: unset;
+}
 .popup-menu.dark-mode .bg-selected-bg,
 .popup-menu.dark-mode [icon*="[Object]"]:hover,
 .popup-menu.dark-mode .bg-selected-bg:hover {
