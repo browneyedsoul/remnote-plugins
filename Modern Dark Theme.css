@@ -1496,14 +1496,12 @@
 	color: var(--darkmode-contrast) !important;
 	background-color: var(--darkmode-background-selected-darker);
 }
+.dark-mode .hover\:bg-gray-5:hover:not(#search-result__result) {
+	background-color: var(--darkmode-background-selected-darker);
+}
 
 #DocumentTopRow .text-gray-30:hover {
 	background-color: var(--lightmode-background-selected);
-}
-
-.hover\:bg-gray-5:hover:not(#search-result__result) {
-	color: unset;
-	background-color: #D1D1D1;
 }
 
 .dark-mode #RemPage {
