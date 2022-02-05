@@ -1512,23 +1512,24 @@
 	color: var(--darkmode-text);
 }
 
-.dark-mode #HelpPageContainer #HelpPage {
-	filter: invert(1);
-}
-.dark-mode #document-sidebar_top .m-3 > div {
+#document-sidebar #document-sidebar_top .m-3 > div {
 	color: var(--darkmode-contrast) !important;
 }
-.dark-mode #document-sidebar_top .css-cPmPhh {
+#document-sidebar #document-sidebar_top .css-cPmPhh {
 	color: var(--darkmode-text);
 }
-.dark-mode #document-sidebar_top .help-knowledge-base-search .rich-text-editor {
+#document-sidebar #document-sidebar_top .help-knowledge-base-search .rich-text-editor {
 	background-color: unset;
 }
-.dark-mode [data-icon=backward] {
+#document-sidebar .w-full > a {
 	color: var(--darkmode-contrast) !important;
 }
-.dark-mode #document-sidebar .w-full > a {
+#document-sidebar [data-icon=backward] {
 	color: var(--darkmode-contrast) !important;
+}
+
+.dark-mode #HelpPageContainer #HelpPage {
+	filter: invert(1);
 }
 .dark-mode #APIKeys a {
 	color: var(--link-node-color-dark);

@@ -1776,69 +1776,69 @@
 		}
 	}
 // Help & Tutorial Page
-	.dark-mode {
-		// RemNote Help Page Container
-			#HelpPageContainer #HelpPage {
-				filter: invert(1);
-			}
+	#document-sidebar {
 		// RemNote Help Page Sidebar Top
-			#document-sidebar_top {
-				.m-3 {
-					> div {
-						color: var(--darkmode-contrast) !important;
-					}
-				}
-				.css-cPmPhh {
-					color: var(--darkmode-text);
-				}
-				.help-knowledge-base-search {
-					.rich-text-editor {
-						background-color: unset;
-					}
+		#document-sidebar_top {
+			.m-3 {
+				> div {
+					color: var(--darkmode-contrast) !important;
 				}
 			}
-		// Backward icon
-			[data-icon="backward"] {
+			.css-cPmPhh {
+				color: var(--darkmode-text);
+			}
+			.help-knowledge-base-search {
+				.rich-text-editor {
+					background-color: unset;
+				}
+			}
+		}
+		// RemNote Help Page Sidebar Bottom
+		.w-full {
+			> a {
 				color: var(--darkmode-contrast) !important;
 			}
-		// RemNote Help Page Sidebar Bottom
-			#document-sidebar {
-				.w-full {
-					> a {
-						color: var(--darkmode-contrast) !important;
-					}
-				}
-			}
+		}
+		// Backward icon
+		[data-icon="backward"] {
+			color: var(--darkmode-contrast) !important;
+		}
+	}
+	.dark-mode {
+		// RemNote Help Page Container
+		#HelpPageContainer #HelpPage {
+			filter: invert(1);
+		}
 		// API
-			#APIKeys {
-				a {
-					color: var(--link-node-color-dark);
-				}
-				.ApiCommand {
-					.ui.table {
-						color: var(--darkmode-text);
-						background-color: var(--darkmode-background);
-
-						thead {
-							tr {
-								
-								th {
-									color: var(--darkmode-text-bold);
-								}
-							}
-							
-						}
-						// tbody {
-						// 	tr {
-								
-						// 	}
-						// }
-					}
-				}
-				#ApiVoid {
+		#APIKeys {
+			a {
+				color: var(--link-node-color-dark);
+			}
+			.ApiCommand {
+				.ui.table {
+					color: var(--darkmode-text);
 					background-color: var(--darkmode-background);
+
+					thead {
+						tr {
+							
+							th {
+								color: var(--darkmode-text-bold);
+							}
+						}
+						
+					}
+					// tbody {
+					// 	tr {
+							
+					// 	}
+					// }
 				}
 			}
+			#ApiVoid {
+				background-color: var(--darkmode-background);
+			}
+		}
 	}
 	// API
 		#APIKeys {
