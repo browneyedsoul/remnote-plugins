@@ -1168,6 +1168,9 @@
 .dark-mode [data-rem-tags~=highlight] .rem-text .RichTextViewer {
 	color: var(--reference-text);
 }
+.dark-mode [data-rem-tags~=highlight] .rem-text .RichTextViewer .rem-reference-container .rem-reference .RichTextViewer {
+	color: var(--reference-text-dark);
+}
 .dark-mode .rem-reference.button.rem-reference-link {
 	background-color: var(--reference-background-dark);
 }

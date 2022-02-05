@@ -1381,6 +1381,14 @@
 				.rem-text {
 					.RichTextViewer {
 						color: var(--reference-text);
+
+						.rem-reference-container {
+							.rem-reference {
+								.RichTextViewer {
+									color: var(--reference-text-dark);
+								}
+							}
+						}
 					}
 				}
 			}
