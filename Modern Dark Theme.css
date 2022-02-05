@@ -20,6 +20,7 @@
 	--reference-text-dark: #dfdfd5;
 	--reference-background: #ececec;
 	--reference-background-dark: #252525;
+	--popup-background-hover: #D1D1D1;
 	--line-color: #dddddd;
 	--line-color-dark: #535353;
 	--link-node-color-dark: #94d2ff;
@@ -914,7 +915,7 @@
 
 [data-search-result~=search-result-panel] .bg-gray-5 {
 	color: black;
-	background-color: #D1D1D1;
+	background-color: var(--popup-background-hover);
 }
 
 .react-datepicker.search-results__date-picker {
@@ -1484,7 +1485,7 @@
 }
 .dark-mode .z-30 [data-search-result=search-result-item].bg-gray-5 {
 	color: black;
-	background-color: #D1D1D1;
+	background-color: var(--popup-background-hover);
 }
 
 .dark-mode #DocumentTopRow .text-gray-30 {
@@ -1501,6 +1502,10 @@
 
 #DocumentTopRow .text-gray-30:hover {
 	background-color: var(--lightmode-background-selected);
+}
+
+.popup-menu.dark-mode .hierarchy-editor__hidden-children .hover\:bg-gray-5:hover:not(#search-result__result) {
+	background-color: var(--popup-background-hover);
 }
 
 .dark-mode #RemPage {
