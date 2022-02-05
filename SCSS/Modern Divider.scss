@@ -22,7 +22,7 @@
             left: -15px;
 
             &::before {
-                border-bottom: 2px solid var(--line-color) !important;
+                border-bottom: 2px solid var(--line-color);
             }
         }
 
@@ -37,7 +37,7 @@
                 position: absolute;
                 width: 100%;
                 top: 50%;
-                border-bottom: 2px solid var(--line-color) !important;
+                border-bottom: 2px solid var(--line-color);
             }
         }
 	}
@@ -48,7 +48,7 @@
                 background-color: #576066;
             }
             &:not(:focus-within):before {
-                border-bottom: 2px solid var(--line-color-dark, #535353) !important;
+                border-bottom: 2px solid var(--line-color-dark, #535353);
             } 
         }
     }

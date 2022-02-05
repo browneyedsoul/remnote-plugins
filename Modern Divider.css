@@ -20,7 +20,7 @@
 	left: -15px;
 }
 [data-rem-tags~=divider]:focus-within::before {
-	border-bottom: 2px solid var(--line-color) !important;
+	border-bottom: 2px solid var(--line-color);
 }
 [data-rem-tags~=divider]:not(:focus-within) {
 	color: transparent;
@@ -33,14 +33,14 @@
 	position: absolute;
 	width: 100%;
 	top: 50%;
-	border-bottom: 2px solid var(--line-color) !important;
+	border-bottom: 2px solid var(--line-color);
 }
 
 .dark-mode [data-rem-tags~=divider]:focus-within {
 	background-color: #576066;
 }
 .dark-mode [data-rem-tags~=divider]:not(:focus-within):before {
-	border-bottom: 2px solid var(--line-color-dark, #535353) !important;
+	border-bottom: 2px solid var(--line-color-dark, #535353);
 }
 
 [data-rem-tags~=divider] .RichTextViewer,
