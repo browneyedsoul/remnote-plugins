@@ -605,6 +605,13 @@
 							}
 						}
 					}
+					.rem-container--focused {
+						.inline-flex {
+							.text-gray-60 {
+								color: var(--darkmode-text);
+							}
+						}
+					}
 				}
 		// Hierarchy Editor - Upper Right 3dots
 			.document__options-menu {
@@ -1106,7 +1113,7 @@
 			}
 		}
 	// Alignment
-		.rem-header--1 .rem-checkbox {margin-top: 12px;}
+		.rem-header--1 .rem-checkbox {margin-top: 10px;}
 		.rem-header--2 .rem-checkbox {margin-top: 8px;}
 		.rem-header--3 .rem-checkbox {margin-top: 6px;}
 		
@@ -1349,22 +1356,6 @@
 			border-radius: 4px;
 		}
 	}	
-	// Hierarchy Editor - Reference Style
-		.dark-mode {
-			.rem-reference {
-				.RichTextViewer {
-					color: var(--reference-text-dark);
-					background-color: #202020;
-				}
-			}
-			[data-rem-tags~=highlight] {
-				.rem-text {
-					.RichTextViewer {
-						color: var(--reference-text);
-					}
-				}
-			}
-		}
 	// Hover Effect
 		.dark-mode {
 			.rem-reference.show-ui-hover\:bg-blue-5:hover {
@@ -1379,12 +1370,21 @@
 		}
 	// Reference Style
 		.dark-mode {
+			.rem-reference {
+				.RichTextViewer {
+					color: var(--reference-text-dark);
+					background-color: #202020;
+				}
+			}
+			[data-rem-tags~=highlight] {
+				.rem-text {
+					.RichTextViewer {
+						color: var(--reference-text);
+					}
+				}
+			}
 			.rem-reference.button.rem-reference-link {
 				background-color: var(--reference-background-dark);
-
-				.RichTextViewer {
-					color: var();
-				}
 				// Reference Partial Hiding using inlinequote
 				.quote {
 					display: none;
@@ -1392,7 +1392,7 @@
 			}
 			.rem-reference.rem-reference--focused {
 				.RichTextViewer {
-					color: var(--reference-text);
+					color: var(--darkmode-contrast);
 				}
 			}
 			.rem-reference-container.quote {

@@ -466,6 +466,9 @@
 .dark-mode [data-document-tags*=source-list] #DocumentTopRow #DropToOpenAsDocument .rounded-md span[contenteditable~=false]:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
+.dark-mode [data-document-tags*=source-list] .rem-container--focused .inline-flex .text-gray-60 {
+	color: var(--darkmode-text);
+}
 .dark-mode .document__options-menu .fill-current {
 	filter: invert(1);
 }
@@ -959,7 +962,7 @@
 }
 
 .rem-header--1 .rem-checkbox {
-	margin-top: 12px;
+	margin-top: 10px;
 }
 
 .rem-header--2 .rem-checkbox {
@@ -1150,14 +1153,6 @@
 	border-radius: 4px;
 }
 
-.dark-mode .rem-reference .RichTextViewer {
-	color: var(--reference-text-dark);
-	background-color: #202020;
-}
-.dark-mode [data-rem-tags~=highlight] .rem-text .RichTextViewer {
-	color: var(--reference-text);
-}
-
 .dark-mode .rem-reference.show-ui-hover\:bg-blue-5:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
@@ -1165,17 +1160,21 @@
 	background-color: unset;
 }
 
+.dark-mode .rem-reference .RichTextViewer {
+	color: var(--reference-text-dark);
+	background-color: #202020;
+}
+.dark-mode [data-rem-tags~=highlight] .rem-text .RichTextViewer {
+	color: var(--reference-text);
+}
 .dark-mode .rem-reference.button.rem-reference-link {
 	background-color: var(--reference-background-dark);
-}
-.dark-mode .rem-reference.button.rem-reference-link .RichTextViewer {
-	color: var();
 }
 .dark-mode .rem-reference.button.rem-reference-link .quote {
 	display: none;
 }
 .dark-mode .rem-reference.rem-reference--focused .RichTextViewer {
-	color: var(--reference-text);
+	color: var(--darkmode-contrast);
 }
 .dark-mode .rem-reference-container.quote .RichTextViewer {
 	color: var(--quote-text-reference-dark);
