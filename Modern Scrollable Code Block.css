@@ -200,6 +200,7 @@
 	font-family: Helvetica;
 	font-size: 13px;
 	font-weight: 100;
+	opacity: 0.3;
 }
 
 #code-node::before {
