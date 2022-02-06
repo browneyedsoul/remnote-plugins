@@ -1493,7 +1493,7 @@
 		}
 	// Sidebar Collapsed
 		.document-sidebar--collapsed--vertical {
-			background-color: #000;
+			background-color: var(--darkmode-background-sidebar);
 			width: 25px;
 
 			> div {
