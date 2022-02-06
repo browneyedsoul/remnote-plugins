@@ -1496,8 +1496,13 @@
 			background-color: #000;
 			width: 25px;
 
-			div {
-				left: -6px;
+			> div {
+				> div {
+					> div {
+						position: relative;
+						left: -6px;
+					}
+				}
 			}
 		}
 
