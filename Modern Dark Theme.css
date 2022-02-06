@@ -767,7 +767,6 @@
 	filter: invert(1);
 }
 
-/* Portal Breadcrumbs */
 #hierarchy-editor .node-top-level-in-portal-container .node-top-level-in-portal {
 	background-color: var(--darkmode-background);
 	border: 1px solid var(--darkmode-contrast);
@@ -775,6 +774,24 @@
 
 .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 	background-color: var(--darkmode-background-selected-darker) !important;
+}
+
+.dark-mode .tree-node--parent .portal-rem--embedded-search .embeddedSearch {
+	background-color: unset;
+	border: 1px solid var(--line-color);
+}
+.dark-mode .tree-node--parent #show-embedded-search-button {
+	color: var(--darkmode-text);
+	filter: invert(0);
+}
+.dark-mode .tree-node--parent #show-embedded-search-button i.icon {
+	color: var(--darkmode-text);
+}
+.dark-mode .portal-tree-node-box [data-rem-tags~=highlight] .rem-text .icon--document {
+	color: var(--darkmode-text) !important;
+}
+.dark-mode .portal-tree-node-box [data-rem-tags~=highlight] .rem-text .RichTextViewer {
+	color: var(--darkmode-text);
 }
 
 .popup-menu .max-h-\[40vh\] {

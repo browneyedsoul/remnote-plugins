@@ -845,7 +845,7 @@
 		filter: invert(1);
 	}
 // Portal
-	/* Portal Breadcrumbs */
+	// Portal Breadcrumbs
 		#hierarchy-editor {
 			.node-top-level-in-portal-container {
 				.node-top-level-in-portal {
@@ -857,6 +857,43 @@
 		.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
 			&:hover {
 				background-color: var(--darkmode-background-selected-darker) !important;
+			}
+		}
+	// Search Portal TreeNode Alignement
+		// #hierarchy-editor {
+		// 	.portal-tree-node-box {
+		// 		margin-left: 10px !important;
+		// 	}
+		// }
+	// Darkmode Support
+		.dark-mode {
+			.tree-node--parent {
+				.portal-rem--embedded-search {
+					.embeddedSearch {
+						background-color: unset;
+						border: 1px solid var(--line-color);
+					}
+				}
+				#show-embedded-search-button {
+					color: var(--darkmode-text);
+					filter: invert(0);
+
+					i.icon {
+						color: var(--darkmode-text);
+					}
+				}
+			}
+			.portal-tree-node-box {
+				[data-rem-tags~=highlight] {
+					.rem-text {
+						.icon--document {
+							color: var(--darkmode-text) !important;
+						}
+						.RichTextViewer {
+							color: var(--darkmode-text);
+						}
+					}
+				}
 			}
 		}
 // Popup
