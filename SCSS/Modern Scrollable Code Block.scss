@@ -117,17 +117,6 @@
                     border-radius:      var(--code-node-border-radius, 7px) 0 0;
                     width:              calc(var(--line-number-width, 45px) - 7px);
                 }
-            // Language Converter
-                #code-node__change-language-dropdown {
-                    opacity: 40%;
-                
-                    &:hover {
-                        position: relative;
-                        opacity: 70%;
-                        padding-right: 5px;
-                        border-radius: 5px;
-                    }
-                }
             // Codeblock Inline Caption
                 + span.quote, 
                 + div span.quote {
@@ -139,6 +128,17 @@
                     left: -10px;
                 }
         }
+// Language Converter
+    #code-node__change-language-dropdown {
+        opacity: 40%;
+    
+        &:hover {
+            position: relative;
+            opacity: 70%;
+            padding-right: 5px;
+            border-radius: 5px;
+        }
+    }
 // Darkmode Compatibility
     .dark-mode {
         #code-node {

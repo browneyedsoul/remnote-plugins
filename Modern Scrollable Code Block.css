@@ -112,15 +112,6 @@
 	border-radius: var(--code-node-border-radius, 7px) 0 0;
 	width: calc(var(--line-number-width, 45px) - 7px);
 }
-#code-node #code-node__change-language-dropdown {
-	opacity: 40%;
-}
-#code-node #code-node__change-language-dropdown:hover {
-	position: relative;
-	opacity: 70%;
-	padding-right: 5px;
-	border-radius: 5px;
-}
 #code-node + span.quote,
 #code-node + div span.quote {
 	background-color: unset !important;
@@ -129,6 +120,16 @@
 	position: relative;
 	top: -4px;
 	left: -10px;
+}
+
+#code-node__change-language-dropdown {
+	opacity: 40%;
+}
+#code-node__change-language-dropdown:hover {
+	position: relative;
+	opacity: 70%;
+	padding-right: 5px;
+	border-radius: 5px;
 }
 
 .dark-mode #code-node {
