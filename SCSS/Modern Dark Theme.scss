@@ -394,35 +394,35 @@
 		padding: 0.2rem 0.2rem 0 0.2rem;
 
 		// Page Hierarchy
-		div.fadein-delayed {
-			> div {
-				flex-wrap: wrap;
-				overflow-wrap: normal;
-			}
-
-			.flex {
-				display: inline;
-
-				> span {
-					vertical-align: middle;
+			div.fadein-delayed {
+				> div {
+					flex-wrap: wrap;
+					overflow-wrap: normal;
 				}
+
+				.flex {
+					display: inline;
+
+					> span {
+						vertical-align: middle;
+					}
+				}
+				
 			}
-			
-		}
 		// Multi Line Breadcrumbs
-		.flex-nowrap {
-			flex-wrap: wrap;
-		}
+			.flex-nowrap {
+				flex-wrap: wrap;
+			}
 		//  3-Dots
-		div.justify-end {
-			.document__options-menu {
-				.icon-button {
-					.fill-current {
-						color: #2A2A36;
+			div.justify-end {
+				.document__options-menu {
+					.icon-button {
+						.fill-current {
+							color: #2A2A36;
+						}
 					}
 				}
 			}
-		}
 		// Merge Button
 			.w-max[color="#292936"] {
 				color: unset;
@@ -456,175 +456,209 @@
 				}
 			}
 		} 
-// RemNote Hierarchy Editor
-	.dark-mode {
-		// Page Padding
-			.paddingPage {
-				color: var(--darkmode-text);
-				background-color: var(--darkmode-background)
-			}
-		// Mosaic Windowed panes
-			.mosaic.mosaic-blueprint-theme {
-				.mosaic-preview,
-				.mosaic-window {
-					.mosaic-window-toolbar.draggable {
-						background-color: var(--darkmode-background-sidebar);
-
-						&:hover {
-							background-color: var(--darkmode-background-sidebar);
-						}
-					}
-				}
-			}
-		// Hierarchy Editor - General Background
-			.document-table,
-			.tile__document,
-			.multiple-windows__document,
-			#multiple-windows__document {
-				background-color: var(--darkmode-background);
-			}
-		// General Text
-			.rem-text,
-			.rem-text.rem-header--1,
-			.rem-text.rem-header--2,
-			.rem-text.rem-header--3 {
-				color: var(--darkmode-text);
-			}
-		// Bold Text
-			.rem-text {
-				.bold:not(.rem-header--1 .bold):not(.rem-header--2 .bold):not(.rem-header--3 .bold):not([data-rem-tags~="highlight"] .bold):not(.bold.highlight-color--red):not(.bold.highlight-color--orange):not(.bold.highlight-color--yellow):not(.bold.highlight-color--green):not(.bold.highlight-color--blue):not(.bold.highlight-color--purple) {
-					color: var(--darkmode-text-bold);
-				}
-			}
-		// Hierarchy Editor - LinkNode, Hyperlink
-			.LinkNode,
-			.underline.text-blue-60.cursor-pointer  {
-				color: var(--link-node-color-dark) !important;
-				background-color: var(--darkmode-background-selected-darker);
-				border-radius: 3px;
-				padding: 0 2px 1px 2px;
-			}
-		// Hierarchy Editor - TreeNode
-			.TreeNode {
-				border-width: 1.5px !important;
-				border-left-color: var(--line-color-dark) !important;
-			}
-		// Hierarchy Editor - quote
-			.quote {
-				color: var(--quote-text-dark) !important;
-				background-color: var(--quote-background-dark) !important;
-			}
-		// Hierarchy Editor - Katex
-			.katex,
-			.katex-display,
-			.latex-node--focused:not(.latex-node--block) .katex {
-				background-color: unset !important;
-			}
-		// Hierarchy Editor - Source & Tags & Tagbar & Backlinks
-			// Tag Bar
-				.hierarchy-editor__tag-bar {
-					.hierarchy-editor__tag-bar__tag {
-						color: var(--darkmode-text);
-						background-color: var(--darkmode-background-selected-darker);
-					}
-
-					.hierarchy-editor__tag-bar__tag.highlight-color--red {
-						color: #000;
-						background-color: var(--highlight-color--red-dark);
-						.hierarchy-editor__tag-bar__tag__delete {
-							color: unset;
-						}
-					}
-					.hierarchy-editor__tag-bar__tag.highlight-color--orange {
-						color: #000;
-						background-color: var(--highlight-color--orange-dark);
-						.hierarchy-editor__tag-bar__tag__delete {
-							color: unset;
-						}
-					}
-					.hierarchy-editor__tag-bar__tag.highlight-color--yellow {
-						color: #000;
-						background-color: var(--highlight-color--yellow-dark);
-						.hierarchy-editor__tag-bar__tag__delete {
-							color: unset;
-						}
-					}
-					.hierarchy-editor__tag-bar__tag.highlight-color--green {
-						color: #000;
-						background-color: var(--highlight-color--green-dark);
-						.hierarchy-editor__tag-bar__tag__delete {
-							color: unset;
-						}
-					}
-					.hierarchy-editor__tag-bar__tag.highlight-color--blue {
-						color: #000;
-						background-color: var(--highlight-color--blue-dark);
-						.hierarchy-editor__tag-bar__tag__delete {
-							color: unset;
-						}
-					}
-					.hierarchy-editor__tag-bar__tag.highlight-color--purple {
-						color: #000;
-						background-color: var(--highlight-color--purple);
-						.hierarchy-editor__tag-bar__tag__delete {
-							color: unset;
-						}
-					}
-					
-					.hierarchy-editor__tag-bar__tag__delete {
-						color: unset;
-					}
-				}
-			// Backlinks
-				.backlink-counter.text-gray-70 {
-					color: var(--darkmode-contrast);
-					background-color: var(--darkmode-selected-darker);
-				}
-			// Source
-				[data-document-tags*="source-list"] {
-					#DocumentTopRow {
-						#DropToOpenAsDocument {
-							[data-icon~="add"] {
-								color: var(--darkmode-text) !important;
-								fill: var(--darkmode-text) !important;
-							}
-							// Top Tag
-							.rounded-md {
-								.pr-1 {
-									&:hover {
-										background-color: var(--darkmode-background-selected-darker);
-									}
-								}
-								span[contenteditable~="false"] {
-									.text-gray-60 {
-										color: var(--darkmode-text);
-									}
-									&:hover {
-										background-color: var(--darkmode-background-selected-darker);
-									}
-								}
-							}
-						}
-					}
-				}
-				.rem-container--focused {
-					.inline-flex {
-						.text-gray-60 {
-							color: var(--darkmode-text);
-						}
-					}
-				}
-		// Hierarchy Editor - Upper Right 3dots
-			.document__options-menu {
-				.fill-current {
-					filter: invert(1);
-				}
-			}
-	}
-	// Tag Searching Text
-		.work-in-progress-tag {
-			color: black;
+// Header
+	#hierarchy-editor {
+		.rem-text.rem-header--1 {
+			font-size: var(--font-size-header-1);
 		}
+		.rem-text.rem-header--2 {
+			font-size: var(--font-size-header-2);
+		}
+		.rem-text.rem-header--3 {
+			font-size: var(--font-size-header-3);
+		}
+	}
+// Page Padding
+	.dark-mode {
+		.paddingPage {
+			color: var(--darkmode-text);
+			background-color: var(--darkmode-background)
+		}
+	}
+// Mosaic Windowed panes
+	.dark-mode {
+		.mosaic.mosaic-blueprint-theme {
+			.mosaic-preview,
+			.mosaic-window {
+				.mosaic-window-toolbar.draggable {
+					background-color: var(--darkmode-background-sidebar);
+
+					&:hover {
+						background-color: var(--darkmode-background-sidebar);
+					}
+				}
+			}
+		}
+	}
+// Hierarchy Editor - General Background
+	.dark-mode {
+		.document-table,
+		.tile__document,
+		.multiple-windows__document,
+		#multiple-windows__document {
+			background-color: var(--darkmode-background);
+		}
+	}
+// General Text
+	.dark-mode {
+		.rem-text,
+		.rem-text.rem-header--1,
+		.rem-text.rem-header--2,
+		.rem-text.rem-header--3 {
+			color: var(--darkmode-text);
+		}
+	}
+// Bold Text
+	.dark-mode {
+		.rem-text {
+			.bold:not(.rem-header--1 .bold):not(.rem-header--2 .bold):not(.rem-header--3 .bold):not([data-rem-tags~="highlight"] .bold):not(.bold.highlight-color--red):not(.bold.highlight-color--orange):not(.bold.highlight-color--yellow):not(.bold.highlight-color--green):not(.bold.highlight-color--blue):not(.bold.highlight-color--purple) {
+				color: var(--darkmode-text-bold);
+			}
+		}
+	}
+// Hierarchy Editor - LinkNode, Hyperlink
+	.dark-mode {
+		.LinkNode,
+		.underline.text-blue-60.cursor-pointer  {
+			color: var(--link-node-color-dark) !important;
+			background-color: var(--darkmode-background-selected-darker);
+			border-radius: 3px;
+			padding: 0 2px 1px 2px;
+		}
+	}
+// TreeNode
+	.dark-mode {
+		.TreeNode {
+			border-width: 1.5px !important;
+			border-left-color: var(--line-color-dark) !important;
+		}
+	}
+// quote
+	.dark-mode {
+		.quote {
+			color: var(--quote-text-dark) !important;
+			background-color: var(--quote-background-dark) !important;
+		}
+	}
+// Katex
+	.dark-mode {
+		.katex,
+		.katex-display,
+		.latex-node--focused:not(.latex-node--block) .katex {
+			background-color: unset !important;
+		}
+	}
+// Source
+	.dark-mode {
+		[data-document-tags*="source-list"] {
+			#DocumentTopRow {
+				#DropToOpenAsDocument {
+					[data-icon~="add"] {
+						color: var(--darkmode-text) !important;
+						fill: var(--darkmode-text) !important;
+					}
+					// Top Tag
+					.rounded-md {
+						.pr-1 {
+							&:hover {
+								background-color: var(--darkmode-background-selected-darker);
+							}
+						}
+						span[contenteditable~="false"] {
+							.text-gray-60 {
+								color: var(--darkmode-text);
+							}
+							&:hover {
+								background-color: var(--darkmode-background-selected-darker);
+							}
+						}
+					}
+				}
+			}
+		}
+		.rem-container--focused {
+			.inline-flex {
+				.text-gray-60 {
+					color: var(--darkmode-text);
+				}
+			}
+		}
+	}
+// Tag Searching Text
+	.work-in-progress-tag {
+		color: black;
+	}
+// Backlinks
+	.dark-mode {
+		.backlink-counter.text-gray-70 {
+			color: var(--darkmode-contrast);
+			background-color: var(--darkmode-selected-darker);
+		}
+	}
+// Tag Bar
+	.dark-mode {
+		.hierarchy-editor__tag-bar {
+			.hierarchy-editor__tag-bar__tag {
+				color: var(--darkmode-text);
+				background-color: var(--darkmode-background-selected-darker);
+			}
+
+			.hierarchy-editor__tag-bar__tag.highlight-color--red {
+				color: #000;
+				background-color: var(--highlight-color--red-dark);
+				.hierarchy-editor__tag-bar__tag__delete {
+					color: unset;
+				}
+			}
+			.hierarchy-editor__tag-bar__tag.highlight-color--orange {
+				color: #000;
+				background-color: var(--highlight-color--orange-dark);
+				.hierarchy-editor__tag-bar__tag__delete {
+					color: unset;
+				}
+			}
+			.hierarchy-editor__tag-bar__tag.highlight-color--yellow {
+				color: #000;
+				background-color: var(--highlight-color--yellow-dark);
+				.hierarchy-editor__tag-bar__tag__delete {
+					color: unset;
+				}
+			}
+			.hierarchy-editor__tag-bar__tag.highlight-color--green {
+				color: #000;
+				background-color: var(--highlight-color--green-dark);
+				.hierarchy-editor__tag-bar__tag__delete {
+					color: unset;
+				}
+			}
+			.hierarchy-editor__tag-bar__tag.highlight-color--blue {
+				color: #000;
+				background-color: var(--highlight-color--blue-dark);
+				.hierarchy-editor__tag-bar__tag__delete {
+					color: unset;
+				}
+			}
+			.hierarchy-editor__tag-bar__tag.highlight-color--purple {
+				color: #000;
+				background-color: var(--highlight-color--purple);
+				.hierarchy-editor__tag-bar__tag__delete {
+					color: unset;
+				}
+			}
+			
+			.hierarchy-editor__tag-bar__tag__delete {
+				color: unset;
+			}
+		}
+	}
+// Page Right-Top 3dots
+	.dark-mode {
+		.document__options-menu {
+			.fill-current {
+				filter: invert(1);
+			}
+		}
+	}
 // Rem-Bullet Container
 	.dark-mode {
 		.plus-button,
