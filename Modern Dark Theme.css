@@ -75,7 +75,7 @@
 }
 
 #document {
-	width: calc(100% - 2 * var(--document-margin) - 30px);
+	width: calc(100% - 2 * var(--document-margin) - 35px);
 }
 
 .document--ltr {
