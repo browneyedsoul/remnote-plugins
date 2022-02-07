@@ -467,7 +467,7 @@
 .dark-mode [data-document-tags*=source-list] #DocumentTopRow #DropToOpenAsDocument .rounded-md span[contenteditable~=false]:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode [data-document-tags*=source-list] .rem-container--focused .inline-flex .text-gray-60 {
+.dark-mode .rem-container--focused .inline-flex .text-gray-60 {
 	color: var(--darkmode-text);
 }
 .dark-mode .document__options-menu .fill-current {
