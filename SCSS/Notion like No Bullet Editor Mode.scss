@@ -361,12 +361,22 @@
 		padding-bottom: 5px;
 		margin-left: var(--treenode-line-spacing);
 		left: 2px;
+
+		.rem-button__container {
+			.rem-bullet.rem-bullet--hidden-children {
+				border-style: unset;
+				border-width: unset;
+				zoom: 1.5;
+				position: relative;
+				top: 0px;
+			}
+		}
+		
 		.rem-bullet {
-			background-color: #2B3137 !important;
+			background-color: #DFDFD5;
 			border-radius: 4px !important;
 			height: 4px !important;
 			width: 4px !important;
-			margin-left: px !important;
 			padding: 1px;
 			position: relative;
 			top: 1px;
@@ -388,17 +398,7 @@
 			}
 		}
 	}
-	[data-rem-tags*="bulletlist"] {
-		.rem-button__container {
-			.rem-bullet.rem-bullet--hidden-children {
-				border-style: unset;
-				border-width: unset;
-				zoom: 1.5;
-				position: relative;
-				top: -1px;
-			}
-		}
-	}
+	
 	#hierarchy-editor {
 		[data-rem-tags~="bulletlist"] {
 			.rem-container--focused {
