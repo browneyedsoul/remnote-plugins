@@ -164,7 +164,7 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
     <summary>Easily Discernible List Card Layout</summary>
 
 ```css
-@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Easily%20Discernible%20List%20Card%20Layout.css"); 
+/* @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Easily%20Discernible%20List%20Card%20Layout.css");  */
 ```
 <h2>Use case</h2>
 <img src="https://user-images.githubusercontent.com/56161102/139407710-45d2ba43-d5c0-4314-9719-4676d4b41575.gif">
@@ -321,7 +321,7 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 	/* Modern Table Column */
 		@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Column.css");
 	/* Easily Discernible List Card Layout */
-		@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Easily%20Discernible%20List%20Card%20Layout.css");
+		/* @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Easily%20Discernible%20List%20Card%20Layout.css"); */
 	/* Easily Discernible Inline Card Layout */
 		@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Easily%20Discernible%20Inline%20Card%20layout.css");
 	/* Strikethrough Workaround */
@@ -330,6 +330,8 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 		@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Image%2C%20Codeblock%20Caption%20like%20in%20Notion.css");
 	/* Rating Bar */
 		@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Prepositive%20Rating%20Bar.css"); 
+	/* Terminal */
+  		@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Terminal.css");
 	/* UI Declutter Series */
 		@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/UI%20Declutter%20Series/RemNote%20UIUX-Declutter.css");
 ```
