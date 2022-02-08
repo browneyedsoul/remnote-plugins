@@ -1821,14 +1821,20 @@
 	// Slash Command
 		.dark-mode {
 			// Slash Command Text and Background
-				[data-search-result~="search-result-panel"] {
+				#search-results__list {
 					border: 3px solid black;
 					border-radius: 5px;
-				}
-			// Slash Command Focused Item
-				.z-30 [data-search-result="search-result-item"].bg-gray-5 {
-					color: black;
-					background-color: var(--popup-background-hover);
+
+					#search-results__result {
+						color: black;
+						background-color: var(--darkmode-text);
+
+						// Slash Command Focused Item
+						&.bg-gray-5 {
+							color: black;
+							background-color: var(--popup-background-hover);
+						}
+					}
 				}
 		}
 	// Tag Item Search Result Hover or Selected

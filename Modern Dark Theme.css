@@ -1525,11 +1525,15 @@
 	border: 4px solid transparent;
 }
 
-.dark-mode [data-search-result~=search-result-panel] {
+.dark-mode #search-results__list {
 	border: 3px solid black;
 	border-radius: 5px;
 }
-.dark-mode .z-30 [data-search-result=search-result-item].bg-gray-5 {
+.dark-mode #search-results__list #search-results__result {
+	color: black;
+	background-color: var(--darkmode-text);
+}
+.dark-mode #search-results__list #search-results__result.bg-gray-5 {
 	color: black;
 	background-color: var(--popup-background-hover);
 }
