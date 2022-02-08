@@ -283,6 +283,8 @@
 	margin-right: 2px;
 }
 
+.portal-tree-node-box .rem-text .inline-block,
+.portal-tree-node-box .rem-text .thumbnail--with-width,
 .portal-tree-node-box .rem-text.rem-header--1 .inline-block,
 .portal-tree-node-box .rem-text.rem-header--1 .thumbnail--with-width,
 .portal-tree-node-box .rem-text.rem-header--2 .inline-block,
