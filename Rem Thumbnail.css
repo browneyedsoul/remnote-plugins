@@ -165,6 +165,18 @@
 	min-width: auto !important;
 	margin-right: 2px;
 }
+.popup-menu div.search-result__rem-breadcrumbs + span.bold > .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top {
+	height: 1em !important;
+	width: auto !important;
+	min-width: auto !important;
+	margin-right: 2px;
+}
+.popup-menu div.search-result__rem-breadcrumbs + span.bold > .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node .thumbnail--with-width {
+	height: 1em !important;
+	width: auto !important;
+	min-width: auto !important;
+	margin-right: 2px;
+}
 .popup-menu .EditorContainer.EditorContainerInline .thumbnail--with-width {
 	height: 1em !important;
 	width: auto !important;
@@ -188,7 +200,6 @@
 	min-width: auto !important;
 	margin-right: 2px;
 }
-
 #Popup #PopupContent #delete-confirm-popup .inline-block,
 #Popup #PopupContent #delete-confirm-popup .image-node__container.group.inline-block.align-text-top,
 #Popup #PopupContent #delete-confirm-popup .thumbnail--with-width {

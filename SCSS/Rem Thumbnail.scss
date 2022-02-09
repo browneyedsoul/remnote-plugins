@@ -204,6 +204,22 @@
 				}
 			}
 		}
+		// Tags Backlink Popup- right side of a Rem
+			div.search-result__rem-breadcrumbs + span.bold {
+				> .RichTextViewer {
+					.image-node__container {
+						.image-node__container.group.inline-block.align-text-top {
+							@include thumbnail-set;
+							
+							.image-node {
+								.thumbnail--with-width {
+									@include thumbnail-set;
+								}
+							}
+						}
+					}
+				}
+			}
 		// Reference
 		.EditorContainer.EditorContainerInline {
 			.thumbnail--with-width {
@@ -218,9 +234,10 @@
 			}
 		}
 	}
-// Popup - Merge Confirm Window
+// Popup 2
 	#Popup {
 		#PopupContent {
+			// Merge Confirm Window
 			.p-4 {
 				.RichTextViewer {
 					.image-node__container,
@@ -230,31 +247,27 @@
 					}
 				}
 			}
-		}
-	}
-// Popup - Delete Confirm Popup
-		#Popup {
-			#PopupContent {
-				#delete-confirm-popup {
-					.inline-block,
-					.image-node__container.group.inline-block.align-text-top,
-					.thumbnail--with-width {
-						@include thumbnail-set;
-					}
-					
-					.delete-confirm-popup__rem-section__item {
-						.RichTextViewer {
-							.inline-block,
-							.image-node__container,
-							.image-node,
-							.thumbnail--with-width {
-								@include thumbnail-set;
-							}
+			// Delete Confirm Popup
+			#delete-confirm-popup {
+				.inline-block,
+				.image-node__container.group.inline-block.align-text-top,
+				.thumbnail--with-width {
+					@include thumbnail-set;
+				}
+				
+				.delete-confirm-popup__rem-section__item {
+					.RichTextViewer {
+						.inline-block,
+						.image-node__container,
+						.image-node,
+						.thumbnail--with-width {
+							@include thumbnail-set;
 						}
 					}
 				}
 			}
 		}
+	}
 // Header & Normal Rem-Text with "Thumbnail(TN)" Tag
 	.rem-header--1,
 	.rem-header--2,
