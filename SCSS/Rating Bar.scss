@@ -15,7 +15,7 @@
                 position: relative;
                 left: -4px;
                 font-family: 'Helvetica Neue';
-                width: 82px;
+                width: fit-content;
                 height: fit-content;
             }
         }
@@ -28,11 +28,11 @@
                 }
             }
 	}
-	[data-rem-tags~="1star"] .rem-text::before {content: "★";}
-	[data-rem-tags~="2star"] .rem-text::before {content: "★★";}
-	[data-rem-tags~="3star"] .rem-text::before {content: "★★★";}
-	[data-rem-tags~="4star"] .rem-text::before {content: "★★★★";}
-	[data-rem-tags~="5star"] .rem-text::before {content: "★★★★★";}
+	[data-rem-tags~="1star"] .rem-text::before {content: "⭐️◾️◾️◾️◾️";}
+	[data-rem-tags~="2star"] .rem-text::before {content: "⭐️⭐️◾️◾️◾️";}
+	[data-rem-tags~="3star"] .rem-text::before {content: "⭐️⭐️⭐️◾️◾️";}
+	[data-rem-tags~="4star"] .rem-text::before {content: "⭐️⭐️⭐️⭐️◾️";}
+	[data-rem-tags~="5star"] .rem-text::before {content: "⭐️⭐️⭐️⭐️⭐️";}
 // Darkmode Compatibility
     .dark-mode {
         [data-rem-tags~="1star"],

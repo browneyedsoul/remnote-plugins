@@ -13,7 +13,9 @@
 	position: relative;
 	left: -4px;
 	font-family: "Helvetica Neue";
-	width: 82px;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
 	height: fit-content;
@@ -36,23 +38,23 @@
 }
 
 [data-rem-tags~="1star"] .rem-text::before {
-	content: "★";
+	content: "⭐️◾️◾️◾️◾️";
 }
 
 [data-rem-tags~="2star"] .rem-text::before {
-	content: "★★";
+	content: "⭐️⭐️◾️◾️◾️";
 }
 
 [data-rem-tags~="3star"] .rem-text::before {
-	content: "★★★";
+	content: "⭐️⭐️⭐️◾️◾️";
 }
 
 [data-rem-tags~="4star"] .rem-text::before {
-	content: "★★★★";
+	content: "⭐️⭐️⭐️⭐️◾️";
 }
 
 [data-rem-tags~="5star"] .rem-text::before {
-	content: "★★★★★";
+	content: "⭐️⭐️⭐️⭐️⭐️";
 }
 
 .dark-mode [data-rem-tags~="1star"] .rem-text::before,
