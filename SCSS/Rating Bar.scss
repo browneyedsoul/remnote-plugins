@@ -1,0 +1,50 @@
+// Contents
+	[data-rem-tags~="1star"],
+	[data-rem-tags~="1star"],
+	[data-rem-tags~="2star"],
+	[data-rem-tags~="3star"],
+	[data-rem-tags~="4star"],
+	[data-rem-tags~="5star"] {
+        .rem-text {
+            &::before {
+                color: #F1FA8C;
+                background-color: #000;
+                border-radius: 5px;
+                padding: 0 2px 0 2px;
+                margin-right: 3px;
+                position: relative;
+                left: -4px;
+                font-family: 'Helvetica Neue';
+                width: 82px;
+                height: fit-content;
+            }
+        }
+        // Tag Declutter
+            .hierarchy-editor__tag-bar__tag {
+                background-color: transparent !important;
+
+                span {
+                    display: none;
+                }
+            }
+	}
+	[data-rem-tags~="1star"] .rem-text::before {content: "★";}
+	[data-rem-tags~="2star"] .rem-text::before {content: "★★";}
+	[data-rem-tags~="3star"] .rem-text::before {content: "★★★";}
+	[data-rem-tags~="4star"] .rem-text::before {content: "★★★★";}
+	[data-rem-tags~="5star"] .rem-text::before {content: "★★★★★";}
+// Darkmode Compatibility
+    .dark-mode {
+        [data-rem-tags~="1star"],
+        [data-rem-tags~="1star"],
+        [data-rem-tags~="2star"],
+        [data-rem-tags~="3star"],
+        [data-rem-tags~="4star"],
+        [data-rem-tags~="5star"] {
+            .rem-text {
+                &::before {
+                    border: 1px solid #CDCECE;
+                }
+            }
+        }
+    }
