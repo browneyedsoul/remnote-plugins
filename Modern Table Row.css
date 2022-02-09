@@ -902,7 +902,7 @@
 [data-rem-container-tags~=w1140] > .TreeNode,
 [data-rem-container-tags~=w1170] > .TreeNode,
 [data-rem-container-tags~=w1200] > .TreeNode {
-	overflow: auto !important;
+	overflow-x: auto;
 	white-space: pre;
 }
 

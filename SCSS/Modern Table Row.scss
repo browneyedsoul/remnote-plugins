@@ -303,7 +303,7 @@
     [data-rem-container-tags~="w1170"],
     [data-rem-container-tags~="w1200"] {
         > .TreeNode {
-            overflow: auto !important;
+            overflow-x: auto;
             white-space: pre;
         }
     }
