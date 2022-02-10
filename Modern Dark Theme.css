@@ -717,6 +717,27 @@
 	color: var(--purple-text);
 }
 
+.rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--red {
+	color: var(--red-text);
+}
+.rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--orange {
+	color: var(--orange-text);
+}
+.rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--yellow {
+	color: var(--yellow-text);
+	text-shadow: 2px 2px 2px #FFFC00;
+	background-color: unset;
+}
+.rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--green {
+	color: var(--green-text);
+}
+.rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--blue {
+	color: var(--blue-text);
+}
+.rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--purple {
+	color: var(--purple-text);
+}
+
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--red {
 	color: var(--red-text-dark);
 }
@@ -752,6 +773,25 @@
 	color: var(--blue-text-dark);
 }
 .dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--purple {
+	color: var(--purple-text-dark);
+}
+.dark-mode .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--red {
+	color: var(--red-text-dark);
+}
+.dark-mode .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--orange {
+	color: var(--orange-text-dark);
+}
+.dark-mode .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--yellow {
+	color: var(--yellow-text-dark);
+	text-shadow: unset;
+}
+.dark-mode .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--green {
+	color: var(--green-text-dark);
+}
+.dark-mode .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--blue {
+	color: var(--blue-text-dark);
+}
+.dark-mode .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--purple {
 	color: var(--purple-text-dark);
 }
 
