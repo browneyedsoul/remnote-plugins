@@ -760,16 +760,6 @@
 	text-shadow: unset;
 }
 
-.rem-reference-container .rem-reference .RichTextViewer .bold.highlight-color--red,
-.rem-reference-container .rem-reference .RichTextViewer .bold.highlight-color--orange,
-.rem-reference-container .rem-reference .RichTextViewer .bold.highlight-color--yellow,
-.rem-reference-container .rem-reference .RichTextViewer .bold.highlight-color--green,
-.rem-reference-container .rem-reference .RichTextViewer .bold.highlight-color--blue,
-.rem-reference-container .rem-reference .RichTextViewer .bold.highlight-color--purple {
-	color: #000;
-	font-weight: 600;
-}
-
 #document-hover-preview__popup .RichTextViewer .bold.highlight-color--red,
 #document-hover-preview__popup .RichTextViewer .bold.highlight-color--orange,
 #document-hover-preview__popup .RichTextViewer .bold.highlight-color--yellow,
