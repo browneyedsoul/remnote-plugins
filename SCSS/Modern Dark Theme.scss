@@ -812,12 +812,12 @@
 		.rem-reference-container[data-rem-tags~="color"] {
 			.rem-reference {
 				.RichTextViewer {
-					.bold.highlight-color--red {color: var(--red-text);} 
-					.bold.highlight-color--orange {color: var(--orange-text);}
+					.bold.highlight-color--red {color: var(--red-text); background-color: unset;} 
+					.bold.highlight-color--orange {color: var(--orange-text); background-color: unset;}
 					.bold.highlight-color--yellow {color: var(--yellow-text); text-shadow: 2px 2px 2px #FFFC00; background-color: unset;}
-					.bold.highlight-color--green {color: var(--green-text);}
-					.bold.highlight-color--blue {color: var(--blue-text);}
-					.bold.highlight-color--purple {color: var(--purple-text);}
+					.bold.highlight-color--green {color: var(--green-text); background-color: unset;}
+					.bold.highlight-color--blue {color: var(--blue-text); background-color: unset;}
+					.bold.highlight-color--purple {color: var(--purple-text); background-color: unset;}
 				}
 			}
 		}

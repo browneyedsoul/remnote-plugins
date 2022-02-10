@@ -719,9 +719,11 @@
 
 .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--red {
 	color: var(--red-text);
+	background-color: unset;
 }
 .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--orange {
 	color: var(--orange-text);
+	background-color: unset;
 }
 .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--yellow {
 	color: var(--yellow-text);
@@ -730,12 +732,15 @@
 }
 .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--green {
 	color: var(--green-text);
+	background-color: unset;
 }
 .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--blue {
 	color: var(--blue-text);
+	background-color: unset;
 }
 .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--purple {
 	color: var(--purple-text);
+	background-color: unset;
 }
 
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--red {
