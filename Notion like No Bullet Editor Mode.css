@@ -43,6 +43,10 @@
 	left: 24px;
 }
 
+.rem-container--header-1 .rem-button__container {
+	margin-top: 8px;
+}
+
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
