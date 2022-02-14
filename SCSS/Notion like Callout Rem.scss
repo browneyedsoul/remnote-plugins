@@ -1,18 +1,25 @@
 :root {
     --callout-background-color: #F7F6F3;
     --callout-background-color-dark: #505050;
+    --callout-text-color-dark: #DFDFD5;
     --calloutred-background-color: #FFE9EC;
     --calloutred-background-color-dark: #572924;
+    --calloutred-text-color-dark: #FFD2CE;
     --calloutorange-background-color: #FDEDD9;
     --calloutorange-background-color-dark: #553D24;
+    --calloutorange-text-color-dark: #FFDAB8;
     --calloutyellow-background-color: #FDFEDD;
     --calloutyellow-background-color-dark: #453E1E;
+    --calloutyellow-text-color-dark: #E8DDA7;
     --calloutgreen-background-color: #E0FBE2;
     --calloutgreen-background-color-dark: #2B492D;
+    --calloutgreen-text-color-dark: #C0EAB6;
     --calloutblue-background-color: #E6F3F6;
     --calloutblue-background-color-dark: #183C4D;
+    --calloutblue-text-color-dark: #B5DEE8;
     --calloutpurple-background-color: #FEEEFC;
     --calloutpurple-background-color-dark: #43273F;
+    --calloutpurple-text-color-dark: #DDC3EB;
     --callout-padding: 15px 20px;
     --callout-margin-top: 7px;
     --callout-margin-bottom: 7px;
@@ -45,6 +52,10 @@
         margin-left: var(--callout-margin-left);
         margin-right: var(--callout-margin-right);
         border-radius: var(--callout-border-radius);
+
+        .EditorContainer {
+            line-height: 180%;
+        }
     }
     [data-rem-container-tags~="callout"] {background-color: var(--callout-background-color);}
     [data-rem-container-tags~="calloutred"] {background-color: var(--calloutred-background-color);}
@@ -55,22 +66,54 @@
     [data-rem-container-tags~="calloutpurple"] {background-color: var(--calloutpurple-background-color);}
 // Darkmode Compatibility
     .dark-mode {
-        [data-rem-container-tags~="callout"] {background-color: var(--callout-background-color-dark) !important;}
-        [data-rem-container-tags~="calloutred"] {background-color: var(--calloutred-background-color-dark) !important;}
-        [data-rem-container-tags~="calloutorange"] {background-color: var(--calloutorange-background-color-dark) !important;}
-        [data-rem-container-tags~="calloutyellow"] {background-color: var(--calloutyellow-background-color-dark) !important;}
-        [data-rem-container-tags~="calloutgreen"] {background-color: var(--calloutgreen-background-color-dark) !important;}
-        [data-rem-container-tags~="calloutblue"] {background-color: var(--calloutblue-background-color-dark) !important;}
-        [data-rem-container-tags~="calloutpurple"] {background-color: var(--calloutpurple-background-color-dark) !important;}
+        [data-rem-container-tags~="callout"] {
+            background-color: var(--callout-background-color-dark);
 
-        [data-rem-tags~="callout"] .rem-text,
-        [data-rem-tags~="calloutred"] .rem-text,
-        [data-rem-tags~="calloutorange"] .rem-text,
-        [data-rem-tags~="calloutyellow"] .rem-text,
-        [data-rem-tags~="calloutgreen"] .rem-text,
-        [data-rem-tags~="calloutblue"] .rem-text,
-        [data-rem-tags~="calloutpurple"] .rem-text {
-            color: #DFDFD5 !important;
+            .rem-text {
+                color: var(--callout-text-color-dark);
+            }
+        }
+        [data-rem-container-tags~="calloutred"] {
+            background-color: var(--calloutred-background-color-dark);
+
+            .rem-text {
+                color: var(--calloutred-text-color-dark);
+            }
+        }
+        [data-rem-container-tags~="calloutorange"] {
+            background-color: var(--calloutorange-background-color-dark);
+
+            .rem-text {
+                color: var(--calloutorange-text-color-dark);
+            }
+        }
+        [data-rem-container-tags~="calloutyellow"] {
+            background-color: var(--calloutyellow-background-color-dark);
+
+            .rem-text {
+                color: var(--calloutyellow-text-color-dark);
+            }
+        }
+        [data-rem-container-tags~="calloutgreen"] {
+            background-color: var(--calloutgreen-background-color-dark);
+
+            .rem-text {
+                color: var(--calloutgreen-text-color-dark);
+            }
+        }
+        [data-rem-container-tags~="calloutblue"] {
+            background-color: var(--calloutblue-background-color-dark);
+
+            .rem-text {
+                color: var(--calloutblue-text-color-dark);
+            }
+        }
+        [data-rem-container-tags~="calloutpurple"] {
+            background-color: var(--calloutpurple-background-color-dark);
+
+            .rem-text {
+                color: var(--calloutpurple-text-color-dark);
+            }
         }
     }
     .popup-menu.dark-mode {
