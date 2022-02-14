@@ -16,9 +16,10 @@
 }
 
 [data-rem-container-tags~="terminal"] {
-	background-color: #1F1F1F;
-	color: #D0D0CD;
-    margin-right: 0px;  
+    background-color: #1F1F1F;
+    color: #D0D0CD;
+    margin-left: 24px;  
+    margin-right: 12px;
 
     .TreeNode {
         border-left-color: #373737 !important;
