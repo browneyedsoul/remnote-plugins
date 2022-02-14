@@ -937,6 +937,11 @@
 							color: #000;
 						}
 					}
+					.rem-container--not-included-in-document-scope {
+						.RichTextViewer {
+							color: var(--darkmode-text);
+						}
+					}
 				}
 			}
 		}

@@ -850,6 +850,9 @@
 .dark-mode .portal-tree-node-box [data-rem-tags~=highlight] .rem-text .RichTextViewer {
 	color: #000;
 }
+.dark-mode .portal-tree-node-box [data-rem-tags~=highlight] .rem-container--not-included-in-document-scope .RichTextViewer {
+	color: var(--darkmode-text);
+}
 
 .popup-menu .max-h-\[40vh\] {
 	max-height: 100vh;
