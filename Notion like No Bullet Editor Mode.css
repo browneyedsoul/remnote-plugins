@@ -86,6 +86,24 @@
 	border-color: transparent transparent transparent black;
 }
 
+.dark-mode .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
+.dark-mode .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+.dark-mode .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+.dark-mode .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px !important;
+	border-color: transparent transparent transparent var(--bullet-main-dark);
+}
+.dark-mode #hierarchy-editor .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px !important;
+	border-color: transparent transparent transparent var(--bullet-main-dark);
+}
+
 .highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
 .highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 .highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,

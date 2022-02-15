@@ -118,6 +118,34 @@
 			}
 		}
 	}
+	// Darkmode Compatibility
+		.dark-mode {
+			.rem-button__container {
+				.rem-bullet__container {
+					.rem-bullet.rem-bullet--hidden-children,
+					.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+					.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+					.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 6px 0 6px 6px !important;
+						border-color: transparent transparent transparent var(--bullet-main-dark);
+					}
+				}
+			}
+			#hierarchy-editor {
+				.rem-container--focused {
+					.rem-bullet.rem-bullet--hidden-children {
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 6px 0 6px 6px !important;
+						border-color: transparent transparent transparent var(--bullet-main-dark);
+					}
+				}
+			}
+		}
 	// Toggle Arrow Visibility in Hightlighted Rem
 		.highlight-color--red, 
 		.highlight-color--orange,
