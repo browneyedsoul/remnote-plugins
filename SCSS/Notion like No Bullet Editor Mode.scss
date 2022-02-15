@@ -2,7 +2,8 @@
 	/* TreeNode Adjustment */
 		--treenode-line-spacing: 16px;
 	/* Basic Bullet Color */
-		--bullet-main: #ABABAB;
+		--bullet-main: #000;
+		--bullet-main-dark: #ABABAB;
 		--bullet-doc: #50FA7B;
 		--bullet-folder: #53555F;
 		--bullet-concept: #53555F;
@@ -14,8 +15,8 @@
 		--disabled-practice-color: #959595;
 	/* TreeNode Color */
 		--line-color: #DDDDDD;
-		--node-card-item-color: red;
-		--node-card-item-color-dark: yellow;
+		--node-card-item-color: #FF4E4C;
+		--node-card-item-color-dark: #E0CD00;
 }
 // Rem Hierarchy Text Editor Line Height
 	.EditorContainer {
@@ -249,7 +250,7 @@
 	// List Card TreeNode Alert Color
 		.node-card-item {
 			&:before {
-				margin-left: -0.7rem;
+				margin-left: -0.8rem;
 				background-color: var(--node-card-item-color);
 			}
 		}
@@ -283,19 +284,20 @@
 					-webkit-mask-repeat: no-repeat;
 							mask-repeat: no-repeat;
 					zoom: 80%;
-				}
-				.rem-bullet.rem-bullet--hidden-children {
-					border-radius: 0px !important;
-					position: relative;
-					top: 2px;
-					left: 0px;
-					zoom: 2;
-					-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-							mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-					-webkit-mask-size: contain;
-							mask-size: contain;
-					-webkit-mask-repeat: no-repeat;
-							mask-repeat: no-repeat;
+
+					&.rem-bullet.rem-bullet--hidden-children {
+						border-radius: 0px !important;
+						position: relative;
+						top: 3px;
+						left: 0px;
+						zoom: 2;
+						-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+								mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+						-webkit-mask-size: contain;
+								mask-size: contain;
+						-webkit-mask-repeat: no-repeat;
+								mask-repeat: no-repeat;
+					}
 				}
 			}
 			.rem-container--forwards-practice-disabled {
@@ -312,19 +314,20 @@
 					-webkit-mask-repeat: no-repeat;
 							mask-repeat: no-repeat;
 					zoom: 80%;
-				}
-				.rem-bullet.rem-bullet--hidden-children {
-					border-radius: 0px !important;
-					position: relative;
-					top: 2px;
-					left: 0px;
-					zoom: 2;
-					-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-							mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-					-webkit-mask-size: contain;
-							mask-size: contain;
-					-webkit-mask-repeat: no-repeat;
-							mask-repeat: no-repeat;
+
+					&.rem-bullet--hidden-children {
+						border-radius: 0px !important;
+						position: relative;
+						top: 3px;
+						left: 0px;
+						zoom: 2;
+						-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+								mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+						-webkit-mask-size: contain;
+								mask-size: contain;
+						-webkit-mask-repeat: no-repeat;
+								mask-repeat: no-repeat;
+					}
 				}
 			}
 		// Backward
@@ -342,19 +345,20 @@
 					-webkit-mask-repeat: no-repeat;
 							mask-repeat: no-repeat;
 					zoom: 80%;
-				}
-				.rem-bullet.rem-bullet--hidden-children {
-					border-radius: 0px !important;
-					position: relative;
-					top: 2px;
-					left: 0px;
-					zoom: 2;
-					-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-							mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-					-webkit-mask-size: contain;
-							mask-size: contain;
-					-webkit-mask-repeat: no-repeat;
-							mask-repeat: no-repeat;
+
+					&.rem-bullet--hidden-children {
+						border-radius: 0px !important;
+						position: relative;
+						top: 3px;
+						left: 0px;
+						zoom: 2;
+						-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+								mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+						-webkit-mask-size: contain;
+								mask-size: contain;
+						-webkit-mask-repeat: no-repeat;
+								mask-repeat: no-repeat;
+					}
 				}
 			}
 	// Descriptor-Rem-Type Bullet
@@ -391,7 +395,7 @@
 		}
 		
 		.rem-bullet {
-			background-color: #DFDFD5;
+			background-color: var(--bullet-main);
 			border-radius: 4px !important;
 			height: 4px !important;
 			width: 4px !important;
@@ -412,7 +416,7 @@
 	.dark-mode {
 		[data-rem-tags~="bulletlist"] {
 			.rem-bullet {
-				background-color: var(--bullet-main) !important;
+				background-color: var(--bullet-main-dark);
 			}
 		}
 	}
