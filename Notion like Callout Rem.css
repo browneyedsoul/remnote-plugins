@@ -39,12 +39,6 @@
 	margin-right: 10px;
 }
 
-[data-rem-tags~=warning] .rem-text,
-[data-rem-tags~=idea] .rem-text {
-	position: relative;
-	left: -25px;
-}
-
 [data-rem-container-tags~=callout],
 [data-rem-container-tags~=calloutred],
 [data-rem-container-tags~=calloutorange],

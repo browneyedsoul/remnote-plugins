@@ -30,14 +30,6 @@
 // Custom rem bullet icon
     [data-rem-tags~="warning"] .rem-text::before {content: "🚨"; margin-right: 10px;}
     [data-rem-tags~="idea"] .rem-text::before {content: "💡"; margin-right: 10px;}
-
-    [data-rem-tags~="warning"],
-    [data-rem-tags~="idea"] {
-        .rem-text {
-            position: relative;
-            left: -25px;
-        }
-    }
 // Callout Rem Block Color-Variable & Pre-Coloured
     [data-rem-container-tags~="callout"],
     [data-rem-container-tags~="calloutred"],
