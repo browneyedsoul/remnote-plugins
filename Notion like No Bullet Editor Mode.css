@@ -83,7 +83,7 @@
 	height: 0;
 	border-style: solid;
 	border-width: 6px 0 6px 6px !important;
-	border-color: transparent transparent transparent black;
+	border-color: transparent transparent transparent var(--bullet-main);
 }
 
 .dark-mode .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
@@ -102,6 +102,23 @@
 	border-style: solid;
 	border-width: 6px 0 6px 6px !important;
 	border-color: transparent transparent transparent var(--bullet-main-dark);
+}
+.dark-mode [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
+.dark-mode [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+.dark-mode [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+.dark-mode [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px !important;
+	border-color: transparent transparent transparent var(--bullet-main);
+}
+.dark-mode #hierarchy-editor [data-rem-tags~=highlight] .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px !important;
+	border-color: transparent transparent transparent var(--bullet-main);
 }
 
 .highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
@@ -132,7 +149,7 @@
 	height: 0;
 	border-style: solid;
 	border-width: 6px 0 6px 6px !important;
-	border-color: transparent transparent transparent black;
+	border-color: transparent transparent transparent var(--bullet-main);
 }
 
 [data-rem-tags=aliases] .rem-bullet__container .rem-bullet.rem-bullet--hidden-children {
