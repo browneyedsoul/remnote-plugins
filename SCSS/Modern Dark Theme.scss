@@ -1995,6 +1995,11 @@
 						display: inline-flex !important;
 					}
 				}
+				.float-right {
+					.bg-white {
+						background-color: unset;
+					}
+				}
 			}
 			.portal-tree-transient-node-box {
 				.EditorContainerInline,

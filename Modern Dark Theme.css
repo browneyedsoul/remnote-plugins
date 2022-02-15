@@ -1660,6 +1660,9 @@
 #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text .RichTextViewer {
 	display: inline-flex !important;
 }
+#hierarchy-editor .rem-container--not-included-in-document-scope .float-right .bg-white {
+	background-color: unset;
+}
 #hierarchy-editor .portal-tree-transient-node-box .EditorContainerInline,
 #hierarchy-editor .portal-tree-transient-node-box .EditorContainerInline > span > span {
 	display: inline;
