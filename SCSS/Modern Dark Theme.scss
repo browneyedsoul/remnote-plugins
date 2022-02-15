@@ -889,20 +889,6 @@
 		filter: invert(1);
 	}
 // Portal
-	// Portal Breadcrumbs
-		#hierarchy-editor {
-			.node-top-level-in-portal-container {
-				.node-top-level-in-portal {
-					background-color: var(--darkmode-background);
-					border: 1px solid var(--darkmode-contrast);
-				}
-			}
-		}
-		.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
-			&:hover {
-				background-color: var(--darkmode-background-selected-darker) !important;
-			}
-		}
 	// Search Portal TreeNode Alignement
 		// #hierarchy-editor {
 		// 	.portal-tree-node-box {
@@ -911,6 +897,20 @@
 		// }
 	// Darkmode Support
 		.dark-mode {
+			// Portal Breadcrumbs
+			#hierarchy-editor {
+				.node-top-level-in-portal-container {
+					.node-top-level-in-portal {
+						background-color: var(--darkmode-background);
+						border: 1px solid var(--darkmode-contrast);
+					}
+				}
+			}
+			.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
+				&:hover {
+					background-color: var(--darkmode-background-selected-darker) !important;
+				}
+			}
 			.tree-node--parent {
 				.portal-rem--embedded-search {
 					.embeddedSearch {
@@ -1310,6 +1310,13 @@
 					.bg-mint-10 {
 						color: #000 !important;
 						background-color: #8BD1B9;
+					}
+					.settings__pricing-option-item {
+						.w-max {
+							.icon {
+								color: var(--darkmode-contrast);
+							}
+						}
 					}
 				}
 				.w-min {
@@ -1995,11 +2002,6 @@
 						display: inline-flex !important;
 					}
 				}
-				.float-right {
-					.bg-white {
-						background-color: unset;
-					}
-				}
 			}
 			.portal-tree-transient-node-box {
 				.EditorContainerInline,
@@ -2034,6 +2036,22 @@
 			span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 				background-color: var(--darkmode-background-selected-darker) !important;
 				color: var(--darkmode-contrast);
+			}
+		}
+	// Darkmode Compatibility
+		.dark-mode {
+			// Reference Breadcrumbs
+			#hierarchy-editor {
+				.rem-container--not-included-in-document-scope {
+					.rem-text {
+						color: var(--darkmode-text);
+					}
+					.float-right {
+						.bg-white {
+							background-color: unset;
+						}
+					}
+				}
 			}
 		}
 // PDF
