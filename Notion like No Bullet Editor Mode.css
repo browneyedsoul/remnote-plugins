@@ -18,6 +18,10 @@
 	--node-card-item-color-dark: yellow;
 }
 
+.EditorContainer {
+	line-height: 160%;
+}
+
 .rem-button__container .rem-bullet__container .pointer-events-auto {
 	pointer-events: none;
 }
@@ -44,7 +48,15 @@
 }
 
 .rem-container--header-1 .rem-button__container {
-	margin-top: 8px;
+	margin-top: 12px;
+}
+
+.rem-container--header-2 .rem-button__container {
+	margin-top: 6px;
+}
+
+.rem-container--header-3 .rem-button__container {
+	margin-top: 5px;
 }
 
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
@@ -204,10 +216,6 @@
 
 .dark-mode .node-card-item:before {
 	background-color: var(--node-card-item-color-dark);
-}
-
-.EditorContainer {
-	line-height: 140%;
 }
 
 .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
