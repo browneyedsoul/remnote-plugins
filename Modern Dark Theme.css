@@ -446,6 +446,10 @@
 	background-color: var(--darkmode-selected-darker);
 }
 
+#document #hierarchy-editor .animate-zoom-into-bullet .portal-tree-node-box {
+	margin-left: -3px;
+}
+
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background-selected-darker);
@@ -854,6 +858,12 @@
 
 .popup-menu .max-h-\[40vh\] {
 	max-height: 100vh;
+}
+.popup-menu > div > div.w-96 {
+	width: 36rem;
+}
+.popup-menu > div > div.w-96 #document-hover-preview__popup #hierarchy-editor .animate-zoom-into-bullet .portal-tree-node-box {
+	margin-left: 11px;
 }
 
 .popup-menu.dark-mode {

@@ -241,9 +241,6 @@
 	left: var(--treenode-line-spacing);
 	margin-right: var(--treenode-line-spacing);
 }
-#hierarchy-editor .portal-tree-node-box {
-	margin-left: -3px;
-}
 
 .node-card-item:before {
 	margin-left: -0.8rem;

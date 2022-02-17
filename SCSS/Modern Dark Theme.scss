@@ -595,6 +595,15 @@
 			background-color: var(--darkmode-selected-darker);
 		}
 	}
+	#document {
+		#hierarchy-editor {
+			.animate-zoom-into-bullet {
+				.portal-tree-node-box {
+					margin-left: -3px;
+				}
+			}
+		}
+	}
 // Tag Bar
 	.dark-mode {
 		.hierarchy-editor__tag-bar {
@@ -950,6 +959,23 @@
 		// Hover Preview Max Height
 		.max-h-\[40vh\] {
 			max-height: 100vh;
+		}
+		// Static Preview Max Width
+		> div {
+			> div.w-96 {
+				width: 36rem;
+
+				#document-hover-preview__popup {
+					#hierarchy-editor {
+						.animate-zoom-into-bullet {
+							.portal-tree-node-box {
+								// Static Preview Alignment
+								margin-left: 11px;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	.popup-menu.dark-mode {
