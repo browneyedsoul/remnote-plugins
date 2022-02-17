@@ -1,28 +1,22 @@
 :root {
 	--table-title-background-color: #EEEEEB;
 	--table-title-background-color-dark: #000;
-	--table-header-background-color: #EAEAEA;
+	--table-header-background-color: #F7F6F3;
 	--table-header-background-color-dark: #555;
 	--table-cell-background-color: #FFFFFF;
 	--table-cell-background-color-dark: #2F3437;
 	--table-border-color: #EEEEEB;
 	--table-border-color-dark: #535353;
 	--darkmode-text: #DFDFD5;
-	--table-title-left-margin: 1.45em;
-	/* If the Table Title bar is dislocated please adjust here*/
-}
-
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .rem-text,
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .EditorContainer,
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .rich-text-editor,
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .RichTextViewer {
-	overflow-wrap: anywhere;
-	flex-grow: 1;
-	max-width: 100%;
+	--table-title-left-margin: 1.45rem;
+	--table-title-right-margin: 0.7rem;
+	--table-container-left-margin: 0.8rem;
+	--table-container-right-margin: 0.7rem;
 }
 
 [data-rem-container-tags~=table] > .tree-node--parent {
 	margin-left: var(--table-title-left-margin);
+	margin-right: var(--table-title-right-margin);
 }
 [data-rem-container-tags~=table] .TreeNode.tree-node--children {
 	border-width: 0 !important;
@@ -30,7 +24,8 @@
 [data-rem-container-tags~=table] > .TreeNode {
 	display: flex;
 	left: 0px !important;
-	margin-right: 0px !important;
+	margin-left: var(--table-container-left-margin);
+	margin-right: var(--table-container-right-margin) !important;
 }
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container {
 	flex: 1 0 0;
@@ -46,13 +41,13 @@
 	max-width: 100%;
 }
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode {
-	width: 90% !important;
+	width: 100% !important;
+	left: 0px !important;
 }
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
 	position: relative;
-	left: -10px;
-	margin-right: -35px;
-	width: 100%;
+	left: -25px;
+	width: 90%;
 }
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > div:first-child {
 	font-weight: 600;
