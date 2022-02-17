@@ -5,21 +5,27 @@
 	--callout-text-color-dark: #DFDFD5;
 	--calloutred-background-color: #FFE9EC;
 	--calloutred-background-color-dark: #572924;
+	--calloutred-text-color: #721C25;
 	--calloutred-text-color-dark: #FFD2CE;
 	--calloutorange-background-color: #FDEDD9;
 	--calloutorange-background-color-dark: #553D24;
+	--calloutorange-text-color: #572924;
 	--calloutorange-text-color-dark: #FFDAB8;
 	--calloutyellow-background-color: #FDFEDD;
 	--calloutyellow-background-color-dark: #453E1E;
+	--calloutyellow-text-color: #454501;
 	--calloutyellow-text-color-dark: #E8DDA7;
 	--calloutgreen-background-color: #E0FBE2;
 	--calloutgreen-background-color-dark: #2B492D;
+	--calloutgreen-text-color: #003E01;
 	--calloutgreen-text-color-dark: #C0EAB6;
 	--calloutblue-background-color: #E6F3F6;
 	--calloutblue-background-color-dark: #183C4D;
+	--calloutblue-text-color: #00005B;
 	--calloutblue-text-color-dark: #B5DEE8;
 	--calloutpurple-background-color: #FEEEFC;
 	--calloutpurple-background-color-dark: #43273F;
+	--calloutpurple-text-color: #3B004D;
 	--calloutpurple-text-color-dark: #DDC3EB;
 	--callout-padding: 15px 20px;
 	--callout-margin-top: 7px;
@@ -70,26 +76,32 @@
 }
 
 [data-rem-container-tags~=calloutred] {
+	color: var(--calloutred-text-color);
 	background-color: var(--calloutred-background-color);
 }
 
 [data-rem-container-tags~=calloutorange] {
+	color: var(--calloutorange-text-color);
 	background-color: var(--calloutorange-background-color);
 }
 
 [data-rem-container-tags~=calloutyellow] {
+	color: var(--calloutyellow-text-color);
 	background-color: var(--calloutyellow-background-color);
 }
 
 [data-rem-container-tags~=calloutgreen] {
+	color: var(--calloutgreen-text-color);
 	background-color: var(--calloutgreen-background-color);
 }
 
 [data-rem-container-tags~=calloutblue] {
+	color: var(--calloutblue-text-color);
 	background-color: var(--calloutblue-background-color);
 }
 
 [data-rem-container-tags~=calloutpurple] {
+	color: var(--calloutpurple-text-color);
 	background-color: var(--calloutpurple-background-color);
 }
 
