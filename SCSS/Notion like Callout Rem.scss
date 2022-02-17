@@ -28,8 +28,16 @@
     --callout-border-radius: 5px;
 }
 // Custom rem bullet icon
-    [data-rem-tags~="warning"] .rem-text::before {content: "🚨"; margin-right: 10px;}
-    [data-rem-tags~="idea"] .rem-text::before {content: "💡"; margin-right: 10px;}
+    [data-rem-tags~="warning"] .rem-text::before {
+        content: "🚨"; 
+        margin-right: 10px;
+        margin-top: 3px;
+    }
+    [data-rem-tags~="idea"] .rem-text::before {
+        content: "💡"; 
+        margin-right: 10px;
+        margin-top: 3px;
+    }
 // Callout Rem Block Color-Variable & Pre-Coloured
     [data-rem-container-tags~="callout"],
     [data-rem-container-tags~="calloutred"],

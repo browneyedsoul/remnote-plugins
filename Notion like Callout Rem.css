@@ -32,11 +32,13 @@
 [data-rem-tags~=warning] .rem-text::before {
 	content: "🚨";
 	margin-right: 10px;
+	margin-top: 3px;
 }
 
 [data-rem-tags~=idea] .rem-text::before {
 	content: "💡";
 	margin-right: 10px;
+	margin-top: 3px;
 }
 
 [data-rem-container-tags~=callout],
