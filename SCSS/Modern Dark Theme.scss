@@ -597,9 +597,16 @@
 	}
 	#document {
 		#hierarchy-editor {
-			.animate-zoom-into-bullet {
+			.animate-zoom-into-bullet.tree-node-container {
 				.portal-tree-node-box {
-					margin-left: -3px;
+					margin-left: -13.5px;
+				}
+			}
+			.animate-zoom-into-bullet {
+				.tree-node--parent {
+					+ .portal-tree-node-box {
+						margin-left: -3px;
+					}
 				}
 			}
 		}

@@ -446,7 +446,10 @@
 	background-color: var(--darkmode-selected-darker);
 }
 
-#document #hierarchy-editor .animate-zoom-into-bullet .portal-tree-node-box {
+#document #hierarchy-editor .animate-zoom-into-bullet.tree-node-container .portal-tree-node-box {
+	margin-left: -13.5px;
+}
+#document #hierarchy-editor .animate-zoom-into-bullet .tree-node--parent + .portal-tree-node-box {
 	margin-left: -3px;
 }
 
