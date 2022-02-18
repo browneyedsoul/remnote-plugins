@@ -1925,76 +1925,95 @@
 		}
 	}
 // Help & Tutorial Page
-	#document-sidebar {
-		// RemNote Help Page Sidebar Top
-		#document-sidebar_top {
-			.m-3 {
-				> div {
+	// SideBar
+		#document-sidebar {
+			// RemNote Help Page Sidebar Top
+				#document-sidebar_top {
+					.m-3 {
+						> div {
+							color: var(--darkmode-contrast) !important;
+						}
+					}
+					.css-cPmPhh {
+						color: var(--darkmode-text);
+					}
+					.help-knowledge-base-search {
+						.rich-text-editor {
+							background-color: unset;
+						}
+					}
+				}
+			// RemNote Help Page Sidebar Bottom
+				.w-full {
+					> a {
+						color: var(--darkmode-contrast) !important;
+					}
+				}
+			// Backward icon
+				[data-icon="backward"] {
 					color: var(--darkmode-contrast) !important;
 				}
-			}
-			.css-cPmPhh {
-				color: var(--darkmode-text);
-			}
-			.help-knowledge-base-search {
-				.rich-text-editor {
-					background-color: unset;
-				}
-			}
-		}
-		// RemNote Help Page Sidebar Bottom
-		.w-full {
-			> a {
-				color: var(--darkmode-contrast) !important;
-			}
-		}
-		// Backward icon
-		[data-icon="backward"] {
-			color: var(--darkmode-contrast) !important;
-		}
-	}
-	.dark-mode {
-		// RemNote Help Page Container
-		#HelpPageContainer #HelpPage {
-			filter: invert(1);
-		}
-		// API
-		#APIKeys {
-			a {
-				color: var(--link-node-color-dark);
-			}
-			.ApiCommand {
-				.ui.table {
-					color: var(--darkmode-text);
-					background-color: var(--darkmode-background);
-
-					thead {
-						tr {
-							
-							th {
-								color: var(--darkmode-text-bold);
-							}
-						}
-						
+			// Emoji
+				.rem-reference {
+					.RichTextViewer {
+						background-color: unset;
+						filter: invert(0);
 					}
-					// tbody {
-					// 	tr {
-							
-					// 	}
-					// }
 				}
-			}
-			#ApiVoid {
-				background-color: var(--darkmode-background);
-			}
 		}
-	}
+	// 
 	// API
 		#APIKeys {
 			.ApiCommand {
 				overflow-x: auto;
 				white-space: pre;
 			}
+		}
+	// Darkmode Support
+		.dark-mode {
+			// Hover Effect
+				#hierarchy-editor {
+					.rem-container--article-link {
+						&:hover {
+							background-color: var(--darkmode-background-selected-darker);
+							border-radius: 5px;
+						}
+					}
+				}
+			// RemNote Help Page Container
+				#HelpPageContainer #HelpPage {
+					filter: invert(1);
+				}
+			// API
+				#APIKeys {
+					a {
+						color: var(--link-node-color-dark);
+					}
+					.ApiCommand {
+						.ui.table {
+							color: var(--darkmode-text);
+							background-color: var(--darkmode-background);
+
+							thead {
+								tr {
+									
+									th {
+										color: var(--darkmode-text-bold);
+									}
+								}
+								
+							}
+							// tbody {
+							// 	tr {
+									
+							// 	}
+							// }
+						}
+					}
+					#ApiVoid {
+						background-color: var(--darkmode-background);
+					}
+				}
 		}
 // Backlink
 	// Remove Date

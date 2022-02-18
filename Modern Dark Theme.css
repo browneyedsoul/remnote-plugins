@@ -1627,7 +1627,20 @@
 #document-sidebar [data-icon=backward] {
 	color: var(--darkmode-contrast) !important;
 }
+#document-sidebar .rem-reference .RichTextViewer {
+	background-color: unset;
+	filter: invert(0);
+}
 
+#APIKeys .ApiCommand {
+	overflow-x: auto;
+	white-space: pre;
+}
+
+.dark-mode #hierarchy-editor .rem-container--article-link:hover {
+	background-color: var(--darkmode-background-selected-darker);
+	border-radius: 5px;
+}
 .dark-mode #HelpPageContainer #HelpPage {
 	filter: invert(1);
 }
@@ -1643,11 +1656,6 @@
 }
 .dark-mode #APIKeys #ApiVoid {
 	background-color: var(--darkmode-background);
-}
-
-#APIKeys .ApiCommand {
-	overflow-x: auto;
-	white-space: pre;
 }
 
 .hierarchy-editor__search-portal-section {
