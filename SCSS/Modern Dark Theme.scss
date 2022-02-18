@@ -381,20 +381,31 @@
 			} 
 	}
 // Icon
-	.dark-mode {
-		// Calendar icon
-			.rem-calendar-icon.text-text {
-				color: var(--darkmode-text);
-			}
-		// Slot icon
-			.css-bMKjkl {
-				color: var(--darkmode-text);
-			} 
-		// Power-up icon
+	// Power-up icon
+		#DocumentTitle {
 			.rem-powerup-icon {
-				.text-icon {color: var(--darkmode-text);}
-			} 
-	}
+				.text-icon {
+					vertical-align: middle;
+				}
+			} 	
+		}
+	// Darkmode Support
+		.dark-mode {
+			// Calendar icon
+				.rem-calendar-icon.text-text {
+					color: var(--darkmode-text);
+				}
+			// Slot icon
+				.css-bMKjkl {
+					color: var(--darkmode-text);
+				} 
+			// Power-up icon
+				.rem-powerup-icon {
+					margin-right: 5px;
+
+					.text-icon {color: var(--darkmode-text);}
+				} 
+		}
 // Page Breadcrumbs
 	.document-header-top-bar {
 		height: fit-content;

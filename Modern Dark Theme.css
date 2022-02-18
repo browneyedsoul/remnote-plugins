@@ -287,11 +287,18 @@
 	border-radius: 5px;
 }
 
+#DocumentTitle .rem-powerup-icon .text-icon {
+	vertical-align: middle;
+}
+
 .dark-mode .rem-calendar-icon.text-text {
 	color: var(--darkmode-text);
 }
 .dark-mode .css-bMKjkl {
 	color: var(--darkmode-text);
+}
+.dark-mode .rem-powerup-icon {
+	margin-right: 5px;
 }
 .dark-mode .rem-powerup-icon .text-icon {
 	color: var(--darkmode-text);
