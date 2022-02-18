@@ -104,8 +104,6 @@
 
 .ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) {
 	flex-direction: column-reverse !important;
-	overflow-x: auto;
-	white-space: pre !important;
 }
 .ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) > div:first-child {
 	zoom: 1.2;
