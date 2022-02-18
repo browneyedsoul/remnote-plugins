@@ -372,3 +372,10 @@
 				}
 			}
 		}
+// Remove ImageNodeMenu
+	[data-rem-tags~="header"],
+	[data-rem-tags~="tn"] {
+		[data-menu-type="ImageNodeMenu"] {
+			display: none;
+		}
+	}

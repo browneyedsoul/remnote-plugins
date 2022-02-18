@@ -330,3 +330,8 @@
 .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .thumbnail--with-width {
 	position: relative;
 }
+
+[data-rem-tags~=header] [data-menu-type=ImageNodeMenu],
+[data-rem-tags~=tn] [data-menu-type=ImageNodeMenu] {
+	display: none;
+}
