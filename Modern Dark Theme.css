@@ -383,6 +383,10 @@
 	background-color: var(--darkmode-background);
 }
 
+.dark-mode #hierarchy-editor > .fixed {
+	background-color: var(--darkmode-background);
+}
+
 .dark-mode .rem-text,
 .dark-mode .rem-text.rem-header--1,
 .dark-mode .rem-text.rem-header--2,

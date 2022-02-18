@@ -497,6 +497,14 @@
 			background-color: var(--darkmode-background);
 		}
 	}
+// Sticky Top bar
+	.dark-mode {
+		#hierarchy-editor {
+			> .fixed {
+				background-color: var(--darkmode-background);
+			}
+		}
+	}
 // General Text
 	.dark-mode {
 		.rem-text,
