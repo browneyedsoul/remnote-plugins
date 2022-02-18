@@ -877,7 +877,7 @@
 .popup-menu > div > div.w-96 {
 	width: 36rem;
 }
-.popup-menu > div > div.w-96 #document-hover-preview__popup #hierarchy-editor .animate-zoom-into-bullet .portal-tree-node-box {
+.popup-menu #document-hover-preview__popup #hierarchy-editor .animate-zoom-into-bullet .portal-tree-node-box {
 	margin-left: 11px;
 }
 
@@ -1577,6 +1577,7 @@
 
 ::-webkit-scrollbar {
 	background-color: transparent;
+	height: 10px;
 	width: 8px;
 }
 
