@@ -280,6 +280,7 @@
 [data-rem-container-tags~=table][data-rem-container-tags~=w1120] > .TreeNode {
 	overflow: auto;
 	white-space: pre;
+	margin-right: 0.1rem !important;
 }
 [data-rem-container-tags~=table][data-rem-container-tags~=w90] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
 [data-rem-container-tags~=table][data-rem-container-tags~=w120] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
