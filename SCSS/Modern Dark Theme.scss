@@ -87,29 +87,6 @@
 			background-color:#D8E2F1;
 		}
 // All Notes page list
-	.dark-mode {
-		.document-table {
-			// All notes Menu Style
-				> div > div,
-				[color~="gray100"],
-				.css-huFlzA .css-fLTnVi {
-					color: var(--darkmode-text) !important;
-				}
-			// Button
-				div[color="#292936"] {
-					color: #000;
-				}
-			// Browser Item Style
-				.RichTextViewer {
-					color: var(--darkmode-text);
-				}
-			// All Notes Header & Item Hover Effect
-				.css-favSPh:hover,
-				.css-jcbvum:hover {
-					background-color: var(--darkmode-background-selected-darker);
-				}
-		}
-	}
 	// Reverse Browser Item Header
 		.ReactVirtualized__Grid__innerScrollContainer {
 			> div {
@@ -138,6 +115,38 @@
 					}
 				}
 			} 	
+		}
+	// Darkmode Support
+		.dark-mode {
+			.document-table {
+				// All notes Menu Style
+					> div > div,
+					[color~="gray100"],
+					.css-huFlzA .css-fLTnVi {
+						color: var(--darkmode-text) !important;
+					}
+				// Button
+					div[color="#292936"] {
+						color: #000;
+					}
+				// Browser Item Style
+					.RichTextViewer {
+						color: var(--darkmode-text);
+					}
+				// All Notes Header & Item Hover Effect
+					.css-favSPh:hover,
+					.css-jcbvum:hover {
+						background-color: var(--darkmode-background-selected-darker);
+					}
+				// Daily Documents
+					.ReactVirtualized__List {
+						> .grid {
+							> div {
+								color: var(--darkmode-contrast) !important;
+							}
+						}
+					}
+			}
 		}
 // Queue (Flashcard)
 	.dark-mode {

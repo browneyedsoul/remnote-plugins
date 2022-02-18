@@ -86,6 +86,18 @@
 	background-color: #D8E2F1;
 }
 
+.ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) {
+	flex-direction: column-reverse !important;
+}
+.ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) > div:first-child {
+	zoom: 1.2;
+}
+.ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) > div:last-child {
+	zoom: 0.75;
+	opacity: 0.4;
+	margin-bottom: 0.5rem;
+}
+
 .dark-mode .document-table > div > div,
 .dark-mode .document-table [color~=gray100],
 .dark-mode .document-table .css-huFlzA .css-fLTnVi {
@@ -101,17 +113,8 @@
 .dark-mode .document-table .css-jcbvum:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-
-.ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) {
-	flex-direction: column-reverse !important;
-}
-.ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) > div:first-child {
-	zoom: 1.2;
-}
-.ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) > div:last-child {
-	zoom: 0.75;
-	opacity: 0.4;
-	margin-bottom: 0.5rem;
+.dark-mode .document-table .ReactVirtualized__List > .grid > div {
+	color: var(--darkmode-contrast) !important;
 }
 
 .dark-mode .queue-cluster-selector {
