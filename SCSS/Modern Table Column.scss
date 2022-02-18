@@ -10,8 +10,9 @@
 	--darkmode-text: #DFDFD5;
 	--table-title-left-margin: 1.5rem;
     --table-title-right-margin: 0.7rem;
-    --table-container-left-margin: 0.8rem;
-    --table-container-right-margin: 0.7rem;
+    --table-container-left-margin: 1.5rem;
+    --table-container-right-margin: 0.1rem;
+    --table-container-cell-margin-left: -10px;
 }
 // Basic Structure
     [data-rem-container-tags~="table"] {
@@ -52,7 +53,7 @@
 
                     > .tree-node-container {
                         position: relative;
-                        left: -25px;
+                        left: var(--table-container-cell-margin-left);
                         width: 100%;
                     }
                 }
@@ -66,6 +67,13 @@
                 &:nth-child(n+2) {
                     margin-left: -1px;
                 }
+            }
+        }
+    }
+    .hierarchy-editor--ltr {
+        [data-rem-container-tags~=table] {
+            .TreeNode {
+                padding-left: unset;
             }
         }
     }
@@ -184,6 +192,8 @@
     [data-rem-container-tags~="table"][data-rem-container-tags~="w1170"],
     [data-rem-container-tags~="table"][data-rem-container-tags~="w1120"] {
         > .TreeNode {
+            overflow: auto;
+            white-space: pre;
             > .tree-node-container {
                 > .TreeNode {
                     > .tree-node-container {
@@ -192,45 +202,4 @@
                 }
             }
         }
-    }
-    [data-rem-tags~=table][data-rem-container-tags~=w90],
-    [data-rem-tags~=table][data-rem-container-tags~=w120],
-    [data-rem-tags~=table][data-rem-container-tags~=w150],
-    [data-rem-tags~=table][data-rem-container-tags~=w180],
-    [data-rem-tags~=table][data-rem-container-tags~=w210],
-    [data-rem-tags~=table][data-rem-container-tags~=w240],
-    [data-rem-tags~=table][data-rem-container-tags~=w270],
-    [data-rem-tags~=table][data-rem-container-tags~=w300],
-    [data-rem-tags~=table][data-rem-container-tags~=w330],
-    [data-rem-tags~=table][data-rem-container-tags~=w360],
-    [data-rem-tags~=table][data-rem-container-tags~=w390],
-    [data-rem-tags~=table][data-rem-container-tags~=w420],
-    [data-rem-tags~=table][data-rem-container-tags~=w450],
-    [data-rem-tags~=table][data-rem-container-tags~=w480],
-    [data-rem-tags~=table][data-rem-container-tags~=w510],
-    [data-rem-tags~=table][data-rem-container-tags~=w540],
-    [data-rem-tags~=table][data-rem-container-tags~=w570],
-    [data-rem-tags~=table][data-rem-container-tags~=w600],
-    [data-rem-tags~=table][data-rem-container-tags~=w630],
-    [data-rem-tags~=table][data-rem-container-tags~=w660],
-    [data-rem-tags~=table][data-rem-container-tags~=w690],
-    [data-rem-tags~=table][data-rem-container-tags~=w720],
-    [data-rem-tags~=table][data-rem-container-tags~=w750],
-    [data-rem-tags~=table][data-rem-container-tags~=w780],
-    [data-rem-tags~=table][data-rem-container-tags~=w810],
-    [data-rem-tags~=table][data-rem-container-tags~=w840],
-    [data-rem-tags~=table][data-rem-container-tags~=w870],
-    [data-rem-tags~=table][data-rem-container-tags~=w900],
-    [data-rem-tags~=table][data-rem-container-tags~=w930],
-    [data-rem-tags~=table][data-rem-container-tags~=w960],
-    [data-rem-tags~=table][data-rem-container-tags~=w990],
-    [data-rem-tags~=table][data-rem-container-tags~=w1020],
-    [data-rem-tags~=table][data-rem-container-tags~=w1050],
-    [data-rem-tags~=table][data-rem-container-tags~=w1080],
-    [data-rem-tags~=table][data-rem-container-tags~=w1110],
-    [data-rem-tags~=table][data-rem-container-tags~=w1140],
-    [data-rem-tags~=table][data-rem-container-tags~=w1170],
-    [data-rem-tags~=table][data-rem-container-tags~=w1200] {
-        overflow: auto;
-        white-space: pre;
     }
