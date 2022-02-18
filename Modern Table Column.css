@@ -49,6 +49,7 @@
 	position: relative;
 	left: var(--table-container-cell-margin-left);
 	width: 100%;
+	border-bottom: 1px solid var(--table-header-background-color);
 }
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > div:first-child {
 	font-weight: 600;
@@ -69,6 +70,9 @@
 .dark-mode [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > div:first-child {
 	color: var(--darkmode-text);
 	background-color: var(--table-header-background-color-dark);
+}
+.dark-mode [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
+	border-bottom: 1px solid var(--table-header-background-color-dark);
 }
 
 [data-rem-tags~=table] {
