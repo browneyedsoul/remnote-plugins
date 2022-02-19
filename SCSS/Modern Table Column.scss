@@ -17,59 +17,65 @@
 // Basic Structure
     [data-rem-container-tags~="table"] {
         // Title Bar Adjustment
-        > .tree-node--parent {
-            margin-left: var(--table-title-left-margin);
-            margin-right: var(--table-title-right-margin);
-        }
+            > .tree-node--parent {
+                margin-left: var(--table-title-left-margin);
+                margin-right: var(--table-title-right-margin);
+            }
         // Remove Left TreeNode Line
-        .TreeNode.tree-node--children  {
-            border-width: 0 !important;
-        }
+            .TreeNode.tree-node--children  {
+                border-width: 0 !important;
+            }
         // Structure
-        > .TreeNode {
-            display: flex;
-            left: 0px !important;
-            margin-left: var(--table-container-left-margin);
-            margin-right: var(--table-container-right-margin) !important;
+            > .TreeNode {
+                display: flex;
+                left: 0px !important;
+                margin-left: var(--table-container-left-margin);
+                margin-right: var(--table-container-right-margin) !important;
 
-            > .tree-node-container {
-                flex: 1 0 0;
-                white-space: wrap;
-                // Line Color
-                border: 0.1em solid var(--table-header-background-color);
-                // Constant Width
-                .rem-text,
-                .EditorContainer,
-                .rich-text-editor,
-                .RichTextViewer {
-                    overflow-wrap: anywhere;
-                    flex-grow: 1;
-                    max-width: 100%;
-                }
-                
-                > .TreeNode {
-                    width: 100% !important;
-                    left: 0px !important;
+                > .tree-node-container {
+                    flex: 1 0 0;
+                    white-space: wrap;
+                    // Line Color
+                        border: 0.1em solid var(--table-header-background-color);
+                    // Constant Width
+                        .rem-text,
+                        .EditorContainer,
+                        .rich-text-editor,
+                        .RichTextViewer {
+                            overflow-wrap: anywhere;
+                            flex-grow: 1;
+                            max-width: 100%;
+                        }
+                    // Column Table Head
+                        > div:first-child {
+                            font-weight: 600;
+                            background-color: var(--table-header-background-color);
+                            text-align: center;
+                        }
+                    // Line Grid Adjustment
+                        &:nth-child(n+2) {
+                            margin-left: -1px;
+                        }
+                    
+                    > .TreeNode {
+                        width: 100% !important;
+                        left: 0px !important;
 
-                    > .tree-node-container {
-                        position: relative;
-                        left: var(--table-container-cell-margin-left);
-                        width: 100%;
-                        border-bottom: 1px solid var(--table-header-background-color);
+                        > .tree-node-container {
+                            position: relative;
+                            left: var(--table-container-cell-margin-left);
+                            width: 100%;
+                            border-bottom: 1px solid var(--table-header-background-color);
+
+                            .TreeNode {
+                                > .tree-node-container {
+                                    margin-top: 1px;
+                                }
+                            }
+                        }
                     }
                 }
-                // Column Table Head
-                > div:first-child {
-                    font-weight: 600;
-                    background-color: var(--table-header-background-color);
-                    text-align: center;
-                }
-                // Line Grid Adjustment
-                &:nth-child(n+2) {
-                    margin-left: -1px;
-                }
             }
-        }
     }
     .hierarchy-editor--ltr {
         [data-rem-container-tags~=table] {

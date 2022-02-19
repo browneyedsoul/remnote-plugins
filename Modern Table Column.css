@@ -41,6 +41,14 @@
 	flex-grow: 1;
 	max-width: 100%;
 }
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container > div:first-child {
+	font-weight: 600;
+	background-color: var(--table-header-background-color);
+	text-align: center;
+}
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container:nth-child(n+2) {
+	margin-left: -1px;
+}
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode {
 	width: 100% !important;
 	left: 0px !important;
@@ -51,13 +59,8 @@
 	width: 100%;
 	border-bottom: 1px solid var(--table-header-background-color);
 }
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container > div:first-child {
-	font-weight: 600;
-	background-color: var(--table-header-background-color);
-	text-align: center;
-}
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container:nth-child(n+2) {
-	margin-left: -1px;
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container .TreeNode > .tree-node-container {
+	margin-top: 1px;
 }
 
 .hierarchy-editor--ltr [data-rem-container-tags~=table] .TreeNode {
