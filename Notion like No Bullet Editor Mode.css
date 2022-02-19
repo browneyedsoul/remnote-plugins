@@ -251,6 +251,10 @@
 	background-color: var(--node-card-item-color-dark);
 }
 
+#hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
+	left: 13px !important;
+}
+
 .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
 	background: var(--both-practice-color) !important;
 }

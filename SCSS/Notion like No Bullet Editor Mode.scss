@@ -300,20 +300,30 @@
 			margin-right: var(--treenode-line-spacing);
 		}
 	}
-	// List Card TreeNode Alert Color
+// TreeNode - List Card TreeNode Alert Color
+	.node-card-item {
+		&:before {
+			margin-left: -0.8rem;
+			background-color: var(--node-card-item-color);
+		}
+	}
+	.dark-mode {
 		.node-card-item {
 			&:before {
-				margin-left: -0.8rem;
-				background-color: var(--node-card-item-color);
+				background-color: var(--node-card-item-color-dark);
 			}
 		}
-		.dark-mode {
-			.node-card-item {
-				&:before {
-					background-color: var(--node-card-item-color-dark);
+	}
+// TreeNode - Sticky Top bar
+	#hierarchy-editor {
+		> .fixed {
+			> .tree-node-container {
+				> .TreeNode {
+					left: 13px !important;
 				}
 			}
 		}
+	}
 // Rem Bullet for Flashcard Rem
 	// Basic & Concept & List Rem-Type Bullet
 		// Both

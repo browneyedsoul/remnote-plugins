@@ -393,6 +393,10 @@
 	background-color: var(--darkmode-background);
 }
 
+#hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
+	left: -3px;
+}
+
 .dark-mode #hierarchy-editor > .fixed {
 	background-color: var(--darkmode-background);
 }
