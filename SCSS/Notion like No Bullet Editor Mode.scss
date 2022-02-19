@@ -1,3 +1,43 @@
+@mixin triangle-hidden {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px !important;
+	border-radius: 3px;
+}
+
+@mixin triangle-visible {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px !important;
+	border-radius: 3px;
+}
+
+@mixin triangle-doc-hidden {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 0 8px 8px !important;
+	border-radius: 3px;
+}
+
+@mixin triangle-doc-visible {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 8px 0 8px !important;
+	border-radius: 3px;
+}
+
+@mixin bulletlist {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 3.5px;
+	border-radius: 10px;
+}
+
 :root {
 	/* TreeNode Adjustment */
 		--treenode-line-spacing: 16px;
@@ -88,10 +128,7 @@
 			.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 			.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
 			.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
-				width: 0;
-				height: 0;
-				border-style: solid;
-				border-width: 6px 0 6px 6px !important;
+				@include triangle-hidden;
 				border-color: transparent transparent transparent var(--bullet-main);
 			}
 		}
@@ -99,20 +136,14 @@
 	#hierarchy-editor {
 		.rem-container--focused {
 			.rem-bullet.rem-bullet--hidden-children {
-				width: 0;
-				height: 0;
-				border-style: solid;
-				border-width: 6px 0 6px 6px !important;
+				@include triangle-hidden;
 				border-color: transparent transparent transparent var(--bullet-main);
 			}
 		}
 		[data-rem-tags~="highlight"] {
 			.rem-container--focused {
 				.rem-bullet.rem-bullet--hidden-children {
-					width: 0;
-					height: 0;
-					border-style: solid;
-					border-width: 6px 0 6px 6px !important;
+					@include triangle-hidden;
 					border-color: transparent transparent transparent var(--bullet-main);
 				}
 			}
@@ -126,10 +157,7 @@
 					.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 					.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
 					.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
-						width: 0;
-						height: 0;
-						border-style: solid;
-						border-width: 6px 0 6px 6px !important;
+						@include triangle-hidden;
 						border-color: transparent transparent transparent var(--bullet-main-dark);
 					}
 				}
@@ -137,10 +165,7 @@
 			#hierarchy-editor {
 				.rem-container--focused {
 					.rem-bullet.rem-bullet--hidden-children {
-						width: 0;
-						height: 0;
-						border-style: solid;
-						border-width: 6px 0 6px 6px !important;
+						@include triangle-hidden;
 						border-color: transparent transparent transparent var(--bullet-main-dark);
 					}
 				}
@@ -152,10 +177,7 @@
 						.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 						.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
 						.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
-							width: 0;
-							height: 0;
-							border-style: solid;
-							border-width: 6px 0 6px 6px !important;
+							@include triangle-hidden;
 							border-color: transparent transparent transparent var(--bullet-main);
 						}
 					}
@@ -165,10 +187,7 @@
 				[data-rem-tags~="highlight"] {
 					.rem-container--focused {
 						.rem-bullet.rem-bullet--hidden-children {
-							width: 0;
-							height: 0;
-							border-style: solid;
-							border-width: 6px 0 6px 6px !important;
+							@include triangle-hidden;
 							border-color: transparent transparent transparent var(--bullet-main);
 						}
 					}
@@ -187,10 +206,7 @@
 				.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 				.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
 				.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
-					width: 0;
-					height: 0;
-					border-style: solid;
-					border-width: 6px 0 6px 6px !important;
+					@include triangle-hidden;
 					border-color: transparent transparent transparent var(--bullet-main);
 				}
 			}
@@ -199,10 +215,7 @@
 		[data-rem-tags="aliases"] {
 			.rem-bullet__container {
 				.rem-bullet.rem-bullet--hidden-children {
-					width: 0 !important;
-					height: 0 !important;
-					border-style: solid;
-					border-width: 6px 0 6px 6px !important;
+					@include triangle-hidden;
 					border-color: transparent transparent transparent var(--bullet-main);
 					position: relative;
 					top: -0.02rem !important;
@@ -220,10 +233,7 @@
 	.rem-button__container {
 		.rem-bullet__container {
 			.rem-icon-bullet.rem-bullet--hidden-children {
-				width: 0;
-				height: 0;
-				border-style: solid;
-				border-width: 8px 0 8px 8px !important;
+				@include triangle-doc-hidden;
 				border-color: transparent transparent transparent black;
 			}
 		}
@@ -235,18 +245,8 @@
 	.highlight-color--blue,
 	.highlight-color--purple {
 		.rem-icon-bullet.rem-bullet--hidden-children {
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 8px 0 8px 8px !important;
+			@include triangle-doc-hidden;
 			border-color: transparent transparent transparent black;
-		}
-		.rem-icon-bullet.rem-bullet--all-children-visible {
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 8px 8px 0 8px !important;
-			border-color: black transparent transparent transparent;
 		}
 	}
 	// Darkmode Compatibility
@@ -254,10 +254,7 @@
 			.rem-button__container {
 				.rem-bullet__container {
 					.rem-icon-bullet.rem-bullet--hidden-children {
-						width: 0;
-						height: 0;
-						border-style: solid;
-						border-width: 8px 0 8px 8px !important;
+						@include triangle-doc-hidden;
 						border-color: transparent transparent transparent white;
 					}
 				}
@@ -271,18 +268,8 @@
 				.rem-button__container {
 					.rem-bullet__container {
 						.rem-icon-bullet.rem-bullet--hidden-children {
-							width: 0;
-							height: 0;
-							border-style: solid;
-							border-width: 8px 0 8px 8px !important;
+							@include triangle-doc-hidden;
 							border-color: transparent transparent transparent black;
-						}
-						.rem-icon-bullet.rem-bullet--all-children-visible {
-							width: 0;
-							height: 0;
-							border-style: solid;
-							border-width: 8px 8px 0 8px !important;
-							border-color: black transparent transparent transparent;
 						}
 					}
 				}
@@ -442,29 +429,18 @@
 		}
 // Make Bullet-list by Intentional Tagging
 	[data-rem-tags~="bulletlist"] {
-		padding-top: 1px;
-		padding-bottom: 5px;
 		margin-left: var(--treenode-line-spacing);
 		left: 2px;
 
 		.rem-button__container {
 			.rem-bullet.rem-bullet--hidden-children {
-				border-style: unset;
-				border-width: unset;
-				zoom: 1.5;
-				position: relative;
-				top: 0px;
+				@include triangle-hidden;
+				border-color: transparent transparent transparent var(--bullet-main);
 			}
-		}
-		
-		.rem-bullet {
-			background-color: var(--bullet-main);
-			border-radius: 4px !important;
-			height: 4px !important;
-			width: 4px !important;
-			padding: 1px;
-			position: relative;
-			top: 1px;
+			.rem-bullet.rem-bullet--all-children-visible {
+				@include bulletlist;
+				border-color: var(--bullet-main);
+			}
 		}
 		// Tag Declutter
 			.hierarchy-editor__tag-bar__tag {
@@ -478,8 +454,15 @@
 	}
 	.dark-mode {
 		[data-rem-tags~="bulletlist"] {
-			.rem-bullet {
-				background-color: var(--bullet-main-dark);
+			.rem-button__container {
+				.rem-bullet.rem-bullet--hidden-children {
+					@include triangle-hidden;
+					border-color: transparent transparent transparent var(--bullet-main-dark);
+				}
+				.rem-bullet.rem-bullet--all-children-visible {
+					@include bulletlist;
+					border-color: var(--bullet-main-dark);
+				}
 			}
 		}
 	}
