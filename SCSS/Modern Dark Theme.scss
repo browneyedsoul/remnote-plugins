@@ -522,7 +522,7 @@
 		> .fixed {
 			> .tree-node-container {
 				> .TreeNode {
-					left: -3px;
+					left: 0px;
 				}
 			}
 		}
@@ -1367,8 +1367,13 @@
 		.settings-page {
 			// Settings Page Basic
 				background-color: var(--darkmode-background);
-				.settings-page__sidebar__title {color: var(--darkmode-contrast);}
-				.settings-page__sidebar__link--active {border: 1px solid var(--darkmode-contrast);}
+
+				.settings-page__sidebar__title {
+					color: var(--darkmode-contrast);
+				}
+				.settings-page__sidebar__link--active {
+					border: 1px solid var(--darkmode-contrast);
+				}
 			// Settings Page Subscription page
 				#subscription-page {
 					.css-jbClFc {
@@ -1626,7 +1631,7 @@
 		}
 // Navigation Bar
 	.navigation-bar {
-		background-color: var(--darkmode-background-sidebar);
+		background-color: var(--darkmode-background);
 	}
 	.hierarchy-editor-list__sticky-top__rem-container {
 		position: relative;
@@ -1636,20 +1641,36 @@
 		.EditorContainer {
 			zoom: 90%;
 		}
-	} 
+	}
+	// Darkmode Support
+		.dark-mode {
+			.navigation-bar {
+				background-color: var(--darkmode-background-sidebar);
+				border-bottom: 1px solid #000 !important;
+			}
+		}
 // Sidebar
 	// Basic
 		#document-sidebar {
 			background-color: var(--darkmode-background);
 
-			+ div > div {
-				color: var(--darkmode-contrast) !important;
-				background-color: var(--darkmode-background-sidebar) !important;
+			+ div {
+				> div {
+					color: var(--darkmode-contrast);
+					background-color: var(--darkmode-background);
+				}
 			}
 		}
 		.dark-mode {
 			#document-sidebar {
 				background-color: var(--darkmode-background-sidebar) !important;
+
+				+ div {
+					> div {
+						color: var(--darkmode-contrast);
+						background-color: var(--darkmode-background-sidebar);
+					}
+				}
 			}
 		}
 	// Sidebar Collapsed
