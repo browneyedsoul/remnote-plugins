@@ -12,6 +12,10 @@
 	--darkmode-text: #dfdfd5;
 	--darkmode-text-bold: #A3DFDF;
 	--darkmode-contrast: #ECED00;
+	--bullet-ring-color: #D8D8E4;
+	--bullet-ring-color-dark: #BDBDBD;
+	--bullet-core-color: #2A2A36;
+	--bullet-core-color-dark: #1B1F23;
 	--quote-text-dark: #f1fa8c;
 	--quote-background-dark: #252525;
 	--quote-text-reference: #2711ff;
@@ -523,14 +527,23 @@
 	filter: invert(1);
 }
 
+.hover\:bg-hover-bg:hover {
+	background-color: unset !important;
+}
+
 .dark-mode .plus-button,
 .dark-mode .six-dot,
 .dark-mode .toggle-collapse-button {
 	background-color: transparent;
 }
-
-.hover\:bg-hover-bg:hover {
-	background-color: unset !important;
+.dark-mode .rem-button__container .rem-bullet__container .rem-bullet--hidden-children .perfect-circle__inner > svg .rem-bullet__ring {
+	fill: var(--bullet-ring-color-dark);
+}
+.dark-mode .rem-button__container .rem-bullet__container .rem-bullet--hidden-children .perfect-circle__inner > svg .rem-bullet__core {
+	fill: var(--bullet-core-color-dark);
+}
+.dark-mode .rem-button__container .rem-bullet__container .rem-bullet--all-children-visible .perfect-circle__inner > svg .rem-bullet__core {
+	fill: var(--bullet-ring-color-dark);
 }
 
 .highlight-color--red,
@@ -1717,10 +1730,6 @@
 	border-color: var(--line-color);
 }
 
-.dark-mode #hierarchy-editor .rem-container__top-level-rem-in-portal-border .rem-container__top-level-rem-in-portal-border__inner {
-	border-color: var(--line-color-dark);
-}
-
 span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 	background-color: #E2E1DF !important;
 	color: black;
@@ -1736,6 +1745,16 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 }
 .dark-mode #hierarchy-editor .rem-container--not-included-in-document-scope .float-right .bg-white {
 	background-color: unset;
+}
+.dark-mode #hierarchy-editor .rem-container__top-level-rem-in-portal-border .rem-container__top-level-rem-in-portal-border__inner {
+	border-color: var(--line-color-dark);
+}
+.dark-mode #hierarchy-editor .tree-node--automatic-search-portal-header {
+	background-color: var(--darkmode-background);
+}
+.dark-mode #hierarchy-editor .tree-node--automatic-search-portal-header .bg-white {
+	color: var(--darkmode-text);
+	background-color: var(--darkmode-background);
 }
 
 .pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--red .Highlight__part,

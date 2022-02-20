@@ -13,6 +13,10 @@
 	--darkmode-text: #dfdfd5;
 	--darkmode-text-bold: #A3DFDF;
 	--darkmode-contrast: #ECED00;
+	--bullet-ring-color: #D8D8E4;
+	--bullet-ring-color-dark: #BDBDBD;
+	--bullet-core-color: #2A2A36;
+	--bullet-core-color-dark: #1B1F23;
 	--quote-text-dark: #f1fa8c;
 	--quote-background-dark: #252525;
 	--quote-text-reference: #2711ff;
@@ -711,16 +715,42 @@
 		}
 	}
 // Rem-Bullet Container
-	.dark-mode {
-		.plus-button,
-		.six-dot,
-		.toggle-collapse-button {
-			background-color: transparent;
-		}
-	}
 	// Toggle Collapse Button Hover effect
 		.hover\:bg-hover-bg:hover {
 			background-color: unset !important;
+		}
+	// Darkmode Compatibility
+		.dark-mode {
+			.plus-button,
+			.six-dot,
+			.toggle-collapse-button {
+				background-color: transparent;
+			}
+			.rem-button__container {
+				.rem-bullet__container {
+					.rem-bullet--hidden-children {
+						.perfect-circle__inner {
+							> svg {
+								.rem-bullet__ring {
+									fill: var(--bullet-ring-color-dark);
+								}
+								.rem-bullet__core {
+									fill: var(--bullet-core-color-dark);
+								}
+							}
+						}
+					}
+					.rem-bullet--all-children-visible {
+						.perfect-circle__inner {
+							> svg {
+								.rem-bullet__core {
+									fill: var(--bullet-ring-color-dark);
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 // Hightlight Style
 	// Basic Highlight Style and Font Color
@@ -2127,15 +2157,6 @@
 				}
 			}
 		}
-		.dark-mode {
-			#hierarchy-editor {
-				.rem-container__top-level-rem-in-portal-border {
-					.rem-container__top-level-rem-in-portal-border__inner {
-						border-color: var(--line-color-dark);
-					}
-				}
-			}
-		}
 	// Hover Effect
 		span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 			background-color: #E2E1DF !important;
@@ -2149,18 +2170,33 @@
 		}
 	// Darkmode Compatibility
 		.dark-mode {
-			// Reference Breadcrumbs
 			#hierarchy-editor {
-				.rem-container--not-included-in-document-scope {
-					.rem-text {
-						color: var(--darkmode-text);
-					}
-					.float-right {
-						.bg-white {
-							background-color: unset;
+				// Reference Breadcrumbs
+					.rem-container--not-included-in-document-scope {
+						.rem-text {
+							color: var(--darkmode-text);
+						}
+						.float-right {
+							.bg-white {
+								background-color: unset;
+							}
 						}
 					}
-				}
+				// Line Color
+					.rem-container__top-level-rem-in-portal-border {
+						.rem-container__top-level-rem-in-portal-border__inner {
+							border-color: var(--line-color-dark);
+						}
+					}
+				// 1.7~ Compatibility
+					.tree-node--automatic-search-portal-header {
+						background-color: var(--darkmode-background);
+
+						.bg-white {
+							color: var(--darkmode-text);
+							background-color: var(--darkmode-background);
+						}
+					}
 			}
 		}
 // PDF
