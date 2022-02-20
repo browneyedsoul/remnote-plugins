@@ -211,24 +211,69 @@
 				}
 			}
 		}
-	// Alias Bullet Treatment
-		[data-rem-tags="aliases"] {
-			.rem-bullet__container {
-				.rem-bullet.rem-bullet--hidden-children {
-					@include triangle-hidden;
-					border-color: transparent transparent transparent var(--bullet-main);
-					position: relative;
-					top: -0.02rem !important;
-					left: 0.02rem !important;
-				}
-			}
+	// Alias Bullet
+		[data-rem-tags~="aliases"] {
 			.rem-container--descriptor-rem-type {
-				.rem-bullet {
-					-webkit-mask-image: unset;
-					mask-image: unset;
+				.rem-button__container {
+					.rem-bullet__container {
+						.rem-bullet--hidden-children {
+							@include triangle-hidden;
+							border-color: transparent transparent transparent var(--bullet-main);
+							width: 0 !important;
+							height: 0 !important;
+							position: relative;
+							top: -0.05rem !important;
+							left: 0.05rem !important;
+							-webkit-mask-image : unset;
+									mask-image : unset;
+						}
+						.rem-bullet--all-children-visible {
+							@include triangle-visible;
+							border-color: var(--bullet-main) transparent transparent transparent;
+							width: 0 !important;
+							height: 0 !important;
+							position: relative;
+							top: -0.05rem !important;
+							left: 0.05rem !important;
+							-webkit-mask-image : unset;
+									mask-image : unset;
+						}
+					}
 				}
 			}
 		}
+		.dark-mode {
+			[data-rem-tags~="aliases"] {
+				.rem-container--descriptor-rem-type {
+					.rem-button__container {
+						.rem-bullet__container {
+							.rem-bullet--hidden-children {
+								border-color: transparent transparent transparent var(--bullet-main-dark);
+							}
+							.rem-bullet--all-children-visible {
+								border-color: var(--bullet-main-dark) transparent transparent transparent;
+							}
+						}
+					}
+				}
+			}
+		}
+		// Descriptor-Rem-Type Bullet
+			// .rem-container--descriptor-rem-type {
+			// 	.rem-bullet {
+			// 		width: 14px !important;
+			// 		height: 12px !important;
+			// 		position: relative !important;
+			// 		top: 2px !important;
+			// 		left: -1px !important;
+			// 		-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
+			// 				mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
+			// 		-webkit-mask-size: contain;
+			// 				mask-size: contain;
+			// 		-webkit-mask-repeat: no-repeat;
+			// 				mask-repeat: no-repeat;
+			// 	}
+			// }
 // Forder & File Style
 	.rem-button__container {
 		.rem-bullet__container {
