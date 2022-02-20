@@ -1331,6 +1331,12 @@
 			#DefaultExampleDocumentActions {
 				color: var(--darkmode-contrast) !important;
 			}
+			[data-icon~="dropdown"] {
+				color: #000 !important;
+				fill: #000 !important;
+			}
+		}
+		.dark-mode {
 			.settings-page {
 				.spaced-repetition-scheduler-form a,
 				// Body Text
@@ -1341,14 +1347,6 @@
 				.divider.text {
 					color: var(--darkmode-contrast) !important;
 				}
-			}
-			[data-icon~="dropdown"] {
-				color: #000 !important;
-				fill: #000 !important;
-			}
-		}
-		.dark-mode {
-			.settings-page {
 				.settings-page__sidebar .inline-block.h-4,
 				.pt-4,
 				.pl-4,
@@ -1367,16 +1365,18 @@
 				.settings__pricing-option-item > div > div > div {
 					color: var(--darkmode-text) !important;
 				}
+				.ui.input {
+					> input {
+						background-color: var(--darkmode-background-selected-darker);
+					}
+				}
 			}
 		}
 		// .popup-menu div svg {
 		// 	fill: var(--darkmode-text) !important;
 		// 	color: var(--darkmode-text) !important;
 		// }
-		.dark-mode .settings-page .ui.input>input,
-		.bg-blue-5:hover {
-			background-color: var(--darkmode-background-selected-darker);
-		}
+		
 		.dark-mode .text-gray-100 {
 			color: unset;
 		}
