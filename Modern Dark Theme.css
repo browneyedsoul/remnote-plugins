@@ -41,17 +41,17 @@
 	--purple-text: #a142f4;
 	--purple-text-dark: #bf96f4;
 	--highlight-color--red: #ffb9af;
-	--highlight-color--red-dark: #ff8a88;
+	--highlight-color--red-dark: #E4918B;
 	--highlight-color--orange: #ffca8c;
-	--highlight-color--orange-dark: #FFB86C;
+	--highlight-color--orange-dark: #FFC988;
 	--highlight-color--yellow: #f1fa8c;
-	--highlight-color--yellow-dark: #D3D006;
+	--highlight-color--yellow-dark: #D3CB3E;
 	--highlight-color--green: #9fe39b;
-	--highlight-color--green-dark: #99D395;
+	--highlight-color--green-dark: #ACCEAD;
 	--highlight-color--blue: #bad7eb;
-	--highlight-color--blue-dark: #9fc8eb;
+	--highlight-color--blue-dark: #B2D7EB;
 	--highlight-color--purple: #e6c9eb;
-	--highlight-color--purple-dark: #E6C0F0;
+	--highlight-color--purple-dark: #DDC3F0;
 	--pdf-highlight-color-red: #ffd0c3;
 	--pdf-highlight-color-orange: #fddab6;
 	--pdf-highlight-color-yellow: #fff34c;
@@ -551,7 +551,7 @@
 .highlight-color--purple {
 	border-radius: 3px;
 	margin-bottom: 1px;
-	padding: 0px 2px 1px 2px;
+	padding: 0px 3px 1px 3px;
 	color: black;
 }
 
@@ -560,6 +560,10 @@
 [data-rem-tags~=highlight] .rem-text.rem-header--2,
 [data-rem-tags~=highlight] .rem-text.rem-header--3 {
 	color: black;
+}
+
+.rem-text span.highlight-color--red, .rem-text span.highlight-color--orange, .rem-text span.highlight-color--yellow, .rem-text span.highlight-color--green, .rem-text span.highlight-color--blue, .rem-text span.highlight-color--purple {
+	font-weight: 550;
 }
 
 .highlight-color--red {
