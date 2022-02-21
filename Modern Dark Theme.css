@@ -1039,6 +1039,21 @@
 	background-color: var(--popup-background-hover);
 }
 
+.dark-mode #Popup #PopupContent #delete-confirm-popup {
+	color: var(--darkmode-text);
+	background-color: var(--darkmode-background);
+}
+.dark-mode #Popup #PopupContent #delete-confirm-popup .popup__header {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode #Popup #PopupContent #delete-confirm-popup > div:last-of-type .button.bg-white {
+	background-color: var(--darkmode-background-selected-darker);
+	border-color: unset !important;
+}
+.dark-mode #Popup #PopupContent #delete-confirm-popup > div:last-of-type .button.bg-white:hover {
+	background-color: var(--darkmode-background-selected);
+}
+
 .react-datepicker.search-results__date-picker {
 	background-color: #ffffff !important;
 }
