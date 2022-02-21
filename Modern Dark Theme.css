@@ -41,11 +41,11 @@
 	--purple-text: #a142f4;
 	--purple-text-dark: #bf96f4;
 	--highlight-color--red: #ffb9af;
-	--highlight-color--red-dark: #E4918B;
+	--highlight-color--red-dark: #FFA39C;
 	--highlight-color--orange: #ffca8c;
-	--highlight-color--orange-dark: #FFC988;
+	--highlight-color--orange-dark: #F3C082;
 	--highlight-color--yellow: #f1fa8c;
-	--highlight-color--yellow-dark: #D3CB3E;
+	--highlight-color--yellow-dark: #DBD54B;
 	--highlight-color--green: #9fe39b;
 	--highlight-color--green-dark: #ACCEAD;
 	--highlight-color--blue: #bad7eb;
@@ -1748,12 +1748,20 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 .dark-mode #hierarchy-editor .rem-container__top-level-rem-in-portal-border .rem-container__top-level-rem-in-portal-border__inner {
 	border-color: var(--line-color-dark);
 }
-.dark-mode #hierarchy-editor .tree-node--automatic-search-portal-header {
-	background-color: var(--darkmode-background);
-}
-.dark-mode #hierarchy-editor .tree-node--automatic-search-portal-header .bg-white {
+.dark-mode #hierarchy-editor .tree-node--parent .rem-container .bg-white {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
+}
+.dark-mode #hierarchy-editor .tree-node--parent > .bg-white {
+	color: var(--darkmode-text);
+	background-color: var(--darkmode-background);
+}
+.dark-mode #hierarchy-editor .tree-node--parent .button {
+	background-color: var(--darkmode-background-selected-darker);
+	border-color: #000 !important;
+}
+.dark-mode #hierarchy-editor .tree-node--parent .button:hover {
+	background-color: #636368;
 }
 
 .pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--red .Highlight__part,

@@ -42,11 +42,11 @@
 	--purple-text: #a142f4;
 	--purple-text-dark: #bf96f4;
 	--highlight-color--red: #ffb9af;
-	--highlight-color--red-dark: #E4918B;
+	--highlight-color--red-dark: #FFA39C;
 	--highlight-color--orange: #ffca8c;
-	--highlight-color--orange-dark: #FFC988;
+	--highlight-color--orange-dark: #F3C082;
 	--highlight-color--yellow: #f1fa8c;
-	--highlight-color--yellow-dark: #D3CB3E;
+	--highlight-color--yellow-dark: #DBD54B;
 	--highlight-color--green: #9fe39b;
 	--highlight-color--green-dark: #ACCEAD;
 	--highlight-color--blue: #bad7eb;
@@ -2202,12 +2202,24 @@
 						}
 					}
 				// 1.7~ Compatibility
-					.tree-node--automatic-search-portal-header {
-						background-color: var(--darkmode-background);
-
-						.bg-white {
+					.tree-node--parent {
+						.rem-container {
+							.bg-white {
+								color: var(--darkmode-text);
+								background-color: var(--darkmode-background);
+							}
+						}
+						> .bg-white {
 							color: var(--darkmode-text);
 							background-color: var(--darkmode-background);
+						}
+						.button {
+							background-color: var(--darkmode-background-selected-darker);
+							border-color: #000 !important;
+
+							&:hover {
+								background-color: #636368;
+							}
 						}
 					}
 			}
