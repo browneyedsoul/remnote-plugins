@@ -2232,6 +2232,9 @@
 							}
 						}
 						#AutomaticSearchPortals {
+							.text-base {
+								color: var(--darkmode-text);
+							}
 							.button {
 								background-color: var(--darkmode-background-selected-darker);
 								border-color: #000 !important;
