@@ -251,14 +251,14 @@
 .dark-mode [aria-label~=Omnibar] .css-khYwOj {
 	background-color: var(--darkmode-background-selected);
 }
+.dark-mode [aria-label~=Omnibar] .bg-warning-10 {
+	color: red;
+}
 .dark-mode .css-kMEfqE {
 	color: var(--darkmode-text);
 }
 .dark-mode .css-cMUIYB {
 	background-color: var(--darkmode-background-selected);
-}
-.dark-mode .css-ZPdGi .css-kMEfqE .bg-warning-10 {
-	color: red;
 }
 .dark-mode .css-ZPdGi {
 	background-color: var(--darkmode-background);

@@ -334,6 +334,10 @@
 				.css-khYwOj {
 					background-color: var(--darkmode-background-selected);
 				}
+				// Focused Text
+				.bg-warning-10 {
+					color: red;
+				}
 			}
 		// Search Item Text
 			.css-kMEfqE {
@@ -342,10 +346,6 @@
 		// Selected
 			.css-cMUIYB {
 				background-color: var(--darkmode-background-selected);
-			}
-		// Focused Text
-			.css-ZPdGi .css-kMEfqE .bg-warning-10 {
-				color: red;
 			}
 		// Main Window
 			.css-ZPdGi {
