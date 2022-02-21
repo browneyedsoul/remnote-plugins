@@ -555,12 +555,18 @@
 			}
 		}
 	}
-// Hierarchy Editor - LinkNode, Hyperlink
+// Hierarchy Editor - Hyperlink
+	.text-blue-60 {
+		color: #002DB1;
+
+		&.underline {
+			text-decoration: none !important;
+			font-family: 'Roboto Mono';
+		}
+	}
 	.dark-mode {
-		.LinkNode,
-		.underline.text-blue-60.cursor-pointer  {
+		.text-blue-60 {
 			color: var(--link-node-color-dark) !important;
-			background-color: var(--darkmode-background-selected-darker);
 			border-radius: 3px;
 			padding: 0 2px 1px 2px;
 		}

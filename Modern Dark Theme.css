@@ -416,10 +416,16 @@
 	color: var(--darkmode-text-bold);
 }
 
-.dark-mode .LinkNode,
-.dark-mode .underline.text-blue-60.cursor-pointer {
+.text-blue-60 {
+	color: #002DB1;
+}
+.text-blue-60.underline {
+	text-decoration: none !important;
+	font-family: "Roboto Mono";
+}
+
+.dark-mode .text-blue-60 {
 	color: var(--link-node-color-dark) !important;
-	background-color: var(--darkmode-background-selected-darker);
 	border-radius: 3px;
 	padding: 0 2px 1px 2px;
 }
