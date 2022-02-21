@@ -1770,6 +1770,13 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 .dark-mode #hierarchy-editor .tree-node--parent > .bg-white .button:hover {
 	background-color: #636368;
 }
+.dark-mode #hierarchy-editor .tree-node--parent #AutomaticSearchPortals .button {
+	background-color: var(--darkmode-background-selected-darker);
+	border-color: #000 !important;
+}
+.dark-mode #hierarchy-editor .tree-node--parent #AutomaticSearchPortals .button:hover {
+	background-color: #636368;
+}
 
 .pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--red .Highlight__part,
 .pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--orange .Highlight__part,

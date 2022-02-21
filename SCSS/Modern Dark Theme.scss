@@ -2231,6 +2231,16 @@
 								}
 							}
 						}
+						#AutomaticSearchPortals {
+							.button {
+								background-color: var(--darkmode-background-selected-darker);
+								border-color: #000 !important;
+
+								&:hover {
+									background-color: #636368;
+								}
+							}
+						}
 					}
 			}
 		}
