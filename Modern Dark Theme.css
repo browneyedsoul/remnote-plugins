@@ -1752,15 +1752,22 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
 }
+.dark-mode #hierarchy-editor .tree-node--parent .rem-container .bg-white .button {
+	background-color: var(--darkmode-background-selected-darker);
+	border-color: #000 !important;
+}
+.dark-mode #hierarchy-editor .tree-node--parent .rem-container .bg-white .button:hover {
+	background-color: #636368;
+}
 .dark-mode #hierarchy-editor .tree-node--parent > .bg-white {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
 }
-.dark-mode #hierarchy-editor .tree-node--parent .button {
+.dark-mode #hierarchy-editor .tree-node--parent > .bg-white .button {
 	background-color: var(--darkmode-background-selected-darker);
 	border-color: #000 !important;
 }
-.dark-mode #hierarchy-editor .tree-node--parent .button:hover {
+.dark-mode #hierarchy-editor .tree-node--parent > .bg-white .button:hover {
 	background-color: #636368;
 }
 

@@ -2207,18 +2207,28 @@
 							.bg-white {
 								color: var(--darkmode-text);
 								background-color: var(--darkmode-background);
+
+								.button {
+									background-color: var(--darkmode-background-selected-darker);
+									border-color: #000 !important;
+
+									&:hover {
+										background-color: #636368;
+									}
+								}
 							}
 						}
 						> .bg-white {
 							color: var(--darkmode-text);
 							background-color: var(--darkmode-background);
-						}
-						.button {
-							background-color: var(--darkmode-background-selected-darker);
-							border-color: #000 !important;
+							
+							.button {
+								background-color: var(--darkmode-background-selected-darker);
+								border-color: #000 !important;
 
-							&:hover {
-								background-color: #636368;
+								&:hover {
+									background-color: #636368;
+								}
 							}
 						}
 					}
