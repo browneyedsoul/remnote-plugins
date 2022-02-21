@@ -27,6 +27,7 @@
 	--popup-background-hover: #D1D1D1;
 	--line-color: #dddddd;
 	--line-color-dark: #535353;
+	--link-node-color: #002DB1;
 	--link-node-color-dark: #94d2ff;
 	--red-text: #ff4a44;
 	--red-text-dark: #fd776f;
@@ -417,7 +418,7 @@
 }
 
 .text-blue-60 {
-	color: #002DB1;
+	color: var(--link-node-color);
 }
 .text-blue-60.underline {
 	text-decoration: none !important;
@@ -431,6 +432,9 @@
 }
 .dark-mode .text-blue-60.highlight-color--red, .dark-mode .text-blue-60.highlight-color--orange, .dark-mode .text-blue-60.highlight-color--yellow, .dark-mode .text-blue-60.highlight-color--green, .dark-mode .text-blue-60.highlight-color--blue, .dark-mode .text-blue-60.highlight-color--purple {
 	color: #000;
+}
+.dark-mode [data-rem-tags~=highlight] .text-blue-60 {
+	color: var(--link-node-color);
 }
 
 .dark-mode .TreeNode {

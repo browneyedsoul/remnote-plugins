@@ -28,6 +28,7 @@
 	--popup-background-hover: #D1D1D1;
 	--line-color: #dddddd;
 	--line-color-dark: #535353;
+	--link-node-color: #002DB1;
 	--link-node-color-dark: #94d2ff;
 	--red-text: #ff4a44;
 	--red-text-dark: #fd776f;
@@ -557,7 +558,7 @@
 	}
 // Hierarchy Editor - Hyperlink
 	.text-blue-60 {
-		color: #002DB1;
+		color: var(--link-node-color);
 
 		&.underline {
 			text-decoration: none !important;
@@ -577,6 +578,11 @@
 			&.highlight-color--blue,
 			&.highlight-color--purple {
 				color: #000;
+			}
+		}
+		[data-rem-tags~="highlight"] {
+			.text-blue-60 {
+				color: var(--link-node-color);
 			}
 		}
 	}
