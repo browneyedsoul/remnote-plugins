@@ -566,9 +566,18 @@
 	}
 	.dark-mode {
 		.text-blue-60 {
-			color: var(--link-node-color-dark) !important;
+			color: var(--link-node-color-dark);
 			border-radius: 3px;
 			padding: 0 2px 1px 2px;
+
+			&.highlight-color--red,
+			&.highlight-color--orange,
+			&.highlight-color--yellow,
+			&.highlight-color--green,
+			&.highlight-color--blue,
+			&.highlight-color--purple {
+				color: #000;
+			}
 		}
 	}
 // TreeNode
@@ -632,29 +641,6 @@
 // Tag Searching Text
 	.work-in-progress-tag {
 		color: black;
-	}
-// Backlinks
-	.dark-mode {
-		.backlink-counter.text-gray-70 {
-			color: var(--darkmode-contrast);
-			background-color: var(--darkmode-selected-darker);
-		}
-	}
-	#document {
-		#hierarchy-editor {
-			// .animate-zoom-into-bullet.tree-node-container {
-			// 	.portal-tree-node-box {
-			// 		margin-left: -13.5px;
-			// 	}
-			// }
-			.animate-zoom-into-bullet {
-				.tree-node--parent {
-					+ .portal-tree-node-box {
-						margin-left: -3px;
-					}
-				}
-			}
-		}
 	}
 // Tag Bar
 	.dark-mode {
@@ -2124,6 +2110,35 @@
 				}
 		}
 // Backlink
+	// Placement
+		#document {
+			#hierarchy-editor {
+				.animate-zoom-into-bullet {
+					.tree-node--parent {
+						+ .portal-tree-node-box {
+							margin-left: -3px;
+						}
+					}
+				}
+			}
+		}
+	// Backlink Counter
+		.dark-mode {
+			.backlink-counter {
+				color: var(--darkmode-contrast);
+				background-color: var(--darkmode-selected-darker);
+			}
+			.highlight-color--red,
+			.highlight-color--orange,
+			.highlight-color--yellow,
+			.highlight-color--green,
+			.highlight-color--blue,
+			.highlight-color--purple {
+				.backlink-counter {
+						color: var(--darkmode-background-selected-darker);
+					}
+			}
+		}
 	// Remove Date
 		.hierarchy-editor__search-portal-section {
 			display: none;
