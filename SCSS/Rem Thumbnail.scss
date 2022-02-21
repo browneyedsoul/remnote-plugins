@@ -153,59 +153,59 @@
 // Popup
 	.popup-menu {
 		// Static Popup
-		.popup-menu__item--static {
-			span.RichTextViewer {
-				.image-node__container {
-					@include thumbnail-set;
-					
-					.image-node {
+			.popup-menu__item--static {
+				span.RichTextViewer {
+					.image-node__container {
 						@include thumbnail-set;
+						
+						.image-node {
+							@include thumbnail-set;
 
+							.thumbnail--with-width {
+								@include thumbnail-set;
+							}
+						}
+					}
+				}
+			}
+		// Hover Preview
+			#document-hover-preview__popup {
+				> span {
+					.RichTextViewer {
+						.inline-block,
+						.inline-block.align-text-top.group,
+						.image-node__container,
+						.image-node,
 						.thumbnail--with-width {
 							@include thumbnail-set;
 						}
 					}
 				}
 			}
-		}
-		// Hover Preview
-		#document-hover-preview__popup {
-			> span {
-				.RichTextViewer {
-					.inline-block,
-					.inline-block.align-text-top.group,
-					.image-node__container,
-					.image-node,
-					.thumbnail--with-width {
-						@include thumbnail-set;
-					}
-				}
-			}
-		}
 		// Image Thumbnail Tag
-		[data-rem-tags*="tn"] {
-			#document-hover-preview {
-				.RichTextViewer {
+			[data-rem-tags*="tn"] {
+				#document-hover-preview {
+					.RichTextViewer {
+						.inline-block,
+						.image-node__container,
+						.image-node,
+						.thumbnail--with-width {
+							@include thumbnail-set;
+						}
+					}
+				}
+			}
+		// Tag bar
+			.rem.isSearchResult {
+				.hierarchy-editor__tag-bar {
 					.inline-block,
-					.image-node__container,
-					.image-node,
 					.thumbnail--with-width {
 						@include thumbnail-set;
 					}
 				}
 			}
-		}
-		// Tag bar
-		.rem.isSearchResult {
-			.hierarchy-editor__tag-bar {
-				.inline-block,
-				.thumbnail--with-width {
-					@include thumbnail-set;
-				}
-			}
-		}
 		// Tags Backlink Popup- right side of a Rem
-			div.search-result__rem-breadcrumbs + span.bold {
+			div.search-result__rem-breadcrumbs + span {
 				> .RichTextViewer {
 					.image-node__container {
 						.image-node__container.group.inline-block.align-text-top {
@@ -221,18 +221,18 @@
 				}
 			}
 		// Reference
-		.EditorContainer.EditorContainerInline {
-			.thumbnail--with-width {
-				@include thumbnail-set;
-				color: #2B3137;
+			.EditorContainer.EditorContainerInline {
+				.thumbnail--with-width {
+					@include thumbnail-set;
+					color: #2B3137;
+				}
 			}
-		}
-		.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
-			.inline-block,
-			.thumbnail--with-width {
-				@include thumbnail-set;
+			.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
+				.inline-block,
+				.thumbnail--with-width {
+					@include thumbnail-set;
+				}
 			}
-		}
 	}
 // Popup 2
 	#Popup {

@@ -165,13 +165,13 @@
 	min-width: auto !important;
 	margin-right: 2px;
 }
-.popup-menu div.search-result__rem-breadcrumbs + span.bold > .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top {
+.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top {
 	height: 1em !important;
 	width: auto !important;
 	min-width: auto !important;
 	margin-right: 2px;
 }
-.popup-menu div.search-result__rem-breadcrumbs + span.bold > .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node .thumbnail--with-width {
+.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node .thumbnail--with-width {
 	height: 1em !important;
 	width: auto !important;
 	min-width: auto !important;
