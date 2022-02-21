@@ -205,7 +205,8 @@
 				}
 			}
 		// Tags Backlink Popup- right side of a Rem
-			div.search-result__rem-breadcrumbs + span {
+			div.search-result__rem-breadcrumbs + span,
+			.rem-powerup-icon + span {
 				> .RichTextViewer {
 					.image-node__container {
 						.image-node__container.group.inline-block.align-text-top {
