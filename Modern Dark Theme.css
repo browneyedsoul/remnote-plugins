@@ -1127,56 +1127,6 @@
 	top: 0px;
 }
 
-.dark-mode #DefaultExampleDocumentActions {
-	color: var(--darkmode-contrast) !important;
-}
-.dark-mode [data-icon~=dropdown] {
-	color: #000 !important;
-	fill: #000 !important;
-}
-
-.dark-mode .settings-page .spaced-repetition-scheduler-form a,
-.dark-mode .settings-page [color~="#515167"],
-.dark-mode .settings-page [data-cy~=loading-spinner] > div,
-.dark-mode .settings-page .divider.text {
-	color: var(--darkmode-contrast) !important;
-}
-.dark-mode .settings-page .settings-page__sidebar .inline-block.h-4,
-.dark-mode .settings-page .pt-4,
-.dark-mode .settings-page .pl-4,
-.dark-mode .settings-page .text-gray-70,
-.dark-mode .settings-page .spaced-repetition-scheduler-form .p-6 > div > div,
-.dark-mode .settings-page .spaced-repetition-scheduler-form .py-1,
-.dark-mode .settings-page .spaced-repetition-scheduler-form__field > div,
-.dark-mode .settings-page .spaced-repetition-scheduler-form__field__explanation,
-.dark-mode .settings-page .pt-8.px-6 > div,
-.dark-mode .settings-page .pb-1,
-.dark-mode .settings-page .pr-1,
-.dark-mode .settings-page .mt-4.mr-6 > div,
-.dark-mode .settings-page .feature-checklist-element > div,
-.dark-mode .settings-page .settings__pricing-option-item > div > div > div {
-	color: var(--darkmode-text) !important;
-}
-.dark-mode .settings-page .ui.input > input {
-	background-color: var(--darkmode-background-selected-darker);
-}
-
-.dark-mode .text-gray-100 {
-	color: unset;
-}
-
-.dark-mode .hover\:bg-gray-5.active:bg-gray-10.active:color-gray-100:hover {
-	background-color: var(--darkmode-background-selected-darker);
-}
-
-.dark-mode .body--show-ui .show-ui-hover\:bg-blue-5:hover {
-	background-color: var(--darkmode-background-selected-darker) !important;
-}
-
-.dark-mode .DocumentLink {
-	color: var(--darkmode-text);
-}
-
 .dark-mode .bg-blue-5 {
 	background-color: #233E6F;
 }
@@ -1189,35 +1139,12 @@
 .dark-mode .settings-page .settings-page__sidebar__link--active {
 	border: 1px solid var(--darkmode-contrast);
 }
-.dark-mode .settings-page #subscription-page .css-jbClFc {
-	color: black;
-	font-weight: 650;
-}
-.dark-mode .settings-page #subscription-page .bg-mint-10 {
-	color: #000 !important;
-	background-color: #8BD1B9;
-}
-.dark-mode .settings-page #subscription-page .settings__pricing-option-item .w-max .icon {
-	color: var(--darkmode-contrast);
-}
-.dark-mode .settings-page .w-min {
-	color: var(--darkmode-text) !important;
-	width: unset;
-}
-.dark-mode .settings-page .PluginsConfiguration__table, .dark-mode .settings-page .PluginsConfiguration__table .ui.table {
-	background-color: var(--darkmode-background);
-}
-.dark-mode .settings-page .PluginsConfiguration__table .ui.table thead th {
-	color: var(--darkmode-text);
-}
-.dark-mode .settings-page .PluginsConfiguration__table input {
-	color: var(--darkmode-contrast) !important;
-}
-.dark-mode .settings-page .PluginsConfiguration__table .css-fLTnVi {
-	color: black !important;
-}
 .dark-mode .settings-page .button {
-	background-color: unset;
+	background-color: var(--darkmode-background-selected-darker);
+	border-color: #000 !important;
+}
+.dark-mode .settings-page .button:hover {
+	background-color: var(--darkmode-background-selected);
 }
 .dark-mode .settings-page .pl-4.css-kJJQEm {
 	color: var(--darkmode-text);
@@ -1233,6 +1160,48 @@
 }
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner .settings-page__option .ml-4 > div {
 	color: var(--darkmode-text) !important;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .p-6 > .pr-1 {
+	margin-top: 10px;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .p-6 > .pr-1 > svg {
+	fill: #06CA83 !important;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .p-6 > a {
+	color: var(--darkmode-contrast);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #subscription-page .css-jbClFc {
+	color: black;
+	font-weight: 650;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #subscription-page .bg-mint-10 {
+	color: #000 !important;
+	background-color: #8BD1B9;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #subscription-page .settings__pricing-option-item .w-max .icon {
+	color: var(--darkmode-contrast);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .p-6 > .form-element > div {
+	color: var(--darkmode-text) !important;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .p-6 > .px-0 > div {
+	color: var(--darkmode-text) !important;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .w-min {
+	color: var(--darkmode-text) !important;
+	width: unset;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .PluginsConfiguration__table, .dark-mode .settings-page .settings-page__content .settings-page__content__inner .PluginsConfiguration__table .ui.table {
+	background-color: var(--darkmode-background);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .PluginsConfiguration__table .ui.table thead th {
+	color: var(--darkmode-text);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .PluginsConfiguration__table input {
+	color: var(--darkmode-contrast) !important;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .PluginsConfiguration__table .css-fLTnVi {
+	color: black !important;
 }
 .dark-mode .settings-page .css-fAxQcq,
 .dark-mode .settings-page .css-eqifkM {
@@ -1269,6 +1238,43 @@
 }
 .dark-mode .settings-page .switch-knowledgebase__knowledgebase__button > .icon {
 	color: var(--darkmode-contrast);
+}
+.dark-mode .settings-page #SettingsPage #SettingsPageContent #change-keyboard-shortcuts #change-keyboard-shortcuts__section .change-keyboard-shortcut-list-item > div > div > div {
+	color: #D2D200 !important;
+	background-color: var(--darkmode-background-selected-darker);
+	border-color: #000 !important;
+	zoom: 1.2;
+}
+.dark-mode .settings-page #DefaultExampleDocumentActions {
+	color: var(--darkmode-contrast) !important;
+}
+.dark-mode .settings-page [data-icon~=dropdown] {
+	color: #000 !important;
+	fill: #000 !important;
+}
+.dark-mode .settings-page .spaced-repetition-scheduler-form a,
+.dark-mode .settings-page [color~="#515167"],
+.dark-mode .settings-page [data-cy~=loading-spinner] > div,
+.dark-mode .settings-page .divider.text {
+	color: var(--darkmode-contrast) !important;
+}
+.dark-mode .settings-page .settings-page__sidebar .inline-block.h-4,
+.dark-mode .settings-page .pt-4,
+.dark-mode .settings-page .pl-4,
+.dark-mode .settings-page .text-gray-70,
+.dark-mode .settings-page .spaced-repetition-scheduler-form .p-6 > div > div,
+.dark-mode .settings-page .spaced-repetition-scheduler-form .py-1,
+.dark-mode .settings-page .spaced-repetition-scheduler-form__field > div,
+.dark-mode .settings-page .spaced-repetition-scheduler-form__field__explanation,
+.dark-mode .settings-page .pt-8.px-6 > div,
+.dark-mode .settings-page .pb-1,
+.dark-mode .settings-page .mt-4.mr-6 > div,
+.dark-mode .settings-page .feature-checklist-element > div,
+.dark-mode .settings-page .settings__pricing-option-item > div > div > div {
+	color: var(--darkmode-text) !important;
+}
+.dark-mode .settings-page .ui.input > input {
+	background-color: var(--darkmode-background-selected-darker);
 }
 
 .dark-mode #StatsPage #StatsPageContent {

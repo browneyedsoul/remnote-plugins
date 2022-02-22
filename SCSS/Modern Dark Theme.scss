@@ -1362,206 +1362,240 @@
 			}
 		}
 // Settings Page
-	// Interim Measure
+	// Darkmode Compatibility
 		.dark-mode {
-			#DefaultExampleDocumentActions {
-				color: var(--darkmode-contrast) !important;
-			}
-			[data-icon~="dropdown"] {
-				color: #000 !important;
-				fill: #000 !important;
-			}
-		}
-		.dark-mode {
+			// Selected Item in Context Menu
+				.bg-blue-5 {
+					background-color: #233E6F;
+				}
 			.settings-page {
-				.spaced-repetition-scheduler-form a,
-				// Body Text
-				[color~="#515167"],
-				// Spinner
-				[data-cy~="loading-spinner"] > div,
-				// Plugin Option
-				.divider.text {
-					color: var(--darkmode-contrast) !important;
-				}
-				.settings-page__sidebar .inline-block.h-4,
-				.pt-4,
-				.pl-4,
-				.text-gray-70,
-				.spaced-repetition-scheduler-form .p-6 > div > div,
-				.spaced-repetition-scheduler-form .py-1,
-				.spaced-repetition-scheduler-form__field > div,
-				.spaced-repetition-scheduler-form__field__explanation,
-				// Header
-				.pt-8.px-6 > div,
-				.pb-1,
-				// Pricing $
-				.pr-1,
-				.mt-4.mr-6 > div,
-				.feature-checklist-element > div,
-				.settings__pricing-option-item > div > div > div {
-					color: var(--darkmode-text) !important;
-				}
-				.ui.input {
-					> input {
-						background-color: var(--darkmode-background-selected-darker);
-					}
-				}
-			}
-		}
-		// .popup-menu div svg {
-		// 	fill: var(--darkmode-text) !important;
-		// 	color: var(--darkmode-text) !important;
-		// }
-		
-		.dark-mode .text-gray-100 {
-			color: unset;
-		}
-		.dark-mode .hover\:bg-gray-5.active:bg-gray-10.active:color-gray-100:hover {
-			background-color: var(--darkmode-background-selected-darker);
-		}
-		.dark-mode .body--show-ui .show-ui-hover\:bg-blue-5:hover {
-			background-color: var(--darkmode-background-selected-darker) !important;
-		}
-		.dark-mode .DocumentLink {
-			color: var(--darkmode-text);
-		}
-	.dark-mode {
-		// Selected Item in Context Menu
-			.bg-blue-5 {
-				background-color: #233E6F;
-			}
-		.settings-page {
-			// Settings Page Basic
-				background-color: var(--darkmode-background);
-
-				.settings-page__sidebar__title {
-					color: var(--darkmode-contrast);
-				}
-				.settings-page__sidebar__link--active {
-					border: 1px solid var(--darkmode-contrast);
-				}
-			// Settings Page Subscription page
-				#subscription-page {
-					.css-jbClFc {
-						color: black;
-						font-weight: 650;
-					}
-					.bg-mint-10 {
-						color: #000 !important;
-						background-color: #8BD1B9;
-					}
-					.settings__pricing-option-item {
-						.w-max {
-							.icon {
-								color: var(--darkmode-contrast);
-							}
-						}
-					}
-				}
-				.w-min {
-					color: var(--darkmode-text) !important;
-					width: unset;
-				}
-			// Settings Page Plugin Table
-				.PluginsConfiguration__table, %Pluginboxstyle {
+				// Settings Page Basic
 					background-color: var(--darkmode-background);
-				}
-				.PluginsConfiguration__table {
-					.ui.table {
-						@extend %Pluginboxstyle;
+					
+					.settings-page__sidebar__title {
+						color: var(--darkmode-contrast);
+					}
+					.settings-page__sidebar__link--active {
+						border: 1px solid var(--darkmode-contrast);
+					}
+				// Setting Page Button Style
+					.button {
+						background-color: var(--darkmode-background-selected-darker);
+						border-color: #000 !important;
 
-						thead th {
-							color: var(--darkmode-text);
+						&:hover {
+							background-color: var(--darkmode-background-selected);
 						}
 					}
-					input {
-						color: var(--darkmode-contrast) !important;
+				// Settings Page Scheduler Type Text
+					.pl-4.css-kJJQEm {
+						color: var(--darkmode-text);
 					}
-					.css-fLTnVi {
+					.spaced-repetition-scheduler-form__interaction {
 						color: black !important;
 					}
-				}
-			// Setting Page Button Style
-				.button {
-					background-color: unset;
-				}
-			// Settings Page Scheduler Type Text
-				.pl-4.css-kJJQEm {
-					color: var(--darkmode-text);
-				}
-				.spaced-repetition-scheduler-form__interaction {
-					color: black !important;
-				}
-			// Setting Page Content
-				.settings-page__content {
-					.settings-page__content__inner {
-						background-color: var(--darkmode-background);
-						.popup__header {
+				// Setting Page Content
+					.settings-page__content {
+						.settings-page__content__inner {
 							background-color: var(--darkmode-background);
-						}
-						.settings-page__option {
-							.ml-4 {
-								> div {
-									color: var(--darkmode-text) !important;
+
+							.popup__header {
+								background-color: var(--darkmode-background);
+							}
+							.settings-page__option {
+								.ml-4 {
+									> div {
+										color: var(--darkmode-text) !important;
+									}
 								}
 							}
+							// Settings Page Account
+								.p-6 {
+									> .pr-1 {
+										margin-top: 10px;
+
+										> svg {
+											// checkmark
+											fill: #06CA83 !important;
+										}
+									}
+									// Privacy Policy
+									> a {
+										color: var(--darkmode-contrast);
+									}
+								}
+							// Settings Page Subscription page
+								#subscription-page {
+									.css-jbClFc {
+										color: black;
+										font-weight: 650;
+									}
+									.bg-mint-10 {
+										color: #000 !important;
+										background-color: #8BD1B9;
+									}
+									.settings__pricing-option-item {
+										.w-max {
+											.icon {
+												color: var(--darkmode-contrast);
+											}
+										}
+									}
+								}
+								// Invite Friends
+									.p-6 {
+										> .form-element {
+											> div {
+												// Invite via email, Share invite link
+												color: var(--darkmode-text) !important;
+											}
+										}
+										> .px-0 {
+											> div {
+												// Help your friends expand their learning!
+												color: var(--darkmode-text) !important;
+											}
+										}
+									}
+								.w-min {
+									color: var(--darkmode-text) !important;
+									width: unset;
+								}
+							// Settings Page Plugin Table
+								.PluginsConfiguration__table, %Pluginboxstyle {
+									background-color: var(--darkmode-background);
+								}
+								.PluginsConfiguration__table {
+									.ui.table {
+										@extend %Pluginboxstyle;
+
+										thead th {
+											color: var(--darkmode-text);
+										}
+									}
+									input {
+										color: var(--darkmode-contrast) !important;
+									}
+									.css-fLTnVi {
+										color: black !important;
+									}
+								}
 						}
 					}
-				}
-			// Settings Page Content Description
-				.css-fAxQcq, 
-			// Plan Details
-				.css-eqifkM {
-					color: var(--darkmode-contrast);
-					font-family: "Roboto Mono", "Fira Code", monospace;
-					font-weight: 600;
-				}
-				.settings-page__option {
-					.p-3 {
-						color: black !important;
+				// Settings Page Content Description
+					.css-fAxQcq, 
+				// Plan Details
+					.css-eqifkM {
+						color: var(--darkmode-contrast);
+						font-family: "Roboto Mono", "Fira Code", monospace;
+						font-weight: 600;
 					}
-				}
-			// Settings Page Sidebar svg icon
-				.css-drbSAB {
-					color: var(--darkmode-contrast);
-					background-color: var(--darkmode-background);
-					border: 1px dotted var(--darkmode-contrast);
-					border-radius: 5px;
-				}
-			// Settings Page Sidebar Hover Effect
-				.settings-page__sidebar  {
-					.settings-page__sidebar__link {
-						&:hover {
-							background-color: #000;
+					.settings-page__option {
+						.p-3 {
+							color: black !important;
 						}
 					}
-				}
-			// Settings Page Account, Knowledge Base Settings, Danger Zone, Syncing, App Version
-				.items-center,
-				.css-jBUFtN,
-				.css-ATSnA,
-				.css-dcfFHl,
-				.css-cSCrvK,
-				.css-exQOrH + a,
-				.checkbox,
-				.px-6,
-				.p-6,
-				// Subscription
-				.css-bOWrRb,
-				// Schedulers Page
-				.css-egEQZl,
-				// Settings Page Sidebar Text
-				.inline-block.h-4,
-				// Account / Plan / Knowledge Base Settings / DangerZone / Syncing / App Version
-				.css-kPXeXo {
-					color: var(--darkmode-text) !important;
-				}
-			// Settings Page Knowledge Base
-				.switch-knowledgebase__knowledgebase__button > .icon {
-					color: var(--darkmode-contrast);
-				}
+				// Settings Page Sidebar svg icon
+					.css-drbSAB {
+						color: var(--darkmode-contrast);
+						background-color: var(--darkmode-background);
+						border: 1px dotted var(--darkmode-contrast);
+						border-radius: 5px;
+					}
+				// Settings Page Sidebar Hover Effect
+					.settings-page__sidebar  {
+						.settings-page__sidebar__link {
+							&:hover {
+								background-color: #000;
+							}
+						}
+					}
+				// Settings Page Account, Knowledge Base Settings, Danger Zone, Syncing, App Version
+					.items-center,
+					.css-jBUFtN,
+					.css-ATSnA,
+					.css-dcfFHl,
+					.css-cSCrvK,
+					.css-exQOrH + a,
+					.checkbox,
+					.px-6,
+					.p-6,
+					// Subscription
+					.css-bOWrRb,
+					// Schedulers Page
+					.css-egEQZl,
+					// Settings Page Sidebar Text
+					.inline-block.h-4,
+					// Account / Plan / Knowledge Base Settings / DangerZone / Syncing / App Version
+					.css-kPXeXo {
+						color: var(--darkmode-text) !important;
+					}
+				// Settings Page Knowledge Base
+					.switch-knowledgebase__knowledgebase__button > .icon {
+						color: var(--darkmode-contrast);
+					}
+				// Keyboard Shortcuts
+					#SettingsPage {
+						#SettingsPageContent {
+							#change-keyboard-shortcuts {
+								#change-keyboard-shortcuts__section {
+									.change-keyboard-shortcut-list-item {
+										> div {
+											> div {
+												> div {
+													color: #D2D200 !important;
+													background-color: var(--darkmode-background-selected-darker);
+													border-color: #000 !important;
+													zoom: 1.2;
+												}
+											}
+										}
+									}
+								}	
+							}
+						}
+					}
+				// Interim Measure
+					#DefaultExampleDocumentActions {
+						color: var(--darkmode-contrast) !important;
+					}
+					[data-icon~="dropdown"] {
+						color: #000 !important;
+						fill: #000 !important;
+					}
+					.spaced-repetition-scheduler-form a,
+					// Body Text
+					[color~="#515167"],
+					// Spinner
+					[data-cy~="loading-spinner"] > div,
+					// Plugin Option
+					.divider.text {
+						color: var(--darkmode-contrast) !important;
+					}
+					.settings-page__sidebar .inline-block.h-4,
+					.pt-4,
+					.pl-4,
+					.text-gray-70,
+					.spaced-repetition-scheduler-form .p-6 > div > div,
+					.spaced-repetition-scheduler-form .py-1,
+					.spaced-repetition-scheduler-form__field > div,
+					.spaced-repetition-scheduler-form__field__explanation,
+					// Header
+					.pt-8.px-6 > div,
+					.pb-1,
+					// Pricing $
+					.mt-4.mr-6 > div,
+					.feature-checklist-element > div,
+					.settings__pricing-option-item > div > div > div {
+						color: var(--darkmode-text) !important;
+					}
+					.ui.input {
+						> input {
+							background-color: var(--darkmode-background-selected-darker);
+						}
+					}
+			}
 		}
-	}
 // Statistic
 	.dark-mode {
 		#StatsPage {
