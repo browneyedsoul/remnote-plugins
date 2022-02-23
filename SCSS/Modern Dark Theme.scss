@@ -517,10 +517,32 @@
 	body.old-dark-mode {
 		.dark-mode {
 			.document-table,
-			.tile__document,
 			.multiple-windows__document,
 			#multiple-windows__document {
 				background-color: var(--darkmode-background) !important;
+			}
+			.tile__document {
+				background-color: var(--darkmode-background) !important;
+
+				> div:first-of-type {
+					color: var(--darkmode-text);
+					background-color: var(--darkmode-background-sidebar);
+
+					&.border-bottom-solid {
+						border-bottom-style: unset;
+					}
+
+					> div:nth-of-type(2) {
+						.block {
+							.bg-gray-5 {
+								background-color: var(--darkmode-background-selected-darker);
+							}
+							.hover\:bg-hover-bg:hover {
+								background-color: #000 !important;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -1942,6 +1964,9 @@
 
 					.RichTextViewer {
 						color: white;
+					}
+					.group-hover\:rn-clr-background-light-accent--hovered {
+						background-color: var(--darkmode-background-selected-darker) !important;
 					}
 				}
 				.rounded-md.highlight-color--red,
