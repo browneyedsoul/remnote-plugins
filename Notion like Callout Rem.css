@@ -97,6 +97,15 @@
 [data-rem-container-tags~=calloutpurple] .rem-container--header-3 .rem-button__container {
 	margin-top: 7px;
 }
+[data-rem-container-tags~=callout] .rem-button__container,
+[data-rem-container-tags~=calloutred] .rem-button__container,
+[data-rem-container-tags~=calloutorange] .rem-button__container,
+[data-rem-container-tags~=calloutyellow] .rem-button__container,
+[data-rem-container-tags~=calloutgreen] .rem-button__container,
+[data-rem-container-tags~=calloutblue] .rem-button__container,
+[data-rem-container-tags~=calloutpurple] .rem-button__container {
+	margin-top: 6px;
+}
 
 [data-rem-container-tags~=callout] {
 	background-color: var(--callout-background-color);
