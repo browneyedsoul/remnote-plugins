@@ -65,7 +65,7 @@
 }
 // The Most important thing
 	.dark-mode {
-		filter: unset;
+		filter: invert(0) !important;
 		// Thumbnail Background
 			.thumbnail--with-width {
 				background-color: transparent;
@@ -514,12 +514,14 @@
 		}
 	}
 // Hierarchy Editor - General Background
-	.dark-mode {
-		.document-table,
-		.tile__document,
-		.multiple-windows__document,
-		#multiple-windows__document {
-			background-color: var(--darkmode-background);
+	body.old-dark-mode {
+		.dark-mode {
+			.document-table,
+			.tile__document,
+			.multiple-windows__document,
+			#multiple-windows__document {
+				background-color: var(--darkmode-background) !important;
+			}
 		}
 	}
 // Sticky Top bar
@@ -1764,14 +1766,16 @@
 				}
 			}
 		}
-		.dark-mode {
-			#document-sidebar {
-				background-color: var(--darkmode-background-sidebar) !important;
+		body.old-dark-mode  {
+			.dark-mode {
+				#document-sidebar {
+					background-color: var(--darkmode-background-sidebar) !important;
 
-				+ div {
-					> div {
-						color: var(--darkmode-contrast);
-						background-color: var(--darkmode-background-sidebar);
+					+ div {
+						> div {
+							color: var(--darkmode-contrast);
+							background-color: var(--darkmode-background-sidebar);
+						}
 					}
 				}
 			}

@@ -64,7 +64,7 @@
 }
 
 .dark-mode {
-	filter: unset;
+	filter: invert(0) !important;
 }
 .dark-mode .thumbnail--with-width {
 	background-color: transparent;
@@ -391,11 +391,11 @@
 	background-color: var(--darkmode-background-sidebar);
 }
 
-.dark-mode .document-table,
-.dark-mode .tile__document,
-.dark-mode .multiple-windows__document,
-.dark-mode #multiple-windows__document {
-	background-color: var(--darkmode-background);
+body.old-dark-mode .dark-mode .document-table,
+body.old-dark-mode .dark-mode .tile__document,
+body.old-dark-mode .dark-mode .multiple-windows__document,
+body.old-dark-mode .dark-mode #multiple-windows__document {
+	background-color: var(--darkmode-background) !important;
 }
 
 #hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
@@ -1402,10 +1402,10 @@
 	background-color: var(--darkmode-background);
 }
 
-.dark-mode #document-sidebar {
+body.old-dark-mode .dark-mode #document-sidebar {
 	background-color: var(--darkmode-background-sidebar) !important;
 }
-.dark-mode #document-sidebar + div > div {
+body.old-dark-mode .dark-mode #document-sidebar + div > div {
 	color: var(--darkmode-contrast);
 	background-color: var(--darkmode-background-sidebar);
 }
