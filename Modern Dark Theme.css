@@ -1279,19 +1279,19 @@ body.old-dark-mode .dark-mode #multiple-windows__document {
 	background-color: var(--darkmode-background-selected-darker);
 }
 
-.dark-mode #StatsPage #StatsPageContent {
-	background-color: var(--darkmode-background);
-}
-.dark-mode #StatsPage #StatsPageContent .chartjs-render-monitor {
-	filter: invert(1);
-}
-
 #StatsPage #StatsPageContent {
 	max-width: 90% !important;
 }
 #StatsPage #StatsPageContent .chartjs-render-monitor {
 	height: auto !important;
 	width: calc(100% - 50px) !important;
+}
+
+body.old-dark-mode .dark-mode #StatsPage #StatsPageContent {
+	background-color: var(--darkmode-background);
+}
+body.old-dark-mode .dark-mode #StatsPage #StatsPageContent .chartjs-render-monitor {
+	filter: invert(1);
 }
 
 .rem-reference .RichTextViewer {
@@ -1483,9 +1483,6 @@ body.old-dark-mode .dark-mode #document-sidebar + div > div {
 	height: unset;
 }
 
-#document-sidebar .p-2.flex.group-hover-bg-hover-bg-transparent {
-	height: 20px !important;
-}
 #document-sidebar .bg-white.cursor-pointer {
 	display: none;
 }
@@ -1493,6 +1490,9 @@ body.old-dark-mode .dark-mode #document-sidebar + div > div {
 	color: #C7C7C7;
 	position: relative;
 	top: 1px;
+}
+#document-sidebar .p-2.flex.group-hover-bg-hover-bg-transparent {
+	height: 20px !important;
 }
 #document-sidebar span.highlight-color--red,
 #document-sidebar span.highlight-color--orange,
@@ -1542,11 +1542,11 @@ body.old-dark-mode .dark-mode #document-sidebar + div > div {
 #document-sidebar .p-2 {
 	padding: 0.3rem;
 }
-#document-sidebar .bg-primary-5 {
+#document-sidebar .rn-clr-background-light-accent {
 	background-color: transparent !important;
 	border: 2px solid var(--darkmode-contrast) !important;
 }
-#document-sidebar .bg-primary-5 .RichTextViewer {
+#document-sidebar .rn-clr-background-light-accent .RichTextViewer {
 	color: white;
 }
 #document-sidebar .rounded-md.highlight-color--red .RichTextViewer,

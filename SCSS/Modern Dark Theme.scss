@@ -1602,17 +1602,6 @@
 			}
 		}
 // Statistic
-	.dark-mode {
-		#StatsPage {
-			#StatsPageContent {
-				background-color: var(--darkmode-background);
-
-				.chartjs-render-monitor {
-					filter: invert(1);
-				}
-			}
-		}
-	}
 	#StatsPage {
 		#StatsPageContent {
 			max-width: 90% !important;
@@ -1623,6 +1612,20 @@
 			}
 		}
 	}
+	// Darkmode
+		body.old-dark-mode {
+			.dark-mode {
+				#StatsPage {
+					#StatsPageContent {
+						background-color: var(--darkmode-background);
+
+						.chartjs-render-monitor {
+							filter: invert(1);
+						}
+					}
+				}
+			}
+		}
 // Reference & Alias
 	.rem-reference {
 		.RichTextViewer {
@@ -1882,10 +1885,6 @@
 		}
 	// Sidebar Document lists
 		#document-sidebar {
-			// Sidebar list item height
-				.p-2.flex.group-hover-bg-hover-bg-transparent {
-					height: 20px !important;
-				}
 			.bg-white.cursor-pointer {
 				display: none;
 			}
@@ -1894,6 +1893,10 @@
 				position: relative;
 				top: 1px;
 			}
+			// Sidebar list item height
+				.p-2.flex.group-hover-bg-hover-bg-transparent {
+					height: 20px !important;
+				}
 			// Sidebar list item Highlight
 				span.highlight-color--red,
 				span.highlight-color--orange,
@@ -1933,7 +1936,7 @@
 					padding: 0.3rem;
 				}
 			// Sidebar list item focused
-				.bg-primary-5 {
+				.rn-clr-background-light-accent {
 					background-color: transparent !important;
 					border: 2px solid var(--darkmode-contrast) !important;
 
