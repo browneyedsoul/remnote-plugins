@@ -951,7 +951,7 @@
 		}
 	// Highlight Color to Text Color Using `color` Tag
 		[data-rem-tags~="color"] {
-			.rem-text {
+			.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) {
 				.bold.highlight-color--red,
 				.bold.highlight-color--orange,
 				.bold.highlight-color--yellow,
