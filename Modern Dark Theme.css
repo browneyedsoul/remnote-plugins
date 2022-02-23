@@ -902,6 +902,13 @@
 .popup-menu #document-hover-preview__popup #hierarchy-editor .animate-zoom-into-bullet .portal-tree-node-box {
 	margin-left: 11px;
 }
+.popup-menu #document-hover-preview__popup span.bold > span,
+.popup-menu .popup-menu__item--static > span {
+	font-size: 18px;
+}
+.popup-menu [data-rem-container-tags~=aliases] {
+	margin-top: 5px;
+}
 
 .popup-menu.dark-mode {
 	color: var(--darkmode-text);
@@ -1025,11 +1032,6 @@
 }
 .dark-mode .css-jlRuPl .bg-warning-10 {
 	color: black;
-}
-
-#document-hover-preview__popup span.bold > span,
-.popup-menu__item--static > span {
-	font-size: 18px;
 }
 
 .hierarchy-editor__hidden-children__list,
