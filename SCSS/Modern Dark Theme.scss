@@ -657,6 +657,25 @@
 			background-color: unset !important;
 		}
 	}
+// Custom CSS Page Alert Area
+	body
+	.dark-mode {
+		#tile__document {
+			#document {
+				#DropToOpenAsDocument {
+					> div {
+						.bg-mint-10 {
+							color: var(--darkmode-text);
+							background-color: #365148;
+							> div.text-mint-80 {
+								color: unset;
+							}
+						}
+					}	
+				}
+			}
+		}
+	}
 // Source
 	.dark-mode {
 		[data-document-tags*="source-list"] {

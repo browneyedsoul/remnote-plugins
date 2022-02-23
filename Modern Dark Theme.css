@@ -475,6 +475,14 @@ body.old-dark-mode .dark-mode .tile__document #document #hierarchy-editor .tree-
 	background-color: unset !important;
 }
 
+body .dark-mode #tile__document #document #DropToOpenAsDocument > div .bg-mint-10 {
+	color: var(--darkmode-text);
+	background-color: #365148;
+}
+body .dark-mode #tile__document #document #DropToOpenAsDocument > div .bg-mint-10 > div.text-mint-80 {
+	color: unset;
+}
+
 .dark-mode [data-document-tags*=source-list] #DocumentTopRow #DropToOpenAsDocument [data-icon~=add] {
 	color: var(--darkmode-text) !important;
 	fill: var(--darkmode-text) !important;
