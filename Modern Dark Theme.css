@@ -815,60 +815,60 @@ body .dark-mode #tile__document #document #DropToOpenAsDocument > div .bg-mint-1
 }
 
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--red {
-	color: var(--red-text-dark);
+	color: var(--red-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--orange {
-	color: var(--orange-text-dark);
+	color: var(--orange-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--yellow {
-	color: var(--yellow-text-dark);
-	text-shadow: unset;
+	color: var(--yellow-text-dark) !important;
+	text-shadow: unset !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--green {
-	color: var(--green-text-dark);
+	color: var(--green-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--blue {
-	color: var(--blue-text-dark);
+	color: var(--blue-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .bold.highlight-color--purple {
-	color: var(--purple-text-dark);
+	color: var(--purple-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--red {
-	color: var(--red-text-dark);
+	color: var(--red-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--orange {
-	color: var(--orange-text-dark);
+	color: var(--orange-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--yellow {
-	color: var(--yellow-text-dark);
+	color: var(--yellow-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--green {
-	color: var(--green-text-dark);
+	color: var(--green-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--blue {
-	color: var(--blue-text-dark);
+	color: var(--blue-text-dark) !important;
 }
 .dark-mode [data-rem-tags~=color] .rem-text .rem-reference-container .bold.highlight-color--purple {
-	color: var(--purple-text-dark);
+	color: var(--purple-text-dark) !important;
 }
 .dark-mode .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--red {
-	color: var(--red-text-dark);
+	color: var(--red-text-dark) !important;
 }
 .dark-mode .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--orange {
-	color: var(--orange-text-dark);
+	color: var(--orange-text-dark) !important;
 }
 .dark-mode .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--yellow {
-	color: var(--yellow-text-dark);
-	text-shadow: unset;
+	color: var(--yellow-text-dark) !important;
+	text-shadow: unset !important;
 }
 .dark-mode .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--green {
-	color: var(--green-text-dark);
+	color: var(--green-text-dark) !important;
 }
 .dark-mode .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--blue {
-	color: var(--blue-text-dark);
+	color: var(--blue-text-dark) !important;
 }
 .dark-mode .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--purple {
-	color: var(--purple-text-dark);
+	color: var(--purple-text-dark) !important;
 }
 
 .popup-menu [data-rem-tags~=color] .bold.highlight-color--yellow {

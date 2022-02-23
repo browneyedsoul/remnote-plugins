@@ -981,35 +981,43 @@
 				}
 			}
 		}
+		// Darkmode
+		
 		.dark-mode {
 			[data-rem-tags~="color"] {
 				.rem-text {
-					.bold.highlight-color--red {color: var(--red-text-dark);} 
-					.bold.highlight-color--orange {color: var(--orange-text-dark);}
-					.bold.highlight-color--yellow {color: var(--yellow-text-dark); text-shadow: unset;}
-					.bold.highlight-color--green {color: var(--green-text-dark);}
-					.bold.highlight-color--blue {color: var(--blue-text-dark);}
-					.bold.highlight-color--purple {color: var(--purple-text-dark);} 
+					.bold.highlight-color--red {color: var(--red-text-dark) !important;} 
+					.bold.highlight-color--orange {color: var(--orange-text-dark) !important;}
+					.bold.highlight-color--yellow {
+						color: var(--yellow-text-dark) !important; 
+						text-shadow: unset !important;
+					}
+					.bold.highlight-color--green {color: var(--green-text-dark) !important;}
+					.bold.highlight-color--blue {color: var(--blue-text-dark) !important;}
+					.bold.highlight-color--purple {color: var(--purple-text-dark) !important;} 
 
 					.rem-reference-container {
-						.bold.highlight-color--red {color: var(--red-text-dark);}
-						.bold.highlight-color--orange {color: var(--orange-text-dark);}
-						.bold.highlight-color--yellow {color: var(--yellow-text-dark);}
-						.bold.highlight-color--green {color: var(--green-text-dark);}
-						.bold.highlight-color--blue {color: var(--blue-text-dark);}
-						.bold.highlight-color--purple {color: var(--purple-text-dark);}
+						.bold.highlight-color--red {color: var(--red-text-dark) !important;}
+						.bold.highlight-color--orange {color: var(--orange-text-dark) !important;}
+						.bold.highlight-color--yellow {color: var(--yellow-text-dark) !important;}
+						.bold.highlight-color--green {color: var(--green-text-dark) !important;}
+						.bold.highlight-color--blue {color: var(--blue-text-dark) !important;}
+						.bold.highlight-color--purple {color: var(--purple-text-dark) !important;}
 					}
 				}
 			}
 			.rem-reference-container[data-rem-tags~="color"] {
 				.rem-reference {
 					.RichTextViewer {
-						.bold.highlight-color--red {color: var(--red-text-dark);}
-						.bold.highlight-color--orange {color: var(--orange-text-dark);}
-						.bold.highlight-color--yellow {color: var(--yellow-text-dark); text-shadow: unset;}
-						.bold.highlight-color--green {color: var(--green-text-dark);}
-						.bold.highlight-color--blue {color: var(--blue-text-dark);}
-						.bold.highlight-color--purple {color: var(--purple-text-dark);}
+						.bold.highlight-color--red {color: var(--red-text-dark) !important;}
+						.bold.highlight-color--orange {color: var(--orange-text-dark) !important;}
+						.bold.highlight-color--yellow {
+							color: var(--yellow-text-dark) !important; 
+							text-shadow: unset !important;
+						}
+						.bold.highlight-color--green {color: var(--green-text-dark) !important;}
+						.bold.highlight-color--blue {color: var(--blue-text-dark) !important;}
+						.bold.highlight-color--purple {color: var(--purple-text-dark) !important;}
 					}
 				}
 			}
