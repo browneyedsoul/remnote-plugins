@@ -391,6 +391,10 @@
 	background-color: var(--darkmode-background-sidebar);
 }
 
+#document #hierarchy-editor .tree-node--parent .rem-container .hover\:bg-hover-bg {
+	background-color: unset;
+}
+
 body.old-dark-mode .dark-mode .document-table,
 body.old-dark-mode .dark-mode .multiple-windows__document,
 body.old-dark-mode .dark-mode #multiple-windows__document {
@@ -411,6 +415,9 @@ body.old-dark-mode .dark-mode .tile__document > div:first-of-type > div:nth-of-t
 }
 body.old-dark-mode .dark-mode .tile__document > div:first-of-type > div:nth-of-type(2) .block .hover\:bg-hover-bg:hover {
 	background-color: #000 !important;
+}
+body.old-dark-mode .dark-mode .tile__document #document #hierarchy-editor .tree-node--parent .rem-container .hover\:bg-hover-bg {
+	background-color: unset;
 }
 
 #hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
