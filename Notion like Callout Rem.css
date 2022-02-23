@@ -70,6 +70,33 @@
 [data-rem-container-tags~=calloutpurple] .EditorContainer {
 	line-height: 180%;
 }
+[data-rem-container-tags~=callout] .rem-container--header-1 .rem-button__container,
+[data-rem-container-tags~=calloutred] .rem-container--header-1 .rem-button__container,
+[data-rem-container-tags~=calloutorange] .rem-container--header-1 .rem-button__container,
+[data-rem-container-tags~=calloutyellow] .rem-container--header-1 .rem-button__container,
+[data-rem-container-tags~=calloutgreen] .rem-container--header-1 .rem-button__container,
+[data-rem-container-tags~=calloutblue] .rem-container--header-1 .rem-button__container,
+[data-rem-container-tags~=calloutpurple] .rem-container--header-1 .rem-button__container {
+	margin-top: 15px;
+}
+[data-rem-container-tags~=callout] .rem-container--header-2 .rem-button__container,
+[data-rem-container-tags~=calloutred] .rem-container--header-2 .rem-button__container,
+[data-rem-container-tags~=calloutorange] .rem-container--header-2 .rem-button__container,
+[data-rem-container-tags~=calloutyellow] .rem-container--header-2 .rem-button__container,
+[data-rem-container-tags~=calloutgreen] .rem-container--header-2 .rem-button__container,
+[data-rem-container-tags~=calloutblue] .rem-container--header-2 .rem-button__container,
+[data-rem-container-tags~=calloutpurple] .rem-container--header-2 .rem-button__container {
+	margin-top: 8px;
+}
+[data-rem-container-tags~=callout] .rem-container--header-3 .rem-button__container,
+[data-rem-container-tags~=calloutred] .rem-container--header-3 .rem-button__container,
+[data-rem-container-tags~=calloutorange] .rem-container--header-3 .rem-button__container,
+[data-rem-container-tags~=calloutyellow] .rem-container--header-3 .rem-button__container,
+[data-rem-container-tags~=calloutgreen] .rem-container--header-3 .rem-button__container,
+[data-rem-container-tags~=calloutblue] .rem-container--header-3 .rem-button__container,
+[data-rem-container-tags~=calloutpurple] .rem-container--header-3 .rem-button__container {
+	margin-top: 7px;
+}
 
 [data-rem-container-tags~=callout] {
 	background-color: var(--callout-background-color);

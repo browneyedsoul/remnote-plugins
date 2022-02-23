@@ -62,6 +62,21 @@
         .EditorContainer {
             line-height: 180%;
         }
+        .rem-container--header-1 {
+            .rem-button__container {
+                margin-top: 15px;
+            }
+        }
+        .rem-container--header-2 {
+            .rem-button__container {
+                margin-top: 8px;
+            }
+        }
+        .rem-container--header-3 {
+            .rem-button__container {
+                margin-top: 7px;
+            }
+        }
     }
     [data-rem-container-tags~="callout"] {
         background-color: var(--callout-background-color);
