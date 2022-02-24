@@ -513,6 +513,16 @@
 			}
 		}
 	}
+// DocumentTitle
+	// Power-up icon
+	#DocumentTitle {
+		.document-title {
+			.rem-powerup-icon {
+				position: relative;
+				top: -7px;
+			}
+		}
+	}
 // Hierarchy Editor
 	#document {
 		#hierarchy-editor {
@@ -1416,28 +1426,6 @@
 				[data-slate-node="text"] {
 					color: #909090;
 				}
-			}
-		}
-	// Alignment
-		.rem-header--1 .rem-checkbox {margin-top: 10px;}
-		.rem-header--2 .rem-checkbox {margin-top: 8px;}
-		.rem-header--3 .rem-checkbox {margin-top: 6px;}
-		
-		#DocumentTitle {
-			.rem-text,
-			.rem-header--1,
-			.rem-header--2,
-			.rem-header--3 {
-				.rem-checkbox {
-					display: inline-block;
-					margin: 12px 15px 10px 0;
-				}
-			}
-		}
-		.document-title.rem-header--3 {
-			.rem-is-custom-rem-type {
-				position: relative;
-				top: 0px;
 			}
 		}
 // Settings Page

@@ -391,6 +391,11 @@
 	background-color: var(--darkmode-background-sidebar);
 }
 
+#DocumentTitle .document-title .rem-powerup-icon {
+	position: relative;
+	top: -7px;
+}
+
 #document #hierarchy-editor .tree-node--parent .rem-container .hover\:bg-hover-bg {
 	background-color: unset;
 }
@@ -1132,31 +1137,6 @@ body .dark-mode #tile__document #document #DropToOpenAsDocument > div .bg-mint-1
 .dark-mode .rem-container--todo-finished .RichTextViewer,
 .dark-mode .rem-container--todo-finished [data-slate-node=text] {
 	color: #909090;
-}
-
-.rem-header--1 .rem-checkbox {
-	margin-top: 10px;
-}
-
-.rem-header--2 .rem-checkbox {
-	margin-top: 8px;
-}
-
-.rem-header--3 .rem-checkbox {
-	margin-top: 6px;
-}
-
-#DocumentTitle .rem-text .rem-checkbox,
-#DocumentTitle .rem-header--1 .rem-checkbox,
-#DocumentTitle .rem-header--2 .rem-checkbox,
-#DocumentTitle .rem-header--3 .rem-checkbox {
-	display: inline-block;
-	margin: 12px 15px 10px 0;
-}
-
-.document-title.rem-header--3 .rem-is-custom-rem-type {
-	position: relative;
-	top: 0px;
 }
 
 .dark-mode .bg-blue-5 {

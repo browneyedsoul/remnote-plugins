@@ -415,3 +415,26 @@
 #hierarchy-editor [data-rem-tags~=bulletlist] .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
 	border-style: unset;
 }
+
+#DocumentTitle .rem-text .rem-checkbox,
+#DocumentTitle .rem-header--1 .rem-checkbox,
+#DocumentTitle .rem-header--2 .rem-checkbox,
+#DocumentTitle .rem-header--3 .rem-checkbox {
+	display: inline-block;
+	margin: 10px 15px 10px 0;
+}
+#DocumentTitle .document-title .EditorContainer {
+	line-height: unset;
+}
+
+.rem-text.rem-header--1 .rem-checkbox {
+	margin-top: 18px;
+}
+
+.rem-text.rem-header--2 .rem-checkbox {
+	margin-top: 12px;
+}
+
+.rem-text.rem-header--3 .rem-checkbox {
+	margin-top: 8px;
+}

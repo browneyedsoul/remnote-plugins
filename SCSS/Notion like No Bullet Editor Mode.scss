@@ -521,3 +521,35 @@
 			}
 		}
 	} 
+// Checkbox Alignment	
+	#DocumentTitle {
+		.rem-text,
+		.rem-header--1,
+		.rem-header--2,
+		.rem-header--3 {
+			.rem-checkbox {
+				display: inline-block;
+				margin: 10px 15px 10px 0;
+			}
+		}
+		.document-title {
+			.EditorContainer {
+				line-height: unset;
+			}
+		}
+	}
+	.rem-text.rem-header--1 {
+		.rem-checkbox {
+			margin-top: 18px;
+		}
+	}
+	.rem-text.rem-header--2 {
+		.rem-checkbox {
+			margin-top: 12px;	
+		}
+	}
+	.rem-text.rem-header--3 {
+		.rem-checkbox {
+			margin-top: 8px;	
+		}
+	}
