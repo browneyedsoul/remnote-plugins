@@ -324,66 +324,85 @@
 	}
 // Omnibar
 	.dark-mode {
-		// Omnibar text
-			[aria-label~="Omnibar"] {
-				.css-eqifkM,
-				// Search Item Text
-				.css-fLTnVi  {
+		[aria-label~="Omnibar"] {
+			color: var(--darkmode-text);
+			background-color: var(--darkmode-background);
+			border: 3px solid #FFF;
+			
+			// Top
+			> div:nth-of-type(1) {
+				> div {
+					background-color: var(--darkmode-background-selected-darker) !important;
+
+					// > span.RichTextViewer {
+						
+					// }
+				}
+			}
+			// Search Bar
+			> div:nth-of-type(2) {
+				> input {
 					color: var(--darkmode-text);
 				}
-				// Omni Searchbar(⌘+P) hover effect
-				.css-khYwOj {
-					background-color: var(--darkmode-background-selected);
+			}
+			// Items
+			> div:nth-of-type(3) {
+				// Focused item
+				[data-cmdopt-selected~="true"] {
+					background-color: var(--darkmode-background-selected) !important;
+
+					> div:nth-of-type(1) {
+						> div.rn-clr-content-secondary {
+							color: var(--darkmode-contrast);
+
+							> svg {
+								> g {
+									> path {
+										fill: var(--darkmode-contrast);
+									}
+								}
+							}
+						}
+					}
+					> div:nth-of-type(2) {
+						> div {
+							> div {
+								border-color: unset;
+								background-color: var(--darkmode-background-selected-darker);
+							}
+						}
+					}
 				}
-				// Focused Text
-				.bg-warning-10 {
-					color: red;
+				// Unfocused item
+				[data-cmdopt-selected~="false"] {
+					> div:nth-of-type(1) {
+						> div.rn-clr-content-secondary {
+							color: var(--darkmode-contrast);
+
+							> svg {
+								> g {
+									> path {
+										fill: var(--darkmode-contrast);
+									}
+								}
+							}
+						}
+					}
+					> div:nth-of-type(2) {
+						> div {
+							> div {
+								border-color: unset;
+								background-color: var(--darkmode-background-selected-darker);
+							}
+						}
+					}
 				}
 			}
-		// Search Item Text
-			.css-kMEfqE {
-				color: var(--darkmode-text);
-			}
-		// Selected
-			.css-cMUIYB {
-				background-color: var(--darkmode-background-selected);
-			}
-		// Main Window
-			.css-ZPdGi {
-				background-color: var(--darkmode-background);
-			}
-		// Focused item
-			.css-cCyKhM {
-				background-color: #6D6D6D !important;
-			}
-		// Omnibar item text
-			.css-bwtzVW {
-				color: var(--darkmode-text);
-			}
-		// Middle item including omni search bar
-			.css-bwtzVW, 
-			.css-hBWTgk,
-			.css-edMwoJ {
-				background-color: var(--darkmode-background);
-			}
-		// Middle Item Text
-			.css-dcfFHl,
-			.css-jlRuPl {
-				color: var(--darkmode-text) !important;
-			} 
-			.css-jlRuPl .bg-warning-10 {
-				background-color: var(--reference-text-dark);
-				border: 1px solid var(--darkmode-contrast);
-			}
-		// Search Area
-			.css-jQQQnw {border-radius: 5px;}
-		
-		// Omnibar svg icon
-			.css-fQFckt {
-				background-color: var(--darkmode-contrast) !important;
-				border: 1px dotted var(--darkmode-contrast);
-				border-radius: 5px;
-			} 
+			// Bottom
+				// > div:nth-of-type(4) {
+
+				// }
+		}
 	}
 // Icon
 	// Power-up icon
@@ -537,47 +556,45 @@
 		}
 	}
 	// Darkmode - General Background 
-		body.old-dark-mode {
-			.dark-mode {
-				.document-table,
-				.multiple-windows__document,
-				#multiple-windows__document {
-					background-color: var(--darkmode-background) !important;
-				}
-				.tile__document {
-					background-color: var(--darkmode-background) !important;
+		.dark-mode {
+			.document-table,
+			.multiple-windows__document,
+			#multiple-windows__document {
+				background-color: var(--darkmode-background) !important;
+			}
+			.tile__document {
+				background-color: var(--darkmode-background) !important;
 
-					> div.document-header-top-bar {
-						color: var(--darkmode-text);
-						background-color: var(--darkmode-background-sidebar);
+				> div.document-header-top-bar {
+					color: var(--darkmode-text);
+					background-color: var(--darkmode-background-sidebar) !important;
 
-						&.border-bottom-solid {
-							border-bottom-style: unset;
-						}
+					&.border-bottom-solid {
+						border-bottom-style: unset;
+					}
 
-						> div:nth-of-type(2) {
-							.block {
-								.bg-gray-5 {
-									background-color: var(--darkmode-background-selected-darker);
-								}
-								.hover\:bg-hover-bg:hover {
-									background-color: #000 !important;
-								}
+					> div:nth-of-type(2) {
+						.block {
+							.bg-gray-5 {
+								background-color: var(--darkmode-background-selected-darker) !important;
+							}
+							.hover\:bg-hover-bg:hover {
+								background-color: #000 !important;
 							}
 						}
 					}
-					div#document {
-						color: var(--darkmode-text);
-						background-color: var(--darkmode-background);
+				}
+				div#document {
+					color: var(--darkmode-text);
+					background-color: var(--darkmode-background) !important;
 
-						#hierarchy-editor {
-							.tree-node--parent {
-								.rem-container {
-									// Disable Rem Container Hover Effect
-										.hover\:bg-hover-bg {
-											background-color: unset;
-										}
-								}
+					#hierarchy-editor {
+						.tree-node--parent {
+							.rem-container {
+								// Disable Rem Container Hover Effect
+									.hover\:bg-hover-bg {
+										background-color: unset;
+									}
 							}
 						}
 					}
@@ -671,7 +688,6 @@
 		}
 	}
 // Custom CSS Page Alert Area
-	body
 	.dark-mode {
 		#tile__document {
 			#document {
@@ -1677,15 +1693,13 @@
 		}
 	}
 	// Darkmode
-		body.old-dark-mode {
-			.dark-mode {
-				#StatsPage {
-					#StatsPageContent {
-						background-color: var(--darkmode-background);
+		.dark-mode {
+			#StatsPage {
+				#StatsPageContent {
+					background-color: var(--darkmode-background) !important;
 
-						.chartjs-render-monitor {
-							filter: invert(1);
-						}
+					.chartjs-render-monitor {
+						filter: invert(1);
 					}
 				}
 			}
@@ -1822,7 +1836,7 @@
 			}
 		}
 // Sidebar
-	// Basic
+	// Basic Light Mode
 		#document-sidebar {
 			background-color: var(--darkmode-background);
 
@@ -1833,17 +1847,32 @@
 				}
 			}
 		}
-		body.old-dark-mode  {
+	// Dark mode
+		.dark-mode {
+			#document-sidebar {
+				background-color: var(--darkmode-background-sidebar);
+
+				> div {
+					background-color: var(--darkmode-background-sidebar);
+
+					&:first-of-type {
+						border-right: var(--darkmode-background-sidebar) !important;
+					}
+				}
+
+				+ div {
+					> div {
+						color: var(--darkmode-contrast);
+						background-color: var(--darkmode-background-sidebar) !important;
+					}
+				}
+			}
+		}
+	// Remove unexpected Track line
+		body.old-dark-mode {
 			.dark-mode {
 				#document-sidebar {
 					background-color: var(--darkmode-background-sidebar) !important;
-
-					+ div {
-						> div {
-							color: var(--darkmode-contrast);
-							background-color: var(--darkmode-background-sidebar);
-						}
-					}
 				}
 			}
 		}

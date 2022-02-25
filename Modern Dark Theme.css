@@ -245,51 +245,39 @@
 	color: var(--darkmode-text);
 }
 
-.dark-mode [aria-label~=Omnibar] .css-eqifkM,
-.dark-mode [aria-label~=Omnibar] .css-fLTnVi {
+.dark-mode [aria-label~=Omnibar] {
 	color: var(--darkmode-text);
-}
-.dark-mode [aria-label~=Omnibar] .css-khYwOj {
-	background-color: var(--darkmode-background-selected);
-}
-.dark-mode [aria-label~=Omnibar] .bg-warning-10 {
-	color: red;
-}
-.dark-mode .css-kMEfqE {
-	color: var(--darkmode-text);
-}
-.dark-mode .css-cMUIYB {
-	background-color: var(--darkmode-background-selected);
-}
-.dark-mode .css-ZPdGi {
 	background-color: var(--darkmode-background);
+	border: 3px solid #FFF;
 }
-.dark-mode .css-cCyKhM {
-	background-color: #6D6D6D !important;
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(1) > div {
+	background-color: var(--darkmode-background-selected-darker) !important;
 }
-.dark-mode .css-bwtzVW {
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(2) > input {
 	color: var(--darkmode-text);
 }
-.dark-mode .css-bwtzVW,
-.dark-mode .css-hBWTgk,
-.dark-mode .css-edMwoJ {
-	background-color: var(--darkmode-background);
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=true] {
+	background-color: var(--darkmode-background-selected) !important;
 }
-.dark-mode .css-dcfFHl,
-.dark-mode .css-jlRuPl {
-	color: var(--darkmode-text) !important;
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=true] > div:nth-of-type(1) > div.rn-clr-content-secondary {
+	color: var(--darkmode-contrast);
 }
-.dark-mode .css-jlRuPl .bg-warning-10 {
-	background-color: var(--reference-text-dark);
-	border: 1px solid var(--darkmode-contrast);
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=true] > div:nth-of-type(1) > div.rn-clr-content-secondary > svg > g > path {
+	fill: var(--darkmode-contrast);
 }
-.dark-mode .css-jQQQnw {
-	border-radius: 5px;
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=true] > div:nth-of-type(2) > div > div {
+	border-color: unset;
+	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode .css-fQFckt {
-	background-color: var(--darkmode-contrast) !important;
-	border: 1px dotted var(--darkmode-contrast);
-	border-radius: 5px;
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=false] > div:nth-of-type(1) > div.rn-clr-content-secondary {
+	color: var(--darkmode-contrast);
+}
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=false] > div:nth-of-type(1) > div.rn-clr-content-secondary > svg > g > path {
+	fill: var(--darkmode-contrast);
+}
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=false] > div:nth-of-type(2) > div > div {
+	border-color: unset;
+	background-color: var(--darkmode-background-selected-darker);
 }
 
 #DocumentTitle .rem-powerup-icon .text-icon {
@@ -400,32 +388,32 @@
 	background-color: unset;
 }
 
-body.old-dark-mode .dark-mode .document-table,
-body.old-dark-mode .dark-mode .multiple-windows__document,
-body.old-dark-mode .dark-mode #multiple-windows__document {
+.dark-mode .document-table,
+.dark-mode .multiple-windows__document,
+.dark-mode #multiple-windows__document {
 	background-color: var(--darkmode-background) !important;
 }
-body.old-dark-mode .dark-mode .tile__document {
+.dark-mode .tile__document {
 	background-color: var(--darkmode-background) !important;
 }
-body.old-dark-mode .dark-mode .tile__document > div.document-header-top-bar {
+.dark-mode .tile__document > div.document-header-top-bar {
 	color: var(--darkmode-text);
-	background-color: var(--darkmode-background-sidebar);
+	background-color: var(--darkmode-background-sidebar) !important;
 }
-body.old-dark-mode .dark-mode .tile__document > div.document-header-top-bar.border-bottom-solid {
+.dark-mode .tile__document > div.document-header-top-bar.border-bottom-solid {
 	border-bottom-style: unset;
 }
-body.old-dark-mode .dark-mode .tile__document > div.document-header-top-bar > div:nth-of-type(2) .block .bg-gray-5 {
-	background-color: var(--darkmode-background-selected-darker);
+.dark-mode .tile__document > div.document-header-top-bar > div:nth-of-type(2) .block .bg-gray-5 {
+	background-color: var(--darkmode-background-selected-darker) !important;
 }
-body.old-dark-mode .dark-mode .tile__document > div.document-header-top-bar > div:nth-of-type(2) .block .hover\:bg-hover-bg:hover {
+.dark-mode .tile__document > div.document-header-top-bar > div:nth-of-type(2) .block .hover\:bg-hover-bg:hover {
 	background-color: #000 !important;
 }
-body.old-dark-mode .dark-mode .tile__document div#document {
+.dark-mode .tile__document div#document {
 	color: var(--darkmode-text);
-	background-color: var(--darkmode-background);
+	background-color: var(--darkmode-background) !important;
 }
-body.old-dark-mode .dark-mode .tile__document div#document #hierarchy-editor .tree-node--parent .rem-container .hover\:bg-hover-bg {
+.dark-mode .tile__document div#document #hierarchy-editor .tree-node--parent .rem-container .hover\:bg-hover-bg {
 	background-color: unset;
 }
 
@@ -484,11 +472,11 @@ body.old-dark-mode .dark-mode .tile__document div#document #hierarchy-editor .tr
 	background-color: unset !important;
 }
 
-body .dark-mode #tile__document #document #DropToOpenAsDocument > div .bg-mint-10 {
+.dark-mode #tile__document #document #DropToOpenAsDocument > div .bg-mint-10 {
 	color: var(--darkmode-text);
 	background-color: #365148;
 }
-body .dark-mode #tile__document #document #DropToOpenAsDocument > div .bg-mint-10 > div.text-mint-80 {
+.dark-mode #tile__document #document #DropToOpenAsDocument > div .bg-mint-10 > div.text-mint-80 {
 	color: unset;
 }
 
@@ -1300,10 +1288,10 @@ body .dark-mode #tile__document #document #DropToOpenAsDocument > div .bg-mint-1
 	width: calc(100% - 50px) !important;
 }
 
-body.old-dark-mode .dark-mode #StatsPage #StatsPageContent {
-	background-color: var(--darkmode-background);
+.dark-mode #StatsPage #StatsPageContent {
+	background-color: var(--darkmode-background) !important;
 }
-body.old-dark-mode .dark-mode #StatsPage #StatsPageContent .chartjs-render-monitor {
+.dark-mode #StatsPage #StatsPageContent .chartjs-render-monitor {
 	filter: invert(1);
 }
 
@@ -1415,12 +1403,22 @@ body.old-dark-mode .dark-mode #StatsPage #StatsPageContent .chartjs-render-monit
 	background-color: var(--darkmode-background);
 }
 
-body.old-dark-mode .dark-mode #document-sidebar {
+.dark-mode #document-sidebar {
+	background-color: var(--darkmode-background-sidebar);
+}
+.dark-mode #document-sidebar > div {
+	background-color: var(--darkmode-background-sidebar);
+}
+.dark-mode #document-sidebar > div:first-of-type {
+	border-right: var(--darkmode-background-sidebar) !important;
+}
+.dark-mode #document-sidebar + div > div {
+	color: var(--darkmode-contrast);
 	background-color: var(--darkmode-background-sidebar) !important;
 }
-body.old-dark-mode .dark-mode #document-sidebar + div > div {
-	color: var(--darkmode-contrast);
-	background-color: var(--darkmode-background-sidebar);
+
+body.old-dark-mode .dark-mode #document-sidebar {
+	background-color: var(--darkmode-background-sidebar) !important;
 }
 
 .document-sidebar--collapsed--vertical {
