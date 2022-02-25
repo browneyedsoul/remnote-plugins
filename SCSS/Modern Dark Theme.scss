@@ -1342,8 +1342,7 @@
 		}
 		// Hidden Item List
 			// Style
-				.hierarchy-editor__hidden-children__list,
-				[data-search-result~="search-result-panel"] {
+				.hierarchy-editor__hidden-children__list {
 					color: black;
 					background-color: var(--darkmode-text);
 				}
@@ -2111,16 +2110,33 @@
 				#search-results__list {
 					border: 3px solid black;
 					border-radius: 5px;
+					background-color: var(--darkmode-background);
 
 					#search-results__result {
-						color: black;
-						background-color: var(--darkmode-text);
+						color: var(--darkmode-text);
+						background-color: var(--darkmode-background);
 
 						// Slash Command Focused Item
-						&.bg-gray-5 {
-							color: black;
-							background-color: var(--popup-background-hover);
-						}
+							&.bg-gray-5 {
+								background-color: var(--darkmode-background-selected-darker);
+							}
+
+							> div {
+								> div.mix-blend-multiply {
+									mix-blend-mode: unset;
+
+									span.bg-blue-20 {
+										color: var(--red-text);
+										background-color: #CDCB69;
+									}
+								}
+							}
+						// Create Rem Box
+							.p-2 {
+								#quote {
+									color: #000;
+								}
+							}
 					}
 				}
 		}
