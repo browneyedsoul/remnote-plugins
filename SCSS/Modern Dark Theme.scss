@@ -79,19 +79,246 @@
 		// Rem Block Selected Area
 			.hidden-selection {background-color: gray;}
 	}
-	// Document
-		#document {
-			width: calc(100% - 2 * var(--document-margin) - 30px);
-		}
-		// Hierarchy Editor - Left-side Hiearchy Editor Margin
-		.document--ltr {
-			padding: 0px 0px 0px 30px;
-		}
 	// Rem Block Selected Area
 		.hidden-selection {
 			background-color:#D8E2F1;
 		}
-// All Notes page list
+// Global Elements
+	// Header
+		#hierarchy-editor {
+			.rem-text.rem-header--1 {
+				font-size: var(--font-size-header-1);
+			}
+			.rem-text.rem-header--2 {
+				font-size: var(--font-size-header-2);
+			}
+			.rem-text.rem-header--3 {
+				font-size: var(--font-size-header-3);
+			}
+		}
+	// Codeblock
+		#code-node {
+			background-color: var(--code-node-background-color);
+
+			&::before {
+				background-color: var(--line-number-background-color);
+			}
+			.codeLine {
+				&::before {
+					color: var(--code-node-line-number-color);
+				}
+			}
+		}
+	// Scrollbar
+		::-webkit-scrollbar {
+			background-color: transparent;
+			height: 10px;
+			width: 8px;
+		}
+		::-webkit-scrollbar-track {
+			background-color: transparent;
+		}
+		::-webkit-scrollbar-thumb {
+			background-color: #BBB;
+			border: 4px solid transparent;
+		}
+	// Checkbox
+		// Box Style
+			.rem-checkbox {
+				border-radius: unset !important;
+				background-color: unset;
+			}
+		// Strikethrough Style
+			.rem-container--todo-finished {
+				color: #A2A2A2;
+				text-decoration: line-through;
+				text-decoration-style: double;
+			}
+	// Span Element - Hyperlink
+		.text-blue-60 {
+			color: var(--link-node-color);
+
+			&.underline {
+				text-decoration: none !important;
+				font-family: 'Roboto Mono';
+			}
+		}
+	// Date Picker
+		.react-datepicker.search-results__date-picker {
+			background-color: #ffffff !important;
+		}
+// Global Elements - Darkmode
+	// Checkbox
+		.dark-mode {
+			.rem-container--todo-finished {
+				color: #A1A1A1;
+
+				.RichTextViewer,
+				[data-slate-node="text"] {
+					color: #909090;
+				}
+			}
+		}
+	// Katex
+		.dark-mode {
+			.katex,
+			.katex-display,
+			.latex-node--focused:not(.latex-node--block) .katex {
+				background-color: unset !important;
+			}
+		}
+	// Metadata Page
+		.dark-mode {
+			#RemPage {
+				color: var(--darkmode-text);
+			}
+		}
+	// Span Element - General Text
+		.dark-mode {
+			.rem-text,
+			.rem-text.rem-header--1,
+			.rem-text.rem-header--2,
+			.rem-text.rem-header--3 {
+				color: var(--darkmode-text);
+			}
+		}
+	// Span Element - Bold Text
+		.dark-mode {
+			.rem-text {
+				.bold:not(.rem-header--1 .bold):not(.rem-header--2 .bold):not(.rem-header--3 .bold):not([data-rem-tags~="highlight"] .bold):not(.bold.highlight-color--red):not(.bold.highlight-color--orange):not(.bold.highlight-color--yellow):not(.bold.highlight-color--green):not(.bold.highlight-color--blue):not(.bold.highlight-color--purple) {
+					color: var(--darkmode-text-bold);
+				}
+			}
+		}
+	// Span Element - Hyperlink
+		.dark-mode {
+			.text-blue-60 {
+				color: var(--link-node-color-dark);
+				border-radius: 3px;
+				padding: 0 2px 1px 2px;
+
+				&.highlight-color--red,
+				&.highlight-color--orange,
+				&.highlight-color--yellow,
+				&.highlight-color--green,
+				&.highlight-color--blue,
+				&.highlight-color--purple {
+					color: #000;
+				}
+			}
+			[data-rem-tags~="highlight"] {
+				.text-blue-60 {
+					color: var(--link-node-color);
+				}
+			}
+		}
+	// Span Element - quote
+		.dark-mode {
+			.quote {
+				color: var(--quote-text-dark) !important;
+				background-color: var(--quote-background-dark) !important;
+			}
+		}
+	// TreeNode
+		.dark-mode {
+			.TreeNode {
+				border-width: 1.5px !important;
+				border-left-color: var(--line-color-dark) !important;
+			}
+		}
+	// Card
+		.dark-mode {
+			.separator-symbol:not(:empty):hover {
+				background-color: var(--darkmode-background-selected-darker);
+			}
+		}
+	// Icon
+		.dark-mode {
+			// Calendar icon
+				.rem-calendar-icon.text-text {
+					color: var(--darkmode-text);
+				}
+			// Power-up icon
+				.rem-powerup-icon {
+					margin-right: 5px;
+
+					.text-icon {color: var(--darkmode-text);}
+				} 
+		}
+	// Codeblock
+		.dark-mode {
+			#code-node {
+				background-color: var(--code-node-background-color-dark);
+
+				&::before {
+					background-color: var(--code-node-line-number-background-color-dark);
+				}
+			}
+			.codeLine::before {
+				color: var(--code-node-line-number-color-dark);
+			}
+		}
+	// Tag Searching Text
+		.work-in-progress-tag {
+			color: var(--darkmode-text);
+			background-color: var(--darkmode-background-selected-darker);
+		}
+	// Tag Bar
+		.dark-mode {
+			.hierarchy-editor__tag-bar {
+				.hierarchy-editor__tag-bar__tag {
+					color: var(--darkmode-text);
+					background-color: var(--darkmode-background-selected-darker);
+
+					&.highlight-color--red {
+						color: #000;
+						background-color: var(--highlight-color--red-dark);
+						.hierarchy-editor__tag-bar__tag__delete {
+							color: unset;
+						}
+					}
+					&.highlight-color--orange {
+						color: #000;
+						background-color: var(--highlight-color--orange-dark);
+						.hierarchy-editor__tag-bar__tag__delete {
+							color: unset;
+						}
+					}
+					&.highlight-color--yellow {
+						color: #000;
+						background-color: var(--highlight-color--yellow-dark);
+						.hierarchy-editor__tag-bar__tag__delete {
+							color: unset;
+						}
+					}
+					&.highlight-color--green {
+						color: #000;
+						background-color: var(--highlight-color--green-dark);
+						.hierarchy-editor__tag-bar__tag__delete {
+							color: unset;
+						}
+					}
+					&.highlight-color--blue {
+						color: #000;
+						background-color: var(--highlight-color--blue-dark);
+						.hierarchy-editor__tag-bar__tag__delete {
+							color: unset;
+						}
+					}
+					&.highlight-color--purple {
+						color: #000;
+						background-color: var(--highlight-color--purple);
+						.hierarchy-editor__tag-bar__tag__delete {
+							color: unset;
+						}
+					}
+				}
+				.hierarchy-editor__tag-bar__tag__delete {
+					color: unset;
+				}
+			}
+		}
+// All Notes Page
 	// Reverse Browser Item Header
 		.ReactVirtualized__Grid__innerScrollContainer {
 			> div {
@@ -153,7 +380,7 @@
 					}
 			}
 		}
-// Queue (Flashcard)
+// Flashcard Page
 	.dark-mode {
 		// Select Cluster
 			.queue-cluster-selector {
@@ -312,7 +539,7 @@
 				background-color: var(--darkmode-background);
 			}
 	}
-// Card Browser
+// Card Browser Page
 	.dark-mode{
 		#card-table-page {
 			color: var(--darkmode-text);
@@ -332,11 +559,9 @@
 			// Top
 				> div:nth-of-type(1) {
 					> div {
-						background-color: var(--darkmode-background-selected-darker) !important;
-
-						// > span.RichTextViewer {
-							
-						// }
+						> span.RichTextViewer {
+							color: #000;	
+						}
 					}
 					// ⌘ + P Search Text
 						> input {
@@ -345,6 +570,12 @@
 				}
 			// Search Bar
 				> div:nth-of-type(2) {
+					> div {
+						> span.RichTextViewer {
+							color: #000;	
+						}
+					}
+
 					> input {
 						color: var(--darkmode-text);
 					}
@@ -410,9 +641,9 @@
 							background-color: var(--darkmode-background-selected-darker) !important;
 						}
 						// Icon
-							> div:nth-of-type(1) {
+							// > div:nth-of-type(1) {
 
-							}
+							// }
 						// Item
 							> div:nth-of-type(2) {
 								flex-direction: column-reverse !important;
@@ -439,112 +670,6 @@
 				// }
 		}
 	}
-// Icon
-	// Power-up icon
-		#DocumentTitle {
-			.rem-powerup-icon {
-				.text-icon {
-					vertical-align: middle;
-				}
-			} 	
-		}
-	// Darkmode Support
-		.dark-mode {
-			// Calendar icon
-				.rem-calendar-icon.text-text {
-					color: var(--darkmode-text);
-				}
-			// Slot icon
-				.css-bMKjkl {
-					color: var(--darkmode-text);
-				} 
-			// Power-up icon
-				.rem-powerup-icon {
-					margin-right: 5px;
-
-					.text-icon {color: var(--darkmode-text);}
-				} 
-		}
-// Page Breadcrumbs
-	.document-header-top-bar {
-		height: fit-content;
-		padding: 0.2rem 0.2rem 0 0.2rem;
-
-		// Page Hierarchy
-			div.fadein-delayed {
-				> div {
-					flex-wrap: wrap;
-					overflow-wrap: normal;
-				}
-
-				.flex {
-					display: inline;
-
-					> span {
-						vertical-align: middle;
-					}
-				}
-				
-			}
-		// Multi Line Breadcrumbs
-			.flex-nowrap {
-				flex-wrap: wrap;
-			}
-		//  3-Dots
-			div.justify-end {
-				.document__options-menu {
-					.icon-button {
-						.fill-current {
-							color: #2A2A36;
-						}
-					}
-				}
-			}
-		// Merge Button
-			.w-max[color="#292936"] {
-				color: unset;
-			}
-	}
-	// Scrollable
-		// .document-header-top-bar > div {overflow-x: auto;}
-	// Darkmode Compatibility
-		.dark-mode {
-			.document-header-top-bar {
-				.parent-link {
-					color: var(--darkmode-text);
-					background-color: transparent;
-					border: 1px solid #7F8094;
-				}
-				.RichTextViewer {
-					.bold.highlight-color--red,
-					.bold.highlight-color--orange,
-					.bold.highlight-color--yellow,
-					.bold.highlight-color--green,
-					.bold.highlight-color--blue,
-					.bold.highlight-color--purple {
-						background-color: transparent;
-					}
-					.bold.highlight-color--red {color: var(--red-text-dark);}
-					.bold.highlight-color--orange {color: var(--orange-text-dark);}
-					.bold.highlight-color--yellow {color: var(--yellow-text-dark);}
-					.bold.highlight-color--green {color: var(--green-text-dark);}
-					.bold.highlight-color--blue {color: var(--blue-text-dark);}
-					.bold.highlight-color--purple {color: var(--purple-text-dark);}
-				}
-			}
-		} 
-// Header
-	#hierarchy-editor {
-		.rem-text.rem-header--1 {
-			font-size: var(--font-size-header-1);
-		}
-		.rem-text.rem-header--2 {
-			font-size: var(--font-size-header-2);
-		}
-		.rem-text.rem-header--3 {
-			font-size: var(--font-size-header-3);
-		}
-	}
 // Page Padding
 	.dark-mode {
 		.paddingPage {
@@ -567,30 +692,7 @@
 			}
 		}
 	}
-// DocumentTitle
-	// Power-up icon
-	#DocumentTitle {
-		.document-title {
-			.rem-powerup-icon {
-				position: relative;
-				top: -7px;
-			}
-		}
-	}
-// Hierarchy Editor
-	#document {
-		#hierarchy-editor {
-			.tree-node--parent {
-				.rem-container {
-					// Disable Rem Container Hover Effect
-						.hover\:bg-hover-bg {
-							background-color: unset;
-						}
-				}
-			}
-		}
-	}
-	// Darkmode - General Background 
+// Darkmode - General Background 
 		.dark-mode {
 			.document-table,
 			.multiple-windows__document,
@@ -598,16 +700,10 @@
 				background-color: var(--darkmode-background) !important;
 			}
 			.tile__document {
-				background-color: var(--darkmode-background) !important;
-
 				> div.document-header-top-bar {
-					color: var(--darkmode-text);
-					background-color: var(--darkmode-background-sidebar) !important;
-
 					&.border-bottom-solid {
 						border-bottom-style: unset;
 					}
-
 					> div:nth-of-type(2) {
 						.block {
 							.bg-gray-5 {
@@ -617,11 +713,18 @@
 								background-color: #000 !important;
 							}
 						}
+						// Page Right-Top 3dots
+							span.document__options-menu {
+								div.icon-button {
+									.fill-current {
+										filter: invert(1);
+									}
+								}
+							}
 					}
 				}
 				div#document {
-					color: var(--darkmode-text);
-					background-color: var(--darkmode-background) !important;
+					
 
 					#hierarchy-editor {
 						.tree-node--parent {
@@ -636,138 +739,304 @@
 				}
 			}
 		}
-// Sticky Top bar
-	#hierarchy-editor {
-		> .fixed {
-			> .tree-node-container {
-				> .TreeNode {
-					left: 0px;
-				}
-			}
-		}
-	}
-	.dark-mode {
-		#hierarchy-editor {
-			> .fixed {
-				background-color: var(--darkmode-background);
-			}
-		}
-	}
-// Span Element - General Text
-	.dark-mode {
-		.rem-text,
-		.rem-text.rem-header--1,
-		.rem-text.rem-header--2,
-		.rem-text.rem-header--3 {
-			color: var(--darkmode-text);
-		}
-	}
-// Span Element - Bold Text
-	.dark-mode {
-		.rem-text {
-			.bold:not(.rem-header--1 .bold):not(.rem-header--2 .bold):not(.rem-header--3 .bold):not([data-rem-tags~="highlight"] .bold):not(.bold.highlight-color--red):not(.bold.highlight-color--orange):not(.bold.highlight-color--yellow):not(.bold.highlight-color--green):not(.bold.highlight-color--blue):not(.bold.highlight-color--purple) {
-				color: var(--darkmode-text-bold);
-			}
-		}
-	}
-// Span Element - Hyperlink
-	.text-blue-60 {
-		color: var(--link-node-color);
+// Tile Document
+	.tile__document {
+		// Document Header Top Bar
+			.document-header-top-bar {
+				height: fit-content;
+				padding: 0.2rem 0.2rem 0 0.2rem;
 
-		&.underline {
-			text-decoration: none !important;
-			font-family: 'Roboto Mono';
-		}
-	}
-	.dark-mode {
-		.text-blue-60 {
-			color: var(--link-node-color-dark);
-			border-radius: 3px;
-			padding: 0 2px 1px 2px;
+				// Page Hierarchy
+					div.fadein-delayed {
+						> div {
+							flex-wrap: wrap;
+							overflow-wrap: normal;
+						}
 
-			&.highlight-color--red,
-			&.highlight-color--orange,
-			&.highlight-color--yellow,
-			&.highlight-color--green,
-			&.highlight-color--blue,
-			&.highlight-color--purple {
-				color: #000;
+						.flex {
+							display: inline;
+
+							> span {
+								vertical-align: middle;
+							}
+						}
+						
+					}
+				// Multi Line Breadcrumbs
+					.flex-nowrap {
+						flex-wrap: wrap;
+					}
+				//  3-Dots
+					div.justify-end {
+						.document__options-menu {
+							.icon-button {
+								.fill-current {
+									color: #2A2A36;
+								}
+							}
+						}
+					}
+				// Merge Button
+					.w-max[color="#292936"] {
+						color: unset;
+					}
 			}
-		}
-		[data-rem-tags~="highlight"] {
-			.text-blue-60 {
-				color: var(--link-node-color);
-			}
-		}
-	}
-// Span Element - quote
-	.dark-mode {
-		.quote {
-			color: var(--quote-text-dark) !important;
-			background-color: var(--quote-background-dark) !important;
-		}
-	}
-// TreeNode
-	.dark-mode {
-		.TreeNode {
-			border-width: 1.5px !important;
-			border-left-color: var(--line-color-dark) !important;
-		}
-	}
-// Katex
-	.dark-mode {
-		.katex,
-		.katex-display,
-		.latex-node--focused:not(.latex-node--block) .katex {
-			background-color: unset !important;
-		}
-	}
-// Custom CSS Page Alert Area
-	.dark-mode {
-		#tile__document {
+		// Document
 			#document {
-				#DropToOpenAsDocument {
-					> div {
-						.bg-mint-10 {
-							color: var(--darkmode-text);
-							background-color: #365148;
-							> div.text-mint-80 {
-								color: unset;
+				width: calc(100% - 2 * var(--document-margin) - 30px);
+				padding: 0px 0px 0px 30px;
+
+				// DocumentTopRow
+					#DocumentTopRow {
+						#DropToOpenAsDocument {
+							> div {
+								// Custom CSS Page Alert Area
+									// .bg-mint-10 {
+									// 	> div.text-mint-80 {
+
+									// 	}
+									// }
+								// DocumentTitle
+									> div#DocumentTitle {
+										> div.document-title {
+											// Power-up icon
+												.rem-powerup-icon {
+													position: relative;
+													top: -7px;
+
+													.text-icon {
+														vertical-align: middle;
+													}
+												}
+											// > div.rich-text-editor {
+											// 	> div.EditorContainer {
+											// 		> div[data-slate-node~="element"] {
+											// 			> span {
+
+											// 			}
+											// 		}
+											// 	}
+											// }
+										}
+									}
+								// Sources & Tags
+									// > div.grid {
+										// Sources
+											// > div:nth-of-type(1) {
+											// 	> div.grid {
+											// 		div.col-span-1 {
+
+											// 		}
+											// 	}
+											// }
+										// Tags
+											// > div.grid {
+												
+											// }
+									// }
+								// AddNewDocumentButtonSmall
+									// #AddNewDocumentButtonSmall {
+
+									// }
 							}
 						}
-					}	
-				}
+					}
+				// hierarchy-editor
+					#hierarchy-editor {
+						// Find / Filter / Replace - Ctrl(⌘) + F
+							#hierarchy-editor__ctrl-f {
+								background-color: var(--darkmode-background);
+								border: 2px solid white;
+
+								> div {
+									// Find
+										> span {
+											> div.bg-white {
+												background-color: var(--darkmode-background-selected-darker);
+											}
+										}
+									// Input Area
+										> div.bg-gray-5 {
+											background-color: var(--darkmode-background-selected-darker);
+										}
+								}
+							}
+						// Sticky Top bar
+							> .fixed {
+								> .tree-node-container {
+									> .TreeNode {
+										left: 0px;
+									}
+								}
+							}
+						// Rem
+							.tree-node--parent {
+								.rem-container {
+									// Disable Rem Container Hover Effect
+										.hover\:bg-hover-bg {
+											background-color: unset;
+										}
+								}
+							}
+					}
 			}
+	}
+// Tile Document - Darkmode
+	.dark-mode {
+		.tile__document {
+			background-color: var(--darkmode-background) !important;
+			
+			// Daily Notes Top bar
+				> div.border-bottom-solid.bg-white {
+					background-color: var(--darkmode-background-sidebar);
+					border-bottom-style: dashed;
+				}
+			// Document Header Top Bar
+				.document-header-top-bar {
+					color: var(--darkmode-text);
+					background-color: var(--darkmode-background-sidebar) !important;
+
+					.parent-link {
+						color: var(--darkmode-text);
+						background-color: transparent;
+						border: 1px solid #7F8094;
+					}
+					.RichTextViewer {
+						.bold.highlight-color--red,
+						.bold.highlight-color--orange,
+						.bold.highlight-color--yellow,
+						.bold.highlight-color--green,
+						.bold.highlight-color--blue,
+						.bold.highlight-color--purple {
+							background-color: transparent;
+						}
+						.bold.highlight-color--red {color: var(--red-text-dark);}
+						.bold.highlight-color--orange {color: var(--orange-text-dark);}
+						.bold.highlight-color--yellow {color: var(--yellow-text-dark);}
+						.bold.highlight-color--green {color: var(--green-text-dark);}
+						.bold.highlight-color--blue {color: var(--blue-text-dark);}
+						.bold.highlight-color--purple {color: var(--purple-text-dark);}
+					}
+				}
+			// Document
+				#document {
+					color: var(--darkmode-text);
+					background-color: var(--darkmode-background) !important;
+					
+					// DocumentTopRow
+						#DocumentTopRow {
+							#DropToOpenAsDocument {
+								> div.group {
+									// Custom CSS Page Alert Area
+										.bg-mint-10 {
+											color: var(--darkmode-text);
+											background-color: #365148;
+
+											> div.text-mint-80 {
+												color: unset;
+											}
+										}
+									// DocumentTitle
+										> div#DocumentTitle {
+											> div.document-title {
+												// Power-up icon
+													.rem-powerup-icon {
+														position: relative;
+														top: -7px;
+													}
+												> div.rich-text-editor {
+													> div.EditorContainer {
+														> div[data-slate-node~="element"] {
+															> span {
+
+															}
+														}
+													}
+												}
+											}
+										}
+									// Sources & Tags
+										> div.grid {
+											// Sources & Tags Left Title
+												div.col-span-1 {
+													.text-gray-60 {
+														color: var(--darkmode-text);
+													}
+													.hover\:bg-gray-5:hover {
+														background-color: var(--darkmode-background-selected-darker);
+													}
+												}
+											// Sources & Tags Right Contents
+												.pr-1 {
+													color: var(--darkmode-text);
+
+													> span {
+														> div {
+															// Sources Right Contents
+															border-style: unset;
+															background-color: var(--darkmode-background-selected);
+
+															&:hover {
+																background-color: var(--darkmode-background-selected-darker);
+															}
+														}
+													}
+
+													.text-gray-60 {
+														color: var(--darkmode-text);
+													}
+												}
+												div.rounded-md {
+													> span {
+														.text-gray-80 {
+															color: var(--darkmode-text);
+														}
+														.bg-gray-10 {
+															background-color: var(--darkmode-background-selected);
+															
+															&:hover {
+																background-color: var(--darkmode-background-selected-darker);
+															}
+														}
+													}
+												}
+												
+										}
+									// AddNewDocumentButtonSmall
+										// #AddNewDocumentButtonSmall {
+
+										// }
+								}
+							}
+						}
+					// hierarchy-editor
+						#hierarchy-editor {
+							// Find / Filter / Replace - Ctrl(⌘) + F
+								#hierarchy-editor__ctrl-f {
+									background-color: var(--darkmode-background);
+									border: 2px solid white;
+
+									> div {
+										// Find
+											> span {
+												> div.bg-white {
+													background-color: var(--darkmode-background-selected-darker);
+												}
+											}
+										// Input Area
+											> div.bg-gray-5 {
+												background-color: var(--darkmode-background-selected-darker);
+											}
+									}
+								}
+							// Sticky Top bar
+								> .fixed {
+									background-color: var(--darkmode-background);
+								}
+						}
+				}
 		}
 	}
-// Source
-	.dark-mode {
-		[data-document-tags*="source-list"] {
-			#DocumentTopRow {
-				#DropToOpenAsDocument {
-					[data-icon~="add"] {
-						color: var(--darkmode-text) !important;
-						fill: var(--darkmode-text) !important;
-					}
-					// Top Tag
-					.rounded-md {
-						.pr-1 {
-							&:hover {
-								background-color: var(--darkmode-background-selected-darker);
-							}
-						}
-						span[contenteditable~="false"] {
-							.text-gray-60 {
-								color: var(--darkmode-text);
-							}
-							&:hover {
-								background-color: var(--darkmode-background-selected-darker);
-							}
-						}
-					}
-				}
-			}
-		}
 		.rem-container--focused {
 			.inline-flex {
 				.text-gray-60 {
@@ -775,75 +1044,6 @@
 				}
 			}
 		}
-	}
-// Tag Searching Text
-	.work-in-progress-tag {
-		color: black;
-	}
-// Tag Bar
-	.dark-mode {
-		.hierarchy-editor__tag-bar {
-			.hierarchy-editor__tag-bar__tag {
-				color: var(--darkmode-text);
-				background-color: var(--darkmode-background-selected-darker);
-			}
-
-			.hierarchy-editor__tag-bar__tag.highlight-color--red {
-				color: #000;
-				background-color: var(--highlight-color--red-dark);
-				.hierarchy-editor__tag-bar__tag__delete {
-					color: unset;
-				}
-			}
-			.hierarchy-editor__tag-bar__tag.highlight-color--orange {
-				color: #000;
-				background-color: var(--highlight-color--orange-dark);
-				.hierarchy-editor__tag-bar__tag__delete {
-					color: unset;
-				}
-			}
-			.hierarchy-editor__tag-bar__tag.highlight-color--yellow {
-				color: #000;
-				background-color: var(--highlight-color--yellow-dark);
-				.hierarchy-editor__tag-bar__tag__delete {
-					color: unset;
-				}
-			}
-			.hierarchy-editor__tag-bar__tag.highlight-color--green {
-				color: #000;
-				background-color: var(--highlight-color--green-dark);
-				.hierarchy-editor__tag-bar__tag__delete {
-					color: unset;
-				}
-			}
-			.hierarchy-editor__tag-bar__tag.highlight-color--blue {
-				color: #000;
-				background-color: var(--highlight-color--blue-dark);
-				.hierarchy-editor__tag-bar__tag__delete {
-					color: unset;
-				}
-			}
-			.hierarchy-editor__tag-bar__tag.highlight-color--purple {
-				color: #000;
-				background-color: var(--highlight-color--purple);
-				.hierarchy-editor__tag-bar__tag__delete {
-					color: unset;
-				}
-			}
-			
-			.hierarchy-editor__tag-bar__tag__delete {
-				color: unset;
-			}
-		}
-	}
-// Page Right-Top 3dots
-	.dark-mode {
-		.document__options-menu {
-			.fill-current {
-				filter: invert(1);
-			}
-		}
-	}
 // Rem-Bullet Container
 	// Toggle Collapse Button Hover effect
 		.hover\:bg-hover-bg:hover {
@@ -1046,34 +1246,10 @@
 			}
 		}
 		// Darkmode
-		
-		.dark-mode {
-			[data-rem-tags~="color"] {
-				.rem-text {
-					.bold.highlight-color--red {color: var(--red-text-dark) !important;} 
-					.bold.highlight-color--orange {color: var(--orange-text-dark) !important;}
-					.bold.highlight-color--yellow {
-						color: var(--yellow-text-dark) !important; 
-						text-shadow: unset !important;
-					}
-					.bold.highlight-color--green {color: var(--green-text-dark) !important;}
-					.bold.highlight-color--blue {color: var(--blue-text-dark) !important;}
-					.bold.highlight-color--purple {color: var(--purple-text-dark) !important;} 
-
-					.rem-reference-container {
-						.bold.highlight-color--red {color: var(--red-text-dark) !important;}
-						.bold.highlight-color--orange {color: var(--orange-text-dark) !important;}
-						.bold.highlight-color--yellow {color: var(--yellow-text-dark) !important;}
-						.bold.highlight-color--green {color: var(--green-text-dark) !important;}
-						.bold.highlight-color--blue {color: var(--blue-text-dark) !important;}
-						.bold.highlight-color--purple {color: var(--purple-text-dark) !important;}
-					}
-				}
-			}
-			.rem-reference-container[data-rem-tags~="color"] {
-				.rem-reference {
-					.RichTextViewer {
-						.bold.highlight-color--red {color: var(--red-text-dark) !important;}
+			.dark-mode {
+				[data-rem-tags~="color"] {
+					.rem-text {
+						.bold.highlight-color--red {color: var(--red-text-dark) !important;} 
 						.bold.highlight-color--orange {color: var(--orange-text-dark) !important;}
 						.bold.highlight-color--yellow {
 							color: var(--yellow-text-dark) !important; 
@@ -1081,11 +1257,34 @@
 						}
 						.bold.highlight-color--green {color: var(--green-text-dark) !important;}
 						.bold.highlight-color--blue {color: var(--blue-text-dark) !important;}
-						.bold.highlight-color--purple {color: var(--purple-text-dark) !important;}
+						.bold.highlight-color--purple {color: var(--purple-text-dark) !important;} 
+
+						.rem-reference-container {
+							.bold.highlight-color--red {color: var(--red-text-dark) !important;}
+							.bold.highlight-color--orange {color: var(--orange-text-dark) !important;}
+							.bold.highlight-color--yellow {color: var(--yellow-text-dark) !important;}
+							.bold.highlight-color--green {color: var(--green-text-dark) !important;}
+							.bold.highlight-color--blue {color: var(--blue-text-dark) !important;}
+							.bold.highlight-color--purple {color: var(--purple-text-dark) !important;}
+						}
+					}
+				}
+				.rem-reference-container[data-rem-tags~="color"] {
+					.rem-reference {
+						.RichTextViewer {
+							.bold.highlight-color--red {color: var(--red-text-dark) !important;}
+							.bold.highlight-color--orange {color: var(--orange-text-dark) !important;}
+							.bold.highlight-color--yellow {
+								color: var(--yellow-text-dark) !important; 
+								text-shadow: unset !important;
+							}
+							.bold.highlight-color--green {color: var(--green-text-dark) !important;}
+							.bold.highlight-color--blue {color: var(--blue-text-dark) !important;}
+							.bold.highlight-color--purple {color: var(--purple-text-dark) !important;}
+						}
 					}
 				}
 			}
-		}
 		.popup-menu {
 			[data-rem-tags~="color"] {
 				.bold.highlight-color--yellow {
@@ -1108,25 +1307,7 @@
 				}
 			}
 		}
-// Find / Filter / Replace - Ctrl(⌘) + F
-	.dark-mode {
-		#hierarchy-editor__ctrl-f {
-			.css-exQOrH {
-				color: black;
-				background-color: unset;
-			}
-		}
-	}
-	#rich-text-editor__icon {
-		filter: invert(1);
-	}
 // Portal
-	// Search Portal TreeNode Alignement
-		// #hierarchy-editor {
-		// 	.portal-tree-node-box {
-		// 		margin-left: 10px !important;
-		// 	}
-		// }
 	// Darkmode Support
 		.dark-mode {
 			// Portal Breadcrumbs
@@ -1187,17 +1368,6 @@
 			> div {
 				> div.w-96 {
 					width: 36rem;
-				}
-			}
-		// Hover Preview Backlink Alignment
-			#document-hover-preview__popup {
-				#hierarchy-editor {
-					.animate-zoom-into-bullet {
-						.portal-tree-node-box {
-							// Static Preview Alignment
-							margin-left: 11px;
-						}
-					}
 				}
 			}
 		// Popup Title - Reference & Alias
@@ -1430,57 +1600,6 @@
 			}
 		}
 	}
-// RemNote Date Picker
-	.react-datepicker.search-results__date-picker {
-		background-color: #ffffff !important;
-	}
-// Codeblock
-	#code-node {
-		background-color: var(--code-node-background-color);
-
-		&::before {
-			background-color: var(--line-number-background-color);
-		}
-		.codeLine {
-			&::before {
-				color: var(--code-node-line-number-color);
-			}
-		}
-	}
-	.dark-mode {
-		#code-node {
-			background-color: var(--code-node-background-color-dark);
-
-			&::before {
-				background-color: var(--code-node-line-number-background-color-dark);
-			}
-		}
-		.codeLine::before {
-			color: var(--code-node-line-number-color-dark);
-		}
-	}
-// Checkbox
-	// Box Style
-		.rem-checkbox {
-			border-radius: unset !important;
-			background-color: unset;
-		}
-	// Strikethrough Style
-		.rem-container--todo-finished {
-			color: #A2A2A2;
-			text-decoration: line-through;
-			text-decoration-style: double;
-		}
-		.dark-mode {
-			.rem-container--todo-finished {
-				color: #A1A1A1;
-
-				.RichTextViewer,
-				[data-slate-node="text"] {
-					color: #909090;
-				}
-			}
-		}
 // Settings Page
 	// Darkmode Compatibility
 		.dark-mode {
@@ -1716,7 +1835,7 @@
 					}
 			}
 		}
-// Statistic
+// Statistic Page
 	#StatsPage {
 		#StatsPageContent {
 			max-width: 90% !important;
@@ -1750,41 +1869,45 @@
 			border-radius: 4px;
 		}
 	}	
-	// Hover Effect
+	// Darkmode
 		.dark-mode {
-			.rem-reference.show-ui-hover\:bg-blue-5:hover {
-				background-color: var(--darkmode-background-selected-darker);
-			}
-
-			[data-rem-container-tags~="highlight"] {
-				.rem-reference.show-ui-hover\:bg-blue-5:hover {
-					background-color: unset;
-				}
-			}
-		}
-	// Reference Style
-		.dark-mode {
-			.rem-reference {
-				.RichTextViewer {
-					color: var(--reference-text-dark);
-					background-color: #202020;
-				}
-			}
-			[data-rem-tags~=highlight] {
-				.rem-text {
+			// Reference Style
+				.rem-reference {
 					.RichTextViewer {
-						color: var(--reference-text);
+						color: var(--reference-text-dark);
+						background-color: #202020;
+					}
+				}
+				[data-rem-tags~=highlight] {
+					.rem-text {
+						.RichTextViewer {
+							color: var(--reference-text);
 
-						.rem-reference-container {
-							.rem-reference {
-								.RichTextViewer {
-									color: var(--reference-text-dark);
+							.rem-reference-container {
+								.rem-reference {
+									.RichTextViewer {
+										color: var(--reference-text-dark);
+									}
 								}
 							}
 						}
 					}
 				}
-			}
+			// Hover Effect
+				.rem-reference.show-ui-hover\:bg-blue-5:hover {
+					background-color: var(--darkmode-background-selected-darker);
+				}
+
+				[data-rem-container-tags~="highlight"] {
+					.rem-reference.show-ui-hover\:bg-blue-5:hover {
+						background-color: unset;
+					}
+				}
+		}
+	// Reference Style
+		.dark-mode {
+			
+			
 			.rem-reference.button.rem-reference-link {
 				background-color: var(--reference-background-dark);
 				// Reference Partial Hiding using inlinequote
@@ -1831,7 +1954,7 @@
 			}
 		}
 		[data-rem-container-tags~="aliases"] {
-			border: 0.1rem solid var(--line-color-dark);
+			border: 0.1rem solid var(--line-color);
 			border-radius: 4px;
 		}
 	// Hide Reference root and > symbol
@@ -1870,7 +1993,7 @@
 				border-bottom: 1px solid #000 !important;
 			}
 		}
-// Sidebar
+// Side Bar
 	// Basic Light Mode
 		#document-sidebar {
 			background-color: var(--darkmode-background);
@@ -2157,21 +2280,8 @@
 					}
 				} 
 		}
-// Scrollbar
-	::-webkit-scrollbar {
-		background-color: transparent;
-		height: 10px;
-		width: 8px;
-	}
-	::-webkit-scrollbar-track {
-		background-color: transparent;
-	}
-	::-webkit-scrollbar-thumb {
-		background-color: #BBB;
-		border: 4px solid transparent;
-	}
-// Hover Effect
-	// Slash Command
+// Context Menu
+	// Slash Command Menu
 		.dark-mode {
 			// Slash Command Text and Background
 				#search-results__list {
@@ -2216,78 +2326,44 @@
 					}
 				}
 		}
-	// Tag Item Search Result Hover or Selected
-	// Hidden item list
-		.dark-mode {
-			#DocumentTopRow {
-				.text-gray-30 {
-					color: var(--darkmode-text);
-					background-color: var(--darkmode-background-selected-darker);
-
-					&:hover {
-						color: var(--darkmode-contrast) !important;
-						background-color: var(--darkmode-background-selected-darker);
-					}
-				}
-			}
-			.hover\:bg-gray-5:hover:not(#search-result__result) {
-				background-color: var(--darkmode-background-selected-darker);
-			}
-		}
-		#DocumentTopRow .text-gray-30:hover {
-			background-color: var(--lightmode-background-selected);
-		}
-		.popup-menu.dark-mode {
-			.hierarchy-editor__hidden-children {
-				.hover\:bg-gray-5:hover:not(#search-result__result) {
-					background-color: var(--popup-background-hover);
-				}
-			}
-		}
-// Metadata Page
-	.dark-mode {
-		#RemPage {
-			color: var(--darkmode-text);
-		}
-	}
 // Help & Tutorial Page
 	// SideBar
 		#document-sidebar {
-			// RemNote Help Page Sidebar Top
-				#document-sidebar_top {
-					.m-3 {
-						> div {
+			// RemNote Help Page Sidebar 
+				// RemNote Help Page Sidebar Top
+					#document-sidebar_top {
+						.m-3 {
+							> div {
+								color: var(--darkmode-contrast) !important;
+							}
+						}
+						.css-cPmPhh {
+							color: var(--darkmode-text);
+						}
+						.help-knowledge-base-search {
+							.rich-text-editor {
+								background-color: unset;
+							}
+						}
+					}
+				// RemNote Help Page Sidebar Bottom
+					.w-full {
+						> a {
 							color: var(--darkmode-contrast) !important;
 						}
 					}
-					.css-cPmPhh {
-						color: var(--darkmode-text);
-					}
-					.help-knowledge-base-search {
-						.rich-text-editor {
-							background-color: unset;
-						}
-					}
-				}
-			// RemNote Help Page Sidebar Bottom
-				.w-full {
-					> a {
+				// RemNote Help Page Sidebar Backward icon
+					[data-icon="backward"] {
 						color: var(--darkmode-contrast) !important;
 					}
-				}
-			// Backward icon
-				[data-icon="backward"] {
-					color: var(--darkmode-contrast) !important;
-				}
-			// Emoji
-				.rem-reference {
-					.RichTextViewer {
-						background-color: unset;
-						filter: invert(0);
+				// RemNote Help Page Sidebar Emoji
+					.rem-reference {
+						.RichTextViewer {
+							background-color: unset;
+							filter: invert(0);
+						}
 					}
-				}
 		}
-	// 
 	// API
 		#APIKeys {
 			.ApiCommand {
@@ -2295,7 +2371,7 @@
 				white-space: pre;
 			}
 		}
-	// Darkmode Support
+	// Darkmode
 		.dark-mode {
 			// Hover Effect
 				#hierarchy-editor {
@@ -2375,11 +2451,6 @@
 		.hierarchy-editor__search-portal-section {
 			display: none;
 		}
-	// Scrollable
-		// .portal-tree-transient-node-box [data-rem-tags~="document"] > div > span {
-		// 	overflow-x: auto;
-		// 	white-space: pre;
-		// }
 	// inline 3dots
 		.tree-node--parent {
 			.show-embed-search-button--automatic {
@@ -2529,9 +2600,4 @@
 			}
 		}
 	}
-// Card
-	.dark-mode {
-		.separator-symbol:not(:empty):hover {
-			background-color: var(--darkmode-background-selected-darker);
-		}
-	}
+

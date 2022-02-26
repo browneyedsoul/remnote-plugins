@@ -79,16 +79,197 @@
 	background-color: gray;
 }
 
-#document {
-	width: calc(100% - 2 * var(--document-margin) - 30px);
-}
-
-.document--ltr {
-	padding: 0px 0px 0px 30px;
-}
-
 .hidden-selection {
 	background-color: #D8E2F1;
+}
+
+#hierarchy-editor .rem-text.rem-header--1 {
+	font-size: var(--font-size-header-1);
+}
+#hierarchy-editor .rem-text.rem-header--2 {
+	font-size: var(--font-size-header-2);
+}
+#hierarchy-editor .rem-text.rem-header--3 {
+	font-size: var(--font-size-header-3);
+}
+
+#code-node {
+	background-color: var(--code-node-background-color);
+}
+#code-node::before {
+	background-color: var(--line-number-background-color);
+}
+#code-node .codeLine::before {
+	color: var(--code-node-line-number-color);
+}
+
+::-webkit-scrollbar {
+	background-color: transparent;
+	height: 10px;
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #BBB;
+	border: 4px solid transparent;
+}
+
+.rem-checkbox {
+	border-radius: unset !important;
+	background-color: unset;
+}
+
+.rem-container--todo-finished {
+	color: #A2A2A2;
+	text-decoration: line-through;
+	-webkit-text-decoration-style: double;
+	        text-decoration-style: double;
+}
+
+.text-blue-60 {
+	color: var(--link-node-color);
+}
+.text-blue-60.underline {
+	text-decoration: none !important;
+	font-family: "Roboto Mono";
+}
+
+.react-datepicker.search-results__date-picker {
+	background-color: #ffffff !important;
+}
+
+.dark-mode .rem-container--todo-finished {
+	color: #A1A1A1;
+}
+.dark-mode .rem-container--todo-finished .RichTextViewer,
+.dark-mode .rem-container--todo-finished [data-slate-node=text] {
+	color: #909090;
+}
+
+.dark-mode .katex,
+.dark-mode .katex-display,
+.dark-mode .latex-node--focused:not(.latex-node--block) .katex {
+	background-color: unset !important;
+}
+
+.dark-mode #RemPage {
+	color: var(--darkmode-text);
+}
+
+.dark-mode .rem-text,
+.dark-mode .rem-text.rem-header--1,
+.dark-mode .rem-text.rem-header--2,
+.dark-mode .rem-text.rem-header--3 {
+	color: var(--darkmode-text);
+}
+
+.dark-mode .rem-text .bold:not(.rem-header--1 .bold):not(.rem-header--2 .bold):not(.rem-header--3 .bold):not([data-rem-tags~=highlight] .bold):not(.bold.highlight-color--red):not(.bold.highlight-color--orange):not(.bold.highlight-color--yellow):not(.bold.highlight-color--green):not(.bold.highlight-color--blue):not(.bold.highlight-color--purple) {
+	color: var(--darkmode-text-bold);
+}
+
+.dark-mode .text-blue-60 {
+	color: var(--link-node-color-dark);
+	border-radius: 3px;
+	padding: 0 2px 1px 2px;
+}
+.dark-mode .text-blue-60.highlight-color--red, .dark-mode .text-blue-60.highlight-color--orange, .dark-mode .text-blue-60.highlight-color--yellow, .dark-mode .text-blue-60.highlight-color--green, .dark-mode .text-blue-60.highlight-color--blue, .dark-mode .text-blue-60.highlight-color--purple {
+	color: #000;
+}
+.dark-mode [data-rem-tags~=highlight] .text-blue-60 {
+	color: var(--link-node-color);
+}
+
+.dark-mode .quote {
+	color: var(--quote-text-dark) !important;
+	background-color: var(--quote-background-dark) !important;
+}
+
+.dark-mode .TreeNode {
+	border-width: 1.5px !important;
+	border-left-color: var(--line-color-dark) !important;
+}
+
+.dark-mode .separator-symbol:not(:empty):hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
+
+.dark-mode .rem-calendar-icon.text-text {
+	color: var(--darkmode-text);
+}
+.dark-mode .rem-powerup-icon {
+	margin-right: 5px;
+}
+.dark-mode .rem-powerup-icon .text-icon {
+	color: var(--darkmode-text);
+}
+
+.dark-mode #code-node {
+	background-color: var(--code-node-background-color-dark);
+}
+.dark-mode #code-node::before {
+	background-color: var(--code-node-line-number-background-color-dark);
+}
+.dark-mode .codeLine::before {
+	color: var(--code-node-line-number-color-dark);
+}
+
+.work-in-progress-tag {
+	color: var(--darkmode-text);
+	background-color: var(--darkmode-background-selected-darker);
+}
+
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag {
+	color: var(--darkmode-text);
+	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red {
+	color: #000;
+	background-color: var(--highlight-color--red-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange {
+	color: #000;
+	background-color: var(--highlight-color--orange-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow {
+	color: #000;
+	background-color: var(--highlight-color--yellow-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green {
+	color: #000;
+	background-color: var(--highlight-color--green-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue {
+	color: #000;
+	background-color: var(--highlight-color--blue-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple {
+	color: #000;
+	background-color: var(--highlight-color--purple);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag__delete {
+	color: unset;
 }
 
 .ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) {
@@ -250,11 +431,14 @@
 	background-color: var(--darkmode-background);
 	border: 3px solid #FFF;
 }
-.dark-mode [aria-label~=Omnibar] > div:nth-of-type(1) > div {
-	background-color: var(--darkmode-background-selected-darker) !important;
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(1) > div > span.RichTextViewer {
+	color: #000;
 }
 .dark-mode [aria-label~=Omnibar] > div:nth-of-type(1) > input {
 	color: var(--darkmode-text);
+}
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(2) > div > span.RichTextViewer {
+	color: #000;
 }
 .dark-mode [aria-label~=Omnibar] > div:nth-of-type(2) > input {
 	color: var(--darkmode-text);
@@ -296,91 +480,6 @@
 	zoom: 0.8;
 }
 
-#DocumentTitle .rem-powerup-icon .text-icon {
-	vertical-align: middle;
-}
-
-.dark-mode .rem-calendar-icon.text-text {
-	color: var(--darkmode-text);
-}
-.dark-mode .css-bMKjkl {
-	color: var(--darkmode-text);
-}
-.dark-mode .rem-powerup-icon {
-	margin-right: 5px;
-}
-.dark-mode .rem-powerup-icon .text-icon {
-	color: var(--darkmode-text);
-}
-
-.document-header-top-bar {
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
-	height: fit-content;
-	padding: 0.2rem 0.2rem 0 0.2rem;
-}
-.document-header-top-bar div.fadein-delayed > div {
-	flex-wrap: wrap;
-	overflow-wrap: normal;
-}
-.document-header-top-bar div.fadein-delayed .flex {
-	display: inline;
-}
-.document-header-top-bar div.fadein-delayed .flex > span {
-	vertical-align: middle;
-}
-.document-header-top-bar .flex-nowrap {
-	flex-wrap: wrap;
-}
-.document-header-top-bar div.justify-end .document__options-menu .icon-button .fill-current {
-	color: #2A2A36;
-}
-.document-header-top-bar .w-max[color="#292936"] {
-	color: unset;
-}
-
-.dark-mode .document-header-top-bar .parent-link {
-	color: var(--darkmode-text);
-	background-color: transparent;
-	border: 1px solid #7F8094;
-}
-.dark-mode .document-header-top-bar .RichTextViewer .bold.highlight-color--red,
-.dark-mode .document-header-top-bar .RichTextViewer .bold.highlight-color--orange,
-.dark-mode .document-header-top-bar .RichTextViewer .bold.highlight-color--yellow,
-.dark-mode .document-header-top-bar .RichTextViewer .bold.highlight-color--green,
-.dark-mode .document-header-top-bar .RichTextViewer .bold.highlight-color--blue,
-.dark-mode .document-header-top-bar .RichTextViewer .bold.highlight-color--purple {
-	background-color: transparent;
-}
-.dark-mode .document-header-top-bar .RichTextViewer .bold.highlight-color--red {
-	color: var(--red-text-dark);
-}
-.dark-mode .document-header-top-bar .RichTextViewer .bold.highlight-color--orange {
-	color: var(--orange-text-dark);
-}
-.dark-mode .document-header-top-bar .RichTextViewer .bold.highlight-color--yellow {
-	color: var(--yellow-text-dark);
-}
-.dark-mode .document-header-top-bar .RichTextViewer .bold.highlight-color--green {
-	color: var(--green-text-dark);
-}
-.dark-mode .document-header-top-bar .RichTextViewer .bold.highlight-color--blue {
-	color: var(--blue-text-dark);
-}
-.dark-mode .document-header-top-bar .RichTextViewer .bold.highlight-color--purple {
-	color: var(--purple-text-dark);
-}
-
-#hierarchy-editor .rem-text.rem-header--1 {
-	font-size: var(--font-size-header-1);
-}
-#hierarchy-editor .rem-text.rem-header--2 {
-	font-size: var(--font-size-header-2);
-}
-#hierarchy-editor .rem-text.rem-header--3 {
-	font-size: var(--font-size-header-3);
-}
-
 .dark-mode .paddingPage {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
@@ -395,26 +494,10 @@
 	background-color: var(--darkmode-background-sidebar);
 }
 
-#DocumentTitle .document-title .rem-powerup-icon {
-	position: relative;
-	top: -7px;
-}
-
-#document #hierarchy-editor .tree-node--parent .rem-container .hover\:bg-hover-bg {
-	background-color: unset;
-}
-
 .dark-mode .document-table,
 .dark-mode .multiple-windows__document,
 .dark-mode #multiple-windows__document {
 	background-color: var(--darkmode-background) !important;
-}
-.dark-mode .tile__document {
-	background-color: var(--darkmode-background) !important;
-}
-.dark-mode .tile__document > div.document-header-top-bar {
-	color: var(--darkmode-text);
-	background-color: var(--darkmode-background-sidebar) !important;
 }
 .dark-mode .tile__document > div.document-header-top-bar.border-bottom-solid {
 	border-bottom-style: unset;
@@ -425,150 +508,167 @@
 .dark-mode .tile__document > div.document-header-top-bar > div:nth-of-type(2) .block .hover\:bg-hover-bg:hover {
 	background-color: #000 !important;
 }
-.dark-mode .tile__document div#document {
-	color: var(--darkmode-text);
-	background-color: var(--darkmode-background) !important;
+.dark-mode .tile__document > div.document-header-top-bar > div:nth-of-type(2) span.document__options-menu div.icon-button .fill-current {
+	filter: invert(1);
 }
 .dark-mode .tile__document div#document #hierarchy-editor .tree-node--parent .rem-container .hover\:bg-hover-bg {
 	background-color: unset;
 }
 
-#hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
+.tile__document .document-header-top-bar {
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	padding: 0.2rem 0.2rem 0 0.2rem;
+}
+.tile__document .document-header-top-bar div.fadein-delayed > div {
+	flex-wrap: wrap;
+	overflow-wrap: normal;
+}
+.tile__document .document-header-top-bar div.fadein-delayed .flex {
+	display: inline;
+}
+.tile__document .document-header-top-bar div.fadein-delayed .flex > span {
+	vertical-align: middle;
+}
+.tile__document .document-header-top-bar .flex-nowrap {
+	flex-wrap: wrap;
+}
+.tile__document .document-header-top-bar div.justify-end .document__options-menu .icon-button .fill-current {
+	color: #2A2A36;
+}
+.tile__document .document-header-top-bar .w-max[color="#292936"] {
+	color: unset;
+}
+.tile__document #document {
+	width: calc(100% - 2 * var(--document-margin) - 30px);
+	padding: 0px 0px 0px 30px;
+}
+.tile__document #document #DocumentTopRow #DropToOpenAsDocument > div > div#DocumentTitle > div.document-title .rem-powerup-icon {
+	position: relative;
+	top: -7px;
+}
+.tile__document #document #DocumentTopRow #DropToOpenAsDocument > div > div#DocumentTitle > div.document-title .rem-powerup-icon .text-icon {
+	vertical-align: middle;
+}
+.tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f {
+	background-color: var(--darkmode-background);
+	border: 2px solid white;
+}
+.tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f > div > span > div.bg-white {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f > div > div.bg-gray-5 {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.tile__document #document #hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
 	left: 0px;
 }
-
-.dark-mode #hierarchy-editor > .fixed {
-	background-color: var(--darkmode-background);
+.tile__document #document #hierarchy-editor .tree-node--parent .rem-container .hover\:bg-hover-bg {
+	background-color: unset;
 }
 
-.dark-mode .rem-text,
-.dark-mode .rem-text.rem-header--1,
-.dark-mode .rem-text.rem-header--2,
-.dark-mode .rem-text.rem-header--3 {
+.dark-mode .tile__document {
+	background-color: var(--darkmode-background) !important;
+}
+.dark-mode .tile__document > div.border-bottom-solid.bg-white {
+	background-color: var(--darkmode-background-sidebar);
+	border-bottom-style: dashed;
+}
+.dark-mode .tile__document .document-header-top-bar {
 	color: var(--darkmode-text);
+	background-color: var(--darkmode-background-sidebar) !important;
 }
-
-.dark-mode .rem-text .bold:not(.rem-header--1 .bold):not(.rem-header--2 .bold):not(.rem-header--3 .bold):not([data-rem-tags~=highlight] .bold):not(.bold.highlight-color--red):not(.bold.highlight-color--orange):not(.bold.highlight-color--yellow):not(.bold.highlight-color--green):not(.bold.highlight-color--blue):not(.bold.highlight-color--purple) {
-	color: var(--darkmode-text-bold);
+.dark-mode .tile__document .document-header-top-bar .parent-link {
+	color: var(--darkmode-text);
+	background-color: transparent;
+	border: 1px solid #7F8094;
 }
-
-.text-blue-60 {
-	color: var(--link-node-color);
+.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--red,
+.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--orange,
+.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--yellow,
+.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--green,
+.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--blue,
+.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--purple {
+	background-color: transparent;
 }
-.text-blue-60.underline {
-	text-decoration: none !important;
-	font-family: "Roboto Mono";
+.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--red {
+	color: var(--red-text-dark);
 }
-
-.dark-mode .text-blue-60 {
-	color: var(--link-node-color-dark);
-	border-radius: 3px;
-	padding: 0 2px 1px 2px;
+.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--orange {
+	color: var(--orange-text-dark);
 }
-.dark-mode .text-blue-60.highlight-color--red, .dark-mode .text-blue-60.highlight-color--orange, .dark-mode .text-blue-60.highlight-color--yellow, .dark-mode .text-blue-60.highlight-color--green, .dark-mode .text-blue-60.highlight-color--blue, .dark-mode .text-blue-60.highlight-color--purple {
-	color: #000;
+.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--yellow {
+	color: var(--yellow-text-dark);
 }
-.dark-mode [data-rem-tags~=highlight] .text-blue-60 {
-	color: var(--link-node-color);
+.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--green {
+	color: var(--green-text-dark);
 }
-
-.dark-mode .quote {
-	color: var(--quote-text-dark) !important;
-	background-color: var(--quote-background-dark) !important;
+.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--blue {
+	color: var(--blue-text-dark);
 }
-
-.dark-mode .TreeNode {
-	border-width: 1.5px !important;
-	border-left-color: var(--line-color-dark) !important;
+.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--purple {
+	color: var(--purple-text-dark);
 }
-
-.dark-mode .katex,
-.dark-mode .katex-display,
-.dark-mode .latex-node--focused:not(.latex-node--block) .katex {
-	background-color: unset !important;
+.dark-mode .tile__document #document {
+	color: var(--darkmode-text);
+	background-color: var(--darkmode-background) !important;
 }
-
-.dark-mode #tile__document #document #DropToOpenAsDocument > div .bg-mint-10 {
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group .bg-mint-10 {
 	color: var(--darkmode-text);
 	background-color: #365148;
 }
-.dark-mode #tile__document #document #DropToOpenAsDocument > div .bg-mint-10 > div.text-mint-80 {
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group .bg-mint-10 > div.text-mint-80 {
 	color: unset;
 }
-
-.dark-mode [data-document-tags*=source-list] #DocumentTopRow #DropToOpenAsDocument [data-icon~=add] {
-	color: var(--darkmode-text) !important;
-	fill: var(--darkmode-text) !important;
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div#DocumentTitle > div.document-title .rem-powerup-icon {
+	position: relative;
+	top: -7px;
 }
-.dark-mode [data-document-tags*=source-list] #DocumentTopRow #DropToOpenAsDocument .rounded-md .pr-1:hover {
-	background-color: var(--darkmode-background-selected-darker);
-}
-.dark-mode [data-document-tags*=source-list] #DocumentTopRow #DropToOpenAsDocument .rounded-md span[contenteditable~=false] .text-gray-60 {
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.col-span-1 .text-gray-60 {
 	color: var(--darkmode-text);
 }
-.dark-mode [data-document-tags*=source-list] #DocumentTopRow #DropToOpenAsDocument .rounded-md span[contenteditable~=false]:hover {
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.col-span-1 .hover\:bg-gray-5:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode .rem-container--focused .inline-flex .text-gray-60 {
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid .pr-1 {
 	color: var(--darkmode-text);
 }
-
-.work-in-progress-tag {
-	color: black;
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid .pr-1 > span > div {
+	border-style: unset;
+	background-color: var(--darkmode-background-selected);
 }
-
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag {
-	color: var(--darkmode-text);
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid .pr-1 > span > div:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red {
-	color: #000;
-	background-color: var(--highlight-color--red-dark);
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid .pr-1 .text-gray-60 {
+	color: var(--darkmode-text);
 }
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red .hierarchy-editor__tag-bar__tag__delete {
-	color: unset;
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.rounded-md > span .text-gray-80 {
+	color: var(--darkmode-text);
 }
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange {
-	color: #000;
-	background-color: var(--highlight-color--orange-dark);
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.rounded-md > span .bg-gray-10 {
+	background-color: var(--darkmode-background-selected);
 }
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange .hierarchy-editor__tag-bar__tag__delete {
-	color: unset;
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.rounded-md > span .bg-gray-10:hover {
+	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow {
-	color: #000;
-	background-color: var(--highlight-color--yellow-dark);
+.dark-mode .tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f {
+	background-color: var(--darkmode-background);
+	border: 2px solid white;
 }
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow .hierarchy-editor__tag-bar__tag__delete {
-	color: unset;
+.dark-mode .tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f > div > span > div.bg-white {
+	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green {
-	color: #000;
-	background-color: var(--highlight-color--green-dark);
+.dark-mode .tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f > div > div.bg-gray-5 {
+	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green .hierarchy-editor__tag-bar__tag__delete {
-	color: unset;
-}
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue {
-	color: #000;
-	background-color: var(--highlight-color--blue-dark);
-}
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue .hierarchy-editor__tag-bar__tag__delete {
-	color: unset;
-}
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple {
-	color: #000;
-	background-color: var(--highlight-color--purple);
-}
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple .hierarchy-editor__tag-bar__tag__delete {
-	color: unset;
-}
-.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag__delete {
-	color: unset;
+.dark-mode .tile__document #document #hierarchy-editor > .fixed {
+	background-color: var(--darkmode-background);
 }
 
-.dark-mode .document__options-menu .fill-current {
-	filter: invert(1);
+.rem-container--focused .inline-flex .text-gray-60 {
+	color: var(--darkmode-text);
 }
 
 .hover\:bg-hover-bg:hover {
@@ -899,15 +999,6 @@
 	font-weight: 600;
 }
 
-.dark-mode #hierarchy-editor__ctrl-f .css-exQOrH {
-	color: black;
-	background-color: unset;
-}
-
-#rich-text-editor__icon {
-	filter: invert(1);
-}
-
 .dark-mode #hierarchy-editor .node-top-level-in-portal-container .node-top-level-in-portal {
 	background-color: var(--darkmode-background);
 	border: 1px solid var(--darkmode-contrast);
@@ -941,9 +1032,6 @@
 }
 .popup-menu > div > div.w-96 {
 	width: 36rem;
-}
-.popup-menu #document-hover-preview__popup #hierarchy-editor .animate-zoom-into-bullet .portal-tree-node-box {
-	margin-left: 11px;
 }
 .popup-menu #document-hover-preview__popup span.bold > span,
 .popup-menu .popup-menu__item--static > span {
@@ -1100,50 +1188,6 @@
 }
 .dark-mode #Popup #PopupContent #delete-confirm-popup > div:last-of-type .button.bg-white:hover {
 	background-color: var(--darkmode-background-selected);
-}
-
-.react-datepicker.search-results__date-picker {
-	background-color: #ffffff !important;
-}
-
-#code-node {
-	background-color: var(--code-node-background-color);
-}
-#code-node::before {
-	background-color: var(--line-number-background-color);
-}
-#code-node .codeLine::before {
-	color: var(--code-node-line-number-color);
-}
-
-.dark-mode #code-node {
-	background-color: var(--code-node-background-color-dark);
-}
-.dark-mode #code-node::before {
-	background-color: var(--code-node-line-number-background-color-dark);
-}
-.dark-mode .codeLine::before {
-	color: var(--code-node-line-number-color-dark);
-}
-
-.rem-checkbox {
-	border-radius: unset !important;
-	background-color: unset;
-}
-
-.rem-container--todo-finished {
-	color: #A2A2A2;
-	text-decoration: line-through;
-	-webkit-text-decoration-style: double;
-	        text-decoration-style: double;
-}
-
-.dark-mode .rem-container--todo-finished {
-	color: #A1A1A1;
-}
-.dark-mode .rem-container--todo-finished .RichTextViewer,
-.dark-mode .rem-container--todo-finished [data-slate-node=text] {
-	color: #909090;
 }
 
 .dark-mode .bg-blue-5 {
@@ -1320,13 +1364,6 @@
 	border-radius: 4px;
 }
 
-.dark-mode .rem-reference.show-ui-hover\:bg-blue-5:hover {
-	background-color: var(--darkmode-background-selected-darker);
-}
-.dark-mode [data-rem-container-tags~=highlight] .rem-reference.show-ui-hover\:bg-blue-5:hover {
-	background-color: unset;
-}
-
 .dark-mode .rem-reference .RichTextViewer {
 	color: var(--reference-text-dark);
 	background-color: #202020;
@@ -1337,6 +1374,13 @@
 .dark-mode [data-rem-tags~=highlight] .rem-text .RichTextViewer .rem-reference-container .rem-reference .RichTextViewer {
 	color: var(--reference-text-dark);
 }
+.dark-mode .rem-reference.show-ui-hover\:bg-blue-5:hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode [data-rem-container-tags~=highlight] .rem-reference.show-ui-hover\:bg-blue-5:hover {
+	background-color: unset;
+}
+
 .dark-mode .rem-reference.button.rem-reference-link {
 	background-color: var(--reference-background-dark);
 }
@@ -1375,7 +1419,7 @@
 }
 
 [data-rem-container-tags~=aliases] {
-	border: 0.1rem solid var(--line-color-dark);
+	border: 0.1rem solid var(--line-color);
 	border-radius: 4px;
 }
 
@@ -1657,21 +1701,6 @@ body.old-dark-mode .dark-mode #document-sidebar {
 	margin: 0 0 0 5px;
 }
 
-::-webkit-scrollbar {
-	background-color: transparent;
-	height: 10px;
-	width: 8px;
-}
-
-::-webkit-scrollbar-track {
-	background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-	background-color: #BBB;
-	border: 4px solid transparent;
-}
-
 .dark-mode #search-results__list {
 	border: 3px solid black;
 	border-radius: 5px;
@@ -1697,30 +1726,6 @@ body.old-dark-mode .dark-mode #document-sidebar {
 }
 .dark-mode #search-results__list #search-results__result .p-2 #quote {
 	color: #000;
-}
-
-.dark-mode #DocumentTopRow .text-gray-30 {
-	color: var(--darkmode-text);
-	background-color: var(--darkmode-background-selected-darker);
-}
-.dark-mode #DocumentTopRow .text-gray-30:hover {
-	color: var(--darkmode-contrast) !important;
-	background-color: var(--darkmode-background-selected-darker);
-}
-.dark-mode .hover\:bg-gray-5:hover:not(#search-result__result) {
-	background-color: var(--darkmode-background-selected-darker);
-}
-
-#DocumentTopRow .text-gray-30:hover {
-	background-color: var(--lightmode-background-selected);
-}
-
-.popup-menu.dark-mode .hierarchy-editor__hidden-children .hover\:bg-gray-5:hover:not(#search-result__result) {
-	background-color: var(--popup-background-hover);
-}
-
-.dark-mode #RemPage {
-	color: var(--darkmode-text);
 }
 
 #document-sidebar #document-sidebar_top .m-3 > div {
@@ -1894,8 +1899,4 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 }
 .pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--purple .Highlight__part {
 	background: var(--pdf-highlight-color-purple);
-}
-
-.dark-mode .separator-symbol:not(:empty):hover {
-	background-color: var(--darkmode-background-selected-darker);
 }
