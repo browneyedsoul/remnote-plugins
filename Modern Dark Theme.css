@@ -253,6 +253,9 @@
 .dark-mode [aria-label~=Omnibar] > div:nth-of-type(1) > div {
 	background-color: var(--darkmode-background-selected-darker) !important;
 }
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(1) > input {
+	color: var(--darkmode-text);
+}
 .dark-mode [aria-label~=Omnibar] > div:nth-of-type(2) > input {
 	color: var(--darkmode-text);
 }
@@ -278,6 +281,19 @@
 .dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=false] > div:nth-of-type(2) > div > div {
 	border-color: unset;
 	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode [aria-label~=Omnibar] [data-omnibar-results~=true] > div:hover {
+	background-color: var(--darkmode-background-selected-darker) !important;
+}
+.dark-mode [aria-label~=Omnibar] [data-omnibar-results~=true] > div > div:nth-of-type(2) {
+	flex-direction: column-reverse !important;
+}
+.dark-mode [aria-label~=Omnibar] [data-omnibar-results~=true] > div > div:nth-of-type(2) > div:nth-of-type(1) span.RichTextViewer > span.bg-warning-10 {
+	color: var(--red-text);
+}
+.dark-mode [aria-label~=Omnibar] [data-omnibar-results~=true] > div > div:nth-of-type(2) > div:nth-of-type(2) {
+	opacity: 0.5;
+	zoom: 0.8;
 }
 
 #DocumentTitle .rem-powerup-icon .text-icon {
@@ -456,14 +472,14 @@
 	color: var(--link-node-color);
 }
 
-.dark-mode .TreeNode {
-	border-width: 1.5px !important;
-	border-left-color: var(--line-color-dark) !important;
-}
-
 .dark-mode .quote {
 	color: var(--quote-text-dark) !important;
 	background-color: var(--quote-background-dark) !important;
+}
+
+.dark-mode .TreeNode {
+	border-width: 1.5px !important;
+	border-left-color: var(--line-color-dark) !important;
 }
 
 .dark-mode .katex,
