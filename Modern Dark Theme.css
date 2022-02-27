@@ -557,7 +557,7 @@
 	display: inline;
 }
 .tile__document .document-header-top-bar div.fadein-delayed .flex > span {
-	vertical-align: middle;
+	vertical-align: bottom;
 }
 .tile__document .document-header-top-bar .flex-nowrap {
 	flex-wrap: wrap;
