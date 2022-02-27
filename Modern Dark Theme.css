@@ -1355,7 +1355,11 @@
 	filter: invert(1);
 }
 
-.rem-reference .RichTextViewer {
+.work-in-progress-rem {
+	color: var(--reference-text);
+}
+
+.rem-reference-container .rem-reference .RichTextViewer {
 	color: var(--reference-text);
 	background-color: #E1E5F8;
 	font-family: "Roboto Mono", monospace !important;
@@ -1364,9 +1368,17 @@
 	border-radius: 4px;
 }
 
-.dark-mode .rem-reference .RichTextViewer {
+[data-rem-container-tags~=aliases] {
+	border: 0.1rem solid var(--line-color);
+	border-radius: 4px;
+	margin-right: 0.7rem;
+}
+.dark-mode .rem-reference-container .rem-reference .RichTextViewer {
 	color: var(--reference-text-dark);
 	background-color: #202020;
+}
+.dark-mode .rem-reference-container .rem-reference:hover {
+	background-color: var(--darkmode-background-selected-darker);
 }
 .dark-mode [data-rem-tags~=highlight] .rem-text .RichTextViewer {
 	color: var(--reference-text);
@@ -1374,69 +1386,10 @@
 .dark-mode [data-rem-tags~=highlight] .rem-text .RichTextViewer .rem-reference-container .rem-reference .RichTextViewer {
 	color: var(--reference-text-dark);
 }
-.dark-mode .rem-reference.show-ui-hover\:bg-blue-5:hover {
-	background-color: var(--darkmode-background-selected-darker);
-}
-.dark-mode [data-rem-container-tags~=highlight] .rem-reference.show-ui-hover\:bg-blue-5:hover {
-	background-color: unset;
-}
-
-.dark-mode .rem-reference.button.rem-reference-link {
-	background-color: var(--reference-background-dark);
-}
-.dark-mode .rem-reference.button.rem-reference-link .quote {
-	display: none;
-}
-.dark-mode .rem-reference.rem-reference--focused .RichTextViewer {
-	color: var(--darkmode-contrast);
-}
-.dark-mode .rem-reference-container.quote .RichTextViewer {
-	color: var(--quote-text-reference-dark);
-}
-
-.rem-reference.button.rem-reference-link {
-	background-color: var(--reference-background);
-	padding: 3px 4px 3px 4px;
-}
-
-.work-in-progress-rem {
-	color: var(--reference-text);
-}
-
-.rem-reference-container.quote .RichTextViewer {
-	color: var(--quote-text-reference);
-}
-
-[data-rem-tags~=list-item] .quote {
-	color: var(--quote-text-dark);
-	background-color: var(--quote-background-dark);
-}
-
-.rem-reference-container .css-kWtKRr {
-	filter: invert(0.5);
-	position: relative;
-	top: 4px;
-}
-
-[data-rem-container-tags~=aliases] {
-	border: 0.1rem solid var(--line-color);
+.dark-mode [data-rem-container-tags~=aliases] {
+	border: 0.1rem solid var(--line-color-dark);
 	border-radius: 4px;
 }
-
-.rem-reference.button.rem-reference-link .gray, .rem-reference.button.rem-reference-link .join-arrow {
-	display: none;
-}
-
-[data-rem-tags~=list-item] .rem-is-custom-rem-type.rem-is-custom-rem-type--in-body {
-	position: relative;
-	top: 2px !important;
-}
-
-.w-4, .h-4 {
-	width: 1em;
-	height: 1em;
-}
-
 .navigation-bar {
 	background-color: var(--darkmode-background);
 }
@@ -1462,198 +1415,125 @@
 	color: var(--darkmode-contrast);
 	background-color: var(--darkmode-background);
 }
-
-.dark-mode #document-sidebar {
-	background-color: var(--darkmode-background-sidebar);
+#document-sidebar .w-\[calc\(100\%-16px\)\] {
+	width: calc(100% - 21px);
 }
-.dark-mode #document-sidebar > div {
-	background-color: var(--darkmode-background-sidebar);
-}
-.dark-mode #document-sidebar > div:first-of-type {
-	border-right: var(--darkmode-background-sidebar) !important;
-}
-.dark-mode #document-sidebar + div > div {
-	color: var(--darkmode-contrast);
+#document-sidebar body.old-dark-mode .dark-mode #document-sidebar {
 	background-color: var(--darkmode-background-sidebar) !important;
 }
-
-body.old-dark-mode .dark-mode #document-sidebar {
-	background-color: var(--darkmode-background-sidebar) !important;
-}
-
-.document-sidebar--collapsed--vertical {
-	background-color: var(--darkmode-background-sidebar);
-	width: 25px;
-}
-.document-sidebar--collapsed--vertical > div > div > div {
-	position: relative;
-	left: -6px;
-}
-
-#document-sidebar__account-capsule {
-	background-color: #FFFFFF;
-}
-#document-sidebar__account-capsule:hover {
-	background-color: var(--darkmode-text) !important;
-}
-
-#document-sidebar_top .flex.items-center.p-2.gap-2 > div {
-	background-color: var(--darkmode-background-selected-darker);
-}
-#document-sidebar_top .flex.items-center.mb-1 {
-	font-family: "Roboto Mono", "Fira Code", Monospace;
-	color: var(--darkmode-contrast);
-	zoom: 125%;
-	margin-left: 5px;
-}
-#document-sidebar_top .bg-gray-10-transparent {
-	background-color: var(--darkmode-background-selected-darker);
-	zoom: 1.1;
-}
-#document-sidebar_top .bg-primary-5 {
-	background-color: unset;
-	border: 1px solid yellow;
-	border-radius: 5px;
-}
-#document-sidebar_top .css-fqRAnH {
-	color: var(--darkmode-contrast);
-}
-#document-sidebar_top .block .css-pUlLN {
-	color: var(--darkmode-contrast);
-}
-#document-sidebar_top .block .flex-grow {
-	font-family: "Roboto Mono", "Fira code", Monospace;
-	color: var(--darkmode-contrast);
-}
-#document-sidebar_top .block > div > div.bg-gray-10-transparent {
-	zoom: 0.9;
-}
-
-#document-sidebar .accordion.ui.fluid .title.cursor-pointer {
+#document-sidebar #document-sidebar .accordion.ui.fluid .title.cursor-pointer {
 	background-color: #FFFFFF;
 	zoom: 150%;
 	max-height: 5px !important;
 	border-radius: 5px;
 }
-#document-sidebar .accordion.ui.fluid .title.cursor-pointer .css-fqRAnH {
+#document-sidebar #document-sidebar .accordion.ui.fluid .title.cursor-pointer .css-fqRAnH {
 	zoom: 150%;
 	color: black;
 }
-#document-sidebar .accordion.ui.fluid .title.cursor-pointer .css-pUlLN {
+#document-sidebar #document-sidebar .accordion.ui.fluid .title.cursor-pointer .css-pUlLN {
 	color: black;
 }
-
-#document-sidebar .rem-is-custom-rem-type {
-	filter: invert(1);
-	position: relative;
-	top: 2px !important;
+#document-sidebar #document-sidebar_top #document-sidebar_top__logo-and-user .document-sidebar_top__user-and-collapse > span #document-sidebar__account-capsule {
+	background-color: #FFF;
 }
-
-.settings-page__sidebar .w-4, .settings-page__sidebar .h-4 {
-	width: unset;
-	height: unset;
+#document-sidebar #document-sidebar_top #document-sidebar_top__logo-and-user .document-sidebar_top__user-and-collapse > span #document-sidebar__account-capsule:hover {
+	background-color: var(--darkmode-text);
 }
-
-#document-sidebar .bg-white.cursor-pointer {
-	display: none;
+#document-sidebar #document-sidebar_top > div.flex.items-center.p-2.gap-2 > div:nth-of-type(1) {
+	background-color: var(--darkmode-background-selected-darker);
 }
-#document-sidebar .RichTextViewer {
-	color: #C7C7C7;
-	position: relative;
-	top: 1px;
+#document-sidebar #document-sidebar_top > div.flex.items-center.p-2.gap-2 > div:nth-of-type(2) {
+	background-color: var(--darkmode-background-selected-darker);
 }
-#document-sidebar .p-2.flex.group-hover-bg-hover-bg-transparent {
-	height: 20px !important;
+#document-sidebar #document-sidebar_top > div.p-2 {
+	font-family: "Roboto Mono", "Fira Code", monospace;
 }
-#document-sidebar span.highlight-color--red,
-#document-sidebar span.highlight-color--orange,
-#document-sidebar span.highlight-color--yellow,
-#document-sidebar span.highlight-color--green,
-#document-sidebar span.highlight-color--blue,
-#document-sidebar span.highlight-color--purple {
-	margin-left: 5px;
-	padding: 1px 3px;
-	border-radius: 3px;
-	font-weight: 600;
-}
-#document-sidebar .highlight-color--yellow {
-	background-color: var(--highlight-color--yellow-dark);
-}
-#document-sidebar .bold.highlight-color--red,
-#document-sidebar .bold.highlight-color--orange,
-#document-sidebar .bold.highlight-color--yellow,
-#document-sidebar .bold.highlight-color--green,
-#document-sidebar .bold.highlight-color--blue,
-#document-sidebar .bold.highlight-color--purple {
-	background-color: unset;
-}
-#document-sidebar .bold.highlight-color--red {
-	color: var(--red-text-dark);
-}
-#document-sidebar .bold.highlight-color--orange {
-	color: var(--orange-text-dark);
-}
-#document-sidebar .bold.highlight-color--yellow {
-	color: var(--yellow-text-dark);
-}
-#document-sidebar .bold.highlight-color--green {
-	color: var(--green-text-dark);
-}
-#document-sidebar .bold.highlight-color--blue {
-	color: var(--blue-text-dark);
-}
-#document-sidebar .bold.highlight-color--purple {
-	color: var(--purple-text-dark);
-}
-#document-sidebar .quote {
-	color: var(--quote-text-dark) !important;
-	background-color: var(--quote-background-dark) !important;
-	margin-left: 5px;
-}
-#document-sidebar .p-2 {
-	padding: 0.3rem;
-}
-#document-sidebar .rn-clr-background-light-accent {
-	background-color: transparent !important;
-	border: 2px solid var(--darkmode-contrast) !important;
-}
-#document-sidebar .rn-clr-background-light-accent .RichTextViewer {
-	color: white;
-}
-#document-sidebar .rn-clr-background-light-accent .group-hover\:rn-clr-background-light-accent--hovered {
-	background-color: var(--darkmode-background-selected-darker) !important;
-}
-#document-sidebar .rounded-md.highlight-color--red .RichTextViewer,
-#document-sidebar .rounded-md.highlight-color--orange .RichTextViewer,
-#document-sidebar .rounded-md.highlight-color--yellow .RichTextViewer,
-#document-sidebar .rounded-md.highlight-color--green .RichTextViewer,
-#document-sidebar .rounded-md.highlight-color--blue .RichTextViewer,
-#document-sidebar .rounded-md.highlight-color--purple .RichTextViewer {
-	color: black;
-}
-#document-sidebar .document-list-item__folder-icon {
-	color: #C7C7C7;
-}
-#document-sidebar .float-right {
+#document-sidebar #document-sidebar_top > div.p-2 > a[href~="/notes"] > div > div:nth-of-type(1) {
 	color: var(--darkmode-contrast);
+	zoom: 125%;
+}
+#document-sidebar #document-sidebar_top > div.p-2 > a[href~="/notes"] > div > div:nth-of-type(2) {
+	color: var(--darkmode-contrast);
+	zoom: 125%;
+}
+#document-sidebar #document-sidebar_top > div.p-2 > a[href~="/notes"] > div:hover {
+	background-color: var(--darkmode-background-selected-darker);
+	border-radius: 5px;
+}
+#document-sidebar #document-sidebar_top > div.p-2 > div.mb-1 > div:nth-of-type(1) {
+	color: var(--darkmode-contrast);
+	zoom: 125%;
+}
+#document-sidebar #document-sidebar_top > div.p-2 > div.mb-1 > div:nth-of-type(2) {
+	color: var(--darkmode-contrast);
+	zoom: 125%;
+}
+#document-sidebar #document-sidebar_top > div.p-2 > div.mb-1:hover {
+	background-color: var(--darkmode-background-selected-darker);
+	border-radius: 5px;
+}
+#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(1) {
+	color: var(--darkmode-contrast);
+	zoom: 125%;
+}
+#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(2) {
+	color: var(--darkmode-contrast);
+	zoom: 125%;
+}
+#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(3) {
+	color: var(--darkmode-contrast);
+	background-color: var(--darkmode-background-selected-darker);
+	zoom: 125%;
+}
+#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div:hover {
+	background-color: var(--darkmode-background-selected-darker);
+	border-radius: 5px;
+}
+#document-sidebar #document-sidebar_top > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(1) {
+	color: var(--darkmode-contrast);
+	zoom: 125%;
+}
+#document-sidebar #document-sidebar_top > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(2) {
+	color: var(--darkmode-contrast);
+	zoom: 125%;
+}
+#document-sidebar #document-sidebar_top > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(3) {
+	color: var(--darkmode-contrast);
+	background-color: var(--darkmode-background-selected-darker);
+	zoom: 125%;
+}
+#document-sidebar #document-sidebar_top > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div:hover {
+	background-color: var(--darkmode-background-selected-darker);
+	border-radius: 5px;
+}
+#document-sidebar #document-sidebar_top > div.p-2 .rn-clr-background-light-accent {
+	background-color: unset;
+	border: 1px solid yellow;
+	border-radius: 5px;
+}
+#document-sidebar #document-sidebar_top > div.p-2 .hover\:rn-clr-background-light-accent--hovered:hover {
+	background: var(--darkmode-background-selected-darker) !important;
+}
+#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 > div > span.rem-powerup-icon {
+	filter: invert(0);
+}
+#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 > div .RichTextViewer {
+	color: var(--darkmode-text);
+}
+#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer .highlight-color--red .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer .highlight-color--orange .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer .highlight-color--yellow .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer .highlight-color--green .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer .highlight-color--blue .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer .highlight-color--purple .RichTextViewer {
+	color: black !important;
+	padding-left: 3px;
 }
 #document-sidebar .flex-grow.nowrap-RichTextViewer:only-child {
 	margin-left: 22px;
 }
-#document-sidebar .block.group.cursor-pointer .highlight-color--red .RichTextViewer,
-#document-sidebar .block.group.cursor-pointer .highlight-color--orange .RichTextViewer,
-#document-sidebar .block.group.cursor-pointer .highlight-color--yellow .RichTextViewer,
-#document-sidebar .block.group.cursor-pointer .highlight-color--green .RichTextViewer,
-#document-sidebar .block.group.cursor-pointer .highlight-color--blue .RichTextViewer,
-#document-sidebar .block.group.cursor-pointer .highlight-color--purple .RichTextViewer {
-	color: black !important;
-}
-#document-sidebar .rounded-md.highlight-color--red,
-#document-sidebar .rounded-md.highlight-color--orange,
-#document-sidebar .rounded-md.highlight-color--yellow,
-#document-sidebar .rounded-md.highlight-color--green,
-#document-sidebar .rounded-md.highlight-color--blue,
-#document-sidebar .rounded-md.highlight-color--purple {
+#document-sidebar .rounded-md.highlight-color--red, #document-sidebar .rounded-md.highlight-color--orange, #document-sidebar .rounded-md.highlight-color--yellow, #document-sidebar .rounded-md.highlight-color--green, #document-sidebar .rounded-md.highlight-color--blue, #document-sidebar .rounded-md.highlight-color--purple {
 	background-color: transparent;
 }
 #document-sidebar .rounded-md.highlight-color--red .p-2 .text-gray-60 {
@@ -1688,17 +1568,115 @@ body.old-dark-mode .dark-mode #document-sidebar {
 #document-sidebar .highlight-color--purple .RichTextViewer {
 	padding-left: 3px;
 }
-#document-sidebar .hover\:text-gray-50:hover:not(.accordion.ui.fluid .hover\:text-gray-50:hover) {
+#document-sidebar .p-2.flex.group-hover-bg-hover-bg-transparent {
+	height: 17px !important;
+}
+#document-sidebar .document-list-item__folder-icon {
+	color: #C7C7C7;
+}
+#document-sidebar .float-right {
 	color: var(--darkmode-contrast);
 }
-#document-sidebar .hover\:bg-hover-bg:hover {
-	background-color: var(--darkmode-background-selected-darker);
+#document-sidebar .block .RichTextViewer .bold {
+	margin-left: 5px;
+}
+#document-sidebar .rn-clr-background-light-accent {
+	background-color: transparent !important;
+	border: 2px solid var(--darkmode-contrast) !important;
+}
+#document-sidebar .rn-clr-background-light-accent .RichTextViewer {
+	color: white;
+}
+#document-sidebar .rn-clr-background-light-accent .group-hover\:rn-clr-background-light-accent--hovered {
+	background-color: var(--darkmode-background-selected-darker) !important;
+}
+#document-sidebar .rounded-md.highlight-color--red .RichTextViewer,
+#document-sidebar .rounded-md.highlight-color--orange .RichTextViewer,
+#document-sidebar .rounded-md.highlight-color--yellow .RichTextViewer,
+#document-sidebar .rounded-md.highlight-color--green .RichTextViewer,
+#document-sidebar .rounded-md.highlight-color--blue .RichTextViewer,
+#document-sidebar .rounded-md.highlight-color--purple .RichTextViewer {
+	color: black;
+}
+#document-sidebar .p-2 {
+	padding: 0.5rem;
+}
+#document-sidebar span.highlight-color--red,
+#document-sidebar span.highlight-color--orange,
+#document-sidebar span.highlight-color--yellow,
+#document-sidebar span.highlight-color--green,
+#document-sidebar span.highlight-color--blue,
+#document-sidebar span.highlight-color--purple {
+	margin-left: 5px;
+	padding: 1px 3px;
+	border-radius: 3px;
+	font-weight: 600;
+}
+#document-sidebar .highlight-color--yellow {
+	background-color: var(--highlight-color--yellow-dark);
+}
+#document-sidebar .rn-clr-content-secondary {
+	color: var(--darkmode-text);
+}
+#document-sidebar .bold.highlight-color--red,
+#document-sidebar .bold.highlight-color--orange,
+#document-sidebar .bold.highlight-color--yellow,
+#document-sidebar .bold.highlight-color--green,
+#document-sidebar .bold.highlight-color--blue,
+#document-sidebar .bold.highlight-color--purple {
+	background-color: unset;
+}
+#document-sidebar .bold.highlight-color--red {
+	color: var(--red-text-dark);
+}
+#document-sidebar .bold.highlight-color--orange {
+	color: var(--orange-text-dark);
+}
+#document-sidebar .bold.highlight-color--yellow {
+	color: var(--yellow-text-dark);
+}
+#document-sidebar .bold.highlight-color--green {
+	color: var(--green-text-dark);
+}
+#document-sidebar .bold.highlight-color--blue {
+	color: var(--blue-text-dark);
+}
+#document-sidebar .bold.highlight-color--purple {
+	color: var(--purple-text-dark);
+}
+#document-sidebar .quote {
+	color: var(--quote-text-dark) !important;
+	background-color: var(--quote-background-dark) !important;
+	margin-left: 5px;
 }
 #document-sidebar .group:hover .group-hover-bg-hover-bg-transparent:hover {
-	background-color: var(--darkmode-background-selected-darker);
+	background: var(--darkmode-background-selected-darker);
+	border-radius: 5px;
 }
-#document-sidebar .accordion.ui.fluid .block .RichTextViewer .bold {
-	margin: 0 0 0 5px;
+#document-sidebar .image-node .bg-white {
+	background-color: transparent;
+}
+.dark-mode #document-sidebar {
+	background-color: var(--darkmode-background-sidebar);
+}
+.dark-mode #document-sidebar > div {
+	background-color: var(--darkmode-background-sidebar);
+}
+.dark-mode #document-sidebar > div:first-of-type {
+	border-right: var(--darkmode-background-sidebar) !important;
+}
+.dark-mode #document-sidebar + div > div {
+	color: var(--darkmode-contrast);
+	background-color: var(--darkmode-background-sidebar) !important;
+}
+
+.document-sidebar--collapsed--vertical {
+	background-color: var(--darkmode-background-sidebar);
+	width: 25px;
+}
+.document-sidebar--collapsed--vertical > div > div > div {
+	position: relative;
+	left: -6px;
 }
 
 .dark-mode #search-results__list {
@@ -1746,6 +1724,14 @@ body.old-dark-mode .dark-mode #document-sidebar {
 #document-sidebar .rem-reference .RichTextViewer {
 	background-color: unset;
 	filter: invert(0);
+}
+#document-sidebar .block.group.cursor-pointer .highlight-color--red .RichTextViewer,
+#document-sidebar .block.group.cursor-pointer .highlight-color--orange .RichTextViewer,
+#document-sidebar .block.group.cursor-pointer .highlight-color--yellow .RichTextViewer,
+#document-sidebar .block.group.cursor-pointer .highlight-color--green .RichTextViewer,
+#document-sidebar .block.group.cursor-pointer .highlight-color--blue .RichTextViewer,
+#document-sidebar .block.group.cursor-pointer .highlight-color--purple .RichTextViewer {
+	color: black !important;
 }
 
 #APIKeys .ApiCommand {

@@ -1859,120 +1859,124 @@
 			}
 		}
 // Reference & Alias
-	.rem-reference {
-		.RichTextViewer {
-			color: var(--reference-text); 
-			background-color: #E1E5F8;
-			font-family: 'Roboto Mono', monospace !important;
-			padding: 2px 4px;
-			margin: 0 2px;
-			border-radius: 4px;
-		}
-	}	
-	// Darkmode
-		.dark-mode {
-			// Reference Style
-				.rem-reference {
-					.RichTextViewer {
-						color: var(--reference-text-dark);
-						background-color: #202020;
-					}
-				}
-				[data-rem-tags~=highlight] {
-					.rem-text {
-						.RichTextViewer {
-							color: var(--reference-text);
+	.work-in-progress-rem {
+		color: var(--reference-text);
+	}
+    .rem-reference-container {
+        .rem-reference {
+            .RichTextViewer {
+                color: var(--reference-text); 
+                background-color: #E1E5F8;
+                font-family: 'Roboto Mono', monospace !important;
+                padding: 2px 4px;
+                margin: 0 2px;
+                border-radius: 4px;
+            }
+        }
+    }
 
-							.rem-reference-container {
-								.rem-reference {
-									.RichTextViewer {
-										color: var(--reference-text-dark);
-									}
-								}
-							}
-						}
-					}
-				}
-			// Hover Effect
-				.rem-reference.show-ui-hover\:bg-blue-5:hover {
-					background-color: var(--darkmode-background-selected-darker);
-				}
+    [data-rem-container-tags~="aliases"] {
+        border: 0.1rem solid var(--line-color);
+        border-radius: 4px;
+		margin-right: 0.7rem;
 
-				[data-rem-container-tags~="highlight"] {
-					.rem-reference.show-ui-hover\:bg-blue-5:hover {
-						background-color: unset;
-					}
-				}
-		}
-	// Reference Style
-		.dark-mode {
-			
-			
-			.rem-reference.button.rem-reference-link {
-				background-color: var(--reference-background-dark);
-				// Reference Partial Hiding using inlinequote
-				.quote {
-					display: none;
-				}
-			}
-			.rem-reference.rem-reference--focused {
-				.RichTextViewer {
-					color: var(--darkmode-contrast);
-				}
-			}
-			.rem-reference-container.quote {
-				.RichTextViewer {
-					color: var(--quote-text-reference-dark);
-				}
-			}
-		}
-		.rem-reference.button.rem-reference-link {
-			background-color: var(--reference-background);
-			padding: 3px 4px 3px 4px;
-		}
-		.work-in-progress-rem {
-			 color: var(--reference-text);
-		}
-		.rem-reference-container.quote {
-			.RichTextViewer {
-				color: var(--quote-text-reference);
-			}
-		}
-		
-		[data-rem-tags~="list-item"] {
-			.quote {
-				color: var(--quote-text-dark);
-				background-color: var(--quote-background-dark);
-			}
-		}
-	// Hierarchy Editor - Alias
-		.rem-reference-container {
-			.css-kWtKRr {
-				filter: invert(0.5); 
-				position: relative; 
-				top: 4px;
-			}
-		}
-		[data-rem-container-tags~="aliases"] {
-			border: 0.1rem solid var(--line-color);
-			border-radius: 4px;
-		}
-	// Hide Reference root and > symbol
-		.rem-reference.button.rem-reference-link {
-			.gray, .join-arrow {
-				display: none;
-			}
-		}
-	// Alias power-up symbol adjustment
-		[data-rem-tags~="list-item"] .rem-is-custom-rem-type.rem-is-custom-rem-type--in-body {
-			position: relative;
-			top: 2px !important;
-		}
-	// Favicon Size
-		.w-4, .h-4 {
-			width: 1em;
-			height: 1em;
-		}
+        > .tree-node--parent {
+            div[data-rem-tags~="aliases"] {
+                .rem-text {
+                    .EditorContainer {
+                        span.descriptor_rem_type {
+                            .RichTextViewer {
+                                .rem-reference-container {
+                                    .rem-reference {
+                                        .rem-powerup-icon {
+                                            svg.text-icon {
+
+                                            }
+                                        }
+                                        #rem-reference__exclude-type-parent {
+                                            .rem-reference__exclude-type-parent__delete {
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        > .tree-node--children {
+
+        }
+    }
+    // Darkmode
+        .dark-mode {
+            // Reference Style
+                .rem-reference-container {
+                    .rem-reference {
+                        .RichTextViewer {
+                            color: var(--reference-text-dark);
+                            background-color: #202020;
+                        }
+
+                        &:hover {
+                            background-color: var(--darkmode-background-selected-darker);
+                        }
+                    }
+                }
+                // Reference + Highlight
+                    [data-rem-tags~=highlight] {
+                        .rem-text {
+                            .RichTextViewer {
+                                color: var(--reference-text);
+
+                                .rem-reference-container {
+                                    .rem-reference {
+                                        .RichTextViewer {
+                                            color: var(--reference-text-dark);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+            // Alias Darkmode
+                [data-rem-container-tags~="aliases"] {
+                    border: 0.1rem solid var(--line-color-dark);
+                    border-radius: 4px;
+
+                    > .tree-node--parent {
+                        div[data-rem-tags~="aliases"] {
+                            .rem-text {
+                                .EditorContainer {
+                                    span.descriptor_rem_type {
+                                        .RichTextViewer {
+                                            .rem-reference-container {
+                                                .rem-reference {
+                                                    .rem-powerup-icon {
+                                                        svg.text-icon {
+
+                                                        }
+                                                    }
+                                                    #rem-reference__exclude-type-parent {
+                                                        .rem-reference__exclude-type-parent__delete {
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    > .tree-node--children {
+
+                    }
+                }
+        }
 // Navigation Bar
 	.navigation-bar {
 		background-color: var(--darkmode-background);
@@ -1994,17 +1998,376 @@
 			}
 		}
 // Side Bar
-	// Basic Light Mode
-		#document-sidebar {
-			background-color: var(--darkmode-background);
+	#document-sidebar {
+    // Basic Light Mode
+        background-color: var(--darkmode-background);
 
-			+ div {
-				> div {
-					color: var(--darkmode-contrast);
-					background-color: var(--darkmode-background);
-				}
+        + div {
+            > div {
+                color: var(--darkmode-contrast);
+                background-color: var(--darkmode-background);
+            }
+        }
+	// Scrollbar Visibility
+		.w-\[calc\(100\%-16px\)\] {
+			width: calc(100% - 21px);
+		}
+    // Remove unexpected Track line
+        body.old-dark-mode {
+            .dark-mode {
+                #document-sidebar {
+                    background-color: var(--darkmode-background-sidebar) !important;
+                }
+            }
+        }
+    // Sidebar Accordion - Pinned, Draft, Archive Symbol (Sidebar Item Top Level)
+        #document-sidebar {
+            .accordion.ui.fluid {
+                .title.cursor-pointer {
+                    background-color: #FFFFFF;
+                    zoom: 150%;
+                    max-height: 5px !important;
+                    border-radius: 5px;
+                    
+                    .css-fqRAnH {
+                        zoom: 150%;
+                        color: black;
+                    }
+                    .css-pUlLN {
+                        color: black;
+                    }
+                }
+            }
+        }
+    // Sidebar Top
+        #document-sidebar_top {
+            // Account
+                #document-sidebar_top__logo-and-user {
+                    .document-sidebar_top__user-and-collapse {
+                        > span {
+                            #document-sidebar__account-capsule {
+                                background-color: #FFF;
+
+                                &:hover {
+                                    background-color: var(--darkmode-text);
+                                }
+
+                                #document-sidebar__account-capsule__text {
+                                    // 
+                                }
+                                span {
+                                    // 
+                                }
+                            }
+                        }
+                    }
+                }
+            // Search and ⚡️
+                > div.flex.items-center.p-2.gap-2 {
+                    // Search
+                        > div:nth-of-type(1) {
+                            background-color: var(--darkmode-background-selected-darker);
+                        }
+                    // ⚡️
+                        > div:nth-of-type(2) {
+                            background-color: var(--darkmode-background-selected-darker);
+                        }
+                }
+            // All Notes, Today's Note, Flashcards, Edit Later
+                > div.p-2 {
+                    font-family: 'Roboto Mono', 'Fira Code', monospace;
+                
+                    // All Notes
+                        > a[href~="/notes"] {
+                            > div {
+                                // Icon
+                                > div:nth-of-type(1) {
+                                    color: var(--darkmode-contrast);
+                                    zoom: 125%;
+
+                                    > svg[data-icon~="all-notes"] {
+                                        // 
+                                    }
+                                }
+                                // All Notes Text
+                                > div:nth-of-type(2) {
+                                    color: var(--darkmode-contrast);
+                                    zoom: 125%;
+                                }
+
+                                &:hover {
+                                    background-color: var(--darkmode-background-selected-darker);
+                                    border-radius: 5px;
+                                }
+                            }   
+                        }
+                    // Today's Note
+                        > div.mb-1 {
+                            // Icon
+                                > div:nth-of-type(1) {
+                                    color: var(--darkmode-contrast);
+                                    zoom: 125%;
+                                }
+                            // Today's Note Text
+                                > div:nth-of-type(2) {
+                                    color: var(--darkmode-contrast);
+                                    zoom: 125%;
+                                }
+                            &:hover {
+                                background-color: var(--darkmode-background-selected-darker);
+                                border-radius: 5px;
+                            }
+                        }
+                    // Flashcards
+                        > a[href="/flashcards"] {
+                            > div {
+                                // Icon
+                                    > div:nth-of-type(1) {
+                                        color: var(--darkmode-contrast);
+                                        zoom: 125%;
+                                    }
+                                // Flashcards Text
+                                    > div:nth-of-type(2) {
+                                        color: var(--darkmode-contrast);
+                                        zoom: 125%;
+                                    }
+                                // Residue Number
+                                    > div:nth-of-type(3) {
+                                        color: var(--darkmode-contrast);
+                                        background-color: var(--darkmode-background-selected-darker);    
+                                        zoom: 125%;
+                                    }
+                                &:hover {
+                                    background-color: var(--darkmode-background-selected-darker);
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    // Edit Later
+                        > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) {
+                            > div {
+                                // Icon
+                                    > div:nth-of-type(1) {
+                                        color: var(--darkmode-contrast);
+                                        zoom: 125%;
+                                    }
+                                // Edit Later
+                                    > div:nth-of-type(2) {
+                                        color: var(--darkmode-contrast);
+                                        zoom: 125%;
+                                    }
+                                // Residue Number
+                                    > div:nth-of-type(3) {
+                                        color: var(--darkmode-contrast);
+                                        background-color: var(--darkmode-background-selected-darker);
+                                        zoom: 125%;
+                                    }
+
+                                &:hover {
+                                    background-color: var(--darkmode-background-selected-darker);
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    // Selected
+                        .rn-clr-background-light-accent {
+                            background-color: unset;
+                            border: 1px solid yellow;
+                            border-radius: 5px;
+                        }
+                        .hover\:rn-clr-background-light-accent--hovered:hover {
+                            background: var(--darkmode-background-selected-darker) !important;
+                        }
+                }
+        }
+    // Sidebar Middle (Item)
+        > div:nth-of-type(2) {
+            > div {
+                > div {
+                    > div {
+                        .p-2 {
+                            
+                        }
+                        [data-type~="document_list_item"] {
+                            > div {
+                                > span.block.group.cursor-pointer {
+                                    > div.rounded-md.text-sm.overflow-hidden.text-gray-60 {
+                                        > div.p-2 {
+                                            > div {
+                                                // Power-up Symbol
+                                                    > span.rem-powerup-icon {
+                                                        filter: invert(0);
+
+                                                        > svg.text-icon {
+                                                            // 
+                                                        }
+                                                    }
+                                                .RichTextViewer {
+                                                    color: var(--darkmode-text);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .highlight-color--red,
+                                    .highlight-color--orange,
+                                    .highlight-color--yellow,
+                                    .highlight-color--green,
+                                    .highlight-color--blue,
+                                    .highlight-color--purple {
+                                        .RichTextViewer {
+                                            color: black !important;
+                                            padding-left: 3px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    // Sidebar list Arrow line Alignment
+        .flex-grow.nowrap-RichTextViewer:only-child {
+            margin-left: 22px;
+        }
+    // Make Menu Background Highlight Compact
+        .rounded-md {
+            &.highlight-color--red,
+            &.highlight-color--orange,
+            &.highlight-color--yellow,
+            &.highlight-color--green,
+            &.highlight-color--blue,
+            &.highlight-color--purple {
+                background-color: transparent;
+            }
+            &.highlight-color--red .p-2 .text-gray-60 {background-color: var(--highlight-color--red-dark); border-radius: 4px;}
+            &.highlight-color--orange .p-2 .text-gray-60 {background-color: var(--highlight-color--orange-dark); border-radius: 4px;}
+            &.highlight-color--yellow .p-2 .text-gray-60 {background-color: var(--highlight-color--yellow-dark); border-radius: 4px;}
+            &.highlight-color--green .p-2 .text-gray-60 {background-color: var(--highlight-color--green-dark); border-radius: 4px;}
+            &.highlight-color--blue .p-2 .text-gray-60 {background-color: var(--highlight-color--blue-dark); border-radius: 4px;}
+            &.highlight-color--purple .p-2 .text-gray-60 {background-color: var(--highlight-color--purple-dark); border-radius: 4px;}
+        }
+        
+
+        .highlight-color--red,
+        .highlight-color--orange,
+        .highlight-color--yellow,
+        .highlight-color--green,
+        .highlight-color--blue,
+        .highlight-color--purple {
+            .RichTextViewer {
+                padding-left: 3px;
+            }
+        }
+    // Sidebar list item height
+        .p-2.flex.group-hover-bg-hover-bg-transparent {
+            height: 17px !important;
+        }
+    // Sidebar list item icon
+        .document-list-item__folder-icon {
+            color: #C7C7C7;
+        }
+        .float-right {
+            color: var(--darkmode-contrast);
+        }
+    // Sidebar List item space between Emoji/Thumbnail and Strings by bolding
+        .block {
+            .RichTextViewer {
+                .bold {
+                    margin-left: 5px;
+                }
+            }
+        } 
+    // Sidebar list item focused
+        .rn-clr-background-light-accent {
+            background-color: transparent !important;
+            border: 2px solid var(--darkmode-contrast) !important;
+
+            .RichTextViewer {
+                color: white;
+            }
+            .group-hover\:rn-clr-background-light-accent--hovered {
+                background-color: var(--darkmode-background-selected-darker) !important;
+            }
+        }
+        .rounded-md.highlight-color--red,
+        .rounded-md.highlight-color--orange,
+        .rounded-md.highlight-color--yellow,
+        .rounded-md.highlight-color--green,
+        .rounded-md.highlight-color--blue,
+        .rounded-md.highlight-color--purple {
+            .RichTextViewer {
+                color: black;
+            }
+        }
+    // Sidebar list item Padding
+        .p-2 {
+            padding: 0.5rem;
+        }
+    // Sidebar list item Highlight
+        span.highlight-color--red,
+        span.highlight-color--orange,
+        span.highlight-color--yellow,
+        span.highlight-color--green,
+        span.highlight-color--blue,
+        span.highlight-color--purple {
+            margin-left: 5px;
+            padding: 1px 3px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+        .highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
+    // Sidebar list item Colored Text
+        .rn-clr-content-secondary {
+            color: var(--darkmode-text);
+        }
+        .bold.highlight-color--red,
+        .bold.highlight-color--orange,
+        .bold.highlight-color--yellow,
+        .bold.highlight-color--green,
+        .bold.highlight-color--blue,
+        .bold.highlight-color--purple {
+            background-color: unset;
+        }
+        .bold.highlight-color--red {color: var(--red-text-dark);}
+        .bold.highlight-color--orange {color: var(--orange-text-dark);}
+        .bold.highlight-color--yellow {color: var(--yellow-text-dark);}
+        .bold.highlight-color--green {color: var(--green-text-dark);}
+        .bold.highlight-color--blue {color: var(--blue-text-dark);}
+        .bold.highlight-color--purple {color: var(--purple-text-dark);}
+    // Sidebar list item quote
+        .quote {
+            color: var(--quote-text-dark) !important;
+            background-color: var(--quote-background-dark) !important;
+            margin-left: 5px;
+        }
+    // Sidebar list item Hover
+        .group:hover {
+            .group-hover-bg-hover-bg-transparent:hover {
+                background: var(--darkmode-background-selected-darker);
+				border-radius: 5px;
+            }
+        }
+	// Thumbnail 3-Dot Button Removal
+		.image-node {
+			.bg-white {
+				background-color: transparent;
 			}
 		}
+    // Sidebar Bottom (Create Button)
+        > div:last-of-type {
+            > span {
+                > div {
+                    [data-icon~="add"] {
+                        // 
+                    }
+                    .font-semibold {
+                        // 
+                    }
+                }
+            }
+        }
+	}
 	// Dark mode
 		.dark-mode {
 			#document-sidebar {
@@ -2026,260 +2389,20 @@
 				}
 			}
 		}
-	// Remove unexpected Track line
-		body.old-dark-mode {
-			.dark-mode {
-				#document-sidebar {
-					background-color: var(--darkmode-background-sidebar) !important;
-				}
-			}
-		}
-	// Sidebar Collapsed
-		.document-sidebar--collapsed--vertical {
-			background-color: var(--darkmode-background-sidebar);
-			width: 25px;
+// Side Bar - Collapsed
+	.document-sidebar--collapsed--vertical {
+		background-color: var(--darkmode-background-sidebar);
+		width: 25px;
 
+		> div {
 			> div {
 				> div {
-					> div {
-						position: relative;
-						left: -6px;
-					}
+					position: relative;
+					left: -6px;
 				}
 			}
 		}
-
-	// Account Capsule
-		#document-sidebar__account-capsule {
-			background-color: #FFFFFF;
-
-			&:hover {
-				background-color: var(--darkmode-text) !important;
-			}
-		}
-	// Sidebar Top
-		#document-sidebar_top {
-			// Search and ⚡️
-				.flex.items-center.p-2.gap-2 > div {
-					background-color: var(--darkmode-background-selected-darker);
-				}
-			// All Notes & Flashcards & Edit Later Text
-				.flex.items-center.mb-1 {
-					font-family: "Roboto Mono", "Fira Code", Monospace;
-					color: var(--darkmode-contrast);
-					zoom: 125%;
-					margin-left: 5px;
-				}
-			// ?
-				.bg-gray-10-transparent {
-					background-color: var(--darkmode-background-selected-darker);
-					zoom: 1.1;
-				}
-			// Selected formatting
-				.bg-primary-5 {
-					background-color: unset;
-					border: 1px solid yellow;
-					border-radius: 5px;
-				}
-			// All Notes icon
-				.css-fqRAnH {
-					color: var(--darkmode-contrast);
-				}
-			// Flashcard icon
-				.block {
-					.css-pUlLN {
-						color: var(--darkmode-contrast);
-					}
-					.flex-grow {
-						font-family: "Roboto Mono", "Fira code", Monospace;
-						color: var(--darkmode-contrast);
-					}
-					> div > div.bg-gray-10-transparent {
-						zoom: 0.9;
-					}
-				}
-			
-		}
-	// Sidebar Pinned, Draft, Archive Symbol (Sidebar Item Top Level)
-		#document-sidebar {
-			.accordion.ui.fluid {
-				.title.cursor-pointer {
-					background-color: #FFFFFF;
-					zoom: 150%;
-					max-height: 5px !important;
-					border-radius: 5px;
-					
-					.css-fqRAnH {
-						zoom: 150%;
-						color: black;
-					}
-					.css-pUlLN {
-						color: black;
-					}
-				}
-			}
-		}
-	// Power-up Symbol
-		#document-sidebar {
-			.rem-is-custom-rem-type {
-				filter: invert(1);
-				position: relative;
-				top: 2px !important;
-			}
-		}
-	// Favicon Size
-		.settings-page__sidebar {
-			.w-4, .h-4 {
-				width: unset;
-				height: unset;
-			}
-		}
-	// Sidebar Document lists
-		#document-sidebar {
-			.bg-white.cursor-pointer {
-				display: none;
-			}
-			.RichTextViewer {
-				color: #C7C7C7;
-				position: relative;
-				top: 1px;
-			}
-			// Sidebar list item height
-				.p-2.flex.group-hover-bg-hover-bg-transparent {
-					height: 20px !important;
-				}
-			// Sidebar list item Highlight
-				span.highlight-color--red,
-				span.highlight-color--orange,
-				span.highlight-color--yellow,
-				span.highlight-color--green,
-				span.highlight-color--blue,
-				span.highlight-color--purple {
-					margin-left: 5px;
-					padding: 1px 3px;
-					border-radius: 3px;
-					font-weight: 600;
-				}
-				.highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
-			// Sidebar list item Colored Text
-				.bold.highlight-color--red,
-				.bold.highlight-color--orange,
-				.bold.highlight-color--yellow,
-				.bold.highlight-color--green,
-				.bold.highlight-color--blue,
-				.bold.highlight-color--purple {
-					background-color: unset;
-				}
-				.bold.highlight-color--red {color: var(--red-text-dark);}
-				.bold.highlight-color--orange {color: var(--orange-text-dark);}
-				.bold.highlight-color--yellow {color: var(--yellow-text-dark);}
-				.bold.highlight-color--green {color: var(--green-text-dark);}
-				.bold.highlight-color--blue {color: var(--blue-text-dark);}
-				.bold.highlight-color--purple {color: var(--purple-text-dark);}
-			// Sidebar list item quote
-				.quote {
-					color: var(--quote-text-dark) !important;
-					background-color: var(--quote-background-dark) !important;
-					margin-left: 5px;
-				}
-			// Sidebar list item Padding
-				.p-2 {
-					padding: 0.3rem;
-				}
-			// Sidebar list item focused
-				.rn-clr-background-light-accent {
-					background-color: transparent !important;
-					border: 2px solid var(--darkmode-contrast) !important;
-
-					.RichTextViewer {
-						color: white;
-					}
-					.group-hover\:rn-clr-background-light-accent--hovered {
-						background-color: var(--darkmode-background-selected-darker) !important;
-					}
-				}
-				.rounded-md.highlight-color--red,
-				.rounded-md.highlight-color--orange,
-				.rounded-md.highlight-color--yellow,
-				.rounded-md.highlight-color--green,
-				.rounded-md.highlight-color--blue,
-				.rounded-md.highlight-color--purple {
-					.RichTextViewer {
-						color: black;
-					}
-				} 
-			// Sidebar list item icon
-				.document-list-item__folder-icon {
-					color: #C7C7C7;
-				}
-				.float-right {
-					color: var(--darkmode-contrast);
-				}
-			// Sidebar list Arrow line Alignment
-				.flex-grow.nowrap-RichTextViewer:only-child {
-					margin-left: 22px;
-				}
-			// RemNote Help Page Sidebar Document lists
-				.block.group.cursor-pointer {
-					.highlight-color--red .RichTextViewer, 
-					.highlight-color--orange .RichTextViewer,
-					.highlight-color--yellow .RichTextViewer,
-					.highlight-color--green .RichTextViewer,
-					.highlight-color--blue .RichTextViewer,
-					.highlight-color--purple .RichTextViewer {
-						color: black !important;
-					}
-				}
-			// Make Menu Background Highlight Compact
-				.rounded-md.highlight-color--red,
-				.rounded-md.highlight-color--orange,
-				.rounded-md.highlight-color--yellow,
-				.rounded-md.highlight-color--green,
-				.rounded-md.highlight-color--blue,
-				.rounded-md.highlight-color--purple {
-					background-color: transparent;
-				}
-				.rounded-md.highlight-color--red .p-2 .text-gray-60 {background-color: var(--highlight-color--red-dark); border-radius: 4px;}
-				.rounded-md.highlight-color--orange .p-2 .text-gray-60 {background-color: var(--highlight-color--orange-dark); border-radius: 4px;}
-				.rounded-md.highlight-color--yellow .p-2 .text-gray-60 {background-color: var(--highlight-color--yellow-dark); border-radius: 4px;}
-				.rounded-md.highlight-color--green .p-2 .text-gray-60 {background-color: var(--highlight-color--green-dark); border-radius: 4px;}
-				.rounded-md.highlight-color--blue .p-2 .text-gray-60 {background-color: var(--highlight-color--blue-dark); border-radius: 4px;}
-				.rounded-md.highlight-color--purple .p-2 .text-gray-60 {background-color: var(--highlight-color--purple-dark); border-radius: 4px;}
-
-				.highlight-color--red,
-				.highlight-color--orange,
-				.highlight-color--yellow,
-				.highlight-color--green,
-				.highlight-color--blue,
-				.highlight-color--purple {
-					.RichTextViewer {
-						padding-left: 3px;
-					}
-				}
-			// Sidebar Item hover effect
-				// Sidebar Search Bar Hover
-					.hover\:text-gray-50:hover:not(.accordion.ui.fluid .hover\:text-gray-50:hover) {						
-						color: var(--darkmode-contrast);
-					}
-				// Sidebar All Notes Flashcards Edit Later Hover
-					.hover\:bg-hover-bg:hover {
-						background-color: var(--darkmode-background-selected-darker);
-					}							
-				// Sidebar Menu Item Hover
-					.group:hover .group-hover-bg-hover-bg-transparent:hover {
-						background-color: var(--darkmode-background-selected-darker);
-					}
-			// Sidebar List item space between Emoji/Thumbnail and Strings by bolding
-				.accordion.ui.fluid {
-					.block {
-						.RichTextViewer {
-							.bold {
-								margin: 0 0 0 5px;
-							}
-						}
-					}
-				} 
-		}
+	}
 // Context Menu
 	// Slash Command Menu
 		.dark-mode {
@@ -2329,40 +2452,50 @@
 // Help & Tutorial Page
 	// SideBar
 		#document-sidebar {
-			// RemNote Help Page Sidebar 
-				// RemNote Help Page Sidebar Top
-					#document-sidebar_top {
-						.m-3 {
-							> div {
-								color: var(--darkmode-contrast) !important;
-							}
-						}
-						.css-cPmPhh {
-							color: var(--darkmode-text);
-						}
-						.help-knowledge-base-search {
-							.rich-text-editor {
-								background-color: unset;
-							}
-						}
-					}
-				// RemNote Help Page Sidebar Bottom
-					.w-full {
-						> a {
+			// RemNote Help Page Sidebar Top
+				#document-sidebar_top {
+					.m-3 {
+						> div {
 							color: var(--darkmode-contrast) !important;
 						}
 					}
-				// RemNote Help Page Sidebar Backward icon
-					[data-icon="backward"] {
-						color: var(--darkmode-contrast) !important;
+					.css-cPmPhh {
+						color: var(--darkmode-text);
 					}
-				// RemNote Help Page Sidebar Emoji
-					.rem-reference {
-						.RichTextViewer {
+					.help-knowledge-base-search {
+						.rich-text-editor {
 							background-color: unset;
-							filter: invert(0);
 						}
 					}
+				}
+			// RemNote Help Page Sidebar Bottom
+				.w-full {
+					> a {
+						color: var(--darkmode-contrast) !important;
+					}
+				}
+			// RemNote Help Page Sidebar Backward icon
+				[data-icon="backward"] {
+					color: var(--darkmode-contrast) !important;
+				}
+			// RemNote Help Page Sidebar Emoji
+				.rem-reference {
+					.RichTextViewer {
+						background-color: unset;
+						filter: invert(0);
+					}
+				}
+			// RemNote Help Page Sidebar Document lists
+				.block.group.cursor-pointer {
+					.highlight-color--red .RichTextViewer, 
+					.highlight-color--orange .RichTextViewer,
+					.highlight-color--yellow .RichTextViewer,
+					.highlight-color--green .RichTextViewer,
+					.highlight-color--blue .RichTextViewer,
+					.highlight-color--purple .RichTextViewer {
+						color: black !important;
+					}
+				}
 		}
 	// API
 		#APIKeys {
