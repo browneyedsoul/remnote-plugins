@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,600&display=swap');
 
 :root {
 	--font-size-documenttitle: 36px;
@@ -2098,7 +2099,8 @@
                 }
             // All Notes, Today's Note, Flashcards, Edit Later
                 > div.p-2 {
-                    font-family: 'Roboto Mono', 'Fira Code', monospace;
+                    font-family: 'Nunito Sans', sans-serif;
+					font-weight: 600;
                 
                     // All Notes
                         > a[href~="/notes"] {
@@ -2135,6 +2137,8 @@
                                 > div:nth-of-type(2) {
                                     color: var(--darkmode-contrast);
                                     zoom: 125%;
+									overflow-x: hidden;
+									white-space: nowrap;
                                 }
                             &:hover {
                                 background-color: var(--darkmode-background-selected-darker);
@@ -2153,6 +2157,8 @@
                                     > div:nth-of-type(2) {
                                         color: var(--darkmode-contrast);
                                         zoom: 125%;
+										overflow-x: hidden;
+										white-space: nowrap;
                                     }
                                 // Residue Number
                                     > div:nth-of-type(3) {
@@ -2251,7 +2257,7 @@
         }
     // Sidebar list Arrow line Alignment
         .flex-grow.nowrap-RichTextViewer:only-child {
-            margin-left: 22px;
+            margin-left: 24px;
         }
     // Make Menu Background Highlight Compact
         .rounded-md {
