@@ -742,6 +742,62 @@
 		}
 // Tile Document
 	.tile__document {
+		// Daily Notes Top bar
+			> div.border-bottom-solid.bg-white {
+				background-color: var(--darkmode-background);
+				border-bottom-style: dashed;
+
+				> div:nth-child(1) {
+					> p {
+						// Daily Notes 
+					}
+					> div {
+						// Month Year
+						color: var(--darkmode-text);
+					}
+				}
+				> div:nth-child(2) {
+					.text-gray-40 {
+						// Day of Week
+					}
+					p.m-0 {
+						// Number
+						color: var(--darkmode-text);
+					}
+					.bg-gray-5 {
+						background-color: var(--darkmode-background-selected);
+					}
+					// Arrow
+					> div.hover\:bg-hover-bg:hover {
+						background-color: var(--darkmode-background-selected-darker);
+					}
+					> span.block {
+						> div {
+							&:hover {
+								background-color: var(--darkmode-background-selected-darker);
+							}
+						}
+						// Saturday
+						&:nth-of-type(6) {
+							> div {
+								> p {
+									color: var(--blue-text-dark);
+									font-weight: 600;
+								}
+							}
+						}
+						// Sunday
+						&:nth-of-type(7) {
+							> div {
+								> p {
+									color: var(--red-text-dark);
+									font-weight: 600;
+								}
+							}
+						}
+					}
+				}
+			}
 		// Document Header Top Bar
 			.document-header-top-bar {
 				height: fit-content;
@@ -911,6 +967,10 @@
 						}
 						.bg-gray-5 {
 							background-color: var(--darkmode-background-selected);
+						}
+						// Arrow
+						> div.hover\:bg-hover-bg:hover {
+							background-color: var(--darkmode-background-selected-darker);
 						}
 						> span.block {
 							> div {
@@ -1977,6 +2037,8 @@
             // Reference Style
                 .rem-reference-container {
                     .rem-reference {
+						color: var(--reference-text-dark);
+
                         .RichTextViewer {
                             color: var(--reference-text-dark);
                             background-color: #202020;

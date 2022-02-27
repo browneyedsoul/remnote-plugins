@@ -516,6 +516,33 @@
 	background-color: unset;
 }
 
+.tile__document > div.border-bottom-solid.bg-white {
+	background-color: var(--darkmode-background);
+	border-bottom-style: dashed;
+}
+.tile__document > div.border-bottom-solid.bg-white > div:nth-child(1) > div {
+	color: var(--darkmode-text);
+}
+.tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) p.m-0 {
+	color: var(--darkmode-text);
+}
+.tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) .bg-gray-5 {
+	background-color: var(--darkmode-background-selected);
+}
+.tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) > div.hover\:bg-hover-bg:hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) > span.block > div:hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) > span.block:nth-of-type(6) > div > p {
+	color: var(--blue-text-dark);
+	font-weight: 600;
+}
+.tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) > span.block:nth-of-type(7) > div > p {
+	color: var(--red-text-dark);
+	font-weight: 600;
+}
 .tile__document .document-header-top-bar {
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
@@ -584,6 +611,9 @@
 }
 .dark-mode .tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) .bg-gray-5 {
 	background-color: var(--darkmode-background-selected);
+}
+.dark-mode .tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) > div.hover\:bg-hover-bg:hover {
+	background-color: var(--darkmode-background-selected-darker);
 }
 .dark-mode .tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) > span.block > div:hover {
 	background-color: var(--darkmode-background-selected-darker);
@@ -1402,6 +1432,9 @@
 	top: 0.2rem;
 }
 
+.dark-mode .rem-reference-container .rem-reference {
+	color: var(--reference-text-dark);
+}
 .dark-mode .rem-reference-container .rem-reference .RichTextViewer {
 	color: var(--reference-text-dark);
 	background-color: #202020;
