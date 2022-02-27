@@ -690,6 +690,10 @@
 	fill: var(--bullet-ring-color-dark);
 }
 
+[data-rem-tags~=highlight] {
+	margin-right: 0.7rem;
+}
+
 .highlight-color--red,
 .highlight-color--orange,
 .highlight-color--yellow,
@@ -1372,7 +1376,12 @@
 	border: 0.1rem solid var(--line-color);
 	border-radius: 4px;
 	margin-right: 0.7rem;
+	background-color: var(--reference-background);
 }
+[data-rem-container-tags~=aliases] > .tree-node--children [data-rem-container-tags~=list-item] .tree-node--parent [data-rem-tags~=list-item] .rem-text .text-icon {
+	top: 0.2rem;
+}
+
 .dark-mode .rem-reference-container .rem-reference .RichTextViewer {
 	color: var(--reference-text-dark);
 	background-color: #202020;
@@ -1389,6 +1398,13 @@
 .dark-mode [data-rem-container-tags~=aliases] {
 	border: 0.1rem solid var(--line-color-dark);
 	border-radius: 4px;
+	background-color: var(--reference-background-dark);
+}
+.dark-mode [data-rem-container-tags~=aliases] > .tree-node--parent div[data-rem-tags~=aliases] .rem-text .EditorContainer span.descriptor_rem_type .RichTextViewer .rem-reference-container .rem-reference {
+	color: var(--darkmode-contrast);
+}
+.dark-mode [data-rem-container-tags~=aliases] > .tree-node--parent div[data-rem-tags~=aliases] .rem-reference-container .rem-reference {
+	color: var(--darkmode-contrast);
 }
 .navigation-bar {
 	background-color: var(--darkmode-background);

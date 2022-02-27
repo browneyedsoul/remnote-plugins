@@ -1083,6 +1083,9 @@
 			}
 		}
 // Hightlight Style
+	[data-rem-tags~="highlight"] {
+		margin-right: 0.7rem;
+	}
 	// Basic Highlight Style and Font Color
 		.highlight-color--red,
 		.highlight-color--orange,
@@ -1865,7 +1868,7 @@
     .rem-reference-container {
         .rem-reference {
             .RichTextViewer {
-                color: var(--reference-text); 
+                color: var(--reference-text);
                 background-color: #E1E5F8;
                 font-family: 'Roboto Mono', monospace !important;
                 padding: 2px 4px;
@@ -1879,6 +1882,7 @@
         border: 0.1rem solid var(--line-color);
         border-radius: 4px;
 		margin-right: 0.7rem;
+		background-color: var(--reference-background);
 
         > .tree-node--parent {
             div[data-rem-tags~="aliases"] {
@@ -1890,7 +1894,7 @@
                                     .rem-reference {
                                         .rem-powerup-icon {
                                             svg.text-icon {
-
+												
                                             }
                                         }
                                         #rem-reference__exclude-type-parent {
@@ -1907,7 +1911,17 @@
             }
         }
         > .tree-node--children {
-
+			[data-rem-container-tags~="list-item"] {
+				.tree-node--parent {
+					[data-rem-tags~="list-item"] {
+						.rem-text {
+							.text-icon {
+								top: .2rem;
+							}
+						}
+					}
+				}
+			}
         }
     }
     // Darkmode
@@ -1945,6 +1959,7 @@
                 [data-rem-container-tags~="aliases"] {
                     border: 0.1rem solid var(--line-color-dark);
                     border-radius: 4px;
+					background-color: var(--reference-background-dark);
 
                     > .tree-node--parent {
                         div[data-rem-tags~="aliases"] {
@@ -1954,9 +1969,11 @@
                                         .RichTextViewer {
                                             .rem-reference-container {
                                                 .rem-reference {
+													color: var(--darkmode-contrast);
+													
                                                     .rem-powerup-icon {
                                                         svg.text-icon {
-
+															
                                                         }
                                                     }
                                                     #rem-reference__exclude-type-parent {
@@ -1970,6 +1987,12 @@
                                     }
                                 }
                             }
+							// Focused Slate child
+							.rem-reference-container {
+								.rem-reference {
+									color: var(--darkmode-contrast);
+								}
+							}
                         }
                     }
                     > .tree-node--children {
