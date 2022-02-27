@@ -347,7 +347,6 @@
 		.inline-block,
 		.thumbnail--with-width {
 			@include thumbnail-set;
-			margin-top: 1px;
 		}
 	}
 	.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
