@@ -28,184 +28,184 @@
         }
     }
 // Whole Table Area
-    [data-rem-container-tags~="table90"],
-    [data-rem-container-tags~="table120"],
-    [data-rem-container-tags~="table150"],
-    [data-rem-container-tags~="table180"],
-    [data-rem-container-tags~="table210"],
-    [data-rem-container-tags~="table240"],
-    [data-rem-container-tags~="table270"],
-    [data-rem-container-tags~="table300"],
-    [data-rem-container-tags~="table330"],
-    [data-rem-container-tags~="table360"],
-    [data-rem-container-tags~="table390"],
-    [data-rem-container-tags~="table420"],
-    [data-rem-container-tags~="table450"],
-    [data-rem-container-tags~="table480"],
-    [data-rem-container-tags~="table510"],
-    [data-rem-container-tags~="table540"],
-    [data-rem-container-tags~="table570"],
-    [data-rem-container-tags~="table600"],
-    [data-rem-container-tags~="table630"],
-    [data-rem-container-tags~="table660"],
-    [data-rem-container-tags~="table690"],
-    [data-rem-container-tags~="table720"],
-    [data-rem-container-tags~="table750"],
-    [data-rem-container-tags~="table780"],
-    [data-rem-container-tags~="table810"],
-    [data-rem-container-tags~="table840"],
-    [data-rem-container-tags~="table870"],
-    [data-rem-container-tags~="table900"],
-    [data-rem-container-tags~="table930"],
-    [data-rem-container-tags~="table960"],
-    [data-rem-container-tags~="table990"],
-    [data-rem-container-tags~="table1020"],
-    [data-rem-container-tags~="table1050"],
-    [data-rem-container-tags~="table1080"],
-    [data-rem-container-tags~="table1110"],
-    [data-rem-container-tags~="table1140"],
-    [data-rem-container-tags~="table1170"],
-    [data-rem-container-tags~="table1200"] {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        margin-left: 1.5rem;
-        margin-right: 0.7rem;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        background-color: var(--table-columnrow-background-color);
+    #hierarchy-editor {
+        [data-rem-container-tags~="table90"],
+        [data-rem-container-tags~="table120"],
+        [data-rem-container-tags~="table150"],
+        [data-rem-container-tags~="table180"],
+        [data-rem-container-tags~="table210"],
+        [data-rem-container-tags~="table240"],
+        [data-rem-container-tags~="table270"],
+        [data-rem-container-tags~="table300"],
+        [data-rem-container-tags~="table330"],
+        [data-rem-container-tags~="table360"],
+        [data-rem-container-tags~="table390"],
+        [data-rem-container-tags~="table420"],
+        [data-rem-container-tags~="table450"],
+        [data-rem-container-tags~="table480"],
+        [data-rem-container-tags~="table510"],
+        [data-rem-container-tags~="table540"],
+        [data-rem-container-tags~="table570"],
+        [data-rem-container-tags~="table600"],
+        [data-rem-container-tags~="table630"],
+        [data-rem-container-tags~="table660"],
+        [data-rem-container-tags~="table690"],
+        [data-rem-container-tags~="table720"],
+        [data-rem-container-tags~="table750"],
+        [data-rem-container-tags~="table780"],
+        [data-rem-container-tags~="table810"],
+        [data-rem-container-tags~="table840"],
+        [data-rem-container-tags~="table870"],
+        [data-rem-container-tags~="table900"],
+        [data-rem-container-tags~="table930"],
+        [data-rem-container-tags~="table960"],
+        [data-rem-container-tags~="table990"],
+        [data-rem-container-tags~="table1020"],
+        [data-rem-container-tags~="table1050"],
+        [data-rem-container-tags~="table1080"],
+        [data-rem-container-tags~="table1110"],
+        [data-rem-container-tags~="table1140"],
+        [data-rem-container-tags~="table1170"],
+        [data-rem-container-tags~="table1200"] {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            margin-left: 1.5rem;
+            margin-right: 0.7rem;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            background-color: var(--table-columnrow-background-color);
 
-        // Table Column Color Preset
-            .TreeNode {
-                border-color: var(--table-columnrow-background-color);
-                border-left: 0;
-                // Remove Left Margin
-                margin-left: 0;
-            }
-        // Table Title
-            > :first-child {
-                border: 0.1em solid var(--table-border-color);
-                background-color: var(--table-title-background-color);
-                background-size: 100% 100%;
-                border-top-left-radius: 4px;
-                border-top-right-radius: 4px;
-            }
-        // Table Grid Scrollable
-            > .TreeNode {
-                display: grid;
-                grid-auto-rows: auto;
-                border-left: unset;
-                overflow: hidden;
+            // Table Column Color Preset
+                .TreeNode {
+                    border-color: var(--table-columnrow-background-color);
+                    border-left: 0;
+                    // Remove Left Margin
+                    margin-left: 0;
+                }
+            // Table Title
+                > :first-child {
+                    border: 0.1em solid var(--table-border-color);
+                    background-color: var(--table-title-background-color);
+                    background-size: 100% 100%;
+                    border-top-left-radius: 4px;
+                    border-top-right-radius: 4px;
+                }
+            // Table Grid Scrollable
+                > .TreeNode {
+                    display: grid;
+                    grid-auto-rows: auto;
+                    border-left: unset;
+                    overflow: hidden;
 
-                // Table Left Attribute Cell
-                    > div {
-                        border-right: 1px solid  var(--table-border-color);
-                        margin-left: 6px;
-                    }
-                // Table Row and Column Attribute Cell
-                    > .tree-node-container {
-                        > :first-child {
-                            float: left;
-                            font-weight: bold;
-                            background-color: var(--table-columnrow-background-color);
-                            text-align: left;
-                            padding-left: 0em;
+                    // Table Left Attribute Cell
+                        > div {
+                            border-right: 1px solid  var(--table-border-color);
+                            margin-left: 6px;
                         }
-                        // Table all the horizontal lines
-                            &:not(:first-child) {
-                                border-top-width: 0em;
-                                border: 0.01rem solid var(--table-columnrow-background-color);
-                            }
-                        // Table Content Cell
-                            > .TreeNode {
-                                display: flex;
-                                flex-direction: rows;
+                    // Table Row and Column Attribute Cell
+                        > .tree-node-container {
+                            > :first-child {
+                                float: left;
+                                font-weight: bold;
+                                background-color: var(--table-columnrow-background-color);
                                 text-align: left;
+                                padding-left: 0em;
+                            }
+                            // Table all the horizontal lines
+                                &:not(:first-child) {
+                                    border-top-width: 0em;
+                                    border: 0.01rem solid var(--table-columnrow-background-color);
+                                }
+                            // Table Content Cell
+                                > .TreeNode {
+                                    display: flex;
+                                    flex-direction: rows;
+                                    text-align: left;
 
-                                > .tree-node-container {
-                                    background-color: var(--table-cell-background-color);
-                                    border-left: 0.05em solid var(--table-border-color);
-                                    flex: 1 1 0;
-                                    width: calc(100% - 12px);
-
-                                    > .TreeNode {
-                                        margin-right: 0px !important;
+                                    > .tree-node-container {
+                                        background-color: var(--table-cell-background-color);
+                                        border-left: 0.05em solid var(--table-border-color);
+                                        flex: 1 1 0;
+                                        width: calc(100% - 12px);
                                     }
                                 }
-                            }
-                    }
-            }
+                        }
+                }
+        }
     }
     // Darkmode
         .dark-mode {
-            [data-rem-container-tags~="table90"],
-            [data-rem-container-tags~="table120"],
-            [data-rem-container-tags~="table150"],
-            [data-rem-container-tags~="table180"],
-            [data-rem-container-tags~="table210"],
-            [data-rem-container-tags~="table240"],
-            [data-rem-container-tags~="table270"],
-            [data-rem-container-tags~="table300"],
-            [data-rem-container-tags~="table330"],
-            [data-rem-container-tags~="table360"],
-            [data-rem-container-tags~="table390"],
-            [data-rem-container-tags~="table420"],
-            [data-rem-container-tags~="table450"],
-            [data-rem-container-tags~="table480"],
-            [data-rem-container-tags~="table510"],
-            [data-rem-container-tags~="table540"],
-            [data-rem-container-tags~="table570"],
-            [data-rem-container-tags~="table600"],
-            [data-rem-container-tags~="table630"],
-            [data-rem-container-tags~="table660"],
-            [data-rem-container-tags~="table690"],
-            [data-rem-container-tags~="table720"],
-            [data-rem-container-tags~="table750"],
-            [data-rem-container-tags~="table780"],
-            [data-rem-container-tags~="table810"],
-            [data-rem-container-tags~="table840"],
-            [data-rem-container-tags~="table870"],
-            [data-rem-container-tags~="table900"],
-            [data-rem-container-tags~="table930"],
-            [data-rem-container-tags~="table960"],
-            [data-rem-container-tags~="table990"],
-            [data-rem-container-tags~="table1020"],
-            [data-rem-container-tags~="table1050"],
-            [data-rem-container-tags~="table1080"],
-            [data-rem-container-tags~="table1110"],
-            [data-rem-container-tags~="table1140"],
-            [data-rem-container-tags~="table1170"],
-            [data-rem-container-tags~="table1200"] {
-                background-color: var(--table-columnrow-background-color-dark);
-                
-                // Table Title
-                    > :first-child {
-                        border-right: 1px solid  var(--table-border-color-dark) !important;
-                        border: 0.1em solid var(--table-border-color-dark);
-                        background-color: var(--table-title-background-color-dark);
-                    }
-                // Table Left Attribute Cell
-                    > .TreeNode {
+            #hierarchy-editor {
+                [data-rem-container-tags~="table90"],
+                [data-rem-container-tags~="table120"],
+                [data-rem-container-tags~="table150"],
+                [data-rem-container-tags~="table180"],
+                [data-rem-container-tags~="table210"],
+                [data-rem-container-tags~="table240"],
+                [data-rem-container-tags~="table270"],
+                [data-rem-container-tags~="table300"],
+                [data-rem-container-tags~="table330"],
+                [data-rem-container-tags~="table360"],
+                [data-rem-container-tags~="table390"],
+                [data-rem-container-tags~="table420"],
+                [data-rem-container-tags~="table450"],
+                [data-rem-container-tags~="table480"],
+                [data-rem-container-tags~="table510"],
+                [data-rem-container-tags~="table540"],
+                [data-rem-container-tags~="table570"],
+                [data-rem-container-tags~="table600"],
+                [data-rem-container-tags~="table630"],
+                [data-rem-container-tags~="table660"],
+                [data-rem-container-tags~="table690"],
+                [data-rem-container-tags~="table720"],
+                [data-rem-container-tags~="table750"],
+                [data-rem-container-tags~="table780"],
+                [data-rem-container-tags~="table810"],
+                [data-rem-container-tags~="table840"],
+                [data-rem-container-tags~="table870"],
+                [data-rem-container-tags~="table900"],
+                [data-rem-container-tags~="table930"],
+                [data-rem-container-tags~="table960"],
+                [data-rem-container-tags~="table990"],
+                [data-rem-container-tags~="table1020"],
+                [data-rem-container-tags~="table1050"],
+                [data-rem-container-tags~="table1080"],
+                [data-rem-container-tags~="table1110"],
+                [data-rem-container-tags~="table1140"],
+                [data-rem-container-tags~="table1170"],
+                [data-rem-container-tags~="table1200"] {
+                    background-color: var(--table-columnrow-background-color-dark);
+                    
+                    // Table Title
                         > :first-child {
                             border-right: 1px solid  var(--table-border-color-dark) !important;
+                            border: 0.1em solid var(--table-border-color-dark);
+                            background-color: var(--table-title-background-color-dark);
                         }
-                        // Table Row and Column Attribute Cell
-                            > .tree-node-container {
-                                > :first-child {
-                                    background-color: var(--table-columnrow-background-color-dark) !important;
-                                }
-                                // Table all the horizontal lines
-                                    &:not(:first-child) {
-                                        border: 0.01rem solid var(--table-columnrow-background-color-dark);
-                                    }
-                                // Table Content Cell
-                                    > .TreeNode {
-                                        > .tree-node-container {
-                                            background-color: var(--table-cell-background-color-dark);
-                                            border-left: 0.05em solid var(--table-border-color-dark);
-                                        }
-                                    }
+                    // Table Left Attribute Cell
+                        > .TreeNode {
+                            > :first-child {
+                                border-right: 1px solid  var(--table-border-color-dark) !important;
                             }
-                    }
+                            // Table Row and Column Attribute Cell
+                                > .tree-node-container {
+                                    > :first-child {
+                                        background-color: var(--table-columnrow-background-color-dark) !important;
+                                    }
+                                    // Table all the horizontal lines
+                                        &:not(:first-child) {
+                                            border: 0.01rem solid var(--table-columnrow-background-color-dark);
+                                        }
+                                    // Table Content Cell
+                                        > .TreeNode {
+                                            > .tree-node-container {
+                                                background-color: var(--table-cell-background-color-dark);
+                                                border-left: 0.05em solid var(--table-border-color-dark);
+                                            }
+                                        }
+                                }
+                        }
+                }
             }
         }
 // Table Row and Column Attribute Cell
