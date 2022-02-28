@@ -1965,3 +1965,10 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 .pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--purple .Highlight__part {
 	background: var(--pdf-highlight-color-purple);
 }
+
+.dark-mode #ErrorBoundary {
+	color: var(--darkmode-contrast);
+}
+.dark-mode #ErrorBoundary a {
+	color: var(--link-node-color-dark);
+}
