@@ -1726,22 +1726,17 @@
 // Settings Page
 	// Darkmode Compatibility
 		.dark-mode {
-			// Selected Item in Context Menu
-				.bg-blue-5 {
-					background-color: #233E6F;
-				}
 			.settings-page {
-				// Settings Page Basic
-					background-color: var(--darkmode-background);
-					
+				background-color: var(--darkmode-background);
+
+				.settings-page__sidebar {
 					.settings-page__sidebar__title {
 						color: var(--darkmode-contrast);
 					}
-					.settings-page__sidebar__link--active {
-						border: 1px solid var(--darkmode-contrast);
-					}
+				}
 				// Setting Page Button Style
 					.button:not(.p-6 > .button) {
+						color: var(--darkmode-text) !important;
 						background-color: var(--darkmode-background-selected-darker);
 						border-color: #000 !important;
 
@@ -1856,13 +1851,6 @@
 						.p-3 {
 							color: black !important;
 						}
-					}
-				// Settings Page Sidebar svg icon
-					.css-drbSAB {
-						color: var(--darkmode-contrast);
-						background-color: var(--darkmode-background);
-						border: 1px dotted var(--darkmode-contrast);
-						border-radius: 5px;
 					}
 				// Settings Page Sidebar Hover Effect
 					.settings-page__sidebar  {
@@ -2554,51 +2542,54 @@
 		}
 	}
 // Context Menu
-	// Slash Command Menu
-		.dark-mode {
-			// Slash Command Text and Background
-				#search-results__list {
-					border: 3px solid black;
-					border-radius: 5px;
+	.dark-mode {
+		// Selected Item in Context Menu
+			.bg-blue-5 {
+				background-color: #233E6F;
+			}
+		// Slash Command Menu Text and Background
+			#search-results__list {
+				border: 3px solid black;
+				border-radius: 5px;
+				color: var(--darkmode-text);
+				background-color: var(--darkmode-background);
+
+				#search-results__result {
 					color: var(--darkmode-text);
 					background-color: var(--darkmode-background);
 
-					#search-results__result {
-						color: var(--darkmode-text);
-						background-color: var(--darkmode-background);
-
-						// Slash Command Context Menu
+					// Slash Command Context Menu
+						> div {
 							> div {
-								> div {
-									.text-gray-100 {
-										color: var(--darkmode-text);
-									}
+								.text-gray-100 {
+									color: var(--darkmode-text);
 								}
 							}
-						// Slash Command Focused Item
-							&.bg-gray-5 {
-								background-color: var(--darkmode-background-selected-darker);
-							}
+						}
+					// Slash Command Focused Item
+						&.bg-gray-5 {
+							background-color: var(--darkmode-background-selected-darker);
+						}
 
-							> div {
-								> div.mix-blend-multiply {
-									mix-blend-mode: unset;
+						> div {
+							> div.mix-blend-multiply {
+								mix-blend-mode: unset;
 
-									span.bg-blue-20 {
-										color: var(--red-text);
-										background-color: #CDCB69;
-									}
+								span.bg-blue-20 {
+									color: var(--red-text);
+									background-color: #CDCB69;
 								}
 							}
-						// Create Rem Box
-							.p-2 {
-								#quote {
-									color: #000;
-								}
+						}
+					// Create Rem Box
+						.p-2 {
+							#quote {
+								color: #000;
 							}
-					}
+						}
 				}
-		}
+			}
+	}
 // Help & Tutorial Page
 	// SideBar
 		#document-sidebar {

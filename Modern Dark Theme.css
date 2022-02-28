@@ -1249,19 +1249,14 @@
 	background-color: var(--darkmode-background-selected);
 }
 
-.dark-mode .bg-blue-5 {
-	background-color: #233E6F;
-}
 .dark-mode .settings-page {
 	background-color: var(--darkmode-background);
 }
-.dark-mode .settings-page .settings-page__sidebar__title {
+.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__title {
 	color: var(--darkmode-contrast);
 }
-.dark-mode .settings-page .settings-page__sidebar__link--active {
-	border: 1px solid var(--darkmode-contrast);
-}
 .dark-mode .settings-page .button:not(.p-6 > .button) {
+	color: var(--darkmode-text) !important;
 	background-color: var(--darkmode-background-selected-darker);
 	border-color: #000 !important;
 }
@@ -1333,12 +1328,6 @@
 }
 .dark-mode .settings-page .settings-page__option .p-3 {
 	color: black !important;
-}
-.dark-mode .settings-page .css-drbSAB {
-	color: var(--darkmode-contrast);
-	background-color: var(--darkmode-background);
-	border: 1px dotted var(--darkmode-contrast);
-	border-radius: 5px;
 }
 .dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {
 	background-color: #000;
@@ -1758,6 +1747,9 @@
 	left: -6px;
 }
 
+.dark-mode .bg-blue-5 {
+	background-color: #233E6F;
+}
 .dark-mode #search-results__list {
 	border: 3px solid black;
 	border-radius: 5px;
