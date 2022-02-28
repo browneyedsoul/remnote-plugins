@@ -1662,19 +1662,6 @@
 					}
 				}
 		}
-		.dark-mode {
-			// Menu item text
-				div[color="#292936"] {
-					color: var(--darkmode-text);
-				}
-			// Omni Search Popup Window
-				// Focused Text
-					.css-jlRuPl {
-						.bg-warning-10 {
-							color: black;
-						}
-					}
-		}
 		// Hidden Item List
 			// Style
 				.hierarchy-editor__hidden-children__list {
@@ -1729,7 +1716,7 @@
 						border: 1px solid var(--darkmode-contrast);
 					}
 				// Setting Page Button Style
-					.button {
+					.button:not(.p-6 > .button) {
 						background-color: var(--darkmode-background-selected-darker);
 						border-color: #000 !important;
 

@@ -1212,13 +1212,6 @@
 	background-color: var(--darkmode-background-selected-darker);
 }
 
-.dark-mode div[color="#292936"] {
-	color: var(--darkmode-text);
-}
-.dark-mode .css-jlRuPl .bg-warning-10 {
-	color: black;
-}
-
 .hierarchy-editor__hidden-children__list {
 	color: black;
 	background-color: var(--darkmode-text);
@@ -1256,11 +1249,11 @@
 .dark-mode .settings-page .settings-page__sidebar__link--active {
 	border: 1px solid var(--darkmode-contrast);
 }
-.dark-mode .settings-page .button {
+.dark-mode .settings-page .button:not(.p-6 > .button) {
 	background-color: var(--darkmode-background-selected-darker);
 	border-color: #000 !important;
 }
-.dark-mode .settings-page .button:hover {
+.dark-mode .settings-page .button:not(.p-6 > .button):hover {
 	background-color: var(--darkmode-background-selected);
 }
 .dark-mode .settings-page .pl-4.css-kJJQEm {
