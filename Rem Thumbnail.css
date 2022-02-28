@@ -193,6 +193,27 @@
 	min-width: auto !important;
 	margin-right: 2px;
 }
+.popup-menu .p-2 .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top {
+	height: 1em !important;
+	width: auto !important;
+	min-width: auto !important;
+	margin-right: 2px;
+}
+.popup-menu .p-2 .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node {
+	height: 1em !important;
+	width: auto !important;
+	min-width: auto !important;
+	margin-right: 2px;
+}
+.popup-menu .p-2 .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node > div:nth-of-type(1) {
+	display: none;
+}
+.popup-menu .p-2 .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node > div:nth-of-type(2) .thumbnail--with-width {
+	height: 1em !important;
+	width: auto !important;
+	min-width: auto !important;
+	margin-right: 2px;
+}
 
 #Popup #PopupContent .p-4 .RichTextViewer .image-node__container,
 #Popup #PopupContent .p-4 .RichTextViewer .image-node,
