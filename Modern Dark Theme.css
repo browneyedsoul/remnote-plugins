@@ -704,6 +704,15 @@
 .dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.rounded-md > span .bg-gray-10:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid [contenteditable~=false]:not(.pr-1 [contenteditable~=false]) .text-gray-60 {
+	color: var(--darkmode-contrast);
+}
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid [contenteditable~=false]:not(.pr-1 [contenteditable~=false]) .text-gray-60:hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid [contenteditable~=false]:not(.pr-1 [contenteditable~=false]) .border-solid {
+	border-style: unset;
+}
 .dark-mode .tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f {
 	background-color: var(--darkmode-background);
 	border: 2px solid white;
@@ -716,6 +725,9 @@
 }
 .dark-mode .tile__document #document #hierarchy-editor > .fixed {
 	background-color: var(--darkmode-background);
+}
+.dark-mode .tile__document #document #hierarchy-editor div:nth-of-type(2) .button > div {
+	color: var(--darkmode-text);
 }
 
 .rem-container--focused .inline-flex .text-gray-60 {
