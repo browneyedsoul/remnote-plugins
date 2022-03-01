@@ -130,6 +130,10 @@
                                     }
                                 }
                         }
+                    // Table Cell Hightlight Right Margin
+                        [data-rem-tags~="highlight"] {
+                            margin-right: 0;
+                        }
                 }
         }
     }
