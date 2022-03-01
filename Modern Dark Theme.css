@@ -232,12 +232,18 @@
 	color: #000;
 	background-color: var(--highlight-color--red-dark);
 }
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red > div {
+	color: #000 !important;
+}
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red .hierarchy-editor__tag-bar__tag__delete {
 	color: unset;
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange {
 	color: #000;
 	background-color: var(--highlight-color--orange-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange > div {
+	color: #000 !important;
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange .hierarchy-editor__tag-bar__tag__delete {
 	color: unset;
@@ -246,12 +252,18 @@
 	color: #000;
 	background-color: var(--highlight-color--yellow-dark);
 }
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow > div {
+	color: #000 !important;
+}
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow .hierarchy-editor__tag-bar__tag__delete {
 	color: unset;
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green {
 	color: #000;
 	background-color: var(--highlight-color--green-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green > div {
+	color: #000 !important;
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green .hierarchy-editor__tag-bar__tag__delete {
 	color: unset;
@@ -260,12 +272,18 @@
 	color: #000;
 	background-color: var(--highlight-color--blue-dark);
 }
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue > div {
+	color: #000 !important;
+}
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue .hierarchy-editor__tag-bar__tag__delete {
 	color: unset;
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple {
 	color: #000;
 	background-color: var(--highlight-color--purple);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple > div {
+	color: #000 !important;
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple .hierarchy-editor__tag-bar__tag__delete {
 	color: unset;

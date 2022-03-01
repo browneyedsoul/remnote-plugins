@@ -275,6 +275,11 @@
 					&.highlight-color--red {
 						color: #000;
 						background-color: var(--highlight-color--red-dark);
+
+						> div {
+							color: #000 !important;
+						}
+
 						.hierarchy-editor__tag-bar__tag__delete {
 							color: unset;
 						}
@@ -282,6 +287,11 @@
 					&.highlight-color--orange {
 						color: #000;
 						background-color: var(--highlight-color--orange-dark);
+
+						> div {
+							color: #000 !important;
+						}
+
 						.hierarchy-editor__tag-bar__tag__delete {
 							color: unset;
 						}
@@ -289,6 +299,11 @@
 					&.highlight-color--yellow {
 						color: #000;
 						background-color: var(--highlight-color--yellow-dark);
+
+						> div {
+							color: #000 !important;
+						}
+
 						.hierarchy-editor__tag-bar__tag__delete {
 							color: unset;
 						}
@@ -296,6 +311,11 @@
 					&.highlight-color--green {
 						color: #000;
 						background-color: var(--highlight-color--green-dark);
+
+						> div {
+							color: #000 !important;
+						}
+
 						.hierarchy-editor__tag-bar__tag__delete {
 							color: unset;
 						}
@@ -303,6 +323,11 @@
 					&.highlight-color--blue {
 						color: #000;
 						background-color: var(--highlight-color--blue-dark);
+
+						> div {
+							color: #000 !important;
+						}
+
 						.hierarchy-editor__tag-bar__tag__delete {
 							color: unset;
 						}
@@ -310,6 +335,11 @@
 					&.highlight-color--purple {
 						color: #000;
 						background-color: var(--highlight-color--purple);
+
+						> div {
+							color: #000 !important;
+						}
+
 						.hierarchy-editor__tag-bar__tag__delete {
 							color: unset;
 						}
