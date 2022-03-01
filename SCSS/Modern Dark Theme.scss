@@ -62,6 +62,7 @@
 	--pdf-highlight-color-blue: #d2eef9;
 	--pdf-highlight-color-purple: #f5e0fe;
 	--text-shadow: 0.01em 0.01em 0.01em #727e84;
+	--text-shadow-yellow: 2px 2px 2px #E7E500;
 	--text-shadow-dark: 0.01em 0.01em 0.01em #727e84;
 }
 // The Most important thing
@@ -1311,6 +1312,7 @@
 			.bold.highlight-color--yellow {
 				background-color: unset;
 				color: var(--yellow-text);
+				text-shadow: var(--text-shadow-yellow);
 			}
 			.bold.highlight-color--green {
 				background-color: unset;
@@ -1337,6 +1339,7 @@
 				}
 				.bold.highlight-color--yellow {
 					color: var(--yellow-text-dark);
+					text-shadow: unset;
 				}
 				.bold.highlight-color--green {
 					color: var(--green-text-dark);
@@ -1363,7 +1366,7 @@
 				}
 				.bold.highlight-color--red {color: var(--red-text);} 
 				.bold.highlight-color--orange {color: var(--orange-text);}
-				.bold.highlight-color--yellow {color: var(--yellow-text); text-shadow: 2px 2px 2px #FFFC00;}
+				.bold.highlight-color--yellow {color: var(--yellow-text); text-shadow: var(--text-shadow-yellow);}
 				.bold.highlight-color--green {color: var(--green-text);}
 				.bold.highlight-color--blue {color: var(--blue-text);}
 				.bold.highlight-color--purple {color: var(--purple-text);}
@@ -1374,7 +1377,7 @@
 				.RichTextViewer {
 					.bold.highlight-color--red {color: var(--red-text); background-color: unset;} 
 					.bold.highlight-color--orange {color: var(--orange-text); background-color: unset;}
-					.bold.highlight-color--yellow {color: var(--yellow-text); text-shadow: 2px 2px 2px #FFFC00; background-color: unset;}
+					.bold.highlight-color--yellow {color: var(--yellow-text); text-shadow: var(--text-shadow-yellow); background-color: unset;}
 					.bold.highlight-color--green {color: var(--green-text); background-color: unset;}
 					.bold.highlight-color--blue {color: var(--blue-text); background-color: unset;}
 					.bold.highlight-color--purple {color: var(--purple-text); background-color: unset;}

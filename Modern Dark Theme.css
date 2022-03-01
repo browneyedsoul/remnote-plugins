@@ -61,6 +61,7 @@
 	--pdf-highlight-color-blue: #d2eef9;
 	--pdf-highlight-color-purple: #f5e0fe;
 	--text-shadow: 0.01em 0.01em 0.01em #727e84;
+	--text-shadow-yellow: 2px 2px 2px #E7E500;
 	--text-shadow-dark: 0.01em 0.01em 0.01em #727e84;
 }
 
@@ -887,6 +888,7 @@
 .rem-container--header-3 .bold.highlight-color--yellow {
 	background-color: unset;
 	color: var(--yellow-text);
+	text-shadow: var(--text-shadow-yellow);
 }
 .rem-container--header-1 .bold.highlight-color--green,
 .rem-container--header-2 .bold.highlight-color--green,
@@ -921,6 +923,7 @@
 .dark-mode .rem-container--header-2 .bold.highlight-color--yellow,
 .dark-mode .rem-container--header-3 .bold.highlight-color--yellow {
 	color: var(--yellow-text-dark);
+	text-shadow: unset;
 }
 .dark-mode .rem-container--header-1 .bold.highlight-color--green,
 .dark-mode .rem-container--header-2 .bold.highlight-color--green,
@@ -955,7 +958,7 @@
 }
 [data-rem-tags~=color] .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .bold.highlight-color--yellow {
 	color: var(--yellow-text);
-	text-shadow: 2px 2px 2px #FFFC00;
+	text-shadow: var(--text-shadow-yellow);
 }
 [data-rem-tags~=color] .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .bold.highlight-color--green {
 	color: var(--green-text);
@@ -977,7 +980,7 @@
 }
 .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--yellow {
 	color: var(--yellow-text);
-	text-shadow: 2px 2px 2px #FFFC00;
+	text-shadow: var(--text-shadow-yellow);
 	background-color: unset;
 }
 .rem-reference-container[data-rem-tags~=color] .rem-reference .RichTextViewer .bold.highlight-color--green {
