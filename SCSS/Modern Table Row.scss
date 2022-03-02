@@ -252,21 +252,41 @@
     [data-rem-container-tags~="table1170"] > .TreeNode > .tree-node-container > :first-child {width: 1170px !important;}
     [data-rem-container-tags~="table1200"]  > .TreeNode > .tree-node-container > :first-child {width: 1200px !important;}
 // Table Column Color Preset
-    [data-rem-tags~="tablecolor"] {
+	[data-rem-tags~="tablecolor"] {
         background-color: var(--table-columnrow-background-color);
         font-weight: bold;
         text-align: center;
+        // Prevent Line Break
+            .rem-text {
+                .EditorContainer {
+                    white-space: nowrap !important;
+
+                    .RichTextViewer {
+                        white-space: nowrap;
+                    }
+                }
+            }
+        // Declutter Tag
+            .hierarchy-editor__tag-bar__tag {
+                color: transparent;
+                background-color: transparent !important;
+
+                span {
+                    display: none;
+                }
+
+                .hierarchy-editor__tag-bar__tag__delete {
+                    opacity: .2;
+                    left: 12px;
+                }
+            }
     }
-    .dark-mode {
-        [data-rem-tags~="tablecolor"] {
-            background-color: var(--table-columnrow-background-color-dark);
+    // Darkmode
+        .dark-mode {
+            [data-rem-tags~="tablecolor"] {
+                background-color: var(--table-columnrow-background-color-dark);
+            }
         }
-    }
-    [data-rem-container-tags~="tablecolor"] {
-        .hierarchy-editor__tag-bar {
-            display: none;
-        }
-    }
 // Table Grid Scrollable
     [data-rem-container-tags~="w30"],
     [data-rem-container-tags~="w60"],

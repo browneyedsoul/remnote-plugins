@@ -853,13 +853,26 @@
 	font-weight: bold;
 	text-align: center;
 }
+[data-rem-tags~=tablecolor] .rem-text .EditorContainer {
+	white-space: nowrap !important;
+}
+[data-rem-tags~=tablecolor] .rem-text .EditorContainer .RichTextViewer {
+	white-space: nowrap;
+}
+[data-rem-tags~=tablecolor] .hierarchy-editor__tag-bar__tag {
+	color: transparent;
+	background-color: transparent !important;
+}
+[data-rem-tags~=tablecolor] .hierarchy-editor__tag-bar__tag span {
+	display: none;
+}
+[data-rem-tags~=tablecolor] .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
+	opacity: 0.2;
+	left: 12px;
+}
 
 .dark-mode [data-rem-tags~=tablecolor] {
 	background-color: var(--table-columnrow-background-color-dark);
-}
-
-[data-rem-container-tags~=tablecolor] .hierarchy-editor__tag-bar {
-	display: none;
 }
 
 [data-rem-container-tags~=w30] > .TreeNode,
