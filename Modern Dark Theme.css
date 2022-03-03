@@ -562,6 +562,17 @@
 	color: var(--red-text-dark);
 	font-weight: 600;
 }
+.tile__document > div.border-bottom-solid.bg-white > div:nth-child(3) div.react-datepicker-wrapper div.react-datepicker__input-container .button {
+	color: var(--darkmode-text) !important;
+	background-color: var(--darkmode-background-selected);
+	border-color: #8F8F8F !important;
+}
+.tile__document > div.border-bottom-solid.bg-white > div:nth-child(3) div.react-datepicker-wrapper div.react-datepicker__input-container .button:hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.tile__document > div.border-bottom-solid.bg-white > div:nth-child(3) div.react-datepicker-wrapper div.react-datepicker__input-container .button > div {
+	filter: invert(0.95);
+}
 .tile__document .document-header-top-bar {
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
@@ -680,6 +691,9 @@
 .dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--purple {
 	color: var(--purple-text-dark);
 }
+.dark-mode .tile__document .document-header-top-bar .hover\:bg-hover-bg:hover {
+	background-color: var(--darkmode-background-selected);
+}
 .dark-mode .tile__document #document {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background) !important;
@@ -701,19 +715,6 @@
 .dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.col-span-1 .hover\:bg-gray-5:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid .pr-1 {
-	color: var(--darkmode-text);
-}
-.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid .pr-1 > span > div {
-	border-style: unset;
-	background-color: var(--darkmode-background-selected);
-}
-.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid .pr-1 > span > div:hover {
-	background-color: var(--darkmode-background-selected-darker);
-}
-.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid .pr-1 .text-gray-60 {
-	color: var(--darkmode-text);
-}
 .dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.rounded-md > span .text-gray-80 {
 	color: var(--darkmode-text);
 }
@@ -722,6 +723,19 @@
 }
 .dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.rounded-md > span .bg-gray-10:hover {
 	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.rounded-md > span.pr-1 {
+	color: var(--darkmode-text);
+}
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.rounded-md > span.pr-1 > span > div {
+	border-style: unset;
+	background-color: var(--darkmode-background-selected);
+}
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.rounded-md > span.pr-1 > span > div:hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.rounded-md > span.pr-1 .text-gray-60 {
+	color: var(--darkmode-text);
 }
 .dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid [contenteditable~=false]:not(.pr-1 [contenteditable~=false]) .text-gray-60 {
 	color: var(--darkmode-contrast);
