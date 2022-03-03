@@ -486,6 +486,12 @@
 	border-color: unset;
 	background-color: var(--darkmode-background-selected-darker);
 }
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) > div > div:nth-of-type(2) > div > div {
+	border-style: unset !important;
+	color: var(--darkmode-contrast) !important;
+	opacity: 0.9;
+	zoom: 1.1;
+}
 .dark-mode [aria-label~=Omnibar] [data-omnibar-results~=true] > div:hover {
 	background-color: var(--darkmode-background-selected-darker) !important;
 }

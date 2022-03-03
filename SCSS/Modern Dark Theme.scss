@@ -664,6 +664,19 @@
 								}
 							}
 						}
+					// RightSide Description
+						> div {
+							> div:nth-of-type(2) {
+								> div {
+									> div {
+										border-style: unset !important;
+										color: var(--darkmode-contrast) !important;
+										opacity: .9;
+										zoom: 1.1;
+									}
+								}
+							}
+						}
 				}
 			// ⌘ + P Result
 				[data-omnibar-results~="true"] {
