@@ -537,7 +537,8 @@
 
 .tile__document > div.border-bottom-solid.bg-white {
 	background-color: var(--darkmode-background);
-	border-bottom-style: dashed;
+	border-bottom-style: solid;
+	border-color: var(--darkmode-background-selected);
 }
 .tile__document > div.border-bottom-solid.bg-white > div:nth-child(1) > div {
 	color: var(--darkmode-text);

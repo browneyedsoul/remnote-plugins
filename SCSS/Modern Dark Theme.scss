@@ -776,7 +776,8 @@
 		// Daily Notes Top bar
 			> div.border-bottom-solid.bg-white {
 				background-color: var(--darkmode-background);
-				border-bottom-style: dashed;
+				border-bottom-style: solid;
+				border-color: var(--darkmode-background-selected);
 
 				> div:nth-child(1) {
 					> p {
