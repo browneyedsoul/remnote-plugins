@@ -696,7 +696,7 @@
 								// Aimed Text
 									> div:nth-of-type(1) {
 										span.RichTextViewer {
-											> span.bg-warning-10 {
+											span.rounded.bg-warning-10 {
 												color: var(--red-text);
 											}
 										}
