@@ -1136,10 +1136,10 @@
 }
 
 .popup-menu .max-h-\[40vh\] {
-	max-height: 100vh;
+	max-height: 48vh;
 }
 .popup-menu > div > div.w-96 {
-	width: 36rem;
+	width: 48vw;
 }
 .popup-menu #document-hover-preview__popup span.bold > span,
 .popup-menu .popup-menu__item--static > span {

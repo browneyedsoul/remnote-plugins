@@ -1570,12 +1570,12 @@
 	.popup-menu {
 		// Hover Preview Max Height
 			.max-h-\[40vh\] {
-				max-height: 100vh;
+				max-height: 48vh;
 			}
 		// Static Preview Max Width
 			> div {
 				> div.w-96 {
-					width: 36rem;
+					width: 48vw;
 				}
 			}
 		// Popup Title - Reference & Alias
