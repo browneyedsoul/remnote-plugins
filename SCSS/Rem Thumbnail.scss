@@ -297,10 +297,14 @@
 	.rem-header--2,
 	.rem-header--3,
 	[data-rem-tags*="tn"] {
-		.inline-block,
-		.thumbnail--with-width {
-			@include thumbnail-set;
-			background-color: transparent;
+		.EditorContainer {
+			.inline-block,
+			.image-node__container,
+			.image-node,
+			.thumbnail--with-width {
+				@include thumbnail-set;
+				background-color: transparent;
+			}
 		}
 	}
 // Tag bar

@@ -241,14 +241,22 @@
 	margin-right: 2px;
 }
 
-.rem-header--1 .inline-block,
-.rem-header--1 .thumbnail--with-width,
-.rem-header--2 .inline-block,
-.rem-header--2 .thumbnail--with-width,
-.rem-header--3 .inline-block,
-.rem-header--3 .thumbnail--with-width,
-[data-rem-tags*=tn] .inline-block,
-[data-rem-tags*=tn] .thumbnail--with-width {
+.rem-header--1 .EditorContainer .inline-block,
+.rem-header--1 .EditorContainer .image-node__container,
+.rem-header--1 .EditorContainer .image-node,
+.rem-header--1 .EditorContainer .thumbnail--with-width,
+.rem-header--2 .EditorContainer .inline-block,
+.rem-header--2 .EditorContainer .image-node__container,
+.rem-header--2 .EditorContainer .image-node,
+.rem-header--2 .EditorContainer .thumbnail--with-width,
+.rem-header--3 .EditorContainer .inline-block,
+.rem-header--3 .EditorContainer .image-node__container,
+.rem-header--3 .EditorContainer .image-node,
+.rem-header--3 .EditorContainer .thumbnail--with-width,
+[data-rem-tags*=tn] .EditorContainer .inline-block,
+[data-rem-tags*=tn] .EditorContainer .image-node__container,
+[data-rem-tags*=tn] .EditorContainer .image-node,
+[data-rem-tags*=tn] .EditorContainer .thumbnail--with-width {
 	height: 1em !important;
 	width: auto !important;
 	min-width: auto !important;
