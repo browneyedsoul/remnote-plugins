@@ -1155,6 +1155,20 @@
 							.bold.highlight-color--blue {color: var(--blue-text-dark);}
 							.bold.highlight-color--purple {color: var(--purple-text-dark);}
 						}
+					// Left Bottom Border Trick
+						&::before {
+							content: "";
+							position: absolute;
+							left: 0;
+							z-index: 0;
+							
+							background-color: transparent;
+							bottom: -50px;
+							height: 50px;
+							width: 25px;
+							border-top-left-radius: 25px;
+							box-shadow: 0 -25px 0 0 var(--darkmode-background-sidebar);
+						}
 				}
 			// Document
 				#document {
@@ -1347,9 +1361,6 @@
 			}
 		}
 // Hightlight Style
-	[data-rem-tags~="highlight"] {
-		margin-right: 0.7rem;
-	}
 	// Basic Highlight Style and Font Color
 		.highlight-color--red,
 		.highlight-color--orange,
@@ -2122,7 +2133,6 @@
     [data-rem-container-tags~="aliases"] {
         border: 0.1rem solid var(--line-color);
         border-radius: 4px;
-		margin-right: 0.7rem;
 		background-color: var(--reference-background);
 
         > .tree-node--parent {

@@ -763,6 +763,18 @@
 .dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--purple {
 	color: var(--purple-text-dark);
 }
+.dark-mode .tile__document .document-header-top-bar::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	z-index: 0;
+	background-color: transparent;
+	bottom: -50px;
+	height: 50px;
+	width: 25px;
+	border-top-left-radius: 25px;
+	box-shadow: 0 -25px 0 0 var(--darkmode-background-sidebar);
+}
 .dark-mode .tile__document #document {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background) !important;
@@ -852,10 +864,6 @@
 }
 .dark-mode .rem-button__container .rem-bullet__container .rem-bullet--all-children-visible .perfect-circle__inner > svg .rem-bullet__core {
 	fill: var(--bullet-ring-color-dark);
-}
-
-[data-rem-tags~=highlight] {
-	margin-right: 0.7rem;
 }
 
 .highlight-color--red,
@@ -1523,7 +1531,6 @@
 [data-rem-container-tags~=aliases] {
 	border: 0.1rem solid var(--line-color);
 	border-radius: 4px;
-	margin-right: 0.7rem;
 	background-color: var(--reference-background);
 }
 [data-rem-container-tags~=aliases] > .tree-node--children [data-rem-container-tags~=list-item] .tree-node--parent [data-rem-tags~=list-item] .rem-text .text-icon {
