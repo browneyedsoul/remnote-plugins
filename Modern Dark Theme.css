@@ -1702,19 +1702,26 @@
 #document-sidebar #document-sidebar_top > div.p-2 .hover\:rn-clr-background-light-accent--hovered:hover {
 	background: var(--darkmode-background-selected-darker) !important;
 }
-#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 > div > span.rem-powerup-icon {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 {
+	height: 20px;
+}
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 > div > span.rem-powerup-icon {
 	filter: invert(0);
+	position: relative;
+	top: 1px;
 	margin-right: 5px;
 }
-#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 > div .RichTextViewer {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 > div .RichTextViewer {
 	color: var(--darkmode-text);
+	position: relative;
+	top: 1px;
 }
-#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer .highlight-color--red .RichTextViewer,
-#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer .highlight-color--orange .RichTextViewer,
-#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer .highlight-color--yellow .RichTextViewer,
-#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer .highlight-color--green .RichTextViewer,
-#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer .highlight-color--blue .RichTextViewer,
-#document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer .highlight-color--purple .RichTextViewer {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--red .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--orange .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--yellow .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--green .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--blue .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--purple .RichTextViewer {
 	color: black !important;
 	padding-left: 3px;
 }
@@ -1755,9 +1762,6 @@
 #document-sidebar .highlight-color--blue .RichTextViewer,
 #document-sidebar .highlight-color--purple .RichTextViewer {
 	padding-left: 3px;
-}
-#document-sidebar .p-2.flex.group-hover-bg-hover-bg-transparent {
-	height: 17px !important;
 }
 #document-sidebar .document-list-item__folder-icon {
 	color: #C7C7C7;

@@ -2477,50 +2477,46 @@
         }
     // Sidebar Middle (Item)
         > div:nth-of-type(2) {
-            > div {
-                > div {
-                    > div {
-                        .p-2 {
-                            
-                        }
-                        [data-type~="document_list_item"] {
-                            > div {
-                                > span.block.group.cursor-pointer {
-                                    > div.rounded-md.text-sm.overflow-hidden.text-gray-60 {
-                                        > div.p-2 {
-                                            > div {
-                                                // Power-up Symbol
-                                                    > span.rem-powerup-icon {
-                                                        filter: invert(0);
-														margin-right: 5px;
+			[data-type~="document_list_item"] {
+				span.block.group.cursor-pointer {
+					> div.rounded-md.text-sm.overflow-hidden.text-gray-60 {
+						> div.p-2 {
+							// Sidebar list item height
+							height: 20px;
 
-                                                        > svg.text-icon {
-                                                            // 
-                                                        }
-                                                    }
-                                                .RichTextViewer {
-                                                    color: var(--darkmode-text);
-                                                }
-                                            }
-                                        }
-                                    }
-                                    .highlight-color--red,
-                                    .highlight-color--orange,
-                                    .highlight-color--yellow,
-                                    .highlight-color--green,
-                                    .highlight-color--blue,
-                                    .highlight-color--purple {
-                                        .RichTextViewer {
-                                            color: black !important;
-                                            padding-left: 3px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+							> div {
+								// Power-up Symbol
+									> span.rem-powerup-icon {
+										filter: invert(0);
+										position: relative;
+										top: 1px;
+										margin-right: 5px;
+
+										> svg.text-icon {
+											// 
+										}
+									}
+								.RichTextViewer {
+									color: var(--darkmode-text);
+									position: relative;
+									top: 1px;
+								}
+							}
+						}
+					}
+					.highlight-color--red,
+					.highlight-color--orange,
+					.highlight-color--yellow,
+					.highlight-color--green,
+					.highlight-color--blue,
+					.highlight-color--purple {
+						.RichTextViewer {
+							color: black !important;
+							padding-left: 3px;
+						}
+					}
+				}
+			}
         }
     // Sidebar list Arrow line Alignment
         .flex-grow.nowrap-RichTextViewer:only-child {
@@ -2554,10 +2550,6 @@
             .RichTextViewer {
                 padding-left: 3px;
             }
-        }
-    // Sidebar list item height
-        .p-2.flex.group-hover-bg-hover-bg-transparent {
-            height: 17px !important;
         }
     // Sidebar list item icon
         .document-list-item__folder-icon {
