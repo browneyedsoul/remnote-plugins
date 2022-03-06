@@ -113,19 +113,41 @@
 	// 		}
 	// 	}
 	// }
-// Document Title
-	#DocumentTitle {
-		.inline-block,
-		.thumbnail--with-width {
-			@include thumbnail-set;
+// Document Top
+	#tile__document {
+		// Page Hierarchy
+		.document-header-top-bar {
+			.inline-block,
+			.image-node__container,
+			.image-node,
+			.thumbnail--with-width {
+				@include thumbnail-set;
+				color: #2B3137;
+			}
 		}
-	}
-// Page Hierarchy
-	.document-header-top-bar {
-		.inline-block,
-		.thumbnail--with-width {
-			@include thumbnail-set;
-			color: #2B3137;
+		// Page
+		#document {
+			#DocumentTopRow {
+				#DropToOpenAsDocument {
+					// Document Top Row Tag Bar
+					.inline-block,
+					.image-node__container,
+					.image-node,
+					.thumbnail--with-width {
+						@include thumbnail-set;
+					}
+					
+					#DocumentTitle {
+						.inline-block,
+						.image-node__container,
+						.image-node,
+						.thumbnail--with-width {
+							@include thumbnail-set;
+							margin-top: 1px;
+						}
+					}
+				}
+			}
 		}
 	}
 // Hidden Page Hierarchy Style
@@ -308,12 +330,6 @@
 		}
 	}
 // Tag bar
-	#DropToOpenAsDocument {
-		.inline-block,
-		.thumbnail--with-width {
-			@include thumbnail-set;
-		}
-	}
 	.hierarchy-editor__tag-bar__tag {
 		.inline-block,
 		.inline-block.align-text-top.group,

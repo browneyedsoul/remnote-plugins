@@ -81,21 +81,34 @@
 	margin-right: 2px;
 }
 
-#DocumentTitle .inline-block,
-#DocumentTitle .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-}
-
-.document-header-top-bar .inline-block,
-.document-header-top-bar .thumbnail--with-width {
+#tile__document .document-header-top-bar .inline-block,
+#tile__document .document-header-top-bar .image-node__container,
+#tile__document .document-header-top-bar .image-node,
+#tile__document .document-header-top-bar .thumbnail--with-width {
 	height: 1em !important;
 	width: auto !important;
 	min-width: auto !important;
 	margin-right: 2px;
 	color: #2B3137;
+}
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument .inline-block,
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument .image-node__container,
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument .image-node,
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument .thumbnail--with-width {
+	height: 1em !important;
+	width: auto !important;
+	min-width: auto !important;
+	margin-right: 2px;
+}
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .inline-block,
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .image-node__container,
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .image-node,
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .thumbnail--with-width {
+	height: 1em !important;
+	width: auto !important;
+	min-width: auto !important;
+	margin-right: 2px;
+	margin-top: 1px;
 }
 
 .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
@@ -262,14 +275,6 @@
 	min-width: auto !important;
 	margin-right: 2px;
 	background-color: transparent;
-}
-
-#DropToOpenAsDocument .inline-block,
-#DropToOpenAsDocument .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
 }
 
 .hierarchy-editor__tag-bar__tag .inline-block,
