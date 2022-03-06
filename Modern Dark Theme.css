@@ -589,9 +589,6 @@
 .tile__document .document-header-top-bar div:nth-of-type(1) .flex {
 	display: inline;
 }
-.tile__document .document-header-top-bar div:nth-of-type(1) .flex > span {
-	vertical-align: bottom;
-}
 .tile__document .document-header-top-bar div:nth-of-type(1) .parent-link {
 	color: var(--darkmode-text);
 	border: 1px solid #7F7F7F;
@@ -600,6 +597,10 @@
 }
 .tile__document .document-header-top-bar div:nth-of-type(1) .parent-link:hover {
 	background-color: var(--darkmode-background-selected-darker);
+}
+.tile__document .document-header-top-bar div:nth-of-type(1) .parent-link + span.text-gray-40 {
+	position: relative;
+	top: 3px;
 }
 .tile__document .document-header-top-bar .flex-nowrap {
 	flex-wrap: wrap;
@@ -701,12 +702,6 @@
 .dark-mode .tile__document .document-header-top-bar div:nth-of-type(1) > div {
 	flex-wrap: wrap;
 	overflow-wrap: normal;
-}
-.dark-mode .tile__document .document-header-top-bar div:nth-of-type(1) .flex {
-	display: inline;
-}
-.dark-mode .tile__document .document-header-top-bar div:nth-of-type(1) .flex > span {
-	vertical-align: bottom;
 }
 .dark-mode .tile__document .document-header-top-bar div:nth-of-type(1) .parent-link {
 	color: var(--darkmode-text);

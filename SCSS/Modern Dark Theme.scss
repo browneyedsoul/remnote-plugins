@@ -862,10 +862,6 @@
 
 						.flex {
 							display: inline;
-
-							> span {
-								vertical-align: bottom;
-							}
 						}
 						// Hierarchy item
 							.parent-link {
@@ -876,6 +872,11 @@
 
 								&:hover {
 									background-color: var(--darkmode-background-selected-darker);
+								}
+
+								+ span.text-gray-40 {
+									position: relative;
+									top: 3px;
 								}
 							}
 						
@@ -1091,13 +1092,6 @@
 								overflow-wrap: normal;
 							}
 
-							.flex {
-								display: inline;
-
-								> span {
-									vertical-align: bottom;
-								}
-							}
 							// Hierarchy item
 								.parent-link {
 									color: var(--darkmode-text);
