@@ -752,28 +752,8 @@
 					&.border-bottom-solid {
 						border-bottom-style: unset;
 					}
-					> div:nth-of-type(2) {
-						.block {
-							.bg-gray-5 {
-								background-color: var(--darkmode-background-selected-darker) !important;
-							}
-							.hover\:bg-hover-bg:hover {
-								background-color: #000 !important;
-							}
-						}
-						// Page Right-Top 3dots
-							span.document__options-menu {
-								div.icon-button {
-									.fill-current {
-										filter: invert(1);
-									}
-								}
-							}
-					}
 				}
 				div#document {
-					
-
 					#hierarchy-editor {
 						.tree-node--parent {
 							.rem-container {
@@ -867,13 +847,14 @@
 			}
 		// Document Header Top Bar
 			.document-header-top-bar {
+				color: var(--darkmode-text);
+				background-color: var(--darkmode-background);
 				height: fit-content;
-				padding: 0.2rem 0.2rem 0 0.2rem;
+				padding: 0.3rem;
 
 				// Page Hierarchy
-					div.fadein-delayed {
-						margin-left: 5px;
-
+					div:nth-of-type(1) {
+						// Multi Line Breadcrumbs
 						> div {
 							flex-wrap: wrap;
 							overflow-wrap: normal;
@@ -886,18 +867,29 @@
 								vertical-align: bottom;
 							}
 						}
+						// Hierarchy item
+							.parent-link {
+								color: var(--darkmode-text);
+								border: 1px solid #7F7F7F;
+								margin-top: 2px;
+								margin-bottom: 2px;
+
+								&:hover {
+									background-color: var(--darkmode-background-selected-darker);
+								}
+							}
 						
 					}
 				// Multi Line Breadcrumbs
 					.flex-nowrap {
 						flex-wrap: wrap;
 					}
-				//  3-Dots
-					div.justify-end {
+				// 3-Dots
+					div:nth-of-type(2) {
 						.document__options-menu {
 							.icon-button {
 								.fill-current {
-									color: #2A2A36;
+									color: var(--darkmode-text);
 								}
 							}
 						}
@@ -905,6 +897,23 @@
 				// Merge Button
 					.w-max[color="#292936"] {
 						color: unset;
+					}
+				// Bold Highlights
+					.RichTextViewer {
+						.bold.highlight-color--red,
+						.bold.highlight-color--orange,
+						.bold.highlight-color--yellow,
+						.bold.highlight-color--green,
+						.bold.highlight-color--blue,
+						.bold.highlight-color--purple {
+						background-color: transparent;
+						}
+						.bold.highlight-color--red {color: var(--red-text-dark);}
+						.bold.highlight-color--orange {color: var(--orange-text-dark);}
+						.bold.highlight-color--yellow {color: var(--yellow-text-dark);}
+						.bold.highlight-color--green {color: var(--green-text-dark);}
+						.bold.highlight-color--blue {color: var(--blue-text-dark);}
+						.bold.highlight-color--purple {color: var(--purple-text-dark);}
 					}
 			}
 		// Document
@@ -1072,32 +1081,61 @@
 			// Document Header Top Bar
 				.document-header-top-bar {
 					color: var(--darkmode-text);
-					background-color: var(--darkmode-background-sidebar) !important;
+					background-color: var(--darkmode-background-sidebar);
 
-					.parent-link {
-						color: var(--darkmode-text);
-						background-color: transparent;
-						border: 1px solid #7F8094;
-					}
-					.RichTextViewer {
-						.bold.highlight-color--red,
-						.bold.highlight-color--orange,
-						.bold.highlight-color--yellow,
-						.bold.highlight-color--green,
-						.bold.highlight-color--blue,
-						.bold.highlight-color--purple {
-							background-color: transparent;
+					// Page Hierarchy
+						div:nth-of-type(1) {
+							// Multi Line Breadcrumbs
+							> div {
+								flex-wrap: wrap;
+								overflow-wrap: normal;
+							}
+
+							.flex {
+								display: inline;
+
+								> span {
+									vertical-align: bottom;
+								}
+							}
+							// Hierarchy item
+								.parent-link {
+									color: var(--darkmode-text);
+									border: 1px solid #7F8094;
+									margin-top: 2px;
+									margin-bottom: 2px;
+
+									&:hover {
+										background-color: var(--darkmode-background-selected-darker);
+									}
+								}
 						}
-						.bold.highlight-color--red {color: var(--red-text-dark);}
-						.bold.highlight-color--orange {color: var(--orange-text-dark);}
-						.bold.highlight-color--yellow {color: var(--yellow-text-dark);}
-						.bold.highlight-color--green {color: var(--green-text-dark);}
-						.bold.highlight-color--blue {color: var(--blue-text-dark);}
-						.bold.highlight-color--purple {color: var(--purple-text-dark);}
-					}
-					// Hover Effect
-						.hover\:bg-hover-bg:hover {
-							background-color: var(--darkmode-background-selected);
+					// 3-Dots
+						div:nth-of-type(2) {
+							.document__options-menu {
+								.icon-button {
+									.fill-current {
+										color: var(--darkmode-text);
+									}
+								}
+							}
+						}
+					// Bold Highlights
+						.RichTextViewer {
+							.bold.highlight-color--red,
+							.bold.highlight-color--orange,
+							.bold.highlight-color--yellow,
+							.bold.highlight-color--green,
+							.bold.highlight-color--blue,
+							.bold.highlight-color--purple {
+								background-color: transparent;
+							}
+							.bold.highlight-color--red {color: var(--red-text-dark);}
+							.bold.highlight-color--orange {color: var(--orange-text-dark);}
+							.bold.highlight-color--yellow {color: var(--yellow-text-dark);}
+							.bold.highlight-color--green {color: var(--green-text-dark);}
+							.bold.highlight-color--blue {color: var(--blue-text-dark);}
+							.bold.highlight-color--purple {color: var(--purple-text-dark);}
 						}
 				}
 			// Document
