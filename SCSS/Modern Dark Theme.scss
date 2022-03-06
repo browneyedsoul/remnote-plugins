@@ -242,9 +242,9 @@
 				}
 			// Power-up icon
 				.rem-powerup-icon {
-					margin-right: 5px;
-
-					.text-icon {color: var(--darkmode-text);}
+					.text-icon {
+						color: var(--darkmode-text);
+					}
 				} 
 		}
 	// Codeblock
@@ -851,6 +851,7 @@
 				background-color: var(--darkmode-background);
 				height: fit-content;
 				padding: 0.3rem;
+				position: relative;
 
 				// Page Hierarchy
 					div:nth-of-type(1) {
@@ -915,6 +916,20 @@
 						.bold.highlight-color--green {color: var(--green-text-dark);}
 						.bold.highlight-color--blue {color: var(--blue-text-dark);}
 						.bold.highlight-color--purple {color: var(--purple-text-dark);}
+					}
+				// Left Bottom Border Trick
+					&::before {
+						content: "";
+						position: absolute;
+						left: 0;
+						z-index: -2;
+						
+						background-color: transparent;
+						bottom: -50px;
+						height: 50px;
+						width: 25px;
+						border-top-left-radius: 25px;
+						box-shadow: 0 -25px 0 0 var(--darkmode-background);
 					}
 			}
 		// Document
@@ -2444,6 +2459,7 @@
                                                 // Power-up Symbol
                                                     > span.rem-powerup-icon {
                                                         filter: invert(0);
+														margin-right: 5px;
 
                                                         > svg.text-icon {
                                                             // 

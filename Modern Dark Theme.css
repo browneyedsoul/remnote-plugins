@@ -202,9 +202,6 @@
 .dark-mode .rem-calendar-icon.text-text {
 	color: var(--darkmode-text);
 }
-.dark-mode .rem-powerup-icon {
-	margin-right: 5px;
-}
 .dark-mode .rem-powerup-icon .text-icon {
 	color: var(--darkmode-text);
 }
@@ -581,6 +578,7 @@
 	height: -moz-fit-content;
 	height: fit-content;
 	padding: 0.3rem;
+	position: relative;
 }
 .tile__document .document-header-top-bar div:nth-of-type(1) > div {
 	flex-wrap: wrap;
@@ -636,6 +634,18 @@
 }
 .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--purple {
 	color: var(--purple-text-dark);
+}
+.tile__document .document-header-top-bar::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	z-index: -2;
+	background-color: transparent;
+	bottom: -50px;
+	height: 50px;
+	width: 25px;
+	border-top-left-radius: 25px;
+	box-shadow: 0 -25px 0 0 var(--darkmode-background);
 }
 .tile__document #document {
 	width: calc(100% - 2 * var(--document-margin) - 30px);
@@ -1670,6 +1680,7 @@
 }
 #document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 > div > span.rem-powerup-icon {
 	filter: invert(0);
+	margin-right: 5px;
 }
 #document-sidebar > div:nth-of-type(2) > div > div > div [data-type~=document_list_item] > div > span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 > div .RichTextViewer {
 	color: var(--darkmode-text);
