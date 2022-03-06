@@ -855,6 +855,8 @@
 
 				// Page Hierarchy
 					div:nth-of-type(1) {
+						z-index: 1;
+						
 						// Multi Line Breadcrumbs
 						> div {
 							flex-wrap: wrap;
@@ -922,7 +924,7 @@
 						content: "";
 						position: absolute;
 						left: 0;
-						z-index: -2;
+						z-index: 0;
 						
 						background-color: transparent;
 						bottom: -50px;
@@ -934,11 +936,14 @@
 			}
 		// Document
 			#document {
-				width: calc(100% - 2 * var(--document-margin) - 30px);
-				padding: 0px 0px 0px 30px;
+				width: 100%;
+				margin-left: 0;
+				padding: 0;
 
 				// DocumentTopRow
 					#DocumentTopRow {
+						margin-left: 45px;
+
 						#DropToOpenAsDocument {
 							> div {
 								// Custom CSS Page Alert Area
@@ -994,6 +999,9 @@
 					}
 				// hierarchy-editor
 					#hierarchy-editor {
+						margin-left: 45px;
+						margin-right: 5px;
+
 						// Find / Filter / Replace - Ctrl(⌘) + F
 							#hierarchy-editor__ctrl-f {
 								background-color: var(--darkmode-background);

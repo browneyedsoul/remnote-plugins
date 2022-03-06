@@ -580,6 +580,9 @@
 	padding: 0.3rem;
 	position: relative;
 }
+.tile__document .document-header-top-bar div:nth-of-type(1) {
+	z-index: 1;
+}
 .tile__document .document-header-top-bar div:nth-of-type(1) > div {
 	flex-wrap: wrap;
 	overflow-wrap: normal;
@@ -639,7 +642,7 @@
 	content: "";
 	position: absolute;
 	left: 0;
-	z-index: -2;
+	z-index: 0;
 	background-color: transparent;
 	bottom: -50px;
 	height: 50px;
@@ -648,8 +651,12 @@
 	box-shadow: 0 -25px 0 0 var(--darkmode-background);
 }
 .tile__document #document {
-	width: calc(100% - 2 * var(--document-margin) - 30px);
-	padding: 0px 0px 0px 30px;
+	width: 100%;
+	margin-left: 0;
+	padding: 0;
+}
+.tile__document #document #DocumentTopRow {
+	margin-left: 45px;
 }
 .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div > div#DocumentTitle > div.document-title .rem-powerup-icon {
 	position: relative;
@@ -657,6 +664,10 @@
 }
 .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div > div#DocumentTitle > div.document-title .rem-powerup-icon .text-icon {
 	vertical-align: middle;
+}
+.tile__document #document #hierarchy-editor {
+	margin-left: 45px;
+	margin-right: 5px;
 }
 .tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f {
 	background-color: var(--darkmode-background);
