@@ -589,6 +589,9 @@
 	height: fit-content;
 	padding: 0.2rem 0.2rem 0 0.2rem;
 }
+.tile__document .document-header-top-bar div.fadein-delayed {
+	margin-left: 5px;
+}
 .tile__document .document-header-top-bar div.fadein-delayed > div {
 	flex-wrap: wrap;
 	overflow-wrap: normal;

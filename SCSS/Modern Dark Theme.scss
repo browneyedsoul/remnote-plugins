@@ -872,6 +872,8 @@
 
 				// Page Hierarchy
 					div.fadein-delayed {
+						margin-left: 5px;
+
 						> div {
 							flex-wrap: wrap;
 							overflow-wrap: normal;
