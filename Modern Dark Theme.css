@@ -657,6 +657,7 @@
 }
 .tile__document #document #DocumentTopRow {
 	margin-left: 45px;
+	margin-right: 5px;
 }
 .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div > div#DocumentTitle > div.document-title .rem-powerup-icon {
 	position: relative;
