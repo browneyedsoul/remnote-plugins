@@ -726,15 +726,29 @@
 		}
 	}
 // Mosaic Windowed panes
-	.dark-mode {
-		.mosaic.mosaic-blueprint-theme {
-			.mosaic-preview,
+	.mosaic {
+		.mosaic-tile {
 			.mosaic-window {
 				.mosaic-window-toolbar.draggable {
-					background-color: var(--darkmode-background-sidebar);
+					background-color: var(--darkmode-background);
 
 					&:hover {
+						background-color: var(--darkmode-background-selected-darker);
+					}
+				}
+			}
+		}
+	}
+	.dark-mode {
+		.mosaic {
+			.mosaic-tile {
+				.mosaic-window {
+					.mosaic-window-toolbar.draggable {
 						background-color: var(--darkmode-background-sidebar);
+
+						&:hover {
+							background-color: var(--darkmode-background-selected-darker);
+						}
 					}
 				}
 			}
