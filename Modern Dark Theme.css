@@ -1452,7 +1452,7 @@
 	color: var(--reference-text);
 }
 
-.rem-reference-container .rem-reference .RichTextViewer {
+.rem-reference-container .rem-reference .RichTextViewer:not([data-rem-tags~=emoji] .RichTextViewer) {
 	color: var(--reference-text);
 	background-color: #E1E5F8;
 	font-family: "Roboto Mono", monospace !important;
@@ -1474,7 +1474,7 @@
 .dark-mode .rem-reference-container .rem-reference {
 	color: var(--reference-text-dark);
 }
-.dark-mode .rem-reference-container .rem-reference .RichTextViewer {
+.dark-mode .rem-reference-container .rem-reference .RichTextViewer:not([data-rem-tags~=emoji] .RichTextViewer) {
 	color: var(--reference-text-dark);
 	background-color: #202020;
 }

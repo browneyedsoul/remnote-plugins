@@ -2050,7 +2050,7 @@
 	}
     .rem-reference-container {
         .rem-reference {
-            .RichTextViewer {
+            .RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
                 color: var(--reference-text);
                 background-color: #E1E5F8;
                 font-family: 'Roboto Mono', monospace !important;
@@ -2114,7 +2114,7 @@
                     .rem-reference {
 						color: var(--reference-text-dark);
 
-                        .RichTextViewer {
+                        .RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
                             color: var(--reference-text-dark);
                             background-color: #202020;
                         }
