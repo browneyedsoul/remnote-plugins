@@ -1880,12 +1880,16 @@
 }
 
 .document-sidebar--collapsed--vertical {
-	background-color: var(--darkmode-background-sidebar);
+	background-color: var(--darkmode-background);
 	width: 25px;
 }
 .document-sidebar--collapsed--vertical > div > div > div {
 	position: relative;
 	left: -6px;
+}
+
+.dark-mode .document-sidebar--collapsed--vertical {
+	background-color: var(--darkmode-background-sidebar);
 }
 
 .dark-mode .bg-blue-5 {

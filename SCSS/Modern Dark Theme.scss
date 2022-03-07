@@ -2714,7 +2714,7 @@
 		}
 // Side Bar - Collapsed
 	.document-sidebar--collapsed--vertical {
-		background-color: var(--darkmode-background-sidebar);
+		background-color: var(--darkmode-background);
 		width: 25px;
 
 		> div {
@@ -2724,6 +2724,11 @@
 					left: -6px;
 				}
 			}
+		}
+	}
+	.dark-mode {
+		.document-sidebar--collapsed--vertical {
+			background-color: var(--darkmode-background-sidebar);
 		}
 	}
 // Context Menu
