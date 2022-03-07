@@ -975,6 +975,7 @@
 }
 .dark-mode #DocumentTitle .bold.highlight-color--yellow {
 	color: var(--yellow-text-dark);
+	text-shadow: unset;
 }
 .dark-mode #DocumentTitle .bold.highlight-color--green {
 	color: var(--green-text-dark);
