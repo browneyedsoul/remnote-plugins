@@ -38,7 +38,7 @@
 	--yellow-text-dark: #ffdf0b;
 	--green-text: #34a853;
 	--green-text-dark: #44dd66;
-	--blue-text: #579aff;
+	--blue-text: #3C85FF;
 	--blue-text-dark: #98bfe2;
 	--purple-text: #a142f4;
 	--purple-text-dark: #bf96f4;
@@ -955,6 +955,7 @@
 }
 #DocumentTitle .bold.highlight-color--yellow {
 	color: var(--yellow-text);
+	text-shadow: var(--text-shadow-yellow);
 }
 #DocumentTitle .bold.highlight-color--green {
 	color: var(--green-text);
