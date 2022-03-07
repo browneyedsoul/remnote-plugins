@@ -36,6 +36,10 @@ Hidden Features
   - You don't have to worry about overflowed pages breadcrumbs hidden
   <img src="https://user-images.githubusercontent.com/56161102/147359607-9d06984a-af5c-4c42-819f-b75c8b38a802.png">
   <img src="https://user-images.githubusercontent.com/56161102/147359654-4681a66a-f774-43f9-93ae-e6057db4cef6.png">
+  <img src="Assets/Modern Dark Theme - Timetable1-Lightmode.png">
+  <img src="Assets/Modern Dark Theme - Timetable2-Darkmode.png">
+  <img src="Assets/Modern Dark Theme - PageWithCoverPhoto-Lightmode.png">
+  <img src="Assets/Modern Dark Theme - PageWithCoverPhoto-Darkmode.png">
 
 </details>
 
