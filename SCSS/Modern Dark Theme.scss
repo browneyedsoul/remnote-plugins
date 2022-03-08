@@ -2521,10 +2521,14 @@
         > div:nth-of-type(2) {
 			[data-type~="document_list_item"] {
 				span.block.group.cursor-pointer {
-					> div.rounded-md.text-sm.overflow-hidden.text-gray-60 {
+					> div.rounded-md {
 						> div.p-2 {
 							// Sidebar list item height
 							height: 20px;
+							// Focused item Placement
+							&.group-hover\:rn-clr-background-light-accent--hovered {
+								margin-left: -2px;
+							}
 
 							> div {
 								// Power-up Symbol

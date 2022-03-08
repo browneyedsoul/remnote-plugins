@@ -1727,21 +1727,24 @@ body.old-dark-mode .dark-mode-background {
 #document-sidebar #document-sidebar_top > div.p-2 .hover\:rn-clr-background-light-accent--hovered:hover {
 	background: var(--darkmode-background-selected-darker) !important;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 {
 	height: 20px;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 > div > span.rem-powerup-icon {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2.group-hover\:rn-clr-background-light-accent--hovered {
+	margin-left: -2px;
+}
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div > span.rem-powerup-icon {
 	filter: invert(0);
 	position: relative;
 	top: 1px;
 	margin-right: 5px;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 > div .RichTextViewer {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer {
 	color: var(--darkmode-text);
 	position: relative;
 	top: 1px;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 > div:only-child {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div:only-child {
 	margin-left: 24px;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--red .RichTextViewer,
