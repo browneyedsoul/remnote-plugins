@@ -1358,6 +1358,12 @@ body.old-dark-mode .dark-mode-background {
 	background-color: var(--popup-background-hover);
 }
 
+.dark-mode #Popup #PopupContent > div:nth-of-type(2) {
+	color: var(--darkmode-text);
+}
+.dark-mode #Popup #PopupContent > div:nth-of-type(2) .RichTextViewer {
+	color: var(--darkmode-contrast);
+}
 .dark-mode #Popup #PopupContent #delete-confirm-popup {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);

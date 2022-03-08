@@ -1867,6 +1867,16 @@
 	.dark-mode {
 		#Popup {
 			#PopupContent {
+				// Quick Add Popup
+				> div:nth-of-type(2) {
+					color: var(--darkmode-text);
+
+					.RichTextViewer {
+						color: var(--darkmode-contrast);
+					}
+				}
+
+
 				#delete-confirm-popup {
 					color: var(--darkmode-text);
 					background-color: var(--darkmode-background);
