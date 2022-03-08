@@ -498,7 +498,7 @@
 .dark-mode [aria-label~=Omnibar] [data-omnibar-results~=true] > div > div:nth-of-type(2) {
 	flex-direction: column-reverse !important;
 }
-.dark-mode [aria-label~=Omnibar] [data-omnibar-results~=true] > div > div:nth-of-type(2) > div:nth-of-type(1) span.RichTextViewer span.rounded.bg-warning-10 {
+.dark-mode [aria-label~=Omnibar] [data-omnibar-results~=true] > div > div:nth-of-type(2) > div:nth-of-type(1) span.RichTextViewer span.rounded {
 	color: var(--red-text);
 }
 .dark-mode [aria-label~=Omnibar] [data-omnibar-results~=true] > div > div:nth-of-type(2) > div:nth-of-type(2) {
