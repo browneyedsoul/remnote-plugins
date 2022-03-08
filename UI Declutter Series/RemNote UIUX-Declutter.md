@@ -21,15 +21,21 @@
 }
  ```
 
-## Move Omni Help Button to Top right
+## Move Omni Help Button for Content Visibility
 
 ```css
 #help-button {
-    position: fixed;
-	top: 4px;
-	right: 48px;
-	transform: scale(0.8);
-	border-radius: 5px;
+	position: fixed;
+	bottom: 2px;
+	right: 2px;
+	border-radius: 10px;
+	color: #FFF;
+	background-color: #252525;
+	border:1px solid #FFF; 
+
+}
+#help-button:hover {
+	color: red;
 }
  ```
 
