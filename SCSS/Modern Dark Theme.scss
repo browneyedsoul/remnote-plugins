@@ -1679,6 +1679,10 @@
 		[data-rem-container-tags~="aliases"] {
 			margin-top: 5px;
 		}
+
+		> div#SearchPopup {
+			width: 80vw;
+		}
 	}
 	// Darkmode Compatibility
 		.popup-menu.dark-mode {
@@ -1871,8 +1875,18 @@
 				> div:nth-of-type(2) {
 					color: var(--darkmode-text);
 
-					.RichTextViewer {
-						color: var(--darkmode-contrast);
+					div.text-ellipsis {
+						> div:nth-of-type(1) {
+							.RichTextViewer {
+								color: var(--darkmode-contrast);
+							}
+						}
+						> div:nth-of-type(2) {
+							> svg {
+								fill: var(--darkmode-contrast) !important;
+								color: var(--darkmode-contrast) !important;
+							}
+						}
 					}
 				}
 
