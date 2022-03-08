@@ -21,11 +21,13 @@
 }
  ```
 
-## Hide Help Button
+## Move Omni Help Button to top left
 
 ```css
 #help-button {
-    visibility: hidden;
+    position: fixed;
+	top: 17px;
+	left: 14px;
 }
  ```
 
