@@ -21,13 +21,15 @@
 }
  ```
 
-## Move Omni Help Button to top left
+## Move Omni Help Button to Top right
 
 ```css
 #help-button {
     position: fixed;
-	top: 17px;
-	left: 14px;
+	top: 4px;
+	right: 48px;
+	transform: scale(0.8);
+	border-radius: 5px;
 }
  ```
 
