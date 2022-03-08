@@ -2317,12 +2317,12 @@
 		}
 // Side Bar
 	#document-sidebar {
-    // Basic Light Mode
+	// Basic Style
         background-color: var(--darkmode-background);
 
         + div {
             > div {
-                color: var(--darkmode-contrast);
+				// Remove white-coloured line
                 background-color: var(--darkmode-background);
             }
         }
@@ -2529,6 +2529,10 @@
 									position: relative;
 									top: 1px;
 								}
+								// Sidebar list Arrow line Alignment
+								&:only-child {
+									margin-left: 24px;
+								}
 							}
 						}
 					}
@@ -2543,12 +2547,30 @@
 							padding-left: 3px;
 						}
 					}
+					// Sidebar list item focused
+						> div.rounded-md.rn-clr-background-light-accent {
+							background-color: transparent !important;
+							border: 2px solid var(--darkmode-contrast) !important;
+
+							.RichTextViewer {
+								color: white;
+							}
+							.group-hover\:rn-clr-background-light-accent--hovered {
+								background-color: var(--darkmode-background-selected-darker) !important;
+							}
+						}
+						.rounded-md.highlight-color--red,
+						.rounded-md.highlight-color--orange,
+						.rounded-md.highlight-color--yellow,
+						.rounded-md.highlight-color--green,
+						.rounded-md.highlight-color--blue,
+						.rounded-md.highlight-color--purple {
+							.RichTextViewer {
+								color: black;
+							}
+						}
 				}
 			}
-        }
-    // Sidebar list Arrow line Alignment
-        .flex-grow.nowrap-RichTextViewer:only-child {
-            margin-left: 24px;
         }
     // Make Menu Background Highlight Compact
         .rounded-md {
@@ -2568,7 +2590,6 @@
             &.highlight-color--purple .p-2 .text-gray-60 {background-color: var(--highlight-color--purple-dark); border-radius: 4px;}
         }
         
-
         .highlight-color--red,
         .highlight-color--orange,
         .highlight-color--yellow,
@@ -2594,28 +2615,6 @@
                 }
             }
         } 
-    // Sidebar list item focused
-        .rn-clr-background-light-accent {
-            background-color: transparent !important;
-            border: 2px solid var(--darkmode-contrast) !important;
-
-            .RichTextViewer {
-                color: white;
-            }
-            .group-hover\:rn-clr-background-light-accent--hovered {
-                background-color: var(--darkmode-background-selected-darker) !important;
-            }
-        }
-        .rounded-md.highlight-color--red,
-        .rounded-md.highlight-color--orange,
-        .rounded-md.highlight-color--yellow,
-        .rounded-md.highlight-color--green,
-        .rounded-md.highlight-color--blue,
-        .rounded-md.highlight-color--purple {
-            .RichTextViewer {
-                color: black;
-            }
-        }
     // Sidebar list item Padding
         .p-2 {
             padding: 0.5rem;

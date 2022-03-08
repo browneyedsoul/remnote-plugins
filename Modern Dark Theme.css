@@ -1610,7 +1610,6 @@ body.old-dark-mode .dark-mode-background {
 	background-color: var(--darkmode-background);
 }
 #document-sidebar + div > div {
-	color: var(--darkmode-contrast);
 	background-color: var(--darkmode-background);
 }
 #document-sidebar .w-\[calc\(100\%-16px\)\] {
@@ -1735,6 +1734,9 @@ body.old-dark-mode .dark-mode-background {
 	position: relative;
 	top: 1px;
 }
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.text-sm.overflow-hidden.text-gray-60 > div.p-2 > div:only-child {
+	margin-left: 24px;
+}
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--red .RichTextViewer,
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--orange .RichTextViewer,
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--yellow .RichTextViewer,
@@ -1744,8 +1746,23 @@ body.old-dark-mode .dark-mode-background {
 	color: black !important;
 	padding-left: 3px;
 }
-#document-sidebar .flex-grow.nowrap-RichTextViewer:only-child {
-	margin-left: 24px;
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.rn-clr-background-light-accent {
+	background-color: transparent !important;
+	border: 2px solid var(--darkmode-contrast) !important;
+}
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.rn-clr-background-light-accent .RichTextViewer {
+	color: white;
+}
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.rn-clr-background-light-accent .group-hover\:rn-clr-background-light-accent--hovered {
+	background-color: var(--darkmode-background-selected-darker) !important;
+}
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--red .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--orange .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--yellow .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--green .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--blue .RichTextViewer,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--purple .RichTextViewer {
+	color: black;
 }
 #document-sidebar .rounded-md.highlight-color--red, #document-sidebar .rounded-md.highlight-color--orange, #document-sidebar .rounded-md.highlight-color--yellow, #document-sidebar .rounded-md.highlight-color--green, #document-sidebar .rounded-md.highlight-color--blue, #document-sidebar .rounded-md.highlight-color--purple {
 	background-color: transparent;
@@ -1790,24 +1807,6 @@ body.old-dark-mode .dark-mode-background {
 }
 #document-sidebar .block .RichTextViewer .bold {
 	margin-left: 5px;
-}
-#document-sidebar .rn-clr-background-light-accent {
-	background-color: transparent !important;
-	border: 2px solid var(--darkmode-contrast) !important;
-}
-#document-sidebar .rn-clr-background-light-accent .RichTextViewer {
-	color: white;
-}
-#document-sidebar .rn-clr-background-light-accent .group-hover\:rn-clr-background-light-accent--hovered {
-	background-color: var(--darkmode-background-selected-darker) !important;
-}
-#document-sidebar .rounded-md.highlight-color--red .RichTextViewer,
-#document-sidebar .rounded-md.highlight-color--orange .RichTextViewer,
-#document-sidebar .rounded-md.highlight-color--yellow .RichTextViewer,
-#document-sidebar .rounded-md.highlight-color--green .RichTextViewer,
-#document-sidebar .rounded-md.highlight-color--blue .RichTextViewer,
-#document-sidebar .rounded-md.highlight-color--purple .RichTextViewer {
-	color: black;
 }
 #document-sidebar .p-2 {
 	padding: 0.5rem;
