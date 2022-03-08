@@ -65,6 +65,11 @@
 	--text-shadow-dark: 0.01em 0.01em 0.01em #727e84;
 }
 
+body.old-dark-mode .dark-mode,
+body.old-dark-mode .dark-mode-background {
+	background-color: unset !important;
+}
+
 .dark-mode {
 	filter: invert(0) !important;
 }
