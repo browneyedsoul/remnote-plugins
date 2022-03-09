@@ -453,7 +453,7 @@ body.old-dark-mode .dark-mode-background {
 	background-color: var(--darkmode-background);
 	border: 3px solid #FFF;
 }
-.dark-mode [aria-label~=Omnibar] input.placeholder\:text-gray-30.rn-clr-content-primary {
+.dark-mode [aria-label~=Omnibar] input {
 	color: var(--darkmode-text) !important;
 }
 .dark-mode [aria-label~=Omnibar] > div:nth-of-type(1) > div > span.RichTextViewer {
