@@ -681,14 +681,7 @@ body.old-dark-mode .dark-mode-background {
 	margin-right: 5px;
 }
 .tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f {
-	background-color: var(--darkmode-background);
 	border: 2px solid white;
-}
-.tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f > div > span > div.bg-white {
-	background-color: var(--darkmode-background-selected-darker);
-}
-.tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f > div > div.bg-gray-5 {
-	background-color: var(--darkmode-background-selected-darker);
 }
 .tile__document #document #hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
 	left: 0px;
@@ -838,6 +831,7 @@ body.old-dark-mode .dark-mode-background {
 	border-style: unset;
 }
 .dark-mode .tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f {
+	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
 	border: 2px solid white;
 }

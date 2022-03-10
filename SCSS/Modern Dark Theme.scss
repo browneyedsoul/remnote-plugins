@@ -1026,19 +1026,18 @@
 
 						// Find / Filter / Replace - Ctrl(⌘) + F
 							#hierarchy-editor__ctrl-f {
-								background-color: var(--darkmode-background);
 								border: 2px solid white;
 
 								> div {
 									// Find
 										> span {
 											> div.bg-white {
-												background-color: var(--darkmode-background-selected-darker);
+												
 											}
 										}
 									// Input Area
 										> div.bg-gray-5 {
-											background-color: var(--darkmode-background-selected-darker);
+											
 										}
 								}
 							}
@@ -1299,6 +1298,7 @@
 						#hierarchy-editor {
 							// Find / Filter / Replace - Ctrl(⌘) + F
 								#hierarchy-editor__ctrl-f {
+									color: var(--darkmode-text);
 									background-color: var(--darkmode-background);
 									border: 2px solid white;
 
