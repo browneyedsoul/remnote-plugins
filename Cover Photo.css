@@ -1,9 +1,11 @@
-[data-document-tags~=""] #DocumentTopRow::before {
+[data-document-tags~=""]::before {
 	content: "";
 	display: block;
 	height: 400px;
 	margin-bottom: 10px;
-	background-size: 100% 100%; 
+	position: relative;
+	top: -30px;
+	background-size: contain;
 	/******************************************************************
     Change the background-size option to your cover image tastes.**
 	➊ background-size: 100% 100%; ➞ Full responsive but the image can be ugly.
@@ -13,5 +15,5 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-image: url("");
-	background-color: ;
+	background-color: #000;
 }
