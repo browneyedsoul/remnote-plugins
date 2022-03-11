@@ -98,7 +98,8 @@
                     display: grid;
                     grid-auto-rows: auto;
                     border-left: unset;
-                    overflow: hidden;
+                    overflow: auto;
+                    white-space: pre;
 
                     // Table Left Attribute Cell
                         > div {
@@ -129,7 +130,6 @@
                                         background-color: var(--table-cell-background-color);
                                         border-left: 0.05em solid var(--table-border-color);
                                         flex: 1 1 0;
-                                        width: calc(100% - 12px);
                                     }
                                 }
                         }
