@@ -799,7 +799,7 @@
 				}
 			}
 		}
-// Tile Document¡
+// Tile Document
 	.tile__document {
 		// Daily Notes Top bar
 			> div.border-bottom-solid.bg-white {
@@ -888,8 +888,10 @@
 				display: flex;
 
 				// Page Hierarchy
-					div:nth-of-type(1) {
+					> div:nth-of-type(1) {
 						z-index: 1;
+						overflow-x: scroll;
+						white-space: pre;
 						
 						// Multi Line Breadcrumbs
 						> div {
@@ -923,7 +925,7 @@
 						flex-wrap: wrap;
 					}
 				// 3-Dots
-					div:nth-of-type(2) {
+					> div:nth-of-type(2) {
 						.document__options-menu {
 							.icon-button {
 								.fill-current {
@@ -1057,7 +1059,7 @@
 							}
 						// Sticky Top bar
 							> .fixed {
-								margin-top: 2.55rem;
+								margin-top: 3.2rem;
 
 								> .tree-node-container {
 									> .TreeNode {

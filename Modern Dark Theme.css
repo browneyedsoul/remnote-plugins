@@ -601,33 +601,35 @@ body.old-dark-mode .dark-mode-background {
 	z-index: 2;
 	display: flex;
 }
-.tile__document .document-header-top-bar div:nth-of-type(1) {
+.tile__document .document-header-top-bar > div:nth-of-type(1) {
 	z-index: 1;
+	overflow-x: scroll;
+	white-space: pre;
 }
-.tile__document .document-header-top-bar div:nth-of-type(1) > div {
+.tile__document .document-header-top-bar > div:nth-of-type(1) > div {
 	flex-wrap: wrap;
 	overflow-wrap: normal;
 }
-.tile__document .document-header-top-bar div:nth-of-type(1) .flex {
+.tile__document .document-header-top-bar > div:nth-of-type(1) .flex {
 	display: inline;
 }
-.tile__document .document-header-top-bar div:nth-of-type(1) .parent-link {
+.tile__document .document-header-top-bar > div:nth-of-type(1) .parent-link {
 	color: var(--darkmode-text);
 	border: 1px solid #7F7F7F;
 	margin-top: 2px;
 	margin-bottom: 2px;
 }
-.tile__document .document-header-top-bar div:nth-of-type(1) .parent-link:hover {
+.tile__document .document-header-top-bar > div:nth-of-type(1) .parent-link:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.tile__document .document-header-top-bar div:nth-of-type(1) .parent-link + span.text-gray-40 {
+.tile__document .document-header-top-bar > div:nth-of-type(1) .parent-link + span.text-gray-40 {
 	position: relative;
 	top: 3px;
 }
 .tile__document .document-header-top-bar .flex-nowrap {
 	flex-wrap: wrap;
 }
-.tile__document .document-header-top-bar div:nth-of-type(2) .document__options-menu .icon-button .fill-current {
+.tile__document .document-header-top-bar > div:nth-of-type(2) .document__options-menu .icon-button .fill-current {
 	color: var(--darkmode-text);
 }
 .tile__document .document-header-top-bar .w-max[color="#292936"] {
@@ -696,7 +698,7 @@ body.old-dark-mode .dark-mode-background {
 	border: 2px solid white;
 }
 .tile__document #document #hierarchy-editor > .fixed {
-	margin-top: 2.55rem;
+	margin-top: 3.2rem;
 }
 .tile__document #document #hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
 	left: 0px;
