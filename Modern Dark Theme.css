@@ -593,9 +593,7 @@ body.old-dark-mode .dark-mode-background {
 .tile__document .document-header-top-bar {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
-	height: -webkit-fit-content;
-	height: -moz-fit-content;
-	height: fit-content;
+	height: 3.2rem;
 	padding: 0.3rem;
 	position: fixed;
 	z-index: 2;
