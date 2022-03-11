@@ -886,6 +886,7 @@
 				position: fixed;
 				z-index: 2;
 				display: flex;
+				width: calc(100% - 8px);
 
 				// Page Hierarchy
 					> div:nth-of-type(1) {

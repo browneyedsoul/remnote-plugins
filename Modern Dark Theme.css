@@ -598,6 +598,7 @@ body.old-dark-mode .dark-mode-background {
 	position: fixed;
 	z-index: 2;
 	display: flex;
+	width: calc(100% - 8px);
 }
 .tile__document .document-header-top-bar > div:nth-of-type(1) {
 	z-index: 1;
