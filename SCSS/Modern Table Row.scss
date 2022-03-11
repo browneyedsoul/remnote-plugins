@@ -81,11 +81,31 @@
                 .EditorContainer {
                     overflow-wrap: anywhere !important;
                 }
-                [data-icon~="merge"] {
-                    display: none;
-                }
                 .rem-text {
                     min-width: 50px;
+                }
+                // Remove Placeholder(Empty Rem)
+                    .text-gray-20 {
+                        display: none;
+                    }
+                // Remove Overflow Content
+                    .right-\[-4px\] {
+                        right: 4px;
+                    }
+                    .float-end {
+                        display: none;
+                    }
+                    [data-icon~="merge"] {
+                        display: none;
+                    }
+            // Remove Bullet
+                .perfect-circle__inner {
+                    .rem-bullet__ring {
+
+                    }
+                    .rem-bullet__core {
+                        fill: transparent;
+                    }
                 }
             // Table Column Color Preset
                 .TreeNode {
@@ -141,13 +161,6 @@
                                         border-left: 0.05em solid var(--table-border-color);
                                         flex: 1 1 0;
 
-                                        // Remove Overflow Content
-                                            .right-\[-4px\] {
-                                                right: 4px;
-                                            }
-                                            .float-end {
-                                                display: none;
-                                            }
                                         // For Selecting Dense-width Cell Text Eclipsed with Rem-container
                                             .rich-text-editor {
                                                 z-index: 1;
