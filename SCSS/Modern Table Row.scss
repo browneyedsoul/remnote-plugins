@@ -88,16 +88,6 @@
                     .text-gray-20 {
                         display: none;
                     }
-                // Remove Overflow Content
-                    .right-\[-4px\] {
-                        right: 4px;
-                    }
-                    .float-end {
-                        display: none;
-                    }
-                    [data-icon~="merge"] {
-                        display: none;
-                    }
             // Remove Bullet
                 .perfect-circle__inner {
                     .rem-bullet__ring {
@@ -133,6 +123,16 @@
 
                     border-right: 1px solid  var(--table-border-color);
 
+                    // Remove Overflow Content
+                        .right-\[-4px\] {
+                            right: 4px;
+                        }
+                        .float-end {
+                            display: none;
+                        }
+                        [data-icon~="merge"] {
+                            display: none;
+                        }
                     // Table Left Attribute Cell
                         > .TreeNode {
                             border-right: 1px solid  var(--table-border-color);
