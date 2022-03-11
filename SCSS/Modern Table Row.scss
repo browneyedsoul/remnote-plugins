@@ -158,6 +158,15 @@
                     // Table Cell Hightlight Right Margin
                         [data-rem-tags~="highlight"] {
                             margin-right: 0;
+
+                            .highlight-color--red, 
+                            .highlight-color--orange, 
+                            .highlight-color--yellow, 
+                            .highlight-color--green, 
+                            .highlight-color--blue, 
+                            .highlight-color--purple {
+                                padding: 0;
+                            }
                         }
                 }
         }
