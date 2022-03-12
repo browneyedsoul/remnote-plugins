@@ -1712,13 +1712,20 @@
 			.popup-menu__item--static > span {
 				font-size: 18px;
 			}
-		[data-rem-container-tags~="aliases"] {
-			margin-top: 5px;
-		}
-
-		> div#SearchPopup {
-			width: 80vw;
-		}
+			[data-rem-container-tags~="aliases"] {
+				margin-top: 5px;
+			}
+		// Popup Area
+			> div#SearchPopup {
+				width: 80vw;
+			}
+		// Backlink Counter
+			.backlink-counter {
+				margin-left: 0;
+				position: relative;
+				left: -0.2rem;
+				transform: scale(0.8);
+			}
 	}
 	// Darkmode Compatibility
 		.popup-menu.dark-mode {

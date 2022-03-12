@@ -1250,6 +1250,12 @@ body.old-dark-mode .dark-mode-background {
 .popup-menu > div#SearchPopup {
 	width: 80vw;
 }
+.popup-menu .backlink-counter {
+	margin-left: 0;
+	position: relative;
+	left: -0.2rem;
+	transform: scale(0.8);
+}
 
 .popup-menu.dark-mode {
 	color: var(--darkmode-text);
