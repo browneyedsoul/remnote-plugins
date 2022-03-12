@@ -813,6 +813,9 @@ body.old-dark-mode .dark-mode-background {
 	position: relative;
 	top: -7px;
 }
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.pr-2 .hover\:text-gray-70:hover {
+	color: var(--darkmode-contrast);
+}
 .dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.col-span-1 .text-gray-60 {
 	color: var(--darkmode-text);
 }

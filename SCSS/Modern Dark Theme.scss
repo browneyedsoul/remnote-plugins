@@ -1257,6 +1257,12 @@
 												}
 											}
 										}
+									// Add Source, Show Tags
+										> div.pr-2 {
+											.hover\:text-gray-70:hover {
+												color: var(--darkmode-contrast);
+											}
+										}
 									// Sources & Tags
 										> div.grid {
 											// Sources & Tags Left Title
