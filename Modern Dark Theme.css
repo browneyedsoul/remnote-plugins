@@ -163,8 +163,29 @@ body.old-dark-mode .dark-mode-background {
 	background-color: unset !important;
 }
 
+#RemPage {
+	background-color: #FFF;
+}
+
 .dark-mode #RemPage {
 	color: var(--darkmode-text);
+	background-color: var(--darkmode-background);
+}
+.dark-mode #RemPage [data-icon~=folder] {
+	color: var(--darkmode-text) !important;
+	fill: var(--darkmode-text) !important;
+}
+.dark-mode #RemPage .document-header-top-bar {
+	color: var(--darkmode-text);
+}
+.dark-mode #RemPage .document-header-top-bar .hover\:bg-gray-5:hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode #RemPage .document-header-top-bar .bold {
+	color: var(--darkmode-text);
+}
+.dark-mode #RemPage .document-header-top-bar .bold.highlight-color--red, .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--orange, .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--yellow, .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--green, .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--blue, .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--purple {
+	color: #000;
 }
 
 .dark-mode .rem-text,

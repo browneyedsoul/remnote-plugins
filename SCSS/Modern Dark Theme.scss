@@ -177,9 +177,38 @@
 			}
 		}
 	// Metadata Page
+		#RemPage {
+			background-color: #FFF;
+		}
 		.dark-mode {
 			#RemPage {
 				color: var(--darkmode-text);
+				background-color: var(--darkmode-background);
+
+				[data-icon~="folder"] {
+					color: var(--darkmode-text) !important;
+					fill: var(--darkmode-text) !important;
+				}
+				.document-header-top-bar {
+					color: var(--darkmode-text);
+
+					.hover\:bg-gray-5:hover {
+						background-color: var(--darkmode-background-selected-darker);
+					}
+
+					.bold {
+						color: var(--darkmode-text);
+
+						&.highlight-color--red,
+						&.highlight-color--orange,
+						&.highlight-color--yellow,
+						&.highlight-color--green,
+						&.highlight-color--blue,
+						&.highlight-color--purple {
+							color: #000;
+						}
+					}
+				}
 			}
 		}
 	// Span Element - General Text
