@@ -884,7 +884,7 @@
 				height: 3.2rem;
 				padding: 0.3rem;
 				position: fixed;
-				z-index: 2;
+				z-index: 3;
 				display: flex;
 				width: calc(100% - 8px);
 				border-bottom-right-radius: 5px;
@@ -971,6 +971,16 @@
 						border-top-left-radius: 25px;
 						box-shadow: 0 -25px 0 0 var(--darkmode-background);
 					}
+			}
+		// Remove Sticky Top bar in Daily Document
+			[data-document-tags~="daily-document"] {
+				#hierarchy-editor {
+					> .fixed {
+						> .animate-zoom-into-bullet {
+							display: none;
+						}
+					}
+				}
 			}
 		// Document
 			#document {
@@ -2254,7 +2264,7 @@
     // Darkmode
         .dark-mode {
             // Reference Style
-                .rem-reference-container {
+                .rem-reference-container:not(.rem-reference-container[data-rem-tags~="highlight"]) {
                     .rem-reference {
 						color: var(--reference-text-dark);
 
@@ -2268,22 +2278,21 @@
                         }
                     }
                 }
-                // Reference + Highlight
-                    [data-rem-tags~=highlight] {
-                        .rem-text {
-                            .RichTextViewer {
-                                color: var(--reference-text);
-
-                                .rem-reference-container {
-                                    .rem-reference {
-                                        .RichTextViewer {
-                                            color: var(--reference-text-dark);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
+			// Reference + Highlight
+				.rem-reference-container {
+					&[data-rem-tags~="highlight"] {
+						.rem-reference {
+							.RichTextViewer {
+								color: var(--reference-text);
+							}
+						}
+					}
+					.rem-reference {
+						.RichTextViewer {
+							color: var(--reference-text-dark);
+						}
+					}
+				}
             // Alias Darkmode
                 [data-rem-container-tags~="aliases"] {
                     border: 0.1rem solid var(--line-color-dark);

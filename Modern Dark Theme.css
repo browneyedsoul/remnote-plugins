@@ -596,7 +596,7 @@ body.old-dark-mode .dark-mode-background {
 	height: 3.2rem;
 	padding: 0.3rem;
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	display: flex;
 	width: calc(100% - 8px);
 	border-bottom-right-radius: 5px;
@@ -672,6 +672,9 @@ body.old-dark-mode .dark-mode-background {
 	width: 25px;
 	border-top-left-radius: 25px;
 	box-shadow: 0 -25px 0 0 var(--darkmode-background);
+}
+.tile__document [data-document-tags~=daily-document] #hierarchy-editor > .fixed > .animate-zoom-into-bullet {
+	display: none;
 }
 .tile__document #document {
 	width: 100%;
@@ -1579,20 +1582,20 @@ body.old-dark-mode .dark-mode-background {
 	top: 0.2rem;
 }
 
-.dark-mode .rem-reference-container .rem-reference {
+.dark-mode .rem-reference-container:not(.rem-reference-container[data-rem-tags~=highlight]) .rem-reference {
 	color: var(--reference-text-dark);
 }
-.dark-mode .rem-reference-container .rem-reference .RichTextViewer:not([data-rem-tags~=emoji] .RichTextViewer) {
+.dark-mode .rem-reference-container:not(.rem-reference-container[data-rem-tags~=highlight]) .rem-reference .RichTextViewer:not([data-rem-tags~=emoji] .RichTextViewer) {
 	color: var(--reference-text-dark);
 	background-color: #202020;
 }
-.dark-mode .rem-reference-container .rem-reference:hover {
+.dark-mode .rem-reference-container:not(.rem-reference-container[data-rem-tags~=highlight]) .rem-reference:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode [data-rem-tags~=highlight] .rem-text .RichTextViewer {
+.dark-mode .rem-reference-container[data-rem-tags~=highlight] .rem-reference .RichTextViewer {
 	color: var(--reference-text);
 }
-.dark-mode [data-rem-tags~=highlight] .rem-text .RichTextViewer .rem-reference-container .rem-reference .RichTextViewer {
+.dark-mode .rem-reference-container .rem-reference .RichTextViewer {
 	color: var(--reference-text-dark);
 }
 .dark-mode [data-rem-container-tags~=aliases] {
