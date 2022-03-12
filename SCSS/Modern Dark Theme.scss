@@ -887,6 +887,7 @@
 				z-index: 2;
 				display: flex;
 				width: calc(100% - 8px);
+				border-bottom-right-radius: 5px;
 
 				// Page Hierarchy
 					> div:nth-of-type(1) {
