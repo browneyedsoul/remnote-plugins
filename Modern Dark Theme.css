@@ -1026,40 +1026,40 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .highlight-color--purple {
 	background-color: var(--highlight-color--purple-dark);
 }
-.dark-mode .RichTextViewer .highlight-color--red {
+.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
 	background-color: var(--highlight-color--red-dark);
 }
-.dark-mode .RichTextViewer .highlight-color--orange {
+.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--orange:not(.bold.highlight-color--orange) {
 	background-color: var(--highlight-color--orange-dark);
 }
-.dark-mode .RichTextViewer .highlight-color--yellow {
+.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
 	background-color: var(--highlight-color--yellow-dark);
 }
-.dark-mode .RichTextViewer .highlight-color--green {
+.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--green:not(.bold.highlight-color--green) {
 	background-color: var(--highlight-color--green-dark);
 }
-.dark-mode .RichTextViewer .highlight-color--blue {
+.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--blue:not(.bold.highlight-color--blue) {
 	background-color: var(--highlight-color--blue-dark);
 }
-.dark-mode .RichTextViewer .highlight-color--purple {
+.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--purple:not(.bold.highlight-color--purple) {
 	background-color: var(--highlight-color--purple-dark);
 }
-.dark-mode [data-slate-node=element] [data-slate-node~=text] .highlight-color--red {
+.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--red:not(.bold.highlight-color--red) {
 	background-color: var(--highlight-color--red-dark);
 }
-.dark-mode [data-slate-node=element] [data-slate-node~=text] .highlight-color--orange {
+.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--orange:not(.bold.highlight-color--orange) {
 	background-color: var(--highlight-color--orange-dark);
 }
-.dark-mode [data-slate-node=element] [data-slate-node~=text] .highlight-color--yellow {
+.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
 	background-color: var(--highlight-color--yellow-dark);
 }
-.dark-mode [data-slate-node=element] [data-slate-node~=text] .highlight-color--green {
+.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--green:not(.bold.highlight-color--green) {
 	background-color: var(--highlight-color--green-dark);
 }
-.dark-mode [data-slate-node=element] [data-slate-node~=text] .highlight-color--blue {
+.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--blue:not(.bold.highlight-color--blue) {
 	background-color: var(--highlight-color--blue-dark);
 }
-.dark-mode [data-slate-node=element] [data-slate-node~=text] .highlight-color--purple {
+.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--purple:not(.bold.highlight-color--purple) {
 	background-color: var(--highlight-color--purple-dark);
 }
 

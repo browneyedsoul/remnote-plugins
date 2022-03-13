@@ -1523,22 +1523,30 @@
 			.highlight-color--blue {background-color: var(--highlight-color--blue-dark);}
 			.highlight-color--purple {background-color: var(--highlight-color--purple-dark);}
 
-			.RichTextViewer {
-				.highlight-color--red {background-color: var(--highlight-color--red-dark);}
-				.highlight-color--orange {background-color: var(--highlight-color--orange-dark);}
-				.highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
-				.highlight-color--green {background-color: var(--highlight-color--green-dark);}
-				.highlight-color--blue {background-color: var(--highlight-color--blue-dark);}
-				.highlight-color--purple {background-color: var(--highlight-color--purple-dark);}
-			}
-			[data-slate-node="element"] {
-				[data-slate-node~="text"] {
-					.highlight-color--red {background-color: var(--highlight-color--red-dark);}
-					.highlight-color--orange {background-color: var(--highlight-color--orange-dark);}
-					.highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
-					.highlight-color--green {background-color: var(--highlight-color--green-dark);}
-					.highlight-color--blue {background-color: var(--highlight-color--blue-dark);}
-					.highlight-color--purple {background-color: var(--highlight-color--purple-dark);}
+			.rem-text {
+				> .EditorContainer {
+					.RichTextViewer {
+						.highlight-color--red:not(.bold.highlight-color--red) {background-color: var(--highlight-color--red-dark);}
+						.highlight-color--orange:not(.bold.highlight-color--orange) {background-color: var(--highlight-color--orange-dark);}
+						.highlight-color--yellow:not(.bold.highlight-color--yellow) {background-color: var(--highlight-color--yellow-dark);}
+						.highlight-color--green:not(.bold.highlight-color--green) {background-color: var(--highlight-color--green-dark);}
+						.highlight-color--blue:not(.bold.highlight-color--blue) {background-color: var(--highlight-color--blue-dark);}
+						.highlight-color--purple:not(.bold.highlight-color--purple) {background-color: var(--highlight-color--purple-dark);}
+					}
+				}
+				> .rich-text-editor {
+					> .EditorContainer {
+						[data-slate-node="element"] {
+							[data-slate-node~="text"] {
+								.highlight-color--red:not(.bold.highlight-color--red) {background-color: var(--highlight-color--red-dark);}
+								.highlight-color--orange:not(.bold.highlight-color--orange) {background-color: var(--highlight-color--orange-dark);}
+								.highlight-color--yellow:not(.bold.highlight-color--yellow) {background-color: var(--highlight-color--yellow-dark);}
+								.highlight-color--green:not(.bold.highlight-color--green) {background-color: var(--highlight-color--green-dark);}
+								.highlight-color--blue:not(.bold.highlight-color--blue) {background-color: var(--highlight-color--blue-dark);}
+								.highlight-color--purple:not(.bold.highlight-color--purple) {background-color: var(--highlight-color--purple-dark);}
+							}
+						}
+					}
 				}
 			}
 		}
