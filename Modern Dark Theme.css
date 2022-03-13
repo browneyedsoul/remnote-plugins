@@ -653,6 +653,9 @@ body.old-dark-mode .dark-mode-background {
 .tile__document .document-header-top-bar > div:nth-of-type(2) .document__options-menu .icon-button .fill-current {
 	color: var(--darkmode-text);
 }
+.tile__document .document-header-top-bar > div:nth-of-type(2) .document__options-menu .icon-button:hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
 .tile__document .document-header-top-bar .w-max[color="#292936"] {
 	color: unset;
 }
@@ -1255,11 +1258,21 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 }
 
+.popup-menu {
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+}
 .popup-menu .max-h-\[40vh\] {
 	max-height: 48vh;
 }
+.popup-menu.max-w-\[calc\(100vw-100px\)\] {
+	width: unset;
+}
 .popup-menu > div > div.w-96 {
-	width: 48vw;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
 }
 .popup-menu #document-hover-preview__popup span.bold > span,
 .popup-menu .popup-menu__item--static > span {
@@ -1276,6 +1289,12 @@ body.old-dark-mode .dark-mode-background {
 	position: relative;
 	left: -0.2rem;
 	transform: scale(0.8);
+}
+.popup-menu #document-hover-preview__popup {
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	max-width: 60vw;
 }
 
 .popup-menu.dark-mode {

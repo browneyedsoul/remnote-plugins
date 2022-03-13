@@ -962,6 +962,9 @@
 								.fill-current {
 									color: var(--darkmode-text);
 								}
+								&:hover {
+									background-color: var(--darkmode-background-selected-darker);
+								}
 							}
 						}
 					}
@@ -1726,14 +1729,19 @@
 		}
 // Popup
 	.popup-menu {
+		width: fit-content;
 		// Hover Preview Max Height
 			.max-h-\[40vh\] {
 				max-height: 48vh;
 			}
 		// Static Preview Max Width
+			&.max-w-\[calc\(100vw-100px\)\] {
+				width: unset;
+			}
+
 			> div {
 				> div.w-96 {
-					width: 48vw;
+					width: fit-content;
 				}
 			}
 		// Popup Title - Reference & Alias
@@ -1755,6 +1763,10 @@
 				left: -0.2rem;
 				transform: scale(0.8);
 			}
+		#document-hover-preview__popup {
+			width: fit-content;
+			max-width: 60vw;
+		}
 	}
 	// Darkmode Compatibility
 		.popup-menu.dark-mode {
