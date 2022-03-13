@@ -43,16 +43,22 @@
 	--purple-text: #a142f4;
 	--purple-text-dark: #bf96f4;
 	--highlight-color--red: #ffb9af;
+	--highlight-color--red-light: #FFD8CF;
 	--highlight-color--red-dark: #FFA39C;
 	--highlight-color--orange: #ffca8c;
+	--highlight-color--orange-light: #FFDEB7;
 	--highlight-color--orange-dark: #F3C082;
 	--highlight-color--yellow: #f1fa8c;
+	--highlight-color--yellow-light: #F8FAA5;
 	--highlight-color--yellow-dark: #DBD54B;
 	--highlight-color--green: #9fe39b;
+	--highlight-color--green-light: #C9F3C6;
 	--highlight-color--green-dark: #ACCEAD;
 	--highlight-color--blue: #bad7eb;
+	--highlight-color--blue-light: #D4EEFF;
 	--highlight-color--blue-dark: #B2D7EB;
 	--highlight-color--purple: #e6c9eb;
+	--highlight-color--purple-light: #F8EAFF;
 	--highlight-color--purple-dark: #DDC3F0;
 	--pdf-highlight-color-red: #ffd0c3;
 	--pdf-highlight-color-orange: #fddab6;
@@ -964,6 +970,44 @@ body.old-dark-mode .dark-mode-background {
 	background-color: var(--highlight-color--purple);
 }
 
+.RichTextViewer .highlight-color--red {
+	background-color: var(--highlight-color--red-light);
+}
+.RichTextViewer .highlight-color--orange {
+	background-color: var(--highlight-color--orange-light);
+}
+.RichTextViewer .highlight-color--yellow {
+	background-color: var(--highlight-color--yellow-light);
+}
+.RichTextViewer .highlight-color--green {
+	background-color: var(--highlight-color--green-light);
+}
+.RichTextViewer .highlight-color--blue {
+	background-color: var(--highlight-color--blue-light);
+}
+.RichTextViewer .highlight-color--purple {
+	background-color: var(--highlight-color--purple-light);
+}
+
+[data-slate-node=element] [data-slate-node~=text] .highlight-color--red {
+	background-color: var(--highlight-color--red-light);
+}
+[data-slate-node=element] [data-slate-node~=text] .highlight-color--orange {
+	background-color: var(--highlight-color--orange-light);
+}
+[data-slate-node=element] [data-slate-node~=text] .highlight-color--yellow {
+	background-color: var(--highlight-color--yellow-light);
+}
+[data-slate-node=element] [data-slate-node~=text] .highlight-color--green {
+	background-color: var(--highlight-color--green-light);
+}
+[data-slate-node=element] [data-slate-node~=text] .highlight-color--blue {
+	background-color: var(--highlight-color--blue-light);
+}
+[data-slate-node=element] [data-slate-node~=text] .highlight-color--purple {
+	background-color: var(--highlight-color--purple-light);
+}
+
 .dark-mode .highlight-color--red {
 	background-color: var(--highlight-color--red-dark);
 }
@@ -980,6 +1024,42 @@ body.old-dark-mode .dark-mode-background {
 	background-color: var(--highlight-color--blue-dark);
 }
 .dark-mode .highlight-color--purple {
+	background-color: var(--highlight-color--purple-dark);
+}
+.dark-mode .RichTextViewer .highlight-color--red {
+	background-color: var(--highlight-color--red-dark);
+}
+.dark-mode .RichTextViewer .highlight-color--orange {
+	background-color: var(--highlight-color--orange-dark);
+}
+.dark-mode .RichTextViewer .highlight-color--yellow {
+	background-color: var(--highlight-color--yellow-dark);
+}
+.dark-mode .RichTextViewer .highlight-color--green {
+	background-color: var(--highlight-color--green-dark);
+}
+.dark-mode .RichTextViewer .highlight-color--blue {
+	background-color: var(--highlight-color--blue-dark);
+}
+.dark-mode .RichTextViewer .highlight-color--purple {
+	background-color: var(--highlight-color--purple-dark);
+}
+.dark-mode [data-slate-node=element] [data-slate-node~=text] .highlight-color--red {
+	background-color: var(--highlight-color--red-dark);
+}
+.dark-mode [data-slate-node=element] [data-slate-node~=text] .highlight-color--orange {
+	background-color: var(--highlight-color--orange-dark);
+}
+.dark-mode [data-slate-node=element] [data-slate-node~=text] .highlight-color--yellow {
+	background-color: var(--highlight-color--yellow-dark);
+}
+.dark-mode [data-slate-node=element] [data-slate-node~=text] .highlight-color--green {
+	background-color: var(--highlight-color--green-dark);
+}
+.dark-mode [data-slate-node=element] [data-slate-node~=text] .highlight-color--blue {
+	background-color: var(--highlight-color--blue-dark);
+}
+.dark-mode [data-slate-node=element] [data-slate-node~=text] .highlight-color--purple {
 	background-color: var(--highlight-color--purple-dark);
 }
 
