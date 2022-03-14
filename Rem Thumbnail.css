@@ -110,6 +110,12 @@
 	margin-right: 2px;
 	margin-top: 1px;
 }
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle > div.document-title .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu] {
+	display: none;
+}
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle > div.document-title .image-node__container.group.inline-block.align-text-top > div {
+	display: none;
+}
 
 .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
 	height: 1em !important;
@@ -275,6 +281,42 @@
 	min-width: auto !important;
 	margin-right: 2px;
 	background-color: transparent;
+}
+.rem-header--1 .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+.rem-header--1 .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+.rem-header--1 .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+.rem-header--1 .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+.rem-header--2 .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+.rem-header--2 .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+.rem-header--2 .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+.rem-header--2 .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+.rem-header--3 .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+.rem-header--3 .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+.rem-header--3 .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+.rem-header--3 .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+[data-rem-tags*=tn] .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+[data-rem-tags*=tn] .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+[data-rem-tags*=tn] .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
+[data-rem-tags*=tn] .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu] {
+	display: none;
+}
+.rem-header--1 .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top > div,
+.rem-header--1 .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top > div,
+.rem-header--1 .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top > div,
+.rem-header--1 .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top > div,
+.rem-header--2 .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top > div,
+.rem-header--2 .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top > div,
+.rem-header--2 .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top > div,
+.rem-header--2 .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top > div,
+.rem-header--3 .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top > div,
+.rem-header--3 .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top > div,
+.rem-header--3 .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top > div,
+.rem-header--3 .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top > div,
+[data-rem-tags*=tn] .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top > div,
+[data-rem-tags*=tn] .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top > div,
+[data-rem-tags*=tn] .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top > div,
+[data-rem-tags*=tn] .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top > div {
+	display: none;
 }
 
 .hierarchy-editor__tag-bar__tag .inline-block,

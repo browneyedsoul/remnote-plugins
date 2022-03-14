@@ -5,6 +5,19 @@
 	margin-right: $margin-right;
 }
 
+@mixin console-declutter {
+	.image-node__container.group.inline-block.align-text-top {
+		.image-node {
+			[data-menu-type~="ImageNodeMenu"] {
+				display: none;
+			}
+		}
+		> div {
+			display: none;
+		}
+	}
+}
+
 // All Notes Section
 	.document-table {
 		.ReactVirtualized__Grid__innerScrollContainer {
@@ -144,6 +157,11 @@
 						.thumbnail--with-width {
 							@include thumbnail-set;
 							margin-top: 1px;
+						}
+
+						> div.document-title {
+							// Disable Image Node Menu
+								@include console-declutter;
 						}
 					}
 				}
@@ -325,6 +343,7 @@
 			.image-node,
 			.thumbnail--with-width {
 				@include thumbnail-set;
+				@include console-declutter;
 				background-color: transparent;
 			}
 		}
