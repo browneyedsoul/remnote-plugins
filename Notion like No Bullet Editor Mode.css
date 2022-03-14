@@ -60,6 +60,10 @@
 	margin-top: 6px;
 }
 
+.rem-button__container {
+	margin-top: 5px;
+}
+
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
