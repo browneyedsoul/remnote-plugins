@@ -617,6 +617,9 @@ body.old-dark-mode .dark-mode-background {
 .tile__document > div.border-bottom-solid.bg-white > div:nth-child(3) div.react-datepicker-wrapper div.react-datepicker__input-container .button > div {
 	filter: invert(0.95);
 }
+.tile__document div:nth-of-type(2).document-header-top-bar {
+	width: calc(100% - 8px);
+}
 .tile__document .document-header-top-bar {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
@@ -625,7 +628,6 @@ body.old-dark-mode .dark-mode-background {
 	position: fixed;
 	z-index: 3;
 	display: flex;
-	width: calc(100% - 8px);
 	border-bottom-right-radius: 5px;
 }
 .tile__document .document-header-top-bar > div:nth-of-type(1) {

@@ -913,6 +913,9 @@
 				}
 			}
 		// Document Header Top Bar
+			div:nth-of-type(2).document-header-top-bar {
+				width: calc(100% - 8px);
+			}
 			.document-header-top-bar {
 				color: var(--darkmode-text);
 				background-color: var(--darkmode-background);
@@ -921,7 +924,6 @@
 				position: fixed;
 				z-index: 3;
 				display: flex;
-				width: calc(100% - 8px);
 				border-bottom-right-radius: 5px;
 
 				// Page Hierarchy
