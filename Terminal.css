@@ -9,7 +9,7 @@
 	--terminal-purple-text: #FF60FE;
 }
 
-[data-rem-tags~=terminal] .rem-bullet {
+[data-rem-container-tags~=terminal] .rem-bullet {
 	filter: invert(1);
 }
 
