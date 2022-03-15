@@ -2713,6 +2713,11 @@
 									color: var(--darkmode-text);
 									position: relative;
 									top: 1px;
+
+									> .image-node__container {
+										position: relative;
+										top: 0.1rem;
+									}
 								}
 								// Sidebar list Arrow line Alignment
 								&:only-child {

@@ -1933,6 +1933,10 @@ body.old-dark-mode .dark-mode-background {
 	position: relative;
 	top: 1px;
 }
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer > .image-node__container {
+	position: relative;
+	top: 0.1rem;
+}
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div:only-child {
 	margin-left: 24px;
 }
