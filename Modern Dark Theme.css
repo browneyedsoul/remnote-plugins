@@ -321,6 +321,10 @@ body.old-dark-mode .dark-mode-background {
 	color: unset;
 }
 
+#content .content__page {
+	background-color: #FFF;
+}
+
 .ReactVirtualized__Grid__innerScrollContainer > div span.flex-grow > div.flex.w-full.h-full > div:nth-child(2) {
 	flex-direction: column-reverse !important;
 }

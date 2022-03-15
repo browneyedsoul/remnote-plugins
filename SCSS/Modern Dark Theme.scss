@@ -393,6 +393,11 @@
 			}
 		}
 // All Notes Page
+	#content {
+		.content__page {
+			background-color: #FFF;
+		}
+	}
 	// Reverse Browser Item Header
 		.ReactVirtualized__Grid__innerScrollContainer {
 			> div {
