@@ -279,7 +279,7 @@
 	height: 1em !important;
 	width: auto !important;
 	min-width: auto !important;
-	margin-right: 2px;
+	margin-right: 0;
 	background-color: transparent;
 }
 .rem-header--1 .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],

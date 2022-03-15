@@ -342,7 +342,7 @@
 			.image-node__container,
 			.image-node,
 			.thumbnail--with-width {
-				@include thumbnail-set;
+				@include thumbnail-set(0);
 				@include console-declutter;
 				background-color: transparent;
 			}
