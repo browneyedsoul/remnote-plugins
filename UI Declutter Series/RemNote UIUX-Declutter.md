@@ -13,6 +13,21 @@
 }
 ```
 
+## Backlink Remover
+
+> Sometimes, some rems don't need to represent all the backlinks.
+And If it shows a bunch of the backlinks, it slows down the paging
+
+- Example of the some rems: 'caption', 'bulletlist', 'table', 'table90', 'table120' ...
+
+```css
+[data-rem-container-tags~="remover"] .animate-zoom-into-bullet #show-embedded-search-button,
+[data-rem-container-tags~="remover"] .animate-zoom-into-bullet #AutomaticSearchPortals,
+[data-rem-container-tags~="remover"] .rem-container--embedded-search-stub {
+    display: none !important;
+}
+```
+
 ## Hide "Type / for Commands"
 
 ```css
