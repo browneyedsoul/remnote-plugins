@@ -59,7 +59,7 @@
 	--highlight-color--blue-light: #D4EEFF;
 	--highlight-color--blue-dark: #B2D7EB;
 	--highlight-color--purple: #e6c9eb;
-	--highlight-color--purple-light: #F8EAFF;
+	--highlight-color--purple-light: #F7DFFF;
 	--highlight-color--purple-dark: #DDC3F0;
 	--pdf-highlight-color-red: #ffd0c3;
 	--pdf-highlight-color-orange: #fddab6;
@@ -1138,6 +1138,25 @@
 										}
 								}
 							}
+						// Highlight Color
+							.RichTextViewer {
+								.highlight-color--red {background-color: var(--highlight-color--red-light);}
+								.highlight-color--orange {background-color: var(--highlight-color--orange-light);}
+								.highlight-color--yellow {background-color: var(--highlight-color--yellow-light);}
+								.highlight-color--green {background-color: var(--highlight-color--green-light);}
+								.highlight-color--blue {background-color: var(--highlight-color--blue-light);}
+								.highlight-color--purple {background-color: var(--highlight-color--purple-light);}
+							}
+							[data-slate-node="element"] {
+								[data-slate-node~="text"] {
+									.highlight-color--red {background-color: var(--highlight-color--red-light);}
+									.highlight-color--orange {background-color: var(--highlight-color--orange-light);}
+									.highlight-color--yellow {background-color: var(--highlight-color--yellow-light);}
+									.highlight-color--green {background-color: var(--highlight-color--green-light);}
+									.highlight-color--blue {background-color: var(--highlight-color--blue-light);}
+									.highlight-color--purple {background-color: var(--highlight-color--purple-light);}
+								}
+							}
 					}
 			}
 	}
@@ -1373,10 +1392,11 @@
 													}
 												}
 										}
-									// AddNewDocumentButtonSmall
-										// #AddNewDocumentButtonSmall {
-
-										// }
+									#AddNewDocumentButtonSmall {
+										&:hover {
+											color: var(--darkmode-contrast);
+										}
+									}
 								}
 							}
 						}
@@ -1507,25 +1527,6 @@
 		.highlight-color--green {background-color: var(--highlight-color--green);}
 		.highlight-color--blue {background-color: var(--highlight-color--blue);}
 		.highlight-color--purple {background-color: var(--highlight-color--purple);}
-
-		.RichTextViewer {
-			.highlight-color--red {background-color: var(--highlight-color--red-light);}
-			.highlight-color--orange {background-color: var(--highlight-color--orange-light);}
-			.highlight-color--yellow {background-color: var(--highlight-color--yellow-light);}
-			.highlight-color--green {background-color: var(--highlight-color--green-light);}
-			.highlight-color--blue {background-color: var(--highlight-color--blue-light);}
-			.highlight-color--purple {background-color: var(--highlight-color--purple-light);}
-		}
-		[data-slate-node="element"] {
-			[data-slate-node~="text"] {
-				.highlight-color--red {background-color: var(--highlight-color--red-light);}
-				.highlight-color--orange {background-color: var(--highlight-color--orange-light);}
-				.highlight-color--yellow {background-color: var(--highlight-color--yellow-light);}
-				.highlight-color--green {background-color: var(--highlight-color--green-light);}
-				.highlight-color--blue {background-color: var(--highlight-color--blue-light);}
-				.highlight-color--purple {background-color: var(--highlight-color--purple-light);}
-			}
-		}
 
 		.dark-mode {
 			.highlight-color--red {background-color: var(--highlight-color--red-dark);}
