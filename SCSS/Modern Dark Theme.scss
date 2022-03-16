@@ -2057,7 +2057,7 @@
 					color: black;
 					background-color: var(--popup-background-hover);
 				}
-// Popup - Delete Confirm
+// Popup - Delete, Disable Confirm
 	.dark-mode {
 		#Popup {
 			#PopupContent {
@@ -2079,7 +2079,21 @@
 						}
 					}
 				}
+				// Disable Cards
+				.settings-page {
+					> div {
+						background-color: var(--darkmode-background);	
 
+						> div {
+							div.popup__header {
+								background-color: var(--darkmode-background-selected-darker);
+							}
+							div.popup__footer {
+								background-color: var(--darkmode-background);
+							}
+						}
+					}
+				}
 
 				#delete-confirm-popup {
 					color: var(--darkmode-text);
