@@ -375,16 +375,27 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background-selected);
 }
-.dark-mode .queue__title .queue__title__middle .css-iRMIZh {
-	fill: var(--darkmode-contrast);
-	color: var(--darkmode-contrast);
-}
-.dark-mode .queue__title .queue__title__middle :last-child {
+.dark-mode .queue__title .queue__title__middle > span:nth-of-type(1) {
 	color: var(--darkmode-text);
+}
+.dark-mode .queue__title .queue__title__middle > span:nth-of-type(2) {
 	background-color: var(--darkmode-background-selected);
+}
+.dark-mode .queue__title .queue__title__middle > span:nth-of-type(2) > div:hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode .queue__title .queue__title__middle > span:nth-of-type(2) > div > div:nth-of-type(1) {
+	color: var(--darkmode-text);
+}
+.dark-mode .queue__title .queue__title__middle > span:nth-of-type(2) > div > div:nth-of-type(2) > svg {
+	fill: var(--darkmode-text) !important;
+	color: var(--darkmode-text) !important;
 }
 .dark-mode .queue__title .queue__title__right {
 	color: var(--darkmode-text);
+}
+.dark-mode .queue__title .queue__title__right > span .icon-button:hover {
+	background-color: var(--darkmode-background-selected-darker);
 }
 .dark-mode .queue__title .overflow-ellipsis {
 	color: var(--darkmode-text);

@@ -484,17 +484,39 @@
 						color: var(--darkmode-text);
 						background-color: var(--darkmode-background-selected);
 					}
-					.css-iRMIZh {
-						fill: var(--darkmode-contrast);
-						color: var(--darkmode-contrast);
-					}
-					:last-child {
+					> span:nth-of-type(1) {
 						color: var(--darkmode-text);
+					}
+					> span:nth-of-type(2) {
 						background-color: var(--darkmode-background-selected);
+
+						> div {
+							&:hover {
+								background-color: var(--darkmode-background-selected-darker);
+							}
+
+							> div:nth-of-type(1) {
+								color: var(--darkmode-text);
+							}
+							> div:nth-of-type(2) {
+								> svg {
+									fill: var(--darkmode-text) !important;
+									color: var(--darkmode-text) !important;
+								}
+							}
+						}
 					}
 				}
 				.queue__title__right {
 					color: var(--darkmode-text);
+
+					> span {
+						.icon-button {
+							&:hover {
+								background-color: var(--darkmode-background-selected-darker);
+							}
+						}
+					}
 				}
 				.overflow-ellipsis {
 					color: var(--darkmode-text);
