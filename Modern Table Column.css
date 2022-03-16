@@ -31,7 +31,7 @@
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container {
 	flex: 1 0 0;
 	white-space: wrap;
-	border: 0.1em solid var(--table-header-background-color);
+	border: 0.1rem solid var(--table-border-color);
 }
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container .rem-text,
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container .EditorContainer,
@@ -57,10 +57,13 @@
 	position: relative;
 	left: var(--table-container-cell-margin-left);
 	width: 100%;
-	border-bottom: 1px solid var(--table-header-background-color);
+	border-bottom: 0.1rem solid var(--table-border-color);
 }
 [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container .TreeNode > .tree-node-container {
-	margin-top: 1px;
+	margin-top: 0.1rem;
+}
+[data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container:last-of-type {
+	border-bottom: unset;
 }
 
 .hierarchy-editor--ltr [data-rem-container-tags~=table] .TreeNode {
@@ -68,14 +71,14 @@
 }
 
 .dark-mode [data-rem-container-tags~=table] > .TreeNode > .tree-node-container {
-	border: 0.1em solid var(--table-header-background-color-dark);
+	border: 0.1rem solid var(--table-border-color-dark);
 }
 .dark-mode [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > div:first-child {
 	color: var(--darkmode-text);
 	background-color: var(--table-header-background-color-dark);
 }
 .dark-mode [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
-	border-bottom: 1px solid var(--table-header-background-color-dark);
+	border-bottom: 0.1rem solid var(--table-header-background-color-dark);
 }
 
 [data-rem-tags~=table] {
@@ -83,13 +86,13 @@
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	padding-right: 5px;
-	border: 1px solid var(--table-header-background-color);
+	border: 1px solid var(--table-border-color);
 }
 
 .dark-mode [data-rem-tags~=table] {
 	color: var(--darkmode-text);
 	background-color: var(--table-title-background-color-dark);
-	border: 1px solid var(--table-header-background-color-dark);
+	border: 0.1rem solid var(--table-header-background-color-dark);
 }
 .dark-mode [data-rem-tags~=table] .EditorContainer {
 	color: var(--darkmode-text);

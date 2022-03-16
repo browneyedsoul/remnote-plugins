@@ -36,7 +36,7 @@
                     flex: 1 0 0;
                     white-space: wrap;
                     // Line Color
-                        border: 0.1em solid var(--table-header-background-color);
+                        border: 0.1rem solid var(--table-border-color);
                     // Constant Width
                         .rem-text,
                         .EditorContainer,
@@ -65,13 +65,16 @@
                             position: relative;
                             left: var(--table-container-cell-margin-left);
                             width: 100%;
-                            border-bottom: 1px solid var(--table-header-background-color);
+                            border-bottom: 0.1rem solid var(--table-border-color);
 
                             .TreeNode {
                                 > .tree-node-container {
-                                    margin-top: 1px;
+                                    margin-top: 0.1rem;
                                 }
                             }
+                        }
+                        > .tree-node-container:last-of-type {
+                            border-bottom: unset;
                         }
                     }
                 }
@@ -90,7 +93,7 @@
             > .TreeNode {
                 > .tree-node-container {
                     // Line Color
-                    border: 0.1em solid var(--table-header-background-color-dark);
+                    border: 0.1rem solid var(--table-border-color-dark);
 
                     // Column Table Head
                     > div:first-child {
@@ -99,7 +102,7 @@
                     }
                     > .TreeNode {
                         > .tree-node-container {
-                            border-bottom: 1px solid var(--table-header-background-color-dark);
+                            border-bottom: 0.1rem solid var(--table-header-background-color-dark);
                         }
                     }
                 }
@@ -112,13 +115,13 @@
 		border-top-left-radius: 5px;
 		border-top-right-radius: 5px;
 		padding-right: 5px;
-		border: 1px solid var(--table-header-background-color);
+		border: 1px solid var(--table-border-color);
 	}
     .dark-mode {
         [data-rem-tags~="table"] {
             color: var(--darkmode-text);
             background-color: var(--table-title-background-color-dark);
-            border: 1px solid var(--table-header-background-color-dark);
+            border: 0.1rem solid var(--table-header-background-color-dark);
 
             .EditorContainer {
                 color: var(--darkmode-text);
