@@ -513,30 +513,30 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode [aria-label~=Omnibar] > div:nth-of-type(2) > input {
 	color: var(--darkmode-text);
 }
-.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=true] {
+.dark-mode [aria-label~=Omnibar] > div[data-omnibar-results~=true] [data-cmdopt-selected~=true] {
 	background-color: var(--darkmode-background-selected) !important;
 }
-.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=true] > div:nth-of-type(1) > div.rn-clr-content-secondary {
+.dark-mode [aria-label~=Omnibar] > div[data-omnibar-results~=true] [data-cmdopt-selected~=true] > div:nth-of-type(1) > div.rn-clr-content-secondary {
 	color: var(--darkmode-contrast);
 }
-.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=true] > div:nth-of-type(1) > div.rn-clr-content-secondary > svg > g > path {
+.dark-mode [aria-label~=Omnibar] > div[data-omnibar-results~=true] [data-cmdopt-selected~=true] > div:nth-of-type(1) > div.rn-clr-content-secondary > svg > g > path {
 	fill: var(--darkmode-contrast);
 }
-.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=true] > div:nth-of-type(2) > div > div {
+.dark-mode [aria-label~=Omnibar] > div[data-omnibar-results~=true] [data-cmdopt-selected~=true] > div:nth-of-type(2) > div > div {
 	border-color: unset;
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=false] > div:nth-of-type(1) > div.rn-clr-content-secondary {
+.dark-mode [aria-label~=Omnibar] > div[data-omnibar-results~=true] [data-cmdopt-selected~=false] > div:nth-of-type(1) > div.rn-clr-content-secondary {
 	color: var(--darkmode-contrast);
 }
-.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=false] > div:nth-of-type(1) > div.rn-clr-content-secondary > svg > g > path {
+.dark-mode [aria-label~=Omnibar] > div[data-omnibar-results~=true] [data-cmdopt-selected~=false] > div:nth-of-type(1) > div.rn-clr-content-secondary > svg > g > path {
 	fill: var(--darkmode-contrast);
 }
-.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) [data-cmdopt-selected~=false] > div:nth-of-type(2) > div > div {
+.dark-mode [aria-label~=Omnibar] > div[data-omnibar-results~=true] [data-cmdopt-selected~=false] > div:nth-of-type(2) > div > div {
 	border-color: unset;
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode [aria-label~=Omnibar] > div:nth-of-type(3) > div > div:nth-of-type(2) > div > div {
+.dark-mode [aria-label~=Omnibar] > div[data-omnibar-results~=true] > div > div:nth-of-type(2) > div > div {
 	border-style: unset !important;
 	color: var(--darkmode-contrast) !important;
 	opacity: 0.9;

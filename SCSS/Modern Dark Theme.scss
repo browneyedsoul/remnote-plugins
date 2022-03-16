@@ -690,7 +690,7 @@
 					}
 				}
 			// Items
-				> div:nth-of-type(3) {
+				> div[data-omnibar-results~="true"] {
 					// Focused item
 						[data-cmdopt-selected~="true"] {
 							background-color: var(--darkmode-background-selected) !important;
