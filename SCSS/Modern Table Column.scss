@@ -16,6 +16,10 @@
 }
 // Basic Structure
     [data-rem-container-tags~="table"] {
+        // Remove Placeholder
+            .text-gray-20 {
+                display: none;
+            }
         // Title Bar Adjustment
             > .tree-node--parent {
                 margin-left: var(--table-title-left-margin);

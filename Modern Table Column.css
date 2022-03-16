@@ -15,6 +15,9 @@
 	--table-container-cell-margin-left: -10px;
 }
 
+[data-rem-container-tags~=table] .text-gray-20 {
+	display: none;
+}
 [data-rem-container-tags~=table] > .tree-node--parent {
 	margin-left: var(--table-title-left-margin);
 	margin-right: var(--table-title-right-margin);
