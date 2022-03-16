@@ -56,15 +56,18 @@
 					display: inline-block;
 					margin-right: 3px;
 				}
-				.react-transform-component {
-					.react-transform-element {
-						.inline-block,
-						.inline-block.align-text-top.group,
-						.react-transform-component,
-						.image-node,
-						.thumbnail--with-width {
-							@include thumbnail-set;
-							max-width: auto !important;
+
+				&:not(.concept_rem_type .RichTextViewer) {
+					.react-transform-component {
+						.react-transform-element {
+							.inline-block,
+							.inline-block.align-text-top.group,
+							.react-transform-component,
+							.image-node,
+							.thumbnail--with-width {
+								@include thumbnail-set;
+								max-width: auto !important;
+							}
 						}
 					}
 				}

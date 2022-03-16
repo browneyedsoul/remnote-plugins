@@ -32,11 +32,11 @@
 	display: inline-block;
 	margin-right: 3px;
 }
-.spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .inline-block,
-.spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .inline-block.align-text-top.group,
-.spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .react-transform-component,
-.spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .image-node,
-.spaced-repetition__prompt .indented-rem .RichTextViewer .react-transform-component .react-transform-element .thumbnail--with-width {
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element .inline-block,
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element .inline-block.align-text-top.group,
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element .react-transform-component,
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element .image-node,
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element .thumbnail--with-width {
 	height: 1em !important;
 	width: auto !important;
 	min-width: auto !important;
