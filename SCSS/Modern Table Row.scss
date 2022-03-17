@@ -230,21 +230,23 @@
                     
                     // Table Title
                         > :first-child {
-                            border-right: 1px solid  var(--table-border-color-dark) !important;
-                            border: 0.1rem solid var(--table-border-color-dark);
+                            border: 0.07rem solid var(--table-border-color-dark);
+                            border-bottom: unset;
                             background-color: var(--table-title-background-color-dark);
                         }
                     // Table Left Attribute Cell
                         > .TreeNode {
-                            border: 1px solid  var(--table-border-color-dark);
+                            border: 0.07rem solid  var(--table-border-color-dark);
+                            border-top: unset;
 
                             > :first-child {
-                                border-right: 1px solid  var(--table-border-color-dark) !important;
+                                border-right: unset;
                             }
                             // Table Row and Column Attribute Cell
                                 > .tree-node-container {
                                     // Table all the horizontal lines
                                     border: 0.01rem solid var(--table-columnrow-background-color-dark);
+                                    border-right: unset;
 
                                     > :first-child {
                                         background-color: var(--table-columnrow-background-color-dark) !important;

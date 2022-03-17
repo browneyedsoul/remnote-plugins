@@ -1086,8 +1086,8 @@
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1140] > :first-child,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1170] > :first-child,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1200] > :first-child {
-	border-right: 1px solid var(--table-border-color-dark) !important;
-	border: 0.1rem solid var(--table-border-color-dark);
+	border: 0.07rem solid var(--table-border-color-dark);
+	border-bottom: unset;
 	background-color: var(--table-title-background-color-dark);
 }
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode,
@@ -1128,7 +1128,8 @@
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1140] > .TreeNode,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1170] > .TreeNode,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode {
-	border: 1px solid var(--table-border-color-dark);
+	border: 0.07rem solid var(--table-border-color-dark);
+	border-top: unset;
 }
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode > :first-child,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table120] > .TreeNode > :first-child,
@@ -1168,7 +1169,7 @@
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1140] > .TreeNode > :first-child,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1170] > .TreeNode > :first-child,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode > :first-child {
-	border-right: 1px solid var(--table-border-color-dark) !important;
+	border-right: unset;
 }
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode > .tree-node-container,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table120] > .TreeNode > .tree-node-container,
@@ -1209,6 +1210,7 @@
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1170] > .TreeNode > .tree-node-container,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode > .tree-node-container {
 	border: 0.01rem solid var(--table-columnrow-background-color-dark);
+	border-right: unset;
 }
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode > .tree-node-container > :first-child,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table120] > .TreeNode > .tree-node-container > :first-child,
