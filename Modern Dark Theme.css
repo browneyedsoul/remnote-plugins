@@ -899,7 +899,10 @@ body.old-dark-mode .dark-mode-background {
 	position: relative;
 	top: -7px;
 }
-.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.pr-2 .hover\:text-gray-70:hover {
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group .hover\:text-gray-70:hover {
+	color: var(--darkmode-contrast);
+}
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group div.pr-4 .hover\:text-gray-70:hover {
 	color: var(--darkmode-contrast);
 }
 .dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid div.col-span-1 .text-gray-60 {
@@ -931,9 +934,10 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 }
 .dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid [contenteditable~=false]:not(.pr-1 [contenteditable~=false]) .text-gray-60 {
-	color: var(--darkmode-contrast);
+	color: var(--darkmode-text);
 }
 .dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid [contenteditable~=false]:not(.pr-1 [contenteditable~=false]) .text-gray-60:hover {
+	color: var(--darkmode-contrast);
 	background-color: var(--darkmode-background-selected-darker);
 }
 .dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div.group > div.grid [contenteditable~=false]:not(.pr-1 [contenteditable~=false]) .border-solid {
@@ -1970,14 +1974,16 @@ body.old-dark-mode .dark-mode-background {
 	padding-left: 3px;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.rn-clr-background-light-accent {
-	background-color: transparent !important;
 	border: 2px solid var(--darkmode-contrast) !important;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.rn-clr-background-light-accent .RichTextViewer {
 	color: white;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.rn-clr-background-light-accent .group-hover\:rn-clr-background-light-accent--hovered {
-	background-color: var(--darkmode-background-selected-darker) !important;
+	background: var(--darkmode-background-selected-darker);
+}
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rn-clr-background-light-accent {
+	background: unset;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--red .RichTextViewer,
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--orange .RichTextViewer,
