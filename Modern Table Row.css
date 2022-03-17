@@ -365,7 +365,7 @@
 	border-left: unset;
 	overflow-x: auto;
 	white-space: pre;
-	border-right: 1px solid var(--table-border-color);
+	border: 1px solid var(--table-border-color);
 }
 #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode .right-\[-4px\],
 #hierarchy-editor [data-rem-container-tags~=table120] > .TreeNode .right-\[-4px\],
@@ -525,7 +525,7 @@
 #hierarchy-editor [data-rem-container-tags~=table1140] > .TreeNode > .TreeNode,
 #hierarchy-editor [data-rem-container-tags~=table1170] > .TreeNode > .TreeNode,
 #hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode > .TreeNode {
-	border-right: 1px solid var(--table-border-color);
+	border: 1px solid var(--table-border-color);
 	margin-left: 6px;
 }
 #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode > .tree-node-container,
@@ -566,7 +566,8 @@
 #hierarchy-editor [data-rem-container-tags~=table1140] > .TreeNode > .tree-node-container,
 #hierarchy-editor [data-rem-container-tags~=table1170] > .TreeNode > .tree-node-container,
 #hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode > .tree-node-container {
-	border: 0.01rem solid var(--table-columnrow-background-color);
+	border: 0.01rem solid var(--table-border-color);
+	border-left: unset;
 }
 #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode > .tree-node-container > :first-child,
 #hierarchy-editor [data-rem-container-tags~=table120] > .TreeNode > .tree-node-container > :first-child,
@@ -693,7 +694,7 @@
 #hierarchy-editor [data-rem-container-tags~=table1170] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
 #hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
 	background-color: var(--table-cell-background-color);
-	border-left: 0.05em solid var(--table-border-color);
+	border-left: 0.07rem solid var(--table-border-color);
 	flex: 1 1 0;
 }
 #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container .rich-text-editor,
@@ -1127,7 +1128,7 @@
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1140] > .TreeNode,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1170] > .TreeNode,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode {
-	border-right: 1px solid var(--table-border-color-dark);
+	border: 1px solid var(--table-border-color-dark);
 }
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode > :first-child,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table120] > .TreeNode > :first-child,
@@ -1288,7 +1289,7 @@
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1170] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
 	background-color: var(--table-cell-background-color-dark);
-	border-left: 0.05em solid var(--table-border-color-dark);
+	border-left: 0.07rem solid var(--table-border-color-dark);
 }
 
 [data-rem-container-tags~=table90] > .TreeNode > .tree-node-container > :first-child {
