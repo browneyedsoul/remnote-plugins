@@ -68,7 +68,7 @@
 	--pdf-highlight-color-blue: #d2eef9;
 	--pdf-highlight-color-purple: #f5e0fe;
 	--text-shadow: 0.01em 0.01em 0.01em #727e84;
-	--text-shadow-yellow: 2px 2px 2px #E7E500;
+	--text-shadow-yellow: 2px 2px 2px #EAEB74;
 	--text-shadow-dark: 0.01em 0.01em 0.01em #727e84;
 }
 // The Most important thing
@@ -2385,7 +2385,7 @@
         .rem-reference {
             .RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
                 color: var(--reference-text);
-                background-color: #E1E5F8;
+                background-color: #F7F6F3;
                 font-family: 'Roboto Mono', monospace !important;
                 padding: 2px 4px;
                 margin: 0 2px;
