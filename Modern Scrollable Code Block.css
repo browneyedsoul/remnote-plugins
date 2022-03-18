@@ -79,7 +79,7 @@
 	padding-left: 40px;
 	margin-top: 2px;
 	margin-bottom: 2px;
-	border-radius: 0.3em;
+	border-radius: 0.3rem;
 	overflow: auto;
 	white-space: pre;
 }
@@ -120,20 +120,13 @@
 	position: relative;
 	top: -4px;
 }
-
-#code-node__change-language-dropdown {
-	opacity: 40%;
+#code-node #code-node__change-language-dropdown {
+	opacity: 0.7;
 }
-#code-node__change-language-dropdown:hover {
-	position: relative;
-	opacity: 70%;
-	padding-right: 5px;
-	border-radius: 5px;
+#code-node #code-node__change-language-dropdown:hover {
+	opacity: 1;
 }
 
-.dark-mode #code-node {
-	border: 1px solid black;
-}
 .dark-mode #code-node:not(.token.property):not(.token.function):not(.token.string):not(.token.builtin):not(.token.comment):not(.token.selector):not(.token.keyword):not(.token.number):not(.token.operator):not(.token.punctuation),
 .dark-mode #code-node .token.plain {
 	color: var(--code-node-plain-color-dark);
@@ -220,7 +213,13 @@
 .dark-mode #code-node .token.tag.attr-value {
 	color: var(--code-node-attribute-value-color-dark);
 }
-.dark-mode #code-node__change-language-dropdown {
-	background-color: #D7DD95;
+.dark-mode #code-node #code-node__inner .codeLine::before {
+	opacity: 0.2;
+}
+.dark-mode #code-node #code-node__change-language-dropdown {
+	color: #D7DD95;
 	border-radius: 5px;
+}
+.dark-mode #code-node #code-node__change-language-dropdown > i::before {
+	color: #D7DD95;
 }
