@@ -1437,6 +1437,9 @@ body.old-dark-mode .dark-mode-background {
 	width: fit-content;
 	max-width: 60vw;
 }
+.popup-menu #document-hover-preview__popup > #hierarchy-editor > .fixed {
+	display: none;
+}
 
 .popup-menu.dark-mode {
 	color: var(--darkmode-text);
