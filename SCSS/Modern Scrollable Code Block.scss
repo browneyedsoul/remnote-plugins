@@ -104,6 +104,12 @@
                             font-weight:    100;
                             opacity: .8;
                         }
+
+                        &:only-child {
+                            &::before {
+                                visibility: hidden;
+                            }
+                        }
                     }
                 }
                 &::before {

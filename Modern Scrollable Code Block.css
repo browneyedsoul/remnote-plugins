@@ -101,6 +101,9 @@
 	font-weight: 100;
 	opacity: 0.8;
 }
+#code-node #code-node__inner .codeLine:only-child::before {
+	visibility: hidden;
+}
 #code-node::before {
 	content: "";
 	display: block;
