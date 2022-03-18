@@ -1,17 +1,17 @@
 @mixin triangle-hidden {
-	width: 0;
-	height: 0;
-	border-style: solid;
+	width: 0 !important;
+	height: 0 !important;
+	border-style: solid !important;
 	border-width: 6px 0 6px 6px !important;
-	border-radius: 3px;
+	border-radius: 3px !important;
 }
 
 @mixin triangle-visible {
-	width: 0;
-	height: 0;
-	border-style: solid;
+	width: 0 !important;
+	height: 0 !important;
+	border-style: solid !important;
 	border-width: 6px 6px 0 6px !important;
-	border-radius: 3px;
+	border-radius: 3px !important;
 }
 
 @mixin triangle-doc-hidden {
@@ -227,6 +227,8 @@
 							position: relative;
 							top: 0rem !important;
 							left: 0rem !important;
+							zoom: unset;
+							background: unset;
 							-webkit-mask-image : unset;
 									mask-image : unset;
 						}
@@ -238,6 +240,8 @@
 							position: relative;
 							top: 0rem !important;
 							left: 0rem !important;
+							zoom: unset;
+							background: unset;
 							-webkit-mask-image : unset;
 									mask-image : unset;
 						}
