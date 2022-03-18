@@ -253,3 +253,12 @@
 [data-rem-tags~=calloutpurple] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span {
 	display: none;
 }
+[data-rem-tags~=callout] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-tags~=calloutred] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-tags~=calloutorange] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-tags~=calloutyellow] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-tags~=calloutgreen] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-tags~=calloutblue] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-tags~=calloutpurple] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
+	opacity: 0.3;
+}
