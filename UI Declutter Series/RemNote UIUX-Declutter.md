@@ -41,16 +41,21 @@ And If it shows a bunch of the backlinks, it slows down the paging
 ```css
 #help-button {
 	position: fixed;
-	bottom: 2px;
-	right: 2px;
+	bottom: 4px;
+	right: 4px;
 	border-radius: 10px;
 	color: #FFF;
-	background-color: #252525;
-	border:1px solid #FFF; 
-
+	background-color: #404040;
+}
+.dark-mode #help-button {
+	color: #000;
+	background-color: #FFF;
 }
 #help-button:hover {
-	color: red;
+	background-color: #000;
+}
+.dark-mode #help-button:hover {
+	background-color: #E0E0E0;
 }
  ```
 
