@@ -1,12 +1,12 @@
 :root {
-	--table-title-background-color: #EEEEEB;
-	--table-title-background-color-dark: #000;
+	--table-title-background-color: #E6E6E4;
+	--table-title-background-color-dark: #525252;
 	--table-columnrow-background-color: #F7F6F3;
-	--table-columnrow-background-color-dark: #555;
+	--table-columnrow-background-color-dark: #707070;
 	--table-cell-background-color: #FFFFFF;
 	--table-cell-background-color-dark: #2F3437;
-	--table-border-color: #EEEEEB;
-	--table-border-color-dark: #535353;
+	--table-border-color: #E6E6E4;
+	--table-border-color-dark: #525252;
 }
 
 [data-rem-container-tags*=lb] > .TreeNode {
@@ -316,7 +316,7 @@
 #hierarchy-editor [data-rem-container-tags~=table1140] > :first-child,
 #hierarchy-editor [data-rem-container-tags~=table1170] > :first-child,
 #hierarchy-editor [data-rem-container-tags~=table1200] > :first-child {
-	border: 0.1rem solid var(--table-border-color);
+	border: 0.07rem solid var(--table-border-color);
 	background-color: var(--table-title-background-color);
 	background-size: 100% 100%;
 	border-top-left-radius: 4px;
@@ -365,7 +365,7 @@
 	border-left: unset;
 	overflow-x: auto;
 	white-space: pre;
-	border: 1px solid var(--table-border-color);
+	border: 0.07rem solid var(--table-border-color);
 }
 #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode .right-\[-4px\],
 #hierarchy-editor [data-rem-container-tags~=table120] > .TreeNode .right-\[-4px\],
@@ -525,7 +525,7 @@
 #hierarchy-editor [data-rem-container-tags~=table1140] > .TreeNode > .TreeNode,
 #hierarchy-editor [data-rem-container-tags~=table1170] > .TreeNode > .TreeNode,
 #hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode > .TreeNode {
-	border: 1px solid var(--table-border-color);
+	border: 0.07rem solid var(--table-border-color);
 	margin-left: 6px;
 }
 #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode > .tree-node-container,
@@ -566,8 +566,48 @@
 #hierarchy-editor [data-rem-container-tags~=table1140] > .TreeNode > .tree-node-container,
 #hierarchy-editor [data-rem-container-tags~=table1170] > .TreeNode > .tree-node-container,
 #hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode > .tree-node-container {
-	border: 0.01rem solid var(--table-border-color);
+	border-bottom: 0.07rem solid var(--table-border-color);
 	border-left: unset;
+}
+#hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table120] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table150] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table180] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table210] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table240] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table270] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table300] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table330] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table360] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table390] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table420] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table450] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table480] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table510] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table540] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table570] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table600] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table630] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table660] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table690] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table720] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table750] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table780] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table810] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table840] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table870] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table900] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table930] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table960] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table990] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table1020] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table1050] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table1080] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table1110] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table1140] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table1170] > .TreeNode > .tree-node-container:last-of-type,
+#hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode > .tree-node-container:last-of-type {
+	border-bottom: unset;
 }
 #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode > .tree-node-container > :first-child,
 #hierarchy-editor [data-rem-container-tags~=table120] > .TreeNode > .tree-node-container > :first-child,
@@ -1170,6 +1210,7 @@
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode {
 	border: 0.07rem solid var(--table-border-color-dark);
 	border-top: unset;
+	border-left: unset;
 }
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode > :first-child,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table120] > .TreeNode > :first-child,
@@ -1249,8 +1290,48 @@
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1140] > .TreeNode > .tree-node-container,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1170] > .TreeNode > .tree-node-container,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode > .tree-node-container {
-	border: 0.01rem solid var(--table-columnrow-background-color-dark);
-	border-right: unset;
+	border-bottom: 0.07rem solid var(--table-border-color-dark);
+	border-left: unset;
+}
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table120] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table150] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table180] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table210] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table240] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table270] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table300] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table330] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table360] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table390] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table420] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table450] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table480] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table510] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table540] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table570] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table600] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table630] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table660] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table690] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table720] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table750] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table780] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table810] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table840] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table870] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table900] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table930] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table960] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table990] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table1020] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table1050] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table1080] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table1110] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table1140] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table1170] > .TreeNode > .tree-node-container:last-of-type,
+.dark-mode #hierarchy-editor [data-rem-container-tags~=table1200] > .TreeNode > .tree-node-container:last-of-type {
+	border-bottom: unset;
 }
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table90] > .TreeNode > .tree-node-container > :first-child,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table120] > .TreeNode > .tree-node-container > :first-child,

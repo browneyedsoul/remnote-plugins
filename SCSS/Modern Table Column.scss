@@ -1,12 +1,12 @@
 :root {
 	--table-title-background-color: #EEEEEB;
-	--table-title-background-color-dark: #000;
+	--table-title-background-color-dark: #525252;
 	--table-header-background-color: #F7F6F3;
-	--table-header-background-color-dark: #555;
+	--table-header-background-color-dark: #707070;
 	--table-cell-background-color: #FFFFFF;
 	--table-cell-background-color-dark: #2F3437;
 	--table-border-color: #EEEEEB;
-	--table-border-color-dark: #535353;
+	--table-border-color-dark: #525252;
 	--darkmode-text: #DFDFD5;
 	--table-title-left-margin: 1.5rem;
     --table-title-right-margin: 0.7rem;
@@ -106,7 +106,7 @@
                     }
                     > .TreeNode {
                         > .tree-node-container {
-                            border-bottom: 0.1rem solid var(--table-header-background-color-dark);
+                            border-bottom: 0.1rem solid var(--table-border-color-dark);
                         }
                     }
                 }
@@ -125,7 +125,7 @@
         [data-rem-tags~="table"] {
             color: var(--darkmode-text);
             background-color: var(--table-title-background-color-dark);
-            border: 0.1rem solid var(--table-header-background-color-dark);
+            border: 0.1rem solid var(--table-title-background-color-dark);
 
             .EditorContainer {
                 color: var(--darkmode-text);
