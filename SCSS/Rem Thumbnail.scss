@@ -356,12 +356,7 @@
 		.inline-block,
 		.inline-block.align-text-top.group,
 		.thumbnail--with-width {
-			@include thumbnail-set;
-		}
-	}
-	.fade-on-hide-ui {
-		.inline-block {
-			@include thumbnail-set;
+			@include thumbnail-set(0);
 		}
 	}
 // Search Result

@@ -325,14 +325,7 @@
 	height: 1em !important;
 	width: auto !important;
 	min-width: auto !important;
-	margin-right: 2px;
-}
-
-.fade-on-hide-ui .inline-block {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+	margin-right: 0;
 }
 
 [aria-label~=Omnibar] .inline-block,
