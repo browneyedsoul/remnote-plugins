@@ -17,10 +17,12 @@
 	--bullet-ring-color-dark: #BDBDBD;
 	--bullet-core-color: #2A2A36;
 	--bullet-core-color-dark: #1B1F23;
-	--quote-text-dark: #f1fa8c;
-	--quote-background-dark: #252525;
-	--quote-text-reference: #2711ff;
-	--quote-text-reference-dark: #00fff9;
+	--code-font-family: "Roboto Mono", "Fira code", monospace;
+	--code-font-size: 0.9em;
+	--inline-code-color: #E64400;
+	--inline-code-color-dark: #DCDA7A;
+	--inline-code-background: #F7F6F3;
+	--inline-code-background-dark: #222628;
 	--reference-text: #000;
 	--reference-text-dark: #dfdfd5;
 	--reference-background: #ececec;
@@ -106,16 +108,6 @@ body.old-dark-mode .dark-mode-background {
 	font-size: var(--font-size-header-3);
 }
 
-#code-node {
-	background-color: var(--code-node-background-color);
-}
-#code-node::before {
-	background-color: var(--line-number-background-color);
-}
-#code-node .codeLine::before {
-	color: var(--code-node-line-number-color);
-}
-
 ::-webkit-scrollbar {
 	background-color: transparent;
 	height: 10px;
@@ -153,6 +145,24 @@ body.old-dark-mode .dark-mode-background {
 
 .react-datepicker.search-results__date-picker {
 	background-color: #ffffff !important;
+}
+
+.quote {
+	font-family: var(--code-font-family);
+	font-size: var(--code-font-size);
+	color: var(--inline-code-color);
+	background-color: var(--inline-code-background);
+	padding: 1px 3px 1px 3px;
+}
+
+#code-node {
+	background-color: var(--code-node-background-color);
+}
+#code-node::before {
+	background-color: var(--line-number-background-color);
+}
+#code-node .codeLine::before {
+	color: var(--code-node-line-number-color);
 }
 
 .dark-mode .rem-container--todo-finished {
@@ -205,6 +215,11 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text-bold);
 }
 
+.dark-mode .quote {
+	color: var(--inline-code-color-dark);
+	background-color: var(--inline-code-background-dark);
+}
+
 .dark-mode .text-blue-60 {
 	color: var(--link-node-color-dark);
 	border-radius: 3px;
@@ -215,11 +230,6 @@ body.old-dark-mode .dark-mode-background {
 }
 .dark-mode [data-rem-tags~=highlight] .text-blue-60 {
 	color: var(--link-node-color);
-}
-
-.dark-mode .quote {
-	color: var(--quote-text-dark) !important;
-	background-color: var(--quote-background-dark) !important;
 }
 
 .dark-mode .TreeNode {
@@ -2087,8 +2097,8 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--purple-text-dark);
 }
 #document-sidebar .quote {
-	color: var(--quote-text-dark) !important;
-	background-color: var(--quote-background-dark) !important;
+	color: var(--inline-code-color-dark);
+	background-color: var(--inline-code-background-dark);
 	margin-left: 5px;
 }
 #document-sidebar .group:hover .group-hover-bg-hover-bg-transparent:hover {

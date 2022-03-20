@@ -2,9 +2,6 @@
 	/* Global Code Style */
 	--code-font-family: "Roboto Mono", "Fira code", monospace;
 	--code-font-size: 0.9em;
-	/* Inline Code Style */
-	--inline-code-color: #E64400;
-	--inline-code-background-color: #F7F6F3;
 	/* Code Block Line Number Style */
 	--line-number-width: 40px;
 	--line-number-color: #C7CCCF;
@@ -67,7 +64,7 @@
 	font-family: var(--code-font-family);
 	font-size: var(--code-font-size);
 	color: var(--inline-code-color);
-	background-color: var(--inline-code-background-color);
+	background-color: var(--inline-code-background);
 	padding: 1px 3px 1px 3px;
 }
 
