@@ -446,3 +446,7 @@
 .rem-text.rem-header--3 .rem-checkbox {
 	margin-top: 8px;
 }
+
+.rem-text .rem-checkbox {
+	margin-top: 0.3rem;
+}
