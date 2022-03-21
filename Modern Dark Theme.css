@@ -365,6 +365,9 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode #content .content__page .document-table .css-jcbvum:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
+.dark-mode #content .content__page .document-table .rn-clr-background-light-accent {
+	background-color: var(--darkmode-background-selected);
+}
 .dark-mode #content .content__page .document-table .ReactVirtualized__List > .grid > div {
 	color: var(--darkmode-contrast) !important;
 }

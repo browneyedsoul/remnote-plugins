@@ -462,6 +462,10 @@
 							.css-jcbvum:hover {
 								background-color: var(--darkmode-background-selected-darker);
 							}
+						// Selected Item
+							.rn-clr-background-light-accent {
+								background-color: var(--darkmode-background-selected);
+							}
 						// Daily Documents
 							.ReactVirtualized__List {
 								> .grid {
