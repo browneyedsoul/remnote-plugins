@@ -160,18 +160,18 @@
 			padding: 1px 3px 1px 3px;
 		}
 	// Codeblock
-		#code-node {
-			background-color: var(--code-node-background-color);
+		// #code-node {
+		// 	background-color: var(--code-node-background-color);
 
-			&::before {
-				background-color: var(--line-number-background-color);
-			}
-			.codeLine {
-				&::before {
-					color: var(--code-node-line-number-color);
-				}
-			}
-		}
+		// 	&::before {
+		// 		background-color: var(--line-number-background-color);
+		// 	}
+		// 	.codeLine {
+		// 		&::before {
+		// 			color: var(--code-node-line-number-color);
+		// 		}
+		// 	}
+		// }
 // Global Elements - Darkmode
 	// Checkbox
 		.dark-mode {

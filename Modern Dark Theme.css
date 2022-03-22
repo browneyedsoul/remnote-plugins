@@ -155,16 +155,6 @@ body.old-dark-mode .dark-mode-background {
 	padding: 1px 3px 1px 3px;
 }
 
-#code-node {
-	background-color: var(--code-node-background-color);
-}
-#code-node::before {
-	background-color: var(--line-number-background-color);
-}
-#code-node .codeLine::before {
-	color: var(--code-node-line-number-color);
-}
-
 .dark-mode .rem-container--todo-finished {
 	color: #A1A1A1;
 }
