@@ -528,6 +528,18 @@
 			}
 		}
 	} 
+// Numbered list Placement
+	[data-rem-container-tags~="list-item"] {
+		span.rem-bullet__number {
+			position: relative;
+			left: 16px;
+
+			+ div {
+				position: relative;
+				left: 16px;
+			}
+		} 
+	}
 // Checkbox Alignment	
 	#DocumentTitle {
 		.rem-text,

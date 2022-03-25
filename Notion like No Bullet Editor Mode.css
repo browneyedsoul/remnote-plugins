@@ -424,6 +424,15 @@
 	border-style: unset;
 }
 
+[data-rem-container-tags~=list-item] span.rem-bullet__number {
+	position: relative;
+	left: 16px;
+}
+[data-rem-container-tags~=list-item] span.rem-bullet__number + div {
+	position: relative;
+	left: 16px;
+}
+
 #DocumentTitle .rem-text .rem-checkbox,
 #DocumentTitle .rem-header--1 .rem-checkbox,
 #DocumentTitle .rem-header--2 .rem-checkbox,
