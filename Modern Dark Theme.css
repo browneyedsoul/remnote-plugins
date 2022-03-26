@@ -484,8 +484,24 @@ body.old-dark-mode .dark-mode-background {
 	border-radius: 5px;
 	border-bottom: 2px solid var(--darkmode-contrast);
 }
-.dark-mode .document-popup-preview {
+.dark-mode #Popup #PopupContent > div .rn-close-button:hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode #Popup #PopupContent > .document-popup-preview {
 	background-color: var(--darkmode-background);
+}
+.dark-mode #Popup #PopupContent > .document-popup-preview > .document-header-top-bar > div:nth-of-type(1) button {
+	color: var(--darkmode-text);
+}
+.dark-mode #Popup #PopupContent > .document-popup-preview > .document-header-top-bar > div:nth-of-type(1) button:hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode #Popup #PopupContent > .document-popup-preview > .document-header-top-bar > div:nth-of-type(2) {
+	position: relative;
+	left: -1rem;
+}
+.dark-mode #Popup #PopupContent > .document-popup-preview > .document-header-top-bar > div:nth-of-type(2) .icon-button:hover {
+	background-color: var(--darkmode-background-selected-darker);
 }
 
 .dark-mode #card-table-page {
