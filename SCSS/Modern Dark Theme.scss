@@ -488,6 +488,9 @@
 
 			 > .document-popup-preview {
 				> .document-header-top-bar {
+					> div:nth-of-type(1) {
+						overflow-x: auto;
+					}
 					// 3-Dots Option
 					> div:nth-of-type(2) {
 						position: relative;
@@ -670,9 +673,11 @@
 				// Border
 					border: 2px solid black;
 				// Residue Card Number
-					.bg-gray-10 {
-						background-color: var(--darkmode-selected-darker);
-						border:  1px solid white;
+					.queue__progress {
+						.queue__progress-bar {
+							background-color: var(--darkmode-selected-darker);
+							border:  1px solid black;
+						}
 					}
 				// Katex
 					.katex {
