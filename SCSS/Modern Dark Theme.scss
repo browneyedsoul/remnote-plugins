@@ -479,6 +479,30 @@
 			}
 		}
 // Flashcard Page
+	#Popup {
+		#PopupContent {
+			 .node-top-level-in-portal {
+				 z-index: 2;
+			 }
+
+			 > .document-popup-preview {
+				> .document-header-top-bar {
+					// 3-Dots Option
+					> div:nth-of-type(2) {
+						position: relative;
+						left: -1rem;
+					}
+				}
+			 }
+			 > #document {
+				> #hierarchy-editor {
+					> .fixed {
+						display: none;
+					}
+				}
+			}
+		}
+	}
 	.dark-mode {
 		// Select Cluster
 			.queue-cluster-selector {
@@ -611,7 +635,7 @@
 					}
 				// Select Cluster Hover
 					.hover\:bg-UI03:hover {
-						color: black;
+						background-color: var(--darkmode-background-selected);
 					}
 				// Flashcard for Select Menu
 					.font-semibold.text-gray-100 {
@@ -680,13 +704,24 @@
 							}
 							// 3-Dots Option
 							> div:nth-of-type(2) {
-								position: relative;
-								left: -1rem;
-
 								.icon-button {
 									&:hover {
 										background-color: var(--darkmode-background-selected-darker);
 									}
+								}
+							}
+						}
+						.tree-node--automatic-search-portal-header {
+							.button {
+								.w-max {
+									color: var(--darkmode-text);
+								}
+							}
+						}
+						#AutomaticSearchPortals {
+							.button {
+								.w-max {
+									color: var(--darkmode-text);
 								}
 							}
 						}

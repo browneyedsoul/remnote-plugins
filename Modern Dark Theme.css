@@ -362,6 +362,17 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-contrast) !important;
 }
 
+#Popup #PopupContent .node-top-level-in-portal {
+	z-index: 2;
+}
+#Popup #PopupContent > .document-popup-preview > .document-header-top-bar > div:nth-of-type(2) {
+	position: relative;
+	left: -1rem;
+}
+#Popup #PopupContent > #document > #hierarchy-editor > .fixed {
+	display: none;
+}
+
 .dark-mode .queue-cluster-selector {
 	color: var(--darkmode-text);
 }
@@ -450,7 +461,7 @@ body.old-dark-mode .dark-mode-background {
 	font-size: 24px;
 }
 .dark-mode .Queue .hover\:bg-UI03:hover {
-	color: black;
+	background-color: var(--darkmode-background-selected);
 }
 .dark-mode .Queue .font-semibold.text-gray-100 {
 	color: var(--darmode-text);
@@ -496,12 +507,14 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode #Popup #PopupContent > .document-popup-preview > .document-header-top-bar > div:nth-of-type(1) button:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode #Popup #PopupContent > .document-popup-preview > .document-header-top-bar > div:nth-of-type(2) {
-	position: relative;
-	left: -1rem;
-}
 .dark-mode #Popup #PopupContent > .document-popup-preview > .document-header-top-bar > div:nth-of-type(2) .icon-button:hover {
 	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode #Popup #PopupContent > .document-popup-preview .tree-node--automatic-search-portal-header .button .w-max {
+	color: var(--darkmode-text);
+}
+.dark-mode #Popup #PopupContent > .document-popup-preview #AutomaticSearchPortals .button .w-max {
+	color: var(--darkmode-text);
 }
 
 .dark-mode #card-table-page {
