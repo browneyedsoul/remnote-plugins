@@ -6,9 +6,10 @@
 	--font-size-header-2: 24px;
 	--font-size-header-3: 20px;
 	--darkmode-background: #2f3437;
-	--darkmode-background-sidebar: #2a2a2a;
+	--darkmode-background-button: #1B1F23;
+	--darkmode-background-sidebar: #2A2A2A;
 	--darkmode-background-selected: #4a5458;
-	--darkmode-background-selected-darker: #1b1f23;
+	--darkmode-background-selected-darker: #1B1F23;
 	--lightmode-background-selected: #b7b7b7;
 	--darkmode-text: #dfdfd5;
 	--darkmode-text-bold: #A3DFDF;
@@ -433,29 +434,42 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
 }
-.dark-mode .spacedRepetition .spacedRepetitionContent .spaced-repetition__prompt, .dark-mode .spacedRepetition .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon, .dark-mode .spacedRepetition .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon .spaced-repetition__prompt__breadcrumbs, .dark-mode .spacedRepetition .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon .rem-bullet__document, .dark-mode .spacedRepetition .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document, .dark-mode .spacedRepetition .spacedRepetitionContent .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs {
+.dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt, .dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon, .dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon .spaced-repetition__prompt__breadcrumbs, .dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon .rem-bullet__document, .dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document, .dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs {
 	color: var(--darkmode-text) !important;
 	background-color: var(--darkmode-background) !important;
 }
-.dark-mode .spacedRepetition .spacedRepetitionContent .spaced-repetition__prompt .fill-in-the-blank.bg-white {
+.dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .fill-in-the-blank.bg-white {
 	padding: 5px;
 	border-radius: 5px;
 }
-.dark-mode .spacedRepetition .spacedRepetitionContent .spaced-repetition__prompt .fill-in-the-blank--revealed {
+.dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .fill-in-the-blank--revealed {
 	padding: 5px;
 	border-radius: 5px;
 }
-.dark-mode .spacedRepetition .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document {
+.dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document {
 	font-weight: 600;
 }
-.dark-mode .spacedRepetition .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document,
-.dark-mode .spacedRepetition .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon {
+.dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document,
+.dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon {
 	color: var(--darkmode-text) !important;
 	background-color: var(--darkmode-background) !important;
+}
+.dark-mode .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button {
+	color: var(--darkmode-text);
+	background-color: var(--darkmode-background-button);
+	border: unset;
+}
+.dark-mode .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:hover {
+	background-color: var(--darkmode-background-selected);
+}
+.dark-mode .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button .accuracy-button__interval {
+	border: unset;
+	color: var(--darkmode-text-bold);
+	background-color: var(--darkmode-background-selected-darker);
 }
 .dark-mode .Queue {
 	background-color: var(--darkmode-background);
-	border: 1px solid white;
+	border: 2px solid black;
 }
 .dark-mode .Queue .queue-text-large-font {
 	font-size: 24px;
