@@ -218,6 +218,10 @@
 	height: 130%;
 }
 
+.spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=callout], .spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=calloutred], .spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=calloutorange], .spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=calloutyellow], .spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=calloutgreen], .spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=calloutblue], .spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=calloutpurple] {
+	margin-left: var(--callout-margin-left);
+}
+
 [data-rem-tags~=callout] .hierarchy-editor__tag-bar,
 [data-rem-tags~=calloutred] .hierarchy-editor__tag-bar,
 [data-rem-tags~=calloutorange] .hierarchy-editor__tag-bar,

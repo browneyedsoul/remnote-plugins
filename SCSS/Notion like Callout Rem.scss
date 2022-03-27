@@ -169,20 +169,35 @@
         [data-rem-container-tags~="calloutblue"] {background-color: var(--calloutblue-background-color-dark) !important;}
         [data-rem-container-tags~="calloutpurple"] {background-color: var(--calloutpurple-background-color-dark) !important;}
     }
-// Alignment for Card Item Callout
-    .node-card-item[data-rem-container-tags~="callout"],
-    .node-card-item[data-rem-container-tags~="calloutred"],
-    .node-card-item[data-rem-container-tags~="calloutorange"],
-    .node-card-item[data-rem-container-tags~="calloutyellow"],
-    .node-card-item[data-rem-container-tags~="calloutgreen"],
-    .node-card-item[data-rem-container-tags~="calloutblue"],
-    .node-card-item[data-rem-container-tags~="calloutpurple"] {
-        &::before {
-            top: -10px;
-            left: -24px;
-            height: 130%;
+// Alignment
+    // Card Item Callout
+        .node-card-item[data-rem-container-tags~="callout"],
+        .node-card-item[data-rem-container-tags~="calloutred"],
+        .node-card-item[data-rem-container-tags~="calloutorange"],
+        .node-card-item[data-rem-container-tags~="calloutyellow"],
+        .node-card-item[data-rem-container-tags~="calloutgreen"],
+        .node-card-item[data-rem-container-tags~="calloutblue"],
+        .node-card-item[data-rem-container-tags~="calloutpurple"] {
+            &::before {
+                top: -10px;
+                left: -24px;
+                height: 130%;
+            }
         }
-    }
+    // Flashcard Preview
+        .spacedRepetitionAnswer {
+            .node-card-item {
+                &[data-rem-container-tags~="callout"],
+                &[data-rem-container-tags~="calloutred"],
+                &[data-rem-container-tags~="calloutorange"],
+                &[data-rem-container-tags~="calloutyellow"],
+                &[data-rem-container-tags~="calloutgreen"],
+                &[data-rem-container-tags~="calloutblue"],
+                &[data-rem-container-tags~="calloutpurple"] {
+                    margin-left: var(--callout-margin-left);
+                }
+            }
+        }
 // Tag Declutter
     [data-rem-tags~="callout"], 
     [data-rem-tags~="calloutred"], 
