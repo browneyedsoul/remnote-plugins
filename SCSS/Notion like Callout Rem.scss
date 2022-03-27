@@ -2,30 +2,37 @@
     --callout-background-color: #F7F6F3;
     --callout-background-color-dark: #505050;
     --callout-text-color-dark: #DFDFD5;
+    --callout-text-bold-color-dark: #FFF;
     --calloutred-background-color: #FFE9EC;
     --calloutred-background-color-dark: #572924;
     --calloutred-text-color: #721C25;
     --calloutred-text-color-dark: #FFD2CE;
+    --calloutred-text-bold-color-dark: #FFDFD8;
     --calloutorange-background-color: #FDEDD9;
     --calloutorange-background-color-dark: #553D24;
     --calloutorange-text-color: #572924;
     --calloutorange-text-color-dark: #FFDAB8;
+    --calloutorange-text-bold-color-dark: #FFE9C8;
     --calloutyellow-background-color: #FDFEDD;
     --calloutyellow-background-color-dark: #453E1E;
     --calloutyellow-text-color: #454501;
     --calloutyellow-text-color-dark: #E8DDA7;
+    --calloutyellow-text-bold-color-dark: #FFFEB5;
     --calloutgreen-background-color: #D5EED7;
     --calloutgreen-background-color-dark: #253F27;
     --calloutgreen-text-color: #003E01;
     --calloutgreen-text-color-dark: #B3DDAB;
+    --calloutgreen-text-bold-color-dark: #C0FFBE;
     --calloutblue-background-color: #E6F3F6;
     --calloutblue-background-color-dark: #183C4D;
     --calloutblue-text-color: #00005B;
     --calloutblue-text-color-dark: #B5DEE8;
+    --calloutblue-text-bold-color-dark: #BAF4FF;
     --calloutpurple-background-color: #FEEEFC;
     --calloutpurple-background-color-dark: #43273F;
     --calloutpurple-text-color: #3B004D;
     --calloutpurple-text-color-dark: #DDC3EB;
+    --calloutpurple-text-bold-color-dark: #F9E1FF;
     --callout-padding: 15px 20px;
     --callout-margin-top: 7px;
     --callout-margin-bottom: 7px;
@@ -115,6 +122,17 @@
 
             .rem-text {
                 color: var(--callout-text-color-dark);
+
+                .bold {
+                    &:not(.highlight-color--red),
+                    &:not(.highlight-color--orange),
+                    &:not(.highlight-color--yellow),
+                    &:not(.highlight-color--green),
+                    &:not(.highlight-color--blue),
+                    &:not(.highlight-color--purple) {
+                        color: var(--callout-text-bold-color-dark);
+                    }
+                }
             }
         }
         [data-rem-container-tags~="calloutred"] {
@@ -122,6 +140,17 @@
 
             .rem-text {
                 color: var(--calloutred-text-color-dark);
+
+                .bold {
+                    &:not(.highlight-color--red),
+                    &:not(.highlight-color--orange),
+                    &:not(.highlight-color--yellow),
+                    &:not(.highlight-color--green),
+                    &:not(.highlight-color--blue),
+                    &:not(.highlight-color--purple) {
+                        color: var(--calloutred-text-bold-color-dark);
+                    }
+                }
             }
         }
         [data-rem-container-tags~="calloutorange"] {
@@ -129,6 +158,17 @@
 
             .rem-text {
                 color: var(--calloutorange-text-color-dark);
+
+                .bold {
+                    &:not(.highlight-color--red),
+                    &:not(.highlight-color--orange),
+                    &:not(.highlight-color--yellow),
+                    &:not(.highlight-color--green),
+                    &:not(.highlight-color--blue),
+                    &:not(.highlight-color--purple) {
+                        color: var(--calloutorange-text-bold-color-dark);
+                    }
+                }
             }
         }
         [data-rem-container-tags~="calloutyellow"] {
@@ -136,6 +176,17 @@
 
             .rem-text {
                 color: var(--calloutyellow-text-color-dark);
+
+                .bold {
+                    &:not(.highlight-color--red),
+                    &:not(.highlight-color--orange),
+                    &:not(.highlight-color--yellow),
+                    &:not(.highlight-color--green),
+                    &:not(.highlight-color--blue),
+                    &:not(.highlight-color--purple) {
+                        color: var(--calloutyellow-text-bold-color-dark);
+                    }
+                }
             }
         }
         [data-rem-container-tags~="calloutgreen"] {
@@ -143,6 +194,17 @@
 
             .rem-text {
                 color: var(--calloutgreen-text-color-dark);
+                
+                .bold {
+                    &:not(.highlight-color--red),
+                    &:not(.highlight-color--orange),
+                    &:not(.highlight-color--yellow),
+                    &:not(.highlight-color--green),
+                    &:not(.highlight-color--blue),
+                    &:not(.highlight-color--purple) {
+                        color: var(--calloutgreen-text-bold-color-dark);
+                    }
+                }
             }
         }
         [data-rem-container-tags~="calloutblue"] {
@@ -150,6 +212,17 @@
 
             .rem-text {
                 color: var(--calloutblue-text-color-dark);
+
+                .bold {
+                    &:not(.highlight-color--red),
+                    &:not(.highlight-color--orange),
+                    &:not(.highlight-color--yellow),
+                    &:not(.highlight-color--green),
+                    &:not(.highlight-color--blue),
+                    &:not(.highlight-color--purple) {
+                        color: var(--calloutblue-text-bold-color-dark);
+                    }
+                }
             }
         }
         [data-rem-container-tags~="calloutpurple"] {
@@ -157,6 +230,17 @@
 
             .rem-text {
                 color: var(--calloutpurple-text-color-dark);
+
+                .bold {
+                    &:not(.highlight-color--red),
+                    &:not(.highlight-color--orange),
+                    &:not(.highlight-color--yellow),
+                    &:not(.highlight-color--green),
+                    &:not(.highlight-color--blue),
+                    &:not(.highlight-color--purple) {
+                        color: var(--calloutpurple-text-bold-color-dark);
+                    }
+                }
             }
         }
     }
