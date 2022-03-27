@@ -122,9 +122,10 @@
 		}
 		::-webkit-scrollbar-track {
 			background-color: transparent;
+			width: 10px;
 		}
 		::-webkit-scrollbar-thumb {
-			background-color: #BBB;
+			background-color: #5A666A;
 			border: 4px solid transparent;
 		}
 	// Checkbox
@@ -240,8 +241,26 @@
 	// Span Element - Bold Text
 		.dark-mode {
 			.rem-text {
-				.bold:not(.rem-header--1 .bold):not(.rem-header--2 .bold):not(.rem-header--3 .bold):not([data-rem-tags~="highlight"] .bold):not(.bold.highlight-color--red):not(.bold.highlight-color--orange):not(.bold.highlight-color--yellow):not(.bold.highlight-color--green):not(.bold.highlight-color--blue):not(.bold.highlight-color--purple) {
-					color: var(--darkmode-text-bold);
+				.bold {
+					&:not(.rem-header--1 .bold)
+					&:not(.rem-header--2 .bold)
+					&:not(.rem-header--3 .bold)
+					&:not([data-rem-tags~="highlight"] .bold)
+					&:not(.bold.highlight-color--red)
+					&:not(.bold.highlight-color--orange)
+					&:not(.bold.highlight-color--yellow)
+					&:not(.bold.highlight-color--green)
+					&:not(.bold.highlight-color--blue)
+					&:not(.bold.highlight-color--purple)
+					&:not([data-rem-container-tags~="callout"])
+					&:not([data-rem-container-tags~="calloutred"])
+					&:not([data-rem-container-tags~="calloutorange"])
+					&:not([data-rem-container-tags~="calloutyellow"])
+					&:not([data-rem-container-tags~="calloutgreen"])
+					&:not([data-rem-container-tags~="calloutblue"])
+					&:not([data-rem-container-tags~="calloutpurple"]) {
+						color: var(--darkmode-text-bold);
+					}
 				}
 			}
 		}
