@@ -250,47 +250,47 @@
 	margin-left: var(--callout-margin-left);
 }
 
-[data-rem-tags~=callout] .hierarchy-editor__tag-bar,
-[data-rem-tags~=calloutred] .hierarchy-editor__tag-bar,
-[data-rem-tags~=calloutorange] .hierarchy-editor__tag-bar,
-[data-rem-tags~=calloutyellow] .hierarchy-editor__tag-bar,
-[data-rem-tags~=calloutgreen] .hierarchy-editor__tag-bar,
-[data-rem-tags~=calloutblue] .hierarchy-editor__tag-bar,
-[data-rem-tags~=calloutpurple] .hierarchy-editor__tag-bar {
+[data-rem-container-tags~=callout] .hierarchy-editor__tag-bar,
+[data-rem-container-tags~=calloutred] .hierarchy-editor__tag-bar,
+[data-rem-container-tags~=calloutorange] .hierarchy-editor__tag-bar,
+[data-rem-container-tags~=calloutyellow] .hierarchy-editor__tag-bar,
+[data-rem-container-tags~=calloutgreen] .hierarchy-editor__tag-bar,
+[data-rem-container-tags~=calloutblue] .hierarchy-editor__tag-bar,
+[data-rem-container-tags~=calloutpurple] .hierarchy-editor__tag-bar {
 	position: relative;
 	right: -20px;
 }
-[data-rem-tags~=callout] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
-[data-rem-tags~=calloutred] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
-[data-rem-tags~=calloutorange] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
-[data-rem-tags~=calloutyellow] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
-[data-rem-tags~=calloutgreen] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
-[data-rem-tags~=calloutblue] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
-[data-rem-tags~=calloutpurple] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag {
+[data-rem-container-tags~=callout] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~=calloutred] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~=calloutorange] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~=calloutyellow] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~=calloutgreen] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~=calloutblue] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~=calloutpurple] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag {
 	background-color: transparent !important;
 }
-[data-rem-tags~=callout] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
-[data-rem-tags~=callout] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
-[data-rem-tags~=calloutred] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
-[data-rem-tags~=calloutred] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
-[data-rem-tags~=calloutorange] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
-[data-rem-tags~=calloutorange] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
-[data-rem-tags~=calloutyellow] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
-[data-rem-tags~=calloutyellow] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
-[data-rem-tags~=calloutgreen] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
-[data-rem-tags~=calloutgreen] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
-[data-rem-tags~=calloutblue] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
-[data-rem-tags~=calloutblue] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
-[data-rem-tags~=calloutpurple] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
-[data-rem-tags~=calloutpurple] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span {
+[data-rem-container-tags~=callout] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=callout] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
+[data-rem-container-tags~=calloutred] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=calloutred] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
+[data-rem-container-tags~=calloutorange] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=calloutorange] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
+[data-rem-container-tags~=calloutyellow] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=calloutyellow] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
+[data-rem-container-tags~=calloutgreen] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=calloutgreen] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
+[data-rem-container-tags~=calloutblue] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=calloutblue] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
+[data-rem-container-tags~=calloutpurple] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=calloutpurple] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span {
 	display: none;
 }
-[data-rem-tags~=callout] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
-[data-rem-tags~=calloutred] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
-[data-rem-tags~=calloutorange] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
-[data-rem-tags~=calloutyellow] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
-[data-rem-tags~=calloutgreen] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
-[data-rem-tags~=calloutblue] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
-[data-rem-tags~=calloutpurple] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
+[data-rem-container-tags~=callout] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-container-tags~=calloutred] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-container-tags~=calloutorange] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-container-tags~=calloutyellow] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-container-tags~=calloutgreen] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-container-tags~=calloutblue] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-container-tags~=calloutpurple] .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
 	opacity: 0.3;
 }

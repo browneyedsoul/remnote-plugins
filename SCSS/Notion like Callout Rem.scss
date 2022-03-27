@@ -283,13 +283,13 @@
             }
         }
 // Tag Declutter
-    [data-rem-tags~="callout"], 
-    [data-rem-tags~="calloutred"], 
-    [data-rem-tags~="calloutorange"],
-    [data-rem-tags~="calloutyellow"],
-    [data-rem-tags~="calloutgreen"],
-    [data-rem-tags~="calloutblue"],
-    [data-rem-tags~="calloutpurple"] {
+    [data-rem-container-tags~="callout"], 
+    [data-rem-container-tags~="calloutred"], 
+    [data-rem-container-tags~="calloutorange"],
+    [data-rem-container-tags~="calloutyellow"],
+    [data-rem-container-tags~="calloutgreen"],
+    [data-rem-container-tags~="calloutblue"],
+    [data-rem-container-tags~="calloutpurple"] {
         .hierarchy-editor__tag-bar {
             position: relative;
             right: -20px;
