@@ -1831,7 +1831,7 @@ body.old-dark-mode .dark-mode-background {
 	border-radius: 4px;
 	background-color: var(--reference-background);
 }
-[data-rem-container-tags~=aliases] > .tree-node--children [data-rem-container-tags~=list-item] .tree-node--parent [data-rem-tags~=list-item] .rem-text .text-icon {
+[data-rem-container-tags~=aliases] > .tree-node--children [data-rem-container-tags~=list-item] .tree-node--parent [data-rem-tags~=list-item] .rem-text span.rem-powerup-icon .text-icon {
 	top: 0.2rem;
 }
 

@@ -2571,8 +2571,13 @@
 				.tree-node--parent {
 					[data-rem-tags~="list-item"] {
 						.rem-text {
-							.text-icon {
-								top: .2rem;
+							// span.rem-bullet__number {
+
+							// }
+							span.rem-powerup-icon {
+								.text-icon {
+									top: .2rem;
+								}
 							}
 						}
 					}
