@@ -3160,12 +3160,17 @@
 					// Slash Command Context Menu
 						> div {
 							> div {
+								// Header
 								.text-gray-100 {
 									color: var(--darkmode-text);
 								}
+								// Details
+								.text-gray-60 {
+									color: #9D9EC5;
+								}
 								> div:nth-of-type(3) {
 									transform: scale(1.1);
-									
+
 									> div {
 										color: var(--darkmode-contrast) !important;
 										opacity: .9;
