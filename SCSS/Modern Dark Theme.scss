@@ -498,8 +498,8 @@
 				}
 			}
 		}
-// Flashcard Page
-	// Preview
+// Flashcard
+	// Preview Page
 		#Popup {
 			#PopupContent {
 				.node-top-level-in-portal {
@@ -578,208 +578,220 @@
 				}
 			}
 		}
-	.Queue {
-		.TransformComponent-module_container__3NwNd {
-			overflow: unset;
-		}
-	}
-	.dark-mode {
-		// Select Cluster
-			.queue-cluster-selector {
-				color: var(--darkmode-text);
-			}
-			.hover\:bg-UI03:hover {
-				background-color: var(--darkmode-background-selected);
-			}
-		// Search Popup - Flashcard
-			#SearchPopup {
-				caret-color: var(--darkmode-text);
-				color: var(--darkmode-text);
-				background-color: var(--darkmode-background);
-
-				.rich-text-editor,
-				.EditorContainer {
-					caret-color: var(--darkmode-text);
-					color: var(--darkmode-text);
-					background-color: var(--darkmode-background);
-				}
-			}
-		// SRS Contents
-			.spacedRepetition {
-				> div {
-					.spacedRepetitionContent {
-						height: 100%;
-
-						.spaced-repetition__prompt, %prompt-style {
-							color: var(--darkmode-text) !important;
-							background-color: var(--darkmode-background) !important;
-
-							.spaced-repetition__prompt__breadcrumbs {
-								@extend %prompt-style;
-							}
-							.rem-bullet__document {
-								@extend %prompt-style;
-
-								.file.text.small.icon {
-									@extend %prompt-style;
-								}
-							}
-						}
-						.spaced-repetition__prompt { 
-							// Answer Part Text
-								.fill-in-the-blank {
-									// Answer
-										&.bg-white {
-											padding: 5px;
-											border-radius: 5px;
-										}
-								}
-								.fill-in-the-blank--revealed {
-									padding: 5px; 
-									border-radius: 5px;
-								}
-							// Card Prompt
-								.rem-bullet__document {
-									font-weight: 600;
-								}
-								.rem-bullet__document,
-								.rem-bullet__document .file.text.small.icon {
-									color: var(--darkmode-text) !important;
-									background-color: var(--darkmode-background) !important;
-								}	
-						}
-					}
-				}
-				.spaced-repetition__bottom {
-					.spaced-repetition__accuracy-buttons {
-						.accuracy-button {
-							color: var(--darkmode-text);
-							background-color: var(--darkmode-background-button);
-							border: unset;
-
-							&:hover {
-								 background-color: var(--darkmode-background-selected);
-							}
-
-							.accuracy-button__interval {
-								border: unset;
-								color: var(--darkmode-text-bold);
-								background-color: var(--darkmode-background-selected-darker);
-							}
-						}
-					}
-				}
-            }
-		// Flashcard
+	// Queue Page
+		.queue-container {
 			.Queue {
-				// Overall Style
-					background-color: var(--darkmode-background);
-					// Border
-						border: 2px solid black;
-					// Bullet
-						.rem-bullet__queue {
-							background-color: var(--darkmode-text);
-						}
-					// Select Cluster Hover
-						.hover\:bg-UI03:hover {
-							background-color: var(--darkmode-background-selected);
-						}
-					// Katex
-						.katex {
-							background-color: unset;
-						}
-				// Queue Title Bar
-					.queue__title {
-						.queue__title__left {
-							color: var(--darkmode-text);
-						}
-						.queue__title__middle {
-							color: var(--darkmode-text);
-							.queue__badge {
-								color: var(--darkmode-text);
-								background-color: var(--darkmode-background-selected);
-							}
-							> span:nth-of-type(1) {
-								color: var(--darkmode-text);
-							}
-							> span:nth-of-type(2) {
-								background-color: var(--darkmode-background-selected);
+				.TransformComponent-module_container__3NwNd {
+					overflow: unset;
+				}
 
-								> div {
-									&:hover {
-										background-color: var(--darkmode-background-selected-darker);
-									}
-
-									> div:nth-of-type(1) {
-										color: var(--darkmode-text);
-									}
-									> div:nth-of-type(2) {
-										> svg {
-											fill: var(--darkmode-text) !important;
-											color: var(--darkmode-text) !important;
-										}
-									}
-								}
-							}
-						}
-						.queue__title__right {
-							color: var(--darkmode-text);
-
-							> span {
-								.icon-button {
-									&:hover {
-										background-color: var(--darkmode-background-selected-darker);
-									}
-								}
-							}
-						}
-						.overflow-ellipsis {
-							color: var(--darkmode-text);
-							background-color: var(--darkmode-background-selected);
-
-							.font-semibold {
-								color: var(--darkmode-text);
-								background-color: var(--darkmode-background-selected);	
-							}
-						}
-					}
-				// Question Span
-					.queue-text-large-font {
-						font-size: 24px;
-					}
-				// Flashcard for Select Menu
-					.font-semibold.text-gray-100 {
-						color: var(--darmode-text);
-					}
-					.queue__title .h-6 > svg {
-						color: var(--darkmode-contrast);
-						fill: var(--darkmode-contrast);
-					}
-				// Residue Card Number
-					.queue__progress {
-						.queue__progress-bar {
-							background-color: var(--darkmode-selected-darker);
-							border:  1px solid black;
-						}
-					}
-				// Breadcrumbs Folder and File icon
-					.icon--document,
-					.RichTextViewer.px-1.truncate {
-						color: var(--darkmode-text);
-					}
 				// Question Title thumbnail
 					.rem-bullet__document .RichTextViewer .thumbnail--with-width {
 						height: 1em;
 						width: auto;
 					}
-				// Cloze
-					.RichTextViewer .cloze {
-						background-color: unset;
-						padding: 5px;
-						border-radius: 5px;
-						border-bottom: 2px solid var(--darkmode-contrast);
+				// Question Span
+					.queue-text-large-font {
+						font-size: 24px;
+					}
+				// SRS Content
+					.spacedRepetition {
+						> div {
+							.spacedRepetitionContent {
+								height: 100%;
+							}
+						}
 					}
 			}
+		}
+	// Dark Mode
+		.dark-mode {
+			// Select Cluster
+				.queue-cluster-selector {
+					color: var(--darkmode-text);
+				}
+				.hover\:bg-UI03:hover {
+					background-color: var(--darkmode-background-selected);
+				}
+			// Search Popup - Flashcard
+				#SearchPopup {
+					caret-color: var(--darkmode-text);
+					color: var(--darkmode-text);
+					background-color: var(--darkmode-background);
+
+					.rich-text-editor,
+					.EditorContainer {
+						caret-color: var(--darkmode-text);
+						color: var(--darkmode-text);
+						background-color: var(--darkmode-background);
+					}
+				}
+			
+			// Flashcard
+				.Queue {
+					// Overall Style
+						background-color: var(--darkmode-background);
+						// Border
+							border: 2px solid black;
+						// Bullet
+							.rem-bullet__queue {
+								background-color: var(--darkmode-text);
+							}
+						// Select Cluster Hover
+							.hover\:bg-UI03:hover {
+								background-color: var(--darkmode-background-selected);
+							}
+						// Katex
+							.katex {
+								background-color: unset;
+							}
+					// Queue Title Bar
+						.queue__title {
+							.queue__title__left {
+								color: var(--darkmode-text);
+							}
+							.queue__title__middle {
+								color: var(--darkmode-text);
+								.queue__badge {
+									color: var(--darkmode-text);
+									background-color: var(--darkmode-background-selected);
+								}
+								> span:nth-of-type(1) {
+									color: var(--darkmode-text);
+								}
+								> span:nth-of-type(2) {
+									background-color: var(--darkmode-background-selected);
+
+									> div {
+										&:hover {
+											background-color: var(--darkmode-background-selected-darker);
+										}
+
+										> div:nth-of-type(1) {
+											color: var(--darkmode-text);
+										}
+										> div:nth-of-type(2) {
+											> svg {
+												fill: var(--darkmode-text) !important;
+												color: var(--darkmode-text) !important;
+											}
+										}
+									}
+								}
+							}
+							.queue__title__right {
+								color: var(--darkmode-text);
+
+								> span {
+									.icon-button {
+										&:hover {
+											background-color: var(--darkmode-background-selected-darker);
+										}
+									}
+								}
+							}
+							.overflow-ellipsis {
+								color: var(--darkmode-text);
+								background-color: var(--darkmode-background-selected);
+
+								.font-semibold {
+									color: var(--darkmode-text);
+									background-color: var(--darkmode-background-selected);	
+								}
+							}
+						}
+					// SRS Contents
+						.spacedRepetition {
+							> div {
+								.spacedRepetitionContent {
+									.spaced-repetition__prompt, %prompt-style {
+										color: var(--darkmode-text) !important;
+										background-color: var(--darkmode-background) !important;
+
+										.spaced-repetition__prompt__breadcrumbs {
+											@extend %prompt-style;
+										}
+										.rem-bullet__document {
+											@extend %prompt-style;
+
+											.file.text.small.icon {
+												@extend %prompt-style;
+											}
+										}
+									}
+									.spaced-repetition__prompt { 
+										// Answer Part Text
+											.fill-in-the-blank {
+												// Answer
+													&.bg-white {
+														padding: 5px;
+														border-radius: 5px;
+													}
+											}
+											.fill-in-the-blank--revealed {
+												padding: 5px; 
+												border-radius: 5px;
+											}
+										// Card Prompt
+											.rem-bullet__document {
+												font-weight: 600;
+											}
+											.rem-bullet__document,
+											.rem-bullet__document .file.text.small.icon {
+												color: var(--darkmode-text) !important;
+												background-color: var(--darkmode-background) !important;
+											}	
+									}
+								}
+							}
+							.spaced-repetition__bottom {
+								.spaced-repetition__accuracy-buttons {
+									.accuracy-button {
+										color: var(--darkmode-text);
+										background-color: var(--darkmode-background-button);
+										border: unset;
+
+										&:hover {
+											background-color: var(--darkmode-background-selected);
+										}
+
+										.accuracy-button__interval {
+											border: unset;
+											color: var(--darkmode-text-bold);
+											background-color: var(--darkmode-background-selected-darker);
+										}
+									}
+								}
+							}
+						}
+					// Flashcard for Select Menu
+						.font-semibold.text-gray-100 {
+							color: var(--darmode-text);
+						}
+						.queue__title .h-6 > svg {
+							color: var(--darkmode-contrast);
+							fill: var(--darkmode-contrast);
+						}
+					// Residue Card Number
+						.queue__progress {
+							.queue__progress-bar {
+								background-color: var(--darkmode-selected-darker);
+								border:  1px solid black;
+							}
+						}
+					// Breadcrumbs Folder and File icon
+						.icon--document,
+						.RichTextViewer.px-1.truncate {
+							color: var(--darkmode-text);
+						}
+					// Cloze
+						.RichTextViewer .cloze {
+							background-color: unset;
+							padding: 5px;
+							border-radius: 5px;
+							border-bottom: 2px solid var(--darkmode-contrast);
+						}
+				}
 	}
 // Card Browser Page
 	.dark-mode{
