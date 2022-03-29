@@ -608,6 +608,8 @@
 			.spacedRepetition {
 				> div {
 					.spacedRepetitionContent {
+						height: 100%;
+
 						.spaced-repetition__prompt, %prompt-style {
 							color: var(--darkmode-text) !important;
 							background-color: var(--darkmode-background) !important;

@@ -421,6 +421,9 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
 }
+.dark-mode .spacedRepetition > div .spacedRepetitionContent {
+	height: 100%;
+}
 .dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt, .dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon, .dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon .spaced-repetition__prompt__breadcrumbs, .dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon .rem-bullet__document, .dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document, .dark-mode .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs {
 	color: var(--darkmode-text) !important;
 	background-color: var(--darkmode-background) !important;
