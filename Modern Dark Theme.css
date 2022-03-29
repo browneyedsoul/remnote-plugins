@@ -2204,6 +2204,15 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode #search-results__list #search-results__result > div > div .text-gray-100 {
 	color: var(--darkmode-text);
 }
+.dark-mode #search-results__list #search-results__result > div > div > div:nth-of-type(3) {
+	transform: scale(1.1);
+}
+.dark-mode #search-results__list #search-results__result > div > div > div:nth-of-type(3) > div {
+	color: var(--darkmode-contrast) !important;
+	opacity: 0.9;
+	border-color: #000 !important;
+	background-color: var(--darkmode-background-selected-darker);
+}
 .dark-mode #search-results__list #search-results__result.bg-gray-5 {
 	background-color: var(--darkmode-background-selected-darker);
 }
