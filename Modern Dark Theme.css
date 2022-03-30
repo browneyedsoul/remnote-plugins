@@ -28,7 +28,7 @@
 	--reference-text-dark: #dfdfd5;
 	--reference-background: #ececec;
 	--reference-background-dark: #252525;
-	--popup-background-hover: #D1D1D1;
+	--popup-background-hover: #F4F4FA;
 	--line-color: #dddddd;
 	--line-color-dark: #535353;
 	--link-node-color: #002DB1;
@@ -182,6 +182,9 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode #RemPage [data-icon~=folder] {
 	color: var(--darkmode-text) !important;
 	fill: var(--darkmode-text) !important;
+}
+.dark-mode #RemPage .RichTextViewer {
+	color: var(--darkmode-text);
 }
 .dark-mode #RemPage .document-header-top-bar {
 	color: var(--darkmode-text);
