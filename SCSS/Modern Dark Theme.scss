@@ -281,6 +281,15 @@
 					}
 				}
 			}
+			[data-rem-tags~="highlight"] {
+				.rem-text {
+					.EditorContainer {
+						.bold {
+							color: #000 !important;
+						}
+					}
+				}
+			}
 		}
 	// Span Element - Inline Code
 		.dark-mode {
@@ -2312,14 +2321,15 @@
 			.settings-page {
 				background-color: var(--darkmode-background);
 
-				.settings-page__sidebar {
-					background-color: var(--darkmode-background-selected-darker) !important;
-					border-style: unset;
+				// Sidebar
+					.settings-page__sidebar {
+						background-color: var(--darkmode-background-sidebar) !important;
+						border-style: unset;
 
-					.settings-page__sidebar__title {
-						color: var(--darkmode-contrast);
+						.settings-page__sidebar__title {
+							color: var(--darkmode-contrast);
+						}
 					}
-				}
 				// Setting Page Button Style
 					.button:not(.p-6 > .button) {
 						color: var(--darkmode-text) !important;
@@ -2343,7 +2353,7 @@
 							background-color: var(--darkmode-background);
 
 							.popup__header {
-								background-color: var(--darkmode-background);
+								background-color: var(--darkmode-background-sidebar) !important;
 								border-style: unset;
 							}
 							.settings-page__option {
