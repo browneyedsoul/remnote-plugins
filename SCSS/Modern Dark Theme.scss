@@ -237,13 +237,6 @@
 			.rem-text.rem-header--3 {
 				color: var(--darkmode-text);
 			}
-			.rem-text {
-				.EditorContainer {
-					.bold {
-						color: var(--darkmode-text-bold);
-					}
-				}
-			}
 		}
 	// Span Element - Bold Text
 		.dark-mode {
@@ -267,6 +260,21 @@
 					&:not([data-rem-container-tags~="calloutblue"])
 					&:not([data-rem-container-tags~="calloutpurple"]) {
 						color: var(--darkmode-text-bold);
+					}
+				}
+
+				.EditorContainer {
+					// Unfocused
+					.RichTextViewer:not(.RichTextViewer.notIncludedAncestor) {
+						.bold {
+							color: var(--darkmode-text-bold);
+						}
+					}
+					// Focused
+					[data-slate-node~="element"] {
+						.bold {
+							color: var(--darkmode-text-bold);
+						}
 					}
 				}
 			}

@@ -202,11 +202,14 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .rem-text.rem-header--3 {
 	color: var(--darkmode-text);
 }
-.dark-mode .rem-text .EditorContainer .bold {
-	color: var(--darkmode-text-bold);
-}
 
 .dark-mode .rem-text .bold:not(.rem-header--1 .bold) .dark-mode .rem-text .bold:not(.rem-header--2 .bold) .dark-mode .rem-text .bold:not(.rem-header--3 .bold) .dark-mode .rem-text .bold:not([data-rem-tags~=highlight] .bold) .dark-mode .rem-text .bold:not(.bold.highlight-color--red) .dark-mode .rem-text .bold:not(.bold.highlight-color--orange) .dark-mode .rem-text .bold:not(.bold.highlight-color--yellow) .dark-mode .rem-text .bold:not(.bold.highlight-color--green) .dark-mode .rem-text .bold:not(.bold.highlight-color--blue) .dark-mode .rem-text .bold:not(.bold.highlight-color--purple) .dark-mode .rem-text .bold:not([data-rem-container-tags~=callout]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutred]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutorange]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutyellow]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutgreen]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutblue]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutpurple]) {
+	color: var(--darkmode-text-bold);
+}
+.dark-mode .rem-text .EditorContainer .RichTextViewer:not(.RichTextViewer.notIncludedAncestor) .bold {
+	color: var(--darkmode-text-bold);
+}
+.dark-mode .rem-text .EditorContainer [data-slate-node~=element] .bold {
 	color: var(--darkmode-text-bold);
 }
 
