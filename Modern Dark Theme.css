@@ -564,8 +564,11 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode [aria-label~=Omnibar] input {
 	color: var(--darkmode-text) !important;
 }
+.dark-mode [aria-label~=Omnibar] > div:nth-of-type(1) > div {
+	background-color: var(--darkmode-background-selected-darker) !important;
+}
 .dark-mode [aria-label~=Omnibar] > div:nth-of-type(1) > div > span.RichTextViewer {
-	color: #000;
+	color: var(--darkmode-text);
 }
 .dark-mode [aria-label~=Omnibar] > div:nth-of-type(1) > input {
 	color: var(--darkmode-text);
