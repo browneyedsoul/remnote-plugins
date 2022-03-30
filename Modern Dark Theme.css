@@ -1677,6 +1677,10 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .settings-page {
 	background-color: var(--darkmode-background);
 }
+.dark-mode .settings-page .settings-page__sidebar {
+	background-color: var(--darkmode-background-selected-darker) !important;
+	border-style: unset;
+}
 .dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__title {
 	color: var(--darkmode-contrast);
 }
@@ -1699,6 +1703,7 @@ body.old-dark-mode .dark-mode-background {
 }
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner .popup__header {
 	background-color: var(--darkmode-background);
+	border-style: unset;
 }
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner .settings-page__option .ml-4 > div {
 	color: var(--darkmode-text) !important;
@@ -1733,16 +1738,31 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text) !important;
 	width: unset;
 }
-.dark-mode .settings-page .settings-page__content .settings-page__content__inner .PluginsConfiguration__table, .dark-mode .settings-page .settings-page__content .settings-page__content__inner .PluginsConfiguration__table .ui.table {
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .bg-mint-10 {
+	background-color: #365148;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .bg-mint-10 .text-mint-80 {
+	color: var(--darkmode-contrast);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .bg-mint-10 .group a {
+	color: var(--link-node-color-dark);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .bg-white {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .PluginsConfiguration__table, .dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .PluginsConfiguration__table .table {
 	background-color: var(--darkmode-background);
 }
-.dark-mode .settings-page .settings-page__content .settings-page__content__inner .PluginsConfiguration__table .ui.table thead th {
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .PluginsConfiguration__table .table {
 	color: var(--darkmode-text);
 }
-.dark-mode .settings-page .settings-page__content .settings-page__content__inner .PluginsConfiguration__table input {
-	color: var(--darkmode-contrast) !important;
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .PluginsConfiguration__table .table thead tr th {
+	color: var(--darkmode-text);
 }
-.dark-mode .settings-page .settings-page__content .settings-page__content__inner .PluginsConfiguration__table .css-fLTnVi {
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .PluginsConfiguration__table .table tbody tr td input {
+	color: var(--darkmode-text-bold);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .PluginsConfiguration__table .css-fLTnVi {
 	color: black !important;
 }
 .dark-mode .settings-page .css-fAxQcq,

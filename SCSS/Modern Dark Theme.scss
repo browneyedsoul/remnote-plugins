@@ -2313,6 +2313,9 @@
 				background-color: var(--darkmode-background);
 
 				.settings-page__sidebar {
+					background-color: var(--darkmode-background-selected-darker) !important;
+					border-style: unset;
+
 					.settings-page__sidebar__title {
 						color: var(--darkmode-contrast);
 					}
@@ -2341,6 +2344,7 @@
 
 							.popup__header {
 								background-color: var(--darkmode-background);
+								border-style: unset;
 							}
 							.settings-page__option {
 								.ml-4 {
@@ -2402,22 +2406,51 @@
 									width: unset;
 								}
 							// Settings Page Plugin Table
-								.PluginsConfiguration__table, %Pluginboxstyle {
-									background-color: var(--darkmode-background);
-								}
-								.PluginsConfiguration__table {
-									.ui.table {
-										@extend %Pluginboxstyle;
+								#PluginsConfiguration {
+									.bg-mint-10 {
+										background-color: #365148;
 
-										thead th {
-											color: var(--darkmode-text);
+										.text-mint-80 {
+											color: var(--darkmode-contrast);
+										}
+										.group {
+											a {
+												color: var(--link-node-color-dark);	
+											}
 										}
 									}
-									input {
-										color: var(--darkmode-contrast) !important;
+									.bg-white {
+										background-color: var(--darkmode-background-selected-darker);
 									}
-									.css-fLTnVi {
-										color: black !important;
+
+									.PluginsConfiguration__table, %Pluginboxstyle {
+										background-color: var(--darkmode-background);
+									}
+									.PluginsConfiguration__table {
+										.table {
+											@extend %Pluginboxstyle;
+
+											color: var(--darkmode-text);
+											thead {
+												tr {
+													th {
+														color: var(--darkmode-text);
+													}
+												}
+											}
+											tbody {
+												tr {
+													td {
+														input {
+															color: var(--darkmode-text-bold);
+														}
+													}
+												}
+											}
+										}
+										.css-fLTnVi {
+											color: black !important;
+										}
 									}
 								}
 						}
