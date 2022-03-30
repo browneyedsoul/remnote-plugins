@@ -237,6 +237,13 @@
 			.rem-text.rem-header--3 {
 				color: var(--darkmode-text);
 			}
+			.rem-text {
+				.EditorContainer {
+					.bold {
+						color: var(--darkmode-text-bold);
+					}
+				}
+			}
 		}
 	// Span Element - Bold Text
 		.dark-mode {
@@ -3142,6 +3149,10 @@
 	}
 // Context Menu
 	.dark-mode {
+		// Slash Command Slash
+			.typeSlashCommand {
+				color: var(--darkmode-contrast);
+			}
 		// Selected Item in Context Menu
 			.bg-blue-5 {
 				background-color: #233E6F;
