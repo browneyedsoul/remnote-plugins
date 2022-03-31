@@ -2541,13 +2541,13 @@
 							// Header
 								> div.popup__header {
 									background-color: var(--darkmode-background-sidebar) !important;
-									border-style: unset;
+									border-color: var(--darkmode-background-sidebar);
 
 									// Left Curve Trick
 										&::after {
 											content: "";
 											position: absolute;
-											left: 282px;
+											left: 281px;
 											z-index: 9;
 											
 											background-color: transparent;

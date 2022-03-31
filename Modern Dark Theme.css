@@ -1781,12 +1781,12 @@ body.old-dark-mode .dark-mode-background {
 }
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner > div.popup__header {
 	background-color: var(--darkmode-background-sidebar) !important;
-	border-style: unset;
+	border-color: var(--darkmode-background-sidebar);
 }
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner > div.popup__header::after {
 	content: "";
 	position: absolute;
-	left: 282px;
+	left: 281px;
 	z-index: 9;
 	background-color: transparent;
 	top: 55px;
