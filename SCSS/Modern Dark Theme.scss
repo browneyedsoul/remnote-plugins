@@ -130,7 +130,7 @@
 		}
 	// Checkbox
 		// Box Style
-			.rem-checkbox {
+			.rem-checkbox, %checkbox-style {
 				border-radius: unset !important;
 				background-color: unset;
 			}
@@ -2316,54 +2316,282 @@
 		}
 	}
 // Settings Page
+	.settings-page {
+		// Overall Style
+			// Checkbox
+				[data-cy~="checkbox"] {
+					@extend %checkbox-style;
+				}
+		// Sidebar
+			.settings-page__sidebar {
+					background-color: #E7E7EF;
+					// Settings Left Top
+						.settings-page__sidebar__title {
+							
+						}
+					// Settings Page Sidebar
+						.settings-page__sidebar__link {
+							&:hover {
+								
+							}
+						}
+				}
+		// Setting Page Content
+			.settings-page__content {
+				.settings-page__content__inner {
+					// Header
+						> div.popup__header {
+							justify-content: center;
+							background-color: #E7E7EF;
+
+							// Left Curve Trick
+								&::after {
+									content: "";
+									position: absolute;
+									left: 282px;
+									z-index: 9;
+									
+									background-color: transparent;
+									top: 55px;
+									height: 50px;
+									width: 25px;
+									border-top-left-radius: 25px;
+									box-shadow: 0 -25px 0 0 #E7E7EF;
+								}
+						}
+					// Content
+						> div:nth-of-type(2) {
+							div.pt-8.px-6 {
+								> div {
+									font-size: 28px !important;
+									font-weight: 700 !important;
+									font-family: 'Nunito', sans-serif !important;
+								}
+							}
+							.settings-page__option {
+								// Text
+									.settings-page__text {
+										// Head
+											> div:nth-of-type(1) {
+												font-size: 18px !important;
+												font-weight: 700 !important;
+												font-family: 'Nunito', sans-serif !important;
+											}
+										// Body
+											> div:nth-of-type(2) {
+												color: #959CA4;
+
+												// Scheduler Select
+												.bg-white {
+													background-color: var(--darkmode-background-selected-darker);
+												}
+											}
+									}
+							}
+						}
+						// Account
+							.p-6 {
+								> .pr-1 {
+									margin-top: 10px;
+
+									> svg {
+										// checkmark
+										fill: #06CA83 !important;
+									}
+								}
+							}
+							div:nth-of-type(4) {
+								> .settings-page__option {
+									.settings-page__text {
+										div:nth-of-type(2) {
+											color: #06CA83 !important;
+											font-weight: 700 !important;
+											font-family: 'Nunito', sans-serif !important;
+										}
+									}
+								}
+							}
+						// Subscription page
+							#subscription-page {
+								// Most Popular
+								.bg-mint-10 {
+									color: #000 !important;
+									background-color: #8BD1B9;
+								}
+								.settings__pricing-option-item {
+									.button {
+										background-color: #E6F3F6;
+										border-style: unset !important;
+										.w-max {
+											color: #4B73FF;
+											font-weight: 650;
+
+											.icon {
+												color: #4B73FF;
+											}
+										}
+									}
+								}
+							}
+							// Invite Friends
+								.p-6 {
+									> .form-element {
+										> div {
+
+										}
+									}
+									> .px-0 {
+										> div {
+											
+										}
+									}
+								}
+							.w-min {
+								width: unset;
+							}
+						// Custom Schedulers
+							.spaced-repetition-scheduler-form {
+								> div:nth-of-type(1) {
+										
+									}
+								> div:nth-of-type(2) {
+									// Scheduler Type
+									// Example
+										> .spaced-repetition-scheduler-form__section--examples {
+											div.overflow-x-auto {
+												> div.spaced-repetition-scheduler-form__example {
+													> div.spaced-repetition-scheduler-form__example__number {
+
+													}
+													> div.spaced-repetition-scheduler-form__interaction {
+
+													}
+													> div.spaced-repetition-scheduler-form__interval {
+
+													}
+												}
+											}
+										}
+									// Details
+										> div:nth-of-type(3) {
+											div:nth-of-type(1) {
+												> a {
+													color: var(--link-node-color) !important;
+												}
+											}
+										}
+								}	
+							}
+				}
+			}
+	}
 	// Darkmode Compatibility
 		.dark-mode {
 			.settings-page {
 				background-color: var(--darkmode-background);
+				// Overall Style
+					// Setting Page Button
+						.button:not(.p-6 > .button) {
+							color: var(--darkmode-text) !important;
+							background-color: var(--darkmode-background-selected-darker);
+							border-color: #000 !important;
 
+							&:hover {
+								background-color: var(--darkmode-background-selected);
+							}
+						}
+					// Select
+						.bg-white {
+							color: var(--darkmode-text) !important;
+							background-color: var(--darkmode-background-selected-darker);
+						}
 				// Sidebar
 					.settings-page__sidebar {
 						background-color: var(--darkmode-background-sidebar) !important;
 						border-style: unset;
+						// Settings Left Top
+							.settings-page__sidebar__title {
+								color: var(--darkmode-contrast);
+							}
+						// Settings Page Sidebar
+							.settings-page__sidebar__link {
+								&:hover {
+									background-color: var(--darkmode-background-selected-darker);
+								}
+								// Focused Item
+								&.text-primary {
+									> div {
+										> div {
+											color: var(--darkmode-contrast);
 
-						.settings-page__sidebar__title {
-							color: var(--darkmode-contrast);
-						}
-					}
-				// Setting Page Button Style
-					.button:not(.p-6 > .button) {
-						color: var(--darkmode-text) !important;
-						background-color: var(--darkmode-background-selected-darker);
-						border-color: #000 !important;
-
-						&:hover {
-							background-color: var(--darkmode-background-selected);
-						}
-					}
-				// Settings Page Scheduler Type Text
-					.pl-4.css-kJJQEm {
-						color: var(--darkmode-text);
-					}
-					.spaced-repetition-scheduler-form__interaction {
-						color: black !important;
+											> svg {
+												> path {
+													color: var(--darkmode-contrast);
+												}
+											}
+										}
+									}
+								}
+							}
 					}
 				// Setting Page Content
 					.settings-page__content {
 						.settings-page__content__inner {
 							background-color: var(--darkmode-background);
+							// Header
+								> div.popup__header {
+									background-color: var(--darkmode-background-sidebar) !important;
+									border-style: unset;
 
-							.popup__header {
-								background-color: var(--darkmode-background-sidebar) !important;
-								border-style: unset;
-							}
-							.settings-page__option {
-								.ml-4 {
-									> div {
-										color: var(--darkmode-text) !important;
+									// Left Curve Trick
+										&::after {
+											content: "";
+											position: absolute;
+											left: 282px;
+											z-index: 9;
+											
+											background-color: transparent;
+											top: 55px;
+											height: 50px;
+											width: 25px;
+											border-top-left-radius: 25px;
+											box-shadow: 0 -25px 0 0 var(--darkmode-background-sidebar);
+										}
+								}
+							// Content
+								> div:nth-of-type(2) {
+									div.pt-8.px-6 {
+										> div {
+											color: #E4E4E4;
+										}
+									}
+									.settings-page__option {
+										// Text
+											.settings-page__text {
+												// Head
+												> div:nth-of-type(1) {
+													color: var(--darkmode-text);
+												}
+												// Body
+												> div:nth-of-type(2) {
+													color: #B7BEC9;
+
+													// Scheduler Select
+													.bg-white {
+														background-color: var(--darkmode-background-selected-darker);
+													}
+												}
+											}
+										// Context Menu
+										.ml-4 {
+											> span {
+												color: var(--darkmode-text) !important;
+												background-color: var(--darkmode-background-selected-darker);
+											}
+										}
 									}
 								}
-							}
-							// Settings Page Account
+							// Account
 								.p-6 {
 									> .pr-1 {
 										margin-top: 10px;
@@ -2378,20 +2606,30 @@
 										color: var(--darkmode-contrast);
 									}
 								}
-							// Settings Page Subscription page
+							// Subscription page
 								#subscription-page {
-									.css-jbClFc {
-										color: black;
-										font-weight: 650;
-									}
+									// Most Popular
 									.bg-mint-10 {
 										color: #000 !important;
 										background-color: #8BD1B9;
 									}
 									.settings__pricing-option-item {
-										.w-max {
+										.button {
+											background-color: #183C4D;
+
 											.icon {
 												color: var(--darkmode-contrast);
+											}
+										}
+										.button {
+											background-color: #183C4D;
+											.w-max {
+												color: #B5DEE8;
+												font-weight: 650;
+
+												.icon {
+													color: #B5DEE8;
+												}
 											}
 										}
 									}
@@ -2415,20 +2653,103 @@
 									color: var(--darkmode-text) !important;
 									width: unset;
 								}
-							// Settings Page Plugin Table
-								#PluginsConfiguration {
-									.bg-mint-10 {
-										background-color: #365148;
+							// Custom Schedulers
+								.spaced-repetition-scheduler-form {
+									> div:nth-of-type(1) {
+										
+									}
+									> div:nth-of-type(2) {
+										// Scheduler Type
+										// Example
+											> .spaced-repetition-scheduler-form__section--examples {
+												div.overflow-x-auto {
+													> div.spaced-repetition-scheduler-form__example {
+														> div.spaced-repetition-scheduler-form__example__number {
 
-										.text-mint-80 {
-											color: var(--darkmode-contrast);
-										}
-										.group {
-											a {
-												color: var(--link-node-color-dark);	
+														}
+														> div.spaced-repetition-scheduler-form__interaction {
+
+														}
+														> div.spaced-repetition-scheduler-form__interval {
+
+														}
+													}
+												}
 											}
+										// Details
+											> div:nth-of-type(3) {
+												// Anki SM-2 Settings
+													div:nth-of-type(1) {
+														> a {
+															color: var(--link-node-color-dark) !important;
+														}
+													}
+												// Learning Phase, Exponenetial Phase, Re-Learning Phase
+													.spaced-repetition-scheduler-form__section {
+														.spaced-repetition-scheduler-form__section__header {
+
+														}
+														.spaced-repetition-scheduler-form__field {
+															.spaced-repetition-scheduler-form__field__explanation {
+																color: #B7BEC9;
+															}
+															div.flex.items-center {
+																> input {
+																	color: var(--darkmode-text);
+																	background-color: var(--darkmode-background-selected-darker);
+																	border: unset;
+																}
+															}
+														}
+													}
+											}
+									}
+								}
+							// Keyboard Shortcuts
+								#SettingsPage {
+									#SettingsPageContent {
+										#change-keyboard-shortcuts {
+											#change-keyboard-shortcuts__section {
+												.change-keyboard-shortcut-list-item {
+													> div {
+														> div {
+															> div {
+																color: #D2D200 !important;
+																background-color: var(--darkmode-background-selected-darker);
+																border-color: #000 !important;
+																zoom: 1.2;
+															}
+														}
+													}
+												}
+											}	
 										}
 									}
+								}
+							// Edditor Options
+							// Search
+							// Sidebar
+							// Notification
+							// Labs
+							// Plugins
+								#PluginsConfiguration {
+									// Popular Plugins
+										// Details
+										.text-gray-70 {
+											color: #B7BEC9;
+										}
+									// Callout
+										.bg-mint-10 {
+											background-color: #365148;
+											.text-mint-80 {
+												color: var(--darkmode-contrast);
+											}
+											.group {
+												a {
+													color: var(--link-node-color-dark);	
+												}
+											}
+										}
 									.bg-white {
 										background-color: var(--darkmode-background-selected-darker);
 									}
@@ -2453,121 +2774,14 @@
 													td {
 														input {
 															color: var(--darkmode-text-bold);
+															background-color: var(--darkmode-background-selected-darker);
 														}
 													}
 												}
 											}
 										}
-										.css-fLTnVi {
-											color: black !important;
-										}
 									}
 								}
-						}
-					}
-				// Settings Page Content Description
-					.css-fAxQcq, 
-				// Plan Details
-					.css-eqifkM {
-						color: var(--darkmode-contrast);
-						font-family: "Roboto Mono", "Fira Code", monospace;
-						font-weight: 600;
-					}
-					.settings-page__option {
-						.p-3 {
-							color: black !important;
-						}
-					}
-				// Settings Page Sidebar Hover Effect
-					.settings-page__sidebar  {
-						.settings-page__sidebar__link {
-							&:hover {
-								background-color: #000;
-							}
-						}
-					}
-				// Settings Page Account, Knowledge Base Settings, Danger Zone, Syncing, App Version
-					.items-center,
-					.css-jBUFtN,
-					.css-ATSnA,
-					.css-dcfFHl,
-					.css-cSCrvK,
-					.css-exQOrH + a,
-					.checkbox,
-					.px-6,
-					.p-6,
-					// Subscription
-					.css-bOWrRb,
-					// Schedulers Page
-					.css-egEQZl,
-					// Settings Page Sidebar Text
-					.inline-block.h-4,
-					// Account / Plan / Knowledge Base Settings / DangerZone / Syncing / App Version
-					.css-kPXeXo {
-						color: var(--darkmode-text) !important;
-					}
-				// Settings Page Knowledge Base
-					.switch-knowledgebase__knowledgebase__button > .icon {
-						color: var(--darkmode-contrast);
-					}
-				// Keyboard Shortcuts
-					#SettingsPage {
-						#SettingsPageContent {
-							#change-keyboard-shortcuts {
-								#change-keyboard-shortcuts__section {
-									.change-keyboard-shortcut-list-item {
-										> div {
-											> div {
-												> div {
-													color: #D2D200 !important;
-													background-color: var(--darkmode-background-selected-darker);
-													border-color: #000 !important;
-													zoom: 1.2;
-												}
-											}
-										}
-									}
-								}	
-							}
-						}
-					}
-				// Interim Measure
-					#DefaultExampleDocumentActions {
-						color: var(--darkmode-contrast) !important;
-					}
-					[data-icon~="dropdown"] {
-						color: #000 !important;
-						fill: #000 !important;
-					}
-					.spaced-repetition-scheduler-form a,
-					// Body Text
-					[color~="#515167"],
-					// Spinner
-					[data-cy~="loading-spinner"] > div,
-					// Plugin Option
-					.divider.text {
-						color: var(--darkmode-contrast) !important;
-					}
-					.settings-page__sidebar .inline-block.h-4,
-					.pt-4,
-					.pl-4,
-					.text-gray-70,
-					.spaced-repetition-scheduler-form .p-6 > div > div,
-					.spaced-repetition-scheduler-form .py-1,
-					.spaced-repetition-scheduler-form__field > div,
-					.spaced-repetition-scheduler-form__field__explanation,
-					// Header
-					.pt-8.px-6 > div,
-					.pb-1,
-					// Pricing $
-					.mt-4.mr-6 > div,
-					.feature-checklist-element > div,
-					.settings__pricing-option-item > div > div > div {
-						color: var(--darkmode-text) !important;
-					}
-					.ui.input {
-						> input {
-							background-color: var(--darkmode-background-selected-darker);
 						}
 					}
 			}
@@ -3272,6 +3486,34 @@
 			}
 	}
 // Help & Tutorial Page
+	// Intro Page
+		.dark-mode {
+			#HelpPageContainer {
+				#HelpPage {
+					background-color: var(--darkmode-background);
+
+					 > div:nth-of-type(1) {
+						 color: var(--darkmode-contrast);
+					 }
+					//  Header
+					 > a {
+						color: var(--darkmode-text);
+					 }
+					//  List
+					> ul {
+						> a {
+							color: var(--darkmode-text);
+
+							> li {
+								.icon {
+									color: var(--darkmode-text);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	// SideBar
 		#document-sidebar {
 			// RemNote Help Page Sidebar Top
@@ -3280,9 +3522,6 @@
 						> div {
 							color: var(--darkmode-contrast) !important;
 						}
-					}
-					.css-cPmPhh {
-						color: var(--darkmode-text);
 					}
 					.help-knowledge-base-search {
 						.rich-text-editor {
@@ -3336,10 +3575,6 @@
 							border-radius: 5px;
 						}
 					}
-				}
-			// RemNote Help Page Container
-				#HelpPageContainer #HelpPage {
-					filter: invert(1);
 				}
 			// API
 				#APIKeys {

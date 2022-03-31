@@ -125,7 +125,7 @@ body.old-dark-mode .dark-mode-background {
 	border: 4px solid transparent;
 }
 
-.rem-checkbox {
+.rem-checkbox, .settings-page [data-cy~=checkbox] {
 	border-radius: unset !important;
 	background-color: unset;
 }
@@ -1677,15 +1677,76 @@ body.old-dark-mode .dark-mode-background {
 	background-color: var(--darkmode-background-selected);
 }
 
+.settings-page .settings-page__sidebar {
+	background-color: #E7E7EF;
+}
+.settings-page .settings-page__content .settings-page__content__inner > div.popup__header {
+	justify-content: center;
+	background-color: #E7E7EF;
+}
+.settings-page .settings-page__content .settings-page__content__inner > div.popup__header::after {
+	content: "";
+	position: absolute;
+	left: 282px;
+	z-index: 9;
+	background-color: transparent;
+	top: 55px;
+	height: 50px;
+	width: 25px;
+	border-top-left-radius: 25px;
+	box-shadow: 0 -25px 0 0 #E7E7EF;
+}
+.settings-page .settings-page__content .settings-page__content__inner > div:nth-of-type(2) div.pt-8.px-6 > div {
+	font-size: 28px !important;
+	font-weight: 700 !important;
+	font-family: "Nunito", sans-serif !important;
+}
+.settings-page .settings-page__content .settings-page__content__inner > div:nth-of-type(2) .settings-page__option .settings-page__text > div:nth-of-type(1) {
+	font-size: 18px !important;
+	font-weight: 700 !important;
+	font-family: "Nunito", sans-serif !important;
+}
+.settings-page .settings-page__content .settings-page__content__inner > div:nth-of-type(2) .settings-page__option .settings-page__text > div:nth-of-type(2) {
+	color: #959CA4;
+}
+.settings-page .settings-page__content .settings-page__content__inner > div:nth-of-type(2) .settings-page__option .settings-page__text > div:nth-of-type(2) .bg-white {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.settings-page .settings-page__content .settings-page__content__inner .p-6 > .pr-1 {
+	margin-top: 10px;
+}
+.settings-page .settings-page__content .settings-page__content__inner .p-6 > .pr-1 > svg {
+	fill: #06CA83 !important;
+}
+.settings-page .settings-page__content .settings-page__content__inner div:nth-of-type(4) > .settings-page__option .settings-page__text div:nth-of-type(2) {
+	color: #06CA83 !important;
+	font-weight: 700 !important;
+	font-family: "Nunito", sans-serif !important;
+}
+.settings-page .settings-page__content .settings-page__content__inner #subscription-page .bg-mint-10 {
+	color: #000 !important;
+	background-color: #8BD1B9;
+}
+.settings-page .settings-page__content .settings-page__content__inner #subscription-page .settings__pricing-option-item .button {
+	background-color: #E6F3F6;
+	border-style: unset !important;
+}
+.settings-page .settings-page__content .settings-page__content__inner #subscription-page .settings__pricing-option-item .button .w-max {
+	color: #4B73FF;
+	font-weight: 650;
+}
+.settings-page .settings-page__content .settings-page__content__inner #subscription-page .settings__pricing-option-item .button .w-max .icon {
+	color: #4B73FF;
+}
+.settings-page .settings-page__content .settings-page__content__inner .w-min {
+	width: unset;
+}
+.settings-page .settings-page__content .settings-page__content__inner .spaced-repetition-scheduler-form > div:nth-of-type(2) > div:nth-of-type(3) div:nth-of-type(1) > a {
+	color: var(--link-node-color) !important;
+}
+
 .dark-mode .settings-page {
 	background-color: var(--darkmode-background);
-}
-.dark-mode .settings-page .settings-page__sidebar {
-	background-color: var(--darkmode-background-sidebar) !important;
-	border-style: unset;
-}
-.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__title {
-	color: var(--darkmode-contrast);
 }
 .dark-mode .settings-page .button:not(.p-6 > .button) {
 	color: var(--darkmode-text) !important;
@@ -1695,21 +1756,60 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .settings-page .button:not(.p-6 > .button):hover {
 	background-color: var(--darkmode-background-selected);
 }
-.dark-mode .settings-page .pl-4.css-kJJQEm {
-	color: var(--darkmode-text);
+.dark-mode .settings-page .bg-white {
+	color: var(--darkmode-text) !important;
+	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode .settings-page .spaced-repetition-scheduler-form__interaction {
-	color: black !important;
+.dark-mode .settings-page .settings-page__sidebar {
+	background-color: var(--darkmode-background-sidebar) !important;
+	border-style: unset;
+}
+.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__title {
+	color: var(--darkmode-contrast);
+}
+.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link.text-primary > div > div {
+	color: var(--darkmode-contrast);
+}
+.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link.text-primary > div > div > svg > path {
+	color: var(--darkmode-contrast);
 }
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner {
 	background-color: var(--darkmode-background);
 }
-.dark-mode .settings-page .settings-page__content .settings-page__content__inner .popup__header {
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner > div.popup__header {
 	background-color: var(--darkmode-background-sidebar) !important;
 	border-style: unset;
 }
-.dark-mode .settings-page .settings-page__content .settings-page__content__inner .settings-page__option .ml-4 > div {
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner > div.popup__header::after {
+	content: "";
+	position: absolute;
+	left: 282px;
+	z-index: 9;
+	background-color: transparent;
+	top: 55px;
+	height: 50px;
+	width: 25px;
+	border-top-left-radius: 25px;
+	box-shadow: 0 -25px 0 0 var(--darkmode-background-sidebar);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner > div:nth-of-type(2) div.pt-8.px-6 > div {
+	color: #E4E4E4;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner > div:nth-of-type(2) .settings-page__option .settings-page__text > div:nth-of-type(1) {
+	color: var(--darkmode-text);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner > div:nth-of-type(2) .settings-page__option .settings-page__text > div:nth-of-type(2) {
+	color: #B7BEC9;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner > div:nth-of-type(2) .settings-page__option .settings-page__text > div:nth-of-type(2) .bg-white {
+	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner > div:nth-of-type(2) .settings-page__option .ml-4 > span {
 	color: var(--darkmode-text) !important;
+	background-color: var(--darkmode-background-selected-darker);
 }
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner .p-6 > .pr-1 {
 	margin-top: 10px;
@@ -1720,16 +1820,25 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner .p-6 > a {
 	color: var(--darkmode-contrast);
 }
-.dark-mode .settings-page .settings-page__content .settings-page__content__inner #subscription-page .css-jbClFc {
-	color: black;
-	font-weight: 650;
-}
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner #subscription-page .bg-mint-10 {
 	color: #000 !important;
 	background-color: #8BD1B9;
 }
-.dark-mode .settings-page .settings-page__content .settings-page__content__inner #subscription-page .settings__pricing-option-item .w-max .icon {
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #subscription-page .settings__pricing-option-item .button {
+	background-color: #183C4D;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #subscription-page .settings__pricing-option-item .button .icon {
 	color: var(--darkmode-contrast);
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #subscription-page .settings__pricing-option-item .button {
+	background-color: #183C4D;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #subscription-page .settings__pricing-option-item .button .w-max {
+	color: #B5DEE8;
+	font-weight: 650;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #subscription-page .settings__pricing-option-item .button .w-max .icon {
+	color: #B5DEE8;
 }
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner .p-6 > .form-element > div {
 	color: var(--darkmode-text) !important;
@@ -1740,6 +1849,26 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner .w-min {
 	color: var(--darkmode-text) !important;
 	width: unset;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .spaced-repetition-scheduler-form > div:nth-of-type(2) > div:nth-of-type(3) div:nth-of-type(1) > a {
+	color: var(--link-node-color-dark) !important;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .spaced-repetition-scheduler-form > div:nth-of-type(2) > div:nth-of-type(3) .spaced-repetition-scheduler-form__section .spaced-repetition-scheduler-form__field .spaced-repetition-scheduler-form__field__explanation {
+	color: #B7BEC9;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner .spaced-repetition-scheduler-form > div:nth-of-type(2) > div:nth-of-type(3) .spaced-repetition-scheduler-form__section .spaced-repetition-scheduler-form__field div.flex.items-center > input {
+	color: var(--darkmode-text);
+	background-color: var(--darkmode-background-selected-darker);
+	border: unset;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #SettingsPage #SettingsPageContent #change-keyboard-shortcuts #change-keyboard-shortcuts__section .change-keyboard-shortcut-list-item > div > div > div {
+	color: #D2D200 !important;
+	background-color: var(--darkmode-background-selected-darker);
+	border-color: #000 !important;
+	zoom: 1.2;
+}
+.dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .text-gray-70 {
+	color: #B7BEC9;
 }
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .bg-mint-10 {
 	background-color: #365148;
@@ -1764,75 +1893,6 @@ body.old-dark-mode .dark-mode-background {
 }
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .PluginsConfiguration__table .table tbody tr td input {
 	color: var(--darkmode-text-bold);
-}
-.dark-mode .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .PluginsConfiguration__table .css-fLTnVi {
-	color: black !important;
-}
-.dark-mode .settings-page .css-fAxQcq,
-.dark-mode .settings-page .css-eqifkM {
-	color: var(--darkmode-contrast);
-	font-family: "Roboto Mono", "Fira Code", monospace;
-	font-weight: 600;
-}
-.dark-mode .settings-page .settings-page__option .p-3 {
-	color: black !important;
-}
-.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {
-	background-color: #000;
-}
-.dark-mode .settings-page .items-center,
-.dark-mode .settings-page .css-jBUFtN,
-.dark-mode .settings-page .css-ATSnA,
-.dark-mode .settings-page .css-dcfFHl,
-.dark-mode .settings-page .css-cSCrvK,
-.dark-mode .settings-page .css-exQOrH + a,
-.dark-mode .settings-page .checkbox,
-.dark-mode .settings-page .px-6,
-.dark-mode .settings-page .p-6,
-.dark-mode .settings-page .css-bOWrRb,
-.dark-mode .settings-page .css-egEQZl,
-.dark-mode .settings-page .inline-block.h-4,
-.dark-mode .settings-page .css-kPXeXo {
-	color: var(--darkmode-text) !important;
-}
-.dark-mode .settings-page .switch-knowledgebase__knowledgebase__button > .icon {
-	color: var(--darkmode-contrast);
-}
-.dark-mode .settings-page #SettingsPage #SettingsPageContent #change-keyboard-shortcuts #change-keyboard-shortcuts__section .change-keyboard-shortcut-list-item > div > div > div {
-	color: #D2D200 !important;
-	background-color: var(--darkmode-background-selected-darker);
-	border-color: #000 !important;
-	zoom: 1.2;
-}
-.dark-mode .settings-page #DefaultExampleDocumentActions {
-	color: var(--darkmode-contrast) !important;
-}
-.dark-mode .settings-page [data-icon~=dropdown] {
-	color: #000 !important;
-	fill: #000 !important;
-}
-.dark-mode .settings-page .spaced-repetition-scheduler-form a,
-.dark-mode .settings-page [color~="#515167"],
-.dark-mode .settings-page [data-cy~=loading-spinner] > div,
-.dark-mode .settings-page .divider.text {
-	color: var(--darkmode-contrast) !important;
-}
-.dark-mode .settings-page .settings-page__sidebar .inline-block.h-4,
-.dark-mode .settings-page .pt-4,
-.dark-mode .settings-page .pl-4,
-.dark-mode .settings-page .text-gray-70,
-.dark-mode .settings-page .spaced-repetition-scheduler-form .p-6 > div > div,
-.dark-mode .settings-page .spaced-repetition-scheduler-form .py-1,
-.dark-mode .settings-page .spaced-repetition-scheduler-form__field > div,
-.dark-mode .settings-page .spaced-repetition-scheduler-form__field__explanation,
-.dark-mode .settings-page .pt-8.px-6 > div,
-.dark-mode .settings-page .pb-1,
-.dark-mode .settings-page .mt-4.mr-6 > div,
-.dark-mode .settings-page .feature-checklist-element > div,
-.dark-mode .settings-page .settings__pricing-option-item > div > div > div {
-	color: var(--darkmode-text) !important;
-}
-.dark-mode .settings-page .ui.input > input {
 	background-color: var(--darkmode-background-selected-darker);
 }
 
@@ -2268,11 +2328,24 @@ body.old-dark-mode .dark-mode-background {
 	color: #000;
 }
 
+.dark-mode #HelpPageContainer #HelpPage {
+	background-color: var(--darkmode-background);
+}
+.dark-mode #HelpPageContainer #HelpPage > div:nth-of-type(1) {
+	color: var(--darkmode-contrast);
+}
+.dark-mode #HelpPageContainer #HelpPage > a {
+	color: var(--darkmode-text);
+}
+.dark-mode #HelpPageContainer #HelpPage > ul > a {
+	color: var(--darkmode-text);
+}
+.dark-mode #HelpPageContainer #HelpPage > ul > a > li .icon {
+	color: var(--darkmode-text);
+}
+
 #document-sidebar #document-sidebar_top .m-3 > div {
 	color: var(--darkmode-contrast) !important;
-}
-#document-sidebar #document-sidebar_top .css-cPmPhh {
-	color: var(--darkmode-text);
 }
 #document-sidebar #document-sidebar_top .help-knowledge-base-search .rich-text-editor {
 	background-color: unset;
@@ -2304,9 +2377,6 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode #hierarchy-editor .rem-container--article-link:hover {
 	background-color: var(--darkmode-background-selected-darker);
 	border-radius: 5px;
-}
-.dark-mode #HelpPageContainer #HelpPage {
-	filter: invert(1);
 }
 .dark-mode #APIKeys a {
 	color: var(--link-node-color-dark);
