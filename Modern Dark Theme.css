@@ -1684,17 +1684,19 @@ body.old-dark-mode .dark-mode-background {
 	justify-content: center;
 	background-color: #E7E7EF;
 }
-.settings-page .settings-page__content .settings-page__content__inner > div.popup__header::after {
-	content: "";
-	position: absolute;
-	left: 282px;
-	z-index: 9;
-	background-color: transparent;
-	top: 55px;
-	height: 50px;
-	width: 25px;
-	border-top-left-radius: 25px;
-	box-shadow: 0 -25px 0 0 #E7E7EF;
+@media (min-width: 1030px) {
+	.settings-page .settings-page__content .settings-page__content__inner > div.popup__header::after {
+		content: "";
+		position: absolute;
+		left: 282px;
+		z-index: 9;
+		background-color: transparent;
+		top: 55px;
+		height: 50px;
+		width: 25px;
+		border-top-left-radius: 25px;
+		box-shadow: 0 -25px 0 0 #E7E7EF;
+	}
 }
 .settings-page .settings-page__content .settings-page__content__inner > div:nth-of-type(2) div.pt-8.px-6 > div {
 	font-size: 28px !important;
@@ -1767,13 +1769,18 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__title {
 	color: var(--darkmode-contrast);
 }
-.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link:hover {
+.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__links > div:nth-of-type(1) > input {
+	color: var(--darkmode-text);
+	background-color: #000;
+	border: unset;
+}
+.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__links .settings-page__sidebar__link:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link.text-primary > div > div {
+.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__links .settings-page__sidebar__link.text-primary > div > div {
 	color: var(--darkmode-contrast);
 }
-.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__link.text-primary > div > div > svg > path {
+.dark-mode .settings-page .settings-page__sidebar .settings-page__sidebar__links .settings-page__sidebar__link.text-primary > div > div > svg > path {
 	color: var(--darkmode-contrast);
 }
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner {
@@ -1783,17 +1790,19 @@ body.old-dark-mode .dark-mode-background {
 	background-color: var(--darkmode-background-sidebar) !important;
 	border-color: var(--darkmode-background-sidebar);
 }
-.dark-mode .settings-page .settings-page__content .settings-page__content__inner > div.popup__header::after {
-	content: "";
-	position: absolute;
-	left: 281px;
-	z-index: 9;
-	background-color: transparent;
-	top: 55px;
-	height: 50px;
-	width: 25px;
-	border-top-left-radius: 25px;
-	box-shadow: 0 -25px 0 0 var(--darkmode-background-sidebar);
+@media (min-width: 1030px) {
+	.dark-mode .settings-page .settings-page__content .settings-page__content__inner > div.popup__header::after {
+		content: "";
+		position: absolute;
+		left: 281px;
+		z-index: 9;
+		background-color: transparent;
+		top: 55px;
+		height: 50px;
+		width: 25px;
+		border-top-left-radius: 25px;
+		box-shadow: 0 -25px 0 0 var(--darkmode-background-sidebar);
+	}
 }
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner > div:nth-of-type(2) div.pt-8.px-6 > div {
 	color: #E4E4E4;
@@ -1860,6 +1869,8 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background-selected-darker);
 	border: unset;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
 }
 .dark-mode .settings-page .settings-page__content .settings-page__content__inner #SettingsPage #SettingsPageContent #change-keyboard-shortcuts #change-keyboard-shortcuts__section .change-keyboard-shortcut-list-item > div > div > div {
 	color: #D2D200 !important;

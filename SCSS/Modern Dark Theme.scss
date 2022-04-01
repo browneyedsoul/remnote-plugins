@@ -2346,17 +2346,19 @@
 
 							// Left Curve Trick
 								&::after {
-									content: "";
-									position: absolute;
-									left: 282px;
-									z-index: 9;
-									
-									background-color: transparent;
-									top: 55px;
-									height: 50px;
-									width: 25px;
-									border-top-left-radius: 25px;
-									box-shadow: 0 -25px 0 0 #E7E7EF;
+									@media (min-width: 1030px) {
+										content: "";
+										position: absolute;
+										left: 282px;
+										z-index: 9;
+										
+										background-color: transparent;
+										top: 55px;
+										height: 50px;
+										width: 25px;
+										border-top-left-radius: 25px;
+										box-shadow: 0 -25px 0 0 #E7E7EF;	
+									}
 								}
 						}
 					// Content
@@ -2514,19 +2516,28 @@
 								color: var(--darkmode-contrast);
 							}
 						// Settings Page Sidebar
-							.settings-page__sidebar__link {
-								&:hover {
-									background-color: var(--darkmode-background-selected-darker);
+							.settings-page__sidebar__links {
+								> div:nth-of-type(1) {
+									> input {
+										color: var(--darkmode-text);
+										background-color: #000;
+										border: unset;
+									}
 								}
-								// Focused Item
-								&.text-primary {
-									> div {
+								.settings-page__sidebar__link {
+									&:hover {
+										background-color: var(--darkmode-background-selected-darker);
+									}
+									// Focused Item
+									&.text-primary {
 										> div {
-											color: var(--darkmode-contrast);
+											> div {
+												color: var(--darkmode-contrast);
 
-											> svg {
-												> path {
-													color: var(--darkmode-contrast);
+												> svg {
+													> path {
+														color: var(--darkmode-contrast);
+													}
 												}
 											}
 										}
@@ -2545,17 +2556,19 @@
 
 									// Left Curve Trick
 										&::after {
-											content: "";
-											position: absolute;
-											left: 281px;
-											z-index: 9;
-											
-											background-color: transparent;
-											top: 55px;
-											height: 50px;
-											width: 25px;
-											border-top-left-radius: 25px;
-											box-shadow: 0 -25px 0 0 var(--darkmode-background-sidebar);
+											@media (min-width: 1030px) {
+												content: "";
+												position: absolute;
+												left: 281px;
+												z-index: 9;
+												
+												background-color: transparent;
+												top: 55px;
+												height: 50px;
+												width: 25px;
+												border-top-left-radius: 25px;
+												box-shadow: 0 -25px 0 0 var(--darkmode-background-sidebar);
+											}
 										}
 								}
 							// Content
@@ -2698,6 +2711,8 @@
 																	color: var(--darkmode-text);
 																	background-color: var(--darkmode-background-selected-darker);
 																	border: unset;
+																	padding-top: 0.2rem;
+																	padding-bottom: 0.2rem;
 																}
 															}
 														}
