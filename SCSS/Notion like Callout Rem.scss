@@ -40,6 +40,12 @@
     --callout-margin-right: 12px;
     --callout-border-radius: 5px;
 }
+// Interim Measure
+    .rem-header--1:not(.document-title),
+    .rem-header--2:not(.document-title),
+    .rem-header--3:not(.document-title) {
+        color: unset;
+    }
 // Custom rem bullet icon
     [data-rem-tags~="warning"] .rem-text::before {
         content: "🚨"; 

@@ -42,6 +42,12 @@
 	--callout-border-radius: 5px;
 }
 
+.rem-header--1:not(.document-title),
+.rem-header--2:not(.document-title),
+.rem-header--3:not(.document-title) {
+	color: unset;
+}
+
 [data-rem-tags~=warning] .rem-text::before {
 	content: "🚨";
 	margin-right: 10px;
