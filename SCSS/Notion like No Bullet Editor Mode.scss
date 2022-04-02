@@ -3,7 +3,7 @@
 	height: 0 !important;
 	border-style: solid !important;
 	border-width: 6px 0 6px 6px !important;
-	border-radius: 3px !important;
+	border-radius: 3px;
 }
 
 @mixin triangle-visible {
@@ -11,7 +11,7 @@
 	height: 0 !important;
 	border-style: solid !important;
 	border-width: 6px 6px 0 6px !important;
-	border-radius: 3px !important;
+	border-radius: 3px;
 }
 
 @mixin triangle-doc-hidden {
