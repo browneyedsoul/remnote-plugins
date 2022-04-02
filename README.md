@@ -33,13 +33,18 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
   - You can change the Highlight color to normal rem-text color by [ Tagging the `color` tag + Bolding text ]
   - But You don't have to tag the `color` tag to Header 1,2,3
 - Displaying Long Page Breadcrumbs with scroll bar
+
 <div style="margin-left: 24px;">
-  <img src="Assets/Modern Dark Theme - Timetable1-Lightmode.png">
-  <img src="Assets/Modern Dark Theme - Timetable2-Darkmode.png">
-  <img src="Assets/Modern Dark Theme - PageWithCoverPhoto-Lightmode.png">
-  <img src="Assets/Modern Dark Theme - PageWithCoverPhoto-Darkmode.png">
+    <img src="Assets/Modern Dark Theme - Timetable1-Lightmode.png">
+    <img src="Assets/Modern Dark Theme - Timetable2-Darkmode.png">
+    <img src="Assets/Modern Dark Theme - PageWithCoverPhoto-Lightmode.png">
+    <img src="Assets/Modern Dark Theme - PageWithCoverPhoto-Darkmode.png">
 </div>
 </details>
+
+---
+<br>
+<br>
 
 # Editor Mode
 
@@ -62,17 +67,20 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 </div>
 </details>
 
+---
+
 <details>
     <summary>Branch Emphasizing Editor Mode(need to be polished)</summary>
-
-```css
-@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Branch%20Emphasizing%20Mode.css"); 
-```
 
 <div style="margin-left: 24px;">
     <img src="Assets/BranchEmphasizingMode.png">
 </div>
 </details>
+
+---
+<br>
+<br>
+
 
 # Tricks
 
@@ -86,8 +94,11 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 <div style="margin-left: 24px;">
     <img src ="Assets/ModernScrollableCodeblock-1.gif">
     <img src ="Assets/ModernScrollableCodeblock-2.png">
+    <img src ="Assets/ModernScrollableCodeblock-3.png">
 </div>
 </details>
+
+---
 
 <details>
     <summary>Rem Thumbnail</summary>
@@ -102,6 +113,10 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
     <img src ="Assets/RemThumbnail-2.png">
 </div>
 </details>
+
+---
+<br>
+<br>
 
 # Tricks - Tag-related Gimmick series
 
@@ -118,6 +133,8 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 </div>
 </details>
 
+---
+
 <details>
     <summary>Modern Divider</summary>
 
@@ -131,17 +148,23 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 </div>
 </details>
 
+---
+
 <details>
     <summary>Active Recall</summary>
 
 ```css
-@import url("Assets/ActiveRecall.gif");
+@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall.css");
 ```
 
 <div style="margin-left: 24px;">
     <img src="https://user-images.githubusercontent.com/56161102/146560418-7044909a-7b8d-4a9a-b6ca-af4325ad556b.gif">
 </div>
+
+<a href="https://hannesfrank.github.io/remnote-library/#/scroll/com.github.hannesfrank.remnote-library.active-recall">origin author : hannesfrank</a>
 </details>
+
+---
 
 <details>
     <summary>Blockquote</summary>
@@ -156,20 +179,53 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 <div>
 </details>
 
+---
+
 <details>
-    <summary>Modern Table Row</summary>
+    <summary>Modern Table Row ⭐️</summary>
 
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Row.css");
 ```
 
+<div>
+    <h2>How to use it?</h2>
+    <details>
+        <summary>Copy a Table from any sources</summary>
+        <img src="Assets/ModernTableRow-0.gif">
+    </details>
+    <details>
+        <summary>Paste it to RemNote and Tag the predefined-width Table Row Tags to the Table Title area</summary>
+        <img src="Assets/ModernTableRow-1.gif">
+        <h3>Available Width List - From 90px to 1200px, 30px interval</h3>
+        - 90px => Table90
+        <br>
+        - 120px => Table120
+        <br>
+        - 150px => Table150
+        <br>
+        - 180px => Table180
+        <br>
+        - 210px => Table210
+        <br>
+        .
+        <br>
+        .
+        <br>
+        .
+        <br>
+        - 1170px => Table1170
+        <br>
+        - 1200px => Table1200
+    </details>
+</div>
 <div style="margin-left: 24px;">
     <div style="font-size: 24px; font-weight: 700;">Feature</div>
     <div>    
         <details>
             <summary>Column Width Adjustment by Tagging to the Title bar</summary>
             <img src="https://forum.remnote.io/uploads/default/original/2X/8/8ae892cd66862b9115bbbe74a0a3f1246b8a79e3.gif">
-            <img src="Assets/ModernTableRow-0.gif">
+            <img src="Assets/ModernTableRow-2.gif">
         </details>
     </div>
     <div>
@@ -196,6 +252,8 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 </div>
 </details>
 
+---
+
 <details>
     <summary>Modern Table Column</summary>
 
@@ -205,6 +263,8 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 
 <img src="Assets/ModernTableColumn.gif">
 </details>
+
+---
 
 <details>
     <summary>Easily Discernible Inline Card Layout</summary>
@@ -224,6 +284,8 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 </div>
 </details>
 
+---
+
 <details>
     <summary>Strikethrough Workaround</summary>
 
@@ -233,6 +295,8 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 
 <img src="Assets/Strikethrough.gif">
 </details>
+
+---
 
 <details>
     <summary>Caption</summary>
@@ -244,6 +308,8 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 <img src="Assets/Caption.gif">
 </details>
 
+---
+
 <details>
     <summary>Rating bar</summary>
 
@@ -254,12 +320,14 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 <img src="Assets/RatingBar.gif">
 </details>
 
+---
+
 <details>
     <summary>Cover Photo</summary>
 
 ```css
 /* @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/"); */
-/* Please Copy the .css file and paste to your KB Directly */
+/* Please Copy the .css file (Template) and paste to your KB Directly */
 ```
 
 <div style="margin-left: 24px;">
@@ -293,6 +361,8 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 </div>
 </details>
 
+---
+
 <details>
     <summary>Terminal</summary>
 
@@ -303,11 +373,18 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 <img src="Assets/Terminal.png">
 </details>
 
+---
+
 <details>
     <summary>UI Declutter Series</summary>
 
 ```css
-@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/UI%20Declutter%20Series/RemNote%20UIUX-Declutter.css");
+/* @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/UI%20Declutter%20Series/RemNote%20UIUX-Declutter.css"); */
+
+/* 
+If you want to use these things...
+Please go to the "UI Declutter Series" Folder and then copy the CSSs and paste them to your KB. After then, all you need to do is Toggle these things by yourself.
+*/
 ```
 
 <div style="margin-left: 24px;">
@@ -334,6 +411,8 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
     </details>
 </div>
 </details>
+<br>
+<br>
 
 # The SUM of all the Theme and Snippets
 
