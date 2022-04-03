@@ -1,58 +1,157 @@
-.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .inline-block,
-.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .inline-block.align-text-top.group,
-.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .thumbnail--with-width,
-.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer .image-node {
+.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-	display: inline-block;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
 }
 
-.ReactVirtualized__Table__rowColumn .inline-block,
-.ReactVirtualized__Table__rowColumn .inline-block.align-text-top.group,
-.ReactVirtualized__Table__rowColumn .thumbnail--with-width,
-.ReactVirtualized__Table__rowColumn .image-node {
+.ReactVirtualized__Table__rowColumn span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.ReactVirtualized__Table__rowColumn span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-	display: inline-block;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.ReactVirtualized__Table__rowColumn span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.ReactVirtualized__Table__rowColumn span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.ReactVirtualized__Table__rowColumn span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
 }
 
-.spaced-repetition__prompt__breadcrumbs .inline-block,
-.spaced-repetition__prompt__breadcrumbs .thumbnail--with-width {
+.spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
 }
 
 .spaced-repetition__prompt .indented-rem .RichTextViewer > div {
 	display: inline-block;
 	margin-right: 3px;
 }
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element .inline-block,
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element .inline-block.align-text-top.group,
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element .react-transform-component,
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element .image-node,
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element .thumbnail--with-width {
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-	max-width: auto !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
 }
 
-.rem-bullet__document .inline-block,
-.rem-bullet__document .inline-block.align-text-top.group,
-.rem-bullet__document .react-transform-component,
-.rem-bullet__document .image-node,
-.rem-bullet__document .thumbnail--with-width {
+.rem-bullet__document span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.rem-bullet__document span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
 }
 .rem-bullet__document > span > div {
 	display: inline;
@@ -62,53 +161,156 @@
 	display: inline-flex;
 	vertical-align: top;
 }
-.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element .inline-block,
-.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element .inline-block.align-text-top.group,
-.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element .react-transform-component,
-.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element .image-node,
-.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element .thumbnail--with-width {
-	width: auto !important;
-	height: auto !important;
-	min-width: auto !important;
-	min-height: auto !important;
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
 }
-.Queue .queue-cluster-selector .image-node,
-.Queue .queue-cluster-selector .image-node__container.group.inline-block.align-text-top,
-.Queue .queue-cluster-selector .thumbnail--with-width {
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+.Queue .queue-cluster-selector span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.Queue .queue-cluster-selector span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.Queue .queue-cluster-selector span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.Queue .queue-cluster-selector span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.Queue .queue-cluster-selector span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
 }
 
-#tile__document .document-header-top-bar .inline-block,
-#tile__document .document-header-top-bar .image-node__container,
-#tile__document .document-header-top-bar .image-node,
-#tile__document .document-header-top-bar .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-	color: #2B3137;
+#tile__document .document-header-top-bar span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument .inline-block,
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument .image-node__container,
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument .image-node,
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument .thumbnail--with-width {
+#tile__document .document-header-top-bar span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .inline-block,
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .image-node__container,
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .image-node,
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .thumbnail--with-width {
+#tile__document .document-header-top-bar span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+#tile__document .document-header-top-bar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+#tile__document .document-header-top-bar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-	margin-top: 1px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
 }
 #tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle > div.document-title .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu] {
 	display: none;
@@ -117,286 +319,738 @@
 	display: none;
 }
 
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
 }
-
-#document-sidebar .inline-block,
-#document-sidebar .thumbnail--with-width {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 0px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
 }
-
-.hierarchy-editor__hidden-children .rem-header--1 .inline-block,
-.hierarchy-editor__hidden-children .rem-header--1 .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
 }
-
-.popup-menu .popup-menu__item--static span.RichTextViewer .image-node__container {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-}
-.popup-menu .popup-menu__item--static span.RichTextViewer .image-node__container .image-node {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-}
-.popup-menu .popup-menu__item--static span.RichTextViewer .image-node__container .image-node .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-}
-.popup-menu #document-hover-preview__popup > span .RichTextViewer .inline-block,
-.popup-menu #document-hover-preview__popup > span .RichTextViewer .inline-block.align-text-top.group,
-.popup-menu #document-hover-preview__popup > span .RichTextViewer .image-node__container,
-.popup-menu #document-hover-preview__popup > span .RichTextViewer .image-node,
-.popup-menu #document-hover-preview__popup > span .RichTextViewer .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-}
-.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer .inline-block,
-.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer .image-node__container,
-.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer .image-node,
-.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-}
-.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar .inline-block,
-.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-}
-.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top,
-.popup-menu .rem-powerup-icon + span > .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-}
-.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node .thumbnail--with-width,
-.popup-menu .rem-powerup-icon + span > .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-}
-.popup-menu .EditorContainer.EditorContainerInline .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-	color: #2B3137;
-}
-.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block,
-.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-}
-.popup-menu .p-2 .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-}
-.popup-menu .p-2 .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
-}
-.popup-menu .p-2 .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node > div:nth-of-type(1) {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
 	display: none;
 }
-.popup-menu .p-2 .RichTextViewer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node > div:nth-of-type(2) .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
 }
 
-#Popup #PopupContent .p-4 .RichTextViewer .image-node__container,
-#Popup #PopupContent .p-4 .RichTextViewer .image-node,
-#Popup #PopupContent .p-4 .RichTextViewer .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+#document-sidebar span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
 }
-#Popup #PopupContent #delete-confirm-popup .inline-block,
-#Popup #PopupContent #delete-confirm-popup .image-node__container.group.inline-block.align-text-top,
-#Popup #PopupContent #delete-confirm-popup .thumbnail--with-width {
+#document-sidebar span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
 }
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer .inline-block,
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer .image-node__container,
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer .image-node,
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+#document-sidebar span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
 }
-
-.rem-header--1 .EditorContainer .inline-block,
-.rem-header--1 .EditorContainer .image-node__container,
-.rem-header--1 .EditorContainer .image-node,
-.rem-header--1 .EditorContainer .thumbnail--with-width,
-.rem-header--2 .EditorContainer .inline-block,
-.rem-header--2 .EditorContainer .image-node__container,
-.rem-header--2 .EditorContainer .image-node,
-.rem-header--2 .EditorContainer .thumbnail--with-width,
-.rem-header--3 .EditorContainer .inline-block,
-.rem-header--3 .EditorContainer .image-node__container,
-.rem-header--3 .EditorContainer .image-node,
-.rem-header--3 .EditorContainer .thumbnail--with-width,
-[data-rem-tags*=tn] .EditorContainer .inline-block,
-[data-rem-tags*=tn] .EditorContainer .image-node__container,
-[data-rem-tags*=tn] .EditorContainer .image-node,
-[data-rem-tags*=tn] .EditorContainer .thumbnail--with-width {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 0;
-	background-color: transparent;
-}
-.rem-header--1 .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-.rem-header--1 .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-.rem-header--1 .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-.rem-header--1 .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-.rem-header--2 .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-.rem-header--2 .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-.rem-header--2 .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-.rem-header--2 .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-.rem-header--3 .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-.rem-header--3 .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-.rem-header--3 .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-.rem-header--3 .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-[data-rem-tags*=tn] .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-[data-rem-tags*=tn] .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-[data-rem-tags*=tn] .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu],
-[data-rem-tags*=tn] .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu] {
+#document-sidebar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
 	display: none;
 }
-.rem-header--1 .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top > div,
-.rem-header--1 .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top > div,
-.rem-header--1 .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top > div,
-.rem-header--1 .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top > div,
-.rem-header--2 .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top > div,
-.rem-header--2 .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top > div,
-.rem-header--2 .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top > div,
-.rem-header--2 .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top > div,
-.rem-header--3 .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top > div,
-.rem-header--3 .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top > div,
-.rem-header--3 .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top > div,
-.rem-header--3 .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top > div,
-[data-rem-tags*=tn] .EditorContainer .inline-block .image-node__container.group.inline-block.align-text-top > div,
-[data-rem-tags*=tn] .EditorContainer .image-node__container .image-node__container.group.inline-block.align-text-top > div,
-[data-rem-tags*=tn] .EditorContainer .image-node .image-node__container.group.inline-block.align-text-top > div,
-[data-rem-tags*=tn] .EditorContainer .thumbnail--with-width .image-node__container.group.inline-block.align-text-top > div {
+#document-sidebar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+
+.hierarchy-editor__hidden-children span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.hierarchy-editor__hidden-children span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.hierarchy-editor__hidden-children span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.hierarchy-editor__hidden-children span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
 	display: none;
 }
+.hierarchy-editor__hidden-children span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
 
-.hierarchy-editor__tag-bar__tag .inline-block,
-.hierarchy-editor__tag-bar__tag .inline-block.align-text-top.group,
-.hierarchy-editor__tag-bar__tag .thumbnail--with-width {
+.popup-menu .popup-menu__item--static span.RichTextViewer span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.popup-menu .popup-menu__item--static span.RichTextViewer span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 0;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
 }
-
-[aria-label~=Omnibar] .inline-block,
-[aria-label~=Omnibar] .thumbnail--with-width {
+.popup-menu .popup-menu__item--static span.RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu .popup-menu__item--static span.RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.popup-menu .popup-menu__item--static span.RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu #document-hover-preview__popup > span .RichTextViewer span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.popup-menu #document-hover-preview__popup > span .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
 }
-
-.css-ZPdGi {
-	min-width: 80%;
-	min-height: 80%;
+.popup-menu #document-hover-preview__popup > span .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
 }
-
-.css-fUqRpZ .inline-block,
-.css-fUqRpZ .thumbnail--with-width {
+.popup-menu #document-hover-preview__popup > span .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.popup-menu #document-hover-preview__popup > span .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
 }
-
-.search-result__rem-breadcrumbs .inline-block,
-.search-result__rem-breadcrumbs .thumbnail--with-width {
+.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
 }
-
-#search-results__result .inline-block,
-#search-results__result .thumbnail--with-width {
+.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.image-node__container.inline-block,
+.popup-menu .rem-powerup-icon + span > .RichTextViewer span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container,
+.popup-menu .rem-powerup-icon + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
 }
-
-.portal-tree-node-box .rem-text.rem-header--1 .inline-block,
-.portal-tree-node-box .rem-text.rem-header--1 .thumbnail--with-width,
-.portal-tree-node-box .rem-text.rem-header--2 .inline-block,
-.portal-tree-node-box .rem-text.rem-header--2 .thumbnail--with-width,
-.portal-tree-node-box .rem-text.rem-header--3 .inline-block,
-.portal-tree-node-box .rem-text.rem-header--3 .thumbnail--with-width {
+.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node,
+.popup-menu .rem-powerup-icon + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1),
+.popup-menu .rem-powerup-icon + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
+.popup-menu .rem-powerup-icon + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu .EditorContainer.EditorContainerInline span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.popup-menu .EditorContainer.EditorContainerInline span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
 }
-
-.rem-reference .inline-block,
-.rem-reference .thumbnail--with-width {
+.popup-menu .EditorContainer.EditorContainerInline span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu .EditorContainer.EditorContainerInline span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.popup-menu .EditorContainer.EditorContainerInline span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
 }
-
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable .inline-block {
+.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu .p-2 .RichTextViewer span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.popup-menu .p-2 .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: 2px;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.popup-menu .p-2 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.popup-menu .p-2 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.popup-menu .p-2 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
 }
 
-.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block,
-.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .inline-block.align-text-top.group,
-.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .image-node,
-.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference .thumbnail--with-width {
-	position: relative;
+#Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+#Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+#Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+#Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+#Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+#Popup #PopupContent #delete-confirm-popup span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+#Popup #PopupContent #delete-confirm-popup span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+#Popup #PopupContent #delete-confirm-popup span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+#Popup #PopupContent #delete-confirm-popup span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+#Popup #PopupContent #delete-confirm-popup span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+
+.rem-header--1 .EditorContainer span.image-node__container.inline-block,
+.rem-header--2 .EditorContainer span.image-node__container.inline-block,
+.rem-header--3 .EditorContainer span.image-node__container.inline-block,
+[data-rem-tags*=tn] .EditorContainer span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container,
+.rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container,
+.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container,
+[data-rem-tags*=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node,
+.rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node,
+.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node,
+[data-rem-tags*=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1),
+.rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1),
+.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1),
+[data-rem-tags*=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
+.rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
+.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
+[data-rem-tags*=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+
+.hierarchy-editor__tag-bar__tag span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.hierarchy-editor__tag-bar__tag span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.hierarchy-editor__tag-bar__tag span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.hierarchy-editor__tag-bar__tag span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.hierarchy-editor__tag-bar__tag span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+
+[aria-label~=Omnibar] span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+[aria-label~=Omnibar] span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+[aria-label~=Omnibar] span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+[aria-label~=Omnibar] span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+[aria-label~=Omnibar] span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+
+.search-result__rem-breadcrumbs span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.search-result__rem-breadcrumbs span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.search-result__rem-breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.search-result__rem-breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.search-result__rem-breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+
+#search-results__result span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+#search-results__result span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+#search-results__result span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+#search-results__result span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+#search-results__result span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+
+.portal-tree-node-box .rem-text.rem-header--1 span.image-node__container.inline-block,
+.portal-tree-node-box .rem-text.rem-header--2 span.image-node__container.inline-block,
+.portal-tree-node-box .rem-text.rem-header--3 span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.portal-tree-node-box .rem-text.rem-header--1 span.image-node__container.inline-block > div.image-node__container,
+.portal-tree-node-box .rem-text.rem-header--2 span.image-node__container.inline-block > div.image-node__container,
+.portal-tree-node-box .rem-text.rem-header--3 span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.portal-tree-node-box .rem-text.rem-header--1 span.image-node__container.inline-block > div.image-node__container > span.image-node,
+.portal-tree-node-box .rem-text.rem-header--2 span.image-node__container.inline-block > div.image-node__container > span.image-node,
+.portal-tree-node-box .rem-text.rem-header--3 span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.portal-tree-node-box .rem-text.rem-header--1 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1),
+.portal-tree-node-box .rem-text.rem-header--2 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1),
+.portal-tree-node-box .rem-text.rem-header--3 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.portal-tree-node-box .rem-text.rem-header--1 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
+.portal-tree-node-box .rem-text.rem-header--2 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
+.portal-tree-node-box .rem-text.rem-header--3 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+
+.rem-reference span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.rem-reference span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+	display: none;
+}
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
 }
 
 [data-rem-tags~=header] [data-menu-type=ImageNodeMenu],

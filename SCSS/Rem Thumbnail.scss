@@ -1,8 +1,63 @@
-@mixin thumbnail-set($margin-right: 2px) {
-	height: 1em !important;
-	width: auto !important;
-	min-width: auto !important;
-	margin-right: $margin-right;
+@mixin thumbnail-set-allnotes() {
+	span.image-node__container.inline-block {
+		height: 1em;
+		width: auto;
+
+		>div.image-node__container {
+			height: 1em !important;
+			width: unset !important;
+			max-width: 1em !important;
+			object-fit: contain;
+			object-position: center;
+			min-width: 1em !important;
+			min-height: unset !important;
+
+			>span.image-node {
+				object-fit: contain !important;
+				object-position: center;
+
+				>div:nth-of-type(2) {
+					img.thumbnail--with-width {
+						object-fit: contain;
+						object-position: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+@mixin thumbnail-set() {
+	span.image-node__container.inline-block {
+		height: 1em;
+		width: auto;
+	
+		>div.image-node__container {
+			height: 1em !important;
+			width: unset !important;
+			max-width: 1em !important;
+			object-fit: contain;
+			object-position: center;
+			min-width: 1em !important;
+			min-height: unset !important;
+	
+			>span.image-node {
+				object-fit: contain !important;
+				object-position: center;
+	
+				>div:nth-of-type(1) {
+					display: none
+				}
+	
+				>div:nth-of-type(2) {
+					img.thumbnail--with-width {
+						object-fit: contain;
+						object-position: center;
+					}
+				}
+			}
+		}
+	}
 }
 
 @mixin console-declutter {
@@ -22,32 +77,17 @@
 	.document-table {
 		.ReactVirtualized__Grid__innerScrollContainer {
 			.RichTextViewer {
-				.inline-block,
-				.inline-block.align-text-top.group,
-				.thumbnail--with-width,
-				.image-node {
-					@include thumbnail-set;
-					display: inline-block;
-				}
+				@include thumbnail-set-allnotes();
 			}
 		}
 	}
 // Card Browser
 	.ReactVirtualized__Table__rowColumn {
-		.inline-block,
-		.inline-block.align-text-top.group,
-		.thumbnail--with-width,
-		.image-node {
-			@include thumbnail-set;
-			display: inline-block;
-		}
+		@include thumbnail-set;
 	}
 // Queue
 	.spaced-repetition__prompt__breadcrumbs {
-		.inline-block,
-		.thumbnail--with-width {
-			@include thumbnail-set;
-		}
+		@include thumbnail-set;
 	}
 	.spaced-repetition__prompt {
 		.indented-rem {
@@ -60,14 +100,7 @@
 				&:not(.concept_rem_type .RichTextViewer) {
 					.react-transform-component {
 						.react-transform-element {
-							.inline-block,
-							.inline-block.align-text-top.group,
-							.react-transform-component,
-							.image-node,
-							.thumbnail--with-width {
-								@include thumbnail-set;
-								max-width: auto !important;
-							}
+							@include thumbnail-set;
 						}
 					}
 				}
@@ -75,13 +108,7 @@
 		}
 	}
 	.rem-bullet__document {
-		.inline-block,
-		.inline-block.align-text-top.group,
-		.react-transform-component,
-		.image-node,
-		.thumbnail--with-width {
-			@include thumbnail-set;
-		}
+		@include thumbnail-set;
 		> span {
 			> div {
 				display: inline;
@@ -97,74 +124,34 @@
 			.RichTextViewer {
 				.react-transform-component {
 					.react-transform-element {
-						.inline-block,
-						.inline-block.align-text-top.group,
-						.react-transform-component,
-						.image-node,
-						.thumbnail--with-width {
-							width: auto !important;
-							height: auto !important;
-							min-width: auto !important;
-							min-height: auto !important;
-						}
+						@include thumbnail-set;
 					}
 				}
 			}
 		}
 		.queue-cluster-selector {
-			.image-node,
-			.image-node__container.group.inline-block.align-text-top,
-			.thumbnail--with-width {
-				@include thumbnail-set;
-			}
+			@include thumbnail-set;
 		}
 	}
-	// .document-popup-preview {
-	// 	#DocumentTitle {
-	// 		.thumbnail--with-width {
-	// 			width: 100% !important;
-	// 			height: auto !important;
-	// 			min-width: auto !important;
-	// 			min-height: auto !important;	
-	// 		}
-	// 	}
-	// }
 // Document Top
 	#tile__document {
 		// Page Hierarchy
 		.document-header-top-bar {
-			.inline-block,
-			.image-node__container,
-			.image-node,
-			.thumbnail--with-width {
-				@include thumbnail-set;
-				color: #2B3137;
-			}
+			@include thumbnail-set;
 		}
 		// Page
 		#document {
 			#DocumentTopRow {
 				#DropToOpenAsDocument {
 					// Document Top Row Tag Bar
-					.inline-block,
-					.image-node__container,
-					.image-node,
-					.thumbnail--with-width {
-						@include thumbnail-set;
-					}
+					@include thumbnail-set;
 					
 					#DocumentTitle {
-						.inline-block,
-						.image-node__container,
-						.image-node,
-						.thumbnail--with-width {
-							@include thumbnail-set;
-							margin-top: 1px;
-						}
+						@include thumbnail-set;
 
 						> div.document-title {
 							// Disable Image Node Menu
-								@include console-declutter;
+							@include console-declutter;
 						}
 					}
 				}
@@ -173,55 +160,29 @@
 	}
 // Hidden Page Hierarchy Style
 	.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
-		.inline-block {
-			@include thumbnail-set;
-		}
+		@include thumbnail-set;
 	}
 // Document Sidebar
 	#document-sidebar {
-		.inline-block,
-		.thumbnail--with-width {
-			@include thumbnail-set(0px);
-		}
+		@include thumbnail-set;
 	}
 // Document Hidden children
 	.hierarchy-editor__hidden-children {
-		.rem-header--1 {
-			.inline-block,
-			.thumbnail--with-width {
-				@include thumbnail-set;
-			}
-		}
+		@include thumbnail-set;
 	}
 // Popup
 	.popup-menu {
 		// Static Popup
 			.popup-menu__item--static {
 				span.RichTextViewer {
-					.image-node__container {
-						@include thumbnail-set;
-						
-						.image-node {
-							@include thumbnail-set;
-
-							.thumbnail--with-width {
-								@include thumbnail-set;
-							}
-						}
-					}
+					@include thumbnail-set;
 				}
 			}
 		// Hover Preview
 			#document-hover-preview__popup {
 				> span {
 					.RichTextViewer {
-						.inline-block,
-						.inline-block.align-text-top.group,
-						.image-node__container,
-						.image-node,
-						.thumbnail--with-width {
-							@include thumbnail-set;
-						}
+						@include thumbnail-set;
 					}
 				}
 			}
@@ -229,75 +190,34 @@
 			[data-rem-tags*="tn"] {
 				#document-hover-preview {
 					.RichTextViewer {
-						.inline-block,
-						.image-node__container,
-						.image-node,
-						.thumbnail--with-width {
-							@include thumbnail-set;
-						}
+						@include thumbnail-set;
 					}
 				}
 			}
 		// Tag bar
 			.rem.isSearchResult {
 				.hierarchy-editor__tag-bar {
-					.inline-block,
-					.thumbnail--with-width {
-						@include thumbnail-set;
-					}
+					@include thumbnail-set;
 				}
 			}
 		// Tags Backlink Popup- right side of a Rem
 			div.search-result__rem-breadcrumbs + span,
 			.rem-powerup-icon + span {
 				> .RichTextViewer {
-					.image-node__container {
-						.image-node__container.group.inline-block.align-text-top {
-							@include thumbnail-set;
-							
-							.image-node {
-								.thumbnail--with-width {
-									@include thumbnail-set;
-								}
-							}
-						}
-					}
+					@include thumbnail-set;
 				}
 			}
 		// Reference
 			.EditorContainer.EditorContainerInline {
-				.thumbnail--with-width {
-					@include thumbnail-set;
-					color: #2B3137;
-				}
+				@include thumbnail-set;
 			}
 			.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
-				.inline-block,
-				.thumbnail--with-width {
-					@include thumbnail-set;
-				}
+				@include thumbnail-set;
 			}
 		// Merge Confirm Popup
 			.p-2 {
 				.RichTextViewer {
-					.image-node__container {
-						.image-node__container.group.inline-block.align-text-top {
-							@include thumbnail-set;
-							
-							.image-node {
-								@include thumbnail-set;
-								
-								> div:nth-of-type(1) {
-									display: none;
-								}
-								> div:nth-of-type(2) {
-									.thumbnail--with-width {
-										@include thumbnail-set;
-									}	
-								}
-							}
-						}
-					}
+					@include thumbnail-set;
 				}
 			}
 	}
@@ -307,29 +227,16 @@
 			// Merge Confirm Window
 			.p-4 {
 				.RichTextViewer {
-					.image-node__container,
-					.image-node,
-					.thumbnail--with-width {
-						@include thumbnail-set;
-					}
+					@include thumbnail-set;
 				}
 			}
 			// Delete Confirm Popup
 			#delete-confirm-popup {
-				.inline-block,
-				.image-node__container.group.inline-block.align-text-top,
-				.thumbnail--with-width {
-					@include thumbnail-set;
-				}
+				@include thumbnail-set;
 				
 				.delete-confirm-popup__rem-section__item {
 					.RichTextViewer {
-						.inline-block,
-						.image-node__container,
-						.image-node,
-						.thumbnail--with-width {
-							@include thumbnail-set;
-						}
+						@include thumbnail-set;
 					}
 				}
 			}
@@ -341,78 +248,50 @@
 	.rem-header--3,
 	[data-rem-tags*="tn"] {
 		.EditorContainer {
-			.inline-block,
-			.image-node__container,
-			.image-node,
-			.thumbnail--with-width {
-				@include thumbnail-set(0);
-				@include console-declutter;
-				background-color: transparent;
-			}
+			@include thumbnail-set;
 		}
 	}
 // Tag bar
 	.hierarchy-editor__tag-bar__tag {
-		.inline-block,
-		.inline-block.align-text-top.group,
-		.thumbnail--with-width {
-			@include thumbnail-set(0);
-		}
+		@include thumbnail-set;
 	}
 // Search Result
 	// Global Search Result (⌘+P Window)
 		[aria-label~="Omnibar"] {
-			.inline-block,
-			.thumbnail--with-width {
-				@include thumbnail-set;
-			}
+			@include thumbnail-set;
 		}
 	// Search Popup Page
-		.css-ZPdGi {
-			min-width: 80%;
-			min-height: 80%;
-		}
-		.css-fUqRpZ {
-			.inline-block,
-			.thumbnail--with-width {
-				@include thumbnail-set;
-			}
-		}
+		// .css-ZPdGi {
+		// 	min-width: 80%;
+		// 	min-height: 80%;
+		// }
+		// .css-fUqRpZ {
+		// 	.inline-block,
+		// 	.thumbnail--with-width {
+		// 		@include thumbnail-set;
+		// 	}
+		// }
 	// Tag Search Result
 		.search-result__rem-breadcrumbs {
-			.inline-block,
-			.thumbnail--with-width {
-				@include thumbnail-set;
-			}
+			@include thumbnail-set;
 		}
 		#search-results__result {
-			.inline-block,
-			.thumbnail--with-width {
-				@include thumbnail-set;
-			}
+			@include thumbnail-set;
 		}
 // Portal
 	.portal-tree-node-box {
 		.rem-text.rem-header--1,
 		.rem-text.rem-header--2,
 		.rem-text.rem-header--3 {
-			.inline-block,
-			.thumbnail--with-width {
-				@include thumbnail-set;
-			}
+			@include thumbnail-set;
 		}
 	}
 // Rem Reference
 	.rem-reference {
-		.inline-block,
-		.thumbnail--with-width {
-			@include thumbnail-set;
-		}
+		@include thumbnail-set;
 	}
 	.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
-		.inline-block {
-			@include thumbnail-set;
-		}
+		@include thumbnail-set;
 	}
 	// Rem reference normal rem-text thumbnail adjustment
 		.rem-text {
@@ -420,12 +299,7 @@
 				&:not(.rem-header--2) {
 					&:not(.rem-header--3) {
 						.rem-reference {
-							.inline-block,
-							.inline-block.align-text-top.group,
-							.image-node,
-							.thumbnail--with-width {
-								position: relative;
-							}
+							@include thumbnail-set;
 						}
 					}
 				}
