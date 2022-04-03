@@ -457,6 +457,8 @@
 	}
 	// Reverse Browser Item Header
 		.ReactVirtualized__Grid__innerScrollContainer {
+			padding-bottom: 24px;
+			
 			> div {
 				span:nth-of-type(1) {
 					> div {

@@ -339,6 +339,9 @@ body.old-dark-mode .dark-mode-background {
 	background-color: #FFF;
 }
 
+.ReactVirtualized__Grid__innerScrollContainer {
+	padding-bottom: 24px;
+}
 .ReactVirtualized__Grid__innerScrollContainer > div span:nth-of-type(1) > div > div:nth-child(2) {
 	flex-direction: column-reverse !important;
 }
