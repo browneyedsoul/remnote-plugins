@@ -1,4 +1,4 @@
-@mixin thumbnail-set-allnotes() {
+@mixin thumbnail-set-display() {
 	span.image-node__container.inline-block {
 		height: 1em;
 		width: auto;
@@ -77,7 +77,7 @@
 	.document-table {
 		.ReactVirtualized__Grid__innerScrollContainer {
 			.RichTextViewer {
-				@include thumbnail-set-allnotes();
+				@include thumbnail-set-display();
 			}
 		}
 	}
@@ -258,7 +258,7 @@
 // Search Result
 	// Global Search Result (⌘+P Window)
 		[aria-label~="Omnibar"] {
-			@include thumbnail-set;
+			@include thumbnail-set-display();
 		}
 	// Search Popup Page
 		// .css-ZPdGi {
@@ -273,10 +273,10 @@
 		// }
 	// Tag Search Result
 		.search-result__rem-breadcrumbs {
-			@include thumbnail-set;
+			@include thumbnail-set-display();
 		}
 		#search-results__result {
-			@include thumbnail-set;
+			@include thumbnail-set-display();
 		}
 // Portal
 	.portal-tree-node-box {
