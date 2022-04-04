@@ -35,10 +35,12 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 - Displaying Long Page Breadcrumbs with scroll bar
 
 <div style="margin-left: 24px;">
-    <img src="Assets/Modern Dark Theme - Timetable1-Lightmode.png">
-    <img src="Assets/Modern Dark Theme - Timetable2-Darkmode.png">
-    <img src="Assets/Modern Dark Theme - PageWithCoverPhoto-Lightmode.png">
-    <img src="Assets/Modern Dark Theme - PageWithCoverPhoto-Darkmode.png">
+    <img src="Assets/Modern Dark Theme - 1.png">
+    <img src="Assets/Modern Dark Theme - 2.png">
+    <img src="Assets/Modern Dark Theme - 3.png">
+    <img src="Assets/Modern Dark Theme - 4.png">
+    <img src="Assets/Modern Dark Theme - 5.png">
+    <img src="Assets/Modern Dark Theme - 6.png">
 </div>
 </details>
 
@@ -226,6 +228,28 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
             <summary>Column Width Adjustment by Tagging to the Title bar</summary>
             <img src="https://forum.remnote.io/uploads/default/original/2X/8/8ae892cd66862b9115bbbe74a0a3f1246b8a79e3.gif">
             <img src="Assets/ModernTableRow-2.gif">
+            <div>
+                <h3>Available Tag List</h3>
+                From 30px to 1200px, 30px interval
+                <br>
+                - 30px → W30
+                <br>
+                - 60px → W60
+                <br>
+                - 90px → W90
+                <br>
+                - 120px → W120
+                <br>
+                .
+                <br>
+                .
+                <br>
+                .
+                <br>
+                - 1170px → W1170
+                <br>
+                - 1200px → W1200
+            </div>
         </details>
     </div>
     <div>
@@ -411,6 +435,9 @@ Please go to the "UI Declutter Series" Folder and then copy the CSSs and paste t
     </details>
 </div>
 </details>
+
+---
+
 <br>
 <br>
 
