@@ -256,133 +256,164 @@
             [data-rem-container-tags~="planner"] {
         
                 // Planner Title Bar
-                >div.tree-node--parent {    
-                    [data-rem-tags~="planner"] {
-                        background-color: var(--planner-title-background-color-dark);
-                        border: 0.07rem solid var(--planner-title-background-color-dark);
+                    > div.tree-node--parent {    
+                        [data-rem-tags~="planner"] {
+                            background-color: var(--planner-title-background-color-dark);
+                            border: 0.07rem solid var(--planner-title-background-color-dark);
+                        }
                     }
-                }
-        
                 // Planner Container
-                >div.TreeNode {
-                    border-left: 0.07rem solid var(--planner-title-background-color-dark);
-                    border-right: 0.07rem solid var(--planner-title-background-color-dark);
-                    border-bottom: 0.07rem solid var(--planner-title-background-color-dark);
-        
-                    >div.tree-node-container {
-        
-                        // Week Bar Adjustment
-        
-                        // Remove Week TreeNode Line
-        
-                        // Structure
-                        >div.TreeNode {        
-        
-                            >div.tree-node-container {
-                                border: 0.07rem solid var(--planner-title-background-color-dark);
-        
-                                // Constant Width
-        
-                                // Column planner Head
-                                >div:nth-of-type(1) {
-                                    background-color: var(--planner-header-background-color-dark);
+                    > div.TreeNode {
+                        border-left: 0.07rem solid var(--planner-title-background-color-dark);
+                        border-right: 0.07rem solid var(--planner-title-background-color-dark);
+                        border-bottom: 0.07rem solid var(--planner-title-background-color-dark);
+            
+                        >div.tree-node-container {
+            
+                            // Week Bar Adjustment
+            
+                            // Remove Week TreeNode Line
+            
+                            // Structure
+                            >div.TreeNode {        
+            
+                                >div.tree-node-container {
+                                    border: 0.07rem solid var(--planner-title-background-color-dark);
+            
+                                    // Constant Width
+            
+                                    // Column planner Head
+                                    >div:nth-of-type(1) {
+                                        background-color: var(--planner-header-background-color-dark);
+                                    }
+            
+                                    // Line Grid Adjustment
+                                    
                                 }
-        
-                                // Line Grid Adjustment
-                                
-                            }
-        
-                            // Portal Layout
-                            .portal-tree-node-box {
-                                margin-left: unset;
-                                padding-left: unset;
-                            }
-        
-                            // Monday
-                            >div:nth-of-type(1) {
-                                >div.tree-node--parent {
-                                    .rem-text {
-                                        &::after {
-                                            content: "Mon";
+            
+                                // Portal Layout
+                                    .portal-tree-node-box {
+                                        margin-left: unset;
+                                        padding-left: unset;
+                                    }
+                                // Monday
+                                    >div:nth-of-type(1) {
+                                        >div.tree-node--parent {
+                                            .rem-text {
+                                                &::after {
+                                                    content: "Mon";
+                                                }
+                                            }
                                         }
                                     }
-                                }
-                            }
-        
-                            // Tue
-                            >div:nth-of-type(2) {
-                                >div.tree-node--parent {
-                                    .rem-text {
-                                        &::after {
-                                            content: "Tue";
+                                // Tuesday
+                                    >div:nth-of-type(2) {
+                                        >div.tree-node--parent {
+                                            .rem-text {
+                                                &::after {
+                                                    content: "Tue";
+                                                }
+                                            }
                                         }
                                     }
-                                }
-                            }
-        
-                            // Wednesday
-                            >div:nth-of-type(3) {
-                                >div.tree-node--parent {
-                                    .rem-text {
-                                        &::after {
-                                            content: "Wed";
+                                // Wednesday
+                                    > div:nth-of-type(3) {
+                                        >div.tree-node--parent {
+                                            .rem-text {
+                                                &::after {
+                                                    content: "Wed";
+                                                }
+                                            }
                                         }
                                     }
-                                }
-                            }
-        
-                            // Thursday
-                            >div:nth-of-type(4) {
-                                >div.tree-node--parent {
-                                    .rem-text {
-                                        &::after {
-                                            content: "Thu";
+                                // Thursday
+                                    > div:nth-of-type(4) {
+                                        >div.tree-node--parent {
+                                            .rem-text {
+                                                &::after {
+                                                    content: "Thu";
+                                                }
+                                            }
                                         }
                                     }
-                                }
-                            }
-        
-                            // Friday
-                            >div:nth-of-type(5) {
-                                >div.tree-node--parent {
-                                    .rem-text {
-                                        &::after {
-                                            content: "Fri";
+                                // Friday
+                                    > div:nth-of-type(5) {
+                                        >div.tree-node--parent {
+                                            .rem-text {
+                                                &::after {
+                                                    content: "Fri";
+                                                }
+                                            }
                                         }
                                     }
-                                }
-                            }
-        
-                            // Saturday
-                            >div:nth-of-type(6) {
-                                >div.tree-node--parent {
-                                    background-color: #183D4D;
-        
-                                    .rem-text {
-                                        &::after {
-                                            content: "Sat";
+                                // Saturday
+                                    > div:nth-of-type(6) {
+                                        >div.tree-node--parent {
+                                            background-color: #183D4D;
+                
+                                            .rem-text {
+                                                &::after {
+                                                    content: "Sat";
+                                                }
+                                            }
                                         }
                                     }
-                                }
-                            }
-        
-                            // Sunday
-                            >div:nth-of-type(7) {
-                                >div.tree-node--parent {
-                                    background-color: #572A25;
-        
-                                    .rem-text {
-                                        &::after {
-                                            content: "Sun";
+                                // Sunday
+                                    > div:nth-of-type(7) {
+                                        >div.tree-node--parent {
+                                            background-color: #572A25;
+                
+                                            .rem-text {
+                                                &::after {
+                                                    content: "Sun";
+                                                }
+                                            }
                                         }
                                     }
-                                }
+                            }
+            
+                            // Remove Daily Document background
+                        }
+                    }
+                // Highlight Style
+                    [data-rem-tags~="highlight"] {
+                        .highlight-color--red {
+                            background-color: #572924;
+                            .rem-text {
+                                color: #DFDFD5;
                             }
                         }
-        
-                        // Remove Daily Document background
+                        .highlight-color--orange {
+                            background-color: #553D24;
+                            .rem-text {
+                                color: #DFDFD5;
+                            }
+                        }
+                        .highlight-color--yellow {
+                            background-color: #453E1E;
+                            .rem-text {
+                                color: #DFDFD5;
+                            }
+                        }
+                        .highlight-color--green {
+                            background-color: #253F27;
+                            .rem-text {
+                                color: #DFDFD5;
+                            }
+                        }
+                        .highlight-color--blue {
+                            background-color: #183C4D;
+                            .rem-text {
+                                color: #DFDFD5;
+                            }
+                        }
+                        .highlight-color--purple {
+                            background-color: #43273F;
+                            .rem-text {
+                                color: #DFDFD5;
+                            }
+                        }
                     }
-                }
             }
         }
     }
