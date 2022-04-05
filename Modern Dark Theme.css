@@ -2437,6 +2437,10 @@ body.old-dark-mode .dark-mode #document-sidebar {
 	color: var(--darkmode-contrast) !important;
 }
 
+.onboarding-panel {
+	background-color: #FFF;
+}
+
 #document #hierarchy-editor .animate-zoom-into-bullet .tree-node--parent + .portal-tree-node-box {
 	margin-left: -3px;
 }
