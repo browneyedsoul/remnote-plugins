@@ -148,6 +148,10 @@
 					
 					#DocumentTitle {
 						@include thumbnail-set;
+						span.image-node__container.inline-block {
+							position: relative;
+							top: 3px;
+						}
 
 						> div.document-title {
 							// Disable Image Node Menu

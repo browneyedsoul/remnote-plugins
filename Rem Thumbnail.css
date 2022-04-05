@@ -312,6 +312,10 @@
 	-o-object-position: center;
 	   object-position: center;
 }
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block {
+	position: relative;
+	top: 3px;
+}
 #tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle > div.document-title .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu] {
 	display: none;
 }
