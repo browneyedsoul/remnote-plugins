@@ -2261,6 +2261,10 @@ body.old-dark-mode .dark-mode-background {
 #document-sidebar .image-node .bg-white {
 	background-color: transparent;
 }
+body.old-dark-mode .dark-mode #document-sidebar {
+	background-color: var(--darkmode-background-sidebar) !important;
+}
+
 .dark-mode #document-sidebar {
 	background-color: var(--darkmode-background-sidebar);
 }
@@ -2367,12 +2371,18 @@ body.old-dark-mode .dark-mode-background {
 #document-sidebar .w-full > a {
 	color: var(--darkmode-contrast) !important;
 }
+#document-sidebar .w-full .hover\:bg-hover-bg:hover {
+	background-color: var(--darkmode-background-selected);
+}
 #document-sidebar [data-icon=backward] {
 	color: var(--darkmode-contrast) !important;
 }
 #document-sidebar .rem-reference .RichTextViewer {
 	background-color: unset;
 	filter: invert(0);
+}
+#document-sidebar .block.group.cursor-pointer {
+	font-weight: 700;
 }
 #document-sidebar .block.group.cursor-pointer .highlight-color--red .RichTextViewer,
 #document-sidebar .block.group.cursor-pointer .highlight-color--orange .RichTextViewer,
@@ -2383,11 +2393,18 @@ body.old-dark-mode .dark-mode-background {
 	color: black !important;
 }
 
+#main #content #document-sidebar a {
+	color: var(--darkmode-contrast) !important;
+}
+
 #APIKeys .ApiCommand {
 	overflow-x: auto;
 	white-space: pre;
 }
 
+.dark-mode .document-header-top-bar > div:nth-of-type(1) .flex {
+	color: var(--darkmode-text);
+}
 .dark-mode #hierarchy-editor .rem-container--article-link:hover {
 	background-color: var(--darkmode-background-selected-darker);
 	border-radius: 5px;

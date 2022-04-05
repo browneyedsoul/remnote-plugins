@@ -3371,6 +3371,13 @@
         }
 	}
 	// Dark mode
+		body.old-dark-mode {
+			.dark-mode {
+				#document-sidebar {
+					background-color: var(--darkmode-background-sidebar) !important;
+				}
+			} 
+		} 
 		.dark-mode {
 			#document-sidebar {
 				background-color: var(--darkmode-background-sidebar);
@@ -3551,6 +3558,9 @@
 					> a {
 						color: var(--darkmode-contrast) !important;
 					}
+					.hover\:bg-hover-bg:hover {
+						background-color: var(--darkmode-background-selected);
+					}
 				}
 			// RemNote Help Page Sidebar Backward icon
 				[data-icon="backward"] {
@@ -3565,6 +3575,8 @@
 				}
 			// RemNote Help Page Sidebar Document lists
 				.block.group.cursor-pointer {
+					font-weight: 700;
+
 					.highlight-color--red .RichTextViewer, 
 					.highlight-color--orange .RichTextViewer,
 					.highlight-color--yellow .RichTextViewer,
@@ -3574,6 +3586,18 @@
 						color: black !important;
 					}
 				}
+				// .leading-\[17px\] {
+				// 	line-height: 20px;
+				// }
+		}
+		#main {
+			#content {
+				#document-sidebar {
+					a {
+						color: var(--darkmode-contrast) !important;
+					}
+				}
+			}
 		}
 	// API
 		#APIKeys {
@@ -3584,6 +3608,13 @@
 		}
 	// Darkmode
 		.dark-mode {
+			.document-header-top-bar {
+				> div:nth-of-type(1) {
+					.flex {
+						color: var(--darkmode-text);
+					}
+				}
+			}
 			// Hover Effect
 				#hierarchy-editor {
 					.rem-container--article-link {
