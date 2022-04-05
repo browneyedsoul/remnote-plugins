@@ -56,6 +56,9 @@
 [data-rem-container-tags~=terminal] .rem-text .highlight-color--purple {
 	color: var(--terminal-purple-text);
 }
+[data-rem-container-tags~=terminal] .rem-text .text-blue-60 {
+	color: #94D2FF;
+}
 
 .TreeNode--list--in-card-content {
 	border-left: 0.1px solid white !important;
