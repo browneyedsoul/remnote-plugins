@@ -3551,6 +3551,14 @@
 		}
 	// Help page
 		.app-container--published-knowledge-base {
+			// Document
+				#document {
+					#hierarchy-editor {
+						> .fixed {
+							display: none;
+						}
+					}
+				}
 			// SideBar
 				#document-sidebar {
 					// RemNote Help Page Sidebar Top

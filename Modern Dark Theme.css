@@ -2368,6 +2368,9 @@ body.old-dark-mode .dark-mode #document-sidebar {
 	filter: unset;
 }
 
+.app-container--published-knowledge-base #document #hierarchy-editor > .fixed {
+	display: none;
+}
 .app-container--published-knowledge-base #document-sidebar #document-sidebar_top .m-3 > div {
 	color: var(--darkmode-contrast) !important;
 }
