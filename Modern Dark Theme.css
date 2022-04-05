@@ -2346,25 +2346,25 @@ body.old-dark-mode .dark-mode #document-sidebar {
 	color: #000;
 }
 
-#HelpPageContainer #HelpPage {
+.dark-mode #HelpPageContainer #HelpPage {
 	background-color: var(--darkmode-background);
 }
-#HelpPageContainer #HelpPage > div:nth-of-type(1) {
+.dark-mode #HelpPageContainer #HelpPage > div:nth-of-type(1) {
 	color: var(--darkmode-contrast);
 }
-#HelpPageContainer #HelpPage .help-knowledge-base-search .rich-text-editor {
+.dark-mode #HelpPageContainer #HelpPage .help-knowledge-base-search .rich-text-editor {
 	background-color: var(--darkmode-background-selected-darker);
 }
-#HelpPageContainer #HelpPage > a {
+.dark-mode #HelpPageContainer #HelpPage > a {
 	color: var(--darkmode-text);
 }
-#HelpPageContainer #HelpPage > ul > a {
+.dark-mode #HelpPageContainer #HelpPage > ul > a {
 	color: var(--darkmode-text);
 }
-#HelpPageContainer #HelpPage > ul > a > li .icon {
+.dark-mode #HelpPageContainer #HelpPage > ul > a > li .icon {
 	color: var(--darkmode-text);
 }
-#HelpPageContainer #HelpPage img {
+.dark-mode #HelpPageContainer #HelpPage img {
 	filter: unset;
 }
 
@@ -2401,9 +2401,6 @@ body.old-dark-mode .dark-mode #document-sidebar {
 .app-container--published-knowledge-base #document-sidebar .leading-\[17px\] {
 	line-height: 24px;
 }
-.app-container--published-knowledge-base #main #content #document-sidebar a {
-	color: var(--darkmode-contrast) !important;
-}
 .app-container--published-knowledge-base #APIKeys .ApiCommand {
 	overflow-x: auto;
 	white-space: pre;
@@ -2431,6 +2428,10 @@ body.old-dark-mode .dark-mode #document-sidebar {
 }
 .dark-mode .app-container--published-knowledge-base #APIKeys #ApiVoid {
 	background-color: var(--darkmode-background);
+}
+
+#main #content #document-sidebar a {
+	color: var(--darkmode-contrast) !important;
 }
 
 #document #hierarchy-editor .animate-zoom-into-bullet .tree-node--parent + .portal-tree-node-box {

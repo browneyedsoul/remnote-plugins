@@ -3511,40 +3511,42 @@
 	}
 // Help & Tutorial Page
 	// Intro
-		#HelpPageContainer {
-			#HelpPage {
-				background-color: var(--darkmode-background);
-		
-				>div:nth-of-type(1) {
-					color: var(--darkmode-contrast);
-				}
-				// Search
-					.help-knowledge-base-search {
-						.rich-text-editor {
-							background-color: var(--darkmode-background-selected-darker);
-						}
+		.dark-mode {
+			#HelpPageContainer {
+				#HelpPage {
+					background-color: var(--darkmode-background);
+			
+					>div:nth-of-type(1) {
+						color: var(--darkmode-contrast);
 					}
-				//  Header
-				>a {
-					color: var(--darkmode-text);
-				}
-		
-				//  List
-				>ul {
+					// Search
+						.help-knowledge-base-search {
+							.rich-text-editor {
+								background-color: var(--darkmode-background-selected-darker);
+							}
+						}
+					//  Header
 					>a {
 						color: var(--darkmode-text);
-		
-						>li {
-							.icon {
-								color: var(--darkmode-text);
+					}
+			
+					//  List
+					>ul {
+						>a {
+							color: var(--darkmode-text);
+			
+							>li {
+								.icon {
+									color: var(--darkmode-text);
+								}
 							}
 						}
 					}
+					// Image
+						img {
+							filter: unset;
+						}
 				}
-				// Image
-					img {
-						filter: unset;
-					}
 			}
 		}
 	// Help page
@@ -3600,15 +3602,6 @@
 						.leading-\[17px\] {
 							line-height: 24px;
 						}
-				}
-				#main {
-					#content {
-						#document-sidebar {
-							a {
-								color: var(--darkmode-contrast) !important;
-							}
-						}
-					}
 				}
 			// API
 				#APIKeys {
@@ -3674,6 +3667,16 @@
 			
 					#ApiVoid {
 						background-color: var(--darkmode-background);
+					}
+				}
+			}
+		}
+	// left bottom back sign
+		#main {
+			#content {
+				#document-sidebar {
+					a {
+						color: var(--darkmode-contrast) !important;
 					}
 				}
 			}
