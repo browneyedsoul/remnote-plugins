@@ -2346,80 +2346,90 @@ body.old-dark-mode .dark-mode #document-sidebar {
 	color: #000;
 }
 
-.dark-mode #HelpPageContainer #HelpPage {
+#HelpPageContainer #HelpPage {
 	background-color: var(--darkmode-background);
 }
-.dark-mode #HelpPageContainer #HelpPage > div:nth-of-type(1) {
+#HelpPageContainer #HelpPage > div:nth-of-type(1) {
 	color: var(--darkmode-contrast);
 }
-.dark-mode #HelpPageContainer #HelpPage > a {
+#HelpPageContainer #HelpPage .help-knowledge-base-search .rich-text-editor {
+	background-color: var(--darkmode-background-selected-darker);
+}
+#HelpPageContainer #HelpPage > a {
 	color: var(--darkmode-text);
 }
-.dark-mode #HelpPageContainer #HelpPage > ul > a {
+#HelpPageContainer #HelpPage > ul > a {
 	color: var(--darkmode-text);
 }
-.dark-mode #HelpPageContainer #HelpPage > ul > a > li .icon {
+#HelpPageContainer #HelpPage > ul > a > li .icon {
 	color: var(--darkmode-text);
+}
+#HelpPageContainer #HelpPage img {
+	filter: unset;
 }
 
-#document-sidebar #document-sidebar_top .m-3 > div {
+.app-container--published-knowledge-base #document-sidebar #document-sidebar_top .m-3 > div {
 	color: var(--darkmode-contrast) !important;
 }
-#document-sidebar #document-sidebar_top .help-knowledge-base-search .rich-text-editor {
+.app-container--published-knowledge-base #document-sidebar #document-sidebar_top .help-knowledge-base-search .rich-text-editor {
 	background-color: unset;
 }
-#document-sidebar .w-full > a {
+.app-container--published-knowledge-base #document-sidebar .w-full > a {
 	color: var(--darkmode-contrast) !important;
 }
-#document-sidebar .w-full .hover\:bg-hover-bg:hover {
+.app-container--published-knowledge-base #document-sidebar .w-full .hover\:bg-hover-bg:hover {
 	background-color: var(--darkmode-background-selected);
 }
-#document-sidebar [data-icon=backward] {
+.app-container--published-knowledge-base #document-sidebar [data-icon=backward] {
 	color: var(--darkmode-contrast) !important;
 }
-#document-sidebar .rem-reference .RichTextViewer {
+.app-container--published-knowledge-base #document-sidebar .rem-reference .RichTextViewer {
 	background-color: unset;
 	filter: invert(0);
 }
-#document-sidebar .block.group.cursor-pointer {
+.app-container--published-knowledge-base #document-sidebar .block.group.cursor-pointer {
 	font-weight: 700;
 }
-#document-sidebar .block.group.cursor-pointer .highlight-color--red .RichTextViewer,
-#document-sidebar .block.group.cursor-pointer .highlight-color--orange .RichTextViewer,
-#document-sidebar .block.group.cursor-pointer .highlight-color--yellow .RichTextViewer,
-#document-sidebar .block.group.cursor-pointer .highlight-color--green .RichTextViewer,
-#document-sidebar .block.group.cursor-pointer .highlight-color--blue .RichTextViewer,
-#document-sidebar .block.group.cursor-pointer .highlight-color--purple .RichTextViewer {
+.app-container--published-knowledge-base #document-sidebar .block.group.cursor-pointer .highlight-color--red .RichTextViewer,
+.app-container--published-knowledge-base #document-sidebar .block.group.cursor-pointer .highlight-color--orange .RichTextViewer,
+.app-container--published-knowledge-base #document-sidebar .block.group.cursor-pointer .highlight-color--yellow .RichTextViewer,
+.app-container--published-knowledge-base #document-sidebar .block.group.cursor-pointer .highlight-color--green .RichTextViewer,
+.app-container--published-knowledge-base #document-sidebar .block.group.cursor-pointer .highlight-color--blue .RichTextViewer,
+.app-container--published-knowledge-base #document-sidebar .block.group.cursor-pointer .highlight-color--purple .RichTextViewer {
 	color: black !important;
 }
-
-#main #content #document-sidebar a {
+.app-container--published-knowledge-base #document-sidebar .leading-\[17px\] {
+	line-height: 24px;
+}
+.app-container--published-knowledge-base #main #content #document-sidebar a {
 	color: var(--darkmode-contrast) !important;
 }
-
-#APIKeys .ApiCommand {
+.app-container--published-knowledge-base #APIKeys .ApiCommand {
 	overflow-x: auto;
 	white-space: pre;
 }
 
-.dark-mode .document-header-top-bar > div:nth-of-type(1) .flex {
+.dark-mode .app-container--published-knowledge-base .document-header-top-bar > div:nth-of-type(1) .flex {
 	color: var(--darkmode-text);
 }
-.dark-mode #hierarchy-editor .rem-container--article-link:hover {
+.dark-mode .app-container--published-knowledge-base .document-header-top-bar .hover\:bg-gray-5:hover {
+	background-color: var(--darkmode-background-selected);
+}
+.dark-mode .app-container--published-knowledge-base #hierarchy-editor .rem-container--article-link:hover {
 	background-color: var(--darkmode-background-selected-darker);
 	border-radius: 5px;
 }
-.dark-mode #APIKeys a {
+.dark-mode .app-container--published-knowledge-base #APIKeys a {
 	color: var(--link-node-color-dark);
 }
-.dark-mode #APIKeys .ApiCommand .ui.table {
+.dark-mode .app-container--published-knowledge-base #APIKeys .ApiCommand .ui.table {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
 }
-.dark-mode #APIKeys .ApiCommand .ui.table thead tr th {
+.dark-mode .app-container--published-knowledge-base #APIKeys .ApiCommand .ui.table thead tr th {
 	color: var(--darkmode-text-bold);
 }
-.dark-mode #APIKeys #ApiVoid {
+.dark-mode .app-container--published-knowledge-base #APIKeys #ApiVoid {
 	background-color: var(--darkmode-background);
 }
 
