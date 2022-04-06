@@ -2417,6 +2417,44 @@ body.old-dark-mode .dark-mode #document-sidebar {
 	filter: unset;
 }
 
+.app-container--published-knowledge-base .tree-node-container .tree-node--parent [data-rem-tags~=document] > div .rem-container--article-link .rem-button__container .rem-bullet__container {
+	pointer-events: unset;
+}
+.app-container--published-knowledge-base .tree-node-container .tree-node--parent [data-rem-tags~=document] > div .rem-container--article-link .rem-button__container .rem-bullet__container > span.rn-rem-icon-bullet {
+	pointer-events: none;
+}
+.app-container--published-knowledge-base .tree-node-container .tree-node--parent [data-rem-tags~=document] > div .rem-container--article-link .rem-button__container .rem-bullet__container > .toggle-collapse-button {
+	pointer-events: none !important;
+}
+.app-container--published-knowledge-base .tree-node-container .tree-node--parent [data-rem-tags~=document] > div .rem-container--article-link .rem-button__container .rem-bullet__container > .rem-bullet__container {
+	pointer-events: none;
+}
+.app-container--published-knowledge-base .tree-node-container .tree-node--parent [data-rem-tags~=document] > div .rem-container--article-link .rem-button__container path {
+	pointer-events: none;
+}
+.app-container--published-knowledge-base .tree-node-container .tree-node--parent [data-rem-tags~=document] > div .rem-container--article-link .rem-text {
+	pointer-events: none;
+}
+.app-container--published-knowledge-base .tree-node-container .tree-node--parent [data-rem-tags~=header] .rem-text.rem-header--1,
+.app-container--published-knowledge-base .tree-node-container .tree-node--parent [data-rem-tags~=header] .rem-text.rem-header--2,
+.app-container--published-knowledge-base .tree-node-container .tree-node--parent [data-rem-tags~=header] .rem-text.rem-header--3 {
+	font-family: "Nunito", sans-serif;
+}
+.app-container--published-knowledge-base .rem-button__container .rem-bullet__container > span.rn-rem-icon-bullet {
+	pointer-events: none;
+}
+.app-container--published-knowledge-base .rem-button__container .rem-bullet__container > .toggle-collapse-button > svg {
+	pointer-events: none !important;
+}
+.app-container--published-knowledge-base .rem-button__container .rem-bullet__container > .toggle-collapse-button > svg path {
+	pointer-events: none !important;
+}
+.app-container--published-knowledge-base .rem-button__container .rem-bullet__container > .rem-bullet__container {
+	pointer-events: none;
+}
+.app-container--published-knowledge-base .rem-button__container path {
+	pointer-events: none;
+}
 .app-container--published-knowledge-base #document #hierarchy-editor > .fixed {
 	display: none;
 }
@@ -2464,9 +2502,15 @@ body.old-dark-mode .dark-mode #document-sidebar {
 .dark-mode .app-container--published-knowledge-base .document-header-top-bar .hover\:bg-gray-5:hover {
 	background-color: var(--darkmode-background-selected);
 }
-.dark-mode .app-container--published-knowledge-base #hierarchy-editor .rem-container--article-link:hover {
+.dark-mode .app-container--published-knowledge-base #hierarchy-editor [data-rem-tags~=document]:not([data-rem-tags~=document][data-rem-tags~=highlight]) .rem-container--article-link .rem-button__container .rem-bullet__container .rn-rem-icon-bullet svg path {
+	color: var(--darkmode-text);
+}
+.dark-mode .app-container--published-knowledge-base #hierarchy-editor [data-rem-tags~=document]:not([data-rem-tags~=document][data-rem-tags~=highlight]) .rem-container--article-link:hover {
 	background-color: var(--darkmode-background-selected-darker);
 	border-radius: 5px;
+}
+.dark-mode .app-container--published-knowledge-base #hierarchy-editor .button {
+	color: var(--darkmode-text) !important;
 }
 .dark-mode .app-container--published-knowledge-base #APIKeys a {
 	color: var(--link-node-color-dark);
@@ -2482,7 +2526,7 @@ body.old-dark-mode .dark-mode #document-sidebar {
 	background-color: var(--darkmode-background);
 }
 
-#main #content #document-sidebar a {
+#main #content #document-sidebar .w-full > a {
 	color: var(--darkmode-contrast) !important;
 }
 

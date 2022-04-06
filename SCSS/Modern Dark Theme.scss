@@ -3629,6 +3629,90 @@
 		}
 	// Help page
 		.app-container--published-knowledge-base {
+			// Disable Bullet Event in Help page
+				.tree-node-container {
+					.tree-node--parent {
+
+						[data-rem-tags~="document"]	{
+							> div {
+								.rem-container--article-link {
+
+									.rem-button__container {
+										// pointer-events: none;
+									
+										.rem-bullet__container {
+											pointer-events: unset;
+									
+											> span.rn-rem-icon-bullet {
+												pointer-events: none;
+											}
+									
+											>.toggle-collapse-button {
+												pointer-events: none !important;
+									
+												>svg {
+													// pointer-events: none !important;
+									
+													path {
+														// pointer-events: auto;
+													}
+												}
+											}
+									
+											>.rem-bullet__container {
+												pointer-events: none;
+											}
+										}
+									
+										path {
+											pointer-events: none;
+										}
+									}
+
+									.rem-text {
+										pointer-events: none;
+									}
+								}
+							}
+						}
+						[data-rem-tags~="header"] {
+							.rem-text.rem-header--1,
+							.rem-text.rem-header--2,
+							.rem-text.rem-header--3 {
+								font-family: 'Nunito', sans-serif;
+							}
+						}
+					}
+				}
+				.rem-button__container {
+					// pointer-events: none;
+
+					.rem-bullet__container {
+						// pointer-events: none;
+
+						> span.rn-rem-icon-bullet {
+							pointer-events: none;
+						}
+						> .toggle-collapse-button {
+							// pointer-events: none !important;
+
+							> svg {
+								pointer-events: none !important;
+
+								path {
+									pointer-events: none !important;
+								}
+							}
+						}
+						> .rem-bullet__container {
+							pointer-events: none;
+						}
+					}
+					path {
+						pointer-events: none;
+					}
+				}
+				
 			// Document
 				#document {
 					#hierarchy-editor {
@@ -3701,68 +3785,84 @@
 		.dark-mode {
 			.app-container--published-knowledge-base {
 				// Header
-				.document-header-top-bar {
-					>div:nth-of-type(1) {
-						.flex {
-							color: var(--darkmode-text);
+					.document-header-top-bar {
+						>div:nth-of-type(1) {
+							.flex {
+								color: var(--darkmode-text);
+							}
+						}
+						.hover\:bg-gray-5:hover {
+							background-color: var(--darkmode-background-selected);
 						}
 					}
-					.hover\:bg-gray-5:hover {
-						background-color: var(--darkmode-background-selected);
-					}
-				}
-			
-				// Hover Effect
-				#hierarchy-editor {
-					.rem-container--article-link {
-						&:hover {
-							background-color: var(--darkmode-background-selected-darker);
-							border-radius: 5px;
-						}
-					}
-				}
-			
-				// API
-				#APIKeys {
-					a {
-						color: var(--link-node-color-dark);
-					}
-			
-					.ApiCommand {
-						.ui.table {
-							color: var(--darkmode-text);
-							background-color: var(--darkmode-background);
-			
-							thead {
-								tr {
-			
-									th {
-										color: var(--darkmode-text-bold);
+				// Content
+					#hierarchy-editor {
+						[data-rem-tags~="document"]:not([data-rem-tags~="document"][data-rem-tags~="highlight"]) {
+							.rem-container--article-link {
+								.rem-button__container {
+									.rem-bullet__container {
+										.rn-rem-icon-bullet {
+											svg {
+												path {
+													color: var(--darkmode-text)
+												}
+											}
+										}
 									}
 								}
-			
+								&:hover {
+									background-color: var(--darkmode-background-selected-darker);
+									border-radius: 5px;
+								}
 							}
-			
-							// tbody {
-							// 	tr {
-			
-							// 	}
-							// }
+						}
+						.button {
+							color: var(--darkmode-text) !important;
 						}
 					}
-			
-					#ApiVoid {
-						background-color: var(--darkmode-background);
+				// API Area
+					#APIKeys {
+						a {
+							color: var(--link-node-color-dark);
+						}
+				
+						.ApiCommand {
+							.ui.table {
+								color: var(--darkmode-text);
+								background-color: var(--darkmode-background);
+				
+								thead {
+									tr {
+				
+										th {
+											color: var(--darkmode-text-bold);
+										}
+									}
+				
+								}
+				
+								// tbody {
+								// 	tr {
+				
+								// 	}
+								// }
+							}
+						}
+				
+						#ApiVoid {
+							background-color: var(--darkmode-background);
+						}
 					}
-				}
 			}
 		}
 	// left bottom back sign
 		#main {
 			#content {
 				#document-sidebar {
-					a {
-						color: var(--darkmode-contrast) !important;
+					.w-full {
+						> a {
+							color: var(--darkmode-contrast) !important;
+						}
 					}
 				}
 			}
