@@ -243,9 +243,6 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document .document-header-top-bar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
-	display: none;
-}
 #tile__document .document-header-top-bar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;

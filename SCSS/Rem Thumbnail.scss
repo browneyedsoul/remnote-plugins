@@ -137,7 +137,7 @@
 	#tile__document {
 		// Page Hierarchy
 		.document-header-top-bar {
-			@include thumbnail-set;
+			@include thumbnail-set-display();
 		}
 		// Page
 		#document {
