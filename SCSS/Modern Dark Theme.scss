@@ -3772,6 +3772,17 @@
 						.leading-\[17px\] {
 							line-height: 24px;
 						}
+					// Reference
+						.rem-reference-container {
+							.rem-reference {
+								.RichTextViewer:not([data-rem-tags~=emoji] .RichTextViewer) {
+									color: var(--link-node-color-dark);
+								}
+								&:hover {
+									background-color: unset;
+								}
+							}
+						}
 				}
 			// API
 				#APIKeys {

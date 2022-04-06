@@ -2491,6 +2491,12 @@ body.old-dark-mode .dark-mode #document-sidebar {
 .app-container--published-knowledge-base #document-sidebar .leading-\[17px\] {
 	line-height: 24px;
 }
+.app-container--published-knowledge-base #document-sidebar .rem-reference-container .rem-reference .RichTextViewer:not([data-rem-tags~=emoji] .RichTextViewer) {
+	color: var(--link-node-color-dark);
+}
+.app-container--published-knowledge-base #document-sidebar .rem-reference-container .rem-reference:hover {
+	background-color: unset;
+}
 .app-container--published-knowledge-base #APIKeys .ApiCommand {
 	overflow-x: auto;
 	white-space: pre;
