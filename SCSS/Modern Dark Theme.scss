@@ -1787,6 +1787,85 @@
 				}
 			}
 		}
+		.dark-mode {
+			#content {
+				.tile__document {
+					#document {
+						#hierarchy-editor {
+							.rem-text {
+								.EditorContainer {
+									.RichTextViewer {
+										span.highlight-color--red {
+											color: #FFD2CE;
+											background-color: #572924;
+										}
+		
+										span.highlight-color--orange {
+											color: #FFDAB8;
+											background-color: #553D24;
+										}
+		
+										span.highlight-color--yellow {
+											color: #E8DDA7;
+											background-color: #453E1E;
+										}
+		
+										span.highlight-color--green {
+											color: #B3DDAB;
+											background-color: #253F27;
+										}
+		
+										span.highlight-color--blue {
+											color: #B5DEE8;
+											background-color: #183C4D;
+										}
+		
+										span.highlight-color--purple {
+											color: #DDC3EB;
+											background-color: #43273F;
+										}
+									}
+								}
+							}
+		
+							[data-slate-node="element"] {
+								[data-slate-node="text"] {
+									span.highlight-color--red {
+										color: #FFD2CE;
+										background-color: #572924;
+									}
+		
+									span.highlight-color--orange {
+										color: #FFDAB8;
+										background-color: #553D24;
+									}
+		
+									span.highlight-color--yellow {
+										color: #E8DDA7;
+										background-color: #453E1E;
+									}
+		
+									span.highlight-color--green {
+										color: #B3DDAB;
+										background-color: #253F27;
+									}
+		
+									span.highlight-color--blue {
+										color: #B5DEE8;
+										background-color: #183C4D;
+									}
+		
+									span.highlight-color--purple {
+										color: #DDC3EB;
+										background-color: #43273F;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	// Document Title Highlight Style
 		#DocumentTitle {
 			.bold,
@@ -1943,28 +2022,27 @@
 					}
 				}
 			}
-		.popup-menu {
-			[data-rem-tags~="color"] {
-				.bold.highlight-color--yellow {
-					color: var(--yellow-text-dark); text-shadow: unset;
+		// Popup Menu
+			.popup-menu {
+				[data-rem-tags~="color"] {
+					.bold.highlight-color--yellow {
+						color: var(--yellow-text-dark); text-shadow: unset;
+					}
+				}
+			} 
+			#document-hover-preview__popup {
+				.RichTextViewer {
+					.bold.highlight-color--red,
+					.bold.highlight-color--orange,
+					.bold.highlight-color--yellow,
+					.bold.highlight-color--green,
+					.bold.highlight-color--blue,
+					.bold.highlight-color--purple {
+						color: #000;
+						font-weight: 600;
+					}
 				}
 			}
-		} 
-		
-		
-		#document-hover-preview__popup {
-			.RichTextViewer {
-				.bold.highlight-color--red,
-				.bold.highlight-color--orange,
-				.bold.highlight-color--yellow,
-				.bold.highlight-color--green,
-				.bold.highlight-color--blue,
-				.bold.highlight-color--purple {
-					color: #000;
-					font-weight: 600;
-				}
-			}
-		}
 // Portal
 	// Darkmode Support
 		.dark-mode {
