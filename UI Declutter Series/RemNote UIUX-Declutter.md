@@ -63,7 +63,7 @@ And If it shows a bunch of the backlinks, it slows down the paging
 
 ```css
 .rem-bullet__container {
-    pointer-events: none;
+	pointer-events: none;
 }
 ```
 
@@ -71,6 +71,14 @@ And If it shows a bunch of the backlinks, it slows down the paging
 
 ```css
 [data-rem-tags="card-item"] .text-gray-20 {
-    display: none;
+	display: none;
+}
+```
+
+## Disable URL Link Popup when hovering website reference
+
+```css
+.popup-menu > .p-1 {
+	display: none;
 }
 ```
