@@ -46,16 +46,30 @@
     .rem-header--3:not(.document-title) {
         color: unset;
     }
-// Custom rem bullet icon
-    [data-rem-tags~="warning"] .rem-text::before {
-        content: "🚨"; 
-        margin-right: 10px;
-        margin-top: 3px;
-    }
-    [data-rem-tags~="idea"] .rem-text::before {
-        content: "💡"; 
-        margin-right: 10px;
-        margin-top: 3px;
+// Custom rem bullet Emoji
+    [data-rem-tags~="callout"],
+    [data-rem-tags~="calloutred"],
+    [data-rem-tags~="calloutorange"],
+    [data-rem-tags~="calloutyellow"],
+    [data-rem-tags~="calloutgreen"],
+    [data-rem-tags~="calloutblue"],
+    [data-rem-tags~="calloutpurple"] {
+        .rem-text {
+            .EditorContainer {
+                [data-rem-tags~="emoji"] {
+                    position: absolute;
+                    left: 0;
+                    top: 0.2rem;
+                }
+                [data-slate-node~="element"] {
+                    > [data-rem-tags~="emoji"] {
+                        position: absolute;
+                        left: -1.5rem;
+                        top: -0.05rem;
+                    }
+                }
+            }
+        }
     }
 // Callout Rem Block Color-Variable & Pre-Coloured
     [data-rem-container-tags~="callout"],
