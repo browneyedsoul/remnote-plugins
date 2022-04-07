@@ -1,3 +1,8 @@
+:root {
+	--line-color: #DDD;
+	--line-color-dark: #535353;
+}
+
 [data-rem-tags~=divider] {
 	color: transparent;
 	padding-right: 15px;
