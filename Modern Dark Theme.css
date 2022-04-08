@@ -2262,10 +2262,8 @@ body.old-dark-mode .dark-mode-background {
 #document-sidebar span.highlight-color--green,
 #document-sidebar span.highlight-color--blue,
 #document-sidebar span.highlight-color--purple {
-	margin-left: 5px;
 	padding: 1px 3px;
 	border-radius: 3px;
-	font-weight: 600;
 }
 #document-sidebar .highlight-color--yellow {
 	background-color: var(--highlight-color--yellow-dark);
@@ -2280,6 +2278,7 @@ body.old-dark-mode .dark-mode-background {
 #document-sidebar .bold.highlight-color--blue,
 #document-sidebar .bold.highlight-color--purple {
 	background-color: unset;
+	padding-left: unset;
 }
 #document-sidebar .bold.highlight-color--red {
 	color: var(--red-text-dark);

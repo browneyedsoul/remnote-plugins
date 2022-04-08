@@ -3380,7 +3380,7 @@
                     margin-left: 5px;
                 }
             }
-        } 
+        }
     // Sidebar list item Padding
         .p-2 {
             padding: 0.5rem;
@@ -3392,10 +3392,8 @@
         span.highlight-color--green,
         span.highlight-color--blue,
         span.highlight-color--purple {
-            margin-left: 5px;
             padding: 1px 3px;
             border-radius: 3px;
-            font-weight: 600;
         }
         .highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
     // Sidebar list item Colored Text
@@ -3408,7 +3406,8 @@
         .bold.highlight-color--green,
         .bold.highlight-color--blue,
         .bold.highlight-color--purple {
-            background-color: unset;
+			background-color: unset;
+			padding-left: unset;
         }
         .bold.highlight-color--red {color: var(--red-text-dark);}
         .bold.highlight-color--orange {color: var(--orange-text-dark);}
