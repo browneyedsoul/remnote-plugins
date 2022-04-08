@@ -2166,7 +2166,6 @@ body.old-dark-mode .dark-mode-background {
 	filter: invert(0);
 	position: relative;
 	top: 1px;
-	margin-right: 5px;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer {
 	color: var(--darkmode-text);
@@ -2176,6 +2175,14 @@ body.old-dark-mode .dark-mode-background {
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer > .image-node__container {
 	position: relative;
 	top: 0.1rem;
+}
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--red,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--orange,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--yellow,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--green,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--blue,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--purple {
+	margin-left: 3px;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div:only-child {
 	margin-left: 24px;
@@ -2251,7 +2258,7 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-contrast);
 }
 #document-sidebar .block .RichTextViewer .bold {
-	margin-left: 5px;
+	margin-left: 3px;
 }
 #document-sidebar .p-2 {
 	padding: 0.5rem;

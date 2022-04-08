@@ -3276,7 +3276,6 @@
 										filter: invert(0);
 										position: relative;
 										top: 1px;
-										margin-right: 5px;
 
 										> svg.text-icon {
 											// 
@@ -3290,6 +3289,15 @@
 									> .image-node__container {
 										position: relative;
 										top: 0.1rem;
+									}
+
+									.highlight-color--red,
+									.highlight-color--orange,
+									.highlight-color--yellow,
+									.highlight-color--green,
+									.highlight-color--blue,
+									.highlight-color--purple {
+										margin-left: 3px;
 									}
 								}
 								// Sidebar list Arrow line Alignment
@@ -3377,7 +3385,7 @@
         .block {
             .RichTextViewer {
                 .bold {
-                    margin-left: 5px;
+                    margin-left: 3px;
                 }
             }
         }
