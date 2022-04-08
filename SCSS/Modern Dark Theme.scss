@@ -2925,6 +2925,7 @@
         border: 0.1rem solid var(--line-color);
         border-radius: 4px;
 		background-color: var(--reference-background);
+		margin-right: 0.7rem;
 
         > .tree-node--parent {
             div[data-rem-tags~="aliases"] {
