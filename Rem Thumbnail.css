@@ -831,6 +831,9 @@
 	-o-object-position: center;
 	   object-position: center;
 }
+.hierarchy-editor__tag-bar__tag .py-\[2px\] {
+	display: flex;
+}
 
 [aria-label~=Omnibar] span.image-node__container.inline-block {
 	height: 1em;
