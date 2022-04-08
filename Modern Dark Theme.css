@@ -2264,6 +2264,7 @@ body.old-dark-mode .dark-mode-background {
 #document-sidebar span.highlight-color--purple {
 	padding: 1px 3px;
 	border-radius: 3px;
+	font-weight: 650;
 }
 #document-sidebar .highlight-color--yellow {
 	background-color: var(--highlight-color--yellow-dark);
