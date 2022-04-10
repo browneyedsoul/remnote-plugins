@@ -1,0 +1,181 @@
+:root {
+    --line-color: #DDD;
+    --line-color-dark: #535353;
+}
+
+[data-rem-container-tags~="tree"] {
+    display: flex;
+    line-height: 160%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    white-space: pre;
+
+    .rem-button__container {
+        z-index: 1;
+    }
+    // Parent
+        div.tree-node--parent {
+            display: inline-block;
+            
+            .rem-text {
+                .EditorContainer {
+                    white-space: nowrap !important;
+
+                    .RichTextViewer {
+                        white-space: nowrap;
+                    }
+                    
+                    .last_node_down_arrow,
+                    .whitespace-pre {
+                        display: none;
+                    }
+                }
+            }
+            // Tag Declutter
+                [data-rem-tags~="tree"] {
+                    // Tag Declutter
+                        .hierarchy-editor__tag-bar__tag {
+                            display: none; //background-color: transparent !important;
+                    
+                            span {
+                                display: none;
+                            }
+                        }
+                }
+        }
+    // One Child Tree
+        div.tree-node--children {
+            .tree-node-container:only-child {
+                &::before {
+                    content: "";
+                    padding-right: 24px;
+                    padding-top: 0;
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: -0.1rem;
+                    height: 97%;
+                    width: 5px;
+                    border-top: unset;
+                    border-right: unset;
+                    border-bottom: 5rem solid #FFF;
+                    border-left: 27px solid #FFF;
+                    margin-top: 1.05rem;
+                }
+                &::after {
+                    border-top: unset;
+                }
+            }
+        }
+    div.tree-node--children:not(.tree-node--children:empty) {
+        display: inline-block;
+        z-index: 0;
+        border-left: 1px solid var(--line-color);
+        position: relative;
+        // Crumbs Remover
+        &::before {
+            content: "";
+            padding-right: 24px;
+            padding-top: 0;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: -0.15rem;
+            height: 1rem;
+            border-top: unset;
+            border-right: unset;
+            border-bottom: 1px solid var(--line-color);
+            border-left: 4px solid #FFF;
+        }
+        &::after {
+            content: "";
+            padding-right: 24px;
+            padding-top: 0;
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+            left: -0.15rem;
+            height: 1rem;
+            border-bottom: unset;
+            border-right: unset;
+            border-top: 1px solid var(--line-color);
+            border-left: 4px solid #FFF;
+        }
+
+        .tree-node-container {
+            display: flex;
+            z-index: 0;
+
+            div.tree-node--children:only-of-type {
+                display: none;
+            }
+        }
+    }
+    // Border Declutter
+        div.tree-node--children {
+            &:empty {
+                border-left: unset;
+            }
+        }
+    // Header Alignment
+        // .rem-container--header-1 {
+        //     position: relative;
+        //     top: -0.7rem;
+        // }
+        
+        // .rem-container--header-2 {
+        //     position: relative;
+        //     top: -0.4rem;
+        // }
+        
+        // .rem-container--header-3 {
+        //     position: relative;
+        //     top: -0.2rem;
+        // }
+}
+// Darkmode Compatibility
+    .dark-mode {
+        [data-rem-container-tags~="tree"] {
+            div.tree-node--children {
+                .tree-node-container:only-child {
+                    &::before {
+                        border-bottom: 5rem solid var(--darkmode-background, #2F3437);
+                        border-left: 27px solid var(--darkmode-background, #2F3437);
+                    }
+                }
+            }
+            div.tree-node--children:not(.tree-node--children:empty) {
+                border-left: 1px solid var(--line-color-dark,#535353);
+                // Crumbs Remover
+                &::before {
+                    content: "";
+                    padding-right: 24px;
+                    padding-top: 0;
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: -0.15rem;
+                    height: 1rem;
+                    border-top: unset;
+                    border-right: unset;
+                    border-bottom: 1px solid var(--line-color-dark, #535353);
+                    border-left: 4px solid var(--darkmode-background, #2F3437);
+                }
+                &::after {
+                    content: "";
+                    padding-right: 24px;
+                    padding-top: 0;
+                    position: absolute;
+                    z-index: 0;
+                    bottom: 0;
+                    left: -0.15rem;
+                    height: 1rem;
+                    border-bottom: unset;
+                    border-right: unset;
+                    border-top: 1px solid var(--line-color-dark, #535353);
+                    border-left: 4px solid var(--darkmode-background, #2F3437);
+                }
+            }
+        }
+    }
