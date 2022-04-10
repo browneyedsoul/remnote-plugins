@@ -211,9 +211,13 @@
                                     > div:nth-of-type(6) {
                                         > div.tree-node--parent  {
                                             color: #000;
-                                            background-color: #B2D7EB;
+                                            background-color: #D4EEFF;
                                             
                                             .rem-text {
+                                                .rem-reference {
+                                                    color: unset;
+                                                    background-color: unset;
+                                                }
                                                 &::after {
                                                     content: "Sat";
                                                 }
@@ -224,9 +228,13 @@
                                     > div:nth-of-type(7) {
                                         > div.tree-node--parent  {
                                             color: #000;
-                                            background-color: #FFA39C;
+                                            background-color: #FFD8CF;
                                             
                                             .rem-text {
+                                                .rem-reference {
+                                                    color: unset;
+                                                    background-color: unset;
+                                                }
                                                 &::after {
                                                     content: "Sun";
                                                 }

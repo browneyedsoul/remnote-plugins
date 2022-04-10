@@ -121,14 +121,22 @@
 }
 #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.tree-node-container > div.TreeNode > div:nth-of-type(6) > div.tree-node--parent {
 	color: #000;
-	background-color: #B2D7EB;
+	background-color: #D4EEFF;
+}
+#hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.tree-node-container > div.TreeNode > div:nth-of-type(6) > div.tree-node--parent .rem-text .rem-reference {
+	color: unset;
+	background-color: unset;
 }
 #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.tree-node-container > div.TreeNode > div:nth-of-type(6) > div.tree-node--parent .rem-text::after {
 	content: "Sat";
 }
 #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.tree-node-container > div.TreeNode > div:nth-of-type(7) > div.tree-node--parent {
 	color: #000;
-	background-color: #FFA39C;
+	background-color: #FFD8CF;
+}
+#hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.tree-node-container > div.TreeNode > div:nth-of-type(7) > div.tree-node--parent .rem-text .rem-reference {
+	color: unset;
+	background-color: unset;
 }
 #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.tree-node-container > div.TreeNode > div:nth-of-type(7) > div.tree-node--parent .rem-text::after {
 	content: "Sun";
