@@ -137,6 +137,7 @@
 	display: none !important;
 }
 #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.tree-node-container .rem-reference-container[data-rem-tags~=daily-document] .rem-reference .RichTextViewer {
+	color: unset;
 	background-color: unset;
 }
 
