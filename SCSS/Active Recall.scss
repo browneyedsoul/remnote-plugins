@@ -3,47 +3,59 @@
 }
 // Active Recall
     [data-rem-container-tags~="active-recall"] {
-        // Inline Card
+        // Cloze & Inline Card
+            span.cloze, %cloze {
+                color: #000;
+                font-weight: 600;
+                border-radius: 5px;
+                padding: 0px 3px 2px 3px;
+                margin: 0px 3px 0px 3px;
+            }
             span {
                 &:not(:hover):not([data-rem-tags~="learned"]).cloze,
                 &.only_in_answer:not(:hover):not([data-rem-tags~="learned"]) {
                     background-color: white;
                     filter: var(--hide-answer-filter);
-                    border-radius: 5px;
-                    padding: 0px 3px 2px 3px;
-                    margin: 0px 3px 0px 3px;
                     position: relative;
                     top: -2px;
+                    @extend %cloze;
                 }
             }
         // List Card
             > div:last-child {
-                .node-card-item:not(:hover) {
-                    background-color: white;
-                    filter: var(--hide-answer-filter);
-                    border-radius: 5px;
+                .node-card-item {
+                    &:not(:focus-within) {
+                        background-color: white;
+                        filter: var(--hide-answer-filter);
+                        border-radius: 5px;
+                    }
                 }
-            }
-        // Cloze
-            .cloze {
-                background-color: black;
-                color: yellow;
-                border-radius: 5px;
-                border-bottom: 2px solid red;
-                padding: 0px 3px 2px 3px;
-                margin: 0px 3px 0px 3px;
+                &:focus-within {
+                    .node-card-item {
+                        filter: unset;
+                    }
+                }
             }
     }
 // Darkmode Compatibility
 	.dark-mode {
-        .cloze {
-            background-color: rgba(210,225,248,0);
-            color: #fff;
-            border-bottom: 2px solid var(--darkmode-contrast);
-            padding-bottom: 2px;
-            margin-left: 3px;
-            margin-right: 3px;
-            padding-left: 3px;
+        [data-rem-container-tags~="active-recall"] {
+            // List Card
+                > div:last-child {
+                    .node-card-item {
+                        &:not(:focus-within) {
+                            background-color: var(--darkmode-background, #2F3437);
+                            filter: var(--hide-answer-filter);
+                            border-radius: 5px;
+                        }
+                    }
+                
+                    &:focus-within {
+                        .node-card-item {
+                            filter: unset;
+                        }
+                    }
+                }
         }
     }
 // Tag Declutter
