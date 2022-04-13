@@ -16,11 +16,12 @@
     }
     // Parent
         div.tree-node--parent {
-            display: inline-block;
+            display: flex;
+            align-items: center;
             
             .rem-text {
                 .EditorContainer {
-                    white-space: nowrap !important;
+                    white-space: pre !important;
 
                     .RichTextViewer {
                         white-space: nowrap;
@@ -44,7 +45,7 @@
                         }
                 }
         }
-    // One Child Tree
+    // Children - One Child Tree
         div.tree-node--children {
             .tree-node-container:only-child {
                 &::before {
@@ -68,71 +69,71 @@
                 }
             }
         }
-    div.tree-node--children:not(.tree-node--children:empty) {
-        display: inline-block;
-        z-index: 0;
-        border-left: 1px solid var(--line-color);
-        position: relative;
-        // Crumbs Remover
-        &::before {
-            content: "";
-            padding-right: 24px;
-            padding-top: 0;
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            left: -0.15rem;
-            height: 1rem;
-            border-top: unset;
-            border-right: unset;
-            border-bottom: 1px solid var(--line-color);
-            border-left: 4px solid #FFF;
-        }
-        &::after {
-            content: "";
-            padding-right: 24px;
-            padding-top: 0;
-            position: absolute;
-            z-index: 0;
-            bottom: 0;
-            left: -0.15rem;
-            height: 1rem;
-            border-bottom: unset;
-            border-right: unset;
-            border-top: 1px solid var(--line-color);
-            border-left: 4px solid #FFF;
-        }
 
-        .tree-node-container {
-            display: flex;
+        div.tree-node--children:not(.tree-node--children:empty):not(:only-child) {
+            display: inline-block;
             z-index: 0;
+            border-left: 1px solid var(--line-color);
+            position: relative;
+            // Crumbs Remover
+            &::before {
+                content: "";
+                padding-right: 24px;
+                padding-top: 0;
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: -0.15rem;
+                height: 1rem;
+                border-top: unset;
+                border-right: unset;
+                border-bottom: 1px solid var(--line-color);
+                border-left: 4px solid #FFF;
+            }
+            &::after {
+                content: "";
+                padding-right: 24px;
+                padding-top: 0;
+                position: absolute;
+                z-index: 0;
+                bottom: 0;
+                left: -0.15rem;
+                height: 1rem;
+                border-bottom: unset;
+                border-right: unset;
+                border-top: 1px solid var(--line-color);
+                border-left: 4px solid #FFF;
+            }
 
-            div.tree-node--children:only-of-type {
-                display: none;
+            .tree-node-container {
+                display: flex;
+                z-index: 0;
+
+                &:first-child {
+                    >.tree-node--parent {
+                        display: flex;
+                        align-items: baseline;
+                    }
+                }
+
+                &:last-child {
+                    > .tree-node--parent {
+                        display: flex;
+                        align-items: flex-end;
+                    }
+                }
+
+                div.tree-node--children:only-of-type {
+                    display: none;
+                }
             }
         }
-    }
     // Border Declutter
         div.tree-node--children {
             &:empty {
                 border-left: unset;
             }
         }
-    // Header Alignment
-        // .rem-container--header-1 {
-        //     position: relative;
-        //     top: -0.7rem;
-        // }
-        
-        // .rem-container--header-2 {
-        //     position: relative;
-        //     top: -0.4rem;
-        // }
-        
-        // .rem-container--header-3 {
-        //     position: relative;
-        //     top: -0.2rem;
-        // }
 }
 // Darkmode Compatibility
     .dark-mode {

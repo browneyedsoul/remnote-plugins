@@ -15,10 +15,11 @@
 	z-index: 1;
 }
 [data-rem-container-tags~=tree] div.tree-node--parent {
-	display: inline-block;
+	display: flex;
+	align-items: center;
 }
 [data-rem-container-tags~=tree] div.tree-node--parent .rem-text .EditorContainer {
-	white-space: nowrap !important;
+	white-space: pre !important;
 }
 [data-rem-container-tags~=tree] div.tree-node--parent .rem-text .EditorContainer .RichTextViewer {
 	white-space: nowrap;
@@ -52,13 +53,13 @@
 [data-rem-container-tags~=tree] div.tree-node--children .tree-node-container:only-child::after {
 	border-top: unset;
 }
-[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty) {
+[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty):not(:only-child) {
 	display: inline-block;
 	z-index: 0;
 	border-left: 1px solid var(--line-color);
 	position: relative;
 }
-[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty)::before {
+[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty):not(:only-child)::before {
 	content: "";
 	padding-right: 24px;
 	padding-top: 0;
@@ -72,7 +73,7 @@
 	border-bottom: 1px solid var(--line-color);
 	border-left: 4px solid #FFF;
 }
-[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty)::after {
+[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty):not(:only-child)::after {
 	content: "";
 	padding-right: 24px;
 	padding-top: 0;
@@ -86,11 +87,19 @@
 	border-top: 1px solid var(--line-color);
 	border-left: 4px solid #FFF;
 }
-[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty) .tree-node-container {
+[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty):not(:only-child) .tree-node-container {
 	display: flex;
 	z-index: 0;
 }
-[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty) .tree-node-container div.tree-node--children:only-of-type {
+[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty):not(:only-child) .tree-node-container:first-child > .tree-node--parent {
+	display: flex;
+	align-items: baseline;
+}
+[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty):not(:only-child) .tree-node-container:last-child > .tree-node--parent {
+	display: flex;
+	align-items: flex-end;
+}
+[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty):not(:only-child) .tree-node-container div.tree-node--children:only-of-type {
 	display: none;
 }
 [data-rem-container-tags~=tree] div.tree-node--children:empty {
