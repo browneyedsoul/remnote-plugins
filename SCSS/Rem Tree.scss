@@ -109,14 +109,14 @@
                 display: flex;
                 z-index: 0;
 
-                &:first-child {
+                &:first-child:not(:only-child) {
                     >.tree-node--parent {
                         display: flex;
                         align-items: baseline;
                     }
                 }
 
-                &:last-child {
+                &:last-child:not(:only-child) {
                     > .tree-node--parent {
                         display: flex;
                         align-items: flex-end;

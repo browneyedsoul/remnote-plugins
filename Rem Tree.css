@@ -91,11 +91,11 @@
 	display: flex;
 	z-index: 0;
 }
-[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty):not(:only-child) .tree-node-container:first-child > .tree-node--parent {
+[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty):not(:only-child) .tree-node-container:first-child:not(:only-child) > .tree-node--parent {
 	display: flex;
 	align-items: baseline;
 }
-[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty):not(:only-child) .tree-node-container:last-child > .tree-node--parent {
+[data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty):not(:only-child) .tree-node-container:last-child:not(:only-child) > .tree-node--parent {
 	display: flex;
 	align-items: flex-end;
 }
