@@ -8,7 +8,7 @@ Please check the [Custom CSS Tutorial](https://forum.remnote.io/t/what-is-custom
 
 - Click the css file and copy the text.
 
-## The Simpler Way
+## The Simpler Way ⚡️
 
 - Copy the CSSs started with `@import` down below
 
@@ -117,32 +117,6 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 </details>
 
 ---
-<details>
-    <summary>Rem Planner</summary>
-
-```css
-@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Planner.css");
-```
-
-<div style="margin-left: 24px;">
-    <img src="">
-</div>
-</details>
-
----
-<details>
-    <summary>Rem Tree</summary>
-
-```css
-@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Tree.css");
-```
-
-<div style="margin-left: 24px;">
-    <img src="">
-</div>
-</details>
-
----
 <br>
 <br>
 
@@ -209,6 +183,33 @@ Ver.3 - Legacy Mode (Show List-card Answer-blocks one bye one)
 ---
 
 <details>
+    <summary>Rem Planner</summary>
+
+```css
+@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Planner.css");
+```
+
+<div style="margin-left: 24px;">
+    <img src="Assets/Planner.png">
+</div>
+</details>
+
+---
+<details>
+    <summary>Rem Tree</summary>
+
+```css
+@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Tree.css");
+```
+
+<div style="margin-left: 24px;">
+    <img src="Assets/RemTree.png">
+</div>
+</details>
+
+---
+
+<details>
     <summary>Blockquote</summary>
 
 ```css
@@ -232,6 +233,7 @@ Ver.3 - Legacy Mode (Show List-card Answer-blocks one bye one)
 
 <div>
     <h2>How to use it?</h2>
+    <img src="Assets/ModernTableRow.png">
     <details>
         <summary>Copy a Table from any sources</summary>
         <img src="Assets/ModernTableRow-0.gif">
