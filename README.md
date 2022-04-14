@@ -181,14 +181,22 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 <details>
     <summary>Active Recall</summary>
 
-Ver.1
+Ver.1 - Reveal a List card Answer at the same time
+
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall.css");
 ```
 
-Ver.2
+Ver.2 - Active Recall in all situation. even in the Flashcard Review Window
+
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall2.css");
+```
+
+Ver.3 - Legacy Mode (Show List-card Answer-blocks one bye one)
+
+```css
+@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall3.css");
 ```
 
 <div style="margin-left: 24px;">
