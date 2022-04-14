@@ -22,20 +22,24 @@
                 }
             }
         // List Card
-            > div:last-child {
+            div.tree-node--children {
                 .node-card-item {
-                    &:not(:focus-within) {
+                    &:focus-within, &:hover {
+                        filter: unset !important;
+                    }
+                }
+                &:focus-within, &:not(:hover) {
+                    .node-card-item {
                         background-color: white;
                         filter: var(--hide-answer-filter);
                         border-radius: 5px;
                     }
                 }
-                &:focus-within {
-                    .node-card-item {
-                        filter: unset;
-                    }
-                }
             }
+    }
+// Flashcard
+    .Queue {
+        
     }
 // Darkmode Compatibility
 	.dark-mode {
