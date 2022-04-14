@@ -24,11 +24,11 @@
         // List Card
             div.tree-node--children {
                 .node-card-item {
-                    &:focus-within, &:hover {
+                    &:hover {
                         filter: unset !important;
                     }
                 }
-                &:focus-within, &:not(:hover) {
+                &:not(:hover) {
                     .node-card-item {
                         background-color: white;
                         filter: var(--hide-answer-filter);
@@ -36,31 +36,6 @@
                     }
                 }
             }
-    }
-// Flashcard
-    .Queue {
-        
-    }
-// Darkmode Compatibility
-	.dark-mode {
-        [data-rem-container-tags~="active-recall"] {
-            // List Card
-                > div:last-child {
-                    .node-card-item {
-                        &:not(:focus-within) {
-                            background-color: var(--darkmode-background, #2F3437);
-                            filter: var(--hide-answer-filter);
-                            border-radius: 5px;
-                        }
-                    }
-                
-                    &:focus-within {
-                        .node-card-item {
-                            filter: unset;
-                        }
-                    }
-                }
-        }
     }
 // Tag Declutter
 	[data-rem-tags~="active-recall"] {
