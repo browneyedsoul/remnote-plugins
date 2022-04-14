@@ -117,6 +117,32 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 </details>
 
 ---
+<details>
+    <summary>Rem Planner</summary>
+
+```css
+@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Planner.css");
+```
+
+<div style="margin-left: 24px;">
+    <img src="">
+</div>
+</details>
+
+---
+<details>
+    <summary>Rem Tree</summary>
+
+```css
+@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Tree.css");
+```
+
+<div style="margin-left: 24px;">
+    <img src="">
+</div>
+</details>
+
+---
 <br>
 <br>
 
@@ -155,8 +181,14 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 <details>
     <summary>Active Recall</summary>
 
+Ver.1
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall.css");
+```
+
+Ver.2
+```css
+@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall2.css");
 ```
 
 <div style="margin-left: 24px;">
