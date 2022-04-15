@@ -27,7 +27,7 @@
 	--calloutblue-background-color-dark: #183C4D;
 	--calloutblue-text-color: #00005B;
 	--calloutblue-text-color-dark: #B5DEE8;
-	--calloutblue-text-bold-color-dark: #BAF4FF;
+	--calloutblue-text-bold-color-dark: #D1F5FF;
 	--calloutpurple-background-color: #FEEEFC;
 	--calloutpurple-background-color-dark: #43273F;
 	--calloutpurple-text-color: #3B004D;
@@ -215,8 +215,8 @@
 .dark-mode [data-rem-container-tags~=calloutblue] .rem-text {
 	color: var(--calloutblue-text-color-dark);
 }
-.dark-mode [data-rem-container-tags~=calloutblue] .rem-text .bold:not(.highlight-color--red), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .bold:not(.highlight-color--orange), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .bold:not(.highlight-color--yellow), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .bold:not(.highlight-color--green), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .bold:not(.highlight-color--blue), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .bold:not(.highlight-color--purple) {
-	color: var(--calloutblue-text-bold-color-dark);
+.dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--red), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--orange), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--yellow), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--green), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--blue), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--purple) {
+	color: var(--calloutblue-text-bold-color-dark) !important;
 }
 .dark-mode [data-rem-container-tags~=calloutpurple] {
 	background-color: var(--calloutpurple-background-color-dark);
