@@ -30,9 +30,11 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 ## Hidden Features
 
 - Turning Highlight Color into Text Color
-  - You can change the Highlight color to normal rem-text color by [ Tagging the `color` tag + Bolding text ]
-  - But You don't have to tag the `color` tag to Header 1,2,3
+
+    You can change the Highlight color to text color by simple bolding
+    <img src ="Assets/Modern Dark Theme.gif">
 - Displaying Long Page Breadcrumbs with scroll bar
+    <img src ="Assets/Modern Dark Theme2.gif">
 
 <div style="margin-left: 24px;">
     <img src="Assets/Modern Dark Theme - 1.png">
@@ -155,7 +157,7 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 <details>
     <summary>Active Recall</summary>
 
-Ver.1 - Reveal a List card Answer at the same time
+Ver.1 - Reveal all the Answer-blocks in a List card Answer at the same time
 
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall.css");
