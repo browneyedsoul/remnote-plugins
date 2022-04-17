@@ -29,12 +29,21 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 
 ## Hidden Features
 
-- Turning Highlight Color into Text Color
+<div>
+    <details>
+        <summary>Turning Highlight Color into Text Color</summary>
+        You can change a Highlight color to a text color by simple bolding
+        <img src ="Assets/Modern Dark Theme.gif">
+    </details>
+</div>
+<div>
+    <details>
+        <summary>Displaying Long Page Breadcrumbs with scroll bar</summary>
+        <img src ="Assets/Modern Dark Theme2.gif">
+    </details>
+</div>
 
-    You can change the Highlight color to text color by simple bolding
-    <img src ="Assets/Modern Dark Theme.gif">
-- Displaying Long Page Breadcrumbs with scroll bar
-    <img src ="Assets/Modern Dark Theme2.gif">
+## Display
 
 <div style="margin-left: 24px;">
     <img src="Assets/Modern Dark Theme - 1.png">
@@ -134,6 +143,7 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 <div style="margin-left: 24px;">
     <img src="Assets/CalloutRem-1.png">
     <img src="Assets/CalloutRem-2.png">
+    <img src="Assets/CalloutRem-3.png">
 </div>
 </details>
 
@@ -400,26 +410,26 @@ Ver.3 - Legacy Mode (Show List-card Answer-blocks one bye one)
 
 <div style="margin-left: 24px;">
     <details>
-        <summary>Make CSS Template on Custom CSS</summary>
+        <summary>Make a Cover Photo CSS Template</summary>
         <div style="margin-left: 24px;">
             <img src="Assets/CoverPhoto-1.png">
         </div>
     </details>
     <details>
-        <summary>Add image url, Name the tag</summary>
+        <summary>Add a image url, Name the tag</summary>
         <div style="margin-left: 24px;">
             <img src="Assets/CoverPhoto-2.png">
         </div>
     </details>
     <details>
-        <summary>Tag to the Rem-title</summary>
+        <summary>Tag to the Rem Document title area</summary>
         <div style="margin-left: 24px;">
             <img src="Assets/CoverPhoto-3.png">
             <img src="Assets/CoverPhoto-4.png">
         </div>
     </details>
     <details>
-        <summary>Adjust <span style="font-weight: 700;">background-size</span> on your tastes.</summary>
+        <summary>Adjust 'background-size' on your tastes.</summary>
         <div style="margin-left: 24px;">
             <br>➊ background-size: contain; <span style="font-weight: 700;">(Preferred)</span> ➞ Height fixed and Responsive. but some margins can be made (need something like background color or repetitive background.).
             <br>➋ background-size: 100% 100%; ➞ Full responsive but the image can be ugly.
@@ -469,10 +479,6 @@ Please go to the "UI Declutter Series" Folder and then copy the CSSs and paste t
         <summary>Disable inadvertent Bullet Click Event</summary>
     </details>
     <details>
-        <summary>Hide List Card Arrow</summary>
-        <img src="https://user-images.githubusercontent.com/56161102/148634254-5e22440f-da4a-4645-b37d-e950f9e9110a.gif">
-    </details>
-    <details>
         <summary>Hide List Card Placeholder</summary>
         <img src="https://user-images.githubusercontent.com/56161102/148634056-53c0ee40-469c-4218-9407-080ac54ce035.png">
         <img src="https://user-images.githubusercontent.com/56161102/148634441-b97f1676-d752-47e8-afc6-4aead741e174.gif">
@@ -506,6 +512,12 @@ Please go to the "UI Declutter Series" Folder and then copy the CSSs and paste t
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Divider.css"); 
  /* Active Recall */
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall.css");
+    /* @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall2.css"); */
+    /* @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall3.css"); */
+ /* Rem Planner */
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Planner.css");
+ /* Rem Tree */
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Tree.css");
  /* Blockquote */
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Blockquote.css");
  /* Modern Table Row */
@@ -523,7 +535,5 @@ Please go to the "UI Declutter Series" Folder and then copy the CSSs and paste t
  /* Rating Bar */
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Prepositive%20Rating%20Bar.css"); 
  /* Terminal */
-    @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Terminal.css");
- /* UI Declutter Series */
-  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/UI%20Declutter%20Series/RemNote%20UIUX-Declutter.css");
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Terminal.css");
 ```
