@@ -1,0 +1,92 @@
+@charset "UTF-8";
+[data-rem-container-tags~=kanban] .bg-white {
+	background-color: transparent;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children {
+	display: flex;
+	border-radius: 5px;
+	padding-left: 0;
+	overflow: auto;
+	white-space: pre;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container {
+	flex: 1 1 0;
+	background-color: #F7F6F3;
+	margin-right: 0.7rem;
+	border-radius: 3px;
+	position: relative;
+	min-width: 240px;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:not(:first-child) {
+	margin-left: 0;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(1) {
+	background-color: #F7F6F3;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(1) > .tree-node--parent .rem-text {
+	font-weight: 650;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(1) > .tree-node--parent .rem-text::after {
+	content: "📥";
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(2) {
+	background-color: #F8F9CD;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(2) > .tree-node--parent .rem-text {
+	font-weight: 650;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(2) > .tree-node--parent .rem-text::after {
+	content: "🚧";
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(3) {
+	background-color: #D5EED7;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(3) > .tree-node--parent .rem-text {
+	font-weight: 650;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(3) > .tree-node--parent .rem-text::after {
+	content: "✅";
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container > .tree-node--children {
+	left: 0 !important;
+	width: 100%;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container {
+	background-color: #FFF;
+	margin: 5px;
+	border-radius: 3px;
+	box-shadow: 0 0 1px 0;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container > div:first-child .rem-text {
+	padding-left: 25px;
+	margin-left: 0;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container > div:first-child {
+	background-color: rgba(0, 0, 0, 0.09);
+	margin: 0;
+	border-bottom: 1px solid grey;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container > .tree-node--children {
+	margin: 0;
+	padding: 0;
+	border: unset;
+}
+[data-rem-container-tags~=kanban] .EditorContainer > .text-gray-20 {
+	display: none;
+}
+
+.dark-mode [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container {
+	background-color: #252525;
+}
+.dark-mode [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(1) {
+	background-color: #252525;
+}
+.dark-mode [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(2) {
+	background-color: #453E1E;
+}
+.dark-mode [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(3) {
+	background-color: #253F27;
+}
+.dark-mode [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container {
+	background-color: #151515;
+}

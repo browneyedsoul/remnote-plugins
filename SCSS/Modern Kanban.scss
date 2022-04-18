@@ -1,0 +1,129 @@
+[data-rem-container-tags~=kanban] {
+    .bg-white {
+        background-color: transparent;
+    }
+    // > .tree-node--parent {
+        
+    // }
+    > .tree-node--children {
+        display: flex;
+        border-radius: 5px;
+        padding-left: 0;
+        overflow: auto;
+        white-space: pre;
+
+        >.tree-node-container {
+            flex: 1 1 0;
+            background-color: #F7F6F3;
+            margin-right: 0.7rem;
+            border-radius: 3px;
+            position: relative;
+            // overflow: hidden;
+            min-width: 240px;
+
+            &:not(:first-child) {
+                margin-left: 0;
+            }
+            &:nth-child(1) {
+                background-color: #F7F6F3;
+
+                >.tree-node--parent {
+                    .rem-text {
+                        font-weight: 650;
+                        &::after {
+                            content: "📥";
+                        }
+                    }
+                }
+            }
+            &:nth-child(2) {
+                background-color: #F8F9CD;
+
+                >.tree-node--parent {
+                    .rem-text {
+                        font-weight: 650;
+                        &::after {
+                            content: "🚧";
+                        }
+                    }
+                }
+            }
+            &:nth-child(3) {
+                background-color: #D5EED7;
+
+                >.tree-node--parent {
+                    .rem-text {
+                        font-weight: 650;
+                        &::after {
+                            content: "✅";
+                        }
+                    }
+                }
+            }
+
+            > .tree-node--children {
+                left: 0 !important;
+                width: 100%;
+
+                > .tree-node-container {
+                    background-color: #FFF;
+                    margin: 5px;
+                    border-radius: 3px;
+                    box-shadow: 0 0 1px 0;
+
+                    > div:first-child {
+                        .rem-text {
+                            padding-left: 25px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        > .tree-node-container {
+            > div:first-child {
+                background-color: rgba(0, 0, 0, 0.09);
+                margin: 0;
+                border-bottom: 1px solid grey;
+            }
+
+            > .tree-node--children {
+                margin: 0;
+                padding: 0;
+                border: unset;
+            }
+        }
+    }
+    // Remove Placeholder
+        .EditorContainer {
+            > .text-gray-20 {
+                display: none;
+            }
+        }
+}
+// Darkmode
+    .dark-mode {
+        [data-rem-container-tags~=kanban] {
+            >.tree-node--children {
+                >.tree-node-container {
+                    background-color: #252525;
+
+                    &:nth-child(1) {
+                        background-color: #252525;
+                    }
+                    &:nth-child(2) {
+                        background-color: #453E1E;
+                    }
+                    &:nth-child(3) {
+                        background-color: #253F27;
+                    }
+                    > .tree-node--children {
+                        > .tree-node-container {
+                            background-color: #151515;
+                        }
+                    }
+                }
+            }
+        }
+    }
