@@ -123,6 +123,7 @@
 		::-webkit-scrollbar-track {
 			background-color: transparent;
 			width: 10px;
+			margin-right: 0.7rem;
 		}
 		::-webkit-scrollbar-thumb {
 			background-color: #5A666A;
@@ -1047,6 +1048,9 @@
 		}
 // Tile Document
 	.tile__document {
+		::-webkit-scrollbar-track {
+			margin-top: 3rem;
+		}
 		// Daily Notes Top bar
 			> div.border-bottom-solid.bg-white {
 				background-color: var(--darkmode-background);

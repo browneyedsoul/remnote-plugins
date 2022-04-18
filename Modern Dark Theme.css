@@ -118,6 +118,7 @@ body.old-dark-mode .dark-mode-background {
 ::-webkit-scrollbar-track {
 	background-color: transparent;
 	width: 10px;
+	margin-right: 0.7rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -668,6 +669,9 @@ body.old-dark-mode .dark-mode-background {
 	background-color: unset;
 }
 
+.tile__document ::-webkit-scrollbar-track {
+	margin-top: 3rem;
+}
 .tile__document > div.border-bottom-solid.bg-white {
 	background-color: var(--darkmode-background);
 	border-bottom-style: solid;
