@@ -158,6 +158,29 @@ body.old-dark-mode .dark-mode-background {
 	padding: 1px 3px 1px 3px;
 }
 
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--red, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--orange, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--yellow, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--green, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--blue, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--purple {
+	background-color: unset;
+}
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--red {
+	color: var(--red-text);
+}
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--orange {
+	color: var(--orange-text);
+}
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--yellow {
+	color: var(--yellow-text);
+	text-shadow: var(--text-shadow-yellow);
+}
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--green {
+	color: var(--green-text);
+}
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--blue {
+	color: var(--blue-text);
+}
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--purple {
+	color: var(--purple-text);
+}
+
 .dark-mode .rem-container--todo-finished {
 	color: #A1A1A1;
 }
@@ -331,6 +354,27 @@ body.old-dark-mode .dark-mode-background {
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple .hierarchy-editor__tag-bar__tag__delete {
 	color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--red, .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--orange, .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--yellow, .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--green, .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--blue, .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--purple {
+	background-color: unset;
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--red {
+	color: var(--red-text-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--orange {
+	color: var(--orange-text-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--yellow {
+	color: var(--yellow-text-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--green {
+	color: var(--green-text-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--blue {
+	color: var(--blue-text-dark);
+}
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--purple {
+	color: var(--purple-text-dark);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag__delete {
 	color: unset;
