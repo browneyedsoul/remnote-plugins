@@ -2,19 +2,11 @@
 
 # How to Use it?
 
-Please check the [Custom CSS Tutorial](https://forum.remnote.io/t/what-is-custom-css-and-how-do-i-use-it/1231) first
+1. Please check the [Custom CSS Tutorial](https://forum.remnote.io/t/what-is-custom-css-and-how-do-i-use-it/1231) first
 
-## The Standard Way
+2. Copy the CSSs started with `@import` down below
 
-- Click the css file and copy the text.
-
-## The Simpler Way ⚡️
-
-- Copy the CSSs started with `@import` down below
-
-↓
-
-Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CSS power-up page Code Block in which the language button adjusted to CSS. (The latter way makes Your Custom CSS always up to date.)
+3. Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CSS power-up page Code Block in which the language button adjusted to CSS.
 
 > PS: All the latest snippets are optimized for `Modern Dark Theme`
 
@@ -32,13 +24,17 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 <div>
     <details>
         <summary>Turning Highlight Color into Text Color</summary>
+        <br>
         You can change a Highlight color to a text color by simple bolding
+        <br>
+        <br>
         <img src ="Assets/Modern Dark Theme.gif">
     </details>
 </div>
 <div>
     <details>
         <summary>Displaying Long Page Breadcrumbs with scroll bar</summary>
+        <br>
         <img src ="Assets/Modern Dark Theme2.gif">
     </details>
 </div>
@@ -134,6 +130,23 @@ Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CS
 # Tricks - Tag-related Gimmick series
 
 <details>
+    <summary>NOTICE : Good Companion Apps for Easy-Tagging</summary>
+
+
+| OS  | Text Expansion Tools |
+| ------------- | ------------- |
+| Windows  | AutoHotkey, espanso  |
+| macOS  | Keyboard Maestro, espanso  |
+| Linux  | AutoKey, espanso  |
+
+* The above list is just an example. You can find more apps online.
+* <a href="https://forum.remnote.io/t/remnote-templates-vs-text-templates/1203">And more details about it. - RemNote Forum</a>
+
+</details>
+
+---
+
+<details>
     <summary>Notion like Callout Rem</summary>
 
 ```css
@@ -173,13 +186,13 @@ Ver.1 - Reveal all the Answer-blocks in a List card Answer at the same time
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall.css");
 ```
 
-Ver.2 - Active Recall in all situation. even in the Flashcard Review Window
+Ver.2 - Active Recall in all situation. even in a Flashcard Review modal page and a 'Edit your flashcard' popup
 
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall2.css");
 ```
 
-Ver.3 - Legacy Mode (Show List-card Answer-blocks one bye one)
+Ver.3 - Legacy Mode (Show List-card Answer-blocks one by one)
 
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall3.css");
@@ -340,6 +353,22 @@ Ver.3 - Legacy Mode (Show List-card Answer-blocks one bye one)
 ```
 
 <img src="Assets/ModernTableColumn.gif">
+</details>
+
+---
+
+
+<details>
+    <summary>Modern Kanban</summary>
+
+```css
+@import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Kanban.css");
+```
+
+<div style="margin-left: 24px;">
+    <h2>Use case</h2>
+    <img src="Assets/Blockquote.png">
+<div>
 </details>
 
 ---
