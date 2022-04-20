@@ -367,6 +367,10 @@
 			.separator-symbol:not(:empty):hover {
 				background-color: var(--darkmode-background-selected-darker);
 			}
+			.last_node_down_arrow:hover::after {
+				background-color: var(--darkmode-background-selected-darker);
+				border-radius: 3px;
+			}
 		}
 	// Icon
 		.dark-mode {
@@ -513,6 +517,11 @@
 				}
 			}
 		}
+	.dark-mode {
+		.cloze {
+			background-color: var(--darkmode-background-selected-darker);
+		}
+	}
 // All Notes Page
 	#content {
 		.content__page {

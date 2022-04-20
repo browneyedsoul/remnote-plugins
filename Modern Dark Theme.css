@@ -268,6 +268,10 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .separator-symbol:not(:empty):hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
+.dark-mode .last_node_down_arrow:hover::after {
+	background-color: var(--darkmode-background-selected-darker);
+	border-radius: 3px;
+}
 
 .dark-mode .rem-calendar-icon.text-text {
 	color: var(--darkmode-text);
@@ -378,6 +382,10 @@ body.old-dark-mode .dark-mode-background {
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag__delete {
 	color: unset;
+}
+
+.dark-mode .cloze {
+	background-color: var(--darkmode-background-selected-darker);
 }
 
 #content .content__page {
