@@ -73,13 +73,19 @@
             font-family:    var(--code-font-family);
             font-size:      var(--code-font-size); 
             border:         0;
-            padding-right:  10px;
+            padding-top:    2rem;
+            padding-bottom: 1.5rem;
             padding-left:   40px;
+            padding-right:  10px;
             margin-top:     2px;
             margin-bottom:  2px;
             border-radius:  0.3rem;
-            overflow:       auto;
+            overflow-x:     scroll;
             white-space:    pre;
+            
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
 
             // Codeblock Line Number
                 #code-node__inner {
@@ -113,8 +119,8 @@
                     content:            "";
                     display:            block;
                     position:           absolute;
-                    left:               0;
                     top:                0;
+                    left:               0;
                     bottom:             0;
                     background-color:   var(--line-number-background-color, rgba(0, 0, 0, 0.04));
                     border-radius:      var(--code-node-border-radius, 7px) 0 0;
@@ -131,10 +137,17 @@
                 }
             // Language Converter
                 #code-node__change-language-dropdown {
-                    opacity: .7;
+                    display: inline-flex;
+                    height: fit-content;
+                    top: 5px;
+                    left: 10px;
                 
                     &:hover {
                         opacity: 1;
+                    }
+
+                    .p-3 {
+                        font-family: var(--code-font-family) !important;
                     }
                 }
         }
