@@ -366,9 +366,9 @@ Ver.3 - Legacy Mode (Show List-card Answer-blocks one by one)
 ```
 
 <div style="margin-left: 24px;">
-    <h2>Use case</h2>
-    <img src="Assets/Blockquote.png">
+    <img src="Assets/ModernKanban.png">
 <div>
+origin author : <a href="https://hannesfrank.github.io/remnote-library/#/scroll/com.github.hannesfrank.remnote-library.kanban-board">hannesfrank</a>
 </details>
 
 ---
