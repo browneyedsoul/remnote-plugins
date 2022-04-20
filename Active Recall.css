@@ -3,11 +3,8 @@
 }
 
 [data-rem-container-tags~=active-recall] span.cloze, [data-rem-container-tags~=active-recall] span:not(:hover):not([data-rem-tags~=learned]).cloze, [data-rem-container-tags~=active-recall] span.only_in_answer:not(:hover):not([data-rem-tags~=learned]) {
-	color: #000;
 	font-weight: 600;
 	border-radius: 5px;
-	padding: 0px 3px 2px 3px;
-	margin: 0px 3px 0px 3px;
 }
 [data-rem-container-tags~=active-recall] span:not(:hover):not([data-rem-tags~=learned]).cloze, [data-rem-container-tags~=active-recall] span.only_in_answer:not(:hover):not([data-rem-tags~=learned]) {
 	background-color: white;

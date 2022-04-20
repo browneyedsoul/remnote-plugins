@@ -6,7 +6,7 @@
 
 2. Copy the CSSs started with `@import` down below
 
-3. Go back to your Knowledge Base. And then, Paste the clipboard into the Custom CSS power-up page Code Block in which the language button adjusted to CSS.
+3. Go back to your Knowledge Base. And then, paste the clipboard into a Custom CSS power-up page Code Block in which the language button is tuned to CSS.
 
 > PS: All the latest snippets are optimized for `Modern Dark Theme`
 
@@ -186,11 +186,15 @@ Ver.1 - Reveal all the Answer-blocks in a List card Answer at the same time
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall.css");
 ```
 
+<img src="Assets/ActiveRecall1.gif">
+
 Ver.2 - Active Recall in all situation. even in a Flashcard Review modal page and a 'Edit your flashcard' popup
 
 ```css
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall2.css");
 ```
+
+<img src="Assets/ActiveRecall2.gif">
 
 Ver.3 - Legacy Mode (Show List-card Answer-blocks one by one)
 
@@ -199,7 +203,7 @@ Ver.3 - Legacy Mode (Show List-card Answer-blocks one by one)
 ```
 
 <div style="margin-left: 24px;">
-    <img src="https://user-images.githubusercontent.com/56161102/146560418-7044909a-7b8d-4a9a-b6ca-af4325ad556b.gif">
+    <img src="Assets/ActiveRecall-legacy.gif">
 </div>
 
 <a href="https://hannesfrank.github.io/remnote-library/#/scroll/com.github.hannesfrank.remnote-library.active-recall">origin author : hannesfrank</a>
@@ -553,6 +557,8 @@ Please go to the "UI Declutter Series" Folder and then copy the CSSs and paste t
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Row.css");
  /* Modern Table Column */
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Column.css");
+ /* Modern Kanban */
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Kanban.css");
  /* Easily Discernible List Card Layout */
   /* @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Easily%20Discernible%20List%20Card%20Layout.css"); */
  /* Easily Discernible Inline Card Layout */
