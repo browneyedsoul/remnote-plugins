@@ -1375,16 +1375,6 @@ body.old-dark-mode .dark-mode-background {
 	background-color: unset;
 }
 
-#document-hover-preview__popup .RichTextViewer .bold.highlight-color--red,
-#document-hover-preview__popup .RichTextViewer .bold.highlight-color--orange,
-#document-hover-preview__popup .RichTextViewer .bold.highlight-color--yellow,
-#document-hover-preview__popup .RichTextViewer .bold.highlight-color--green,
-#document-hover-preview__popup .RichTextViewer .bold.highlight-color--blue,
-#document-hover-preview__popup .RichTextViewer .bold.highlight-color--purple {
-	color: #000;
-	font-weight: 600;
-}
-
 .dark-mode #hierarchy-editor .node-top-level-in-portal-container .node-top-level-in-portal {
 	background-color: var(--darkmode-background);
 	border: 1px solid var(--darkmode-contrast);
