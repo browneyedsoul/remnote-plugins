@@ -16,7 +16,7 @@
 }
 [data-rem-container-tags~=tree] div.tree-node--parent {
 	display: flex;
-	align-items: center;
+	align-items: baseline;
 }
 [data-rem-container-tags~=tree] div.tree-node--parent .rem-text .EditorContainer {
 	white-space: pre !important;
