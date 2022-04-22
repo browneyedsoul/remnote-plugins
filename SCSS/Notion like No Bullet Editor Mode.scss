@@ -39,21 +39,21 @@
 }
 
 :root {
-	/* TreeNode Adjustment */
+	// TreeNode Adjustment
 		--treenode-line-spacing: 16px;
-	/* Basic Bullet Color */
+	// Basic Bullet Color
 		--bullet-main: #000;
 		--bullet-main-dark: #ABABAB;
 		--bullet-doc: #50FA7B;
 		--bullet-folder: #53555F;
 		--bullet-concept: #53555F;
 		--bullet-descriptor: #53555F;
-	/* Practice Bullet Color */
+	// Practice Bullet Color
 		--both-practice-color: #FFA344;
 		--forward-practice-color: #FF2600;
 		--backward-practice-color: #D783FF;
 		--disabled-practice-color: #959595;
-	/* TreeNode Color */
+	// TreeNode Color
 		--line-color: #DDDDDD;
 		--node-card-item-color: #FF4E4C;
 		--node-card-item-color-dark: #E0CD00;
@@ -511,10 +511,12 @@
 		// Tag Declutter
 			.hierarchy-editor__tag-bar__tag {
 				background-color: transparent !important;
-			}
-			.hierarchy-editor__tag-bar__tag {
+
 				span {
 					display: none;
+				}
+				.hierarchy-editor__tag-bar__tag__delete {
+					opacity: .3;
 				}
 			}
 	}

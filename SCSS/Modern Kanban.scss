@@ -2,7 +2,7 @@
     --kanban-bgcolor: #F7F6F3;
     --kanban-bgcolor-dark: #252525;
     --kanban-bgcolor-input: #FFF;
-    --kanban-bgcolor-input-dark: #151515;
+    --kanban-bgcolor-input-dark: #2E3437;
     --kanban-bgcolor-stage: ;
     --kanban-bgcolor-stage-dark: ;
     --kanban-bgcolor-inprogress: #F8F9CD;
@@ -117,20 +117,23 @@
                 }
             }
         }
-
-        > .tree-node-container {
-            > div:first-child {
-                background-color: rgba(0, 0, 0, 0.09);
-                margin: 0;
-                border-bottom: 1px solid grey;
+        // Global Kanban Column
+            // Head
+            > .tree-node-container {
+                > div:first-child {
+                    background-color: rgba(0, 0, 0, 0.09);
+                    margin: 0;
+                    border-bottom: 1px solid grey;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+                // Body
+                > .tree-node--children {
+                    margin: 0;
+                    padding: 0;
+                    border: unset;
+                }
             }
-
-            > .tree-node--children {
-                margin: 0;
-                padding: 0;
-                border: unset;
-            }
-        }
     }
     // Remove Placeholder
         .EditorContainer {
