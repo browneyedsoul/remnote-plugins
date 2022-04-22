@@ -30,6 +30,55 @@
             }
         }
     }
+// Hover Preview
+    .popup-menu {
+        #document-hover-preview__popup {
+            #hierarchy-editor {
+                [data-rem-container-tags~="table90"],
+                [data-rem-container-tags~="table120"],
+                [data-rem-container-tags~="table150"],
+                [data-rem-container-tags~="table180"],
+                [data-rem-container-tags~="table210"],
+                [data-rem-container-tags~="table240"],
+                [data-rem-container-tags~="table270"],
+                [data-rem-container-tags~="table300"],
+                [data-rem-container-tags~="table330"],
+                [data-rem-container-tags~="table360"],
+                [data-rem-container-tags~="table390"],
+                [data-rem-container-tags~="table420"],
+                [data-rem-container-tags~="table450"],
+                [data-rem-container-tags~="table480"],
+                [data-rem-container-tags~="table510"],
+                [data-rem-container-tags~="table540"],
+                [data-rem-container-tags~="table570"],
+                [data-rem-container-tags~="table600"],
+                [data-rem-container-tags~="table630"],
+                [data-rem-container-tags~="table660"],
+                [data-rem-container-tags~="table690"],
+                [data-rem-container-tags~="table720"],
+                [data-rem-container-tags~="table750"],
+                [data-rem-container-tags~="table780"],
+                [data-rem-container-tags~="table810"],
+                [data-rem-container-tags~="table840"],
+                [data-rem-container-tags~="table870"],
+                [data-rem-container-tags~="table900"],
+                [data-rem-container-tags~="table930"],
+                [data-rem-container-tags~="table960"],
+                [data-rem-container-tags~="table990"],
+                [data-rem-container-tags~="table1020"],
+                [data-rem-container-tags~="table1050"],
+                [data-rem-container-tags~="table1080"],
+                [data-rem-container-tags~="table1110"],
+                [data-rem-container-tags~="table1140"],
+                [data-rem-container-tags~="table1170"],
+                [data-rem-container-tags~="table1200"] {
+                    .TreeNode {
+                        white-space: unset;
+                    }
+                }
+            }
+        }
+    }
 // Whole Table Area
     #hierarchy-editor {
         [data-rem-container-tags~="table90"],
@@ -120,7 +169,6 @@
                     border-left: unset;
                     overflow-x: auto;
                     white-space: pre;
-
                     border: 0.07rem solid  var(--table-border-color);
 
                     // Remove Overflow Content
