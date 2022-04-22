@@ -33,49 +33,70 @@
             margin-right: 0.7rem;
             border-radius: 3px;
             position: relative;
-            // overflow: hidden;
-            min-width: 240px;
+            white-space: pre-wrap;
+            min-width: 390px;
 
             &:not(:first-child) {
                 margin-left: 0;
             }
-            &:nth-child(1) {
-                background-color: var(--kanban-bgcolor);
+            // Inbox
+                &:nth-child(1) {
+                    background-color: var(--kanban-bgcolor);
 
-                >.tree-node--parent {
-                    .rem-text {
-                        font-weight: 650;
-                        &::after {
-                            content: "📥";
+                    >.tree-node--parent {
+                        .rem-text {
+                            font-weight: 650;
+                            text-align: center;
+                            &::after {
+                                content: "📥";
+                            }
                         }
                     }
                 }
-            }
-            &:nth-child(2) {
-                background-color: var(--kanban-bgcolor-inprogress);
+            // In Progress
+                &:nth-child(2) {
+                    background-color: var(--kanban-bgcolor-inprogress);
 
-                >.tree-node--parent {
-                    .rem-text {
-                        font-weight: 650;
-                        &::after {
-                            content: "🚧";
+                    >.tree-node--parent {
+                        .rem-text {
+                            font-weight: 650;
+                            text-align: center;
+                            &::after {
+                                content: "🚧";
+                            }
                         }
                     }
                 }
-            }
-            &:nth-child(3) {
-                background-color: var(--kanban-bgcolor-done);
+            // Done
+                &:nth-child(3) {
+                    background-color: var(--kanban-bgcolor-done);
+                    min-width: 900px;
 
-                >.tree-node--parent {
-                    .rem-text {
-                        font-weight: 650;
-                        &::after {
-                            content: "✅";
+                    >.tree-node--parent {
+                        .rem-text {
+                            font-weight: 650;
+                            text-align: center;
+                            &::after {
+                                content: "✅";
+                            }
                         }
                     }
                 }
-            }
-
+            // Archive
+                &:nth-child(4) {
+                    background-color: var(--kanban-bgcolor);
+                
+                    >.tree-node--parent {
+                        .rem-text {
+                            font-weight: 650;
+                            text-align: center;
+                
+                            &::after {
+                                content: "🗃";
+                            }
+                        }
+                    }
+                }
             > .tree-node--children {
                 left: 0 !important;
                 width: 100%;
@@ -85,15 +106,13 @@
                     margin: 5px;
                     border-radius: 3px;
                     box-shadow: 0 0 1px 0;
+                    margin-left: 1.2rem;
 
                     > div:first-child {
                         .rem-text {
                             padding-left: 25px;
                             margin-left: 0;
                         }
-                    }
-                    > .tree-node--children {
-                        max-width: fit-content;
                     }
                 }
             }
