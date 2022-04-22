@@ -9,15 +9,14 @@
 	--terminal-purple-text: #FF60FE;
 }
 
-[data-rem-container-tags~=terminal] .rem-bullet {
-	filter: invert(1);
-}
-
 [data-rem-container-tags~=terminal] {
 	background-color: #1F1F1F;
 	color: #D0D0CD;
 	margin-left: 24px;
 	margin-right: 12px;
+}
+[data-rem-container-tags~=terminal] .rem-bullet {
+	filter: invert(1);
 }
 [data-rem-container-tags~=terminal] .TreeNode {
 	border-left-color: #373737 !important;
@@ -25,6 +24,7 @@
 [data-rem-container-tags~=terminal] .rem-text {
 	font-family: "Roboto Mono", "Fira code", monospace;
 	font-size: 0.9em;
+	min-height: 1.5rem;
 }
 [data-rem-container-tags~=terminal] .rem-text .quote,
 [data-rem-container-tags~=terminal] .rem-text .highlight-color--red,
@@ -60,12 +60,7 @@
 	color: #94D2FF;
 }
 
-.TreeNode--list--in-card-content {
-	border-left: 0.1px solid white !important;
-}
-
 [data-rem-tags~=terminal] .hierarchy-editor__tag-bar__tag {
-	color: transparent;
 	background-color: transparent !important;
 }
 [data-rem-tags~=terminal] .hierarchy-editor__tag-bar__tag span {
