@@ -39,6 +39,7 @@
 	width: 100%;
 	top: 50%;
 	border-bottom: 2px solid var(--line-color);
+	height: 2px;
 }
 
 .dark-mode [data-rem-tags~=divider]:focus-within {
