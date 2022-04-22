@@ -1,4 +1,19 @@
 @charset "UTF-8";
+:root {
+	--kanban-bgcolor: #F7F6F3;
+	--kanban-bgcolor-dark: #252525;
+	--kanban-bgcolor-input: #FFF;
+	--kanban-bgcolor-input-dark: #151515;
+	--kanban-bgcolor-stage: ;
+	--kanban-bgcolor-stage-dark: ;
+	--kanban-bgcolor-inprogress: #F8F9CD;
+	--kanban-bgcolor-inprogress-dark: #453E1E;
+	--kanban-bgcolor-done: #D5EED7;
+	--kanban-bgcolor-done-dark: #253F27;
+	--kanban-bgcolor-archive: ;
+	--kanban-bgcolor-archive-dark: ;
+}
+
 [data-rem-container-tags~=kanban] .bg-white {
 	background-color: transparent;
 }
@@ -6,12 +21,12 @@
 	display: flex;
 	border-radius: 5px;
 	padding-left: 0;
-	overflow: auto;
+	overflow-x: scroll;
 	white-space: pre;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container {
 	flex: 1 1 0;
-	background-color: #F7F6F3;
+	background-color: var(--kanban-bgcolor);
 	margin-right: 0.7rem;
 	border-radius: 3px;
 	position: relative;
@@ -21,7 +36,7 @@
 	margin-left: 0;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(1) {
-	background-color: #F7F6F3;
+	background-color: var(--kanban-bgcolor);
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(1) > .tree-node--parent .rem-text {
 	font-weight: 650;
@@ -30,7 +45,7 @@
 	content: "📥";
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(2) {
-	background-color: #F8F9CD;
+	background-color: var(--kanban-bgcolor-inprogress);
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(2) > .tree-node--parent .rem-text {
 	font-weight: 650;
@@ -39,7 +54,7 @@
 	content: "🚧";
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(3) {
-	background-color: #D5EED7;
+	background-color: var(--kanban-bgcolor-done);
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(3) > .tree-node--parent .rem-text {
 	font-weight: 650;
@@ -52,7 +67,7 @@
 	width: 100%;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container {
-	background-color: #FFF;
+	background-color: var(--kanban-bgcolor-input);
 	margin: 5px;
 	border-radius: 3px;
 	box-shadow: 0 0 1px 0;
@@ -60,6 +75,11 @@
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container > div:first-child .rem-text {
 	padding-left: 25px;
 	margin-left: 0;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--children {
+	max-width: -webkit-fit-content;
+	max-width: -moz-fit-content;
+	max-width: fit-content;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container > div:first-child {
 	background-color: rgba(0, 0, 0, 0.09);
@@ -76,17 +96,17 @@
 }
 
 .dark-mode [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container {
-	background-color: #252525;
+	background-color: var(--kanban-bgcolor-dark);
 }
 .dark-mode [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(1) {
-	background-color: #252525;
+	background-color: var(--kanban-bgcolor-dark);
 }
 .dark-mode [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(2) {
-	background-color: #453E1E;
+	background-color: var(--kanban-bgcolor-inprogress-dark);
 }
 .dark-mode [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(3) {
-	background-color: #253F27;
+	background-color: var(--kanban-bgcolor-done-dark);
 }
 .dark-mode [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container {
-	background-color: #151515;
+	background-color: var(--kanban-bgcolor-input-dark);
 }

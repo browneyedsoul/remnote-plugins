@@ -1,3 +1,18 @@
+:root {
+    --kanban-bgcolor: #F7F6F3;
+    --kanban-bgcolor-dark: #252525;
+    --kanban-bgcolor-input: #FFF;
+    --kanban-bgcolor-input-dark: #151515;
+    --kanban-bgcolor-stage: ;
+    --kanban-bgcolor-stage-dark: ;
+    --kanban-bgcolor-inprogress: #F8F9CD;
+    --kanban-bgcolor-inprogress-dark: #453E1E;
+    --kanban-bgcolor-done: #D5EED7;
+    --kanban-bgcolor-done-dark: #253F27;
+    --kanban-bgcolor-archive: ;
+    --kanban-bgcolor-archive-dark: ;
+}
+
 [data-rem-container-tags~=kanban] {
     .bg-white {
         background-color: transparent;
@@ -9,12 +24,12 @@
         display: flex;
         border-radius: 5px;
         padding-left: 0;
-        overflow: auto;
+        overflow-x: scroll;
         white-space: pre;
 
         >.tree-node-container {
             flex: 1 1 0;
-            background-color: #F7F6F3;
+            background-color: var(--kanban-bgcolor);
             margin-right: 0.7rem;
             border-radius: 3px;
             position: relative;
@@ -25,7 +40,7 @@
                 margin-left: 0;
             }
             &:nth-child(1) {
-                background-color: #F7F6F3;
+                background-color: var(--kanban-bgcolor);
 
                 >.tree-node--parent {
                     .rem-text {
@@ -37,7 +52,7 @@
                 }
             }
             &:nth-child(2) {
-                background-color: #F8F9CD;
+                background-color: var(--kanban-bgcolor-inprogress);
 
                 >.tree-node--parent {
                     .rem-text {
@@ -49,7 +64,7 @@
                 }
             }
             &:nth-child(3) {
-                background-color: #D5EED7;
+                background-color: var(--kanban-bgcolor-done);
 
                 >.tree-node--parent {
                     .rem-text {
@@ -66,7 +81,7 @@
                 width: 100%;
 
                 > .tree-node-container {
-                    background-color: #FFF;
+                    background-color: var(--kanban-bgcolor-input);
                     margin: 5px;
                     border-radius: 3px;
                     box-shadow: 0 0 1px 0;
@@ -76,6 +91,9 @@
                             padding-left: 25px;
                             margin-left: 0;
                         }
+                    }
+                    > .tree-node--children {
+                        max-width: fit-content;
                     }
                 }
             }
@@ -107,20 +125,20 @@
         [data-rem-container-tags~=kanban] {
             >.tree-node--children {
                 >.tree-node-container {
-                    background-color: #252525;
+                    background-color: var(--kanban-bgcolor-dark);
 
                     &:nth-child(1) {
-                        background-color: #252525;
+                        background-color: var(--kanban-bgcolor-dark);
                     }
                     &:nth-child(2) {
-                        background-color: #453E1E;
+                        background-color: var(--kanban-bgcolor-inprogress-dark);
                     }
                     &:nth-child(3) {
-                        background-color: #253F27;
+                        background-color: var(--kanban-bgcolor-done-dark);
                     }
                     > .tree-node--children {
                         > .tree-node-container {
-                            background-color: #151515;
+                            background-color: var(--kanban-bgcolor-input-dark);
                         }
                     }
                 }
