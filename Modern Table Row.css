@@ -736,6 +736,7 @@
 	flex-direction: rows;
 	text-align: left;
 	overflow-x: auto;
+	height: 100%;
 }
 #hierarchy-editor [data-rem-container-tags~=table90] > .tree-node--children > .tree-node-container > .tree-node--children::-webkit-scrollbar-track,
 #hierarchy-editor [data-rem-container-tags~=table120] > .tree-node--children > .tree-node-container > .tree-node--children::-webkit-scrollbar-track,

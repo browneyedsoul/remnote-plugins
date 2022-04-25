@@ -209,6 +209,8 @@
                                     flex-direction: rows;
                                     text-align: left;
                                     overflow-x: auto;
+                                    height: 100%;
+
                                     &::-webkit-scrollbar-track {
                                         margin-left: 1rem;
                                     }
