@@ -46,7 +46,7 @@
 				object-fit: contain !important;
 				object-position: center;
 	
-				> div:nth-of-type(1) {
+				> div:nth-of-type(1):not(div[data-rmiz-wrap~="visible"]) {
 					display: none
 				}
 	
@@ -87,6 +87,13 @@
 		@include thumbnail-set;
 	}
 // Queue
+	.queue__title {
+		.queue__title__middle {
+			.RichTextViewer {
+				@include thumbnail-set();
+			}
+		}
+	}
 	.spaced-repetition__prompt__breadcrumbs {
 		@include thumbnail-set;
 	}
@@ -98,7 +105,7 @@
 					margin-right: 3px;
 				}
 
-				&:not(.concept_rem_type .RichTextViewer) {
+				&:not(.basic_card_rem_type .RichTextViewer):not(.concept_rem_type .RichTextViewer) {
 					.react-transform-component {
 						.react-transform-element {
 							@include thumbnail-set;

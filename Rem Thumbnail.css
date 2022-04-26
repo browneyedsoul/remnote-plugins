@@ -47,10 +47,41 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.ReactVirtualized__Table__rowColumn span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.ReactVirtualized__Table__rowColumn span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .ReactVirtualized__Table__rowColumn span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+
+.queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+	display: none;
+}
+.queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
@@ -78,7 +109,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -92,11 +123,11 @@
 	display: inline-block;
 	margin-right: 3px;
 }
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block {
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.basic_card_rem_type .RichTextViewer):not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block {
 	height: 1em;
 	width: auto;
 }
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container {
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.basic_card_rem_type .RichTextViewer):not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -107,16 +138,16 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.basic_card_rem_type .RichTextViewer):not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.basic_card_rem_type .RichTextViewer):not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.basic_card_rem_type .RichTextViewer):not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
@@ -144,7 +175,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -182,7 +213,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -212,7 +243,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.Queue .queue-cluster-selector span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.Queue .queue-cluster-selector span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .Queue .queue-cluster-selector span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -270,7 +301,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 #tile__document #document #DocumentTopRow #DropToOpenAsDocument span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -300,7 +331,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 #tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -341,7 +372,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -372,7 +403,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-#document-sidebar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+#document-sidebar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 #document-sidebar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -403,7 +434,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.hierarchy-editor__hidden-children span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.hierarchy-editor__hidden-children span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .hierarchy-editor__hidden-children span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -434,7 +465,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .popup-menu__item--static span.RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.popup-menu .popup-menu__item--static span.RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .popup-menu .popup-menu__item--static span.RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -464,7 +495,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu #document-hover-preview__popup > span .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.popup-menu #document-hover-preview__popup > span .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .popup-menu #document-hover-preview__popup > span .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -494,7 +525,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -524,7 +555,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -557,8 +588,8 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1),
-.popup-menu .rem-powerup-icon + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
+.popup-menu .rem-powerup-icon + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
@@ -589,7 +620,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .EditorContainer.EditorContainerInline span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.popup-menu .EditorContainer.EditorContainerInline span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .popup-menu .EditorContainer.EditorContainerInline span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -619,7 +650,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -649,7 +680,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .p-2 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.popup-menu .p-2 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .popup-menu .p-2 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -680,7 +711,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-#Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+#Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 #Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -710,7 +741,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-#Popup #PopupContent #delete-confirm-popup span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+#Popup #PopupContent #delete-confirm-popup span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 #Popup #PopupContent #delete-confirm-popup span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -740,7 +771,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 #Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -780,10 +811,10 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1),
-.rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1),
-.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1),
-[data-rem-tags*=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
+.rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
+.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
+[data-rem-tags*=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
@@ -822,7 +853,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.hierarchy-editor__tag-bar__tag .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.hierarchy-editor__tag-bar__tag .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .hierarchy-editor__tag-bar__tag .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -946,9 +977,9 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.portal-tree-node-box .rem-text.rem-header--1 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1),
-.portal-tree-node-box .rem-text.rem-header--2 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1),
-.portal-tree-node-box .rem-text.rem-header--3 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.portal-tree-node-box .rem-text.rem-header--1 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
+.portal-tree-node-box .rem-text.rem-header--2 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
+.portal-tree-node-box .rem-text.rem-header--3 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .portal-tree-node-box .rem-text.rem-header--1 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
@@ -981,7 +1012,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -1012,7 +1043,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
@@ -1043,7 +1074,7 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1) {
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
