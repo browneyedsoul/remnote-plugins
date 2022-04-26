@@ -119,6 +119,15 @@
                                         }
                                     }
                                 }
+                            // Input Area - Portal
+                                > .portal-tree-node-box {
+                                    background-color: var(--kanban-bgcolor-input);
+                                    margin: 5px;
+                                    border-radius: 3px !important;
+                                    box-shadow: 0 0 1px 0 !important;
+                                    margin-left: .3rem !important;
+                                    margin-right: .3rem !important;
+                                }
                         }
                 }
             // Global Kanban Column                
@@ -162,10 +171,16 @@
                     &:nth-child(3) {
                         background-color: var(--kanban-bgcolor-done-dark);
                     }
-                    > .tree-node--children {
-                        > .tree-node-container {
-                            background-color: var(--kanban-bgcolor-input-dark);
-                        }
+                    // Kanban Cell
+                        > .tree-node--children {
+                            // Input Area
+                                > .tree-node-container {
+                                    background-color: var(--kanban-bgcolor-input-dark);
+                                }
+                            // Input Area - Portal
+                                >.portal-tree-node-box {
+                                    background-color: var(--kanban-bgcolor-input-dark);
+                                }
                     }
                 }
             }
