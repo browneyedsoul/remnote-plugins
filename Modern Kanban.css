@@ -46,6 +46,9 @@
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(1) {
 	background-color: var(--kanban-bgcolor);
+	min-width: -webkit-fit-content;
+	min-width: -moz-fit-content;
+	min-width: fit-content;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(1) > .tree-node--parent .rem-text {
 	font-weight: 650;
@@ -56,6 +59,9 @@
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(2) {
 	background-color: var(--kanban-bgcolor-inprogress);
+	min-width: -webkit-fit-content;
+	min-width: -moz-fit-content;
+	min-width: fit-content;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(2) > .tree-node--parent .rem-text {
 	font-weight: 650;
@@ -79,6 +85,9 @@
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(4) {
 	background-color: var(--kanban-bgcolor);
+	min-width: -webkit-fit-content;
+	min-width: -moz-fit-content;
+	min-width: fit-content;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(4) > .tree-node--parent .rem-text {
 	font-weight: 650;

@@ -53,6 +53,7 @@
                     // Inbox
                         &:nth-child(1) {
                             background-color: var(--kanban-bgcolor);
+                            min-width: fit-content;
 
                             >.tree-node--parent {
                                 .rem-text {
@@ -67,6 +68,7 @@
                     // In Progress
                         &:nth-child(2) {
                             background-color: var(--kanban-bgcolor-inprogress);
+                            min-width: fit-content;
 
                             >.tree-node--parent {
                                 .rem-text {
@@ -96,6 +98,7 @@
                     // Archive
                         &:nth-child(4) {
                             background-color: var(--kanban-bgcolor);
+                            min-width: fit-content;
                         
                             >.tree-node--parent {
                                 .rem-text {
