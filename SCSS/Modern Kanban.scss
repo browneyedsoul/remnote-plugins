@@ -14,6 +14,8 @@
 }
 
 [data-rem-container-tags~=kanban] {
+    margin-right: 0.7rem;
+
     // Declutter
         .bg-white {
             background-color: transparent;
@@ -154,10 +156,26 @@
                 display: none;
             }
         }
+    // rem container
+        .rem-button__container {
+            .six-dot {
+                .text-gray-15 {
+                    color: #000;
+                }
+            }
+        }
 }
 // Darkmode
     .dark-mode {
         [data-rem-container-tags~=kanban] {
+            // rem container
+                .rem-button__container {
+                    .six-dot {
+                        .text-gray-15 {
+                            color: #DDD;
+                        }
+                    }
+                }
             >.tree-node--children {
                 >.tree-node-container {
                     background-color: var(--kanban-bgcolor-dark);

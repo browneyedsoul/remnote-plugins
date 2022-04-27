@@ -14,6 +14,9 @@
 	--kanban-bgcolor-archive-dark: ;
 }
 
+[data-rem-container-tags~=kanban] {
+	margin-right: 0.7rem;
+}
 [data-rem-container-tags~=kanban] .bg-white {
 	background-color: transparent;
 }
@@ -115,7 +118,13 @@
 [data-rem-container-tags~=kanban] .EditorContainer > .text-gray-20 {
 	display: none;
 }
+[data-rem-container-tags~=kanban] .rem-button__container .six-dot .text-gray-15 {
+	color: #000;
+}
 
+.dark-mode [data-rem-container-tags~=kanban] .rem-button__container .six-dot .text-gray-15 {
+	color: #DDD;
+}
 .dark-mode [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container {
 	background-color: var(--kanban-bgcolor-dark);
 }
