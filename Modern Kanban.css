@@ -30,7 +30,6 @@
 [data-rem-container-tags~=kanban] > .tree-node--children::-webkit-scrollbar-thumb {
 	background-color: #EEE;
 	border-radius: 2px;
-	opacity: 0.5;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container {
 	flex: 1 1 0;
@@ -144,6 +143,9 @@
 
 .dark-mode [data-rem-container-tags~=kanban] .rem-button__container .six-dot .text-gray-15 {
 	color: #DDD;
+}
+.dark-mode [data-rem-container-tags~=kanban] > .tree-node--children::-webkit-scrollbar-thumb {
+	background-color: #222;
 }
 .dark-mode [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container {
 	background-color: var(--kanban-bgcolor-dark);

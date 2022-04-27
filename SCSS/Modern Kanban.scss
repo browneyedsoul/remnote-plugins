@@ -33,7 +33,6 @@
             &::-webkit-scrollbar-thumb {
                 background-color: #EEE;
                 border-radius: 2px;
-                opacity: .5;
             }
             // Kanban Column
                 > .tree-node-container {
@@ -191,6 +190,9 @@
                     }
                 }
             >.tree-node--children {
+                &::-webkit-scrollbar-thumb {
+                    background-color: #222;
+                }
                 >.tree-node-container {
                     background-color: var(--kanban-bgcolor-dark);
 
