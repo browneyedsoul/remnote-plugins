@@ -65,14 +65,23 @@
 ```
 
 <div style="margin-left: 24px;">
-    <ul>
-        <li>For those who are thinking that Bullet-based Outliner Editor is way too cluttered with crowded bullet points.</li>
-        <li>Combined UX : Block based Notion Editor + Outliner</li>
-    </ul>
-    <h2>Use case</h2>
-    <img src="Assets/Notion like No Bullet Editor Mode-1.gif">
-    <img src="Assets/Notion like No Bullet Editor Mode-2.png">
-    <img src="Assets/Notion like No Bullet Editor Mode-3.png">
+    <details>
+        <summary>What is the purpose of this snip?</summary>
+            <ul>
+                <li>For those who are thinking that Bullet-based Outliner Editor is way too cluttered with crowded bullet points.</li>
+                <li>Combined UX : Notion like Block based Editor + Outliner</li>
+            </ul>
+    </details>
+    <details>
+        <summary>If you need bullet points, Make them by tagging 'bulletlist'</summary>
+        <img src="Assets/Notion like No Bullet Editor Mode-2.gif">
+    </details>
+    <details>
+        <summary>Use case</summary>
+        <img src="Assets/Notion like No Bullet Editor Mode-1.gif">
+        <img src="Assets/Notion like No Bullet Editor Mode-2.png">
+        <img src="Assets/Notion like No Bullet Editor Mode-3.png">
+    </details>
 </div>
 </details>
 
@@ -231,6 +240,10 @@ Ver.3 - Legacy Mode (Show List-card Answer-blocks one by one)
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Tree.css");
 ```
 
+
+<ul>
+    <li>Tag Name : Tree</li>
+</ul>
 <div style="margin-left: 24px;">
     <img src="Assets/RemTree.png">
 </div>
@@ -245,6 +258,9 @@ Ver.3 - Legacy Mode (Show List-card Answer-blocks one by one)
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Blockquote.css");
 ```
 
+<ul>
+    <li>Tag Name : blockquote</li>
+</ul>
 <div style="margin-left: 24px;">
     <h2>Use case</h2>
     <img src="Assets/Blockquote.png">
@@ -260,6 +276,9 @@ Ver.3 - Legacy Mode (Show List-card Answer-blocks one by one)
 @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Row.css");
 ```
 
+<ul>
+    <li>Tag Name : Table90 Table120 Table150 .... Table1170 Table 1200</li>
+</ul>
 <div>
     <h2>How to use it?</h2>
     <img src="Assets/ModernTableRow.png">
@@ -270,7 +289,7 @@ Ver.3 - Legacy Mode (Show List-card Answer-blocks one by one)
     <details>
         <summary>Paste it to RemNote and Tag the predefined-width Table Row Tags to the Table Title area</summary>
         <img src="Assets/ModernTableRow-1.gif">
-        <h3>Available Width List - From 90px to 1200px, 30px interval</h3>
+        <h3>Available Left Column Width List - From 90px to 1200px, 30px interval</h3>
         - 90px => Table90
         <br>
         - 120px => Table120
