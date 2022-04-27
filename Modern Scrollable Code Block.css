@@ -136,9 +136,6 @@
 #code-node #code-node__change-language-dropdown:hover {
 	opacity: 1;
 }
-#code-node #code-node__change-language-dropdown .p-3 {
-	font-family: var(--code-font-family) !important;
-}
 
 .dark-mode #code-node:not(.token.property):not(.token.function):not(.token.string):not(.token.builtin):not(.token.comment):not(.token.selector):not(.token.keyword):not(.token.number):not(.token.operator):not(.token.punctuation),
 .dark-mode #code-node .token.plain {
