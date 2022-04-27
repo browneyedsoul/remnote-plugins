@@ -24,9 +24,13 @@
 	display: flex;
 	border-radius: 5px;
 	padding-left: 0;
-	padding-bottom: 5px;
 	overflow-x: scroll;
 	white-space: pre;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children::-webkit-scrollbar-thumb {
+	background-color: #EEE;
+	border-radius: 2px;
+	opacity: 0.5;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container {
 	flex: 1 1 0;

@@ -15,7 +15,7 @@
 
 [data-rem-container-tags~=kanban] {
     margin-right: 0.4rem;
-
+    
     // Declutter
         .bg-white {
             background-color: transparent;
@@ -28,9 +28,13 @@
             display: flex;
             border-radius: 5px;
             padding-left: 0;
-            padding-bottom: 5px;
             overflow-x: scroll;
             white-space: pre;
+            &::-webkit-scrollbar-thumb {
+                background-color: #EEE;
+                border-radius: 2px;
+                opacity: .5;
+            }
             // Kanban Column
                 > .tree-node-container {
                     flex: 1 1 0;
