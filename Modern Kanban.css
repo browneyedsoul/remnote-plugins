@@ -15,7 +15,7 @@
 }
 
 [data-rem-container-tags~=kanban] {
-	margin-right: 0.7rem;
+	margin-right: 0.4rem;
 }
 [data-rem-container-tags~=kanban] .bg-white {
 	background-color: transparent;
@@ -24,6 +24,7 @@
 	display: flex;
 	border-radius: 5px;
 	padding-left: 0;
+	padding-bottom: 5px;
 	overflow-x: scroll;
 	white-space: pre;
 }
@@ -35,6 +36,10 @@
 	position: relative;
 	white-space: pre-wrap;
 	min-width: 390px;
+	padding-bottom: 5px;
+}
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:last-of-type {
+	margin-right: 0;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:not(:first-child) {
 	margin-left: 0;
@@ -61,7 +66,9 @@
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(3) {
 	background-color: var(--kanban-bgcolor-done);
-	min-width: 900px;
+	min-width: -webkit-fit-content;
+	min-width: -moz-fit-content;
+	min-width: fit-content;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(3) > .tree-node--parent .rem-text {
 	font-weight: 650;

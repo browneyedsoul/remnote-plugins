@@ -14,7 +14,7 @@
 }
 
 [data-rem-container-tags~=kanban] {
-    margin-right: 0.7rem;
+    margin-right: 0.4rem;
 
     // Declutter
         .bg-white {
@@ -28,6 +28,7 @@
             display: flex;
             border-radius: 5px;
             padding-left: 0;
+            padding-bottom: 5px;
             overflow-x: scroll;
             white-space: pre;
             // Kanban Column
@@ -39,6 +40,12 @@
                     position: relative;
                     white-space: pre-wrap;
                     min-width: 390px;
+                    padding-bottom: 5px;
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                    
 
                     &:not(:first-child) {
                         margin-left: 0;
@@ -74,7 +81,7 @@
                     // Done
                         &:nth-child(3) {
                             background-color: var(--kanban-bgcolor-done);
-                            min-width: 900px;
+                            min-width: fit-content;
 
                             >.tree-node--parent {
                                 .rem-text {
