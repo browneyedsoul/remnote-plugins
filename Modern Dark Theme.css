@@ -138,6 +138,10 @@ body.old-dark-mode .dark-mode-background {
 	        text-decoration-style: double;
 }
 
+#RemPage {
+	background-color: #FFF;
+}
+
 .text-blue-60 {
 	color: var(--link-node-color);
 }
@@ -188,48 +192,43 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .rem-container--todo-finished [data-slate-node=text] {
 	color: #909090;
 }
-
 .dark-mode .katex,
 .dark-mode .katex-display,
 .dark-mode .latex-node--focused:not(.latex-node--block) .katex {
 	background-color: unset !important;
 }
-
-#RemPage {
+.dark-mode #RemPage {
 	background-color: #FFF;
 }
-
-.dark-mode #RemPage {
+.dark-mode .dark-mode #RemPage {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
 }
-.dark-mode #RemPage [data-icon~=folder] {
+.dark-mode .dark-mode #RemPage [data-icon~=folder] {
 	color: var(--darkmode-text) !important;
 	fill: var(--darkmode-text) !important;
 }
-.dark-mode #RemPage .RichTextViewer {
+.dark-mode .dark-mode #RemPage .RichTextViewer {
 	color: var(--darkmode-text);
 }
-.dark-mode #RemPage .document-header-top-bar {
+.dark-mode .dark-mode #RemPage .document-header-top-bar {
 	color: var(--darkmode-text);
 }
-.dark-mode #RemPage .document-header-top-bar .hover\:bg-gray-5:hover {
+.dark-mode .dark-mode #RemPage .document-header-top-bar .hover\:bg-gray-5:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark-mode #RemPage .document-header-top-bar .bold {
+.dark-mode .dark-mode #RemPage .document-header-top-bar .bold {
 	color: var(--darkmode-text);
 }
-.dark-mode #RemPage .document-header-top-bar .bold.highlight-color--red, .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--orange, .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--yellow, .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--green, .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--blue, .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--purple {
+.dark-mode .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--red, .dark-mode .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--orange, .dark-mode .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--yellow, .dark-mode .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--green, .dark-mode .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--blue, .dark-mode .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--purple {
 	color: #000;
 }
-
 .dark-mode .rem-text,
 .dark-mode .rem-text.rem-header--1,
 .dark-mode .rem-text.rem-header--2,
 .dark-mode .rem-text.rem-header--3 {
 	color: var(--darkmode-text);
 }
-
 .dark-mode .rem-text .bold:not(.rem-header--1 .bold) .dark-mode .rem-text .bold:not(.rem-header--2 .bold) .dark-mode .rem-text .bold:not(.rem-header--3 .bold) .dark-mode .rem-text .bold:not([data-rem-tags~=highlight] .bold) .dark-mode .rem-text .bold:not(.bold.highlight-color--red) .dark-mode .rem-text .bold:not(.bold.highlight-color--orange) .dark-mode .rem-text .bold:not(.bold.highlight-color--yellow) .dark-mode .rem-text .bold:not(.bold.highlight-color--green) .dark-mode .rem-text .bold:not(.bold.highlight-color--blue) .dark-mode .rem-text .bold:not(.bold.highlight-color--purple) .dark-mode .rem-text .bold:not([data-rem-container-tags~=callout]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutred]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutorange]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutyellow]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutgreen]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutblue]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutpurple]) {
 	color: var(--darkmode-text-bold);
 }
@@ -242,12 +241,10 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode [data-rem-tags~=highlight] .rem-text .EditorContainer .bold {
 	color: #000 !important;
 }
-
 .dark-mode .quote {
 	color: var(--inline-code-color-dark);
 	background-color: var(--inline-code-background-dark);
 }
-
 .dark-mode .text-blue-60 {
 	color: var(--link-node-color-dark);
 	border-radius: 3px;
@@ -259,12 +256,10 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode [data-rem-tags~=highlight] .text-blue-60 {
 	color: var(--link-node-color);
 }
-
 .dark-mode .TreeNode {
 	border-width: 1.5px !important;
 	border-left-color: var(--line-color-dark) !important;
 }
-
 .dark-mode .separator-symbol:not(:empty):hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
@@ -272,14 +267,12 @@ body.old-dark-mode .dark-mode-background {
 	background-color: var(--darkmode-background-selected-darker);
 	border-radius: 3px;
 }
-
 .dark-mode .rem-calendar-icon.text-text {
 	color: var(--darkmode-text);
 }
 .dark-mode .rem-powerup-icon .text-icon {
 	color: var(--darkmode-text);
 }
-
 .dark-mode #code-node {
 	background-color: var(--code-node-background-color-dark);
 }
@@ -289,12 +282,10 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .codeLine::before {
 	color: var(--code-node-line-number-color-dark);
 }
-
-.work-in-progress-tag {
+.dark-mode .work-in-progress-tag {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background-selected-darker);
 }
-
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background-selected-darker);
@@ -383,7 +374,6 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag__delete {
 	color: unset;
 }
-
 .dark-mode .cloze {
 	background-color: var(--darkmode-background-selected-darker);
 }
