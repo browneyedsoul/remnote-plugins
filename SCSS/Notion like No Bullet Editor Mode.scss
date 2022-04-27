@@ -495,19 +495,28 @@
 		}
 // Make Bullet-list by Intentional Tagging
 	[data-rem-tags~="bulletlist"] {
-		margin-left: var(--treenode-line-spacing);
-		left: 2px;
-
 		.rem-button__container {
-			.rem-bullet.rem-bullet--hidden-children {
-				@include triangle-hidden;
-				border-color: transparent transparent transparent var(--bullet-main);
-			}
-			.rem-bullet.rem-bullet--all-children-visible {
-				@include bulletlist;
-				border-color: var(--bullet-main);
+			margin-left: var(--treenode-line-spacing);
+			
+			.rem-bullet__container {
+				position: relative;
+				margin-left: var(--treenode-line-spacing);
+
+				.perfect-circle.rem-bullet--hidden-children {
+					@include triangle-hidden;
+					border-color: transparent transparent transparent var(--bullet-main);
+				}
+				
+				.perfect-circle.rem-bullet--all-children-visible {
+					@include bulletlist;
+					border-color: var(--bullet-main);
+				}
 			}
 		}
+		// Move text
+			.rem-text {
+				margin-left: var(--treenode-line-spacing);
+			}
 		// Tag Declutter
 			.hierarchy-editor__tag-bar__tag {
 				background-color: transparent !important;

@@ -380,11 +380,14 @@
 	mask-repeat: no-repeat;
 }
 
-[data-rem-tags~=bulletlist] {
+[data-rem-tags~=bulletlist] .rem-button__container {
 	margin-left: var(--treenode-line-spacing);
-	left: 2px;
 }
-[data-rem-tags~=bulletlist] .rem-button__container .rem-bullet.rem-bullet--hidden-children {
+[data-rem-tags~=bulletlist] .rem-button__container .rem-bullet__container {
+	position: relative;
+	margin-left: var(--treenode-line-spacing);
+}
+[data-rem-tags~=bulletlist] .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--hidden-children {
 	width: 0 !important;
 	height: 0 !important;
 	border-style: solid !important;
@@ -392,13 +395,16 @@
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main);
 }
-[data-rem-tags~=bulletlist] .rem-button__container .rem-bullet.rem-bullet--all-children-visible {
+[data-rem-tags~=bulletlist] .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--all-children-visible {
 	width: 0;
 	height: 0;
 	border-style: solid;
 	border-width: 3.5px;
 	border-radius: 10px;
 	border-color: var(--bullet-main);
+}
+[data-rem-tags~=bulletlist] .rem-text {
+	margin-left: var(--treenode-line-spacing);
 }
 [data-rem-tags~=bulletlist] .hierarchy-editor__tag-bar__tag {
 	background-color: transparent !important;
