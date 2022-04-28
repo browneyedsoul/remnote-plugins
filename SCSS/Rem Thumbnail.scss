@@ -87,13 +87,6 @@
 		@include thumbnail-set;
 	}
 // Queue
-	.queue__title {
-		.queue__title__middle {
-			.RichTextViewer {
-				@include thumbnail-set();
-			}
-		}
-	}
 	.spaced-repetition__prompt__breadcrumbs {
 		@include thumbnail-set;
 	}
@@ -124,6 +117,13 @@
 		}
 	}
 	.Queue {
+		.queue__title {
+			.queue__title__middle {
+				.RichTextViewer {
+					@include thumbnail-set();
+				}
+			}
+		}
 		.fill-in-the-blank {
 			display: inline-flex;
 			vertical-align: top;
@@ -139,6 +139,13 @@
 		}
 		.queue-cluster-selector {
 			@include thumbnail-set;
+		}
+		.queue__edit-later {
+			.document-header-top-bar {
+				.RichTextViewer {
+					@include thumbnail-set();
+				}
+			}
 		}
 	}
 // Document Top

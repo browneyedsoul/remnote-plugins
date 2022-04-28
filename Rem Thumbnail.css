@@ -57,37 +57,6 @@
 	   object-position: center;
 }
 
-.queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block {
-	height: 1em;
-	width: auto;
-}
-.queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
-	height: 1em !important;
-	width: unset !important;
-	max-width: 1em !important;
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-	min-width: 1em !important;
-	min-height: unset !important;
-}
-.queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
-	-o-object-fit: contain !important;
-	   object-fit: contain !important;
-	-o-object-position: center;
-	   object-position: center;
-}
-.queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
-	display: none;
-}
-.queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-}
-
 .spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block {
 	height: 1em;
 	width: auto;
@@ -188,6 +157,36 @@
 	display: inline;
 }
 
+.Queue .queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.Queue .queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.Queue .queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.Queue .queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+	display: none;
+}
+.Queue .queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
 .Queue .fill-in-the-blank {
 	display: inline-flex;
 	vertical-align: top;
@@ -247,6 +246,36 @@
 	display: none;
 }
 .Queue .queue-cluster-selector span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+	display: none;
+}
+.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
