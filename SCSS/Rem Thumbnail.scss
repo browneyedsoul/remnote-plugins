@@ -259,6 +259,13 @@
 					}
 				}
 			}
+			.document-popup-preview {
+				.document-header-top-bar {
+					.RichTextViewer {
+						@include thumbnail-set;
+					}
+				}
+			}
 		}
 	}
 // Header & Normal Rem-Text with "Thumbnail(TN)" Tag
