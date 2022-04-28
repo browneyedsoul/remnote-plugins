@@ -1650,31 +1650,31 @@
 	width: 1200px !important;
 }
 
-[data-rem-tags~=tablecolor] {
+[data-rem-container-tags~=tablecolor] {
 	background-color: var(--table-columnrow-background-color);
 	font-weight: bold;
 	text-align: center;
 }
-[data-rem-tags~=tablecolor] .rem-text .EditorContainer {
-	white-space: nowrap !important;
+[data-rem-container-tags~=tablecolor] > .tree-node--parent {
+	height: 100%;
 }
-[data-rem-tags~=tablecolor] .rem-text .EditorContainer .RichTextViewer {
-	white-space: nowrap;
-}
-[data-rem-tags~=tablecolor] .hierarchy-editor__tag-bar__tag {
+[data-rem-container-tags~=tablecolor] .hierarchy-editor__tag-bar__tag {
 	color: transparent;
 	background-color: transparent !important;
 }
-[data-rem-tags~=tablecolor] .hierarchy-editor__tag-bar__tag span {
+[data-rem-container-tags~=tablecolor] .hierarchy-editor__tag-bar__tag span {
 	display: none;
 }
-[data-rem-tags~=tablecolor] .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
+[data-rem-container-tags~=tablecolor] .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
 	opacity: 0.2;
 	left: 12px;
 }
 
-.dark-mode [data-rem-tags~=tablecolor] {
+.dark-mode [data-rem-container-tags~=tablecolor] {
 	background-color: var(--table-columnrow-background-color-dark);
+}
+.dark-mode [data-rem-container-tags~=tablecolor] > .tree-node--parent {
+	height: 100%;
 }
 
 [data-rem-container-tags~=w30] > .tree-node--children,
