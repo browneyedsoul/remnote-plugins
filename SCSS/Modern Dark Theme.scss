@@ -73,6 +73,16 @@
 	--text-shadow: 0.01em 0.01em 0.01em #727e84;
 	--text-shadow-yellow: 2px 2px 2px #EAEB74;
 	--text-shadow-dark: 0.01em 0.01em 0.01em #727e84;
+	--queue-bncolor-toosoon: #DDD;
+	--queue-bncolor-toosoon-dark: #1B1F23;
+	--queue-bncolor-hard: #FFC9CC;
+	--queue-bncolor-hard-dark: #572924;
+	--queue-bncolor-partial: #FFDAB8;
+	--queue-bncolor-partial-dark: #453E1E;
+	--queue-bncolor-done: #B5CEF0;
+	--queue-bncolor-done-dark: #183C4D;
+	--queue-bncolor-easy: #A8E2B4;
+	--queue-bncolor-easy-dark: #253F27;
 }
 // The Most important thing
 	body.old-dark-mode {
@@ -682,7 +692,48 @@
 					.spacedRepetition {
 						> div {
 							.spacedRepetitionContent {
-								height: 100%;
+								height: 90%;
+							}
+						}
+					}
+					.spaced-repetition__bottom {
+						.spaced-repetition__accuracy-buttons {
+							.accuracy-button {
+					
+								&:hover {
+									filter: brightness(110%);
+								}
+								.accuracy-button__label {
+									font-weight: 600;
+								}
+								// .accuracy-button__interval {
+									
+								// }
+							}
+					
+							// Too Soon
+							.accuracy-button:nth-of-type(1) {
+								background-color: var(--queue-bncolor-toosoon);
+							}
+					
+							// Forgotten
+							.accuracy-button:nth-of-type(2) {
+								background-color: var(--queue-bncolor-hard);
+							}
+					
+							// Partially Recalled
+							.accuracy-button:nth-of-type(3) {
+								background-color: var(--queue-bncolor-partial);
+							}
+					
+							// Recalled with effort
+							.accuracy-button:nth-of-type(4) {
+								background-color: var(--queue-bncolor-done);
+							}
+					
+							// Immediately
+							.accuracy-button:nth-of-type(5) {
+								background-color: var(--queue-bncolor-easy);
 							}
 						}
 					}
@@ -818,7 +869,7 @@
 											}
 										// Card Prompt
 											.rem-bullet__document {
-												font-weight: 600;
+												font-weight: 550;
 											}
 											.rem-bullet__document,
 											.rem-bullet__document .file.text.small.icon {
@@ -832,11 +883,10 @@
 								.spaced-repetition__accuracy-buttons {
 									.accuracy-button {
 										color: var(--darkmode-text);
-										background-color: var(--darkmode-background-button);
-										border: unset;
+										border-color: #999;
 
 										&:hover {
-											background-color: var(--darkmode-background-selected);
+											filter: brightness(125%);
 										}
 
 										.accuracy-button__interval {
@@ -845,6 +895,26 @@
 											background-color: var(--darkmode-background-selected-darker);
 										}
 									}
+									// Too Soon
+										.accuracy-button:nth-of-type(1) {
+											background-color: var(--queue-bncolor-toosoon-dark);
+										}
+									// Forgotten
+										.accuracy-button:nth-of-type(2) {
+											background-color: var(--queue-bncolor-hard-dark);
+										}
+									// Partially Recalled
+										.accuracy-button:nth-of-type(3) {
+											background-color: var(--queue-bncolor-partial-dark);
+										}
+									// Recalled with effort
+										.accuracy-button:nth-of-type(4) {
+											background-color: var(--queue-bncolor-done-dark);
+										}
+									// Immediately
+										.accuracy-button:nth-of-type(5) {
+											background-color: var(--queue-bncolor-easy-dark);
+										}
 								}
 							}
 						}

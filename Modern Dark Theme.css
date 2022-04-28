@@ -72,6 +72,16 @@
 	--text-shadow: 0.01em 0.01em 0.01em #727e84;
 	--text-shadow-yellow: 2px 2px 2px #EAEB74;
 	--text-shadow-dark: 0.01em 0.01em 0.01em #727e84;
+	--queue-bncolor-toosoon: #DDD;
+	--queue-bncolor-toosoon-dark: #1B1F23;
+	--queue-bncolor-hard: #FFC9CC;
+	--queue-bncolor-hard-dark: #572924;
+	--queue-bncolor-partial: #FFDAB8;
+	--queue-bncolor-partial-dark: #453E1E;
+	--queue-bncolor-done: #B5CEF0;
+	--queue-bncolor-done-dark: #183C4D;
+	--queue-bncolor-easy: #A8E2B4;
+	--queue-bncolor-easy-dark: #253F27;
 }
 
 body.old-dark-mode .dark-mode,
@@ -469,7 +479,28 @@ body.old-dark-mode .dark-mode-background {
 	font-size: 24px;
 }
 .queue-container .Queue .spacedRepetition > div .spacedRepetitionContent {
-	height: 100%;
+	height: 90%;
+}
+.queue-container .Queue .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:hover {
+	filter: brightness(110%);
+}
+.queue-container .Queue .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button .accuracy-button__label {
+	font-weight: 600;
+}
+.queue-container .Queue .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(1) {
+	background-color: var(--queue-bncolor-toosoon);
+}
+.queue-container .Queue .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(2) {
+	background-color: var(--queue-bncolor-hard);
+}
+.queue-container .Queue .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(3) {
+	background-color: var(--queue-bncolor-partial);
+}
+.queue-container .Queue .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(4) {
+	background-color: var(--queue-bncolor-done);
+}
+.queue-container .Queue .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(5) {
+	background-color: var(--queue-bncolor-easy);
 }
 
 .dark-mode .queue-cluster-selector {
@@ -555,7 +586,7 @@ body.old-dark-mode .dark-mode-background {
 	border-radius: 5px;
 }
 .dark-mode .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document {
-	font-weight: 600;
+	font-weight: 550;
 }
 .dark-mode .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document,
 .dark-mode .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon {
@@ -564,16 +595,30 @@ body.old-dark-mode .dark-mode-background {
 }
 .dark-mode .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button {
 	color: var(--darkmode-text);
-	background-color: var(--darkmode-background-button);
-	border: unset;
+	border-color: #999;
 }
 .dark-mode .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:hover {
-	background-color: var(--darkmode-background-selected);
+	filter: brightness(125%);
 }
 .dark-mode .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button .accuracy-button__interval {
 	border: unset;
 	color: var(--darkmode-text-bold);
 	background-color: var(--darkmode-background-selected-darker);
+}
+.dark-mode .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(1) {
+	background-color: var(--queue-bncolor-toosoon-dark);
+}
+.dark-mode .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(2) {
+	background-color: var(--queue-bncolor-hard-dark);
+}
+.dark-mode .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(3) {
+	background-color: var(--queue-bncolor-partial-dark);
+}
+.dark-mode .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(4) {
+	background-color: var(--queue-bncolor-done-dark);
+}
+.dark-mode .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(5) {
+	background-color: var(--queue-bncolor-easy-dark);
 }
 .dark-mode .Queue .font-semibold.text-gray-100 {
 	color: var(--darmode-text);
