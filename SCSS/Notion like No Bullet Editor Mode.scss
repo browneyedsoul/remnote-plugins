@@ -522,6 +522,17 @@
 				}
 			}
 		}
+		.dark-mode {
+			.rem-container--forwards-practice-enabled {
+				&.rem-container--backwards-practice-disabled {
+		
+					.separator-symbol.delimiterAnnotation,
+					.separator-symbol>span {
+						color: #E0CD00;
+					}
+				}
+			}
+		}
 // Make Bullet-list by Intentional Tagging
 	[data-rem-tags~="bulletlist"], %bulletlist {
 		.rem-button__container {
