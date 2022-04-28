@@ -73,12 +73,17 @@
             </ul>
     </details>
     <details>
-        <summary>If you need bullet points, Make them by tagging 'bulletlist'</summary>
+        <summary>If you need bullet points, Make them by tagging `bulletlist`</summary>
         <img src="Assets/Notion like No Bullet Editor Mode-2.gif">
+    </details>
+    <details>
+        <summary>And if you want just one tag for bulleted children, you can use `bulletlists`</summary>
+        <img src="Assets/Notion like No Bullet Editor Mode-3.gif">
     </details>
     <details>
         <summary>Use case</summary>
         <img src="Assets/Notion like No Bullet Editor Mode-1.gif">
+        <img src="Assets/Notion like No Bullet Editor Mode-1.png">
         <img src="Assets/Notion like No Bullet Editor Mode-2.png">
         <img src="Assets/Notion like No Bullet Editor Mode-3.png">
     </details>
