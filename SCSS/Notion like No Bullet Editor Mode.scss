@@ -385,7 +385,7 @@
 					width: 26px;
 					height: 18px;
 					position: relative;
-					left: 4px;
+					left: 6px;
 					-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
 							mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
 					-webkit-mask-size: contain;
@@ -422,7 +422,7 @@
 					width: 26px;
 					height: 18px;
 					position: relative;
-					left: 4px;
+					left: 6px;
 					-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
 							mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
 					-webkit-mask-size: contain;
@@ -453,7 +453,7 @@
 					width: 26px;
 					height: 18px;
 					position: relative;
-					left: 4px;
+					left: 6px;
 					-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
 							mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
 					-webkit-mask-size: contain;
@@ -491,6 +491,35 @@
 						mask-size: contain;
 				-webkit-mask-repeat: no-repeat;
 						mask-repeat: no-repeat;
+			}
+		}
+	// Card Arrow Decoration
+		.rem-container--forwards-practice-enabled {
+			&.rem-container--backwards-practice-enabled {
+				.separator-symbol.delimiterAnnotation,
+				.separator-symbol > span {
+					color: #FFA344;
+				}
+			}
+			&.rem-container--backwards-practice-disabled {
+				.separator-symbol.delimiterAnnotation,
+				.separator-symbol > span {
+					color: #FE2600;
+				}
+			}
+		}
+		.rem-container--forwards-practice-disabled {
+			&.rem-container--backwards-practice-enabled {
+				.separator-symbol.delimiterAnnotation,
+				.separator-symbol > span {
+					color: #D783FF;
+				}
+			}
+			&.rem-container--backwards-practice-disabled {
+				.separator-symbol.delimiterAnnotation,
+				.separator-symbol > span {
+					color: #959595;
+				}
 			}
 		}
 // Make Bullet-list by Intentional Tagging
