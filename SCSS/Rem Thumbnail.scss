@@ -91,18 +91,15 @@
 		@include thumbnail-set;
 	}
 	.spaced-repetition__prompt {
-		.indented-rem {
+		.indented-rem:not(.basic_card_rem_type + .indented-rem):not(.concept_rem_type + .indented-rem) {
 			.RichTextViewer {
 				> div {
 					display: inline-block;
 					margin-right: 3px;
 				}
+				.react-transform-component {
+					.react-transform-element {
 
-				&:not(.basic_card_rem_type .RichTextViewer):not(.concept_rem_type .RichTextViewer) {
-					.react-transform-component {
-						.react-transform-element {
-							@include thumbnail-set;
-						}
 					}
 				}
 			}

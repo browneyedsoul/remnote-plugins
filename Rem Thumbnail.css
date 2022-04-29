@@ -88,41 +88,10 @@
 	   object-position: center;
 }
 
-.spaced-repetition__prompt .indented-rem .RichTextViewer > div {
+.spaced-repetition__prompt .indented-rem:not(.basic_card_rem_type + .indented-rem):not(.concept_rem_type + .indented-rem) .RichTextViewer > div {
 	display: inline-block;
 	margin-right: 3px;
 }
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.basic_card_rem_type .RichTextViewer):not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block {
-	height: 1em;
-	width: auto;
-}
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.basic_card_rem_type .RichTextViewer):not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container {
-	height: 1em !important;
-	width: unset !important;
-	max-width: 1em !important;
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-	min-width: 1em !important;
-	min-height: unset !important;
-}
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.basic_card_rem_type .RichTextViewer):not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node {
-	-o-object-fit: contain !important;
-	   object-fit: contain !important;
-	-o-object-position: center;
-	   object-position: center;
-}
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.basic_card_rem_type .RichTextViewer):not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
-	display: none;
-}
-.spaced-repetition__prompt .indented-rem .RichTextViewer:not(.basic_card_rem_type .RichTextViewer):not(.concept_rem_type .RichTextViewer) .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-}
-
 .rem-bullet__document span.image-node__container.inline-block {
 	height: 1em;
 	width: auto;
