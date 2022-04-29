@@ -122,7 +122,7 @@ body.old-dark-mode .dark-mode-background {
 ::-webkit-scrollbar {
 	background-color: transparent;
 	height: 10px;
-	width: 8px;
+	width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -759,8 +759,8 @@ body.old-dark-mode .dark-mode-background {
 	background-color: unset;
 }
 
-.tile__document ::-webkit-scrollbar-track {
-	margin-top: 3rem;
+.tile__document::-webkit-scrollbar-thumb {
+	min-height: 200px;
 }
 .tile__document > div.border-bottom-solid.bg-white {
 	background-color: var(--darkmode-background);
@@ -802,7 +802,7 @@ body.old-dark-mode .dark-mode-background {
 	filter: invert(0.95);
 }
 .tile__document div:nth-of-type(2).document-header-top-bar {
-	width: calc(100% - 8px);
+	width: calc(100% - 10px);
 }
 .tile__document .document-header-top-bar {
 	color: var(--darkmode-text);
@@ -2037,7 +2037,9 @@ body.old-dark-mode .dark-mode-background {
 	overflow-x: hidden;
 	white-space: nowrap;
 }
-#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(3) {
+#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(3),
+#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(4),
+#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(5) {
 	color: var(--darkmode-contrast);
 	background-color: var(--darkmode-background-selected-darker);
 	zoom: 125%;

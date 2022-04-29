@@ -128,7 +128,7 @@
 		::-webkit-scrollbar {
 			background-color: transparent;
 			height: 10px;
-			width: 8px;
+			width: 10px;
 		}
 		::-webkit-scrollbar-track {
 			background-color: transparent;
@@ -1185,9 +1185,13 @@
 		}
 // Tile Document
 	.tile__document {
-		::-webkit-scrollbar-track {
-			margin-top: 3rem;
-		}
+		// Document Scrollbar
+			// &::-webkit-scrollbar-track {
+			// 	margin-top: 3rem;
+			// }
+			&::-webkit-scrollbar-thumb {
+				min-height: 200px;
+			}
 		// Daily Notes Top bar
 			> div.border-bottom-solid.bg-white {
 				background-color: var(--darkmode-background);
@@ -1266,7 +1270,7 @@
 			}
 		// Document Header Top Bar
 			div:nth-of-type(2).document-header-top-bar {
-				width: calc(100% - 8px);
+				width: calc(100% - 10px);
 			}
 			.document-header-top-bar {
 				color: var(--darkmode-text);
@@ -3293,7 +3297,9 @@
 										white-space: nowrap;
                                     }
                                 // Residue Number
-                                    > div:nth-of-type(3) {
+                                    > div:nth-of-type(3),
+									> div:nth-of-type(4),
+									> div:nth-of-type(5) {
                                         color: var(--darkmode-contrast);
                                         background-color: var(--darkmode-background-selected-darker);    
                                         zoom: 125%;
