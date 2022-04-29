@@ -48,6 +48,8 @@
     <img src="Assets/Modern Dark Theme - 4.png">
     <img src="Assets/Modern Dark Theme - 5.png">
     <img src="Assets/Modern Dark Theme - 6.png">
+    <img src="Assets/Modern Dark Theme - 7.png">
+    <img src="Assets/Modern Dark Theme - 8.png">
 </div>
 </details>
 
