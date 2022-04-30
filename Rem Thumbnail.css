@@ -57,75 +57,6 @@
 	   object-position: center;
 }
 
-.spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block {
-	height: 1em;
-	width: auto;
-}
-.spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container {
-	height: 1em !important;
-	width: unset !important;
-	max-width: 1em !important;
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-	min-width: 1em !important;
-	min-height: unset !important;
-}
-.spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node {
-	-o-object-fit: contain !important;
-	   object-fit: contain !important;
-	-o-object-position: center;
-	   object-position: center;
-}
-.spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
-	display: none;
-}
-.spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-}
-
-.spaced-repetition__prompt .indented-rem:not(.basic_card_rem_type + .indented-rem):not(.concept_rem_type + .indented-rem) .RichTextViewer > div {
-	display: inline-block;
-	margin-right: 3px;
-}
-.rem-bullet__document span.image-node__container.inline-block {
-	height: 1em;
-	width: auto;
-}
-.rem-bullet__document span.image-node__container.inline-block > div.image-node__container {
-	height: 1em !important;
-	width: unset !important;
-	max-width: 1em !important;
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-	min-width: 1em !important;
-	min-height: unset !important;
-}
-.rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node {
-	-o-object-fit: contain !important;
-	   object-fit: contain !important;
-	-o-object-position: center;
-	   object-position: center;
-}
-.rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
-	display: none;
-}
-.rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-}
-.rem-bullet__document > span > div {
-	display: inline;
-}
-
 .Queue .queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block {
 	height: 1em;
 	width: auto;
@@ -155,6 +86,73 @@
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
+}
+.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+	display: none;
+}
+.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+.Queue .spaced-repetition__prompt .indented-rem:not(.basic_card_rem_type + .indented-rem):not(.concept_rem_type + .indented-rem) .RichTextViewer > div {
+	display: inline-block;
+	margin-right: 3px;
+}
+.Queue .rem-bullet__document span.image-node__container.inline-block {
+	height: 1em;
+	width: auto;
+}
+.Queue .rem-bullet__document span.image-node__container.inline-block > div.image-node__container {
+	height: 1em !important;
+	width: unset !important;
+	max-width: 1em !important;
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+	min-width: 1em !important;
+	min-height: unset !important;
+}
+.Queue .rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node {
+	-o-object-fit: contain !important;
+	   object-fit: contain !important;
+	-o-object-position: center;
+	   object-position: center;
+}
+.Queue .rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+	display: none;
+}
+.Queue .rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+	-o-object-fit: contain;
+	   object-fit: contain;
+	-o-object-position: center;
+	   object-position: center;
+}
+.Queue .rem-bullet__document > span > div {
+	display: inline;
 }
 .Queue .fill-in-the-blank {
 	display: inline-flex;

@@ -87,63 +87,74 @@
 		@include thumbnail-set;
 	}
 // Queue
-	.spaced-repetition__prompt__breadcrumbs {
-		@include thumbnail-set;
-	}
-	.spaced-repetition__prompt {
-		.indented-rem:not(.basic_card_rem_type + .indented-rem):not(.concept_rem_type + .indented-rem) {
-			.RichTextViewer {
-				> div {
-					display: inline-block;
-					margin-right: 3px;
-				}
-				.react-transform-component {
-					.react-transform-element {
-
-					}
-				}
-			}
-		}
-	}
-	.rem-bullet__document {
-		@include thumbnail-set;
-		> span {
-			> div {
-				display: inline;
-			}
-		}
-	}
 	.Queue {
-		.queue__title {
-			.queue__title__middle {
-				.RichTextViewer {
-					@include thumbnail-set();
-				}
-			}
-		}
-		.fill-in-the-blank {
-			display: inline-flex;
-			vertical-align: top;
-		}
-		.fill-in-the-blank--revealed {
-			.RichTextViewer {
-				.react-transform-component {
-					.react-transform-element {
-						@include thumbnail-set;
+		// Title bar
+			.queue__title {
+				.queue__title__middle {
+					.RichTextViewer {
+						@include thumbnail-set();
 					}
 				}
 			}
-		}
-		.queue-cluster-selector {
-			@include thumbnail-set;
-		}
-		.queue__edit-later {
-			.document-header-top-bar {
-				.RichTextViewer {
-					@include thumbnail-set();
+		// progress bar
+			// .queue__progress {
+
+			// }
+		// Prompt
+			.spaced-repetition__prompt {
+				.spaced-repetition__prompt__breadcrumbs {
+					@include thumbnail-set;
+				}
+			
+				.indented-rem:not(.basic_card_rem_type + .indented-rem):not(.concept_rem_type + .indented-rem) {
+					.RichTextViewer {
+						> div {
+							display: inline-block;
+							margin-right: 3px;
+						}
+			
+						.react-transform-component {
+							.react-transform-element {}
+						}
+					}
 				}
 			}
-		}
+		// ?
+			.rem-bullet__document {
+				@include thumbnail-set;
+			
+				> span {
+					>div {
+						display: inline;
+					}
+				}
+			}
+		// Fill
+			.fill-in-the-blank {
+				display: inline-flex;
+				vertical-align: top;
+			}
+			.fill-in-the-blank--revealed {
+				.RichTextViewer {
+					.react-transform-component {
+						.react-transform-element {
+							@include thumbnail-set;
+						}
+					}
+				}
+			}
+		// Cluster
+			.queue-cluster-selector {
+				@include thumbnail-set;
+			}
+		// Edir Later
+			.queue__edit-later {
+				.document-header-top-bar {
+					.RichTextViewer {
+						@include thumbnail-set();
+					}
+				}
+			}
 	}
 // Document Top
 	#tile__document {
