@@ -24,11 +24,11 @@
 	--inline-code-color: #E64400;
 	--inline-code-color-dark: #DCDA7A;
 	--inline-code-background: #F7F6F3;
-	--inline-code-background-dark: #222628;
+	--inline-code-background-dark: #282C30;
 	--reference-text: #000;
 	--reference-text-dark: #dfdfd5;
 	--reference-background: #ececec;
-	--reference-background-dark: #252525;
+	--reference-background-dark: #282C30;
 	--popup-background-hover: #F4F4FA;
 	--line-color: #dddddd;
 	--line-color-dark: #535353;
@@ -2069,7 +2069,7 @@
 						// Editor
 							#hierarchy-editor {
 								.rem-text {
-									.EditorContainer {
+									.EditorContainer, %highlight-dark-set {
 										span.highlight-color--red {
 											color: #FFD2CE;
 											background-color: #572924;
@@ -2129,6 +2129,75 @@
 							}
 					}
 				}
+				// Queue
+					.queue-container {
+						.spacedRepetition {
+							.rem-text {
+								.EditorContainer {
+									span.highlight-color--red {
+										color: #FFD2CE;
+										background-color: #572924;
+									}
+					
+									span.highlight-color--orange {
+										color: #FFDAB8;
+										background-color: #553D24;
+									}
+					
+									span.highlight-color--yellow {
+										color: #E8DDA7;
+										background-color: #453E1E;
+									}
+					
+									span.highlight-color--green {
+										color: #B3DDAB;
+										background-color: #253F27;
+									}
+					
+									span.highlight-color--blue {
+										color: #B5DEE8;
+										background-color: #183C4D;
+									}
+					
+									span.highlight-color--purple {
+										color: #DDC3EB;
+										background-color: #43273F;
+									}
+					
+									.bold.highlight-color--red {
+										color: var(--red-text-dark);
+										background-color: unset;
+									}
+					
+									.bold.highlight-color--orange {
+										color: var(--orange-text-dark);
+										background-color: unset;
+									}
+					
+									.bold.highlight-color--yellow {
+										color: var(--yellow-text-dark);
+										background-color: unset;
+										text-shadow: unset;
+									}
+					
+									.bold.highlight-color--green {
+										color: var(--green-text-dark);
+										background-color: unset;
+									}
+					
+									.bold.highlight-color--blue {
+										color: var(--blue-text-dark);
+										background-color: unset;
+									}
+					
+									.bold.highlight-color--purple {
+										color: var(--purple-text-dark);
+										background-color: unset;
+									}
+								}
+							}
+						}
+					}
 			}
 		}	
 // Portal
@@ -2413,7 +2482,7 @@
 				color: black;
 				background-color: var(--popup-background-hover);
 			}
-// Popup - Delete, Disable Confirm
+// Popup - Delete, Disable Confirm, Highlight
 	.dark-mode {
 		#Popup {
 			#PopupContent {
@@ -2480,6 +2549,75 @@
 							}
 						}
 					}
+				// Highlight
+				.document-popup-preview {
+					#document {
+						.rem-text {
+							.EditorContainer {
+								span.highlight-color--red {
+									color: #FFD2CE;
+									background-color: #572924;
+								}
+						
+								span.highlight-color--orange {
+									color: #FFDAB8;
+									background-color: #553D24;
+								}
+						
+								span.highlight-color--yellow {
+									color: #E8DDA7;
+									background-color: #453E1E;
+								}
+						
+								span.highlight-color--green {
+									color: #B3DDAB;
+									background-color: #253F27;
+								}
+						
+								span.highlight-color--blue {
+									color: #B5DEE8;
+									background-color: #183C4D;
+								}
+						
+								span.highlight-color--purple {
+									color: #DDC3EB;
+									background-color: #43273F;
+								}
+						
+								.bold.highlight-color--red {
+									color: var(--red-text-dark);
+									background-color: unset;
+								}
+						
+								.bold.highlight-color--orange {
+									color: var(--orange-text-dark);
+									background-color: unset;
+								}
+						
+								.bold.highlight-color--yellow {
+									color: var(--yellow-text-dark);
+									background-color: unset;
+									text-shadow: unset;
+								}
+						
+								.bold.highlight-color--green {
+									color: var(--green-text-dark);
+									background-color: unset;
+								}
+						
+								.bold.highlight-color--blue {
+									color: var(--blue-text-dark);
+									background-color: unset;
+								}
+						
+								.bold.highlight-color--purple {
+									color: var(--purple-text-dark);
+									background-color: unset;
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -3069,7 +3207,7 @@
 
                         .RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
                             color: var(--reference-text-dark);
-                            background-color: #202020;
+                            background-color: var(--reference-background-dark);
                         }
 
                         &:hover {
