@@ -1,15 +1,15 @@
 @charset "UTF-8";
 :root {
 	--kanban-bgcolor: #F7F6F3;
-	--kanban-bgcolor-dark: #252525;
+	--kanban-bgcolor-dark: #505050;
 	--kanban-bgcolor-input: #FFF;
 	--kanban-bgcolor-input-dark: #222628;
 	--kanban-bgcolor-stage: ;
 	--kanban-bgcolor-stage-dark: ;
 	--kanban-bgcolor-inprogress: #F8F9CD;
-	--kanban-bgcolor-inprogress-dark: #453E1E;
+	--kanban-bgcolor-inprogress-dark: #63572B;
 	--kanban-bgcolor-done: #D5EED7;
-	--kanban-bgcolor-done-dark: #253F27;
+	--kanban-bgcolor-done-dark: #304F32;
 	--kanban-bgcolor-archive: ;
 	--kanban-bgcolor-archive-dark: ;
 }
