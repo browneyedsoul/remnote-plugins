@@ -41,9 +41,6 @@
 	min-width: 390px;
 	padding-bottom: 5px;
 }
-[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:last-of-type {
-	margin-right: 0;
-}
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:not(:first-child) {
 	margin-left: 0;
 }
