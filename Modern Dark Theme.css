@@ -802,7 +802,7 @@ body.old-dark-mode .dark-mode-background {
 	filter: invert(0.95);
 }
 .tile__document div:nth-of-type(2).document-header-top-bar {
-	width: calc(100% - 8px);
+	width: calc(100% - 10px);
 }
 .tile__document .document-header-top-bar {
 	color: var(--darkmode-text);
