@@ -241,7 +241,7 @@
                         &:not(.highlight-color--green),
                         &:not(.highlight-color--blue),
                         &:not(.highlight-color--purple) {
-                            color: var(--calloutblue-text-bold-color-dark) !important;
+                            color: var(--calloutblue-text-bold-color-dark);
                         }
                     }
                 }

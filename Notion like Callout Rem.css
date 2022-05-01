@@ -216,7 +216,7 @@
 	color: var(--calloutblue-text-color-dark);
 }
 .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--red), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--orange), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--yellow), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--green), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--blue), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--purple) {
-	color: var(--calloutblue-text-bold-color-dark) !important;
+	color: var(--calloutblue-text-bold-color-dark);
 }
 .dark-mode [data-rem-container-tags~=calloutpurple] {
 	background-color: var(--calloutpurple-background-color-dark);
