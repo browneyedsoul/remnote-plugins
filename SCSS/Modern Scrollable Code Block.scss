@@ -83,8 +83,15 @@
             overflow-x:     scroll;
             white-space:    pre;
             
+            &::-webkit-scrollbar {
+                width: 8px;
+            }
             &::-webkit-scrollbar-track {
                 background-color: transparent;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: #C3C2BF;
+                border-radius: 4px;
             }
 
             // Codeblock Line Number
