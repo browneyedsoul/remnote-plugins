@@ -14,15 +14,12 @@
 	--kanban-bgcolor-archive-dark: ;
 }
 
-[data-rem-container-tags~=kanban] {
-	margin-right: 0.4rem;
-}
 [data-rem-container-tags~=kanban] .bg-white {
 	background-color: transparent;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children {
 	display: flex;
-	border-radius: 5px;
+	border: 0;
 	padding-left: 0;
 	overflow-x: scroll;
 	white-space: pre;
@@ -35,11 +32,12 @@
 	flex: 1 1 0;
 	background-color: var(--kanban-bgcolor);
 	margin-right: 0.7rem;
-	border-radius: 3px;
 	position: relative;
 	white-space: pre-wrap;
 	min-width: 390px;
 	padding-bottom: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:not(:first-child) {
 	margin-left: 0;
