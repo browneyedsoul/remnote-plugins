@@ -91,7 +91,7 @@
             }
             &::-webkit-scrollbar-thumb {
                 background-color: #C3C2BF;
-                border-radius: 4px;
+                border-radius: 3px;
             }
 
             // Codeblock Line Number
@@ -207,6 +207,10 @@
                             color: #D7DD95;
                         }
                     }
+                }
+            // Scrollbar
+                &::-webkit-scrollbar-thumb {
+                    background-color: #999;
                 }
         }
     }

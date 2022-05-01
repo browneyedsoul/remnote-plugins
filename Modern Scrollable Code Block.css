@@ -90,7 +90,7 @@
 }
 #code-node::-webkit-scrollbar-thumb {
 	background-color: #C3C2BF;
-	border-radius: 4px;
+	border-radius: 3px;
 }
 #code-node #code-node__inner .codeLine {
 	counter-increment: codeLineNumber;
@@ -239,4 +239,7 @@
 }
 .dark-mode #code-node #code-node__change-language-dropdown > i::before {
 	color: #D7DD95;
+}
+.dark-mode #code-node::-webkit-scrollbar-thumb {
+	background-color: #999;
 }
