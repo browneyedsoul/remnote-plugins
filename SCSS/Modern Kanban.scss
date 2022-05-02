@@ -2,7 +2,7 @@
     --kanban-bgcolor: #F7F6F3;
     --kanban-bgcolor-dark: #505050;
     --kanban-bgcolor-input: #FFF;
-    --kanban-bgcolor-input-dark: #222628;
+    --kanban-bgcolor-input-dark: #2C3033;
     --kanban-bgcolor-stage: ;
     --kanban-bgcolor-stage-dark: ;
     --kanban-bgcolor-inprogress: #F8F9CD;
@@ -41,8 +41,7 @@
                     white-space: pre-wrap;
                     min-width: 390px;
                     padding-bottom: 5px;
-                    border-top-left-radius: 5px;
-                    border-top-right-radius: 5px;
+                    border-radius: 5px;
 
                     &:not(:first-child) {
                         margin-left: 0;
@@ -73,6 +72,7 @@
                                     text-align: center;
                                     &::after {
                                         content: "🚧";
+                                        margin-left: 1rem;
                                     }
                                 }
                             }
@@ -88,6 +88,7 @@
                                     text-align: center;
                                     &::after {
                                         content: "✅";
+                                        margin-left: 1rem;
                                     }
                                 }
                             }
@@ -104,6 +105,7 @@
                         
                                     &::after {
                                         content: "🗃";
+                                        margin-left: 1rem;
                                     }
                                 }
                             }
@@ -145,6 +147,8 @@
                         > div:first-child {
                             background-color: rgba(0, 0, 0, 0.09);
                             margin: 0;
+                            padding-right: 1rem;
+                            padding-left: 1rem;
                             border-bottom: 1px solid grey;
                             border-top-left-radius: 5px;
                             border-top-right-radius: 5px;
