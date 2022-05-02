@@ -13,6 +13,7 @@
 	--darkmode-background-selected-darker: #1B1F23;
 	--lightmode-background-selected: #b7b7b7;
 	--darkmode-text: #dfdfd5;
+	--darkmode-text-header: #F0F0F0;
 	--darkmode-text-bold: #A3DFDF;
 	--darkmode-contrast: #ECED00;
 	--bullet-ring-color: #D8D8E4;
@@ -279,11 +280,13 @@
 			}
 		}
 	// Span Element - General Text
-		.rem-text,
+		.rem-text {
+			color: var(--darkmode-text);
+		}
 		.rem-text.rem-header--1,
 		.rem-text.rem-header--2,
 		.rem-text.rem-header--3 {
-			color: var(--darkmode-text);
+			color: var(--darkmode-text-header);
 		}
 	// Span Element - Bold Text
 		.rem-text {
@@ -2301,6 +2304,8 @@
 
 			// Remove Sticky 
 			> #hierarchy-editor {
+				margin-top: 1rem;
+
 				> .fixed {
 					display: none;
 				}

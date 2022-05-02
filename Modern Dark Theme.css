@@ -12,6 +12,7 @@
 	--darkmode-background-selected-darker: #1B1F23;
 	--lightmode-background-selected: #b7b7b7;
 	--darkmode-text: #dfdfd5;
+	--darkmode-text-header: #F0F0F0;
 	--darkmode-text-bold: #A3DFDF;
 	--darkmode-contrast: #ECED00;
 	--bullet-ring-color: #D8D8E4;
@@ -233,11 +234,13 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--red, .dark-mode .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--orange, .dark-mode .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--yellow, .dark-mode .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--green, .dark-mode .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--blue, .dark-mode .dark-mode #RemPage .document-header-top-bar .bold.highlight-color--purple {
 	color: #000;
 }
-.dark-mode .rem-text,
+.dark-mode .rem-text {
+	color: var(--darkmode-text);
+}
 .dark-mode .rem-text.rem-header--1,
 .dark-mode .rem-text.rem-header--2,
 .dark-mode .rem-text.rem-header--3 {
-	color: var(--darkmode-text);
+	color: var(--darkmode-text-header);
 }
 .dark-mode .rem-text .bold:not(.rem-header--1 .bold) .dark-mode .rem-text .bold:not(.rem-header--2 .bold) .dark-mode .rem-text .bold:not(.rem-header--3 .bold) .dark-mode .rem-text .bold:not([data-rem-tags~=highlight] .bold) .dark-mode .rem-text .bold:not(.bold.highlight-color--red) .dark-mode .rem-text .bold:not(.bold.highlight-color--orange) .dark-mode .rem-text .bold:not(.bold.highlight-color--yellow) .dark-mode .rem-text .bold:not(.bold.highlight-color--green) .dark-mode .rem-text .bold:not(.bold.highlight-color--blue) .dark-mode .rem-text .bold:not(.bold.highlight-color--purple) .dark-mode .rem-text .bold:not([data-rem-container-tags~=callout]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutred]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutorange]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutyellow]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutgreen]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutblue]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutpurple]) {
 	color: var(--darkmode-text-bold);
@@ -1534,6 +1537,9 @@ body.old-dark-mode .dark-mode-background {
 	width: -moz-fit-content;
 	width: fit-content;
 	max-width: 60vw;
+}
+.popup-menu #document-hover-preview__popup > #hierarchy-editor {
+	margin-top: 1rem;
 }
 .popup-menu #document-hover-preview__popup > #hierarchy-editor > .fixed {
 	display: none;
