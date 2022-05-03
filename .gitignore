@@ -2,3 +2,5 @@
 .DS_Store
 Icon
 *.map
+Comment.scss
+Comment.css
