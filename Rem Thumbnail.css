@@ -685,6 +685,12 @@
 	-o-object-position: center;
 	   object-position: center;
 }
+.popup-menu .RichTextViewer > .image-node__container > .image-node__container.group.inline-block.align-text-top {
+	height: 1rem !important;
+	width: auto !important;
+	min-height: 1rem !important;
+	min-width: auto !important;
+}
 
 #Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block {
 	height: 1em;
