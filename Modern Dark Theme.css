@@ -173,26 +173,29 @@ body.old-dark-mode .dark-mode-background {
 	padding: 1px 3px 1px 3px;
 }
 
-.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--red, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--orange, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--yellow, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--green, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--blue, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--purple {
+.hierarchy-editor__tag-bar {
+	line-height: 1rem;
+}
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--red, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--orange, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--yellow, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--green, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--blue, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--purple {
 	background-color: unset;
 }
-.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--red {
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--red {
 	color: var(--red-text);
 }
-.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--orange {
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--orange {
 	color: var(--orange-text);
 }
-.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--yellow {
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--yellow {
 	color: var(--yellow-text);
 	text-shadow: var(--text-shadow-yellow);
 }
-.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--green {
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--green {
 	color: var(--green-text);
 }
-.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--blue {
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--blue {
 	color: var(--blue-text);
 }
-.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--purple {
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--purple {
 	color: var(--purple-text);
 }
 
