@@ -534,81 +534,108 @@
 			}
 		}
 // Make Bullet-list by Intentional Tagging
-	[data-rem-tags~="bulletlist"], %bulletlist {
-		.rem-button__container {
-			margin-left: var(--treenode-line-spacing);
-			
-			.rem-bullet__container {
-				position: relative;
+	// Bulletlist
+		[data-rem-tags~="bulletlist"], %bulletlist {
+			.rem-button__container {
 				margin-left: var(--treenode-line-spacing);
 
-				.perfect-circle.rem-bullet--hidden-children {
-					@include triangle-hidden;
-					border-color: transparent transparent transparent var(--bullet-main);
+				> span {
+					> div.six-dot {
+						left: 40px !important;
+					}
 				}
 				
-				.perfect-circle.rem-bullet--all-children-visible {
-					@include bulletlist;
-					border-color: var(--bullet-main);
+				> span.toggle-collapse-button {
+					left: 40px !important;
 				}
-			}
-		}
-		// Move text
-			.rem-text {
-				margin-left: var(--treenode-line-spacing);
-			}
-		// Tag Declutter
-			.hierarchy-editor__tag-bar__tag {
-				background-color: transparent !important;
+				
+				.rem-bullet__container {
+					position: relative;
+					margin-left: var(--treenode-line-spacing);
 
-				span {
-					display: none;
-				}
-				.hierarchy-editor__tag-bar__tag__delete {
-					opacity: .3;
+					.perfect-circle.rem-bullet--hidden-children {
+						@include triangle-hidden;
+						border-color: transparent transparent transparent var(--bullet-main);
+					}
+					
+					.perfect-circle.rem-bullet--all-children-visible {
+						@include bulletlist;
+						border-color: var(--bullet-main);
+					}
 				}
 			}
-	}
-	[data-rem-container-tags~="bulletlists"] {
-		> div.tree-node--children {
-			> div {
-				@extend %bulletlist;
-			}
+			// Focused
+				// .rem-container--focused, %move {
+				// 	.rem-button__container {
+				// 		> span {
+				// 			> div.six-dot {
+				// 				left: 40px !important;
+				// 			}
+				// 		}
+						
+				// 		> span.toggle-collapse-button {
+				// 			left: 40px !important;
+				// 		}
+				// 	}
+				// }
+			// Move text
+				.rem-text {
+					margin-left: var(--treenode-line-spacing);
+				}
+			// Tag Declutter
+				.hierarchy-editor__tag-bar__tag {
+					background-color: transparent !important;
+
+					span {
+						display: none;
+					}
+					.hierarchy-editor__tag-bar__tag__delete {
+						opacity: .3;
+					}
+				}
 		}
-		// Tag Declutter
-			.hierarchy-editor__tag-bar__tag {
-				background-color: transparent !important;
-			
-				span {
-					display: none;
-				}
-			
-				.hierarchy-editor__tag-bar__tag__delete {
-					opacity: .3;
-				}
-			}
-	}
-	.dark-mode {
-		[data-rem-tags~="bulletlist"], %bulletlist-dark {
-			.rem-button__container {
-				.rem-bullet.rem-bullet--hidden-children {
-					@include triangle-hidden;
-					border-color: transparent transparent transparent var(--bullet-main-dark);
-				}
-				.rem-bullet.rem-bullet--all-children-visible {
-					@include bulletlist;
-					border-color: var(--bullet-main-dark);
-				}
-			}
-		}
+	// Bulletlists
 		[data-rem-container-tags~="bulletlists"] {
 			> div.tree-node--children {
 				> div {
-					@extend %bulletlist-dark;
+					@extend %bulletlist;
+				}
+			}
+			// Tag Declutter
+				.hierarchy-editor__tag-bar__tag {
+					background-color: transparent !important;
+				
+					span {
+						display: none;
+					}
+				
+					.hierarchy-editor__tag-bar__tag__delete {
+						opacity: .3;
+					}
+				}
+		}
+	// Darkmode
+		.dark-mode {
+			[data-rem-tags~="bulletlist"], %bulletlist-dark {
+				.rem-button__container {
+					.rem-bullet.rem-bullet--hidden-children {
+						@include triangle-hidden;
+						border-color: transparent transparent transparent var(--bullet-main-dark);
+					}
+					.rem-bullet.rem-bullet--all-children-visible {
+						@include bulletlist;
+						border-color: var(--bullet-main-dark);
+					}
+				}
+			}
+			[data-rem-container-tags~="bulletlists"] {
+				> div.tree-node--children {
+					> div {
+						@extend %bulletlist-dark;
+					}
 				}
 			}
 		}
-	}
 	
 	#hierarchy-editor {
 		[data-rem-tags~="bulletlist"] {
