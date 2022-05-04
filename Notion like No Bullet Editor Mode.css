@@ -403,24 +403,25 @@
 	color: #E0CD00;
 }
 
-[data-rem-tags~=bulletlist], [data-rem-container-tags~=bulletlists] > div.tree-node--children > div {
-	left: 12px;
-	width: calc(100% - 12px);
+[data-rem-container-tags~=bulletlist] {
+	left: 16px;
+	width: calc(100% - 16px);
+	position: relative;
 }
-[data-rem-tags~=bulletlist] .rem-button__container, [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container {
+[data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container, [data-rem-container-tags~=bulletlist] [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container {
 	margin-left: var(--treenode-line-spacing);
 }
-[data-rem-tags~=bulletlist] .rem-button__container > span > div.six-dot, [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container > span > div.six-dot {
+[data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container > span > div.six-dot, [data-rem-container-tags~=bulletlist] [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container > span > div.six-dot {
 	left: 40px !important;
 }
-[data-rem-tags~=bulletlist] .rem-button__container > span.toggle-collapse-button, [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container > span.toggle-collapse-button {
+[data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container > span.toggle-collapse-button, [data-rem-container-tags~=bulletlist] [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container > span.toggle-collapse-button {
 	left: 40px !important;
 }
-[data-rem-tags~=bulletlist] .rem-button__container .rem-bullet__container, [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container .rem-bullet__container {
+[data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container .rem-bullet__container, [data-rem-container-tags~=bulletlist] [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container .rem-bullet__container {
 	position: relative;
 	margin-left: var(--treenode-line-spacing);
 }
-[data-rem-tags~=bulletlist] .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--hidden-children, [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--hidden-children {
+[data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--hidden-children, [data-rem-container-tags~=bulletlist] [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--hidden-children {
 	width: 0 !important;
 	height: 0 !important;
 	border-style: solid !important;
@@ -428,7 +429,7 @@
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main);
 }
-[data-rem-tags~=bulletlist] .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--all-children-visible, [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--all-children-visible {
+[data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--all-children-visible, [data-rem-container-tags~=bulletlist] [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--all-children-visible {
 	width: 0;
 	height: 0;
 	border-style: solid;
@@ -436,16 +437,16 @@
 	border-radius: 10px;
 	border-color: var(--bullet-main);
 }
-[data-rem-tags~=bulletlist] .rem-text, [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-text {
+[data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-text, [data-rem-container-tags~=bulletlist] [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-text {
 	margin-left: var(--treenode-line-spacing);
 }
-[data-rem-tags~=bulletlist] .hierarchy-editor__tag-bar__tag, [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .hierarchy-editor__tag-bar__tag {
+[data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .hierarchy-editor__tag-bar__tag, [data-rem-container-tags~=bulletlist] [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .hierarchy-editor__tag-bar__tag {
 	background-color: transparent !important;
 }
-[data-rem-tags~=bulletlist] .hierarchy-editor__tag-bar__tag span, [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .hierarchy-editor__tag-bar__tag span {
+[data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .hierarchy-editor__tag-bar__tag span, [data-rem-container-tags~=bulletlist] [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .hierarchy-editor__tag-bar__tag span {
 	display: none;
 }
-[data-rem-tags~=bulletlist] .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete, [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
+[data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete, [data-rem-container-tags~=bulletlist] [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
 	opacity: 0.3;
 }
 

@@ -535,67 +535,71 @@
 		}
 // Make Bullet-list by Intentional Tagging
 	// Bulletlist
-		[data-rem-tags~="bulletlist"], %bulletlist {
-			left: 12px;
-			width: calc(100% - 12px);
+		[data-rem-container-tags~="bulletlist"] {
+			left: 16px;
+			width: calc(100% - 16px);
+			position: relative;
 
-			.rem-button__container {
-				margin-left: var(--treenode-line-spacing);
-
-				> span {
-					> div.six-dot {
-						left: 40px !important;
-					}
-				}
+			[data-rem-tags~="bulletlist"], %bulletlist {
 				
-				> span.toggle-collapse-button {
-					left: 40px !important;
-				}
-				
-				.rem-bullet__container {
-					position: relative;
+				.rem-button__container {
 					margin-left: var(--treenode-line-spacing);
 
-					.perfect-circle.rem-bullet--hidden-children {
-						@include triangle-hidden;
-						border-color: transparent transparent transparent var(--bullet-main);
+					> span {
+						> div.six-dot {
+							left: 40px !important;
+						}
 					}
 					
-					.perfect-circle.rem-bullet--all-children-visible {
-						@include bulletlist;
-						border-color: var(--bullet-main);
+					> span.toggle-collapse-button {
+						left: 40px !important;
 					}
-				}
-			}
-			// Focused
-				// .rem-container--focused, %move {
-				// 	.rem-button__container {
-				// 		> span {
-				// 			> div.six-dot {
-				// 				left: 40px !important;
-				// 			}
-				// 		}
-						
-				// 		> span.toggle-collapse-button {
-				// 			left: 40px !important;
-				// 		}
-				// 	}
-				// }
-			// Move text
-				.rem-text {
-					margin-left: var(--treenode-line-spacing);
-				}
-			// Tag Declutter
-				.hierarchy-editor__tag-bar__tag {
-					background-color: transparent !important;
+					
+					.rem-bullet__container {
+						position: relative;
+						margin-left: var(--treenode-line-spacing);
 
-					span {
-						display: none;
-					}
-					.hierarchy-editor__tag-bar__tag__delete {
-						opacity: .3;
+						.perfect-circle.rem-bullet--hidden-children {
+							@include triangle-hidden;
+							border-color: transparent transparent transparent var(--bullet-main);
+						}
+						
+						.perfect-circle.rem-bullet--all-children-visible {
+							@include bulletlist;
+							border-color: var(--bullet-main);
+						}
 					}
 				}
+				// Focused
+					// .rem-container--focused, %move {
+					// 	.rem-button__container {
+					// 		> span {
+					// 			> div.six-dot {
+					// 				left: 40px !important;
+					// 			}
+					// 		}
+							
+					// 		> span.toggle-collapse-button {
+					// 			left: 40px !important;
+					// 		}
+					// 	}
+					// }
+				// Move text
+					.rem-text {
+						margin-left: var(--treenode-line-spacing);
+					}
+				// Tag Declutter
+					.hierarchy-editor__tag-bar__tag {
+						background-color: transparent !important;
+
+						span {
+							display: none;
+						}
+						.hierarchy-editor__tag-bar__tag__delete {
+							opacity: .3;
+						}
+					}
+			}
 		}
 	// Bulletlists
 		[data-rem-container-tags~="bulletlists"] {
