@@ -536,6 +536,9 @@
 // Make Bullet-list by Intentional Tagging
 	// Bulletlist
 		[data-rem-tags~="bulletlist"], %bulletlist {
+			left: 12px;
+			width: calc(100% - 12px);
+
 			.rem-button__container {
 				margin-left: var(--treenode-line-spacing);
 
