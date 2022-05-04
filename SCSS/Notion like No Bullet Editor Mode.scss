@@ -623,15 +623,17 @@
 		}
 	// Darkmode
 		.dark-mode {
-			[data-rem-tags~="bulletlist"], %bulletlist-dark {
-				.rem-button__container {
-					.rem-bullet.rem-bullet--hidden-children {
-						@include triangle-hidden;
-						border-color: transparent transparent transparent var(--bullet-main-dark);
-					}
-					.rem-bullet.rem-bullet--all-children-visible {
-						@include bulletlist;
-						border-color: var(--bullet-main-dark);
+			[data-rem-container-tags~="bulletlist"] {
+				[data-rem-tags~="bulletlist"], %bulletlist-dark {
+					.rem-button__container {
+						.rem-bullet.rem-bullet--hidden-children {
+							@include triangle-hidden;
+							border-color: transparent transparent transparent var(--bullet-main-dark);
+						}
+						.rem-bullet.rem-bullet--all-children-visible {
+							@include bulletlist;
+							border-color: var(--bullet-main-dark);
+						}
 					}
 				}
 			}

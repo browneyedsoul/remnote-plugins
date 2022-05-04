@@ -460,7 +460,7 @@
 	opacity: 0.3;
 }
 
-.dark-mode [data-rem-tags~=bulletlist] .rem-button__container .rem-bullet.rem-bullet--hidden-children, .dark-mode [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container .rem-bullet.rem-bullet--hidden-children {
+.dark-mode [data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container .rem-bullet.rem-bullet--hidden-children, .dark-mode [data-rem-container-tags~=bulletlist] [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container .rem-bullet.rem-bullet--hidden-children {
 	width: 0 !important;
 	height: 0 !important;
 	border-style: solid !important;
@@ -468,7 +468,7 @@
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
-.dark-mode [data-rem-tags~=bulletlist] .rem-button__container .rem-bullet.rem-bullet--all-children-visible, .dark-mode [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container .rem-bullet.rem-bullet--all-children-visible {
+.dark-mode [data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container .rem-bullet.rem-bullet--all-children-visible, .dark-mode [data-rem-container-tags~=bulletlist] [data-rem-container-tags~=bulletlists] > div.tree-node--children > div .rem-button__container .rem-bullet.rem-bullet--all-children-visible {
 	width: 0;
 	height: 0;
 	border-style: solid;
