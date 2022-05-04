@@ -248,13 +248,15 @@
 				}
 			}
 		// Backlink Preview
-			.RichTextViewer {
-				> .image-node__container {
-					> .image-node__container.group.inline-block.align-text-top {
-						height: 1rem !important;
-						width: auto !important;
-						min-height: 1rem !important;
-						min-width: auto !important;
+			.px-2.py-3 {
+				.RichTextViewer {
+					> .image-node__container {
+						> .image-node__container.group.inline-block.align-text-top {
+							height: 1rem !important;
+							width: auto !important;
+							min-height: 1rem !important;
+							min-width: auto !important;
+						}
 					}
 				}
 			}
