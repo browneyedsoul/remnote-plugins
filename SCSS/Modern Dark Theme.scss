@@ -231,6 +231,14 @@
 							color: var(--purple-text);
 						}
 					}
+					.highlight-color--red,
+					.highlight-color--orange,
+					.highlight-color--yellow,
+					.highlight-color--green,
+					.highlight-color--blue,
+					.highlight-color--purple {
+						margin-bottom: unset;
+					}
 				}
 			}
 		}

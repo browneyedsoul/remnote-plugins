@@ -198,6 +198,14 @@ body.old-dark-mode .dark-mode-background {
 .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--purple {
 	color: var(--purple-text);
 }
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--red,
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--orange,
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--yellow,
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--green,
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--blue,
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--purple {
+	margin-bottom: unset;
+}
 
 .dark-mode .rem-container--todo-finished {
 	color: #A1A1A1;
