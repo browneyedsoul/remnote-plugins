@@ -1313,13 +1313,15 @@
 
 						.flex {
 							display: inline;
-						}
-						// Hierarchy item
+						
+							// Hierarchy item
 							.parent-link {
 								color: var(--darkmode-text);
 								border: 1px solid #7F7F7F;
 								margin-top: 2px;
 								margin-bottom: 2px;
+
+								display: inline-flex;
 
 								&:hover {
 									background-color: var(--darkmode-background-selected-darker);
@@ -1329,7 +1331,13 @@
 									position: relative;
 									top: 3px;
 								}
+
+								.RichTextViewer {
+									display: flex;
+									align-items: center;
+								}
 							}
+						}
 						
 					}
 				// Multi Line Breadcrumbs

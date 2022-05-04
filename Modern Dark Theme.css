@@ -836,18 +836,23 @@ body.old-dark-mode .dark-mode-background {
 .tile__document .document-header-top-bar > div:nth-of-type(1) .flex {
 	display: inline;
 }
-.tile__document .document-header-top-bar > div:nth-of-type(1) .parent-link {
+.tile__document .document-header-top-bar > div:nth-of-type(1) .flex .parent-link {
 	color: var(--darkmode-text);
 	border: 1px solid #7F7F7F;
 	margin-top: 2px;
 	margin-bottom: 2px;
+	display: inline-flex;
 }
-.tile__document .document-header-top-bar > div:nth-of-type(1) .parent-link:hover {
+.tile__document .document-header-top-bar > div:nth-of-type(1) .flex .parent-link:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.tile__document .document-header-top-bar > div:nth-of-type(1) .parent-link + span.text-gray-40 {
+.tile__document .document-header-top-bar > div:nth-of-type(1) .flex .parent-link + span.text-gray-40 {
 	position: relative;
 	top: 3px;
+}
+.tile__document .document-header-top-bar > div:nth-of-type(1) .flex .parent-link .RichTextViewer {
+	display: flex;
+	align-items: center;
 }
 .tile__document .document-header-top-bar .flex-nowrap {
 	flex-wrap: wrap;
