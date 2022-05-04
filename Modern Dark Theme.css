@@ -1712,7 +1712,7 @@ body.old-dark-mode .dark-mode-background {
 	background-color: var(--darkmode-background-selected-darker);
 }
 .dark-mode #Popup #PopupContent #delete-confirm-popup > div:nth-of-type(2) > div:nth-of-type(2) > div {
-	color: var(--darkmode-contrast);
+	color: var(--darkmode-text);
 }
 .dark-mode #Popup #PopupContent #delete-confirm-popup > div:nth-of-type(3) .button.bg-white {
 	background-color: var(--darkmode-background-selected-darker);
