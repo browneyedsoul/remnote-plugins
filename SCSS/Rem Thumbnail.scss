@@ -292,19 +292,13 @@
 // Header & Normal Rem-Text with "Thumbnail(TN)" Tag
 	.rem-header--1,
 	.rem-header--2,
-	.rem-header--3 {
+	.rem-header--3,
+	[data-rem-tags~="tn"] {
 		.EditorContainer {
 			@include thumbnail-set;
 		}
 	}
-	[data-rem-container-tags~="tn"] {
-		>.tree-node--parent {
-			[data-rem-tags~="tn"] {
-				.EditorContainer {
-					@include thumbnail-set;
-				}
-			}
-		}
+	[data-rem-container-tags~="tnc"] {
 		> .tree-node--children {
 			> .tree-node-container {
 				> .tree-node--parent {

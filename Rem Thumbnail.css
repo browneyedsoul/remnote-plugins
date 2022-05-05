@@ -815,13 +815,15 @@
 
 .rem-header--1 .EditorContainer span.image-node__container.inline-block,
 .rem-header--2 .EditorContainer span.image-node__container.inline-block,
-.rem-header--3 .EditorContainer span.image-node__container.inline-block {
+.rem-header--3 .EditorContainer span.image-node__container.inline-block,
+[data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block {
 	height: 1em;
 	width: auto;
 }
 .rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container,
 .rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container,
-.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container {
+.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container,
+[data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -834,7 +836,8 @@
 }
 .rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node,
 .rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node,
-.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node,
+[data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
@@ -842,23 +845,25 @@
 }
 .rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
 .rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
-.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
+[data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
 .rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
 .rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
-.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
+[data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-[data-rem-container-tags~=tn] > .tree-node--parent [data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block {
+[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block {
 	height: 1em;
 	width: auto;
 }
-[data-rem-container-tags~=tn] > .tree-node--parent [data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container {
+[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -869,46 +874,16 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-[data-rem-container-tags~=tn] > .tree-node--parent [data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-[data-rem-container-tags~=tn] > .tree-node--parent [data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-[data-rem-container-tags~=tn] > .tree-node--parent [data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-}
-[data-rem-container-tags~=tn] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block {
-	height: 1em;
-	width: auto;
-}
-[data-rem-container-tags~=tn] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block > div.image-node__container {
-	height: 1em !important;
-	width: unset !important;
-	max-width: 1em !important;
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-	min-width: 1em !important;
-	min-height: unset !important;
-}
-[data-rem-container-tags~=tn] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node {
-	-o-object-fit: contain !important;
-	   object-fit: contain !important;
-	-o-object-position: center;
-	   object-position: center;
-}
-[data-rem-container-tags~=tn] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
-	display: none;
-}
-[data-rem-container-tags~=tn] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
