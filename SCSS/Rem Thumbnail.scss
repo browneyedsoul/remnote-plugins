@@ -183,6 +183,20 @@
 					}
 				}
 			}
+			// Sticky Header
+				#hierarchy-editor {
+					> .fixed {
+						> div {
+							> .tree-node--children {
+								> .tree-node-container {
+									.EditorContainer {
+										@include thumbnail-set();
+									}
+								}
+							}
+						}
+					}
+				}
 		}
 	}
 // Hidden Page Hierarchy Style
