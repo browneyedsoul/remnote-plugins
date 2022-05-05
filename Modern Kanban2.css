@@ -1,0 +1,139 @@
+:root {
+	--kanban-bgcolor: #F7F6F3;
+	--kanban-bgcolor-dark: #505050;
+	--kanban-bgcolor-input: #FFF;
+	--kanban-bgcolor-input-dark: #2C3033;
+	--kanban-bgcolor-stage: ;
+	--kanban-bgcolor-stage-dark: ;
+	--kanban-bgcolor-inprogress: #F8F9CD;
+	--kanban-bgcolor-inprogress-dark: #63572B;
+	--kanban-bgcolor-done: #D5EED7;
+	--kanban-bgcolor-done-dark: #304F32;
+	--kanban-bgcolor-archive: ;
+	--kanban-bgcolor-archive-dark: ;
+}
+
+[data-rem-container-tags~=kanban2] .bg-white {
+	background-color: transparent;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children {
+	display: flex;
+	border: 0;
+	padding-left: 0;
+	overflow-x: scroll;
+	white-space: pre;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children::-webkit-scrollbar-thumb {
+	background-color: #EEE;
+	border-radius: 2px;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container {
+	flex: 1 1 0;
+	background-color: var(--kanban-bgcolor);
+	margin-right: 0.7rem;
+	position: relative;
+	white-space: pre-wrap;
+	min-width: -webkit-fit-content;
+	min-width: -moz-fit-content;
+	min-width: fit-content;
+	padding-bottom: 5px;
+	border-radius: 5px;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > .tree-node--parent .rem-text {
+	font-weight: 650;
+	text-align: center;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > .tree-node--children {
+	left: 0 !important;
+	width: 100%;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container {
+	background-color: var(--kanban-bgcolor-input);
+	margin: 5px;
+	border-radius: 3px;
+	box-shadow: 0 0 1px 0;
+	margin-left: 1.2rem;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container > div:first-child .rem-text {
+	padding-left: 25px;
+	margin-left: 0;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > .tree-node--children > .portal-tree-node-box {
+	background-color: var(--kanban-bgcolor-input);
+	margin: 5px;
+	border-radius: 3px !important;
+	box-shadow: 0 0 1px 0 !important;
+	margin-left: 0.3rem !important;
+	margin-right: 0.3rem !important;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container[data-rem-container-tags~=rd] {
+	background-color: #FFE9EC;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container[data-rem-container-tags~=or] {
+	background-color: #FDEDD9;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container[data-rem-container-tags~=yl] {
+	background-color: #F8F9CD;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container[data-rem-container-tags~=gr] {
+	background-color: #D5EED7;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container[data-rem-container-tags~=bl] {
+	background-color: #E6F3F6;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container[data-rem-container-tags~=vt] {
+	background-color: #FEEEFC;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > div:first-child {
+	background-color: rgba(0, 0, 0, 0.09);
+	margin: 0;
+	padding-left: 1rem;
+	border-bottom: 1px solid grey;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+[data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > .tree-node--children {
+	margin: 0;
+	padding: 0;
+	border: unset;
+}
+[data-rem-container-tags~=kanban2] .EditorContainer > .text-gray-20 {
+	display: none;
+}
+[data-rem-container-tags~=kanban2] .rem-button__container .six-dot .text-gray-15 {
+	color: #000;
+}
+
+.dark-mode [data-rem-container-tags~=kanban2] .rem-button__container .six-dot .text-gray-15 {
+	color: #DDD;
+}
+.dark-mode [data-rem-container-tags~=kanban2] > .tree-node--children::-webkit-scrollbar-thumb {
+	background-color: #222;
+}
+.dark-mode [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container {
+	background-color: var(--kanban-bgcolor-dark);
+}
+.dark-mode [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container {
+	background-color: var(--kanban-bgcolor-input-dark);
+}
+.dark-mode [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > .tree-node--children > .portal-tree-node-box {
+	background-color: var(--kanban-bgcolor-input-dark);
+}
+.dark-mode [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container[data-rem-container-tags~=rd] {
+	background-color: #572924;
+}
+.dark-mode [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container[data-rem-container-tags~=or] {
+	background-color: #553D24;
+}
+.dark-mode [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container[data-rem-container-tags~=yl] {
+	background-color: #453E1E;
+}
+.dark-mode [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container[data-rem-container-tags~=gr] {
+	background-color: #253F27;
+}
+.dark-mode [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container[data-rem-container-tags~=bl] {
+	background-color: #183C4D;
+}
+.dark-mode [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container[data-rem-container-tags~=vt] {
+	background-color: #43273F;
+}
