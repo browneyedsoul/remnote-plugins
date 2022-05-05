@@ -19,14 +19,14 @@
                 height: fit-content;
             }
         }
-        // Tag Declutter
-            .hierarchy-editor__tag-bar__tag {
-                background-color: transparent !important;
+        // // Tag Declutter
+        //     .hierarchy-editor__tag-bar__tag {
+        //         background-color: transparent !important;
 
-                span {
-                    display: none;
-                }
-            }
+        //         span {
+        //             display: none;
+        //         }
+        //     }
 	}
 	[data-rem-tags~="1star"] .rem-text::before {content: "⭐️◾️◾️◾️◾️";}
 	[data-rem-tags~="2star"] .rem-text::before {content: "⭐️⭐️◾️◾️◾️";}
