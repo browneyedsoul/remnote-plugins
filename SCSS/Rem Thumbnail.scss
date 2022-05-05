@@ -351,6 +351,11 @@
 		.rem-text.rem-header--3 {
 			@include thumbnail-set;
 		}
+		.tree-node-container {
+			> .tree-node--parent {
+				@include thumbnail-set;
+			}
+		}
 	}
 // Rem Reference
 	.rem-reference {
