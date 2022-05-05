@@ -351,9 +351,15 @@
 		.rem-text.rem-header--3 {
 			@include thumbnail-set;
 		}
-		.tree-node-container {
-			> .tree-node--parent {
-				@include thumbnail-set;
+		> div {
+			> .tree-node-container {
+				> .tree-node--children {
+					> .tree-node-container {
+						>.tree-node--parent {
+							@include thumbnail-set;
+						}
+					}
+				}
 			}
 		}
 	}

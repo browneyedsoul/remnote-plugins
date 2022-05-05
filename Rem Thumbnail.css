@@ -1053,11 +1053,11 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.portal-tree-node-box .tree-node-container > .tree-node--parent span.image-node__container.inline-block {
+.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.image-node__container.inline-block {
 	height: 1em;
 	width: auto;
 }
-.portal-tree-node-box .tree-node-container > .tree-node--parent span.image-node__container.inline-block > div.image-node__container {
+.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.image-node__container.inline-block > div.image-node__container {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -1068,16 +1068,16 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.portal-tree-node-box .tree-node-container > .tree-node--parent span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.image-node__container.inline-block > div.image-node__container > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.portal-tree-node-box .tree-node-container > .tree-node--parent span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.portal-tree-node-box .tree-node-container > .tree-node--parent span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
