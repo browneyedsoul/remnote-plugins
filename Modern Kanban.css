@@ -4,14 +4,6 @@
 	--kanban-bgcolor-dark: #505050;
 	--kanban-bgcolor-input: #FFF;
 	--kanban-bgcolor-input-dark: #2C3033;
-	--kanban-bgcolor-stage: ;
-	--kanban-bgcolor-stage-dark: ;
-	--kanban-bgcolor-inprogress: #F8F9CD;
-	--kanban-bgcolor-inprogress-dark: #63572B;
-	--kanban-bgcolor-done: #D5EED7;
-	--kanban-bgcolor-done-dark: #304F32;
-	--kanban-bgcolor-archive: ;
-	--kanban-bgcolor-archive-dark: ;
 }
 
 [data-rem-container-tags~=kanban] .bg-white {
@@ -38,8 +30,9 @@
 	padding-bottom: 5px;
 	border-radius: 5px;
 }
-[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:not(:first-child) {
-	margin-left: 0;
+[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container > .tree-node--parent .rem-text {
+	font-weight: 650;
+	text-align: center;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(1) {
 	background-color: var(--kanban-bgcolor);
@@ -47,22 +40,15 @@
 	min-width: -moz-fit-content;
 	min-width: fit-content;
 }
-[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(1) > .tree-node--parent .rem-text {
-	font-weight: 650;
-	text-align: center;
-}
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(1) > .tree-node--parent .rem-text::after {
 	content: "📥";
+	margin-left: 1rem;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(2) {
 	background-color: var(--kanban-bgcolor-inprogress);
 	min-width: -webkit-fit-content;
 	min-width: -moz-fit-content;
 	min-width: fit-content;
-}
-[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(2) > .tree-node--parent .rem-text {
-	font-weight: 650;
-	text-align: center;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(2) > .tree-node--parent .rem-text::after {
 	content: "🚧";
@@ -74,10 +60,6 @@
 	min-width: -moz-fit-content;
 	min-width: fit-content;
 }
-[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(3) > .tree-node--parent .rem-text {
-	font-weight: 650;
-	text-align: center;
-}
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(3) > .tree-node--parent .rem-text::after {
 	content: "✅";
 	margin-left: 1rem;
@@ -87,10 +69,6 @@
 	min-width: -webkit-fit-content;
 	min-width: -moz-fit-content;
 	min-width: fit-content;
-}
-[data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(4) > .tree-node--parent .rem-text {
-	font-weight: 650;
-	text-align: center;
 }
 [data-rem-container-tags~=kanban] > .tree-node--children > .tree-node-container:nth-child(4) > .tree-node--parent .rem-text::after {
 	content: "🗃";
