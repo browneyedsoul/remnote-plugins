@@ -23,7 +23,7 @@
 }
 ```
 
-![d](/RemNote-CSS-Library/Assets/UI-alias.gif)
+![d](../Assets/UI-alias.gif)
 
 ## Backlink Remover
 
