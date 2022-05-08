@@ -13,6 +13,18 @@
 }
 ```
 
+## Hide Aliases until mouse hovered
+
+```css
+.tree-node-container > .tree-node--children > .tree-node-container[data-rem-container-tags~=aliases]:not(:hover) {
+	display: block;
+	max-height: 4px;
+	overflow: hidden;
+}
+```
+
+![d](/RemNote-CSS-Library/Assets/UI-alias.gif)
+
 ## Backlink Remover
 
 > Sometimes, some rems don't need to represent all the backlinks.
