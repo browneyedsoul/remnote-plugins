@@ -16,9 +16,11 @@
 ## Hide Aliases until mouse hovered
 
 ```css
-.tree-node-container > .tree-node--children > .tree-node-container[data-rem-container-tags~=aliases]:not(:hover) {
+.tree-node-container > .tree-node--children > .tree-node-container[data-rem-container-tags~=aliases]:not(:hover):not(:focus-within) {
 	display: block;
-	max-height: 4px;
+	background-color: #ECECEC;
+	border-radius: 2px;
+	max-height: 6px;
 	overflow: hidden;
 }
 ```
