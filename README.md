@@ -207,6 +207,7 @@
  ```css
  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall2.css");
  ```
+
  <img src="Assets/ActiveRecall2.gif">
  </details>
  
@@ -605,9 +606,9 @@
 
  ---
 
-<!-- Move Omni Help Button for Content Visibility : Declutter ? Button at the bottom right -->
+<!-- Move Omni Help Button for Content Visibility : Declutter ? Button at the lower right -->
   <details>
-    <summary>Move Omni Help Button for Content Visibility : Declutter ? Button at the right bottom</summary>
+    <summary>Move Omni Help Button for Content Visibility : Declutter ? Button at the lower right</summary>
   <img src="https://user-images.githubusercontent.com/56161102/148634119-6963a464-0297-4ae5-8d63-e275de339215.png">
 
   ```css
