@@ -34,11 +34,6 @@
 	width: -moz-fit-content;
 	width: fit-content;
 }
-[data-rem-container-tags~=fit] > .tree-node--children {
-	width: -webkit-fit-content;
-	width: -moz-fit-content;
-	width: fit-content;
-}
 
 .popup-menu #document-hover-preview__popup #hierarchy-editor [data-rem-container-tags~=table90] .tree-node--children,
 .popup-menu #document-hover-preview__popup #hierarchy-editor [data-rem-container-tags~=table120] .tree-node--children,
