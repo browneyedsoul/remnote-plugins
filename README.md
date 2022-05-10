@@ -94,6 +94,8 @@
  </details>
 
  ---
+ <br>
+ <br>
 
 # Tricks
 
@@ -133,7 +135,7 @@
  <br>
  <br>
 
-# Tricks - Tag-related Gimmick series
+# Tricks - Tag-related Gimmick Series
 
 <!-- NOTICE : Good Companion Apps for Easy-Tagging -->
  <details>
@@ -705,11 +707,13 @@
  </details>
 
  ---
+ <br>
+ <br>
+
+# The SUM of all the Theme and Snippets
 
 <!-- The SUM of all the Theme and Snippets -->
-
- # The SUM of all the Theme and Snippets
-
+ 
  ```css
  /* Modern Dark Theme */
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Dark%20Theme.css");
