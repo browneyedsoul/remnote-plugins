@@ -223,6 +223,7 @@
                                         background-color: var(--table-cell-background-color);
                                         border-left: 0.07rem solid var(--table-border-color);
                                         flex: 1 1 0;
+                                        padding-right: 0.3rem;
 
                                         // For Selecting Dense-width Cell Text Eclipsed with Rem-container
                                             .rich-text-editor {
@@ -374,11 +375,13 @@
     [data-rem-container-tags~="table1170"] > .tree-node--children > .tree-node-container > :first-child {width: 1170px !important;}
     [data-rem-container-tags~="table1200"]  > .tree-node--children > .tree-node-container > :first-child {width: 1200px !important;}
 // Table Column Color Preset
+    [data-rem-container-tags~="th"],
 	[data-rem-container-tags~="tablecolor"] {
         background-color: var(--table-columnrow-background-color) !important;
         font-weight: bold;
         text-align: center;
-
+        
+        [data-rem-tags~="th"],
         [data-rem-tags~="tablecolor"] {
             > .tree-node--parent {
                 height: 100%;
