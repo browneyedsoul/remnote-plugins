@@ -2,6 +2,10 @@
     /* Global Code Style */
         --code-font-family: "Roboto Mono", "Fira code", monospace;
         --code-font-size: 0.9em;
+        --inline-code-color: #E64400;
+        --inline-code-color-dark: #DCDA7A;
+        --inline-code-background: #F7F6F3;
+        --inline-code-background-dark: #282C30;
     /* Code Block Line Number Style */
         --line-number-width: 40px;
         --line-number-color: #C7CCCF;
@@ -156,6 +160,12 @@
         }
 // Darkmode Compatibility
     .dark-mode {
+        // Inline Code
+            .quote {
+                color: var(--inline-code-color-dark);
+                background-color: var(--inline-code-background-dark);
+            }
+        // Code Block
         #code-node {
             // Code Style
                 &:not(.token.property):not(.token.function):not(.token.string):not(.token.builtin):not(.token.comment):not(.token.selector):not(.token.keyword):not(.token.number):not(.token.operator):not(.token.punctuation),
