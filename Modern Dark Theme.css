@@ -206,9 +206,6 @@ body.old-dark-mode .dark-mode-background {
 .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--purple {
 	margin-bottom: unset;
 }
-.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .text-icon {
-	top: unset;
-}
 
 .dark-mode .rem-container--todo-finished {
 	color: #A1A1A1;
