@@ -264,9 +264,6 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text-bold);
 	font-weight: 600;
 }
-.dark-mode [data-rem-tags~=highlight] .rem-text .EditorContainer .bold {
-	color: #000 !important;
-}
 .dark-mode .quote {
 	color: var(--inline-code-color-dark);
 	background-color: var(--inline-code-background-dark);

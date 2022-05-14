@@ -347,15 +347,6 @@
 				}
 			}
 		}
-		[data-rem-tags~="highlight"] {
-			.rem-text {
-				.EditorContainer {
-					.bold {
-						color: #000 !important;
-					}
-				}
-			}
-		}
 	// Span Element - Inline Code
 		.quote {
 			color: var(--inline-code-color-dark);
