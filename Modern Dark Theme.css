@@ -47,22 +47,22 @@
 	--purple-text: #a142f4;
 	--purple-text-dark: #bf96f4;
 	--highlight-color--red: #ffb9af;
-	--highlight-color--red-light: #FFD8CF;
+	--highlight-color--red-light: #FFE4DF;
 	--highlight-color--red-dark: #FFA39C;
 	--highlight-color--orange: #ffca8c;
-	--highlight-color--orange-light: #FFDEB7;
+	--highlight-color--orange-light: #FFE9CC;
 	--highlight-color--orange-dark: #F3C082;
 	--highlight-color--yellow: #EDED85;
-	--highlight-color--yellow-light: #F8FAA5;
+	--highlight-color--yellow-light: #FDFFAE;
 	--highlight-color--yellow-dark: #DBD54B;
 	--highlight-color--green: #9fe39b;
-	--highlight-color--green-light: #C9F3C6;
+	--highlight-color--green-light: #D8FFD1;
 	--highlight-color--green-dark: #ACCEAD;
 	--highlight-color--blue: #bad7eb;
 	--highlight-color--blue-light: #D4EEFF;
 	--highlight-color--blue-dark: #B2D7EB;
 	--highlight-color--purple: #e6c9eb;
-	--highlight-color--purple-light: #F7DFFF;
+	--highlight-color--purple-light: #F5E9FF;
 	--highlight-color--purple-dark: #DDC3F0;
 	--pdf-highlight-color-red: #ffd0c3;
 	--pdf-highlight-color-orange: #fddab6;
@@ -263,6 +263,12 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .rem-text .EditorContainer [data-slate-node~=element] .bold:not(.bold.highlight-color--red):not(.bold.highlight-color--orange):not(.bold.highlight-color--yellow):not(.bold.highlight-color--green):not(.bold.highlight-color--blue):not(.bold.highlight-color--purple):not(.rem-text.rem-header--1 .bold):not(.rem-text.rem-header--2 .bold):not(.rem-text.rem-header--3 .bold) {
 	color: var(--darkmode-text-bold);
 	font-weight: 600;
+}
+.dark-mode [data-rem-tags~=highlight] > div > span > div.rem-text > div.EditorContainer > span > span.RichTextViewer > span.bold {
+	color: #000 !important;
+}
+.dark-mode [data-rem-tags~=highlight] > div > span > div.rem-text > div > div.EditorContainer > div[data-slate-node~=element] > span[data-slate-node~=text] > span.bold {
+	color: #000 !important;
 }
 .dark-mode .quote {
 	color: var(--inline-code-color-dark);
