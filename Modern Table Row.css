@@ -826,6 +826,7 @@
 	border-left: 0.07rem solid var(--table-border-color);
 	flex: 1 1 0;
 	padding-right: 0.3rem;
+	width: 99%;
 }
 #hierarchy-editor [data-rem-container-tags~=table90] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container .rich-text-editor,
 #hierarchy-editor [data-rem-container-tags~=table120] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container .rich-text-editor,
