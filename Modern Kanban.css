@@ -1,11 +1,18 @@
 @charset "UTF-8";
 :root {
+	--kanban-border: #DDD;
+	--kanban-border-dark: #535353;
 	--kanban-bgcolor: #F7F6F3;
 	--kanban-bgcolor-dark: #505050;
 	--kanban-bgcolor-input: #FFF;
 	--kanban-bgcolor-input-dark: #2C3033;
 }
 
+[data-rem-container-tags~=kanban] {
+	border: 0.1rem solid var(--kanban-border);
+	border-radius: 4px;
+	margin: 0.5rem 0.7rem 0.5rem 1.6rem;
+}
 [data-rem-container-tags~=kanban] .bg-white {
 	background-color: transparent;
 }
@@ -118,6 +125,9 @@
 	color: #000;
 }
 
+.dark-mode [data-rem-container-tags~=kanban] {
+	border: 0.1rem solid var(--kanban-border-dark);
+}
 .dark-mode [data-rem-container-tags~=kanban] .rem-button__container .six-dot .text-gray-15 {
 	color: #DDD;
 }

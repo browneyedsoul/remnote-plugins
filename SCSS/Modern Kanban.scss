@@ -1,4 +1,6 @@
 :root {
+    --kanban-border: #DDD;
+    --kanban-border-dark: #535353;
     --kanban-bgcolor: #F7F6F3;
     --kanban-bgcolor-dark: #505050;
     --kanban-bgcolor-input: #FFF;
@@ -6,6 +8,10 @@
 }
 
 [data-rem-container-tags~=kanban] {
+    border: 0.1rem solid var(--kanban-border);
+    border-radius: 4px;
+	margin: 0.5rem 0.7rem 0.5rem 1.6rem;
+
     // Declutter
         .bg-white {
             background-color: transparent;
@@ -166,6 +172,8 @@
 // Darkmode
     .dark-mode {
         [data-rem-container-tags~=kanban] {
+            border: 0.1rem solid var(--kanban-border-dark);
+            
             // rem container
                 .rem-button__container {
                     .six-dot {
