@@ -6,13 +6,13 @@
 	--font-size-header-1: 1.75rem;
 	--font-size-header-2: 1.5rem;
 	--font-size-header-3: 1.25rem;
-	--darkmode-background: #2f3437;
+	--darkmode-background: #2F3437;
 	--darkmode-background-button: #1B1F23;
 	--darkmode-background-sidebar: #2A2A2A;
-	--darkmode-background-selected: #4a5458;
+	--darkmode-background-selected: #4A5458;
 	--darkmode-background-selected-darker: #1B1F23;
-	--lightmode-background-selected: #b7b7b7;
-	--darkmode-text: #dfdfd5;
+	--lightmode-background-selected: #B7B7B7;
+	--darkmode-text: #DFDFD5;
 	--darkmode-text-header: #EAEAEA;
 	--darkmode-text-bold: #A3DFDF;
 	--darkmode-contrast: #ECED00;
@@ -21,59 +21,65 @@
 	--bullet-core-color: #2A2A36;
 	--bullet-core-color-dark: #1B1F23;
 	--code-font-family: "Roboto Mono", "Fira code", monospace;
-	--code-font-size: 0.9em;
+	--code-font-size: 1em;
 	--inline-code-color: #E64400;
 	--inline-code-color-dark: #DCDA7A;
 	--inline-code-background: #F7F6F3;
 	--inline-code-background-dark: #282C30;
 	--reference-text: #000;
-	--reference-text-dark: #dfdfd5;
-	--reference-background: #ececec;
+	--reference-text-dark: #DFDFD5;
+	--reference-background: #ECECEC;
 	--reference-background-dark: #282C30;
 	--popup-background-hover: #F4F4FA;
-	--line-color: #dddddd;
+	--line-color: #DDD;
 	--line-color-dark: #535353;
 	--link-node-color: #002DB1;
-	--link-node-color-dark: #94d2ff;
-	--red-text: #ff4a44;
-	--red-text-dark: #fd776f;
-	--orange-text: #c26f1c;
-	--orange-text-dark: #f0a264;
+	--link-node-color-dark: #94D2FF;
+	--red-text: #FF4A44;
+	--red-text-dark: #FD776F;
+	--orange-text: #C26F1C;
+	--orange-text-dark: #F0A264;
 	--yellow-text: #000;
 	--yellow-text-dark: #EFD10A;
-	--green-text: #34a853;
+	--green-text: #34A853;
 	--green-text-dark: #3FCC5E;
 	--blue-text: #3C85FF;
-	--blue-text-dark: #98bfe2;
-	--purple-text: #a142f4;
-	--purple-text-dark: #bf96f4;
-	--highlight-color--red: #ffb9af;
+	--blue-text-dark: #98BFE2;
+	--purple-text: #A142F4;
+	--purple-text-dark: #BF96F4;
+	--highlight-color--red: #FFB9AF;
 	--highlight-color--red-light: #FFE4DF;
 	--highlight-color--red-dark: #FFA39C;
-	--highlight-color--orange: #ffca8c;
+	--highlight-color--red-text-dark: #FFC6BD;
+	--highlight-color--orange: #FFCA8C;
 	--highlight-color--orange-light: #FFE9CC;
 	--highlight-color--orange-dark: #F3C082;
+	--highlight-color--orange-text-dark: #FFDAB8;
 	--highlight-color--yellow: #EDED85;
 	--highlight-color--yellow-light: #FDFFAE;
 	--highlight-color--yellow-dark: #DBD54B;
-	--highlight-color--green: #9fe39b;
+	--highlight-color--yellow-text-dark: #E8E67D;
+	--highlight-color--green: #9FE39B;
 	--highlight-color--green-light: #D8FFD1;
 	--highlight-color--green-dark: #ACCEAD;
-	--highlight-color--blue: #bad7eb;
+	--highlight-color--green-text-dark: #B3DDAB;
+	--highlight-color--blue: #BAD7EB;
 	--highlight-color--blue-light: #D4EEFF;
 	--highlight-color--blue-dark: #B2D7EB;
-	--highlight-color--purple: #e6c9eb;
+	--highlight-color--blue-text-dark: #A7DCE8;
+	--highlight-color--purple: #E6C9EB;
 	--highlight-color--purple-light: #F5E9FF;
 	--highlight-color--purple-dark: #DDC3F0;
-	--pdf-highlight-color-red: #ffd0c3;
-	--pdf-highlight-color-orange: #fddab6;
-	--pdf-highlight-color-yellow: #fff34c;
-	--pdf-highlight-color-green: #bbf4be;
-	--pdf-highlight-color-blue: #d2eef9;
-	--pdf-highlight-color-purple: #f5e0fe;
-	--text-shadow: 0.01em 0.01em 0.01em #727e84;
+	--highlight-color--purple-text-dark: #DDC3EB;
+	--pdf-highlight-color-red: #FFD0C3;
+	--pdf-highlight-color-orange: #FDDAB6;
+	--pdf-highlight-color-yellow: #FFF34C;
+	--pdf-highlight-color-green: #BBF4BE;
+	--pdf-highlight-color-blue: #D2EEF9;
+	--pdf-highlight-color-purple: #F5E0FE;
+	--text-shadow: 0.01em 0.01em 0.01em #727E84;
 	--text-shadow-yellow: 2px 2px 2px #EAEB74;
-	--text-shadow-dark: 0.01em 0.01em 0.01em #727e84;
+	--text-shadow-dark: 0.01em 0.01em 0.01em #727E84;
 	--queue-bncolor-toosoon: #DDD;
 	--queue-bncolor-toosoon-dark: #1B1F23;
 	--queue-bncolor-hard: #FFC9CC;
@@ -2129,32 +2135,33 @@
 								.rem-text {
 									.EditorContainer, %highlight-dark-set {
 										span.highlight-color--red {
-											color: #FFD2CE;
+											color: var(--highlight-color--red-text-dark);
 											background-color: #572924;
 										}
 		
 										span.highlight-color--orange {
-											color: #FFDAB8;
+											
+											color: var(--highlight-color--orange-text-dark);
 											background-color: #553D24;
 										}
 		
 										span.highlight-color--yellow {
-											color: #E8DDA7;
+											color: var(--highlight-color--yellow-text-dark);
 											background-color: #453E1E;
 										}
 		
 										span.highlight-color--green {
-											color: #B3DDAB;
+											color: var(--highlight-color--green-text-dark);
 											background-color: #253F27;
 										}
 		
 										span.highlight-color--blue {
-											color: #B5DEE8;
+											color: var(--highlight-color--blue-text-dark);
 											background-color: #183C4D;
 										}
 		
 										span.highlight-color--purple {
-											color: #DDC3EB;
+											color: var(--highlight-color--purple-text-dark);
 											background-color: #43273F;
 										}
 										.bold.highlight-color--red {
@@ -2203,7 +2210,7 @@
 									}
 					
 									span.highlight-color--yellow {
-										color: #E8DDA7;
+										color: #E8E48F;
 										background-color: #453E1E;
 									}
 					
