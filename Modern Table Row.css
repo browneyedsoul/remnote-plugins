@@ -411,7 +411,8 @@
 	display: grid;
 	grid-auto-rows: auto;
 	border-left: unset;
-	overflow-x: auto;
+	padding-left: 0;
+	overflow-x: visible;
 	white-space: pre;
 	border: 0.07rem solid var(--table-border-color);
 }
