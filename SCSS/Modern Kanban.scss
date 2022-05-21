@@ -32,7 +32,6 @@
             }
             // Kanban Column
                 > .tree-node-container {
-                    flex: 1 1 0;
                     background-color: var(--kanban-bgcolor);
                     margin-right: 0.7rem;
                     position: relative;
@@ -41,12 +40,46 @@
                     padding-bottom: 5px;
                     border-radius: 5px;
 
-                    >.tree-node--parent {
-                        .rem-text {
-                            font-weight: 650;
-                            text-align: center;
+                    // Kanban Column Header
+                        >.tree-node--parent {
+                            min-width: 390px;
+
+                            .rem-text {
+                                font-weight: 650;
+                                text-align: center;
+                            }
                         }
-                    }
+                    // Kanban Cell
+                        > .tree-node--children {
+                            left: 0 !important;
+                            width: 100%;
+                            max-width: 1000px;
+                            
+                            // Input Area
+                                > .tree-node-container {
+                                    background-color: var(--kanban-bgcolor-input);
+                                    margin: 5px;
+                                    border-radius: 3px;
+                                    box-shadow: 0 0 1px 0;
+                                    margin-left: 1.2rem;
+
+                                    > div:first-child {
+                                        .rem-text {
+                                            padding-left: 25px;
+                                            margin-left: 0;
+                                        }
+                                    }
+                                }
+                            // Input Area - Portal
+                                > .portal-tree-node-box {
+                                    background-color: var(--kanban-bgcolor-input);
+                                    margin: 5px;
+                                    border-radius: 3px !important;
+                                    box-shadow: 0 0 1px 0 !important;
+                                    margin-left: .3rem !important;
+                                    margin-right: .3rem !important;
+                                }
+                        }
                     // Inbox
                         &:nth-child(1) {
                             background-color: var(--kanban-bgcolor);
@@ -102,37 +135,6 @@
                                     }
                                 }
                             }
-                        }
-                    // Kanban Cell
-                        > .tree-node--children {
-                            left: 0 !important;
-                            width: 100%;
-                            max-width: 1000px;
-                            
-                            // Input Area
-                                > .tree-node-container {
-                                    background-color: var(--kanban-bgcolor-input);
-                                    margin: 5px;
-                                    border-radius: 3px;
-                                    box-shadow: 0 0 1px 0;
-                                    margin-left: 1.2rem;
-
-                                    > div:first-child {
-                                        .rem-text {
-                                            padding-left: 25px;
-                                            margin-left: 0;
-                                        }
-                                    }
-                                }
-                            // Input Area - Portal
-                                > .portal-tree-node-box {
-                                    background-color: var(--kanban-bgcolor-input);
-                                    margin: 5px;
-                                    border-radius: 3px !important;
-                                    box-shadow: 0 0 1px 0 !important;
-                                    margin-left: .3rem !important;
-                                    margin-right: .3rem !important;
-                                }
                         }
                 }
             // Global Kanban Column                

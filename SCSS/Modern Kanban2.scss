@@ -40,7 +40,6 @@
             }
             // Kanban Column
                 > .tree-node-container {
-                    flex: 1 1 0;
                     background-color: var(--kanban-bgcolor);
                     margin-right: 0.7rem;
                     position: relative;
@@ -49,13 +48,15 @@
                     padding-bottom: 5px;
                     border-radius: 5px;
 
-                    >.tree-node--parent {
-                        .rem-text {
-                            font-weight: 650;
-                            text-align: center;
+                    // Kanban Column Header
+                        > .tree-node--parent {
+                            min-width: 390px;
+                            
+                            .rem-text {
+                                font-weight: 650;
+                                text-align: center;
+                            }
                         }
-                    }
-                    
                     // Kanban Cell
                         > .tree-node--children {
                             left: 0 !important;
