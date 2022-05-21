@@ -53,6 +53,7 @@
 [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > .tree-node--children {
 	left: 0 !important;
 	width: 100%;
+	max-width: 1000px;
 }
 [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container {
 	background-color: var(--kanban-bgcolor-input);

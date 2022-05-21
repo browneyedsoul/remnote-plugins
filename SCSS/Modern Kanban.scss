@@ -107,6 +107,7 @@
                         > .tree-node--children {
                             left: 0 !important;
                             width: 100%;
+                            max-width: 1000px;
                             
                             // Input Area
                                 > .tree-node-container {
