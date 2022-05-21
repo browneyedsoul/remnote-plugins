@@ -312,20 +312,22 @@
     [data-rem-container-tags~="calloutgreen"],
     [data-rem-container-tags~="calloutblue"],
     [data-rem-container-tags~="calloutpurple"] {
-        .hierarchy-editor__tag-bar {
+        .float-end {
             position: relative;
-            right: -20px;
+            left: 1.5rem;
 
-            span.hierarchy-editor__tag-bar__tag {
-                background-color: transparent !important;
+            .hierarchy-editor__tag-bar {
+                span.hierarchy-editor__tag-bar__tag {
+                    background-color: transparent !important;
 
-                > div:first-of-type,
-                > span {
-                    display: none;
-                }
+                    > div:first-of-type,
+                    > span {
+                        display: none;
+                    }
 
-                .hierarchy-editor__tag-bar__tag__delete {
-                    opacity: .3;
+                    .hierarchy-editor__tag-bar__tag__delete {
+                        opacity: .3;
+                    }
                 }
             }
         }
