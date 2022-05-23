@@ -36,13 +36,12 @@
                     margin-right: 0.7rem;
                     position: relative;
                     white-space: pre-wrap;
-                    min-width: 390px;
                     padding-bottom: 5px;
                     border-radius: 5px;
 
                     // Kanban Column Header
                         >.tree-node--parent {
-                            min-width: 390px;
+                            min-width: 240px;
 
                             .rem-text {
                                 font-weight: 650;

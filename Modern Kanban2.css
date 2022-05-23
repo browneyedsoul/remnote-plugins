@@ -46,7 +46,7 @@
 	border-radius: 5px;
 }
 [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > .tree-node--parent {
-	min-width: 390px;
+	min-width: 240px;
 }
 [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > .tree-node--parent .rem-text {
 	font-weight: 650;
