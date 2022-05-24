@@ -1,0 +1,159 @@
+:root {
+	--line-color: #DDD;
+	--line-color-dark: #535353;
+}
+
+[data-rem-container-tags~=treec] {
+	display: flex;
+	line-height: 160%;
+	border: 0.1rem solid var(--line-color);
+	border-radius: 4px;
+	margin: 0.5rem 0.7rem 0.5rem 1.6rem;
+	padding: 1rem;
+	overflow-x: visible;
+	overflow-y: hidden;
+	white-space: pre;
+}
+[data-rem-container-tags~=treec]::-webkit-scrollbar-thumb {
+	background-color: #EEE;
+	border-radius: 2px;
+}
+[data-rem-container-tags~=treec]::-webkit-scrollbar-track {
+	margin-right: 0;
+}
+[data-rem-container-tags~=treec] .rem-button__container {
+	z-index: 1;
+}
+[data-rem-container-tags~=treec] div.tree-node--parent {
+	display: flex;
+	align-items: baseline;
+}
+[data-rem-container-tags~=treec] div.tree-node--parent .rem-text .EditorContainer {
+	white-space: pre !important;
+}
+[data-rem-container-tags~=treec] div.tree-node--parent .rem-text .EditorContainer .RichTextViewer {
+	white-space: nowrap;
+}
+[data-rem-container-tags~=treec] div.tree-node--parent .rem-text .EditorContainer .last_node_down_arrow,
+[data-rem-container-tags~=treec] div.tree-node--parent .rem-text .EditorContainer .whitespace-pre {
+	display: none;
+}
+[data-rem-container-tags~=treec] div.tree-node--parent [data-rem-tags~=treec] .hierarchy-editor__tag-bar__tag {
+	display: none;
+}
+[data-rem-container-tags~=treec] div.tree-node--parent [data-rem-tags~=treec] .hierarchy-editor__tag-bar__tag span {
+	display: none;
+}
+[data-rem-container-tags~=treec] div.tree-node--children .tree-node-container:only-child::before {
+	content: "";
+	padding-right: 24px;
+	padding-top: 0;
+	position: absolute;
+	z-index: 1;
+	top: -0.1rem;
+	left: -0.1rem;
+	height: 97%;
+	width: 5px;
+	border-top: unset;
+	border-right: unset;
+	border-bottom: 5rem solid #FFF;
+	border-left: 27px solid #FFF;
+	margin-top: 1.05rem;
+}
+[data-rem-container-tags~=treec] div.tree-node--children .tree-node-container:only-child::after {
+	border-top: unset;
+}
+[data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty) {
+	display: inline-block;
+	z-index: 0;
+	border-left: 1px solid var(--line-color);
+	position: relative;
+}
+[data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty)::before {
+	content: "";
+	padding-right: 24px;
+	padding-top: 0;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: -0.15rem;
+	height: 1rem;
+	border-top: unset;
+	border-right: unset;
+	border-bottom: 1px solid var(--line-color);
+	border-left: 4px solid #FFF;
+}
+[data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty)::after {
+	content: "";
+	padding-right: 24px;
+	padding-top: 0;
+	position: absolute;
+	z-index: 0;
+	bottom: 0;
+	left: -0.15rem;
+	height: 1rem;
+	border-bottom: unset;
+	border-right: unset;
+	border-top: 1px solid var(--line-color);
+	border-left: 4px solid #FFF;
+}
+[data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty) .tree-node-container {
+	display: flex;
+	z-index: 0;
+}
+[data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty) .tree-node-container:first-child:not(:only-child) > .tree-node--parent {
+	display: flex;
+	align-items: baseline;
+}
+[data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty) .tree-node-container:last-child:not(:only-child) > .tree-node--parent {
+	display: flex;
+	align-items: flex-end;
+}
+[data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty) .tree-node-container div.tree-node--children:only-of-type {
+	display: none;
+}
+[data-rem-container-tags~=treec] div.tree-node--children:empty {
+	border-left: unset;
+}
+
+.dark-mode [data-rem-container-tags~=treec] {
+	border-color: var(--line-color-dark);
+}
+.dark-mode [data-rem-container-tags~=treec]::-webkit-scrollbar-thumb {
+	background-color: #5A666A;
+}
+.dark-mode [data-rem-container-tags~=treec] div.tree-node--children .tree-node-container:only-child::before {
+	border-bottom: 5rem solid var(--darkmode-background, #2F3437);
+	border-left: 27px solid var(--darkmode-background, #2F3437);
+}
+.dark-mode [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty) {
+	border-left: 1px solid var(--line-color-dark, #535353);
+}
+.dark-mode [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty)::before {
+	content: "";
+	padding-right: 24px;
+	padding-top: 0;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: -0.15rem;
+	height: 1rem;
+	border-top: unset;
+	border-right: unset;
+	border-bottom: 1px solid var(--line-color-dark, #535353);
+	border-left: 4px solid var(--darkmode-background, #2F3437);
+}
+.dark-mode [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty)::after {
+	content: "";
+	padding-right: 24px;
+	padding-top: 0;
+	position: absolute;
+	z-index: 0;
+	bottom: 0;
+	left: -0.15rem;
+	height: 1rem;
+	border-bottom: unset;
+	border-right: unset;
+	border-top: 1px solid var(--line-color-dark, #535353);
+	border-left: 4px solid var(--darkmode-background, #2F3437);
+}
