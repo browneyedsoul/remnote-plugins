@@ -6,10 +6,18 @@
 [data-rem-container-tags~="tree"] {
     display: flex;
     line-height: 160%;
-    margin: 0.5rem 0.7rem 0.5rem 1.6rem;
+    margin: 0.5rem 0.7rem 0.5rem 0;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: pre;
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #EEE;
+        border-radius: 2px;
+    }
+    &::-webkit-scrollbar-track {
+        margin-right: 0;
+    }
 
     .rem-button__container {
         z-index: 1;
@@ -47,7 +55,7 @@
         }
     // Children - One Child Tree
         div.tree-node--children {
-            margin-left: 0;
+            margin-left: 0.5rem;
 
             .tree-node-container:only-child {
                 &::before {
@@ -77,7 +85,7 @@
             z-index: 0;
             border-left: 1px solid var(--line-color);
             position: relative;
-            margin-left: 0;
+            margin-left: 0.5rem;
             // Crumbs Remover
             &::before {
                 content: "";
@@ -141,6 +149,10 @@
 // Darkmode Compatibility
     .dark-mode {
         [data-rem-container-tags~="tree"] {
+            &::-webkit-scrollbar-thumb {
+                background-color: #5A666A;
+            }
+
             div.tree-node--children {
                 .tree-node-container:only-child {
                     &::before {

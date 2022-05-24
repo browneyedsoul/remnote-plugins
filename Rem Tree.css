@@ -6,10 +6,17 @@
 [data-rem-container-tags~=tree] {
 	display: flex;
 	line-height: 160%;
-	margin: 0.5rem 0.7rem 0.5rem 1.6rem;
+	margin: 0.5rem 0.7rem 0.5rem 0;
 	overflow-x: auto;
 	overflow-y: hidden;
 	white-space: pre;
+}
+[data-rem-container-tags~=tree]::-webkit-scrollbar-thumb {
+	background-color: #EEE;
+	border-radius: 2px;
+}
+[data-rem-container-tags~=tree]::-webkit-scrollbar-track {
+	margin-right: 0;
 }
 [data-rem-container-tags~=tree] .rem-button__container {
 	z-index: 1;
@@ -35,7 +42,7 @@
 	display: none;
 }
 [data-rem-container-tags~=tree] div.tree-node--children {
-	margin-left: 0;
+	margin-left: 0.5rem;
 }
 [data-rem-container-tags~=tree] div.tree-node--children .tree-node-container:only-child::before {
 	content: "";
@@ -61,7 +68,7 @@
 	z-index: 0;
 	border-left: 1px solid var(--line-color);
 	position: relative;
-	margin-left: 0;
+	margin-left: 0.5rem;
 }
 [data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty)::before {
 	content: "";
@@ -110,6 +117,9 @@
 	border-left: unset;
 }
 
+.dark-mode [data-rem-container-tags~=tree]::-webkit-scrollbar-thumb {
+	background-color: #5A666A;
+}
 .dark-mode [data-rem-container-tags~=tree] div.tree-node--children .tree-node-container:only-child::before {
 	border-bottom: 5rem solid var(--darkmode-background, #2F3437);
 	border-left: 27px solid var(--darkmode-background, #2F3437);
