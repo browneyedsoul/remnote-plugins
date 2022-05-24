@@ -6,9 +6,7 @@
 [data-rem-container-tags~=tree] {
 	display: flex;
 	line-height: 160%;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	padding-left: 1rem;
+	margin: 0.5rem 0.7rem 0.5rem 1.6rem;
 	overflow-x: auto;
 	overflow-y: hidden;
 	white-space: pre;
@@ -36,6 +34,9 @@
 [data-rem-container-tags~=tree] div.tree-node--parent [data-rem-tags~=tree] .hierarchy-editor__tag-bar__tag span {
 	display: none;
 }
+[data-rem-container-tags~=tree] div.tree-node--children {
+	margin-left: 0;
+}
 [data-rem-container-tags~=tree] div.tree-node--children .tree-node-container:only-child::before {
 	content: "";
 	padding-right: 24px;
@@ -60,6 +61,7 @@
 	z-index: 0;
 	border-left: 1px solid var(--line-color);
 	position: relative;
+	margin-left: 0;
 }
 [data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty)::before {
 	content: "";
