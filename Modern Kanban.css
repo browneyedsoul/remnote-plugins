@@ -5,7 +5,7 @@
 	--kanban-bgcolor: #F7F6F3;
 	--kanban-bgcolor-dark: #505050;
 	--kanban-bgcolor-input: #FFF;
-	--kanban-bgcolor-input-dark: #2C3033;
+	--kanban-bgcolor-input-dark: #2E3437;
 }
 
 [data-rem-container-tags~=kanban] {
