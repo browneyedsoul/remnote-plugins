@@ -1,13 +1,14 @@
 :root {
-    --line-color: #DDD;
+    --line-color: #CACAD9;
     --line-color-dark: #535353;
 }
 
-[data-rem-container-tags~="tree"] {
+[data-rem-container-tags~="tree"], %tree {
     display: flex;
     line-height: 160%;
-    margin: 0.5rem 0.7rem 0.5rem 0;
-    overflow-x: auto;
+    margin: 0.5rem 0.7rem 0.5rem 1.6rem;
+    padding: 1rem;
+    overflow-x: visible;
     overflow-y: hidden;
     white-space: pre;
 
@@ -42,10 +43,13 @@
                 }
             }
             // Tag Declutter
-                [data-rem-tags~="tree"] {
+                [data-rem-tags~="tree"],
+                [data-rem-tags~="treec"] {
+                    position: relative;
+                    right: 0;
                     // Tag Declutter
                         .hierarchy-editor__tag-bar__tag {
-                            display: none; //background-color: transparent !important;
+                            background-color: transparent !important;
                     
                             span {
                                 display: none;
@@ -55,7 +59,7 @@
         }
     // Children - One Child Tree
         div.tree-node--children {
-            margin-left: 0.5rem;
+            margin-left: 1rem;
 
             .tree-node-container:only-child {
                 &::before {
@@ -64,7 +68,7 @@
                     padding-top: 0;
                     position: absolute;
                     z-index: 1;
-                    top: -0.1rem;
+                    top: -0.04rem;
                     left: -0.1rem;
                     height: 97%;
                     width: 5px;
@@ -85,7 +89,6 @@
             z-index: 0;
             border-left: 1px solid var(--line-color);
             position: relative;
-            margin-left: 0.5rem;
             // Crumbs Remover
             &::before {
                 content: "";
@@ -93,7 +96,7 @@
                 padding-top: 0;
                 position: absolute;
                 z-index: 1;
-                top: 0;
+                top: -0.05rem;
                 left: -0.15rem;
                 height: 1rem;
                 border-top: unset;
@@ -148,7 +151,7 @@
 }
 // Darkmode Compatibility
     .dark-mode {
-        [data-rem-container-tags~="tree"] {
+        [data-rem-container-tags~="tree"], %tree-dark {
             &::-webkit-scrollbar-thumb {
                 background-color: #5A666A;
             }
@@ -195,3 +198,14 @@
             }
         }
     }
+
+[data-rem-container-tags~="treec"] {
+    @extend %tree;
+    border: 0.1rem solid var(--line-color);
+    border-radius: 4px;
+}
+.dark-mode {
+    [data-rem-container-tags~="treec"] {
+        @extend %tree-dark;
+    }
+}
