@@ -396,6 +396,7 @@ body.old-dark-mode .dark-mode-background {
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--yellow {
 	color: var(--yellow-text-dark);
+	text-shadow: unset;
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--green {
 	color: var(--green-text-dark);

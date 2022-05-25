@@ -544,6 +544,7 @@
 					}
 					&.highlight-color--yellow {
 						color: var(--yellow-text-dark);
+						text-shadow: unset;
 					}
 					&.highlight-color--green {
 						color: var(--green-text-dark);
