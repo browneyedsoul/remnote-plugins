@@ -11,18 +11,18 @@
     overflow-x: visible;
     overflow-y: hidden;
     white-space: pre;
-
-    &::-webkit-scrollbar-thumb {
-        background-color: #EEE;
-        border-radius: 2px;
-    }
-    &::-webkit-scrollbar-track {
-        margin-right: 0;
-    }
-
-    .rem-button__container {
-        z-index: 1;
-    }
+    // Scrollbar
+        &::-webkit-scrollbar-thumb {
+            background-color: #EEE;
+            border-radius: 2px;
+        }
+        &::-webkit-scrollbar-track {
+            margin-right: 0;
+        }
+    // rem container
+        .rem-button__container {
+            z-index: 1;
+        }
     // Parent
         div.tree-node--parent {
             display: flex;
@@ -62,7 +62,10 @@
                 }
         }
     // Children - One Child Tree
-        div.tree-node--children {
+        > div.tree-node--children {
+            margin-left: -1rem;
+        }
+        div.tree-node--children:not([data-rem-container-tags~="tree"] > div.tree-node--children, [data-rem-container-tags~="treec"] > div.tree-node--children) {
             margin-left: 1rem;
 
             .tree-node-container:only-child {

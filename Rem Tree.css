@@ -58,10 +58,13 @@
 [data-rem-container-tags~=treec] div.tree-node--parent [data-rem-tags~=treec] .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
 	opacity: 0.3;
 }
-[data-rem-container-tags~=tree] div.tree-node--children, [data-rem-container-tags~=treec] div.tree-node--children {
+[data-rem-container-tags~=tree] > div.tree-node--children, [data-rem-container-tags~=treec] > div.tree-node--children {
+	margin-left: -1rem;
+}
+[data-rem-container-tags~=tree] div.tree-node--children:not([data-rem-container-tags~=tree] > div.tree-node--children, [data-rem-container-tags~=treec] > div.tree-node--children), [data-rem-container-tags~=treec] div.tree-node--children:not([data-rem-container-tags~=tree] > div.tree-node--children, [data-rem-container-tags~=treec] > div.tree-node--children) {
 	margin-left: 1rem;
 }
-[data-rem-container-tags~=tree] div.tree-node--children .tree-node-container:only-child::before, [data-rem-container-tags~=treec] div.tree-node--children .tree-node-container:only-child::before {
+[data-rem-container-tags~=tree] div.tree-node--children:not([data-rem-container-tags~=tree] > div.tree-node--children, [data-rem-container-tags~=treec] > div.tree-node--children) .tree-node-container:only-child::before, [data-rem-container-tags~=treec] div.tree-node--children:not([data-rem-container-tags~=tree] > div.tree-node--children, [data-rem-container-tags~=treec] > div.tree-node--children) .tree-node-container:only-child::before {
 	content: "";
 	padding-right: 24px;
 	padding-top: 0;
@@ -77,7 +80,7 @@
 	border-left: 27px solid #FFF;
 	margin-top: 1.05rem;
 }
-[data-rem-container-tags~=tree] div.tree-node--children .tree-node-container:only-child::after, [data-rem-container-tags~=treec] div.tree-node--children .tree-node-container:only-child::after {
+[data-rem-container-tags~=tree] div.tree-node--children:not([data-rem-container-tags~=tree] > div.tree-node--children, [data-rem-container-tags~=treec] > div.tree-node--children) .tree-node-container:only-child::after, [data-rem-container-tags~=treec] div.tree-node--children:not([data-rem-container-tags~=tree] > div.tree-node--children, [data-rem-container-tags~=treec] > div.tree-node--children) .tree-node-container:only-child::after {
 	border-top: unset;
 }
 [data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty), [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty) {
