@@ -70,10 +70,11 @@
 }
 [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container > .tree-node--children > .portal-tree-node-box {
 	background-color: var(--kanban-bgcolor-input);
+	width: 90%;
 	margin: 5px;
 	border-radius: 3px !important;
 	box-shadow: 0 0 1px 0 !important;
-	margin-left: 0.3rem !important;
+	margin-left: 1.4rem !important;
 	margin-right: 0.3rem !important;
 }
 [data-rem-container-tags~=kanban2] > .tree-node--children > .tree-node-container[data-rem-container-tags~=rd] {
