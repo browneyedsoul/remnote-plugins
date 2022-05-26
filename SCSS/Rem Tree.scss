@@ -62,11 +62,8 @@
                 }
         }
     // Children - One Child Tree
-        > div.tree-node--children {
-            margin-left: -1rem;
-        }
-        div.tree-node--children:not([data-rem-container-tags~="tree"] > div.tree-node--children, [data-rem-container-tags~="treec"] > div.tree-node--children) {
-            margin-left: 1rem;
+        div.tree-node--children {
+            margin-left: 0;
 
             .tree-node-container:only-child {
                 &::before {
