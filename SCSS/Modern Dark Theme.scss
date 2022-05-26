@@ -2355,6 +2355,7 @@
 			}
 		#document-hover-preview__popup {
 			width: fit-content;
+			min-width: 32rem;
 			max-width: 60vw;
 
 			// Remove Sticky 
@@ -3594,6 +3595,18 @@
 									.highlight-color--blue,
 									.highlight-color--purple {
 										margin-left: 3px;
+									}
+
+									> .rem-reference-container  {
+										> span {
+											> span.rem-reference {
+												> span {
+													> span.RichTextViewer {
+														background-color: unset;
+													}
+												}
+											}
+										}
 									}
 								}
 								// Sidebar list Arrow line Alignment

@@ -1562,6 +1562,7 @@ body.old-dark-mode .dark-mode-background {
 	width: -webkit-fit-content;
 	width: -moz-fit-content;
 	width: fit-content;
+	min-width: 32rem;
 	max-width: 60vw;
 }
 .popup-menu #document-hover-preview__popup > #hierarchy-editor {
@@ -2237,6 +2238,9 @@ body.old-dark-mode .dark-mode-background {
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--blue,
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--purple {
 	margin-left: 3px;
+}
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer > .rem-reference-container > span > span.rem-reference > span > span.RichTextViewer {
+	background-color: unset;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div:only-child {
 	margin-left: 24px;
