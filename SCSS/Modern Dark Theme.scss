@@ -1371,6 +1371,18 @@
 								.RichTextViewer {
 									display: flex;
 									align-items: center;
+
+									.rem-reference-container {
+										> span {
+											> span.rem-reference {
+												> span {
+													> span.RichTextViewer {
+														background-color: unset;
+													}
+												}
+											}
+										}
+									}
 								}
 							}
 						}

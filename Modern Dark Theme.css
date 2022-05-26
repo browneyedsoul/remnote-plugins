@@ -872,6 +872,9 @@ body.old-dark-mode .dark-mode-background {
 	display: flex;
 	align-items: center;
 }
+.tile__document .document-header-top-bar > div:nth-of-type(1) .flex .parent-link .RichTextViewer .rem-reference-container > span > span.rem-reference > span > span.RichTextViewer {
+	background-color: unset;
+}
 .tile__document .document-header-top-bar .flex-nowrap {
 	flex-wrap: wrap;
 }
