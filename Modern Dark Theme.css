@@ -56,7 +56,7 @@
 	--highlight-color--orange-text-dark: #FFDAB8;
 	--highlight-color--yellow: #EDED85;
 	--highlight-color--yellow-light: #F8F9AA;
-	--highlight-color--yellow-dark: #CECA57;
+	--highlight-color--yellow-dark: #D5D15A;
 	--highlight-color--yellow-text-dark: #E8E67D;
 	--highlight-color--green: #9FE39B;
 	--highlight-color--green-light: #D8FFD1;
@@ -1185,6 +1185,13 @@ body.old-dark-mode .dark-mode-background {
 }
 .dark-mode .tile__document #document #hierarchy-editor > .fixed {
 	background-color: var(--darkmode-background);
+}
+.dark-mode .tile__document #document #hierarchy-editor > .fixed .bg-white {
+	background-color: unset;
+}
+.dark-mode .tile__document #document #hierarchy-editor > .fixed .bg-white .button {
+	background-color: var(--darkmode-background-button);
+	border-color: var(--line-color-dark) !important;
 }
 .dark-mode .tile__document #document #hierarchy-editor div:nth-of-type(2) .button > div {
 	color: var(--darkmode-text);

@@ -57,7 +57,7 @@
 	--highlight-color--orange-text-dark: #FFDAB8;
 	--highlight-color--yellow: #EDED85;
 	--highlight-color--yellow-light: #F8F9AA;
-	--highlight-color--yellow-dark: #CECA57;
+	--highlight-color--yellow-dark: #D5D15A;
 	--highlight-color--yellow-text-dark: #E8E67D;
 	--highlight-color--green: #9FE39B;
 	--highlight-color--green-light: #D8FFD1;
@@ -1890,6 +1890,15 @@
 							// Sticky Top bar
 								> .fixed {
 									background-color: var(--darkmode-background);
+
+									.bg-white {
+										background-color: unset;
+
+										.button {
+											background-color: var(--darkmode-background-button);
+											border-color: var(--line-color-dark) !important;
+										}
+									}
 								}
 							// remHierarchyTop
 								// div:nth-of-type(1) {
