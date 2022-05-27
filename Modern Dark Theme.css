@@ -679,6 +679,15 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 }
 
+[aria-label~=Omnibar] > div[data-omnibar-results~=true] span.RichTextViewer > span.rem-reference-container > span > span.rem-reference > span > span.RichTextViewer {
+	padding: unset;
+	margin: unset;
+	vertical-align: middle;
+	background-color: unset;
+	position: relative;
+	top: 0.05rem;
+}
+
 .dark-mode [aria-label~=Omnibar] {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
