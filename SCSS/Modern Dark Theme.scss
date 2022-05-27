@@ -4254,14 +4254,14 @@
 // Backlink
 	// Search Portal and Backlink Design
 		.animate-zoom-into-bullet {
-			&:not(.animate-zoom-into-bullet.tree-node-container) {
+			&:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
 				width: calc(100% - 2.4rem);
 				// margin-left: 1.6rem;
 				margin-top: 0.7rem;
 				margin-bottom: 0.7rem;
 				padding-left: 1rem;
 				padding-right: 0.5rem;
-				border: 0.1rem solid #DDD;
+				border: 0.1rem solid var(--line-color);
 				border-radius: 4px;
 			}
 
@@ -4365,6 +4365,12 @@
 	// Darkmode Compatibility
 		.dark-mode {
 			#hierarchy-editor {
+				// Search Portal and Backlink Design
+					.animate-zoom-into-bullet {
+						&:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
+							border: 0.1rem solid var(--line-color-dark);
+						}
+					}
 				// Reference Breadcrumbs
 					.rem-container--not-included-in-document-scope {
 						.rem-text {

@@ -2630,13 +2630,13 @@ body.old-dark-mode .dark-mode #document-sidebar {
 	background-color: #FFF;
 }
 
-.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.tree-node-container) {
+.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
 	width: calc(100% - 2.4rem);
 	margin-top: 0.7rem;
 	margin-bottom: 0.7rem;
 	padding-left: 1rem;
 	padding-right: 0.5rem;
-	border: 0.1rem solid #DDD;
+	border: 0.1rem solid var(--line-color);
 	border-radius: 4px;
 }
 .animate-zoom-into-bullet > div.tree-node--automatic-search-portal-header {
@@ -2704,6 +2704,9 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 	color: var(--darkmode-contrast);
 }
 
+.dark-mode #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
+	border: 0.1rem solid var(--line-color-dark);
+}
 .dark-mode #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text {
 	color: var(--darkmode-text);
 }
