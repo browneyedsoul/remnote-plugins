@@ -1023,26 +1023,42 @@
 	}
 // Omnibar
 	[aria-label~="Omnibar"] {
+		max-width: 800px !important;
+		max-height: 1200px !important;
 		> div[data-omnibar-results~="true"] {
-			span.RichTextViewer {
-				> span.rem-reference-container {
-					> span {
-						> span.rem-reference {
-							> span {
-								// Thumbnail
-								> span.RichTextViewer {
-									padding: unset;
-									margin: unset;
-									vertical-align: middle;
-									background-color: unset;
-									position: relative;
-									top: 0.05rem;
+			> div.flex {
+				> div:nth-child(2) {
+					flex-direction: column-reverse !important;
+
+					// > div:first-child {
+					// 	zoom: 1.2;
+					// }
+					> div:last-child {
+						zoom: .75;
+						opacity: 0.4;
+						margin-bottom: 0.5rem;
+					}
+				}
+			}
+			// Thumbnail
+				span.RichTextViewer {
+					> span.rem-reference-container {
+						> span {
+							> span.rem-reference {
+								> span {
+									> span.RichTextViewer {
+										padding: unset;
+										margin: unset;
+										vertical-align: middle;
+										background-color: unset;
+										position: relative;
+										top: 0.05rem;
+									}
 								}
 							}
 						}
 					}
 				}
-			}
 		}
 	}
 	.dark-mode {

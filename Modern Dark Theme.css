@@ -679,6 +679,18 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 }
 
+[aria-label~=Omnibar] {
+	max-width: 800px !important;
+	max-height: 1200px !important;
+}
+[aria-label~=Omnibar] > div[data-omnibar-results~=true] > div.flex > div:nth-child(2) {
+	flex-direction: column-reverse !important;
+}
+[aria-label~=Omnibar] > div[data-omnibar-results~=true] > div.flex > div:nth-child(2) > div:last-child {
+	zoom: 0.75;
+	opacity: 0.4;
+	margin-bottom: 0.5rem;
+}
 [aria-label~=Omnibar] > div[data-omnibar-results~=true] span.RichTextViewer > span.rem-reference-container > span > span.rem-reference > span > span.RichTextViewer {
 	padding: unset;
 	margin: unset;
