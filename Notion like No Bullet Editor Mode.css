@@ -404,9 +404,11 @@
 }
 
 [data-rem-container-tags~=bulletlist] {
-	left: 16px;
 	width: calc(100% - 16px);
 	position: relative;
+}
+[data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] {
+	left: 16px;
 }
 [data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container {
 	margin-left: var(--treenode-line-spacing);
