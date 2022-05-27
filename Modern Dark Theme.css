@@ -2749,6 +2749,10 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 	background-color: #636368;
 }
 
+.pdf-highlight__pin-editor-button {
+	color: #000;
+}
+
 .pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--red .Highlight__part,
 .pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--orange .Highlight__part,
 .pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--yellow .Highlight__part,
