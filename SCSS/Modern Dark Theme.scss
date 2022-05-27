@@ -1962,7 +1962,7 @@
 				&.highlight-color--green,
 				&.highlight-color--blue,
 				&.highlight-color--purple {
-					font-weight: 550;
+					font-weight: 500;
 				}
 			}
 		}
@@ -3723,7 +3723,7 @@
         span.highlight-color--purple {
             padding: 1px 3px;
             border-radius: 3px;
-			font-weight: 650;
+			font-weight: 600;
         }
         .highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
     // Sidebar list item Colored Text
@@ -4213,6 +4213,29 @@
 			background-color: #FFF;
 		}
 // Backlink
+	// Search Portal and Backlink Design
+		.animate-zoom-into-bullet {
+			&:not(.animate-zoom-into-bullet.tree-node-container) {
+				width: calc(100% - 2.4rem);
+				// margin-left: 1.6rem;
+				margin-top: 0.7rem;
+				margin-bottom: 0.7rem;
+				padding-left: 1rem;
+				padding-right: 0.5rem;
+				border: 0.1rem solid #DDD;
+				border-radius: 4px;
+			}
+
+			> div.tree-node--automatic-search-portal-header {
+				width: calc(100% - 1rem);
+
+				div.bg-white {
+					> div.bg-gray-10 {
+						display: none;
+					}
+				}
+			}
+		}
 	// Placement
 		#document {
 			#hierarchy-editor {
@@ -4229,7 +4252,7 @@
 		.dark-mode {
 			.backlink-counter {
 				color: var(--darkmode-contrast);
-				background-color: var(--darkmode-selected-darker);
+				background-color: var(--darkmode-background-selected-darker);
 			}
 			.highlight-color--red,
 			.highlight-color--orange,

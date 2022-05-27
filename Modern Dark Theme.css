@@ -1246,7 +1246,7 @@ body.old-dark-mode .dark-mode-background {
 }
 
 .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--red, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--orange, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--yellow, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--green, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--blue, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--purple {
-	font-weight: 550;
+	font-weight: 500;
 }
 
 .highlight-color--red {
@@ -2332,7 +2332,7 @@ body.old-dark-mode .dark-mode-background {
 #document-sidebar span.highlight-color--purple {
 	padding: 1px 3px;
 	border-radius: 3px;
-	font-weight: 650;
+	font-weight: 600;
 }
 #document-sidebar .highlight-color--yellow {
 	background-color: var(--highlight-color--yellow-dark);
@@ -2609,13 +2609,29 @@ body.old-dark-mode .dark-mode #document-sidebar {
 	background-color: #FFF;
 }
 
+.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.tree-node-container) {
+	width: calc(100% - 2.4rem);
+	margin-top: 0.7rem;
+	margin-bottom: 0.7rem;
+	padding-left: 1rem;
+	padding-right: 0.5rem;
+	border: 0.1rem solid #DDD;
+	border-radius: 4px;
+}
+.animate-zoom-into-bullet > div.tree-node--automatic-search-portal-header {
+	width: calc(100% - 1rem);
+}
+.animate-zoom-into-bullet > div.tree-node--automatic-search-portal-header div.bg-white > div.bg-gray-10 {
+	display: none;
+}
+
 #document #hierarchy-editor .animate-zoom-into-bullet .tree-node--parent + .portal-tree-node-box {
 	margin-left: -3px;
 }
 
 .dark-mode .backlink-counter {
 	color: var(--darkmode-contrast);
-	background-color: var(--darkmode-selected-darker);
+	background-color: var(--darkmode-background-selected-darker);
 }
 .dark-mode .highlight-color--red .backlink-counter,
 .dark-mode .highlight-color--orange .backlink-counter,
