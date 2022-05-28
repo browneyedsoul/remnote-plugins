@@ -2678,6 +2678,7 @@ body.old-dark-mode .dark-mode #document-sidebar {
 .dark-mode .backlink-counter {
 	color: var(--darkmode-contrast);
 	background-color: var(--darkmode-background-selected-darker);
+	opacity: 0.8;
 }
 .dark-mode .highlight-color--red .backlink-counter,
 .dark-mode .highlight-color--orange .backlink-counter,
