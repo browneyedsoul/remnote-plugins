@@ -1196,6 +1196,10 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .tile__document #document #hierarchy-editor div:nth-of-type(2) .button > div {
 	color: var(--darkmode-text);
 }
+.dark-mode .tile__document #document #hierarchy-editor div:nth-of-type(2) span.rem-checkbox {
+	border-color: #000 !important;
+	background-color: #222 !important;
+}
 .dark-mode .tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
 	background-color: var(--highlight-color--red-dark);
 }
@@ -1588,6 +1592,20 @@ body.old-dark-mode .dark-mode-background {
 	position: relative;
 	left: -0.2rem;
 	transform: scale(0.8);
+}
+.popup-menu .latex-editor {
+	width: 720px !important;
+}
+.popup-menu .latex-editor > div:nth-of-type(1) > textarea.latex-editor__input {
+	overflow-x: visible;
+	white-space: pre;
+}
+.popup-menu .latex-editor > div:nth-of-type(1) > textarea.latex-editor__input::-webkit-scrollbar-thumb {
+	background-color: #DDD;
+	border-radius: 2px;
+}
+.popup-menu .latex-editor > div:nth-of-type(1) > textarea.latex-editor__input.font-mono {
+	font-family: "Roboto Mono", monospace;
 }
 .popup-menu #document-hover-preview__popup {
 	width: -webkit-fit-content;
