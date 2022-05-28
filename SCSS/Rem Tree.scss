@@ -64,6 +64,10 @@
     // Children - One Child Tree
         div.tree-node--children {
             margin-left: 0;
+            
+            .backlink-counter {
+                opacity: .4;
+            }
 
             .tree-node-container:only-child {
                 &::before {

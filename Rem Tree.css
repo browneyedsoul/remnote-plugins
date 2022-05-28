@@ -61,6 +61,9 @@
 [data-rem-container-tags~=tree] div.tree-node--children, [data-rem-container-tags~=treec] div.tree-node--children {
 	margin-left: 0;
 }
+[data-rem-container-tags~=tree] div.tree-node--children .backlink-counter, [data-rem-container-tags~=treec] div.tree-node--children .backlink-counter {
+	opacity: 0.4;
+}
 [data-rem-container-tags~=tree] div.tree-node--children .tree-node-container:only-child::before, [data-rem-container-tags~=treec] div.tree-node--children .tree-node-container:only-child::before {
 	content: "";
 	padding-right: 24px;
