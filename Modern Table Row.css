@@ -34,6 +34,10 @@
 	width: -moz-fit-content;
 	width: fit-content;
 }
+[data-rem-container-tags~=fit] > .tree-node--children > .tree-node-container:first-child > .tree-node--children .RichTextViewer,
+[data-rem-container-tags~=fit] > .tree-node--children > .tree-node-container:first-child > .tree-node--children .rich-text-editor > div {
+	white-space: unset !important;
+}
 
 .popup-menu #document-hover-preview__popup #hierarchy-editor [data-rem-container-tags~=table90] .tree-node--children,
 .popup-menu #document-hover-preview__popup #hierarchy-editor [data-rem-container-tags~=table120] .tree-node--children,
