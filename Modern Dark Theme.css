@@ -216,6 +216,9 @@ body.old-dark-mode .dark-mode-background {
 .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--purple {
 	margin-bottom: unset;
 }
+.hierarchy-editor__tag-bar > span[contenteditable~=false] span.hierarchy-editor__tag-bar__tag div.py-\[2px\] {
+	display: flex;
+}
 .hierarchy-editor__tag-bar > span[contenteditable~=false] span.hierarchy-editor__tag-bar__tag div.py-\[2px\] span.RichTextViewer {
 	display: flex;
 	align-items: center;

@@ -256,6 +256,8 @@
 			> span[contenteditable~="false"] {
 				span.hierarchy-editor__tag-bar__tag {
 					div.py-\[2px\] {
+						display: flex;
+						
 						span.RichTextViewer {
 							display: flex;
 							align-items: center;
