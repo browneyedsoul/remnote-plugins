@@ -4513,4 +4513,16 @@
 			}
 		}
 	}
+// Declutter Thumbnail Size Console in rem-reference
+	.rem-reference-container {
+		.rem-reference {
+			.RichTextViewer {
+				div.image-node__container {
+					span.image-node + div {
+						display: none;
+					}
+				}
+			}
+		}
+	}
 

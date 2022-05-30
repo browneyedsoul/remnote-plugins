@@ -2812,3 +2812,7 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 .dark-mode #ErrorBoundary a {
 	color: var(--link-node-color-dark);
 }
+
+.rem-reference-container .rem-reference .RichTextViewer div.image-node__container span.image-node + div {
+	display: none;
+}
