@@ -549,6 +549,10 @@
 	left: 0;
 }
 
+.portal-tree-node-box .tree-node-container .rem-powerup-icon .text-icon {
+	top: 0.25em;
+}
+
 #DocumentTitle .rem-text .rem-checkbox,
 #DocumentTitle .rem-header--1 .rem-checkbox,
 #DocumentTitle .rem-header--2 .rem-checkbox,
