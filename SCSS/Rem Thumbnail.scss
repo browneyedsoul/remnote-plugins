@@ -326,13 +326,7 @@
 // Tag bar
 	.hierarchy-editor__tag-bar__tag {
 		.RichTextViewer {
-			display: flex;
-			align-items: center;
-
 			@include thumbnail-set(3px);
-		}
-		.py-\[2px\] {
-			display: flex;
 		}
 	}
 // Search Result

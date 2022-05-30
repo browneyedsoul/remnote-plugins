@@ -920,10 +920,6 @@
 	   object-position: center;
 }
 
-.hierarchy-editor__tag-bar__tag .RichTextViewer {
-	display: flex;
-	align-items: center;
-}
 .hierarchy-editor__tag-bar__tag .RichTextViewer span.image-node__container.inline-block {
 	height: 1em;
 	width: auto;
@@ -954,9 +950,6 @@
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
-}
-.hierarchy-editor__tag-bar__tag .py-\[2px\] {
-	display: flex;
 }
 
 [aria-label~=Omnibar] span.image-node__container.inline-block {

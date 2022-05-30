@@ -28,8 +28,9 @@
 	--inline-code-background-dark: #282C30;
 	--reference-text: #000;
 	--reference-text-dark: #DFDFD5;
-	--reference-background: #ECECEC;
+	--reference-background: #F7F6F3;
 	--reference-background-dark: #282C30;
+	--alias-background: #ECECEC;
 	--popup-background-hover: #F4F4FA;
 	--line-color: #DDD;
 	--line-color-dark: #535353;
@@ -201,6 +202,11 @@
 			line-height: 1rem;
 			
 			.hierarchy-editor__tag-bar__tag {
+				// Remove # symbol
+					> span.pl-\[6px\] {
+						display: none;
+					}
+
 				.RichTextViewer {
 					.bold {
 						&.highlight-color--red,
@@ -245,6 +251,16 @@
 					.highlight-color--purple {
 						margin-bottom: unset;
 					}
+				}
+			}
+			> span[contenteditable~="false"] {
+				span.hierarchy-editor__tag-bar__tag {
+					div.py-\[2px\] {
+						span.RichTextViewer {
+							display: flex;
+							align-items: center;
+						}
+					}	
 				}
 			}
 		}
@@ -1615,6 +1631,21 @@
 									.highlight-color--purple:not(.bold.highlight-color--purple) {background-color: var(--highlight-color--purple-light);}
 								}
 							}
+						// Rem Reference
+							.rem-reference-container {
+								&:not(.hierarchy-editor__tag-bar .rem-reference-container) {
+									.rem-reference {
+										.RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
+											color: var(--reference-text);
+											background-color: var(--reference-background);
+											font-family: 'Roboto Mono', monospace !important;
+											padding: 0 2px;
+											margin: 0 2px;
+											border-radius: 4px;
+										}
+									}
+								}
+							}
 					}
 			}
 	}
@@ -1937,6 +1968,21 @@
 										.highlight-color--purple:not(.bold.highlight-color--purple) {background-color: var(--highlight-color--purple-dark);}
 									}
 								}
+							// Rem Reference
+								.rem-reference-container {
+									&:not(.hierarchy-editor__tag-bar .rem-reference-container) {
+										.rem-reference {
+											.RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
+												color: var(--reference-text-dark);
+												background-color: var(--reference-background-dark);
+												font-family: 'Roboto Mono', monospace !important;
+												padding: 0 2px;
+												margin: 0 2px;
+												border-radius: 4px;
+											}
+										}
+									}
+								}
 						}
 				}
 			.rem-container--focused {
@@ -1996,7 +2042,7 @@
 		.highlight-color--purple {
 			border-radius: 3px;
 			margin-bottom: 1px;
-			padding: 0px 3px 1px 3px;
+			padding: 0 3px;
 			color: black;
 		}
 		[data-rem-tags~=highlight] {
@@ -3287,27 +3333,14 @@
 				}
 			}
 		}
-// Reference & Alias
+// Alias
 	.work-in-progress-rem {
 		color: var(--reference-text);
 	}
-    .rem-reference-container {
-        .rem-reference {
-            .RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
-                color: var(--reference-text);
-                background-color: #F7F6F3;
-                font-family: 'Roboto Mono', monospace !important;
-                padding: 2px 4px;
-                margin: 0 2px;
-                border-radius: 4px;
-            }
-        }
-    }
-
     [data-rem-container-tags~="aliases"] {
         border: 0.1rem solid var(--line-color);
         border-radius: 4px;
-		background-color: var(--reference-background);
+		background-color: var(--alias-background);
 		margin-right: 0.7rem;
 
         > .tree-node--parent {
@@ -3649,59 +3682,63 @@
 					> div.rounded-md {
 						> div.p-2 {
 							// Sidebar list item height
-							height: 20px;
+								height: 20px;
 							// Focused item Placement
-							&.group-hover\:rn-clr-background-light-accent--hovered {
-								margin-left: -2px;
-							}
+								&.group-hover\:rn-clr-background-light-accent--hovered {
+									margin-left: -2px;
+								}
+							// Sidebar list Item Box
+								> div {
+									// Power-up Symbol
+										> span.rem-powerup-icon {
+											filter: invert(0);
+											position: relative;
+											top: 1px;
 
-							> div {
-								// Power-up Symbol
-									> span.rem-powerup-icon {
-										filter: invert(0);
-										position: relative;
-										top: 1px;
-
-										> svg.text-icon {
-											// 
+											> svg.text-icon {
+												// 
+											}
 										}
-									}
-								.RichTextViewer {
-									color: var(--darkmode-text);
-									position: relative;
-									top: 1px;
+									// Item Text area
+										.RichTextViewer {
+											color: var(--darkmode-text);
+											position: relative;
+											top: 1px;
 
-									> .image-node__container {
-										position: relative;
-										top: 0.1rem;
-									}
+											// Highlight
+												.highlight-color--red,
+												.highlight-color--orange,
+												.highlight-color--yellow,
+												.highlight-color--green,
+												.highlight-color--blue,
+												.highlight-color--purple {
+													margin-left: 3px;
+												}
 
-									.highlight-color--red,
-									.highlight-color--orange,
-									.highlight-color--yellow,
-									.highlight-color--green,
-									.highlight-color--blue,
-									.highlight-color--purple {
-										margin-left: 3px;
-									}
-
-									> .rem-reference-container  {
-										> span {
-											> span.rem-reference {
+											> .rem-reference-container  {
 												> span {
-													> span.RichTextViewer {
-														background-color: unset;
+													> span.rem-reference {
+														> span {
+															> span.RichTextViewer {
+																background-color: unset;
+
+																// Sidebar Thumbnail
+																	> .image-node__container {
+																		position: relative;
+																		top: 0.1rem;
+																		margin-right: 0.2rem;
+																	}
+															}
+														}
 													}
 												}
 											}
 										}
-									}
+									// Sidebar list Arrow line Alignment
+										&:only-child {
+											margin-left: 24px;
+										}
 								}
-								// Sidebar list Arrow line Alignment
-								&:only-child {
-									margin-left: 24px;
-								}
-							}
 						}
 					}
 					.highlight-color--red,
