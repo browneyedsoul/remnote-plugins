@@ -371,36 +371,6 @@
 				}
 			}
 		}
-		[data-rem-tags~="highlight"] {
-			> div {
-				> span {
-					> div.rem-text {
-						// Unfocused
-						> div.EditorContainer {
-							> span {
-								> span.RichTextViewer {
-									> span.bold {
-										color: #000 !important;
-									}
-								}
-							}
-						}
-						// Focused
-						> div {
-							> div.EditorContainer {
-								> div[data-slate-node~="element"] {
-									> span[data-slate-node~="text"] {
-										> span.bold {
-											color: #000 !important;
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
 	// Span Element - Inline Code
 		.quote {
 			color: var(--inline-code-color-dark);

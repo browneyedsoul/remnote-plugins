@@ -281,12 +281,6 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text-bold);
 	font-weight: 600;
 }
-.dark-mode [data-rem-tags~=highlight] > div > span > div.rem-text > div.EditorContainer > span > span.RichTextViewer > span.bold {
-	color: #000 !important;
-}
-.dark-mode [data-rem-tags~=highlight] > div > span > div.rem-text > div > div.EditorContainer > div[data-slate-node~=element] > span[data-slate-node~=text] > span.bold {
-	color: #000 !important;
-}
 .dark-mode .quote {
 	color: var(--inline-code-color-dark);
 	background-color: var(--inline-code-background-dark);
