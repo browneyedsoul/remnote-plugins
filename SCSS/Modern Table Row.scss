@@ -142,6 +142,7 @@
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             background-color: var(--table-columnrow-background-color);
+
             // Fix Global Flaw
                 .EditorContainer {
                     overflow-wrap: anywhere !important;
@@ -188,13 +189,19 @@
                     white-space: pre;
                     border: 0.07rem solid  var(--table-border-color);
 
+                    // Scrollbar
+                        &::-webkit-scrollbar-thumb {
+                            background-color: #DDD;
+                            border-radius: 2px;
+                        }
+
                     // Remove Overflow Content
                         .right-\[-4px\] {
                             right: 4px;
                         }
-                        // .float-end {
-                        //     display: none;
-                        // }
+                        .float-end {
+                            display: none;
+                        }
                         [data-icon~="merge"] {
                             display: none;
                         }
@@ -319,6 +326,10 @@
                             border: 0.07rem solid  var(--table-border-color-dark);
                             border-top: unset;
                             border-left: unset;
+
+                            &::-webkit-scrollbar-thumb {
+                                background-color: #222;
+                            }
 
                             > :first-child {
                                 border-right: unset;
