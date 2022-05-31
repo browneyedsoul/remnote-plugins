@@ -416,7 +416,7 @@
 	grid-auto-rows: auto;
 	border-left: unset;
 	padding-left: 0;
-	overflow-x: visible;
+	overflow-x: auto;
 	white-space: pre;
 	border: 0.07rem solid var(--table-border-color);
 }
