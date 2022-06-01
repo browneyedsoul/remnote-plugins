@@ -871,8 +871,8 @@
 	background-color: var(--table-cell-background-color);
 	border-left: 0.07rem solid var(--table-border-color);
 	flex: 1 1 0;
-	padding-right: 0.3rem;
-	width: 99%;
+	padding-right: 1.2rem;
+	width: 98%;
 }
 #hierarchy-editor [data-rem-container-tags~=table90] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container .rich-text-editor,
 #hierarchy-editor [data-rem-container-tags~=table120] > .tree-node--children > .tree-node-container > .tree-node--children > .tree-node-container .rich-text-editor,
@@ -1183,46 +1183,6 @@
 #hierarchy-editor [data-rem-container-tags~=table1200] > .tree-node--children [data-rem-tags~=highlight] .highlight-color--blue,
 #hierarchy-editor [data-rem-container-tags~=table1200] > .tree-node--children [data-rem-tags~=highlight] .highlight-color--purple {
 	padding: 0;
-}
-#hierarchy-editor [data-rem-container-tags~=table90] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table120] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table150] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table180] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table210] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table240] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table270] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table300] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table330] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table360] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table390] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table420] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table450] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table480] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table510] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table540] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table570] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table600] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table630] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table660] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table690] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table720] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table750] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table780] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table810] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table840] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table870] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table900] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table930] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table960] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table990] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table1020] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table1050] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table1080] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table1110] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table1140] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table1170] #code-node,
-#hierarchy-editor [data-rem-container-tags~=table1200] #code-node {
-	width: 99%;
 }
 
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table90],
