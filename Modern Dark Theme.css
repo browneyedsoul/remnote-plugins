@@ -57,7 +57,7 @@
 	--highlight-color--orange-text-dark: #FFDAB8;
 	--highlight-color--yellow: #EDED85;
 	--highlight-color--yellow-light: #F8F9AA;
-	--highlight-color--yellow-dark: #D5D15A;
+	--highlight-color--yellow-dark: #E1DE5E;
 	--highlight-color--yellow-text-dark: #E8E67D;
 	--highlight-color--green: #9FE39B;
 	--highlight-color--green-light: #D8FFD1;
@@ -1299,7 +1299,7 @@ body.old-dark-mode .dark-mode-background {
 }
 
 .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--red, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--orange, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--yellow, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--green, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--blue, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--purple {
-	font-weight: 500;
+	font-weight: 550;
 }
 
 .highlight-color--red {
