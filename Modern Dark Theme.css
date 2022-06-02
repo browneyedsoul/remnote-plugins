@@ -1593,6 +1593,9 @@ body.old-dark-mode .dark-mode-background {
 .popup-menu.max-w-\[calc\(100vw-100px\)\] {
 	width: unset;
 }
+.popup-menu > div {
+	height: 100%;
+}
 .popup-menu > div > div.w-96 {
 	width: -webkit-fit-content;
 	width: -moz-fit-content;

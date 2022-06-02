@@ -2413,6 +2413,9 @@
 			}
 
 			> div {
+				// Fit height
+				height: 100%;
+				
 				> div.w-96 {
 					width: fit-content;
 				}
