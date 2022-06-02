@@ -2,7 +2,7 @@
 	--table-title-background-color: #E6E6E4;
 	--table-title-background-color-dark: #525252;
 	--table-columnrow-background-color: #F7F6F3;
-	--table-columnrow-background-color-dark: #707070;
+	--table-columnrow-background-color-dark: #282C30;
 	--table-cell-background-color: #FFFFFF;
 	--table-cell-background-color-dark: #2F3437;
 	--table-border-color: #E6E6E4;
@@ -742,7 +742,7 @@
 #hierarchy-editor [data-rem-container-tags~=table1170] > .tree-node--children > .tree-node-container > :first-child,
 #hierarchy-editor [data-rem-container-tags~=table1200] > .tree-node--children > .tree-node-container > :first-child {
 	float: left;
-	font-weight: bold;
+	font-weight: 550;
 	background-color: var(--table-columnrow-background-color);
 	text-align: left;
 	padding-left: 0em;
@@ -1307,7 +1307,6 @@
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table1200] > .tree-node--children {
 	border: 0.07rem solid var(--table-border-color-dark);
 	border-top: unset;
-	border-left: unset;
 }
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table90] > .tree-node--children::-webkit-scrollbar-thumb,
 .dark-mode #hierarchy-editor [data-rem-container-tags~=table120] > .tree-node--children::-webkit-scrollbar-thumb,
@@ -1707,7 +1706,7 @@
 [data-rem-container-tags~=th],
 [data-rem-container-tags~=tablecolor] {
 	background-color: var(--table-columnrow-background-color) !important;
-	font-weight: bold;
+	font-weight: 550;
 	text-align: center;
 }
 [data-rem-container-tags~=th] [data-rem-tags~=th] > .tree-node--parent,
