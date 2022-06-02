@@ -7,32 +7,32 @@
     --calloutred-background-color-dark: #572924;
     --calloutred-text-color: #721C25;
     --calloutred-text-color-dark: #FFD2CE;
-    --calloutred-text-bold-color-dark: #FFDFD8;
+    --calloutred-text-bold-color-dark: #FFEAE3;
     --calloutorange-background-color: #FDEDD9;
     --calloutorange-background-color-dark: #553D24;
     --calloutorange-text-color: #572924;
     --calloutorange-text-color-dark: #FFDAB8;
-    --calloutorange-text-bold-color-dark: #FFE9C8;
+    --calloutorange-text-bold-color-dark: #FFF0D6;
     --calloutyellow-background-color: #F8F9CD;
     --calloutyellow-background-color-dark: #453E1E;
     --calloutyellow-text-color: #454501;
     --calloutyellow-text-color-dark: #E8DDA7;
-    --calloutyellow-text-bold-color-dark: #FFFEB5;
+    --calloutyellow-text-bold-color-dark: #FFFECA;
     --calloutgreen-background-color: #D5EED7;
     --calloutgreen-background-color-dark: #253F27;
     --calloutgreen-text-color: #003E01;
     --calloutgreen-text-color-dark: #B3DDAB;
-    --calloutgreen-text-bold-color-dark: #C0FFBE;
+    --calloutgreen-text-bold-color-dark: #DCFFD9;
     --calloutblue-background-color: #E6F3F6;
     --calloutblue-background-color-dark: #183C4D;
     --calloutblue-text-color: #00005B;
     --calloutblue-text-color-dark: #B5DEE8;
-    --calloutblue-text-bold-color-dark: #D1F5FF;
-    --calloutpurple-background-color: #FEEEFC;
+    --calloutblue-text-bold-color-dark: #DDFCFF;
+    --calloutpurple-background-color: #F1EEFE;
     --calloutpurple-background-color-dark: #43273F;
     --calloutpurple-text-color: #3B004D;
     --calloutpurple-text-color-dark: #DDC3EB;
-    --calloutpurple-text-bold-color-dark: #F9E1FF;
+    --calloutpurple-text-bold-color-dark: #F6ECFF;
     --callout-padding: 15px 20px;
     --callout-margin-top: 7px;
     --callout-margin-bottom: 7px;
@@ -150,7 +150,7 @@
                     &:not(.highlight-color--green),
                     &:not(.highlight-color--blue),
                     &:not(.highlight-color--purple) {
-                        color: var(--callout-text-bold-color-dark);
+                        color: var(--callout-text-bold-color-dark) !important;
                     }
                 }
             }
@@ -168,7 +168,7 @@
                     &:not(.highlight-color--green),
                     &:not(.highlight-color--blue),
                     &:not(.highlight-color--purple) {
-                        color: var(--calloutred-text-bold-color-dark);
+                        color: var(--calloutred-text-bold-color-dark) !important;
                     }
                 }
             }
@@ -186,7 +186,7 @@
                     &:not(.highlight-color--green),
                     &:not(.highlight-color--blue),
                     &:not(.highlight-color--purple) {
-                        color: var(--calloutorange-text-bold-color-dark);
+                        color: var(--calloutorange-text-bold-color-dark) !important;
                     }
                 }
             }
@@ -204,7 +204,7 @@
                     &:not(.highlight-color--green),
                     &:not(.highlight-color--blue),
                     &:not(.highlight-color--purple) {
-                        color: var(--calloutyellow-text-bold-color-dark);
+                        color: var(--calloutyellow-text-bold-color-dark) !important;
                     }
                 }
             }
@@ -222,7 +222,7 @@
                     &:not(.highlight-color--green),
                     &:not(.highlight-color--blue),
                     &:not(.highlight-color--purple) {
-                        color: var(--calloutgreen-text-bold-color-dark);
+                        color: var(--calloutgreen-text-bold-color-dark) !important;
                     }
                 }
             }
@@ -241,7 +241,7 @@
                         &:not(.highlight-color--green),
                         &:not(.highlight-color--blue),
                         &:not(.highlight-color--purple) {
-                            color: var(--calloutblue-text-bold-color-dark);
+                            color: var(--calloutblue-text-bold-color-dark) !important;
                         }
                     }
                 }
@@ -260,21 +260,21 @@
                     &:not(.highlight-color--green),
                     &:not(.highlight-color--blue),
                     &:not(.highlight-color--purple) {
-                        color: var(--calloutpurple-text-bold-color-dark);
+                        color: var(--calloutpurple-text-bold-color-dark) !important;
                     }
                 }
             }
         }
     }
-    .popup-menu.dark-mode {
-        [data-rem-container-tags~="callout"] {background-color: var(--callout-background-color-dark) !important;}
-        [data-rem-container-tags~="calloutred"] {background-color: var(--calloutred-background-color-dark) !important;}
-        [data-rem-container-tags~="calloutorange"] {background-color: var(--calloutorange-background-color-dark) !important;}
-        [data-rem-container-tags~="calloutyellow"] {background-color: var(--calloutyellow-background-color-dark) !important;}
-        [data-rem-container-tags~="calloutgreen"] {background-color: var(--calloutgreen-background-color-dark) !important;}
-        [data-rem-container-tags~="calloutblue"] {background-color: var(--calloutblue-background-color-dark) !important;}
-        [data-rem-container-tags~="calloutpurple"] {background-color: var(--calloutpurple-background-color-dark) !important;}
-    }
+    // .popup-menu.dark-mode {
+    //     [data-rem-container-tags~="callout"] {background-color: var(--callout-background-color-dark) !important;}
+    //     [data-rem-container-tags~="calloutred"] {background-color: var(--calloutred-background-color-dark) !important;}
+    //     [data-rem-container-tags~="calloutorange"] {background-color: var(--calloutorange-background-color-dark) !important;}
+    //     [data-rem-container-tags~="calloutyellow"] {background-color: var(--calloutyellow-background-color-dark) !important;}
+    //     [data-rem-container-tags~="calloutgreen"] {background-color: var(--calloutgreen-background-color-dark) !important;}
+    //     [data-rem-container-tags~="calloutblue"] {background-color: var(--calloutblue-background-color-dark) !important;}
+    //     [data-rem-container-tags~="calloutpurple"] {background-color: var(--calloutpurple-background-color-dark) !important;}
+    // }
 // Alignment
     // Card Item Callout
         .node-card-item[data-rem-container-tags~="callout"],
