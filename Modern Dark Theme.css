@@ -1595,6 +1595,7 @@ body.old-dark-mode .dark-mode-background {
 }
 .popup-menu > div {
 	height: 100%;
+	max-width: unset;
 }
 .popup-menu > div > div.w-96 {
 	width: -webkit-fit-content;
@@ -1635,13 +1636,27 @@ body.old-dark-mode .dark-mode-background {
 	width: -webkit-fit-content;
 	width: -moz-fit-content;
 	width: fit-content;
-	min-width: 32rem;
+	min-width: 16rem;
 	max-width: 60vw;
 }
 .popup-menu #document-hover-preview__popup > #hierarchy-editor {
 	margin-top: 1rem;
 }
 .popup-menu #document-hover-preview__popup > #hierarchy-editor > .fixed {
+	display: none;
+}
+.popup-menu #document-hover-preview__popup .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
+	margin-top: 0.7rem;
+	margin-bottom: 0.7rem;
+	padding-left: 1rem;
+	padding-right: 0.5rem;
+	border: 0.1rem solid var(--line-color);
+	border-radius: 4px;
+}
+.popup-menu #document-hover-preview__popup .animate-zoom-into-bullet > div.tree-node--automatic-search-portal-header {
+	width: calc(100% - 1rem);
+}
+.popup-menu #document-hover-preview__popup .animate-zoom-into-bullet > div.tree-node--automatic-search-portal-header div.bg-white > div.bg-gray-10 {
 	display: none;
 }
 
@@ -2671,7 +2686,10 @@ body.old-dark-mode .dark-mode #document-sidebar {
 	background-color: #FFF;
 }
 
-.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
+#document #hierarchy-editor .animate-zoom-into-bullet .tree-node--parent + .portal-tree-node-box {
+	margin-left: -3px;
+}
+#document #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
 	width: calc(100% - 2.4rem);
 	margin-top: 0.7rem;
 	margin-bottom: 0.7rem;
@@ -2680,29 +2698,23 @@ body.old-dark-mode .dark-mode #document-sidebar {
 	border: 0.1rem solid var(--line-color);
 	border-radius: 4px;
 }
-.animate-zoom-into-bullet > div.tree-node--automatic-search-portal-header {
+#document #hierarchy-editor .animate-zoom-into-bullet > div.tree-node--automatic-search-portal-header {
 	width: calc(100% - 1rem);
 }
-.animate-zoom-into-bullet > div.tree-node--automatic-search-portal-header div.bg-white > div.bg-gray-10 {
+#document #hierarchy-editor .animate-zoom-into-bullet > div.tree-node--automatic-search-portal-header div.bg-white > div.bg-gray-10 {
 	display: none;
 }
-
-#document #hierarchy-editor .animate-zoom-into-bullet .tree-node--parent + .portal-tree-node-box {
-	margin-left: -3px;
+#document #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text {
+	display: inline !important;
+	zoom: 0.75;
+	opacity: 0.6;
 }
-
-.dark-mode .backlink-counter {
-	color: var(--darkmode-contrast);
-	background-color: var(--darkmode-background-selected-darker);
-	opacity: 0.8;
+#document #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text .RichTextViewer {
+	display: inline-flex !important;
 }
-.dark-mode .highlight-color--red .backlink-counter,
-.dark-mode .highlight-color--orange .backlink-counter,
-.dark-mode .highlight-color--yellow .backlink-counter,
-.dark-mode .highlight-color--green .backlink-counter,
-.dark-mode .highlight-color--blue .backlink-counter,
-.dark-mode .highlight-color--purple .backlink-counter {
-	color: var(--darkmode-contrast);
+#document #hierarchy-editor .portal-tree-transient-node-box .EditorContainerInline,
+#document #hierarchy-editor .portal-tree-transient-node-box .EditorContainerInline > span > span {
+	display: inline;
 }
 
 .hierarchy-editor__search-portal-section {
@@ -2719,19 +2731,6 @@ body.old-dark-mode .dark-mode #document-sidebar {
 	left: 0;
 }
 
-#hierarchy-editor .rem-container--not-included-in-document-scope .rem-text {
-	display: inline !important;
-	zoom: 0.75;
-	opacity: 0.6;
-}
-#hierarchy-editor .rem-container--not-included-in-document-scope .rem-text .RichTextViewer {
-	display: inline-flex !important;
-}
-#hierarchy-editor .portal-tree-transient-node-box .EditorContainerInline,
-#hierarchy-editor .portal-tree-transient-node-box .EditorContainerInline > span > span {
-	display: inline;
-}
-
 #hierarchy-editor .rem-container__top-level-rem-in-portal-border .rem-container__top-level-rem-in-portal-border__inner {
 	border-color: var(--line-color);
 }
@@ -2746,6 +2745,19 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 	color: var(--darkmode-contrast);
 }
 
+.dark-mode #hierarchy-editor .backlink-counter {
+	color: var(--darkmode-contrast);
+	background-color: var(--darkmode-background-selected-darker);
+	opacity: 0.8;
+}
+.dark-mode #hierarchy-editor .highlight-color--red .backlink-counter,
+.dark-mode #hierarchy-editor .highlight-color--orange .backlink-counter,
+.dark-mode #hierarchy-editor .highlight-color--yellow .backlink-counter,
+.dark-mode #hierarchy-editor .highlight-color--green .backlink-counter,
+.dark-mode #hierarchy-editor .highlight-color--blue .backlink-counter,
+.dark-mode #hierarchy-editor .highlight-color--purple .backlink-counter {
+	color: var(--darkmode-contrast);
+}
 .dark-mode #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
 	border: 0.1rem solid var(--line-color-dark);
 }
