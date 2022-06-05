@@ -186,6 +186,13 @@ body.old-dark-mode .dark-mode-background {
 .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag > span.pl-\[6px\] {
 	display: none;
 }
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag > div:nth-of-type(1) {
+	margin-left: 0.2rem;
+}
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
+	opacity: 0.4;
+	margin-left: unset;
+}
 .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--red, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--orange, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--yellow, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--green, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--blue, .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--purple {
 	background-color: unset;
 }
