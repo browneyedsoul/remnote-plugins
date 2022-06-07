@@ -277,16 +277,13 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .rem-text.rem-header--3 {
 	color: var(--darkmode-text-header);
 }
-.dark-mode .rem-text .bold:not(.rem-header--1 .bold) .dark-mode .rem-text .bold:not(.rem-header--2 .bold) .dark-mode .rem-text .bold:not(.rem-header--3 .bold) .dark-mode .rem-text .bold:not([data-rem-tags~=highlight] .bold) .dark-mode .rem-text .bold:not(.bold.highlight-color--red) .dark-mode .rem-text .bold:not(.bold.highlight-color--orange) .dark-mode .rem-text .bold:not(.bold.highlight-color--yellow) .dark-mode .rem-text .bold:not(.bold.highlight-color--green) .dark-mode .rem-text .bold:not(.bold.highlight-color--blue) .dark-mode .rem-text .bold:not(.bold.highlight-color--purple) .dark-mode .rem-text .bold:not([data-rem-container-tags~=callout]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutred]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutorange]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutyellow]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutgreen]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutblue]) .dark-mode .rem-text .bold:not([data-rem-container-tags~=calloutpurple]) {
-	color: var(--darkmode-text-bold);
+.dark-mode .rem-text.rem-header--1 .EditorContainer .bold,
+.dark-mode .rem-text.rem-header--2 .EditorContainer .bold,
+.dark-mode .rem-text.rem-header--3 .EditorContainer .bold {
+	color: var(--darkmode-text-header);
 }
-.dark-mode .rem-text .EditorContainer .RichTextViewer:not(.RichTextViewer.notIncludedAncestor) .bold:not(.bold.highlight-color--red):not(.bold.highlight-color--orange):not(.bold.highlight-color--yellow):not(.bold.highlight-color--green):not(.bold.highlight-color--blue):not(.bold.highlight-color--purple):not(.rem-text.rem-header--1 .bold):not(.rem-text.rem-header--2 .bold):not(.rem-text.rem-header--3 .bold) {
+.dark-mode .rem-text .EditorContainer .bold {
 	color: var(--darkmode-text-bold);
-	font-weight: 600;
-}
-.dark-mode .rem-text .EditorContainer [data-slate-node~=element] .bold:not(.bold.highlight-color--red):not(.bold.highlight-color--orange):not(.bold.highlight-color--yellow):not(.bold.highlight-color--green):not(.bold.highlight-color--blue):not(.bold.highlight-color--purple):not(.rem-text.rem-header--1 .bold):not(.rem-text.rem-header--2 .bold):not(.rem-text.rem-header--3 .bold) {
-	color: var(--darkmode-text-bold);
-	font-weight: 600;
 }
 .dark-mode .quote {
 	color: var(--inline-code-color-dark);

@@ -333,49 +333,23 @@
 		.rem-text {
 			color: var(--darkmode-text);
 		}
+	// Span Element - Header
 		.rem-text.rem-header--1,
 		.rem-text.rem-header--2,
 		.rem-text.rem-header--3 {
 			color: var(--darkmode-text-header);
+
+			.EditorContainer {
+				.bold {
+					color: var(--darkmode-text-header);
+				}
+			}
 		}
 	// Span Element - Bold Text
 		.rem-text {
-			.bold {
-				&:not(.rem-header--1 .bold)
-				&:not(.rem-header--2 .bold)
-				&:not(.rem-header--3 .bold)
-				&:not([data-rem-tags~="highlight"] .bold)
-				&:not(.bold.highlight-color--red)
-				&:not(.bold.highlight-color--orange)
-				&:not(.bold.highlight-color--yellow)
-				&:not(.bold.highlight-color--green)
-				&:not(.bold.highlight-color--blue)
-				&:not(.bold.highlight-color--purple)
-				&:not([data-rem-container-tags~="callout"])
-				&:not([data-rem-container-tags~="calloutred"])
-				&:not([data-rem-container-tags~="calloutorange"])
-				&:not([data-rem-container-tags~="calloutyellow"])
-				&:not([data-rem-container-tags~="calloutgreen"])
-				&:not([data-rem-container-tags~="calloutblue"])
-				&:not([data-rem-container-tags~="calloutpurple"]) {
-					color: var(--darkmode-text-bold);
-				}
-			}
-
 			.EditorContainer {
-				// Unfocused
-				.RichTextViewer:not(.RichTextViewer.notIncludedAncestor) {
-					.bold:not(.bold.highlight-color--red):not(.bold.highlight-color--orange):not(.bold.highlight-color--yellow):not(.bold.highlight-color--green):not(.bold.highlight-color--blue):not(.bold.highlight-color--purple):not(.rem-text.rem-header--1 .bold):not(.rem-text.rem-header--2 .bold):not(.rem-text.rem-header--3 .bold) {
-						color: var(--darkmode-text-bold);
-						font-weight: 600;
-					}
-				}
-				// Focused
-				[data-slate-node~="element"] {
-					.bold:not(.bold.highlight-color--red):not(.bold.highlight-color--orange):not(.bold.highlight-color--yellow):not(.bold.highlight-color--green):not(.bold.highlight-color--blue):not(.bold.highlight-color--purple):not(.rem-text.rem-header--1 .bold):not(.rem-text.rem-header--2 .bold):not(.rem-text.rem-header--3 .bold) {
-						color: var(--darkmode-text-bold);
-						font-weight: 600;
-					}
+				.bold {
+					color: var(--darkmode-text-bold);
 				}
 			}
 		}
