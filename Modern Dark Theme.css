@@ -282,7 +282,119 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .rem-text.rem-header--3 .EditorContainer .bold {
 	color: var(--darkmode-text-header);
 }
-.dark-mode .rem-text .EditorContainer .bold {
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--red .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--red .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--red .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--red .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--red .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--red .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--red .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--red .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--red .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--orange .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--orange .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--orange .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--orange .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--orange .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--orange .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--orange .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--orange .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--orange .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--yellow .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--yellow .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--yellow .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--yellow .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--yellow .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--yellow .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--yellow .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--yellow .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--yellow .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--green .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--green .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--green .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--green .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--green .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--green .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--green .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--green .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--green .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--blue .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--blue .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--blue .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--blue .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--blue .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--blue .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--blue .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--blue .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--blue .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--purple .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--purple .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--purple .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--purple .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--purple .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--purple .rem-text.rem-header--3 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--purple .rem-text.rem-header--1 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--purple .rem-text.rem-header--2 .RichTextViewer,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--purple .rem-text.rem-header--3 .RichTextViewer {
+	color: #000;
+}
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--red .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--red .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--red .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--red .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--red .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--red .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--red .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--red .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--red .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--orange .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--orange .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--orange .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--orange .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--orange .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--orange .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--orange .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--orange .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--orange .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--yellow .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--yellow .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--yellow .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--yellow .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--yellow .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--yellow .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--yellow .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--yellow .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--yellow .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--green .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--green .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--green .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--green .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--green .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--green .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--green .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--green .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--green .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--blue .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--blue .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--blue .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--blue .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--blue .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--blue .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--blue .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--blue .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--blue .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--purple .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--purple .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-1.highlight-color--purple .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--purple .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--purple .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-2.highlight-color--purple .rem-text.rem-header--3 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--purple .rem-text.rem-header--1 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--purple .rem-text.rem-header--2 .bold,
+.dark-mode [data-rem-tags~=highlight] .rem-container--header-3.highlight-color--purple .rem-text.rem-header--3 .bold {
+	color: #000;
+}
+.dark-mode .rem-text:not(.rem-text.rem-header--1):not(.rem-text.rem-header--2):not(.rem-text.rem-header--3) .EditorContainer .bold {
 	color: var(--darkmode-text-bold);
 	font-weight: 550;
 }
@@ -2750,61 +2862,61 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 	color: var(--darkmode-contrast);
 }
 
-.dark-mode #hierarchy-editor .backlink-counter {
+.dark-mode #document #hierarchy-editor .backlink-counter {
 	color: var(--darkmode-contrast);
 	background-color: var(--darkmode-background-selected-darker);
 	opacity: 0.8;
 }
-.dark-mode #hierarchy-editor .highlight-color--red .backlink-counter,
-.dark-mode #hierarchy-editor .highlight-color--orange .backlink-counter,
-.dark-mode #hierarchy-editor .highlight-color--yellow .backlink-counter,
-.dark-mode #hierarchy-editor .highlight-color--green .backlink-counter,
-.dark-mode #hierarchy-editor .highlight-color--blue .backlink-counter,
-.dark-mode #hierarchy-editor .highlight-color--purple .backlink-counter {
+.dark-mode #document #hierarchy-editor .highlight-color--red .backlink-counter,
+.dark-mode #document #hierarchy-editor .highlight-color--orange .backlink-counter,
+.dark-mode #document #hierarchy-editor .highlight-color--yellow .backlink-counter,
+.dark-mode #document #hierarchy-editor .highlight-color--green .backlink-counter,
+.dark-mode #document #hierarchy-editor .highlight-color--blue .backlink-counter,
+.dark-mode #document #hierarchy-editor .highlight-color--purple .backlink-counter {
 	color: var(--darkmode-contrast);
 }
-.dark-mode #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
+.dark-mode #document #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
 	border: 0.1rem solid var(--line-color-dark);
 }
-.dark-mode #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text {
+.dark-mode #document #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text {
 	color: var(--darkmode-text);
 }
-.dark-mode #hierarchy-editor .rem-container--not-included-in-document-scope .float-right .bg-white {
+.dark-mode #document #hierarchy-editor .rem-container--not-included-in-document-scope .float-right .bg-white {
 	background-color: unset;
 }
-.dark-mode #hierarchy-editor .rem-container__top-level-rem-in-portal-border .rem-container__top-level-rem-in-portal-border__inner {
+.dark-mode #document #hierarchy-editor .rem-container__top-level-rem-in-portal-border .rem-container__top-level-rem-in-portal-border__inner {
 	border-color: var(--line-color-dark);
 }
-.dark-mode #hierarchy-editor .tree-node--parent .rem-container .bg-white {
+.dark-mode #document #hierarchy-editor .tree-node--parent .rem-container .bg-white {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
 }
-.dark-mode #hierarchy-editor .tree-node--parent .rem-container .bg-white .button {
+.dark-mode #document #hierarchy-editor .tree-node--parent .rem-container .bg-white .button {
 	background-color: var(--darkmode-background-selected-darker);
 	border-color: #000 !important;
 }
-.dark-mode #hierarchy-editor .tree-node--parent .rem-container .bg-white .button:hover {
+.dark-mode #document #hierarchy-editor .tree-node--parent .rem-container .bg-white .button:hover {
 	background-color: #636368;
 }
-.dark-mode #hierarchy-editor .tree-node--parent > .bg-white {
+.dark-mode #document #hierarchy-editor .tree-node--parent > .bg-white {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
 }
-.dark-mode #hierarchy-editor .tree-node--parent > .bg-white .button {
+.dark-mode #document #hierarchy-editor .tree-node--parent > .bg-white .button {
 	background-color: var(--darkmode-background-selected-darker);
 	border-color: #000 !important;
 }
-.dark-mode #hierarchy-editor .tree-node--parent > .bg-white .button:hover {
+.dark-mode #document #hierarchy-editor .tree-node--parent > .bg-white .button:hover {
 	background-color: #636368;
 }
-.dark-mode #hierarchy-editor .tree-node--parent #AutomaticSearchPortals .text-base {
+.dark-mode #document #hierarchy-editor .tree-node--parent #AutomaticSearchPortals .text-base {
 	color: var(--darkmode-text);
 }
-.dark-mode #hierarchy-editor .tree-node--parent #AutomaticSearchPortals .button {
+.dark-mode #document #hierarchy-editor .tree-node--parent #AutomaticSearchPortals .button {
 	background-color: var(--darkmode-background-selected-darker);
 	border-color: #000 !important;
 }
-.dark-mode #hierarchy-editor .tree-node--parent #AutomaticSearchPortals .button:hover {
+.dark-mode #document #hierarchy-editor .tree-node--parent #AutomaticSearchPortals .button:hover {
 	background-color: #636368;
 }
 

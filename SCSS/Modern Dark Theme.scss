@@ -345,8 +345,40 @@
 				}
 			}
 		}
+	// Span Element - Hightlight Header
+		[data-rem-tags~="highlight"] {
+			.rem-container--header-1.highlight-color--red,
+			.rem-container--header-2.highlight-color--red,
+			.rem-container--header-3.highlight-color--red,
+			.rem-container--header-1.highlight-color--orange,
+			.rem-container--header-2.highlight-color--orange,
+			.rem-container--header-3.highlight-color--orange,
+			.rem-container--header-1.highlight-color--yellow,
+			.rem-container--header-2.highlight-color--yellow,
+			.rem-container--header-3.highlight-color--yellow,
+			.rem-container--header-1.highlight-color--green,
+			.rem-container--header-2.highlight-color--green,
+			.rem-container--header-3.highlight-color--green,
+			.rem-container--header-1.highlight-color--blue,
+			.rem-container--header-2.highlight-color--blue,
+			.rem-container--header-3.highlight-color--blue,
+			.rem-container--header-1.highlight-color--purple,
+			.rem-container--header-2.highlight-color--purple,
+			.rem-container--header-3.highlight-color--purple {
+				.rem-text.rem-header--1,
+				.rem-text.rem-header--2,
+				.rem-text.rem-header--3 {
+					.RichTextViewer {
+						color: #000;
+					}
+					.bold {
+						color: #000;
+					}
+				}
+			}
+		}
 	// Span Element - Bold Text
-		.rem-text {
+		.rem-text:not(.rem-text.rem-header--1):not(.rem-text.rem-header--2):not(.rem-text.rem-header--3) {
 			.EditorContainer {
 				.bold {
 					color: var(--darkmode-text-bold);
@@ -4400,53 +4432,81 @@
 		}
 	// Darkmode Compatibility
 		.dark-mode {
-			#hierarchy-editor {
-				// Backlink Counter
-					.backlink-counter {
-						color: var(--darkmode-contrast);
-						background-color: var(--darkmode-background-selected-darker);
-						opacity: .8;
-					}
-					.highlight-color--red,
-					.highlight-color--orange,
-					.highlight-color--yellow,
-					.highlight-color--green,
-					.highlight-color--blue,
-					.highlight-color--purple {
+			#document {
+				#hierarchy-editor {
+					// Backlink Counter
 						.backlink-counter {
-								color: var(--darkmode-contrast);
+							color: var(--darkmode-contrast);
+							background-color: var(--darkmode-background-selected-darker);
+							opacity: .8;
+						}
+						.highlight-color--red,
+						.highlight-color--orange,
+						.highlight-color--yellow,
+						.highlight-color--green,
+						.highlight-color--blue,
+						.highlight-color--purple {
+							.backlink-counter {
+									color: var(--darkmode-contrast);
+								}
+						}
+					// Search Portal and Backlink Design
+						.animate-zoom-into-bullet {
+							&:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
+								border: 0.1rem solid var(--line-color-dark);
 							}
-					}
-				// Search Portal and Backlink Design
-					.animate-zoom-into-bullet {
-						&:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
-							border: 0.1rem solid var(--line-color-dark);
 						}
-					}
-				// Reference Breadcrumbs
-					.rem-container--not-included-in-document-scope {
-						.rem-text {
-							color: var(--darkmode-text);
-						}
-						.float-right {
-							.bg-white {
-								background-color: unset;
+					// Reference Breadcrumbs
+						.rem-container--not-included-in-document-scope {
+							.rem-text {
+								color: var(--darkmode-text);
+							}
+							.float-right {
+								.bg-white {
+									background-color: unset;
+								}
 							}
 						}
-					}
-				// Line Color
-					.rem-container__top-level-rem-in-portal-border {
-						.rem-container__top-level-rem-in-portal-border__inner {
-							border-color: var(--line-color-dark);
+					// Line Color
+						.rem-container__top-level-rem-in-portal-border {
+							.rem-container__top-level-rem-in-portal-border__inner {
+								border-color: var(--line-color-dark);
+							}
 						}
-					}
-				// 1.7~ Compatibility
-					.tree-node--parent {
-						.rem-container {
-							.bg-white {
+					// 1.7~ Compatibility
+						.tree-node--parent {
+							.rem-container {
+								.bg-white {
+									color: var(--darkmode-text);
+									background-color: var(--darkmode-background);
+
+									.button {
+										background-color: var(--darkmode-background-selected-darker);
+										border-color: #000 !important;
+
+										&:hover {
+											background-color: #636368;
+										}
+									}
+								}
+							}
+							> .bg-white {
 								color: var(--darkmode-text);
 								background-color: var(--darkmode-background);
+								
+								.button {
+									background-color: var(--darkmode-background-selected-darker);
+									border-color: #000 !important;
 
+									&:hover {
+										background-color: #636368;
+									}
+								}
+							}
+							#AutomaticSearchPortals {
+								.text-base {
+									color: var(--darkmode-text);
+								}
 								.button {
 									background-color: var(--darkmode-background-selected-darker);
 									border-color: #000 !important;
@@ -4457,33 +4517,7 @@
 								}
 							}
 						}
-						> .bg-white {
-							color: var(--darkmode-text);
-							background-color: var(--darkmode-background);
-							
-							.button {
-								background-color: var(--darkmode-background-selected-darker);
-								border-color: #000 !important;
-
-								&:hover {
-									background-color: #636368;
-								}
-							}
-						}
-						#AutomaticSearchPortals {
-							.text-base {
-								color: var(--darkmode-text);
-							}
-							.button {
-								background-color: var(--darkmode-background-selected-darker);
-								border-color: #000 !important;
-
-								&:hover {
-									background-color: #636368;
-								}
-							}
-						}
-					}
+				}
 			}
 		}
 // PDF
