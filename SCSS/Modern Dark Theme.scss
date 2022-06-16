@@ -1730,8 +1730,15 @@
 								}
 							}
 						}
-					// Bold Highlights
+					// Highlights
 						.RichTextViewer {
+							span.highlight-color--red {background-color: var(--highlight-color--red);}
+							span.highlight-color--orange {background-color: var(--highlight-color--orange)}
+							span.highlight-color--yellow {background-color: var(--highlight-color--yellow)}
+							span.highlight-color--green {background-color: var(--highlight-color--green)}
+							span.highlight-color--blue {background-color: var(--highlight-color--blue)}
+							span.highlight-color--purple {background-color: var(--highlight-color--purple);}
+
 							.bold.highlight-color--red,
 							.bold.highlight-color--orange,
 							.bold.highlight-color--yellow,
