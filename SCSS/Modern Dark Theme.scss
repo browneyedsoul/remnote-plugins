@@ -20,7 +20,7 @@
 	--bullet-ring-color-dark: #BDBDBD;
 	--bullet-core-color: #2A2A36;
 	--bullet-core-color-dark: #1B1F23;
-	--code-font-family: "Roboto Mono", "Fira code", monospace;
+	--code-font-family: "Roboto Mono", monospace;
 	--code-font-size: 1em;
 	--inline-code-color: #E64400;
 	--inline-code-color-dark: #DCDA7A;
@@ -50,27 +50,39 @@
 	--purple-text-dark: #C6A3F4;
 	--highlight-color--red: #FFB9AF;
 	--highlight-color--red-light: #FFE4DF;
-	--highlight-color--red-dark: #F09993;
+	--highlight-color--red-dark: #AA6C68;
+	--highlight-color--red-span-dark: #F0ADA4;
+	--highlight-color--red-bg-dark: #572924;
 	--highlight-color--red-text-dark: #FFC6BD;
 	--highlight-color--orange: #FFCA8C;
 	--highlight-color--orange-light: #FFE9CC;
-	--highlight-color--orange-dark: #F3C082;
+	--highlight-color--orange-dark: #9A7A52;
+	--highlight-color--orange-span-dark: #ECBA81;
+	--highlight-color--orange-bg-dark: #553D24;
 	--highlight-color--orange-text-dark: #FFDAB8;
 	--highlight-color--yellow: #EDED85;
 	--highlight-color--yellow-light: #F8F9AA;
-	--highlight-color--yellow-dark: #E1DE5E;
+	--highlight-color--yellow-dark: #85833E;
+	--highlight-color--yellow-span-dark: #DFE07E;
+	--highlight-color--yellow-bg-dark: #453E1E;
 	--highlight-color--yellow-text-dark: #E8E67D;
 	--highlight-color--green: #9FE39B;
 	--highlight-color--green-light: #D8FFD1;
-	--highlight-color--green-dark: #ACCEAD;
+	--highlight-color--green-dark: #6A7F6A;
+	--highlight-color--green-span-dark: #9FE39B;
+	--highlight-color--green-bg-dark: #253F27;
 	--highlight-color--green-text-dark: #B3DDAB;
 	--highlight-color--blue: #BAD7EB;
 	--highlight-color--blue-light: #D4EEFF;
-	--highlight-color--blue-dark: #B2D7EB;
+	--highlight-color--blue-dark: #6A7F8B;
+	--highlight-color--blue-span-dark: #BAD7EB;
+	--highlight-color--blue-bg-dark: #183C4D;
 	--highlight-color--blue-text-dark: #A7DCE8;
 	--highlight-color--purple: #E6C9EB;
 	--highlight-color--purple-light: #F5E9FF;
-	--highlight-color--purple-dark: #D0B8E3;
+	--highlight-color--purple-dark: #7F708B;
+	--highlight-color--purple-span-dark: #E6C9EB;
+	--highlight-color--purple-bg-dark: #43273F;
 	--highlight-color--purple-text-dark: #DDC3EB;
 	--pdf-highlight-color-red: #FFD0C3;
 	--pdf-highlight-color-orange: #FDDAB6;
@@ -79,7 +91,7 @@
 	--pdf-highlight-color-blue: #D2EEF9;
 	--pdf-highlight-color-purple: #F5E0FE;
 	--text-shadow: 0.01em 0.01em 0.01em #727E84;
-	--text-shadow-yellow: 0.05rem 0.05rem 0.05rem #EAEB74;
+	--text-shadow-yellow: 0.1rem 0.1rem 0.1rem #EAEB74;
 	--text-shadow-dark: 0.01em 0.01em 0.01em #727E84;
 	--queue-bncolor-toosoon: #DDD;
 	--queue-bncolor-toosoon-dark: #1B1F23;
@@ -347,33 +359,14 @@
 		}
 	// Span Element - Hightlight Header
 		[data-rem-tags~="highlight"] {
-			.rem-container--header-1.highlight-color--red,
-			.rem-container--header-2.highlight-color--red,
-			.rem-container--header-3.highlight-color--red,
-			.rem-container--header-1.highlight-color--orange,
-			.rem-container--header-2.highlight-color--orange,
-			.rem-container--header-3.highlight-color--orange,
-			.rem-container--header-1.highlight-color--yellow,
-			.rem-container--header-2.highlight-color--yellow,
-			.rem-container--header-3.highlight-color--yellow,
-			.rem-container--header-1.highlight-color--green,
-			.rem-container--header-2.highlight-color--green,
-			.rem-container--header-3.highlight-color--green,
-			.rem-container--header-1.highlight-color--blue,
-			.rem-container--header-2.highlight-color--blue,
-			.rem-container--header-3.highlight-color--blue,
-			.rem-container--header-1.highlight-color--purple,
-			.rem-container--header-2.highlight-color--purple,
-			.rem-container--header-3.highlight-color--purple {
-				.rem-text.rem-header--1,
-				.rem-text.rem-header--2,
-				.rem-text.rem-header--3 {
-					.RichTextViewer {
-						color: #000;
-					}
-					.bold {
-						color: #000;
-					}
+			.highlight-color--red,
+			.highlight-color--orange,
+			.highlight-color--yellow,
+			.highlight-color--green,
+			.highlight-color--blue,
+			.highlight-color--purple {
+				.rem-text {
+					color: var(--darkmode-text-header);
 				}
 			}
 		}
@@ -3502,14 +3495,13 @@
 	#document-sidebar {
 	// Basic Style
         background-color: var(--darkmode-background);
-
+	// Remove white-coloured line
         + div {
             > div {
-				// Remove white-coloured line
                 background-color: var(--darkmode-background);
             }
         }
-	// Scrollbar Visibility
+	// Scrollbar
 		.w-\[calc\(100\%-16px\)\] {
 			width: calc(100% - 21px);
 		}
@@ -3518,25 +3510,6 @@
             .dark-mode {
                 #document-sidebar {
                     background-color: var(--darkmode-background-sidebar) !important;
-                }
-            }
-        }
-    // Sidebar Accordion - Pinned, Draft, Archive Symbol (Sidebar Item Top Level)
-        #document-sidebar {
-            .accordion.ui.fluid {
-                .title.cursor-pointer {
-                    background-color: #FFFFFF;
-                    zoom: 150%;
-                    max-height: 5px !important;
-                    border-radius: 5px;
-                    
-                    .css-fqRAnH {
-                        zoom: 150%;
-                        color: black;
-                    }
-                    .css-pUlLN {
-                        color: black;
-                    }
                 }
             }
         }
@@ -3760,10 +3733,31 @@
 					.highlight-color--green,
 					.highlight-color--blue,
 					.highlight-color--purple {
+						border-radius: 3px;
+						font-weight: 600;
+
 						.RichTextViewer {
 							color: black !important;
 							padding-left: 3px;
 						}
+					}
+					span.highlight-color--red:not(.bold.highlight-color--red) {
+						background-color: var(--highlight-color--red-span-dark);
+					}
+					span.highlight-color--orange:not(.bold.highlight-color--orange) {
+						background-color: var(--highlight-color--orange-span-dark);
+					}
+					span.highlight-color--yellow:not(.bold.highlight-color--yellow) {
+						background-color: var(--highlight-color--yellow-span-dark);
+					}
+					span.highlight-color--green:not(.bold.highlight-color--green) {
+						background-color: var(--highlight-color--green-span-dark);
+					}
+					span.highlight-color--blue:not(.bold.highlight-color--blue) {
+						background-color: var(--highlight-color--blue-span-dark);
+					}
+					span.highlight-color--purple:not(.bold.highlight-color--purple) {
+						background-color: var(--highlight-color--purple-span-dark);
 					}
 					// Sidebar list item focused
 						> div.rounded-md.rn-clr-background-light-accent {
@@ -3792,104 +3786,108 @@
 						}
 				}
 			}
+			// Make Menu Background Highlight Compact
+				.rounded-md {
+					&.highlight-color--red,
+					&.highlight-color--orange,
+					&.highlight-color--yellow,
+					&.highlight-color--green,
+					&.highlight-color--blue,
+					&.highlight-color--purple {
+						background-color: transparent;
+						.p-2 {
+							.text-gray-60 {
+								border-radius: 4px;
+							}
+						}
+					}
+					&.highlight-color--red .p-2 .text-gray-60 {
+						background-color: var(--highlight-color--red); 
+					}
+					&.highlight-color--orange .p-2 .text-gray-60 {
+						background-color: var(--highlight-color--orange); 
+					}
+					&.highlight-color--yellow .p-2 .text-gray-60 {
+						background-color: var(--highlight-color--yellow); 
+					}
+					&.highlight-color--green .p-2 .text-gray-60 {
+						background-color: var(--highlight-color--green); 
+					}
+					&.highlight-color--blue .p-2 .text-gray-60 {
+						background-color: var(--highlight-color--blue);
+					}
+					&.highlight-color--purple .p-2 .text-gray-60 {
+						background-color: var(--highlight-color--purple);
+					}
+				}
+				.highlight-color--red,
+				.highlight-color--orange,
+				.highlight-color--yellow,
+				.highlight-color--green,
+				.highlight-color--blue,
+				.highlight-color--purple {
+					.RichTextViewer {
+						padding-left: 3px;
+					}
+				}
+			// Sidebar list item icon
+				.document-list-item__folder-icon {
+					color: #C7C7C7;
+				}
+				.float-right {
+					color: var(--darkmode-contrast);
+				}
+			// Sidebar List item space between Emoji/Thumbnail and Strings by bolding
+				.block {
+					.RichTextViewer {
+						.bold {
+							margin-left: 3px;
+						}
+					}
+				}
+			// Sidebar list item Padding
+				.p-2 {
+					padding: 0.5rem;
+				}
+			// Sidebar list item Colored Text
+				.rn-clr-content-secondary {
+					color: var(--darkmode-text);
+				}
+				.bold.highlight-color--red,
+				.bold.highlight-color--orange,
+				.bold.highlight-color--yellow,
+				.bold.highlight-color--green,
+				.bold.highlight-color--blue,
+				.bold.highlight-color--purple {
+					background-color: unset;
+					padding-left: unset;
+				}
+				.bold.highlight-color--red {color: var(--red-text-dark);}
+				.bold.highlight-color--orange {color: var(--orange-text-dark);}
+				.bold.highlight-color--yellow {color: var(--yellow-text-dark);}
+				.bold.highlight-color--green {color: var(--green-text-dark);}
+				.bold.highlight-color--blue {color: var(--blue-text-dark);}
+				.bold.highlight-color--purple {color: var(--purple-text-dark);}
+			// Sidebar list item quote
+				.quote {
+					color: var(--inline-code-color-dark);
+					background-color: var(--inline-code-background-dark);
+					margin-left: 5px;
+				}
+			// Sidebar list item Hover
+				.group:hover {
+					.group-hover-bg-hover-bg-transparent:hover {
+						background: var(--darkmode-background-selected-darker);
+						border-radius: 5px;
+					}
+				}
+			// Thumbnail 3-Dot Button Removal
+				.image-node {
+					.bg-white {
+						background-color: transparent;
+					}
+				}
         }
-    // Make Menu Background Highlight Compact
-        .rounded-md {
-            &.highlight-color--red,
-            &.highlight-color--orange,
-            &.highlight-color--yellow,
-            &.highlight-color--green,
-            &.highlight-color--blue,
-            &.highlight-color--purple {
-                background-color: transparent;
-            }
-            &.highlight-color--red .p-2 .text-gray-60 {background-color: var(--highlight-color--red-dark); border-radius: 4px;}
-            &.highlight-color--orange .p-2 .text-gray-60 {background-color: var(--highlight-color--orange-dark); border-radius: 4px;}
-            &.highlight-color--yellow .p-2 .text-gray-60 {background-color: var(--highlight-color--yellow-dark); border-radius: 4px;}
-            &.highlight-color--green .p-2 .text-gray-60 {background-color: var(--highlight-color--green-dark); border-radius: 4px;}
-            &.highlight-color--blue .p-2 .text-gray-60 {background-color: var(--highlight-color--blue-dark); border-radius: 4px;}
-            &.highlight-color--purple .p-2 .text-gray-60 {background-color: var(--highlight-color--purple-dark); border-radius: 4px;}
-        }
-        
-        .highlight-color--red,
-        .highlight-color--orange,
-        .highlight-color--yellow,
-        .highlight-color--green,
-        .highlight-color--blue,
-        .highlight-color--purple {
-            .RichTextViewer {
-                padding-left: 3px;
-            }
-        }
-    // Sidebar list item icon
-        .document-list-item__folder-icon {
-            color: #C7C7C7;
-        }
-        .float-right {
-            color: var(--darkmode-contrast);
-        }
-    // Sidebar List item space between Emoji/Thumbnail and Strings by bolding
-        .block {
-            .RichTextViewer {
-                .bold {
-                    margin-left: 3px;
-                }
-            }
-        }
-    // Sidebar list item Padding
-        .p-2 {
-            padding: 0.5rem;
-        }
-    // Sidebar list item Highlight
-        span.highlight-color--red,
-        span.highlight-color--orange,
-        span.highlight-color--yellow,
-        span.highlight-color--green,
-        span.highlight-color--blue,
-        span.highlight-color--purple {
-            padding: 1px 3px;
-            border-radius: 3px;
-			font-weight: 600;
-        }
-        .highlight-color--yellow {background-color: var(--highlight-color--yellow-dark);}
-    // Sidebar list item Colored Text
-        .rn-clr-content-secondary {
-            color: var(--darkmode-text);
-        }
-        .bold.highlight-color--red,
-        .bold.highlight-color--orange,
-        .bold.highlight-color--yellow,
-        .bold.highlight-color--green,
-        .bold.highlight-color--blue,
-        .bold.highlight-color--purple {
-			background-color: unset;
-			padding-left: unset;
-        }
-        .bold.highlight-color--red {color: var(--red-text-dark);}
-        .bold.highlight-color--orange {color: var(--orange-text-dark);}
-        .bold.highlight-color--yellow {color: var(--yellow-text-dark);}
-        .bold.highlight-color--green {color: var(--green-text-dark);}
-        .bold.highlight-color--blue {color: var(--blue-text-dark);}
-        .bold.highlight-color--purple {color: var(--purple-text-dark);}
-    // Sidebar list item quote
-        .quote {
-            color: var(--inline-code-color-dark);
-            background-color: var(--inline-code-background-dark);
-            margin-left: 5px;
-        }
-    // Sidebar list item Hover
-        .group:hover {
-            .group-hover-bg-hover-bg-transparent:hover {
-                background: var(--darkmode-background-selected-darker);
-				border-radius: 5px;
-            }
-        }
-	// Thumbnail 3-Dot Button Removal
-		.image-node {
-			.bg-white {
-				background-color: transparent;
-			}
-		}
     // Sidebar Bottom (Create Button)
         > div:last-of-type {
             > span {
