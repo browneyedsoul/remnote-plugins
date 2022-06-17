@@ -1507,8 +1507,8 @@
 									// 	}
 									// }
 								// DocumentTitle
-									> div#DocumentTitle {
-										> div.document-title {
+									> #DocumentTitle {
+										> .document-title {
 											// Power-up icon
 												.rem-powerup-icon {
 													position: relative;
@@ -1594,21 +1594,45 @@
 							}
 						// Highlight Color
 							.RichTextViewer {
-								.highlight-color--red:not(.bold.highlight-color--red) {background-color: var(--highlight-color--red-light);}
-								.highlight-color--orange:not(.bold.highlight-color--orange) {background-color: var(--highlight-color--orange-light);}
-								.highlight-color--yellow:not(.bold.highlight-color--yellow) {background-color: var(--highlight-color--yellow-light);}
-								.highlight-color--green:not(.bold.highlight-color--green) {background-color: var(--highlight-color--green-light);}
-								.highlight-color--blue:not(.bold.highlight-color--blue) {background-color: var(--highlight-color--blue-light);}
-								.highlight-color--purple:not(.bold.highlight-color--purple) {background-color: var(--highlight-color--purple-light);}
+								.highlight-color--red:not(.bold.highlight-color--red) {
+									background-color: var(--highlight-color--red-light);
+								}
+								.highlight-color--orange:not(.bold.highlight-color--orange) {
+									background-color: var(--highlight-color--orange-light);
+								}
+								.highlight-color--yellow:not(.bold.highlight-color--yellow) {
+									background-color: var(--highlight-color--yellow-light);
+								}
+								.highlight-color--green:not(.bold.highlight-color--green) {
+									background-color: var(--highlight-color--green-light);
+								}
+								.highlight-color--blue:not(.bold.highlight-color--blue) {
+									background-color: var(--highlight-color--blue-light);
+								}
+								.highlight-color--purple:not(.bold.highlight-color--purple) {
+									background-color: var(--highlight-color--purple-light);
+								}
 							}
-							[data-slate-node="element"] {
+							[data-slate-node~="element"] {
 								[data-slate-node~="text"] {
-									.highlight-color--red:not(.bold.highlight-color--red) {background-color: var(--highlight-color--red-light);}
-									.highlight-color--orange:not(.bold.highlight-color--orange) {background-color: var(--highlight-color--orange-light);}
-									.highlight-color--yellow:not(.bold.highlight-color--yellow) {background-color: var(--highlight-color--yellow-light);}
-									.highlight-color--green:not(.bold.highlight-color--green) {background-color: var(--highlight-color--green-light);}
-									.highlight-color--blue:not(.bold.highlight-color--blue) {background-color: var(--highlight-color--blue-light);}
-									.highlight-color--purple:not(.bold.highlight-color--purple) {background-color: var(--highlight-color--purple-light);}
+									.highlight-color--red:not(.bold.highlight-color--red) {
+										background-color: var(--highlight-color--red-light);
+									}
+									.highlight-color--orange:not(.bold.highlight-color--orange) {
+										background-color: var(--highlight-color--orange-light);
+									}
+									.highlight-color--yellow:not(.bold.highlight-color--yellow) {
+										background-color: var(--highlight-color--yellow-light);
+									}
+									.highlight-color--green:not(.bold.highlight-color--green) {
+										background-color: var(--highlight-color--green-light);
+									}
+									.highlight-color--blue:not(.bold.highlight-color--blue) {
+										background-color: var(--highlight-color--blue-light);
+									}
+									.highlight-color--purple:not(.bold.highlight-color--purple) {
+										background-color: var(--highlight-color--purple-light);
+									}
 								}
 							}
 						// Rem Reference
@@ -1777,7 +1801,7 @@
 					// DocumentTopRow
 						#DocumentTopRow {
 							#DropToOpenAsDocument {
-								> div.group {
+								> .group {
 									// Custom CSS Page Alert Area
 										.bg-mint-10 {
 											color: var(--darkmode-text);
@@ -1788,18 +1812,41 @@
 											}
 										}
 									// DocumentTitle
-										> div#DocumentTitle {
-											> div.document-title {
+										> #DocumentTitle {
+											> .document-title {
 												// Power-up icon
 													.rem-powerup-icon {
 														position: relative;
 														top: -7px;
 													}
-												> div.rich-text-editor {
-													> div.EditorContainer {
-														> div[data-slate-node~="element"] {
+												> .rich-text-editor {
+													> .EditorContainer {
+														> [data-slate-node~="element"] {
 															> span {
-
+																.highlight-color--red {
+																	background-color: var(--highlight-color--red-bg-dark);
+																	color: var(--highlight-color--red-text-dark);
+																}
+																.highlight-color--orange {
+																	background-color: var(--highlight-color--orange-bg-dark);
+																	color: var(--highlight-color--orange-text-dark);
+																}
+																.highlight-color--yellow {
+																	background-color: var(--highlight-color--yellow-bg-dark);
+																	color: var(--highlight-color--yellow-text-dark);
+																}
+																.highlight-color--green {
+																	background-color: var(--highlight-color--green-bg-dark);
+																	color: var(--highlight-color--green-text-dark);
+																}
+																.highlight-color--blue {
+																	background-color: var(--highlight-color--blue-bg-dark);
+																	color: var(--highlight-color--blue-text-dark);
+																}
+																.highlight-color--purple {
+																	background-color: var(--highlight-color--purple-bg-dark);
+																	color: var(--highlight-color--purple-text-dark);
+																}
 															}
 														}
 													}
