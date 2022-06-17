@@ -1704,6 +1704,7 @@
 }
 
 [data-rem-container-tags~=th],
+[data-rem-container-tags~=th] > .tree-node--children > .tree-node-container,
 [data-rem-container-tags~=tablecolor] {
 	background-color: var(--table-columnrow-background-color) !important;
 	font-weight: 550;
@@ -1711,25 +1712,32 @@
 }
 [data-rem-container-tags~=th] [data-rem-tags~=th] > .tree-node--parent,
 [data-rem-container-tags~=th] [data-rem-tags~=tablecolor] > .tree-node--parent,
+[data-rem-container-tags~=th] > .tree-node--children > .tree-node-container [data-rem-tags~=th] > .tree-node--parent,
+[data-rem-container-tags~=th] > .tree-node--children > .tree-node-container [data-rem-tags~=tablecolor] > .tree-node--parent,
 [data-rem-container-tags~=tablecolor] [data-rem-tags~=th] > .tree-node--parent,
 [data-rem-container-tags~=tablecolor] [data-rem-tags~=tablecolor] > .tree-node--parent {
 	height: 100%;
 }
 [data-rem-container-tags~=th] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~=th] > .tree-node--children > .tree-node-container .hierarchy-editor__tag-bar__tag,
 [data-rem-container-tags~=tablecolor] .hierarchy-editor__tag-bar__tag {
 	color: transparent;
 	background-color: transparent !important;
 }
 [data-rem-container-tags~=th] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~=th] > .tree-node--children > .tree-node-container .hierarchy-editor__tag-bar__tag span,
 [data-rem-container-tags~=tablecolor] .hierarchy-editor__tag-bar__tag span {
 	display: none;
 }
 [data-rem-container-tags~=th] .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-container-tags~=th] > .tree-node--children > .tree-node-container .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
 [data-rem-container-tags~=tablecolor] .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
 	opacity: 0.2;
 	left: 12px;
 }
 
+.dark-mode [data-rem-container-tags~=th],
+.dark-mode [data-rem-container-tags~=th] > .tree-node--children > .tree-node-container,
 .dark-mode [data-rem-container-tags~=tablecolor] {
 	background-color: var(--table-columnrow-background-color-dark) !important;
 }
