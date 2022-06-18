@@ -331,9 +331,11 @@
  
  * Tag Name : `fit`
 
+ 
+ <img src="Assets/ModernTableRow-fit.gif">
  </details>
 
-  <details>
+ <details>
     <summary>Tuning individual column width</summary>
 
  * c1 = column 1
@@ -347,6 +349,14 @@
  | 800px | `c1w800`, `c2w800`, ... `c9w800` |
  | 1000px | `c1w1000` `c2w1000`,, ... `c9w1000` |
 
+ </details>
+
+ <details>
+   <summary>Table header formatting</summary>
+
+ * Tag Name : `th`
+
+ <img src="Assets/ModernTableRow-thformatting.gif">
  </details>
 
  ## Workflow
@@ -531,6 +541,23 @@
  <br>
 
 # UI UX Declutter Series
+<!-- Hide a Specific Tag -->
+ <details>
+    <summary>Hide a Specific Tag</summary>
+  
+ Sometimes, you can be bothered by meaningless tags like "th", "lb", ..., which are used for formatting reasons. 
+ Then you can apply this code with a highlight color. In my case I chose the purple one and the code below is also running with purple colored rems.
+
+ ```css
+ .hierarchy-editor__tag-bar__tag.highlight-color--purple,
+ .hierarchy-editor__tag-bar__tag.highlight-color--purple span {
+ 	display: none;
+ }
+ ```
+
+ </details>
+
+ ---
 
 <!-- Hide Inline Source Permanently in Editor -->
  <details>
