@@ -1656,9 +1656,6 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .portal-tree-node-box [data-rem-tags~=highlight] .rem-text .icon--document {
 	color: var(--darkmode-text) !important;
 }
-.dark-mode .portal-tree-node-box [data-rem-tags~=highlight] .rem-text .RichTextViewer {
-	color: #000;
-}
 .dark-mode .portal-tree-node-box [data-rem-tags~=highlight] .rem-container--not-included-in-document-scope .RichTextViewer {
 	color: var(--darkmode-text);
 }
