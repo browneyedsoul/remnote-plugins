@@ -50,40 +50,46 @@
 	--purple-text-dark: #C6A3F4;
 	--highlight-color--red: #FFB9AF;
 	--highlight-color--red-light: #FFE4DF;
-	--highlight-color--red-dark: #AA6C68;
+	--highlight-color--red-dark: #813D38;
 	--highlight-color--red-span-dark: #F0ADA4;
 	--highlight-color--red-bg-dark: #572924;
 	--highlight-color--red-text-dark: #FFC6BD;
+	--highlight-color--red-bar-dark: #FFB9AF;
 	--highlight-color--orange: #FFCA8C;
 	--highlight-color--orange-light: #FFE9CC;
-	--highlight-color--orange-dark: #9A7A52;
+	--highlight-color--orange-dark: #813D38;
 	--highlight-color--orange-span-dark: #ECBA81;
 	--highlight-color--orange-bg-dark: #553D24;
 	--highlight-color--orange-text-dark: #FFDAB8;
+	--highlight-color--orange-bar-dark: #FFCA8C;
 	--highlight-color--yellow: #EDED85;
 	--highlight-color--yellow-light: #F8F9AA;
-	--highlight-color--yellow-dark: #85833E;
+	--highlight-color--yellow-dark: #787517;
 	--highlight-color--yellow-span-dark: #DFE07E;
 	--highlight-color--yellow-bg-dark: #453E1E;
 	--highlight-color--yellow-text-dark: #E8E67D;
+	--highlight-color--yellow-bar-dark: #E5E579;
 	--highlight-color--green: #9FE39B;
 	--highlight-color--green-light: #D8FFD1;
-	--highlight-color--green-dark: #6A7F6A;
+	--highlight-color--green-dark: #416441;
 	--highlight-color--green-span-dark: #9FE39B;
 	--highlight-color--green-bg-dark: #253F27;
 	--highlight-color--green-text-dark: #B3DDAB;
+	--highlight-color--green-bar-dark: #95DB91;
 	--highlight-color--blue: #BAD7EB;
 	--highlight-color--blue-light: #D4EEFF;
-	--highlight-color--blue-dark: #6A7F8B;
+	--highlight-color--blue-dark: #395F75;
 	--highlight-color--blue-span-dark: #BAD7EB;
 	--highlight-color--blue-bg-dark: #183C4D;
 	--highlight-color--blue-text-dark: #A7DCE8;
+	--highlight-color--blue-bar-dark: #A7DCE8;
 	--highlight-color--purple: #E6C9EB;
 	--highlight-color--purple-light: #F5E9FF;
-	--highlight-color--purple-dark: #7F708B;
+	--highlight-color--purple-dark: #7C6191;
 	--highlight-color--purple-span-dark: #E6C9EB;
 	--highlight-color--purple-bg-dark: #43273F;
 	--highlight-color--purple-text-dark: #DDC3EB;
+	--highlight-color--purple-bar-dark: #E5C0EB;
 	--pdf-highlight-color-red: #FFD0C3;
 	--pdf-highlight-color-orange: #FDDAB6;
 	--pdf-highlight-color-yellow: #FFF34C;
@@ -91,7 +97,7 @@
 	--pdf-highlight-color-blue: #D2EEF9;
 	--pdf-highlight-color-purple: #F5E0FE;
 	--text-shadow: 0.01em 0.01em 0.01em #727E84;
-	--text-shadow-yellow: 0.1rem 0.1rem 0.1rem #EAEB74;
+	--text-shadow-yellow: 0.1em 0.1em 0.1em #EAEB74;
 	--text-shadow-dark: 0.01em 0.01em 0.01em #727E84;
 	--queue-bncolor-toosoon: #DDD;
 	--queue-bncolor-toosoon-dark: #1B1F23;
@@ -4006,6 +4012,33 @@
 							}
 						}
 				}
+				// Sidebar Middle (Item)
+					> div:nth-of-type(2) {
+						[data-type~="document_list_item"] {
+							span.block.group.cursor-pointer {
+								.rounded-md {
+									&.highlight-color--red .p-2 .text-gray-60 {
+										background-color: var(--highlight-color--red-bar-dark); 
+									}
+									&.highlight-color--orange .p-2 .text-gray-60 {
+										background-color: var(--highlight-color--orange-bar-dark); 
+									}
+									&.highlight-color--yellow .p-2 .text-gray-60 {
+										background-color: var(--highlight-color--yellow-bar-dark); 
+									}
+									&.highlight-color--green .p-2 .text-gray-60 {
+										background-color: var(--highlight-color--green-bar-dark); 
+									}
+									&.highlight-color--blue .p-2 .text-gray-60 {
+										background-color: var(--highlight-color--blue-bar-dark);
+									}
+									&.highlight-color--purple .p-2 .text-gray-60 {
+										background-color: var(--highlight-color--purple-bar-dark);
+									}
+								}
+							}
+						}
+					}
 			}
 		}
 // Side Bar - Collapsed
