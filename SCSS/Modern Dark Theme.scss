@@ -371,6 +371,13 @@
 			.highlight-color--green,
 			.highlight-color--blue,
 			.highlight-color--purple {
+				.rem-button__container {
+					.rem-bullet__container {
+						.rn-rem-icon-bullet {
+							color: var(--bullet-ring-color);
+						}
+					}
+				}
 				.rem-text {
 					color: var(--darkmode-text-header);
 				}

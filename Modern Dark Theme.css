@@ -300,6 +300,14 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .rem-text.rem-header--3 .EditorContainer .bold {
 	color: var(--darkmode-text-header);
 }
+.dark-mode [data-rem-tags~=highlight] .highlight-color--red .rem-button__container .rem-bullet__container .rn-rem-icon-bullet,
+.dark-mode [data-rem-tags~=highlight] .highlight-color--orange .rem-button__container .rem-bullet__container .rn-rem-icon-bullet,
+.dark-mode [data-rem-tags~=highlight] .highlight-color--yellow .rem-button__container .rem-bullet__container .rn-rem-icon-bullet,
+.dark-mode [data-rem-tags~=highlight] .highlight-color--green .rem-button__container .rem-bullet__container .rn-rem-icon-bullet,
+.dark-mode [data-rem-tags~=highlight] .highlight-color--blue .rem-button__container .rem-bullet__container .rn-rem-icon-bullet,
+.dark-mode [data-rem-tags~=highlight] .highlight-color--purple .rem-button__container .rem-bullet__container .rn-rem-icon-bullet {
+	color: var(--bullet-ring-color);
+}
 .dark-mode [data-rem-tags~=highlight] .highlight-color--red .rem-text,
 .dark-mode [data-rem-tags~=highlight] .highlight-color--orange .rem-text,
 .dark-mode [data-rem-tags~=highlight] .highlight-color--yellow .rem-text,

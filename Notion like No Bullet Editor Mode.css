@@ -1,7 +1,7 @@
 :root {
 	--treenode-line-spacing: 16px;
 	--bullet-main: #000;
-	--bullet-main-dark: #ABABAB;
+	--bullet-main-dark: #C2C2C2;
 	--bullet-doc: #50FA7B;
 	--bullet-folder: #53555F;
 	--bullet-concept: #53555F;
@@ -117,7 +117,7 @@
 	border-style: solid !important;
 	border-width: 6px 0 6px 6px !important;
 	border-radius: 3px;
-	border-color: transparent transparent transparent var(--bullet-main);
+	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
 .dark-mode #hierarchy-editor [data-rem-tags~=highlight] .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
 	width: 0 !important;
@@ -125,7 +125,7 @@
 	border-style: solid !important;
 	border-width: 6px 0 6px 6px !important;
 	border-radius: 3px;
-	border-color: transparent transparent transparent var(--bullet-main);
+	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
 
 .highlight-color--red .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
@@ -256,6 +256,9 @@
 	left: var(--treenode-line-spacing);
 	margin-right: var(--treenode-line-spacing);
 }
+#hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
+	left: 16px !important;
+}
 
 .node-card-item:before {
 	margin-left: -0.8rem;
@@ -264,10 +267,6 @@
 
 .dark-mode .node-card-item:before {
 	background-color: var(--node-card-item-color-dark);
-}
-
-#hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
-	left: 16px !important;
 }
 
 .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {

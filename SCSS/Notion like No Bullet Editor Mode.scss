@@ -43,7 +43,7 @@
 		--treenode-line-spacing: 16px;
 	// Basic Bullet Color
 		--bullet-main: #000;
-		--bullet-main-dark: #ABABAB;
+		--bullet-main-dark: #C2C2C2;
 		--bullet-doc: #50FA7B;
 		--bullet-folder: #53555F;
 		--bullet-concept: #53555F;
@@ -181,7 +181,7 @@
 						.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
 						.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
 							@include triangle-hidden;
-							border-color: transparent transparent transparent var(--bullet-main);
+							border-color: transparent transparent transparent var(--bullet-main-dark);
 						}
 					}
 				}
@@ -191,7 +191,7 @@
 					.rem-container--focused {
 						.rem-bullet.rem-bullet--hidden-children {
 							@include triangle-hidden;
-							border-color: transparent transparent transparent var(--bullet-main);
+							border-color: transparent transparent transparent var(--bullet-main-dark);
 						}
 					}
 				}
@@ -338,6 +338,15 @@
 			left: var(--treenode-line-spacing);
 			margin-right: var(--treenode-line-spacing);
 		}
+
+		// Sticky Top bar
+			> .fixed {
+				> .tree-node-container {
+					> .TreeNode {
+						left: 16px !important;
+					}
+				}
+			}
 	}
 // TreeNode - List Card TreeNode Alert Color
 	.node-card-item {
@@ -350,16 +359,6 @@
 		.node-card-item {
 			&:before {
 				background-color: var(--node-card-item-color-dark);
-			}
-		}
-	}
-// TreeNode - Sticky Top bar
-	#hierarchy-editor {
-		> .fixed {
-			> .tree-node-container {
-				> .TreeNode {
-					left: 16px !important;
-				}
 			}
 		}
 	}
