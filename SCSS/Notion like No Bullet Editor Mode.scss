@@ -542,7 +542,7 @@
 				left: 16px;
 				
 				.rem-button__container {
-					margin-left: var(--treenode-line-spacing);
+					// margin-left: var(--treenode-line-spacing);
 
 					> span {
 						> div.six-dot {
@@ -584,9 +584,9 @@
 					// 	}
 					// }
 				// Move text
-					.rem-text {
-						margin-left: var(--treenode-line-spacing);
-					}
+					// .rem-text {
+					// 	margin-left: var(--treenode-line-spacing);
+					// }
 				// Tag Declutter
 					.hierarchy-editor__tag-bar__tag {
 						background-color: transparent !important;
