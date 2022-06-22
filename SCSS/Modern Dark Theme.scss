@@ -2786,6 +2786,15 @@
 								div.popup__header {
 									background-color: var(--darkmode-background-selected-darker);
 								}
+								> div:nth-of-type(2) {
+									a {
+										color: var(--darkmode-text);
+
+										&.hover\:bg-gray-5:hover {
+											background-color: var(--darkmode-background-selected-darker);
+										}
+									}
+								}
 								div.popup__footer {
 									background-color: var(--darkmode-background);
 								}

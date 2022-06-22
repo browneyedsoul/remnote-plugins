@@ -1875,6 +1875,12 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode #Popup #PopupContent .settings-page > div > div div.popup__header {
 	background-color: var(--darkmode-background-selected-darker);
 }
+.dark-mode #Popup #PopupContent .settings-page > div > div > div:nth-of-type(2) a {
+	color: var(--darkmode-text);
+}
+.dark-mode #Popup #PopupContent .settings-page > div > div > div:nth-of-type(2) a.hover\:bg-gray-5:hover {
+	background-color: var(--darkmode-background-selected-darker);
+}
 .dark-mode #Popup #PopupContent .settings-page > div > div div.popup__footer {
 	background-color: var(--darkmode-background);
 }
