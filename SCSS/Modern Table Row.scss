@@ -265,6 +265,11 @@
                                             .rich-text-editor {
                                                 z-index: 1;
                                             }
+                                        // Codeblock Treatment
+                                            #code-node {
+                                                overflow-x: unset;
+                                                white-space: unset;
+                                            }
                                     }
                                 }
                         }
