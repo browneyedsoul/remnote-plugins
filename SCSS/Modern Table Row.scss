@@ -190,27 +190,21 @@
                     border: 0.07rem solid  var(--table-border-color);
 
                     // Scrollbar
-                        &::-webkit-scrollbar-thumb {
-                            background-color: #DDD;
-                            border-radius: 2px;
-                        }
-
+                    &::-webkit-scrollbar-thumb {
+                        background-color: #DDD;
+                        border-radius: 2px;
+                    }
                     // Remove Overflow Content
-                        .right-\[-4px\] {
-                            right: 4px;
-                        }
-                        .float-end {
-                            display: none;
-                        }
-                        [data-icon~="merge"] {
-                            display: none;
-                        }
-                    // Table Left Attribute Cell
-                        > .tree-node--children {
-                            border: 0.07rem solid  var(--table-border-color);
-                            margin-left: 6px;
-                        }
-                    // Table Row and Column Attribute Cell
+                    .right-\[-4px\] {
+                        right: 4px;
+                    }
+                    .float-end {
+                        display: none;
+                    }
+                    [data-icon~="merge"] {
+                        display: none;
+                    }
+                    // Table Row and Column
                         > .tree-node-container {
                             // Table all the horizontal lines
                                 border-bottom: 0.07rem solid var(--table-border-color);
@@ -219,13 +213,24 @@
                                 &:last-of-type {
                                     border-bottom: unset;
                                 }
-
-                                > :first-child {
+                            // Table Left Cell
+                                > .tree-node--parent {
                                     float: left;
                                     font-weight: 550;
                                     background-color: var(--table-columnrow-background-color);
                                     text-align: left;
                                     padding-left: 0em;
+                                    height: 100%;
+                                    > div[data-rem-tags~="highlight"] {
+                                        height: 100%;
+
+                                        > div {
+                                            height: 100%;
+                                            > span {
+                                                height: 100%;
+                                            }
+                                        }
+                                    }
                                 }
                             // Table Content Cell
                                 > .tree-node--children {
@@ -233,6 +238,7 @@
                                     flex-direction: rows;
                                     text-align: left;
                                     height: 100%;
+                                    padding-left: 0;
 
                                     &::-webkit-scrollbar-track {
                                         margin-left: 1rem;
@@ -265,6 +271,10 @@
                                 padding: 0;
                             }
                         }
+                }
+            // Aliases in table cell
+                [data-rem-container-tags~="aliases"] {
+                    margin-right: 0;
                 }
         }
     }
