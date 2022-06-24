@@ -56,7 +56,7 @@
 	--highlight-color--red-bar-dark: #FFB9AF;
 	--highlight-color--orange: #FFCA8C;
 	--highlight-color--orange-light: #FFE9CC;
-	--highlight-color--orange-dark: #813D38;
+	--highlight-color--orange-dark: #926B3B;
 	--highlight-color--orange-span-dark: #ECBA81;
 	--highlight-color--orange-bg-dark: #553D24;
 	--highlight-color--orange-text-dark: #FFDAB8;
@@ -370,7 +370,6 @@ body.old-dark-mode .dark-mode-background {
 	background-color: var(--darkmode-background-selected-darker);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red {
-	color: #000;
 	background-color: var(--highlight-color--red-dark);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red > div {
@@ -383,7 +382,6 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange {
-	color: #000;
 	background-color: var(--highlight-color--orange-dark);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange > div {
@@ -396,7 +394,6 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow {
-	color: #000;
 	background-color: var(--highlight-color--yellow-dark);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow > div {
@@ -409,7 +406,6 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green {
-	color: #000;
 	background-color: var(--highlight-color--green-dark);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green > div {
@@ -422,7 +418,6 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue {
-	color: #000;
 	background-color: var(--highlight-color--blue-dark);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue > div {
@@ -435,8 +430,7 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple {
-	color: #000;
-	background-color: var(--highlight-color--purple);
+	background-color: var(--highlight-color--purple-dark);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple > div {
 	color: #000 !important;
@@ -1313,21 +1307,27 @@ body.old-dark-mode .dark-mode-background {
 	background-color: #222 !important;
 }
 .dark-mode .tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
+	color: var(--highlight-color--red-text-dark);
 	background-color: var(--highlight-color--red-dark);
 }
 .dark-mode .tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--orange:not(.bold.highlight-color--orange) {
+	color: var(--highlight-color--orange-text-dark);
 	background-color: var(--highlight-color--orange-dark);
 }
 .dark-mode .tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+	color: var(--highlight-color--yellow-text-dark);
 	background-color: var(--highlight-color--yellow-dark);
 }
 .dark-mode .tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--green:not(.bold.highlight-color--green) {
+	color: var(--highlight-color--green-text-dark);
 	background-color: var(--highlight-color--green-dark);
 }
 .dark-mode .tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--blue:not(.bold.highlight-color--blue) {
+	color: var(--highlight-color--blue-text-dark);
 	background-color: var(--highlight-color--blue-dark);
 }
 .dark-mode .tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--purple:not(.bold.highlight-color--purple) {
+	color: var(--highlight-color--purple-text-dark);
 	background-color: var(--highlight-color--purple-dark);
 }
 .dark-mode .tile__document #document #hierarchy-editor [data-slate-node=element] [data-slate-node~=text] .highlight-color--red:not(.bold.highlight-color--red) {
