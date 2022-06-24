@@ -469,10 +469,14 @@
 
 					> div {
 						color: #000 !important;
+
+						span.RichTextViewer {
+							color: var(--darkmode-text);
+						}
 					}
 
 					.hierarchy-editor__tag-bar__tag__delete {
-						color: unset;
+						color: var(--darkmode-text);
 					}
 				}
 				&.highlight-color--orange {
@@ -481,10 +485,14 @@
 
 					> div {
 						color: #000 !important;
+
+						span.RichTextViewer {
+							color: var(--darkmode-text);
+						}
 					}
 
 					.hierarchy-editor__tag-bar__tag__delete {
-						color: unset;
+						color: var(--darkmode-text);
 					}
 				}
 				&.highlight-color--yellow {
@@ -493,10 +501,14 @@
 
 					> div {
 						color: #000 !important;
+
+						span.RichTextViewer {
+							color: var(--darkmode-text);
+						}
 					}
 
 					.hierarchy-editor__tag-bar__tag__delete {
-						color: unset;
+						color: var(--darkmode-text);
 					}
 				}
 				&.highlight-color--green {
@@ -505,10 +517,14 @@
 
 					> div {
 						color: #000 !important;
+						
+						span.RichTextViewer {
+							color: var(--darkmode-text);
+						}
 					}
 
 					.hierarchy-editor__tag-bar__tag__delete {
-						color: unset;
+						color: var(--darkmode-text);
 					}
 				}
 				&.highlight-color--blue {
@@ -517,10 +533,14 @@
 
 					> div {
 						color: #000 !important;
+
+						span.RichTextViewer {
+							color: var(--darkmode-text);
+						}
 					}
 
 					.hierarchy-editor__tag-bar__tag__delete {
-						color: unset;
+						color: var(--darkmode-text);
 					}
 				}
 				&.highlight-color--purple {
@@ -529,10 +549,14 @@
 
 					> div {
 						color: #000 !important;
+
+						span.RichTextViewer {
+							color: var(--darkmode-text);
+						}
 					}
 
 					.hierarchy-editor__tag-bar__tag__delete {
-						color: unset;
+						color: var(--darkmode-text);
 					}
 				}
 

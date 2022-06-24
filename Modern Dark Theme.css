@@ -376,8 +376,11 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red > div {
 	color: #000 !important;
 }
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red > div span.RichTextViewer {
+	color: var(--darkmode-text);
+}
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red .hierarchy-editor__tag-bar__tag__delete {
-	color: unset;
+	color: var(--darkmode-text);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange {
 	color: #000;
@@ -386,8 +389,11 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange > div {
 	color: #000 !important;
 }
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange > div span.RichTextViewer {
+	color: var(--darkmode-text);
+}
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange .hierarchy-editor__tag-bar__tag__delete {
-	color: unset;
+	color: var(--darkmode-text);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow {
 	color: #000;
@@ -396,8 +402,11 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow > div {
 	color: #000 !important;
 }
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow > div span.RichTextViewer {
+	color: var(--darkmode-text);
+}
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow .hierarchy-editor__tag-bar__tag__delete {
-	color: unset;
+	color: var(--darkmode-text);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green {
 	color: #000;
@@ -406,8 +415,11 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green > div {
 	color: #000 !important;
 }
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green > div span.RichTextViewer {
+	color: var(--darkmode-text);
+}
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green .hierarchy-editor__tag-bar__tag__delete {
-	color: unset;
+	color: var(--darkmode-text);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue {
 	color: #000;
@@ -416,8 +428,11 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue > div {
 	color: #000 !important;
 }
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue > div span.RichTextViewer {
+	color: var(--darkmode-text);
+}
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue .hierarchy-editor__tag-bar__tag__delete {
-	color: unset;
+	color: var(--darkmode-text);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple {
 	color: #000;
@@ -426,8 +441,11 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple > div {
 	color: #000 !important;
 }
+.dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple > div span.RichTextViewer {
+	color: var(--darkmode-text);
+}
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple .hierarchy-editor__tag-bar__tag__delete {
-	color: unset;
+	color: var(--darkmode-text);
 }
 .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--red, .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--orange, .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--yellow, .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--green, .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--blue, .dark-mode .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--purple {
 	background-color: unset;
