@@ -24,8 +24,9 @@
             &:focus-within {
                 background-color: #DCF3FF;
                 margin-left: 40px;
-                margin-right: -10px;
+                margin-right: -1.8rem;
                 position: relative;
+                top: 3px;
                 left: -15px;
 
                 &::before {
