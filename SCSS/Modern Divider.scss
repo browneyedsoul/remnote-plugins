@@ -4,49 +4,52 @@
 }
 
 // Divider
-	[data-rem-tags~="divider"] {
-		color: transparent;
-		padding-right: 15px;
-		height: 7px;
-		margin-right: 20px;
-		margin-left: 10px;
+    [data-rem-container-tags~="divider"] {
+        margin-bottom: 10px;
+        margin-right: 1.5rem;
 
-        &::before {
-            content: " ";
-            display: block;
-            position: absolute;
-            border-bottom: var(--line-color);
-            margin-right: 20px;
-        }
-
-        &:focus-within {
-            background-color: #DCF3FF;
-            margin-left: 40px;
-            margin-right: -10px;
-            position: relative;
-            left: -15px;
-
-            &::before {
-                border-bottom: 2px solid var(--line-color);
-            }
-        }
-
-        &:not(:focus-within) {
+        [data-rem-tags~="divider"] {
             color: transparent;
-            position: relative;
-            padding: 0px 15px;
+            padding-right: 15px;
+            height: 7px;
+            margin-left: 10px;
 
             &::before {
                 content: " ";
                 display: block;
                 position: absolute;
-                width: 100%;
-                top: 50%;
-                border-bottom: 2px solid var(--line-color);
-                height: 2px;
+                border-bottom: var(--line-color);
+            }
+
+            &:focus-within {
+                background-color: #DCF3FF;
+                margin-left: 40px;
+                margin-right: -10px;
+                position: relative;
+                left: -15px;
+
+                &::before {
+                    border-bottom: 2px solid var(--line-color);
+                }
+            }
+
+            &:not(:focus-within) {
+                color: transparent;
+                position: relative;
+                padding: 0px 15px;
+
+                &::before {
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    border-bottom: 2px solid var(--line-color);
+                    height: 2px;
+                }
             }
         }
-	}
+    }
 // Divider Darkmode Compatibility
     .dark-mode {
         [data-rem-tags~="divider"] {
