@@ -89,12 +89,12 @@
 	--highlight-color--purple-bg-dark: #43273F;
 	--highlight-color--purple-text-dark: #DDC3EB;
 	--highlight-color--purple-bar-dark: #E5C0EB;
-	--pdf-highlight-color-red: #FFD0C3;
-	--pdf-highlight-color-orange: #FDDAB6;
-	--pdf-highlight-color-yellow: #FFF34C;
-	--pdf-highlight-color-green: #BBF4BE;
-	--pdf-highlight-color-blue: #D2EEF9;
-	--pdf-highlight-color-purple: #F5E0FE;
+	--pdf-highlight-color-red: #FFE4DF;
+	--pdf-highlight-color-orange: #FFE9CC;
+	--pdf-highlight-color-yellow: #F8F9AA;
+	--pdf-highlight-color-green: #D8FFD1;
+	--pdf-highlight-color-blue: #D4EEFF;
+	--pdf-highlight-color-purple: #F5E9FF;
 	--text-shadow: 0.01em 0.01em 0.01em #727E84;
 	--text-shadow-yellow: 0.1em 0.1em 0.1em #EAEB74;
 	--text-shadow-dark: 0.01em 0.01em 0.01em #727E84;
@@ -249,6 +249,169 @@ body.old-dark-mode .dark-mode-background {
 	align-items: center;
 }
 
+.highlight-color--red,
+.highlight-color--orange,
+.highlight-color--yellow,
+.highlight-color--green,
+.highlight-color--blue,
+.highlight-color--purple {
+	border-radius: 3px;
+	margin-bottom: 1px;
+	padding: 0 3px;
+	color: black;
+}
+
+[data-rem-tags~=highlight] .rem-text,
+[data-rem-tags~=highlight] .rem-text.rem-header--1,
+[data-rem-tags~=highlight] .rem-text.rem-header--2,
+[data-rem-tags~=highlight] .rem-text.rem-header--3 {
+	color: black;
+}
+
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--red, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--orange, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--yellow, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--green, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--blue, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--purple {
+	font-weight: 550;
+}
+
+.highlight-color--red {
+	background-color: var(--highlight-color--red);
+}
+
+.highlight-color--orange {
+	background-color: var(--highlight-color--orange);
+}
+
+.highlight-color--yellow {
+	background-color: var(--highlight-color--yellow);
+}
+
+.highlight-color--green {
+	background-color: var(--highlight-color--green);
+}
+
+.highlight-color--blue {
+	background-color: var(--highlight-color--blue);
+}
+
+.highlight-color--purple {
+	background-color: var(--highlight-color--purple);
+}
+
+.rem-text .bold.highlight-color--red {
+	background-color: unset;
+	color: var(--red-text);
+}
+.rem-text .bold.highlight-color--orange {
+	background-color: unset;
+	color: var(--orange-text);
+}
+.rem-text .bold.highlight-color--yellow {
+	background-color: unset;
+	color: var(--yellow-text);
+	text-shadow: var(--text-shadow-yellow);
+}
+.rem-text .bold.highlight-color--green {
+	background-color: unset;
+	color: var(--green-text);
+}
+.rem-text .bold.highlight-color--blue {
+	background-color: unset;
+	color: var(--blue-text);
+}
+.rem-text .bold.highlight-color--purple {
+	background-color: unset;
+	color: var(--purple-text);
+}
+
+#DocumentTitle .bold,
+#DocumentTitle .bold.highlight-color--red,
+#DocumentTitle .bold.highlight-color--orange,
+#DocumentTitle .bold.highlight-color--yellow,
+#DocumentTitle .bold.highlight-color--green,
+#DocumentTitle .bold.highlight-color--blue,
+#DocumentTitle .bold.highlight-color--purple {
+	background-color: unset !important;
+	font-weight: 700;
+}
+#DocumentTitle .bold.highlight-color--red {
+	background-color: unset;
+	color: var(--red-text);
+}
+#DocumentTitle .bold.highlight-color--orange {
+	background-color: unset;
+	color: var(--orange-text);
+}
+#DocumentTitle .bold.highlight-color--yellow {
+	background-color: unset;
+	color: var(--yellow-text);
+	text-shadow: var(--text-shadow-yellow);
+}
+#DocumentTitle .bold.highlight-color--green {
+	background-color: unset;
+	color: var(--green-text);
+}
+#DocumentTitle .bold.highlight-color--blue {
+	background-color: unset;
+	color: var(--blue-text);
+}
+#DocumentTitle .bold.highlight-color--purple {
+	background-color: unset;
+	color: var(--purple-text);
+}
+
+.dark-mode .highlight-color--red {
+	background-color: var(--highlight-color--red-dark);
+}
+.dark-mode .highlight-color--orange {
+	background-color: var(--highlight-color--orange-dark);
+}
+.dark-mode .highlight-color--yellow {
+	background-color: var(--highlight-color--yellow-dark);
+}
+.dark-mode .highlight-color--green {
+	background-color: var(--highlight-color--green-dark);
+}
+.dark-mode .highlight-color--blue {
+	background-color: var(--highlight-color--blue-dark);
+}
+.dark-mode .highlight-color--purple {
+	background-color: var(--highlight-color--purple-dark);
+}
+.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
+	background-color: var(--highlight-color--red-dark);
+}
+.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--orange:not(.bold.highlight-color--orange) {
+	background-color: var(--highlight-color--orange-dark);
+}
+.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+	background-color: var(--highlight-color--yellow-dark);
+}
+.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--green:not(.bold.highlight-color--green) {
+	background-color: var(--highlight-color--green-dark);
+}
+.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--blue:not(.bold.highlight-color--blue) {
+	background-color: var(--highlight-color--blue-dark);
+}
+.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--purple:not(.bold.highlight-color--purple) {
+	background-color: var(--highlight-color--purple-dark);
+}
+.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--red:not(.bold.highlight-color--red) {
+	background-color: var(--highlight-color--red-dark);
+}
+.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--orange:not(.bold.highlight-color--orange) {
+	background-color: var(--highlight-color--orange-dark);
+}
+.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+	background-color: var(--highlight-color--yellow-dark);
+}
+.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--green:not(.bold.highlight-color--green) {
+	background-color: var(--highlight-color--green-dark);
+}
+.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--blue:not(.bold.highlight-color--blue) {
+	background-color: var(--highlight-color--blue-dark);
+}
+.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--purple:not(.bold.highlight-color--purple) {
+	background-color: var(--highlight-color--purple-dark);
+}
 .dark-mode .rem-container--todo-finished {
 	color: #A1A1A1;
 }
@@ -618,6 +781,55 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .Queue .katex {
 	background-color: unset;
 }
+.dark-mode .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--red {
+	color: #FFD2CE;
+	background-color: #572924;
+}
+.dark-mode .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--orange {
+	color: #FFDAB8;
+	background-color: #553D24;
+}
+.dark-mode .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--yellow {
+	color: #E8E48F;
+	background-color: #453E1E;
+}
+.dark-mode .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--green {
+	color: #B3DDAB;
+	background-color: #253F27;
+}
+.dark-mode .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--blue {
+	color: #B5DEE8;
+	background-color: #183C4D;
+}
+.dark-mode .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--purple {
+	color: #DDC3EB;
+	background-color: #43273F;
+}
+.dark-mode .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--red {
+	color: var(--red-text-dark);
+	background-color: unset;
+}
+.dark-mode .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--orange {
+	color: var(--orange-text-dark);
+	background-color: unset;
+}
+.dark-mode .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--yellow {
+	color: var(--yellow-text-dark);
+	background-color: unset;
+	text-shadow: unset;
+}
+.dark-mode .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--green {
+	color: var(--green-text-dark);
+	background-color: unset;
+}
+.dark-mode .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--blue {
+	color: var(--blue-text-dark);
+	background-color: unset;
+}
+.dark-mode .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--purple {
+	color: var(--purple-text-dark);
+	background-color: unset;
+}
 .dark-mode .Queue .queue__title .queue__title__left {
 	color: var(--darkmode-text);
 }
@@ -964,31 +1176,30 @@ body.old-dark-mode .dark-mode-background {
 .tile__document .document-header-top-bar .w-max[color="#292936"] {
 	color: unset;
 }
-.tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--red,
-.tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--orange,
-.tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--yellow,
-.tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--green,
-.tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--blue,
-.tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--purple {
-	background-color: transparent;
-}
 .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--red {
 	color: var(--red-text-dark);
+	background-color: unset;
 }
 .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--orange {
 	color: var(--orange-text-dark);
+	background-color: unset;
 }
 .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--yellow {
 	color: var(--yellow-text-dark);
+	background-color: unset;
+	text-shadow: unset;
 }
 .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--green {
 	color: var(--green-text-dark);
+	background-color: unset;
 }
 .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--blue {
 	color: var(--blue-text-dark);
+	background-color: unset;
 }
 .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--purple {
 	color: var(--purple-text-dark);
+	background-color: unset;
 }
 .tile__document .document-header-top-bar::before {
 	content: "";
@@ -1154,31 +1365,30 @@ body.old-dark-mode .dark-mode-background {
 .dark-mode .tile__document .document-header-top-bar .RichTextViewer span.highlight-color--purple {
 	background-color: var(--highlight-color--purple);
 }
-.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--red,
-.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--orange,
-.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--yellow,
-.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--green,
-.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--blue,
-.dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--purple {
-	background-color: transparent;
-}
 .dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--red {
 	color: var(--red-text-dark);
+	background-color: unset;
 }
 .dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--orange {
 	color: var(--orange-text-dark);
+	background-color: unset;
 }
 .dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--yellow {
 	color: var(--yellow-text-dark);
+	background-color: unset;
+	text-shadow: unset;
 }
 .dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--green {
 	color: var(--green-text-dark);
+	background-color: unset;
 }
 .dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--blue {
 	color: var(--blue-text-dark);
+	background-color: unset;
 }
 .dark-mode .tile__document .document-header-top-bar .RichTextViewer .bold.highlight-color--purple {
 	color: var(--purple-text-dark);
+	background-color: unset;
 }
 .dark-mode .tile__document .document-header-top-bar::before {
 	content: "";
@@ -1202,6 +1412,25 @@ body.old-dark-mode .dark-mode-background {
 }
 .dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > .group .bg-mint-10 > div.text-mint-80 {
 	color: unset;
+}
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > .group > #DocumentTitle .bold.highlight-color--red {
+	color: var(--red-text-dark);
+}
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > .group > #DocumentTitle .bold.highlight-color--orange {
+	color: var(--orange-text-dark);
+}
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > .group > #DocumentTitle .bold.highlight-color--yellow {
+	color: var(--yellow-text-dark);
+	text-shadow: unset;
+}
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > .group > #DocumentTitle .bold.highlight-color--green {
+	color: var(--green-text-dark);
+}
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > .group > #DocumentTitle .bold.highlight-color--blue {
+	color: var(--blue-text-dark);
+}
+.dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > .group > #DocumentTitle .bold.highlight-color--purple {
+	color: var(--purple-text-dark);
 }
 .dark-mode .tile__document #document #DocumentTopRow #DropToOpenAsDocument > .group > #DocumentTitle > .document-title .rem-powerup-icon {
 	position: relative;
@@ -1306,47 +1535,102 @@ body.old-dark-mode .dark-mode-background {
 	border-color: #000 !important;
 	background-color: #222 !important;
 }
-.dark-mode .tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--red {
 	color: var(--highlight-color--red-text-dark);
-	background-color: var(--highlight-color--red-dark);
+	background-color: var(--highlight-color--red-bg-dark);
 }
-.dark-mode .tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--orange:not(.bold.highlight-color--orange) {
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--orange {
 	color: var(--highlight-color--orange-text-dark);
-	background-color: var(--highlight-color--orange-dark);
+	background-color: var(--highlight-color--orange-bg-dark);
 }
-.dark-mode .tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--yellow {
 	color: var(--highlight-color--yellow-text-dark);
-	background-color: var(--highlight-color--yellow-dark);
+	background-color: var(--highlight-color--yellow-bg-dark);
 }
-.dark-mode .tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--green:not(.bold.highlight-color--green) {
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--green {
 	color: var(--highlight-color--green-text-dark);
-	background-color: var(--highlight-color--green-dark);
+	background-color: var(--highlight-color--green-bg-dark);
 }
-.dark-mode .tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--blue:not(.bold.highlight-color--blue) {
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--blue {
 	color: var(--highlight-color--blue-text-dark);
-	background-color: var(--highlight-color--blue-dark);
+	background-color: var(--highlight-color--blue-bg-dark);
 }
-.dark-mode .tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--purple:not(.bold.highlight-color--purple) {
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--purple {
 	color: var(--highlight-color--purple-text-dark);
-	background-color: var(--highlight-color--purple-dark);
+	background-color: var(--highlight-color--purple-bg-dark);
+}
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--red {
+	color: var(--red-text-dark);
+	background-color: unset;
+}
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--orange {
+	color: var(--orange-text-dark);
+	background-color: unset;
+}
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--yellow {
+	color: var(--yellow-text-dark);
+	background-color: unset;
+	text-shadow: unset;
+}
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--green {
+	color: var(--green-text-dark);
+	background-color: unset;
+}
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--blue {
+	color: var(--blue-text-dark);
+	background-color: unset;
+}
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--purple {
+	color: var(--purple-text-dark);
+	background-color: unset;
+}
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
+	color: var(--highlight-color--red-text-dark);
+	background-color: var(--highlight-color--red-bg-dark);
+}
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer .RichTextViewer .highlight-color--orange:not(.bold.highlight-color--orange) {
+	color: var(--highlight-color--orange-text-dark);
+	background-color: var(--highlight-color--orange-bg-dark);
+}
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer .RichTextViewer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+	color: var(--highlight-color--yellow-text-dark);
+	background-color: var(--highlight-color--yellow-bg-dark);
+}
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer .RichTextViewer .highlight-color--green:not(.bold.highlight-color--green) {
+	color: var(--highlight-color--green-text-dark);
+	background-color: var(--highlight-color--green-bg-dark);
+}
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer .RichTextViewer .highlight-color--blue:not(.bold.highlight-color--blue) {
+	color: var(--highlight-color--blue-text-dark);
+	background-color: var(--highlight-color--blue-bg-dark);
+}
+.dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer .RichTextViewer .highlight-color--purple:not(.bold.highlight-color--purple) {
+	color: var(--highlight-color--purple-text-dark);
+	background-color: var(--highlight-color--purple-bg-dark);
 }
 .dark-mode .tile__document #document #hierarchy-editor [data-slate-node=element] [data-slate-node~=text] .highlight-color--red:not(.bold.highlight-color--red) {
-	background-color: var(--highlight-color--red-dark);
+	color: var(--highlight-color--red-text-dark);
+	background-color: var(--highlight-color--red-bg-dark);
 }
 .dark-mode .tile__document #document #hierarchy-editor [data-slate-node=element] [data-slate-node~=text] .highlight-color--orange:not(.bold.highlight-color--orange) {
-	background-color: var(--highlight-color--orange-dark);
+	color: var(--highlight-color--orange-text-dark);
+	background-color: var(--highlight-color--orange-bg-dark);
 }
 .dark-mode .tile__document #document #hierarchy-editor [data-slate-node=element] [data-slate-node~=text] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
-	background-color: var(--highlight-color--yellow-dark);
+	color: var(--highlight-color--yellow-text-dark);
+	background-color: var(--highlight-color--yellow-bg-dark);
 }
 .dark-mode .tile__document #document #hierarchy-editor [data-slate-node=element] [data-slate-node~=text] .highlight-color--green:not(.bold.highlight-color--green) {
-	background-color: var(--highlight-color--green-dark);
+	color: var(--highlight-color--green-text-dark);
+	background-color: var(--highlight-color--green-bg-dark);
 }
 .dark-mode .tile__document #document #hierarchy-editor [data-slate-node=element] [data-slate-node~=text] .highlight-color--blue:not(.bold.highlight-color--blue) {
-	background-color: var(--highlight-color--blue-dark);
+	color: var(--highlight-color--blue-text-dark);
+	background-color: var(--highlight-color--blue-bg-dark);
 }
 .dark-mode .tile__document #document #hierarchy-editor [data-slate-node=element] [data-slate-node~=text] .highlight-color--purple:not(.bold.highlight-color--purple) {
-	background-color: var(--highlight-color--purple-dark);
+	color: var(--highlight-color--purple-text-dark);
+	background-color: var(--highlight-color--purple-bg-dark);
 }
 .dark-mode .tile__document #document #hierarchy-editor .rem-reference-container:not(.hierarchy-editor__tag-bar .rem-reference-container) .rem-reference .RichTextViewer:not([data-rem-tags~=emoji] .RichTextViewer) {
 	color: var(--reference-text-dark);
@@ -1376,281 +1660,6 @@ body.old-dark-mode .dark-mode-background {
 }
 .dark-mode .rem-button__container .rem-bullet__container .rem-bullet--all-children-visible .perfect-circle__inner > svg .rem-bullet__core {
 	fill: var(--bullet-ring-color-dark);
-}
-
-.highlight-color--red,
-.highlight-color--orange,
-.highlight-color--yellow,
-.highlight-color--green,
-.highlight-color--blue,
-.highlight-color--purple {
-	border-radius: 3px;
-	margin-bottom: 1px;
-	padding: 0 3px;
-	color: black;
-}
-
-[data-rem-tags~=highlight] .rem-text,
-[data-rem-tags~=highlight] .rem-text.rem-header--1,
-[data-rem-tags~=highlight] .rem-text.rem-header--2,
-[data-rem-tags~=highlight] .rem-text.rem-header--3 {
-	color: black;
-}
-
-.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--red, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--orange, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--yellow, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--green, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--blue, .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) span.highlight-color--purple {
-	font-weight: 550;
-}
-
-.highlight-color--red {
-	background-color: var(--highlight-color--red);
-}
-
-.highlight-color--orange {
-	background-color: var(--highlight-color--orange);
-}
-
-.highlight-color--yellow {
-	background-color: var(--highlight-color--yellow);
-}
-
-.highlight-color--green {
-	background-color: var(--highlight-color--green);
-}
-
-.highlight-color--blue {
-	background-color: var(--highlight-color--blue);
-}
-
-.highlight-color--purple {
-	background-color: var(--highlight-color--purple);
-}
-
-.rem-text .bold.highlight-color--red {
-	background-color: unset;
-	color: var(--red-text);
-}
-.rem-text .bold.highlight-color--orange {
-	background-color: unset;
-	color: var(--orange-text);
-}
-.rem-text .bold.highlight-color--yellow {
-	background-color: unset;
-	color: var(--yellow-text);
-	text-shadow: var(--text-shadow-yellow);
-}
-.rem-text .bold.highlight-color--green {
-	background-color: unset;
-	color: var(--green-text);
-}
-.rem-text .bold.highlight-color--blue {
-	background-color: unset;
-	color: var(--blue-text);
-}
-.rem-text .bold.highlight-color--purple {
-	background-color: unset;
-	color: var(--purple-text);
-}
-
-#DocumentTitle .bold,
-#DocumentTitle .bold.highlight-color--red,
-#DocumentTitle .bold.highlight-color--orange,
-#DocumentTitle .bold.highlight-color--yellow,
-#DocumentTitle .bold.highlight-color--green,
-#DocumentTitle .bold.highlight-color--blue,
-#DocumentTitle .bold.highlight-color--purple {
-	background-color: unset !important;
-	font-weight: 700;
-}
-#DocumentTitle .bold.highlight-color--red {
-	color: var(--red-text);
-}
-#DocumentTitle .bold.highlight-color--orange {
-	color: var(--orange-text);
-}
-#DocumentTitle .bold.highlight-color--yellow {
-	color: var(--yellow-text);
-	text-shadow: var(--text-shadow-yellow);
-}
-#DocumentTitle .bold.highlight-color--green {
-	color: var(--green-text);
-}
-#DocumentTitle .bold.highlight-color--blue {
-	color: var(--blue-text);
-}
-#DocumentTitle .bold.highlight-color--purple {
-	color: var(--purple-text);
-}
-
-.dark-mode .highlight-color--red {
-	background-color: var(--highlight-color--red-dark);
-}
-.dark-mode .highlight-color--orange {
-	background-color: var(--highlight-color--orange-dark);
-}
-.dark-mode .highlight-color--yellow {
-	background-color: var(--highlight-color--yellow-dark);
-}
-.dark-mode .highlight-color--green {
-	background-color: var(--highlight-color--green-dark);
-}
-.dark-mode .highlight-color--blue {
-	background-color: var(--highlight-color--blue-dark);
-}
-.dark-mode .highlight-color--purple {
-	background-color: var(--highlight-color--purple-dark);
-}
-.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
-	background-color: var(--highlight-color--red-dark);
-}
-.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--orange:not(.bold.highlight-color--orange) {
-	background-color: var(--highlight-color--orange-dark);
-}
-.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
-	background-color: var(--highlight-color--yellow-dark);
-}
-.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--green:not(.bold.highlight-color--green) {
-	background-color: var(--highlight-color--green-dark);
-}
-.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--blue:not(.bold.highlight-color--blue) {
-	background-color: var(--highlight-color--blue-dark);
-}
-.dark-mode .rem-text > .EditorContainer .RichTextViewer .highlight-color--purple:not(.bold.highlight-color--purple) {
-	background-color: var(--highlight-color--purple-dark);
-}
-.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--red:not(.bold.highlight-color--red) {
-	background-color: var(--highlight-color--red-dark);
-}
-.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--orange:not(.bold.highlight-color--orange) {
-	background-color: var(--highlight-color--orange-dark);
-}
-.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
-	background-color: var(--highlight-color--yellow-dark);
-}
-.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--green:not(.bold.highlight-color--green) {
-	background-color: var(--highlight-color--green-dark);
-}
-.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--blue:not(.bold.highlight-color--blue) {
-	background-color: var(--highlight-color--blue-dark);
-}
-.dark-mode .rem-text > .rich-text-editor > .EditorContainer [data-slate-node=element] [data-slate-node~=text] .highlight-color--purple:not(.bold.highlight-color--purple) {
-	background-color: var(--highlight-color--purple-dark);
-}
-.dark-mode #content .tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .bold.highlight-color--red {
-	color: var(--red-text-dark);
-}
-.dark-mode #content .tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .bold.highlight-color--orange {
-	color: var(--orange-text-dark);
-}
-.dark-mode #content .tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .bold.highlight-color--yellow {
-	color: var(--yellow-text-dark);
-	text-shadow: unset;
-}
-.dark-mode #content .tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .bold.highlight-color--green {
-	color: var(--green-text-dark);
-}
-.dark-mode #content .tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .bold.highlight-color--blue {
-	color: var(--blue-text-dark);
-}
-.dark-mode #content .tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle .bold.highlight-color--purple {
-	color: var(--purple-text-dark);
-}
-.dark-mode #content .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--red {
-	color: var(--highlight-color--red-text-dark);
-	background-color: #572924;
-}
-.dark-mode #content .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--orange {
-	color: var(--highlight-color--orange-text-dark);
-	background-color: #553D24;
-}
-.dark-mode #content .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--yellow {
-	color: var(--highlight-color--yellow-text-dark);
-	background-color: #453E1E;
-}
-.dark-mode #content .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--green {
-	color: var(--highlight-color--green-text-dark);
-	background-color: #253F27;
-}
-.dark-mode #content .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--blue {
-	color: var(--highlight-color--blue-text-dark);
-	background-color: #183C4D;
-}
-.dark-mode #content .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--purple {
-	color: var(--highlight-color--purple-text-dark);
-	background-color: #43273F;
-}
-.dark-mode #content .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--red {
-	color: var(--red-text-dark);
-	background-color: unset;
-}
-.dark-mode #content .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--orange {
-	color: var(--orange-text-dark);
-	background-color: unset;
-}
-.dark-mode #content .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--yellow {
-	color: var(--yellow-text-dark);
-	background-color: unset;
-	text-shadow: unset;
-}
-.dark-mode #content .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--green {
-	color: var(--green-text-dark);
-	background-color: unset;
-}
-.dark-mode #content .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--blue {
-	color: var(--blue-text-dark);
-	background-color: unset;
-}
-.dark-mode #content .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--purple {
-	color: var(--purple-text-dark);
-	background-color: unset;
-}
-.dark-mode #content .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--red {
-	color: #FFD2CE;
-	background-color: #572924;
-}
-.dark-mode #content .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--orange {
-	color: #FFDAB8;
-	background-color: #553D24;
-}
-.dark-mode #content .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--yellow {
-	color: #E8E48F;
-	background-color: #453E1E;
-}
-.dark-mode #content .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--green {
-	color: #B3DDAB;
-	background-color: #253F27;
-}
-.dark-mode #content .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--blue {
-	color: #B5DEE8;
-	background-color: #183C4D;
-}
-.dark-mode #content .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--purple {
-	color: #DDC3EB;
-	background-color: #43273F;
-}
-.dark-mode #content .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--red {
-	color: var(--red-text-dark);
-	background-color: unset;
-}
-.dark-mode #content .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--orange {
-	color: var(--orange-text-dark);
-	background-color: unset;
-}
-.dark-mode #content .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--yellow {
-	color: var(--yellow-text-dark);
-	background-color: unset;
-	text-shadow: unset;
-}
-.dark-mode #content .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--green {
-	color: var(--green-text-dark);
-	background-color: unset;
-}
-.dark-mode #content .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--blue {
-	color: var(--blue-text-dark);
-	background-color: unset;
-}
-.dark-mode #content .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--purple {
-	color: var(--purple-text-dark);
-	background-color: unset;
 }
 
 .dark-mode #hierarchy-editor .node-top-level-in-portal-container .node-top-level-in-portal {
@@ -1923,28 +1932,28 @@ body.old-dark-mode .dark-mode-background {
 	background-color: var(--darkmode-background-selected);
 }
 .dark-mode #Popup #PopupContent .document-popup-preview #document .rem-text .EditorContainer span.highlight-color--red {
-	color: #FFD2CE;
-	background-color: #572924;
+	color: var(--highlight-color--red-text-dark);
+	background-color: var(--highlight-color--red-bg-dark);
 }
 .dark-mode #Popup #PopupContent .document-popup-preview #document .rem-text .EditorContainer span.highlight-color--orange {
-	color: #FFDAB8;
-	background-color: #553D24;
+	color: var(--highlight-color--orange-text-dark);
+	background-color: var(--highlight-color--orange-bg-dark);
 }
 .dark-mode #Popup #PopupContent .document-popup-preview #document .rem-text .EditorContainer span.highlight-color--yellow {
-	color: #E8DDA7;
-	background-color: #453E1E;
+	color: var(--highlight-color--yellow-text-dark);
+	background-color: var(--highlight-color--yellow-bg-dark);
 }
 .dark-mode #Popup #PopupContent .document-popup-preview #document .rem-text .EditorContainer span.highlight-color--green {
-	color: #B3DDAB;
-	background-color: #253F27;
+	color: var(--highlight-color--green-text-dark);
+	background-color: var(--highlight-color--green-bg-dark);
 }
 .dark-mode #Popup #PopupContent .document-popup-preview #document .rem-text .EditorContainer span.highlight-color--blue {
-	color: #B5DEE8;
-	background-color: #183C4D;
+	color: var(--highlight-color--blue-text-dark);
+	background-color: var(--highlight-color--blue-bg-dark);
 }
 .dark-mode #Popup #PopupContent .document-popup-preview #document .rem-text .EditorContainer span.highlight-color--purple {
-	color: #DDC3EB;
-	background-color: #43273F;
+	color: var(--highlight-color--purple-text-dark);
+	background-color: var(--highlight-color--purple-bg-dark);
 }
 .dark-mode #Popup #PopupContent .document-popup-preview #document .rem-text .EditorContainer .bold.highlight-color--red {
 	color: var(--red-text-dark);

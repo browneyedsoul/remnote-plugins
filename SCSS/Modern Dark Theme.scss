@@ -90,12 +90,12 @@
 	--highlight-color--purple-bg-dark: #43273F;
 	--highlight-color--purple-text-dark: #DDC3EB;
 	--highlight-color--purple-bar-dark: #E5C0EB;
-	--pdf-highlight-color-red: #FFD0C3;
-	--pdf-highlight-color-orange: #FDDAB6;
-	--pdf-highlight-color-yellow: #FFF34C;
-	--pdf-highlight-color-green: #BBF4BE;
-	--pdf-highlight-color-blue: #D2EEF9;
-	--pdf-highlight-color-purple: #F5E0FE;
+	--pdf-highlight-color-red: #FFE4DF;
+	--pdf-highlight-color-orange: #FFE9CC;
+	--pdf-highlight-color-yellow: #F8F9AA;
+	--pdf-highlight-color-green: #D8FFD1;
+	--pdf-highlight-color-blue: #D4EEFF;
+	--pdf-highlight-color-purple: #F5E9FF;
 	--text-shadow: 0.01em 0.01em 0.01em #727E84;
 	--text-shadow-yellow: 0.1em 0.1em 0.1em #EAEB74;
 	--text-shadow-dark: 0.01em 0.01em 0.01em #727E84;
@@ -136,6 +136,206 @@
 	// Rem Block Selected Area
 		.hidden-selection {
 			background-color:#D8E2F1;
+		}
+// Highlight Mixin
+	// highlight-text
+		@mixin highlight-text {
+			.bold.highlight-color--red {
+				background-color: unset;
+				color: var(--red-text);
+			}
+			.bold.highlight-color--orange {
+				background-color: unset;
+				color: var(--orange-text);
+			}
+			.bold.highlight-color--yellow {
+				background-color: unset;
+				color: var(--yellow-text);
+				text-shadow: var(--text-shadow-yellow);
+			}
+			.bold.highlight-color--green {
+				background-color: unset;
+				color: var(--green-text);
+			}
+			.bold.highlight-color--blue {
+				background-color: unset;
+				color: var(--blue-text);
+			}
+			.bold.highlight-color--purple {
+				background-color: unset;
+				color: var(--purple-text);
+			}
+		}
+	// highlight-text-dark
+		@mixin highlight-text-dark {
+			.bold.highlight-color--red {
+				color: var(--red-text-dark);
+				background-color: unset;
+			}
+			.bold.highlight-color--orange {
+				color: var(--orange-text-dark);
+				background-color: unset;
+			}
+			.bold.highlight-color--yellow {
+				color: var(--yellow-text-dark);
+				background-color: unset;
+				text-shadow: unset;
+			}
+			.bold.highlight-color--green {
+				color: var(--green-text-dark);
+				background-color: unset;
+			}
+			.bold.highlight-color--blue {
+				color: var(--blue-text-dark);
+				background-color: unset;
+			}
+			.bold.highlight-color--purple {
+				color: var(--purple-text-dark);
+				background-color: unset;
+			}
+		}
+	// highlight-color-light-notbold
+		@mixin highlight-color-light-notbold {
+			.highlight-color--red:not(.bold.highlight-color--red) {
+				background-color: var(--highlight-color--red-light);
+			}
+			.highlight-color--orange:not(.bold.highlight-color--orange) {
+				background-color: var(--highlight-color--orange-light);
+			}
+			.highlight-color--yellow:not(.bold.highlight-color--yellow) {
+				background-color: var(--highlight-color--yellow-light);
+			}
+			.highlight-color--green:not(.bold.highlight-color--green) {
+				background-color: var(--highlight-color--green-light);
+			}
+			.highlight-color--blue:not(.bold.highlight-color--blue) {
+				background-color: var(--highlight-color--blue-light);
+			}
+			.highlight-color--purple:not(.bold.highlight-color--purple) {
+				background-color: var(--highlight-color--purple-light);
+			}	
+		}
+	// highlight-color-dark-notbold
+		@mixin highlight-color-dark-notbold {
+			.highlight-color--red:not(.bold.highlight-color--red) {
+				color: var(--highlight-color--red-text-dark);
+				background-color: var(--highlight-color--red-bg-dark);
+			}
+			.highlight-color--orange:not(.bold.highlight-color--orange) {
+				color: var(--highlight-color--orange-text-dark);
+				background-color: var(--highlight-color--orange-bg-dark);
+			}
+			.highlight-color--yellow:not(.bold.highlight-color--yellow) {
+				color: var(--highlight-color--yellow-text-dark);
+				background-color: var(--highlight-color--yellow-bg-dark);
+			}
+			.highlight-color--green:not(.bold.highlight-color--green) {
+				color: var(--highlight-color--green-text-dark);
+				background-color: var(--highlight-color--green-bg-dark);
+			}
+			.highlight-color--blue:not(.bold.highlight-color--blue) {
+				color: var(--highlight-color--blue-text-dark);
+				background-color: var(--highlight-color--blue-bg-dark);
+			}
+			.highlight-color--purple:not(.bold.highlight-color--purple) {
+				color: var(--highlight-color--purple-text-dark);
+				background-color: var(--highlight-color--purple-bg-dark);
+			}
+		}
+	// highlight
+		@mixin highlight {
+			.highlight-color--red {
+				background-color: var(--highlight-color--red);
+			}
+			.highlight-color--orange {
+				background-color: var(--highlight-color--orange);
+			}
+			.highlight-color--yellow {
+				background-color: var(--highlight-color--yellow);
+			}
+			.highlight-color--green {
+				background-color: var(--highlight-color--green);
+			}
+			.highlight-color--blue {
+				background-color: var(--highlight-color--blue);
+			}
+			.highlight-color--purple {
+				background-color: var(--highlight-color--purple);
+			}
+		}
+	// highlight-span
+		@mixin highlight-span {
+			span.highlight-color--red {
+				background-color: var(--highlight-color--red);
+			}
+			span.highlight-color--orange {
+				background-color: var(--highlight-color--orange)
+			}
+			span.highlight-color--yellow {
+				background-color: var(--highlight-color--yellow)
+			}
+			span.highlight-color--green {
+				background-color: var(--highlight-color--green)
+			}
+			span.highlight-color--blue {
+				background-color: var(--highlight-color--blue)
+			}
+			span.highlight-color--purple {
+				background-color: var(--highlight-color--purple);
+			}	
+		}
+	// highlight-span-dark
+		@mixin highlight-span-dark {
+			span.highlight-color--red:not(.bold.highlight-color--red) {
+				background-color: var(--highlight-color--red-span-dark);
+			}
+			span.highlight-color--orange:not(.bold.highlight-color--orange) {
+				background-color: var(--highlight-color--orange-span-dark);
+			}
+			span.highlight-color--yellow:not(.bold.highlight-color--yellow) {
+				background-color: var(--highlight-color--yellow-span-dark);
+			}
+			span.highlight-color--green:not(.bold.highlight-color--green) {
+				background-color: var(--highlight-color--green-span-dark);
+			}
+			span.highlight-color--blue:not(.bold.highlight-color--blue) {
+				background-color: var(--highlight-color--blue-span-dark);
+			}
+			span.highlight-color--purple:not(.bold.highlight-color--purple) {
+				background-color: var(--highlight-color--purple-span-dark);
+			}
+		}
+	// highlight-span-text-dark
+		@mixin highlight-span-text-dark {
+			span.highlight-color--red {
+				color: var(--highlight-color--red-text-dark);
+				background-color: var(--highlight-color--red-bg-dark);
+			}
+
+			span.highlight-color--orange {
+				color: var(--highlight-color--orange-text-dark);
+				background-color: var(--highlight-color--orange-bg-dark);
+			}
+
+			span.highlight-color--yellow {
+				color: var(--highlight-color--yellow-text-dark);
+				background-color: var(--highlight-color--yellow-bg-dark);
+			}
+
+			span.highlight-color--green {
+				color: var(--highlight-color--green-text-dark);
+				background-color: var(--highlight-color--green-bg-dark);
+			}
+
+			span.highlight-color--blue {
+				color: var(--highlight-color--blue-text-dark);
+				background-color: var(--highlight-color--blue-bg-dark);
+			}
+
+			span.highlight-color--purple {
+				color: var(--highlight-color--purple-text-dark);
+				background-color: var(--highlight-color--purple-bg-dark);;
+			}
 		}
 // Global Elements
 	// Header
@@ -292,8 +492,135 @@
 				}
 			}
 		}
+	// Highlight
+		// Basic Highlight Style
+			.highlight-color--red,
+			.highlight-color--orange,
+			.highlight-color--yellow,
+			.highlight-color--green,
+			.highlight-color--blue,
+			.highlight-color--purple {
+				border-radius: 3px;
+				margin-bottom: 1px;
+				padding: 0 3px;
+				color: black;
+			}
+			[data-rem-tags~=highlight] {
+				.rem-text,
+				.rem-text.rem-header--1,
+				.rem-text.rem-header--2,
+				.rem-text.rem-header--3 {
+					color: black;
+				}
+			}
+			.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) {
+				span {
+					&.highlight-color--red,
+					&.highlight-color--orange,
+					&.highlight-color--yellow,
+					&.highlight-color--green,
+					&.highlight-color--blue,
+					&.highlight-color--purple {
+						font-weight: 550;
+					}
+				}
+			}
+		// Highlight Color
+			@include highlight();
+
+			.rem-text {
+				@include highlight-text();
+			}
+		// Document Title Highlight Style
+			#DocumentTitle {
+				.bold,
+				.bold.highlight-color--red,
+				.bold.highlight-color--orange,
+				.bold.highlight-color--yellow,
+				.bold.highlight-color--green,
+				.bold.highlight-color--blue,
+				.bold.highlight-color--purple {
+					background-color: unset !important;
+					font-weight: 700;
+				}
+				@include highlight-text();
+			}
 // Global Elements - Darkmode
 	.dark-mode {
+	// Hightlight
+		.highlight-color--red {
+			background-color: var(--highlight-color--red-dark);
+		}
+		.highlight-color--orange {
+			background-color: var(--highlight-color--orange-dark);
+		}
+		.highlight-color--yellow {
+			background-color: var(--highlight-color--yellow-dark);
+		}
+		.highlight-color--green {
+			background-color: var(--highlight-color--green-dark);
+		}
+		.highlight-color--blue {
+			background-color: var(--highlight-color--blue-dark);
+		}
+		.highlight-color--purple {
+			background-color: var(--highlight-color--purple-dark);
+		}
+		.rem-text {
+			> .EditorContainer {
+				.RichTextViewer {
+					.highlight-color--red:not(.bold.highlight-color--red) {
+						background-color: var(--highlight-color--red-dark);
+					}
+					.highlight-color--orange:not(.bold.highlight-color--orange) {
+						background-color: var(--highlight-color--orange-dark);
+					}
+					.highlight-color--yellow:not(.bold.highlight-color--yellow) {
+						background-color: var(--highlight-color--yellow-dark);
+					}
+					.highlight-color--green:not(.bold.highlight-color--green) {
+						background-color: var(--highlight-color--green-dark);
+					}
+					.highlight-color--blue:not(.bold.highlight-color--blue) {
+						background-color: var(--highlight-color--blue-dark);
+					}
+					.highlight-color--purple:not(.bold.highlight-color--purple) {
+						background-color: var(--highlight-color--purple-dark);
+					}
+				}
+			}
+			> .rich-text-editor {
+				> .EditorContainer {
+					[data-slate-node="element"] {
+						[data-slate-node~="text"] {
+							.highlight-color--red:not(.bold.highlight-color--red) {
+								background-color: var(--highlight-color--red-dark);
+							}
+		
+							.highlight-color--orange:not(.bold.highlight-color--orange) {
+								background-color: var(--highlight-color--orange-dark);
+							}
+		
+							.highlight-color--yellow:not(.bold.highlight-color--yellow) {
+								background-color: var(--highlight-color--yellow-dark);
+							}
+		
+							.highlight-color--green:not(.bold.highlight-color--green) {
+								background-color: var(--highlight-color--green-dark);
+							}
+		
+							.highlight-color--blue:not(.bold.highlight-color--blue) {
+								background-color: var(--highlight-color--blue-dark);
+							}
+		
+							.highlight-color--purple:not(.bold.highlight-color--purple) {
+								background-color: var(--highlight-color--purple-dark);
+							}
+						}
+					}
+				}
+			}
+		}
 	// Checkbox
 		.rem-container--todo-finished {
 			color: #A1A1A1;
@@ -870,6 +1197,75 @@
 						// Katex
 							.katex {
 								background-color: unset;
+							}
+						// Highlight Style
+							.queue-container {
+								.spacedRepetition {
+									.rem-text {
+										.EditorContainer {
+											span.highlight-color--red {
+												color: #FFD2CE;
+												background-color: #572924;
+											}
+							
+											span.highlight-color--orange {
+												color: #FFDAB8;
+												background-color: #553D24;
+											}
+							
+											span.highlight-color--yellow {
+												color: #E8E48F;
+												background-color: #453E1E;
+											}
+							
+											span.highlight-color--green {
+												color: #B3DDAB;
+												background-color: #253F27;
+											}
+							
+											span.highlight-color--blue {
+												color: #B5DEE8;
+												background-color: #183C4D;
+											}
+							
+											span.highlight-color--purple {
+												color: #DDC3EB;
+												background-color: #43273F;
+											}
+							
+											.bold.highlight-color--red {
+												color: var(--red-text-dark);
+												background-color: unset;
+											}
+							
+											.bold.highlight-color--orange {
+												color: var(--orange-text-dark);
+												background-color: unset;
+											}
+							
+											.bold.highlight-color--yellow {
+												color: var(--yellow-text-dark);
+												background-color: unset;
+												text-shadow: unset;
+											}
+							
+											.bold.highlight-color--green {
+												color: var(--green-text-dark);
+												background-color: unset;
+											}
+							
+											.bold.highlight-color--blue {
+												color: var(--blue-text-dark);
+												background-color: unset;
+											}
+							
+											.bold.highlight-color--purple {
+												color: var(--purple-text-dark);
+												background-color: unset;
+											}
+										}
+									}
+								}
 							}
 					// Queue Title Bar
 						.queue__title {
@@ -1477,20 +1873,7 @@
 					}
 				// Bold Highlights
 					.RichTextViewer {
-						.bold.highlight-color--red,
-						.bold.highlight-color--orange,
-						.bold.highlight-color--yellow,
-						.bold.highlight-color--green,
-						.bold.highlight-color--blue,
-						.bold.highlight-color--purple {
-						background-color: transparent;
-						}
-						.bold.highlight-color--red {color: var(--red-text-dark);}
-						.bold.highlight-color--orange {color: var(--orange-text-dark);}
-						.bold.highlight-color--yellow {color: var(--yellow-text-dark);}
-						.bold.highlight-color--green {color: var(--green-text-dark);}
-						.bold.highlight-color--blue {color: var(--blue-text-dark);}
-						.bold.highlight-color--purple {color: var(--purple-text-dark);}
+						@include highlight-text-dark();
 					}
 				// Left Curve Trick
 					&::before {
@@ -1625,45 +2008,11 @@
 							}
 						// Highlight Color
 							.RichTextViewer {
-								.highlight-color--red:not(.bold.highlight-color--red) {
-									background-color: var(--highlight-color--red-light);
-								}
-								.highlight-color--orange:not(.bold.highlight-color--orange) {
-									background-color: var(--highlight-color--orange-light);
-								}
-								.highlight-color--yellow:not(.bold.highlight-color--yellow) {
-									background-color: var(--highlight-color--yellow-light);
-								}
-								.highlight-color--green:not(.bold.highlight-color--green) {
-									background-color: var(--highlight-color--green-light);
-								}
-								.highlight-color--blue:not(.bold.highlight-color--blue) {
-									background-color: var(--highlight-color--blue-light);
-								}
-								.highlight-color--purple:not(.bold.highlight-color--purple) {
-									background-color: var(--highlight-color--purple-light);
-								}
+								@include highlight-color-light-notbold;
 							}
 							[data-slate-node~="element"] {
 								[data-slate-node~="text"] {
-									.highlight-color--red:not(.bold.highlight-color--red) {
-										background-color: var(--highlight-color--red-light);
-									}
-									.highlight-color--orange:not(.bold.highlight-color--orange) {
-										background-color: var(--highlight-color--orange-light);
-									}
-									.highlight-color--yellow:not(.bold.highlight-color--yellow) {
-										background-color: var(--highlight-color--yellow-light);
-									}
-									.highlight-color--green:not(.bold.highlight-color--green) {
-										background-color: var(--highlight-color--green-light);
-									}
-									.highlight-color--blue:not(.bold.highlight-color--blue) {
-										background-color: var(--highlight-color--blue-light);
-									}
-									.highlight-color--purple:not(.bold.highlight-color--purple) {
-										background-color: var(--highlight-color--purple-light);
-									}
+									@include highlight-color-light-notbold;
 								}
 							}
 						// Rem Reference
@@ -1787,27 +2136,8 @@
 						}
 					// Highlights
 						.RichTextViewer {
-							span.highlight-color--red {background-color: var(--highlight-color--red);}
-							span.highlight-color--orange {background-color: var(--highlight-color--orange)}
-							span.highlight-color--yellow {background-color: var(--highlight-color--yellow)}
-							span.highlight-color--green {background-color: var(--highlight-color--green)}
-							span.highlight-color--blue {background-color: var(--highlight-color--blue)}
-							span.highlight-color--purple {background-color: var(--highlight-color--purple);}
-
-							.bold.highlight-color--red,
-							.bold.highlight-color--orange,
-							.bold.highlight-color--yellow,
-							.bold.highlight-color--green,
-							.bold.highlight-color--blue,
-							.bold.highlight-color--purple {
-								background-color: transparent;
-							}
-							.bold.highlight-color--red {color: var(--red-text-dark);}
-							.bold.highlight-color--orange {color: var(--orange-text-dark);}
-							.bold.highlight-color--yellow {color: var(--yellow-text-dark);}
-							.bold.highlight-color--green {color: var(--green-text-dark);}
-							.bold.highlight-color--blue {color: var(--blue-text-dark);}
-							.bold.highlight-color--purple {color: var(--purple-text-dark);}
+							@include highlight-span();
+							@include highlight-text-dark();
 						}
 					// Left Bottom Border Trick
 						&::before {
@@ -1844,6 +2174,31 @@
 										}
 									// DocumentTitle
 										> #DocumentTitle {
+											.bold.highlight-color--red {
+												color: var(--red-text-dark);
+											}
+
+											.bold.highlight-color--orange {
+												color: var(--orange-text-dark);
+											}
+
+											.bold.highlight-color--yellow {
+												color: var(--yellow-text-dark);
+												text-shadow: unset;
+											}
+
+											.bold.highlight-color--green {
+												color: var(--green-text-dark);
+											}
+
+											.bold.highlight-color--blue {
+												color: var(--blue-text-dark);
+											}
+
+											.bold.highlight-color--purple {
+												color: var(--purple-text-dark);
+											}
+
 											> .document-title {
 												// Power-up icon
 													.rem-powerup-icon {
@@ -2015,57 +2370,35 @@
 											}
 								}
 							// Highlight Color
-								.RichTextViewer {
-									.highlight-color--red:not(.bold.highlight-color--red) {
-										color: var(--highlight-color--red-text-dark);
-										background-color: var(--highlight-color--red-dark);
-									}
-									.highlight-color--orange:not(.bold.highlight-color--orange) {
-										color: var(--highlight-color--orange-text-dark);
-										background-color: var(--highlight-color--orange-dark);
-									}
-									.highlight-color--yellow:not(.bold.highlight-color--yellow) {
-										color: var(--highlight-color--yellow-text-dark);
-										background-color: var(--highlight-color--yellow-dark);
-									}
-									.highlight-color--green:not(.bold.highlight-color--green) {
-										color: var(--highlight-color--green-text-dark);
-										background-color: var(--highlight-color--green-dark);
-									}
-									.highlight-color--blue:not(.bold.highlight-color--blue) {
-										color: var(--highlight-color--blue-text-dark);
-										background-color: var(--highlight-color--blue-dark);
-									}
-									.highlight-color--purple:not(.bold.highlight-color--purple) {
-										color: var(--highlight-color--purple-text-dark);
-										background-color: var(--highlight-color--purple-dark);
+								.rem-text {
+									.EditorContainer {
+										@include highlight-span-text-dark();
+										@include highlight-text-dark();
+										.RichTextViewer {
+											@include highlight-color-dark-notbold();
+										}
 									}
 								}
 								[data-slate-node="element"] {
 									[data-slate-node~="text"] {
-										.highlight-color--red:not(.bold.highlight-color--red) {background-color: var(--highlight-color--red-dark);}
-										.highlight-color--orange:not(.bold.highlight-color--orange) {background-color: var(--highlight-color--orange-dark);}
-										.highlight-color--yellow:not(.bold.highlight-color--yellow) {background-color: var(--highlight-color--yellow-dark);}
-										.highlight-color--green:not(.bold.highlight-color--green) {background-color: var(--highlight-color--green-dark);}
-										.highlight-color--blue:not(.bold.highlight-color--blue) {background-color: var(--highlight-color--blue-dark);}
-										.highlight-color--purple:not(.bold.highlight-color--purple) {background-color: var(--highlight-color--purple-dark);}
+										@include highlight-color-dark-notbold();
 									}
 								}
-							// Rem Reference
-								.rem-reference-container {
-									&:not(.hierarchy-editor__tag-bar .rem-reference-container) {
-										.rem-reference {
-											.RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
-												color: var(--reference-text-dark);
-												background-color: var(--reference-background-dark);
-												font-family: 'Roboto Mono', monospace !important;
-												padding: 0 2px;
-												margin: 0 2px;
-												border-radius: 4px;
+								// Rem Reference
+									.rem-reference-container {
+										&:not(.hierarchy-editor__tag-bar .rem-reference-container) {
+											.rem-reference {
+												.RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
+													color: var(--reference-text-dark);
+													background-color: var(--reference-background-dark);
+													font-family: 'Roboto Mono', monospace !important;
+													padding: 0 2px;
+													margin: 0 2px;
+													border-radius: 4px;
+												}
 											}
 										}
 									}
-								}
 						}
 				}
 			.rem-container--focused {
@@ -2115,351 +2448,6 @@
 				}
 			}
 		}
-// Hightlight Style
-	// Basic Highlight Style
-		.highlight-color--red,
-		.highlight-color--orange,
-		.highlight-color--yellow,
-		.highlight-color--green,
-		.highlight-color--blue,
-		.highlight-color--purple {
-			border-radius: 3px;
-			margin-bottom: 1px;
-			padding: 0 3px;
-			color: black;
-		}
-		[data-rem-tags~=highlight] {
-			.rem-text,
-			.rem-text.rem-header--1,
-			.rem-text.rem-header--2,
-			.rem-text.rem-header--3 {
-				color: black;
-			}
-		}
-		.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) {
-			span {
-				&.highlight-color--red,
-				&.highlight-color--orange,
-				&.highlight-color--yellow,
-				&.highlight-color--green,
-				&.highlight-color--blue,
-				&.highlight-color--purple {
-					font-weight: 550;
-				}
-			}
-		}
-	// Highlight Color
-		.highlight-color--red {background-color: var(--highlight-color--red);}
-		.highlight-color--orange {background-color: var(--highlight-color--orange);}
-		.highlight-color--yellow {background-color: var(--highlight-color--yellow);}
-		.highlight-color--green {background-color: var(--highlight-color--green);}
-		.highlight-color--blue {background-color: var(--highlight-color--blue);}
-		.highlight-color--purple {background-color: var(--highlight-color--purple);}
-
-		.rem-text {
-			.bold.highlight-color--red {
-				background-color: unset;
-				color: var(--red-text);
-			}
-			.bold.highlight-color--orange {
-				background-color: unset;
-				color: var(--orange-text);
-			}
-			.bold.highlight-color--yellow {
-				background-color: unset;
-				color: var(--yellow-text);
-				text-shadow: var(--text-shadow-yellow);
-			}
-			.bold.highlight-color--green {
-				background-color: unset;
-				color: var(--green-text);
-			}
-			.bold.highlight-color--blue {
-				background-color: unset;
-				color: var(--blue-text);
-			}
-			.bold.highlight-color--purple {
-				background-color: unset;
-				color: var(--purple-text);
-			}
-		}
-		// Document Title Highlight Style
-			#DocumentTitle {
-				.bold,
-				.bold.highlight-color--red,
-				.bold.highlight-color--orange,
-				.bold.highlight-color--yellow,
-				.bold.highlight-color--green,
-				.bold.highlight-color--blue,
-				.bold.highlight-color--purple {
-					background-color: unset !important;
-					font-weight: 700;
-				}
-				.bold.highlight-color--red {
-					color: var(--red-text);
-				}
-				.bold.highlight-color--orange {
-					color: var(--orange-text);
-				}
-				.bold.highlight-color--yellow {
-					color: var(--yellow-text);
-					text-shadow: var(--text-shadow-yellow);
-				}
-				.bold.highlight-color--green {
-					color: var(--green-text);
-				}
-				.bold.highlight-color--blue {
-					color: var(--blue-text);
-				}
-				.bold.highlight-color--purple {
-					color: var(--purple-text);
-				}
-			}
-	// Darkmode Compatibility
-		.dark-mode {
-			.highlight-color--red {
-				background-color: var(--highlight-color--red-dark);
-			}
-			.highlight-color--orange {
-				background-color: var(--highlight-color--orange-dark);
-			}
-			.highlight-color--yellow {
-				background-color: var(--highlight-color--yellow-dark);
-			}
-			.highlight-color--green {
-				background-color: var(--highlight-color--green-dark);
-			}
-			.highlight-color--blue {
-				background-color: var(--highlight-color--blue-dark);
-			}
-			.highlight-color--purple {
-				background-color: var(--highlight-color--purple-dark);
-			}
-			.rem-text {
-				> .EditorContainer {
-					.RichTextViewer {
-						.highlight-color--red:not(.bold.highlight-color--red) {
-							background-color: var(--highlight-color--red-dark);
-						}
-						.highlight-color--orange:not(.bold.highlight-color--orange) {
-							background-color: var(--highlight-color--orange-dark);
-						}
-						.highlight-color--yellow:not(.bold.highlight-color--yellow) {
-							background-color: var(--highlight-color--yellow-dark);
-						}
-						.highlight-color--green:not(.bold.highlight-color--green) {
-							background-color: var(--highlight-color--green-dark);
-						}
-						.highlight-color--blue:not(.bold.highlight-color--blue) {
-							background-color: var(--highlight-color--blue-dark);
-						}
-						.highlight-color--purple:not(.bold.highlight-color--purple) {
-							background-color: var(--highlight-color--purple-dark);
-						}
-					}
-				}
-				> .rich-text-editor {
-					> .EditorContainer {
-						[data-slate-node="element"] {
-							[data-slate-node~="text"] {
-								.highlight-color--red:not(.bold.highlight-color--red) {
-									background-color: var(--highlight-color--red-dark);
-								}
-			
-								.highlight-color--orange:not(.bold.highlight-color--orange) {
-									background-color: var(--highlight-color--orange-dark);
-								}
-			
-								.highlight-color--yellow:not(.bold.highlight-color--yellow) {
-									background-color: var(--highlight-color--yellow-dark);
-								}
-			
-								.highlight-color--green:not(.bold.highlight-color--green) {
-									background-color: var(--highlight-color--green-dark);
-								}
-			
-								.highlight-color--blue:not(.bold.highlight-color--blue) {
-									background-color: var(--highlight-color--blue-dark);
-								}
-			
-								.highlight-color--purple:not(.bold.highlight-color--purple) {
-									background-color: var(--highlight-color--purple-dark);
-								}
-							}
-						}
-					}
-				}
-			}
-
-			#content {
-				.tile__document {
-					#document {
-						// Top
-							#DocumentTopRow {
-								#DropToOpenAsDocument {
-									#DocumentTitle {
-										.bold.highlight-color--red {
-											color: var(--red-text-dark);
-										}
-										
-										.bold.highlight-color--orange {
-											color: var(--orange-text-dark);
-										}
-										
-										.bold.highlight-color--yellow {
-											color: var(--yellow-text-dark);
-											text-shadow: unset;
-										}
-										
-										.bold.highlight-color--green {
-											color: var(--green-text-dark);
-										}
-										
-										.bold.highlight-color--blue {
-											color: var(--blue-text-dark);
-										}
-										
-										.bold.highlight-color--purple {
-											color: var(--purple-text-dark);
-										}
-									}
-								}
-							}
-						// Editor
-							#hierarchy-editor {
-								.rem-text {
-									.EditorContainer, %highlight-dark-set {
-										span.highlight-color--red {
-											color: var(--highlight-color--red-text-dark);
-											background-color: #572924;
-										}
-		
-										span.highlight-color--orange {
-											
-											color: var(--highlight-color--orange-text-dark);
-											background-color: #553D24;
-										}
-		
-										span.highlight-color--yellow {
-											color: var(--highlight-color--yellow-text-dark);
-											background-color: #453E1E;
-										}
-		
-										span.highlight-color--green {
-											color: var(--highlight-color--green-text-dark);
-											background-color: #253F27;
-										}
-		
-										span.highlight-color--blue {
-											color: var(--highlight-color--blue-text-dark);
-											background-color: #183C4D;
-										}
-		
-										span.highlight-color--purple {
-											color: var(--highlight-color--purple-text-dark);
-											background-color: #43273F;
-										}
-										.bold.highlight-color--red {
-											color: var(--red-text-dark);
-											background-color: unset;
-										}
-										.bold.highlight-color--orange {
-											color: var(--orange-text-dark);
-											background-color: unset;
-										}
-										.bold.highlight-color--yellow {
-											color: var(--yellow-text-dark);
-											background-color: unset;
-											text-shadow: unset;
-										}
-										.bold.highlight-color--green {
-											color: var(--green-text-dark);
-											background-color: unset;
-										}
-										.bold.highlight-color--blue {
-											color: var(--blue-text-dark);
-											background-color: unset;
-										}
-										.bold.highlight-color--purple {
-											color: var(--purple-text-dark);
-											background-color: unset;
-										}
-									}
-								}
-							}
-					}
-				}
-				// Queue
-					.queue-container {
-						.spacedRepetition {
-							.rem-text {
-								.EditorContainer {
-									span.highlight-color--red {
-										color: #FFD2CE;
-										background-color: #572924;
-									}
-					
-									span.highlight-color--orange {
-										color: #FFDAB8;
-										background-color: #553D24;
-									}
-					
-									span.highlight-color--yellow {
-										color: #E8E48F;
-										background-color: #453E1E;
-									}
-					
-									span.highlight-color--green {
-										color: #B3DDAB;
-										background-color: #253F27;
-									}
-					
-									span.highlight-color--blue {
-										color: #B5DEE8;
-										background-color: #183C4D;
-									}
-					
-									span.highlight-color--purple {
-										color: #DDC3EB;
-										background-color: #43273F;
-									}
-					
-									.bold.highlight-color--red {
-										color: var(--red-text-dark);
-										background-color: unset;
-									}
-					
-									.bold.highlight-color--orange {
-										color: var(--orange-text-dark);
-										background-color: unset;
-									}
-					
-									.bold.highlight-color--yellow {
-										color: var(--yellow-text-dark);
-										background-color: unset;
-										text-shadow: unset;
-									}
-					
-									.bold.highlight-color--green {
-										color: var(--green-text-dark);
-										background-color: unset;
-									}
-					
-									.bold.highlight-color--blue {
-										color: var(--blue-text-dark);
-										background-color: unset;
-									}
-					
-									.bold.highlight-color--purple {
-										color: var(--purple-text-dark);
-										background-color: unset;
-									}
-								}
-							}
-						}
-					}
-			}
-		}	
 // Portal
 	// Darkmode Support
 		.dark-mode {
@@ -2872,66 +2860,8 @@
 						#document {
 							.rem-text {
 								.EditorContainer {
-									span.highlight-color--red {
-										color: #FFD2CE;
-										background-color: #572924;
-									}
-							
-									span.highlight-color--orange {
-										color: #FFDAB8;
-										background-color: #553D24;
-									}
-							
-									span.highlight-color--yellow {
-										color: #E8DDA7;
-										background-color: #453E1E;
-									}
-							
-									span.highlight-color--green {
-										color: #B3DDAB;
-										background-color: #253F27;
-									}
-							
-									span.highlight-color--blue {
-										color: #B5DEE8;
-										background-color: #183C4D;
-									}
-							
-									span.highlight-color--purple {
-										color: #DDC3EB;
-										background-color: #43273F;
-									}
-							
-									.bold.highlight-color--red {
-										color: var(--red-text-dark);
-										background-color: unset;
-									}
-							
-									.bold.highlight-color--orange {
-										color: var(--orange-text-dark);
-										background-color: unset;
-									}
-							
-									.bold.highlight-color--yellow {
-										color: var(--yellow-text-dark);
-										background-color: unset;
-										text-shadow: unset;
-									}
-							
-									.bold.highlight-color--green {
-										color: var(--green-text-dark);
-										background-color: unset;
-									}
-							
-									.bold.highlight-color--blue {
-										color: var(--blue-text-dark);
-										background-color: unset;
-									}
-							
-									.bold.highlight-color--purple {
-										color: var(--purple-text-dark);
-										background-color: unset;
-									}
+									@include highlight-span-text-dark();
+									@include highlight-text-dark();
 								}
 							}
 						}
@@ -3850,24 +3780,7 @@
 							padding-left: 3px;
 						}
 					}
-					span.highlight-color--red:not(.bold.highlight-color--red) {
-						background-color: var(--highlight-color--red-span-dark);
-					}
-					span.highlight-color--orange:not(.bold.highlight-color--orange) {
-						background-color: var(--highlight-color--orange-span-dark);
-					}
-					span.highlight-color--yellow:not(.bold.highlight-color--yellow) {
-						background-color: var(--highlight-color--yellow-span-dark);
-					}
-					span.highlight-color--green:not(.bold.highlight-color--green) {
-						background-color: var(--highlight-color--green-span-dark);
-					}
-					span.highlight-color--blue:not(.bold.highlight-color--blue) {
-						background-color: var(--highlight-color--blue-span-dark);
-					}
-					span.highlight-color--purple:not(.bold.highlight-color--purple) {
-						background-color: var(--highlight-color--purple-span-dark);
-					}
+					@include highlight-span-dark();
 					// Sidebar list item focused
 						> div.rounded-md.rn-clr-background-light-accent {
 							border: 2px solid var(--darkmode-contrast) !important;
@@ -4021,46 +3934,47 @@
 		} 
 		.dark-mode {
 			#document-sidebar {
-				background-color: var(--darkmode-background-sidebar);
-
-				> div {
+				// Global
 					background-color: var(--darkmode-background-sidebar);
 
-					&:first-of-type {
-						border-right: var(--darkmode-background-sidebar) !important;
-					}
-				}
-
-				+ div {
 					> div {
-						color: var(--darkmode-contrast);
-						background-color: var(--darkmode-background-sidebar) !important;
+						background-color: var(--darkmode-background-sidebar);
+
+						&:first-of-type {
+							border-right: var(--darkmode-background-sidebar) !important;
+						}
 					}
-				}
 
-				#document-sidebar_top {
-					// Account
-						#document-sidebar_top__logo-and-user {
-							.document-sidebar_top__user-and-collapse {
-								> span {
-									#document-sidebar__account-capsule {
-										background-color: var(--darkmode-background-sidebar);
+					+ div {
+						> div {
+							color: var(--darkmode-contrast);
+							background-color: var(--darkmode-background-sidebar) !important;
+						}
+					}
+				// Sidebar Top
+					#document-sidebar_top {
+						// Account
+							#document-sidebar_top__logo-and-user {
+								.document-sidebar_top__user-and-collapse {
+									> span {
+										#document-sidebar__account-capsule {
+											background-color: var(--darkmode-background-sidebar);
 
-										&:hover {
-											background-color: var(--darkmode-background-selected-darker);
-										}
+											&:hover {
+												background-color: var(--darkmode-background-selected-darker);
+											}
 
-										#document-sidebar__account-capsule__text {
-											// 
-										}
-										span {
-											color: var(--darkmode-text);
+											#document-sidebar__account-capsule__text {
+												// 
+											}
+											span {
+												color: var(--darkmode-text);
+											}
 										}
 									}
 								}
 							}
-						}
-				}
+					}
 				// Sidebar Middle (Item)
 					> div:nth-of-type(2) {
 						[data-type~="document_list_item"] {
@@ -4674,12 +4588,24 @@
 									border-radius: 5px;
 								}
 							}
-							.pdf-viewer__highlight-container--red .Highlight__part {background: var(--pdf-highlight-color-red);}
-							.pdf-viewer__highlight-container--orange .Highlight__part {background: var(--pdf-highlight-color-orange);}
-							.pdf-viewer__highlight-container--yellow .Highlight__part {background: var(--pdf-highlight-color-yellow);}
-							.pdf-viewer__highlight-container--green .Highlight__part {background: var(--pdf-highlight-color-green);}
-							.pdf-viewer__highlight-container--blue .Highlight__part {background: var(--pdf-highlight-color-blue);}
-							.pdf-viewer__highlight-container--purple .Highlight__part {background: var(--pdf-highlight-color-purple);}
+							.pdf-viewer__highlight-container--red .Highlight__part {
+								background: var(--pdf-highlight-color-red);
+							}
+							.pdf-viewer__highlight-container--orange .Highlight__part {
+								background: var(--pdf-highlight-color-orange);
+							}
+							.pdf-viewer__highlight-container--yellow .Highlight__part {
+								background: var(--pdf-highlight-color-yellow);
+							}
+							.pdf-viewer__highlight-container--green .Highlight__part {
+								background: var(--pdf-highlight-color-green);
+							}
+							.pdf-viewer__highlight-container--blue .Highlight__part {
+								background: var(--pdf-highlight-color-blue);
+							}
+							.pdf-viewer__highlight-container--purple .Highlight__part {
+								background: var(--pdf-highlight-color-purple);
+							}
 						}
 					}
 				}
