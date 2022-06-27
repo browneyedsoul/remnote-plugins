@@ -3045,6 +3045,56 @@ span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 	background: var(--pdf-highlight-color-purple);
 }
 
+[data-rem-container-tags~=file] .rem-header--1 .EditorContainer,
+[data-rem-container-tags~=file] .rem-header--2 .EditorContainer,
+[data-rem-container-tags~=file] .rem-header--3 .EditorContainer {
+	font-size: 0.9rem;
+	opacity: 0.7;
+}
+[data-rem-container-tags~=file] .highlight-color--red:not(.bold.highlight-color--red) {
+	background-color: var(--highlight-color--red-light);
+}
+[data-rem-container-tags~=file] .highlight-color--orange:not(.bold.highlight-color--orange) {
+	background-color: var(--highlight-color--orange-light);
+}
+[data-rem-container-tags~=file] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+	background-color: var(--highlight-color--yellow-light);
+}
+[data-rem-container-tags~=file] .highlight-color--green:not(.bold.highlight-color--green) {
+	background-color: var(--highlight-color--green-light);
+}
+[data-rem-container-tags~=file] .highlight-color--blue:not(.bold.highlight-color--blue) {
+	background-color: var(--highlight-color--blue-light);
+}
+[data-rem-container-tags~=file] .highlight-color--purple:not(.bold.highlight-color--purple) {
+	background-color: var(--highlight-color--purple-light);
+}
+
+.dark-mode [data-rem-container-tags~=file] .highlight-color--red:not(.bold.highlight-color--red) {
+	color: var(--highlight-color--red-text-dark);
+	background-color: var(--highlight-color--red-bg-dark);
+}
+.dark-mode [data-rem-container-tags~=file] .highlight-color--orange:not(.bold.highlight-color--orange) {
+	color: var(--highlight-color--orange-text-dark);
+	background-color: var(--highlight-color--orange-bg-dark);
+}
+.dark-mode [data-rem-container-tags~=file] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+	color: var(--highlight-color--yellow-text-dark);
+	background-color: var(--highlight-color--yellow-bg-dark);
+}
+.dark-mode [data-rem-container-tags~=file] .highlight-color--green:not(.bold.highlight-color--green) {
+	color: var(--highlight-color--green-text-dark);
+	background-color: var(--highlight-color--green-bg-dark);
+}
+.dark-mode [data-rem-container-tags~=file] .highlight-color--blue:not(.bold.highlight-color--blue) {
+	color: var(--highlight-color--blue-text-dark);
+	background-color: var(--highlight-color--blue-bg-dark);
+}
+.dark-mode [data-rem-container-tags~=file] .highlight-color--purple:not(.bold.highlight-color--purple) {
+	color: var(--highlight-color--purple-text-dark);
+	background-color: var(--highlight-color--purple-bg-dark);
+}
+
 .dark-mode #ErrorBoundary {
 	color: var(--darkmode-contrast);
 }

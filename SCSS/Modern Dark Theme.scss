@@ -4630,6 +4630,25 @@
 			}
 		}
 	}
+	// Page Numbering & Color Formatting
+	[data-rem-container-tags~="file"] {
+		.rem-header--1,
+		.rem-header--2,
+		.rem-header--3 {
+			.EditorContainer {
+				// Page ***
+				font-size: 0.9rem;
+				opacity: .7;
+			}
+		}
+		@include highlight-color-notbold-light();
+	}
+	// Darkmode
+		.dark-mode {
+			[data-rem-container-tags~="file"] {
+				@include highlight-color-notbold-dark();
+			}
+		}
 // Error Message
 	.dark-mode {
 		#ErrorBoundary {
