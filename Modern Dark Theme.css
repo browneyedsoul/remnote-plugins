@@ -636,20 +636,44 @@ body.old-dark-mode .dark-mode-background {
 #content .content__page {
 	background-color: #FFF;
 }
-
-.ReactVirtualized__Grid__innerScrollContainer {
+#content .content__page .ReactVirtualized__Grid__innerScrollContainer {
 	padding-bottom: 24px;
 }
-.ReactVirtualized__Grid__innerScrollContainer > div span:nth-of-type(1) > div > div:nth-child(2) {
+#content .content__page .ReactVirtualized__Grid__innerScrollContainer > div span:nth-of-type(1) > div > div:nth-child(2) {
 	flex-direction: column-reverse !important;
 }
-.ReactVirtualized__Grid__innerScrollContainer > div span:nth-of-type(1) > div > div:nth-child(2) > div:first-child {
+#content .content__page .ReactVirtualized__Grid__innerScrollContainer > div span:nth-of-type(1) > div > div:nth-child(2) > div:first-child {
 	zoom: 1.2;
 }
-.ReactVirtualized__Grid__innerScrollContainer > div span:nth-of-type(1) > div > div:nth-child(2) > div:last-child {
+#content .content__page .ReactVirtualized__Grid__innerScrollContainer > div span:nth-of-type(1) > div > div:nth-child(2) > div:last-child {
 	zoom: 0.75;
 	opacity: 0.4;
 	margin-bottom: 0.5rem;
+}
+#content .content__page .bold.highlight-color--red {
+	background-color: unset;
+	color: var(--red-text);
+}
+#content .content__page .bold.highlight-color--orange {
+	background-color: unset;
+	color: var(--orange-text);
+}
+#content .content__page .bold.highlight-color--yellow {
+	background-color: unset;
+	color: var(--yellow-text);
+	text-shadow: var(--text-shadow-yellow);
+}
+#content .content__page .bold.highlight-color--green {
+	background-color: unset;
+	color: var(--green-text);
+}
+#content .content__page .bold.highlight-color--blue {
+	background-color: unset;
+	color: var(--blue-text);
+}
+#content .content__page .bold.highlight-color--purple {
+	background-color: unset;
+	color: var(--purple-text);
 }
 
 .dark-mode #content .content__page {
@@ -675,6 +699,55 @@ body.old-dark-mode .dark-mode-background {
 }
 .dark-mode #content .content__page .document-table .ReactVirtualized__List > .grid > div {
 	color: var(--darkmode-contrast) !important;
+}
+.dark-mode #content .content__page .document-table .bold.highlight-color--red {
+	color: var(--red-text-dark);
+	background-color: unset;
+}
+.dark-mode #content .content__page .document-table .bold.highlight-color--orange {
+	color: var(--orange-text-dark);
+	background-color: unset;
+}
+.dark-mode #content .content__page .document-table .bold.highlight-color--yellow {
+	color: var(--yellow-text-dark);
+	background-color: unset;
+	text-shadow: unset;
+}
+.dark-mode #content .content__page .document-table .bold.highlight-color--green {
+	color: var(--green-text-dark);
+	background-color: unset;
+}
+.dark-mode #content .content__page .document-table .bold.highlight-color--blue {
+	color: var(--blue-text-dark);
+	background-color: unset;
+}
+.dark-mode #content .content__page .document-table .bold.highlight-color--purple {
+	color: var(--purple-text-dark);
+	background-color: unset;
+}
+.dark-mode #content .content__page .document-table span.highlight-color--red {
+	color: var(--highlight-color--red-text-dark);
+	background-color: var(--highlight-color--red-bg-dark);
+}
+.dark-mode #content .content__page .document-table span.highlight-color--orange {
+	color: var(--highlight-color--orange-text-dark);
+	background-color: var(--highlight-color--orange-bg-dark);
+}
+.dark-mode #content .content__page .document-table span.highlight-color--yellow {
+	color: var(--highlight-color--yellow-text-dark);
+	background-color: var(--highlight-color--yellow-bg-dark);
+}
+.dark-mode #content .content__page .document-table span.highlight-color--green {
+	color: var(--highlight-color--green-text-dark);
+	background-color: var(--highlight-color--green-bg-dark);
+}
+.dark-mode #content .content__page .document-table span.highlight-color--blue {
+	color: var(--highlight-color--blue-text-dark);
+	background-color: var(--highlight-color--blue-bg-dark);
+}
+.dark-mode #content .content__page .document-table span.highlight-color--purple {
+	color: var(--highlight-color--purple-text-dark);
+	background-color: var(--highlight-color--purple-bg-dark);
 }
 
 #Popup #PopupContent .node-top-level-in-portal {
@@ -1532,7 +1605,7 @@ body.old-dark-mode .dark-mode-background {
 	color: var(--darkmode-text);
 }
 .dark-mode .tile__document #document #hierarchy-editor div:nth-of-type(2) span.rem-checkbox {
-	border-color: #000 !important;
+	border-color: #BBB !important;
 	background-color: #222 !important;
 }
 .dark-mode .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--red {

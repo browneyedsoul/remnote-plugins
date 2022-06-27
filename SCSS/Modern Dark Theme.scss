@@ -194,8 +194,8 @@
 				background-color: unset;
 			}
 		}
-	// highlight-color-light-notbold
-		@mixin highlight-color-light-notbold {
+	// highlight-color-notbold-light
+		@mixin highlight-color-notbold-light {
 			.highlight-color--red:not(.bold.highlight-color--red) {
 				background-color: var(--highlight-color--red-light);
 			}
@@ -215,8 +215,8 @@
 				background-color: var(--highlight-color--purple-light);
 			}	
 		}
-	// highlight-color-dark-notbold
-		@mixin highlight-color-dark-notbold {
+	// highlight-color-notbold-dark
+		@mixin highlight-color-notbold-dark {
 			.highlight-color--red:not(.bold.highlight-color--red) {
 				color: var(--highlight-color--red-text-dark);
 				background-color: var(--highlight-color--red-bg-dark);
@@ -923,39 +923,42 @@
 	#content {
 		.content__page {
 			background-color: #FFF;
-		}
-	}
-	// Reverse Browser Item Header
-		.ReactVirtualized__Grid__innerScrollContainer {
-			padding-bottom: 24px;
-			
-			> div {
-				span:nth-of-type(1) {
-					> div {
-						// > div:first-child {
-						// 	> svg[data-icon~="documents-top-level-rem"] {
-						// 		> rect,
-						// 		> circle {
-						// 			display: none;
-						// 		}
-						// 	}
-						// }
-						> div:nth-child(2) {
-							flex-direction: column-reverse !important;
 
-							> div:first-child {
-								zoom: 1.2;
-							}
-							> div:last-child {
-								zoom: .75;
-								opacity: 0.4;
-								margin-bottom: 0.5rem;
+			// Reverse Browser Item Header
+				.ReactVirtualized__Grid__innerScrollContainer {
+					padding-bottom: 24px;
+					
+					> div {
+						span:nth-of-type(1) {
+							> div {
+								// > div:first-child {
+								// 	> svg[data-icon~="documents-top-level-rem"] {
+								// 		> rect,
+								// 		> circle {
+								// 			display: none;
+								// 		}
+								// 	}
+								// }
+								> div:nth-child(2) {
+									flex-direction: column-reverse !important;
+
+									> div:first-child {
+										zoom: 1.2;
+									}
+									> div:last-child {
+										zoom: .75;
+										opacity: 0.4;
+										margin-bottom: 0.5rem;
+									}
+								}
 							}
 						}
-					}
+					} 	
 				}
-			} 	
+			// Highlight
+				@include highlight-text();
 		}
+	}
 	// Darkmode Support
 		.dark-mode {
 			#content {
@@ -993,6 +996,9 @@
 									}
 								}
 							}
+						// Highlight
+							@include highlight-text-dark();
+							@include highlight-span-text-dark();
 					}
 				}
 			}
@@ -2008,11 +2014,11 @@
 							}
 						// Highlight Color
 							.RichTextViewer {
-								@include highlight-color-light-notbold;
+								@include highlight-color-notbold-light;
 							}
 							[data-slate-node~="element"] {
 								[data-slate-node~="text"] {
-									@include highlight-color-light-notbold;
+									@include highlight-color-notbold-light;
 								}
 							}
 						// Rem Reference
@@ -2365,7 +2371,7 @@
 										}
 									// Checckbox
 										span.rem-checkbox {
-												border-color: #000 !important;
+												border-color: #BBB !important;
 												background-color: #222 !important;
 											}
 								}
@@ -2375,13 +2381,13 @@
 										@include highlight-span-text-dark();
 										@include highlight-text-dark();
 										.RichTextViewer {
-											@include highlight-color-dark-notbold();
+											@include highlight-color-notbold-dark();
 										}
 									}
 								}
 								[data-slate-node="element"] {
 									[data-slate-node~="text"] {
-										@include highlight-color-dark-notbold();
+										@include highlight-color-notbold-dark();
 									}
 								}
 								// Rem Reference
