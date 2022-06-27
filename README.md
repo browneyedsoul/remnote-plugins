@@ -352,11 +352,11 @@
  </details>
 
  <details>
-   <summary>Table header formatting</summary>
+   <summary>Table Column Header Formatting</summary>
 
  * Tag Name : `th`
 
- <img src="Assets/ModernTableRow-thformatting.gif">
+ <img src="Assets/ModernTableRow-thformatting.png">
  </details>
 
  ## Workflow
