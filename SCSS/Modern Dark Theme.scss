@@ -1704,6 +1704,14 @@
 		}
 // Tile Document
 	.tile__document {
+		// PDF Top Header
+			.pdf-viewer__header {
+				top: 0;
+				right: 50px;
+				position: fixed;
+				z-index: 4;
+				background-color: var(--darkmode-background);
+			}
 		// Document Scrollbar
 			// &::-webkit-scrollbar-track {
 			// 	margin-top: 3.5rem;
@@ -2043,7 +2051,10 @@
 	.dark-mode {
 		.tile__document {
 			background-color: var(--darkmode-background) !important;
-			
+			// PDF Top Header
+				.pdf-viewer__header {
+					background-color: var(--darkmode-background-sidebar);
+				}
 			// Scrollbar
 				&::-webkit-scrollbar-thumb {
 					background-color: #999;
