@@ -1153,6 +1153,7 @@ body.old-dark-mode .dark-mode-background {
 	position: fixed;
 	z-index: 4;
 	background-color: var(--darkmode-background);
+	border-radius: 1rem;
 }
 .tile__document::-webkit-scrollbar-thumb {
 	background-color: #C3C2BF;
