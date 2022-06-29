@@ -416,8 +416,6 @@
 	grid-auto-rows: auto;
 	border-left: unset;
 	padding-left: 0;
-	overflow-x: auto;
-	white-space: pre;
 	border: 0.07rem solid var(--table-border-color);
 }
 #hierarchy-editor [data-rem-container-tags~=table90] > .tree-node--children::-webkit-scrollbar-thumb,

@@ -185,8 +185,8 @@
                     grid-auto-rows: auto;
                     border-left: unset;
                     padding-left: 0;
-                    overflow-x: auto;
-                    white-space: pre;
+                    // overflow-x: auto;
+                    // white-space: pre;
                     border: 0.07rem solid  var(--table-border-color);
 
                     // Scrollbar
@@ -430,18 +430,10 @@
         [data-rem-tags~="tablecolor"] {
             > .tree-node--parent {
                 height: 100%;
+
+                
             }
         }
-        // Prevent Line Break
-            // .rem-text {
-            //     .EditorContainer {
-            //         white-space: nowrap !important;
-
-            //         .RichTextViewer {
-            //             white-space: nowrap;
-            //         }
-            //     }
-            // }
         // Declutter Tag
             .hierarchy-editor__tag-bar__tag {
                 color: transparent;
