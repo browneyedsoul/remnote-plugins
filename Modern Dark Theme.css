@@ -1118,10 +1118,10 @@
 .dark #content {
 	background-color: var(--darkmode-background-sidebar);
 }
-.dark #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable {
+.dark #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable .rn-pane__top-bar {
 	background-color: var(--darkmode-background-sidebar);
 }
-.dark #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable:hover {
+.dark #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable .rn-pane__top-bar:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
 
@@ -1150,43 +1150,47 @@
 	border-radius: 3px;
 	min-height: 200px;
 }
-.tile__document > div.border-bottom-solid.bg-white {
+.tile__document > div.rn-clr-background-primary {
 	background-color: var(--darkmode-background);
 	border-bottom-style: solid;
 	border-color: var(--darkmode-background-selected);
 }
-.tile__document > div.border-bottom-solid.bg-white > div:nth-child(1) > div {
+.tile__document > div.rn-clr-background-primary > div:nth-child(1) > div {
 	color: var(--darkmode-text);
 }
-.tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) p.m-0 {
+.tile__document > div.rn-clr-background-primary > div:nth-child(2) p.m-0 {
 	color: var(--darkmode-text);
 }
-.tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) .bg-gray-5 {
+.tile__document > div.rn-clr-background-primary > div:nth-child(2) .bg-gray-5 {
 	background-color: var(--darkmode-background-selected);
 }
-.tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) > div.hover\:bg-hover-bg:hover {
+.tile__document > div.rn-clr-background-primary > div:nth-child(2) > div.hover\:bg-hover-bg:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) > span.block > div:hover {
-	background-color: var(--darkmode-background-selected-darker);
+.tile__document > div.rn-clr-background-primary > div:nth-child(2) > span.block > div.bg-gray-10 {
+	background-color: #000;
 }
-.tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) > span.block:nth-of-type(6) > div > p {
+.tile__document > div.rn-clr-background-primary > div:nth-child(2) > span.block:hover {
+	background-color: var(--darkmode-background-selected-darker);
+	border-radius: 4px;
+}
+.tile__document > div.rn-clr-background-primary > div:nth-child(2) > span.block:nth-of-type(6) > div > p {
 	color: var(--blue-text-dark);
 	font-weight: 600;
 }
-.tile__document > div.border-bottom-solid.bg-white > div:nth-child(2) > span.block:nth-of-type(7) > div > p {
+.tile__document > div.rn-clr-background-primary > div:nth-child(2) > span.block:nth-of-type(7) > div > p {
 	color: var(--red-text-dark);
 	font-weight: 600;
 }
-.tile__document > div.border-bottom-solid.bg-white > div:nth-child(3) div.react-datepicker-wrapper div.react-datepicker__input-container .button {
+.tile__document > div.rn-clr-background-primary > div:nth-child(3) div.react-datepicker-wrapper div.react-datepicker__input-container .button {
 	color: var(--darkmode-text) !important;
 	background-color: var(--darkmode-background-selected);
 	border-color: #8F8F8F !important;
 }
-.tile__document > div.border-bottom-solid.bg-white > div:nth-child(3) div.react-datepicker-wrapper div.react-datepicker__input-container .button:hover {
+.tile__document > div.rn-clr-background-primary > div:nth-child(3) div.react-datepicker-wrapper div.react-datepicker__input-container .button:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.tile__document > div.border-bottom-solid.bg-white > div:nth-child(3) div.react-datepicker-wrapper div.react-datepicker__input-container .button > div {
+.tile__document > div.rn-clr-background-primary > div:nth-child(3) div.react-datepicker-wrapper div.react-datepicker__input-container .button > div {
 	filter: invert(0.95);
 }
 .tile__document div:nth-of-type(2).document-header-top-bar {
@@ -2661,13 +2665,13 @@
 .dark #document-sidebar .rem-text {
 	font-family: "Nunito Sans", sans-serif;
 }
-.dark #document-sidebar #document-sidebar_top #document-sidebar_top__logo-and-user .document-sidebar_top__user-and-collapse > span #document-sidebar__account-capsule {
+.dark #document-sidebar #document-sidebar__account-capsule {
 	background-color: var(--darkmode-background-sidebar);
 }
-.dark #document-sidebar #document-sidebar_top #document-sidebar_top__logo-and-user .document-sidebar_top__user-and-collapse > span #document-sidebar__account-capsule:hover {
+.dark #document-sidebar #document-sidebar__account-capsule:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark #document-sidebar #document-sidebar_top #document-sidebar_top__logo-and-user .document-sidebar_top__user-and-collapse > span #document-sidebar__account-capsule span {
+.dark #document-sidebar #document-sidebar__account-capsule span {
 	color: var(--darkmode-text);
 }
 .dark #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--red .p-2 .text-gray-60 {
