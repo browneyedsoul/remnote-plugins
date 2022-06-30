@@ -140,12 +140,6 @@
 	font-size: var(--font-size-header-3);
 }
 
-::-webkit-scrollbar {
-	background-color: transparent;
-	height: 10px;
-	width: 10px;
-}
-
 ::-webkit-scrollbar-track {
 	background-color: transparent;
 	width: 10px;
@@ -159,7 +153,6 @@
 
 .rem-checkbox, .settings-page [data-cy~=checkbox] {
 	border-radius: unset !important;
-	background-color: unset;
 }
 
 .rem-container--todo-finished {
@@ -1227,10 +1220,6 @@
 }
 .tile__document .document-header-top-bar > div:nth-of-type(1) .flex .parent-link:hover {
 	background-color: var(--darkmode-background-selected-darker);
-}
-.tile__document .document-header-top-bar > div:nth-of-type(1) .flex .parent-link + span.text-gray-40 {
-	position: relative;
-	top: 3px;
 }
 .tile__document .document-header-top-bar > div:nth-of-type(1) .flex .parent-link .RichTextViewer {
 	display: flex;
@@ -2458,8 +2447,14 @@
 #document-sidebar > div > div.p-2 .hover\:rn-clr-background-light-accent--hovered:hover {
 	background: var(--darkmode-background-selected-darker) !important;
 }
+#document-sidebar > div:nth-of-type(2) .bold {
+	font-weight: 550;
+}
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex {
-	height: 2rem;
+	height: 2.2rem;
+}
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex:hover {
+	background-color: var(--darkmode-background-selected-darker);
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex.group-hover\:rn-clr-background-light-accent--hovered {
 	margin-left: -2px;
@@ -2501,7 +2496,6 @@
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--green .RichTextViewer,
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--blue .RichTextViewer,
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--purple .RichTextViewer {
-	color: black !important;
 	padding-left: 3px;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer span.highlight-color--red:not(.bold.highlight-color--red) {
@@ -2546,46 +2540,58 @@
 	background-color: transparent;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--red > div > div {
-	background-color: var(--highlight-color--red);
+	background-color: var(--highlight-color--red-bg-dark);
 	border-radius: 4px;
+	border: 0.1rem solid var(--highlight-color--red-dark);
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--red .document-list-item__folder-icon {
 	background-color: transparent;
+	border: unset;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--orange > div > div:not(.document-list-item__folder-icon) {
-	background-color: var(--highlight-color--orange);
+	background-color: var(--highlight-color--orange-bg-dark);
 	border-radius: 4px;
+	border: 0.1rem solid var(--highlight-color--orange-dark);
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--orange .document-list-item__folder-icon {
 	background-color: transparent;
+	border: unset;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--yellow > div > div {
-	background-color: var(--highlight-color--yellow);
+	background-color: var(--highlight-color--yellow-bg-dark);
 	border-radius: 4px;
+	border: 0.1rem solid var(--highlight-color--yellow-dark);
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--yellow .document-list-item__folder-icon {
 	background-color: transparent;
+	border: unset;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--green > div > div {
-	background-color: var(--highlight-color--green);
+	background-color: var(--highlight-color--green-bg-dark);
 	border-radius: 4px;
+	border: 0.1rem solid var(--highlight-color--green-dark);
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--green .document-list-item__folder-icon {
 	background-color: transparent;
+	border: unset;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--blue > div > div {
-	background-color: var(--highlight-color--blue);
+	background-color: var(--highlight-color--blue-bg-dark);
 	border-radius: 4px;
+	border: 0.1rem solid var(--highlight-color--blue-dark);
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--blue .document-list-item__folder-icon {
 	background-color: transparent;
+	border: unset;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--purple > div > div {
-	background-color: var(--highlight-color--purple);
+	background-color: var(--highlight-color--purple-bg-dark);
 	border-radius: 4px;
+	border: 0.1rem solid var(--highlight-color--purple-dark);
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--purple .document-list-item__folder-icon {
 	background-color: transparent;
+	border: unset;
 }
 #document-sidebar > div:nth-of-type(2) .highlight-color--red .RichTextViewer,
 #document-sidebar > div:nth-of-type(2) .highlight-color--orange .RichTextViewer,

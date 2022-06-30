@@ -344,11 +344,11 @@
 			}
 		}
 	// Scrollbar
-		::-webkit-scrollbar {
-			background-color: transparent;
-			height: 10px;
-			width: 10px;
-		}
+		// ::-webkit-scrollbar {
+		// 	background-color: transparent;
+		// 	height: 10px;
+		// 	width: 10px;
+		// }
 		::-webkit-scrollbar-track {
 			background-color: transparent;
 			width: 10px;
@@ -362,7 +362,6 @@
 		// Box Style
 			.rem-checkbox, %checkbox-style {
 				border-radius: unset !important;
-				background-color: unset;
 			}
 		// Strikethrough Style
 			.rem-container--todo-finished {
@@ -1808,11 +1807,6 @@
 
 								&:hover {
 									background-color: var(--darkmode-background-selected-darker);
-								}
-
-								+ span.text-gray-40 {
-									position: relative;
-									top: 3px;
 								}
 
 								.RichTextViewer {
@@ -3681,12 +3675,18 @@
 			}
     // Sidebar Middle (Item)
         > div:nth-of-type(2) {
+			.bold {
+				font-weight: 550;
+			}
 			[data-type~="document_list_item"] {
 				span.block.group.cursor-pointer {
 					> div.rounded-md {
 						> div.flex {
+							&:hover {
+								background-color: var(--darkmode-background-selected-darker);
+							}
 							// Sidebar list item height
-								height: 2rem;
+								height: 2.2rem;
 							// Focused item Placement
 								&.group-hover\:rn-clr-background-light-accent--hovered {
 									margin-left: -2px;
@@ -3745,7 +3745,6 @@
 						font-weight: 600;
 
 						.RichTextViewer {
-							color: black !important;
 							padding-left: 3px;
 						}
 					}
@@ -3784,67 +3783,79 @@
 					&.highlight-color--red {
 						> div {
 							> div {
-								background-color: var(--highlight-color--red); 
+								background-color: var(--highlight-color--red-bg-dark); 
 								border-radius: 4px;
+								border: 0.1rem solid var(--highlight-color--red-dark);
 							}
 						}
-						.document-list-item__folder-icon {
+						.document-list-item__folder-icon, %sidebar-folder {
 							background-color: transparent;
+							border: unset;
 						}
 					}
 					&.highlight-color--orange {
 						> div {
 							> div:not(.document-list-item__folder-icon) {
-								background-color: var(--highlight-color--orange); 
+								background-color: var(--highlight-color--orange-bg-dark); 
 								border-radius: 4px;
+								border: 0.1rem solid var(--highlight-color--orange-dark);
 							}
 						}
 						.document-list-item__folder-icon {
 							background-color: transparent;
+							border: unset;
 						}
 					}
 					&.highlight-color--yellow {
 						> div {
 							> div {
-								background-color: var(--highlight-color--yellow); 
+								background-color: var(--highlight-color--yellow-bg-dark); 
 								border-radius: 4px;
+								border: 0.1rem solid var(--highlight-color--yellow-dark);
 							}
 						}
 						.document-list-item__folder-icon {
 							background-color: transparent;
+							border: unset;
 						}
 					}
 					&.highlight-color--green {
 						> div {
 							> div {
-								background-color: var(--highlight-color--green); 
+								background-color: var(--highlight-color--green-bg-dark); 
 								border-radius: 4px;
+								border: 0.1rem solid var(--highlight-color--green-dark);
 							}
 						}
 						.document-list-item__folder-icon {
 							background-color: transparent;
+							border: unset;
 						}
 					}
 					&.highlight-color--blue {
 						> div {
 							> div {
-								background-color: var(--highlight-color--blue); 
+								background-color: var(--highlight-color--blue-bg-dark); 
 								border-radius: 4px;
+								border: 0.1rem solid var(--highlight-color--blue-dark);
 							}
 						}
 						.document-list-item__folder-icon {
 							background-color: transparent;
+							border: unset;
 						}
 					}
 					&.highlight-color--purple {
 						> div {
 							> div {
-								background-color: var(--highlight-color--purple); 
+								background-color: var(--highlight-color--purple-bg-dark); 
 								border-radius: 4px;
+								border: 0.1rem solid var(--highlight-color--purple-dark);
 							}
 						}
 						.document-list-item__folder-icon {
 							background-color: transparent;
+							border: unset;
 						}
 					}
 				}
@@ -4386,29 +4397,6 @@
 						}
 					}
 				}
-				// Search Portal and Backlink Design
-					// .animate-zoom-into-bullet {
-					// 	&:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
-					// 		width: calc(100% - 2.4rem);
-					// 		// margin-left: 1.6rem;
-					// 		margin-top: 0.7rem;
-					// 		margin-bottom: 0.7rem;
-					// 		padding-left: 1rem;
-					// 		padding-right: 0.5rem;
-					// 		border: 0.1rem solid var(--line-color);
-					// 		border-radius: 4px;
-					// 	}
-
-					// 	> div.tree-node--automatic-search-portal-header {
-					// 		width: calc(100% - 1rem);
-
-					// 		div.bg-white {
-					// 			> div.bg-gray-10 {
-					// 				display: none;
-					// 			}
-					// 		}
-					// 	}
-					// }
 				// Reference Breadcrumbs
 					.rem-container--not-included-in-document-scope {
 						.rem-text {
@@ -4487,12 +4475,6 @@
 									color: var(--darkmode-contrast);
 								}
 						}
-					// Search Portal and Backlink Design
-						// .animate-zoom-into-bullet {
-						// 	&:not(.animate-zoom-into-bullet.tree-node-container):not(.animate-zoom-into-bullet.portal-tree-node-box) {
-						// 		border: 0.1rem solid var(--line-color-dark);
-						// 	}
-						// }
 					// Reference Breadcrumbs
 						.rem-container--not-included-in-document-scope {
 							.rem-text {
