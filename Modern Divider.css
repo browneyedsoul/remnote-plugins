@@ -45,10 +45,10 @@
 	height: 2px;
 }
 
-.dark-mode [data-rem-tags~=divider]:focus-within {
+.dark [data-rem-tags~=divider]:focus-within {
 	background-color: #576066;
 }
-.dark-mode [data-rem-tags~=divider]:not(:focus-within):before {
+.dark [data-rem-tags~=divider]:not(:focus-within):before {
 	border-bottom: 2px solid var(--line-color-dark, #535353);
 }
 

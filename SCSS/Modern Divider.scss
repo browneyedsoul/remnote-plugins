@@ -52,7 +52,7 @@
         }
     }
 // Divider Darkmode Compatibility
-    .dark-mode {
+    .dark {
         [data-rem-tags~="divider"] {
             &:focus-within {
                 background-color: #576066;
