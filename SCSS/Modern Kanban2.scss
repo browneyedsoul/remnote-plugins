@@ -39,7 +39,7 @@
                 border-radius: 2px;
             }
             // Kanban Column
-                > .tree-node-container {
+                > .animate-zoom-into-bullet {
                     background-color: var(--kanban-bgcolor);
                     margin-right: 0.7rem;
                     position: relative;
@@ -64,7 +64,7 @@
                             max-width: 1000px;
                             
                             // Input Area
-                                > .tree-node-container {
+                                > .animate-zoom-into-bullet {
                                     background-color: var(--kanban-bgcolor-input);
                                     margin: 5px;
                                     border-radius: 3px;
@@ -90,26 +90,26 @@
                                 }
                         }
                 }
-                >.tree-node-container[data-rem-container-tags~="rd"] {
+                >.animate-zoom-into-bullet[data-rem-container-tags~="rd"] {
                     background-color: #FFE9EC;
                 }
-                >.tree-node-container[data-rem-container-tags~="or"] {
+                >.animate-zoom-into-bullet[data-rem-container-tags~="or"] {
                     background-color: #FDEDD9;
                 }
-                >.tree-node-container[data-rem-container-tags~="yl"] {
+                >.animate-zoom-into-bullet[data-rem-container-tags~="yl"] {
                     background-color: #F8F9CD;
                 }
-                >.tree-node-container[data-rem-container-tags~="gr"] {
+                >.animate-zoom-into-bullet[data-rem-container-tags~="gr"] {
                     background-color: #D5EED7;
                 }
-                >.tree-node-container[data-rem-container-tags~="bl"] {
+                >.animate-zoom-into-bullet[data-rem-container-tags~="bl"] {
                     background-color: #E6F3F6;
                 }
-                >.tree-node-container[data-rem-container-tags~="vt"] {
+                >.animate-zoom-into-bullet[data-rem-container-tags~="vt"] {
                     background-color: #FEEEFC;
                 }
             // Global Kanban Column                
-                > .tree-node-container {
+                > .animate-zoom-into-bullet {
                     // Head
                         > div:first-child {
                             background-color: rgba(0, 0, 0, 0.09);
@@ -143,7 +143,7 @@
         }
 }
 // Darkmode
-    .dark-mode {
+    .dark {
         [data-rem-container-tags~=kanban2] {
             border: 0.1rem solid var(--kanban-border-dark);
             
@@ -159,13 +159,13 @@
                 &::-webkit-scrollbar-thumb {
                     background-color: #222;
                 }
-                >.tree-node-container {
+                >.animate-zoom-into-bullet {
                     background-color: var(--kanban-bgcolor-dark);
 
                     // Kanban Cell
                         > .tree-node--children {
                             // Input Area
-                                > .tree-node-container {
+                                > .animate-zoom-into-bullet {
                                     background-color: var(--kanban-bgcolor-input-dark);
                                 }
                             // Input Area - Portal
@@ -174,27 +174,27 @@
                                 }
                     }
                 }
-                >.tree-node-container[data-rem-container-tags~="rd"] {
+                >.animate-zoom-into-bullet[data-rem-container-tags~="rd"] {
                     background-color: #572924;
                 }
                 
-                >.tree-node-container[data-rem-container-tags~="or"] {
+                >.animate-zoom-into-bullet[data-rem-container-tags~="or"] {
                     background-color: #553D24;
                 }
                 
-                >.tree-node-container[data-rem-container-tags~="yl"] {
+                >.animate-zoom-into-bullet[data-rem-container-tags~="yl"] {
                     background-color: #453E1E;
                 }
                 
-                >.tree-node-container[data-rem-container-tags~="gr"] {
+                >.animate-zoom-into-bullet[data-rem-container-tags~="gr"] {
                     background-color: #253F27;
                 }
                 
-                >.tree-node-container[data-rem-container-tags~="bl"] {
+                >.animate-zoom-into-bullet[data-rem-container-tags~="bl"] {
                     background-color: #183C4D;
                 }
                 
-                >.tree-node-container[data-rem-container-tags~="vt"] {
+                >.animate-zoom-into-bullet[data-rem-container-tags~="vt"] {
                     background-color: #43273F;
                 }
             }
