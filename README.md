@@ -1,5 +1,7 @@
 <img src="Assets/Head.png">
 
+> Currently, whole CSSs are transitioning to compatible with new.remnote.com. If you want version 1.76, please check [Here](https://github.com/browneyedsoul/RemNote-CSS-Library/tree/294f597d18c9925ca7ae945c20593e198837b274) and then copy the original *.css files (not the @import file) and paste it to your K.B.
+
 # How to Use it?
 
 1. Please check the [Custom CSS Tutorial](https://forum.remnote.io/t/what-is-custom-css-and-how-do-i-use-it/1231) first
