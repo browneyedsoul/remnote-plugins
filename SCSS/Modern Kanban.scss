@@ -31,7 +31,7 @@
                 border-radius: 2px;
             }
             // Kanban Column
-                > .tree-node-container {
+                > .animate-zoom-into-bullet {
                     background-color: var(--kanban-bgcolor);
                     margin-right: 0.7rem;
                     position: relative;
@@ -55,7 +55,7 @@
                             max-width: 1000px;
                             
                             // Input Area
-                                > .tree-node-container {
+                                > .animate-zoom-into-bullet {
                                     background-color: var(--kanban-bgcolor-input);
                                     margin: 5px;
                                     border-radius: 3px;
@@ -138,7 +138,7 @@
                         }
                 }
             // Global Kanban Column                
-                > .tree-node-container {
+                > .animate-zoom-into-bullet {
                     // Head
                         > div:first-child {
                             background-color: rgba(0, 0, 0, 0.09);
@@ -173,7 +173,7 @@
         }
 }
 // Darkmode
-    .dark-mode {
+    .dark {
         [data-rem-container-tags~=kanban] {
             border: 0.1rem solid var(--kanban-border-dark);
             
@@ -189,7 +189,7 @@
                 &::-webkit-scrollbar-thumb {
                     background-color: #222;
                 }
-                >.tree-node-container {
+                >.animate-zoom-into-bullet {
                     background-color: var(--kanban-bgcolor-dark);
 
                     &:nth-child(1) {
@@ -204,7 +204,7 @@
                     // Kanban Cell
                         > .tree-node--children {
                             // Input Area
-                                > .tree-node-container {
+                                > .animate-zoom-into-bullet {
                                     background-color: var(--kanban-bgcolor-input-dark);
                                 }
                             // Input Area - Portal
