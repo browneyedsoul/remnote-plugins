@@ -78,7 +78,7 @@
 	.document-table {
 		.ReactVirtualized__Grid__innerScrollContainer {
 			.RichTextViewer {
-				@include thumbnail-set-display();
+				@include thumbnail-set();
 			}
 		}
 	}
@@ -160,7 +160,7 @@
 	#tile__document {
 		// Page Hierarchy
 		.document-header-top-bar {
-			@include thumbnail-set-display();
+			@include thumbnail-set();
 		}
 		// Page
 		#document {
@@ -210,14 +210,6 @@
 					@include thumbnail-set;
 				}
 			}
-		// Hover Preview
-			#document-hover-preview__popup {
-				> span {
-					.RichTextViewer {
-						@include thumbnail-set;
-					}
-				}
-			}
 		// Image Thumbnail Tag
 			[data-rem-tags*="tn"] {
 				#document-hover-preview {
@@ -246,10 +238,18 @@
 			.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
 				@include thumbnail-set;
 			}
-		// General
-			.flex {
-				.RichTextViewer {
-					@include thumbnail-set;
+		// Rem Hierarchy bar
+			> div {
+				> div {
+					> div {
+						span.rn-rem-stack-arrow {
+							+ span {
+								span.RichTextViewer {
+									@include thumbnail-set;
+								}
+							}
+						}
+					}
 				}
 			}
 	}
@@ -308,16 +308,13 @@
 		}
 	}
 // Search Result
-	// Global Search Result (⌘+P Window)
-		[aria-label~="Omnibar"] {
-			@include thumbnail-set-display();
-		}
 	// Tag Search Result
 		.search-result__rem-breadcrumbs {
-			@include thumbnail-set-display();
+			@include thumbnail-set();
 		}
 		#search-results__list {
-			@include thumbnail-set-display();
+			@include thumbnail-set();
+			@include console-declutter();
 		}
 // Portal
 	.portal-tree-node-box {
