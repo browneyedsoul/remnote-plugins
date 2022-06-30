@@ -395,19 +395,6 @@
 			background-color: var(--inline-code-background);
 			padding: 1px 3px 1px 3px;
 		}
-	// Codeblock
-		// #code-node {
-		// 	background-color: var(--code-node-background-color);
-
-		// 	&::before {
-		// 		background-color: var(--line-number-background-color);
-		// 	}
-		// 	.codeLine {
-		// 		&::before {
-		// 			color: var(--code-node-line-number-color);
-		// 		}
-		// 	}
-		// }
 	// Tag bar
 		.hierarchy-editor__tag-bar {
 			line-height: 1rem;
@@ -924,14 +911,6 @@
 					> div {
 						span:nth-of-type(1) {
 							> div {
-								// > div:first-child {
-								// 	> svg[data-icon~="documents-top-level-rem"] {
-								// 		> rect,
-								// 		> circle {
-								// 			display: none;
-								// 		}
-								// 	}
-								// }
 								> div:nth-child(2) {
 									flex-direction: column-reverse !important;
 
@@ -960,8 +939,7 @@
 					.document-table {
 						// All notes Menu Style
 							> div > div,
-							[color~="gray100"],
-							.css-huFlzA .css-fLTnVi {
+							[color~="gray100"] {
 								color: var(--darkmode-text) !important;
 							}
 						// Button
@@ -971,11 +949,6 @@
 						// Browser Item Style
 							.RichTextViewer {
 								color: var(--darkmode-text);
-							}
-						// All Notes Header & Item Hover Effect
-							.css-favSPh:hover,
-							.css-jcbvum:hover {
-								background-color: var(--darkmode-background-selected-darker);
 							}
 						// Selected Item
 							.rn-clr-background-light-accent {
@@ -3733,9 +3706,6 @@
 									// Item Text area
 										.RichTextViewer {
 											color: var(--darkmode-text);
-											position: relative;
-											top: 1px;
-
 											// Highlight
 												.highlight-color--red,
 												.highlight-color--orange,
@@ -3752,13 +3722,6 @@
 														> span {
 															> span.RichTextViewer {
 																background-color: unset;
-
-																// Sidebar Thumbnail
-																	> .image-node__container {
-																		position: relative;
-																		top: 0.1rem;
-																		margin-right: 0.2rem;
-																	}
 															}
 														}
 													}
@@ -3816,35 +3779,73 @@
 			}
 			// Make Menu Background Highlight Compact
 				.rounded-md {
-					// &.highlight-color--red,
-					// &.highlight-color--orange,
-					// &.highlight-color--yellow,
-					// &.highlight-color--green,
-					// &.highlight-color--blue,
-					// &.highlight-color--purple {				
-					// 	.p-2 {
-					// 		.text-gray-60 {
-					// 			border-radius: 4px;
-					// 		}
-					// 	}
-					// }
-					&.highlight-color--red .p-2 .text-gray-60 {
-						background-color: var(--highlight-color--red); 
+					background-color: transparent;
+
+					&.highlight-color--red {
+						> div {
+							> div {
+								background-color: var(--highlight-color--red); 
+								border-radius: 4px;
+							}
+						}
+						.document-list-item__folder-icon {
+							background-color: transparent;
+						}
 					}
-					&.highlight-color--orange .p-2 .text-gray-60 {
-						background-color: var(--highlight-color--orange); 
+					&.highlight-color--orange {
+						> div {
+							> div:not(.document-list-item__folder-icon) {
+								background-color: var(--highlight-color--orange); 
+								border-radius: 4px;
+							}
+						}
+						.document-list-item__folder-icon {
+							background-color: transparent;
+						}
 					}
-					&.highlight-color--yellow .p-2 .text-gray-60 {
-						background-color: var(--highlight-color--yellow); 
+					&.highlight-color--yellow {
+						> div {
+							> div {
+								background-color: var(--highlight-color--yellow); 
+								border-radius: 4px;
+							}
+						}
+						.document-list-item__folder-icon {
+							background-color: transparent;
+						}
 					}
-					&.highlight-color--green .p-2 .text-gray-60 {
-						background-color: var(--highlight-color--green); 
+					&.highlight-color--green {
+						> div {
+							> div {
+								background-color: var(--highlight-color--green); 
+								border-radius: 4px;
+							}
+						}
+						.document-list-item__folder-icon {
+							background-color: transparent;
+						}
 					}
-					&.highlight-color--blue .p-2 .text-gray-60 {
-						background-color: var(--highlight-color--blue);
+					&.highlight-color--blue {
+						> div {
+							> div {
+								background-color: var(--highlight-color--blue); 
+								border-radius: 4px;
+							}
+						}
+						.document-list-item__folder-icon {
+							background-color: transparent;
+						}
 					}
-					&.highlight-color--purple .p-2 .text-gray-60 {
-						background-color: var(--highlight-color--purple);
+					&.highlight-color--purple {
+						> div {
+							> div {
+								background-color: var(--highlight-color--purple); 
+								border-radius: 4px;
+							}
+						}
+						.document-list-item__folder-icon {
+							background-color: transparent;
+						}
 					}
 				}
 				.highlight-color--red,

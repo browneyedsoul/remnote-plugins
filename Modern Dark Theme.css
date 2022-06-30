@@ -675,8 +675,7 @@
 	background-color: var(--darkmode-background);
 }
 .dark #content .content__page .document-table > div > div,
-.dark #content .content__page .document-table [color~=gray100],
-.dark #content .content__page .document-table .css-huFlzA .css-fLTnVi {
+.dark #content .content__page .document-table [color~=gray100] {
 	color: var(--darkmode-text) !important;
 }
 .dark #content .content__page .document-table div[color="#292936"] {
@@ -684,10 +683,6 @@
 }
 .dark #content .content__page .document-table .RichTextViewer {
 	color: var(--darkmode-text);
-}
-.dark #content .content__page .document-table .css-favSPh:hover,
-.dark #content .content__page .document-table .css-jcbvum:hover {
-	background-color: var(--darkmode-background-selected-darker);
 }
 .dark #content .content__page .document-table .rn-clr-background-light-accent {
 	background-color: var(--darkmode-background-selected);
@@ -2466,8 +2461,6 @@
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer {
 	color: var(--darkmode-text);
-	position: relative;
-	top: 1px;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer .highlight-color--red,
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer .highlight-color--orange,
@@ -2479,11 +2472,6 @@
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer > .rem-reference-container > span > span.rem-reference > span > span.RichTextViewer {
 	background-color: unset;
-}
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer > .rem-reference-container > span > span.rem-reference > span > span.RichTextViewer > .image-node__container {
-	position: relative;
-	top: 0.1rem;
-	margin-right: 0.2rem;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div:only-child {
 	margin-left: 24px;
@@ -2544,23 +2532,50 @@
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--purple .RichTextViewer {
 	color: black;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--red .p-2 .text-gray-60 {
+#document-sidebar > div:nth-of-type(2) .rounded-md {
+	background-color: transparent;
+}
+#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--red > div > div {
 	background-color: var(--highlight-color--red);
+	border-radius: 4px;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--orange .p-2 .text-gray-60 {
+#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--red .document-list-item__folder-icon {
+	background-color: transparent;
+}
+#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--orange > div > div:not(.document-list-item__folder-icon) {
 	background-color: var(--highlight-color--orange);
+	border-radius: 4px;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--yellow .p-2 .text-gray-60 {
+#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--orange .document-list-item__folder-icon {
+	background-color: transparent;
+}
+#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--yellow > div > div {
 	background-color: var(--highlight-color--yellow);
+	border-radius: 4px;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--green .p-2 .text-gray-60 {
+#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--yellow .document-list-item__folder-icon {
+	background-color: transparent;
+}
+#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--green > div > div {
 	background-color: var(--highlight-color--green);
+	border-radius: 4px;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--blue .p-2 .text-gray-60 {
+#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--green .document-list-item__folder-icon {
+	background-color: transparent;
+}
+#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--blue > div > div {
 	background-color: var(--highlight-color--blue);
+	border-radius: 4px;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--purple .p-2 .text-gray-60 {
+#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--blue .document-list-item__folder-icon {
+	background-color: transparent;
+}
+#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--purple > div > div {
 	background-color: var(--highlight-color--purple);
+	border-radius: 4px;
+}
+#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--purple .document-list-item__folder-icon {
+	background-color: transparent;
 }
 #document-sidebar > div:nth-of-type(2) .highlight-color--red .RichTextViewer,
 #document-sidebar > div:nth-of-type(2) .highlight-color--orange .RichTextViewer,
