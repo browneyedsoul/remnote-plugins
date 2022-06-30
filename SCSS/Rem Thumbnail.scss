@@ -28,12 +28,12 @@
 }
 
 @mixin thumbnail-set($margin-right: null) {
-	span.image-node__container.inline-block {
+	span.inline-block {
 		height: 1em;
 		width: auto;
 		margin-right: $margin-right;
 	
-		> div.image-node__container {
+		> div {
 			height: 1em !important;
 			width: unset !important;
 			max-width: 1em !important;

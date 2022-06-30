@@ -26,11 +26,11 @@
 	   object-position: center;
 }
 
-.ReactVirtualized__Table__rowColumn span.image-node__container.inline-block {
+.ReactVirtualized__Table__rowColumn span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.ReactVirtualized__Table__rowColumn span.image-node__container.inline-block > div.image-node__container {
+.ReactVirtualized__Table__rowColumn span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -41,27 +41,27 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.ReactVirtualized__Table__rowColumn span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.ReactVirtualized__Table__rowColumn span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.ReactVirtualized__Table__rowColumn span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.ReactVirtualized__Table__rowColumn span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.ReactVirtualized__Table__rowColumn span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.ReactVirtualized__Table__rowColumn span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-.Queue .queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block {
+.Queue .queue__title .queue__title__middle .RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.Queue .queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+.Queue .queue__title .queue__title__middle .RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -72,26 +72,26 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.Queue .queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.Queue .queue__title .queue__title__middle .RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.Queue .queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.Queue .queue__title .queue__title__middle .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.Queue .queue__title .queue__title__middle .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.Queue .queue__title .queue__title__middle .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block {
+.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container {
+.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -102,16 +102,16 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.Queue .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
@@ -121,11 +121,11 @@
 	display: inline-block;
 	margin-right: 3px;
 }
-.Queue .rem-bullet__document span.image-node__container.inline-block {
+.Queue .rem-bullet__document span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.Queue .rem-bullet__document span.image-node__container.inline-block > div.image-node__container {
+.Queue .rem-bullet__document span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -136,16 +136,16 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.Queue .rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.Queue .rem-bullet__document span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.Queue .rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.Queue .rem-bullet__document span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.Queue .rem-bullet__document span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.Queue .rem-bullet__document span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
@@ -158,11 +158,11 @@
 	display: inline-flex;
 	vertical-align: top;
 }
-.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.image-node__container.inline-block {
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container {
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -173,26 +173,26 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.Queue .fill-in-the-blank--revealed .RichTextViewer .react-transform-component .react-transform-element span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-.Queue .queue-cluster-selector span.image-node__container.inline-block {
+.Queue .queue-cluster-selector span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.Queue .queue-cluster-selector span.image-node__container.inline-block > div.image-node__container {
+.Queue .queue-cluster-selector span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -203,26 +203,26 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.Queue .queue-cluster-selector span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.Queue .queue-cluster-selector span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.Queue .queue-cluster-selector span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.Queue .queue-cluster-selector span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.Queue .queue-cluster-selector span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.Queue .queue-cluster-selector span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.image-node__container.inline-block {
+.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -233,16 +233,16 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.Queue .queue__edit-later .document-header-top-bar .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
@@ -276,11 +276,11 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.image-node__container.inline-block {
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.inline-block {
 	height: 1em;
 	width: auto;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.image-node__container.inline-block > div.image-node__container {
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -291,26 +291,26 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.image-node__container.inline-block > div.image-node__container > span.image-node {
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block {
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.inline-block {
 	height: 1em;
 	width: auto;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block > div.image-node__container {
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -321,16 +321,16 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block > div.image-node__container > span.image-node {
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
@@ -346,11 +346,11 @@
 #tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle > div.document-title .image-node__container.group.inline-block.align-text-top > div {
 	display: none;
 }
-#tile__document #document #hierarchy-editor > .fixed > div > .tree-node--children > .tree-node-container .EditorContainer span.image-node__container.inline-block {
+#tile__document #document #hierarchy-editor > .fixed > div > .tree-node--children > .tree-node-container .EditorContainer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-#tile__document #document #hierarchy-editor > .fixed > div > .tree-node--children > .tree-node-container .EditorContainer span.image-node__container.inline-block > div.image-node__container {
+#tile__document #document #hierarchy-editor > .fixed > div > .tree-node--children > .tree-node-container .EditorContainer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -361,27 +361,27 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-#tile__document #document #hierarchy-editor > .fixed > div > .tree-node--children > .tree-node-container .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+#tile__document #document #hierarchy-editor > .fixed > div > .tree-node--children > .tree-node-container .EditorContainer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document #document #hierarchy-editor > .fixed > div > .tree-node--children > .tree-node-container .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+#tile__document #document #hierarchy-editor > .fixed > div > .tree-node--children > .tree-node-container .EditorContainer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-#tile__document #document #hierarchy-editor > .fixed > div > .tree-node--children > .tree-node-container .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+#tile__document #document #hierarchy-editor > .fixed > div > .tree-node--children > .tree-node-container .EditorContainer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -392,27 +392,27 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-#document-sidebar span.image-node__container.inline-block {
+#document-sidebar span.inline-block {
 	height: 1em;
 	width: auto;
 }
-#document-sidebar span.image-node__container.inline-block > div.image-node__container {
+#document-sidebar span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -423,27 +423,27 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-#document-sidebar span.image-node__container.inline-block > div.image-node__container > span.image-node {
+#document-sidebar span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-#document-sidebar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+#document-sidebar span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-#document-sidebar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+#document-sidebar span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-.hierarchy-editor__hidden-children span.image-node__container.inline-block {
+.hierarchy-editor__hidden-children span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.hierarchy-editor__hidden-children span.image-node__container.inline-block > div.image-node__container {
+.hierarchy-editor__hidden-children span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -454,27 +454,27 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.hierarchy-editor__hidden-children span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.hierarchy-editor__hidden-children span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.hierarchy-editor__hidden-children span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.hierarchy-editor__hidden-children span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.hierarchy-editor__hidden-children span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.hierarchy-editor__hidden-children span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-.popup-menu .popup-menu__item--static span.RichTextViewer span.image-node__container.inline-block {
+.popup-menu .popup-menu__item--static span.RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.popup-menu .popup-menu__item--static span.RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+.popup-menu .popup-menu__item--static span.RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -485,26 +485,26 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.popup-menu .popup-menu__item--static span.RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.popup-menu .popup-menu__item--static span.RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .popup-menu__item--static span.RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.popup-menu .popup-menu__item--static span.RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.popup-menu .popup-menu__item--static span.RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.popup-menu .popup-menu__item--static span.RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu #document-hover-preview__popup > span .RichTextViewer span.image-node__container.inline-block {
+.popup-menu #document-hover-preview__popup > span .RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.popup-menu #document-hover-preview__popup > span .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+.popup-menu #document-hover-preview__popup > span .RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -515,26 +515,26 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.popup-menu #document-hover-preview__popup > span .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.popup-menu #document-hover-preview__popup > span .RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu #document-hover-preview__popup > span .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.popup-menu #document-hover-preview__popup > span .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.popup-menu #document-hover-preview__popup > span .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.popup-menu #document-hover-preview__popup > span .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.image-node__container.inline-block {
+.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -545,26 +545,26 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.popup-menu [data-rem-tags*=tn] #document-hover-preview .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.image-node__container.inline-block {
+.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.image-node__container.inline-block > div.image-node__container {
+.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -575,28 +575,28 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.popup-menu .rem.isSearchResult .hierarchy-editor__tag-bar span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.image-node__container.inline-block,
-.popup-menu .rem-powerup-icon + span > .RichTextViewer span.image-node__container.inline-block {
+.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.inline-block,
+.popup-menu .rem-powerup-icon + span > .RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container,
-.popup-menu .rem-powerup-icon + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.inline-block > div,
+.popup-menu .rem-powerup-icon + span > .RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -607,29 +607,29 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node,
-.popup-menu .rem-powerup-icon + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.inline-block > div > span.image-node,
+.popup-menu .rem-powerup-icon + span > .RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
-.popup-menu .rem-powerup-icon + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
+.popup-menu .rem-powerup-icon + span > .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
-.popup-menu .rem-powerup-icon + span > .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.popup-menu div.search-result__rem-breadcrumbs + span > .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
+.popup-menu .rem-powerup-icon + span > .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .EditorContainer.EditorContainerInline span.image-node__container.inline-block {
+.popup-menu .EditorContainer.EditorContainerInline span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.popup-menu .EditorContainer.EditorContainerInline span.image-node__container.inline-block > div.image-node__container {
+.popup-menu .EditorContainer.EditorContainerInline span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -640,26 +640,26 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.popup-menu .EditorContainer.EditorContainerInline span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.popup-menu .EditorContainer.EditorContainerInline span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .EditorContainer.EditorContainerInline span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.popup-menu .EditorContainer.EditorContainerInline span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.popup-menu .EditorContainer.EditorContainerInline span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.popup-menu .EditorContainer.EditorContainerInline span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block {
+.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container {
+.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -670,26 +670,26 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.popup-menu .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .p-2 .RichTextViewer span.image-node__container.inline-block {
+.popup-menu .p-2 .RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.popup-menu .p-2 .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+.popup-menu .p-2 .RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -700,16 +700,16 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.popup-menu .p-2 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.popup-menu .p-2 .RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu .p-2 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.popup-menu .p-2 .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.popup-menu .p-2 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.popup-menu .p-2 .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
@@ -722,11 +722,11 @@
 	min-width: auto !important;
 }
 
-#Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block {
+#Popup #PopupContent .p-4 .RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-#Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+#Popup #PopupContent .p-4 .RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -737,26 +737,26 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-#Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+#Popup #PopupContent .p-4 .RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-#Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+#Popup #PopupContent .p-4 .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-#Popup #PopupContent .p-4 .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+#Popup #PopupContent .p-4 .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-#Popup #PopupContent #delete-confirm-popup span.image-node__container.inline-block {
+#Popup #PopupContent #delete-confirm-popup span.inline-block {
 	height: 1em;
 	width: auto;
 }
-#Popup #PopupContent #delete-confirm-popup span.image-node__container.inline-block > div.image-node__container {
+#Popup #PopupContent #delete-confirm-popup span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -767,26 +767,26 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-#Popup #PopupContent #delete-confirm-popup span.image-node__container.inline-block > div.image-node__container > span.image-node {
+#Popup #PopupContent #delete-confirm-popup span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-#Popup #PopupContent #delete-confirm-popup span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+#Popup #PopupContent #delete-confirm-popup span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-#Popup #PopupContent #delete-confirm-popup span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+#Popup #PopupContent #delete-confirm-popup span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.image-node__container.inline-block {
+#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -797,26 +797,26 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-#Popup #PopupContent .document-popup-preview .document-header-top-bar .RichTextViewer span.image-node__container.inline-block {
+#Popup #PopupContent .document-popup-preview .document-header-top-bar .RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-#Popup #PopupContent .document-popup-preview .document-header-top-bar .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+#Popup #PopupContent .document-popup-preview .document-header-top-bar .RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -827,33 +827,33 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-#Popup #PopupContent .document-popup-preview .document-header-top-bar .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+#Popup #PopupContent .document-popup-preview .document-header-top-bar .RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-#Popup #PopupContent .document-popup-preview .document-header-top-bar .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+#Popup #PopupContent .document-popup-preview .document-header-top-bar .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-#Popup #PopupContent .document-popup-preview .document-header-top-bar .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+#Popup #PopupContent .document-popup-preview .document-header-top-bar .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-.rem-header--1 .EditorContainer span.image-node__container.inline-block,
-.rem-header--2 .EditorContainer span.image-node__container.inline-block,
-.rem-header--3 .EditorContainer span.image-node__container.inline-block,
-[data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block {
+.rem-header--1 .EditorContainer span.inline-block,
+.rem-header--2 .EditorContainer span.inline-block,
+.rem-header--3 .EditorContainer span.inline-block,
+[data-rem-tags~=tn] .EditorContainer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container,
-.rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container,
-.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container,
-[data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container {
+.rem-header--1 .EditorContainer span.inline-block > div,
+.rem-header--2 .EditorContainer span.inline-block > div,
+.rem-header--3 .EditorContainer span.inline-block > div,
+[data-rem-tags~=tn] .EditorContainer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -864,36 +864,36 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node,
-.rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node,
-.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node,
-[data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.rem-header--1 .EditorContainer span.inline-block > div > span.image-node,
+.rem-header--2 .EditorContainer span.inline-block > div > span.image-node,
+.rem-header--3 .EditorContainer span.inline-block > div > span.image-node,
+[data-rem-tags~=tn] .EditorContainer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
-.rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
-.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
-[data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.rem-header--1 .EditorContainer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
+.rem-header--2 .EditorContainer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
+.rem-header--3 .EditorContainer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
+[data-rem-tags~=tn] .EditorContainer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.rem-header--1 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
-.rem-header--2 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
-.rem-header--3 .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
-[data-rem-tags~=tn] .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.rem-header--1 .EditorContainer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
+.rem-header--2 .EditorContainer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
+.rem-header--3 .EditorContainer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
+[data-rem-tags~=tn] .EditorContainer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block {
+[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block > div.image-node__container {
+[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -904,28 +904,28 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+[data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-.hierarchy-editor__tag-bar__tag .RichTextViewer span.image-node__container.inline-block {
+.hierarchy-editor__tag-bar__tag .RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 	margin-right: 3px;
 }
-.hierarchy-editor__tag-bar__tag .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+.hierarchy-editor__tag-bar__tag .RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -936,16 +936,16 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.hierarchy-editor__tag-bar__tag .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.hierarchy-editor__tag-bar__tag .RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.hierarchy-editor__tag-bar__tag .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.hierarchy-editor__tag-bar__tag .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.hierarchy-editor__tag-bar__tag .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.hierarchy-editor__tag-bar__tag .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
@@ -1036,15 +1036,15 @@
 	   object-position: center;
 }
 
-.portal-tree-node-box .rem-text.rem-header--1 span.image-node__container.inline-block,
-.portal-tree-node-box .rem-text.rem-header--2 span.image-node__container.inline-block,
-.portal-tree-node-box .rem-text.rem-header--3 span.image-node__container.inline-block {
+.portal-tree-node-box .rem-text.rem-header--1 span.inline-block,
+.portal-tree-node-box .rem-text.rem-header--2 span.inline-block,
+.portal-tree-node-box .rem-text.rem-header--3 span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.portal-tree-node-box .rem-text.rem-header--1 span.image-node__container.inline-block > div.image-node__container,
-.portal-tree-node-box .rem-text.rem-header--2 span.image-node__container.inline-block > div.image-node__container,
-.portal-tree-node-box .rem-text.rem-header--3 span.image-node__container.inline-block > div.image-node__container {
+.portal-tree-node-box .rem-text.rem-header--1 span.inline-block > div,
+.portal-tree-node-box .rem-text.rem-header--2 span.inline-block > div,
+.portal-tree-node-box .rem-text.rem-header--3 span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -1055,32 +1055,32 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.portal-tree-node-box .rem-text.rem-header--1 span.image-node__container.inline-block > div.image-node__container > span.image-node,
-.portal-tree-node-box .rem-text.rem-header--2 span.image-node__container.inline-block > div.image-node__container > span.image-node,
-.portal-tree-node-box .rem-text.rem-header--3 span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.portal-tree-node-box .rem-text.rem-header--1 span.inline-block > div > span.image-node,
+.portal-tree-node-box .rem-text.rem-header--2 span.inline-block > div > span.image-node,
+.portal-tree-node-box .rem-text.rem-header--3 span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.portal-tree-node-box .rem-text.rem-header--1 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
-.portal-tree-node-box .rem-text.rem-header--2 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
-.portal-tree-node-box .rem-text.rem-header--3 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.portal-tree-node-box .rem-text.rem-header--1 span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
+.portal-tree-node-box .rem-text.rem-header--2 span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]),
+.portal-tree-node-box .rem-text.rem-header--3 span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.portal-tree-node-box .rem-text.rem-header--1 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
-.portal-tree-node-box .rem-text.rem-header--2 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
-.portal-tree-node-box .rem-text.rem-header--3 span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.portal-tree-node-box .rem-text.rem-header--1 span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
+.portal-tree-node-box .rem-text.rem-header--2 span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width,
+.portal-tree-node-box .rem-text.rem-header--3 span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.image-node__container.inline-block {
+.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.image-node__container.inline-block > div.image-node__container {
+.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -1091,27 +1091,27 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.portal-tree-node-box > div > .tree-node-container > .tree-node--children > .tree-node-container > .tree-node--parent span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-.rem-reference span.image-node__container.inline-block {
+.rem-reference span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.rem-reference span.image-node__container.inline-block > div.image-node__container {
+.rem-reference span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -1122,27 +1122,27 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.rem-reference span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.rem-reference span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.rem-reference span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -1153,27 +1153,27 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.image-node__container.inline-block {
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.image-node__container.inline-block > div.image-node__container {
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -1184,16 +1184,16 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .rem-reference span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
