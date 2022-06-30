@@ -89,10 +89,10 @@
 	border-color: transparent transparent transparent var(--bullet-main);
 }
 
-.dark-mode .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
-.dark-mode .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
-.dark-mode .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-.dark-mode .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+.dark .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
+.dark .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+.dark .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+.dark .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
 	width: 0 !important;
 	height: 0 !important;
 	border-style: solid !important;
@@ -100,7 +100,7 @@
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
-.dark-mode #hierarchy-editor .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
+.dark #hierarchy-editor .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
 	width: 0 !important;
 	height: 0 !important;
 	border-style: solid !important;
@@ -108,10 +108,10 @@
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
-.dark-mode [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
-.dark-mode [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
-.dark-mode [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-.dark-mode [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+.dark [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
+.dark [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+.dark [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+.dark [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
 	width: 0 !important;
 	height: 0 !important;
 	border-style: solid !important;
@@ -119,7 +119,7 @@
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
-.dark-mode #hierarchy-editor [data-rem-tags~=highlight] .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
+.dark #hierarchy-editor [data-rem-tags~=highlight] .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
 	width: 0 !important;
 	height: 0 !important;
 	border-style: solid !important;
@@ -195,10 +195,10 @@
 	mask-image: unset;
 }
 
-.dark-mode [data-rem-tags~=aliases] .rem-container--descriptor-rem-type .rem-button__container .rem-bullet__container .rem-bullet--hidden-children {
+.dark [data-rem-tags~=aliases] .rem-container--descriptor-rem-type .rem-button__container .rem-bullet__container .rem-bullet--hidden-children {
 	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
-.dark-mode [data-rem-tags~=aliases] .rem-container--descriptor-rem-type .rem-button__container .rem-bullet__container .rem-bullet--all-children-visible {
+.dark [data-rem-tags~=aliases] .rem-container--descriptor-rem-type .rem-button__container .rem-bullet__container .rem-bullet--all-children-visible {
 	border-color: var(--bullet-main-dark) transparent transparent transparent;
 }
 
@@ -225,7 +225,7 @@
 	border-color: transparent transparent transparent black;
 }
 
-.dark-mode .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children {
+.dark .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children {
 	width: 0;
 	height: 0;
 	border-style: solid;
@@ -233,12 +233,12 @@
 	border-radius: 3px;
 	border-color: transparent transparent transparent white;
 }
-.dark-mode .highlight-color--red .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
-.dark-mode .highlight-color--orange .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
-.dark-mode .highlight-color--yellow .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
-.dark-mode .highlight-color--green .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
-.dark-mode .highlight-color--blue .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
-.dark-mode .highlight-color--purple .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children {
+.dark .highlight-color--red .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
+.dark .highlight-color--orange .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
+.dark .highlight-color--yellow .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
+.dark .highlight-color--green .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
+.dark .highlight-color--blue .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
+.dark .highlight-color--purple .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children {
 	width: 0;
 	height: 0;
 	border-style: solid;
@@ -265,7 +265,7 @@
 	background-color: var(--node-card-item-color);
 }
 
-.dark-mode .node-card-item:before {
+.dark .node-card-item:before {
 	background-color: var(--node-card-item-color-dark);
 }
 
@@ -273,7 +273,7 @@
 	background: var(--both-practice-color);
 }
 
-.dark-mode .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
+.dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
 	background: var(--both-practice-color);
 }
 
@@ -305,7 +305,7 @@
 	mask-repeat: no-repeat;
 }
 
-.dark-mode .rem-container--forwards-practice-enabled .rem-bullet {
+.dark .rem-container--forwards-practice-enabled .rem-bullet {
 	background: #E0CD00;
 }
 
@@ -397,8 +397,8 @@
 	color: #959595;
 }
 
-.dark-mode .rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
-.dark-mode .rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol > span {
+.dark .rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
+.dark .rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol > span {
 	color: #E0CD00;
 }
 
@@ -487,7 +487,7 @@
 	opacity: 0.3;
 }
 
-.dark-mode [data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container .rem-bullet.rem-bullet--hidden-children {
+.dark [data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container .rem-bullet.rem-bullet--hidden-children {
 	width: 0 !important;
 	height: 0 !important;
 	border-style: solid !important;
@@ -495,7 +495,7 @@
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
-.dark-mode [data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container .rem-bullet.rem-bullet--all-children-visible {
+.dark [data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container .rem-bullet.rem-bullet--all-children-visible {
 	width: 0;
 	height: 0;
 	border-style: solid;
@@ -503,7 +503,7 @@
 	border-radius: 10px;
 	border-color: var(--bullet-main-dark);
 }
-.dark-mode [data-rem-container-tags~=bulletlists] > div.tree-node--children > div.tree-node-container .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--hidden-children {
+.dark [data-rem-container-tags~=bulletlists] > div.tree-node--children > div.tree-node-container .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--hidden-children {
 	width: 0 !important;
 	height: 0 !important;
 	border-style: solid !important;
@@ -511,7 +511,7 @@
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
-.dark-mode [data-rem-container-tags~=bulletlists] > div.tree-node--children > div.tree-node-container .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--all-children-visible {
+.dark [data-rem-container-tags~=bulletlists] > div.tree-node--children > div.tree-node-container .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--all-children-visible {
 	width: 0;
 	height: 0;
 	border-style: solid;

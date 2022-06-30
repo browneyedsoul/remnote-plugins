@@ -153,7 +153,7 @@
 		}
 	}
 	// Darkmode Compatibility
-		.dark-mode {
+		.dark {
 			.rem-button__container {
 				.rem-bullet__container {
 					.rem-bullet.rem-bullet--hidden-children,
@@ -249,7 +249,7 @@
 				}
 			}
 		}
-		.dark-mode {
+		.dark {
 			[data-rem-tags~="aliases"] {
 				.rem-container--descriptor-rem-type {
 					.rem-button__container {
@@ -302,7 +302,7 @@
 		}
 	}
 	// Darkmode Compatibility
-		.dark-mode {
+		.dark {
 			.rem-button__container {
 				.rem-bullet__container {
 					.rem-icon-bullet.rem-bullet--hidden-children {
@@ -355,7 +355,7 @@
 			background-color: var(--node-card-item-color);
 		}
 	}
-	.dark-mode {
+	.dark {
 		.node-card-item {
 			&:before {
 				background-color: var(--node-card-item-color-dark);
@@ -370,7 +370,7 @@
 					background: var(--both-practice-color);
 				}
 			}
-			.dark-mode {
+			.dark {
 				.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled {
 					.rem-bullet {
 						background: var(--both-practice-color);
@@ -408,7 +408,7 @@
 					}
 				}
 			}
-			.dark-mode {
+			.dark {
 				.rem-container--forwards-practice-enabled {
 					.rem-bullet {
 						background: #E0CD00;
@@ -521,7 +521,7 @@
 				}
 			}
 		}
-		.dark-mode {
+		.dark {
 			.rem-container--forwards-practice-enabled {
 				&.rem-container--backwards-practice-disabled {
 		
@@ -653,7 +653,7 @@
 				}
 		}
 	// Darkmode
-		.dark-mode {
+		.dark {
 			[data-rem-container-tags~="bulletlist"] {
 				[data-rem-tags~="bulletlist"] {
 					.rem-button__container {
