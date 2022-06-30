@@ -8,15 +8,46 @@
                 font-weight: 600;
                 border-radius: 5px;
             }
-            span {
-                &:not(:hover):not([data-rem-tags~="learned"]).cloze,
-                &.only_in_answer:not(:hover):not([data-rem-tags~="learned"]) {
+            span.cloze {
+                &:not(:hover) {
                     background-color: white;
                     filter: var(--hide-answer-filter);
                     position: relative;
                     top: -2px;
                     @extend %cloze;
                 }
+                
+            }
+            span.only_in_answer {
+                span.RichTextViewer {
+                        &:not(:hover) {
+                        background-color: white;
+                        filter: var(--hide-answer-filter);
+                        position: relative;
+                        top: -2px;
+                        @extend %cloze;
+                    }
+                }
+            }
+            span.rem-container--forwards-practice-enabled, %list-card {
+                span[data-linear-editor-text~="true"]:nth-of-type(3) {
+                    > span {
+                        > span {
+                            span.linear-editor-item.whitespace-pre-wrap {
+                                &:not(:hover):not(.basic) {
+                                    background-color: white;
+                                    filter: var(--hide-answer-filter);
+                                    position: relative;
+                                    top: -2px;
+                                    @extend %cloze;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            span.rem-container--forwards-practice-disabled {
+                @extend %list-card;
             }
         // List Card
             div.tree-node--children {
