@@ -110,11 +110,6 @@
 	--queue-bncolor-easy-dark: #253F27;
 }
 
-body.old-dark-mode .dark-mode,
-body.old-dark-mode .dark-mode-background {
-	background-color: unset !important;
-}
-
 .dark-mode {
 	filter: invert(0) !important;
 }
@@ -1314,59 +1309,62 @@ body.old-dark-mode .dark-mode-background {
 .tile__document #document #DocumentTopRow #DropToOpenAsDocument > div > #DocumentTitle > .document-title .rem-powerup-icon .text-icon {
 	vertical-align: middle;
 }
-.tile__document #document div.mt-2 #hierarchy-editor {
+.tile__document #document div.mt-2\.5 {
+	margin-left: 3rem;
+}
+.tile__document #document #hierarchy-editor {
 	margin-left: 45px;
 	margin-right: 5px;
 }
-.tile__document #document div.mt-2 #hierarchy-editor #hierarchy-editor__ctrl-f {
+.tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f {
 	border: 2px solid white;
 }
-.tile__document #document div.mt-2 #hierarchy-editor > .fixed {
+.tile__document #document #hierarchy-editor > .fixed {
 	margin-top: 3.2rem;
 }
-.tile__document #document div.mt-2 #hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
+.tile__document #document #hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
 	left: 0px;
 }
-.tile__document #document div.mt-2 #hierarchy-editor .tree-node--parent .rem-container .hover\:bg-hover-bg {
+.tile__document #document #hierarchy-editor .tree-node--parent .rem-container .hover\:bg-hover-bg {
 	background-color: unset;
 }
-.tile__document #document div.mt-2 #hierarchy-editor .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
+.tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
 	background-color: var(--highlight-color--red-light);
 }
-.tile__document #document div.mt-2 #hierarchy-editor .RichTextViewer .highlight-color--orange:not(.bold.highlight-color--orange) {
+.tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--orange:not(.bold.highlight-color--orange) {
 	background-color: var(--highlight-color--orange-light);
 }
-.tile__document #document div.mt-2 #hierarchy-editor .RichTextViewer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+.tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
 	background-color: var(--highlight-color--yellow-light);
 }
-.tile__document #document div.mt-2 #hierarchy-editor .RichTextViewer .highlight-color--green:not(.bold.highlight-color--green) {
+.tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--green:not(.bold.highlight-color--green) {
 	background-color: var(--highlight-color--green-light);
 }
-.tile__document #document div.mt-2 #hierarchy-editor .RichTextViewer .highlight-color--blue:not(.bold.highlight-color--blue) {
+.tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--blue:not(.bold.highlight-color--blue) {
 	background-color: var(--highlight-color--blue-light);
 }
-.tile__document #document div.mt-2 #hierarchy-editor .RichTextViewer .highlight-color--purple:not(.bold.highlight-color--purple) {
+.tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--purple:not(.bold.highlight-color--purple) {
 	background-color: var(--highlight-color--purple-light);
 }
-.tile__document #document div.mt-2 #hierarchy-editor [data-slate-node~=element] [data-slate-node~=text] .highlight-color--red:not(.bold.highlight-color--red) {
+.tile__document #document #hierarchy-editor [data-slate-node~=element] [data-slate-node~=text] .highlight-color--red:not(.bold.highlight-color--red) {
 	background-color: var(--highlight-color--red-light);
 }
-.tile__document #document div.mt-2 #hierarchy-editor [data-slate-node~=element] [data-slate-node~=text] .highlight-color--orange:not(.bold.highlight-color--orange) {
+.tile__document #document #hierarchy-editor [data-slate-node~=element] [data-slate-node~=text] .highlight-color--orange:not(.bold.highlight-color--orange) {
 	background-color: var(--highlight-color--orange-light);
 }
-.tile__document #document div.mt-2 #hierarchy-editor [data-slate-node~=element] [data-slate-node~=text] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+.tile__document #document #hierarchy-editor [data-slate-node~=element] [data-slate-node~=text] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
 	background-color: var(--highlight-color--yellow-light);
 }
-.tile__document #document div.mt-2 #hierarchy-editor [data-slate-node~=element] [data-slate-node~=text] .highlight-color--green:not(.bold.highlight-color--green) {
+.tile__document #document #hierarchy-editor [data-slate-node~=element] [data-slate-node~=text] .highlight-color--green:not(.bold.highlight-color--green) {
 	background-color: var(--highlight-color--green-light);
 }
-.tile__document #document div.mt-2 #hierarchy-editor [data-slate-node~=element] [data-slate-node~=text] .highlight-color--blue:not(.bold.highlight-color--blue) {
+.tile__document #document #hierarchy-editor [data-slate-node~=element] [data-slate-node~=text] .highlight-color--blue:not(.bold.highlight-color--blue) {
 	background-color: var(--highlight-color--blue-light);
 }
-.tile__document #document div.mt-2 #hierarchy-editor [data-slate-node~=element] [data-slate-node~=text] .highlight-color--purple:not(.bold.highlight-color--purple) {
+.tile__document #document #hierarchy-editor [data-slate-node~=element] [data-slate-node~=text] .highlight-color--purple:not(.bold.highlight-color--purple) {
 	background-color: var(--highlight-color--purple-light);
 }
-.tile__document #document div.mt-2 #hierarchy-editor .rem-reference-container:not(.hierarchy-editor__tag-bar .rem-reference-container) .rem-reference .RichTextViewer:not([data-rem-tags~=emoji] .RichTextViewer) {
+.tile__document #document #hierarchy-editor .rem-reference-container:not(.hierarchy-editor__tag-bar .rem-reference-container) .rem-reference .RichTextViewer:not([data-rem-tags~=emoji] .RichTextViewer) {
 	color: var(--reference-text);
 	background-color: var(--reference-background);
 	font-family: "Roboto Mono", monospace !important;
@@ -2364,9 +2362,6 @@ body.old-dark-mode .dark-mode-background {
 #document-sidebar .w-\[calc\(100\%-16px\)\] {
 	width: calc(100% - 21px);
 }
-#document-sidebar body.old-dark-mode .dark-mode #document-sidebar {
-	background-color: var(--darkmode-background-sidebar) !important;
-}
 #document-sidebar #document-sidebar_top #document-sidebar_top__logo-and-user .document-sidebar_top__user-and-collapse > span #document-sidebar__account-capsule {
 	background-color: var(--darkmode-background);
 }
@@ -2458,39 +2453,39 @@ body.old-dark-mode .dark-mode-background {
 #document-sidebar #document-sidebar_top > div.p-2 .hover\:rn-clr-background-light-accent--hovered:hover {
 	background: var(--darkmode-background-selected-darker) !important;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 {
-	height: 20px;
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex {
+	height: 2rem;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2.group-hover\:rn-clr-background-light-accent--hovered {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex.group-hover\:rn-clr-background-light-accent--hovered {
 	margin-left: -2px;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div > span.rem-powerup-icon {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div > span.rem-powerup-icon {
 	filter: invert(0);
 	position: relative;
 	top: 1px;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer {
 	color: var(--darkmode-text);
 	position: relative;
 	top: 1px;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--red,
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--orange,
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--yellow,
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--green,
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--blue,
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer .highlight-color--purple {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer .highlight-color--red,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer .highlight-color--orange,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer .highlight-color--yellow,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer .highlight-color--green,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer .highlight-color--blue,
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer .highlight-color--purple {
 	margin-left: 3px;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer > .rem-reference-container > span > span.rem-reference > span > span.RichTextViewer {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer > .rem-reference-container > span > span.rem-reference > span > span.RichTextViewer {
 	background-color: unset;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div .RichTextViewer > .rem-reference-container > span > span.rem-reference > span > span.RichTextViewer > .image-node__container {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer > .rem-reference-container > span > span.rem-reference > span > span.RichTextViewer > .image-node__container {
 	position: relative;
 	top: 0.1rem;
 	margin-right: 0.2rem;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.p-2 > div:only-child {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div:only-child {
 	margin-left: 24px;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--red,
@@ -2548,12 +2543,6 @@ body.old-dark-mode .dark-mode-background {
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--blue .RichTextViewer,
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--purple .RichTextViewer {
 	color: black;
-}
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--red, #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--orange, #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--yellow, #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--green, #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--blue, #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--purple {
-	background-color: transparent;
-}
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--red .p-2 .text-gray-60, #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--orange .p-2 .text-gray-60, #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--yellow .p-2 .text-gray-60, #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--green .p-2 .text-gray-60, #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--blue .p-2 .text-gray-60, #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--purple .p-2 .text-gray-60 {
-	border-radius: 4px;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--red .p-2 .text-gray-60 {
 	background-color: var(--highlight-color--red);
@@ -2635,10 +2624,6 @@ body.old-dark-mode .dark-mode-background {
 #document-sidebar > div:nth-of-type(2) .image-node .bg-white {
 	background-color: transparent;
 }
-body.old-dark-mode .dark-mode #document-sidebar {
-	background-color: var(--darkmode-background-sidebar) !important;
-}
-
 .dark-mode #document-sidebar {
 	background-color: var(--darkmode-background-sidebar);
 }

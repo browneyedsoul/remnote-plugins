@@ -111,13 +111,6 @@
 	--queue-bncolor-easy-dark: #253F27;
 }
 // The Most important thing
-	body.old-dark-mode {
-		.dark-mode,
-		.dark-mode-background {
-			background-color: unset !important;
-		}
-	}
-
 	.dark-mode {
 		filter: invert(0) !important;
 		// Thumbnail Background
@@ -1981,7 +1974,7 @@
 						}
 					}
 				// hierarchy-editor
-					div.mt-2.5 {
+					div.mt-2\.5 {
 						margin-left: 3rem;
 					}
 					#hierarchy-editor {
@@ -3565,14 +3558,6 @@
 		.w-\[calc\(100\%-16px\)\] {
 			width: calc(100% - 21px);
 		}
-    // Remove unexpected Track line
-        body.old-dark-mode {
-            .dark-mode {
-                #document-sidebar {
-                    background-color: var(--darkmode-background-sidebar) !important;
-                }
-            }
-        }
     // Sidebar Top
         #document-sidebar_top {
             // Account
@@ -3726,9 +3711,9 @@
 			[data-type~="document_list_item"] {
 				span.block.group.cursor-pointer {
 					> div.rounded-md {
-						> div.p-2 {
+						> div.flex {
 							// Sidebar list item height
-								height: 20px;
+								height: 2rem;
 							// Focused item Placement
 								&.group-hover\:rn-clr-background-light-accent--hovered {
 									margin-left: -2px;
@@ -3831,19 +3816,18 @@
 			}
 			// Make Menu Background Highlight Compact
 				.rounded-md {
-					&.highlight-color--red,
-					&.highlight-color--orange,
-					&.highlight-color--yellow,
-					&.highlight-color--green,
-					&.highlight-color--blue,
-					&.highlight-color--purple {
-						background-color: transparent;
-						.p-2 {
-							.text-gray-60 {
-								border-radius: 4px;
-							}
-						}
-					}
+					// &.highlight-color--red,
+					// &.highlight-color--orange,
+					// &.highlight-color--yellow,
+					// &.highlight-color--green,
+					// &.highlight-color--blue,
+					// &.highlight-color--purple {				
+					// 	.p-2 {
+					// 		.text-gray-60 {
+					// 			border-radius: 4px;
+					// 		}
+					// 	}
+					// }
 					&.highlight-color--red .p-2 .text-gray-60 {
 						background-color: var(--highlight-color--red); 
 					}
@@ -3946,13 +3930,6 @@
         }
 	}
 	// Dark mode
-		body.old-dark-mode {
-			.dark-mode {
-				#document-sidebar {
-					background-color: var(--darkmode-background-sidebar) !important;
-				}
-			} 
-		} 
 		.dark-mode {
 			#document-sidebar {
 				// Global
