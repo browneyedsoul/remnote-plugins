@@ -55,7 +55,7 @@
                     }
                 }
             // Planner Container
-                > div.TreeNode {
+                > div.tree-node--children {
                     display: flex;
                     flex-direction: column;
                     left: 0px !important;
@@ -73,7 +73,7 @@
                             left: -6px;
                         }
                     
-                    > div.tree-node-container {
+                    > div.animate-zoom-into-bullet {
                         display: inline-block;
                         flex: 1 0 0;
                         white-space: wrap;
@@ -96,7 +96,7 @@
                                 margin-right: 0;
                                 
 
-                                > div.tree-node-container {
+                                > div.animate-zoom-into-bullet {
                                     display: inline-block;
                                     flex: 1 0 0;
                                     white-space: wrap;
@@ -132,13 +132,13 @@
                                         width: calc(100% - 0px);
                                         left: 0px !important;
 
-                                        > .tree-node-container {
+                                        > .animate-zoom-into-bullet {
                                             position: relative;
                                             left: -23px;
                                             width: 100%;
 
                                             .TreeNode {
-                                                > .tree-node-container {
+                                                > .animate-zoom-into-bullet {
                                                     margin-top: 1px;
                                                 }
                                             }
@@ -163,6 +163,7 @@
                                             .rem-text {
                                                 &::after {
                                                     content: "Mon";
+                                                    white-space: nowrap;
                                                 }
                                             }
                                         }
@@ -173,6 +174,7 @@
                                             .rem-text {
                                                 &::after {
                                                     content: "Tue";
+                                                    white-space: nowrap;
                                                 }
                                             }
                                         }
@@ -183,6 +185,7 @@
                                             .rem-text {
                                                 &::after {
                                                     content: "Wed";
+                                                    white-space: nowrap;
                                                 }
                                             }
                                         }
@@ -193,6 +196,7 @@
                                             .rem-text {
                                                 &::after {
                                                     content: "Thu";
+                                                    white-space: nowrap;
                                                 }
                                             }
                                         }
@@ -203,6 +207,7 @@
                                             .rem-text {
                                                 &::after {
                                                     content: "Fri";
+                                                    white-space: nowrap;
                                                 }
                                             }
                                         }
@@ -220,6 +225,7 @@
                                                 }
                                                 &::after {
                                                     content: "Sat";
+                                                    white-space: nowrap;
                                                 }
                                             }
                                         }
@@ -237,6 +243,7 @@
                                                 }
                                                 &::after {
                                                     content: "Sun";
+                                                    white-space: nowrap;
                                                 }
                                             }
                                         }
@@ -260,7 +267,7 @@
         }
     }
 // Dark Mode Compatibility
-    .dark-mode {
+    .dark {
         #hierarchy-editor {
             [data-rem-container-tags~="planner"] {
         
@@ -277,7 +284,7 @@
                         border-right: 0.07rem solid var(--planner-title-background-color-dark);
                         border-bottom: 0.07rem solid var(--planner-title-background-color-dark);
             
-                        >div.tree-node-container {
+                        >div.animate-zoom-into-bullet {
             
                             // Week Bar Adjustment
             
@@ -286,7 +293,7 @@
                             // Structure
                             >div.TreeNode {        
             
-                                >div.tree-node-container {
+                                >div.animate-zoom-into-bullet {
                                     border: 0.07rem solid var(--planner-title-background-color-dark);
             
                                     // Constant Width
@@ -509,9 +516,9 @@
             white-space: pre;
             margin-right: 0.5rem !important;
 
-            > .tree-node-container {
+            > .animate-zoom-into-bullet {
                 > .TreeNode {
-                    > .tree-node-container {
+                    > .animate-zoom-into-bullet {
                         width: 100%;
                     }
                 }
