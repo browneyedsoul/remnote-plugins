@@ -3532,153 +3532,149 @@
 			width: calc(100% - 21px);
 		}
     // Sidebar Top
-        #document-sidebar_top {
-            // Account
-                #document-sidebar_top__logo-and-user {
-                    .document-sidebar_top__user-and-collapse {
-                        > span {
-                            #document-sidebar__account-capsule {
-                                background-color: var(--darkmode-background);
+		// Account Capsule
+			#document-sidebar__account-capsule {
+				background-color: var(--darkmode-background);
 
-                                &:hover {
-                                    background-color: var(--darkmode-background-selected-darker);
-                                }
-
-                                #document-sidebar__account-capsule__text {
-                                    // 
-                                }
-                                span {
-                                    color: var(--darkmode-text);
-                                }
-                            }
-                        }
-                    }
-                }
-            // Search and ⚡️
-                > div.flex.items-center.p-2.gap-2 {
-                    // Search
-                        > div:nth-of-type(1) {
-                            background-color: var(--darkmode-background-selected-darker);
-                        }
-                    // ⚡️
-                        > div:nth-of-type(2) {
-                            background-color: var(--darkmode-background-selected-darker);
-                        }
-                }
-            // All Notes, Today's Note, Flashcards, Edit Later
-                > div.p-2 {
-                    font-family: 'Nunito Sans', sans-serif;
+				&:hover {
+					background-color: var(--darkmode-background-selected-darker);
+				}
+				span {
+					color: var(--darkmode-text);
+				}
+			}
+		// Search and ⚡️
+			div.flex.items-center.p-2.gap-2 {
+				// Search
+					> div:nth-of-type(1) {
+						background-color: #000;
+						&:hover {
+							background-color: var(--darkmode-background-selected-darker);
+						}
+					}
+				// ⚡️
+					> div:nth-of-type(2) {
+						background-color: #000;
+						&:hover {
+							background-color: var(--darkmode-background-selected-darker);
+						}
+					}
+			}
+		// All Notes, Today's Note, Flashcards, Edit Later
+			> div {
+				> div.p-2 {
+					font-family: 'Nunito Sans', sans-serif;
 					font-weight: 600;
-                
-                    // All Notes
-                        > a[href~="/notes"] {
-                            > div {
-                                // Icon
-                                > div:nth-of-type(1) {
-                                    color: var(--darkmode-contrast);
-                                    zoom: 125%;
+				
+					// All Notes
+						> a[href~="/notes"] {
+							> div {
+								// Icon
+								> div:nth-of-type(1) {
+									color: var(--darkmode-contrast);
+									zoom: 125%;
 
-                                    > svg[data-icon~="all-notes"] {
-                                        // 
-                                    }
-                                }
-                                // All Notes Text
-                                > div:nth-of-type(2) {
-                                    color: var(--darkmode-contrast);
-                                    zoom: 125%;
-                                }
+									> svg[data-icon~="all-notes"] {
+										// 
+									}
+								}
+								// All Notes Text
+								> div:nth-of-type(2) {
+									color: var(--darkmode-contrast);
+									zoom: 125%;
+								}
 
-                                &:hover {
-                                    background-color: var(--darkmode-background-selected-darker);
-                                    border-radius: 5px;
-                                }
-                            }   
-                        }
-                    // Today's Note
-                        > div.mb-1 {
-                            // Icon
-                                > div:nth-of-type(1) {
-                                    color: var(--darkmode-contrast);
-                                    zoom: 125%;
-                                }
-                            // Today's Note Text
-                                > div:nth-of-type(2) {
-                                    color: var(--darkmode-contrast);
-                                    zoom: 125%;
+								&:hover {
+									background-color: var(--darkmode-background-selected-darker);
+									border-radius: 5px;
+								}
+							}   
+						}
+					// Today's Note
+						> div.mb-1 {
+							// Icon
+								> div:nth-of-type(1) {
+									color: var(--darkmode-contrast);
+									zoom: 125%;
+								}
+							// Today's Note Text
+								> div:nth-of-type(2) {
+									color: var(--darkmode-contrast);
+									zoom: 125%;
 									overflow-x: hidden;
 									white-space: nowrap;
-                                }
-                            &:hover {
-                                background-color: var(--darkmode-background-selected-darker);
-                                border-radius: 5px;
-                            }
-                        }
-                    // Flashcards
-                        > a[href="/flashcards"] {
-                            > div {
-                                // Icon
-                                    > div:nth-of-type(1) {
-                                        color: var(--darkmode-contrast);
-                                        zoom: 125%;
-                                    }
-                                // Flashcards Text
-                                    > div:nth-of-type(2) {
-                                        color: var(--darkmode-contrast);
-                                        zoom: 125%;
+								}
+							&:hover {
+								background-color: var(--darkmode-background-selected-darker);
+								border-radius: 5px;
+							}
+						}
+					// Flashcards
+						> a[href="/flashcards"] {
+							> div {
+								// Icon
+									> div:nth-of-type(1) {
+										color: var(--darkmode-contrast);
+										zoom: 125%;
+									}
+								// Flashcards Text
+									> div:nth-of-type(2) {
+										color: var(--darkmode-contrast);
+										zoom: 125%;
 										overflow-x: hidden;
 										white-space: nowrap;
-                                    }
-                                // Residue Number
-                                    > div:nth-of-type(3),
+									}
+								// Residue Number
+									> div:nth-of-type(3),
 									> div:nth-of-type(4),
 									> div:nth-of-type(5) {
-                                        color: var(--darkmode-contrast);
-                                        background-color: var(--darkmode-background-selected-darker);    
-                                        zoom: 125%;
-                                    }
-                                &:hover {
-                                    background-color: var(--darkmode-background-selected-darker);
-                                    border-radius: 5px;
-                                }
-                            }
-                        }
-                    // Edit Later
-                        > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) {
-                            > div {
-                                // Icon
-                                    > div:nth-of-type(1) {
-                                        color: var(--darkmode-contrast);
-                                        zoom: 125%;
-                                    }
-                                // Edit Later
-                                    > div:nth-of-type(2) {
-                                        color: var(--darkmode-contrast);
-                                        zoom: 125%;
-                                    }
-                                // Residue Number
-                                    > div:nth-of-type(3) {
-                                        color: var(--darkmode-contrast);
-                                        background-color: var(--darkmode-background-selected-darker);
-                                        zoom: 125%;
-                                    }
+										color: var(--darkmode-contrast);
+										background-color: var(--darkmode-background-selected-darker);    
+										zoom: 125%;
+									}
+								&:hover {
+									background-color: var(--darkmode-background-selected-darker);
+									border-radius: 5px;
+								}
+							}
+						}
+					// Edit Later
+						> a:not(a[href~="/notes"]):not(a[href="/flashcards"]) {
+							> div {
+								// Icon
+									> div:nth-of-type(1) {
+										color: var(--darkmode-contrast);
+										zoom: 125%;
+									}
+								// Edit Later
+									> div:nth-of-type(2) {
+										color: var(--darkmode-contrast);
+										zoom: 125%;
+									}
+								// Residue Number
+									> div:nth-of-type(3) {
+										color: var(--darkmode-contrast);
+										background-color: var(--darkmode-background-selected-darker);
+										zoom: 125%;
+									}
 
-                                &:hover {
-                                    background-color: var(--darkmode-background-selected-darker);
-                                    border-radius: 5px;
-                                }
-                            }
-                        }
-                    // Selected
-                        .rn-clr-background-light-accent {
-                            background-color: unset;
-                            border: 1px solid yellow;
-                            border-radius: 5px;
-                        }
-                        .hover\:rn-clr-background-light-accent--hovered:hover {
-                            background: var(--darkmode-background-selected-darker) !important;
-                        }
-                }
-        }
+								&:hover {
+									background-color: var(--darkmode-background-selected-darker);
+									border-radius: 5px;
+								}
+							}
+						}
+					// Selected
+						.rn-clr-background-light-accent {
+							background-color: unset;
+							border: 1px solid yellow;
+							border-radius: 5px;
+						}
+						.hover\:rn-clr-background-light-accent--hovered:hover {
+							background: var(--darkmode-background-selected-darker) !important;
+						}
+				}
+			}
     // Sidebar Middle (Item)
         > div:nth-of-type(2) {
 			[data-type~="document_list_item"] {
@@ -3950,6 +3946,9 @@
 							background-color: var(--darkmode-background-sidebar) !important;
 						}
 					}
+					.rem-text {
+						font-family: 'Nunito Sans', sans-serif;
+					}
 				// Sidebar Top
 					#document-sidebar_top {
 						// Account
@@ -4034,7 +4033,6 @@
 			}
 		// Slash Command Menu Text and Background
 			#search-results__list {
-				border: 3px solid black;
 				border-radius: 5px;
 				color: var(--darkmode-text);
 				background-color: var(--darkmode-background);

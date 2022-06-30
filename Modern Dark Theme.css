@@ -2357,95 +2357,101 @@
 #document-sidebar .w-\[calc\(100\%-16px\)\] {
 	width: calc(100% - 21px);
 }
-#document-sidebar #document-sidebar_top #document-sidebar_top__logo-and-user .document-sidebar_top__user-and-collapse > span #document-sidebar__account-capsule {
+#document-sidebar #document-sidebar__account-capsule {
 	background-color: var(--darkmode-background);
 }
-#document-sidebar #document-sidebar_top #document-sidebar_top__logo-and-user .document-sidebar_top__user-and-collapse > span #document-sidebar__account-capsule:hover {
+#document-sidebar #document-sidebar__account-capsule:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-#document-sidebar #document-sidebar_top #document-sidebar_top__logo-and-user .document-sidebar_top__user-and-collapse > span #document-sidebar__account-capsule span {
+#document-sidebar #document-sidebar__account-capsule span {
 	color: var(--darkmode-text);
 }
-#document-sidebar #document-sidebar_top > div.flex.items-center.p-2.gap-2 > div:nth-of-type(1) {
+#document-sidebar div.flex.items-center.p-2.gap-2 > div:nth-of-type(1) {
+	background-color: #000;
+}
+#document-sidebar div.flex.items-center.p-2.gap-2 > div:nth-of-type(1):hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-#document-sidebar #document-sidebar_top > div.flex.items-center.p-2.gap-2 > div:nth-of-type(2) {
+#document-sidebar div.flex.items-center.p-2.gap-2 > div:nth-of-type(2) {
+	background-color: #000;
+}
+#document-sidebar div.flex.items-center.p-2.gap-2 > div:nth-of-type(2):hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-#document-sidebar #document-sidebar_top > div.p-2 {
+#document-sidebar > div > div.p-2 {
 	font-family: "Nunito Sans", sans-serif;
 	font-weight: 600;
 }
-#document-sidebar #document-sidebar_top > div.p-2 > a[href~="/notes"] > div > div:nth-of-type(1) {
+#document-sidebar > div > div.p-2 > a[href~="/notes"] > div > div:nth-of-type(1) {
 	color: var(--darkmode-contrast);
 	zoom: 125%;
 }
-#document-sidebar #document-sidebar_top > div.p-2 > a[href~="/notes"] > div > div:nth-of-type(2) {
+#document-sidebar > div > div.p-2 > a[href~="/notes"] > div > div:nth-of-type(2) {
 	color: var(--darkmode-contrast);
 	zoom: 125%;
 }
-#document-sidebar #document-sidebar_top > div.p-2 > a[href~="/notes"] > div:hover {
+#document-sidebar > div > div.p-2 > a[href~="/notes"] > div:hover {
 	background-color: var(--darkmode-background-selected-darker);
 	border-radius: 5px;
 }
-#document-sidebar #document-sidebar_top > div.p-2 > div.mb-1 > div:nth-of-type(1) {
+#document-sidebar > div > div.p-2 > div.mb-1 > div:nth-of-type(1) {
 	color: var(--darkmode-contrast);
 	zoom: 125%;
 }
-#document-sidebar #document-sidebar_top > div.p-2 > div.mb-1 > div:nth-of-type(2) {
+#document-sidebar > div > div.p-2 > div.mb-1 > div:nth-of-type(2) {
 	color: var(--darkmode-contrast);
 	zoom: 125%;
 	overflow-x: hidden;
 	white-space: nowrap;
 }
-#document-sidebar #document-sidebar_top > div.p-2 > div.mb-1:hover {
+#document-sidebar > div > div.p-2 > div.mb-1:hover {
 	background-color: var(--darkmode-background-selected-darker);
 	border-radius: 5px;
 }
-#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(1) {
+#document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(1) {
 	color: var(--darkmode-contrast);
 	zoom: 125%;
 }
-#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(2) {
+#document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(2) {
 	color: var(--darkmode-contrast);
 	zoom: 125%;
 	overflow-x: hidden;
 	white-space: nowrap;
 }
-#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(3),
-#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(4),
-#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(5) {
+#document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(3),
+#document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(4),
+#document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(5) {
 	color: var(--darkmode-contrast);
 	background-color: var(--darkmode-background-selected-darker);
 	zoom: 125%;
 }
-#document-sidebar #document-sidebar_top > div.p-2 > a[href="/flashcards"] > div:hover {
-	background-color: var(--darkmode-background-selected-darker);
-	border-radius: 5px;
-}
-#document-sidebar #document-sidebar_top > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(1) {
-	color: var(--darkmode-contrast);
-	zoom: 125%;
-}
-#document-sidebar #document-sidebar_top > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(2) {
-	color: var(--darkmode-contrast);
-	zoom: 125%;
-}
-#document-sidebar #document-sidebar_top > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(3) {
-	color: var(--darkmode-contrast);
-	background-color: var(--darkmode-background-selected-darker);
-	zoom: 125%;
-}
-#document-sidebar #document-sidebar_top > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div:hover {
+#document-sidebar > div > div.p-2 > a[href="/flashcards"] > div:hover {
 	background-color: var(--darkmode-background-selected-darker);
 	border-radius: 5px;
 }
-#document-sidebar #document-sidebar_top > div.p-2 .rn-clr-background-light-accent {
+#document-sidebar > div > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(1) {
+	color: var(--darkmode-contrast);
+	zoom: 125%;
+}
+#document-sidebar > div > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(2) {
+	color: var(--darkmode-contrast);
+	zoom: 125%;
+}
+#document-sidebar > div > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(3) {
+	color: var(--darkmode-contrast);
+	background-color: var(--darkmode-background-selected-darker);
+	zoom: 125%;
+}
+#document-sidebar > div > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div:hover {
+	background-color: var(--darkmode-background-selected-darker);
+	border-radius: 5px;
+}
+#document-sidebar > div > div.p-2 .rn-clr-background-light-accent {
 	background-color: unset;
 	border: 1px solid yellow;
 	border-radius: 5px;
 }
-#document-sidebar #document-sidebar_top > div.p-2 .hover\:rn-clr-background-light-accent--hovered:hover {
+#document-sidebar > div > div.p-2 .hover\:rn-clr-background-light-accent--hovered:hover {
 	background: var(--darkmode-background-selected-darker) !important;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex {
@@ -2652,6 +2658,9 @@
 	color: var(--darkmode-contrast);
 	background-color: var(--darkmode-background-sidebar) !important;
 }
+.dark #document-sidebar .rem-text {
+	font-family: "Nunito Sans", sans-serif;
+}
 .dark #document-sidebar #document-sidebar_top #document-sidebar_top__logo-and-user .document-sidebar_top__user-and-collapse > span #document-sidebar__account-capsule {
 	background-color: var(--darkmode-background-sidebar);
 }
@@ -2700,7 +2709,6 @@
 	background-color: #233E6F;
 }
 .dark #search-results__list {
-	border: 3px solid black;
 	border-radius: 5px;
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
