@@ -255,23 +255,10 @@
 			.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
 				@include thumbnail-set;
 			}
-		// Merge Confirm Popup
-			.p-2 {
+		// General
+			.flex {
 				.RichTextViewer {
 					@include thumbnail-set;
-				}
-			}
-		// Backlink Preview
-			.px-2.py-3 {
-				.RichTextViewer {
-					> .image-node__container {
-						> .image-node__container.group.inline-block.align-text-top {
-							height: 1rem !important;
-							width: auto !important;
-							min-height: 1rem !important;
-							min-width: auto !important;
-						}
-					}
 				}
 			}
 	}
