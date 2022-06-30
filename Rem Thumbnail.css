@@ -276,11 +276,11 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.inline-block {
+#tile__document #document #DropToOpenAsDocument span.inline-block {
 	height: 1em;
 	width: auto;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.inline-block > div {
+#tile__document #document #DropToOpenAsDocument span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -291,26 +291,26 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.inline-block > div > span.image-node {
+#tile__document #document #DropToOpenAsDocument span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+#tile__document #document #DropToOpenAsDocument span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+#tile__document #document #DropToOpenAsDocument span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.inline-block {
+#tile__document #document #DropToOpenAsDocument #DocumentTitle span.inline-block {
 	height: 1em;
 	width: auto;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.inline-block > div {
+#tile__document #document #DropToOpenAsDocument #DocumentTitle span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -321,29 +321,25 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.inline-block > div > span.image-node {
+#tile__document #document #DropToOpenAsDocument #DocumentTitle span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+#tile__document #document #DropToOpenAsDocument #DocumentTitle span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+#tile__document #document #DropToOpenAsDocument #DocumentTitle span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle span.image-node__container.inline-block {
-	position: relative;
-	top: 3px;
-}
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle > div.document-title .image-node__container.group.inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu] {
+#tile__document #document #DropToOpenAsDocument #DocumentTitle .inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu] {
 	display: none;
 }
-#tile__document #document #DocumentTopRow #DropToOpenAsDocument #DocumentTitle > div.document-title .image-node__container.group.inline-block.align-text-top > div {
+#tile__document #document #DropToOpenAsDocument #DocumentTitle .inline-block.align-text-top > div {
 	display: none;
 }
 #tile__document #document #hierarchy-editor > .fixed > div > .tree-node--children > .tree-node-container .EditorContainer span.inline-block {
@@ -437,6 +433,12 @@
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
+}
+#document-sidebar .inline-block.align-text-top .image-node [data-menu-type~=ImageNodeMenu] {
+	display: none;
+}
+#document-sidebar .inline-block.align-text-top > div {
+	display: none;
 }
 
 .hierarchy-editor__hidden-children span.inline-block {

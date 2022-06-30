@@ -62,7 +62,7 @@
 }
 
 @mixin console-declutter {
-	.image-node__container.group.inline-block.align-text-top {
+	.inline-block.align-text-top {
 		.image-node {
 			[data-menu-type~="ImageNodeMenu"] {
 				display: none;
@@ -164,23 +164,13 @@
 		}
 		// Page
 		#document {
-			#DocumentTopRow {
-				#DropToOpenAsDocument {
-					// Document Top Row Tag Bar
+			#DropToOpenAsDocument {
+				// Document Top Row Tag Bar
+				@include thumbnail-set;
+				
+				#DocumentTitle {
 					@include thumbnail-set;
-					
-					#DocumentTitle {
-						@include thumbnail-set;
-						span.image-node__container.inline-block {
-							position: relative;
-							top: 3px;
-						}
-
-						> div.document-title {
-							// Disable Image Node Menu
-							@include console-declutter;
-						}
-					}
+					@include console-declutter;
 				}
 			}
 			// Sticky Header
@@ -206,6 +196,7 @@
 // Document Sidebar
 	#document-sidebar {
 		@include thumbnail-set;
+		@include console-declutter();
 	}
 // Document Hidden children
 	.hierarchy-editor__hidden-children {
