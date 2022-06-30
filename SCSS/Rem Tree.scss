@@ -3,6 +3,14 @@
     --line-color-dark: #535353;
 }
 
+[data-rem-container-tags~="tree"],
+[data-rem-container-tags~="treec"] {
+    .whitespace-pre-wrap {
+        white-space: pre;
+    }
+}
+
+
 [data-rem-container-tags~="tree"], %tree {
     display: flex;
     line-height: 160%;
@@ -60,6 +68,10 @@
                             }
                         }
                 }
+        }
+    // Flexbox
+        .animate-zoom-into-bullet {
+            display: flex;
         }
     // Children - One Child Tree
         div.tree-node--children {
@@ -158,7 +170,7 @@
         }
 }
 // Darkmode Compatibility
-    .dark-mode {
+    .dark {
         [data-rem-container-tags~="tree"], %tree-dark {
             &::-webkit-scrollbar-thumb {
                 background-color: #5A666A;
@@ -213,7 +225,7 @@
     border: 0.1rem solid var(--line-color);
     border-radius: 4px;
 }
-.dark-mode {
+.dark {
     [data-rem-container-tags~="treec"] {
         @extend %tree-dark;
     }
