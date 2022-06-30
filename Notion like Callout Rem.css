@@ -164,67 +164,67 @@
 	background-color: var(--calloutpurple-background-color);
 }
 
-.dark-mode [data-rem-container-tags~=callout] {
+.dark [data-rem-container-tags~=callout] {
 	background-color: var(--callout-background-color-dark);
 }
-.dark-mode [data-rem-container-tags~=callout] .rem-text {
+.dark [data-rem-container-tags~=callout] .rem-text {
 	color: var(--callout-text-color-dark);
 }
-.dark-mode [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--red), .dark-mode [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--orange), .dark-mode [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--yellow), .dark-mode [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--green), .dark-mode [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--blue), .dark-mode [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--purple) {
+.dark [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--purple) {
 	color: var(--callout-text-bold-color-dark) !important;
 }
-.dark-mode [data-rem-container-tags~=calloutred] {
+.dark [data-rem-container-tags~=calloutred] {
 	background-color: var(--calloutred-background-color-dark);
 }
-.dark-mode [data-rem-container-tags~=calloutred] .rem-text {
+.dark [data-rem-container-tags~=calloutred] .rem-text {
 	color: var(--calloutred-text-color-dark);
 }
-.dark-mode [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--red), .dark-mode [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--orange), .dark-mode [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--yellow), .dark-mode [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--green), .dark-mode [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--blue), .dark-mode [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--purple) {
+.dark [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--purple) {
 	color: var(--calloutred-text-bold-color-dark) !important;
 }
-.dark-mode [data-rem-container-tags~=calloutorange] {
+.dark [data-rem-container-tags~=calloutorange] {
 	background-color: var(--calloutorange-background-color-dark);
 }
-.dark-mode [data-rem-container-tags~=calloutorange] .rem-text {
+.dark [data-rem-container-tags~=calloutorange] .rem-text {
 	color: var(--calloutorange-text-color-dark);
 }
-.dark-mode [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--red), .dark-mode [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--orange), .dark-mode [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--yellow), .dark-mode [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--green), .dark-mode [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--blue), .dark-mode [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--purple) {
+.dark [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--purple) {
 	color: var(--calloutorange-text-bold-color-dark) !important;
 }
-.dark-mode [data-rem-container-tags~=calloutyellow] {
+.dark [data-rem-container-tags~=calloutyellow] {
 	background-color: var(--calloutyellow-background-color-dark);
 }
-.dark-mode [data-rem-container-tags~=calloutyellow] .rem-text {
+.dark [data-rem-container-tags~=calloutyellow] .rem-text {
 	color: var(--calloutyellow-text-color-dark);
 }
-.dark-mode [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--red), .dark-mode [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--orange), .dark-mode [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--yellow), .dark-mode [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--green), .dark-mode [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--blue), .dark-mode [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--purple) {
+.dark [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--purple) {
 	color: var(--calloutyellow-text-bold-color-dark) !important;
 }
-.dark-mode [data-rem-container-tags~=calloutgreen] {
+.dark [data-rem-container-tags~=calloutgreen] {
 	background-color: var(--calloutgreen-background-color-dark);
 }
-.dark-mode [data-rem-container-tags~=calloutgreen] .rem-text {
+.dark [data-rem-container-tags~=calloutgreen] .rem-text {
 	color: var(--calloutgreen-text-color-dark);
 }
-.dark-mode [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--red), .dark-mode [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--orange), .dark-mode [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--yellow), .dark-mode [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--green), .dark-mode [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--blue), .dark-mode [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--purple) {
+.dark [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--purple) {
 	color: var(--calloutgreen-text-bold-color-dark) !important;
 }
-.dark-mode [data-rem-container-tags~=calloutblue] {
+.dark [data-rem-container-tags~=calloutblue] {
 	background-color: var(--calloutblue-background-color-dark);
 }
-.dark-mode [data-rem-container-tags~=calloutblue] .rem-text {
+.dark [data-rem-container-tags~=calloutblue] .rem-text {
 	color: var(--calloutblue-text-color-dark);
 }
-.dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--red), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--orange), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--yellow), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--green), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--blue), .dark-mode [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--purple) {
+.dark [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--purple) {
 	color: var(--calloutblue-text-bold-color-dark) !important;
 }
-.dark-mode [data-rem-container-tags~=calloutpurple] {
+.dark [data-rem-container-tags~=calloutpurple] {
 	background-color: var(--calloutpurple-background-color-dark);
 }
-.dark-mode [data-rem-container-tags~=calloutpurple] .rem-text {
+.dark [data-rem-container-tags~=calloutpurple] .rem-text {
 	color: var(--calloutpurple-text-color-dark);
 }
-.dark-mode [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--red), .dark-mode [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--orange), .dark-mode [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--yellow), .dark-mode [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--green), .dark-mode [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--blue), .dark-mode [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--purple) {
+.dark [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--purple) {
 	color: var(--calloutpurple-text-bold-color-dark) !important;
 }
 
