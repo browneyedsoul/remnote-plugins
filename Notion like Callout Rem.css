@@ -47,27 +47,15 @@
 	color: unset;
 }
 
-[data-rem-tags~=callout] .rem-text .EditorContainer [data-rem-tags~=emoji],
-[data-rem-tags~=calloutred] .rem-text .EditorContainer [data-rem-tags~=emoji],
-[data-rem-tags~=calloutorange] .rem-text .EditorContainer [data-rem-tags~=emoji],
-[data-rem-tags~=calloutyellow] .rem-text .EditorContainer [data-rem-tags~=emoji],
-[data-rem-tags~=calloutgreen] .rem-text .EditorContainer [data-rem-tags~=emoji],
-[data-rem-tags~=calloutblue] .rem-text .EditorContainer [data-rem-tags~=emoji],
-[data-rem-tags~=calloutpurple] .rem-text .EditorContainer [data-rem-tags~=emoji] {
-	position: absolute;
-	left: 0;
-	top: 0.2rem;
-}
-[data-rem-tags~=callout] .rem-text .EditorContainer [data-slate-node~=element] > [data-rem-tags~=emoji],
-[data-rem-tags~=calloutred] .rem-text .EditorContainer [data-slate-node~=element] > [data-rem-tags~=emoji],
-[data-rem-tags~=calloutorange] .rem-text .EditorContainer [data-slate-node~=element] > [data-rem-tags~=emoji],
-[data-rem-tags~=calloutyellow] .rem-text .EditorContainer [data-slate-node~=element] > [data-rem-tags~=emoji],
-[data-rem-tags~=calloutgreen] .rem-text .EditorContainer [data-slate-node~=element] > [data-rem-tags~=emoji],
-[data-rem-tags~=calloutblue] .rem-text .EditorContainer [data-slate-node~=element] > [data-rem-tags~=emoji],
-[data-rem-tags~=calloutpurple] .rem-text .EditorContainer [data-slate-node~=element] > [data-rem-tags~=emoji] {
+[data-rem-tags~=callout] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup,
+[data-rem-tags~=calloutred] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup,
+[data-rem-tags~=calloutorange] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup,
+[data-rem-tags~=calloutyellow] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup,
+[data-rem-tags~=calloutgreen] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup,
+[data-rem-tags~=calloutblue] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup,
+[data-rem-tags~=calloutpurple] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup {
 	position: absolute;
 	left: -1.5rem;
-	top: -0.05rem;
 }
 
 [data-rem-container-tags~=callout],

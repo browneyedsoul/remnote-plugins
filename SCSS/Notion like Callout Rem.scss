@@ -57,15 +57,9 @@
         .rem-text {
             .EditorContainer {
                 [data-rem-tags~="emoji"] {
-                    position: absolute;
-                    left: 0;
-                    top: 0.2rem;
-                }
-                [data-slate-node~="element"] {
-                    > [data-rem-tags~="emoji"] {
+                    span.emoji-powerup {
                         position: absolute;
                         left: -1.5rem;
-                        top: -0.05rem;
                     }
                 }
             }
