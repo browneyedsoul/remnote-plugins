@@ -1186,9 +1186,6 @@
 .tile__document > div.rn-clr-background-primary > div:nth-child(3) div.react-datepicker-wrapper div.react-datepicker__input-container .button > div {
 	filter: invert(0.95);
 }
-.tile__document div:nth-of-type(2).document-header-top-bar {
-	width: calc(100% - 10px);
-}
 .tile__document .document-header-top-bar {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
@@ -2901,11 +2898,10 @@
 	background-color: #FFF;
 }
 
-#document #hierarchy-editor .animate-zoom-into-bullet .tree-node--parent + .portal-tree-node-box {
+#document #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) .tree-node--parent + .portal-tree-node-box {
 	margin-left: -3px;
 }
 #document #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text {
-	display: inline !important;
 	zoom: 0.75;
 	opacity: 0.6;
 }
@@ -2919,30 +2915,6 @@
 
 .hierarchy-editor__search-portal-section {
 	display: none;
-}
-
-.tree-node--parent .show-embed-search-button--automatic {
-	display: flex;
-	position: relative;
-	left: -16px;
-}
-
-.popup-menu .tree-node--parent .show-embed-search-button--automatic {
-	left: 0;
-}
-
-#hierarchy-editor .rem-container__top-level-rem-in-portal-border .rem-container__top-level-rem-in-portal-border__inner {
-	border-color: var(--line-color);
-}
-
-span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
-	background-color: #E2E1DF !important;
-	color: black;
-}
-
-.dark span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
-	background-color: var(--darkmode-background-selected-darker) !important;
-	color: var(--darkmode-contrast);
 }
 
 .dark #document #hierarchy-editor .backlink-counter {
