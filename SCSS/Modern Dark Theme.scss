@@ -111,7 +111,7 @@
 	--queue-bncolor-easy-dark: #253F27;
 }
 // The Most important thing
-	.dark-mode {
+	.dark {
 		filter: invert(0) !important;
 		// Thumbnail Background
 			.thumbnail--with-width {
@@ -539,7 +539,7 @@
 				@include highlight-text();
 			}
 // Global Elements - Darkmode
-	.dark-mode {
+	.dark {
 	// Hightlight
 		.highlight-color--red {
 			background-color: var(--highlight-color--red-dark);
@@ -633,7 +633,7 @@
 		#RemPage {
 			background-color: #FFF;
 		}
-		.dark-mode {
+		.dark {
 			#RemPage {
 				color: var(--darkmode-text);
 				background-color: var(--darkmode-background);
@@ -953,7 +953,7 @@
 		}
 	}
 	// Darkmode Support
-		.dark-mode {
+		.dark {
 			#content {
 				.content__page {
 					background-color: var(--darkmode-background);
@@ -1025,7 +1025,7 @@
 				}
 			}
 		}
-		.dark-mode {
+		.dark {
 			#Popup {
 				#PopupContent {
 					> div {
@@ -1157,7 +1157,7 @@
 			}
 		}
 	// Dark Mode
-		.dark-mode {
+		.dark {
 			// Select Cluster
 				.queue-cluster-selector {
 					color: var(--darkmode-text);
@@ -1434,7 +1434,7 @@
 				}
 			}
 // Card Browser Page
-	.dark-mode{
+	.dark{
 		#card-table-page {
 			color: var(--darkmode-text);
 			background-color: var(--darkmode-background);
@@ -1483,7 +1483,7 @@
 				}
 		}
 	}
-	.dark-mode {
+	.dark {
 		[aria-label~="Omnibar"] {
 			color: var(--darkmode-text);
 			background-color: var(--darkmode-background);
@@ -1622,7 +1622,7 @@
 		}
 	}
 // Page Padding
-	.dark-mode {
+	.dark {
 		.paddingPage {
 			color: var(--darkmode-text);
 			background-color: var(--darkmode-background)
@@ -1650,7 +1650,7 @@
 			}
 		}
 	}
-	.dark-mode {
+	.dark {
 		#content {
 			background-color: var(--darkmode-background-sidebar);
 			.mosaic {
@@ -1669,7 +1669,7 @@
 		}
 	}
 // Darkmode - General Background 
-		.dark-mode {
+		.dark {
 			.document-table,
 			.multiple-windows__document,
 			#multiple-windows__document {
@@ -2045,7 +2045,7 @@
 			}
 	}
 // Tile Document - Darkmode
-	.dark-mode {
+	.dark {
 		.tile__document {
 			background-color: var(--darkmode-background) !important;
 			// PDF Top Header
@@ -2426,7 +2426,7 @@
 	}
 // Rem-Bullet Container
 	// Darkmode Compatibility
-		.dark-mode {
+		.dark {
 			.plus-button,
 			.six-dot,
 			.toggle-collapse-button {
@@ -2464,7 +2464,7 @@
 		}
 // Portal
 	// Darkmode Support
-		.dark-mode {
+		.dark {
 			// Portal Breadcrumbs
 			#hierarchy-editor {
 				.node-top-level-in-portal-container {
@@ -2611,7 +2611,7 @@
 		}
 	}
 	// Darkmode Compatibility - Deprecated
-		.popup-menu.dark-mode {
+		.popup-menu.dark {
 			color: var(--darkmode-text);
 			background-color: var(--darkmode-background);
 			border: 1px solid white;
@@ -2794,7 +2794,7 @@
 				background-color: var(--popup-background-hover);
 			}
 // Popup - Delete, Disable Confirm, Highlight
-	.dark-mode {
+	.dark {
 		#Popup {
 			#PopupContent {
 				// Quick Add Popup
@@ -3056,7 +3056,7 @@
 			}
 	}
 	// Darkmode Compatibility
-		.dark-mode {
+		.dark {
 			.settings-page {
 				background-color: var(--darkmode-background);
 				// Overall Style
@@ -3381,7 +3381,7 @@
 		}
 	}
 	// Darkmode
-		.dark-mode {
+		.dark {
 			#StatsPage {
 				#StatsPageContent {
 					background-color: var(--darkmode-background) !important;
@@ -3448,7 +3448,7 @@
         }
     }
     // Darkmode
-        .dark-mode {
+        .dark {
             // Reference Style
                 .rem-reference-container:not(.rem-reference-container[data-rem-tags~="highlight"]) {
                     .rem-reference {
@@ -3538,7 +3538,7 @@
 		}
 	}
 	// Darkmode Support
-		.dark-mode {
+		.dark {
 			.navigation-bar {
 				background-color: var(--darkmode-background-sidebar);
 				border-bottom: 1px solid #000 !important;
@@ -3930,7 +3930,7 @@
         }
 	}
 	// Dark mode
-		.dark-mode {
+		.dark {
 			#document-sidebar {
 				// Global
 					background-color: var(--darkmode-background-sidebar);
@@ -4016,13 +4016,13 @@
 			}
 		}
 	}
-	.dark-mode {
+	.dark {
 		.document-sidebar--collapsed--vertical {
 			background-color: var(--darkmode-background-sidebar);
 		}
 	}
 // Context Menu
-	.dark-mode {
+	.dark {
 		// Slash Command Slash
 			.typeSlashCommand {
 				color: var(--darkmode-contrast);
@@ -4091,7 +4091,7 @@
 	}
 // Help & Tutorial Page
 	// Intro
-		.dark-mode {
+		.dark {
 			#HelpPageContainer {
 				#HelpPage {
 					background-color: var(--darkmode-background);
@@ -4295,7 +4295,7 @@
 				}
 		}
 	// Darkmode
-		.dark-mode {
+		.dark {
 			.app-container--published-knowledge-base {
 				// Header
 					.document-header-top-bar {
@@ -4470,14 +4470,14 @@
 			background-color: #E2E1DF !important;
 			color: black;
 		}
-		.dark-mode {
+		.dark {
 			span.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable:hover {
 				background-color: var(--darkmode-background-selected-darker) !important;
 				color: var(--darkmode-contrast);
 			}
 		}
 	// Darkmode Compatibility
-		.dark-mode {
+		.dark {
 			#document {
 				#hierarchy-editor {
 					// Backlink Counter
@@ -4624,13 +4624,13 @@
 		@include highlight-color-notbold-light();
 	}
 	// Darkmode
-		.dark-mode {
+		.dark {
 			[data-rem-container-tags~="file"] {
 				@include highlight-color-notbold-dark();
 			}
 		}
 // Error Message
-	.dark-mode {
+	.dark {
 		#ErrorBoundary {
 			color: var(--darkmode-contrast);
 			a {
