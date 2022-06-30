@@ -1,8 +1,8 @@
-.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer span.image-node__container.inline-block {
+.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer span.image-node__container.inline-block > div.image-node__container {
+.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -13,13 +13,13 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
@@ -249,11 +249,11 @@
 	   object-position: center;
 }
 
-#tile__document .document-header-top-bar span.image-node__container.inline-block {
+#tile__document .document-header-top-bar span.inline-block {
 	height: 1em;
 	width: auto;
 }
-#tile__document .document-header-top-bar span.image-node__container.inline-block > div.image-node__container {
+#tile__document .document-header-top-bar span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -264,13 +264,13 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-#tile__document .document-header-top-bar span.image-node__container.inline-block > div.image-node__container > span.image-node {
+#tile__document .document-header-top-bar span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-#tile__document .document-header-top-bar span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+#tile__document .document-header-top-bar span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
@@ -948,11 +948,11 @@
 	   object-position: center;
 }
 
-[aria-label~=Omnibar] span.image-node__container.inline-block {
+[aria-label~=Omnibar] span.inline-block {
 	height: 1em;
 	width: auto;
 }
-[aria-label~=Omnibar] span.image-node__container.inline-block > div.image-node__container {
+[aria-label~=Omnibar] span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -963,24 +963,24 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-[aria-label~=Omnibar] span.image-node__container.inline-block > div.image-node__container > span.image-node {
+[aria-label~=Omnibar] span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-[aria-label~=Omnibar] span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+[aria-label~=Omnibar] span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-.search-result__rem-breadcrumbs span.image-node__container.inline-block {
+.search-result__rem-breadcrumbs span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.search-result__rem-breadcrumbs span.image-node__container.inline-block > div.image-node__container {
+.search-result__rem-breadcrumbs span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -991,24 +991,24 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.search-result__rem-breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node {
+.search-result__rem-breadcrumbs span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.search-result__rem-breadcrumbs span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.search-result__rem-breadcrumbs span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
 	   object-position: center;
 }
 
-#search-results__result span.image-node__container.inline-block {
+#search-results__list span.inline-block {
 	height: 1em;
 	width: auto;
 }
-#search-results__result span.image-node__container.inline-block > div.image-node__container {
+#search-results__list span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -1019,13 +1019,13 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-#search-results__result span.image-node__container.inline-block > div.image-node__container > span.image-node {
+#search-results__list span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-#search-results__result span.image-node__container.inline-block > div.image-node__container > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+#search-results__list span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;

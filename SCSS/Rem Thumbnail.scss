@@ -1,9 +1,9 @@
 @mixin thumbnail-set-display() {
-	span.image-node__container.inline-block {
+	span.inline-block {
 		height: 1em;
 		width: auto;
 
-		>div.image-node__container {
+		> div {
 			height: 1em !important;
 			width: unset !important;
 			max-width: 1em !important;
@@ -12,11 +12,11 @@
 			min-width: 1em !important;
 			min-height: unset !important;
 
-			>span.image-node {
+			> span.image-node {
 				object-fit: contain !important;
 				object-position: center;
 
-				>div:nth-of-type(2) {
+				> div:nth-of-type(2) {
 					img.thumbnail--with-width {
 						object-fit: contain;
 						object-position: center;
@@ -312,22 +312,11 @@
 		[aria-label~="Omnibar"] {
 			@include thumbnail-set-display();
 		}
-	// Search Popup Page
-		// .css-ZPdGi {
-		// 	min-width: 80%;
-		// 	min-height: 80%;
-		// }
-		// .css-fUqRpZ {
-		// 	.inline-block,
-		// 	.thumbnail--with-width {
-		// 		@include thumbnail-set;
-		// 	}
-		// }
 	// Tag Search Result
 		.search-result__rem-breadcrumbs {
 			@include thumbnail-set-display();
 		}
-		#search-results__result {
+		#search-results__list {
 			@include thumbnail-set-display();
 		}
 // Portal
