@@ -250,6 +250,9 @@
 							}
 						}
 					}
+					> span.RichTextViewer {
+						@include thumbnail-set;
+					}
 				}
 			}
 	}
