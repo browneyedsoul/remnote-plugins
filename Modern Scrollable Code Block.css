@@ -148,106 +148,106 @@
 	opacity: 1;
 }
 
-.dark-mode .quote {
+.dark .quote {
 	color: var(--inline-code-color-dark);
 	background-color: var(--inline-code-background-dark);
 }
-.dark-mode #code-node:not(.token.property):not(.token.function):not(.token.string):not(.token.builtin):not(.token.comment):not(.token.selector):not(.token.keyword):not(.token.number):not(.token.operator):not(.token.punctuation),
-.dark-mode #code-node .token.plain {
+.dark #code-node:not(.token.property):not(.token.function):not(.token.string):not(.token.builtin):not(.token.comment):not(.token.selector):not(.token.keyword):not(.token.number):not(.token.operator):not(.token.punctuation),
+.dark #code-node .token.plain {
 	color: var(--code-node-plain-color-dark);
 }
-.dark-mode #code-node .token.property {
+.dark #code-node .token.property {
 	color: var(--code-node-property-color-dark);
 }
-.dark-mode #code-node .token.atrule {
+.dark #code-node .token.atrule {
 	color: var(--code-node-atrule-color-dark);
 }
-.dark-mode #code-node .token.tag {
+.dark #code-node .token.tag {
 	color: var(--code-node-tag-color-dark);
 }
-.dark-mode #code-node .token.tag.punctuation {
+.dark #code-node .token.tag.punctuation {
 	color: var(--code-node-tag-color-dark);
 }
-.dark-mode #code-node .token.function {
+.dark #code-node .token.function {
 	color: var(--code-node-function-color-dark);
 }
-.dark-mode #code-node .token.string {
+.dark #code-node .token.string {
 	color: var(--code-node-string-color-dark) !important;
 }
-.dark-mode #code-node .token.selector {
+.dark #code-node .token.selector {
 	color: var(--code-node-selector-color-dark);
 }
-.dark-mode #code-node .token.comment {
+.dark #code-node .token.comment {
 	color: var(--code-node-comment-color-dark);
 }
-.dark-mode #code-node .token.important {
+.dark #code-node .token.important {
 	color: var(--code-node-important-color-dark);
 }
-.dark-mode #code-node .token.keyword {
+.dark #code-node .token.keyword {
 	color: var(--code-node-keyword-color-dark);
 }
-.dark-mode #code-node .token.builtin {
+.dark #code-node .token.builtin {
 	color: var(--code-node-builtin-color-dark);
 }
-.dark-mode #code-node .token.boolean {
+.dark #code-node .token.boolean {
 	color: var(--code-node-boolean-color-dark);
 }
-.dark-mode #code-node .token.number {
+.dark #code-node .token.number {
 	color: var(--code-node-number-color-dark);
 }
-.dark-mode #code-node .token.operator {
+.dark #code-node .token.operator {
 	color: var(--code-node-operator-color-dark);
 }
-.dark-mode #code-node .token.constant {
+.dark #code-node .token.constant {
 	color: var(--code-node-constant-color-dark);
 }
-.dark-mode #code-node .token.variable {
+.dark #code-node .token.variable {
 	color: var(--code-node-variable-color-dark);
 }
-.dark-mode #code-node .token.class-name {
+.dark #code-node .token.class-name {
 	color: var(--code-node-classname-color-dark);
 }
-.dark-mode #code-node .token.class-name {
+.dark #code-node .token.class-name {
 	color: var(--code-node-classname-color-dark);
 }
-.dark-mode #code-node .token.url {
+.dark #code-node .token.url {
 	color: var(--code-node-url-color-dark);
 	background-color: unset;
 }
-.dark-mode #code-node .token.doctype.punctuation {
+.dark #code-node .token.doctype.punctuation {
 	color: var(--code-node-punctuation-color-dark);
 }
-.dark-mode #code-node .token.tag.punctuation {
+.dark #code-node .token.tag.punctuation {
 	color: var(--code-node-punctuation-color-dark);
 }
-.dark-mode #code-node .token.tag.attr-value.punctuation {
+.dark #code-node .token.tag.attr-value.punctuation {
 	color: var(--code-node-punctuation-color-dark);
 }
-.dark-mode #code-node .token.tag.attr-value.punctuation.attr-equals {
+.dark #code-node .token.tag.attr-value.punctuation.attr-equals {
 	color: var(--code-node-punctuation-color-dark);
 }
-.dark-mode #code-node .token.doctype.doctype-tag {
+.dark #code-node .token.doctype.doctype-tag {
 	color: var(--code-node-punctuation-color-dark);
 }
-.dark-mode #code-node .token.doctype.name {
+.dark #code-node .token.doctype.name {
 	color: var(--code-node-punctuation-color-dark);
 }
-.dark-mode #code-node .token.tag.attr-name {
+.dark #code-node .token.tag.attr-name {
 	color: var(--code-node-attribute-color-dark);
 }
-.dark-mode #code-node .token.tag.attr-value {
+.dark #code-node .token.tag.attr-value {
 	color: var(--code-node-attribute-value-color-dark);
 }
-.dark-mode #code-node #code-node__inner .codeLine::before {
+.dark #code-node #code-node__inner .codeLine::before {
 	opacity: 0.2;
 }
-.dark-mode #code-node #code-node__change-language-dropdown {
+.dark #code-node #code-node__change-language-dropdown {
 	color: #D7DD95;
 	border-radius: 5px;
 }
-.dark-mode #code-node #code-node__change-language-dropdown > i::before {
+.dark #code-node #code-node__change-language-dropdown > i::before {
 	color: #D7DD95;
 }
-.dark-mode #code-node::-webkit-scrollbar-thumb {
+.dark #code-node::-webkit-scrollbar-thumb {
 	background-color: #999;
 }
