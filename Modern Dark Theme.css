@@ -832,242 +832,242 @@
 	background-color: var(--queue-bncolor-easy);
 }
 
-.dark .queue-cluster-selector {
+.dark #content .queue-cluster-selector {
 	color: var(--darkmode-text);
 }
-.dark .hover\:bg-UI03:hover {
+.dark #content .hover\:bg-UI03:hover {
 	background-color: var(--darkmode-background-selected);
 }
-.dark #SearchPopup {
+.dark #content #SearchPopup {
 	caret-color: var(--darkmode-text);
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
 }
-.dark #SearchPopup .rich-text-editor,
-.dark #SearchPopup .EditorContainer {
+.dark #content #SearchPopup .rich-text-editor,
+.dark #content #SearchPopup .EditorContainer {
 	caret-color: var(--darkmode-text);
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background);
 }
-.dark .Queue {
+.dark #content .Queue {
 	background-color: var(--darkmode-background);
 	border: 2px solid black;
 }
-.dark .Queue .rem-bullet__queue {
+.dark #content .Queue .rem-bullet__queue {
 	background-color: var(--darkmode-text);
 }
-.dark .Queue .hover\:bg-UI03:hover {
+.dark #content .Queue .hover\:bg-UI03:hover {
 	background-color: var(--darkmode-background-selected);
 }
-.dark .Queue .katex {
+.dark #content .Queue .katex {
 	background-color: unset;
 }
-.dark .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--red {
+.dark #content .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--red {
 	color: #FFD2CE;
 	background-color: #572924;
 }
-.dark .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--orange {
+.dark #content .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--orange {
 	color: #FFDAB8;
 	background-color: #553D24;
 }
-.dark .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--yellow {
+.dark #content .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--yellow {
 	color: #E8E48F;
 	background-color: #453E1E;
 }
-.dark .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--green {
+.dark #content .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--green {
 	color: #B3DDAB;
 	background-color: #253F27;
 }
-.dark .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--blue {
+.dark #content .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--blue {
 	color: #B5DEE8;
 	background-color: #183C4D;
 }
-.dark .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--purple {
+.dark #content .Queue .queue-container .spacedRepetition .rem-text .EditorContainer span.highlight-color--purple {
 	color: #DDC3EB;
 	background-color: #43273F;
 }
-.dark .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--red {
+.dark #content .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--red {
 	color: var(--red-text-dark);
 	background-color: unset;
 }
-.dark .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--orange {
+.dark #content .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--orange {
 	color: var(--orange-text-dark);
 	background-color: unset;
 }
-.dark .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--yellow {
+.dark #content .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--yellow {
 	color: var(--yellow-text-dark);
 	background-color: unset;
 	text-shadow: unset;
 }
-.dark .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--green {
+.dark #content .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--green {
 	color: var(--green-text-dark);
 	background-color: unset;
 }
-.dark .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--blue {
+.dark #content .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--blue {
 	color: var(--blue-text-dark);
 	background-color: unset;
 }
-.dark .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--purple {
+.dark #content .Queue .queue-container .spacedRepetition .rem-text .EditorContainer .bold.highlight-color--purple {
 	color: var(--purple-text-dark);
 	background-color: unset;
 }
-.dark .Queue .queue__title .queue__title__left {
+.dark #content .Queue .queue__title .queue__title__left {
 	color: var(--darkmode-text);
 }
-.dark .Queue .queue__title .queue__title__middle {
+.dark #content .Queue .queue__title .queue__title__middle {
 	color: var(--darkmode-text);
 }
-.dark .Queue .queue__title .queue__title__middle .queue__badge {
+.dark #content .Queue .queue__title .queue__title__middle .queue__badge {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background-selected);
 }
-.dark .Queue .queue__title .queue__title__middle > span:nth-of-type(1) {
+.dark #content .Queue .queue__title .queue__title__middle > span:nth-of-type(1) {
 	color: var(--darkmode-text);
 }
-.dark .Queue .queue__title .queue__title__middle > span:nth-of-type(2) {
+.dark #content .Queue .queue__title .queue__title__middle > span:nth-of-type(2) {
 	background-color: var(--darkmode-background-selected);
 }
-.dark .Queue .queue__title .queue__title__middle > span:nth-of-type(2) > div:hover {
+.dark #content .Queue .queue__title .queue__title__middle > span:nth-of-type(2) > div:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark .Queue .queue__title .queue__title__middle > span:nth-of-type(2) > div > div:nth-of-type(1) {
+.dark #content .Queue .queue__title .queue__title__middle > span:nth-of-type(2) > div > div:nth-of-type(1) {
 	color: var(--darkmode-text);
 }
-.dark .Queue .queue__title .queue__title__middle > span:nth-of-type(2) > div > div:nth-of-type(2) > svg {
+.dark #content .Queue .queue__title .queue__title__middle > span:nth-of-type(2) > div > div:nth-of-type(2) > svg {
 	fill: var(--darkmode-text) !important;
 	color: var(--darkmode-text) !important;
 }
-.dark .Queue .queue__title .queue__title__right {
+.dark #content .Queue .queue__title .queue__title__right {
 	color: var(--darkmode-text);
 }
-.dark .Queue .queue__title .queue__title__right > span .icon-button:hover {
+.dark #content .Queue .queue__title .queue__title__right > span .icon-button:hover {
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark .Queue .queue__title .overflow-ellipsis {
+.dark #content .Queue .queue__title .overflow-ellipsis {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background-selected);
 }
-.dark .Queue .queue__title .overflow-ellipsis .font-semibold {
+.dark #content .Queue .queue__title .overflow-ellipsis .font-semibold {
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background-selected);
 }
-.dark .Queue .spacedRepetition > div {
+.dark #content .Queue .spacedRepetition > div {
 	background-color: var(--darkmode-background);
 }
-.dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt, .dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon, .dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon .spaced-repetition__prompt__breadcrumbs, .dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon .rem-bullet__document, .dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document, .dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs {
+.dark #content .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt, .dark #content .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon, .dark #content .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon .spaced-repetition__prompt__breadcrumbs, .dark #content .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon .rem-bullet__document, .dark #content .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document, .dark #content .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs {
 	color: var(--darkmode-text) !important;
 	background-color: var(--darkmode-background) !important;
 }
-.dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .fill-in-the-blank.bg-white {
+.dark #content .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .fill-in-the-blank.bg-white {
 	padding: 5px;
 	border-radius: 5px;
 }
-.dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .fill-in-the-blank--revealed {
+.dark #content .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .fill-in-the-blank--revealed {
 	padding: 5px;
 	border-radius: 5px;
 }
-.dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document {
+.dark #content .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document {
 	font-weight: 550;
 }
-.dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document,
-.dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon {
+.dark #content .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document,
+.dark #content .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon {
 	color: var(--darkmode-text) !important;
 	background-color: var(--darkmode-background) !important;
 }
-.dark .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button {
+.dark #content .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button {
 	color: var(--darkmode-text);
 	border-color: #999;
 }
-.dark .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:hover {
+.dark #content .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:hover {
 	filter: brightness(125%);
 }
-.dark .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button .accuracy-button__interval {
+.dark #content .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button .accuracy-button__interval {
 	border: unset;
 	color: var(--darkmode-text-bold);
 	background-color: var(--darkmode-background-selected-darker);
 }
-.dark .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(1) {
+.dark #content .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(1) {
 	background-color: var(--queue-bncolor-toosoon-dark);
 }
-.dark .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(2) {
+.dark #content .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(2) {
 	background-color: var(--queue-bncolor-hard-dark);
 }
-.dark .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(3) {
+.dark #content .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(3) {
 	background-color: var(--queue-bncolor-partial-dark);
 }
-.dark .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(4) {
+.dark #content .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(4) {
 	background-color: var(--queue-bncolor-done-dark);
 }
-.dark .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(5) {
+.dark #content .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:nth-of-type(5) {
 	background-color: var(--queue-bncolor-easy-dark);
 }
-.dark .Queue .font-semibold.text-gray-100 {
+.dark #content .Queue .font-semibold.text-gray-100 {
 	color: var(--darmode-text);
 }
-.dark .Queue .queue__title .h-6 > svg {
+.dark #content .Queue .queue__title .h-6 > svg {
 	color: var(--darkmode-contrast);
 	fill: var(--darkmode-contrast);
 }
-.dark .Queue .queue__progress .queue__progress-bar {
+.dark #content .Queue .queue__progress .queue__progress-bar {
 	background-color: var(--darkmode-selected-darker);
 	border: 1px solid black;
 }
-.dark .Queue .icon--document,
-.dark .Queue .RichTextViewer.px-1.truncate {
+.dark #content .Queue .icon--document,
+.dark #content .Queue .RichTextViewer.px-1.truncate {
 	color: var(--darkmode-text);
 }
-.dark .Queue .RichTextViewer .cloze {
+.dark #content .Queue .RichTextViewer .cloze {
 	background-color: unset;
 	padding: 5px;
 	border-radius: 5px;
 	border-bottom: 2px solid var(--darkmode-contrast);
 }
-.dark .Queue .bold.highlight-color--red {
+.dark #content .Queue .bold.highlight-color--red {
 	color: var(--red-text-dark);
 	background-color: unset;
 }
-.dark .Queue .bold.highlight-color--orange {
+.dark #content .Queue .bold.highlight-color--orange {
 	color: var(--orange-text-dark);
 	background-color: unset;
 }
-.dark .Queue .bold.highlight-color--yellow {
+.dark #content .Queue .bold.highlight-color--yellow {
 	color: var(--yellow-text-dark);
 	background-color: unset;
 	text-shadow: unset;
 }
-.dark .Queue .bold.highlight-color--green {
+.dark #content .Queue .bold.highlight-color--green {
 	color: var(--green-text-dark);
 	background-color: unset;
 }
-.dark .Queue .bold.highlight-color--blue {
+.dark #content .Queue .bold.highlight-color--blue {
 	color: var(--blue-text-dark);
 	background-color: unset;
 }
-.dark .Queue .bold.highlight-color--purple {
+.dark #content .Queue .bold.highlight-color--purple {
 	color: var(--purple-text-dark);
 	background-color: unset;
 }
-.dark .Queue .highlight-color--red:not(.bold.highlight-color--red) {
+.dark #content .Queue .highlight-color--red:not(.bold.highlight-color--red) {
 	color: var(--highlight-color--red-text-dark);
 	background-color: var(--highlight-color--red-bg-dark);
 }
-.dark .Queue .highlight-color--orange:not(.bold.highlight-color--orange) {
+.dark #content .Queue .highlight-color--orange:not(.bold.highlight-color--orange) {
 	color: var(--highlight-color--orange-text-dark);
 	background-color: var(--highlight-color--orange-bg-dark);
 }
-.dark .Queue .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+.dark #content .Queue .highlight-color--yellow:not(.bold.highlight-color--yellow) {
 	color: var(--highlight-color--yellow-text-dark);
 	background-color: var(--highlight-color--yellow-bg-dark);
 }
-.dark .Queue .highlight-color--green:not(.bold.highlight-color--green) {
+.dark #content .Queue .highlight-color--green:not(.bold.highlight-color--green) {
 	color: var(--highlight-color--green-text-dark);
 	background-color: var(--highlight-color--green-bg-dark);
 }
-.dark .Queue .highlight-color--blue:not(.bold.highlight-color--blue) {
+.dark #content .Queue .highlight-color--blue:not(.bold.highlight-color--blue) {
 	color: var(--highlight-color--blue-text-dark);
 	background-color: var(--highlight-color--blue-bg-dark);
 }
-.dark .Queue .highlight-color--purple:not(.bold.highlight-color--purple) {
+.dark #content .Queue .highlight-color--purple:not(.bold.highlight-color--purple) {
 	color: var(--highlight-color--purple-text-dark);
 	background-color: var(--highlight-color--purple-bg-dark);
 }

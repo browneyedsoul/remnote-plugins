@@ -1154,6 +1154,7 @@
 		}
 	// Dark Mode
 		.dark {
+			#content {
 			// Select Cluster
 				.queue-cluster-selector {
 					color: var(--darkmode-text);
@@ -1433,6 +1434,7 @@
 						@include highlight-color-notbold-dark();
 				}
 			}
+		}
 // Card Browser Page
 	.dark{
 		#card-table-page {
