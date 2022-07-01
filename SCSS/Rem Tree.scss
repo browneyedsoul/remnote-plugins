@@ -69,14 +69,20 @@
                         }
                 }
         }
-        .animate-zoom-into-bullet:first-of-type {
-            div.tree-node--parent {
-                align-items: baseline !important;
-            }
-        }
         .animate-zoom-into-bullet:last-of-type {
-            div.tree-node--parent {
-                align-items: flex-end;
+            > div.tree-node--parent {
+                align-items: flex-start;
+                &::before {
+                    content: "";
+                    width: 25px;
+                    background-color: #FFF;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 2;
+                    left: -1px;
+                    border-top: 1px solid var(--line-color);
+                    margin-top: 20px;
+                }
             }
         }
 
@@ -164,7 +170,7 @@
                 &:last-child:not(:only-child) {
                     > .tree-node--parent {
                         display: flex;
-                        align-items: flex-end;
+                        // align-items: flex-end;
                     }
                 }
 

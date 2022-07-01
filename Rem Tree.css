@@ -63,11 +63,19 @@
 [data-rem-container-tags~=treec] div.tree-node--parent [data-rem-tags~=treec] .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
 	opacity: 0.3;
 }
-[data-rem-container-tags~=tree] .animate-zoom-into-bullet:first-of-type div.tree-node--parent, [data-rem-container-tags~=treec] .animate-zoom-into-bullet:first-of-type div.tree-node--parent {
-	align-items: baseline !important;
+[data-rem-container-tags~=tree] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent, [data-rem-container-tags~=treec] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent {
+	align-items: flex-start;
 }
-[data-rem-container-tags~=tree] .animate-zoom-into-bullet:last-of-type div.tree-node--parent, [data-rem-container-tags~=treec] .animate-zoom-into-bullet:last-of-type div.tree-node--parent {
-	align-items: flex-end;
+[data-rem-container-tags~=tree] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent::before, [data-rem-container-tags~=treec] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent::before {
+	content: "";
+	width: 25px;
+	background-color: #FFF;
+	height: 100%;
+	position: absolute;
+	z-index: 2;
+	left: -1px;
+	border-top: 1px solid var(--line-color);
+	margin-top: 20px;
 }
 [data-rem-container-tags~=tree] .animate-zoom-into-bullet, [data-rem-container-tags~=treec] .animate-zoom-into-bullet {
 	display: flex;
@@ -141,7 +149,6 @@
 }
 [data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty) .tree-node-container:last-child:not(:only-child) > .tree-node--parent, [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty) .tree-node-container:last-child:not(:only-child) > .tree-node--parent {
 	display: flex;
-	align-items: flex-end;
 }
 [data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty) .tree-node-container div.tree-node--children:only-of-type, [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty) .tree-node-container div.tree-node--children:only-of-type {
 	display: none;
