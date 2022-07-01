@@ -86,25 +86,6 @@
 [data-rem-container-tags~=tree] div.tree-node--children .backlink-counter, [data-rem-container-tags~=treec] div.tree-node--children .backlink-counter {
 	opacity: 0.4;
 }
-[data-rem-container-tags~=tree] div.tree-node--children .tree-node-container:only-child::before, [data-rem-container-tags~=treec] div.tree-node--children .tree-node-container:only-child::before {
-	content: "";
-	padding-right: 24px;
-	padding-top: 0;
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: -0.1rem;
-	height: 97%;
-	width: 5px;
-	border-top: unset;
-	border-right: unset;
-	border-bottom: 5rem solid #FFF;
-	border-left: 27px solid #FFF;
-	margin-top: 1.05rem;
-}
-[data-rem-container-tags~=tree] div.tree-node--children .tree-node-container:only-child::after, [data-rem-container-tags~=treec] div.tree-node--children .tree-node-container:only-child::after {
-	border-top: unset;
-}
 [data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty), [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty) {
 	display: inline-block;
 	z-index: 0;
@@ -117,7 +98,7 @@
 	padding-top: 0;
 	position: absolute;
 	z-index: 1;
-	top: -0.05rem;
+	top: 0.16rem;
 	left: -0.15rem;
 	height: 1rem;
 	border-top: unset;
