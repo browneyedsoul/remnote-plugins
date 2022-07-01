@@ -110,9 +110,6 @@
 	--queue-bncolor-easy-dark: #253F27;
 }
 
-.dark {
-	filter: invert(0) !important;
-}
 .dark .thumbnail--with-width {
 	background-color: transparent;
 }
@@ -1918,115 +1915,54 @@
 	display: none;
 }
 
-.popup-menu.dark {
-	color: var(--darkmode-text);
-	background-color: var(--darkmode-background);
-	border: 1px solid white;
-}
-.popup-menu.dark div svg {
-	fill: var(--darkmode-text) !important;
-	color: var(--darkmode-text) !important;
-}
-.popup-menu.dark .bg-white,
-.popup-menu.dark #document-hover-preview__popup,
-.popup-menu.dark .popup-menu__item,
-.popup-menu.dark .popup-menu__item--static,
-.popup-menu.dark .hierarchy-editor__search-portal-section {
-	color: var(--darkmode-text);
-	background-color: var(--darkmode-background);
-}
-.popup-menu.dark .rounded .p-3 {
-	color: var(--darkmode-text) !important;
-}
-.popup-menu.dark > div > div.p-4 div.ml-2 > div {
-	background-color: unset !important;
-}
-.popup-menu.dark .hover\:bg-cyan-15.active\:bg-cyan-20 {
-	background-color: #1C3259 !important;
-	border: 1px solid var(--darkmode-contrast);
-}
-.popup-menu.dark > .bg-gray-5 {
-	background-color: var(--darkmode-background);
-}
-.popup-menu.dark > .bg-gray-5 .rounded {
-	border: 1px solid var(--line-color-dark);
-}
-.popup-menu.dark .scroll-drag-component {
-	border: 1px solid white;
-}
-.popup-menu.dark .spaced-repetition__prompt .indented-rem .rem-bullet__document,
-.popup-menu.dark .spaced-repetition__prompt .indented-rem .rem-bullet__document > i {
-	color: black !important;
-}
-.popup-menu.dark .spaced-repetition__prompt .file.text.small.icon::before {
-	filter: invert(0);
-}
-.popup-menu.dark .Queue,
-.popup-menu.dark .scroll-drag-component,
-.popup-menu.dark .text-base + a,
-.popup-menu.dark .queue__edit-later {
-	color: var(--darkmode-text);
-	background-color: var(--darkmode-background);
-}
-.popup-menu.dark .rem-text.rem-header--1,
-.popup-menu.dark .rem-text.rem-header--2,
-.popup-menu.dark .rem-text.rem-header--3 {
-	color: var(--darkmode-text);
-}
-.popup-menu.dark .border-solid.border-gray-15 {
-	border-color: #909090;
-}
-.popup-menu.dark .p-2 .text-gray-30 {
+.dark .popup-menu .bold.highlight-color--red {
+	color: var(--red-text-dark);
 	background-color: unset;
 }
-.popup-menu.dark .bg-white .bg-gray-5 {
+.dark .popup-menu .bold.highlight-color--orange {
+	color: var(--orange-text-dark);
 	background-color: unset;
 }
-.popup-menu.dark .bg-selected-bg,
-.popup-menu.dark [icon*="[Object]"]:hover,
-.popup-menu.dark .bg-selected-bg:hover {
-	background-color: var(--darkmode-background-selected-darker) !important;
+.dark .popup-menu .bold.highlight-color--yellow {
+	color: var(--yellow-text-dark);
+	background-color: unset;
+	text-shadow: unset;
 }
-.popup-menu.dark > div {
-	border: 1px solid white;
+.dark .popup-menu .bold.highlight-color--green {
+	color: var(--green-text-dark);
+	background-color: unset;
 }
-.popup-menu.dark .bg-white .css-kbbFlF > div {
-	color: var(--darkmode-text);
+.dark .popup-menu .bold.highlight-color--blue {
+	color: var(--blue-text-dark);
+	background-color: unset;
 }
-.popup-menu.dark .bg-white .css-kbbFlF:hover {
-	background-color: var(--darkmode-background-selected-darker);
+.dark .popup-menu .bold.highlight-color--purple {
+	color: var(--purple-text-dark);
+	background-color: unset;
 }
-.popup-menu.dark #SearchPopup .search-results #search-results__list #search-results__result:hover {
-	color: unset !important;
-	background-color: #BCBBB3;
+.dark .popup-menu .highlight-color--red:not(.bold.highlight-color--red) {
+	color: var(--highlight-color--red-text-dark);
+	background-color: var(--highlight-color--red-bg-dark);
 }
-.popup-menu.dark #show-embedded-search-button {
-	color: var(--darkmode-text) !important;
-	background-color: var(--darkmode-background-selected);
-	filter: invert(0) !important;
-	border-radius: 5px;
+.dark .popup-menu .highlight-color--orange:not(.bold.highlight-color--orange) {
+	color: var(--highlight-color--orange-text-dark);
+	background-color: var(--highlight-color--orange-bg-dark);
 }
-.popup-menu.dark .file.text.small.icon::before {
-	filter: invert(1);
+.dark .popup-menu .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+	color: var(--highlight-color--yellow-text-dark);
+	background-color: var(--highlight-color--yellow-bg-dark);
 }
-.popup-menu.dark .css-fQFckt {
-	background-color: yellow;
-	border: 1px solid black;
-	border-radius: 5px;
-	opacity: 0.8;
+.dark .popup-menu .highlight-color--green:not(.bold.highlight-color--green) {
+	color: var(--highlight-color--green-text-dark);
+	background-color: var(--highlight-color--green-bg-dark);
 }
-.popup-menu.dark .bg-white .css-huwYra {
-	color: var(--darkmode-text);
-	background-color: var(--darkmode-background-selected);
-	border: 1px solid var(--darkmode-contrast);
+.dark .popup-menu .highlight-color--blue:not(.bold.highlight-color--blue) {
+	color: var(--highlight-color--blue-text-dark);
+	background-color: var(--highlight-color--blue-bg-dark);
 }
-.popup-menu.dark #document-hover-preview__popup span.bold > span,
-.popup-menu.dark .popup-menu__item--static > span {
-	color: var(--darkmode-contrast);
-	font-size: 18px;
-}
-.popup-menu.dark .rich-text-editor__popup-text-editor-alias-container .bg-gray-5 {
-	background-color: var(--darkmode-background-selected-darker);
+.dark .popup-menu .highlight-color--purple:not(.bold.highlight-color--purple) {
+	color: var(--highlight-color--purple-text-dark);
+	background-color: var(--highlight-color--purple-bg-dark);
 }
 
 .hierarchy-editor__hidden-children__list {
@@ -2286,10 +2222,6 @@
 .dark .settings-page .settings-page__content .settings-page__content__inner .p-6 > a {
 	color: var(--darkmode-contrast);
 }
-.dark .settings-page .settings-page__content .settings-page__content__inner #subscription-page .bg-mint-10 {
-	color: #000 !important;
-	background-color: #8BD1B9;
-}
 .dark .settings-page .settings-page__content .settings-page__content__inner #subscription-page .settings__pricing-option-item .button {
 	background-color: #183C4D;
 }
@@ -2306,11 +2238,8 @@
 .dark .settings-page .settings-page__content .settings-page__content__inner #subscription-page .settings__pricing-option-item .button .w-max .icon {
 	color: #B5DEE8;
 }
-.dark .settings-page .settings-page__content .settings-page__content__inner .p-6 > .form-element > div {
-	color: var(--darkmode-text) !important;
-}
-.dark .settings-page .settings-page__content .settings-page__content__inner .p-6 > .px-0 > div {
-	color: var(--darkmode-text) !important;
+.dark .settings-page .settings-page__content .settings-page__content__inner .text-gray-0 {
+	color: var(--darkmode-text);
 }
 .dark .settings-page .settings-page__content .settings-page__content__inner .w-min {
 	color: var(--darkmode-text) !important;
@@ -2441,6 +2370,13 @@
 
 #document-sidebar {
 	background-color: var(--darkmode-background);
+}
+#document-sidebar .align-text-top {
+	vertical-align: sub;
+	top: -1px;
+}
+#document-sidebar .RichTextViewer {
+	font-family: "Nunito Sans", sans-serif;
 }
 #document-sidebar + div > div {
 	background-color: var(--darkmode-background);
