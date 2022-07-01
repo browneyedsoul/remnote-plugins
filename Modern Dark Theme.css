@@ -350,6 +350,17 @@
 	right: 10px;
 }
 
+.plus-button,
+.six-dot,
+.toggle-collapse-button {
+	background-color: transparent;
+}
+.plus-button svg,
+.six-dot svg,
+.toggle-collapse-button svg {
+	color: #000;
+}
+
 .dark .highlight-color--red {
 	background-color: var(--highlight-color--red-dark);
 }
@@ -623,6 +634,16 @@
 }
 .dark .cloze {
 	background-color: var(--darkmode-background-selected-darker);
+}
+.dark .plus-button,
+.dark .six-dot,
+.dark .toggle-collapse-button {
+	background-color: transparent;
+}
+.dark .plus-button svg,
+.dark .six-dot svg,
+.dark .toggle-collapse-button svg {
+	color: var(--darkmode-text);
 }
 
 #content .content__page {
@@ -1762,11 +1783,6 @@
 	color: var(--darkmode-text);
 }
 
-.dark .plus-button,
-.dark .six-dot,
-.dark .toggle-collapse-button {
-	background-color: transparent;
-}
 .dark .rem-button__container .rem-bullet__container .hover\:bg-hover-bg:hover {
 	background-color: unset !important;
 }

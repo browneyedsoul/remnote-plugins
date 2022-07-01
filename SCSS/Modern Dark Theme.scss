@@ -528,6 +528,16 @@
 		.float-end {
 			right: 10px;
 		}
+	// Rem Console
+		.plus-button,
+		.six-dot,
+		.toggle-collapse-button {
+			background-color: transparent;	
+
+			svg {
+				color: #000;
+			}
+		}
 // Global Elements - Darkmode
 	.dark {
 	// Hightlight
@@ -901,7 +911,16 @@
 		.cloze {
 			background-color: var(--darkmode-background-selected-darker);
 		}
-	
+	// Rem Console
+		.plus-button,
+		.six-dot,
+		.toggle-collapse-button {
+			background-color: transparent;
+
+			svg {
+				color: var(--darkmode-text);
+			}
+		}
 	}
 // All Notes Page
 	#content {
@@ -1905,7 +1924,7 @@
 				// hierarchy-editor
 					div.mt-2\.5 {
 						margin-left: 2rem;
-						
+
 						> div {
 							margin-right: 0.7rem;
 						}
@@ -2350,11 +2369,6 @@
 // Rem-Bullet Container
 	// Darkmode Compatibility
 		.dark {
-			.plus-button,
-			.six-dot,
-			.toggle-collapse-button {
-				background-color: transparent;
-			}
 			.rem-button__container {
 				.rem-bullet__container {
 					// Toggle Collapse Button Hover effect
