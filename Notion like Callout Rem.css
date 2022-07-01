@@ -56,6 +56,8 @@
 [data-rem-tags~=calloutpurple] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup {
 	position: absolute;
 	left: -1.5rem;
+	z-index: 0;
+	pointer-events: none;
 }
 
 [data-rem-container-tags~=callout],
