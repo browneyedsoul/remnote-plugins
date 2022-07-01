@@ -1902,71 +1902,20 @@
 				padding: 0;
 				margin-top: 70px;
 
-				// DocumentTopRow
-					#DocumentTopRow {
-						margin-left: 45px;
-						margin-right: 5px;
-
-						#DropToOpenAsDocument {
-							> div {
-								// Custom CSS Page Alert Area
-									// .bg-mint-10 {
-									// 	> div.text-mint-80 {
-
-									// 	}
-									// }
-								// DocumentTitle
-									> #DocumentTitle {
-										> .document-title {
-											// Power-up icon
-												.rem-powerup-icon {
-													position: relative;
-													top: -7px;
-
-													.text-icon {
-														vertical-align: middle;
-													}
-												}
-											// > div.rich-text-editor {
-											// 	> div.EditorContainer {
-											// 		> div[data-slate-node~="element"] {
-											// 			> span {
-
-											// 			}
-											// 		}
-											// 	}
-											// }
-										}
-									}
-								// Sources & Tags
-									// > div.grid {
-										// Sources
-											// > div:nth-of-type(1) {
-											// 	> div.grid {
-											// 		div.col-span-1 {
-
-											// 		}
-											// 	}
-											// }
-										// Tags
-											// > div.grid {
-												
-											// }
-									// }
-								// AddNewDocumentButtonSmall
-									// #AddNewDocumentButtonSmall {
-
-									// }
-							}
-						}
-					}
 				// hierarchy-editor
 					div.mt-2\.5 {
-						margin-left: 3rem;
+						margin-left: 2rem;
+						
+						> div {
+							margin-right: 0.7rem;
+						}
 					}
 					#hierarchy-editor {
-						margin-left: 45px;
-						margin-right: 5px;
+						margin-left: 2rem;
+						
+						> div {
+							margin-right: 0.7rem;
+						}
 
 						// Find / Filter / Replace - Ctrl(⌘) + F
 							#hierarchy-editor__ctrl-f {

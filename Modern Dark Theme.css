@@ -1298,23 +1298,17 @@
 	padding: 0;
 	margin-top: 70px;
 }
-.tile__document #document #DocumentTopRow {
-	margin-left: 45px;
-	margin-right: 5px;
-}
-.tile__document #document #DocumentTopRow #DropToOpenAsDocument > div > #DocumentTitle > .document-title .rem-powerup-icon {
-	position: relative;
-	top: -7px;
-}
-.tile__document #document #DocumentTopRow #DropToOpenAsDocument > div > #DocumentTitle > .document-title .rem-powerup-icon .text-icon {
-	vertical-align: middle;
-}
 .tile__document #document div.mt-2\.5 {
-	margin-left: 3rem;
+	margin-left: 2rem;
+}
+.tile__document #document div.mt-2\.5 > div {
+	margin-right: 0.7rem;
 }
 .tile__document #document #hierarchy-editor {
-	margin-left: 45px;
-	margin-right: 5px;
+	margin-left: 2rem;
+}
+.tile__document #document #hierarchy-editor > div {
+	margin-right: 0.7rem;
 }
 .tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f {
 	border: 2px solid white;
