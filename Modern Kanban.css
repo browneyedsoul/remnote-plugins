@@ -16,6 +16,9 @@
 [data-rem-container-tags~=kanban] .bg-white {
 	background-color: transparent;
 }
+[data-rem-container-tags~=kanban] .tree-node--children {
+	margin-right: 1.2rem;
+}
 [data-rem-container-tags~=kanban] > .tree-node--children {
 	display: flex;
 	border: 0;

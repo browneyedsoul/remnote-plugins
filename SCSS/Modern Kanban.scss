@@ -19,6 +19,10 @@
     // Kanban Title
         // > .tree-node--parent {
         // }
+    // 
+        .tree-node--children {
+            margin-right: 1.2rem;
+        }
     // Kanban Contents
         > .tree-node--children {
             display: flex;
@@ -26,6 +30,7 @@
             padding-left: 0;
             overflow-x: scroll;
             white-space: pre;
+
             &::-webkit-scrollbar-thumb {
                 background-color: #EEE;
                 border-radius: 2px;
