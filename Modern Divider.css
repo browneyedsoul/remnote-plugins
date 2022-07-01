@@ -1,31 +1,31 @@
 :root {
 	--line-color: #DDD;
+	--line-color-focused: #DCF3FF;
 	--line-color-dark: #535353;
+	--line-color-focused-dark: #576066;
 }
 
 [data-rem-container-tags~=divider] {
-	margin-bottom: 10px;
-	margin-right: 1.5rem;
+	margin-bottom: 0.5rem;
+	margin-left: 1.8rem;
+	margin-right: 0.5rem;
 }
 [data-rem-container-tags~=divider] [data-rem-tags~=divider] {
 	color: transparent;
-	padding-right: 15px;
 	height: 7px;
-	margin-left: 10px;
 }
 [data-rem-container-tags~=divider] [data-rem-tags~=divider]::before {
 	content: " ";
 	display: block;
 	position: absolute;
 	border-bottom: var(--line-color);
+	left: -0.5rem;
 }
 [data-rem-container-tags~=divider] [data-rem-tags~=divider]:focus-within {
-	background-color: #DCF3FF;
-	margin-left: 40px;
-	margin-right: -1.8rem;
+	background-color: var(--line-color-focused);
 	position: relative;
 	top: 3px;
-	left: -15px;
+	left: -0.5rem;
 }
 [data-rem-container-tags~=divider] [data-rem-tags~=divider]:focus-within::before {
 	border-bottom: 2px solid var(--line-color);
@@ -44,25 +44,31 @@
 	border-bottom: 2px solid var(--line-color);
 	height: 2px;
 }
-
-.dark [data-rem-tags~=divider]:focus-within {
-	background-color: #576066;
-}
-.dark [data-rem-tags~=divider]:not(:focus-within):before {
-	border-bottom: 2px solid var(--line-color-dark, #535353);
-}
-
-[data-rem-tags~=divider] .RichTextViewer,
-[data-rem-tags~=divider] [data-slate-node=element] {
+[data-rem-container-tags~=divider] .EditorContainer span {
 	visibility: hidden;
 }
+
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider]::before {
+	border-bottom: var(--line-color);
+}
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider]:focus-within {
+	background-color: var(--line-color-focused-dark);
+}
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider]:focus-within::before {
+	border-bottom: 2px solid var(--line-color-dark);
+}
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider]:not(:focus-within)::before {
+	border-bottom: 2px solid var(--line-color-dark);
+}
+
+[data-rem-tags~=divider] .pointer-events-none,
+[data-rem-tags~=divider] .RichTextViewer,
 [data-rem-tags~=divider] .rem-button__container,
 [data-rem-tags~=divider] .rem-container--focused,
 [data-rem-tags~=divider] .rem-bullet__icon,
 [data-rem-tags~=divider] .rem-bullet__container,
 [data-rem-tags~=divider] .rem-checkbox,
 [data-rem-tags~=divider] .rem:not([data-rem-tags~=show-tags]) .hierarchy-editor__tag-bar,
-[data-rem-tags~=divider] .relative.flex.items-center.float-end,
-[data-rem-tags~=divider] .rich-text-editor-placeholder {
+[data-rem-tags~=divider] .float-end {
 	display: none;
 }

@@ -1,84 +1,96 @@
 :root {
-    --line-color: #DDD;
-    --line-color-dark: #535353;
+	--line-color: #DDD;
+	--line-color-focused: #DCF3FF;
+	--line-color-dark: #535353;
+	--line-color-focused-dark: #576066;
 }
 
 // Divider
-    [data-rem-container-tags~="divider"] {
-        margin-bottom: 10px;
-        margin-right: 1.5rem;
+	[data-rem-container-tags~="divider"] {
+		margin-bottom: 0.5rem;
+		margin-left: 1.8rem;
+		margin-right: 0.5rem;
 
-        [data-rem-tags~="divider"] {
-            color: transparent;
-            padding-right: 15px;
-            height: 7px;
-            margin-left: 10px;
+		[data-rem-tags~="divider"] {
+			color: transparent;
+			height: 7px;
 
-            &::before {
-                content: " ";
-                display: block;
-                position: absolute;
-                border-bottom: var(--line-color);
-            }
+			&::before {
+				content: " ";
+				display: block;
+				position: absolute;
+				border-bottom: var(--line-color);
+				left: -0.5rem;
+			}
 
-            &:focus-within {
-                background-color: #DCF3FF;
-                margin-left: 40px;
-                margin-right: -1.8rem;
-                position: relative;
-                top: 3px;
-                left: -15px;
+			&:focus-within {
+				background-color: var(--line-color-focused);
+				position: relative;
+				top: 3px;
+				left: -0.5rem;
 
-                &::before {
-                    border-bottom: 2px solid var(--line-color);
-                }
-            }
+				&::before {
+					border-bottom: 2px solid var(--line-color);
+				}
+			}
 
-            &:not(:focus-within) {
-                color: transparent;
-                position: relative;
-                padding: 0px 15px;
+			&:not(:focus-within) {
+				color: transparent;
+				position: relative;
+				padding: 0px 15px;
 
-                &::before {
-                    content: " ";
-                    display: block;
-                    position: absolute;
-                    width: 100%;
-                    top: 50%;
-                    border-bottom: 2px solid var(--line-color);
-                    height: 2px;
-                }
-            }
-        }
-    }
-// Divider Darkmode Compatibility
-    .dark {
-        [data-rem-tags~="divider"] {
-            &:focus-within {
-                background-color: #576066;
-            }
-            &:not(:focus-within):before {
-                border-bottom: 2px solid var(--line-color-dark, #535353);
-            } 
-        }
-    }
+				&::before {
+					content: " ";
+					display: block;
+					position: absolute;
+					width: 100%;
+					top: 50%;
+					border-bottom: 2px solid var(--line-color);
+					height: 2px;
+				}
+			}
+		}
+		.EditorContainer {
+			span {
+				visibility: hidden;
+			}
+		}
+	}
+// Dark
+	.dark {
+		[data-rem-container-tags~="divider"] {
+			[data-rem-tags~="divider"] {
+				&::before {
+					border-bottom: var(--line-color);
+				}
+
+				&:focus-within {
+					background-color: var(--line-color-focused-dark);
+
+					&::before {
+						border-bottom: 2px solid var(--line-color-dark);
+					}
+				}
+
+				&:not(:focus-within) {
+					&::before {
+						border-bottom: 2px solid var(--line-color-dark);
+					}
+				} 
+			}
+		}
+	}
 // Hide
-    [data-rem-tags~="divider"] {
-        .RichTextViewer,
-        [data-slate-node="element"] {
-            visibility: hidden;
-        }
-
-        .rem-button__container,
-        .rem-container--focused, 
-        .rem-bullet__icon,
-        .rem-bullet__container,
-        .rem-checkbox,
-        .rem:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar, 
-        // Hide Merge Sign
-        .relative.flex.items-center.float-end,       
-        // Hide Placeholder "Type / for Commands"
-        .rich-text-editor-placeholder {
-                display: none;
-        }
-    }
+	[data-rem-tags~="divider"] {
+		.pointer-events-none,
+		.RichTextViewer,
+		.rem-button__container,
+		.rem-container--focused, 
+		.rem-bullet__icon,
+		.rem-bullet__container,
+		.rem-checkbox,
+		.rem:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar,  // Hide Merge Sign
+		.float-end {	                            // Hide Placeholder "Type / for Commands"
+			display: none;
+		}
+	}
