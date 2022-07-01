@@ -758,6 +758,9 @@
 	background-color: var(--highlight-color--purple-bg-dark);
 }
 
+#Popup #PopupContent {
+	align-self: center;
+}
 #Popup #PopupContent .node-top-level-in-portal {
 	z-index: 2;
 }

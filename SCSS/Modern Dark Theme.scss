@@ -996,6 +996,8 @@
 	// Preview Page
 		#Popup {
 			#PopupContent {
+				align-self: center;
+				
 				.node-top-level-in-portal {
 					z-index: 2;
 				}
