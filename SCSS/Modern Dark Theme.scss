@@ -524,6 +524,10 @@
 				}
 				@include highlight-text();
 			}
+	// float-end Counter
+		.float-end {
+			right: 10px;
+		}
 // Global Elements - Darkmode
 	.dark {
 	// Hightlight
@@ -2173,159 +2177,103 @@
 					background-color: var(--darkmode-background) !important;
 					
 					// DocumentTopRow
-						#DocumentTopRow {
-							#DropToOpenAsDocument {
-								> .group {
-									// Custom CSS Page Alert Area
-										.bg-mint-10 {
-											color: var(--darkmode-text);
-											background-color: #365148;
+						#DropToOpenAsDocument {
+							> .group {
+								// Custom CSS Page Alert Area
+									.bg-mint-10 {
+										color: var(--darkmode-text);
+										background-color: #365148;
 
-											> div.text-mint-80 {
-												color: unset;
-											}
+										> div.text-mint-80 {
+											color: unset;
 										}
-									// DocumentTitle
-										> #DocumentTitle {
-											.bold.highlight-color--red {
-												color: var(--red-text-dark);
-											}
+									}
+								// DocumentTitle
+									> #DocumentTitle {
+										@include highlight-text-dark();
+										@include highlight-color-notbold-dark();
 
-											.bold.highlight-color--orange {
-												color: var(--orange-text-dark);
-											}
-
-											.bold.highlight-color--yellow {
-												color: var(--yellow-text-dark);
-												text-shadow: unset;
-											}
-
-											.bold.highlight-color--green {
-												color: var(--green-text-dark);
-											}
-
-											.bold.highlight-color--blue {
-												color: var(--blue-text-dark);
-											}
-
-											.bold.highlight-color--purple {
-												color: var(--purple-text-dark);
-											}
-
-											> .document-title {
-												// Power-up icon
-													.rem-powerup-icon {
-														position: relative;
-														top: -7px;
-													}
-												> .rich-text-editor {
-													> .EditorContainer {
-														> [data-slate-node~="element"] {
-															> span {
-																.highlight-color--red {
-																	background-color: var(--highlight-color--red-bg-dark);
-																	color: var(--highlight-color--red-text-dark);
-																}
-																.highlight-color--orange {
-																	background-color: var(--highlight-color--orange-bg-dark);
-																	color: var(--highlight-color--orange-text-dark);
-																}
-																.highlight-color--yellow {
-																	background-color: var(--highlight-color--yellow-bg-dark);
-																	color: var(--highlight-color--yellow-text-dark);
-																}
-																.highlight-color--green {
-																	background-color: var(--highlight-color--green-bg-dark);
-																	color: var(--highlight-color--green-text-dark);
-																}
-																.highlight-color--blue {
-																	background-color: var(--highlight-color--blue-bg-dark);
-																	color: var(--highlight-color--blue-text-dark);
-																}
-																.highlight-color--purple {
-																	background-color: var(--highlight-color--purple-bg-dark);
-																	color: var(--highlight-color--purple-text-dark);
-																}
-															}
-														}
-													}
+										> .document-title {
+											// Power-up icon
+												.rem-powerup-icon {
+													position: relative;
+													top: -7px;
 												}
-											}
 										}
-									// Add Source, Show Tags
+									}
+								// Add Source, Show Tags
+									.hover\:text-gray-70:hover {
+										color: var(--darkmode-contrast);
+									}
+									div.pr-4 {
 										.hover\:text-gray-70:hover {
 											color: var(--darkmode-contrast);
 										}
-										div.pr-4 {
-											.hover\:text-gray-70:hover {
-												color: var(--darkmode-contrast);
+									}
+								// Sources & Tags
+									> div.grid {
+										// Sources & Tags Left Title
+											div.col-span-1 {
+												.text-gray-60 {
+													color: var(--darkmode-text);
+												}
+												.hover\:bg-gray-5:hover {
+													background-color: var(--darkmode-background-selected-darker);
+												}
 											}
-										}
-									// Sources & Tags
-										> div.grid {
-											// Sources & Tags Left Title
-												div.col-span-1 {
-													.text-gray-60 {
+										// Sources & Tags Right Contents
+											div.rounded-md {
+												// Tags Right Contents
+												> span {
+													.text-gray-80 {
 														color: var(--darkmode-text);
 													}
-													.hover\:bg-gray-5:hover {
-														background-color: var(--darkmode-background-selected-darker);
+													.bg-gray-10 {
+														background-color: var(--darkmode-background-selected);
+														
+														&:hover {
+															background-color: var(--darkmode-background-selected-darker);
+														}
 													}
 												}
-											// Sources & Tags Right Contents
-												div.rounded-md {
-													// Tags Right Contents
+												// Sources Right Contents
+												> span.pr-1 {
+													color: var(--darkmode-text);
+
 													> span {
-														.text-gray-80 {
-															color: var(--darkmode-text);
-														}
-														.bg-gray-10 {
+														> div {
+															border-style: unset;
 															background-color: var(--darkmode-background-selected);
-															
+
 															&:hover {
 																background-color: var(--darkmode-background-selected-darker);
 															}
 														}
 													}
-													// Sources Right Contents
-													> span.pr-1 {
-														color: var(--darkmode-text);
 
-														> span {
-															> div {
-																border-style: unset;
-																background-color: var(--darkmode-background-selected);
-
-																&:hover {
-																	background-color: var(--darkmode-background-selected-darker);
-																}
-															}
-														}
-
-														.text-gray-60 {
-															color: var(--darkmode-text);
-														}
-													}
-												}
-											// New Source, Merge
-												[contenteditable~="false"]:not(.pr-1 [contenteditable~="false"]) {
 													.text-gray-60 {
 														color: var(--darkmode-text);
-
-														&:hover {
-															color: var(--darkmode-contrast);
-															background-color: var(--darkmode-background-selected-darker);
-														}
-													}
-													.border-solid {
-														border-style: unset;
 													}
 												}
-										}
-									#AddNewDocumentButtonSmall {
-										&:hover {
-											color: var(--darkmode-contrast);
-										}
+											}
+										// New Source, Merge
+											[contenteditable~="false"]:not(.pr-1 [contenteditable~="false"]) {
+												.text-gray-60 {
+													color: var(--darkmode-text);
+
+													&:hover {
+														color: var(--darkmode-contrast);
+														background-color: var(--darkmode-background-selected-darker);
+													}
+												}
+												.border-solid {
+													border-style: unset;
+												}
+											}
+									}
+								#AddNewDocumentButtonSmall {
+									&:hover {
+										color: var(--darkmode-contrast);
 									}
 								}
 							}
