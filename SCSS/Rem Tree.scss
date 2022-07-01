@@ -69,6 +69,17 @@
                         }
                 }
         }
+        .animate-zoom-into-bullet:first-of-type {
+            div.tree-node--parent {
+                align-items: baseline !important;
+            }
+        }
+        .animate-zoom-into-bullet:last-of-type {
+            div.tree-node--parent {
+                align-items: flex-end;
+            }
+        }
+
     // Flexbox
         .animate-zoom-into-bullet {
             display: flex;

@@ -63,6 +63,12 @@
 [data-rem-container-tags~=treec] div.tree-node--parent [data-rem-tags~=treec] .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
 	opacity: 0.3;
 }
+[data-rem-container-tags~=tree] .animate-zoom-into-bullet:first-of-type div.tree-node--parent, [data-rem-container-tags~=treec] .animate-zoom-into-bullet:first-of-type div.tree-node--parent {
+	align-items: baseline !important;
+}
+[data-rem-container-tags~=tree] .animate-zoom-into-bullet:last-of-type div.tree-node--parent, [data-rem-container-tags~=treec] .animate-zoom-into-bullet:last-of-type div.tree-node--parent {
+	align-items: flex-end;
+}
 [data-rem-container-tags~=tree] .animate-zoom-into-bullet, [data-rem-container-tags~=treec] .animate-zoom-into-bullet {
 	display: flex;
 }
