@@ -23,6 +23,12 @@
 [data-rem-container-tags~=kanban2] .bg-white {
 	background-color: transparent;
 }
+[data-rem-container-tags~=kanban2] .tree-node--children {
+	margin-right: 1.2rem;
+}
+[data-rem-container-tags~=kanban2] .EditorContainer {
+	width: calc(100% + 1.2rem);
+}
 [data-rem-container-tags~=kanban2] > .tree-node--children {
 	display: flex;
 	border: 0;
@@ -97,14 +103,14 @@
 }
 [data-rem-container-tags~=kanban2] > .tree-node--children > .animate-zoom-into-bullet > div:first-child {
 	background-color: rgba(0, 0, 0, 0.09);
-	margin: 0;
+	margin-left: 0;
 	padding-left: 1rem;
 	border-bottom: 1px solid grey;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 }
 [data-rem-container-tags~=kanban2] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children {
-	margin: 0;
+	margin-left: 0;
 	padding: 0;
 	border: unset;
 }

@@ -27,6 +27,13 @@
     // Kanban Title
         // > .tree-node--parent {
         // }
+    // Important
+        .tree-node--children {
+            margin-right: 1.2rem;
+        }
+        .EditorContainer {
+            width: calc(100% + 1.2rem);
+        }
     // Kanban Contents
         > .tree-node--children {
             display: flex;
@@ -113,7 +120,7 @@
                     // Head
                         > div:first-child {
                             background-color: rgba(0, 0, 0, 0.09);
-                            margin: 0;
+                            margin-left: 0;
                             padding-left: 1rem;
                             border-bottom: 1px solid grey;
                             border-top-left-radius: 5px;
@@ -121,7 +128,7 @@
                         }
                     // Body
                         > .tree-node--children {
-                            margin: 0;
+                            margin-left: 0;
                             padding: 0;
                             border: unset;
                         }
