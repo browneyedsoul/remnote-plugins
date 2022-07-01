@@ -25,7 +25,7 @@
 	margin-right: 0;
 }
 [data-rem-container-tags~=tree] .rem-button__container, [data-rem-container-tags~=treec] .rem-button__container {
-	z-index: 1;
+	z-index: 3;
 }
 [data-rem-container-tags~=tree] div.tree-node--parent, [data-rem-container-tags~=treec] div.tree-node--parent {
 	display: flex;
