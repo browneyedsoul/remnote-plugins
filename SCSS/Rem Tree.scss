@@ -74,14 +74,14 @@
                 align-items: flex-start;
                 &::before {
                     content: "";
-                    width: 25px;
+                    width: 28px;
                     background-color: #FFF;
                     height: 100%;
                     position: absolute;
                     z-index: 2;
                     left: -1px;
                     border-top: 1px solid var(--line-color);
-                    margin-top: 20px;
+                    margin-top: 16px;
                 }
             }
         }
@@ -197,14 +197,14 @@
                 > div.tree-node--parent {
                     &::before {
                         content: "";
-                        width: 25px;
+                        width: 28px;
                         background-color: var(--darkmode-background, #2F3437);
                         height: 100%;
                         position: absolute;
                         z-index: 2;
                         left: -2px;
                         border-top: 1px solid var(--line-color-dark);
-                        margin-top: 20px;
+                        margin-top: 16px;
                     }
                 }
             }
