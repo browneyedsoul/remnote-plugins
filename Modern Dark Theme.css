@@ -1401,6 +1401,9 @@
 	border: 0.15rem solid #6686FF;
 	border-color: #6686FF;
 }
+.tile__document #document #hierarchy-editor .animate-zoom-into-bullet > .tree-node--children {
+	margin-right: 1.5rem;
+}
 
 .dark .tile__document {
 	background-color: var(--darkmode-background) !important;
@@ -2387,6 +2390,7 @@
 .dark [data-rem-container-tags~=aliases] > .tree-node--parent div[data-rem-tags~=aliases] .rem-reference-container .rem-reference {
 	color: var(--darkmode-contrast);
 }
+
 .navigation-bar {
 	background-color: var(--darkmode-background);
 }
