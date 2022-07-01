@@ -1102,10 +1102,21 @@
 	height: 1.5%;
 }
 #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable {
-	background-color: var(--darkmode-background);
+	background: var(--darkmode-background-sidebar);
+	border-color: var(--darkmode-background-sidebar);
 }
 #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable:hover {
 	background-color: var(--darkmode-background-selected-darker);
+}
+#content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div {
+	background: var(--darkmode-background-sidebar);
+}
+#content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div > div {
+	background: var(--darkmode-background-sidebar);
+}
+#content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div > div .icon-button {
+	color: #FFF;
+	opacity: 0.5;
 }
 
 .dark #content {

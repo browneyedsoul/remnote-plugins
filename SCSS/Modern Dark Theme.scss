@@ -1613,10 +1613,24 @@
 			.mosaic-tile {
 				.mosaic-window {
 					.mosaic-window-toolbar.draggable {
-						background-color: var(--darkmode-background);
+						background: var(--darkmode-background-sidebar);
+						border-color: var(--darkmode-background-sidebar);
 
 						&:hover {
 							background-color: var(--darkmode-background-selected-darker);
+						}
+
+						> div {
+							background: var(--darkmode-background-sidebar);;
+
+							> div {
+								background: var(--darkmode-background-sidebar);;
+
+								.icon-button {
+									color: #FFF;
+									opacity: .5;
+								}
+							}
 						}
 					}
 				}
