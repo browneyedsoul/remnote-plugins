@@ -1628,10 +1628,6 @@
 	color: var(--highlight-color--purple-text-dark);
 	background-color: var(--highlight-color--purple-bg-dark);
 }
-.dark .tile__document #document #DropToOpenAsDocument > .group > #DocumentTitle > .document-title .rem-powerup-icon {
-	position: relative;
-	top: -7px;
-}
 .dark .tile__document #document #DropToOpenAsDocument > .group .hover\:text-gray-70:hover {
 	color: var(--darkmode-contrast);
 }

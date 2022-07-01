@@ -2171,14 +2171,6 @@
 									> #DocumentTitle {
 										@include highlight-text-dark();
 										@include highlight-color-notbold-dark();
-
-										> .document-title {
-											// Power-up icon
-												.rem-powerup-icon {
-													position: relative;
-													top: -7px;
-												}
-										}
 									}
 								// Add Source, Show Tags
 									.hover\:text-gray-70:hover {
