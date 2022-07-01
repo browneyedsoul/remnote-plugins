@@ -193,6 +193,22 @@
                 background-color: #5A666A;
             }
 
+            .animate-zoom-into-bullet:last-of-type {
+                > div.tree-node--parent {
+                    &::before {
+                        content: "";
+                        width: 25px;
+                        background-color: var(--darkmode-background, #2F3437);
+                        height: 100%;
+                        position: absolute;
+                        z-index: 2;
+                        left: -2px;
+                        border-top: 1px solid var(--line-color-dark);
+                        margin-top: 20px;
+                    }
+                }
+            }
+
             div.tree-node--children {
                 .tree-node-container:only-child {
                     &::before {
