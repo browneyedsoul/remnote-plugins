@@ -34,7 +34,7 @@
                     > span {
                         > span {
                             span.linear-editor-item.whitespace-pre-wrap {
-                                &:not(:hover):not(.basic) {
+                                &:not(:hover) {
                                     background-color: white;
                                     filter: var(--hide-answer-filter);
                                     position: relative;
