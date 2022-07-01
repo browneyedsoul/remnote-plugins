@@ -2010,6 +2010,22 @@
 									}
 								}
 							}
+						// Document Bottom Backlink Area
+							.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
+								border: 1px solid var(--line-color);
+								border-radius: 4px;
+								padding-left: 1rem;
+								padding-right: 1rem;
+								margin-bottom: 0.5rem;
+
+								.rn-divider {
+									display: none;
+								}
+								.portal-tree-node-box--focused {
+									border: 0.15rem solid #6686FF;
+									border-color: #6686FF;
+								}
+							}
 					}
 			}
 	}
@@ -2382,6 +2398,33 @@
 											}
 										}
 									}
+							// Document Bottom Backlink Area
+								.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
+									border: 1px solid var(--line-color-dark);
+
+									.rn-clr-background-primary {
+										background: unset;
+									}
+									> div {
+										background-color: unset;
+									}
+									.portal-tree-node-box--focused {
+										border: 0.15rem solid #6686FF;
+										border-color: #6686FF;
+									}
+									.button {
+										background: var(--rn-clr-background-primary);
+									}
+								}
+								.rem-container--embedded-search-stub {
+									> div {
+										background-color: var(--darkmode-background);
+
+										> div {
+											background-color: var(--darkmode-background);			
+										}
+									}
+								}
 						}
 				}
 			.rem-container--focused {
