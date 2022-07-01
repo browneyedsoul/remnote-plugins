@@ -951,6 +951,9 @@
 	color: var(--darkmode-text);
 	background-color: var(--darkmode-background-selected);
 }
+.dark .Queue .spacedRepetition > div {
+	background-color: var(--darkmode-background);
+}
 .dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt, .dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon, .dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon .spaced-repetition__prompt__breadcrumbs, .dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document .file.text.small.icon .rem-bullet__document, .dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .rem-bullet__document, .dark .Queue .spacedRepetition > div .spacedRepetitionContent .spaced-repetition__prompt .spaced-repetition__prompt__breadcrumbs {
 	color: var(--darkmode-text) !important;
 	background-color: var(--darkmode-background) !important;
@@ -1018,6 +1021,55 @@
 	padding: 5px;
 	border-radius: 5px;
 	border-bottom: 2px solid var(--darkmode-contrast);
+}
+.dark .Queue .bold.highlight-color--red {
+	color: var(--red-text-dark);
+	background-color: unset;
+}
+.dark .Queue .bold.highlight-color--orange {
+	color: var(--orange-text-dark);
+	background-color: unset;
+}
+.dark .Queue .bold.highlight-color--yellow {
+	color: var(--yellow-text-dark);
+	background-color: unset;
+	text-shadow: unset;
+}
+.dark .Queue .bold.highlight-color--green {
+	color: var(--green-text-dark);
+	background-color: unset;
+}
+.dark .Queue .bold.highlight-color--blue {
+	color: var(--blue-text-dark);
+	background-color: unset;
+}
+.dark .Queue .bold.highlight-color--purple {
+	color: var(--purple-text-dark);
+	background-color: unset;
+}
+.dark .Queue .highlight-color--red:not(.bold.highlight-color--red) {
+	color: var(--highlight-color--red-text-dark);
+	background-color: var(--highlight-color--red-bg-dark);
+}
+.dark .Queue .highlight-color--orange:not(.bold.highlight-color--orange) {
+	color: var(--highlight-color--orange-text-dark);
+	background-color: var(--highlight-color--orange-bg-dark);
+}
+.dark .Queue .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+	color: var(--highlight-color--yellow-text-dark);
+	background-color: var(--highlight-color--yellow-bg-dark);
+}
+.dark .Queue .highlight-color--green:not(.bold.highlight-color--green) {
+	color: var(--highlight-color--green-text-dark);
+	background-color: var(--highlight-color--green-bg-dark);
+}
+.dark .Queue .highlight-color--blue:not(.bold.highlight-color--blue) {
+	color: var(--highlight-color--blue-text-dark);
+	background-color: var(--highlight-color--blue-bg-dark);
+}
+.dark .Queue .highlight-color--purple:not(.bold.highlight-color--purple) {
+	color: var(--highlight-color--purple-text-dark);
+	background-color: var(--highlight-color--purple-bg-dark);
 }
 
 .dark #card-table-page {
@@ -2443,13 +2495,26 @@
 	font-family: "Nunito Sans", sans-serif;
 	font-weight: 600;
 }
+#document-sidebar > div > div.p-2 .bg-gray-10 {
+	background-color: unset;
+	margin-right: 0;
+	border-radius: 4px;
+}
+#document-sidebar > div > div.p-2 .ml-auto {
+	border-radius: 4px;
+}
+#document-sidebar > div > div.p-2 .text-gray-60 {
+	color: unset;
+}
+#document-sidebar > div > div.p-2 .text-sm,
+#document-sidebar > div > div.p-2 .text-\[12px\] {
+	font-size: 1.1rem;
+}
 #document-sidebar > div > div.p-2 > a[href~="/notes"] > div > div:nth-of-type(1) {
 	color: var(--darkmode-contrast);
-	zoom: 125%;
 }
 #document-sidebar > div > div.p-2 > a[href~="/notes"] > div > div:nth-of-type(2) {
 	color: var(--darkmode-contrast);
-	zoom: 125%;
 }
 #document-sidebar > div > div.p-2 > a[href~="/notes"] > div:hover {
 	background-color: var(--darkmode-background-selected-darker);
@@ -2457,11 +2522,9 @@
 }
 #document-sidebar > div > div.p-2 > div.mb-1 > div:nth-of-type(1) {
 	color: var(--darkmode-contrast);
-	zoom: 125%;
 }
 #document-sidebar > div > div.p-2 > div.mb-1 > div:nth-of-type(2) {
 	color: var(--darkmode-contrast);
-	zoom: 125%;
 	overflow-x: hidden;
 	white-space: nowrap;
 }
@@ -2471,11 +2534,9 @@
 }
 #document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(1) {
 	color: var(--darkmode-contrast);
-	zoom: 125%;
 }
 #document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(2) {
 	color: var(--darkmode-contrast);
-	zoom: 125%;
 	overflow-x: hidden;
 	white-space: nowrap;
 }
@@ -2484,7 +2545,6 @@
 #document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(5) {
 	color: var(--darkmode-contrast);
 	background-color: var(--darkmode-background-selected-darker);
-	zoom: 125%;
 }
 #document-sidebar > div > div.p-2 > a[href="/flashcards"] > div:hover {
 	background-color: var(--darkmode-background-selected-darker);
@@ -2492,16 +2552,13 @@
 }
 #document-sidebar > div > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(1) {
 	color: var(--darkmode-contrast);
-	zoom: 125%;
 }
 #document-sidebar > div > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(2) {
 	color: var(--darkmode-contrast);
-	zoom: 125%;
 }
 #document-sidebar > div > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(3) {
 	color: var(--darkmode-contrast);
 	background-color: var(--darkmode-background-selected-darker);
-	zoom: 125%;
 }
 #document-sidebar > div > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div:hover {
 	background-color: var(--darkmode-background-selected-darker);

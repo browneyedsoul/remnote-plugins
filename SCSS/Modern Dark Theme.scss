@@ -1174,7 +1174,6 @@
 						background-color: var(--darkmode-background);
 					}
 				}
-			
 			// Flashcard
 				.Queue {
 					// Overall Style
@@ -1320,6 +1319,8 @@
 					// SRS Contents
 						.spacedRepetition {
 							> div {
+								background-color: var(--darkmode-background);
+
 								.spacedRepetitionContent {
 									.spaced-repetition__prompt, %prompt-style {
 										color: var(--darkmode-text) !important;
@@ -1427,6 +1428,9 @@
 							border-radius: 5px;
 							border-bottom: 2px solid var(--darkmode-contrast);
 						}
+					// Highlight
+						@include highlight-text-dark();
+						@include highlight-color-notbold-dark();
 				}
 			}
 // Card Browser Page
@@ -3531,14 +3535,29 @@
 				> div.p-2 {
 					font-family: 'Nunito Sans', sans-serif;
 					font-weight: 600;
-				
+					// Disable preset
+						.bg-gray-10 { 
+							background-color: unset;
+							margin-right: 0;
+							border-radius: 4px;
+						}
+						.ml-auto {
+							border-radius: 4px;
+						}
+						.text-gray-60 {
+							color: unset;
+						}
+						.text-sm,
+						.text-\[12px\] {
+							font-size: 1.1rem;
+						}
 					// All Notes
 						> a[href~="/notes"] {
 							> div {
 								// Icon
 								> div:nth-of-type(1) {
 									color: var(--darkmode-contrast);
-									zoom: 125%;
+									
 
 									> svg[data-icon~="all-notes"] {
 										// 
@@ -3547,7 +3566,7 @@
 								// All Notes Text
 								> div:nth-of-type(2) {
 									color: var(--darkmode-contrast);
-									zoom: 125%;
+									
 								}
 
 								&:hover {
@@ -3561,12 +3580,12 @@
 							// Icon
 								> div:nth-of-type(1) {
 									color: var(--darkmode-contrast);
-									zoom: 125%;
+									
 								}
 							// Today's Note Text
 								> div:nth-of-type(2) {
 									color: var(--darkmode-contrast);
-									zoom: 125%;
+									
 									overflow-x: hidden;
 									white-space: nowrap;
 								}
@@ -3581,12 +3600,10 @@
 								// Icon
 									> div:nth-of-type(1) {
 										color: var(--darkmode-contrast);
-										zoom: 125%;
 									}
 								// Flashcards Text
 									> div:nth-of-type(2) {
 										color: var(--darkmode-contrast);
-										zoom: 125%;
 										overflow-x: hidden;
 										white-space: nowrap;
 									}
@@ -3596,7 +3613,6 @@
 									> div:nth-of-type(5) {
 										color: var(--darkmode-contrast);
 										background-color: var(--darkmode-background-selected-darker);    
-										zoom: 125%;
 									}
 								&:hover {
 									background-color: var(--darkmode-background-selected-darker);
@@ -3610,18 +3626,18 @@
 								// Icon
 									> div:nth-of-type(1) {
 										color: var(--darkmode-contrast);
-										zoom: 125%;
+										
 									}
 								// Edit Later
 									> div:nth-of-type(2) {
 										color: var(--darkmode-contrast);
-										zoom: 125%;
+										
 									}
 								// Residue Number
 									> div:nth-of-type(3) {
 										color: var(--darkmode-contrast);
 										background-color: var(--darkmode-background-selected-darker);
-										zoom: 125%;
+										
 									}
 
 								&:hover {
