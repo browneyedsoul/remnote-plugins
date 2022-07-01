@@ -23,6 +23,9 @@
         .tree-node--children {
             margin-right: 1.2rem;
         }
+        .EditorContainer {
+            width: calc(100% + 1.2rem);
+        }
     // Kanban Contents
         > .tree-node--children {
             display: flex;
