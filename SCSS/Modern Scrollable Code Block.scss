@@ -8,7 +8,7 @@
         --inline-code-background-dark: #282C30;
     /* Code Block Line Number Style */
         --line-number-width: 40px;
-        --line-number-color: #C7CCCF;
+        --line-number-color: #B3B8BB;
         --line-number-color-dark: #BDBEBE;
         --line-number-background-color: #F7F6F3;
         --line-number-background-color-dark: #E6E6E6;
@@ -104,7 +104,7 @@
 
             // Codeblock Line Number
                 #code-node__inner {
-                    .codeLine {
+                    > div {
                         counter-increment: codeLineNumber;
 
                         &::before {
@@ -171,6 +171,11 @@
             }
         // Code Block
         #code-node {
+            background-color: var(--code-node-background-color-dark);
+
+            &::before {
+                background-color: var(--code-node-plain);
+            }
             // Code Style
                 &:not(.token.property):not(.token.function):not(.token.string):not(.token.builtin):not(.token.comment):not(.token.selector):not(.token.keyword):not(.token.number):not(.token.operator):not(.token.punctuation),
                 .token.plain {
@@ -211,9 +216,6 @@
                         }
                     }
                 }
-            &::before {
-                background-color: var(--code-node-background-color-dark);
-            }
             // Language Converter
                 #code-node__change-language-dropdown {
                     color: #D7DD95;

@@ -8,7 +8,7 @@
 	--inline-code-background-dark: #282C30;
 	/* Code Block Line Number Style */
 	--line-number-width: 40px;
-	--line-number-color: #C7CCCF;
+	--line-number-color: #B3B8BB;
 	--line-number-color-dark: #BDBEBE;
 	--line-number-background-color: #F7F6F3;
 	--line-number-background-color-dark: #E6E6E6;
@@ -99,10 +99,10 @@
 #code-node > span[data-linear-editor-editable-leaf~=true] {
 	white-space: pre;
 }
-#code-node #code-node__inner .codeLine {
+#code-node #code-node__inner > div {
 	counter-increment: codeLineNumber;
 }
-#code-node #code-node__inner .codeLine::before {
+#code-node #code-node__inner > div::before {
 	color: var(--line-number-color);
 	position: absolute;
 	left: 0px;
@@ -117,7 +117,7 @@
 	font-weight: 100;
 	opacity: 0.8;
 }
-#code-node #code-node__inner .codeLine:only-child::before {
+#code-node #code-node__inner > div:only-child::before {
 	visibility: hidden;
 }
 #code-node::before {
@@ -154,6 +154,12 @@
 .dark .quote {
 	color: var(--inline-code-color-dark);
 	background-color: var(--inline-code-background-dark);
+}
+.dark #code-node {
+	background-color: var(--code-node-background-color-dark);
+}
+.dark #code-node::before {
+	background-color: var(--code-node-plain);
 }
 .dark #code-node:not(.token.property):not(.token.function):not(.token.string):not(.token.builtin):not(.token.comment):not(.token.selector):not(.token.keyword):not(.token.number):not(.token.operator):not(.token.punctuation),
 .dark #code-node .token.plain {
@@ -243,9 +249,6 @@
 }
 .dark #code-node #code-node__inner .codeLine::before {
 	opacity: 0.2;
-}
-.dark #code-node::before {
-	background-color: var(--code-node-background-color-dark);
 }
 .dark #code-node #code-node__change-language-dropdown {
 	color: #D7DD95;
