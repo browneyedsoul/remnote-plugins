@@ -130,7 +130,7 @@
 			background-color:#D8E2F1;
 		}
 // Highlight Mixin
-	// highlight-text
+	// highlight-text-light
 		@mixin highlight-text {
 			.bold.highlight-color--red {
 				background-color: unset;
@@ -255,7 +255,28 @@
 				background-color: var(--highlight-color--purple);
 			}
 		}
-	// highlight-span
+	// highlight-dark
+		@mixin highlight-dark {
+			.highlight-color--red {
+				background-color: var(--highlight-color--red-dark);
+			}
+			.highlight-color--orange {
+				background-color: var(--highlight-color--orange-dark);
+			}
+			.highlight-color--yellow {
+				background-color: var(--highlight-color--yellow-dark);
+			}
+			.highlight-color--green {
+				background-color: var(--highlight-color--green-dark);
+			}
+			.highlight-color--blue {
+				background-color: var(--highlight-color--blue-dark);
+			}
+			.highlight-color--purple {
+				background-color: var(--highlight-color--purple-dark);
+			}
+		}
+	// highlight-span-light
 		@mixin highlight-span {
 			span.highlight-color--red {
 				background-color: var(--highlight-color--red);
@@ -546,26 +567,6 @@
 						font-weight: 550;
 					}
 				}
-			}
-		// Highlight Color
-			@include highlight();
-
-			.rem-text {
-				@include highlight-text();
-			}
-		// Document Title Highlight Style
-			#DocumentTitle {
-				.bold,
-				.bold.highlight-color--red,
-				.bold.highlight-color--orange,
-				.bold.highlight-color--yellow,
-				.bold.highlight-color--green,
-				.bold.highlight-color--blue,
-				.bold.highlight-color--purple {
-					background-color: unset !important;
-					font-weight: 700;
-				}
-				@include highlight-text();
 			}
 	// float-end Counter
 		.float-end {
@@ -1973,20 +1974,35 @@
 				margin-top: 70px;
 
 				// hierarchy-editor
-					div.mt-2\.5 {
-						margin-left: 2rem;
+					// Document Title
+						div.mt-2\.5 {
+							margin-left: 2rem;
 
-						> div {
-							margin-right: 0.7rem;
+							> div {
+								margin-right: 0.7rem;
+								
+								#DocumentTitle {
+									.bold,
+									.bold.highlight-color--red,
+									.bold.highlight-color--orange,
+									.bold.highlight-color--yellow,
+									.bold.highlight-color--green,
+									.bold.highlight-color--blue,
+									.bold.highlight-color--purple {
+										background-color: unset !important;
+										font-weight: 700;
+									}
+									@include highlight-text();
+								}
+							}
 						}
-					}
+					// Editor part
 					#hierarchy-editor {
 						margin-left: 2rem;
 						
 						> div {
 							margin-right: 0.7rem;
 						}
-
 						// Find / Filter / Replace - Ctrl(⌘) + F
 							#hierarchy-editor__ctrl-f {
 								border: 2px solid white;
@@ -2024,7 +2040,16 @@
 								}
 							}
 						// Highlight Color
-							.RichTextViewer {
+							[data-rem-tags~="highlight"] {
+								> div {
+									> span {
+										@include highlight();
+									}
+								}
+							}
+							@include highlight-span();
+							@include highlight-text();
+							.EditorContainer {
 								@include highlight-color-notbold-light;
 							}
 						// Rem Reference
@@ -2339,35 +2364,33 @@
 											}
 								}
 							// Highlight Color
-								.rem-text {
-									.EditorContainer {
-										@include highlight-span-text-dark();
-										@include highlight-text-dark();
-										.RichTextViewer {
-											@include highlight-color-notbold-dark();
+								[data-rem-tags~="highlight"] {
+									> div {
+										> span {
+											@include highlight-dark();
 										}
 									}
 								}
-								[data-slate-node="element"] {
-									[data-slate-node~="text"] {
-										@include highlight-color-notbold-dark();
-									}
+								@include highlight-span-text-dark();
+								@include highlight-text-dark();
+								.EditorContainer {
+									@include highlight-color-notbold-dark();
 								}
-								// Rem Reference
-									.rem-reference-container {
-										&:not(.hierarchy-editor__tag-bar .rem-reference-container) {
-											.rem-reference {
-												.RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
-													color: var(--reference-text-dark);
-													background-color: var(--reference-background-dark);
-													font-family: 'Roboto Mono', monospace !important;
-													padding: 0 2px;
-													margin: 0 2px;
-													border-radius: 4px;
-												}
+							// Rem Reference
+								.rem-reference-container {
+									&:not(.hierarchy-editor__tag-bar .rem-reference-container) {
+										.rem-reference {
+											.RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
+												color: var(--reference-text-dark);
+												background-color: var(--reference-background-dark);
+												font-family: 'Roboto Mono', monospace !important;
+												padding: 0 2px;
+												margin: 0 2px;
+												border-radius: 4px;
 											}
 										}
 									}
+								}
 							// Document Bottom Backlink Area
 								.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
 									border: 1px solid var(--line-color-dark);

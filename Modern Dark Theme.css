@@ -257,92 +257,6 @@
 	font-weight: 550;
 }
 
-.highlight-color--red {
-	background-color: var(--highlight-color--red);
-}
-
-.highlight-color--orange {
-	background-color: var(--highlight-color--orange);
-}
-
-.highlight-color--yellow {
-	background-color: var(--highlight-color--yellow);
-}
-
-.highlight-color--green {
-	background-color: var(--highlight-color--green);
-}
-
-.highlight-color--blue {
-	background-color: var(--highlight-color--blue);
-}
-
-.highlight-color--purple {
-	background-color: var(--highlight-color--purple);
-}
-
-.rem-text .bold.highlight-color--red {
-	background-color: unset;
-	color: var(--red-text);
-}
-.rem-text .bold.highlight-color--orange {
-	background-color: unset;
-	color: var(--orange-text);
-}
-.rem-text .bold.highlight-color--yellow {
-	background-color: unset;
-	color: var(--yellow-text);
-	text-shadow: var(--text-shadow-yellow);
-}
-.rem-text .bold.highlight-color--green {
-	background-color: unset;
-	color: var(--green-text);
-}
-.rem-text .bold.highlight-color--blue {
-	background-color: unset;
-	color: var(--blue-text);
-}
-.rem-text .bold.highlight-color--purple {
-	background-color: unset;
-	color: var(--purple-text);
-}
-
-#DocumentTitle .bold,
-#DocumentTitle .bold.highlight-color--red,
-#DocumentTitle .bold.highlight-color--orange,
-#DocumentTitle .bold.highlight-color--yellow,
-#DocumentTitle .bold.highlight-color--green,
-#DocumentTitle .bold.highlight-color--blue,
-#DocumentTitle .bold.highlight-color--purple {
-	background-color: unset !important;
-	font-weight: 700;
-}
-#DocumentTitle .bold.highlight-color--red {
-	background-color: unset;
-	color: var(--red-text);
-}
-#DocumentTitle .bold.highlight-color--orange {
-	background-color: unset;
-	color: var(--orange-text);
-}
-#DocumentTitle .bold.highlight-color--yellow {
-	background-color: unset;
-	color: var(--yellow-text);
-	text-shadow: var(--text-shadow-yellow);
-}
-#DocumentTitle .bold.highlight-color--green {
-	background-color: unset;
-	color: var(--green-text);
-}
-#DocumentTitle .bold.highlight-color--blue {
-	background-color: unset;
-	color: var(--blue-text);
-}
-#DocumentTitle .bold.highlight-color--purple {
-	background-color: unset;
-	color: var(--purple-text);
-}
-
 .float-end {
 	right: 10px;
 }
@@ -1377,6 +1291,41 @@
 .tile__document #document div.mt-2\.5 > div {
 	margin-right: 0.7rem;
 }
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .bold,
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--red,
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--orange,
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--yellow,
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--green,
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--blue,
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--purple {
+	background-color: unset !important;
+	font-weight: 700;
+}
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--red {
+	background-color: unset;
+	color: var(--red-text);
+}
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--orange {
+	background-color: unset;
+	color: var(--orange-text);
+}
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--yellow {
+	background-color: unset;
+	color: var(--yellow-text);
+	text-shadow: var(--text-shadow-yellow);
+}
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--green {
+	background-color: unset;
+	color: var(--green-text);
+}
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--blue {
+	background-color: unset;
+	color: var(--blue-text);
+}
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--purple {
+	background-color: unset;
+	color: var(--purple-text);
+}
 .tile__document #document #hierarchy-editor {
 	margin-left: 2rem;
 }
@@ -1395,22 +1344,83 @@
 .tile__document #document #hierarchy-editor .tree-node--parent .rem-container .hover\:bg-hover-bg {
 	background-color: unset;
 }
-.tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
+.tile__document #document #hierarchy-editor [data-rem-tags~=highlight] > div > span .highlight-color--red {
+	background-color: var(--highlight-color--red);
+}
+.tile__document #document #hierarchy-editor [data-rem-tags~=highlight] > div > span .highlight-color--orange {
+	background-color: var(--highlight-color--orange);
+}
+.tile__document #document #hierarchy-editor [data-rem-tags~=highlight] > div > span .highlight-color--yellow {
+	background-color: var(--highlight-color--yellow);
+}
+.tile__document #document #hierarchy-editor [data-rem-tags~=highlight] > div > span .highlight-color--green {
+	background-color: var(--highlight-color--green);
+}
+.tile__document #document #hierarchy-editor [data-rem-tags~=highlight] > div > span .highlight-color--blue {
+	background-color: var(--highlight-color--blue);
+}
+.tile__document #document #hierarchy-editor [data-rem-tags~=highlight] > div > span .highlight-color--purple {
+	background-color: var(--highlight-color--purple);
+}
+.tile__document #document #hierarchy-editor span.highlight-color--red {
+	background-color: var(--highlight-color--red);
+}
+.tile__document #document #hierarchy-editor span.highlight-color--orange {
+	background-color: var(--highlight-color--orange);
+}
+.tile__document #document #hierarchy-editor span.highlight-color--yellow {
+	background-color: var(--highlight-color--yellow);
+}
+.tile__document #document #hierarchy-editor span.highlight-color--green {
+	background-color: var(--highlight-color--green);
+}
+.tile__document #document #hierarchy-editor span.highlight-color--blue {
+	background-color: var(--highlight-color--blue);
+}
+.tile__document #document #hierarchy-editor span.highlight-color--purple {
+	background-color: var(--highlight-color--purple);
+}
+.tile__document #document #hierarchy-editor .bold.highlight-color--red {
+	background-color: unset;
+	color: var(--red-text);
+}
+.tile__document #document #hierarchy-editor .bold.highlight-color--orange {
+	background-color: unset;
+	color: var(--orange-text);
+}
+.tile__document #document #hierarchy-editor .bold.highlight-color--yellow {
+	background-color: unset;
+	color: var(--yellow-text);
+	text-shadow: var(--text-shadow-yellow);
+}
+.tile__document #document #hierarchy-editor .bold.highlight-color--green {
+	background-color: unset;
+	color: var(--green-text);
+}
+.tile__document #document #hierarchy-editor .bold.highlight-color--blue {
+	background-color: unset;
+	color: var(--blue-text);
+}
+.tile__document #document #hierarchy-editor .bold.highlight-color--purple {
+	background-color: unset;
+	color: var(--purple-text);
+}
+.tile__document #document #hierarchy-editor .EditorContainer .highlight-color--red:not(.bold.highlight-color--red) {
 	background-color: var(--highlight-color--red-light);
 }
-.tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--orange:not(.bold.highlight-color--orange) {
+.tile__document #document #hierarchy-editor .EditorContainer .highlight-color--orange:not(.bold.highlight-color--orange) {
 	background-color: var(--highlight-color--orange-light);
 }
-.tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+.tile__document #document #hierarchy-editor .EditorContainer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
 	background-color: var(--highlight-color--yellow-light);
 }
-.tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--green:not(.bold.highlight-color--green) {
+.tile__document #document #hierarchy-editor .EditorContainer .highlight-color--green:not(.bold.highlight-color--green) {
 	background-color: var(--highlight-color--green-light);
 }
-.tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--blue:not(.bold.highlight-color--blue) {
+.tile__document #document #hierarchy-editor .EditorContainer .highlight-color--blue:not(.bold.highlight-color--blue) {
 	background-color: var(--highlight-color--blue-light);
 }
-.tile__document #document #hierarchy-editor .RichTextViewer .highlight-color--purple:not(.bold.highlight-color--purple) {
+.tile__document #document #hierarchy-editor .EditorContainer .highlight-color--purple:not(.bold.highlight-color--purple) {
 	background-color: var(--highlight-color--purple-light);
 }
 .tile__document #document #hierarchy-editor .rem-reference-container:not(.hierarchy-editor__tag-bar .rem-reference-container) .rem-reference .RichTextViewer:not([data-rem-tags~=emoji] .RichTextViewer) {
@@ -1682,100 +1692,94 @@
 	border-color: #BBB !important;
 	background-color: #222 !important;
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--red {
+.dark .tile__document #document #hierarchy-editor [data-rem-tags~=highlight] > div > span .highlight-color--red {
+	background-color: var(--highlight-color--red-dark);
+}
+.dark .tile__document #document #hierarchy-editor [data-rem-tags~=highlight] > div > span .highlight-color--orange {
+	background-color: var(--highlight-color--orange-dark);
+}
+.dark .tile__document #document #hierarchy-editor [data-rem-tags~=highlight] > div > span .highlight-color--yellow {
+	background-color: var(--highlight-color--yellow-dark);
+}
+.dark .tile__document #document #hierarchy-editor [data-rem-tags~=highlight] > div > span .highlight-color--green {
+	background-color: var(--highlight-color--green-dark);
+}
+.dark .tile__document #document #hierarchy-editor [data-rem-tags~=highlight] > div > span .highlight-color--blue {
+	background-color: var(--highlight-color--blue-dark);
+}
+.dark .tile__document #document #hierarchy-editor [data-rem-tags~=highlight] > div > span .highlight-color--purple {
+	background-color: var(--highlight-color--purple-dark);
+}
+.dark .tile__document #document #hierarchy-editor span.highlight-color--red {
 	color: var(--highlight-color--red-text-dark);
 	background-color: var(--highlight-color--red-bg-dark);
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--orange {
+.dark .tile__document #document #hierarchy-editor span.highlight-color--orange {
 	color: var(--highlight-color--orange-text-dark);
 	background-color: var(--highlight-color--orange-bg-dark);
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--yellow {
+.dark .tile__document #document #hierarchy-editor span.highlight-color--yellow {
 	color: var(--highlight-color--yellow-text-dark);
 	background-color: var(--highlight-color--yellow-bg-dark);
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--green {
+.dark .tile__document #document #hierarchy-editor span.highlight-color--green {
 	color: var(--highlight-color--green-text-dark);
 	background-color: var(--highlight-color--green-bg-dark);
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--blue {
+.dark .tile__document #document #hierarchy-editor span.highlight-color--blue {
 	color: var(--highlight-color--blue-text-dark);
 	background-color: var(--highlight-color--blue-bg-dark);
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer span.highlight-color--purple {
+.dark .tile__document #document #hierarchy-editor span.highlight-color--purple {
 	color: var(--highlight-color--purple-text-dark);
 	background-color: var(--highlight-color--purple-bg-dark);
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--red {
+.dark .tile__document #document #hierarchy-editor .bold.highlight-color--red {
 	color: var(--red-text-dark);
 	background-color: unset;
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--orange {
+.dark .tile__document #document #hierarchy-editor .bold.highlight-color--orange {
 	color: var(--orange-text-dark);
 	background-color: unset;
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--yellow {
+.dark .tile__document #document #hierarchy-editor .bold.highlight-color--yellow {
 	color: var(--yellow-text-dark);
 	background-color: unset;
 	text-shadow: unset;
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--green {
+.dark .tile__document #document #hierarchy-editor .bold.highlight-color--green {
 	color: var(--green-text-dark);
 	background-color: unset;
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--blue {
+.dark .tile__document #document #hierarchy-editor .bold.highlight-color--blue {
 	color: var(--blue-text-dark);
 	background-color: unset;
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer .bold.highlight-color--purple {
+.dark .tile__document #document #hierarchy-editor .bold.highlight-color--purple {
 	color: var(--purple-text-dark);
 	background-color: unset;
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
+.dark .tile__document #document #hierarchy-editor .EditorContainer .highlight-color--red:not(.bold.highlight-color--red) {
 	color: var(--highlight-color--red-text-dark);
 	background-color: var(--highlight-color--red-bg-dark);
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer .RichTextViewer .highlight-color--orange:not(.bold.highlight-color--orange) {
+.dark .tile__document #document #hierarchy-editor .EditorContainer .highlight-color--orange:not(.bold.highlight-color--orange) {
 	color: var(--highlight-color--orange-text-dark);
 	background-color: var(--highlight-color--orange-bg-dark);
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer .RichTextViewer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+.dark .tile__document #document #hierarchy-editor .EditorContainer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
 	color: var(--highlight-color--yellow-text-dark);
 	background-color: var(--highlight-color--yellow-bg-dark);
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer .RichTextViewer .highlight-color--green:not(.bold.highlight-color--green) {
+.dark .tile__document #document #hierarchy-editor .EditorContainer .highlight-color--green:not(.bold.highlight-color--green) {
 	color: var(--highlight-color--green-text-dark);
 	background-color: var(--highlight-color--green-bg-dark);
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer .RichTextViewer .highlight-color--blue:not(.bold.highlight-color--blue) {
+.dark .tile__document #document #hierarchy-editor .EditorContainer .highlight-color--blue:not(.bold.highlight-color--blue) {
 	color: var(--highlight-color--blue-text-dark);
 	background-color: var(--highlight-color--blue-bg-dark);
 }
-.dark .tile__document #document #hierarchy-editor .rem-text .EditorContainer .RichTextViewer .highlight-color--purple:not(.bold.highlight-color--purple) {
-	color: var(--highlight-color--purple-text-dark);
-	background-color: var(--highlight-color--purple-bg-dark);
-}
-.dark .tile__document #document #hierarchy-editor [data-slate-node=element] [data-slate-node~=text] .highlight-color--red:not(.bold.highlight-color--red) {
-	color: var(--highlight-color--red-text-dark);
-	background-color: var(--highlight-color--red-bg-dark);
-}
-.dark .tile__document #document #hierarchy-editor [data-slate-node=element] [data-slate-node~=text] .highlight-color--orange:not(.bold.highlight-color--orange) {
-	color: var(--highlight-color--orange-text-dark);
-	background-color: var(--highlight-color--orange-bg-dark);
-}
-.dark .tile__document #document #hierarchy-editor [data-slate-node=element] [data-slate-node~=text] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
-	color: var(--highlight-color--yellow-text-dark);
-	background-color: var(--highlight-color--yellow-bg-dark);
-}
-.dark .tile__document #document #hierarchy-editor [data-slate-node=element] [data-slate-node~=text] .highlight-color--green:not(.bold.highlight-color--green) {
-	color: var(--highlight-color--green-text-dark);
-	background-color: var(--highlight-color--green-bg-dark);
-}
-.dark .tile__document #document #hierarchy-editor [data-slate-node=element] [data-slate-node~=text] .highlight-color--blue:not(.bold.highlight-color--blue) {
-	color: var(--highlight-color--blue-text-dark);
-	background-color: var(--highlight-color--blue-bg-dark);
-}
-.dark .tile__document #document #hierarchy-editor [data-slate-node=element] [data-slate-node~=text] .highlight-color--purple:not(.bold.highlight-color--purple) {
+.dark .tile__document #document #hierarchy-editor .EditorContainer .highlight-color--purple:not(.bold.highlight-color--purple) {
 	color: var(--highlight-color--purple-text-dark);
 	background-color: var(--highlight-color--purple-bg-dark);
 }
