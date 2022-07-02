@@ -128,9 +128,12 @@
 
  <div style="margin-left: 24px;">
     <h2>Use case</h2>
-    <img src ="Assets/RemThumbnail-1.gif">
     <img src ="Assets/RemThumbnail-2.png">
  </div>
+
+ - I'd recommend you to use Rem Thumbnail as a rem-reference, which image is saved somewhere else in the workspace neatly like this.
+ <img src ="Assets/RemThumbnail-1.png">
+
  </details>
 
  ---
