@@ -96,9 +96,6 @@
 	background-color: #C3C2BF;
 	border-radius: 3px;
 }
-#code-node > span[data-linear-editor-editable-leaf~=true] {
-	white-space: pre;
-}
 #code-node #code-node__inner .codeLine {
 	counter-increment: codeLineNumber;
 }
