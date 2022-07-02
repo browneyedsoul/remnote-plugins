@@ -86,7 +86,7 @@
 	--highlight-color--purple-light: #F5E9FF;
 	--highlight-color--purple-dark: #7C6191;
 	--highlight-color--purple-span-dark: #E6C9EB;
-	--highlight-color--purple-bg-dark: #43273F;
+	--highlight-color--purple-bg-dark: #4A2B45;
 	--highlight-color--purple-text-dark: #DDC3EB;
 	--highlight-color--purple-bar-dark: #E5C0EB;
 	--pdf-highlight-color-red: #FFE4DF;
@@ -2378,6 +2378,42 @@
 #document-sidebar .RichTextViewer {
 	font-family: "Nunito Sans", sans-serif;
 }
+#document-sidebar span.highlight-color--red:not(.bold.highlight-color--red) {
+	color: var(--highlight-color--red-text-dark);
+	background-color: var(--highlight-color--red-bg-dark);
+	border: 0.1rem solid var(--highlight-color--red-dark);
+	border-radius: 4px;
+}
+#document-sidebar span.highlight-color--orange:not(.bold.highlight-color--orange) {
+	color: var(--highlight-color--orange-text-dark);
+	background-color: var(--highlight-color--orange-bg-dark);
+	border: 0.1rem solid #795931;
+	border-radius: 4px;
+}
+#document-sidebar span.highlight-color--yellow:not(.bold.highlight-color--yellow) {
+	color: var(--highlight-color--yellow-text-dark);
+	background-color: var(--highlight-color--yellow-bg-dark);
+	border: 0.1rem solid #625F14;
+	border-radius: 4px;
+}
+#document-sidebar span.highlight-color--green:not(.bold.highlight-color--green) {
+	color: var(--highlight-color--green-text-dark);
+	background-color: var(--highlight-color--green-bg-dark);
+	border: 0.1rem solid #3D5D3D;
+	border-radius: 4px;
+}
+#document-sidebar span.highlight-color--blue:not(.bold.highlight-color--blue) {
+	color: var(--highlight-color--blue-text-dark);
+	background-color: var(--highlight-color--blue-bg-dark);
+	border: 0.1rem solid #3A6279;
+	border-radius: 4px;
+}
+#document-sidebar span.highlight-color--purple:not(.bold.highlight-color--purple) {
+	color: var(--highlight-color--purple-text-dark);
+	background-color: var(--highlight-color--purple-bg-dark);
+	border: 0.1rem solid #683E62;
+	border-radius: 4px;
+}
 #document-sidebar + div > div {
 	background-color: var(--darkmode-background);
 }
@@ -2537,24 +2573,6 @@
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--purple .RichTextViewer {
 	padding-left: 3px;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer span.highlight-color--red:not(.bold.highlight-color--red) {
-	background-color: var(--highlight-color--red-span-dark);
-}
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer span.highlight-color--orange:not(.bold.highlight-color--orange) {
-	background-color: var(--highlight-color--orange-span-dark);
-}
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer span.highlight-color--yellow:not(.bold.highlight-color--yellow) {
-	background-color: var(--highlight-color--yellow-span-dark);
-}
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer span.highlight-color--green:not(.bold.highlight-color--green) {
-	background-color: var(--highlight-color--green-span-dark);
-}
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer span.highlight-color--blue:not(.bold.highlight-color--blue) {
-	background-color: var(--highlight-color--blue-span-dark);
-}
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer span.highlight-color--purple:not(.bold.highlight-color--purple) {
-	background-color: var(--highlight-color--purple-span-dark);
-}
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.rn-clr-background-light-accent {
 	border: 2px solid var(--darkmode-contrast) !important;
 }
@@ -2578,6 +2596,9 @@
 #document-sidebar > div:nth-of-type(2) .rounded-md {
 	background-color: transparent;
 }
+#document-sidebar > div:nth-of-type(2) .rounded-md > div > div.overflow-hidden {
+	overflow: unset;
+}
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--red > div > div {
 	background-color: var(--highlight-color--red-bg-dark);
 	border-radius: 4px;
@@ -2590,7 +2611,7 @@
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--orange > div > div:not(.document-list-item__folder-icon) {
 	background-color: var(--highlight-color--orange-bg-dark);
 	border-radius: 4px;
-	border: 0.1rem solid var(--highlight-color--orange-dark);
+	border: 0.1rem solid #795931;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--orange .document-list-item__folder-icon {
 	background-color: transparent;
@@ -2599,7 +2620,7 @@
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--yellow > div > div {
 	background-color: var(--highlight-color--yellow-bg-dark);
 	border-radius: 4px;
-	border: 0.1rem solid var(--highlight-color--yellow-dark);
+	border: 0.1rem solid #625F14;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--yellow .document-list-item__folder-icon {
 	background-color: transparent;
@@ -2608,7 +2629,7 @@
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--green > div > div {
 	background-color: var(--highlight-color--green-bg-dark);
 	border-radius: 4px;
-	border: 0.1rem solid var(--highlight-color--green-dark);
+	border: 0.1rem solid #3D5D3D;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--green .document-list-item__folder-icon {
 	background-color: transparent;
@@ -2617,7 +2638,7 @@
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--blue > div > div {
 	background-color: var(--highlight-color--blue-bg-dark);
 	border-radius: 4px;
-	border: 0.1rem solid var(--highlight-color--blue-dark);
+	border: 0.1rem solid #2F4E61;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--blue .document-list-item__folder-icon {
 	background-color: transparent;
@@ -2626,7 +2647,7 @@
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--purple > div > div {
 	background-color: var(--highlight-color--purple-bg-dark);
 	border-radius: 4px;
-	border: 0.1rem solid var(--highlight-color--purple-dark);
+	border: 0.1rem solid #683E62;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--purple .document-list-item__folder-icon {
 	background-color: transparent;
@@ -2694,6 +2715,7 @@
 #document-sidebar > div:nth-of-type(2) .image-node .bg-white {
 	background-color: transparent;
 }
+
 .dark #document-sidebar {
 	background-color: var(--darkmode-background-sidebar);
 }
@@ -2718,24 +2740,6 @@
 }
 .dark #document-sidebar #document-sidebar__account-capsule span {
 	color: var(--darkmode-text);
-}
-.dark #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--red .p-2 .text-gray-60 {
-	background-color: var(--highlight-color--red-bar-dark);
-}
-.dark #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--orange .p-2 .text-gray-60 {
-	background-color: var(--highlight-color--orange-bar-dark);
-}
-.dark #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--yellow .p-2 .text-gray-60 {
-	background-color: var(--highlight-color--yellow-bar-dark);
-}
-.dark #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--green .p-2 .text-gray-60 {
-	background-color: var(--highlight-color--green-bar-dark);
-}
-.dark #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--blue .p-2 .text-gray-60 {
-	background-color: var(--highlight-color--blue-bar-dark);
-}
-.dark #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rounded-md.highlight-color--purple .p-2 .text-gray-60 {
-	background-color: var(--highlight-color--purple-bar-dark);
 }
 
 .document-sidebar--collapsed--vertical {

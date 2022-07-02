@@ -87,7 +87,7 @@
 	--highlight-color--purple-light: #F5E9FF;
 	--highlight-color--purple-dark: #7C6191;
 	--highlight-color--purple-span-dark: #E6C9EB;
-	--highlight-color--purple-bg-dark: #43273F;
+	--highlight-color--purple-bg-dark: #4A2B45;
 	--highlight-color--purple-text-dark: #DDC3EB;
 	--highlight-color--purple-bar-dark: #E5C0EB;
 	--pdf-highlight-color-red: #FFE4DF;
@@ -326,7 +326,51 @@
 
 			span.highlight-color--purple {
 				color: var(--highlight-color--purple-text-dark);
-				background-color: var(--highlight-color--purple-bg-dark);;
+				background-color: var(--highlight-color--purple-bg-dark);
+			}
+		}
+	// highlight-span-text-dark-sidebar
+		@mixin highlight-span-text-dark-sidebar {
+			span.highlight-color--red:not(.bold.highlight-color--red) {
+				color: var(--highlight-color--red-text-dark);
+				background-color: var(--highlight-color--red-bg-dark);
+				border: 0.1rem solid var(--highlight-color--red-dark);
+				border-radius: 4px;
+			}
+
+			span.highlight-color--orange:not(.bold.highlight-color--orange) {
+				color: var(--highlight-color--orange-text-dark);
+				background-color: var(--highlight-color--orange-bg-dark);
+				border: 0.1rem solid #795931;
+				border-radius: 4px;
+			}
+
+			span.highlight-color--yellow:not(.bold.highlight-color--yellow) {
+				color: var(--highlight-color--yellow-text-dark);
+				background-color: var(--highlight-color--yellow-bg-dark);
+				border: 0.1rem solid #625F14;
+				border-radius: 4px;
+			}
+
+			span.highlight-color--green:not(.bold.highlight-color--green) {
+				color: var(--highlight-color--green-text-dark);
+				background-color: var(--highlight-color--green-bg-dark);
+				border: 0.1rem solid #3D5D3D;
+				border-radius: 4px;
+			}
+
+			span.highlight-color--blue:not(.bold.highlight-color--blue) {
+				color: var(--highlight-color--blue-text-dark);
+				background-color: var(--highlight-color--blue-bg-dark);
+				border: 0.1rem solid #3A6279;
+				border-radius: 4px;
+			}
+
+			span.highlight-color--purple:not(.bold.highlight-color--purple) {
+				color: var(--highlight-color--purple-text-dark);
+				background-color: var(--highlight-color--purple-bg-dark);
+				border: 0.1rem solid #683E62;
+				border-radius: 4px;
 			}
 		}
 // Global Elements
@@ -3275,7 +3319,7 @@
 		}
 // Side Bar
 	#document-sidebar {
-	// Basic Style
+	// Global Style
         background-color: var(--darkmode-background);
 
 		// Thumbnail
@@ -3287,6 +3331,7 @@
 		.RichTextViewer {
 			font-family: 'Nunito Sans', sans-serif;
 		}
+		@include highlight-span-text-dark-sidebar();
 	// Remove white-coloured line
         + div {
             > div {
@@ -3528,7 +3573,6 @@
 							padding-left: 3px;
 						}
 					}
-					@include highlight-span-dark();
 					// Sidebar list item focused
 						> div.rounded-md.rn-clr-background-light-accent {
 							border: 2px solid var(--darkmode-contrast) !important;
@@ -3560,6 +3604,12 @@
 				.rounded-md {
 					background-color: transparent;
 
+					> div {
+						> div.overflow-hidden {
+							overflow: unset;
+						}
+					}
+
 					&.highlight-color--red {
 						> div {
 							> div {
@@ -3578,7 +3628,7 @@
 							> div:not(.document-list-item__folder-icon) {
 								background-color: var(--highlight-color--orange-bg-dark); 
 								border-radius: 4px;
-								border: 0.1rem solid var(--highlight-color--orange-dark);
+								border: 0.1rem solid #795931;
 							}
 						}
 						.document-list-item__folder-icon {
@@ -3591,7 +3641,7 @@
 							> div {
 								background-color: var(--highlight-color--yellow-bg-dark); 
 								border-radius: 4px;
-								border: 0.1rem solid var(--highlight-color--yellow-dark);
+								border: 0.1rem solid #625F14;
 							}
 						}
 						.document-list-item__folder-icon {
@@ -3604,7 +3654,7 @@
 							> div {
 								background-color: var(--highlight-color--green-bg-dark); 
 								border-radius: 4px;
-								border: 0.1rem solid var(--highlight-color--green-dark);
+								border: 0.1rem solid #3D5D3D;
 							}
 						}
 						.document-list-item__folder-icon {
@@ -3617,7 +3667,7 @@
 							> div {
 								background-color: var(--highlight-color--blue-bg-dark); 
 								border-radius: 4px;
-								border: 0.1rem solid var(--highlight-color--blue-dark);
+								border: 0.1rem solid #2F4E61;
 							}
 						}
 						.document-list-item__folder-icon {
@@ -3630,7 +3680,7 @@
 							> div {
 								background-color: var(--highlight-color--purple-bg-dark); 
 								border-radius: 4px;
-								border: 0.1rem solid var(--highlight-color--purple-dark);
+								border: 0.1rem solid #683E62;
 							}
 						}
 						.document-list-item__folder-icon {
@@ -3707,19 +3757,6 @@
 					}
 				}
         }
-    // Sidebar Bottom (Create Button)
-        > div:last-of-type {
-            > span {
-                > div {
-                    [data-icon~="add"] {
-                        // 
-                    }
-                    .font-semibold {
-                        // 
-                    }
-                }
-            }
-        }
 	}
 	// Dark mode
 		.dark {
@@ -3756,33 +3793,6 @@
 								color: var(--darkmode-text);
 							}
 						}
-				// Sidebar Middle (Item)
-					> div:nth-of-type(2) {
-						[data-type~="document_list_item"] {
-							span.block.group.cursor-pointer {
-								.rounded-md {
-									&.highlight-color--red .p-2 .text-gray-60 {
-										background-color: var(--highlight-color--red-bar-dark); 
-									}
-									&.highlight-color--orange .p-2 .text-gray-60 {
-										background-color: var(--highlight-color--orange-bar-dark); 
-									}
-									&.highlight-color--yellow .p-2 .text-gray-60 {
-										background-color: var(--highlight-color--yellow-bar-dark); 
-									}
-									&.highlight-color--green .p-2 .text-gray-60 {
-										background-color: var(--highlight-color--green-bar-dark); 
-									}
-									&.highlight-color--blue .p-2 .text-gray-60 {
-										background-color: var(--highlight-color--blue-bar-dark);
-									}
-									&.highlight-color--purple .p-2 .text-gray-60 {
-										background-color: var(--highlight-color--purple-bar-dark);
-									}
-								}
-							}
-						}
-					}
 			}
 		}
 // Side Bar - Collapsed
