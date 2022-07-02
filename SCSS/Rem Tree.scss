@@ -261,5 +261,6 @@
 .dark {
     [data-rem-container-tags~="treec"] {
         @extend %tree-dark;
+        border: 0.1rem solid var(--line-color-dark);
     }
 }

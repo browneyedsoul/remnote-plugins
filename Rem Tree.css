@@ -193,3 +193,7 @@
 	border: 0.1rem solid var(--line-color);
 	border-radius: 4px;
 }
+
+.dark [data-rem-container-tags~=treec] {
+	border: 0.1rem solid var(--line-color-dark);
+}
