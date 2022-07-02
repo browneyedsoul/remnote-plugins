@@ -154,6 +154,12 @@
                     .text-gray-20 {
                         display: none;
                     }
+                // Codenode
+                    #code-node {
+                        > span[data-linear-editor-editable-leaf~=true] {
+                            white-space: pre-wrap;
+                        }
+                    }
             // Remove Bullet
                 .perfect-circle__inner {
                     .rem-bullet__ring {
