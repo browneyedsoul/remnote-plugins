@@ -211,6 +211,9 @@
                         }
                     }
                 }
+            &::before {
+                background-color: var(--code-node-background-color-dark);
+            }
             // Language Converter
                 #code-node__change-language-dropdown {
                     color: #D7DD95;

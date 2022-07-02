@@ -244,6 +244,9 @@
 .dark #code-node #code-node__inner .codeLine::before {
 	opacity: 0.2;
 }
+.dark #code-node::before {
+	background-color: var(--code-node-background-color-dark);
+}
 .dark #code-node #code-node__change-language-dropdown {
 	color: #D7DD95;
 	border-radius: 5px;
