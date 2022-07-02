@@ -131,7 +131,7 @@
     <img src ="Assets/RemThumbnail-2.png">
  </div>
 
- - I'd recommend you to use Rem Thumbnail as a rem-reference, which image is saved somewhere else in the workspace neatly like this.
+ - I'd recommend you to use Rem Thumbnail with a rem-reference, which image is saved somewhere else in the workspace neatly like this.
  <img src ="Assets/RemThumbnail-1.png">
 
  </details>
@@ -153,8 +153,8 @@
  | macOS  | Keyboard Maestro, espanso  |
  | Linux  | AutoKey, espanso  |
 
- * The above list is just an example. You can find more apps online.
- * <a href="https://forum.remnote.io/t/remnote-templates-vs-text-templates/1203">And more details about it. - RemNote Forum</a>
+ - The above list is just an example. You can find more apps online.
+ - <a href="https://forum.remnote.io/t/remnote-templates-vs-text-templates/1203">And more details about it. - RemNote Forum</a>
 
  </details>
 
@@ -273,7 +273,7 @@
  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Blockquote.css");
  ```
  
- * Tag Name : `blockquote`
+ - Tag Name : `blockquote`
 
  <img src="Assets/Blockquote.png">
  
@@ -298,8 +298,8 @@
  <details>
     <summary>Available Left Column Width List</summary>
  
- * You have to select one of the widths listed below first to make a `Modern Table Low`
- * From 90px to 1200px, 30px interval
+ - You have to select one of the widths listed below first to make a `Modern Table Low`
+ - From 90px to 1200px, 30px interval
 
  | Table Left Column Width | Tag Name for making a table |
  | ------------- | ------------- |
@@ -334,7 +334,7 @@
  <details>
     <summary>Shrink Table width to fit inner contents</summary>
  
- * Tag Name : `fit`
+ - Tag Name : `fit`
 
  
  <img src="Assets/ModernTableRow-fit.gif">
@@ -343,8 +343,8 @@
  <details>
     <summary>Tuning individual column width</summary>
 
- * c1 = column 1
- * c2 = column 2
+ - c1 = column 1
+ - c2 = column 2
 
  | Available Column Width | Tag Name for width tuning - INDIVIDUAL column |
  | ------------- | ------------- |
@@ -359,7 +359,7 @@
  <details>
    <summary>Table Column Header Formatting</summary>
 
- * Tag Name : `th`
+ - Tag Name : `th`
 
  <img src="Assets/ModernTableRow-thformatting.png">
  </details>
@@ -608,7 +608,7 @@
  > Sometimes, some rems don't need to represent all the backlinks.
  And If a rem shows a bunch of the backlinks, it slows down the paging
 
- * Example of the some rems: `caption`, `bulletlist`, `table`, `table90`, `table120`, `w360` ...
+ - Example of the some rems: `caption`, `bulletlist`, `table`, `table90`, `table120`, `w360` ...
 
  ```css
  [data-rem-container-tags~="remover"] .animate-zoom-into-bullet #show-embedded-search-button,
