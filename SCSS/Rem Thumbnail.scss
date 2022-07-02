@@ -102,15 +102,19 @@
 			// }
 		// Prompt
 			.spaced-repetition__prompt {
-				.spaced-repetition__prompt__breadcrumbs {
-					@include thumbnail-set;
+				> .indented-rem {
+					> span {
+						.RichTextViewer {
+							display: flex;
+						}
+						@include thumbnail-set(3px);
+					}
 				}
 			
 				.indented-rem:not(.basic_card_rem_type + .indented-rem):not(.concept_rem_type + .indented-rem) {
 					.RichTextViewer {
 						> div {
-							display: inline-block;
-							margin-right: 3px;
+							@include thumbnail-set(3px);
 						}
 			
 						.react-transform-component {
