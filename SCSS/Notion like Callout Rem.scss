@@ -300,9 +300,6 @@
     [data-rem-container-tags~="calloutblue"],
     [data-rem-container-tags~="calloutpurple"] {
         .float-end {
-            position: relative;
-            left: 1.5rem;
-
             .hierarchy-editor__tag-bar {
                 span.hierarchy-editor__tag-bar__tag {
                     background-color: transparent !important;

@@ -234,16 +234,6 @@
 	margin-left: var(--callout-margin-left);
 }
 
-[data-rem-container-tags~=callout] .float-end,
-[data-rem-container-tags~=calloutred] .float-end,
-[data-rem-container-tags~=calloutorange] .float-end,
-[data-rem-container-tags~=calloutyellow] .float-end,
-[data-rem-container-tags~=calloutgreen] .float-end,
-[data-rem-container-tags~=calloutblue] .float-end,
-[data-rem-container-tags~=calloutpurple] .float-end {
-	position: relative;
-	left: 1.5rem;
-}
 [data-rem-container-tags~=callout] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
 [data-rem-container-tags~=calloutred] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
 [data-rem-container-tags~=calloutorange] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
