@@ -3815,6 +3815,14 @@
 		}
 	}
 // Context Menu
+	.rich-text-editor__search-results {
+		> div {
+			#search-results__list {
+				width: 480px;
+				position: inherit;
+			}
+		}
+	}
 	.dark {
 		// Slash Command Slash
 			.typeSlashCommand {

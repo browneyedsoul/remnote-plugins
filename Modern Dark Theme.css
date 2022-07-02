@@ -2755,6 +2755,11 @@
 	background-color: var(--darkmode-background-sidebar);
 }
 
+.rich-text-editor__search-results > div #search-results__list {
+	width: 480px;
+	position: inherit;
+}
+
 .dark .typeSlashCommand {
 	color: var(--darkmode-contrast);
 }
