@@ -60,6 +60,15 @@
 	margin-top: 5px;
 }
 
+[data-rem-container-tags~=source-list][data-rem-container-tags~=file] .rem-container--header-1 .rem-button__container,
+[data-rem-container-tags~=source-list][data-rem-container-tags~=file] .rem-container--header-2 .rem-button__container,
+[data-rem-container-tags~=source-list][data-rem-container-tags~=file] .rem-container--header-3 .rem-button__container {
+	margin-top: -3px;
+}
+[data-rem-container-tags~=source-list][data-rem-container-tags~=file] > div > div[data-rem-container-tags~=header] > div.tree-node--children {
+	margin-left: 1.5rem;
+}
+
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,

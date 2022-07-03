@@ -124,6 +124,22 @@
 	.rem-button__container {
 		margin-top: 5px;
 	}
+	[data-rem-container-tags~="source-list"][data-rem-container-tags~="file"] {
+		.rem-container--header-1,
+		.rem-container--header-2,
+		.rem-container--header-3 {
+			.rem-button__container {
+				margin-top: -3px;
+			}
+		}
+		> div {
+			> div[data-rem-container-tags~="header"] {
+				> div.tree-node--children {
+					margin-left: 1.5rem;
+				}
+			}
+		}
+	}
 // Parent Bullet (Toggle Triangle)
 	.rem-button__container {
 		.rem-bullet__container {
