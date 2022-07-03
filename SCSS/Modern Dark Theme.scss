@@ -4339,17 +4339,19 @@
 				#hierarchy-editor {
 					[data-rem-container-tags~="pdf-highlight"] {
 						@include highlight-color-notbold-light();
-
-						.rem-button__container {
-							
-						}
 					}
 				}
 			}
 		}
 		.dark {
-			[data-rem-container-tags~="pdf-highlight"] {
-				@include highlight-color-notbold-dark();
+			.tile__document {
+				#document {
+					#hierarchy-editor {
+						[data-rem-container-tags~="pdf-highlight"] {
+							@include highlight-color-notbold-dark();
+						}
+					}
+				}
 			}
 		}
 		// Rem Container

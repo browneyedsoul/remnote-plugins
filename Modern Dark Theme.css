@@ -3051,27 +3051,28 @@
 .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--purple:not(.bold.highlight-color--purple) {
 	background-color: var(--highlight-color--purple-light);
 }
-.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--red:not(.bold.highlight-color--red) {
+
+.dark .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--red:not(.bold.highlight-color--red) {
 	color: var(--highlight-color--red-text-dark);
 	background-color: var(--highlight-color--red-bg-dark);
 }
-.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--orange:not(.bold.highlight-color--orange) {
+.dark .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--orange:not(.bold.highlight-color--orange) {
 	color: var(--highlight-color--orange-text-dark);
 	background-color: var(--highlight-color--orange-bg-dark);
 }
-.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+.dark .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
 	color: var(--highlight-color--yellow-text-dark);
 	background-color: var(--highlight-color--yellow-bg-dark);
 }
-.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--green:not(.bold.highlight-color--green) {
+.dark .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--green:not(.bold.highlight-color--green) {
 	color: var(--highlight-color--green-text-dark);
 	background-color: var(--highlight-color--green-bg-dark);
 }
-.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--blue:not(.bold.highlight-color--blue) {
+.dark .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--blue:not(.bold.highlight-color--blue) {
 	color: var(--highlight-color--blue-text-dark);
 	background-color: var(--highlight-color--blue-bg-dark);
 }
-.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--purple:not(.bold.highlight-color--purple) {
+.dark .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--purple:not(.bold.highlight-color--purple) {
 	color: var(--highlight-color--purple-text-dark);
 	background-color: var(--highlight-color--purple-bg-dark);
 }
