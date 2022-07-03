@@ -711,6 +711,13 @@
 .queue-container .Queue .TransformComponent-module_container__3NwNd {
 	overflow: unset;
 }
+.queue-container .Queue .rem-bullet__document {
+	display: flex;
+	align-items: baseline;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+}
 .queue-container .Queue .rem-bullet__document .RichTextViewer .thumbnail--with-width {
 	height: 1em;
 	width: auto;

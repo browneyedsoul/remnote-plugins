@@ -1126,9 +1126,17 @@
 				}
 
 				// Question Title thumbnail
-					.rem-bullet__document .RichTextViewer .thumbnail--with-width {
-						height: 1em;
-						width: auto;
+					.rem-bullet__document {
+						display: flex;
+						align-items: baseline;
+						width: fit-content;
+
+						.RichTextViewer {
+							.thumbnail--with-width {
+								height: 1em;
+								width: auto;
+							}
+						}
 					}
 				// Question Span
 					.queue-text-large-font {
