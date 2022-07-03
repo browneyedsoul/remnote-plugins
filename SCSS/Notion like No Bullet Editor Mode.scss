@@ -93,56 +93,36 @@
 			}
 		}
 	}
-// Bullet Container Alignment
-	.tile__document {
-		#document {
-			#hierarchy-editor {
-				// Move Toggle Foldable Triangle Button and Six Dots Rem Mover to the Right Side
-					.rem-button__container {
-						.toggle-collapse-button,
-						.six-dot {
-							position: relative;
-							left: 24px;
-						}
-					}
-				// Header
-					.rem-container--header-1 {
-						.rem-button__container {
-							margin-top: 8px;
-						}
-					}
-					.rem-container--header-2 {
-						.rem-button__container {
-							margin-top: 7px;
-						}
-					}
-					.rem-container--header-3 {
-						.rem-button__container {
-							margin-top: 6px;
-						}
-					}
-					.rem-button__container {
-						margin-top: 5px;
-					}
-				// PDF
-					[data-rem-container-tags~="source-list"][data-rem-container-tags~="file"] {
-						.rem-container--header-1,
-						.rem-container--header-2,
-						.rem-container--header-3 {
-							.rem-button__container {
-								margin-top: -3px;
-							}
-						}
-						> div {
-							> div[data-rem-container-tags~="header"] {
-								> div.tree-node--children {
-									margin-left: 1.5rem;
-								}
-							}
-						}
-					}
+// Move Toggle Foldable Triangle Button and Six Dots Rem Mover to the Right Side
+	#hierarchy-editor {
+		.rem-container {
+			.rem-button__container {
+				.toggle-collapse-button,
+				.six-dot {
+					position: relative;
+					left: 24px;
+				}
 			}
 		}
+	}
+// Bullet Container Alignment
+	.rem-container--header-1 {
+		.rem-button__container {
+			margin-top: 8px;
+		}
+	}
+	.rem-container--header-2 {
+		.rem-button__container {
+			margin-top: 7px;
+		}
+	}
+	.rem-container--header-3 {
+		.rem-button__container {
+			margin-top: 6px;
+		}
+	}
+	.rem-button__container {
+		margin-top: 5px;
 	}
 // Parent Bullet (Toggle Triangle)
 	.rem-button__container {
@@ -339,12 +319,9 @@
 			transition-timing-function: linear;
 			position: relative;
 			background-color: transparent;
-			
-		}
-		[data-rem-tags~="highlight"] {
-			.tree-node--parent {
-				margin-left: 1.6rem;
-				width: calc(100% - 1.6rem);
+			left: var(--treenode-line-spacing);
+			[data-rem-container-tags~="highlight"] {
+				width: calc(100% - var(--treenode-line-spacing));
 			}
 		}
 
@@ -578,6 +555,24 @@
 						}
 					}
 				}
+				// Focused
+					// .rem-container--focused, %move {
+					// 	.rem-button__container {
+					// 		> span {
+					// 			> div.six-dot {
+					// 				left: 40px !important;
+					// 			}
+					// 		}
+							
+					// 		> span.toggle-collapse-button {
+					// 			left: 40px !important;
+					// 		}
+					// 	}
+					// }
+				// Move text
+					// .rem-text {
+					// 	margin-left: var(--treenode-line-spacing);
+					// }
 				// Tag Declutter
 					.hierarchy-editor__tag-bar__tag {
 						background-color: transparent !important;

@@ -38,30 +38,26 @@
 	display: none;
 }
 
-.tile__document #document #hierarchy-editor .rem-button__container .toggle-collapse-button,
-.tile__document #document #hierarchy-editor .rem-button__container .six-dot {
+#hierarchy-editor .rem-container .rem-button__container .toggle-collapse-button,
+#hierarchy-editor .rem-container .rem-button__container .six-dot {
 	position: relative;
 	left: 24px;
 }
-.tile__document #document #hierarchy-editor .rem-container--header-1 .rem-button__container {
+
+.rem-container--header-1 .rem-button__container {
 	margin-top: 8px;
 }
-.tile__document #document #hierarchy-editor .rem-container--header-2 .rem-button__container {
+
+.rem-container--header-2 .rem-button__container {
 	margin-top: 7px;
 }
-.tile__document #document #hierarchy-editor .rem-container--header-3 .rem-button__container {
+
+.rem-container--header-3 .rem-button__container {
 	margin-top: 6px;
 }
-.tile__document #document #hierarchy-editor .rem-button__container {
+
+.rem-button__container {
 	margin-top: 5px;
-}
-.tile__document #document #hierarchy-editor [data-rem-container-tags~=source-list][data-rem-container-tags~=file] .rem-container--header-1 .rem-button__container,
-.tile__document #document #hierarchy-editor [data-rem-container-tags~=source-list][data-rem-container-tags~=file] .rem-container--header-2 .rem-button__container,
-.tile__document #document #hierarchy-editor [data-rem-container-tags~=source-list][data-rem-container-tags~=file] .rem-container--header-3 .rem-button__container {
-	margin-top: -3px;
-}
-.tile__document #document #hierarchy-editor [data-rem-container-tags~=source-list][data-rem-container-tags~=file] > div > div[data-rem-container-tags~=header] > div.tree-node--children {
-	margin-left: 1.5rem;
 }
 
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children,
@@ -257,10 +253,10 @@
 	transition-timing-function: linear;
 	position: relative;
 	background-color: transparent;
+	left: var(--treenode-line-spacing);
 }
-#hierarchy-editor [data-rem-tags~=highlight] .tree-node--parent {
-	margin-left: 1.6rem;
-	width: calc(100% - 1.6rem);
+#hierarchy-editor .TreeNode [data-rem-container-tags~=highlight] {
+	width: calc(100% - var(--treenode-line-spacing));
 }
 #hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
 	left: 16px !important;
