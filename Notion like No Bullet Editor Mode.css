@@ -38,29 +38,26 @@
 	display: none;
 }
 
-#hierarchy-editor .rem-container .rem-button__container .toggle-collapse-button,
-#hierarchy-editor .rem-container .rem-button__container .six-dot {
+.tile__document #document #hierarchy-editor .rem-button__container .toggle-collapse-button,
+.tile__document #document #hierarchy-editor .rem-button__container .six-dot {
 	position: relative;
 	left: 24px;
 }
-
-.rem-container--header-1 .rem-button__container {
+.tile__document #document #hierarchy-editor .rem-container--header-1 .rem-button__container {
 	margin-top: 8px;
 }
-
-.rem-container--header-2 .rem-button__container {
+.tile__document #document #hierarchy-editor .rem-container--header-2 .rem-button__container {
 	margin-top: 7px;
 }
-
-.rem-container--header-3 .rem-button__container {
+.tile__document #document #hierarchy-editor .rem-container--header-3 .rem-button__container {
 	margin-top: 6px;
 }
-
-.rem-button__container {
+.tile__document #document #hierarchy-editor .rem-button__container {
 	margin-top: 5px;
 }
-
-.tile__document #document #hierarchy-editor [data-rem-container-tags~=source-list][data-rem-container-tags~=file] .rem-container--header-1 .rem-button__container {
+.tile__document #document #hierarchy-editor [data-rem-container-tags~=source-list][data-rem-container-tags~=file] .rem-container--header-1 .rem-button__container,
+.tile__document #document #hierarchy-editor [data-rem-container-tags~=source-list][data-rem-container-tags~=file] .rem-container--header-2 .rem-button__container,
+.tile__document #document #hierarchy-editor [data-rem-container-tags~=source-list][data-rem-container-tags~=file] .rem-container--header-3 .rem-button__container {
 	margin-top: -3px;
 }
 .tile__document #document #hierarchy-editor [data-rem-container-tags~=source-list][data-rem-container-tags~=file] > div > div[data-rem-container-tags~=header] > div.tree-node--children {
