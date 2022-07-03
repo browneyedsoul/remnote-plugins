@@ -258,6 +258,7 @@
 	position: relative;
 	background-color: transparent;
 	margin-left: 1.6rem;
+	width: calc(100% - 1.6rem);
 }
 #hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
 	left: 16px !important;
