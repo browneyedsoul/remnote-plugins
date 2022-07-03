@@ -4333,66 +4333,84 @@
 			}
 		}
 // PDF
-	.pdf-highlight__pin-editor-button {
-		color: #000;
-	}
-	.pdf-viewer {
-		.PdfHighlighter {
-			.pdfViewer {
-				.page {
-					.textLayer {
-						.PdfHighlighter__highlight-layer {
-							.pdf-viewer__highlight-container--red,
-							.pdf-viewer__highlight-container--orange,
-							.pdf-viewer__highlight-container--yellow,
-							.pdf-viewer__highlight-container--green,
-							.pdf-viewer__highlight-container--blue,
-							.pdf-viewer__highlight-container--purple {
-								.Highlight__part {
-									border-radius: 5px;
-								}
-							}
-							.pdf-viewer__highlight-container--red .Highlight__part {
-								background: var(--pdf-highlight-color-red);
-							}
-							.pdf-viewer__highlight-container--orange .Highlight__part {
-								background: var(--pdf-highlight-color-orange);
-							}
-							.pdf-viewer__highlight-container--yellow .Highlight__part {
-								background: var(--pdf-highlight-color-yellow);
-							}
-							.pdf-viewer__highlight-container--green .Highlight__part {
-								background: var(--pdf-highlight-color-green);
-							}
-							.pdf-viewer__highlight-container--blue .Highlight__part {
-								background: var(--pdf-highlight-color-blue);
-							}
-							.pdf-viewer__highlight-container--purple .Highlight__part {
-								background: var(--pdf-highlight-color-purple);
-							}
-						}
+	// Highlight Collection
+		.tile__document {
+			#document {
+				#hierarchy-editor {
+					[data-rem-container-tags~="pdf-highlight"] {
+						margin-right: 0.7rem;
+
+						@include highlight-color-notbold-light();
 					}
 				}
 			}
 		}
-	}
-	// Page Numbering & Color Formatting
-	[data-rem-container-tags~="file"] {
-		.rem-header--1,
-		.rem-header--2,
-		.rem-header--3 {
-			.EditorContainer {
-				// Page ***
-				font-size: 0.9rem;
-				opacity: .7;
+		.dark {
+			[data-rem-container-tags~="pdf-highlight"] {
+				@include highlight-color-notbold-dark();
 			}
 		}
-		@include highlight-color-notbold-light();
-	}
-	// Darkmode
-		.dark {
+		// Pin
+			.pdf-highlight__pin-editor-button {
+				color: #000;
+				margin-right: 0.7rem;
+			}
+			.dark {
+				.pdf-highlight__pin-editor-button {
+					color: var(--darkmode-text);
+				}
+			}
+		// Page Numbering & Color Formatting
 			[data-rem-container-tags~="file"] {
-				@include highlight-color-notbold-dark();
+				.rem-header--1,
+				.rem-header--2,
+				.rem-header--3 {
+					.EditorContainer {
+						// Page ***
+						font-size: 0.9rem;
+						opacity: .7;
+					}
+				}
+			}
+	// Viewer
+		.pdf-viewer {
+			.PdfHighlighter {
+				.pdfViewer {
+					.page {
+						.textLayer {
+							.PdfHighlighter__highlight-layer {
+								.pdf-viewer__highlight-container--red,
+								.pdf-viewer__highlight-container--orange,
+								.pdf-viewer__highlight-container--yellow,
+								.pdf-viewer__highlight-container--green,
+								.pdf-viewer__highlight-container--blue,
+								.pdf-viewer__highlight-container--purple {
+									.Highlight__part {
+										border-radius: 5px;
+									}
+								}
+								.pdf-viewer__highlight-container--red .Highlight__part {
+									background: var(--pdf-highlight-color-red);
+								}
+								.pdf-viewer__highlight-container--orange .Highlight__part {
+									background: var(--pdf-highlight-color-orange);
+								}
+								.pdf-viewer__highlight-container--yellow .Highlight__part {
+									background: var(--pdf-highlight-color-yellow);
+								}
+								.pdf-viewer__highlight-container--green .Highlight__part {
+									background: var(--pdf-highlight-color-green);
+								}
+								.pdf-viewer__highlight-container--blue .Highlight__part {
+									background: var(--pdf-highlight-color-blue);
+								}
+								.pdf-viewer__highlight-container--purple .Highlight__part {
+									background: var(--pdf-highlight-color-purple);
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 // Error Message

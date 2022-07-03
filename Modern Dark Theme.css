@@ -3033,8 +3033,67 @@
 	background-color: #636368;
 }
 
+.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] {
+	margin-right: 0.7rem;
+}
+.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--red:not(.bold.highlight-color--red) {
+	background-color: var(--highlight-color--red-light);
+}
+.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--orange:not(.bold.highlight-color--orange) {
+	background-color: var(--highlight-color--orange-light);
+}
+.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+	background-color: var(--highlight-color--yellow-light);
+}
+.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--green:not(.bold.highlight-color--green) {
+	background-color: var(--highlight-color--green-light);
+}
+.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--blue:not(.bold.highlight-color--blue) {
+	background-color: var(--highlight-color--blue-light);
+}
+.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--purple:not(.bold.highlight-color--purple) {
+	background-color: var(--highlight-color--purple-light);
+}
+
+.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--red:not(.bold.highlight-color--red) {
+	color: var(--highlight-color--red-text-dark);
+	background-color: var(--highlight-color--red-bg-dark);
+}
+.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--orange:not(.bold.highlight-color--orange) {
+	color: var(--highlight-color--orange-text-dark);
+	background-color: var(--highlight-color--orange-bg-dark);
+}
+.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+	color: var(--highlight-color--yellow-text-dark);
+	background-color: var(--highlight-color--yellow-bg-dark);
+}
+.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--green:not(.bold.highlight-color--green) {
+	color: var(--highlight-color--green-text-dark);
+	background-color: var(--highlight-color--green-bg-dark);
+}
+.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--blue:not(.bold.highlight-color--blue) {
+	color: var(--highlight-color--blue-text-dark);
+	background-color: var(--highlight-color--blue-bg-dark);
+}
+.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--purple:not(.bold.highlight-color--purple) {
+	color: var(--highlight-color--purple-text-dark);
+	background-color: var(--highlight-color--purple-bg-dark);
+}
+
 .pdf-highlight__pin-editor-button {
 	color: #000;
+	margin-right: 0.7rem;
+}
+
+.dark .pdf-highlight__pin-editor-button {
+	color: var(--darkmode-text);
+}
+
+[data-rem-container-tags~=file] .rem-header--1 .EditorContainer,
+[data-rem-container-tags~=file] .rem-header--2 .EditorContainer,
+[data-rem-container-tags~=file] .rem-header--3 .EditorContainer {
+	font-size: 0.9rem;
+	opacity: 0.7;
 }
 
 .pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--red .Highlight__part,
@@ -3062,56 +3121,6 @@
 }
 .pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--purple .Highlight__part {
 	background: var(--pdf-highlight-color-purple);
-}
-
-[data-rem-container-tags~=file] .rem-header--1 .EditorContainer,
-[data-rem-container-tags~=file] .rem-header--2 .EditorContainer,
-[data-rem-container-tags~=file] .rem-header--3 .EditorContainer {
-	font-size: 0.9rem;
-	opacity: 0.7;
-}
-[data-rem-container-tags~=file] .highlight-color--red:not(.bold.highlight-color--red) {
-	background-color: var(--highlight-color--red-light);
-}
-[data-rem-container-tags~=file] .highlight-color--orange:not(.bold.highlight-color--orange) {
-	background-color: var(--highlight-color--orange-light);
-}
-[data-rem-container-tags~=file] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
-	background-color: var(--highlight-color--yellow-light);
-}
-[data-rem-container-tags~=file] .highlight-color--green:not(.bold.highlight-color--green) {
-	background-color: var(--highlight-color--green-light);
-}
-[data-rem-container-tags~=file] .highlight-color--blue:not(.bold.highlight-color--blue) {
-	background-color: var(--highlight-color--blue-light);
-}
-[data-rem-container-tags~=file] .highlight-color--purple:not(.bold.highlight-color--purple) {
-	background-color: var(--highlight-color--purple-light);
-}
-
-.dark [data-rem-container-tags~=file] .highlight-color--red:not(.bold.highlight-color--red) {
-	color: var(--highlight-color--red-text-dark);
-	background-color: var(--highlight-color--red-bg-dark);
-}
-.dark [data-rem-container-tags~=file] .highlight-color--orange:not(.bold.highlight-color--orange) {
-	color: var(--highlight-color--orange-text-dark);
-	background-color: var(--highlight-color--orange-bg-dark);
-}
-.dark [data-rem-container-tags~=file] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
-	color: var(--highlight-color--yellow-text-dark);
-	background-color: var(--highlight-color--yellow-bg-dark);
-}
-.dark [data-rem-container-tags~=file] .highlight-color--green:not(.bold.highlight-color--green) {
-	color: var(--highlight-color--green-text-dark);
-	background-color: var(--highlight-color--green-bg-dark);
-}
-.dark [data-rem-container-tags~=file] .highlight-color--blue:not(.bold.highlight-color--blue) {
-	color: var(--highlight-color--blue-text-dark);
-	background-color: var(--highlight-color--blue-bg-dark);
-}
-.dark [data-rem-container-tags~=file] .highlight-color--purple:not(.bold.highlight-color--purple) {
-	color: var(--highlight-color--purple-text-dark);
-	background-color: var(--highlight-color--purple-bg-dark);
 }
 
 .dark #ErrorBoundary {
