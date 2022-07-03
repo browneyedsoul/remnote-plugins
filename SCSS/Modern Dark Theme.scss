@@ -4338,9 +4338,11 @@
 			#document {
 				#hierarchy-editor {
 					[data-rem-container-tags~="pdf-highlight"] {
-						margin-right: 0.7rem;
-
 						@include highlight-color-notbold-light();
+
+						.rem-button__container {
+							
+						}
 					}
 				}
 			}
@@ -4350,6 +4352,8 @@
 				@include highlight-color-notbold-dark();
 			}
 		}
+		// Rem Container
+
 		// Pin
 			.pdf-highlight__pin-editor-button {
 				color: #000;

@@ -3033,9 +3033,6 @@
 	background-color: #636368;
 }
 
-.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] {
-	margin-right: 0.7rem;
-}
 .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--red:not(.bold.highlight-color--red) {
 	background-color: var(--highlight-color--red-light);
 }
@@ -3054,7 +3051,6 @@
 .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--purple:not(.bold.highlight-color--purple) {
 	background-color: var(--highlight-color--purple-light);
 }
-
 .dark [data-rem-container-tags~=pdf-highlight] .highlight-color--red:not(.bold.highlight-color--red) {
 	color: var(--highlight-color--red-text-dark);
 	background-color: var(--highlight-color--red-bg-dark);
