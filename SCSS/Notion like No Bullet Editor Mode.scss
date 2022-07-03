@@ -124,6 +124,26 @@
 	.rem-button__container {
 		margin-top: 5px;
 	}
+	.tile__document {
+		#document {
+			#hierarchy-editor {
+				[data-rem-container-tags~="source-list"][data-rem-container-tags~="file"] {
+					.rem-container--header-1 {
+						.rem-button__container {
+							margin-top: -3px;
+						}
+					}
+					> div {
+						> div[data-rem-container-tags~="header"] {
+							> div.tree-node--children {
+								margin-left: 1.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 // Parent Bullet (Toggle Triangle)
 	.rem-button__container {
 		.rem-bullet__container {
@@ -265,22 +285,6 @@
 				}
 			}
 		}
-		// Descriptor-Rem-Type Bullet
-			// .rem-container--descriptor-rem-type {
-			// 	.rem-bullet {
-			// 		width: 14px !important;
-			// 		height: 12px !important;
-			// 		position: relative !important;
-			// 		top: 2px !important;
-			// 		left: -1px !important;
-			// 		-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
-			// 				mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
-			// 		-webkit-mask-size: contain;
-			// 				mask-size: contain;
-			// 		-webkit-mask-repeat: no-repeat;
-			// 				mask-repeat: no-repeat;
-			// 	}
-			// }
 // Forder & File Style
 	.rem-button__container {
 		.rem-bullet__container {
@@ -335,6 +339,7 @@
 			transition-timing-function: linear;
 			position: relative;
 			background-color: transparent;
+			margin-left: 1.6rem;
 		}
 
 		// Sticky Top bar
@@ -567,24 +572,6 @@
 						}
 					}
 				}
-				// Focused
-					// .rem-container--focused, %move {
-					// 	.rem-button__container {
-					// 		> span {
-					// 			> div.six-dot {
-					// 				left: 40px !important;
-					// 			}
-					// 		}
-							
-					// 		> span.toggle-collapse-button {
-					// 			left: 40px !important;
-					// 		}
-					// 	}
-					// }
-				// Move text
-					// .rem-text {
-					// 	margin-left: var(--treenode-line-spacing);
-					// }
 				// Tag Declutter
 					.hierarchy-editor__tag-bar__tag {
 						background-color: transparent !important;
