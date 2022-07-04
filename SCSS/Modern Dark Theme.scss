@@ -129,6 +129,12 @@
 		.hidden-selection {
 			background-color:#D8E2F1;
 		}
+	// glitch
+		.rem-container {
+			.EditorContainer {
+				width: unset;
+			}
+		}
 // Highlight Mixin
 	// highlight-text-light
 		@mixin highlight-text {
