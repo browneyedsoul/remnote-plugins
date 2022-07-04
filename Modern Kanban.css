@@ -67,12 +67,13 @@
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .portal-tree-node-box {
 	background-color: var(--kanban-bgcolor-input);
-	width: calc(100% - 2.7rem);
+	width: calc(100% - 3.6rem);
 	margin: 5px;
 	border-radius: 3px !important;
 	box-shadow: 0 0 1px 0 !important;
 	margin-left: 1.2rem !important;
 	margin-right: 0.3rem !important;
+	padding-right: 1rem;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(1) {
 	background-color: var(--kanban-bgcolor);
