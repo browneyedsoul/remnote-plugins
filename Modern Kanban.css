@@ -16,12 +16,6 @@
 #hierarchy-editor [data-rem-container-tags~=kanban] .bg-white {
 	background-color: transparent;
 }
-#hierarchy-editor [data-rem-container-tags~=kanban] .tree-node--children {
-	margin-right: 1.2rem;
-}
-#hierarchy-editor [data-rem-container-tags~=kanban] .EditorContainer {
-	width: calc(100% + 1.2rem);
-}
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children {
 	display: flex;
 	border: 0;
