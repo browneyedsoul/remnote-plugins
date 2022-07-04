@@ -196,6 +196,8 @@
 <!-- Active Recall -->
  <details>
     <summary>Active Recall</summary>
+
+ - Tag Name : `active recall`  (NOT the `active-recall`)
  <details>
     <summary>Ver.1 - Reveal all the Answer-blocks in a List card Answer at the same time</summary>
  
