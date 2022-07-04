@@ -335,10 +335,7 @@
 			transition-timing-function: linear;
 			position: relative;
 			background-color: transparent;
-			left: var(--treenode-line-spacing);
-			[data-rem-container-tags~="highlight"] {
-				width: calc(100% - var(--treenode-line-spacing));
-			}
+			margin-left: 1.6rem;
 		}
 
 		// Sticky Top bar
