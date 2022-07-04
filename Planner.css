@@ -91,6 +91,7 @@
 #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet > .TreeNode {
 	width: calc(100% - 0px);
 	left: 0px !important;
+	margin-left: 11.5px;
 }
 #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet {
 	position: relative;
