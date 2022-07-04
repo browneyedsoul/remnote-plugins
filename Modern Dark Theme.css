@@ -1300,6 +1300,9 @@
 .tile__document #document div.mt-2\.5 {
 	margin-left: 2rem;
 }
+.tile__document #document div.mt-2\.5 > div {
+	margin-right: 0.7rem;
+}
 .tile__document #document div.mt-2\.5 > div #DocumentTitle .bold,
 .tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--red,
 .tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--orange,
