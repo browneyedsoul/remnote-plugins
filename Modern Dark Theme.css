@@ -127,13 +127,6 @@
 	background-color: #D8E2F1;
 }
 
-.inline-block .group.inline-block.align-text-top {
-	width: 100% !important;
-	height: 100% !important;
-	max-width: unset !important;
-	max-height: unset !important;
-}
-
 #hierarchy-editor .rem-text.rem-header--1 {
 	font-size: var(--font-size-header-1);
 }
