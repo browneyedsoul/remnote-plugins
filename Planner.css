@@ -105,6 +105,10 @@
 	margin-left: unset;
 	padding-left: unset;
 }
+#hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div > div.tree-node--parent .rem-text::after {
+	margin-right: 0.5rem;
+	opacity: 0.3;
+}
 #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(1) > div.tree-node--parent .rem-text::after {
 	content: "Mon";
 	white-space: nowrap;

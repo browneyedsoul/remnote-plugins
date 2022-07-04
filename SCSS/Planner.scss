@@ -158,6 +158,17 @@
                                         margin-left: unset;
                                         padding-left: unset;
                                     }
+                                // Global
+                                    > div {
+                                        > div.tree-node--parent  {
+                                            .rem-text {
+                                                &::after {
+                                                    margin-right: 0.5rem;
+                                                    opacity: .3;
+                                                }
+                                            }
+                                        }
+                                    }
                                 // Monday
                                     > div:nth-of-type(1) {
                                         > div.tree-node--parent  {
