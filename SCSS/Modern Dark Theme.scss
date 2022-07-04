@@ -1121,10 +1121,17 @@
 	// Queue Page
 		.queue-container {
 			.Queue {
-				.TransformComponent-module_container__3NwNd {
-					overflow: unset;
-				}
-
+				// Image
+					.react-transform-component {
+						.react-transform-element {
+							.inline-block {
+								.group.inline-block.align-text-top {
+									width: 100% !important;
+									height: 100% !important;
+								}
+							}
+						}
+					}
 				// Question Title thumbnail
 					.rem-bullet__document {
 						display: flex;
@@ -1987,8 +1994,6 @@
 							margin-left: 2rem;
 
 							> div {
-								margin-right: 0.7rem;
-								
 								#DocumentTitle {
 									.bold,
 									.bold.highlight-color--red,

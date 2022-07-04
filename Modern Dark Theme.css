@@ -708,8 +708,9 @@
 	color: var(--darkmode-text);
 }
 
-.queue-container .Queue .TransformComponent-module_container__3NwNd {
-	overflow: unset;
+.queue-container .Queue .react-transform-component .react-transform-element .inline-block .group.inline-block.align-text-top {
+	width: 100% !important;
+	height: 100% !important;
 }
 .queue-container .Queue .rem-bullet__document {
 	display: flex;
@@ -1294,9 +1295,6 @@
 }
 .tile__document #document div.mt-2\.5 {
 	margin-left: 2rem;
-}
-.tile__document #document div.mt-2\.5 > div {
-	margin-right: 0.7rem;
 }
 .tile__document #document div.mt-2\.5 > div #DocumentTitle .bold,
 .tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--red,
