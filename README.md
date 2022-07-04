@@ -293,15 +293,15 @@
 
  <img src="Assets/ModernTableRow.png">
  
- ## Table Tuning by tagging to title bar
+ ## How to make Modern Table Row
 
- <details>
-    <summary>Available Left Column Width List</summary>
  
  - You have to select one of the widths listed below first to make a `Modern Table Low`
  - From 90px to 1200px, 30px interval
 
- | Table Left Column Width | Tag Name for making a table |
+ - Available Left Column Width List
+
+ | Table Left Column Width | Available Tag Name |
  | ------------- | ------------- |
  | 90px | `Table90` |
  | 120px | `Table120` |
@@ -311,10 +311,12 @@
  | ...   |   ...    |
  | 1170px | `Table1170` |
  | 1200px | `Table1200` |
- </details>
+ 
+
+ ## Table Tuning by Tagging to the Title Bar
 
  <details>
-    <summary>Global Column Width Tuning by Tagging to the Title bar</summary>
+    <summary>Tuning Global Column Width</summary>
 
  | Table Left Column Width | Tag Name for global width tuning |
  | ------------- | ------------- |
@@ -332,19 +334,11 @@
  </details>
 
  <details>
-    <summary>Shrink Table width to fit inner contents</summary>
- 
- - Tag Name : `fit`
+    <summary>Tuning Individual Column Width</summary>
 
- 
- <img src="Assets/ModernTableRow-fit.gif">
- </details>
-
- <details>
-    <summary>Tuning individual column width</summary>
-
- - c1 = column 1
- - c2 = column 2
+ - 'c1' means column 1
+ - 'c2' means column 2
+ - ...
 
  | Available Column Width | Tag Name for width tuning - INDIVIDUAL column |
  | ------------- | ------------- |
@@ -357,6 +351,17 @@
  </details>
 
  <details>
+    <summary>Table width shrinking to fit with inner contents</summary>
+ 
+ - Tag Name : `fit`
+
+ 
+ <img src="Assets/ModernTableRow-fit.gif">
+ </details>
+
+ 
+
+ <details>
    <summary>Table Column Header Formatting</summary>
 
  - Tag Name : `th`
@@ -364,7 +369,7 @@
  <img src="Assets/ModernTableRow-thformatting.png">
  </details>
 
- ## Workflow
+ ## Use case
 
  <details>
     <summary>Copy a Table from any sources</summary>
@@ -378,11 +383,15 @@
 
 
 
- ## Features
+ ## Hacky methods
 
  <details>
-    <summary>Hacky method for Row table cell to use as a Column Table cell</summary>
-    <img src="Assets/ModernTableRow-LineBreaker.gif">
+    <summary>Turn a Row table cell into a Column Table cell</summary>
+
+ - Tag Nmae : `lb`
+
+ <img src="Assets/ModernTableRow-LineBreaker.gif">
+    
  </details>
  <details>
     <summary>Convert Spreadsheet Table into RemNote Format Workaround</summary>
@@ -394,8 +403,6 @@
     <img src="Assets/ModernTableRow-6.png">
     <img src="Assets/ModernTableRow-7.png">
     <img src="Assets/ModernTableRow-8.png">
-    <img src="Assets/ModernTableRow-9.png">
-    <img src="Assets/ModernTableRow-tablecolor.gif">
  </details>
  
 
@@ -566,7 +573,7 @@
 
 <!-- Hide Inline Source Permanently in Editor -->
  <details>
-    <summary>Hide Inline Source Permanently in Editor</summary>
+    <summary>Hide Inline Source Permanently in RemNote Hierarchical Editor</summary>
 
  ```css
  [data-rem-tags~="source-list"] .rem-container--focused > .inline-flex {
