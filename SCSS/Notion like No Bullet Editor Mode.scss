@@ -1,3 +1,24 @@
+:root {
+	// TreeNode Adjustment
+		--treenode-line-spacing: 16px;
+	// Basic Bullet Color
+		--bullet-main: #000;
+		--bullet-main-dark: #C2C2C2;
+		--bullet-doc: #50FA7B;
+		--bullet-folder: #53555F;
+		--bullet-concept: #53555F;
+		--bullet-descriptor: #53555F;
+	// Practice Bullet Color
+		--both-practice-color: #FFA344;
+		--forward-practice-color: #FF2600;
+		--backward-practice-color: #D783FF;
+		--disabled-practice-color: #959595;
+	// TreeNode Color
+		--line-color: #DDDDDD;
+		--node-card-item-color: #FF4E4C;
+		--node-card-item-color-dark: #E0CD00;
+}
+
 @mixin triangle-hidden {
 	width: 0 !important;
 	height: 0 !important;
@@ -30,34 +51,127 @@
 	border-radius: 3px;
 }
 
-@mixin bulletlist {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 3.5px;
-	border-radius: 10px;
+@mixin bulletlist($borderColor) {
+	[data-rem-container-tags~="bulletlist"] {
+		width: calc(100% - 16px);
+		position: relative;
+
+		[data-rem-tags~="bulletlist"], %bulletlist {
+			left: 16px;
+			
+			.rem-button__container {
+				// margin-left: var(--treenode-line-spacing);
+
+				> span {
+					> div.six-dot {
+						left: 40px !important;
+					}
+				}
+				
+				> span.toggle-collapse-button {
+					left: 40px !important;
+				}
+				
+				.rem-bullet__container {
+					position: relative;
+					margin-left: var(--treenode-line-spacing);
+
+					.perfect-circle.rem-bullet--hidden-children {
+						@include triangle-hidden;
+						border-color: transparent transparent transparent $borderColor;
+					}
+					
+					.perfect-circle.rem-bullet--all-children-visible {
+						width: 0;
+						height: 0;
+						border-style: solid;
+						border-width: 3.5px;
+						border-radius: 10px;
+						border-color: $borderColor;
+					}
+				}
+			}
+			// Tag Declutter
+				.hierarchy-editor__tag-bar__tag {
+					background-color: transparent !important;
+
+					span {
+						display: none;
+					}
+					.hierarchy-editor__tag-bar__tag__delete {
+						opacity: .3;
+					}
+				}
+		}
+	}
 }
 
-:root {
-	// TreeNode Adjustment
-		--treenode-line-spacing: 16px;
-	// Basic Bullet Color
-		--bullet-main: #000;
-		--bullet-main-dark: #C2C2C2;
-		--bullet-doc: #50FA7B;
-		--bullet-folder: #53555F;
-		--bullet-concept: #53555F;
-		--bullet-descriptor: #53555F;
-	// Practice Bullet Color
-		--both-practice-color: #FFA344;
-		--forward-practice-color: #FF2600;
-		--backward-practice-color: #D783FF;
-		--disabled-practice-color: #959595;
-	// TreeNode Color
-		--line-color: #DDDDDD;
-		--node-card-item-color: #FF4E4C;
-		--node-card-item-color-dark: #E0CD00;
+@mixin bulletlists($borderColor) {
+	[data-rem-container-tags~="bulletlists"] {
+		> div.tree-node--children {
+			> div.animate-zoom-into-bullet {
+				> div.tree-node--parent {
+					> div.rem {
+						> div {
+							> span {
+								> div.rem-button__container {
+									margin-left: var(--treenode-line-spacing);
+								
+									> span {
+										> div.six-dot {
+											left: 40px !important;
+										}
+									}
+								
+									> span.toggle-collapse-button {
+										left: 40px !important;
+									}
+								
+									.rem-bullet__container {
+										position: relative;
+										margin-left: var(--treenode-line-spacing);
+								
+										.perfect-circle.rem-bullet--hidden-children {
+											@include triangle-hidden;
+											border-color: transparent transparent transparent $borderColor;
+										}
+								
+										.perfect-circle.rem-bullet--all-children-visible {
+											width: 0;
+											height: 0;
+											border-style: solid;
+											border-width: 3.5px;
+											border-radius: 10px;
+											border-color: $borderColor;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				.tree-node--parent {
+					.rem-text {
+						margin-left: 16px;
+					}
+				}
+			}
+		}
+		// Tag Declutter
+			.hierarchy-editor__tag-bar__tag {
+				background-color: transparent !important;
+			
+				span {
+					display: none;
+				}
+			
+				.hierarchy-editor__tag-bar__tag__delete {
+					opacity: .3;
+				}
+			}
+	}
 }
+
 // Rem Hierarchy Text Editor Line Height
 	.EditorContainer {
 		line-height: 160%;
@@ -533,163 +647,15 @@
 		}
 // Make Bullet-list by Intentional Tagging
 	// Bulletlist
-		[data-rem-container-tags~="bulletlist"] {
-			width: calc(100% - 16px);
-			position: relative;
-
-			[data-rem-tags~="bulletlist"], %bulletlist {
-				left: 16px;
-				
-				.rem-button__container {
-					// margin-left: var(--treenode-line-spacing);
-
-					> span {
-						> div.six-dot {
-							left: 40px !important;
-						}
-					}
-					
-					> span.toggle-collapse-button {
-						left: 40px !important;
-					}
-					
-					.rem-bullet__container {
-						position: relative;
-						margin-left: var(--treenode-line-spacing);
-
-						.perfect-circle.rem-bullet--hidden-children {
-							@include triangle-hidden;
-							border-color: transparent transparent transparent var(--bullet-main);
-						}
-						
-						.perfect-circle.rem-bullet--all-children-visible {
-							@include bulletlist;
-							border-color: var(--bullet-main);
-						}
-					}
-				}
-				// Focused
-					// .rem-container--focused, %move {
-					// 	.rem-button__container {
-					// 		> span {
-					// 			> div.six-dot {
-					// 				left: 40px !important;
-					// 			}
-					// 		}
-							
-					// 		> span.toggle-collapse-button {
-					// 			left: 40px !important;
-					// 		}
-					// 	}
-					// }
-				// Move text
-					// .rem-text {
-					// 	margin-left: var(--treenode-line-spacing);
-					// }
-				// Tag Declutter
-					.hierarchy-editor__tag-bar__tag {
-						background-color: transparent !important;
-
-						span {
-							display: none;
-						}
-						.hierarchy-editor__tag-bar__tag__delete {
-							opacity: .3;
-						}
-					}
-			}
+		@include bulletlist(var(--bullet-main));
+		.dark {
+			@include bulletlist(var(--bullet-main-dark));
 		}
 	// Bulletlists
-		[data-rem-container-tags~="bulletlists"] {
-			> div.tree-node--children {
-				> div.tree-node-container {
-					.rem-button__container {
-						margin-left: var(--treenode-line-spacing);
-					
-						> span {
-							> div.six-dot {
-								left: 40px !important;
-							}
-						}
-					
-						> span.toggle-collapse-button {
-							left: 40px !important;
-						}
-					
-						.rem-bullet__container {
-							position: relative;
-							margin-left: var(--treenode-line-spacing);
-					
-							.perfect-circle.rem-bullet--hidden-children {
-								@include triangle-hidden;
-								border-color: transparent transparent transparent var(--bullet-main);
-							}
-					
-							.perfect-circle.rem-bullet--all-children-visible {
-								@include bulletlist;
-								border-color: var(--bullet-main);
-							}
-						}
-					}
-					.tree-node--parent {
-						.rem-text {
-							margin-left: 16px;
-						}
-					}
-				}
-			}
-			// Tag Declutter
-				.hierarchy-editor__tag-bar__tag {
-					background-color: transparent !important;
-				
-					span {
-						display: none;
-					}
-				
-					.hierarchy-editor__tag-bar__tag__delete {
-						opacity: .3;
-					}
-				}
-		}
-	// Darkmode
+		@include bulletlists(var(--bullet-main));
 		.dark {
-			[data-rem-container-tags~="bulletlist"] {
-				[data-rem-tags~="bulletlist"] {
-					.rem-button__container {
-						.rem-bullet.rem-bullet--hidden-children {
-							@include triangle-hidden;
-							border-color: transparent transparent transparent var(--bullet-main-dark);
-						}
-						.rem-bullet.rem-bullet--all-children-visible {
-							@include bulletlist;
-							border-color: var(--bullet-main-dark);
-						}
-					}
-				}
-			}
-			[data-rem-container-tags~="bulletlists"] {
-				> div.tree-node--children {
-					> div.tree-node-container {
-						.rem-button__container {
-						
-							.rem-bullet__container {
-						
-								.perfect-circle.rem-bullet--hidden-children {
-									@include triangle-hidden;
-									border-color: transparent transparent transparent var(--bullet-main-dark);
-								}
-						
-								.perfect-circle.rem-bullet--all-children-visible {
-									@include bulletlist;
-									border-color: var(--bullet-main-dark);
-								}
-							}
-						}
-					}
-				}
-			}
+			@include bulletlists(var(--bullet-main-dark));
 		}
-	
 	#hierarchy-editor {
 		[data-rem-tags~="bulletlist"] {
 			.rem-container--focused {
