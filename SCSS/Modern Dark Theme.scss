@@ -129,6 +129,15 @@
 		.hidden-selection {
 			background-color:#D8E2F1;
 		}
+	// Image Scale
+		.inline-block {
+			.group.inline-block.align-text-top {
+				width: 100% !important;
+				height: 100% !important;
+				max-width: unset !important;
+				max-height: unset !important;
+			}
+		}
 // Highlight Mixin
 	// highlight-text-light
 		@mixin highlight-text {
