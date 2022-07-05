@@ -479,7 +479,7 @@
 			
 			.hierarchy-editor__tag-bar__tag {
 				// Remove # symbol
-					> span.pl-\[6px\] {
+					> span.rn-tag__prefix {
 						display: none;
 					}
 				// Tag text

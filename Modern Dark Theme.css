@@ -194,7 +194,7 @@
 .hierarchy-editor__tag-bar {
 	line-height: 1rem;
 }
-.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag > span.pl-\[6px\] {
+.hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag > span.rn-tag__prefix {
 	display: none;
 }
 .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag > div:nth-of-type(1) {
