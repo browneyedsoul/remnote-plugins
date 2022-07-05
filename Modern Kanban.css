@@ -59,8 +59,8 @@
 	padding-left: 25px;
 	margin-left: 0;
 }
-#hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet .EditorContainer {
-	margin-right: 1rem;
+#hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet .float-end {
+	margin-left: 1rem;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .portal-tree-node-box {
 	background-color: var(--kanban-bgcolor-input);
