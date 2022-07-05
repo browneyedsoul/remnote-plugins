@@ -135,6 +135,9 @@
 				width: unset;
 			}
 		}
+		.EditorContainer {
+			margin-right: unset;
+		}
 // Highlight Mixin
 	// highlight-text-light
 		@mixin highlight-text {
@@ -1995,13 +1998,12 @@
 				margin-top: 70px;
 
 				// hierarchy-editor
-					// Document Title
+					// Title
 						div.mt-2\.5 {
 							margin-left: 2rem;
+							margin-right: 0.7rem;
 
 							> div {
-								margin-right: 0.7rem;
-								
 								#DocumentTitle {
 									.bold,
 									.bold.highlight-color--red,
@@ -2017,93 +2019,90 @@
 								}
 							}
 						}
-					// Editor part
-					#hierarchy-editor {
-						margin-left: 2rem;
-						
-						> div {
+					// Editor
+						#hierarchy-editor {
+							margin-left: 2rem;
 							margin-right: 0.7rem;
-						}
-						// Find / Filter / Replace - Ctrl(⌘) + F
-							#hierarchy-editor__ctrl-f {
-								border: 2px solid white;
+							// Find / Filter / Replace - Ctrl(⌘) + F
+								#hierarchy-editor__ctrl-f {
+									border: 2px solid white;
 
-								> div {
-									// Find
-										> span {
-											> div.bg-white {
+									> div {
+										// Find
+											> span {
+												> div.bg-white {
+													
+												}
+											}
+										// Input Area
+											> div.bg-gray-5 {
 												
 											}
-										}
-									// Input Area
-										> div.bg-gray-5 {
-											
-										}
+									}
 								}
-							}
-						// Sticky Top bar
-							> .fixed {
-								margin-top: 3.2rem;
+							// Sticky Top bar
+								> .fixed {
+									margin-top: 3.2rem;
 
-								> .tree-node-container {
-									> .TreeNode {
-										left: 0px;
-									}
-								}
-							}
-						// Rem
-							.tree-node--parent {
-								.rem-container {
-									// Disable Rem Container Hover Effect
-										.hover\:bg-hover-bg {
-											background-color: unset;
-										}
-								}
-							}
-						// Highlight Color
-							[data-rem-tags~="highlight"] {
-								> div {
-									> span {
-										@include highlight();
-									}
-								}
-							}
-							@include highlight-span();
-							@include highlight-text();
-							.EditorContainer {
-								@include highlight-color-notbold-light;
-							}
-						// Rem Reference
-							.rem-reference-container {
-								&:not(.hierarchy-editor__tag-bar .rem-reference-container) {
-									.rem-reference {
-										.RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
-											color: var(--reference-text);
-											background-color: var(--reference-background);
-											font-family: 'Roboto Mono', monospace !important;
-											padding: 0 2px;
-											margin: 0 2px;
-											border-radius: 4px;
+									> .tree-node-container {
+										> .TreeNode {
+											left: 0px;
 										}
 									}
 								}
-							}
-						// Document Bottom Backlink Area
-							.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
-								border: 1px solid var(--line-color);
-								border-radius: 4px;
-								padding-left: 1rem;
-								padding-right: 1rem;
-								margin-bottom: 0.5rem;
+							// Rem
+								.tree-node--parent {
+									.rem-container {
+										// Disable Rem Container Hover Effect
+											.hover\:bg-hover-bg {
+												background-color: unset;
+											}
+									}
+								}
+							// Highlight Color
+								[data-rem-tags~="highlight"] {
+									> div {
+										> span {
+											@include highlight-span();
+										}
+									}
+								}
+								@include highlight();
+								@include highlight-text();
+								.EditorContainer {
+									@include highlight-color-notbold-light;
+								}
+							// Rem Reference
+								.rem-reference-container {
+									&:not(.hierarchy-editor__tag-bar .rem-reference-container) {
+										.rem-reference {
+											.RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
+												color: var(--reference-text);
+												background-color: var(--reference-background);
+												font-family: 'Roboto Mono', monospace !important;
+												padding: 0 2px;
+												margin: 0 2px;
+												border-radius: 4px;
+											}
+										}
+									}
+								}
+							// Document Bottom Backlink Area
+								.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
+									border: 1px solid var(--line-color);
+									border-radius: 4px;
+									padding-left: 1rem;
+									padding-right: 1rem;
+									margin-bottom: 0.5rem;
 
-								.rn-divider {
-									display: none;
+									.rn-divider {
+										display: none;
+									}
+									.portal-tree-node-box--focused {
+										border: 0.15rem solid #6686FF;
+										border-color: #6686FF;
+									}
 								}
-								.portal-tree-node-box--focused {
-									border: 0.15rem solid #6686FF;
-									border-color: #6686FF;
-								}
-							}
 						
 					}
 
@@ -2392,7 +2391,7 @@
 										}
 									}
 								}
-								@include highlight-span-text-dark();
+								@include highlight-dark();
 								@include highlight-text-dark();
 								.EditorContainer {
 									@include highlight-color-notbold-dark();
