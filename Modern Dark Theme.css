@@ -2388,41 +2388,50 @@
 #document-sidebar .RichTextViewer {
 	font-family: "Nunito Sans", sans-serif;
 }
+#document-sidebar .text-sm {
+	font-size: unset;
+}
 #document-sidebar span.highlight-color--red:not(.bold.highlight-color--red) {
 	color: var(--highlight-color--red-text-dark);
 	background-color: var(--highlight-color--red-bg-dark);
 	border: 0.1rem solid var(--highlight-color--red-dark);
 	border-radius: 4px;
+	padding-bottom: 0.2rem;
 }
 #document-sidebar span.highlight-color--orange:not(.bold.highlight-color--orange) {
 	color: var(--highlight-color--orange-text-dark);
 	background-color: var(--highlight-color--orange-bg-dark);
 	border: 0.1rem solid #795931;
 	border-radius: 4px;
+	padding-bottom: 0.2rem;
 }
 #document-sidebar span.highlight-color--yellow:not(.bold.highlight-color--yellow) {
 	color: var(--highlight-color--yellow-text-dark);
 	background-color: var(--highlight-color--yellow-bg-dark);
 	border: 0.1rem solid #625F14;
 	border-radius: 4px;
+	padding-bottom: 0.2rem;
 }
 #document-sidebar span.highlight-color--green:not(.bold.highlight-color--green) {
 	color: var(--highlight-color--green-text-dark);
 	background-color: var(--highlight-color--green-bg-dark);
 	border: 0.1rem solid #3D5D3D;
 	border-radius: 4px;
+	padding-bottom: 0.2rem;
 }
 #document-sidebar span.highlight-color--blue:not(.bold.highlight-color--blue) {
 	color: var(--highlight-color--blue-text-dark);
 	background-color: var(--highlight-color--blue-bg-dark);
 	border: 0.1rem solid #3A6279;
 	border-radius: 4px;
+	padding-bottom: 0.2rem;
 }
 #document-sidebar span.highlight-color--purple:not(.bold.highlight-color--purple) {
 	color: var(--highlight-color--purple-text-dark);
 	background-color: var(--highlight-color--purple-bg-dark);
 	border: 0.1rem solid #683E62;
 	border-radius: 4px;
+	padding-bottom: 0.2rem;
 }
 #document-sidebar + div > div {
 	background-color: var(--darkmode-background);
