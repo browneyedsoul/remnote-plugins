@@ -8,6 +8,9 @@
     .whitespace-pre-wrap {
         white-space: pre;
     }
+    .rem {
+        min-width: 80px;
+    }
 }
 
 
@@ -97,28 +100,6 @@
             .backlink-counter {
                 opacity: .4;
             }
-
-            // .tree-node-container:only-child {
-            //     &::before {
-            //         content: "";
-            //         padding-right: 24px;
-            //         padding-top: 0;
-            //         position: absolute;
-            //         z-index: 1;
-            //         top: 0;
-            //         left: -0.1rem;
-            //         height: 97%;
-            //         width: 5px;
-            //         border-top: unset;
-            //         border-right: unset;
-            //         border-bottom: 5rem solid #FFF;
-            //         border-left: 27px solid #FFF;
-            //         margin-top: 1.05rem;
-            //     }
-            //     &::after {
-            //         border-top: unset;
-            //     }
-            // }
         }
 
         div.tree-node--children:not(.tree-node--children:empty) {
