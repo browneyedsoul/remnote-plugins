@@ -2084,8 +2084,14 @@
 	background-color: #E7E7EF;
 }
 .settings-page .settings-page__content .settings-page__content__inner > div.popup__header {
-	justify-content: center;
 	background-color: #E7E7EF;
+}
+.settings-page .settings-page__content .settings-page__content__inner > div.popup__header .rn-settings__content__title {
+	justify-content: center;
+}
+.settings-page .settings-page__content .settings-page__content__inner > div.popup__header .rn-settings__content__title .rn-icon-button {
+	position: absolute;
+	right: 1rem;
 }
 @media (min-width: 1030px) {
 	.settings-page .settings-page__content .settings-page__content__inner > div.popup__header::after {

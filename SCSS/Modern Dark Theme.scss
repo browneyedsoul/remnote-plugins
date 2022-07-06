@@ -2749,7 +2749,13 @@
 				.settings-page__content__inner {
 					// Header
 						> div.popup__header {
-							justify-content: center;
+							.rn-settings__content__title {
+								justify-content: center;
+								.rn-icon-button {
+									position: absolute;
+									right: 1rem;
+								}
+							}
 							background-color: #E7E7EF;
 
 							// Left Curve Trick
