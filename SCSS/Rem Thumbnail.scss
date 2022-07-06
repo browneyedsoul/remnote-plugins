@@ -206,7 +206,7 @@
 	.hierarchy-editor__hidden-children {
 		@include thumbnail-set;
 	}
-// Popup
+// .popup-menu
 	.popup-menu {
 		// Static Popup
 			.popup-menu__item--static {
@@ -260,25 +260,12 @@
 				}
 			}
 	}
-// Popup 2
+// #Popup
 	#Popup {
 		#PopupContent {
-			// Merge Confirm Window
-			.p-4 {
-				.RichTextViewer {
-					@include thumbnail-set;
-				}
-			}
-			// Delete Confirm Popup
-			#delete-confirm-popup {
+			.RichTextViewer {
 				@include thumbnail-set;
-				
-				.delete-confirm-popup__rem-section__item {
-					.RichTextViewer {
-						@include thumbnail-set;
-					}
-				}
-			}
+			}			
 			.document-popup-preview {
 				.document-header-top-bar {
 					.RichTextViewer {

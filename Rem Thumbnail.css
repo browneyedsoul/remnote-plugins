@@ -755,11 +755,11 @@
 	   object-position: center;
 }
 
-#Popup #PopupContent .p-4 .RichTextViewer span.inline-block {
+#Popup #PopupContent .RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-#Popup #PopupContent .p-4 .RichTextViewer span.inline-block > div {
+#Popup #PopupContent .RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -770,76 +770,16 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-#Popup #PopupContent .p-4 .RichTextViewer span.inline-block > div > span.image-node {
+#Popup #PopupContent .RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-#Popup #PopupContent .p-4 .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+#Popup #PopupContent .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-#Popup #PopupContent .p-4 .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-}
-#Popup #PopupContent #delete-confirm-popup span.inline-block {
-	height: 1em;
-	width: auto;
-}
-#Popup #PopupContent #delete-confirm-popup span.inline-block > div {
-	height: 1em !important;
-	width: unset !important;
-	max-width: 1em !important;
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-	min-width: 1em !important;
-	min-height: unset !important;
-}
-#Popup #PopupContent #delete-confirm-popup span.inline-block > div > span.image-node {
-	-o-object-fit: contain !important;
-	   object-fit: contain !important;
-	-o-object-position: center;
-	   object-position: center;
-}
-#Popup #PopupContent #delete-confirm-popup span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
-	display: none;
-}
-#Popup #PopupContent #delete-confirm-popup span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-}
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.inline-block {
-	height: 1em;
-	width: auto;
-}
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.inline-block > div {
-	height: 1em !important;
-	width: unset !important;
-	max-width: 1em !important;
-	-o-object-fit: contain;
-	   object-fit: contain;
-	-o-object-position: center;
-	   object-position: center;
-	min-width: 1em !important;
-	min-height: unset !important;
-}
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.inline-block > div > span.image-node {
-	-o-object-fit: contain !important;
-	   object-fit: contain !important;
-	-o-object-position: center;
-	   object-position: center;
-}
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
-	display: none;
-}
-#Popup #PopupContent #delete-confirm-popup .delete-confirm-popup__rem-section__item .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+#Popup #PopupContent .RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
