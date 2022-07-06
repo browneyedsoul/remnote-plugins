@@ -2,7 +2,7 @@
 	--table-title-background-color: #EEEEEB;
 	--table-title-background-color-dark: #525252;
 	--table-header-background-color: #F7F6F3;
-	--table-header-background-color-dark: #707070;
+	--table-header-background-color-dark: #282C30;
 	--table-cell-background-color: #FFFFFF;
 	--table-cell-background-color-dark: #2F3437;
 	--table-border-color: #EEEEEB;
@@ -15,90 +15,130 @@
 	--table-container-cell-margin-left: -10px;
 }
 
-[data-rem-container-tags~=table] .text-gray-20 {
+#hierarchy-editor [data-rem-container-tags~=table] {
+	margin-left: var(--table-container-left-margin);
+}
+#hierarchy-editor [data-rem-container-tags~=table] .rich-text-editor .pointer-events-none {
 	display: none;
 }
-[data-rem-container-tags~=table] > .tree-node--parent {
-	margin-left: var(--table-title-left-margin);
+#hierarchy-editor [data-rem-container-tags~=table] > .tree-node--parent {
 	margin-right: var(--table-title-right-margin);
+	background-color: var(--table-title-background-color);
 }
-[data-rem-container-tags~=table] .TreeNode.tree-node--children {
+#hierarchy-editor [data-rem-container-tags~=table] .TreeNode.tree-node--children {
 	border-width: 0 !important;
+	margin-left: 0;
 }
-[data-rem-container-tags~=table] > .TreeNode {
+#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode {
 	display: flex;
 	left: 0px !important;
 	margin-left: var(--table-container-left-margin);
 	margin-right: var(--table-container-right-margin) !important;
+	padding-left: 0;
 }
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container {
+#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet {
 	flex: 1 0 0;
 	white-space: wrap;
 	border: 0.1rem solid var(--table-border-color);
 }
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .rem-text,
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .EditorContainer,
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .rich-text-editor,
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container .RichTextViewer {
+#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .rem-text,
+#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .EditorContainer,
+#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .rich-text-editor,
+#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .RichTextViewer {
 	overflow-wrap: anywhere;
 	flex-grow: 1;
 	max-width: 100%;
 }
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container > div:first-child {
+#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > div:first-child {
 	font-weight: 600;
+	color: inherit;
 	background-color: var(--table-header-background-color);
 	text-align: center;
 }
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container:nth-child(n+2) {
+#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet:nth-child(n+2) {
 	margin-left: -1px;
 }
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode {
+#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode {
 	width: 100% !important;
 	left: 0px !important;
 }
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
+#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet {
 	position: relative;
 	left: var(--table-container-cell-margin-left);
 	width: 100%;
 	border-bottom: 0.1rem solid var(--table-border-color);
 }
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container .TreeNode > .tree-node-container {
+#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet .TreeNode > .animate-zoom-into-bullet {
 	margin-top: 0.1rem;
 }
-[data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container:last-of-type {
+#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet:last-of-type {
 	border-bottom: unset;
 }
-
-.hierarchy-editor--ltr [data-rem-container-tags~=table] .TreeNode {
+#hierarchy-editor .hierarchy-editor--ltr [data-rem-container-tags~=table] .TreeNode {
 	padding-left: unset;
 }
 
-.dark-mode [data-rem-container-tags~=table] > .TreeNode > .tree-node-container {
+.dark #hierarchy-editor [data-rem-container-tags~=table] {
+	margin-left: var(--table-container-left-margin);
+}
+.dark #hierarchy-editor [data-rem-container-tags~=table] .rich-text-editor .pointer-events-none {
+	display: none;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=table] > .tree-node--parent {
+	margin-right: var(--table-title-right-margin);
+	background-color: var(--table-title-background-color-dark);
+}
+.dark #hierarchy-editor [data-rem-container-tags~=table] .TreeNode.tree-node--children {
+	border-width: 0 !important;
+	margin-left: 0;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode {
+	display: flex;
+	left: 0px !important;
+	margin-left: var(--table-container-left-margin);
+	margin-right: var(--table-container-right-margin) !important;
+	padding-left: 0;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet {
+	flex: 1 0 0;
+	white-space: wrap;
 	border: 0.1rem solid var(--table-border-color-dark);
 }
-.dark-mode [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > div:first-child {
+.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .rem-text,
+.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .EditorContainer,
+.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .rich-text-editor,
+.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .RichTextViewer {
+	overflow-wrap: anywhere;
+	flex-grow: 1;
+	max-width: 100%;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > div:first-child {
+	font-weight: 600;
 	color: var(--darkmode-text);
 	background-color: var(--table-header-background-color-dark);
+	text-align: center;
 }
-.dark-mode [data-rem-container-tags~=table] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
+.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet:nth-child(n+2) {
+	margin-left: -1px;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode {
+	width: 100% !important;
+	left: 0px !important;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet {
+	position: relative;
+	left: var(--table-container-cell-margin-left);
+	width: 100%;
 	border-bottom: 0.1rem solid var(--table-border-color-dark);
 }
-
-[data-rem-tags~=table] {
-	background-color: var(--table-title-background-color);
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	padding-right: 5px;
-	border: 1px solid var(--table-border-color);
+.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet .TreeNode > .animate-zoom-into-bullet {
+	margin-top: 0.1rem;
 }
-
-.dark-mode [data-rem-tags~=table] {
-	color: var(--darkmode-text);
-	background-color: var(--table-title-background-color-dark);
-	border: 0.1rem solid var(--table-title-background-color-dark);
+.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet:last-of-type {
+	border-bottom: unset;
 }
-.dark-mode [data-rem-tags~=table] .EditorContainer {
-	color: var(--darkmode-text);
+.dark #hierarchy-editor .hierarchy-editor--ltr [data-rem-container-tags~=table] .TreeNode {
+	padding-left: unset;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w90] > .TreeNode > div {
@@ -295,43 +335,43 @@
 	white-space: pre;
 	margin-right: 0.5rem !important;
 }
-[data-rem-container-tags~=table][data-rem-container-tags~=w90] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w120] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w150] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w180] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w210] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w240] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w270] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w300] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w330] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w360] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w390] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w420] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w450] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w480] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w510] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w540] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w570] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w600] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w630] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w660] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w690] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w720] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w750] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w780] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w810] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w840] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w870] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w900] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w930] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w960] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w990] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w1020] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w1050] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w1080] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w1110] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w1140] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w1170] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container,
-[data-rem-container-tags~=table][data-rem-container-tags~=w1120] > .TreeNode > .tree-node-container > .TreeNode > .tree-node-container {
+[data-rem-container-tags~=table][data-rem-container-tags~=w90] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w120] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w150] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w180] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w210] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w240] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w270] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w300] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w330] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w360] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w390] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w420] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w450] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w480] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w510] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w540] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w570] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w600] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w630] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w660] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w690] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w720] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w750] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w780] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w810] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w840] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w870] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w900] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w930] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w960] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w990] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w1020] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w1050] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w1080] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w1110] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w1140] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w1170] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
+[data-rem-container-tags~=table][data-rem-container-tags~=w1120] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet {
 	width: 100%;
 }

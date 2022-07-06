@@ -2,7 +2,7 @@
 	--table-title-background-color: #EEEEEB;
 	--table-title-background-color-dark: #525252;
 	--table-header-background-color: #F7F6F3;
-	--table-header-background-color-dark: #707070;
+	--table-header-background-color-dark: #282C30;
 	--table-cell-background-color: #FFFFFF;
 	--table-cell-background-color-dark: #2F3437;
 	--table-border-color: #EEEEEB;
@@ -14,124 +14,115 @@
     --table-container-right-margin: 0.7rem;
     --table-container-cell-margin-left: -10px;
 }
-// Basic Structure
-    [data-rem-container-tags~="table"] {
-        // Remove Placeholder
-            .text-gray-20 {
-                display: none;
-            }
-        // Title Bar Adjustment
-            > .tree-node--parent {
-                margin-left: var(--table-title-left-margin);
-                margin-right: var(--table-title-right-margin);
-            }
-        // Remove Left TreeNode Line
-            .TreeNode.tree-node--children  {
-                border-width: 0 !important;
-            }
-        // Structure
-            > .TreeNode {
-                display: flex;
-                left: 0px !important;
-                margin-left: var(--table-container-left-margin);
-                margin-right: var(--table-container-right-margin) !important;
 
-                > .tree-node-container {
-                    flex: 1 0 0;
-                    white-space: wrap;
-                    // Line Color
-                        border: 0.1rem solid var(--table-border-color);
-                    // Constant Width
-                        .rem-text,
-                        .EditorContainer,
-                        .rich-text-editor,
-                        .RichTextViewer {
-                            overflow-wrap: anywhere;
-                            flex-grow: 1;
-                            max-width: 100%;
-                        }
-                    // Column Table Head
-                        > div:first-child {
-                            font-weight: 600;
-                            background-color: var(--table-header-background-color);
-                            text-align: center;
-                        }
-                    // Line Grid Adjustment
-                        &:nth-child(n+2) {
-                            margin-left: -1px;
-                        }
-                    
-                    > .TreeNode {
-                        width: 100% !important;
-                        left: 0px !important;
+@mixin table(
+    $title-bgcolor,
+    $border, 
+    $header, 
+    $header-text) {
+    #hierarchy-editor {
+        [data-rem-container-tags~="table"] {
+            margin-left: var(--table-container-left-margin);
+            // Remove Placeholder
+                .rich-text-editor {
+                    .pointer-events-none {
+                        display: none;
+                    }
+                }
+            // Title Bar
+                > .tree-node--parent {
+                    // margin-left: var(--table-title-left-margin) !important;
+                    margin-right: var(--table-title-right-margin);
+                    // padding-left: 11.5px;
+                    background-color: $title-bgcolor;
+                }
+            // Remove Left TreeNode Line
+                .TreeNode.tree-node--children  {
+                    border-width: 0 !important;
+                    margin-left: 0;
+                }
+            // Structure
+                > .TreeNode {
+                    display: flex;
+                    left: 0px !important;
+                    margin-left: var(--table-container-left-margin);
+                    margin-right: var(--table-container-right-margin) !important;
+                    padding-left: 0;
 
-                        > .tree-node-container {
-                            position: relative;
-                            left: var(--table-container-cell-margin-left);
-                            width: 100%;
-                            border-bottom: 0.1rem solid var(--table-border-color);
+                    > .animate-zoom-into-bullet {
+                        flex: 1 0 0;
+                        white-space: wrap;
+                        // Line Color
+                            border: $border;
+                        // Constant Width
+                            .rem-text,
+                            .EditorContainer,
+                            .rich-text-editor,
+                            .RichTextViewer {
+                                overflow-wrap: anywhere;
+                                flex-grow: 1;
+                                max-width: 100%;
+                            }
+                        // Column Table Head
+                            > div:first-child {
+                                font-weight: 600;
+                                color: $header-text; 
+                                background-color: $header;
+                                text-align: center;
+                            }
+                        // Line Grid Adjustment
+                            &:nth-child(n+2) {
+                                margin-left: -1px;
+                            }
+                        
+                        > .TreeNode {
+                            width: 100% !important;
+                            left: 0px !important;
 
-                            .TreeNode {
-                                > .tree-node-container {
-                                    margin-top: 0.1rem;
+                            > .animate-zoom-into-bullet {
+                                position: relative;
+                                left: var(--table-container-cell-margin-left);
+                                width: 100%;
+                                border-bottom: $border;
+
+                                .TreeNode {
+                                    > .animate-zoom-into-bullet {
+                                        margin-top: 0.1rem;
+                                    }
                                 }
                             }
-                        }
-                        > .tree-node-container:last-of-type {
-                            border-bottom: unset;
-                        }
-                    }
-                }
-            }
-    }
-    .hierarchy-editor--ltr {
-        [data-rem-container-tags~=table] {
-            .TreeNode {
-                padding-left: unset;
-            }
-        }
-    }
-// Dark Mode Compatibility
-    .dark-mode {
-        [data-rem-container-tags~="table"] {
-            > .TreeNode {
-                > .tree-node-container {
-                    // Line Color
-                    border: 0.1rem solid var(--table-border-color-dark);
-
-                    // Column Table Head
-                    > div:first-child {
-                        color: var(--darkmode-text);;
-                        background-color: var(--table-header-background-color-dark);
-                    }
-                    > .TreeNode {
-                        > .tree-node-container {
-                            border-bottom: 0.1rem solid var(--table-border-color-dark);
+                            > .animate-zoom-into-bullet:last-of-type {
+                                border-bottom: unset;
+                            }
                         }
                     }
                 }
-            }       
         }
-    }
-// Column Table Title
-	[data-rem-tags~="table"] {
-		background-color: var(--table-title-background-color);
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
-		padding-right: 5px;
-		border: 1px solid var(--table-border-color);
-	}
-    .dark-mode {
-        [data-rem-tags~="table"] {
-            color: var(--darkmode-text);
-            background-color: var(--table-title-background-color-dark);
-            border: 0.1rem solid var(--table-title-background-color-dark);
-
-            .EditorContainer {
-                color: var(--darkmode-text);
+        .hierarchy-editor--ltr {
+            [data-rem-container-tags~=table] {
+                .TreeNode {
+                    padding-left: unset;
+                }
             }
         }
     }
+}
+
+@include table(
+    var(--table-title-background-color),
+    0.1rem solid var(--table-border-color), 
+    var(--table-header-background-color), 
+    inherit
+);
+.dark {
+    @include table(
+        var(--table-title-background-color-dark),
+        0.1rem solid var(--table-border-color-dark), 
+        var(--table-header-background-color-dark), 
+        var(--darkmode-text)
+    );
+}
+
 // Custom Table Cell Width Setting
 	[data-rem-container-tags~="table"][data-rem-container-tags~="w90"] > .TreeNode > div {min-width: 90px;}
 	[data-rem-container-tags~="table"][data-rem-container-tags~="w120"] > .TreeNode > div {min-width: 120px;}
@@ -215,9 +206,9 @@
             white-space: pre;
             margin-right: 0.5rem !important;
 
-            > .tree-node-container {
+            > .animate-zoom-into-bullet {
                 > .TreeNode {
-                    > .tree-node-container {
+                    > .animate-zoom-into-bullet {
                         width: 100%;
                     }
                 }
