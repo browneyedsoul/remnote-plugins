@@ -2557,6 +2557,7 @@
 	filter: invert(0);
 	position: relative;
 	top: 1px;
+	color: var(--darkmode-text);
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer {
 	color: var(--darkmode-text);
