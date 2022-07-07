@@ -9,7 +9,7 @@
         white-space: pre;
     }
     .rem {
-        min-width: 80px;
+        min-width: calc(100% + 1rem);
     }
 }
 
@@ -82,7 +82,7 @@
                     height: 100%;
                     position: absolute;
                     z-index: 2;
-                    left: -1px;
+                    left: -2px;
                     border-top: 1px solid var(--line-color);
                     margin-top: 16px;
                 }
@@ -243,5 +243,15 @@
     [data-rem-container-tags~="treec"] {
         @extend %tree-dark;
         border: 0.1rem solid var(--line-color-dark);
+    }
+}
+
+[data-rem-container-tags~="w240"] {
+    > .tree-node--children {
+        > .animate-zoom-into-bullet {
+            > .tree-node--parent {
+                min-width: 240px;
+            }
+        }
     }
 }
