@@ -2594,7 +2594,8 @@
 	padding-left: 3px;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.rn-clr-background-light-accent {
-	border: 2px solid var(--darkmode-contrast) !important;
+	border: 2px solid var(--darkmode-contrast);
+	border-radius: 8px;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.rn-clr-background-light-accent .RichTextViewer {
 	color: white;

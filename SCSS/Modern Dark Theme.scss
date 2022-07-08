@@ -3628,7 +3628,8 @@
 					}
 					// Sidebar list item focused
 						> div.rounded-md.rn-clr-background-light-accent {
-							border: 2px solid var(--darkmode-contrast) !important;
+							border: 2px solid var(--darkmode-contrast);
+							border-radius: 5px;
 
 							.RichTextViewer {
 								color: white;
