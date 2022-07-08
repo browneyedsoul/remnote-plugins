@@ -6,6 +6,14 @@
 	--kanban-bgcolor-dark: #505050;
 	--kanban-bgcolor-input: #FFF;
 	--kanban-bgcolor-input-dark: #2E3437;
+	--kanban-bgcolor-stage: ;
+	--kanban-bgcolor-stage-dark: ;
+	--kanban-bgcolor-inprogress: #F8F9CD;
+	--kanban-bgcolor-inprogress-dark: #63572B;
+	--kanban-bgcolor-done: #D5EED7;
+	--kanban-bgcolor-done-dark: #304F32;
+	--kanban-bgcolor-archive: ;
+	--kanban-bgcolor-archive-dark: ;
 }
 
 #hierarchy-editor [data-rem-container-tags~=kanban] {
