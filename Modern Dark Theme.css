@@ -568,6 +568,9 @@
 #content .content__page {
 	background-color: #FFF;
 }
+#content .content__page .rn-all-notes {
+	padding-top: 3rem !important;
+}
 #content .content__page .ReactVirtualized__Grid__innerScrollContainer {
 	padding-bottom: 24px;
 }

@@ -979,7 +979,9 @@
 	#content {
 		.content__page {
 			background-color: #FFF;
-
+			.rn-all-notes {
+				padding-top: 3rem !important;
+			}
 			// Reverse Browser Item Header
 				.ReactVirtualized__Grid__innerScrollContainer {
 					padding-bottom: 24px;
