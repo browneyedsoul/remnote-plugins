@@ -1102,9 +1102,6 @@
 	background-color: var(--darkmode-background);
 }
 
-#content {
-	background-color: var(--darkmode-background);
-}
 #content .document-sidebar--collapsed--vertical {
 	height: 1.5%;
 }
