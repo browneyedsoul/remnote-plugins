@@ -48,6 +48,7 @@
 	overflow-wrap: anywhere;
 	flex-grow: 1;
 	max-width: 100%;
+	min-height: 25px;
 }
 #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > div:first-child {
 	font-weight: 600;
@@ -111,6 +112,7 @@
 	overflow-wrap: anywhere;
 	flex-grow: 1;
 	max-width: 100%;
+	min-height: 25px;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > div:first-child {
 	font-weight: 600;
