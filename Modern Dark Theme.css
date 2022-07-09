@@ -1102,6 +1102,11 @@
 	background-color: var(--darkmode-background);
 }
 
+.dark #content > div.content__page > div.top-bar-container.fade-on-hide-ui > div {
+	border-radius: 5px;
+	background-color: var(--darkmode-background-sidebar);
+}
+
 #content .document-sidebar--collapsed--vertical {
 	height: 1.5%;
 }
@@ -1111,7 +1116,7 @@
 	width: fit-content;
 	position: absolute;
 	top: 0.7rem;
-	right: 6rem;
+	right: 9rem;
 	z-index: 6;
 }
 #content > div.content__page > div.top-bar-container.fade-on-hide-ui > div {
