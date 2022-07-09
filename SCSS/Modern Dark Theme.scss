@@ -3829,22 +3829,16 @@
 			}
 		}
 // Side Bar - Collapsed
-	.document-sidebar--collapsed--vertical {
-		background-color: var(--darkmode-background);
-		width: 25px;
-
-		> div {
-			> div {
-				> div {
-					position: relative;
-					left: -6px;
-				}
-			}
+	#content {
+		> div.fade-on-hide-ui {
+			background-color: var(--darkmode-background);
 		}
 	}
 	.dark {
-		.document-sidebar--collapsed--vertical {
-			background-color: var(--darkmode-background-sidebar);
+		#content {
+			> div.fade-on-hide-ui {
+				background-color: var(--darkmode-background-sidebar);
+			}
 		}
 	}
 // Context Menu

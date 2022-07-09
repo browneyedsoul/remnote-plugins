@@ -2747,16 +2747,11 @@
 	color: var(--darkmode-text);
 }
 
-.document-sidebar--collapsed--vertical {
+#content > div.fade-on-hide-ui {
 	background-color: var(--darkmode-background);
-	width: 25px;
-}
-.document-sidebar--collapsed--vertical > div > div > div {
-	position: relative;
-	left: -6px;
 }
 
-.dark .document-sidebar--collapsed--vertical {
+.dark #content > div.fade-on-hide-ui {
 	background-color: var(--darkmode-background-sidebar);
 }
 
