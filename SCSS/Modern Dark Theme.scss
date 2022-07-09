@@ -1705,6 +1705,20 @@
 		.document-sidebar--collapsed--vertical {
 			height: 1.5%;
 		}
+		// Page move console
+			> div.content__page {
+				> div.top-bar-container.fade-on-hide-ui {
+					width: fit-content;
+					position: absolute;
+					top: 0.7rem;
+					right: 6rem;
+					z-index: 6;
+					> div {
+						border-radius: 5px;
+						padding-left: unset;
+					}
+				}
+			}
 
 		.mosaic {
 			.mosaic-tile {

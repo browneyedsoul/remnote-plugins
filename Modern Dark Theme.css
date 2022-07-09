@@ -1105,6 +1105,19 @@
 #content .document-sidebar--collapsed--vertical {
 	height: 1.5%;
 }
+#content > div.content__page > div.top-bar-container.fade-on-hide-ui {
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	position: absolute;
+	top: 0.7rem;
+	right: 6rem;
+	z-index: 6;
+}
+#content > div.content__page > div.top-bar-container.fade-on-hide-ui > div {
+	border-radius: 5px;
+	padding-left: unset;
+}
 #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable {
 	background: #161616;
 	border: 0.2rem solid #161616;
