@@ -5,7 +5,10 @@
 	--line-color-focused-dark: #576066;
 }
 
-// Divider
+@mixin divider(
+	$divider-line-color,
+	$divider-line-color-focused
+) {
 	[data-rem-container-tags~="divider"] {
 		margin-bottom: 0.5rem;
 		margin-left: 1.8rem;
@@ -14,22 +17,34 @@
 			color: transparent;
 			height: 7px;
 
+			// Hide Elements
+				.pointer-events-none,
+				.RichTextViewer,
+				.rem-button__container,
+				.rem-container--focused, 
+				.rem-bullet__icon,
+				.rem-bullet__container,
+				.rem-checkbox,
+				.rem:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar,  // Hide Merge Sign
+				.float-end {	                            // Hide Placeholder "Type / for Commands"
+					display: none;
+				}
 			&::before {
 				content: " ";
 				display: block;
 				position: absolute;
-				border-bottom: var(--line-color);
+				border-bottom: $divider-line-color;
 				left: -0.2rem;
 			}
 
 			&:focus-within {
-				background-color: var(--line-color-focused);
+				background-color: $divider-line-color-focused;
 				position: relative;
 				top: 3px;
 				left: -0.2rem;
 
 				&::before {
-					border-bottom: 2px solid var(--line-color);
+					border-bottom: 2px solid $divider-line-color;
 				}
 			}
 
@@ -44,7 +59,7 @@
 					position: absolute;
 					width: 100%;
 					top: 50%;
-					border-bottom: 2px solid var(--line-color);
+					border-bottom: 2px solid $divider-line-color;
 					height: 2px;
 				}
 			}
@@ -55,41 +70,16 @@
 			}
 		}
 	}
-// Dark
-	.dark {
-		[data-rem-container-tags~="divider"] {
-			[data-rem-tags~="divider"] {
-				&::before {
-					border-bottom: var(--line-color);
-				}
+}
 
-				&:focus-within {
-					background-color: var(--line-color-focused-dark);
+@include divider(
+	var(--line-color), 
+	var(--line-color-focused)
+);
 
-					&::before {
-						border-bottom: 2px solid var(--line-color-dark);
-					}
-				}
-
-				&:not(:focus-within) {
-					&::before {
-						border-bottom: 2px solid var(--line-color-dark);
-					}
-				} 
-			}
-		}
-	}
-// Hide
-	[data-rem-tags~="divider"] {
-		.pointer-events-none,
-		.RichTextViewer,
-		.rem-button__container,
-		.rem-container--focused, 
-		.rem-bullet__icon,
-		.rem-bullet__container,
-		.rem-checkbox,
-		.rem:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar,  // Hide Merge Sign
-		.float-end {	                            // Hide Placeholder "Type / for Commands"
-			display: none;
-		}
-	}
+.dark {
+	@include divider(
+		var(--line-color-dark),
+		var(--line-color-focused-dark)
+	);
+}

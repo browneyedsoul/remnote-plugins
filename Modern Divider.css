@@ -13,6 +13,17 @@
 	color: transparent;
 	height: 7px;
 }
+[data-rem-container-tags~=divider] [data-rem-tags~=divider] .pointer-events-none,
+[data-rem-container-tags~=divider] [data-rem-tags~=divider] .RichTextViewer,
+[data-rem-container-tags~=divider] [data-rem-tags~=divider] .rem-button__container,
+[data-rem-container-tags~=divider] [data-rem-tags~=divider] .rem-container--focused,
+[data-rem-container-tags~=divider] [data-rem-tags~=divider] .rem-bullet__icon,
+[data-rem-container-tags~=divider] [data-rem-tags~=divider] .rem-bullet__container,
+[data-rem-container-tags~=divider] [data-rem-tags~=divider] .rem-checkbox,
+[data-rem-container-tags~=divider] [data-rem-tags~=divider] .rem:not([data-rem-tags~=show-tags]) .hierarchy-editor__tag-bar,
+[data-rem-container-tags~=divider] [data-rem-tags~=divider] .float-end {
+	display: none;
+}
 [data-rem-container-tags~=divider] [data-rem-tags~=divider]::before {
 	content: " ";
 	display: block;
@@ -47,27 +58,55 @@
 	visibility: hidden;
 }
 
+.dark [data-rem-container-tags~=divider] {
+	margin-bottom: 0.5rem;
+	margin-left: 1.8rem;
+}
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider] {
+	color: transparent;
+	height: 7px;
+}
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider] .pointer-events-none,
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider] .RichTextViewer,
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider] .rem-button__container,
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider] .rem-container--focused,
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider] .rem-bullet__icon,
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider] .rem-bullet__container,
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider] .rem-checkbox,
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider] .rem:not([data-rem-tags~=show-tags]) .hierarchy-editor__tag-bar,
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider] .float-end {
+	display: none;
+}
 .dark [data-rem-container-tags~=divider] [data-rem-tags~=divider]::before {
-	border-bottom: var(--line-color);
+	content: " ";
+	display: block;
+	position: absolute;
+	border-bottom: var(--line-color-dark);
+	left: -0.2rem;
 }
 .dark [data-rem-container-tags~=divider] [data-rem-tags~=divider]:focus-within {
 	background-color: var(--line-color-focused-dark);
+	position: relative;
+	top: 3px;
+	left: -0.2rem;
 }
 .dark [data-rem-container-tags~=divider] [data-rem-tags~=divider]:focus-within::before {
 	border-bottom: 2px solid var(--line-color-dark);
 }
-.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider]:not(:focus-within)::before {
-	border-bottom: 2px solid var(--line-color-dark);
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider]:not(:focus-within) {
+	color: transparent;
+	position: relative;
+	padding: 0px 15px;
 }
-
-[data-rem-tags~=divider] .pointer-events-none,
-[data-rem-tags~=divider] .RichTextViewer,
-[data-rem-tags~=divider] .rem-button__container,
-[data-rem-tags~=divider] .rem-container--focused,
-[data-rem-tags~=divider] .rem-bullet__icon,
-[data-rem-tags~=divider] .rem-bullet__container,
-[data-rem-tags~=divider] .rem-checkbox,
-[data-rem-tags~=divider] .rem:not([data-rem-tags~=show-tags]) .hierarchy-editor__tag-bar,
-[data-rem-tags~=divider] .float-end {
-	display: none;
+.dark [data-rem-container-tags~=divider] [data-rem-tags~=divider]:not(:focus-within)::before {
+	content: " ";
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	border-bottom: 2px solid var(--line-color-dark);
+	height: 2px;
+}
+.dark [data-rem-container-tags~=divider] .EditorContainer span {
+	visibility: hidden;
 }
