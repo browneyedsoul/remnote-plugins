@@ -1109,31 +1109,23 @@
 	height: 1.5%;
 }
 #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable {
-	background: var(--darkmode-background-sidebar);
-	border-color: var(--darkmode-background-sidebar);
-}
-#content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable:hover {
-	background-color: var(--darkmode-background-selected-darker);
+	background: #161616;
+	border: 0.2rem solid #161616;
+	border-radius: 1px;
 }
 #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div {
-	background: var(--darkmode-background-sidebar);
+	background: #161616;
+	height: 25px;
 }
-#content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div > div {
-	background: var(--darkmode-background-sidebar);
+#content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div:hover {
+	background-color: #000;
 }
-#content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div > div .icon-button {
+#content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div > div.float-right {
+	background: #161616;
+}
+#content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div > div.float-right .icon-button {
 	color: #FFF;
 	opacity: 0.5;
-}
-
-.dark #content {
-	background-color: var(--darkmode-background-sidebar);
-}
-.dark #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable .rn-pane__top-bar {
-	background-color: var(--darkmode-background-sidebar);
-}
-.dark #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable .rn-pane__top-bar:hover {
-	background-color: var(--darkmode-background-selected-darker);
 }
 
 .dark .document-table,
@@ -2366,7 +2358,7 @@
 	color: var(--darkmode-contrast);
 }
 
-.navigation-bar {
+#content > div.content__page > div.top-bar-container > div {
 	background-color: var(--darkmode-background);
 }
 
@@ -2377,11 +2369,6 @@
 .hierarchy-editor-list__sticky-top__rem-container .rem-is-custom-rem-type--in-body,
 .hierarchy-editor-list__sticky-top__rem-container .EditorContainer {
 	zoom: 90%;
-}
-
-.dark .navigation-bar {
-	background-color: var(--darkmode-background-sidebar);
-	border-bottom: 1px solid #000 !important;
 }
 
 #document-sidebar {
@@ -2595,7 +2582,7 @@
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.rn-clr-background-light-accent {
 	border: 2px solid var(--darkmode-contrast);
-	border-radius: 8px;
+	border-radius: 5px;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.rn-clr-background-light-accent .RichTextViewer {
 	color: white;
