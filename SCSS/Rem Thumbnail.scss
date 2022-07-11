@@ -254,8 +254,16 @@
 							}
 						}
 					}
-					> span.RichTextViewer {
-						@include thumbnail-set;
+				}
+			}
+			> div {
+				> div {
+					> div {
+						> span {
+							> span.RichTextViewer {
+								@include thumbnail-set;
+							}
+						}
 					}
 				}
 			}

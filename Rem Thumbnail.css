@@ -724,11 +724,11 @@
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu > div > div > span.RichTextViewer span.inline-block {
+.popup-menu > div > div > div > span > span.RichTextViewer span.inline-block {
 	height: 1em;
 	width: auto;
 }
-.popup-menu > div > div > span.RichTextViewer span.inline-block > div {
+.popup-menu > div > div > div > span > span.RichTextViewer span.inline-block > div {
 	height: 1em !important;
 	width: unset !important;
 	max-width: 1em !important;
@@ -739,16 +739,16 @@
 	min-width: 1em !important;
 	min-height: unset !important;
 }
-.popup-menu > div > div > span.RichTextViewer span.inline-block > div > span.image-node {
+.popup-menu > div > div > div > span > span.RichTextViewer span.inline-block > div > span.image-node {
 	-o-object-fit: contain !important;
 	   object-fit: contain !important;
 	-o-object-position: center;
 	   object-position: center;
 }
-.popup-menu > div > div > span.RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
+.popup-menu > div > div > div > span > span.RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(1):not(div[data-rmiz-wrap~=visible]) {
 	display: none;
 }
-.popup-menu > div > div > span.RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
+.popup-menu > div > div > div > span > span.RichTextViewer span.inline-block > div > span.image-node > div:nth-of-type(2) img.thumbnail--with-width {
 	-o-object-fit: contain;
 	   object-fit: contain;
 	-o-object-position: center;
