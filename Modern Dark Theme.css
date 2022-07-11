@@ -1984,6 +1984,9 @@
 	color: var(--highlight-color--purple-text-dark);
 	background-color: var(--highlight-color--purple-bg-dark);
 }
+.dark .popup-menu #hierarchy-editor .animate-zoom-into-bullet .tree-node--automatic-search-portal-header .rem-container--embedded-search-stub .rn-clr-background-primary {
+	background: var(--rn-clr-background-elevation-10);
+}
 
 .hierarchy-editor__hidden-children__list {
 	color: black;

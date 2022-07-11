@@ -2622,6 +2622,19 @@
 				// Highlight
 				@include highlight-text-dark();
 				@include highlight-color-notbold-dark();
+
+				// Backlink
+				#hierarchy-editor {
+					.animate-zoom-into-bullet {
+						.tree-node--automatic-search-portal-header {
+							.rem-container--embedded-search-stub {
+								.rn-clr-background-primary {
+									background: var(--rn-clr-background-elevation-10);
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	// Hidden Item List
