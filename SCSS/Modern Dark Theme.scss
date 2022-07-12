@@ -2617,37 +2617,37 @@
 	// 	}
 	// }
 	// dark
-		.dark {
-			.popup-menu {
-				// Highlight
-				@include highlight-text-dark();
-				@include highlight-color-notbold-dark();
+		// .dark {
+		// 	.popup-menu {
+		// 		// Highlight
+		// 		@include highlight-text-dark();
+		// 		@include highlight-color-notbold-dark();
 
-				// Backlink
-				#hierarchy-editor {
-					.animate-zoom-into-bullet {
-						.tree-node--automatic-search-portal-header {
-							.rem-container--embedded-search-stub {
-								.rn-clr-background-primary {
-									background: var(--rn-clr-background-elevation-10);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+		// 		// Backlink
+		// 		#hierarchy-editor {
+		// 			.animate-zoom-into-bullet {
+		// 				.tree-node--automatic-search-portal-header {
+		// 					.rem-container--embedded-search-stub {
+		// 						.rn-clr-background-primary {
+		// 							background: var(--rn-clr-background-elevation-10);
+		// 						}
+		// 					}
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
 	// Hidden Item List
-		// Style
-			.hierarchy-editor__hidden-children__list {
-				color: black;
-				background-color: var(--darkmode-text);
-			}
-		// Hover
-			[data-search-result~="search-result-panel"] .bg-gray-5 {
-				color: black;
-				background-color: var(--popup-background-hover);
-			}
+		// // Style
+		// 	.hierarchy-editor__hidden-children__list {
+		// 		color: black;
+		// 		background-color: var(--darkmode-text);
+		// 	}
+		// // Hover
+		// 	[data-search-result~="search-result-panel"] .bg-gray-5 {
+		// 		color: black;
+		// 		background-color: var(--popup-background-hover);
+		// 	}
 // #Popup - Delete, Disable Confirm, Highlight
 	.dark {
 		#Popup {

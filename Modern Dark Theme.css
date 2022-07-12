@@ -1871,69 +1871,6 @@
 	color: var(--darkmode-text);
 }
 
-.dark .popup-menu .bold.highlight-color--red {
-	color: var(--red-text-dark);
-	background-color: unset;
-}
-.dark .popup-menu .bold.highlight-color--orange {
-	color: var(--orange-text-dark);
-	background-color: unset;
-}
-.dark .popup-menu .bold.highlight-color--yellow {
-	color: var(--yellow-text-dark);
-	background-color: unset;
-	text-shadow: unset;
-}
-.dark .popup-menu .bold.highlight-color--green {
-	color: var(--green-text-dark);
-	background-color: unset;
-}
-.dark .popup-menu .bold.highlight-color--blue {
-	color: var(--blue-text-dark);
-	background-color: unset;
-}
-.dark .popup-menu .bold.highlight-color--purple {
-	color: var(--purple-text-dark);
-	background-color: unset;
-}
-.dark .popup-menu .highlight-color--red:not(.bold.highlight-color--red) {
-	color: var(--highlight-color--red-text-dark);
-	background-color: var(--highlight-color--red-bg-dark);
-}
-.dark .popup-menu .highlight-color--orange:not(.bold.highlight-color--orange) {
-	color: var(--highlight-color--orange-text-dark);
-	background-color: var(--highlight-color--orange-bg-dark);
-}
-.dark .popup-menu .highlight-color--yellow:not(.bold.highlight-color--yellow) {
-	color: var(--highlight-color--yellow-text-dark);
-	background-color: var(--highlight-color--yellow-bg-dark);
-}
-.dark .popup-menu .highlight-color--green:not(.bold.highlight-color--green) {
-	color: var(--highlight-color--green-text-dark);
-	background-color: var(--highlight-color--green-bg-dark);
-}
-.dark .popup-menu .highlight-color--blue:not(.bold.highlight-color--blue) {
-	color: var(--highlight-color--blue-text-dark);
-	background-color: var(--highlight-color--blue-bg-dark);
-}
-.dark .popup-menu .highlight-color--purple:not(.bold.highlight-color--purple) {
-	color: var(--highlight-color--purple-text-dark);
-	background-color: var(--highlight-color--purple-bg-dark);
-}
-.dark .popup-menu #hierarchy-editor .animate-zoom-into-bullet .tree-node--automatic-search-portal-header .rem-container--embedded-search-stub .rn-clr-background-primary {
-	background: var(--rn-clr-background-elevation-10);
-}
-
-.hierarchy-editor__hidden-children__list {
-	color: black;
-	background-color: var(--darkmode-text);
-}
-
-[data-search-result~=search-result-panel] .bg-gray-5 {
-	color: black;
-	background-color: var(--popup-background-hover);
-}
-
 .dark #Popup #PopupContent > div:nth-of-type(2) {
 	color: var(--darkmode-text);
 }
