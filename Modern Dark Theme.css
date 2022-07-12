@@ -1345,13 +1345,14 @@
 	display: none;
 }
 .tile__document #document {
-	width: calc(100% - 2rem);
-	margin-left: 2rem;
+	width: 100%;
+	margin-left: 0;
 	padding: 0;
 	margin-top: 70px;
 }
 .tile__document #document div.mt-2\.5 {
-	margin-left: 2rem;
+	width: calc(100% - 3rem);
+	margin-left: 3rem;
 	margin-right: 0.7rem;
 }
 .tile__document #document div.mt-2\.5 > div #DocumentTitle .bold,
@@ -1390,7 +1391,8 @@
 	color: var(--purple-text);
 }
 .tile__document #document #hierarchy-editor {
-	margin-left: 1rem;
+	width: calc(100% - 3rem);
+	margin-left: 3rem;
 	margin-right: 0.7rem;
 }
 .tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f {

@@ -2047,15 +2047,16 @@
 			}
 		// Document
 			#document {
-				width: calc(100% - 2rem);
-				margin-left: 2rem;
+				width: 100%;
+				margin-left: 0;
 				padding: 0;
 				margin-top: 70px;
 
 				// hierarchy-editor
 					// Title
 						div.mt-2\.5 {
-							margin-left: 2rem;
+							width: calc(100% - 3rem);
+							margin-left: 3rem;
 							margin-right: 0.7rem;
 
 							> div {
@@ -2076,7 +2077,8 @@
 						}
 					// Editor
 						#hierarchy-editor {
-							margin-left: 1rem;
+							width: calc(100% - 3rem);
+							margin-left: 3rem;
 							margin-right: 0.7rem;
 							// Find / Filter / Replace - Ctrl(⌘) + F
 								#hierarchy-editor__ctrl-f {
