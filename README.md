@@ -488,7 +488,7 @@
  <summary>Rating bar</summary>
  
  ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Prepositive%20Rating%20Bar.css"); 
+ @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rating%20Bar.css"); 
  ```
  
  <img src="Assets/RatingBar.gif">
