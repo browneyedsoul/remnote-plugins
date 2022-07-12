@@ -604,6 +604,7 @@
 					padding-left: 0.8rem;
 					padding-right: 1rem;
 					margin-bottom: 0.5rem;
+					margin-right: 0.7rem;
 
 					.rn-divider {
 						display: none;
@@ -612,6 +613,7 @@
 				.animate-zoom-into-bullet.portal-tree-node-box.portal-tree-node-box--focused {
 					border: 0.15rem solid #6686FF;
 					border-color: #6686FF;
+					margin-right: 0.7rem;
 				}
 			// Dark
 				.dark {
@@ -2055,7 +2057,7 @@
 				// hierarchy-editor
 					// Title
 						div.mt-2\.5 {
-							width: calc(100% - 3rem);
+							width: calc(100% - 3.7rem);
 							margin-left: 3rem;
 							margin-right: 0.7rem;
 
@@ -2077,7 +2079,7 @@
 						}
 					// Editor
 						#hierarchy-editor {
-							width: calc(100% - 3rem);
+							width: calc(100% - 3.7rem);
 							margin-left: 3rem;
 							margin-right: 0.7rem;
 							// Find / Filter / Replace - Ctrl(⌘) + F
