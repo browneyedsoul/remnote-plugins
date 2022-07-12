@@ -591,6 +591,49 @@
 				color: #000;
 			}
 		}
+	// Backlink & Portal
+		// Document Bottom Backlink Area
+			// Light
+				.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
+					border: 1px solid var(--line-color);
+					border-radius: 4px;
+					padding-left: 0.8rem;
+					padding-right: 1rem;
+					margin-bottom: 0.5rem;
+
+					.rn-divider {
+						display: none;
+					}
+				}
+				.animate-zoom-into-bullet.portal-tree-node-box.portal-tree-node-box--focused {
+					border: 0.15rem solid #6686FF;
+					border-color: #6686FF;
+				}
+			// Dark
+				.dark {
+					.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
+						border: 1px solid var(--line-color-dark);
+
+						.rn-clr-background-primary {
+							background: unset;
+						}
+						> div {
+							background-color: unset;
+						}
+						.button {
+							background: var(--rn-clr-background-primary);
+						}
+					}
+					.rem-container--embedded-search-stub {
+						> div {
+							background-color: var(--darkmode-background);
+
+							> div {
+								background-color: var(--darkmode-background);			
+							}
+						}
+					}
+				}
 // Global Elements - Darkmode
 	.dark {
 	// Hightlight
@@ -2095,23 +2138,6 @@
 										}
 									}
 								}
-							// Document Bottom Backlink Area
-								.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
-									border: 1px solid var(--line-color);
-									border-radius: 4px;
-									padding-left: 1rem;
-									padding-right: 1rem;
-									margin-bottom: 0.5rem;
-
-									.rn-divider {
-										display: none;
-									}
-									.portal-tree-node-box--focused {
-										border: 0.15rem solid #6686FF;
-										border-color: #6686FF;
-									}
-								}
-						
 					}
 
 			}
@@ -2416,33 +2442,6 @@
 												margin: 0 2px;
 												border-radius: 4px;
 											}
-										}
-									}
-								}
-							// Document Bottom Backlink Area
-								.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
-									border: 1px solid var(--line-color-dark);
-
-									.rn-clr-background-primary {
-										background: unset;
-									}
-									> div {
-										background-color: unset;
-									}
-									.portal-tree-node-box--focused {
-										border: 0.15rem solid #6686FF;
-										border-color: #6686FF;
-									}
-									.button {
-										background: var(--rn-clr-background-primary);
-									}
-								}
-								.rem-container--embedded-search-stub {
-									> div {
-										background-color: var(--darkmode-background);
-
-										> div {
-											background-color: var(--darkmode-background);			
 										}
 									}
 								}

@@ -280,6 +280,41 @@
 	color: #000;
 }
 
+.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
+	border: 1px solid var(--line-color);
+	border-radius: 4px;
+	padding-left: 0.8rem;
+	padding-right: 1rem;
+	margin-bottom: 0.5rem;
+}
+.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) .rn-divider {
+	display: none;
+}
+
+.animate-zoom-into-bullet.portal-tree-node-box.portal-tree-node-box--focused {
+	border: 0.15rem solid #6686FF;
+	border-color: #6686FF;
+}
+
+.dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
+	border: 1px solid var(--line-color-dark);
+}
+.dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) .rn-clr-background-primary {
+	background: unset;
+}
+.dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) > div {
+	background-color: unset;
+}
+.dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) .button {
+	background: var(--rn-clr-background-primary);
+}
+.dark .rem-container--embedded-search-stub > div {
+	background-color: var(--darkmode-background);
+}
+.dark .rem-container--embedded-search-stub > div > div {
+	background-color: var(--darkmode-background);
+}
+
 .dark .highlight-color--red {
 	background-color: var(--highlight-color--red-dark);
 }
@@ -1453,20 +1488,6 @@
 	margin: 0 2px;
 	border-radius: 4px;
 }
-.tile__document #document #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
-	border: 1px solid var(--line-color);
-	border-radius: 4px;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	margin-bottom: 0.5rem;
-}
-.tile__document #document #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) .rn-divider {
-	display: none;
-}
-.tile__document #document #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) .portal-tree-node-box--focused {
-	border: 0.15rem solid #6686FF;
-	border-color: #6686FF;
-}
 
 .dark .tile__document {
 	background-color: var(--darkmode-background) !important;
@@ -1806,28 +1827,6 @@
 	padding: 0 2px;
 	margin: 0 2px;
 	border-radius: 4px;
-}
-.dark .tile__document #document #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
-	border: 1px solid var(--line-color-dark);
-}
-.dark .tile__document #document #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) .rn-clr-background-primary {
-	background: unset;
-}
-.dark .tile__document #document #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) > div {
-	background-color: unset;
-}
-.dark .tile__document #document #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) .portal-tree-node-box--focused {
-	border: 0.15rem solid #6686FF;
-	border-color: #6686FF;
-}
-.dark .tile__document #document #hierarchy-editor .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) .button {
-	background: var(--rn-clr-background-primary);
-}
-.dark .tile__document #document #hierarchy-editor .rem-container--embedded-search-stub > div {
-	background-color: var(--darkmode-background);
-}
-.dark .tile__document #document #hierarchy-editor .rem-container--embedded-search-stub > div > div {
-	background-color: var(--darkmode-background);
 }
 .dark .tile__document .rem-container--focused .inline-flex .text-gray-60 {
 	color: var(--darkmode-text);
