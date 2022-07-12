@@ -135,6 +135,10 @@
 	margin-right: unset;
 }
 
+#hierarchy-editor {
+	margin-top: 0.5rem;
+}
+
 #hierarchy-editor .rem-text.rem-header--1 {
 	font-size: var(--font-size-header-1);
 }
@@ -280,14 +284,14 @@
 	color: #000;
 }
 
-.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
+.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent):not(.animate-zoom-into-bullet.portal-tree-node-box) {
 	border: 1px solid var(--line-color);
 	border-radius: 4px;
 	padding-left: 0.8rem;
 	padding-right: 1rem;
 	margin-bottom: 0.5rem;
 }
-.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) .rn-divider {
+.animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent):not(.animate-zoom-into-bullet.portal-tree-node-box) .rn-divider {
 	display: none;
 }
 
@@ -296,16 +300,16 @@
 	border-color: #6686FF;
 }
 
-.dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
+.dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent):not(.animate-zoom-into-bullet.portal-tree-node-box) {
 	border: 1px solid var(--line-color-dark);
 }
-.dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) .rn-clr-background-primary {
+.dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent):not(.animate-zoom-into-bullet.portal-tree-node-box) .rn-clr-background-primary {
 	background: unset;
 }
-.dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) > div {
+.dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent):not(.animate-zoom-into-bullet.portal-tree-node-box) > div {
 	background-color: unset;
 }
-.dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) .button {
+.dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent):not(.animate-zoom-into-bullet.portal-tree-node-box) .button {
 	background: var(--rn-clr-background-primary);
 }
 .dark .rem-container--embedded-search-stub > div {
@@ -1341,8 +1345,8 @@
 	display: none;
 }
 .tile__document #document {
-	width: 100%;
-	margin-left: 0;
+	width: calc(100% - 2rem);
+	margin-left: 2rem;
 	padding: 0;
 	margin-top: 70px;
 }
@@ -1386,7 +1390,7 @@
 	color: var(--purple-text);
 }
 .tile__document #document #hierarchy-editor {
-	margin-left: 2rem;
+	margin-left: 1rem;
 	margin-right: 0.7rem;
 }
 .tile__document #document #hierarchy-editor #hierarchy-editor__ctrl-f {
