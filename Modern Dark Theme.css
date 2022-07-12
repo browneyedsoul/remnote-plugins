@@ -302,6 +302,10 @@
 	margin-right: 0.7rem;
 }
 
+.portal-tree-node-box .rem-text {
+	align-items: center;
+}
+
 .dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent):not(.animate-zoom-into-bullet.portal-tree-node-box) {
 	border: 1px solid var(--line-color-dark);
 }
