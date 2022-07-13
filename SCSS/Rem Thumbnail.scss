@@ -208,6 +208,12 @@
 	}
 // .popup-menu
 	.popup-menu {
+		// Backlink Counter
+			.rn-editor__rem__backlink-item {
+				span.RichTextViewer {
+					@include thumbnail-set;
+				}
+			}
 		// Static Popup
 			.popup-menu__item--static {
 				span.RichTextViewer {
