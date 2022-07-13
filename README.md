@@ -587,7 +587,7 @@
 
 <!-- Hide Aliases until cursor hovered or focused -->
  <details>
-    <summary>Hide Aliases until cursor hovered or focused</summary>
+    <summary>Hide Aliases until cursor hovered or focused (fixing)</summary>
 
  ![d](Assets/UI-alias.gif)
 
@@ -632,42 +632,21 @@
 <!-- Hide Placeholder aka "Type / for Commands" -->
  <details>
     <summary>Hide Placeholder aka "Type / for Commands"</summary>
+ <br>
+
+ - Before
+
  <img src="https://user-images.githubusercontent.com/56161102/148634322-f5b10f56-ba00-456b-a33f-a5c5cc577040.gif">
+ <br>
+
+ - After
+
  <img src="https://user-images.githubusercontent.com/56161102/148634358-b9d0f113-6d20-4c63-bb55-1e3b022c6d76.gif">
+ <br>
 
  ```css
- .rich-text-editor-placeholder {
-     display: none;
- }
- ```
-
- </details>
-
- ---
-
-<!-- Move Omni Help Button for Content Visibility : Declutter ? Button at the lower right -->
-  <details>
-    <summary>Move Omni Help Button for Content Visibility : Declutter ? Button at the lower right</summary>
-  <img src="https://user-images.githubusercontent.com/56161102/148634119-6963a464-0297-4ae5-8d63-e275de339215.png">
-
-  ```css
-  #help-button {
-	position: fixed;
-	bottom: 4px;
-	right: 4px;
-	border-radius: 10px;
-	color: #FFF;
-	background-color: #404040;
- }
- .dark-mode #help-button {
-	color: #000;
-	background-color: #FFF;
- }
- #help-button:hover {
-	background-color: #000;
- }
- .dark-mode #help-button:hover {
-	background-color: #E0E0E0;
+ .rich-text-editor > .pointer-events-none {
+	opacity: .2;
  }
  ```
 
@@ -691,7 +670,7 @@
 
 <!-- Hide List Card Placeholder -->
  <details>
-    <summary>Hide List Card Placeholder</summary>
+    <summary>Hide List Card Placeholder (fixing)</summary>
  <img src="https://user-images.githubusercontent.com/56161102/148634056-53c0ee40-469c-4218-9407-080ac54ce035.png">
  <img src="https://user-images.githubusercontent.com/56161102/148634441-b97f1676-d752-47e8-afc6-4aead741e174.gif">
 
@@ -710,9 +689,9 @@
     <summary>Hide "Add a Document To This Folder"</summary>
 
  ```css
-.add-new-document-button {
-	display: none;
-}
+ .add-new-document-button {
+ 	display: none;
+ }
  ```
 
  </details>
