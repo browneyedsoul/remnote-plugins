@@ -710,9 +710,9 @@
     <summary>Hide "Add a Document To This Folder"</summary>
 
  ```css
- #AddNewDocumentButtonSmall {
- 	display: none;
- }
+.add-new-document-button {
+	display: none;
+}
  ```
 
  </details>
