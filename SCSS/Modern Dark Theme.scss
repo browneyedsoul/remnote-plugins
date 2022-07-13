@@ -1035,6 +1035,10 @@
 			background-color: #FFF;
 			.rn-all-notes {
 				padding-top: 3rem !important;
+
+				> div:last-child {
+					margin-bottom: 3rem;
+				}
 			}
 			// Reverse Browser Item Header
 				.ReactVirtualized__Grid__innerScrollContainer {
