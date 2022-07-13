@@ -1131,9 +1131,6 @@
 	opacity: 0.9;
 	zoom: 1.1;
 }
-.dark [aria-label~=Omnibar] [data-omnibar-results~=true] > div:hover {
-	background-color: var(--darkmode-background-selected-darker) !important;
-}
 .dark [aria-label~=Omnibar] [data-omnibar-results~=true] > div > div:nth-of-type(2) {
 	flex-direction: column-reverse !important;
 }

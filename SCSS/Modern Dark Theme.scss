@@ -1715,10 +1715,6 @@
 			// ⌘ + P Result
 				[data-omnibar-results~="true"] {
 					> div {
-						
-						&:hover {
-							background-color: var(--darkmode-background-selected-darker) !important;
-						}
 						// Icon
 							// > div:nth-of-type(1) {
 
