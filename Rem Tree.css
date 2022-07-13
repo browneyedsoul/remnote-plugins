@@ -11,10 +11,6 @@
 [data-rem-container-tags~=treec] .rem {
 	min-width: calc(100% + 1rem);
 }
-[data-rem-container-tags~=tree] .tree-node--parent,
-[data-rem-container-tags~=treec] .tree-node--parent {
-	margin-right: 1rem;
-}
 
 [data-rem-container-tags~=tree], [data-rem-container-tags~=treec] {
 	display: flex;
@@ -87,9 +83,6 @@
 }
 [data-rem-container-tags~=tree] .animate-zoom-into-bullet, [data-rem-container-tags~=treec] .animate-zoom-into-bullet {
 	display: flex;
-}
-[data-rem-container-tags~=tree] div.tree-node--children, [data-rem-container-tags~=treec] div.tree-node--children {
-	margin-left: 0;
 }
 [data-rem-container-tags~=tree] div.tree-node--children .backlink-counter, [data-rem-container-tags~=treec] div.tree-node--children .backlink-counter {
 	opacity: 0.4;

@@ -11,9 +11,6 @@
     .rem {
         min-width: calc(100% + 1rem);
     }
-    .tree-node--parent {
-        margin-right: 1rem;
-    }
 }
 
 
@@ -98,7 +95,7 @@
         }
     // Children - One Child Tree
         div.tree-node--children {
-            margin-left: 0;
+            // margin-left: 0;
             
             .backlink-counter {
                 opacity: .4;
