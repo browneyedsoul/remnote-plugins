@@ -3885,6 +3885,7 @@
 	#content {
 		> div.fade-on-hide-ui {
 			background-color: var(--darkmode-background);
+			position: inherit;
 		}
 	}
 	.dark {
