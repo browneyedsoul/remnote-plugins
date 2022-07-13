@@ -11,6 +11,9 @@
     .rem {
         min-width: calc(100% + 1rem);
     }
+    .tree-node--parent {
+        margin-right: 1rem;
+    }
 }
 
 
@@ -114,7 +117,7 @@
                 padding-top: 0;
                 position: absolute;
                 z-index: 1;
-                top: 0.16rem;
+                top: 0;
                 left: -0.15rem;
                 height: 1rem;
                 border-top: unset;
