@@ -11,6 +11,10 @@
 [data-rem-container-tags~=treec] .rem {
 	min-width: calc(100% + 1rem);
 }
+[data-rem-container-tags~=tree] .float-end > .rn-editor__rem__merge,
+[data-rem-container-tags~=treec] .float-end > .rn-editor__rem__merge {
+	display: none;
+}
 
 [data-rem-container-tags~=tree], [data-rem-container-tags~=treec] {
 	display: flex;

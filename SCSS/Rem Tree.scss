@@ -11,6 +11,11 @@
     .rem {
         min-width: calc(100% + 1rem);
     }
+    .float-end {
+        > .rn-editor__rem__merge {
+            display: none;
+        }
+    }
 }
 
 
