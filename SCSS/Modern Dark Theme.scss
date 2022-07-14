@@ -2551,115 +2551,13 @@
 			}
 		}
 // .popup-menu
-	// .popup-menu {
-	// 	width: fit-content;
-	// 	// Hover Preview Max Height
-	// 		.max-h-\[40vh\] {
-	// 			max-height: 48vh;
-	// 		}
-	// 	// Static Preview Max Width
-	// 		&.max-w-\[calc\(100vw-100px\)\] {
-	// 			width: unset; //70%
-	// 		}
-
-	// 		> div {
-	// 			// Popup menu title bar
-	// 			height: 100%;
-	// 			max-width: unset;
-				
-	// 			> div.w-96 {
-	// 				width: fit-content;
-	// 			}
-	// 		}
-	// 	// Popup Title - Reference & Alias
-	// 		#document-hover-preview__popup span.bold > span,
-	// 		.popup-menu__item--static > span {
-	// 			font-size: 18px;
-	// 		}
-	// 		[data-rem-container-tags~="aliases"] {
-	// 			margin-top: 5px;
-	// 		}
-	// 	// Popup Area
-	// 		> div#SearchPopup {
-	// 			width: 80vw;
-	// 		}
-	// 	// Backlink Counter
-	// 		.backlink-counter {
-	// 			margin-left: 0;
-	// 			position: relative;
-	// 			left: -0.2rem;
-	// 			transform: scale(0.8);
-	// 		}
-	// 	// LaTex Editor
-	// 		.latex-editor {
-	// 			width: 720px !important;
-
-	// 			> div:nth-of-type(1) {
-	// 				> textarea.latex-editor__input {
-	// 					overflow-x: visible;
-	// 					white-space: pre;
-
-	// 					&::-webkit-scrollbar-thumb {
-	// 						background-color: #DDD;
-	// 						border-radius: 2px;
-	// 					}
-
-	// 					&.font-mono {
-	// 						font-family: 'Roboto Mono', monospace;
-	// 					}
-	// 				}
-	// 			}
-	// 			> div:nth-of-type(2) {
-					
-	// 			}
-	// 		}
-	// 	#document-hover-preview__popup {
-	// 		width: fit-content;
-	// 		min-width: 16rem;
-	// 		max-width: 60vw;
-
-	// 		// Remove Sticky Top Bar
-	// 			> #hierarchy-editor {
-	// 				margin-top: 1rem;
-
-	// 				> .fixed {
-	// 					display: none;
-	// 				}
-	// 			}
-	// 	}
-	// }
-	// dark
-		// .dark {
-		// 	.popup-menu {
-		// 		// Highlight
-		// 		@include highlight-text-dark();
-		// 		@include highlight-color-notbold-dark();
-
-		// 		// Backlink
-		// 		#hierarchy-editor {
-		// 			.animate-zoom-into-bullet {
-		// 				.tree-node--automatic-search-portal-header {
-		// 					.rem-container--embedded-search-stub {
-		// 						.rn-clr-background-primary {
-		// 							background: var(--rn-clr-background-elevation-10);
-		// 						}
-		// 					}
-		// 				}
-		// 			}
-		// 		}
-		// 	}
-		// }
-	// Hidden Item List
-		// // Style
-		// 	.hierarchy-editor__hidden-children__list {
-		// 		color: black;
-		// 		background-color: var(--darkmode-text);
-		// 	}
-		// // Hover
-		// 	[data-search-result~="search-result-panel"] .bg-gray-5 {
-		// 		color: black;
-		// 		background-color: var(--popup-background-hover);
-		// 	}
+	.popup-menu {
+		> div.overflow-x-hidden {
+			> div.max-w-\[285px\] {
+				max-width: unset;
+			}
+		}
+	}
 // #Popup - Delete, Disable Confirm, Highlight
 	.dark {
 		#Popup {

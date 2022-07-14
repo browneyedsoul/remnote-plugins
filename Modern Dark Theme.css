@@ -1882,6 +1882,10 @@
 	color: var(--darkmode-text);
 }
 
+.popup-menu > div.overflow-x-hidden > div.max-w-\[285px\] {
+	max-width: unset;
+}
+
 .dark #Popup #PopupContent > div:nth-of-type(2) {
 	color: var(--darkmode-text);
 }
