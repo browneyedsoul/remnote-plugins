@@ -208,6 +208,14 @@
 	}
 // .popup-menu
 	.popup-menu {
+		// Title
+			> div.overflow-x-hidden {
+				> div {
+					span.RichTextViewer {
+						@include thumbnail-set;
+					}
+				}
+			}
 		// Backlink Counter
 			.rn-editor__rem__backlink-item {
 				span.RichTextViewer {
