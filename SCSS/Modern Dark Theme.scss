@@ -3339,15 +3339,13 @@
 		// Search and ⚡️
 			div.flex.items-center.p-2.gap-2 {
 				// Search
-					> div:nth-of-type(1) {
-						background-color: #000;
+					> div:nth-of-type(1) {	
 						&:hover {
 							background-color: var(--darkmode-background-selected-darker);
 						}
 					}
 				// ⚡️
 					> div:nth-of-type(2) {
-						background-color: #000;
 						&:hover {
 							background-color: var(--darkmode-background-selected-darker);
 						}
@@ -3489,9 +3487,10 @@
 				span.block.group.cursor-pointer {
 					> div.rounded-md {
 						> div.flex {
-							&:hover {
-								background-color: var(--darkmode-background-selected-darker);
-							}
+							// hover
+								&:hover {
+									background-color: var(--darkmode-background-selected-darker);
+								}
 							// Sidebar list item height
 								height: 2.2rem;
 							// Focused item Placement
