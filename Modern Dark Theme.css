@@ -2333,7 +2333,7 @@
 	background-color: var(--darkmode-background);
 }
 #document-sidebar .w-\[calc\(100\%-16px\)\] {
-	width: calc(100% - 21px);
+	width: calc(100% - 0.8rem);
 }
 #document-sidebar #document-sidebar__account-capsule {
 	background-color: var(--darkmode-background);
@@ -2344,11 +2344,17 @@
 #document-sidebar #document-sidebar__account-capsule span {
 	color: var(--darkmode-text);
 }
-#document-sidebar div.flex.items-center.p-2.gap-2 > div:nth-of-type(1):hover {
-	background-color: var(--darkmode-background-selected-darker);
+#document-sidebar > div:nth-of-type(1) > div:nth-of-type(2) > div.rn-search-button {
+	background: var(--darkmode-background-button);
 }
-#document-sidebar div.flex.items-center.p-2.gap-2 > div:nth-of-type(2):hover {
-	background-color: var(--darkmode-background-selected-darker);
+#document-sidebar > div:nth-of-type(1) > div:nth-of-type(2) > div.rn-search-button:hover {
+	background-color: #000;
+}
+#document-sidebar > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) {
+	background: var(--darkmode-background-button);
+}
+#document-sidebar > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2):hover {
+	background-color: #000;
 }
 #document-sidebar > div > div.p-2 {
 	font-family: "Nunito Sans", sans-serif;

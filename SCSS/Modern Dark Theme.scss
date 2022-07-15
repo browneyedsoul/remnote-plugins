@@ -3322,7 +3322,7 @@
         }
 	// Scrollbar
 		.w-\[calc\(100\%-16px\)\] {
-			width: calc(100% - 21px);
+			width: calc(100% - 0.8rem);
 		}
     // Sidebar Top
 		// Account Capsule
@@ -3337,19 +3337,23 @@
 				}
 			}
 		// Search and ⚡️
-			div.flex.items-center.p-2.gap-2 {
+			> div:nth-of-type(1) {
+				> div:nth-of-type(2) {
 				// Search
-					> div:nth-of-type(1) {	
+					> div.rn-search-button {
+							background: var(--darkmode-background-button);
 						&:hover {
-							background-color: var(--darkmode-background-selected-darker);
+							background-color: #000;
 						}
 					}
 				// ⚡️
 					> div:nth-of-type(2) {
+						background: var(--darkmode-background-button);
 						&:hover {
-							background-color: var(--darkmode-background-selected-darker);
+							background-color: #000;
 						}
 					}
+				}
 			}
 		// All Notes, Today's Note, Flashcards, Edit Later
 			> div {
