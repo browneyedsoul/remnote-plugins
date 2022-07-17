@@ -1,0 +1,139 @@
+:root {
+	--treenode-line-spacing: 16px;
+	--bullet-main: #000;
+	--bullet-main-dark: #C2C2C2;
+	--bullet-doc: #50FA7B;
+	--bullet-folder: #53555F;
+	--bullet-concept: #53555F;
+	--bullet-descriptor: #53555F;
+	--both-practice-color: #FFA344;
+	--forward-practice-color: #FF2600;
+	--backward-practice-color: #D783FF;
+	--disabled-practice-color: #959595;
+	--line-color: #DDDDDD;
+	--node-card-item-color: #FF4E4C;
+	--node-card-item-color-dark: #E0CD00;
+}
+
+.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
+	background: var(--both-practice-color);
+	width: 26px;
+	height: 18px;
+	position: relative;
+	left: 6px;
+	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	zoom: 80%;
+}
+
+.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rem-bullet {
+	background: var(--forward-practice-color);
+	width: 26px;
+	height: 18px;
+	position: relative;
+	left: 6px;
+	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	zoom: 80%;
+}
+
+.rem-container--forwards-practice-disabled .rem-bullet {
+	background: var(--disabled-practice-color);
+	width: 26px;
+	height: 18px;
+	position: relative;
+	left: 6px;
+	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	zoom: 80%;
+}
+
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rem-bullet {
+	background: var(--backward-practice-color);
+	width: 26px;
+	height: 18px;
+	position: relative;
+	left: 6px;
+	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	zoom: 80%;
+}
+
+.rem-container--descriptor-rem-type .rem-bullet {
+	width: 14px !important;
+	height: 12px !important;
+	position: relative !important;
+	top: 2px !important;
+	left: -1px !important;
+	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
+	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+}
+
+.rem-container--descriptor-rem-type .rem-bullet {
+	width: 14px !important;
+	height: 12px !important;
+	position: relative !important;
+	top: 2px !important;
+	left: -1px !important;
+	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg") !important;
+	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg") !important;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+}
+
+.dark .rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled .rem-bullet {
+	background: var(--both-practice-color);
+}
+.dark .rem-container--forwards-practice-enabled .rem-bullet {
+	background: var(--node-card-item-color-dark);
+}
+.dark .rem-container--backwards-practice-enabled .rem-bullet {
+	background: var(--backward-practice-color);
+}
+
+.rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled .separator-symbol > span {
+	color: #FFA344;
+}
+
+.rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
+.rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol > span {
+	color: #FE2600;
+}
+
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol > span {
+	color: #D783FF;
+}
+
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol > span {
+	color: #959595;
+}
+
+.dark .rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
+.dark .rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol > span {
+	color: #E0CD00;
+}
