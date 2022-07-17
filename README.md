@@ -255,9 +255,8 @@
  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Tree.css");
  ```
 
- <ul>
-     <li>Tag Name : Tree</li>
- </ul>
+ - Tag Name : `Tree` , `Treec`
+
  <div style="margin-left: 24px;">
      <img src="Assets/RemTree.png">
  </div>
@@ -413,6 +412,8 @@
 <!-- Modern Table Column -->
  <details>
  <summary>Modern Table Column</summary>
+
+ - Tag Name : `Table`
 
  ```css
  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Column.css");
@@ -737,16 +738,14 @@
  /* Modern Dark Theme */
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Dark%20Theme.css");
  /* Editor Mode */
-  /* Notion like No Bullet Editor Mode */
+  /* No Bullet Editor Mode */
    @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20No%20Bullet%20Editor%20Mode.css"); 
-  /* Branch Emphasizing Editor Mode(need to be polished) */
-   /* @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/"); */
  /* Tricks */
   /* Modern Scrollable Codeblock */
    @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Scrollable%20Code%20Block.css");
   /* Rem Thumbnail */
    @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Thumbnail.css");
-  /* Notion like Callout Rem */
+  /* Callout Rem */
    @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20Callout%20Rem.css");
   /* Modern Divider */
    @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Divider.css"); 
@@ -766,10 +765,7 @@
    @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Column.css");
   /* Modern Kanban */
    @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Kanban.css");
-  /* Easily Discernible List Card Layout */
-   /* @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Easily%20Discernible%20List%20Card%20Layout.css"); */
-  /* Easily Discernible Inline Card Layout */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Easily%20Discernible%20Inline%20Card%20layout.css");
+   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Kanban2.css");
   /* Strikethrough Workaround */
    @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Strikethrough.css");
   /* Caption */
