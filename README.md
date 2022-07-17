@@ -727,6 +727,20 @@
  </details>
 
  ---
+
+<!-- Extra Card Details Zoom -->
+ <details>
+   <summary>Extra Card Details Zoom</summary>
+
+ ```css
+ .extra-card-detail .extra-card-detail__item .RichTextViewer .align-text-top {
+ 	zoom: 125%; /* Tune here */
+ }
+ ```
+
+ </details>
+
+ ---
  <br>
  <br>
 
