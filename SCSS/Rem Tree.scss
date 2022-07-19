@@ -23,6 +23,9 @@
     #document {
         [data-rem-container-tags~="tree"],
         [data-rem-container-tags~="treec"] {
+            .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
+                display: block;
+            }
             .animate-zoom-into-bullet.portal-tree-node-box {
                 margin-left: 1rem;
                 .tree-node--parent {

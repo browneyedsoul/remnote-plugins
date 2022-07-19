@@ -17,6 +17,10 @@
 	display: none;
 }
 
+#document [data-rem-container-tags~=tree] .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent),
+#document [data-rem-container-tags~=treec] .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
+	display: block;
+}
 #document [data-rem-container-tags~=tree] .animate-zoom-into-bullet.portal-tree-node-box,
 #document [data-rem-container-tags~=treec] .animate-zoom-into-bullet.portal-tree-node-box {
 	margin-left: 1rem;
