@@ -17,6 +17,20 @@
 	display: none;
 }
 
+#document [data-rem-container-tags~=tree] .animate-zoom-into-bullet.portal-tree-node-box,
+#document [data-rem-container-tags~=treec] .animate-zoom-into-bullet.portal-tree-node-box {
+	margin-left: 1rem;
+}
+#document [data-rem-container-tags~=tree] .animate-zoom-into-bullet.portal-tree-node-box .tree-node--parent::before,
+#document [data-rem-container-tags~=treec] .animate-zoom-into-bullet.portal-tree-node-box .tree-node--parent::before {
+	background-color: transparent !important;
+}
+
+.dark [data-rem-container-tags~=tree] .animate-zoom-into-bullet.portal-tree-node-box .tree-node--parent::before,
+.dark [data-rem-container-tags~=treec] .animate-zoom-into-bullet.portal-tree-node-box .tree-node--parent::before {
+	background-color: var(--darkmode-background);
+}
+
 #hierarchy-editor [data-rem-container-tags~=tree], #hierarchy-editor [data-rem-container-tags~=treec] {
 	display: flex;
 	line-height: 160%;
@@ -72,10 +86,10 @@
 #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header) [data-rem-tags~=treec] .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
 	opacity: 0.3;
 }
-#hierarchy-editor [data-rem-container-tags~=tree] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent, #hierarchy-editor [data-rem-container-tags~=treec] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent {
+#hierarchy-editor [data-rem-container-tags~=tree] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header), #hierarchy-editor [data-rem-container-tags~=treec] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header) {
 	align-items: flex-start;
 }
-#hierarchy-editor [data-rem-container-tags~=tree] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent::before, #hierarchy-editor [data-rem-container-tags~=treec] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent::before {
+#hierarchy-editor [data-rem-container-tags~=tree] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header)::before, #hierarchy-editor [data-rem-container-tags~=treec] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header)::before {
 	content: "";
 	width: 28px;
 	background-color: #FFF;
@@ -88,6 +102,7 @@
 }
 #hierarchy-editor [data-rem-container-tags~=tree] .animate-zoom-into-bullet, #hierarchy-editor [data-rem-container-tags~=treec] .animate-zoom-into-bullet {
 	display: flex;
+	align-items: center;
 }
 #hierarchy-editor [data-rem-container-tags~=tree] div.tree-node--children .backlink-counter, #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--children .backlink-counter {
 	opacity: 0.4;
@@ -164,6 +179,9 @@
 	border-top: 1px solid var(--line-color-dark);
 	margin-top: 16px;
 }
+.dark #hierarchy-editor [data-rem-container-tags~=tree] div.tree-node--parent::before, .dark #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--parent::before {
+	background-color: var(--darkmode-background) !important;
+}
 .dark #hierarchy-editor [data-rem-container-tags~=tree] div.tree-node--children .tree-node-container:only-child::before, .dark #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--children .tree-node-container:only-child::before {
 	border-bottom: 5rem solid var(--darkmode-background);
 	border-left: 27px solid var(--darkmode-background);
@@ -208,8 +226,4 @@
 
 .dark [data-rem-container-tags~=treec] {
 	border: 0.1rem solid var(--line-color-dark);
-}
-
-[data-rem-container-tags~=w240] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--parent {
-	min-width: 240px;
 }

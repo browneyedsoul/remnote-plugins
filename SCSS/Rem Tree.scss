@@ -19,6 +19,33 @@
     }
 }
 
+// Portal Treatment
+    #document {
+        [data-rem-container-tags~="tree"],
+        [data-rem-container-tags~="treec"] {
+            .animate-zoom-into-bullet.portal-tree-node-box {
+                margin-left: 1rem;
+                .tree-node--parent {
+                    &::before {
+                        background-color: transparent !important;
+                    }
+                }
+            }
+        }
+    }
+    .dark {
+        [data-rem-container-tags~="tree"],
+        [data-rem-container-tags~="treec"] {
+            .animate-zoom-into-bullet.portal-tree-node-box {
+                .tree-node--parent {
+                    &::before {
+                        background-color: var(--darkmode-background);
+                    }
+                }
+            }
+        }
+    }
+
 #hierarchy-editor {
     [data-rem-container-tags~="tree"], %tree {
         display: flex;
@@ -79,8 +106,9 @@
                     }
             }
             .animate-zoom-into-bullet:last-of-type {
-                > div.tree-node--parent {
+                > div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header) {
                     align-items: flex-start;
+
                     &::before {
                         content: "";
                         width: 28px;
@@ -98,6 +126,7 @@
         // Flexbox
             .animate-zoom-into-bullet {
                 display: flex;
+                align-items: center;
             }
         // Children - One Child Tree
             div.tree-node--children {
@@ -205,7 +234,11 @@
                         }
                     }
                 }
-
+                div.tree-node--parent {
+                    &::before {
+                        background-color: var(--darkmode-background) !important;
+                    }
+                }
                 div.tree-node--children {
                     .tree-node-container:only-child {
                         &::before {
@@ -261,15 +294,5 @@
     [data-rem-container-tags~="treec"] {
         @extend %tree-dark;
         border: 0.1rem solid var(--line-color-dark);
-    }
-}
-
-[data-rem-container-tags~="w240"] {
-    > .tree-node--children {
-        > .animate-zoom-into-bullet {
-            > .tree-node--parent {
-                min-width: 240px;
-            }
-        }
     }
 }
