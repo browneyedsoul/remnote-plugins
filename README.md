@@ -528,9 +528,9 @@
     <details>
         <summary>Adjust 'background-size' on your tastes.</summary>
         <div style="margin-left: 24px;">
-            <br>➊ background-size: contain; <span style="font-weight: 700;">(Preferred)</span> ➞ Height fixed and Responsive. but some margins can be made (need something like background color or repetitive background.).
-            <br>➋ background-size: 100% 100%; ➞ Full responsive but the image can be ugly.
-            <br>➌ background-size: cover; ➞ I don’t care about the cover image cropped.
+            <br>➊ background-size: contain; <span style="font-weight: 700;">(Preferred)</span> ➞ Height fixed and Responsive. but some margins can be made (need subsidiary steps like adding background color or repetitive background).
+            <br>➋ background-size: cover; ➞ I don’t care about the cover image cropped. (suitable for cover images which have repetitive patterns)
+            <br>➌ background-size: 100% 100%; ➞ The cover image can be ugly according to a front window size. (not recommended)
         </div>
     </details>
  </div>
