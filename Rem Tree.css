@@ -16,6 +16,10 @@
 [data-rem-container-tags~=treec] .float-end > .rn-editor__rem__merge {
 	display: none;
 }
+[data-rem-container-tags~=tree] .float-end .backlink-counter,
+[data-rem-container-tags~=treec] .float-end .backlink-counter {
+	opacity: 0.3;
+}
 
 #document [data-rem-container-tags~=tree] .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent),
 #document [data-rem-container-tags~=treec] .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
