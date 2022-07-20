@@ -28,6 +28,7 @@
             }
             .animate-zoom-into-bullet.portal-tree-node-box {
                 margin-left: 1rem;
+                align-items: center;
                 .tree-node--parent {
                     &::before {
                         background-color: transparent !important;
@@ -129,7 +130,6 @@
         // Flexbox
             .animate-zoom-into-bullet {
                 display: flex;
-                align-items: center;
             }
         // Children - One Child Tree
             div.tree-node--children {

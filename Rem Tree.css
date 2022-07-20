@@ -24,6 +24,7 @@
 #document [data-rem-container-tags~=tree] .animate-zoom-into-bullet.portal-tree-node-box,
 #document [data-rem-container-tags~=treec] .animate-zoom-into-bullet.portal-tree-node-box {
 	margin-left: 1rem;
+	align-items: center;
 }
 #document [data-rem-container-tags~=tree] .animate-zoom-into-bullet.portal-tree-node-box .tree-node--parent::before,
 #document [data-rem-container-tags~=treec] .animate-zoom-into-bullet.portal-tree-node-box .tree-node--parent::before {
@@ -106,7 +107,6 @@
 }
 #hierarchy-editor [data-rem-container-tags~=tree] .animate-zoom-into-bullet, #hierarchy-editor [data-rem-container-tags~=treec] .animate-zoom-into-bullet {
 	display: flex;
-	align-items: center;
 }
 #hierarchy-editor [data-rem-container-tags~=tree] div.tree-node--children .backlink-counter, #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--children .backlink-counter {
 	opacity: 0.4;
