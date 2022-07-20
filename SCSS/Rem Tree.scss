@@ -223,7 +223,7 @@
                 }
 
                 .animate-zoom-into-bullet:last-of-type {
-                    > div.tree-node--parent {
+                    > div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header) {
                         &::before {
                             content: "";
                             width: 28px;

@@ -172,7 +172,7 @@
 .dark #hierarchy-editor [data-rem-container-tags~=tree]::-webkit-scrollbar-thumb, .dark #hierarchy-editor [data-rem-container-tags~=treec]::-webkit-scrollbar-thumb {
 	background-color: #5A666A;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=tree] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent::before, .dark #hierarchy-editor [data-rem-container-tags~=treec] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent::before {
+.dark #hierarchy-editor [data-rem-container-tags~=tree] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header)::before, .dark #hierarchy-editor [data-rem-container-tags~=treec] .animate-zoom-into-bullet:last-of-type > div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header)::before {
 	content: "";
 	width: 28px;
 	background-color: var(--darkmode-background);
