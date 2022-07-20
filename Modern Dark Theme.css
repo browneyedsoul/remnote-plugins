@@ -1164,9 +1164,10 @@
 	width: -moz-fit-content;
 	width: fit-content;
 	position: absolute;
-	top: 0.7rem;
-	right: 9rem;
+	top: 0.6rem;
+	right: 1.5rem;
 	z-index: 6;
+	transform: scale(0.75);
 }
 #content > div.content__page > div.top-bar-container.fade-on-hide-ui > div {
 	border-radius: 5px;
@@ -1248,6 +1249,10 @@
 .tile__document > div.rn-clr-background-primary > div:nth-child(2) > span.block:nth-of-type(7) > div > p {
 	color: var(--red-text-dark);
 	font-weight: 600;
+}
+.tile__document > div.rn-clr-background-primary > div:nth-child(3) {
+	position: relative;
+	top: 1rem;
 }
 .tile__document > div.rn-clr-background-primary > div:nth-child(3) div.react-datepicker-wrapper div.react-datepicker__input-container .button {
 	color: var(--darkmode-text) !important;
