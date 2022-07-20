@@ -1205,13 +1205,12 @@
 }
 
 .tile__document .pdf-viewer__header {
-	top: 1rem;
-	left: 1rem;
+	bottom: 1.8rem;
+	right: 8rem;
 	position: fixed;
 	z-index: 4;
 	background-color: var(--darkmode-background);
 	border-radius: 1rem;
-	opacity: 0.5;
 }
 .tile__document::-webkit-scrollbar-thumb {
 	background-color: #DDD;
