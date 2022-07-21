@@ -1779,8 +1779,8 @@
 			> div.top-bar-container.fade-on-hide-ui {
 				width: fit-content;
 				position: absolute;
-				top: 0.6rem;
-				right: 1.5rem;
+				bottom: 0.2rem;
+				right: 0.2rem;
 				z-index: 6;
 				transform: scale(.75);
 
@@ -1860,9 +1860,9 @@
 				border-radius: 1rem;
 			}
 		// Document Scrollbar
-			// &::-webkit-scrollbar-track {
-			// 	margin-top: 3.5rem;
-			// }
+			&::-webkit-scrollbar-track {
+				margin-top: 3rem;
+			}
 			&::-webkit-scrollbar-thumb {
 				background-color: #DDD;
 				border-radius: 3px;
@@ -1959,6 +1959,16 @@
 				z-index: 3;
 				display: flex;
 				border-bottom-right-radius: 5px;
+
+				&::after {
+					content: "";
+					width: 1.2rem;
+					height: 6rem;
+					background-color: var(--darkmode-background);
+					position: relative;
+					top: -4rem;
+					right: -0.5rem;
+				}
 
 				// Page Hierarchy
 					> div:nth-of-type(1) {
@@ -2234,6 +2244,16 @@
 				.document-header-top-bar {
 					color: var(--darkmode-text);
 					background-color: var(--darkmode-background-sidebar);
+
+					&::after {
+						content: "";
+						width: 1.2rem;
+						height: 6rem;
+						background-color: var(--darkmode-background-sidebar);
+						position: relative;
+						top: -4rem;
+						right: -0.5rem;
+					}
 
 					// Page Hierarchy
 						div:nth-of-type(1) {
