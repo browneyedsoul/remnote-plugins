@@ -1822,32 +1822,32 @@
 		}
 	}
 // Darkmode - General Background 
-		.dark {
-			.document-table,
-			.multiple-windows__document,
-			#multiple-windows__document {
-				background-color: var(--darkmode-background) !important;
-			}
-			.tile__document {
-				> div.document-header-top-bar {
-					&.border-bottom-solid {
-						border-bottom-style: unset;
-					}
+	.dark {
+		.document-table,
+		.multiple-windows__document,
+		#multiple-windows__document {
+			background-color: var(--darkmode-background) !important;
+		}
+		.tile__document {
+			> div.document-header-top-bar {
+				&.border-bottom-solid {
+					border-bottom-style: unset;
 				}
-				div#document {
-					#hierarchy-editor {
-						.tree-node--parent {
-							.rem-container {
-								// Disable Rem Container Hover Effect
-									.hover\:bg-hover-bg {
-										background-color: unset;
-									}
-							}
+			}
+			div#document {
+				#hierarchy-editor {
+					.tree-node--parent {
+						.rem-container {
+							// Disable Rem Container Hover Effect
+								.hover\:bg-hover-bg {
+									background-color: unset;
+								}
 						}
 					}
 				}
 			}
 		}
+	}
 // Tile Document
 	.tile__document {
 		// PDF Top Header
@@ -1969,7 +1969,6 @@
 					top: -4rem;
 					right: -0.5rem;
 				}
-
 				// Page Hierarchy
 					> div:nth-of-type(1) {
 						z-index: 1;
@@ -2170,6 +2169,15 @@
 					}
 
 			}
+	}
+	// Seperated for priority
+	#content {
+		.content__page {
+			.document-header-top-bar {
+				@include highlight-text-dark;
+				@include highlight-color-notbold-dark;
+			}
+		}
 	}
 // Tile Document - Darkmode
 	.dark {
