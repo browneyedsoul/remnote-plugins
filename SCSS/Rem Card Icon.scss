@@ -10,138 +10,110 @@
 	--forward-practice-color: #FF2600;
 	--backward-practice-color: #D783FF;
 	--disabled-practice-color: #959595;
+	--no-practice-color: #959595;
 	--line-color: #DDDDDD;
 	--node-card-item-color: #FF4E4C;
 	--node-card-item-color-dark: #E0CD00;
 }
-.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
-	background: var(--both-practice-color);
-	width: 26px;
-	height: 18px;
-	position: relative;
-	left: 6px;
-	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	-webkit-mask-size: contain;
-	mask-size: contain;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-	zoom: 80%;
+@mixin card-icon-color(
+	$both,
+	$forward,
+	$backward,
+	$disabled
+) {
+	.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled {
+		.rem-bullet {
+			background: $both;
+		}
+		.separator-symbol {
+			&.delimiterAnnotation,
+			> span {
+				color: $both;
+			}
+		}
+	}
+	.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled {
+		.rem-bullet {
+			background: $forward;
+		}
+		.separator-symbol {
+			&.delimiterAnnotation,
+			> span {
+				color: $forward;
+			}
+		}
+	}
+	.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled {
+		.rem-bullet {
+			background: $backward;
+		}
+		.separator-symbol {
+			&.delimiterAnnotation,
+			> span {
+				color: $backward;
+			}
+		}
+	}
+	.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled {
+		.rem-bullet {
+			background: $disabled;
+		}
+		.separator-symbol {
+			&.delimiterAnnotation,
+			> span {
+				color: $disabled;
+			}
+		}
+	}
 }
 
-.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rem-bullet {
-	background: var(--forward-practice-color);
-	width: 26px;
-	height: 18px;
-	position: relative;
-	left: 6px;
-	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	-webkit-mask-size: contain;
-	mask-size: contain;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-	zoom: 80%;
-}
-
-.rem-container--forwards-practice-disabled .rem-bullet {
-	background: var(--disabled-practice-color);
-	width: 26px;
-	height: 18px;
-	position: relative;
-	left: 6px;
-	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	-webkit-mask-size: contain;
-	mask-size: contain;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-	zoom: 80%;
-}
-
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rem-bullet {
-	background: var(--backward-practice-color);
-	width: 26px;
-	height: 18px;
-	position: relative;
-	left: 6px;
-	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	-webkit-mask-size: contain;
-	mask-size: contain;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-	zoom: 80%;
+.rem-container--concept-rem-type,
+.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled,
+.rem-container--default_type-rem-type.rem-container--backwards-practice-enabled,
+.rem-container--default_type-rem-type.rem-container--forwards-practice-disabled {
+	.rem-bullet {
+		background: var(--no-practice-color);
+		width: 26px;
+		height: 18px;
+		position: relative;
+		left: 6px;
+		-webkit-mask-image: url("Assets/card-icon/concept.svg");
+		mask-image: url("Assets/card-icon/concept.svg");
+		-webkit-mask-size: contain;
+		mask-size: contain;
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		zoom: 80%;
+	}
 }
 
 .rem-container--descriptor-rem-type .rem-bullet {
+    background: var(--no-practice-color);
 	width: 14px !important;
 	height: 12px !important;
 	position: relative !important;
 	top: 2px !important;
 	left: -1px !important;
-	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
-	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
+	-webkit-mask-image: url("Assets/card-icon/descriptor.svg");
+	mask-image: url("Assets/card-icon/descriptor.svg");
 	-webkit-mask-size: contain;
 	mask-size: contain;
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
 }
 
-// Descriptor-Rem-Type Bullet
-	.rem-container--descriptor-rem-type {
-		.rem-bullet {
-			width: 14px !important;
-			height: 12px !important;
-			position: relative !important;
-			top: 2px !important;
-			left: -1px !important;
-			-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg") !important;
-					mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg") !important;
-			-webkit-mask-size: contain;
-					mask-size: contain;
-			-webkit-mask-repeat: no-repeat;
-					mask-repeat: no-repeat;
-		}
-	}
+@include card-icon-color(
+	var(--both-practice-color),
+	var(--forward-practice-color),
+	var(--backward-practice-color),
+	var(--disabled-practice-color)
+);
 
 .dark {
-	.rem-container--forwards-practice-enabled {
-		&.rem-container--backwards-practice-enabled {
-			.rem-bullet {
-				background: var(--both-practice-color);
-			}
-		}
-		.rem-bullet {
-			background: var(--node-card-item-color-dark);
-		}
-	}
-	.rem-container--backwards-practice-enabled {
-		.rem-bullet {
-			background: var(--backward-practice-color);
-		}
-	}
-}
-
-.rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled .separator-symbol.delimiterAnnotation,
-.rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled .separator-symbol > span {
-	color: #FFA344;
-}
-.rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
-.rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol > span {
-	color: #FE2600;
-}
-
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol.delimiterAnnotation,
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol > span {
-	color: #D783FF;
-}
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol > span {
-	color: #959595;
-}
-
-.dark .rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
-.dark .rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol > span {
-	color: #E0CD00;
-}
+	@include card-icon-color(
+		var(--both-practice-color), 
+		var(--node-card-item-color-dark), 
+		var(--backward-practice-color),
+		var(--disabled-practice-color) 
+	)
+};
