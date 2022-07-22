@@ -90,18 +90,7 @@
 						border-color: $borderColor;
 					}
 				}
-			}
-			// Tag Declutter
-				.hierarchy-editor__tag-bar__tag {
-					background-color: transparent !important;
-
-					span {
-						display: none;
-					}
-					.hierarchy-editor__tag-bar__tag__delete {
-						opacity: .3;
-					}
-				}
+			}			
 		}
 	}
 }
@@ -665,6 +654,20 @@
 			}
 		}
 	} 
+	[data-rem-container-tags~="bulletlist"],
+	[data-rem-container-tags~="bulletlists"] {
+		// Tag Declutter
+			.hierarchy-editor__tag-bar__tag {
+				background-color: transparent !important;
+
+				span {
+					display: none;
+				}
+				.rn-tag__close {
+					opacity: .3;
+				}
+			}
+	}
 // Numbered list Placement
 	[data-rem-container-tags~="list-item"] {
 		span.rem-bullet__number {
