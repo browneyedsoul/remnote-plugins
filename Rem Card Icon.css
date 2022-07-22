@@ -16,10 +16,29 @@
 	--node-card-item-color-dark: #E0CD00;
 }
 
-.rem-container--concept-rem-type .rem-bullet,
 .rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet,
 .rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet,
 .rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet {
+	background: var(--no-practice-color);
+	width: 26px;
+	height: 18px;
+	position: relative;
+	left: 6px;
+	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Basic3.svg");
+	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Basic3.svg");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	zoom: 80%;
+}
+.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet .perfect-circle__inner,
+.rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet .perfect-circle__inner,
+.rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet .perfect-circle__inner {
+	opacity: 0;
+}
+
+.rem-container--concept-rem-type .rem-bullet {
 	background: var(--no-practice-color);
 	width: 26px;
 	height: 18px;
@@ -32,6 +51,9 @@
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
 	zoom: 80%;
+}
+.rem-container--concept-rem-type .rem-bullet .perfect-circle__inner {
+	opacity: 0;
 }
 
 .rem-container--descriptor-rem-type .rem-bullet {
@@ -47,6 +69,9 @@
 	mask-size: contain;
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
+}
+.rem-container--descriptor-rem-type .rem-bullet .perfect-circle__inner {
+	opacity: 0;
 }
 
 .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {

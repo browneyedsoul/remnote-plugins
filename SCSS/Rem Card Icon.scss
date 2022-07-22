@@ -66,11 +66,29 @@
 		}
 	}
 }
-
-.rem-container--concept-rem-type,
 .rem-container--default_type-rem-type.rem-container--forwards-practice-enabled,
 .rem-container--default_type-rem-type.rem-container--backwards-practice-enabled,
 .rem-container--default_type-rem-type.rem-container--forwards-practice-disabled {
+	.rem-bullet {
+		background: var(--no-practice-color);
+		width: 26px;
+		height: 18px;
+		position: relative;
+		left: 6px;
+		-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Basic3.svg");
+		mask-image: url("https://browneyedsoul.github.io/ImageRepository/Basic3.svg");
+		-webkit-mask-size: contain;
+		mask-size: contain;
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		zoom: 80%;
+
+		.perfect-circle__inner {
+			opacity: 0;
+		}
+	}
+}
+.rem-container--concept-rem-type {
 	.rem-bullet {
 		background: var(--no-practice-color);
 		width: 26px;
@@ -84,22 +102,32 @@
 		-webkit-mask-repeat: no-repeat;
 		mask-repeat: no-repeat;
 		zoom: 80%;
+
+		.perfect-circle__inner {
+			opacity: 0;
+		}
 	}
 }
 
-.rem-container--descriptor-rem-type .rem-bullet {
-    background: var(--no-practice-color);
-	width: 14px !important;
-	height: 12px !important;
-	position: relative !important;
-	top: 2px !important;
-	left: -1px !important;
-	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
-	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
-	-webkit-mask-size: contain;
-	mask-size: contain;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
+.rem-container--descriptor-rem-type {
+	.rem-bullet {
+		background: var(--no-practice-color);
+		width: 14px !important;
+		height: 12px !important;
+		position: relative !important;
+		top: 2px !important;
+		left: -1px !important;
+		-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
+		mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
+		-webkit-mask-size: contain;
+		mask-size: contain;
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+
+		.perfect-circle__inner {
+			opacity: 0;
+		}
+	}
 }
 
 @include card-icon-color(
