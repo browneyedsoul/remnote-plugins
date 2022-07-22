@@ -1,19 +1,10 @@
 :root {
-	--treenode-line-spacing: 16px;
-	--bullet-main: #000;
-	--bullet-main-dark: #C2C2C2;
-	--bullet-doc: #50FA7B;
-	--bullet-folder: #53555F;
-	--bullet-concept: #53555F;
-	--bullet-descriptor: #53555F;
 	--both-practice-color: #FFA344;
 	--forward-practice-color: #FF2600;
+	--forward-practice-color-dark: #E0CD00;
 	--backward-practice-color: #D783FF;
 	--disabled-practice-color: #959595;
 	--no-practice-color: #959595;
-	--line-color: #DDDDDD;
-	--node-card-item-color: #FF4E4C;
-	--node-card-item-color-dark: #E0CD00;
 }
 @mixin card-icon-color(
 	$both,
@@ -128,7 +119,7 @@
 .dark {
 	@include card-icon-color(
 		var(--both-practice-color), 
-		var(--node-card-item-color-dark), 
+		var(--forward-practice-color-dark), 
 		var(--backward-practice-color),
 		var(--disabled-practice-color) 
 	)

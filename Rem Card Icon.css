@@ -1,19 +1,10 @@
 :root {
-  --treenode-line-spacing: 16px;
-  --bullet-main: #000;
-  --bullet-main-dark: #C2C2C2;
-  --bullet-doc: #50FA7B;
-  --bullet-folder: #53555F;
-  --bullet-concept: #53555F;
-  --bullet-descriptor: #53555F;
   --both-practice-color: #FFA344;
   --forward-practice-color: #FF2600;
+  --forward-practice-color-dark: #E0CD00;
   --backward-practice-color: #D783FF;
   --disabled-practice-color: #959595;
   --no-practice-color: #959595;
-  --line-color: #DDDDDD;
-  --node-card-item-color: #FF4E4C;
-  --node-card-item-color-dark: #E0CD00;
 }
 
 .rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet,
@@ -107,11 +98,11 @@
   color: var(--both-practice-color);
 }
 .dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rem-bullet {
-  background: var(--node-card-item-color-dark);
+  background: var(--forward-practice-color-dark);
 }
 .dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol.delimiterAnnotation,
 .dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol > span {
-  color: var(--node-card-item-color-dark);
+  color: var(--forward-practice-color-dark);
 }
 .dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rem-bullet {
   background: var(--backward-practice-color);
