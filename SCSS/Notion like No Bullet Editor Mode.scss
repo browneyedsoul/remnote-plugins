@@ -1,37 +1,27 @@
 :root {
-	// TreeNode Adjustment
-		--treenode-line-spacing: 16px;
-	// Basic Bullet Color
-		--bullet-main: #000;
-		--bullet-main-dark: #C2C2C2;
-		--bullet-doc: #50FA7B;
-		--bullet-folder: #53555F;
-		--bullet-concept: #53555F;
-		--bullet-descriptor: #53555F;
-	// Practice Bullet Color
-		--both-practice-color: #FFA344;
-		--forward-practice-color: #FF2600;
-		--backward-practice-color: #D783FF;
-		--disabled-practice-color: #959595;
-	// TreeNode Color
-		--line-color: #DDDDDD;
-		--node-card-item-color: #FF4E4C;
-		--node-card-item-color-dark: #E0CD00;
+	--bullet-main: #000;
+	--bullet-main-dark: #C2C2C2;
+	--treenode-line-spacing: 16px;
+	--line-color: #DDDDDD;
+	--node-card-item-color: #FF4E4C;
+	--node-card-item-color-dark: #E0CD00;
 }
 
+@import 'Rem Card Icon.scss';
+
 @mixin triangle-hidden {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 }
 
 @mixin triangle-visible {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 6px 0 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
 	border-radius: 3px;
 }
 
@@ -39,7 +29,7 @@
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 8px 0 8px 8px !important;
+	border-width: 8px 0 8px 8px;
 	border-radius: 3px;
 }
 
@@ -47,7 +37,7 @@
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 8px 8px 0 8px !important;
+	border-width: 8px 8px 0 8px;
 	border-radius: 3px;
 }
 
@@ -341,11 +331,11 @@
 						.rem-bullet--hidden-children {
 							@include triangle-hidden;
 							border-color: transparent transparent transparent var(--bullet-main);
-							width: 0 !important;
-							height: 0 !important;
+							width: 0;
+							height: 0;
 							position: relative;
-							top: 0rem !important;
-							left: 0rem !important;
+							top: 0;
+							left: 0;
 							zoom: unset;
 							background: unset;
 							-webkit-mask-image : unset;
@@ -354,11 +344,11 @@
 						.rem-bullet--all-children-visible {
 							@include triangle-visible;
 							border-color: var(--bullet-main) transparent transparent transparent;
-							width: 0 !important;
-							height: 0 !important;
+							width: 0;
+							height: 0;
 							position: relative;
-							top: 0rem !important;
-							left: 0rem !important;
+							top: 0;
+							left: 0;
 							zoom: unset;
 							background: unset;
 							-webkit-mask-image : unset;
@@ -379,52 +369,6 @@
 							.rem-bullet--all-children-visible {
 								border-color: var(--bullet-main-dark) transparent transparent transparent;
 							}
-						}
-					}
-				}
-			}
-		}
-// Forder & File Style
-	.rem-button__container {
-		.rem-bullet__container {
-			.rem-icon-bullet.rem-bullet--hidden-children {
-				@include triangle-doc-hidden;
-				border-color: transparent transparent transparent black;
-			}
-		}
-	}
-	.highlight-color--red, 
-	.highlight-color--orange,
-	.highlight-color--yellow,
-	.highlight-color--green,
-	.highlight-color--blue,
-	.highlight-color--purple {
-		.rem-icon-bullet.rem-bullet--hidden-children {
-			@include triangle-doc-hidden;
-			border-color: transparent transparent transparent black;
-		}
-	}
-	// Darkmode Compatibility
-		.dark {
-			.rem-button__container {
-				.rem-bullet__container {
-					.rem-icon-bullet.rem-bullet--hidden-children {
-						@include triangle-doc-hidden;
-						border-color: transparent transparent transparent white;
-					}
-				}
-			}
-			.highlight-color--red, 
-			.highlight-color--orange,
-			.highlight-color--yellow,
-			.highlight-color--green,
-			.highlight-color--blue,
-			.highlight-color--purple {
-				.rem-button__container {
-					.rem-bullet__container {
-						.rem-icon-bullet.rem-bullet--hidden-children {
-							@include triangle-doc-hidden;
-							border-color: transparent transparent transparent black;
 						}
 					}
 				}
@@ -465,175 +409,18 @@
 		}
 	}
 // Rem Bullet for Flashcard Rem
-	// Basic & Concept & List Rem-Type Bullet
-		// Both
-			.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled {
-				.rem-bullet {
-					background: var(--both-practice-color);
-				}
-			}
-			.dark {
-				.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled {
-					.rem-bullet {
-						background: var(--both-practice-color);
-					}
-				}
-			}
-		// Forward
-			.rem-container--forwards-practice-enabled {
-				.rem-bullet {
-					background: var(--forward-practice-color);
-					width: 26px;
-					height: 18px;
-					position: relative;
-					left: 6px;
-					-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-							mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-					-webkit-mask-size: contain;
-							mask-size: contain;
-					-webkit-mask-repeat: no-repeat;
-							mask-repeat: no-repeat;
-					zoom: 80%;
-
-					&.rem-bullet.rem-bullet--hidden-children {
-						border-radius: 0px !important;
-						position: relative;
-						top: 3px;
-						left: 0px;
-						zoom: 2;
-						-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-								mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-						-webkit-mask-size: contain;
-								mask-size: contain;
-						-webkit-mask-repeat: no-repeat;
-								mask-repeat: no-repeat;
-					}
-				}
-			}
-			.dark {
-				.rem-container--forwards-practice-enabled {
-					.rem-bullet {
-						background: #E0CD00;
-					}
-				}
-			}
-			.rem-container--forwards-practice-disabled {
-				.rem-bullet {
-					background: var(--disabled-practice-color);
-					width: 26px;
-					height: 18px;
-					position: relative;
-					left: 6px;
-					-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-							mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-					-webkit-mask-size: contain;
-							mask-size: contain;
-					-webkit-mask-repeat: no-repeat;
-							mask-repeat: no-repeat;
-					zoom: 80%;
-
-					&.rem-bullet--hidden-children {
-						border-radius: 0px !important;
-						position: relative;
-						top: 3px;
-						left: 0px;
-						zoom: 2;
-						-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-								mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-						-webkit-mask-size: contain;
-								mask-size: contain;
-						-webkit-mask-repeat: no-repeat;
-								mask-repeat: no-repeat;
-					}
-				}
-			}
-		// Backward
-			.rem-container--backwards-practice-enabled {
-				.rem-bullet {
-					background: var(--backward-practice-color);
-					width: 26px;
-					height: 18px;
-					position: relative;
-					left: 6px;
-					-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-							mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-					-webkit-mask-size: contain;
-							mask-size: contain;
-					-webkit-mask-repeat: no-repeat;
-							mask-repeat: no-repeat;
-					zoom: 80%;
-
-					&.rem-bullet--hidden-children {
-						border-radius: 0px !important;
-						position: relative;
-						top: 3px;
-						left: 0px;
-						zoom: 2;
-						-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-								mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-						-webkit-mask-size: contain;
-								mask-size: contain;
-						-webkit-mask-repeat: no-repeat;
-								mask-repeat: no-repeat;
-					}
-				}
-			}
-	// Descriptor-Rem-Type Bullet
-		.rem-container--descriptor-rem-type {
-			.rem-bullet {
-				width: 14px !important;
-				height: 12px !important;
-				position: relative !important;
-				top: 2px !important;
-				left: -1px !important;
-				-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
-						mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
-				-webkit-mask-size: contain;
-						mask-size: contain;
-				-webkit-mask-repeat: no-repeat;
-						mask-repeat: no-repeat;
-			}
-		}
-	// Card Arrow Decoration
-		.rem-container--forwards-practice-enabled {
-			&.rem-container--backwards-practice-enabled {
-				.separator-symbol.delimiterAnnotation,
-				.separator-symbol > span {
-					color: #FFA344;
-				}
-			}
-			&.rem-container--backwards-practice-disabled {
-				.separator-symbol.delimiterAnnotation,
-				.separator-symbol > span {
-					color: #FE2600;
+	.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled,
+	.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled,
+	.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled,
+	.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled {
+		.rem-button__container {
+			.rem-bullet__container {
+				.rem-bullet--hidden-children {
+					width: .5em;
 				}
 			}
 		}
-		.rem-container--forwards-practice-disabled {
-			&.rem-container--backwards-practice-enabled {
-				.separator-symbol.delimiterAnnotation,
-				.separator-symbol > span {
-					color: #D783FF;
-				}
-			}
-			&.rem-container--backwards-practice-disabled {
-				.separator-symbol.delimiterAnnotation,
-				.separator-symbol > span {
-					color: #959595;
-				}
-			}
-		}
-		.dark {
-			.rem-container--forwards-practice-enabled {
-				&.rem-container--backwards-practice-disabled {
-		
-					.separator-symbol.delimiterAnnotation,
-					.separator-symbol>span {
-						color: #E0CD00;
-					}
-				}
-			}
-		}
+	}
 // Make Bullet-list by Intentional Tagging
 	// Bulletlist
 		@include bulletlist(var(--bullet-main));

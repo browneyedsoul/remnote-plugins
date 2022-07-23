@@ -1,18 +1,179 @@
 :root {
-	--treenode-line-spacing: 16px;
 	--bullet-main: #000;
 	--bullet-main-dark: #C2C2C2;
-	--bullet-doc: #50FA7B;
-	--bullet-folder: #53555F;
-	--bullet-concept: #53555F;
-	--bullet-descriptor: #53555F;
-	--both-practice-color: #FFA344;
-	--forward-practice-color: #FF2600;
-	--backward-practice-color: #D783FF;
-	--disabled-practice-color: #959595;
+	--treenode-line-spacing: 16px;
 	--line-color: #DDDDDD;
 	--node-card-item-color: #FF4E4C;
 	--node-card-item-color-dark: #E0CD00;
+}
+
+:root {
+	--both-practice-color: #FFA344;
+	--forward-practice-color: #FF2600;
+	--forward-practice-color-dark: #E0CD00;
+	--backward-practice-color: #D783FF;
+	--disabled-practice-color: #959595;
+	--no-practice-color: #959595;
+}
+
+.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet,
+.rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet,
+.rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet {
+	background: var(--no-practice-color);
+	width: 1em;
+	height: 1em;
+	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Basic3.svg");
+	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Basic3.svg");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+}
+.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet .perfect-circle__inner,
+.rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet .perfect-circle__inner,
+.rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet .perfect-circle__inner {
+	opacity: 0;
+}
+
+.rem-container--concept-rem-type .rem-bullet {
+	background: var(--no-practice-color);
+	width: 1em;
+	height: 1em;
+	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+}
+.rem-container--concept-rem-type .rem-bullet .perfect-circle__inner {
+	opacity: 0;
+}
+.rem-container--concept-rem-type .rem-bullet.rem-bullet--hidden-children {
+	background: var(--no-practice-color);
+	width: 1em;
+	height: 1em;
+	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+	mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	position: relative;
+	left: -3px;
+}
+.rem-container--concept-rem-type .rem-bullet.rem-bullet--hidden-children .perfect-circle__inner {
+	opacity: 0;
+}
+
+.rem-container--descriptor-rem-type .rem-bullet {
+	background: var(--no-practice-color);
+	width: 1em;
+	height: 0.75em;
+	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
+	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	position: relative;
+	left: -3px;
+}
+.rem-container--descriptor-rem-type .rem-bullet .perfect-circle__inner {
+	opacity: 0;
+}
+
+.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
+	background: var(--both-practice-color);
+}
+.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol > span {
+	color: var(--both-practice-color);
+}
+
+.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rem-bullet {
+	background: var(--forward-practice-color);
+}
+.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol > span {
+	color: var(--forward-practice-color);
+}
+
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rem-bullet {
+	background: var(--backward-practice-color);
+}
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol > span {
+	color: var(--backward-practice-color);
+}
+
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-bullet {
+	background: var(--disabled-practice-color);
+}
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-bullet.rem-bullet--hidden-children {
+	background: var(--no-practice-color);
+	width: 1em;
+	height: 1em;
+	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+	mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	position: relative;
+	left: -3px;
+}
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-bullet.rem-bullet--hidden-children .perfect-circle__inner {
+	opacity: 0;
+}
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol > span {
+	color: var(--disabled-practice-color);
+}
+
+.dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
+	background: var(--both-practice-color);
+}
+.dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol > span {
+	color: var(--both-practice-color);
+}
+.dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rem-bullet {
+	background: var(--forward-practice-color-dark);
+}
+.dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol > span {
+	color: var(--forward-practice-color-dark);
+}
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rem-bullet {
+	background: var(--backward-practice-color);
+}
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol > span {
+	color: var(--backward-practice-color);
+}
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-bullet {
+	background: var(--disabled-practice-color);
+}
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-bullet.rem-bullet--hidden-children {
+	background: var(--no-practice-color);
+	width: 1em;
+	height: 1em;
+	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+	mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+	-webkit-mask-size: contain;
+	mask-size: contain;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	position: relative;
+	left: -3px;
+}
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-bullet.rem-bullet--hidden-children .perfect-circle__inner {
+	opacity: 0;
+}
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol > span {
+	color: var(--disabled-practice-color);
 }
 
 .EditorContainer {
@@ -73,27 +234,27 @@
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
 .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main);
 }
 
 #hierarchy-editor .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main);
 }
 #hierarchy-editor [data-rem-tags~=highlight] .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main);
 }
@@ -102,18 +263,18 @@
 .dark .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 .dark .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
 .dark .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
 .dark #hierarchy-editor .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
@@ -121,18 +282,18 @@
 .dark [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 .dark [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
 .dark [data-rem-tags~=highlight] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
 .dark #hierarchy-editor [data-rem-tags~=highlight] .rem-container--focused .rem-bullet.rem-bullet--hidden-children {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
@@ -161,43 +322,43 @@
 .highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
 .highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
 .highlight-color--purple .rem-bullet__container .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main);
 }
 
 [data-rem-tags~=aliases] .rem-container--descriptor-rem-type .rem-button__container .rem-bullet__container .rem-bullet--hidden-children {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main);
-	width: 0 !important;
-	height: 0 !important;
+	width: 0;
+	height: 0;
 	position: relative;
-	top: 0rem !important;
-	left: 0rem !important;
+	top: 0;
+	left: 0;
 	zoom: unset;
 	background: unset;
 	-webkit-mask-image: unset;
 	mask-image: unset;
 }
 [data-rem-tags~=aliases] .rem-container--descriptor-rem-type .rem-button__container .rem-bullet__container .rem-bullet--all-children-visible {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 6px 0 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 6px 0 6px;
 	border-radius: 3px;
 	border-color: var(--bullet-main) transparent transparent transparent;
-	width: 0 !important;
-	height: 0 !important;
+	width: 0;
+	height: 0;
 	position: relative;
-	top: 0rem !important;
-	left: 0rem !important;
+	top: 0;
+	left: 0;
 	zoom: unset;
 	background: unset;
 	-webkit-mask-image: unset;
@@ -209,51 +370,6 @@
 }
 .dark [data-rem-tags~=aliases] .rem-container--descriptor-rem-type .rem-button__container .rem-bullet__container .rem-bullet--all-children-visible {
 	border-color: var(--bullet-main-dark) transparent transparent transparent;
-}
-
-.rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 8px 0 8px 8px !important;
-	border-radius: 3px;
-	border-color: transparent transparent transparent black;
-}
-
-.highlight-color--red .rem-icon-bullet.rem-bullet--hidden-children,
-.highlight-color--orange .rem-icon-bullet.rem-bullet--hidden-children,
-.highlight-color--yellow .rem-icon-bullet.rem-bullet--hidden-children,
-.highlight-color--green .rem-icon-bullet.rem-bullet--hidden-children,
-.highlight-color--blue .rem-icon-bullet.rem-bullet--hidden-children,
-.highlight-color--purple .rem-icon-bullet.rem-bullet--hidden-children {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 8px 0 8px 8px !important;
-	border-radius: 3px;
-	border-color: transparent transparent transparent black;
-}
-
-.dark .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 8px 0 8px 8px !important;
-	border-radius: 3px;
-	border-color: transparent transparent transparent white;
-}
-.dark .highlight-color--red .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
-.dark .highlight-color--orange .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
-.dark .highlight-color--yellow .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
-.dark .highlight-color--green .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
-.dark .highlight-color--blue .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children,
-.dark .highlight-color--purple .rem-button__container .rem-bullet__container .rem-icon-bullet.rem-bullet--hidden-children {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 8px 0 8px 8px !important;
-	border-radius: 3px;
-	border-color: transparent transparent transparent black;
 }
 
 #hierarchy-editor .TreeNode {
@@ -277,137 +393,11 @@
 	background-color: var(--node-card-item-color-dark);
 }
 
-.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
-	background: var(--both-practice-color);
-}
-
-.dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
-	background: var(--both-practice-color);
-}
-
-.rem-container--forwards-practice-enabled .rem-bullet {
-	background: var(--forward-practice-color);
-	width: 26px;
-	height: 18px;
-	position: relative;
-	left: 6px;
-	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	-webkit-mask-size: contain;
-	mask-size: contain;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-	zoom: 80%;
-}
-.rem-container--forwards-practice-enabled .rem-bullet.rem-bullet.rem-bullet--hidden-children {
-	border-radius: 0px !important;
-	position: relative;
-	top: 3px;
-	left: 0px;
-	zoom: 2;
-	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-	mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-	-webkit-mask-size: contain;
-	mask-size: contain;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-}
-
-.dark .rem-container--forwards-practice-enabled .rem-bullet {
-	background: #E0CD00;
-}
-
-.rem-container--forwards-practice-disabled .rem-bullet {
-	background: var(--disabled-practice-color);
-	width: 26px;
-	height: 18px;
-	position: relative;
-	left: 6px;
-	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	-webkit-mask-size: contain;
-	mask-size: contain;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-	zoom: 80%;
-}
-.rem-container--forwards-practice-disabled .rem-bullet.rem-bullet--hidden-children {
-	border-radius: 0px !important;
-	position: relative;
-	top: 3px;
-	left: 0px;
-	zoom: 2;
-	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-	mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-	-webkit-mask-size: contain;
-	mask-size: contain;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-}
-
-.rem-container--backwards-practice-enabled .rem-bullet {
-	background: var(--backward-practice-color);
-	width: 26px;
-	height: 18px;
-	position: relative;
-	left: 6px;
-	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Concept.svg");
-	-webkit-mask-size: contain;
-	mask-size: contain;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-	zoom: 80%;
-}
-.rem-container--backwards-practice-enabled .rem-bullet.rem-bullet--hidden-children {
-	border-radius: 0px !important;
-	position: relative;
-	top: 3px;
-	left: 0px;
-	zoom: 2;
-	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-	mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
-	-webkit-mask-size: contain;
-	mask-size: contain;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-}
-
-.rem-container--descriptor-rem-type .rem-bullet {
-	width: 14px !important;
-	height: 12px !important;
-	position: relative !important;
-	top: 2px !important;
-	left: -1px !important;
-	-webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
-	mask-image: url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg");
-	-webkit-mask-size: contain;
-	mask-size: contain;
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-}
-
-.rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled .separator-symbol.delimiterAnnotation,
-.rem-container--forwards-practice-enabled.rem-container--backwards-practice-enabled .separator-symbol > span {
-	color: #FFA344;
-}
-.rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
-.rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol > span {
-	color: #FE2600;
-}
-
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol.delimiterAnnotation,
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol > span {
-	color: #D783FF;
-}
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol > span {
-	color: #959595;
-}
-
-.dark .rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
-.dark .rem-container--forwards-practice-enabled.rem-container--backwards-practice-disabled .separator-symbol > span {
-	color: #E0CD00;
+.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-button__container .rem-bullet__container .rem-bullet--hidden-children,
+.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rem-button__container .rem-bullet__container .rem-bullet--hidden-children,
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rem-button__container .rem-bullet__container .rem-bullet--hidden-children,
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-button__container .rem-bullet__container .rem-bullet--hidden-children {
+	width: 0.5em;
 }
 
 [data-rem-container-tags~=bulletlist] {
@@ -428,10 +418,10 @@
 	margin-left: var(--treenode-line-spacing);
 }
 [data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--hidden-children {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main);
 }
@@ -462,10 +452,10 @@
 	margin-left: var(--treenode-line-spacing);
 }
 .dark [data-rem-container-tags~=bulletlist] [data-rem-tags~=bulletlist] .rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--hidden-children {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
@@ -492,10 +482,10 @@
 	margin-left: var(--treenode-line-spacing);
 }
 [data-rem-container-tags~=bulletlists] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent > div.rem > div > span > div.rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--hidden-children {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main);
 }
@@ -534,10 +524,10 @@
 	margin-left: var(--treenode-line-spacing);
 }
 .dark [data-rem-container-tags~=bulletlists] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent > div.rem > div > span > div.rem-button__container .rem-bullet__container .perfect-circle.rem-bullet--hidden-children {
-	width: 0 !important;
-	height: 0 !important;
-	border-style: solid !important;
-	border-width: 6px 0 6px 6px !important;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 6px 0 6px 6px;
 	border-radius: 3px;
 	border-color: transparent transparent transparent var(--bullet-main-dark);
 }
