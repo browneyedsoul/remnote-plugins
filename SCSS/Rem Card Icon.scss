@@ -48,6 +48,16 @@
 	.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled {
 		.rem-bullet {
 			background: $disabled;
+
+			&.rem-bullet--hidden-children {
+				@include icon-box(
+					1em, 
+					1em,
+					url("https://browneyedsoul.github.io/ImageRepository/List.svg")
+				);
+				position: relative;
+				left: -3px;
+			}
 		}
 		.separator-symbol {
 			&.delimiterAnnotation,
@@ -94,6 +104,16 @@
 			1em,
 			url("https://browneyedsoul.github.io/ImageRepository/Concept.svg")
 		);
+
+		&.rem-bullet--hidden-children {
+			@include icon-box(
+				1em, 
+				1em,
+				url("https://browneyedsoul.github.io/ImageRepository/List.svg")
+			);
+			position: relative;
+			left: -3px;
+		}
 	}
 }
 
