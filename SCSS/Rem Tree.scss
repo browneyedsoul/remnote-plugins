@@ -4,24 +4,27 @@
     --darkmode-background: #2F3437;
 }
 
-[data-rem-container-tags~="tree"],
-[data-rem-container-tags~="treec"] {
-    .whitespace-pre-wrap {
-        white-space: pre;
-    }
-    .rem {
-        min-width: calc(100% + 1rem);
-    }
-    .float-end {
-        > .rn-editor__rem__merge {
-            display: none;
+// Global
+    [data-rem-container-tags~="tree"],
+    [data-rem-container-tags~="treec"] {
+        .whitespace-pre-wrap {
+            white-space: pre;
         }
-        .backlink-counter {
-            opacity: .3;
+        .rem {
+            min-width: calc(100% + 1rem);
+        }
+        .float-end {
+            > .rn-editor__rem__merge {
+                display: none;
+            }
+            .backlink-counter {
+                opacity: .3;
+            }
+            .rn-tag__close {
+                opacity: .3;
+            }
         }
     }
-}
-
 // Portal Treatment
     #document {
         [data-rem-container-tags~="tree"],
@@ -207,6 +210,10 @@
                     border-left: unset;
                 }
             }
+        // Width tuning
+            .tree-node--parent {
+
+            }
     }
 }
 // Darkmode Compatibility
@@ -301,4 +308,29 @@
         @extend %tree-dark;
         border: 0.1rem solid var(--line-color-dark);
     }
+}
+
+[data-rem-container-tags~="tree"],
+[data-rem-container-tags~="treec"] {
+    &[data-rem-container-tags~="w100"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 100px;}
+    &[data-rem-container-tags~="w200"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 200px;}
+    &[data-rem-container-tags~="w300"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 300px;}
+    &[data-rem-container-tags~="w400"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 400px;}
+    &[data-rem-container-tags~="w500"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 500px;}
+    &[data-rem-container-tags~="w600"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 600px;}
+    &[data-rem-container-tags~="w700"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 700px;}
+    &[data-rem-container-tags~="w800"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 800px;}
+    &[data-rem-container-tags~="w900"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 900px;}
+    &[data-rem-container-tags~="w1000"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 1000px;}
+
+    [data-rem-container-tags~="w100"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 100px;}
+    [data-rem-container-tags~="w200"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 200px;}
+    [data-rem-container-tags~="w300"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 300px;}
+    [data-rem-container-tags~="w400"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 400px;}
+    [data-rem-container-tags~="w500"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 500px;}
+    [data-rem-container-tags~="w600"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 600px;}
+    [data-rem-container-tags~="w700"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 700px;}
+    [data-rem-container-tags~="w800"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 800px;}
+    [data-rem-container-tags~="w900"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 900px;}
+    [data-rem-container-tags~="w1000"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 1000px;}
 }
