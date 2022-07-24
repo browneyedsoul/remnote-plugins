@@ -1,0 +1,26 @@
+{
+	"scss.hover.references": false,
+	"scss.hover.documentation": false,
+	"scss.validate": false,
+	"scss.lint.emptyRules": "ignore",
+	"css.lint.emptyRules": "ignore",
+	"css.lint.unknownAtRules": "ignore",
+	"liveSassCompile.settings.generateMap": false,
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "~/..",
+			"indentType": "tab",
+			"indentWidth": 1,
+		},
+	],
+	"liveSassCompile.settings.excludeList": [
+		"/**/node_modules/**",
+		"/.vscode/**"
+	],
+	"[scss]": {
+		"editor.foldingStrategy": "indentation",
+		"editor.suggest.insertMode": "replace",
+	}
+}
