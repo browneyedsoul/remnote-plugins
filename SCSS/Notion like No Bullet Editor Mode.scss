@@ -409,14 +409,17 @@
 		}
 	}
 // Rem Bullet for Flashcard Rem
-	.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled,
-	.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled,
-	.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled,
-	.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled {
-		.rem-button__container {
-			.rem-bullet__container {
-				.rem-bullet--hidden-children {
-					width: .5em;
+	#hierarchy-editor {
+		.rem-container--concept-rem-type,
+		.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled,
+		.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled,
+		.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled,
+		.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled {
+			.rem-button__container {
+				.rem-bullet__container {
+					.rem-bullet--hidden-children {
+						width: .5em;
+					}
 				}
 			}
 		}

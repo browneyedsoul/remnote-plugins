@@ -393,10 +393,11 @@
 	background-color: var(--node-card-item-color-dark);
 }
 
-.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-button__container .rem-bullet__container .rem-bullet--hidden-children,
-.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rem-button__container .rem-bullet__container .rem-bullet--hidden-children,
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rem-button__container .rem-bullet__container .rem-bullet--hidden-children,
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-button__container .rem-bullet__container .rem-bullet--hidden-children {
+#hierarchy-editor .rem-container--concept-rem-type .rem-button__container .rem-bullet__container .rem-bullet--hidden-children,
+#hierarchy-editor .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-button__container .rem-bullet__container .rem-bullet--hidden-children,
+#hierarchy-editor .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rem-button__container .rem-bullet__container .rem-bullet--hidden-children,
+#hierarchy-editor .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rem-button__container .rem-bullet__container .rem-bullet--hidden-children,
+#hierarchy-editor .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-button__container .rem-bullet__container .rem-bullet--hidden-children {
 	width: 0.5em;
 }
 
