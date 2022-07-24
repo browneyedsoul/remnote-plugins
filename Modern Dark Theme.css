@@ -1924,6 +1924,9 @@
 .dark .rem-button__container .rem-bullet__container .hover\:bg-hover-bg:hover {
 	background-color: unset !important;
 }
+.dark .rem-button__container .rem-bullet__container .rem-bullet--hidden-children {
+	border-color: var(--darkmode-text);
+}
 .dark .rem-button__container .rem-bullet__container .rem-bullet--hidden-children .perfect-circle__inner > svg .rem-bullet__ring {
 	fill: var(--bullet-ring-color-dark);
 }

@@ -2513,6 +2513,8 @@
 							background-color: unset !important;
 						}
 					.rem-bullet--hidden-children {
+						border-color: var(--darkmode-text);
+						
 						.perfect-circle__inner {
 							> svg {
 								.rem-bullet__ring {
