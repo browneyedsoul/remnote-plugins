@@ -1,298 +1,298 @@
 :root {
-	--table-title-background-color: #EEEEEB;
-	--table-title-background-color-dark: #525252;
-	--table-header-background-color: #F7F6F3;
-	--table-header-background-color-dark: #282C30;
-	--table-cell-background-color: #FFFFFF;
-	--table-cell-background-color-dark: #2F3437;
-	--table-border-color: #EEEEEB;
-	--table-border-color-dark: #525252;
-	--darkmode-text: #DFDFD5;
-	--table-title-left-margin: 1.5rem;
-	--table-title-right-margin: 0.7rem;
-	--table-container-left-margin: 1.5rem;
-	--table-container-right-margin: 0.7rem;
-	--table-container-cell-margin-left: -10px;
+  --table-title-background-color: #EEEEEB;
+  --table-title-background-color-dark: #525252;
+  --table-header-background-color: #F7F6F3;
+  --table-header-background-color-dark: #282C30;
+  --table-cell-background-color: #FFFFFF;
+  --table-cell-background-color-dark: #2F3437;
+  --table-border-color: #EEEEEB;
+  --table-border-color-dark: #525252;
+  --darkmode-text: #DFDFD5;
+  --table-title-left-margin: 1.5rem;
+  --table-title-right-margin: 0.7rem;
+  --table-container-left-margin: 1.5rem;
+  --table-container-right-margin: 0.7rem;
+  --table-container-cell-margin-left: -10px;
 }
 
 #hierarchy-editor [data-rem-container-tags~=table] {
-	margin-left: var(--table-container-left-margin);
+  margin-left: var(--table-container-left-margin);
 }
 #hierarchy-editor [data-rem-container-tags~=table] .rich-text-editor .pointer-events-none {
-	display: none;
+  display: none;
 }
 #hierarchy-editor [data-rem-container-tags~=table] > .tree-node--parent {
-	margin-right: var(--table-title-right-margin);
-	background-color: var(--table-title-background-color);
+  margin-right: var(--table-title-right-margin);
+  background-color: var(--table-title-background-color);
 }
 #hierarchy-editor [data-rem-container-tags~=table] .TreeNode.tree-node--children {
-	border-width: 0 !important;
-	margin-left: 0;
+  border-width: 0 !important;
+  margin-left: 0;
 }
 #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode {
-	display: flex;
-	left: 0px !important;
-	margin-left: var(--table-container-left-margin);
-	margin-right: var(--table-container-right-margin) !important;
-	padding-left: 0;
+  display: flex;
+  left: 0px !important;
+  margin-left: var(--table-container-left-margin);
+  margin-right: var(--table-container-right-margin) !important;
+  padding-left: 0;
 }
 #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet {
-	flex: 1 0 0;
-	white-space: wrap;
-	border: 0.1rem solid var(--table-border-color);
+  flex: 1 0 0;
+  white-space: wrap;
+  border: 0.1rem solid var(--table-border-color);
 }
 #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .rem-text,
 #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .EditorContainer,
 #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .rich-text-editor,
 #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .RichTextViewer {
-	overflow-wrap: anywhere;
-	flex-grow: 1;
-	max-width: 100%;
-	min-height: 25px;
+  overflow-wrap: anywhere;
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 25px;
 }
 #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > div:first-child {
-	font-weight: 600;
-	color: inherit;
-	background-color: var(--table-header-background-color);
-	text-align: center;
+  font-weight: 600;
+  color: inherit;
+  background-color: var(--table-header-background-color);
+  text-align: center;
 }
 #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet:nth-child(n+2) {
-	margin-left: -1px;
+  margin-left: -1px;
 }
 #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode {
-	width: 100% !important;
-	left: 0px !important;
+  width: 100% !important;
+  left: 0px !important;
 }
 #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet {
-	position: relative;
-	left: var(--table-container-cell-margin-left);
-	width: 100%;
-	border-bottom: 0.1rem solid var(--table-border-color);
+  position: relative;
+  left: var(--table-container-cell-margin-left);
+  width: 100%;
+  border-bottom: 0.1rem solid var(--table-border-color);
 }
 #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet .TreeNode > .animate-zoom-into-bullet {
-	margin-top: 0.1rem;
+  margin-top: 0.1rem;
 }
 #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet:last-of-type {
-	border-bottom: unset;
+  border-bottom: unset;
 }
 #hierarchy-editor .hierarchy-editor--ltr [data-rem-container-tags~=table] .TreeNode {
-	padding-left: unset;
+  padding-left: unset;
 }
 
 .dark #hierarchy-editor [data-rem-container-tags~=table] {
-	margin-left: var(--table-container-left-margin);
+  margin-left: var(--table-container-left-margin);
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] .rich-text-editor .pointer-events-none {
-	display: none;
+  display: none;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .tree-node--parent {
-	margin-right: var(--table-title-right-margin);
-	background-color: var(--table-title-background-color-dark);
+  margin-right: var(--table-title-right-margin);
+  background-color: var(--table-title-background-color-dark);
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] .TreeNode.tree-node--children {
-	border-width: 0 !important;
-	margin-left: 0;
+  border-width: 0 !important;
+  margin-left: 0;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode {
-	display: flex;
-	left: 0px !important;
-	margin-left: var(--table-container-left-margin);
-	margin-right: var(--table-container-right-margin) !important;
-	padding-left: 0;
+  display: flex;
+  left: 0px !important;
+  margin-left: var(--table-container-left-margin);
+  margin-right: var(--table-container-right-margin) !important;
+  padding-left: 0;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet {
-	flex: 1 0 0;
-	white-space: wrap;
-	border: 0.1rem solid var(--table-border-color-dark);
+  flex: 1 0 0;
+  white-space: wrap;
+  border: 0.1rem solid var(--table-border-color-dark);
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .rem-text,
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .EditorContainer,
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .rich-text-editor,
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .RichTextViewer {
-	overflow-wrap: anywhere;
-	flex-grow: 1;
-	max-width: 100%;
-	min-height: 25px;
+  overflow-wrap: anywhere;
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 25px;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > div:first-child {
-	font-weight: 600;
-	color: var(--darkmode-text);
-	background-color: var(--table-header-background-color-dark);
-	text-align: center;
+  font-weight: 600;
+  color: var(--darkmode-text);
+  background-color: var(--table-header-background-color-dark);
+  text-align: center;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet:nth-child(n+2) {
-	margin-left: -1px;
+  margin-left: -1px;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode {
-	width: 100% !important;
-	left: 0px !important;
+  width: 100% !important;
+  left: 0px !important;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet {
-	position: relative;
-	left: var(--table-container-cell-margin-left);
-	width: 100%;
-	border-bottom: 0.1rem solid var(--table-border-color-dark);
+  position: relative;
+  left: var(--table-container-cell-margin-left);
+  width: 100%;
+  border-bottom: 0.1rem solid var(--table-border-color-dark);
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet .TreeNode > .animate-zoom-into-bullet {
-	margin-top: 0.1rem;
+  margin-top: 0.1rem;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet:last-of-type {
-	border-bottom: unset;
+  border-bottom: unset;
 }
 .dark #hierarchy-editor .hierarchy-editor--ltr [data-rem-container-tags~=table] .TreeNode {
-	padding-left: unset;
+  padding-left: unset;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w90] > .TreeNode > div {
-	min-width: 90px;
+  min-width: 90px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w120] > .TreeNode > div {
-	min-width: 120px;
+  min-width: 120px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w150] > .TreeNode > div {
-	min-width: 150px;
+  min-width: 150px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w180] > .TreeNode > div {
-	min-width: 180px;
+  min-width: 180px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w210] > .TreeNode > div {
-	min-width: 210px;
+  min-width: 210px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w240] > .TreeNode > div {
-	min-width: 240px;
+  min-width: 240px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w270] > .TreeNode > div {
-	min-width: 270px;
+  min-width: 270px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w300] > .TreeNode > div {
-	min-width: 300px;
+  min-width: 300px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w330] > .TreeNode > div {
-	min-width: 330px;
+  min-width: 330px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w360] > .TreeNode > div {
-	min-width: 360px;
+  min-width: 360px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w390] > .TreeNode > div {
-	min-width: 390px;
+  min-width: 390px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w420] > .TreeNode > div {
-	min-width: 420px;
+  min-width: 420px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w450] > .TreeNode > div {
-	min-width: 450px;
+  min-width: 450px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w480] > .TreeNode > div {
-	min-width: 480px;
+  min-width: 480px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w510] > .TreeNode > div {
-	min-width: 510px;
+  min-width: 510px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w540] > .TreeNode > div {
-	min-width: 540px;
+  min-width: 540px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w570] > .TreeNode > div {
-	min-width: 570px;
+  min-width: 570px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w600] > .TreeNode > div {
-	min-width: 600px;
+  min-width: 600px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w630] > .TreeNode > div {
-	min-width: 630px;
+  min-width: 630px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w660] > .TreeNode > div {
-	min-width: 660px;
+  min-width: 660px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w690] > .TreeNode > div {
-	min-width: 690px;
+  min-width: 690px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w720] > .TreeNode > div {
-	min-width: 720px;
+  min-width: 720px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w750] > .TreeNode > div {
-	min-width: 750px;
+  min-width: 750px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w780] > .TreeNode > div {
-	min-width: 780px;
+  min-width: 780px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w810] > .TreeNode > div {
-	min-width: 810px;
+  min-width: 810px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w840] > .TreeNode > div {
-	min-width: 840px;
+  min-width: 840px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w870] > .TreeNode > div {
-	min-width: 870px;
+  min-width: 870px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w900] > .TreeNode > div {
-	min-width: 900px;
+  min-width: 900px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w930] > .TreeNode > div {
-	min-width: 930px;
+  min-width: 930px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w960] > .TreeNode > div {
-	min-width: 960px;
+  min-width: 960px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w990] > .TreeNode > div {
-	min-width: 990px;
+  min-width: 990px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w1020] > .TreeNode > div {
-	min-width: 1020px;
+  min-width: 1020px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w1050] > .TreeNode > div {
-	min-width: 1050px;
+  min-width: 1050px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w1080] > .TreeNode > div {
-	min-width: 1080px;
+  min-width: 1080px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w1110] > .TreeNode > div {
-	min-width: 1110px;
+  min-width: 1110px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w1140] > .TreeNode > div {
-	min-width: 1140px;
+  min-width: 1140px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w1170] > .TreeNode > div {
-	min-width: 1170px;
+  min-width: 1170px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w1200] > .TreeNode > div {
-	min-width: 1200px;
+  min-width: 1200px;
 }
 
 [data-rem-container-tags~=table][data-rem-container-tags~=w90] > .TreeNode,
@@ -333,9 +333,9 @@
 [data-rem-container-tags~=table][data-rem-container-tags~=w1140] > .TreeNode,
 [data-rem-container-tags~=table][data-rem-container-tags~=w1170] > .TreeNode,
 [data-rem-container-tags~=table][data-rem-container-tags~=w1120] > .TreeNode {
-	overflow: auto;
-	white-space: pre;
-	margin-right: 0.5rem !important;
+  overflow: auto;
+  white-space: pre;
+  margin-right: 0.5rem !important;
 }
 [data-rem-container-tags~=table][data-rem-container-tags~=w90] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
 [data-rem-container-tags~=table][data-rem-container-tags~=w120] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
@@ -375,5 +375,5 @@
 [data-rem-container-tags~=table][data-rem-container-tags~=w1140] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
 [data-rem-container-tags~=table][data-rem-container-tags~=w1170] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet,
 [data-rem-container-tags~=table][data-rem-container-tags~=w1120] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet {
-	width: 100%;
+  width: 100%;
 }

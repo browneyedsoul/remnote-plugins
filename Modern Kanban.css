@@ -1,273 +1,273 @@
 @charset "UTF-8";
 :root {
-	--kanban-border-color: #DDD;
-	--kanban-border-color-dark: #535353;
-	--kanban-scroll-bgcolor: #EEE;
-	--kanban-scroll-bgcolor-dark: #222;
-	--kanban-sixdot-color: #000;
-	--kanban-sixdot-color-dark: #EEE;
-	--kanban-bgcolor: #F7F6F3;
-	--kanban-bgcolor-dark: #505050;
-	--kanban-bgcolor-input: #FFF;
-	--kanban-bgcolor-input-dark: #2E3437;
-	--kanban-bgcolor-inbox: #F7F6F3;
-	--kanban-bgcolor-inbox-dark: #505050;
-	--kanban-bgcolor-stage: ;
-	--kanban-bgcolor-stage-dark: ;
-	--kanban-bgcolor-inprogress: #F8F9CD;
-	--kanban-bgcolor-inprogress-dark: #63572B;
-	--kanban-bgcolor-done: #D5EED7;
-	--kanban-bgcolor-done-dark: #304F32;
-	--kanban-bgcolor-archive: ;
-	--kanban-bgcolor-archive-dark: ;
+  --kanban-border-color: #DDD;
+  --kanban-border-color-dark: #535353;
+  --kanban-scroll-bgcolor: #EEE;
+  --kanban-scroll-bgcolor-dark: #222;
+  --kanban-sixdot-color: #000;
+  --kanban-sixdot-color-dark: #EEE;
+  --kanban-bgcolor: #F7F6F3;
+  --kanban-bgcolor-dark: #505050;
+  --kanban-bgcolor-input: #FFF;
+  --kanban-bgcolor-input-dark: #2E3437;
+  --kanban-bgcolor-inbox: #F7F6F3;
+  --kanban-bgcolor-inbox-dark: #505050;
+  --kanban-bgcolor-stage: ;
+  --kanban-bgcolor-stage-dark: ;
+  --kanban-bgcolor-inprogress: #F8F9CD;
+  --kanban-bgcolor-inprogress-dark: #63572B;
+  --kanban-bgcolor-done: #D5EED7;
+  --kanban-bgcolor-done-dark: #304F32;
+  --kanban-bgcolor-archive: ;
+  --kanban-bgcolor-archive-dark: ;
 }
 
 #hierarchy-editor [data-rem-container-tags~=kanban] {
-	border: 0.1rem solid var(--kanban-border-color);
-	border-radius: 4px;
-	margin: 0.5rem 0.7rem 0.5rem 1.6rem;
+  border: 0.1rem solid var(--kanban-border-color);
+  border-radius: 4px;
+  margin: 0.5rem 0.7rem 0.5rem 1.6rem;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] .bg-white {
-	background-color: transparent;
+  background-color: transparent;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children {
-	display: flex;
-	border: 0;
-	padding-left: 0;
-	overflow-x: scroll;
-	white-space: pre;
+  display: flex;
+  border: 0;
+  padding-left: 0;
+  overflow-x: scroll;
+  white-space: pre;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children::-webkit-scrollbar-thumb {
-	background-color: var(--kanban-scroll-bgcolor);
-	border-radius: 2px;
+  background-color: var(--kanban-scroll-bgcolor);
+  border-radius: 2px;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet {
-	background-color: var(--kanban-bgcolor);
-	margin-right: 0.7rem;
-	position: relative;
-	white-space: pre-wrap;
-	padding-bottom: 5px;
-	border-radius: 5px;
+  background-color: var(--kanban-bgcolor);
+  margin-right: 0.7rem;
+  position: relative;
+  white-space: pre-wrap;
+  padding-bottom: 5px;
+  border-radius: 5px;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--parent {
-	min-width: 240px;
+  min-width: 240px;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--parent .rem-text {
-	font-weight: 650;
-	text-align: center;
+  font-weight: 650;
+  text-align: center;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children {
-	left: 0 !important;
-	width: 100%;
-	max-width: 1000px;
-	margin-left: 1rem;
+  left: 0 !important;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: 1rem;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet {
-	background-color: var(--kanban-bgcolor-input);
-	margin: 5px;
-	border-radius: 3px;
-	box-shadow: 0 0 1px 0;
-	margin-left: 1.2rem;
+  background-color: var(--kanban-bgcolor-input);
+  margin: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 0;
+  margin-left: 1.2rem;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet > div:first-child .rem-text {
-	padding-left: 25px;
-	margin-left: 0;
+  padding-left: 25px;
+  margin-left: 0;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet .float-end {
-	margin-left: 1rem;
+  margin-left: 1rem;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .portal-tree-node-box {
-	background-color: var(--kanban-bgcolor-input);
-	width: calc(100% - 3.6rem);
-	margin: 5px;
-	border-radius: 3px !important;
-	box-shadow: 0 0 1px 0 !important;
-	margin-left: 1.2rem !important;
-	margin-right: 0.3rem !important;
-	padding-right: 1rem;
+  background-color: var(--kanban-bgcolor-input);
+  width: calc(100% - 3.6rem);
+  margin: 5px;
+  border-radius: 3px !important;
+  box-shadow: 0 0 1px 0 !important;
+  margin-left: 1.2rem !important;
+  margin-right: 0.3rem !important;
+  padding-right: 1rem;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(1) {
-	background-color: var(--kanban-bgcolor-inbox);
-	min-width: -webkit-fit-content;
-	min-width: -moz-fit-content;
-	min-width: fit-content;
+  background-color: var(--kanban-bgcolor-inbox);
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(1) > .tree-node--parent .rem-text::after {
-	content: "📥";
-	margin-left: 1rem;
+  content: "📥";
+  margin-left: 1rem;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(2) {
-	background-color: var(--kanban-bgcolor-inprogress);
-	min-width: -webkit-fit-content;
-	min-width: -moz-fit-content;
-	min-width: fit-content;
+  background-color: var(--kanban-bgcolor-inprogress);
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(2) > .tree-node--parent .rem-text::after {
-	content: "🚧";
-	margin-left: 1rem;
+  content: "🚧";
+  margin-left: 1rem;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(3) {
-	background-color: var(--kanban-bgcolor-done);
-	min-width: -webkit-fit-content;
-	min-width: -moz-fit-content;
-	min-width: fit-content;
+  background-color: var(--kanban-bgcolor-done);
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(3) > .tree-node--parent .rem-text::after {
-	content: "✅";
-	margin-left: 1rem;
+  content: "✅";
+  margin-left: 1rem;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(4) {
-	background-color: var(--kanban-bgcolor);
-	min-width: -webkit-fit-content;
-	min-width: -moz-fit-content;
-	min-width: fit-content;
+  background-color: var(--kanban-bgcolor);
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(4) > .tree-node--parent .rem-text::after {
-	content: "🗃";
-	margin-left: 1rem;
+  content: "🗃";
+  margin-left: 1rem;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > div:first-child {
-	background-color: rgba(0, 0, 0, 0.09);
-	margin: 0;
-	padding-right: 1rem;
-	padding-left: 1rem;
-	border-bottom: 1px solid grey;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.09);
+  margin: 0;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-bottom: 1px solid grey;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children {
-	margin: 0;
-	padding: 0;
-	border: unset;
+  margin: 0;
+  padding: 0;
+  border: unset;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] .EditorContainer > .text-gray-20 {
-	display: none;
+  display: none;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] .rem-button__container .six-dot .text-gray-15 {
-	color: var(--kanban-sixdot-color);
+  color: var(--kanban-sixdot-color);
 }
 
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] {
-	border: 0.1rem solid var(--kanban-border-color-dark);
-	border-radius: 4px;
-	margin: 0.5rem 0.7rem 0.5rem 1.6rem;
+  border: 0.1rem solid var(--kanban-border-color-dark);
+  border-radius: 4px;
+  margin: 0.5rem 0.7rem 0.5rem 1.6rem;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] .bg-white {
-	background-color: transparent;
+  background-color: transparent;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children {
-	display: flex;
-	border: 0;
-	padding-left: 0;
-	overflow-x: scroll;
-	white-space: pre;
+  display: flex;
+  border: 0;
+  padding-left: 0;
+  overflow-x: scroll;
+  white-space: pre;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children::-webkit-scrollbar-thumb {
-	background-color: var(--kanban-scroll-bgcolor-dark);
-	border-radius: 2px;
+  background-color: var(--kanban-scroll-bgcolor-dark);
+  border-radius: 2px;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet {
-	background-color: var(--kanban-bgcolor-dark);
-	margin-right: 0.7rem;
-	position: relative;
-	white-space: pre-wrap;
-	padding-bottom: 5px;
-	border-radius: 5px;
+  background-color: var(--kanban-bgcolor-dark);
+  margin-right: 0.7rem;
+  position: relative;
+  white-space: pre-wrap;
+  padding-bottom: 5px;
+  border-radius: 5px;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--parent {
-	min-width: 240px;
+  min-width: 240px;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--parent .rem-text {
-	font-weight: 650;
-	text-align: center;
+  font-weight: 650;
+  text-align: center;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children {
-	left: 0 !important;
-	width: 100%;
-	max-width: 1000px;
-	margin-left: 1rem;
+  left: 0 !important;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: 1rem;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet {
-	background-color: var(--kanban-bgcolor-input-dark);
-	margin: 5px;
-	border-radius: 3px;
-	box-shadow: 0 0 1px 0;
-	margin-left: 1.2rem;
+  background-color: var(--kanban-bgcolor-input-dark);
+  margin: 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 0;
+  margin-left: 1.2rem;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet > div:first-child .rem-text {
-	padding-left: 25px;
-	margin-left: 0;
+  padding-left: 25px;
+  margin-left: 0;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet .float-end {
-	margin-left: 1rem;
+  margin-left: 1rem;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .portal-tree-node-box {
-	background-color: var(--kanban-bgcolor-input-dark);
-	width: calc(100% - 3.6rem);
-	margin: 5px;
-	border-radius: 3px !important;
-	box-shadow: 0 0 1px 0 !important;
-	margin-left: 1.2rem !important;
-	margin-right: 0.3rem !important;
-	padding-right: 1rem;
+  background-color: var(--kanban-bgcolor-input-dark);
+  width: calc(100% - 3.6rem);
+  margin: 5px;
+  border-radius: 3px !important;
+  box-shadow: 0 0 1px 0 !important;
+  margin-left: 1.2rem !important;
+  margin-right: 0.3rem !important;
+  padding-right: 1rem;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(1) {
-	background-color: var(--kanban-bgcolor-inbox-dark);
-	min-width: -webkit-fit-content;
-	min-width: -moz-fit-content;
-	min-width: fit-content;
+  background-color: var(--kanban-bgcolor-inbox-dark);
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(1) > .tree-node--parent .rem-text::after {
-	content: "📥";
-	margin-left: 1rem;
+  content: "📥";
+  margin-left: 1rem;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(2) {
-	background-color: var(--kanban-bgcolor-inprogress-dark);
-	min-width: -webkit-fit-content;
-	min-width: -moz-fit-content;
-	min-width: fit-content;
+  background-color: var(--kanban-bgcolor-inprogress-dark);
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(2) > .tree-node--parent .rem-text::after {
-	content: "🚧";
-	margin-left: 1rem;
+  content: "🚧";
+  margin-left: 1rem;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(3) {
-	background-color: var(--kanban-bgcolor-done-dark);
-	min-width: -webkit-fit-content;
-	min-width: -moz-fit-content;
-	min-width: fit-content;
+  background-color: var(--kanban-bgcolor-done-dark);
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(3) > .tree-node--parent .rem-text::after {
-	content: "✅";
-	margin-left: 1rem;
+  content: "✅";
+  margin-left: 1rem;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(4) {
-	background-color: var(--kanban-bgcolor-dark);
-	min-width: -webkit-fit-content;
-	min-width: -moz-fit-content;
-	min-width: fit-content;
+  background-color: var(--kanban-bgcolor-dark);
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet:nth-child(4) > .tree-node--parent .rem-text::after {
-	content: "🗃";
-	margin-left: 1rem;
+  content: "🗃";
+  margin-left: 1rem;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > div:first-child {
-	background-color: rgba(0, 0, 0, 0.09);
-	margin: 0;
-	padding-right: 1rem;
-	padding-left: 1rem;
-	border-bottom: 1px solid grey;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.09);
+  margin: 0;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-bottom: 1px solid grey;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children {
-	margin: 0;
-	padding: 0;
-	border: unset;
+  margin: 0;
+  padding: 0;
+  border: unset;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] .EditorContainer > .text-gray-20 {
-	display: none;
+  display: none;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] .rem-button__container .six-dot .text-gray-15 {
-	color: var(--kanban-sixdot-color-dark);
+  color: var(--kanban-sixdot-color-dark);
 }

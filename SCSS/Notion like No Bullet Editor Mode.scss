@@ -1,533 +1,533 @@
 :root {
-	--bullet-main: #000;
-	--bullet-main-dark: #C2C2C2;
-	--treenode-line-spacing: 16px;
-	--line-color: #DDDDDD;
-	--node-card-item-color: #FF4E4C;
-	--node-card-item-color-dark: #E0CD00;
+    --bullet-main: #000;
+    --bullet-main-dark: #C2C2C2;
+    --treenode-line-spacing: 16px;
+    --line-color: #DDDDDD;
+    --node-card-item-color: #FF4E4C;
+    --node-card-item-color-dark: #E0CD00;
 }
 
 @import 'Rem Card Icon.scss';
 
 @mixin triangle-hidden {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 6px 0 6px 6px;
-	border-radius: 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 6px;
+    border-radius: 3px;
 }
 
 @mixin triangle-visible {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 6px 6px 0 6px;
-	border-radius: 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-radius: 3px;
 }
 
 @mixin triangle-doc-hidden {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 8px 0 8px 8px;
-	border-radius: 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 8px 8px;
+    border-radius: 3px;
 }
 
 @mixin triangle-doc-visible {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 8px 8px 0 8px;
-	border-radius: 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-radius: 3px;
 }
 
 @mixin bulletlist($borderColor) {
-	[data-rem-container-tags~="bulletlist"] {
-		width: calc(100% - 16px);
-		position: relative;
+    [data-rem-container-tags~="bulletlist"] {
+        width: calc(100% - 16px);
+        position: relative;
 
-		[data-rem-tags~="bulletlist"], %bulletlist {
-			left: 16px;
-			
-			.rem-button__container {
-				// margin-left: var(--treenode-line-spacing);
+        [data-rem-tags~="bulletlist"], %bulletlist {
+            left: 16px;
 
-				> span {
-					> div.six-dot {
-						left: 40px !important;
-					}
-				}
-				
-				> span.toggle-collapse-button {
-					left: 40px !important;
-				}
-				
-				.rem-bullet__container {
-					position: relative;
-					margin-left: var(--treenode-line-spacing);
+            .rem-button__container {
+                // margin-left: var(--treenode-line-spacing);
 
-					.perfect-circle.rem-bullet--hidden-children {
-						@include triangle-hidden;
-						border-color: transparent transparent transparent $borderColor;
-					}
-					
-					.perfect-circle.rem-bullet--all-children-visible {
-						width: 0;
-						height: 0;
-						border-style: solid;
-						border-width: 3.5px;
-						border-radius: 10px;
-						border-color: $borderColor;
-					}
-				}
-			}			
-		}
-	}
+                > span {
+                    > div.six-dot {
+                        left: 40px !important;
+                    }
+                }
+
+                > span.toggle-collapse-button {
+                    left: 40px !important;
+                }
+
+                .rem-bullet__container {
+                    position: relative;
+                    margin-left: var(--treenode-line-spacing);
+
+                    .perfect-circle.rem-bullet--hidden-children {
+                        @include triangle-hidden;
+                        border-color: transparent transparent transparent $borderColor;
+                    }
+
+                    .perfect-circle.rem-bullet--all-children-visible {
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 3.5px;
+                        border-radius: 10px;
+                        border-color: $borderColor;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @mixin bulletlists($borderColor) {
-	[data-rem-container-tags~="bulletlists"] {
-		> div.tree-node--children {
-			> div.animate-zoom-into-bullet {
-				> div.tree-node--parent {
-					> div.rem {
-						> div {
-							> span {
-								> div.rem-button__container {
-									margin-left: var(--treenode-line-spacing);
-								
-									> span {
-										> div.six-dot {
-											left: 40px !important;
-										}
-									}
-								
-									> span.toggle-collapse-button {
-										left: 40px !important;
-									}
-								
-									.rem-bullet__container {
-										position: relative;
-										margin-left: var(--treenode-line-spacing);
-								
-										.perfect-circle.rem-bullet--hidden-children {
-											@include triangle-hidden;
-											border-color: transparent transparent transparent $borderColor;
-										}
-								
-										.perfect-circle.rem-bullet--all-children-visible {
-											width: 0;
-											height: 0;
-											border-style: solid;
-											border-width: 3.5px;
-											border-radius: 10px;
-											border-color: $borderColor;
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-				.tree-node--parent {
-					.rem-text {
-						margin-left: 16px;
-					}
-				}
-			}
-		}
-		// Tag Declutter
-			.hierarchy-editor__tag-bar__tag {
-				background-color: transparent !important;
-			
-				span {
-					display: none;
-				}
-			
-				.hierarchy-editor__tag-bar__tag__delete {
-					opacity: .3;
-				}
-			}
-	}
+    [data-rem-container-tags~="bulletlists"] {
+        > div.tree-node--children {
+            > div.animate-zoom-into-bullet {
+                > div.tree-node--parent {
+                    > div.rem {
+                        > div {
+                            > span {
+                                > div.rem-button__container {
+                                    margin-left: var(--treenode-line-spacing);
+
+                                    > span {
+                                        > div.six-dot {
+                                            left: 40px !important;
+                                        }
+                                    }
+
+                                    > span.toggle-collapse-button {
+                                        left: 40px !important;
+                                    }
+
+                                    .rem-bullet__container {
+                                        position: relative;
+                                        margin-left: var(--treenode-line-spacing);
+
+                                        .perfect-circle.rem-bullet--hidden-children {
+                                            @include triangle-hidden;
+                                            border-color: transparent transparent transparent $borderColor;
+                                        }
+
+                                        .perfect-circle.rem-bullet--all-children-visible {
+                                            width: 0;
+                                            height: 0;
+                                            border-style: solid;
+                                            border-width: 3.5px;
+                                            border-radius: 10px;
+                                            border-color: $borderColor;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .tree-node--parent {
+                    .rem-text {
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+        // Tag Declutter
+            .hierarchy-editor__tag-bar__tag {
+                background-color: transparent !important;
+
+                span {
+                    display: none;
+                }
+
+                .hierarchy-editor__tag-bar__tag__delete {
+                    opacity: .3;
+                }
+            }
+    }
 }
 
 // Rem Hierarchy Text Editor Line Height
-	.EditorContainer {
-		line-height: 160%;
-	}
+    .EditorContainer {
+        line-height: 160%;
+    }
 // Disable Bullet Event
-	.rem-button__container {
-		.rem-bullet__container {
-			.pointer-events-auto {
-				pointer-events: none;
-			} 
-			.rem-bullet--all-children-visible {
-				.perfect-circle__inner {
-					> svg {
-						display: none;
-						.rem-bullet__core {
-							display: none;
-						}
-					}
-				}
-			}
-			.rem-bullet--hidden-children {
-				.perfect-circle__inner {
-					> svg {
-						display: none;
-						.rem-bullet__core {
-							display: none;
-						}
-					}
-				}
-			}
-			.rem-icon-bullet__wrapper {
-				display: none;
-			}
-		}
-	}
+    .rem-button__container {
+        .rem-bullet__container {
+            .pointer-events-auto {
+                pointer-events: none;
+            }
+            .rem-bullet--all-children-visible {
+                .perfect-circle__inner {
+                    > svg {
+                        display: none;
+                        .rem-bullet__core {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .rem-bullet--hidden-children {
+                .perfect-circle__inner {
+                    > svg {
+                        display: none;
+                        .rem-bullet__core {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .rem-icon-bullet__wrapper {
+                display: none;
+            }
+        }
+    }
 // Move Toggle Foldable Triangle Button and Six Dots Rem Mover to the Right Side
-	#hierarchy-editor {
-		.rem-container {
-			.rem-button__container {
-				.toggle-collapse-button,
-				.six-dot {
-					position: relative;
-					left: 24px;
-				}
-			}
-		}
-	}
+    #hierarchy-editor {
+        .rem-container {
+            .rem-button__container {
+                .toggle-collapse-button,
+                .six-dot {
+                    position: relative;
+                    left: 24px;
+                }
+            }
+        }
+    }
 // Bullet Container Alignment
-	.rem-container--header-1 {
-		.rem-button__container {
-			margin-top: 8px;
-		}
-	}
-	.rem-container--header-2 {
-		.rem-button__container {
-			margin-top: 7px;
-		}
-	}
-	.rem-container--header-3 {
-		.rem-button__container {
-			margin-top: 6px;
-		}
-	}
-	.rem-button__container {
-		margin-top: 5px;
-	}
-	[data-rem-container-tags~="source-list"][data-rem-container-tags~="file"] {
-		.rem-container--header-1,
-		.rem-container--header-2,
-		.rem-container--header-3 {
-			.rem-button__container {
-				margin-top: -3px;
-			}
-		}
-		> div {
-			> div[data-rem-container-tags~="header"] {
-				> div.tree-node--children {
-					margin-left: 1.5rem;
-				}
-			}
-		}
-	}
+    .rem-container--header-1 {
+        .rem-button__container {
+            margin-top: 8px;
+        }
+    }
+    .rem-container--header-2 {
+        .rem-button__container {
+            margin-top: 7px;
+        }
+    }
+    .rem-container--header-3 {
+        .rem-button__container {
+            margin-top: 6px;
+        }
+    }
+    .rem-button__container {
+        margin-top: 5px;
+    }
+    [data-rem-container-tags~="source-list"][data-rem-container-tags~="file"] {
+        .rem-container--header-1,
+        .rem-container--header-2,
+        .rem-container--header-3 {
+            .rem-button__container {
+                margin-top: -3px;
+            }
+        }
+        > div {
+            > div[data-rem-container-tags~="header"] {
+                > div.tree-node--children {
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+    }
 // Parent Bullet (Toggle Triangle)
-	.rem-button__container {
-		.rem-bullet__container {
-			.rem-bullet.rem-bullet--hidden-children,
-			.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
-			.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-			.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
-				@include triangle-hidden;
-				border-color: transparent transparent transparent var(--bullet-main);
-			}
-		}
-	}
-	#hierarchy-editor {
-		.rem-container--focused {
-			.rem-bullet.rem-bullet--hidden-children {
-				@include triangle-hidden;
-				border-color: transparent transparent transparent var(--bullet-main);
-			}
-		}
-		[data-rem-tags~="highlight"] {
-			.rem-container--focused {
-				.rem-bullet.rem-bullet--hidden-children {
-					@include triangle-hidden;
-					border-color: transparent transparent transparent var(--bullet-main);
-				}
-			}
-		}
-	}
-	// Darkmode Compatibility
-		.dark {
-			.rem-button__container {
-				.rem-bullet__container {
-					.rem-bullet.rem-bullet--hidden-children,
-					.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
-					.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-					.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
-						@include triangle-hidden;
-						border-color: transparent transparent transparent var(--bullet-main-dark);
-					}
-				}
-			}
-			#hierarchy-editor {
-				.rem-container--focused {
-					.rem-bullet.rem-bullet--hidden-children {
-						@include triangle-hidden;
-						border-color: transparent transparent transparent var(--bullet-main-dark);
-					}
-				}
-			}
-			[data-rem-tags~="highlight"] {
-				.rem-button__container {
-					.rem-bullet__container {
-						.rem-bullet.rem-bullet--hidden-children,
-						.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
-						.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-						.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
-							@include triangle-hidden;
-							border-color: transparent transparent transparent var(--bullet-main-dark);
-						}
-					}
-				}
-			}
-			#hierarchy-editor {
-				[data-rem-tags~="highlight"] {
-					.rem-container--focused {
-						.rem-bullet.rem-bullet--hidden-children {
-							@include triangle-hidden;
-							border-color: transparent transparent transparent var(--bullet-main-dark);
-						}
-					}
-				}
-			}
-		}
-	// Toggle Arrow Visibility in Hightlighted Rem
-		.highlight-color--red, 
-		.highlight-color--orange,
-		.highlight-color--yellow,
-		.highlight-color--green,
-		.highlight-color--blue,
-		.highlight-color--purple {
-			.rem-bullet__container {
-				.rem-bullet.rem-bullet--hidden-children,
-				.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
-				.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
-				.rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
-					@include triangle-hidden;
-					border-color: transparent transparent transparent var(--bullet-main);
-				}
-			}
-		}
-	// Alias Bullet
-		[data-rem-tags~="aliases"] {
-			.rem-container--descriptor-rem-type {
-				.rem-button__container {
-					.rem-bullet__container {
-						.rem-bullet--hidden-children {
-							@include triangle-hidden;
-							border-color: transparent transparent transparent var(--bullet-main);
-							width: 0;
-							height: 0;
-							position: relative;
-							top: 0;
-							left: 0;
-							zoom: unset;
-							background: unset;
-							-webkit-mask-image : unset;
-									mask-image : unset;
-						}
-						.rem-bullet--all-children-visible {
-							@include triangle-visible;
-							border-color: var(--bullet-main) transparent transparent transparent;
-							width: 0;
-							height: 0;
-							position: relative;
-							top: 0;
-							left: 0;
-							zoom: unset;
-							background: unset;
-							-webkit-mask-image : unset;
-									mask-image : unset;
-						}
-					}
-				}
-			}
-		}
-		.dark {
-			[data-rem-tags~="aliases"] {
-				.rem-container--descriptor-rem-type {
-					.rem-button__container {
-						.rem-bullet__container {
-							.rem-bullet--hidden-children {
-								border-color: transparent transparent transparent var(--bullet-main-dark);
-							}
-							.rem-bullet--all-children-visible {
-								border-color: var(--bullet-main-dark) transparent transparent transparent;
-							}
-						}
-					}
-				}
-			}
-		}
+    .rem-button__container {
+        .rem-bullet__container {
+            .rem-bullet.rem-bullet--hidden-children,
+            .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+            .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+            .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+                @include triangle-hidden;
+                border-color: transparent transparent transparent var(--bullet-main);
+            }
+        }
+    }
+    #hierarchy-editor {
+        .rem-container--focused {
+            .rem-bullet.rem-bullet--hidden-children {
+                @include triangle-hidden;
+                border-color: transparent transparent transparent var(--bullet-main);
+            }
+        }
+        [data-rem-tags~="highlight"] {
+            .rem-container--focused {
+                .rem-bullet.rem-bullet--hidden-children {
+                    @include triangle-hidden;
+                    border-color: transparent transparent transparent var(--bullet-main);
+                }
+            }
+        }
+    }
+    // Darkmode Compatibility
+        .dark {
+            .rem-button__container {
+                .rem-bullet__container {
+                    .rem-bullet.rem-bullet--hidden-children,
+                    .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+                    .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+                    .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+                        @include triangle-hidden;
+                        border-color: transparent transparent transparent var(--bullet-main-dark);
+                    }
+                }
+            }
+            #hierarchy-editor {
+                .rem-container--focused {
+                    .rem-bullet.rem-bullet--hidden-children {
+                        @include triangle-hidden;
+                        border-color: transparent transparent transparent var(--bullet-main-dark);
+                    }
+                }
+            }
+            [data-rem-tags~="highlight"] {
+                .rem-button__container {
+                    .rem-bullet__container {
+                        .rem-bullet.rem-bullet--hidden-children,
+                        .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+                        .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+                        .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+                            @include triangle-hidden;
+                            border-color: transparent transparent transparent var(--bullet-main-dark);
+                        }
+                    }
+                }
+            }
+            #hierarchy-editor {
+                [data-rem-tags~="highlight"] {
+                    .rem-container--focused {
+                        .rem-bullet.rem-bullet--hidden-children {
+                            @include triangle-hidden;
+                            border-color: transparent transparent transparent var(--bullet-main-dark);
+                        }
+                    }
+                }
+            }
+        }
+    // Toggle Arrow Visibility in Hightlighted Rem
+        .highlight-color--red,
+        .highlight-color--orange,
+        .highlight-color--yellow,
+        .highlight-color--green,
+        .highlight-color--blue,
+        .highlight-color--purple {
+            .rem-bullet__container {
+                .rem-bullet.rem-bullet--hidden-children,
+                .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--1,
+                .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--2,
+                .rem-bullet.rem-bullet--hidden-children.rem-header__bullet--3 {
+                    @include triangle-hidden;
+                    border-color: transparent transparent transparent var(--bullet-main);
+                }
+            }
+        }
+    // Alias Bullet
+        [data-rem-tags~="aliases"] {
+            .rem-container--descriptor-rem-type {
+                .rem-button__container {
+                    .rem-bullet__container {
+                        .rem-bullet--hidden-children {
+                            @include triangle-hidden;
+                            border-color: transparent transparent transparent var(--bullet-main);
+                            width: 0;
+                            height: 0;
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            zoom: unset;
+                            background: unset;
+                            -webkit-mask-image : unset;
+                                    mask-image : unset;
+                        }
+                        .rem-bullet--all-children-visible {
+                            @include triangle-visible;
+                            border-color: var(--bullet-main) transparent transparent transparent;
+                            width: 0;
+                            height: 0;
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            zoom: unset;
+                            background: unset;
+                            -webkit-mask-image : unset;
+                                    mask-image : unset;
+                        }
+                    }
+                }
+            }
+        }
+        .dark {
+            [data-rem-tags~="aliases"] {
+                .rem-container--descriptor-rem-type {
+                    .rem-button__container {
+                        .rem-bullet__container {
+                            .rem-bullet--hidden-children {
+                                border-color: transparent transparent transparent var(--bullet-main-dark);
+                            }
+                            .rem-bullet--all-children-visible {
+                                border-color: var(--bullet-main-dark) transparent transparent transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 // TreeNode Style
-	#hierarchy-editor {
-		.TreeNode {
-			border-color: var(--line-color);
-			border-width: 1px;
-			transition-timing-function: linear;
-			position: relative;
-			background-color: transparent;
-			margin-left: 1.8rem;
-		}
+    #hierarchy-editor {
+        .TreeNode {
+            border-color: var(--line-color);
+            border-width: 1px;
+            transition-timing-function: linear;
+            position: relative;
+            background-color: transparent;
+            margin-left: 1.8rem;
+        }
 
-		// Sticky Top bar
-			> .fixed {
-				> .tree-node-container {
-					> .TreeNode {
-						left: 16px !important;
-					}
-				}
-			}
-	}
+        // Sticky Top bar
+            > .fixed {
+                > .tree-node-container {
+                    > .TreeNode {
+                        left: 16px !important;
+                    }
+                }
+            }
+    }
 // TreeNode - List Card TreeNode Alert Color
-	.node-card-item {
-		&:before {
-			margin-left: -0.8rem;
-			background-color: var(--node-card-item-color);
-		}
-	}
-	.dark {
-		.node-card-item {
-			&:before {
-				background-color: var(--node-card-item-color-dark);
-			}
-		}
-	}
+    .node-card-item {
+        &:before {
+            margin-left: -0.8rem;
+            background-color: var(--node-card-item-color);
+        }
+    }
+    .dark {
+        .node-card-item {
+            &:before {
+                background-color: var(--node-card-item-color-dark);
+            }
+        }
+    }
 // Rem Bullet for Flashcard Rem
-	#hierarchy-editor {
-		.rem-container--concept-rem-type,
-		.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled,
-		.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled,
-		.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled,
-		.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled {
-			.rem-button__container {
-				.rem-bullet__container {
-					.rem-bullet--hidden-children {
-						width: .5em;
-					}
-				}
-			}
-		}
-	}
+    #hierarchy-editor {
+        .rem-container--concept-rem-type,
+        .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled,
+        .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled,
+        .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled,
+        .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled {
+            .rem-button__container {
+                .rem-bullet__container {
+                    .rem-bullet--hidden-children {
+                        width: .5em;
+                    }
+                }
+            }
+        }
+    }
 // Make Bullet-list by Intentional Tagging
-	// Bulletlist
-		@include bulletlist(var(--bullet-main));
-		.dark {
-			@include bulletlist(var(--bullet-main-dark));
-		}
-	// Bulletlists
-		@include bulletlists(var(--bullet-main));
-		.dark {
-			@include bulletlists(var(--bullet-main-dark));
-		}
-	#hierarchy-editor {
-		[data-rem-tags~="bulletlist"] {
-			.rem-container--focused {
-				.rem-bullet.rem-bullet--hidden-children {
-					border-style: unset;
-				}
-			}
-		}
-	} 
-	[data-rem-container-tags~="bulletlist"],
-	[data-rem-container-tags~="bulletlists"] {
-		// Tag Declutter
-			.hierarchy-editor__tag-bar__tag {
-				background-color: transparent !important;
+    // Bulletlist
+        @include bulletlist(var(--bullet-main));
+        .dark {
+            @include bulletlist(var(--bullet-main-dark));
+        }
+    // Bulletlists
+        @include bulletlists(var(--bullet-main));
+        .dark {
+            @include bulletlists(var(--bullet-main-dark));
+        }
+    #hierarchy-editor {
+        [data-rem-tags~="bulletlist"] {
+            .rem-container--focused {
+                .rem-bullet.rem-bullet--hidden-children {
+                    border-style: unset;
+                }
+            }
+        }
+    }
+    [data-rem-container-tags~="bulletlist"],
+    [data-rem-container-tags~="bulletlists"] {
+        // Tag Declutter
+            .hierarchy-editor__tag-bar__tag {
+                background-color: transparent !important;
 
-				span {
-					display: none;
-				}
-				.rn-tag__close {
-					opacity: .3;
-				}
-			}
-	}
+                span {
+                    display: none;
+                }
+                .rn-tag__close {
+                    opacity: .3;
+                }
+            }
+    }
 // Numbered list Placement
-	[data-rem-container-tags~="list-item"] {
-		span.rem-bullet__number {
-			position: relative;
-			left: 16px;
+    [data-rem-container-tags~="list-item"] {
+        span.rem-bullet__number {
+            position: relative;
+            left: 16px;
 
-			+ div {
-				position: relative;
-				left: 16px;
-			}
-		} 
-	}
+            + div {
+                position: relative;
+                left: 16px;
+            }
+        }
+    }
 
-	[data-rem-container-tags~="aliases"] {
-		[data-rem-container-tags~="list-item"] {
-			span.rem-bullet__number {
-				position: relative;
-				left: 0;
+    [data-rem-container-tags~="aliases"] {
+        [data-rem-container-tags~="list-item"] {
+            span.rem-bullet__number {
+                position: relative;
+                left: 0;
 
-				+ div {
-					position: relative;
-					left: 0;
-				}
-			} 
-		}
-	}
+                + div {
+                    position: relative;
+                    left: 0;
+                }
+            }
+        }
+    }
 // Power-up Symbol
-	.portal-tree-node-box {
-		.tree-node-container {
-			.rem-powerup-icon {
-				.text-icon {
-					top: .25em;
-				}
-			}
-		}
-	}
-// Checkbox Alignment	
-	#DocumentTitle {
-		.rem-text,
-		.rem-header--1,
-		.rem-header--2,
-		.rem-header--3 {
-			.rem-checkbox {
-				display: inline-block;
-				margin: 10px 15px 10px 0;
-			}
-		}
-		.document-title {
-			.EditorContainer {
-				line-height: unset;
-			}
-		}
-	}
-	.rem-text.rem-header--1 {
-		.rem-checkbox {
-			margin-top: 18px;
-		}
-	}
-	.rem-text.rem-header--2 {
-		.rem-checkbox {
-			margin-top: 12px;	
-		}
-	}
-	.rem-text.rem-header--3 {
-		.rem-checkbox {
-			margin-top: 8px;	
-		}
-	}
-	.rem-text {
-		.rem-checkbox {
-			margin-top: 0.3rem;
-		}
-	}
+    .portal-tree-node-box {
+        .tree-node-container {
+            .rem-powerup-icon {
+                .text-icon {
+                    top: .25em;
+                }
+            }
+        }
+    }
+// Checkbox Alignment
+    #DocumentTitle {
+        .rem-text,
+        .rem-header--1,
+        .rem-header--2,
+        .rem-header--3 {
+            .rem-checkbox {
+                display: inline-block;
+                margin: 10px 15px 10px 0;
+            }
+        }
+        .document-title {
+            .EditorContainer {
+                line-height: unset;
+            }
+        }
+    }
+    .rem-text.rem-header--1 {
+        .rem-checkbox {
+            margin-top: 18px;
+        }
+    }
+    .rem-text.rem-header--2 {
+        .rem-checkbox {
+            margin-top: 12px;
+        }
+    }
+    .rem-text.rem-header--3 {
+        .rem-checkbox {
+            margin-top: 8px;
+        }
+    }
+    .rem-text {
+        .rem-checkbox {
+            margin-top: 0.3rem;
+        }
+    }

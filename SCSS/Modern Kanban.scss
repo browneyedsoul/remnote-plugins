@@ -1,230 +1,230 @@
 :root {
-	--kanban-border-color: #DDD;
-	--kanban-border-color-dark: #535353;
+    --kanban-border-color: #DDD;
+    --kanban-border-color-dark: #535353;
     --kanban-scroll-bgcolor: #EEE;
     --kanban-scroll-bgcolor-dark: #222;
-	--kanban-sixdot-color: #000;
-	--kanban-sixdot-color-dark: #EEE;
-	--kanban-bgcolor: #F7F6F3;
-	--kanban-bgcolor-dark: #505050;
-	--kanban-bgcolor-input: #FFF;
-	--kanban-bgcolor-input-dark: #2E3437;
-	--kanban-bgcolor-inbox: #F7F6F3;
+    --kanban-sixdot-color: #000;
+    --kanban-sixdot-color-dark: #EEE;
+    --kanban-bgcolor: #F7F6F3;
+    --kanban-bgcolor-dark: #505050;
+    --kanban-bgcolor-input: #FFF;
+    --kanban-bgcolor-input-dark: #2E3437;
+    --kanban-bgcolor-inbox: #F7F6F3;
     --kanban-bgcolor-inbox-dark: #505050;
     --kanban-bgcolor-stage: ;
-	--kanban-bgcolor-stage-dark: ;
-	--kanban-bgcolor-inprogress: #F8F9CD;
-	--kanban-bgcolor-inprogress-dark: #63572B;
-	--kanban-bgcolor-done: #D5EED7;
-	--kanban-bgcolor-done-dark: #304F32;
-	--kanban-bgcolor-archive: ;
-	--kanban-bgcolor-archive-dark: ;
+    --kanban-bgcolor-stage-dark: ;
+    --kanban-bgcolor-inprogress: #F8F9CD;
+    --kanban-bgcolor-inprogress-dark: #63572B;
+    --kanban-bgcolor-done: #D5EED7;
+    --kanban-bgcolor-done-dark: #304F32;
+    --kanban-bgcolor-archive: ;
+    --kanban-bgcolor-archive-dark: ;
 }
 
 @mixin kanban(
-    $kanban-border-color, 
+    $kanban-border-color,
     $kanban-scroll-bgcolor,
     $kanban-bgcolor,
     $kanban-bgcolor-input,
     $kanban-bgcolor-inbox,
     $kanban-bgcolor-inprogress,
     $kanban-bgcolor-done,
-	$kanban-sixdot-color) {
-    // Kanban
-        #hierarchy-editor {
-            [data-rem-container-tags~=kanban] {
-                border: 0.1rem solid $kanban-border-color;
-                border-radius: 4px;
-                margin: 0.5rem 0.7rem 0.5rem 1.6rem;
+    $kanban-sixdot-color) {
 
-                // Declutter
-                    .bg-white {
-                        background-color: transparent;
+    #hierarchy-editor {
+        [data-rem-container-tags~=kanban] {
+            border: 0.1rem solid $kanban-border-color;
+            border-radius: 4px;
+            margin: 0.5rem 0.7rem 0.5rem 1.6rem;
+
+            // Declutter
+                .bg-white {
+                    background-color: transparent;
+                }
+            // Kanban Title
+                // > .tree-node--parent {
+                // }
+            // Kanban Contents
+                > .tree-node--children {
+                    display: flex;
+                    border: 0;
+                    padding-left: 0;
+                    overflow-x: scroll;
+                    white-space: pre;
+
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $kanban-scroll-bgcolor;
+                        border-radius: 2px;
                     }
-                // Kanban Title
-                    // > .tree-node--parent {
-                    // }
-                // Kanban Contents
-                    > .tree-node--children {
-                        display: flex;
-                        border: 0;
-                        padding-left: 0;
-                        overflow-x: scroll;
-                        white-space: pre;
+                    // Kanban Column
+                        > .animate-zoom-into-bullet {
+                            background-color: $kanban-bgcolor;
+                            margin-right: 0.7rem;
+                            position: relative;
+                            white-space: pre-wrap;
+                            padding-bottom: 5px;
+                            border-radius: 5px;
 
-                        &::-webkit-scrollbar-thumb {
-                            background-color: $kanban-scroll-bgcolor;
-                            border-radius: 2px;
-                        }
-                        // Kanban Column
-                            > .animate-zoom-into-bullet {
-                                background-color: $kanban-bgcolor;
-                                margin-right: 0.7rem;
-                                position: relative;
-                                white-space: pre-wrap;
-                                padding-bottom: 5px;
-                                border-radius: 5px;
+                            // Kanban Column Header
+                                >.tree-node--parent {
+                                    min-width: 240px;
 
-                                // Kanban Column Header
+                                    .rem-text {
+                                        font-weight: 650;
+                                        text-align: center;
+                                    }
+                                }
+                            // Kanban Cell
+                                > .tree-node--children {
+                                    left: 0 !important;
+                                    width: 100%;
+                                    max-width: 1000px;
+                                    margin-left: 1rem;
+
+                                    // Input Area
+                                        > .animate-zoom-into-bullet {
+                                            background-color: $kanban-bgcolor-input;
+                                            margin: 5px;
+                                            border-radius: 3px;
+                                            box-shadow: 0 0 1px 0;
+                                            margin-left: 1.2rem;
+
+                                            > div:first-child {
+                                                .rem-text {
+                                                    padding-left: 25px;
+                                                    margin-left: 0;
+                                                }
+                                            }
+                                            .float-end {
+                                                margin-left: 1rem;
+                                            }
+                                        }
+                                    // Input Area - Portal
+                                        > .portal-tree-node-box {
+                                            background-color: $kanban-bgcolor-input;
+                                            width: calc(100% - 3.6rem);
+                                            margin: 5px;
+                                            border-radius: 3px !important;
+                                            box-shadow: 0 0 1px 0 !important;
+                                            margin-left: 1.2rem !important;
+                                            margin-right: .3rem !important;
+                                            padding-right: 1rem;
+                                        }
+                                }
+                            // Inbox
+                                &:nth-child(1) {
+                                    background-color: $kanban-bgcolor-inbox;
+                                    min-width: fit-content;
+
                                     >.tree-node--parent {
-                                        min-width: 240px;
-
                                         .rem-text {
-                                            font-weight: 650;
-                                            text-align: center;
+                                            &::after {
+                                                content: "📥";
+                                                margin-left: 1rem;
+                                            }
                                         }
                                     }
-                                // Kanban Cell
-                                    > .tree-node--children {
-                                        left: 0 !important;
-                                        width: 100%;
-                                        max-width: 1000px;
-                                        margin-left: 1rem;
-                                        
-                                        // Input Area
-                                            > .animate-zoom-into-bullet {
-                                                background-color: $kanban-bgcolor-input;
-                                                margin: 5px;
-                                                border-radius: 3px;
-                                                box-shadow: 0 0 1px 0;
-                                                margin-left: 1.2rem;
+                                }
+                            // In Progress
+                                &:nth-child(2) {
+                                    background-color: $kanban-bgcolor-inprogress;
+                                    min-width: fit-content;
 
-                                                > div:first-child {
-                                                    .rem-text {
-                                                        padding-left: 25px;
-                                                        margin-left: 0;
-                                                    }
-                                                }
-                                                .float-end {
-                                                    margin-left: 1rem;
-                                                }
+                                    >.tree-node--parent {
+                                        .rem-text {
+                                            &::after {
+                                                content: "🚧";
+                                                margin-left: 1rem;
                                             }
-                                        // Input Area - Portal
-                                            > .portal-tree-node-box {
-                                                background-color: $kanban-bgcolor-input;
-                                                width: calc(100% - 3.6rem);
-                                                margin: 5px;
-                                                border-radius: 3px !important;
-                                                box-shadow: 0 0 1px 0 !important;
-                                                margin-left: 1.2rem !important;
-                                                margin-right: .3rem !important;
-                                                padding-right: 1rem;
-                                            }
+                                        }
                                     }
-                                // Inbox
-                                    &:nth-child(1) {
-                                        background-color: $kanban-bgcolor-inbox;
-                                        min-width: fit-content;
+                                }
+                            // Done
+                                &:nth-child(3) {
+                                    background-color: $kanban-bgcolor-done;
+                                    min-width: fit-content;
 
-                                        >.tree-node--parent {
-                                            .rem-text {
-                                                &::after {
-                                                    content: "📥";
-                                                    margin-left: 1rem;
-                                                }
+                                    >.tree-node--parent {
+                                        .rem-text {
+                                            &::after {
+                                                content: "✅";
+                                                margin-left: 1rem;
                                             }
                                         }
                                     }
-                                // In Progress
-                                    &:nth-child(2) {
-                                        background-color: $kanban-bgcolor-inprogress;
-                                        min-width: fit-content;
+                                }
+                            // Archive
+                                &:nth-child(4) {
+                                    background-color: $kanban-bgcolor;
+                                    min-width: fit-content;
 
-                                        >.tree-node--parent {
-                                            .rem-text {
-                                                &::after {
-                                                    content: "🚧";
-                                                    margin-left: 1rem;
-                                                }
+                                    >.tree-node--parent {
+                                        .rem-text {
+                                            &::after {
+                                                content: "🗃";
+                                                margin-left: 1rem;
                                             }
                                         }
                                     }
-                                // Done
-                                    &:nth-child(3) {
-                                        background-color: $kanban-bgcolor-done;
-                                        min-width: fit-content;
-
-                                        >.tree-node--parent {
-                                            .rem-text {
-                                                &::after {
-                                                    content: "✅";
-                                                    margin-left: 1rem;
-                                                }
-                                            }
-                                        }
-                                    }
-                                // Archive
-                                    &:nth-child(4) {
-                                        background-color: $kanban-bgcolor;
-                                        min-width: fit-content;
-                                    
-                                        >.tree-node--parent {
-                                            .rem-text {                        
-                                                &::after {
-                                                    content: "🗃";
-                                                    margin-left: 1rem;
-                                                }
-                                            }
-                                        }
-                                    }
-                            }
-                        // Global Kanban Column                
-                            > .animate-zoom-into-bullet {
-                                // Head
-                                    > div:first-child {
-                                        background-color: rgba(0, 0, 0, 0.09);
-                                        margin: 0;
-                                        padding-right: 1rem;
-                                        padding-left: 1rem;
-                                        border-bottom: 1px solid grey;
-                                        border-top-left-radius: 5px;
-                                        border-top-right-radius: 5px;
-                                    }
-                                // Body
-                                    > .tree-node--children {
-                                        margin: 0;
-                                        padding: 0;
-                                        border: unset;
-                                    }
-                            }
+                                }
+                        }
+                    // Global Kanban Column
+                        > .animate-zoom-into-bullet {
+                            // Head
+                                > div:first-child {
+                                    background-color: rgba(0, 0, 0, 0.09);
+                                    margin: 0;
+                                    padding-right: 1rem;
+                                    padding-left: 1rem;
+                                    border-bottom: 1px solid grey;
+                                    border-top-left-radius: 5px;
+                                    border-top-right-radius: 5px;
+                                }
+                            // Body
+                                > .tree-node--children {
+                                    margin: 0;
+                                    padding: 0;
+                                    border: unset;
+                                }
+                        }
+                }
+            // Remove Placeholder
+                .EditorContainer {
+                    > .text-gray-20 {
+                        display: none;
                     }
-                // Remove Placeholder
-                    .EditorContainer {
-                        > .text-gray-20 {
-                            display: none;
+                }
+            // rem container
+                .rem-button__container {
+                    .six-dot {
+                        .text-gray-15 {
+                            color: $kanban-sixdot-color;
                         }
                     }
-                // rem container
-                    .rem-button__container {
-                        .six-dot {
-                            .text-gray-15 {
-                                color: $kanban-sixdot-color;
-                            }
-                        }
-                    }
-            }
+                }
         }
+    }
 }
 
 @include kanban(
-	var(--kanban-border-color), 
-	var(--kanban-scroll-bgcolor), 
-	var(--kanban-bgcolor), 
-	var(--kanban-bgcolor-input), 
-	var(--kanban-bgcolor-inbox), 
-	var(--kanban-bgcolor-inprogress), 
-	var(--kanban-bgcolor-done),
-	var(--kanban-sixdot-color)
+    var(--kanban-border-color),
+    var(--kanban-scroll-bgcolor),
+    var(--kanban-bgcolor),
+    var(--kanban-bgcolor-input),
+    var(--kanban-bgcolor-inbox),
+    var(--kanban-bgcolor-inprogress),
+    var(--kanban-bgcolor-done),
+    var(--kanban-sixdot-color)
 );
 .dark {
-	@include kanban(
-		var(--kanban-border-color-dark), 
-		var(--kanban-scroll-bgcolor-dark), 
-		var(--kanban-bgcolor-dark), 
-		var(--kanban-bgcolor-input-dark), 
-		var(--kanban-bgcolor-inbox-dark), 
-		var(--kanban-bgcolor-inprogress-dark), 
-		var(--kanban-bgcolor-done-dark),
-		var(--kanban-sixdot-color-dark)
-	);
+    @include kanban(
+        var(--kanban-border-color-dark),
+        var(--kanban-scroll-bgcolor-dark),
+        var(--kanban-bgcolor-dark),
+        var(--kanban-bgcolor-input-dark),
+        var(--kanban-bgcolor-inbox-dark),
+        var(--kanban-bgcolor-inprogress-dark),
+        var(--kanban-bgcolor-done-dark),
+        var(--kanban-sixdot-color-dark)
+    );
 }

@@ -1,18 +1,18 @@
 :root {
-	--console-background-color: #2F3437;
-	--terminal-comment-text: #647280;
-	--terminal-red-text: #FF7E61;
-	--terminal-orange-text: #FCB42E;
-	--terminal-yellow-text: #FFFB00;
-	--terminal-green-text: #53FC00;
-	--terminal-blue-text: #00F9FC;
-	--terminal-purple-text: #FF60FE;
+    --console-background-color: #2F3437;
+    --terminal-comment-text: #647280;
+    --terminal-red-text: #FF7E61;
+    --terminal-orange-text: #FCB42E;
+    --terminal-yellow-text: #FFFB00;
+    --terminal-green-text: #53FC00;
+    --terminal-blue-text: #00F9FC;
+    --terminal-purple-text: #FF60FE;
 }
 
 [data-rem-container-tags~="terminal"] {
     background-color: #1F1F1F;
     color: #D0D0CD;
-    margin-left: 24px;  
+    margin-left: 24px;
     margin-right: 12px;
 
     .rem-bullet {
@@ -22,7 +22,7 @@
     .TreeNode {
         border-left-color: #373737 !important;
     }
-    
+
     .rem-text {
         font-family: "Roboto Mono", "Fira code", monospace;
         font-size: 0.9em;
@@ -39,12 +39,12 @@
             background-color: unset !important;
         }
         .quote {
-            color: var(--terminal-comment-text) !important; 
+            color: var(--terminal-comment-text) !important;
         }
 
         .highlight-color--red {color: var(--terminal-red-text) !important;}
         .highlight-color--orange {color: var(--terminal-orange-text);}
-        .highlight-color--yellow {color: var(--terminal-yellow-text);}  
+        .highlight-color--yellow {color: var(--terminal-yellow-text);}
         .highlight-color--green {color: var(--terminal-green-text);}
         .highlight-color--blue {color: var(--terminal-blue-text);}
         .highlight-color--purple {color: var(--terminal-purple-text);}
@@ -57,7 +57,7 @@
 }
 
 // Declutter Tag
-	[data-rem-tags~="terminal"] {
+    [data-rem-tags~="terminal"] {
         .hierarchy-editor__tag-bar__tag {
             background-color: transparent !important;
 

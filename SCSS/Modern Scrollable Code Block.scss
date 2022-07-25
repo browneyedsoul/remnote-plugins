@@ -1,18 +1,18 @@
 :root {
-    /* Global Code Style */
+    // Global Code Style
         --code-font-family: "Roboto Mono", "Fira code", monospace;
         --code-font-size: 1em;
         --inline-code-color: #E64400;
         --inline-code-color-dark: #DCDA7A;
         --inline-code-background: #F7F6F3;
         --inline-code-background-dark: #282C30;
-    /* Code Block Line Number Style */
+    // Code Block Line Number Style
         --line-number-width: 40px;
         --line-number-color: #B3B8BB;
         --line-number-color-dark: #BDBEBE;
         --line-number-background-color: #F7F6F3;
         --line-number-background-color-dark: #E6E6E6;
-    /* Code Block Color */
+    // Code Block Color
         --code-node-border-radius: 2px;
         --code-node-line-number-color: #BDBEBE;
         --code-node-line-number-color-dark: #585858;
@@ -66,27 +66,27 @@
 // Basic Style
     // Inline Code
         .quote {
-            font-family:        var(--code-font-family);
-            font-size:          var(--code-font-size);
-            color:              var(--inline-code-color);
-            background-color:   var(--inline-code-background);
-            padding:            1px 3px 1px 3px;
+            font-family:		var(--code-font-family);
+            font-size:			var(--code-font-size);
+            color:				var(--inline-code-color);
+            background-color:	var(--inline-code-background);
+            padding:			1px 3px 1px 3px;
         }
     // Code Block
         #code-node {
-            font-family:    var(--code-font-family);
-            font-size:      var(--code-font-size); 
-            border:         0;
-            padding-top:    2rem;
-            padding-bottom: 1.5rem;
-            padding-left:   40px;
-            padding-right:  10px;
-            margin-top:     2px;
-            margin-bottom:  2px;
-            border-radius:  0.3rem;
-            overflow-x:     scroll;
-            white-space:    pre;
-            
+            font-family:	var(--code-font-family);
+            font-size:		var(--code-font-size);
+            border:			0;
+            padding-top:	2rem;
+            padding-bottom:	1.5rem;
+            padding-left:	40px;
+            padding-right:	10px;
+            margin-top:		2px;
+            margin-bottom:	2px;
+            border-radius:	0.3rem;
+            overflow-x:		scroll;
+            white-space:	pre;
+
             &::-webkit-scrollbar {
                 width: 8px;
             }
@@ -108,18 +108,18 @@
                         counter-increment: codeLineNumber;
 
                         &::before {
-                            color:          var(--line-number-color);
-                            position:       absolute;
-                            left:           0px;
-                            width:          var(--line-number-width);
-                            box-sizing:     border-box;
-                            padding-right:  5px;
-                            padding-top:    1px;
-                            content:        counters(codeLineNumber, ".") " ";
-                            text-align:     center;
-                            font-family:    Helvetica;
-                            font-size:      13px;
-                            font-weight:    100;
+                            color:			var(--line-number-color);
+                            position:		absolute;
+                            left:			0px;
+                            width:			var(--line-number-width);
+                            box-sizing:		border-box;
+                            padding-right:	5px;
+                            padding-top:	1px;
+                            content:		counters(codeLineNumber, ".") " ";
+                            text-align:		center;
+                            font-family:	Helvetica;
+                            font-size:		13px;
+                            font-weight:	100;
                             opacity: .8;
                         }
 
@@ -142,7 +142,7 @@
                     width:              calc(var(--line-number-width, 45px) - 7px);
                 }
             // Codeblock Inline Caption
-                + span.quote, 
+                + span.quote,
                 + div span.quote {
                     background-color: unset !important;
                     color: #8E8D8A !important;
@@ -156,7 +156,7 @@
                     height: fit-content;
                     top: 5px;
                     left: 10px;
-                
+
                     &:hover {
                         opacity: 1;
                     }

@@ -1,14 +1,14 @@
 :root {
-	--planner-title-background-color: #E6E6E4;
-	--planner-title-background-color-dark: #525252;
-	--planner-header-background-color: #F7F6F3;
-	--planner-header-background-color-dark: #555;
-	--planner-cell-background-color: #FFFFFF;
-	--planner-cell-background-color-dark: #2F3437;
-	--planner-border-color: #F7F6F3;
-	--planner-border-color-dark: #535353;
-	--darkmode-text: #DFDFD5;
-	--planner-title-left-margin: 1.5rem;
+    --planner-title-background-color: #E6E6E4;
+    --planner-title-background-color-dark: #525252;
+    --planner-header-background-color: #F7F6F3;
+    --planner-header-background-color-dark: #555;
+    --planner-cell-background-color: #FFFFFF;
+    --planner-cell-background-color-dark: #2F3437;
+    --planner-border-color: #F7F6F3;
+    --planner-border-color-dark: #535353;
+    --darkmode-text: #DFDFD5;
+    --planner-title-left-margin: 1.5rem;
     --planner-title-right-margin: 0.7rem;
     --planner-week-left-margin: 1rem;
     --planner-week-right-margin: 0.7rem;
@@ -72,7 +72,7 @@
                         .float-end {
                             left: -6px;
                         }
-                    
+
                     > div.animate-zoom-into-bullet {
                         display: inline-block;
                         flex: 1 0 0;
@@ -94,7 +94,7 @@
                                 padding-left: unset;
                                 margin-left: var(--planner-title-left-margin);
                                 margin-right: 0;
-                                
+
 
                                 > div.animate-zoom-into-bullet {
                                     display: inline-block;
@@ -102,7 +102,7 @@
                                     white-space: wrap;
                                     border: 0.07rem solid var(--planner-title-background-color);
                                     min-width: 260px;
-                                        
+
                                     // Constant Width
                                         .rem-text,
                                         .EditorContainer,
@@ -127,7 +127,7 @@
                                             display: none;
                                         }
                                     }
-                                    
+
                                     > .TreeNode {
                                         width: calc(100% - 0px);
                                         left: 0px !important;
@@ -146,7 +146,7 @@
                                             .rem-text {
                                                 .EditorContainer {
                                                     .RichTextViewer {
-                                                        
+
                                                     }
                                                 }
                                             }
@@ -229,7 +229,7 @@
                                         > div.tree-node--parent  {
                                             color: #000;
                                             background-color: #D4EEFF;
-                                            
+
                                             .rem-text {
                                                 .rem-reference {
                                                     color: unset;
@@ -247,7 +247,7 @@
                                         > div.tree-node--parent  {
                                             color: #000;
                                             background-color: #FFD8CF;
-                                            
+
                                             .rem-text {
                                                 .rem-reference {
                                                     color: unset;
@@ -282,9 +282,9 @@
     .dark {
         #hierarchy-editor {
             [data-rem-container-tags~="planner"] {
-        
+
                 // Planner Title Bar
-                    > div.tree-node--parent {    
+                    > div.tree-node--parent {
                         [data-rem-tags~="planner"] {
                             background-color: var(--planner-title-background-color-dark);
                             border: 0.07rem solid var(--planner-title-background-color-dark);
@@ -295,30 +295,30 @@
                         border-left: 0.07rem solid var(--planner-title-background-color-dark);
                         border-right: 0.07rem solid var(--planner-title-background-color-dark);
                         border-bottom: 0.07rem solid var(--planner-title-background-color-dark);
-            
+
                         >div.animate-zoom-into-bullet {
-            
+
                             // Week Bar Adjustment
-            
+
                             // Remove Week TreeNode Line
-            
+
                             // Structure
-                            >div.TreeNode {        
-            
+                            >div.TreeNode {
+
                                 >div.animate-zoom-into-bullet {
                                     border: 0.07rem solid var(--planner-title-background-color-dark);
-            
+
                                     // Constant Width
-            
+
                                     // Column planner Head
                                     >div:nth-of-type(1) {
                                         background-color: var(--planner-header-background-color-dark);
                                     }
-            
+
                                     // Line Grid Adjustment
-                                    
+
                                 }
-            
+
                                 // Portal Layout
                                     .portal-tree-node-box {
                                         margin-left: unset;
@@ -378,7 +378,7 @@
                                     > div:nth-of-type(6) {
                                         >div.tree-node--parent {
                                             background-color: #183D4D;
-                
+
                                             .rem-text {
                                                 &::after {
                                                     content: "Sat";
@@ -390,7 +390,7 @@
                                     > div:nth-of-type(7) {
                                         >div.tree-node--parent {
                                             background-color: #572A25;
-                
+
                                             .rem-text {
                                                 &::after {
                                                     content: "Sun";
@@ -399,7 +399,7 @@
                                         }
                                     }
                             }
-            
+
                             // Remove Daily Document background
                         }
                     }
@@ -446,45 +446,45 @@
         }
     }
 // Custom planner Cell Width Setting
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w90"] > .TreeNode > div {min-width: 90px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w120"] > .TreeNode > div {min-width: 120px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w150"] > .TreeNode > div {min-width: 150px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w180"] > .TreeNode > div {min-width: 180px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w210"] > .TreeNode > div {min-width: 210px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w240"] > .TreeNode > div {min-width: 240px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w270"] > .TreeNode > div {min-width: 270px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w300"] > .TreeNode > div {min-width: 300px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w330"] > .TreeNode > div {min-width: 330px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w360"] > .TreeNode > div {min-width: 360px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w390"] > .TreeNode > div {min-width: 390px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w420"] > .TreeNode > div {min-width: 420px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w450"] > .TreeNode > div {min-width: 450px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w480"] > .TreeNode > div {min-width: 480px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w510"] > .TreeNode > div {min-width: 510px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w540"] > .TreeNode > div {min-width: 540px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w570"] > .TreeNode > div {min-width: 570px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w600"] > .TreeNode > div {min-width: 600px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w630"] > .TreeNode > div {min-width: 630px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w660"] > .TreeNode > div {min-width: 660px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w690"] > .TreeNode > div {min-width: 690px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w720"] > .TreeNode > div {min-width: 720px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w750"] > .TreeNode > div {min-width: 750px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w780"] > .TreeNode > div {min-width: 780px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w810"] > .TreeNode > div {min-width: 810px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w840"] > .TreeNode > div {min-width: 840px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w870"] > .TreeNode > div {min-width: 870px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w900"] > .TreeNode > div {min-width: 900px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w930"] > .TreeNode > div {min-width: 930px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w960"] > .TreeNode > div {min-width: 960px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w990"] > .TreeNode > div {min-width: 990px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w1020"] > .TreeNode > div {min-width: 1020px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w1050"] > .TreeNode > div {min-width: 1050px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w1080"] > .TreeNode > div {min-width: 1080px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w1110"] > .TreeNode > div {min-width: 1110px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w1140"] > .TreeNode > div {min-width: 1140px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w1170"] > .TreeNode > div {min-width: 1170px;}
-	[data-rem-container-tags~="planner"][data-rem-container-tags~="w1200"] > .TreeNode > div {min-width: 1200px;}
-	
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w90"] > .TreeNode > div {min-width: 90px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w120"] > .TreeNode > div {min-width: 120px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w150"] > .TreeNode > div {min-width: 150px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w180"] > .TreeNode > div {min-width: 180px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w210"] > .TreeNode > div {min-width: 210px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w240"] > .TreeNode > div {min-width: 240px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w270"] > .TreeNode > div {min-width: 270px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w300"] > .TreeNode > div {min-width: 300px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w330"] > .TreeNode > div {min-width: 330px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w360"] > .TreeNode > div {min-width: 360px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w390"] > .TreeNode > div {min-width: 390px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w420"] > .TreeNode > div {min-width: 420px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w450"] > .TreeNode > div {min-width: 450px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w480"] > .TreeNode > div {min-width: 480px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w510"] > .TreeNode > div {min-width: 510px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w540"] > .TreeNode > div {min-width: 540px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w570"] > .TreeNode > div {min-width: 570px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w600"] > .TreeNode > div {min-width: 600px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w630"] > .TreeNode > div {min-width: 630px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w660"] > .TreeNode > div {min-width: 660px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w690"] > .TreeNode > div {min-width: 690px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w720"] > .TreeNode > div {min-width: 720px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w750"] > .TreeNode > div {min-width: 750px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w780"] > .TreeNode > div {min-width: 780px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w810"] > .TreeNode > div {min-width: 810px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w840"] > .TreeNode > div {min-width: 840px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w870"] > .TreeNode > div {min-width: 870px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w900"] > .TreeNode > div {min-width: 900px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w930"] > .TreeNode > div {min-width: 930px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w960"] > .TreeNode > div {min-width: 960px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w990"] > .TreeNode > div {min-width: 990px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w1020"] > .TreeNode > div {min-width: 1020px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w1050"] > .TreeNode > div {min-width: 1050px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w1080"] > .TreeNode > div {min-width: 1080px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w1110"] > .TreeNode > div {min-width: 1110px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w1140"] > .TreeNode > div {min-width: 1140px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w1170"] > .TreeNode > div {min-width: 1170px;}
+    [data-rem-container-tags~="planner"][data-rem-container-tags~="w1200"] > .TreeNode > div {min-width: 1200px;}
+
     [data-rem-container-tags~="planner"][data-rem-container-tags~="w90"],
     [data-rem-container-tags~="planner"][data-rem-container-tags~="w120"],
     [data-rem-container-tags~="planner"][data-rem-container-tags~="w150"],

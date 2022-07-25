@@ -81,7 +81,7 @@
             div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header) {
                 display: flex;
                 align-items: baseline;
-                
+
                 .rem-text {
                     .EditorContainer {
                         white-space: pre !important;
@@ -89,7 +89,7 @@
                         .RichTextViewer {
                             white-space: nowrap;
                         }
-                        
+
                         .last_node_down_arrow,
                         .whitespace-pre {
                             display: none;
@@ -104,7 +104,7 @@
                         // Tag Declutter
                             .hierarchy-editor__tag-bar__tag {
                                 background-color: transparent !important;
-                        
+
                                 span {
                                     display: none;
                                 }
@@ -140,7 +140,7 @@
         // Children - One Child Tree
             div.tree-node--children {
                 // margin-left: 0;
-                
+
                 .backlink-counter {
                     opacity: .4;
                 }
@@ -221,7 +221,7 @@
         #hierarchy-editor {
             [data-rem-container-tags~="tree"], %tree-dark {
                 background-color: #2F3437;
-                
+
                 #hierarchy-editor {
                     .TreeNode {
                         border-color: var(--line-color-dark);
@@ -333,4 +333,16 @@
     [data-rem-container-tags~="w800"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 800px;}
     [data-rem-container-tags~="w900"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 900px;}
     [data-rem-container-tags~="w1000"] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent {min-width: 1000px;}
+
+    &[data-rem-container-tags~="w300"],
+    &[data-rem-container-tags~="w600"],
+    &[data-rem-container-tags~="w900"],
+    [data-rem-container-tags~="w300"],
+    [data-rem-container-tags~="w600"],
+    [data-rem-container-tags~="w900"] {
+        > div.tree-node--children {
+            overflow-x: unset;
+            white-space: unset;
+        }
+    }
 }

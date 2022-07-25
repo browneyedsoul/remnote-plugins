@@ -1,27 +1,27 @@
 :root {
-	--hide-answer-filter: contrast(0%) brightness(1.5);
+  --hide-answer-filter: contrast(0%) brightness(1.5);
 }
 
 #hierarchy-editor:not(.spacedRepetitionAnswer > #hierarchy-editor) [data-rem-container-tags~=active-recall] span.cloze, #hierarchy-editor:not(.spacedRepetitionAnswer > #hierarchy-editor) [data-rem-container-tags~=active-recall] span:not(:hover):not([data-rem-tags~=learned]).cloze, #hierarchy-editor:not(.spacedRepetitionAnswer > #hierarchy-editor) [data-rem-container-tags~=active-recall] span.only_in_answer:not(:hover):not([data-rem-tags~=learned]) {
-	font-weight: 600;
-	border-radius: 5px;
+  font-weight: 600;
+  border-radius: 5px;
 }
 #hierarchy-editor:not(.spacedRepetitionAnswer > #hierarchy-editor) [data-rem-container-tags~=active-recall] span:not(:hover):not([data-rem-tags~=learned]).cloze, #hierarchy-editor:not(.spacedRepetitionAnswer > #hierarchy-editor) [data-rem-container-tags~=active-recall] span.only_in_answer:not(:hover):not([data-rem-tags~=learned]) {
-	background-color: white;
-	filter: var(--hide-answer-filter);
-	border-radius: 5px;
-	position: relative;
-	top: -2px;
+  background-color: white;
+  filter: var(--hide-answer-filter);
+  border-radius: 5px;
+  position: relative;
+  top: -2px;
 }
 #hierarchy-editor:not(.spacedRepetitionAnswer > #hierarchy-editor) [data-rem-container-tags~=active-recall] > div:last-child .node-card-item:not(:hover) {
-	background-color: white;
-	filter: var(--hide-answer-filter);
-	border-radius: 5px;
+  background-color: white;
+  filter: var(--hide-answer-filter);
+  border-radius: 5px;
 }
 
 [data-rem-tags~=active-recall] .hierarchy-editor__tag-bar__tag {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 [data-rem-tags~=active-recall] .hierarchy-editor__tag-bar__tag span {
-	display: none;
+  display: none;
 }

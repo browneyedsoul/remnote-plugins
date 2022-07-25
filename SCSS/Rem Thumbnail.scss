@@ -1,379 +1,379 @@
 @mixin thumbnail-set-display() {
-	span.inline-block {
-		height: 1em;
-		width: auto;
+    span.inline-block {
+        height: 1em;
+        width: auto;
 
-		> div {
-			height: 1em !important;
-			width: unset !important;
-			max-width: 1em !important;
-			object-fit: contain;
-			object-position: center;
-			min-width: 1em !important;
-			min-height: unset !important;
+        > div {
+            height: 1em !important;
+            width: unset !important;
+            max-width: 1em !important;
+            object-fit: contain;
+            object-position: center;
+            min-width: 1em !important;
+            min-height: unset !important;
 
-			> span.image-node {
-				object-fit: contain !important;
-				object-position: center;
+            > span.image-node {
+                object-fit: contain !important;
+                object-position: center;
 
-				> div:nth-of-type(2) {
-					img.thumbnail--with-width {
-						object-fit: contain;
-						object-position: center;
-					}
-				}
-			}
-		}
-	}
+                > div:nth-of-type(2) {
+                    img.thumbnail--with-width {
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @mixin thumbnail-set($margin-right: null) {
-	span.inline-block {
-		height: 1em;
-		width: auto;
-		margin-right: $margin-right;
-	
-		> div {
-			height: 1em !important;
-			width: unset !important;
-			max-width: 1em !important;
-			object-fit: contain;
-			object-position: center;
-			min-width: 1em !important;
-			min-height: unset !important;
-	
-			> span.image-node {
-				object-fit: contain !important;
-				object-position: center;
-	
-				> div:nth-of-type(1):not(div[data-rmiz-wrap~="visible"]) {
-					display: none
-				}
-	
-				> div:nth-of-type(2) {
-					img.thumbnail--with-width {
-						object-fit: contain;
-						object-position: center;
-					}
-				}
-			}
-		}
-	}
+    span.inline-block {
+        height: 1em;
+        width: auto;
+        margin-right: $margin-right;
+ 
+        > div {
+            height: 1em !important;
+            width: unset !important;
+            max-width: 1em !important;
+            object-fit: contain;
+            object-position: center;
+            min-width: 1em !important;
+            min-height: unset !important;
+
+            > span.image-node {
+                object-fit: contain !important;
+                object-position: center;
+
+                > div:nth-of-type(1):not(div[data-rmiz-wrap~="visible"]) {
+                    display: none
+                }
+
+                > div:nth-of-type(2) {
+                    img.thumbnail--with-width {
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @mixin console-declutter {
-	.inline-block.align-text-top {
-		.image-node {
-			[data-menu-type~="ImageNodeMenu"] {
-				display: none;
-			}
-		}
-		> div {
-			display: none;
-		}
-	}
+    .inline-block.align-text-top {
+        .image-node {
+            [data-menu-type~="ImageNodeMenu"] {
+                display: none;
+            }
+        }
+        > div {
+            display: none;
+        }
+    }
 }
 
 // All Notes Section
-	.document-table {
-		.ReactVirtualized__Grid__innerScrollContainer {
-			.RichTextViewer {
-				@include thumbnail-set();
-			}
-		}
-	}
+    .document-table {
+        .ReactVirtualized__Grid__innerScrollContainer {
+            .RichTextViewer {
+                @include thumbnail-set();
+            }
+        }
+    }
 // Card Browser
-	.ReactVirtualized__Table__rowColumn {
-		@include thumbnail-set;
-	}
+    .ReactVirtualized__Table__rowColumn {
+        @include thumbnail-set;
+    }
 // Queue
-	.Queue {
-		// Title bar
-			.queue__title {
-				.queue__title__middle {
-					.RichTextViewer {
-						@include thumbnail-set();
-					}
-				}
-			}
-		// progress bar
-			// .queue__progress {
+    .Queue {
+        // Title bar
+            .queue__title {
+                .queue__title__middle {
+                    .RichTextViewer {
+                        @include thumbnail-set();
+                    }
+                }
+            }
+        // progress bar
+            // .queue__progress {
 
-			// }
-		// Prompt
-			.spaced-repetition__prompt {
-				> .indented-rem {
-					> span {
-						.RichTextViewer {
-							display: flex;
-						}
-						@include thumbnail-set(3px);
-					}
-				}
-			
-				.indented-rem:not(.basic_card_rem_type + .indented-rem):not(.concept_rem_type + .indented-rem) {
-					.RichTextViewer {
-						> div {
-							@include thumbnail-set(3px);
-						}
-			
-						.react-transform-component {
-							.react-transform-element {}
-						}
-					}
-				}
-			}
-		// ?
-			.rem-bullet__document {
-				@include thumbnail-set;
-			
-				> span {
-					>div {
-						display: inline;
-					}
-				}
-			}
-		// Fill
-			.fill-in-the-blank {
-				display: inline-flex;
-				vertical-align: top;
-			}
-			.fill-in-the-blank--revealed {
-				.RichTextViewer {
-					.react-transform-component {
-						.react-transform-element {
-							@include thumbnail-set;
-						}
-					}
-				}
-			}
-		// Cluster
-			.queue-cluster-selector {
-				@include thumbnail-set;
-			}
-		// Edir Later
-			.queue__edit-later {
-				.document-header-top-bar {
-					.RichTextViewer {
-						@include thumbnail-set();
-					}
-				}
-			}
-	}
+            // }
+        // Prompt
+            .spaced-repetition__prompt {
+                > .indented-rem {
+                    > span {
+                        .RichTextViewer {
+                            display: flex;
+                        }
+                        @include thumbnail-set(3px);
+                    }
+                }
+
+                .indented-rem:not(.basic_card_rem_type + .indented-rem):not(.concept_rem_type + .indented-rem) {
+                    .RichTextViewer {
+                        > div {
+                            @include thumbnail-set(3px);
+                        }
+
+                        .react-transform-component {
+                            .react-transform-element {}
+                        }
+                    }
+                }
+            }
+        // ?
+            .rem-bullet__document {
+                @include thumbnail-set;
+
+                > span {
+                    >div {
+                        display: inline;
+                    }
+                }
+            }
+        // Fill
+            .fill-in-the-blank {
+                display: inline-flex;
+                vertical-align: top;
+            }
+            .fill-in-the-blank--revealed {
+                .RichTextViewer {
+                    .react-transform-component {
+                        .react-transform-element {
+                            @include thumbnail-set;
+                        }
+                    }
+                }
+            }
+        // Cluster
+            .queue-cluster-selector {
+                @include thumbnail-set;
+            }
+        // Edir Later
+            .queue__edit-later {
+                .document-header-top-bar {
+                    .RichTextViewer {
+                        @include thumbnail-set();
+                    }
+                }
+            }
+    }
 // Document Top
-	#tile__document {
-		// Page Hierarchy
-		.document-header-top-bar {
-			@include thumbnail-set();
-		}
-		// Page
-		#document {
-			#DropToOpenAsDocument {
-				// Document Top Row Tag Bar
-				@include thumbnail-set;
-				
-				#DocumentTitle {
-					@include thumbnail-set;
-					@include console-declutter;
-				}
-			}
-			// Sticky Header
-				#hierarchy-editor {
-					> .fixed {
-						> div {
-							> .tree-node--children {
-								> .tree-node-container {
-									.EditorContainer {
-										@include thumbnail-set();
-									}
-								}
-							}
-						}
-					}
-				}
-		}
-	}
+    #tile__document {
+        // Page Hierarchy
+        .document-header-top-bar {
+            @include thumbnail-set();
+        }
+        // Page
+        #document {
+            #DropToOpenAsDocument {
+                // Document Top Row Tag Bar
+                @include thumbnail-set;
+
+                #DocumentTitle {
+                    @include thumbnail-set;
+                    @include console-declutter;
+                }
+            }
+            // Sticky Header
+                #hierarchy-editor {
+                    > .fixed {
+                        > div {
+                            > .tree-node--children {
+                                > .tree-node-container {
+                                    .EditorContainer {
+                                        @include thumbnail-set();
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+    }
 // Hidden Page Hierarchy Style
-	.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
-		@include thumbnail-set;
-	}
+    .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
+        @include thumbnail-set;
+    }
 // Document Sidebar
-	#document-sidebar {
-		@include thumbnail-set;
-		@include console-declutter();
-	}
+    #document-sidebar {
+        @include thumbnail-set;
+        @include console-declutter();
+    }
 // Document Hidden children
-	.hierarchy-editor__hidden-children {
-		@include thumbnail-set;
-	}
+    .hierarchy-editor__hidden-children {
+        @include thumbnail-set;
+    }
 // .popup-menu
-	.popup-menu {
-		// Title
-			> div.overflow-x-hidden {
-				> div {
-					span.RichTextViewer {
-						@include thumbnail-set;
-					}
-				}
-			}
-		// Backlink Counter
-			.rn-editor__rem__backlink-item {
-				span.RichTextViewer {
-					@include thumbnail-set;
-				}
-			}
-		// Static Popup
-			.popup-menu__item--static {
-				span.RichTextViewer {
-					@include thumbnail-set;
-				}
-			}
-		// Image Thumbnail Tag
-			[data-rem-tags*="tn"] {
-				#document-hover-preview {
-					.RichTextViewer {
-						@include thumbnail-set;
-					}
-				}
-			}
-		// Tag bar
-			.rem.isSearchResult {
-				.hierarchy-editor__tag-bar {
-					@include thumbnail-set;
-				}
-			}
-		// Tags Backlink Popup- right side of a Rem
-			div.search-result__rem-breadcrumbs + span,
-			.rem-powerup-icon + span {
-				> .RichTextViewer {
-					@include thumbnail-set;
-				}
-			}
-		// Reference
-			.EditorContainer.EditorContainerInline {
-				@include thumbnail-set;
-			}
-			.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
-				@include thumbnail-set;
-			}
-		// Rem Hierarchy bar
-			> div {
-				> div {
-					> div {
-						span.rn-rem-stack-arrow {
-							+ span {
-								span.RichTextViewer {
-									@include thumbnail-set;
-								}
-							}
-						}
-					}
-				}
-			}
-			> div {
-				> div {
-					> div {
-						> span {
-							> span.RichTextViewer {
-								@include thumbnail-set;
-							}
-						}
-					}
-				}
-			}
-	}
+    .popup-menu {
+        // Title
+            > div.overflow-x-hidden {
+                > div {
+                    span.RichTextViewer {
+                        @include thumbnail-set;
+                    }
+                }
+            }
+        // Backlink Counter
+            .rn-editor__rem__backlink-item {
+                span.RichTextViewer {
+                    @include thumbnail-set;
+                }
+            }
+        // Static Popup
+            .popup-menu__item--static {
+                span.RichTextViewer {
+                    @include thumbnail-set;
+                }
+            }
+        // Image Thumbnail Tag
+            [data-rem-tags*="tn"] {
+                #document-hover-preview {
+                    .RichTextViewer {
+                        @include thumbnail-set;
+                    }
+                }
+            }
+        // Tag bar
+            .rem.isSearchResult {
+                .hierarchy-editor__tag-bar {
+                    @include thumbnail-set;
+                }
+            }
+        // Tags Backlink Popup- right side of a Rem
+            div.search-result__rem-breadcrumbs + span,
+            .rem-powerup-icon + span {
+                > .RichTextViewer {
+                    @include thumbnail-set;
+                }
+            }
+        // Reference
+            .EditorContainer.EditorContainerInline {
+                @include thumbnail-set;
+            }
+            .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
+                @include thumbnail-set;
+            }
+        // Rem Hierarchy bar
+            > div {
+                > div {
+                    > div {
+                        span.rn-rem-stack-arrow {
+                            + span {
+                                span.RichTextViewer {
+                                    @include thumbnail-set;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            > div {
+                > div {
+                    > div {
+                        > span {
+                            > span.RichTextViewer {
+                                @include thumbnail-set;
+                            }
+                        }
+                    }
+                }
+            }
+    }
 // #Popup
-	#Popup {
-		#PopupContent {
-			.RichTextViewer {
-				@include thumbnail-set;
-			}			
-			.document-popup-preview {
-				.document-header-top-bar {
-					.RichTextViewer {
-						@include thumbnail-set;
-					}
-				}
-			}
-		}
-	}
+    #Popup {
+        #PopupContent {
+            .RichTextViewer {
+                @include thumbnail-set;
+            }
+            .document-popup-preview {
+                .document-header-top-bar {
+                    .RichTextViewer {
+                        @include thumbnail-set;
+                    }
+                }
+            }
+        }
+    }
 // Header & Normal Rem-Text with "Thumbnail(TN)" Tag
-	.rem-header--1,
-	.rem-header--2,
-	.rem-header--3,
-	[data-rem-tags~="tn"] {
-		.EditorContainer {
-			@include thumbnail-set;
-		}
-	}
-	[data-rem-container-tags~="tnc"] {
-		> .tree-node--children {
-			> .tree-node-container {
-				> .tree-node--parent {
-					.EditorContainer {
-						@include thumbnail-set;
-					}
-				}
-			}
-		}
-	}
+    .rem-header--1,
+    .rem-header--2,
+    .rem-header--3,
+    [data-rem-tags~="tn"] {
+        .EditorContainer {
+            @include thumbnail-set;
+        }
+    }
+    [data-rem-container-tags~="tnc"] {
+        > .tree-node--children {
+            > .tree-node-container {
+                > .tree-node--parent {
+                    .EditorContainer {
+                        @include thumbnail-set;
+                    }
+                }
+            }
+        }
+    }
 // Tag bar
-	.hierarchy-editor__tag-bar__tag {
-		.RichTextViewer {
-			@include thumbnail-set(3px);
-		}
-	}
+    .hierarchy-editor__tag-bar__tag {
+        .RichTextViewer {
+            @include thumbnail-set(3px);
+        }
+    }
 // Search Result
-	// Tag Search Result
-		.search-result__rem-breadcrumbs {
-			@include thumbnail-set();
-		}
-		#search-results__list {
-			@include thumbnail-set();
-			@include console-declutter();
-		}
+    // Tag Search Result
+        .search-result__rem-breadcrumbs {
+            @include thumbnail-set();
+        }
+        #search-results__list {
+            @include thumbnail-set();
+            @include console-declutter();
+        }
 // Portal
-	.portal-tree-node-box {
-		.rem-text.rem-header--1,
-		.rem-text.rem-header--2,
-		.rem-text.rem-header--3 {
-			@include thumbnail-set;
-		}
-		> div {
-			> .tree-node-container {
-				> .tree-node--children {
-					> .tree-node-container {
-						>.tree-node--parent {
-							@include thumbnail-set;
-						}
-					}
-				}
-			}
-		}
-	}
+    .portal-tree-node-box {
+        .rem-text.rem-header--1,
+        .rem-text.rem-header--2,
+        .rem-text.rem-header--3 {
+            @include thumbnail-set;
+        }
+        > div {
+            > .tree-node-container {
+                > .tree-node--children {
+                    > .tree-node-container {
+                        >.tree-node--parent {
+                            @include thumbnail-set;
+                        }
+                    }
+                }
+            }
+        }
+    }
 // Rem Reference
-	.rem-reference {
-		@include thumbnail-set;
-	}
-	.RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
-		@include thumbnail-set;
-	}
-	// Rem reference normal rem-text thumbnail adjustment
-		.rem-text {
-			&:not(.rem-header--1) {
-				&:not(.rem-header--2) {
-					&:not(.rem-header--3) {
-						.rem-reference {
-							@include thumbnail-set;
-						}
-					}
-				}
-			}
-		}
+    .rem-reference {
+        @include thumbnail-set;
+    }
+    .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
+        @include thumbnail-set;
+    }
+    // Rem reference normal rem-text thumbnail adjustment
+        .rem-text {
+            &:not(.rem-header--1) {
+                &:not(.rem-header--2) {
+                    &:not(.rem-header--3) {
+                        .rem-reference {
+                            @include thumbnail-set;
+                        }
+                    }
+                }
+            }
+        }
 // Remove ImageNodeMenu
-	[data-rem-tags~="header"],
-	[data-rem-tags~="tn"] {
-		[data-menu-type="ImageNodeMenu"] {
-			display: none;
-		}
-	}
+    [data-rem-tags~="header"],
+    [data-rem-tags~="tn"] {
+        [data-menu-type="ImageNodeMenu"] {
+            display: none;
+        }
+    }

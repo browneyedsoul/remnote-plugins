@@ -1,11 +1,11 @@
 [data-rem-tags~="strikethrough"] .rem-text span.highlight-color--red {
-	color: unset;
-	background-color: unset !important;
-	text-decoration:line-through;
-	text-decoration-style: double;
-	opacity: 0.5;
+  color: unset;
+  background-color: unset !important;
+  text-decoration:line-through;
+  text-decoration-style: double;
+  opacity: 0.5;
 }
 
 /*********** Tag Declutter ***********/
-	[data-rem-tags~="strikethrough"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
-	[data-rem-tags~="strikethrough"] .hierarchy-editor__tag-bar__tag span {display: none;}
+  [data-rem-tags~="strikethrough"] .hierarchy-editor__tag-bar__tag {background-color: transparent;}
+  [data-rem-tags~="strikethrough"] .hierarchy-editor__tag-bar__tag span {display: none;}

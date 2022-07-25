@@ -1,15 +1,15 @@
 [data-rem-tags~=caption] .rem-text .EditorContainer {
-	background-color: unset;
-	color: #8E8D8A;
-	font-family: "Sans-Serif Workhorse";
-	font-size: 0.9rem;
+  background-color: unset;
+  color: #8E8D8A;
+  font-family: "Sans-Serif Workhorse";
+  font-size: 0.9rem;
 }
 [data-rem-tags~=caption] .hierarchy-editor__tag-bar__tag {
-	background-color: transparent;
+  background-color: transparent;
 }
 [data-rem-tags~=caption] .hierarchy-editor__tag-bar__tag span {
-	display: none;
+  display: none;
 }
 [data-rem-tags~=caption] .hierarchy-editor__tag-bar__tag .rn-tag__close {
-	opacity: 0.2;
+  opacity: 0.2;
 }

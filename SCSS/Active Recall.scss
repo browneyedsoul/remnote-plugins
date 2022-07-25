@@ -16,7 +16,7 @@
                     top: -2px;
                     @extend %cloze;
                 }
-                
+
             }
             span.only_in_answer {
                 span.RichTextViewer {
@@ -66,7 +66,7 @@
             }
     }
 // Tag Declutter
-	[data-rem-tags~="active-recall"] {
+    [data-rem-tags~="active-recall"] {
         .hierarchy-editor__tag-bar__tag {
             background-color: transparent !important;
 
@@ -74,4 +74,4 @@
                 display: none;
             }
         }
-    } 
+    }

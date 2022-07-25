@@ -283,11 +283,11 @@
                         [data-rem-tags~="highlight"] {
                             margin-right: 0;
 
-                            .highlight-color--red, 
-                            .highlight-color--orange, 
-                            .highlight-color--yellow, 
-                            .highlight-color--green, 
-                            .highlight-color--blue, 
+                            .highlight-color--red,
+                            .highlight-color--orange,
+                            .highlight-color--yellow,
+                            .highlight-color--green,
+                            .highlight-color--blue,
                             .highlight-color--purple {
                                 padding: 0;
                             }
@@ -341,7 +341,7 @@
                 [data-rem-container-tags~="table1170"],
                 [data-rem-container-tags~="table1200"] {
                     background-color: var(--table-columnrow-background-color-dark);
-                    
+
                     // Table Title
                         > :first-child {
                             border: 0.07rem solid var(--table-border-color-dark);
@@ -427,17 +427,17 @@
 // Table Column Color Preset
     [data-rem-container-tags~="th"],
     [data-rem-container-tags~="th"] > .tree-node--children > .animate-zoom-into-bullet,
-	[data-rem-container-tags~="tablecolor"] {
+    [data-rem-container-tags~="tablecolor"] {
         background-color: var(--table-columnrow-background-color) !important;
         font-weight: 550;
         text-align: center;
-        
+
         [data-rem-tags~="th"],
         [data-rem-tags~="tablecolor"] {
             > .tree-node--parent {
                 height: 100%;
 
-                
+
             }
         }
         // Declutter Tag

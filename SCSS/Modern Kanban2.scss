@@ -51,7 +51,7 @@
                         // Kanban Column Header
                             > .tree-node--parent {
                                 min-width: 240px;
-                                
+
                                 .rem-text {
                                     font-weight: 650;
                                     text-align: center;
@@ -62,7 +62,7 @@
                                 left: 0 !important;
                                 width: 100%;
                                 max-width: 1000px;
-                                
+
                                 // Input Area
                                     > .animate-zoom-into-bullet {
                                         background-color: var(--kanban-bgcolor-input);
@@ -112,7 +112,7 @@
                     >.animate-zoom-into-bullet[data-rem-container-tags~="vt"] {
                         background-color: #FEEEFC;
                     }
-                // Global Kanban Column                
+                // Global Kanban Column
                     > .animate-zoom-into-bullet {
                         // Head
                             > div:first-child {
@@ -152,7 +152,7 @@
         #hierarchy-editor {
             [data-rem-container-tags~=kanban2] {
                 border: 0.1rem solid var(--kanban-border-dark);
-                
+
                 // rem container
                     .rem-button__container {
                         .six-dot {
@@ -183,23 +183,23 @@
                     >.animate-zoom-into-bullet[data-rem-container-tags~="rd"] {
                         background-color: #572924;
                     }
-                    
+
                     >.animate-zoom-into-bullet[data-rem-container-tags~="or"] {
                         background-color: #553D24;
                     }
-                    
+
                     >.animate-zoom-into-bullet[data-rem-container-tags~="yl"] {
                         background-color: #453E1E;
                     }
-                    
+
                     >.animate-zoom-into-bullet[data-rem-container-tags~="gr"] {
                         background-color: #253F27;
                     }
-                    
+
                     >.animate-zoom-into-bullet[data-rem-container-tags~="bl"] {
                         background-color: #183C4D;
                     }
-                    
+
                     >.animate-zoom-into-bullet[data-rem-container-tags~="vt"] {
                         background-color: #43273F;
                     }
