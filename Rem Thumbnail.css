@@ -921,6 +921,12 @@
   -o-object-position: center;
      object-position: center;
 }
+.rem-header--1 .EditorContainer .inline-block.workInProgressTagEmpty,
+.rem-header--2 .EditorContainer .inline-block.workInProgressTagEmpty,
+.rem-header--3 .EditorContainer .inline-block.workInProgressTagEmpty,
+[data-rem-tags~=tn] .EditorContainer .inline-block.workInProgressTagEmpty {
+  height: unset;
+}
 
 [data-rem-container-tags~=tnc] > .tree-node--children > .tree-node-container > .tree-node--parent .EditorContainer span.inline-block {
   height: 1em;

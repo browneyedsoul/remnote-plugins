@@ -304,6 +304,10 @@
     [data-rem-tags~="tn"] {
         .EditorContainer {
             @include thumbnail-set;
+
+            .inline-block.workInProgressTagEmpty {
+                height: unset;
+            }
         }
     }
     [data-rem-container-tags~="tnc"] {
