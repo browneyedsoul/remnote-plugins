@@ -500,102 +500,57 @@
   color: var(--darkmode-text);
   background-color: var(--darkmode-background-selected-darker);
 }
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red {
-  background-color: var(--highlight-color--red-dark);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red > div {
-  color: #000 !important;
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red > div span.RichTextViewer {
-  color: var(--darkmode-text);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--red .hierarchy-editor__tag-bar__tag__delete {
-  color: var(--darkmode-text);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange {
-  background-color: var(--highlight-color--orange-dark);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange > div {
-  color: #000 !important;
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange > div span.RichTextViewer {
-  color: var(--darkmode-text);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--orange .hierarchy-editor__tag-bar__tag__delete {
-  color: var(--darkmode-text);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow {
-  background-color: var(--highlight-color--yellow-dark);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow > div {
-  color: #000 !important;
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow > div span.RichTextViewer {
-  color: var(--darkmode-text);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--yellow .hierarchy-editor__tag-bar__tag__delete {
-  color: var(--darkmode-text);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green {
-  background-color: var(--highlight-color--green-dark);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green > div {
-  color: #000 !important;
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green > div span.RichTextViewer {
-  color: var(--darkmode-text);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--green .hierarchy-editor__tag-bar__tag__delete {
-  color: var(--darkmode-text);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue {
-  background-color: var(--highlight-color--blue-dark);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue > div {
-  color: #000 !important;
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue > div span.RichTextViewer {
-  color: var(--darkmode-text);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--blue .hierarchy-editor__tag-bar__tag__delete {
-  color: var(--darkmode-text);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple {
-  background-color: var(--highlight-color--purple-dark);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple > div {
-  color: #000 !important;
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple > div span.RichTextViewer {
-  color: var(--darkmode-text);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag.highlight-color--purple .hierarchy-editor__tag-bar__tag__delete {
-  color: var(--darkmode-text);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--red, .dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--orange, .dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--yellow, .dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--green, .dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--blue, .dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--purple {
+.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--red {
+  color: var(--red-text-dark);
   background-color: unset;
 }
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--red {
-  color: var(--red-text-dark);
-}
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--orange {
+.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--orange {
   color: var(--orange-text-dark);
+  background-color: unset;
 }
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--yellow {
+.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--yellow {
   color: var(--yellow-text-dark);
+  background-color: unset;
   text-shadow: unset;
 }
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--green {
+.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--green {
   color: var(--green-text-dark);
+  background-color: unset;
 }
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--blue {
+.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--blue {
   color: var(--blue-text-dark);
+  background-color: unset;
 }
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .bold.highlight-color--purple {
+.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .bold.highlight-color--purple {
   color: var(--purple-text-dark);
+  background-color: unset;
 }
-.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag__delete {
-  color: unset;
+.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
+  color: var(--highlight-color--red-text-dark);
+  background-color: var(--highlight-color--red-bg-dark);
+}
+.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--orange:not(.bold.highlight-color--orange) {
+  color: var(--highlight-color--orange-text-dark);
+  background-color: var(--highlight-color--orange-bg-dark);
+}
+.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+  color: var(--highlight-color--yellow-text-dark);
+  background-color: var(--highlight-color--yellow-bg-dark);
+}
+.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--green:not(.bold.highlight-color--green) {
+  color: var(--highlight-color--green-text-dark);
+  background-color: var(--highlight-color--green-bg-dark);
+}
+.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--blue:not(.bold.highlight-color--blue) {
+  color: var(--highlight-color--blue-text-dark);
+  background-color: var(--highlight-color--blue-bg-dark);
+}
+.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .RichTextViewer .highlight-color--purple:not(.bold.highlight-color--purple) {
+  color: var(--highlight-color--purple-text-dark);
+  background-color: var(--highlight-color--purple-bg-dark);
+}
+.dark .hierarchy-editor__tag-bar .hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
+  color: var(--darkmode-text);
 }
 .dark .cloze {
   background-color: var(--darkmode-background-selected-darker);
@@ -1964,6 +1919,56 @@
 
 .popup-menu > div.overflow-x-hidden > div.max-w-\[285px\] {
   max-width: unset;
+}
+
+.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .bold.highlight-color--red {
+  color: var(--red-text-dark);
+  background-color: unset;
+}
+.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .bold.highlight-color--orange {
+  color: var(--orange-text-dark);
+  background-color: unset;
+}
+.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .bold.highlight-color--yellow {
+  color: var(--yellow-text-dark);
+  background-color: unset;
+  text-shadow: unset;
+}
+.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .bold.highlight-color--green {
+  color: var(--green-text-dark);
+  background-color: unset;
+}
+.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .bold.highlight-color--blue {
+  color: var(--blue-text-dark);
+  background-color: unset;
+}
+.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .bold.highlight-color--purple {
+  color: var(--purple-text-dark);
+  background-color: unset;
+}
+.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
+  color: var(--highlight-color--red-text-dark);
+  background-color: var(--highlight-color--red-bg-dark);
+}
+.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .highlight-color--orange:not(.bold.highlight-color--orange) {
+  color: var(--highlight-color--orange-text-dark);
+  background-color: var(--highlight-color--orange-bg-dark);
+}
+.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+  color: var(--highlight-color--yellow-text-dark);
+  background-color: var(--highlight-color--yellow-bg-dark);
+}
+.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .highlight-color--green:not(.bold.highlight-color--green) {
+  color: var(--highlight-color--green-text-dark);
+  background-color: var(--highlight-color--green-bg-dark);
+}
+.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .highlight-color--blue:not(.bold.highlight-color--blue) {
+  color: var(--highlight-color--blue-text-dark);
+  background-color: var(--highlight-color--blue-bg-dark);
+}
+.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .highlight-color--purple:not(.bold.highlight-color--purple) {
+  color: var(--highlight-color--purple-text-dark);
+  background-color: var(--highlight-color--purple-bg-dark);
 }
 
 .dark #Popup #PopupContent > div:nth-of-type(2) {
