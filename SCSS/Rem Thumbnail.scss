@@ -32,7 +32,7 @@
         height: 1em;
         width: auto;
         margin-right: $margin-right;
- 
+
         > div {
             height: 1em !important;
             width: unset !important;
@@ -209,8 +209,8 @@
 // .popup-menu
     .popup-menu {
         // Title
-            > div.overflow-x-hidden {
-                > div {
+            > div.rn-popup__content.overflow-x-hidden {
+                > div.max-h-20 {
                     span.RichTextViewer {
                         @include thumbnail-set;
                     }
