@@ -305,7 +305,7 @@
         .EditorContainer {
             @include thumbnail-set;
 
-            .inline-block.workInProgressTagEmpty {
+            .pr-2.inline-block {
                 height: unset;
             }
         }
