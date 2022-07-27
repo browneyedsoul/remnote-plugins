@@ -193,7 +193,10 @@
   font-size: var(--code-font-size);
   color: var(--inline-code-color);
   background-color: var(--inline-code-background);
-  padding: 1px 3px 1px 3px;
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
 }
 
 .hierarchy-editor__tag-bar {
