@@ -17,7 +17,7 @@
             background: $both;
         }
         .separator-symbol {
-            &.delimiterAnnotation,
+            color: $both;
             > span {
                 color: $both;
             }
@@ -28,7 +28,7 @@
             background: $forward;
         }
         .separator-symbol {
-            &.delimiterAnnotation,
+            color: $forward;
             > span {
                 color: $forward;
             }
@@ -39,7 +39,7 @@
             background: $backward;
         }
         .separator-symbol {
-            &.delimiterAnnotation,
+            color: $backward;
             > span {
                 color: $backward;
             }
@@ -60,7 +60,7 @@
             }
         }
         .separator-symbol {
-            &.delimiterAnnotation,
+            color: $disabled;
             > span {
                 color: $disabled;
             }

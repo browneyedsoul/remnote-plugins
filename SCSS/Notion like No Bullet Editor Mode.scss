@@ -425,16 +425,13 @@
         }
     }
 // Make Bullet-list by Intentional Tagging
-    // Bulletlist
-        @include bulletlist(var(--bullet-main));
-        .dark {
-            @include bulletlist(var(--bullet-main-dark));
-        }
-    // Bulletlists
-        @include bulletlists(var(--bullet-main));
-        .dark {
-            @include bulletlists(var(--bullet-main-dark));
-        }
+    @include bulletlist(var(--bullet-main));
+    @include bulletlists(var(--bullet-main));
+    .dark {
+        @include bulletlist(var(--bullet-main-dark));
+        @include bulletlists(var(--bullet-main-dark));
+    }
+
     #hierarchy-editor {
         [data-rem-tags~="bulletlist"] {
             .rem-container--focused {
