@@ -77,7 +77,9 @@
 .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
   background: var(--both-practice-color);
 }
-.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol {
+  color: var(--both-practice-color);
+}
 .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol > span {
   color: var(--both-practice-color);
 }
@@ -85,7 +87,9 @@
 .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rem-bullet {
   background: var(--forward-practice-color);
 }
-.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol {
+  color: var(--forward-practice-color);
+}
 .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol > span {
   color: var(--forward-practice-color);
 }
@@ -93,7 +97,9 @@
 .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rem-bullet {
   background: var(--backward-practice-color);
 }
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol {
+  color: var(--backward-practice-color);
+}
 .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol > span {
   color: var(--backward-practice-color);
 }
@@ -117,7 +123,9 @@
 .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-bullet.rem-bullet--hidden-children .perfect-circle__inner {
   opacity: 0;
 }
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol {
+  color: var(--disabled-practice-color);
+}
 .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol > span {
   color: var(--disabled-practice-color);
 }
@@ -125,21 +133,27 @@
 .dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
   background: var(--both-practice-color);
 }
-.dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol {
+  color: var(--both-practice-color);
+}
 .dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol > span {
   color: var(--both-practice-color);
 }
 .dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rem-bullet {
   background: var(--forward-practice-color-dark);
 }
-.dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol {
+  color: var(--forward-practice-color-dark);
+}
 .dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol > span {
   color: var(--forward-practice-color-dark);
 }
 .dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rem-bullet {
   background: var(--backward-practice-color);
 }
-.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol.delimiterAnnotation,
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol {
+  color: var(--backward-practice-color);
+}
 .dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol > span {
   color: var(--backward-practice-color);
 }
@@ -162,7 +176,9 @@
 .dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-bullet.rem-bullet--hidden-children .perfect-circle__inner {
   opacity: 0;
 }
-.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol.delimiterAnnotation,
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol {
+  color: var(--disabled-practice-color);
+}
 .dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol > span {
   color: var(--disabled-practice-color);
 }
