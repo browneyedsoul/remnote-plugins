@@ -12,16 +12,16 @@
 
 # Theme
 <!-- Modern Dark Theme -->
- <details>
+  <details>
     <summary>Modern Dark Theme</summary>
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Dark%20Theme.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Dark%20Theme.css");
+  ```
 
  ## Hidden Features
 
- <div>
+  <div>
     <details>
         <summary>Turning Highlight Color into Text Color</summary>
         <br>
@@ -30,18 +30,18 @@
         <br>
         <img src ="Assets/Modern Dark Theme.gif">
     </details>
- </div>
- <div>
+  </div>
+  <div>
     <details>
         <summary>Displaying Long Page Breadcrumbs with scroll bar</summary>
         <br>
         <img src ="Assets/Modern Dark Theme2.gif">
     </details>
- </div>
+  </div>
 
  ## Display
 
- <div style="margin-left: 24px;">
+  <div style="margin-left: 24px;">
     <img src="Assets/Modern Dark Theme - 1.png">
     <img src="Assets/Modern Dark Theme - 2.png">
     <img src="Assets/Modern Dark Theme - 3.png">
@@ -50,24 +50,24 @@
     <img src="Assets/Modern Dark Theme - 6.png">
     <img src="Assets/Modern Dark Theme - 7.png">
     <img src="Assets/Modern Dark Theme - 8.png">
- </div>
- </details>
+  </div>
+  </details>
 
- ---
- <br>
- <br>
+  ---
+  <br>
+  <br>
 
 # Editor Mode
 
 <!-- No Bullet Editor Mode -->
- <details>
+  <details>
     <summary>No Bullet Editor Mode</summary>
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20No%20Bullet%20Editor%20Mode.css"); 
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20No%20Bullet%20Editor%20Mode.css"); 
+  ```
 
- <div style="margin-left: 24px;">
+  <div style="margin-left: 24px;">
     <details>
         <summary>What is the purpose of this snip?</summary>
             <ul>
@@ -90,309 +90,321 @@
         <img src="Assets/Notion like No Bullet Editor Mode-2.png">
         <img src="Assets/Notion like No Bullet Editor Mode-3.png">
     </details>
- </div>
- </details>
+  </div>
+  </details>
 
- ---
- <br>
- <br>
+  ---
+  <br>
+  <br>
 
 # Tricks
 
 <!-- Modern Scrollable Codeblock -->
- <details>
+  <details>
     <summary>Modern Scrollable Codeblock</summary>
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Scrollable%20Code%20Block.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Scrollable%20Code%20Block.css");
+  ```
 
- <div style="margin-left: 24px;">
+  <div style="margin-left: 24px;">
     <img src ="Assets/ModernScrollableCodeblock-1.gif">
     <img src ="Assets/ModernScrollableCodeblock-2.png">
     <img src ="Assets/ModernScrollableCodeblock-3.png">
- </div>
- </details>
+  </div>
+  </details>
 
- ---
+  ---
 
 <!-- Rem Thumbnail -->
- <details>
+  <details>
     <summary>Rem Thumbnail</summary>
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Thumbnail.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Thumbnail.css");
+  ```
 
- <div style="margin-left: 24px;">
+  <div style="margin-left: 24px;">
     <h2>Use case</h2>
     <img src ="Assets/RemThumbnail-2.png">
- </div>
+  </div>
 
- - I'd recommend you to use Rem Thumbnail with a rem-reference, which image is saved somewhere else in the workspace neatly like this.
- <img src ="Assets/RemThumbnail-1.png">
+  - I'd recommend you to use Rem Thumbnail with a rem-reference, which image is saved somewhere else in the workspace neatly like this.
+  <img src ="Assets/RemThumbnail-1.png">
 
- </details>
+  </details>
 
- ---
- <br>
- <br>
+  ---
+  <br>
+  <br>
 
 # Tricks - Tag-related Gimmick Series
 
 <!-- NOTICE : Good Companion Apps for Easy-Tagging -->
- <details>
+  <details>
     <summary>NOTICE : Good Companion Apps for Easy-Tagging</summary>
 
 
- | OS  | Text Expansion Tools |
- | ------------- | ------------- |
- | Windows  | AutoHotkey, espanso  |
- | macOS  | Keyboard Maestro, espanso  |
- | Linux  | AutoKey, espanso  |
+  | OS  | Text Expansion Tools |
+  | ------------- | ------------- |
+  | Windows  | AutoHotkey, espanso  |
+  | macOS  | Keyboard Maestro, espanso  |
+  | Linux  | AutoKey, espanso  |
 
- - The above list is just an example. You can find more apps online.
- - <a href="https://forum.remnote.io/t/remnote-templates-vs-text-templates/1203">And more details about it. - RemNote Forum</a>
+  - The above list is just an example. You can find more apps online.
+  - <a href="https://forum.remnote.io/t/remnote-templates-vs-text-templates/1203">And more details about it. - RemNote Forum</a>
 
- </details>
+  </details>
 
- ---
+  ---
 
 <!-- Callout Rem -->
- <details>
-     <summary>Callout Rem</summary>
+  <details>
+    <summary>Callout Rem</summary>
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20Callout%20Rem.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20Callout%20Rem.css");
+  ```
 
- <div style="margin-left: 24px;">
+  <div style="margin-left: 24px;">
     <img src="Assets/CalloutRem-1.png">
     <img src="Assets/CalloutRem-2.png">
     <img src="Assets/CalloutRem-3.png">
- </div>
- </details>
+  </div>
+  </details>
 
- ---
+  ---
 
 <!-- Modern Divider -->
- <details>
+  <details>
     <summary>Modern Divider</summary>
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Divider.css"); 
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Divider.css"); 
+  ```
 
- <div style="margin-left: 24px;">
+  <div style="margin-left: 24px;">
     <img src="https://user-images.githubusercontent.com/56161102/129580147-c0507bcc-a4d1-4522-b48d-d7efdf831e0f.gif">
     <img src="https://user-images.githubusercontent.com/56161102/146560349-4c0e41c1-49c5-4ebc-bb15-c1429f6ca7aa.gif">
- </div>
- </details>
+  </div>
+  </details>
 
- ---
+  ---
 
 <!-- Active Recall -->
- <details>
+  <details>
     <summary>Active Recall</summary>
 
- - Tag Name : `active recall`  (NOT the `active-recall`)
- <details>
+  - Tag Name : `active recall`  (NOT the `active-recall`)
+  <details>
     <summary>Ver.1 - Reveal all the Answer-blocks in a List card Answer at the same time</summary>
  
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall.css");
+  ```
 
- <img src="Assets/ActiveRecall1.gif">
- </details>
+  <img src="Assets/ActiveRecall1.gif">
+  </details>
  
- <details>
+  <details>
     <summary>Ver.2 - Active Recall in all situation. even in a Flashcard Review modal page and a 'Edit your flashcard' popup</summary>
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall2.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall2.css");
+  ```
 
- <img src="Assets/ActiveRecall2.gif">
- </details>
+  <img src="Assets/ActiveRecall2.gif">
+  </details>
  
- <details>
+  <details>
     <summary>Ver.3 - Legacy Mode (Show List-card Answer-blocks one by one)</summary>
     
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall3.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall3.css");
+  ```
 
- <img src="Assets/ActiveRecall-legacy.gif">
- </details>
+  <img src="Assets/ActiveRecall-legacy.gif">
+  </details>
 
- <a href="https://hannesfrank.github.io/remnote-library/#/scroll/com.github.hannesfrank.remnote-library.active-recall">origin author : hannesfrank</a>
+  <a href="https://hannesfrank.github.io/remnote-library/#/scroll/com.github.hannesfrank.remnote-library.active-recall">origin author : hannesfrank</a>
  
- </details>
+  </details>
 
- ---
+  ---
 
 <!-- Rem Planner -->
- <details>
+  <details>
     <summary>Rem Planner</summary>
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Planner.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Planner.css");
+  ```
 
- <div style="margin-left: 24px;">
+  <div style="margin-left: 24px;">
     <img src="Assets/Planner.png">
- </div>
- </details>
+  </div>
+  </details>
 
- ---
+  ---
 
 <!-- Rem Tree -->
- <details>
+  <details>
     <summary>Rem Tree</summary>
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Tree.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Tree.css");
+  ```
 
- - Tag Name : `Tree` , `Treec`
+  - Tag Name : `Tree` , `Treec`
 
- <div style="margin-left: 24px;">
-     <img src="Assets/RemTree.png">
- </div>
- </details>
+  <img src="Assets/RemTree.png">
+  </details>
  
- ---
+  ---
+
+<!-- Rem Card Icon -->
+  <details>
+    <summary>Rem Card Icon</summary>
+
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Card%20Icon.css");
+  ```
+
+  <img src="Assets/rem-card-icon/light.png">
+  <img src="Assets/rem-card-icon/dark.png">
+  </details>
+
+  ---
 
 <!-- Blockquote -->
- <details>
+  <details>
     <summary>Blockquote</summary>
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Blockquote.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Blockquote.css");
+  ```
  
- - Tag Name : `blockquote`
+  - Tag Name : `blockquote`
 
- <img src="Assets/Blockquote.png">
+  <img src="Assets/Blockquote.png">
  
- </details>
+  </details>
 
- ---
+  ---
 
 <!-- Modern Table Row -->
- <details>
+  <details>
     <summary>Modern Table Row ⭐️</summary>
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Row.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Row.css");
+  ```
  
- ## Display
+  ## Display
 
- <img src="Assets/ModernTableRow.png">
+  <img src="Assets/ModernTableRow.png">
  
- ## How to make Modern Table Row
+  ## How to make Modern Table Row
 
  
- - You have to select one of the widths listed below first to make a `Modern Table Low`
- - From 90px to 1200px, 30px interval
+  - You have to select one of the widths listed below first to make a `Modern Table Low`
+  - From 90px to 1200px, 30px interval
 
- - Available Left Column Width List
+  - Available Left Column Width List
 
- | Table Left Column Width | Available Tag Name |
- | ------------- | ------------- |
- | 90px | `Table90` |
- | 120px | `Table120` |
- | 150px | `Table150` |
- | 180px | `Table180` |
- | 210px | `Table210` |
- | ...   |   ...    |
- | 1170px | `Table1170` |
- | 1200px | `Table1200` |
+  | Table Left Column Width | Available Tag Name |
+  | ------------- | ------------- |
+  | 90px | `Table90` |
+  | 120px | `Table120` |
+  | 150px | `Table150` |
+  | 180px | `Table180` |
+  | 210px | `Table210` |
+  | ...   |   ...    |
+  | 1170px | `Table1170` |
+  | 1200px | `Table1200` |
  
 
- ## Table Tuning by Tagging to the Title Bar
+  ## Table Tuning by Tagging to the Title Bar
 
- <details>
+  <details>
     <summary>Tuning Global Column Width</summary>
 
- | Table Left Column Width | Tag Name for global width tuning |
- | ------------- | ------------- |
- | 90px | `W90` |
- | 120px | `W120` |
- | 150px | `W150` |
- | 180px | `W180` |
- | 210px | `W210` |
- | ...   |   ...    |
- | 1170px | `W1170` |
- | 1200px | `W1200` |
+  | Table Left Column Width | Tag Name for global width tuning |
+  | ------------- | ------------- |
+  | 90px | `W90` |
+  | 120px | `W120` |
+  | 150px | `W150` |
+  | 180px | `W180` |
+  | 210px | `W210` |
+  | ...   |   ...    |
+  | 1170px | `W1170` |
+  | 1200px | `W1200` |
 
- <img src="https://forum.remnote.io/uploads/default/original/2X/8/8ae892cd66862b9115bbbe74a0a3f1246b8a79e3.gif">
- <img src="Assets/ModernTableRow-2.gif">
- </details>
+  <img src="https://forum.remnote.io/uploads/default/original/2X/8/8ae892cd66862b9115bbbe74a0a3f1246b8a79e3.gif">
+  <img src="Assets/ModernTableRow-2.gif">
+  </details>
 
- <details>
+  <details>
     <summary>Tuning Individual Column Width</summary>
 
- - 'c1' means column 1
- - 'c2' means column 2
- - ...
+  - 'c1' means column 1
+  - 'c2' means column 2
+  - ...
 
- | Available Column Width | Tag Name for width tuning - INDIVIDUAL column |
- | ------------- | ------------- |
- | 200px | `c1w200`, `c2w200`, `c3w200`, `c4w200`, `c5w200`, ... , `c9w200`  |
- | 400px | `c1w400`, `c2w400`, ... `c9w400`  |
- | 600px | `c1w600`, `c2w600`, ... `c9w600` |
- | 800px | `c1w800`, `c2w800`, ... `c9w800` |
- | 1000px | `c1w1000` `c2w1000`,, ... `c9w1000` |
+  | Available Column Width | Tag Name for width tuning - INDIVIDUAL column |
+  | ------------- | ------------- |
+  | 200px | `c1w200`, `c2w200`, `c3w200`, `c4w200`, `c5w200`, ... , `c9w200`  |
+  | 400px | `c1w400`, `c2w400`, ... `c9w400`  |
+  | 600px | `c1w600`, `c2w600`, ... `c9w600` |
+  | 800px | `c1w800`, `c2w800`, ... `c9w800` |
+  | 1000px | `c1w1000` `c2w1000`,, ... `c9w1000` |
 
- </details>
+  </details>
 
- <details>
+  <details>
     <summary>Table width shrinking to fit with inner contents</summary>
  
- - Tag Name : `fit`
+  - Tag Name : `fit`
 
  
- <img src="Assets/ModernTableRow-fit.gif">
- </details>
+  <img src="Assets/ModernTableRow-fit.gif">
+  </details>
 
  
 
- <details>
-   <summary>Table Column Header Formatting</summary>
+  <details>
+    <summary>Table Column Header Formatting</summary>
 
- - Tag Name : `th`
+  - Tag Name : `th`
 
- <img src="Assets/ModernTableRow-thformatting.png">
- </details>
+  <img src="Assets/ModernTableRow-thformatting.png">
+  </details>
 
- ## Use case
+  ## Use case
 
- <details>
+  <details>
     <summary>Copy a Table from any sources</summary>
     <img src="Assets/ModernTableRow-0.gif">
- </details>
+  </details>
 
- <details>
+  <details>
     <summary>Paste it to RemNote and Tag the predefined-width Table Row Tags to the Table Title area</summary>
     <img src="Assets/ModernTableRow-1.gif">
- </details>
+  </details>
 
 
 
- ## Hacky methods
+  ## Hacky methods
 
- <details>
+  <details>
     <summary>Turn a Row table cell into a Column Table cell</summary>
 
- - Tag Nmae : `lb`
+  - Tag Nmae : `lb`
 
- <img src="Assets/ModernTableRow-LineBreaker.gif">
+  <img src="Assets/ModernTableRow-LineBreaker.gif">
     
- </details>
- <details>
+  </details>
+  <details>
     <summary>Convert Spreadsheet Table into RemNote Format Workaround</summary>
     <img src="Assets/ModernTableRow-1.png">
     <img src="Assets/ModernTableRow-2.png">
@@ -402,27 +414,27 @@
     <img src="Assets/ModernTableRow-6.png">
     <img src="Assets/ModernTableRow-7.png">
     <img src="Assets/ModernTableRow-8.png">
- </details>
+  </details>
  
 
- </details>
+  </details>
 
- ---
+  ---
 
 <!-- Modern Table Column -->
- <details>
- <summary>Modern Table Column</summary>
+  <details>
+  <summary>Modern Table Column</summary>
 
- - Tag Name : `Table`
+  - Tag Name : `Table`
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Column.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Column.css");
+  ```
 
- <img src="Assets/ModernTableColumn.gif">
- </details>
+  <img src="Assets/ModernTableColumn.gif">
+  </details>
 
- ---
+  ---
 
 <!-- Modern Kanban -->
  <details>
@@ -485,27 +497,27 @@
  ---
 
 <!-- Rating Bar -->
- <details>
- <summary>Rating bar</summary>
+  <details>
+  <summary>Rating bar</summary>
  
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rating%20Bar.css"); 
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rating%20Bar.css"); 
+  ```
  
- <img src="Assets/RatingBar.gif">
- </details>
+  <img src="Assets/RatingBar.gif">
+  </details>
  
- ---
+  ---
 
 <!-- Cover Photo -->
   <details>
     <summary>Cover Photo</summary>
 
- ```css
- /* Please Copy the .css file (Template) and paste to your KB Directly */
- ```
+  ```css
+  /* Please Copy the .css file (Template) and paste to your KB Directly */
+  ```
 
- <div style="margin-left: 24px;">
+  <div style="margin-left: 24px;">
     <details>
         <summary>Make a Cover Photo CSS Template</summary>
         <div style="margin-left: 24px;">
@@ -533,259 +545,262 @@
             <br>➌ background-size: 100% 100%; ➞ The cover image can be ugly according to a front window size. (not recommended)
         </div>
     </details>
- </div>
- </details>
+  </div>
+  </details>
 
- ---
+  ---
 
 <!-- Terminal -->
- <details>
+  <details>
     <summary>Terminal</summary>
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Terminal.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Terminal.css");
+  ```
 
- <img src="Assets/Terminal.png">
- </details>
+  <img src="Assets/Terminal.png">
+  </details>
 
- ---
- <br>
- <br>
+  ---
+  <br>
+  <br>
 
 # UI UX Declutter Series
 <!-- Hide a Specific Tag -->
- <details>
+  <details>
     <summary>Hide a Specific Tag</summary>
   
- Sometimes, you can be bothered by meaningless tags like "th", "lb", ..., which are used for formatting reasons. 
- Then you can apply this code with a highlight color. In my case I chose the purple one and the code below is also running with purple colored rems.
+  Sometimes, you can be bothered by meaningless tags like "th", "lb", ..., which are used for formatting reasons. 
+  Then you can apply this code with a highlight color. In my case I chose the purple one and the code below is also running with purple colored rems.
 
- ```css
- .hierarchy-editor__tag-bar__tag.highlight-color--purple,
- .hierarchy-editor__tag-bar__tag.highlight-color--purple span {
- 	display: none;
- }
- ```
+  ```css
+  .hierarchy-editor__tag-bar__tag.highlight-color--purple,
+  .hierarchy-editor__tag-bar__tag.highlight-color--purple span {
+    display: none;
+  }
+  ```
 
- </details>
+  </details>
 
- ---
+  ---
 
 <!-- Hide Inline Source Permanently in Editor -->
- <details>
+  <details>
     <summary>Hide Inline Source Permanently in RemNote Hierarchical Editor</summary>
 
- ```css
- [data-rem-tags~="source-list"] .rem-container--focused > .inline-flex {
-     display: none;
- }
- ```
+  ```css
+  [data-rem-tags~="source-list"] .rem-container--focused > .inline-flex {
+    display: none;
+  }
+  ```
 
- </details>
+  </details>
 
- ---
+  ---
 
 <!-- Hide Aliases until cursor hovered or focused -->
- <details>
+  <details>
     <summary>Hide Aliases until cursor hovered or focused (fixing)</summary>
 
- ![d](Assets/UI-alias.gif)
+  ![d](Assets/UI-alias.gif)
 
- ```css
- .tree-node-container > .tree-node--children > .tree-node-container[data-rem-container-tags~=aliases]:not(:hover):not(:focus-within) {
-	display: block;
-	background-color: #ECECEC;
-	border-radius: 2px;
-	max-height: 6px;
-	overflow: hidden;
- }
- .dark-mode .tree-node-container > .tree-node--children > .tree-node-container[data-rem-container-tags~=aliases]:not(:hover):not(:focus-within) {
- 	background-color: #272C30;
- }
- ```
+  ```css
+  .tree-node-container > .tree-node--children > .tree-node-container[data-rem-container-tags~=aliases]:not(:hover):not(:focus-within) {
+    display: block;
+    background-color: #ECECEC;
+    border-radius: 2px;
+    max-height: 6px;
+    overflow: hidden;
+  }
+  .dark-mode .tree-node-container > .tree-node--children > .tree-node-container[data-rem-container-tags~=aliases]:not(:hover):not(:focus-within) {
+ 	  background-color: #272C30;
+  }
+  ```
  
- </details>
+  </details>
 
- ---
+  ---
 
 <!-- Rem Backlink Declutter -->
- <details>
+  <details>
     <summary>Rem Backlink Declutter</summary>
 
- > Sometimes, some rems don't need to represent all the backlinks.
- And If a rem shows a bunch of the backlinks, it slows down the paging
+  > Sometimes, some rems don't need to represent all the backlinks.
+  > And If a rem shows a bunch of the backlinks, it slows down the paging
 
- - Example of the some rems: `caption`, `bulletlist`, `table`, `table90`, `table120`, `w360` ...
+  - Example of the some rems: `caption`, `bulletlist`, `table`, `table90`, `table120`, `w360` ...
 
- ```css
- [data-rem-container-tags~="remover"] .animate-zoom-into-bullet #show-embedded-search-button,
- [data-rem-container-tags~="remover"] .animate-zoom-into-bullet #AutomaticSearchPortals,
- [data-rem-container-tags~="remover"] .rem-container--embedded-search-stub {
-     display: none !important;
- }
- ```
+  ```css
+  [data-rem-container-tags~="remover"] .animate-zoom-into-bullet #show-embedded-search-button,
+  [data-rem-container-tags~="remover"] .animate-zoom-into-bullet #AutomaticSearchPortals,
+  [data-rem-container-tags~="remover"] .rem-container--embedded-search-stub {
+    display: none !important;
+  }
+  ```
 
- </details>
+  </details>
 
  ---
 
 <!-- Hide Placeholder aka "Type / for Commands" -->
- <details>
+  <details>
     <summary>Hide Placeholder aka "Type / for Commands"</summary>
- <br>
+  <br>
 
- - Before
+  - Before
 
- <img src="https://user-images.githubusercontent.com/56161102/148634322-f5b10f56-ba00-456b-a33f-a5c5cc577040.gif">
- <br>
+  <img src="https://user-images.githubusercontent.com/56161102/148634322-f5b10f56-ba00-456b-a33f-a5c5cc577040.gif">
+  <br>
 
- - After
+  - After
 
- <img src="https://user-images.githubusercontent.com/56161102/148634358-b9d0f113-6d20-4c63-bb55-1e3b022c6d76.gif">
- <br>
+  <img src="https://user-images.githubusercontent.com/56161102/148634358-b9d0f113-6d20-4c63-bb55-1e3b022c6d76.gif">
+  <br>
 
- ```css
- .rich-text-editor > .pointer-events-none {
-	opacity: .2;
- }
- ```
+  ```css
+  .rich-text-editor > .pointer-events-none {
+    opacity: .2;
+  }
+  ```
 
- </details>
+  </details>
 
- ---
+  ---
 
 <!-- Disable inadvertent Bullet Click Event -->
- <details>
+  <details>
     <summary>Disable inadvertent Bullet Click Event</summary>
 
- ```css
- .rem-bullet__container {
-	pointer-events: none;
- }
- ```
+  ```css
+  .rem-bullet__container {
+    pointer-events: none;
+  }
+  ```
 
- </details>
+  </details>
 
- ---
+  ---
 
 <!-- Hide List Card Placeholder -->
- <details>
+  <details>
     <summary>Hide List Card Placeholder (fixing)</summary>
- <img src="https://user-images.githubusercontent.com/56161102/148634056-53c0ee40-469c-4218-9407-080ac54ce035.png">
- <img src="https://user-images.githubusercontent.com/56161102/148634441-b97f1676-d752-47e8-afc6-4aead741e174.gif">
+  <img src="https://user-images.githubusercontent.com/56161102/148634056-53c0ee40-469c-4218-9407-080ac54ce035.png">
+  <img src="https://user-images.githubusercontent.com/56161102/148634441-b97f1676-d752-47e8-afc6-4aead741e174.gif">
 
- ```css
- [data-rem-tags="card-item"] .text-gray-20 {
-	display: none;
- }
- ```
+  ```css
+  [data-rem-tags="card-item"] .text-gray-20 {
+    display: none;
+  }
+  ```
 
- </details>
+  </details>
 
- ---
+  ---
 
 <!-- Hide "Add a Document To This Folder" -->
- <details>
+  <details>
     <summary>Hide "Add a Document To This Folder"</summary>
 
- ```css
- .add-new-document-button {
- 	display: none;
- }
- ```
+  ```css
+  .add-new-document-button {
+    display: none;
+  }
+  ```
 
- </details>
+  </details>
 
- ---
+  ---
 
 <!-- Disable URL Link Popup when hovering website reference -->
- <details>
+  <details>
     <summary>Disable URL Link Popup when hovering website reference</summary>
 
- ```css
- .popup-menu > .p-1 {
-	display: none;
- }
- ```
+  ```css
+  .popup-menu > .p-1 {
+    display: none;
+  }
+  ```
 
- </details>
+  </details>
 
- ---
+  ---
 
 <!-- Remove Document Top Blank line -->
- <details>
+  <details>
     <summary>Remove Document Top Blank line</summary>
 
- ```css
- .rn-add-rem-button--top {
-	height: 10px;
-	display: block;
- } 
- ```
+  ```css
+  .rn-add-rem-button--top {
+    height: 10px;
+    display: block;
+  } 
+  ```
 
- </details>
+  </details>
 
- ---
+  ---
 
 <!-- Extra Card Details Zoom -->
- <details>
+  <details>
    <summary>Extra Card Details Zoom</summary>
 
- ```css
- .extra-card-detail .extra-card-detail__item .RichTextViewer .align-text-top {
- 	zoom: 125%; /* Tune here */
- }
- ```
+  ```css
+  .extra-card-detail .extra-card-detail__item .RichTextViewer .align-text-top {
+    zoom: 125%; /* Tune here */
+  }
+  ```
 
- </details>
+  </details>
 
- ---
- <br>
- <br>
+  ---
+  <br>
+  <br>
 
 # The SUM of all the Theme and Snippets
 
 <!-- The SUM of all the Theme and Snippets -->
  
- ```css
- /* Modern Dark Theme */
-  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Dark%20Theme.css");
- /* Editor Mode */
-  /* No Bullet Editor Mode */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20No%20Bullet%20Editor%20Mode.css"); 
- /* Tricks */
-  /* Modern Scrollable Codeblock */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Scrollable%20Code%20Block.css");
-  /* Rem Thumbnail */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Thumbnail.css");
-  /* Callout Rem */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20Callout%20Rem.css");
-  /* Modern Divider */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Divider.css"); 
-  /* Active Recall */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall.css");
+  ```css
+  /* Modern Dark Theme */
+    @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Dark%20Theme.css");
+  /* Editor Mode */
+    /* No Bullet Editor Mode */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20No%20Bullet%20Editor%20Mode.css"); 
+  /* Tricks */
+    /* Modern Scrollable Codeblock */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Scrollable%20Code%20Block.css");
+    /* Rem Thumbnail */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Thumbnail.css");
+    /* Callout Rem */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20Callout%20Rem.css");
+    /* Modern Divider */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Divider.css"); 
+    /* Active Recall */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall.css");
      /* @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall2.css"); */
      /* @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall3.css"); */
-  /* Rem Planner */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Planner.css");
-  /* Rem Tree */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Tree.css");
-  /* Blockquote */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Blockquote.css");
-  /* Modern Table Row */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Row.css");
-  /* Modern Table Column */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Column.css");
-  /* Modern Kanban */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Kanban.css");
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Kanban2.css");
-  /* Strikethrough Workaround */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Strikethrough.css");
-  /* Caption */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Image%2C%20Codeblock%20Caption%20like%20in%20Notion.css");
-  /* Rating Bar */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Prepositive%20Rating%20Bar.css"); 
-  /* Terminal */
-   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Terminal.css");
- ```
+    /* Rem Planner */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Planner.css");
+    /* Rem Tree */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Tree.css");
+    /* Rem Card Icon */
+      /* @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Card%20Icon.css"); */
+      /* If you are using 'No Bullet Editor Mode', you are already using this! */
+    /* Blockquote */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Blockquote.css");
+    /* Modern Table Row */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Row.css");
+    /* Modern Table Column */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Column.css");
+    /* Modern Kanban */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Kanban.css");
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Kanban2.css");
+    /* Strikethrough Workaround */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Strikethrough.css");
+    /* Caption */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Image%2C%20Codeblock%20Caption%20like%20in%20Notion.css");
+    /* Rating Bar */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Prepositive%20Rating%20Bar.css"); 
+    /* Terminal */
+      @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Terminal.css");
+  ```
