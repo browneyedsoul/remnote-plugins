@@ -3251,6 +3251,14 @@
             font-size: unset
         }
         @include highlight-span-text-dark-sidebar();
+        .highlight-color--red,
+        .highlight-color--orange,
+        .highlight-color--yellow,
+        .highlight-color--green,
+        .highlight-color--blue,
+        .highlight-color--purple {
+            padding: 0 0.25rem;
+        }
     // Remove white-coloured line
         + div {
             > div {
