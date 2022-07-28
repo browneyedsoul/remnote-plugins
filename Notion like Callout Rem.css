@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --callout-background-color: #F7F6F3;
   --callout-background-color-dark: #505050;
@@ -37,7 +38,7 @@
   --callout-margin-top: 7px;
   --callout-margin-bottom: 7px;
   --callout-margin-left: 24px;
-  --callout-margin-right: 12px;
+  --callout-margin-right: Œ;
   --callout-border-radius: 5px;
 }
 

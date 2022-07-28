@@ -2009,6 +2009,7 @@
                             // Sticky Top bar
                                 > .fixed {
                                     margin-top: 3.2rem;
+                                    width: calc(100% - 3.7rem) !important;
 
                                     > .tree-node-container {
                                         > .TreeNode {
@@ -3093,7 +3094,6 @@
         border: 0.1rem solid var(--line-color);
         border-radius: 4px;
         background-color: var(--alias-background);
-        margin-right: 0.7rem;
 
         > .tree-node--parent {
             div[data-rem-tags~="aliases"] {

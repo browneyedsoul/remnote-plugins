@@ -1381,6 +1381,7 @@
 }
 .tile__document #document #hierarchy-editor > .fixed {
   margin-top: 3.2rem;
+  width: calc(100% - 3.7rem) !important;
 }
 .tile__document #document #hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
   left: 0px;
@@ -2320,7 +2321,6 @@
   border: 0.1rem solid var(--line-color);
   border-radius: 4px;
   background-color: var(--alias-background);
-  margin-right: 0.7rem;
 }
 [data-rem-container-tags~=aliases] > .tree-node--children [data-rem-container-tags~=list-item] .tree-node--parent [data-rem-tags~=list-item] .rem-text span.rem-powerup-icon .text-icon {
   top: 0.2rem;
