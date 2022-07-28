@@ -16,7 +16,8 @@
         .rem-bullet {
             background: $both;
         }
-        .separator-symbol {
+        .separator-symbol,
+        .rn-card-delimiter {
             color: $both;
             > span {
                 color: $both;
@@ -27,7 +28,8 @@
         .rem-bullet {
             background: $forward;
         }
-        .separator-symbol {
+        .separator-symbol,
+        .rn-card-delimiter {
             color: $forward;
             > span {
                 color: $forward;
@@ -38,7 +40,8 @@
         .rem-bullet {
             background: $backward;
         }
-        .separator-symbol {
+        .separator-symbol,
+        .rn-card-delimiter {
             color: $backward;
             > span {
                 color: $backward;
@@ -59,7 +62,8 @@
                 left: -3px;
             }
         }
-        .separator-symbol {
+        .separator-symbol,
+        .rn-card-delimiter {
             color: $disabled;
             > span {
                 color: $disabled;

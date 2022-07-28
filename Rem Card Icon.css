@@ -77,30 +77,36 @@
 .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
   background: var(--both-practice-color);
 }
-.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol {
+.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol,
+.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rn-card-delimiter {
   color: var(--both-practice-color);
 }
-.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol > span {
+.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol > span,
+.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rn-card-delimiter > span {
   color: var(--both-practice-color);
 }
 
 .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rem-bullet {
   background: var(--forward-practice-color);
 }
-.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol {
+.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol,
+.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rn-card-delimiter {
   color: var(--forward-practice-color);
 }
-.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol > span {
+.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol > span,
+.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rn-card-delimiter > span {
   color: var(--forward-practice-color);
 }
 
 .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rem-bullet {
   background: var(--backward-practice-color);
 }
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol {
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol,
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rn-card-delimiter {
   color: var(--backward-practice-color);
 }
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol > span {
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol > span,
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rn-card-delimiter > span {
   color: var(--backward-practice-color);
 }
 
@@ -123,38 +129,46 @@
 .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-bullet.rem-bullet--hidden-children .perfect-circle__inner {
   opacity: 0;
 }
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol {
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol,
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rn-card-delimiter {
   color: var(--disabled-practice-color);
 }
-.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol > span {
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol > span,
+.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rn-card-delimiter > span {
   color: var(--disabled-practice-color);
 }
 
 .dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rem-bullet {
   background: var(--both-practice-color);
 }
-.dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol {
+.dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol,
+.dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rn-card-delimiter {
   color: var(--both-practice-color);
 }
-.dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol > span {
+.dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .separator-symbol > span,
+.dark .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled .rn-card-delimiter > span {
   color: var(--both-practice-color);
 }
 .dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rem-bullet {
   background: var(--forward-practice-color-dark);
 }
-.dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol {
+.dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol,
+.dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rn-card-delimiter {
   color: var(--forward-practice-color-dark);
 }
-.dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol > span {
+.dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .separator-symbol > span,
+.dark .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled .rn-card-delimiter > span {
   color: var(--forward-practice-color-dark);
 }
 .dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rem-bullet {
   background: var(--backward-practice-color);
 }
-.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol {
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol,
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rn-card-delimiter {
   color: var(--backward-practice-color);
 }
-.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol > span {
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .separator-symbol > span,
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled .rn-card-delimiter > span {
   color: var(--backward-practice-color);
 }
 .dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-bullet {
@@ -176,9 +190,11 @@
 .dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rem-bullet.rem-bullet--hidden-children .perfect-circle__inner {
   opacity: 0;
 }
-.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol {
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol,
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rn-card-delimiter {
   color: var(--disabled-practice-color);
 }
-.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol > span {
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol > span,
+.dark .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rn-card-delimiter > span {
   color: var(--disabled-practice-color);
 }
