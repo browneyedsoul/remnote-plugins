@@ -2016,6 +2016,10 @@
                                             left: 0px;
                                         }
                                     }
+                                    
+                                    &.flex.justify-end {
+                                        width: unset !important;
+                                    }
                                 }
                             // Rem
                                 .tree-node--parent {
