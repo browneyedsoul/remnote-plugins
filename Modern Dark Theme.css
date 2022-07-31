@@ -1386,6 +1386,9 @@
 .tile__document #document #hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
   left: 0px;
 }
+.tile__document #document #hierarchy-editor > .fixed.flex.justify-end {
+  width: unset !important;
+}
 .tile__document #document #hierarchy-editor .tree-node--parent .rem-container .hover\:bg-hover-bg {
   background-color: unset;
 }
