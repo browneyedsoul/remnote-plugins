@@ -191,25 +191,22 @@
                     grid-auto-rows: auto;
                     border-left: unset;
                     padding-left: 0;
-                    // overflow-x: auto;
-                    // white-space: pre;
                     border: 0.07rem solid  var(--table-border-color);
-
                     // Scrollbar
-                    &::-webkit-scrollbar-thumb {
-                        background-color: #DDD;
-                        border-radius: 2px;
-                    }
+                        &::-webkit-scrollbar-thumb {
+                            background-color: #DDD;
+                            border-radius: 2px;
+                        }
                     // Remove Overflow Content
-                    .right-\[-4px\] {
-                        right: 4px;
-                    }
-                    .float-end {
-                        display: none;
-                    }
-                    [data-icon~="merge"] {
-                        display: none;
-                    }
+                        .right-\[-4px\] {
+                            right: 4px;
+                        }
+                        .float-end {
+                            display: none;
+                        }
+                        [data-icon~="merge"] {
+                            display: none;
+                        }
                     // Table Row and Column
                         > .animate-zoom-into-bullet {
                             // Table all the horizontal lines
@@ -257,7 +254,9 @@
                                         padding-right: 0;
                                         // width: 98%; This was a remedy for codeblock overflow but harmed whole table width control
 
-                                        > div {
+                                        > div.tree-node--children {
+                                            padding-left: 0;
+
                                             > div {
                                                 > div {
                                                     > span {
