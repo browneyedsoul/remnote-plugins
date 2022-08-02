@@ -1887,6 +1887,7 @@
 }
 .dark .rem-button__container .rem-bullet__container .rem-bullet--hidden-children {
   border-color: var(--darkmode-text);
+  color: var(--darkmode-text);
 }
 .dark .rem-button__container .rem-bullet__container .rem-bullet--hidden-children .perfect-circle__inner > svg .rem-bullet__ring {
   fill: var(--bullet-ring-color-dark);
