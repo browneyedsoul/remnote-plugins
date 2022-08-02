@@ -2016,7 +2016,7 @@
                                             left: 0px;
                                         }
                                     }
-                                    
+
                                     &.flex.justify-end {
                                         width: unset !important;
                                     }
@@ -2406,6 +2406,7 @@
                         }
                     .rem-bullet--hidden-children {
                         border-color: var(--darkmode-text);
+                        color: var(--darkmode-text);
 
                         .perfect-circle__inner {
                             > svg {
