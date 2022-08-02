@@ -316,7 +316,7 @@
   background: unset;
 }
 .dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent):not(.animate-zoom-into-bullet.portal-tree-node-box) > div {
-  background-color: unset;
+  background-color: unset !important;
 }
 .dark .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent):not(.animate-zoom-into-bullet.portal-tree-node-box) .button {
   background: var(--rn-clr-background-primary);
