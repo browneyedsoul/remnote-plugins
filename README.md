@@ -135,6 +135,20 @@
   </details>
 
   ---
+
+<!-- Rem Card Icon -->
+  <details>
+    <summary>Rem Card Icon</summary>
+
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Card%20Icon.css");
+  ```
+
+  <img src="Assets/rem-card-icon/light.png">
+  <img src="Assets/rem-card-icon/dark.png">
+  </details>
+
+  ---
   <br>
   <br>
 
@@ -260,20 +274,6 @@
   <img src="Assets/RemTree.png">
   </details>
  
-  ---
-
-<!-- Rem Card Icon -->
-  <details>
-    <summary>Rem Card Icon</summary>
-
-  ```css
-  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Card%20Icon.css");
-  ```
-
-  <img src="Assets/rem-card-icon/light.png">
-  <img src="Assets/rem-card-icon/dark.png">
-  </details>
-
   ---
 
 <!-- Blockquote -->
