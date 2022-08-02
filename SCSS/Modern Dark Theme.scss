@@ -632,7 +632,7 @@
                             background: unset;
                         }
                         > div {
-                            background-color: unset;
+                            background-color: unset !important;
                         }
                         .button {
                             background: var(--rn-clr-background-primary);
