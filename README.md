@@ -588,7 +588,7 @@
     <summary>Hide Inline Source Permanently in RemNote Hierarchical Editor</summary>
 
   ```css
-  [data-rem-tags~="source-list"] .rem-container--focused > .inline-flex {
+  [data-rem-tags~="source-list"] > div > .inline-flex {
     display: none;
   }
   ```
