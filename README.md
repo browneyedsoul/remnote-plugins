@@ -525,7 +525,7 @@
         </div>
     </details>
     <details>
-        <summary>Add a image url, Name the tag</summary>
+        <summary>Add a image url, Name the tag properly</summary>
         <div style="margin-left: 24px;">
             <img src="Assets/CoverPhoto-2.png">
         </div>
@@ -533,16 +533,15 @@
     <details>
         <summary>Tag to the Rem Document title area</summary>
         <div style="margin-left: 24px;">
-            <img src="Assets/CoverPhoto-3.png">
-            <img src="Assets/CoverPhoto-4.png">
+            <img src="Assets/CoverPhoto.gif">
         </div>
     </details>
     <details>
         <summary>Adjust 'background-size' on your tastes.</summary>
         <div style="margin-left: 24px;">
-            <br>➊ background-size: contain; <span style="font-weight: 700;">(Preferred)</span> ➞ Height fixed and Responsive. but some margins can be made (need subsidiary steps like adding background color or repetitive background).
+            <br>➊ background-size: contain; (Preferred) ➞ Height fixed and Responsive. but some margins can be made (need subsidiary steps like adding background color or making background repetitive pattern).
             <br>➋ background-size: cover; ➞ I don’t care about the cover image cropped. (suitable for cover images which have repetitive patterns)
-            <br>➌ background-size: 100% 100%; ➞ The cover image can be ugly according to a front window size. (not recommended)
+            <br>➌ background-size: 100% 100%; ➞ The cover image can be ugly according to a front window size. (not recommended, only for mono-colored cover)
         </div>
     </details>
   </div>
