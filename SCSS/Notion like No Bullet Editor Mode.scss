@@ -90,41 +90,35 @@
         > div.tree-node--children {
             > div.animate-zoom-into-bullet {
                 > div.tree-node--parent {
-                    > div.rem {
-                        > div {
-                            > span {
-                                > div.rem-button__container {
-                                    margin-left: var(--treenode-line-spacing);
+                    div.rem-button__container {
+                        margin-left: var(--treenode-line-spacing);
 
-                                    > span {
-                                        > div.six-dot {
-                                            left: 40px !important;
-                                        }
-                                    }
+                        > span {
+                            > div.six-dot {
+                                left: 40px !important;
+                            }
+                        }
 
-                                    > span.toggle-collapse-button {
-                                        left: 40px !important;
-                                    }
+                        > span.toggle-collapse-button {
+                            left: 40px !important;
+                        }
 
-                                    .rem-bullet__container {
-                                        position: relative;
-                                        margin-left: var(--treenode-line-spacing);
+                        .rem-bullet__container {
+                            position: relative;
+                            margin-left: var(--treenode-line-spacing);
 
-                                        .perfect-circle.rem-bullet--hidden-children {
-                                            @include triangle-hidden;
-                                            border-color: transparent transparent transparent $borderColor;
-                                        }
+                            .perfect-circle.rem-bullet--hidden-children {
+                                @include triangle-hidden;
+                                border-color: transparent transparent transparent $borderColor;
+                            }
 
-                                        .perfect-circle.rem-bullet--all-children-visible {
-                                            width: 0;
-                                            height: 0;
-                                            border-style: solid;
-                                            border-width: 3.5px;
-                                            border-radius: 10px;
-                                            border-color: $borderColor;
-                                        }
-                                    }
-                                }
+                            .perfect-circle.rem-bullet--all-children-visible {
+                                width: 0;
+                                height: 0;
+                                border-style: solid;
+                                border-width: 3.5px;
+                                border-radius: 10px;
+                                border-color: $borderColor;
                             }
                         }
                     }
