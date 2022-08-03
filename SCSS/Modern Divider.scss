@@ -11,7 +11,11 @@
 ) {
     [data-rem-container-tags~="divider"] {
         margin-bottom: 0.5rem;
-        margin-left: 1.8rem;
+        margin-left: 1.5rem;
+
+        > .tree-node--parent {
+            min-height: unset !important;
+        }
 
         [data-rem-tags~="divider"] {
             color: transparent;
@@ -34,7 +38,7 @@
                 display: block;
                 position: absolute;
                 border-bottom: $divider-line-color;
-                left: -0.2rem;
+                left: 0;
             }
 
             &:focus-within {
