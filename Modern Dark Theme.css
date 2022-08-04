@@ -293,7 +293,6 @@
   padding-left: 0.8rem;
   padding-right: 1rem;
   margin-bottom: 0.5rem;
-  margin-right: 0.7rem;
 }
 .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent):not(.animate-zoom-into-bullet.portal-tree-node-box) .rn-divider {
   display: none;
@@ -302,7 +301,6 @@
 .animate-zoom-into-bullet.portal-tree-node-box.portal-tree-node-box--focused {
   border: 0.15rem solid #6686FF;
   border-color: #6686FF;
-  margin-right: 0.7rem;
 }
 
 .portal-tree-node-box .rem-text {
