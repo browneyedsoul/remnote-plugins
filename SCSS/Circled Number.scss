@@ -1,0 +1,39 @@
+@mixin circle($border) {
+    [data-rem-container-tags~="circle"] {
+        > .tree-node--children {
+            > [data-rem-container-tags~="list-item"] {
+                > .tree-node--parent {
+                    > span[data-rem-tags~="list-item"] {
+                        > div {
+                            > .rem-text {
+                                display: flex;
+                                align-items: center;
+
+                                > span.EditorContainer {
+                                    margin-right: .5em !important;
+                                    border: 0.1em solid $border;
+                                    width: 1.5em !important;
+                                    height: 0.7em;
+                                    display: flex;
+                                    align-items: center;
+                                    border-radius: 1em;
+                                    padding: 0.2em;
+                                    transform: scale(.8);
+
+                                    > .z-\[1\] {
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include circle(var(--rn-colors-black));
+.dark {
+    @include circle(var(--rn-clr-content-primary))
+}
