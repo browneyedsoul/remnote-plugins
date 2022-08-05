@@ -2860,7 +2860,6 @@
   margin-left: -3px;
 }
 #document #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text {
-  zoom: 0.75;
   opacity: 0.6;
 }
 #document #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text .RichTextViewer {
