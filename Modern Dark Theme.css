@@ -1922,56 +1922,99 @@
   color: var(--darkmode-text);
 }
 
-.popup-menu > div.overflow-x-hidden > div.max-w-\[285px\] {
+.popup-menu > div.rn-popup__content .bold.highlight-color--red {
+  background-color: unset;
+  color: var(--red-text);
+}
+.popup-menu > div.rn-popup__content .bold.highlight-color--orange {
+  background-color: unset;
+  color: var(--orange-text);
+}
+.popup-menu > div.rn-popup__content .bold.highlight-color--yellow {
+  background-color: unset;
+  color: var(--yellow-text);
+  text-shadow: var(--text-shadow-yellow);
+}
+.popup-menu > div.rn-popup__content .bold.highlight-color--green {
+  background-color: unset;
+  color: var(--green-text);
+}
+.popup-menu > div.rn-popup__content .bold.highlight-color--blue {
+  background-color: unset;
+  color: var(--blue-text);
+}
+.popup-menu > div.rn-popup__content .bold.highlight-color--purple {
+  background-color: unset;
+  color: var(--purple-text);
+}
+.popup-menu > div.rn-popup__content .highlight-color--red:not(.bold.highlight-color--red) {
+  background-color: var(--highlight-color--red-light);
+}
+.popup-menu > div.rn-popup__content .highlight-color--orange:not(.bold.highlight-color--orange) {
+  background-color: var(--highlight-color--orange-light);
+}
+.popup-menu > div.rn-popup__content .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+  background-color: var(--highlight-color--yellow-light);
+}
+.popup-menu > div.rn-popup__content .highlight-color--green:not(.bold.highlight-color--green) {
+  background-color: var(--highlight-color--green-light);
+}
+.popup-menu > div.rn-popup__content .highlight-color--blue:not(.bold.highlight-color--blue) {
+  background-color: var(--highlight-color--blue-light);
+}
+.popup-menu > div.rn-popup__content .highlight-color--purple:not(.bold.highlight-color--purple) {
+  background-color: var(--highlight-color--purple-light);
+}
+.popup-menu > div.rn-popup__content > div.max-w-\[285px\] {
   max-width: unset;
 }
 
-.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .bold.highlight-color--red {
+.dark .popup-menu > div.rn-popup__content .bold.highlight-color--red {
   color: var(--red-text-dark);
   background-color: unset;
 }
-.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .bold.highlight-color--orange {
+.dark .popup-menu > div.rn-popup__content .bold.highlight-color--orange {
   color: var(--orange-text-dark);
   background-color: unset;
 }
-.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .bold.highlight-color--yellow {
+.dark .popup-menu > div.rn-popup__content .bold.highlight-color--yellow {
   color: var(--yellow-text-dark);
   background-color: unset;
   text-shadow: unset;
 }
-.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .bold.highlight-color--green {
+.dark .popup-menu > div.rn-popup__content .bold.highlight-color--green {
   color: var(--green-text-dark);
   background-color: unset;
 }
-.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .bold.highlight-color--blue {
+.dark .popup-menu > div.rn-popup__content .bold.highlight-color--blue {
   color: var(--blue-text-dark);
   background-color: unset;
 }
-.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .bold.highlight-color--purple {
+.dark .popup-menu > div.rn-popup__content .bold.highlight-color--purple {
   color: var(--purple-text-dark);
   background-color: unset;
 }
-.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .highlight-color--red:not(.bold.highlight-color--red) {
+.dark .popup-menu > div.rn-popup__content .highlight-color--red:not(.bold.highlight-color--red) {
   color: var(--highlight-color--red-text-dark);
   background-color: var(--highlight-color--red-bg-dark);
 }
-.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .highlight-color--orange:not(.bold.highlight-color--orange) {
+.dark .popup-menu > div.rn-popup__content .highlight-color--orange:not(.bold.highlight-color--orange) {
   color: var(--highlight-color--orange-text-dark);
   background-color: var(--highlight-color--orange-bg-dark);
 }
-.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+.dark .popup-menu > div.rn-popup__content .highlight-color--yellow:not(.bold.highlight-color--yellow) {
   color: var(--highlight-color--yellow-text-dark);
   background-color: var(--highlight-color--yellow-bg-dark);
 }
-.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .highlight-color--green:not(.bold.highlight-color--green) {
+.dark .popup-menu > div.rn-popup__content .highlight-color--green:not(.bold.highlight-color--green) {
   color: var(--highlight-color--green-text-dark);
   background-color: var(--highlight-color--green-bg-dark);
 }
-.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .highlight-color--blue:not(.bold.highlight-color--blue) {
+.dark .popup-menu > div.rn-popup__content .highlight-color--blue:not(.bold.highlight-color--blue) {
   color: var(--highlight-color--blue-text-dark);
   background-color: var(--highlight-color--blue-bg-dark);
 }
-.dark .popup-menu > div.rn-popup__content > div > div .RichTextViewer .highlight-color--purple:not(.bold.highlight-color--purple) {
+.dark .popup-menu > div.rn-popup__content .highlight-color--purple:not(.bold.highlight-color--purple) {
   color: var(--highlight-color--purple-text-dark);
   background-color: var(--highlight-color--purple-bg-dark);
 }

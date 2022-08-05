@@ -2479,7 +2479,10 @@
         }
 // .popup-menu
     .popup-menu {
-        > div.overflow-x-hidden {
+        > div.rn-popup__content {
+            @include highlight-text();
+            @include highlight-color-notbold-light();
+
             > div.max-w-\[285px\] {
                 max-width: unset;
             }
@@ -2488,14 +2491,8 @@
     .dark {
         .popup-menu {
             > div.rn-popup__content {
-                > div {
-                    > div {
-                        .RichTextViewer {
-                            @include highlight-text-dark();
-                            @include highlight-color-notbold-dark();
-                        }
-                    }
-                }
+                @include highlight-text-dark();
+                @include highlight-color-notbold-dark();
             }
         }
     }
