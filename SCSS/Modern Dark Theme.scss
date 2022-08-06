@@ -3237,19 +3237,18 @@
     #document-sidebar {
     // Global Style
         background-color: var(--darkmode-background);
-
         // Thumbnail
-        .align-text-top {
-            vertical-align: sub;
-            top: -1px;
-        }
+            .align-text-top {
+                vertical-align: sub;
+                top: -1px;
+            }
         // Font
-        .RichTextViewer {
-            font-family: 'Nunito Sans', sans-serif;
-        }
-        .text-sm {
-            font-size: unset
-        }
+            .RichTextViewer {
+                font-family: 'Nunito Sans', sans-serif;
+            }
+            .text-sm {
+                font-size: unset
+            }
         @include highlight-span-text-dark-sidebar();
         .highlight-color--red,
         .highlight-color--orange,
@@ -3259,16 +3258,16 @@
         .highlight-color--purple {
             padding: 0 0.25rem;
         }
-    // Remove white-coloured line
-        + div {
-            > div {
-                background-color: var(--darkmode-background);
+        // Remove white-coloured line
+            + div {
+                > div {
+                    background-color: var(--darkmode-background);
+                }
             }
-        }
-    // Scrollbar
-        .w-\[calc\(100\%-16px\)\] {
-            width: calc(100% - 0.8rem);
-        }
+        // Scrollbar
+            .w-\[calc\(100\%-16px\)\] {
+                width: calc(100% - 0.8rem);
+            }
     // Sidebar Top
         // Account Capsule
             #document-sidebar__account-capsule {
@@ -3417,12 +3416,13 @@
                             }
                         }
                     // Selected
-                        .rn-clr-background-light-accent {
+                        .rn-clr-background-light-accent.rounded-md {
                             border: 1px solid yellow;
                             border-radius: 5px;
+                            background: var(--darkmode-background-selected-darker);
                         }
                         .hover\:rn-clr-background-light-accent--hovered:hover {
-                            background: var(--darkmode-background-selected-darker) !important;
+                            background: var(--darkmode-background-selected-darker);
                         }
                 }
             }
@@ -3505,9 +3505,6 @@
                     }
                     // Sidebar list item focused
                         > div.rounded-md.rn-clr-background-light-accent {
-                            border: 2px solid var(--darkmode-contrast);
-                            border-radius: 5px;
-
                             .RichTextViewer {
                                 color: white;
                             }
@@ -3517,7 +3514,9 @@
                             }
                         }
                         .rn-clr-background-light-accent {
-                            background: unset;
+                            background: var(--rn-clr-background-inverse-secondary);
+                            border: 2px solid var(--darkmode-contrast);
+                            border-radius: 5px;
                         }
                         .rounded-md.highlight-color--red,
                         .rounded-md.highlight-color--orange,
@@ -3711,6 +3710,14 @@
                     }
                     .rem-text {
                         font-family: 'Nunito Sans', sans-serif;
+                    }
+                // History plugin
+                    .rn-clr-background-light-accent {
+                        background: var(--darkmode-text);
+
+                        &:hover {
+                            filter: brightness(1.1);
+                        }
                     }
                 // Sidebar Top
                     // Account Capsule
