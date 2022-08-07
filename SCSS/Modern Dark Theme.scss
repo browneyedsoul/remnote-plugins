@@ -3009,55 +3009,8 @@
                             // Notification
                             // Labs
                             // Plugins
-                                #PluginsConfiguration {
-                                    // Popular Plugins
-                                        // Details
-                                        .text-gray-70 {
-                                            color: #B7BEC9;
-                                        }
-                                    // Callout
-                                        .bg-mint-10 {
-                                            background-color: #365148;
-                                            .text-mint-80 {
-                                                color: var(--darkmode-contrast);
-                                            }
-                                            .group {
-                                                a {
-                                                    color: var(--link-node-color-dark);
-                                                }
-                                            }
-                                        }
-                                    .bg-white {
-                                        background-color: var(--darkmode-background-selected-darker);
-                                    }
-
-                                    .PluginsConfiguration__table, %Pluginboxstyle {
-                                        background-color: var(--darkmode-background);
-                                    }
-                                    .PluginsConfiguration__table {
-                                        .table {
-                                            @extend %Pluginboxstyle;
-
-                                            color: var(--darkmode-text);
-                                            thead {
-                                                tr {
-                                                    th {
-                                                        color: var(--darkmode-text);
-                                                    }
-                                                }
-                                            }
-                                            tbody {
-                                                tr {
-                                                    td {
-                                                        input {
-                                                            color: var(--darkmode-text-bold);
-                                                            background-color: var(--darkmode-background-selected-darker);
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
+                                #plugin_marketplace_header {
+                                    background: var(--darkmode-background);
                                 }
                         }
                     }

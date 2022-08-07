@@ -2314,33 +2314,8 @@
   border-color: #000 !important;
   zoom: 1.2;
 }
-.dark .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .text-gray-70 {
-  color: #B7BEC9;
-}
-.dark .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .bg-mint-10 {
-  background-color: #365148;
-}
-.dark .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .bg-mint-10 .text-mint-80 {
-  color: var(--darkmode-contrast);
-}
-.dark .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .bg-mint-10 .group a {
-  color: var(--link-node-color-dark);
-}
-.dark .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .bg-white {
-  background-color: var(--darkmode-background-selected-darker);
-}
-.dark .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .PluginsConfiguration__table, .dark .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .PluginsConfiguration__table .table {
-  background-color: var(--darkmode-background);
-}
-.dark .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .PluginsConfiguration__table .table {
-  color: var(--darkmode-text);
-}
-.dark .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .PluginsConfiguration__table .table thead tr th {
-  color: var(--darkmode-text);
-}
-.dark .settings-page .settings-page__content .settings-page__content__inner #PluginsConfiguration .PluginsConfiguration__table .table tbody tr td input {
-  color: var(--darkmode-text-bold);
-  background-color: var(--darkmode-background-selected-darker);
+.dark .settings-page .settings-page__content .settings-page__content__inner #plugin_marketplace_header {
+  background: var(--darkmode-background);
 }
 
 #StatsPage #StatsPageContent {
