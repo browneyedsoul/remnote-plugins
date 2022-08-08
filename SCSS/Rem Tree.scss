@@ -12,8 +12,10 @@
         }
         .rem {
             min-width: calc(100% + 1rem);
-            position: relative;
-            z-index: 4;
+            .EditorContainer {
+                position: relative;
+                z-index: 4;
+            }
         }
         .float-end {
             > .rn-editor__rem__merge {
@@ -77,7 +79,7 @@
             }
         // rem container
             .rem-button__container {
-                z-index: 3;
+                z-index: 5;
             }
         // Parent
             div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header) {

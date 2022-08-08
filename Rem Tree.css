@@ -11,6 +11,9 @@
 [data-rem-container-tags~=tree] .rem,
 [data-rem-container-tags~=treec] .rem {
   min-width: calc(100% + 1rem);
+}
+[data-rem-container-tags~=tree] .rem .EditorContainer,
+[data-rem-container-tags~=treec] .rem .EditorContainer {
   position: relative;
   z-index: 4;
 }
@@ -63,7 +66,7 @@
   margin-right: 0;
 }
 #hierarchy-editor [data-rem-container-tags~=tree] .rem-button__container, #hierarchy-editor [data-rem-container-tags~=treec] .rem-button__container {
-  z-index: 3;
+  z-index: 5;
 }
 #hierarchy-editor [data-rem-container-tags~=tree] div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header), #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header) {
   display: flex;
