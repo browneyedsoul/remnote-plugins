@@ -404,9 +404,17 @@
             }
         }
 // Global Elements
-    // hierarchy-editor
+    // hierarchy-editor & list-item
         #hierarchy-editor {
             margin-top: 0.5rem;
+
+            [data-rem-tags~="list-item"] {
+                .rem-text {
+                    .rem-bullet__number {
+                        margin-right: 1.2rem;
+                    }
+                }
+            }
         }
     // Header
         #hierarchy-editor {

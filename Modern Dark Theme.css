@@ -138,6 +138,9 @@
 #hierarchy-editor {
   margin-top: 0.5rem;
 }
+#hierarchy-editor [data-rem-tags~=list-item] .rem-text .rem-bullet__number {
+  margin-right: 1.2rem;
+}
 
 #hierarchy-editor .rem-text.rem-header--1 {
   font-size: var(--font-size-header-1);
