@@ -324,46 +324,48 @@
     }
 // Make Bullet-list by Intentional Tagging
     @mixin bullet-container($borderColor) {
-        > span {
-            > div.six-dot {
+        .rem-button__container {
+            left: -1.8rem;
+
+            > span {
+                > div.six-dot {
+                    left: 40px !important;
+                }
+            }
+
+            > span.toggle-collapse-button {
                 left: 40px !important;
             }
-        }
 
-        > span.toggle-collapse-button {
-            left: 40px !important;
-        }
+            .rem-bullet__container {
+                position: relative;
+                margin-left: var(--treenode-line-spacing);
 
-        .rem-bullet__container {
-            position: relative;
-            margin-left: var(--treenode-line-spacing);
+                .perfect-circle.rem-bullet--hidden-children {
+                    @include triangle-hidden;
+                    border-color: transparent transparent transparent $borderColor;
+                }
 
-            .perfect-circle.rem-bullet--hidden-children {
-                @include triangle-hidden;
-                border-color: transparent transparent transparent $borderColor;
-            }
-
-            .perfect-circle.rem-bullet--all-children-visible {
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 3.5px;
-                border-radius: 10px;
-                border-color: $borderColor;
+                .perfect-circle.rem-bullet--all-children-visible {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 3.5px;
+                    border-radius: 10px;
+                    border-color: $borderColor;
+                }
             }
         }
     }
     @mixin bulletlist($borderColor) {
         [data-rem-container-tags~="bulletlist"] {
-            width: calc(100% - 16px);
             position: relative;
 
             [data-rem-tags~="bulletlist"] {
-                .rem-button__container {
-                    @include bullet-container($borderColor);
-                }
+                @include bullet-container($borderColor);
+
                 .rem-text {
-                    margin-left: .5rem;
+                    margin-left: 1.5rem !important;
                 }
             }
         }
@@ -373,13 +375,11 @@
             > div.tree-node--children {
                 > div.animate-zoom-into-bullet {
                     > div.tree-node--parent {
-                        div.rem-button__container {
-                            @include bullet-container($borderColor);
-                        }
+                        @include bullet-container($borderColor);
                     }
                     .tree-node--parent {
                         .rem-text {
-                            margin-left: .5rem !important;
+                            margin-left: 1.5rem !important;
                         }
                     }
                 }
