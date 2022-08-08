@@ -1383,7 +1383,7 @@
                                 .spaced-repetition__accuracy-buttons {
                                     .accuracy-button {
                                         color: var(--darkmode-text);
-                                        border-color: #999;
+                                        border-color: var(--darkmode-background-button);
 
                                         &:hover {
                                             filter: brightness(125%);

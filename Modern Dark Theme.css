@@ -913,7 +913,7 @@
 }
 .dark #content .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button {
   color: var(--darkmode-text);
-  border-color: #999;
+  border-color: var(--darkmode-background-button);
 }
 .dark #content .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:hover {
   filter: brightness(125%);
