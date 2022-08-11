@@ -29,6 +29,10 @@
 [data-rem-container-tags~=treec] .float-end .rn-tag__close {
   opacity: 0.3;
 }
+[data-rem-container-tags~=tree] .mr-\[100px\],
+[data-rem-container-tags~=treec] .mr-\[100px\] {
+  margin-right: unset;
+}
 
 #document [data-rem-container-tags~=tree] .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent),
 #document [data-rem-container-tags~=treec] .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
