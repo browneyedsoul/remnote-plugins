@@ -2,6 +2,8 @@
 .DS_Store
 Icon
 *.map
+node_modules
+
 Comment.scss
 Comment.css
 SCSS/Rem Thumbnail-Personal.scss
