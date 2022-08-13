@@ -5,6 +5,7 @@
     "scss.lint.emptyRules": "ignore",
     "css.lint.emptyRules": "ignore",
     "css.lint.unknownAtRules": "ignore",
+    "editor.formatOnSave": true,
     "liveSassCompile.settings.generateMap": false,
     "liveSassCompile.settings.formats": [
         {
@@ -20,5 +21,9 @@
     "[scss]": {
         "editor.foldingStrategy": "indentation",
         "editor.suggest.insertMode": "replace",
-    }
+    },
+    "[css]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
 }
