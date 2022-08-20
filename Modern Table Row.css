@@ -118,10 +118,7 @@
 #hierarchy-editor [data-rem-container-tags~=table1140],
 #hierarchy-editor [data-rem-container-tags~=table1170],
 #hierarchy-editor [data-rem-container-tags~=table1200] {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-left: 1.5rem;
-  margin-right: 0.7rem;
+  margin: 0.5rem 0 0.5rem 1.5rem;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   background-color: var(--table-columnrow-background-color);
