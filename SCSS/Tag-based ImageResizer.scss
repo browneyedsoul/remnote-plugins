@@ -15,11 +15,15 @@
     }
 }
 
+%w-100 {
+    width: 100%;
+}
+
 @for $i from 1 through 40 {
     [data-rem-container-tags~="#{$i * 5}"] {
         @extend %declutter;
         .inline-block {
-            width: 100%;
+            @extend %w-100;
             .inline-block.align-text-top {
                 @extend %fix;
                 width: #{$i * 5%} !important;
