@@ -15,24 +15,15 @@
     }
 }
 
-@for $i from 1 to 41{
-    [data-rem-container-tags~="#{$i * 5}"] {
-        .inline-block.align-text-top {
-            @extend %fix;
-        }
-    }
-}
-
-@for $i from 1 to 41{
+@for $i from 1 through 40 {
     [data-rem-container-tags~="#{$i * 5}"] {
         @extend %declutter;
-    }
-}
-// Image Resizer
-@for $i from 1 to 41{
-    [data-rem-container-tags~="#{$i * 5}"] {
-        .inline-block.align-text-top {
-            width: #{$i * 5%} !important;
+        .inline-block {
+            width: 100%;
+            .inline-block.align-text-top {
+                @extend %fix;
+                width: #{$i * 5%} !important;
+            }
         }
     }
 }
