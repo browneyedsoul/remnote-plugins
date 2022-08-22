@@ -2526,11 +2526,17 @@
   overflow-x: hidden;
   white-space: nowrap;
 }
-#document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(3),
-#document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(4),
-#document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(5) {
+#document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(3) {
   color: var(--darkmode-contrast);
   background-color: var(--darkmode-background-selected-darker);
+  display: flex;
+  align-items: center;
+}
+#document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(3) [data-icon~=fire-streak] {
+  color: var(--red-text-dark);
+}
+#document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(3) [data-icon~=star] {
+  color: var(--green-text-dark);
 }
 #document-sidebar > div > div.p-2 > a[href="/flashcards"] > div:hover {
   background-color: var(--darkmode-background-selected-darker);
