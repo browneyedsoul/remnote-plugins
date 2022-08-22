@@ -821,11 +821,9 @@
         }
     // Span Element - Bold Text
         .rem-text:not(.rem-text.rem-header--1):not(.rem-text.rem-header--2):not(.rem-text.rem-header--3) {
-            .EditorContainer {
-                .bold {
-                    color: var(--darkmode-text-bold);
-                    font-weight: 550;
-                }
+            .bold {
+                color: var(--darkmode-text-bold);
+                font-weight: 550;
             }
         }
     // Span Element - Inline Code

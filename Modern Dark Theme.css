@@ -450,7 +450,7 @@
 .dark [data-rem-tags~=highlight] .highlight-color--purple .rem-text {
   color: var(--darkmode-text-header);
 }
-.dark .rem-text:not(.rem-text.rem-header--1):not(.rem-text.rem-header--2):not(.rem-text.rem-header--3) .EditorContainer .bold {
+.dark .rem-text:not(.rem-text.rem-header--1):not(.rem-text.rem-header--2):not(.rem-text.rem-header--3) .bold {
   color: var(--darkmode-text-bold);
   font-weight: 550;
 }
