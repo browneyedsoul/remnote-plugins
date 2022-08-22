@@ -1,4 +1,4 @@
-.rn-popup {
+.rn-popup:not(#PopupContent) {
     max-width: unset;
     max-height: unset !important;
     left: 25% !important;
