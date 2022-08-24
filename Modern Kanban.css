@@ -68,8 +68,10 @@
   border-radius: 3px;
   box-shadow: 0 0 1px 0;
   margin-left: 1.2rem;
-  padding-right: 0.5rem;
   padding-bottom: 0.1rem;
+}
+#hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children {
+  margin-right: 0.5rem;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet > div:first-child .rem-text {
   padding-left: 25px;
@@ -195,8 +197,10 @@
   border-radius: 3px;
   box-shadow: 0 0 1px 0;
   margin-left: 1.2rem;
-  padding-right: 0.5rem;
   padding-bottom: 0.1rem;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children {
+  margin-right: 0.5rem;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet > div:first-child .rem-text {
   padding-left: 25px;

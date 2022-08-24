@@ -88,8 +88,11 @@
                                             border-radius: 3px;
                                             box-shadow: 0 0 1px 0;
                                             margin-left: 1.2rem;
-                                            padding-right: 0.5rem;
                                             padding-bottom: 0.1rem;
+
+                                            > .tree-node--children {
+                                                margin-right: 0.5rem;
+                                            }
 
                                             > div:first-child {
                                                 .rem-text {
