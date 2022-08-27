@@ -50,42 +50,42 @@
     --purple-text-dark: #C6A3F4;
     --highlight-color--red: #FFB9AF;
     --highlight-color--red-light: #FFE4DF;
-    --highlight-color--red-dark: #813D38;
+    --highlight-color--red-dark: #702D29;
     --highlight-color--red-span-dark: #F0ADA4;
     --highlight-color--red-bg-dark: #572924;
     --highlight-color--red-text-dark: #FFC6BD;
     --highlight-color--red-bar-dark: #FFB9AF;
     --highlight-color--orange: #FFCA8C;
     --highlight-color--orange-light: #FFE9CC;
-    --highlight-color--orange-dark: #926B3B;
+    --highlight-color--orange-dark: #603F17;
     --highlight-color--orange-span-dark: #ECBA81;
     --highlight-color--orange-bg-dark: #553D24;
     --highlight-color--orange-text-dark: #FFDAB8;
     --highlight-color--orange-bar-dark: #FFCA8C;
     --highlight-color--yellow: #EDED85;
     --highlight-color--yellow-light: #F8F9AA;
-    --highlight-color--yellow-dark: #787517;
+    --highlight-color--yellow-dark: #615F14;
     --highlight-color--yellow-span-dark: #DFE07E;
     --highlight-color--yellow-bg-dark: #453E1E;
     --highlight-color--yellow-text-dark: #E8E67D;
     --highlight-color--yellow-bar-dark: #E5E579;
     --highlight-color--green: #B4E6B1;
     --highlight-color--green-light: #D8FFD1;
-    --highlight-color--green-dark: #416441;
+    --highlight-color--green-dark: #2D4F2D;
     --highlight-color--green-span-dark: #9FE39B;
     --highlight-color--green-bg-dark: #253F27;
     --highlight-color--green-text-dark: #B3DDAB;
     --highlight-color--green-bar-dark: #95DB91;
     --highlight-color--blue: #BAD7EB;
     --highlight-color--blue-light: #D4EEFF;
-    --highlight-color--blue-dark: #395F75;
+    --highlight-color--blue-dark: #224356;
     --highlight-color--blue-span-dark: #BAD7EB;
     --highlight-color--blue-bg-dark: #183C4D;
     --highlight-color--blue-text-dark: #A7DCE8;
     --highlight-color--blue-bar-dark: #A7DCE8;
     --highlight-color--purple: #E6C9EB;
     --highlight-color--purple-light: #F5E9FF;
-    --highlight-color--purple-dark: #7C6191;
+    --highlight-color--purple-dark: #614477;
     --highlight-color--purple-span-dark: #E6C9EB;
     --highlight-color--purple-bg-dark: #4A2B45;
     --highlight-color--purple-text-dark: #DDC3EB;
@@ -1766,18 +1766,18 @@
                 border-color: var(--darkmode-background-selected);
 
                 > div:nth-child(1) {
-                    > p {
-                        // Daily Notes
-                    }
+                    // > p {
+                    //     // Daily Notes
+                    // }
                     > div {
                         // Month Year
                         color: var(--darkmode-text);
                     }
                 }
                 > div:nth-child(2) {
-                    .text-gray-40 {
-                        // Day of Week
-                    }
+                    // .text-gray-40 {
+                    //     // Day of Week
+                    // }
                     p.m-0 {
                         // Number
                         color: var(--darkmode-text);
@@ -1997,18 +1997,18 @@
                                 #hierarchy-editor__ctrl-f {
                                     border: 2px solid white;
 
-                                    > div {
+                                    // > div {
                                         // Find
-                                            > span {
-                                                > div.bg-white {
+                                            // > span {
+                                            //     > div.bg-white {
 
-                                                }
-                                            }
+                                            //     }
+                                            // }
                                         // Input Area
-                                            > div.bg-gray-5 {
+                                            // > div.bg-gray-5 {
 
-                                            }
-                                    }
+                                            // }
+                                    // }
                                 }
                             // Sticky Top bar
                                 > .fixed {
@@ -2093,18 +2093,18 @@
                     border-bottom-style: dashed;
 
                     > div:nth-child(1) {
-                        > p {
-                            // Daily Notes
-                        }
+                        // > p {
+                        //     // Daily Notes
+                        // }
                         > div {
                             // Month Year
                             color: var(--darkmode-text);
                         }
                     }
                     > div:nth-child(2) {
-                        .text-gray-40 {
-                            // Day of Week
-                        }
+                        // .text-gray-40 {
+                        //     // Day of Week
+                        // }
                         p.m-0 {
                             // Number
                             color: var(--darkmode-text);
@@ -2603,15 +2603,15 @@
             .settings-page__sidebar {
                     background-color: #E7E7EF;
                     // Settings Left Top
-                        .settings-page__sidebar__title {
+                        // .settings-page__sidebar__title {
 
-                        }
+                        // }
                     // Settings Page Sidebar
-                        .settings-page__sidebar__link {
-                            &:hover {
+                        // .settings-page__sidebar__link {
+                        //     &:hover {
 
-                            }
-                        }
+                        //     }
+                        // }
                 }
         // Setting Page Content
             .settings-page__content {
@@ -2719,44 +2719,44 @@
                                 }
                             }
                             // Invite Friends
-                                .p-6 {
-                                    > .form-element {
-                                        > div {
+                                // .p-6 {
+                                //     // > .form-element {
+                                //     //     > div {
 
-                                        }
-                                    }
-                                    > .px-0 {
-                                        > div {
+                                //     //     }
+                                //     // }
+                                //     // > .px-0 {
+                                //     //     > div {
 
-                                        }
-                                    }
-                                }
+                                //     //     }
+                                //     // }
+                                // }
                             .w-min {
                                 width: unset;
                             }
                         // Custom Schedulers
                             .spaced-repetition-scheduler-form {
-                                > div:nth-of-type(1) {
+                                // > div:nth-of-type(1) {
 
-                                    }
+                                //     }
                                 > div:nth-of-type(2) {
                                     // Scheduler Type
                                     // Example
-                                        > .spaced-repetition-scheduler-form__section--examples {
-                                            div.overflow-x-auto {
-                                                > div.spaced-repetition-scheduler-form__example {
-                                                    > div.spaced-repetition-scheduler-form__example__number {
+                                        // > .spaced-repetition-scheduler-form__section--examples {
+                                        //     div.overflow-x-auto {
+                                        //         > div.spaced-repetition-scheduler-form__example {
+                                        //             > div.spaced-repetition-scheduler-form__example__number {
 
-                                                    }
-                                                    > div.spaced-repetition-scheduler-form__interaction {
+                                        //             }
+                                        //             > div.spaced-repetition-scheduler-form__interaction {
 
-                                                    }
-                                                    > div.spaced-repetition-scheduler-form__interval {
+                                        //             }
+                                        //             > div.spaced-repetition-scheduler-form__interval {
 
-                                                    }
-                                                }
-                                            }
-                                        }
+                                        //             }
+                                        //         }
+                                        //     }
+                                        // }
                                     // Details
                                         > div:nth-of-type(3) {
                                             div:nth-of-type(1) {
@@ -2936,27 +2936,27 @@
                                 }
                             // Custom Schedulers
                                 .spaced-repetition-scheduler-form {
-                                    > div:nth-of-type(1) {
+                                    // > div:nth-of-type(1) {
 
-                                    }
+                                    // }
                                     > div:nth-of-type(2) {
                                         // Scheduler Type
                                         // Example
-                                            > .spaced-repetition-scheduler-form__section--examples {
-                                                div.overflow-x-auto {
-                                                    > div.spaced-repetition-scheduler-form__example {
-                                                        > div.spaced-repetition-scheduler-form__example__number {
+                                            // > .spaced-repetition-scheduler-form__section--examples {
+                                            //     div.overflow-x-auto {
+                                            //         > div.spaced-repetition-scheduler-form__example {
+                                            //             > div.spaced-repetition-scheduler-form__example__number {
 
-                                                        }
-                                                        > div.spaced-repetition-scheduler-form__interaction {
+                                            //             }
+                                            //             > div.spaced-repetition-scheduler-form__interaction {
 
-                                                        }
-                                                        > div.spaced-repetition-scheduler-form__interval {
+                                            //             }
+                                            //             // > div.spaced-repetition-scheduler-form__interval {
 
-                                                        }
-                                                    }
-                                                }
-                                            }
+                                            //             // }
+                                            //         }
+                                            //     }
+                                            // }
                                         // Details
                                             > div:nth-of-type(3) {
                                                 // Anki SM-2 Settings
@@ -2967,9 +2967,9 @@
                                                     }
                                                 // Learning Phase, Exponenetial Phase, Re-Learning Phase
                                                     .spaced-repetition-scheduler-form__section {
-                                                        .spaced-repetition-scheduler-form__section__header {
+                                                        // .spaced-repetition-scheduler-form__section__header {
 
-                                                        }
+                                                        // }
                                                         .spaced-repetition-scheduler-form__field {
                                                             .spaced-repetition-scheduler-form__field__explanation {
                                                                 color: #B7BEC9;
@@ -3054,32 +3054,32 @@
         border-radius: 4px;
         background-color: var(--alias-background);
 
-        > .tree-node--parent {
-            div[data-rem-tags~="aliases"] {
-                .rem-text {
-                    .EditorContainer {
-                        span.descriptor_rem_type {
-                            .RichTextViewer {
-                                .rem-reference-container {
-                                    .rem-reference {
-                                        .rem-powerup-icon {
-                                            svg.text-icon {
+        // > .tree-node--parent {
+        //     div[data-rem-tags~="aliases"] {
+        //         .rem-text {
+        //             .EditorContainer {
+        //                 span.descriptor_rem_type {
+        //                     .RichTextViewer {
+        //                         .rem-reference-container {
+        //                             .rem-reference {
+        //                                 .rem-powerup-icon {
+        //                                     svg.text-icon {
 
-                                            }
-                                        }
-                                        #rem-reference__exclude-type-parent {
-                                            .rem-reference__exclude-type-parent__delete {
+        //                                     }
+        //                                 }
+        //                                 #rem-reference__exclude-type-parent {
+        //                                     .rem-reference__exclude-type-parent__delete {
 
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        //                                     }
+        //                                 }
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
         > .tree-node--children {
             [data-rem-container-tags~="list-item"] {
                 .tree-node--parent {
@@ -3147,16 +3147,16 @@
                                                 .rem-reference {
                                                     color: var(--darkmode-contrast);
 
-                                                    .rem-powerup-icon {
-                                                        svg.text-icon {
+                                                    // .rem-powerup-icon {
+                                                    //     svg.text-icon {
 
-                                                        }
-                                                    }
-                                                    #rem-reference__exclude-type-parent {
-                                                        .rem-reference__exclude-type-parent__delete {
+                                                    //     }
+                                                    // }
+                                                    // #rem-reference__exclude-type-parent {
+                                                    //     .rem-reference__exclude-type-parent__delete {
 
-                                                        }
-                                                    }
+                                                    //     }
+                                                    // }
                                                 }
                                             }
                                         }
@@ -3295,9 +3295,9 @@
                                     color: var(--darkmode-contrast);
 
 
-                                    > svg[data-icon~="all-notes"] {
-                                        //
-                                    }
+                                    // > svg[data-icon~="all-notes"] {
+                                    //
+                                    // }
                                 }
                                 // All Notes Text
                                 > div:nth-of-type(2) {
@@ -3428,9 +3428,9 @@
                                             top: 1px;
                                             color: var(--darkmode-text);
 
-                                            > svg.text-icon {
-                                                //
-                                            }
+                                            // > svg.text-icon {
+                                            //
+                                            // }
                                         }
                                     // Item Text area
                                         .RichTextViewer {
