@@ -19,3 +19,6 @@
 ## Misc.
 
 - If you are exploring long lines of code, you can use fold and collapse using the outdented first line `// blahblah`.
+
+## IMPORTANT
+> If you are working in a [multi-root workspace](https://code.visualstudio.com/docs/editor/multi-root-workspaces), please copy and paste this settings .vscode/settings.json in the root of workspace
