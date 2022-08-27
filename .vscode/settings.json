@@ -2,21 +2,21 @@
     "scss.hover.references": false,
     "scss.hover.documentation": false,
     "scss.validate": false,
-    "scss.lint.emptyRules": "ignore",
-    "css.lint.emptyRules": "ignore",
-    "css.lint.unknownAtRules": "ignore",
     "editor.formatOnSave": true,
-    "liveSassCompile.settings.generateMap": false,
     "liveSassCompile.settings.formats": [
         {
-            "format": "expanded",
             "extensionName": ".css",
+            "format": "expanded",
             "savePath": "~/..",
         },
     ],
     "liveSassCompile.settings.excludeList": [
         "/**/node_modules/**",
         "/.vscode/**"
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.autoprefix": [
+        "defaults"
     ],
     "[scss]": {
         "editor.foldingStrategy": "indentation",
