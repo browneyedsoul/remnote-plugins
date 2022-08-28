@@ -142,6 +142,10 @@
   margin-right: 1.2rem;
 }
 
+.rem-text {
+  display: flex;
+}
+
 #hierarchy-editor .rem-text.rem-header--1 {
   font-size: var(--font-size-header-1);
 }
