@@ -21,6 +21,8 @@
     "[scss]": {
         "editor.foldingStrategy": "indentation",
         "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": null,
+        "editor.formatOnSave": false
     },
     "[css]": {
         "editor.formatOnSave": true,
