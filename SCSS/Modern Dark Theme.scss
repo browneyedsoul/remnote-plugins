@@ -138,6 +138,27 @@
         .EditorContainer {
             margin-right: unset;
         }
+    // Interim measure - checkbox
+        div.tree-node--parent {
+            // focused
+            > span {
+                > div {
+                    > div.rem-text {
+                        > span.rem-checkbox {
+                            margin-top: 0.2rem;
+                        }
+                    }
+                }
+            }
+            // unfocused
+            > div {
+                > div.rem-text {
+                    > span.rem-checkbox {
+                        margin-top: -0.3rem;
+                    }
+                }
+            }
+        }
 // Highlight Mixin
     // highlight-text-light
         @mixin highlight-text {
