@@ -2406,7 +2406,7 @@
 #document-sidebar span.highlight-color--red:not(.bold.highlight-color--red) {
   color: var(--highlight-color--red-text-dark);
   background-color: var(--highlight-color--red-bg-dark);
-  border: 0.1rem solid var(--highlight-color--red-dark);
+  border: 0.1rem solid #92463E;
   border-radius: 4px;
 }
 #document-sidebar span.highlight-color--orange:not(.bold.highlight-color--orange) {
