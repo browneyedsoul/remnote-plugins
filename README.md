@@ -378,6 +378,7 @@
   - Tag Name : `th`
 
   <img src="Assets/ModernTableRow-thformatting.png">
+  <img src="Assets/ModernTableRow-thformatting.gif">
   </details>
 
   ## Use case
@@ -399,9 +400,9 @@
   <details>
     <summary>Turn a Row table cell into a Column Table cell</summary>
 
-  - Tag Nmae : `lb`
-
-  <img src="Assets/ModernTableRow-LineBreaker.gif">
+  - Tag Nmae : ~~`lb`~~
+  
+  > You can make seperated table row by simple indenting top level rem in a table cell
     
   </details>
   <details>
@@ -430,6 +431,8 @@
   ```css
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Table%20Column.css");
   ```
+
+  > Please use this only in a simple case. If you want to make more sophisticated table, I would recommend you to use 'Modern Table Row' in most use cases instead, since it can cover more requirement you'd have
 
   <img src="Assets/ModernTableColumn.gif">
   </details>
