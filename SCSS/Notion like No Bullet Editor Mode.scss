@@ -452,40 +452,56 @@
             }
         }
     }
-// Checkbox Alignment
-    #DocumentTitle {
-        .rem-text,
-        .rem-header--1,
-        .rem-header--2,
-        .rem-header--3 {
-            .rem-checkbox {
-                display: inline-block;
-                margin: 10px 15px 10px 0;
+// Checkbox Alignment - Interim measure
+    div.animate-zoom-into-bullet {
+        > div.tree-node--parent {
+            // focused
+            > span {
+                > div {
+                    > div.rem-text {
+                        > span.rem-checkbox {
+                            margin-top: 0.3rem;
+                        }
+                        &.rem-header--1 {
+                            > span.rem-checkbox {
+                                margin-top: 0.8rem;
+                            }
+                        }
+                        &.rem-header--2 {
+                            > span.rem-checkbox {
+                                margin-top: 0.6rem;
+                            }
+                        }
+                        &.rem-header--3 {
+                            > span.rem-checkbox {
+                                margin-top: 0.5rem;
+                            }
+                        }
+                    }
+                }
             }
-        }
-        .document-title {
-            .EditorContainer {
-                line-height: unset;
+            // unfocused
+            > div {
+                > div.rem-text {
+                    > span.rem-checkbox {
+                        margin-top: -0.15rem;
+                    }
+                    &.rem-header--1 {
+                        > span.rem-checkbox {
+                            margin-top: -0.4rem;
+                        }
+                    }
+                    &.rem-header--2 {
+                        > span.rem-checkbox {
+                            margin-top: -0.4rem;
+                        }
+                    }
+                    &.rem-header--3 {
+                        >span.rem-checkbox {
+                            margin-top: -0.2rem;
+                        }
+                    }
+                }
             }
-        }
-    }
-    .rem-text.rem-header--1 {
-        .rem-checkbox {
-            margin-top: 14px;
-        }
-    }
-    .rem-text.rem-header--2 {
-        .rem-checkbox {
-            margin-top: 12px;
-        }
-    }
-    .rem-text.rem-header--3 {
-        .rem-checkbox {
-            margin-top: 8px;
-        }
-    }
-    .rem-text {
-        .rem-checkbox {
-            margin-top: 0.3rem;
         }
     }
