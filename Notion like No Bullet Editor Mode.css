@@ -613,28 +613,3 @@
 .portal-tree-node-box .tree-node-container .rem-powerup-icon .text-icon {
   top: 0.25em;
 }
-
-div.animate-zoom-into-bullet > div.tree-node--parent > span > div > div.rem-text > span.rem-checkbox {
-  margin-top: 0.3rem;
-}
-div.animate-zoom-into-bullet > div.tree-node--parent > span > div > div.rem-text.rem-header--1 > span.rem-checkbox {
-  margin-top: 0.8rem;
-}
-div.animate-zoom-into-bullet > div.tree-node--parent > span > div > div.rem-text.rem-header--2 > span.rem-checkbox {
-  margin-top: 0.6rem;
-}
-div.animate-zoom-into-bullet > div.tree-node--parent > span > div > div.rem-text.rem-header--3 > span.rem-checkbox {
-  margin-top: 0.5rem;
-}
-div.animate-zoom-into-bullet > div.tree-node--parent > div > div.rem-text > span.rem-checkbox {
-  margin-top: -0.15rem;
-}
-div.animate-zoom-into-bullet > div.tree-node--parent > div > div.rem-text.rem-header--1 > span.rem-checkbox {
-  margin-top: -0.4rem;
-}
-div.animate-zoom-into-bullet > div.tree-node--parent > div > div.rem-text.rem-header--2 > span.rem-checkbox {
-  margin-top: -0.4rem;
-}
-div.animate-zoom-into-bullet > div.tree-node--parent > div > div.rem-text.rem-header--3 > span.rem-checkbox {
-  margin-top: -0.2rem;
-}

@@ -135,13 +135,6 @@
   margin-right: unset;
 }
 
-div.tree-node--parent > span > div > div.rem-text > span.rem-checkbox {
-  margin-top: 0.2rem;
-}
-div.tree-node--parent > div > div.rem-text > span.rem-checkbox {
-  margin-top: -0.3rem;
-}
-
 #hierarchy-editor {
   margin-top: 0.5rem;
 }
