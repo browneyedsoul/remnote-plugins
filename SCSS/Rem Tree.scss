@@ -10,6 +10,9 @@
         .whitespace-pre-wrap {
             white-space: pre;
         }
+        .animate-zoom-into-bullet.flex.flex-col {
+            display: block;
+        }
         .rem {
             min-width: calc(100% + 1rem);
             .EditorContainer {
@@ -67,6 +70,7 @@
 #hierarchy-editor {
     [data-rem-container-tags~="tree"], %tree {
         display: flex;
+        flex-direction: row;
         line-height: 160%;
         margin: 0.5rem 0 0.5rem 1.6rem;
         padding: 1rem;
@@ -88,6 +92,7 @@
         // Parent
             div.tree-node--parent:not(.tree-node--parent.tree-node--automatic-search-portal-header) {
                 display: flex;
+                flex-direction: row;
                 align-items: baseline;
 
                 .rem-text {
@@ -144,6 +149,7 @@
         // Flexbox
             .animate-zoom-into-bullet {
                 display: flex;
+                flex-direction: row;
             }
         // Children - One Child Tree
             div.tree-node--children {
@@ -219,8 +225,8 @@
                 }
             }
         // Width tuning
-            .tree-node--parent {
-
+            .tree-node--parent.flex-grow {
+                flex-grow: unset;
             }
     }
 }
