@@ -283,6 +283,46 @@
 #hierarchy-editor [data-rem-container-tags~=table1200] #code-node > span[data-linear-editor-editable-leaf~=true] {
   white-space: pre-wrap;
 }
+#hierarchy-editor [data-rem-container-tags~=table90] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table120] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table150] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table180] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table210] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table240] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table270] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table300] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table330] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table360] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table390] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table420] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table450] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table480] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table510] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table540] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table570] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table600] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table630] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table660] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table690] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table720] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table750] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table780] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table810] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table840] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table870] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table900] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table930] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table960] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table990] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table1020] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table1050] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table1080] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table1110] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table1140] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table1170] .animate-zoom-into-bullet.flex.flex-col,
+#hierarchy-editor [data-rem-container-tags~=table1200] .animate-zoom-into-bullet.flex.flex-col {
+  display: block;
+}
 #hierarchy-editor [data-rem-container-tags~=table90] .perfect-circle__inner .rem-bullet__core,
 #hierarchy-editor [data-rem-container-tags~=table120] .perfect-circle__inner .rem-bullet__core,
 #hierarchy-editor [data-rem-container-tags~=table150] .perfect-circle__inner .rem-bullet__core,
@@ -901,7 +941,7 @@
 #hierarchy-editor [data-rem-container-tags~=table1170] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children,
 #hierarchy-editor [data-rem-container-tags~=table1200] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children {
   display: flex;
-  flex-direction: rows;
+  flex-direction: row;
   text-align: left;
   height: 100%;
   padding-left: 0;

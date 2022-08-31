@@ -157,6 +157,10 @@
                             white-space: pre-wrap;
                         }
                     }
+                // 1.8.18
+                    .animate-zoom-into-bullet.flex.flex-col {
+                        display: block;
+                    }
             // Remove Bullet
                 .perfect-circle__inner {
                     .rem-bullet__ring {
@@ -235,7 +239,7 @@
                             // Table Content Cell
                                 > .tree-node--children {
                                     display: flex;
-                                    flex-direction: rows;
+                                    flex-direction: row;
                                     text-align: left;
                                     height: 100%;
                                     padding-left: 0;
