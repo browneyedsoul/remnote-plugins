@@ -9,9 +9,9 @@
     --table-border-color-dark: #525252;
     --darkmode-text: #DFDFD5;
     --table-title-left-margin: 1.5rem;
-    --table-title-right-margin: 0.7rem;
+    --table-title-right-margin: 0;
     --table-container-left-margin: 1.5rem;
-    --table-container-right-margin: 0.7rem;
+    --table-container-right-margin: 0;
     --table-container-cell-margin-left: -10px;
 }
 
@@ -24,6 +24,10 @@
     #hierarchy-editor {
         [data-rem-container-tags~="table"] {
             margin-left: var(--table-container-left-margin);
+            // Global
+                .animate-zoom-into-bullet.flex.flex-col {
+                    display: block;
+                }
             // Remove Placeholder
                 .rich-text-editor {
                     .pointer-events-none {
@@ -45,6 +49,7 @@
             // Structure
                 > .TreeNode {
                     display: flex;
+                    flex-direction: row;
                     left: 0px !important;
                     margin-left: var(--table-container-left-margin);
                     margin-right: var(--table-container-right-margin) !important;
@@ -73,7 +78,7 @@
                                 text-align: center;
                             }
                         // Line Grid Adjustment
-                            &:nth-child(n+2) {
+                            &:nth-child(n+1) {
                                 margin-left: -1px;
                             }
 
