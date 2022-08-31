@@ -19,7 +19,10 @@
         border: 0.1rem solid var(--kanban-border);
         border-radius: 4px;
         margin: 0.5rem 0 0.5rem 1.6rem;
-
+        // Global
+            .animate-zoom-into-bullet.flex.flex-col {
+                display: block;
+            }
         // Declutter
             .bg-white {
                 background-color: transparent;
@@ -30,6 +33,7 @@
         // Kanban Contents
             > .tree-node--children {
                 display: flex;
+                flex-direction: row;
                 border: 0;
                 padding-left: 0;
                 overflow-x: scroll;
