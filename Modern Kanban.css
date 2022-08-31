@@ -27,11 +27,15 @@
   border-radius: 4px;
   margin: 0.5rem 0 0.5rem 1.6rem;
 }
+#hierarchy-editor [data-rem-container-tags~=kanban] .animate-zoom-into-bullet.flex.flex-col {
+  display: block;
+}
 #hierarchy-editor [data-rem-container-tags~=kanban] .bg-white {
   background-color: transparent;
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children {
   display: flex;
+  flex-direction: row;
   border: 0;
   padding-left: 0;
   overflow-x: scroll;
@@ -156,11 +160,15 @@
   border-radius: 4px;
   margin: 0.5rem 0 0.5rem 1.6rem;
 }
+.dark #hierarchy-editor [data-rem-container-tags~=kanban] .animate-zoom-into-bullet.flex.flex-col {
+  display: block;
+}
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] .bg-white {
   background-color: transparent;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children {
   display: flex;
+  flex-direction: row;
   border: 0;
   padding-left: 0;
   overflow-x: scroll;
