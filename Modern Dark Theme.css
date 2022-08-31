@@ -2980,10 +2980,10 @@
   color: var(--darkmode-text);
 }
 
-[data-rem-container-tags~=file] .rem-header--1 .EditorContainer,
-[data-rem-container-tags~=file] .rem-header--2 .EditorContainer,
-[data-rem-container-tags~=file] .rem-header--3 .EditorContainer {
-  font-size: 0.9rem;
+[data-rem-container-tags~=file] .rem-header--1,
+[data-rem-container-tags~=file] .rem-header--2,
+[data-rem-container-tags~=file] .rem-header--3 {
+  font-size: 0.9rem !important;
   opacity: 0.7;
 }
 

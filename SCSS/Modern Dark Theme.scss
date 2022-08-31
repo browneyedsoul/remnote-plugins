@@ -3959,11 +3959,9 @@
                 .rem-header--1,
                 .rem-header--2,
                 .rem-header--3 {
-                    .EditorContainer {
-                        // Page ***
-                        font-size: 0.9rem;
-                        opacity: .7;
-                    }
+                    // Page ***
+                    font-size: 0.9rem !important;
+                    opacity: .7;
                 }
             }
     // Viewer
