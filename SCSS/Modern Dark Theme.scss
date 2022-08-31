@@ -1984,6 +1984,14 @@
                                         background-color: unset !important;
                                         font-weight: 700;
                                     }
+                                    // rem-powerup-icon
+                                        .rem-powerup-icon {
+                                            display: flex;
+                                            align-items: center;
+                                            > .text-icon {
+                                                top: 0;
+                                            }
+                                        }
                                     @include highlight-text();
                                 }
                             }

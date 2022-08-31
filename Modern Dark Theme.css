@@ -1347,6 +1347,13 @@
   background-color: unset !important;
   font-weight: 700;
 }
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .rem-powerup-icon {
+  display: flex;
+  align-items: center;
+}
+.tile__document #document div.mt-2\.5 > div #DocumentTitle .rem-powerup-icon > .text-icon {
+  top: 0;
+}
 .tile__document #document div.mt-2\.5 > div #DocumentTitle .bold.highlight-color--red {
   background-color: unset;
   color: var(--red-text);
