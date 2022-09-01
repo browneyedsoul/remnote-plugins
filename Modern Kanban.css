@@ -68,7 +68,7 @@
 }
 #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet {
   background-color: var(--kanban-bgcolor-input);
-  margin: 5px;
+  margin: 3px;
   border-radius: 3px;
   box-shadow: 0 0 1px 0;
   margin-left: 1.2rem;
@@ -201,7 +201,7 @@
 }
 .dark #hierarchy-editor [data-rem-container-tags~=kanban] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet {
   background-color: var(--kanban-bgcolor-input-dark);
-  margin: 5px;
+  margin: 3px;
   border-radius: 3px;
   box-shadow: 0 0 1px 0;
   margin-left: 1.2rem;
