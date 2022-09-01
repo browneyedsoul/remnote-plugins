@@ -31,6 +31,13 @@
                 opacity: .3;
             }
         }
+        .rem-reference-container {
+            .rem-reference {
+                .RichTextViewer {
+                    display: inline-flex;
+                }
+            }
+        }
         // Interim remedy
             .mr-\[100px\] {
                 margin-right: unset;

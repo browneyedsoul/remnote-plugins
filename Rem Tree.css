@@ -33,6 +33,10 @@
 [data-rem-container-tags~=treec] .float-end .rn-tag__close {
   opacity: 0.3;
 }
+[data-rem-container-tags~=tree] .rem-reference-container .rem-reference .RichTextViewer,
+[data-rem-container-tags~=treec] .rem-reference-container .rem-reference .RichTextViewer {
+  display: inline-flex;
+}
 [data-rem-container-tags~=tree] .mr-\[100px\],
 [data-rem-container-tags~=treec] .mr-\[100px\] {
   margin-right: unset;
