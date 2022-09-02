@@ -9,15 +9,11 @@
   --planner-border-color-dark: #535353;
   --darkmode-text: #DFDFD5;
   --planner-title-left-margin: 1.5rem;
-  --planner-title-right-margin: 0.7rem;
+  --planner-title-right-margin: ;
   --planner-week-left-margin: 1rem;
-  --planner-week-right-margin: 0.7rem;
+  --planner-week-right-margin: ;
   --planner-container-left-margin: 1.5rem;
-  --planner-container-right-margin: 0.7rem;
-}
-
-[data-rem-container-tags~=planner] .tree-node--children.flex.flex-col {
-  flex-direction: row;
+  --planner-container-right-margin: ;
 }
 
 #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--parent {
@@ -37,7 +33,6 @@
   left: 0px !important;
   padding-left: unset;
   padding-bottom: 1rem;
-  width: calc(100% - 2.34rem);
   margin-left: var(--planner-title-left-margin);
   border-left: 0.07rem solid var(--planner-title-background-color);
   border-right: 0.07rem solid var(--planner-title-background-color);
@@ -64,6 +59,7 @@
 }
 #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode {
   display: flex;
+  flex-direction: row;
   left: 0px !important;
   padding-left: unset;
   margin-left: var(--planner-title-left-margin);
