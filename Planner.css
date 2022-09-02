@@ -16,6 +16,10 @@
   --planner-container-right-margin: 0.7rem;
 }
 
+[data-rem-container-tags~=planner] .tree-node--children.flex.flex-col {
+  flex-direction: row;
+}
+
 #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--parent {
   margin-left: var(--planner-title-left-margin);
   margin-right: var(--planner-title-right-margin);

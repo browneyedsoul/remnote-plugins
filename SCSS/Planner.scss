@@ -37,7 +37,12 @@
         }
     }
 }
-
+// Global
+    [data-rem-container-tags~="planner"] {
+        .tree-node--children.flex.flex-col {
+            flex-direction: row;
+        }
+    }
 // Basic Structure
     #hierarchy-editor {
         [data-rem-container-tags~="planner"] {
