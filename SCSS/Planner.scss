@@ -8,6 +8,22 @@
     --planner-border-color: #F7F6F3;
     --planner-border-color-dark: #535353;
     --darkmode-text: #DFDFD5;
+    --planner-saturday: #D4EEFF;
+    --planner-sunday: #FFD8CF;
+    --planner-saturday-dark: #183C4D;
+    --planner-sunday-dark: #572924;
+    --planner-red: ;
+    --planner-orange: ;
+    --planner-yellow: ;
+    --planner-green: ;
+    --planner-blue: ;
+    --planner-purple: ;
+    --planner-red-dark: #572924;
+    --planner-orange-dark: #553D24;
+    --planner-yellow-dark: #453E1E;
+    --planner-green-dark: #253F27;
+    --planner-blue-dark: #183C4D;
+    --planner-purple-dark: #43273F;
     --planner-title-left-margin: 1.5rem;
     --planner-title-right-margin: ;
     --planner-week-left-margin: 1rem;
@@ -37,20 +53,28 @@
         }
     }
 }
-// Basic Structure
+@mixin planner(
+    $planner-title-left-margin,
+    $planner-title-right-margin,
+    $planner-week-left-margin,
+    $planner-title-background-color,
+    $planner-header-background-color,
+    $planner-saturday,
+    $planner-sunday) {
+
     #hierarchy-editor {
         [data-rem-container-tags~="planner"] {
             // Planner Title Bar
                 > div.tree-node--parent {
-                    margin-left: var(--planner-title-left-margin);
-                    margin-right: var(--planner-title-right-margin);
+                    margin-left: $planner-title-left-margin;
+                    margin-right: $planner-title-right-margin;
 
                     [data-rem-tags~="planner"] {
-                        background-color: var(--planner-title-background-color);
+                        background-color: $planner-title-background-color;
                         border-top-left-radius: 5px;
                         border-top-right-radius: 5px;
                         padding-right: 5px;
-                        border: 0.07rem solid var(--planner-title-background-color);
+                        border: 0.07rem solid $planner-title-background-color;
                     }
                 }
             // Planner Container
@@ -60,10 +84,10 @@
                     left: 0px !important;
                     padding-left: unset;
                     padding-bottom: 1rem;
-                    margin-left: var(--planner-title-left-margin);
-                    border-left: 0.07rem solid var(--planner-title-background-color);
-                    border-right: 0.07rem solid var(--planner-title-background-color);
-                    border-bottom: 0.07rem solid var(--planner-title-background-color);
+                    margin-left: $planner-title-left-margin;
+                    border-left: 0.07rem solid $planner-title-background-color;
+                    border-right: 0.07rem solid $planner-title-background-color;
+                    border-bottom: 0.07rem solid $planner-title-background-color;
                     overflow-x: auto;
 
                     // Move Backlinks for preventing content overflow
@@ -81,7 +105,7 @@
                             > div.animate-zoom-into-bullet {
                             // Week Bar Adjustment
                                 > .tree-node--parent {
-                                    margin-left: var(--planner-week-left-margin);
+                                    margin-left: $planner-week-left-margin;
                                     margin-right: 0;
                                 }
                             // Remove Week TreeNode Line
@@ -94,7 +118,7 @@
                                     flex-direction: row;
                                     left: 0px !important;
                                     padding-left: unset;
-                                    margin-left: var(--planner-title-left-margin);
+                                    margin-left: $planner-title-left-margin;
                                     margin-right: 0;
 
 
@@ -102,7 +126,7 @@
                                         display: inline-block;
                                         flex: 1 0 0;
                                         white-space: wrap;
-                                        border: 0.07rem solid var(--planner-title-background-color);
+                                        border: 0.07rem solid $planner-title-background-color;
                                         min-width: 260px;
 
                                         // Constant Width
@@ -117,7 +141,7 @@
                                         // Column planner Head
                                             > div:nth-of-type(1) {
                                                 font-weight: 600;
-                                                background-color: var(--planner-header-background-color);
+                                                background-color: $planner-header-background-color;
                                                 text-align: center;
                                             }
                                         // Line Grid Adjustment
@@ -231,7 +255,7 @@
                                         > div:nth-of-type(6) {
                                             > div.tree-node--parent  {
                                                 color: #000;
-                                                background-color: #D4EEFF;
+                                                background-color: $planner-saturday;
 
                                                 .rem-text {
                                                     .rem-reference {
@@ -249,7 +273,7 @@
                                         > div:nth-of-type(7) {
                                             > div.tree-node--parent  {
                                                 color: #000;
-                                                background-color: #FFD8CF;
+                                                background-color: $planner-sunday;
 
                                                 .rem-text {
                                                     .rem-reference {
@@ -283,173 +307,27 @@
                 }
         }
     }
-// Dark Mode Compatibility
-    .dark {
-        #hierarchy-editor {
-            [data-rem-container-tags~="planner"] {
-
-                // Planner Title Bar
-                    > div.tree-node--parent {
-                        [data-rem-tags~="planner"] {
-                            background-color: var(--planner-title-background-color-dark);
-                            border: 0.07rem solid var(--planner-title-background-color-dark);
-                        }
-                    }
-                // Planner Container
-                    > div.TreeNode {
-                        border-left: 0.07rem solid var(--planner-title-background-color-dark);
-                        border-right: 0.07rem solid var(--planner-title-background-color-dark);
-                        border-bottom: 0.07rem solid var(--planner-title-background-color-dark);
-
-                        >div.animate-zoom-into-bullet {
-
-                            // Week Bar Adjustment
-
-                            // Remove Week TreeNode Line
-
-                            // Structure
-                            >div.TreeNode {
-
-                                >div.animate-zoom-into-bullet {
-                                    border: 0.07rem solid var(--planner-title-background-color-dark);
-
-                                    // Constant Width
-
-                                    // Column planner Head
-                                    >div:nth-of-type(1) {
-                                        background-color: var(--planner-header-background-color-dark);
-                                    }
-
-                                    // Line Grid Adjustment
-
-                                }
-
-                                // Portal Layout
-                                    .portal-tree-node-box {
-                                        margin-left: unset;
-                                        padding-left: unset;
-                                    }
-                                // Monday
-                                    >div:nth-of-type(1) {
-                                        >div.tree-node--parent {
-                                            .rem-text {
-                                                &::after {
-                                                    content: "Mon";
-                                                }
-                                            }
-                                        }
-                                    }
-                                // Tuesday
-                                    >div:nth-of-type(2) {
-                                        >div.tree-node--parent {
-                                            .rem-text {
-                                                &::after {
-                                                    content: "Tue";
-                                                }
-                                            }
-                                        }
-                                    }
-                                // Wednesday
-                                    > div:nth-of-type(3) {
-                                        >div.tree-node--parent {
-                                            .rem-text {
-                                                &::after {
-                                                    content: "Wed";
-                                                }
-                                            }
-                                        }
-                                    }
-                                // Thursday
-                                    > div:nth-of-type(4) {
-                                        >div.tree-node--parent {
-                                            .rem-text {
-                                                &::after {
-                                                    content: "Thu";
-                                                }
-                                            }
-                                        }
-                                    }
-                                // Friday
-                                    > div:nth-of-type(5) {
-                                        >div.tree-node--parent {
-                                            .rem-text {
-                                                &::after {
-                                                    content: "Fri";
-                                                }
-                                            }
-                                        }
-                                    }
-                                // Saturday
-                                    > div:nth-of-type(6) {
-                                        >div.tree-node--parent {
-                                            background-color: #183D4D;
-
-                                            .rem-text {
-                                                &::after {
-                                                    content: "Sat";
-                                                }
-                                            }
-                                        }
-                                    }
-                                // Sunday
-                                    > div:nth-of-type(7) {
-                                        >div.tree-node--parent {
-                                            background-color: #572A25;
-
-                                            .rem-text {
-                                                &::after {
-                                                    content: "Sun";
-                                                }
-                                            }
-                                        }
-                                    }
-                            }
-
-                            // Remove Daily Document background
-                        }
-                    }
-                // Highlight Style
-                    [data-rem-tags~="highlight"] {
-                        .highlight-color--red {
-                            background-color: #572924;
-                            .rem-text {
-                                color: #DFDFD5;
-                            }
-                        }
-                        .highlight-color--orange {
-                            background-color: #553D24;
-                            .rem-text {
-                                color: #DFDFD5;
-                            }
-                        }
-                        .highlight-color--yellow {
-                            background-color: #453E1E;
-                            .rem-text {
-                                color: #DFDFD5;
-                            }
-                        }
-                        .highlight-color--green {
-                            background-color: #253F27;
-                            .rem-text {
-                                color: #DFDFD5;
-                            }
-                        }
-                        .highlight-color--blue {
-                            background-color: #183C4D;
-                            .rem-text {
-                                color: #DFDFD5;
-                            }
-                        }
-                        .highlight-color--purple {
-                            background-color: #43273F;
-                            .rem-text {
-                                color: #DFDFD5;
-                            }
-                        }
-                    }
-            }
-        }
-    }
+}
+@include planner(
+    var(--planner-title-left-margin),
+    var(--planner-title-right-margin),
+    var(--planner-week-left-margin),
+    var(--planner-title-background-color),
+    var(--planner-header-background-color),
+    var(--planner-saturday),
+    var(--planner-sunday)
+);
+.dark {
+    @include planner(
+    var(--planner-title-left-margin),
+    var(--planner-title-right-margin),
+    var(--planner-week-left-margin),
+    var(--planner-title-background-color-dark),
+    var(--planner-header-background-color-dark),
+    var(--planner-saturday-dark),
+    var(--planner-sunday-dark)
+);
+}
 // Custom planner Cell Width Setting
     [data-rem-container-tags~="planner"][data-rem-container-tags~="w90"] > .TreeNode > div {min-width: 90px;}
     [data-rem-container-tags~="planner"][data-rem-container-tags~="w120"] > .TreeNode > div {min-width: 120px;}

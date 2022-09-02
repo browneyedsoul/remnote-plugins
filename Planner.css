@@ -8,6 +8,22 @@
   --planner-border-color: #F7F6F3;
   --planner-border-color-dark: #535353;
   --darkmode-text: #DFDFD5;
+  --planner-saturday: #D4EEFF;
+  --planner-sunday: #FFD8CF;
+  --planner-saturday-dark: #183C4D;
+  --planner-sunday-dark: #572924;
+  --planner-red: ;
+  --planner-orange: ;
+  --planner-yellow: ;
+  --planner-green: ;
+  --planner-blue: ;
+  --planner-purple: ;
+  --planner-red-dark: #572924;
+  --planner-orange-dark: #553D24;
+  --planner-yellow-dark: #453E1E;
+  --planner-green-dark: #253F27;
+  --planner-blue-dark: #183C4D;
+  --planner-purple-dark: #43273F;
   --planner-title-left-margin: 1.5rem;
   --planner-title-right-margin: ;
   --planner-week-left-margin: 1rem;
@@ -135,7 +151,7 @@
 }
 #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(6) > div.tree-node--parent {
   color: #000;
-  background-color: #D4EEFF;
+  background-color: var(--planner-saturday);
 }
 #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(6) > div.tree-node--parent .rem-text .rem-reference {
   color: unset;
@@ -147,7 +163,7 @@
 }
 #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(7) > div.tree-node--parent {
   color: #000;
-  background-color: #FFD8CF;
+  background-color: var(--planner-sunday);
 }
 #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(7) > div.tree-node--parent .rem-text .rem-reference {
   color: unset;
@@ -165,87 +181,153 @@
   background-color: unset;
 }
 
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--parent {
+  margin-left: var(--planner-title-left-margin);
+  margin-right: var(--planner-title-right-margin);
+}
 .dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--parent [data-rem-tags~=planner] {
   background-color: var(--planner-title-background-color-dark);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-right: 5px;
   border: 0.07rem solid var(--planner-title-background-color-dark);
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode {
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children {
+  display: flex;
+  flex-direction: column;
+  left: 0px !important;
+  padding-left: unset;
+  padding-bottom: 1rem;
+  margin-left: var(--planner-title-left-margin);
   border-left: 0.07rem solid var(--planner-title-background-color-dark);
   border-right: 0.07rem solid var(--planner-title-background-color-dark);
   border-bottom: 0.07rem solid var(--planner-title-background-color-dark);
+  overflow-x: auto;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet {
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children .float-end {
+  left: -6px;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet {
+  display: inline-block;
+  flex: 1 0 0;
+  white-space: wrap;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children {
+  flex-direction: column;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > .tree-node--parent {
+  margin-left: var(--planner-week-left-margin);
+  margin-right: 0;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet .TreeNode.tree-node--children {
+  border-width: 0 !important;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode {
+  display: flex;
+  flex-direction: row;
+  left: 0px !important;
+  padding-left: unset;
+  margin-left: var(--planner-title-left-margin);
+  margin-right: 0;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet {
+  display: inline-block;
+  flex: 1 0 0;
+  white-space: wrap;
   border: 0.07rem solid var(--planner-title-background-color-dark);
+  min-width: 260px;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet > div:nth-of-type(1) {
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet .rem-text,
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet .EditorContainer,
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet .rich-text-editor,
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet .RichTextViewer {
+  overflow-wrap: anywhere;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet > div:nth-of-type(1) {
+  font-weight: 600;
   background-color: var(--planner-header-background-color-dark);
+  text-align: center;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.animate-zoom-into-bullet > div.TreeNode .portal-tree-node-box {
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet:nth-child(n+2) {
+  margin-left: -1px;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet > .tree-node--parent .text-gray-20 {
+  display: none;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet > .TreeNode {
+  width: calc(100% - 0px);
+  left: 0px !important;
+  margin-left: 11.5px;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet {
+  position: relative;
+  left: -23px;
+  width: 100%;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div.animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet .TreeNode > .animate-zoom-into-bullet {
+  margin-top: 1px;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode .portal-tree-node-box {
   margin-left: unset;
   padding-left: unset;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(1) > div.tree-node--parent .rem-text::after {
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div > div.tree-node--parent .rem-text::after {
+  margin-right: 0.5rem;
+  opacity: 0.3;
+  float: right;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(1) > div.tree-node--parent .rem-text::after {
   content: "Mon";
+  white-space: nowrap;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(2) > div.tree-node--parent .rem-text::after {
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(2) > div.tree-node--parent .rem-text::after {
   content: "Tue";
+  white-space: nowrap;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(3) > div.tree-node--parent .rem-text::after {
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(3) > div.tree-node--parent .rem-text::after {
   content: "Wed";
+  white-space: nowrap;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(4) > div.tree-node--parent .rem-text::after {
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(4) > div.tree-node--parent .rem-text::after {
   content: "Thu";
+  white-space: nowrap;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(5) > div.tree-node--parent .rem-text::after {
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(5) > div.tree-node--parent .rem-text::after {
   content: "Fri";
+  white-space: nowrap;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(6) > div.tree-node--parent {
-  background-color: #183D4D;
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(6) > div.tree-node--parent {
+  color: #000;
+  background-color: var(--planner-saturday-dark);
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(6) > div.tree-node--parent .rem-text::after {
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(6) > div.tree-node--parent .rem-text .rem-reference {
+  color: unset;
+  background-color: unset;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(6) > div.tree-node--parent .rem-text::after {
   content: "Sat";
+  white-space: nowrap;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(7) > div.tree-node--parent {
-  background-color: #572A25;
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(7) > div.tree-node--parent {
+  color: #000;
+  background-color: var(--planner-sunday-dark);
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.TreeNode > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(7) > div.tree-node--parent .rem-text::after {
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(7) > div.tree-node--parent .rem-text .rem-reference {
+  color: unset;
+  background-color: unset;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.TreeNode > div:nth-of-type(7) > div.tree-node--parent .rem-text::after {
   content: "Sun";
+  white-space: nowrap;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] [data-rem-tags~=highlight] .highlight-color--red {
-  background-color: #572924;
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet .rem-reference-container[data-rem-tags~=daily-document] .rem-reference [data-icon~=planner] {
+  display: none !important;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=planner] [data-rem-tags~=highlight] .highlight-color--red .rem-text {
-  color: #DFDFD5;
-}
-.dark #hierarchy-editor [data-rem-container-tags~=planner] [data-rem-tags~=highlight] .highlight-color--orange {
-  background-color: #553D24;
-}
-.dark #hierarchy-editor [data-rem-container-tags~=planner] [data-rem-tags~=highlight] .highlight-color--orange .rem-text {
-  color: #DFDFD5;
-}
-.dark #hierarchy-editor [data-rem-container-tags~=planner] [data-rem-tags~=highlight] .highlight-color--yellow {
-  background-color: #453E1E;
-}
-.dark #hierarchy-editor [data-rem-container-tags~=planner] [data-rem-tags~=highlight] .highlight-color--yellow .rem-text {
-  color: #DFDFD5;
-}
-.dark #hierarchy-editor [data-rem-container-tags~=planner] [data-rem-tags~=highlight] .highlight-color--green {
-  background-color: #253F27;
-}
-.dark #hierarchy-editor [data-rem-container-tags~=planner] [data-rem-tags~=highlight] .highlight-color--green .rem-text {
-  color: #DFDFD5;
-}
-.dark #hierarchy-editor [data-rem-container-tags~=planner] [data-rem-tags~=highlight] .highlight-color--blue {
-  background-color: #183C4D;
-}
-.dark #hierarchy-editor [data-rem-container-tags~=planner] [data-rem-tags~=highlight] .highlight-color--blue .rem-text {
-  color: #DFDFD5;
-}
-.dark #hierarchy-editor [data-rem-container-tags~=planner] [data-rem-tags~=highlight] .highlight-color--purple {
-  background-color: #43273F;
-}
-.dark #hierarchy-editor [data-rem-container-tags~=planner] [data-rem-tags~=highlight] .highlight-color--purple .rem-text {
-  color: #DFDFD5;
+.dark #hierarchy-editor [data-rem-container-tags~=planner] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet .rem-reference-container[data-rem-tags~=daily-document] .rem-reference .RichTextViewer {
+  color: unset;
+  background-color: unset;
 }
 
 [data-rem-container-tags~=planner][data-rem-container-tags~=w90] > .TreeNode > div {
