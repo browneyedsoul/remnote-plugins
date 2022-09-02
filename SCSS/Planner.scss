@@ -77,209 +77,214 @@
                         .float-end {
                             left: -6px;
                         }
-
+                    // Month
                     > div.animate-zoom-into-bullet {
                         display: inline-block;
                         flex: 1 0 0;
                         white-space: wrap;
 
-                        // Week Bar Adjustment
-                            > .tree-node--parent {
-                                margin-left: var(--planner-week-left-margin);
-                                margin-right: 0;
-                            }
-                        // Remove Week TreeNode Line
-                            .TreeNode.tree-node--children  {
-                                border-width: 0 !important;
-                            }
-                        // Structure
-                            > div.TreeNode {
-                                display: flex;
-                                left: 0px !important;
-                                padding-left: unset;
-                                margin-left: var(--planner-title-left-margin);
-                                margin-right: 0;
+                        > div.tree-node--children {
+                            flex-direction: column;
+                            > div.animate-zoom-into-bullet {
+                            // Week Bar Adjustment
+                                > .tree-node--parent {
+                                    margin-left: var(--planner-week-left-margin);
+                                    margin-right: 0;
+                                }
+                            // Remove Week TreeNode Line
+                                .TreeNode.tree-node--children  {
+                                    border-width: 0 !important;
+                                }
+                            // Structure
+                                > div.TreeNode {
+                                    display: flex;
+                                    left: 0px !important;
+                                    padding-left: unset;
+                                    margin-left: var(--planner-title-left-margin);
+                                    margin-right: 0;
 
 
-                                > div.animate-zoom-into-bullet {
-                                    display: inline-block;
-                                    flex: 1 0 0;
-                                    white-space: wrap;
-                                    border: 0.07rem solid var(--planner-title-background-color);
-                                    min-width: 260px;
+                                    > div.animate-zoom-into-bullet {
+                                        display: inline-block;
+                                        flex: 1 0 0;
+                                        white-space: wrap;
+                                        border: 0.07rem solid var(--planner-title-background-color);
+                                        min-width: 260px;
 
-                                    // Constant Width
-                                        .rem-text,
-                                        .EditorContainer,
-                                        .rich-text-editor,
-                                        .RichTextViewer {
-                                            overflow-wrap: anywhere;
-                                            flex-grow: 1;
-                                            max-width: 100%;
-                                        }
-                                    // Column planner Head
-                                        > div:nth-of-type(1) {
-                                            font-weight: 600;
-                                            background-color: var(--planner-header-background-color);
-                                            text-align: center;
-                                        }
-                                    // Line Grid Adjustment
-                                        &:nth-child(n+2) {
-                                            margin-left: -1px;
-                                        }
-                                    > .tree-node--parent {
-                                        .text-gray-20 {
-                                            display: none;
-                                        }
-                                    }
-
-                                    > .TreeNode {
-                                        width: calc(100% - 0px);
-                                        left: 0px !important;
-                                        margin-left: 11.5px;
-
-                                        > .animate-zoom-into-bullet {
-                                            position: relative;
-                                            left: -23px;
-                                            width: 100%;
-
-                                            .TreeNode {
-                                                > .animate-zoom-into-bullet {
-                                                    margin-top: 1px;
-                                                }
+                                        // Constant Width
+                                            .rem-text,
+                                            .EditorContainer,
+                                            .rich-text-editor,
+                                            .RichTextViewer {
+                                                overflow-wrap: anywhere;
+                                                flex-grow: 1;
+                                                max-width: 100%;
                                             }
-                                            .rem-text {
-                                                .EditorContainer {
-                                                    .RichTextViewer {
+                                        // Column planner Head
+                                            > div:nth-of-type(1) {
+                                                font-weight: 600;
+                                                background-color: var(--planner-header-background-color);
+                                                text-align: center;
+                                            }
+                                        // Line Grid Adjustment
+                                            &:nth-child(n+2) {
+                                                margin-left: -1px;
+                                            }
+                                        > .tree-node--parent {
+                                            .text-gray-20 {
+                                                display: none;
+                                            }
+                                        }
 
+                                        > .TreeNode {
+                                            width: calc(100% - 0px);
+                                            left: 0px !important;
+                                            margin-left: 11.5px;
+
+                                            > .animate-zoom-into-bullet {
+                                                position: relative;
+                                                left: -23px;
+                                                width: 100%;
+
+                                                .TreeNode {
+                                                    > .animate-zoom-into-bullet {
+                                                        margin-top: 1px;
+                                                    }
+                                                }
+                                                .rem-text {
+                                                    .EditorContainer {
+                                                        .RichTextViewer {
+
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
                                     }
+                                    // Portal Layout
+                                        .portal-tree-node-box {
+                                            margin-left: unset;
+                                            padding-left: unset;
+                                        }
+                                    // Global
+                                        > div {
+                                            > div.tree-node--parent  {
+                                                .rem-text {
+                                                    &::after {
+                                                        margin-right: 0.5rem;
+                                                        opacity: .3;
+                                                        float: right;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    // Monday
+                                        > div:nth-of-type(1) {
+                                            > div.tree-node--parent  {
+                                                .rem-text {
+                                                    &::after {
+                                                        content: "Mon";
+                                                        white-space: nowrap;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    // Tue
+                                        > div:nth-of-type(2) {
+                                            > div.tree-node--parent  {
+                                                .rem-text {
+                                                    &::after {
+                                                        content: "Tue";
+                                                        white-space: nowrap;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    // Wednesday
+                                        > div:nth-of-type(3) {
+                                            > div.tree-node--parent  {
+                                                .rem-text {
+                                                    &::after {
+                                                        content: "Wed";
+                                                        white-space: nowrap;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    // Thursday
+                                        > div:nth-of-type(4) {
+                                            > div.tree-node--parent  {
+                                                .rem-text {
+                                                    &::after {
+                                                        content: "Thu";
+                                                        white-space: nowrap;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    // Friday
+                                        > div:nth-of-type(5) {
+                                            > div.tree-node--parent  {
+                                                .rem-text {
+                                                    &::after {
+                                                        content: "Fri";
+                                                        white-space: nowrap;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    // Saturday
+                                        > div:nth-of-type(6) {
+                                            > div.tree-node--parent  {
+                                                color: #000;
+                                                background-color: #D4EEFF;
+
+                                                .rem-text {
+                                                    .rem-reference {
+                                                        color: unset;
+                                                        background-color: unset;
+                                                    }
+                                                    &::after {
+                                                        content: "Sat";
+                                                        white-space: nowrap;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    // Sunday
+                                        > div:nth-of-type(7) {
+                                            > div.tree-node--parent  {
+                                                color: #000;
+                                                background-color: #FFD8CF;
+
+                                                .rem-text {
+                                                    .rem-reference {
+                                                        color: unset;
+                                                        background-color: unset;
+                                                    }
+                                                    &::after {
+                                                        content: "Sun";
+                                                        white-space: nowrap;
+                                                    }
+                                                }
+                                            }
+                                        }
                                 }
-                                // Portal Layout
-                                    .portal-tree-node-box {
-                                        margin-left: unset;
-                                        padding-left: unset;
-                                    }
-                                // Global
-                                    > div {
-                                        > div.tree-node--parent  {
-                                            .rem-text {
-                                                &::after {
-                                                    margin-right: 0.5rem;
-                                                    opacity: .3;
-                                                    float: right;
-                                                }
-                                            }
+                            // Remove Daily Document background
+                                .rem-reference-container[data-rem-tags~="daily-document"] {
+                                    .rem-reference {
+                                        [data-icon~="planner"] {
+                                            display: none !important;
                                         }
-                                    }
-                                // Monday
-                                    > div:nth-of-type(1) {
-                                        > div.tree-node--parent  {
-                                            .rem-text {
-                                                &::after {
-                                                    content: "Mon";
-                                                    white-space: nowrap;
-                                                }
-                                            }
-                                        }
-                                    }
-                                // Tue
-                                    > div:nth-of-type(2) {
-                                        > div.tree-node--parent  {
-                                            .rem-text {
-                                                &::after {
-                                                    content: "Tue";
-                                                    white-space: nowrap;
-                                                }
-                                            }
-                                        }
-                                    }
-                                // Wednesday
-                                    > div:nth-of-type(3) {
-                                        > div.tree-node--parent  {
-                                            .rem-text {
-                                                &::after {
-                                                    content: "Wed";
-                                                    white-space: nowrap;
-                                                }
-                                            }
-                                        }
-                                    }
-                                // Thursday
-                                    > div:nth-of-type(4) {
-                                        > div.tree-node--parent  {
-                                            .rem-text {
-                                                &::after {
-                                                    content: "Thu";
-                                                    white-space: nowrap;
-                                                }
-                                            }
-                                        }
-                                    }
-                                // Friday
-                                    > div:nth-of-type(5) {
-                                        > div.tree-node--parent  {
-                                            .rem-text {
-                                                &::after {
-                                                    content: "Fri";
-                                                    white-space: nowrap;
-                                                }
-                                            }
-                                        }
-                                    }
-                                // Saturday
-                                    > div:nth-of-type(6) {
-                                        > div.tree-node--parent  {
-                                            color: #000;
-                                            background-color: #D4EEFF;
 
-                                            .rem-text {
-                                                .rem-reference {
-                                                    color: unset;
-                                                    background-color: unset;
-                                                }
-                                                &::after {
-                                                    content: "Sat";
-                                                    white-space: nowrap;
-                                                }
-                                            }
+                                        .RichTextViewer {
+                                            color: unset;
+                                            background-color: unset;
                                         }
-                                    }
-                                // Sunday
-                                    > div:nth-of-type(7) {
-                                        > div.tree-node--parent  {
-                                            color: #000;
-                                            background-color: #FFD8CF;
-
-                                            .rem-text {
-                                                .rem-reference {
-                                                    color: unset;
-                                                    background-color: unset;
-                                                }
-                                                &::after {
-                                                    content: "Sun";
-                                                    white-space: nowrap;
-                                                }
-                                            }
-                                        }
-                                    }
-                            }
-                        // Remove Daily Document background
-                            .rem-reference-container[data-rem-tags~="daily-document"] {
-                                .rem-reference {
-                                    [data-icon~="planner"] {
-                                        display: none !important;
-                                    }
-
-                                    .RichTextViewer {
-                                        color: unset;
-                                        background-color: unset;
                                     }
                                 }
                             }
+                        }
                     }
                 }
         }
