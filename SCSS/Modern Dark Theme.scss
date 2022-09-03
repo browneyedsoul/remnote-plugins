@@ -3519,6 +3519,9 @@
                     > div {
                         > div.overflow-hidden {
                             overflow: unset;
+                            > div.truncate {
+                                overflow: unset;
+                            }
                         }
                     }
 

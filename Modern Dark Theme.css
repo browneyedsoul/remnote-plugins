@@ -2648,6 +2648,9 @@
 #document-sidebar > div:nth-of-type(2) .rounded-md > div > div.overflow-hidden {
   overflow: unset;
 }
+#document-sidebar > div:nth-of-type(2) .rounded-md > div > div.overflow-hidden > div.truncate {
+  overflow: unset;
+}
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--red > div > div {
   background-color: var(--highlight-color--red-bg-dark);
   border-radius: 4px;
