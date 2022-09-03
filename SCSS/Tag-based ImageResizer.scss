@@ -31,3 +31,16 @@
         }
     }
 }
+
+@for $i from 1 through 40 {
+    [data-rem-container-tags~="#{$i * 50px}"] {
+        @extend %declutter;
+        .inline-block {
+            @extend %w-100;
+            .inline-block.align-text-top {
+                @extend %fix;
+                width: #{$i * 50px} !important;
+            }
+        }
+    }
+}

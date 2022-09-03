@@ -1,3 +1,43 @@
+[data-rem-container-tags~="2000px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1950px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1900px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1850px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1800px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1750px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1700px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1650px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1600px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1550px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1500px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1450px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1400px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1350px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1300px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1250px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1200px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1150px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1100px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1050px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="1000px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="950px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="900px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="850px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="800px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="750px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="700px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="650px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="600px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="550px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="500px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="450px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="400px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="350px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="300px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="250px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="200px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="150px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="100px"] .inline-block .inline-block.align-text-top,
+[data-rem-container-tags~="50px"] .inline-block .inline-block.align-text-top,
 [data-rem-container-tags~="200"] .inline-block .inline-block.align-text-top,
 [data-rem-container-tags~="195"] .inline-block .inline-block.align-text-top,
 [data-rem-container-tags~="190"] .inline-block .inline-block.align-text-top,
@@ -45,6 +85,46 @@
   height: auto !important;
 }
 
+[data-rem-container-tags~="2000px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1950px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1900px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1850px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1800px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1750px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1700px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1650px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1600px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1550px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1500px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1450px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1400px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1350px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1300px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1250px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1200px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1150px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1100px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1050px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="1000px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="950px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="900px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="850px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="800px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="750px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="700px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="650px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="600px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="550px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="500px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="450px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="400px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="350px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="300px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="250px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="200px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="150px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="100px"] .hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~="50px"] .hierarchy-editor__tag-bar__tag,
 [data-rem-container-tags~="200"] .hierarchy-editor__tag-bar__tag,
 [data-rem-container-tags~="195"] .hierarchy-editor__tag-bar__tag,
 [data-rem-container-tags~="190"] .hierarchy-editor__tag-bar__tag,
@@ -87,6 +167,46 @@
 [data-rem-container-tags~="5"] .hierarchy-editor__tag-bar__tag {
   background-color: transparent !important;
 }
+[data-rem-container-tags~="2000px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1950px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1900px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1850px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1800px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1750px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1700px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1650px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1600px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1550px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1500px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1450px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1400px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1350px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1300px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1250px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1200px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1150px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1100px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1050px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="1000px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="950px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="900px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="850px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="800px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="750px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="700px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="650px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="600px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="550px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="500px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="450px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="400px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="350px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="300px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="250px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="200px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="150px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="100px"] .hierarchy-editor__tag-bar__tag span,
+[data-rem-container-tags~="50px"] .hierarchy-editor__tag-bar__tag span,
 [data-rem-container-tags~="200"] .hierarchy-editor__tag-bar__tag span,
 [data-rem-container-tags~="195"] .hierarchy-editor__tag-bar__tag span,
 [data-rem-container-tags~="190"] .hierarchy-editor__tag-bar__tag span,
@@ -130,6 +250,46 @@
   display: none;
 }
 
+[data-rem-container-tags~="2000px"] .inline-block,
+[data-rem-container-tags~="1950px"] .inline-block,
+[data-rem-container-tags~="1900px"] .inline-block,
+[data-rem-container-tags~="1850px"] .inline-block,
+[data-rem-container-tags~="1800px"] .inline-block,
+[data-rem-container-tags~="1750px"] .inline-block,
+[data-rem-container-tags~="1700px"] .inline-block,
+[data-rem-container-tags~="1650px"] .inline-block,
+[data-rem-container-tags~="1600px"] .inline-block,
+[data-rem-container-tags~="1550px"] .inline-block,
+[data-rem-container-tags~="1500px"] .inline-block,
+[data-rem-container-tags~="1450px"] .inline-block,
+[data-rem-container-tags~="1400px"] .inline-block,
+[data-rem-container-tags~="1350px"] .inline-block,
+[data-rem-container-tags~="1300px"] .inline-block,
+[data-rem-container-tags~="1250px"] .inline-block,
+[data-rem-container-tags~="1200px"] .inline-block,
+[data-rem-container-tags~="1150px"] .inline-block,
+[data-rem-container-tags~="1100px"] .inline-block,
+[data-rem-container-tags~="1050px"] .inline-block,
+[data-rem-container-tags~="1000px"] .inline-block,
+[data-rem-container-tags~="950px"] .inline-block,
+[data-rem-container-tags~="900px"] .inline-block,
+[data-rem-container-tags~="850px"] .inline-block,
+[data-rem-container-tags~="800px"] .inline-block,
+[data-rem-container-tags~="750px"] .inline-block,
+[data-rem-container-tags~="700px"] .inline-block,
+[data-rem-container-tags~="650px"] .inline-block,
+[data-rem-container-tags~="600px"] .inline-block,
+[data-rem-container-tags~="550px"] .inline-block,
+[data-rem-container-tags~="500px"] .inline-block,
+[data-rem-container-tags~="450px"] .inline-block,
+[data-rem-container-tags~="400px"] .inline-block,
+[data-rem-container-tags~="350px"] .inline-block,
+[data-rem-container-tags~="300px"] .inline-block,
+[data-rem-container-tags~="250px"] .inline-block,
+[data-rem-container-tags~="200px"] .inline-block,
+[data-rem-container-tags~="150px"] .inline-block,
+[data-rem-container-tags~="100px"] .inline-block,
+[data-rem-container-tags~="50px"] .inline-block,
 [data-rem-container-tags~="200"] .inline-block,
 [data-rem-container-tags~="195"] .inline-block,
 [data-rem-container-tags~="190"] .inline-block,
@@ -331,4 +491,164 @@
 
 [data-rem-container-tags~="200"] .inline-block .inline-block.align-text-top {
   width: 200% !important;
+}
+
+[data-rem-container-tags~="50px"] .inline-block .inline-block.align-text-top {
+  width: 50px !important;
+}
+
+[data-rem-container-tags~="100px"] .inline-block .inline-block.align-text-top {
+  width: 100px !important;
+}
+
+[data-rem-container-tags~="150px"] .inline-block .inline-block.align-text-top {
+  width: 150px !important;
+}
+
+[data-rem-container-tags~="200px"] .inline-block .inline-block.align-text-top {
+  width: 200px !important;
+}
+
+[data-rem-container-tags~="250px"] .inline-block .inline-block.align-text-top {
+  width: 250px !important;
+}
+
+[data-rem-container-tags~="300px"] .inline-block .inline-block.align-text-top {
+  width: 300px !important;
+}
+
+[data-rem-container-tags~="350px"] .inline-block .inline-block.align-text-top {
+  width: 350px !important;
+}
+
+[data-rem-container-tags~="400px"] .inline-block .inline-block.align-text-top {
+  width: 400px !important;
+}
+
+[data-rem-container-tags~="450px"] .inline-block .inline-block.align-text-top {
+  width: 450px !important;
+}
+
+[data-rem-container-tags~="500px"] .inline-block .inline-block.align-text-top {
+  width: 500px !important;
+}
+
+[data-rem-container-tags~="550px"] .inline-block .inline-block.align-text-top {
+  width: 550px !important;
+}
+
+[data-rem-container-tags~="600px"] .inline-block .inline-block.align-text-top {
+  width: 600px !important;
+}
+
+[data-rem-container-tags~="650px"] .inline-block .inline-block.align-text-top {
+  width: 650px !important;
+}
+
+[data-rem-container-tags~="700px"] .inline-block .inline-block.align-text-top {
+  width: 700px !important;
+}
+
+[data-rem-container-tags~="750px"] .inline-block .inline-block.align-text-top {
+  width: 750px !important;
+}
+
+[data-rem-container-tags~="800px"] .inline-block .inline-block.align-text-top {
+  width: 800px !important;
+}
+
+[data-rem-container-tags~="850px"] .inline-block .inline-block.align-text-top {
+  width: 850px !important;
+}
+
+[data-rem-container-tags~="900px"] .inline-block .inline-block.align-text-top {
+  width: 900px !important;
+}
+
+[data-rem-container-tags~="950px"] .inline-block .inline-block.align-text-top {
+  width: 950px !important;
+}
+
+[data-rem-container-tags~="1000px"] .inline-block .inline-block.align-text-top {
+  width: 1000px !important;
+}
+
+[data-rem-container-tags~="1050px"] .inline-block .inline-block.align-text-top {
+  width: 1050px !important;
+}
+
+[data-rem-container-tags~="1100px"] .inline-block .inline-block.align-text-top {
+  width: 1100px !important;
+}
+
+[data-rem-container-tags~="1150px"] .inline-block .inline-block.align-text-top {
+  width: 1150px !important;
+}
+
+[data-rem-container-tags~="1200px"] .inline-block .inline-block.align-text-top {
+  width: 1200px !important;
+}
+
+[data-rem-container-tags~="1250px"] .inline-block .inline-block.align-text-top {
+  width: 1250px !important;
+}
+
+[data-rem-container-tags~="1300px"] .inline-block .inline-block.align-text-top {
+  width: 1300px !important;
+}
+
+[data-rem-container-tags~="1350px"] .inline-block .inline-block.align-text-top {
+  width: 1350px !important;
+}
+
+[data-rem-container-tags~="1400px"] .inline-block .inline-block.align-text-top {
+  width: 1400px !important;
+}
+
+[data-rem-container-tags~="1450px"] .inline-block .inline-block.align-text-top {
+  width: 1450px !important;
+}
+
+[data-rem-container-tags~="1500px"] .inline-block .inline-block.align-text-top {
+  width: 1500px !important;
+}
+
+[data-rem-container-tags~="1550px"] .inline-block .inline-block.align-text-top {
+  width: 1550px !important;
+}
+
+[data-rem-container-tags~="1600px"] .inline-block .inline-block.align-text-top {
+  width: 1600px !important;
+}
+
+[data-rem-container-tags~="1650px"] .inline-block .inline-block.align-text-top {
+  width: 1650px !important;
+}
+
+[data-rem-container-tags~="1700px"] .inline-block .inline-block.align-text-top {
+  width: 1700px !important;
+}
+
+[data-rem-container-tags~="1750px"] .inline-block .inline-block.align-text-top {
+  width: 1750px !important;
+}
+
+[data-rem-container-tags~="1800px"] .inline-block .inline-block.align-text-top {
+  width: 1800px !important;
+}
+
+[data-rem-container-tags~="1850px"] .inline-block .inline-block.align-text-top {
+  width: 1850px !important;
+}
+
+[data-rem-container-tags~="1900px"] .inline-block .inline-block.align-text-top {
+  width: 1900px !important;
+}
+
+[data-rem-container-tags~="1950px"] .inline-block .inline-block.align-text-top {
+  width: 1950px !important;
+}
+
+[data-rem-container-tags~="2000px"] .inline-block .inline-block.align-text-top {
+  width: 2000px !important;
 }
