@@ -2583,7 +2583,7 @@
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex.group-hover\:rn-clr-background-light-accent--hovered {
   margin-left: -2px;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div > span.rem-powerup-icon {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div span.rem-powerup-icon {
   filter: invert(0);
   position: relative;
   top: 1px;
