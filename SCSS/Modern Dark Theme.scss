@@ -417,6 +417,11 @@
             }
         }
     // rem-text & Header
+        .rem-text {
+            > div {
+                width: 100%;
+            }
+        }
         #hierarchy-editor {
             .rem-text.rem-header--1 {
                 font-size: var(--font-size-header-1);
