@@ -2600,7 +2600,7 @@
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer .highlight-color--purple {
   margin-left: 3px;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer > .rem-reference-container > span > span.rem-reference > span > span.RichTextViewer {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer .rem-reference-container span.rem-reference span.RichTextViewer {
   background-color: unset;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div:only-child {

@@ -3453,14 +3453,10 @@
                                                     margin-left: 3px;
                                                 }
 
-                                            > .rem-reference-container  {
-                                                > span {
-                                                    > span.rem-reference {
-                                                        > span {
-                                                            > span.RichTextViewer {
-                                                                background-color: unset;
-                                                            }
-                                                        }
+                                            .rem-reference-container  {
+                                                span.rem-reference {
+                                                    span.RichTextViewer {
+                                                        background-color: unset;
                                                     }
                                                 }
                                             }
