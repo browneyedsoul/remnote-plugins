@@ -422,11 +422,13 @@
             }
     }
     // Seperated for priority
-    #content {
-        .content__page {
-            .document-header-top-bar {
-                @include highlight-text-dark;
-                @include highlight-color-notbold-dark;
+    .dark {
+        #content {
+            .content__page {
+                .rn-pane__top-bar {
+                    @include highlight-text-dark;
+                    @include highlight-color-notbold-dark;
+                }
             }
         }
     }
