@@ -772,9 +772,14 @@
                     .rem-container--not-included-in-document-scope {
                         .rem-text {
                             opacity: 0.6;
+                            flex-wrap: unset;
 
                             .RichTextViewer {
-                                display: inline-flex !important;
+                                display: inline-flex;
+
+                                > span.whitespace-pre-wrap {
+                                    white-space: pre;
+                                }
                             }
                         }
                     }

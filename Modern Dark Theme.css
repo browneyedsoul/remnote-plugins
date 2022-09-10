@@ -1028,9 +1028,13 @@
 }
 #document #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text {
   opacity: 0.6;
+  flex-wrap: unset;
 }
 #document #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text .RichTextViewer {
-  display: inline-flex !important;
+  display: inline-flex;
+}
+#document #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text .RichTextViewer > span.whitespace-pre-wrap {
+  white-space: pre;
 }
 #document #hierarchy-editor .portal-tree-transient-node-box .EditorContainerInline,
 #document #hierarchy-editor .portal-tree-transient-node-box .EditorContainerInline > span > span {
