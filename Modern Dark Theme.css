@@ -284,11 +284,6 @@
 #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div:hover {
   background-color: #000;
 }
-#content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div > div.float-right .icon-button {
-  color: #FFF;
-  opacity: 0.5;
-}
-
 .dark .document-table,
 .dark .multiple-windows__document,
 .dark #multiple-windows__document {
