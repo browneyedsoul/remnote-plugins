@@ -279,7 +279,7 @@
   border-radius: 1px;
 }
 #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div {
-  height: 25px;
+  height: 100%;
 }
 #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div:hover {
   background-color: #000;
