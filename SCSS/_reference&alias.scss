@@ -1,0 +1,141 @@
+// Declutter Thumbnail Size Console in rem-reference
+    .rem-reference-container {
+        .rem-reference {
+            .RichTextViewer {
+                div.image-node__container {
+                    span.image-node + div {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+// Alias
+    .work-in-progress-rem {
+        color: var(--reference-text);
+    }
+    [data-rem-container-tags~="aliases"] {
+        border: 0.1rem solid var(--line-color);
+        border-radius: 4px;
+        background-color: var(--alias-background);
+
+        // > .tree-node--parent {
+        //     div[data-rem-tags~="aliases"] {
+        //         .rem-text {
+        //             .EditorContainer {
+        //                 span.descriptor_rem_type {
+        //                     .RichTextViewer {
+        //                         .rem-reference-container {
+        //                             .rem-reference {
+        //                                 .rem-powerup-icon {
+        //                                     svg.text-icon {
+
+        //                                     }
+        //                                 }
+        //                                 #rem-reference__exclude-type-parent {
+        //                                     .rem-reference__exclude-type-parent__delete {
+
+        //                                     }
+        //                                 }
+        //                             }
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        > .tree-node--children {
+            [data-rem-container-tags~="list-item"] {
+                .tree-node--parent {
+                    [data-rem-tags~="list-item"] {
+                        .rem-text {
+                            // span.rem-bullet__number {
+
+                            // }
+                            span.rem-powerup-icon {
+                                .text-icon {
+                                    top: .2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Darkmode
+        .dark {
+            // Reference Style
+                .rem-reference-container:not(.rem-reference-container[data-rem-tags~="highlight"]) {
+                    .rem-reference {
+                        color: var(--reference-text-dark);
+
+                        .RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
+                            color: var(--reference-text-dark);
+                            background-color: var(--reference-background-dark);
+                        }
+
+                        &:hover {
+                            background-color: var(--darkmode-background-selected-darker);
+                        }
+                    }
+                }
+            // Reference + Highlight
+                .rem-reference-container {
+                    &[data-rem-tags~="highlight"] {
+                        .rem-reference {
+                            .RichTextViewer {
+                                color: var(--reference-text);
+                            }
+                        }
+                    }
+                    .rem-reference {
+                        .RichTextViewer {
+                            color: var(--reference-text-dark);
+                        }
+                    }
+                }
+            // Alias Darkmode
+                [data-rem-container-tags~="aliases"] {
+                    border: 0.1rem solid var(--line-color-dark);
+                    border-radius: 4px;
+                    background-color: var(--reference-background-dark);
+
+                    > .tree-node--parent {
+                        div[data-rem-tags~="aliases"] {
+                            .rem-text {
+                                .EditorContainer {
+                                    span.descriptor_rem_type {
+                                        .RichTextViewer {
+                                            .rem-reference-container {
+                                                .rem-reference {
+                                                    color: var(--darkmode-contrast);
+
+                                                    // .rem-powerup-icon {
+                                                    //     svg.text-icon {
+
+                                                    //     }
+                                                    // }
+                                                    // #rem-reference__exclude-type-parent {
+                                                    //     .rem-reference__exclude-type-parent__delete {
+
+                                                    //     }
+                                                    // }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            // Focused Slate child
+                            .rem-reference-container {
+                                .rem-reference {
+                                    color: var(--darkmode-contrast);
+                                }
+                            }
+                        }
+                    }
+                }
+        }

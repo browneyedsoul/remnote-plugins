@@ -1,0 +1,879 @@
+// Mosaic Windowed panes
+    // Page move console
+    .dark {
+        #content {
+            > div.content__page {
+                > div.top-bar-container.fade-on-hide-ui {
+                    > div {
+                        border-radius: 5px;
+                        background-color: var(--darkmode-background-sidebar);
+                    }
+                }
+            }
+        }
+    }
+    #content {
+        .document-sidebar--collapsed--vertical {
+            height: 1.5%;
+        }
+        > div.content__page {
+            > div.top-bar-container.fade-on-hide-ui {
+                width: fit-content;
+                position: absolute;
+                bottom: 0.2rem;
+                right: 0.2rem;
+                z-index: 6;
+                transform: scale(.75);
+
+                > div {
+                    border-radius: 5px;
+                    padding-left: unset;
+                }
+            }
+        }
+
+        .mosaic {
+            .mosaic-tile {
+                .mosaic-window {
+                    .mosaic-window-toolbar.draggable {
+                        background: #161616;
+                        border: 0.2rem solid #161616;
+                        border-radius: 1px;
+
+                        > div {
+                            background: #161616;
+                            height: 25px;
+
+                            &:hover {
+                                background-color: #000;
+                            }
+
+                            > div.float-right {
+                                background: #161616;
+
+                                .icon-button {
+                                    color: #FFF;
+                                    opacity: .5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Darkmode - General Background
+    .dark {
+        .document-table,
+        .multiple-windows__document,
+        #multiple-windows__document {
+            background-color: var(--darkmode-background) !important;
+        }
+        .tile__document {
+            > div.document-header-top-bar {
+                &.border-bottom-solid {
+                    border-bottom-style: unset;
+                }
+            }
+            div#document {
+                #hierarchy-editor {
+                    .tree-node--parent {
+                        .rem-container {
+                            // Disable Rem Container Hover Effect
+                                .hover\:bg-hover-bg {
+                                    background-color: unset;
+                                }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+// Tile Document
+    .tile__document {
+        // PDF Top Header
+            .pdf-viewer__header {
+                bottom: 1.8rem;
+                right: 8rem;
+                position: fixed;
+                z-index: 4;
+                background-color: var(--darkmode-background);
+                border-radius: 1rem;
+            }
+        // Document Scrollbar
+            &::-webkit-scrollbar-track {
+                margin-top: 3rem;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: #DDD;
+                border-radius: 3px;
+                min-height: 200px;
+            }
+        // Daily Notes Top bar
+            > div.rn-clr-background-primary {
+                background-color: var(--darkmode-background);
+                border-bottom-style: solid;
+                border-color: var(--darkmode-background-selected);
+
+                > div:nth-child(1) {
+                    // > p {
+                    //     // Daily Notes
+                    // }
+                    > div {
+                        // Month Year
+                        color: var(--darkmode-text);
+                    }
+                }
+                > div:nth-child(2) {
+                    // .text-gray-40 {
+                    //     // Day of Week
+                    // }
+                    p.m-0 {
+                        // Number
+                        color: var(--darkmode-text);
+                    }
+                    .bg-gray-5 {
+                        background-color: var(--darkmode-background-selected);
+                    }
+                    // Arrow
+                    > div.hover\:bg-hover-bg:hover {
+                        background-color: var(--darkmode-background-selected-darker);
+                    }
+                    > span.block {
+                        > div.bg-gray-10 {
+                            background-color: #000;
+                        }
+                        &:hover {
+                            background-color: var(--darkmode-background-selected-darker);
+                            border-radius: 4px;
+                        }
+                        // Saturday
+                        &:nth-of-type(6) {
+                            > div {
+                                > p {
+                                    color: var(--blue-text-dark);
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        // Sunday
+                        &:nth-of-type(7) {
+                            > div {
+                                > p {
+                                    color: var(--red-text-dark);
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+                > div:nth-child(3) {
+                    position: relative;
+                    top: 1rem;
+
+                    div.react-datepicker-wrapper {
+                        div.react-datepicker__input-container {
+                            .button {
+                                color: var(--darkmode-text) !important;
+                                background-color: var(--darkmode-background-selected);
+                                border-color: #8F8F8F !important;
+
+                                &:hover {
+                                    background-color: var(--darkmode-background-selected-darker);
+                                }
+
+                                > div {
+                                    filter: invert(.95);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        // Document Header Top Bar
+            .document-header-top-bar {
+                color: var(--darkmode-text);
+                background-color: var(--darkmode-background);
+                height: 3.2rem;
+                padding: 0.3rem;
+                position: fixed;
+                z-index: 5;
+                display: flex;
+                border-bottom-right-radius: 5px;
+
+                &::after {
+                    content: "";
+                    width: 1.2rem;
+                    height: 6rem;
+                    background-color: var(--darkmode-background);
+                    position: relative;
+                    top: -4rem;
+                    right: -0.5rem;
+                }
+                // Page Hierarchy
+                    > div:nth-of-type(1) {
+                        z-index: 1;
+                        overflow-x: scroll;
+                        white-space: pre;
+
+                        // Multi Line Breadcrumbs
+                        > div {
+                            flex-wrap: wrap;
+                            overflow-wrap: normal;
+                        }
+
+                        .flex {
+                            display: flex;
+
+                            // Hierarchy item
+                            .parent-link {
+                                color: var(--darkmode-text);
+                                border: 1px solid #7F7F7F;
+                                margin-top: 2px;
+                                margin-bottom: 2px;
+
+                                display: inline-flex;
+
+                                &:hover {
+                                    background-color: var(--darkmode-background-selected-darker);
+                                }
+
+                                .RichTextViewer {
+                                    display: flex;
+                                    align-items: center;
+
+                                    .rem-reference-container {
+                                        > span {
+                                            > span.rem-reference {
+                                                > span {
+                                                    > span.RichTextViewer {
+                                                        background-color: unset;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                // Multi Line Breadcrumbs
+                    .flex-nowrap {
+                        flex-wrap: wrap;
+                    }
+                // 3-Dots
+                    > div:nth-of-type(2) {
+                        .document__options-menu {
+                            .icon-button {
+                                .fill-current {
+                                    color: var(--darkmode-text);
+                                }
+                                &:hover {
+                                    background-color: var(--darkmode-background-selected-darker);
+                                }
+                            }
+                        }
+                    }
+                // Merge Button
+                    .w-max[color="#292936"] {
+                        color: unset;
+                    }
+                // Bold Highlights
+                    .RichTextViewer {
+                        @include highlight-text-dark();
+                    }
+                // Left Curve Trick
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        z-index: 0;
+
+                        background-color: transparent;
+                        bottom: -50px;
+                        height: 50px;
+                        width: 25px;
+                        border-top-left-radius: 25px;
+                        box-shadow: 0 -25px 0 0 var(--darkmode-background);
+                    }
+            }
+        // Remove Sticky Top bar in Daily Document
+            [data-document-tags~="daily-document"] {
+                #hierarchy-editor {
+                    > .fixed {
+                        > .animate-zoom-into-bullet {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        // Document
+            #document {
+                width: 100%;
+                margin-left: 0;
+                padding: 0;
+                margin-top: 70px;
+
+                // hierarchy-editor
+                    // Title
+                        div.mt-4 {
+                            width: calc(100% - 3.7rem);
+                            margin-left: 3rem;
+                            margin-right: 0.7rem;
+
+                            > div {
+                                #DocumentTitle {
+                                    .bold,
+                                    .bold.highlight-color--red,
+                                    .bold.highlight-color--orange,
+                                    .bold.highlight-color--yellow,
+                                    .bold.highlight-color--green,
+                                    .bold.highlight-color--blue,
+                                    .bold.highlight-color--purple {
+                                        background-color: unset !important;
+                                        font-weight: 700;
+                                    }
+                                    // rem-powerup-icon
+                                        .rem-powerup-icon {
+                                            display: flex;
+                                            align-items: center;
+                                            > .text-icon {
+                                                top: 0;
+                                            }
+                                        }
+                                    @include highlight-text();
+                                }
+                            }
+                        }
+                    // Editor
+                        #hierarchy-editor {
+                            width: calc(100% - 3.7rem);
+                            margin-left: 3rem;
+                            margin-right: 0.7rem;
+                            // Find / Filter / Replace - Ctrl(⌘) + F
+                                #hierarchy-editor__ctrl-f {
+                                    border: 2px solid white;
+
+                                    // > div {
+                                        // Find
+                                            // > span {
+                                            //     > div.bg-white {
+
+                                            //     }
+                                            // }
+                                        // Input Area
+                                            // > div.bg-gray-5 {
+
+                                            // }
+                                    // }
+                                }
+                            // Sticky Top bar
+                                > .fixed {
+                                    margin-top: 3.2rem;
+                                    width: calc(100% - 3.7rem) !important;
+
+                                    > .tree-node-container {
+                                        > .TreeNode {
+                                            left: 0px;
+                                        }
+                                    }
+
+                                    &.flex.justify-end {
+                                        width: unset !important;
+                                    }
+                                }
+                            // Rem
+                                .tree-node--parent {
+                                    .rem-container {
+                                        // Disable Rem Container Hover Effect
+                                            .hover\:bg-hover-bg {
+                                                background-color: unset;
+                                            }
+                                    }
+                                }
+                            // Highlight Color
+                                [data-rem-tags~="highlight"] {
+                                    > div {
+                                        > span {
+                                            @include highlight-span();
+                                        }
+                                    }
+                                }
+                                @include highlight();
+                                @include highlight-text();
+                                .EditorContainer {
+                                    @include highlight-color-notbold-light;
+                                }
+                            // Rem Reference
+                                .rem-reference-container {
+                                    &:not(.hierarchy-editor__tag-bar .rem-reference-container) {
+                                        .rem-reference {
+                                            .RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
+                                                color: var(--reference-text);
+                                                background-color: var(--reference-background);
+                                                font-family: 'Roboto Mono', monospace !important;
+                                                padding: 0 2px;
+                                                margin: 0 2px;
+                                                border-radius: 4px;
+                                            }
+                                        }
+                                    }
+                                }
+                    }
+
+            }
+    }
+    // Seperated for priority
+    #content {
+        .content__page {
+            .document-header-top-bar {
+                @include highlight-text-dark;
+                @include highlight-color-notbold-dark;
+            }
+        }
+    }
+// Tile Document - Darkmode
+    .dark {
+        .tile__document {
+            background-color: var(--darkmode-background) !important;
+            // PDF Top Header
+                .pdf-viewer__header {
+                    background-color: var(--darkmode-background-sidebar);
+                }
+            // Scrollbar
+                &::-webkit-scrollbar-thumb {
+                    background-color: #999;
+                }
+            // Daily Notes Top bar
+                > div.rn-clr-background-primary {
+                    background-color: var(--darkmode-background-sidebar);
+                    border-bottom-style: dashed;
+
+                    > div:nth-child(1) {
+                        // > p {
+                        //     // Daily Notes
+                        // }
+                        > div {
+                            // Month Year
+                            color: var(--darkmode-text);
+                        }
+                    }
+                    > div:nth-child(2) {
+                        // .text-gray-40 {
+                        //     // Day of Week
+                        // }
+                        p.m-0 {
+                            // Number
+                            color: var(--darkmode-text);
+                        }
+                        .bg-gray-5 {
+                            background-color: var(--darkmode-background-selected);
+                        }
+                        // Arrow
+                        > div.hover\:bg-hover-bg:hover {
+                            background-color: var(--darkmode-background-selected-darker);
+                        }
+                        // Day Block
+                        > span.block {
+                            > div {
+                                &:hover {
+                                    background-color: var(--darkmode-background-selected-darker);
+                                }
+                            }
+                            // Saturday
+                            &:nth-of-type(6) {
+                                > div {
+                                    > p {
+                                        color: var(--blue-text-dark);
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                            // Sunday
+                            &:nth-of-type(7) {
+                                > div {
+                                    > p {
+                                        color: var(--red-text-dark);
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            // Document Header Top Bar
+                .document-header-top-bar {
+                    color: var(--darkmode-text);
+                    background-color: var(--darkmode-background-sidebar);
+
+                    &::after {
+                        content: "";
+                        width: 1.2rem;
+                        height: 6rem;
+                        background-color: var(--darkmode-background-sidebar);
+                        position: relative;
+                        top: -4rem;
+                        right: -0.5rem;
+                    }
+
+                    // Page Hierarchy
+                        div:nth-of-type(1) {
+                            // Multi Line Breadcrumbs
+                            > div {
+                                flex-wrap: wrap;
+                                overflow-wrap: normal;
+                            }
+
+                            // Hierarchy item
+                                .parent-link {
+                                    color: var(--darkmode-text);
+                                    border: 1px solid #7F8094;
+                                    margin-top: 2px;
+                                    margin-bottom: 2px;
+
+                                    &:hover {
+                                        background-color: var(--darkmode-background-selected-darker);
+                                    }
+                                }
+                        }
+                    // 3-Dots
+                        div:nth-of-type(2) {
+                            .document__options-menu {
+                                .icon-button {
+                                    .fill-current {
+                                        color: var(--darkmode-text);
+                                    }
+                                }
+                            }
+                        }
+                    // Highlights
+                        .RichTextViewer {
+                            @include highlight-span();
+                            @include highlight-text-dark();
+                        }
+                    // Left Bottom Border Trick
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            z-index: 0;
+
+                            background-color: transparent;
+                            bottom: -50px;
+                            height: 50px;
+                            width: 25px;
+                            border-top-left-radius: 25px;
+                            box-shadow: 0 -25px 0 0 var(--darkmode-background-sidebar);
+                        }
+                }
+            // Document
+                #document {
+                    color: var(--darkmode-text);
+                    background-color: var(--darkmode-background) !important;
+
+                    // DocumentTopRow
+                        #DropToOpenAsDocument {
+                            > .group {
+                                // Custom CSS Page Alert Area
+                                    .bg-mint-10 {
+                                        color: var(--darkmode-text);
+                                        background-color: #365148;
+
+                                        > div.text-mint-80 {
+                                            color: unset;
+                                        }
+                                    }
+                                // DocumentTitle
+                                    > #DocumentTitle {
+                                        @include highlight-text-dark();
+                                        @include highlight-color-notbold-dark();
+                                    }
+                                // Add Source, Show Tags
+                                    .hover\:text-gray-70:hover {
+                                        color: var(--darkmode-contrast);
+                                    }
+                                    div.pr-4 {
+                                        .hover\:text-gray-70:hover {
+                                            color: var(--darkmode-contrast);
+                                        }
+                                    }
+                                // Sources & Tags
+                                    > div.grid {
+                                        // Sources & Tags Left Title
+                                            div.col-span-1 {
+                                                .text-gray-60 {
+                                                    color: var(--darkmode-text);
+                                                }
+                                                .hover\:bg-gray-5:hover {
+                                                    background-color: var(--darkmode-background-selected-darker);
+                                                }
+                                            }
+                                        // Sources & Tags Right Contents
+                                            div.rounded-md {
+                                                // Tags Right Contents
+                                                > span {
+                                                    .text-gray-80 {
+                                                        color: var(--darkmode-text);
+                                                    }
+                                                    .bg-gray-10 {
+                                                        background-color: var(--darkmode-background-selected);
+
+                                                        &:hover {
+                                                            background-color: var(--darkmode-background-selected-darker);
+                                                        }
+                                                    }
+                                                }
+                                                // Sources Right Contents
+                                                > span.pr-1 {
+                                                    color: var(--darkmode-text);
+
+                                                    > span {
+                                                        > div {
+                                                            border-style: unset;
+                                                            background-color: var(--darkmode-background-selected);
+
+                                                            &:hover {
+                                                                background-color: var(--darkmode-background-selected-darker);
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .text-gray-60 {
+                                                        color: var(--darkmode-text);
+                                                    }
+                                                }
+                                            }
+                                        // New Source, Merge
+                                            [contenteditable~="false"]:not(.pr-1 [contenteditable~="false"]) {
+                                                .text-gray-60 {
+                                                    color: var(--darkmode-text);
+
+                                                    &:hover {
+                                                        color: var(--darkmode-contrast);
+                                                        background-color: var(--darkmode-background-selected-darker);
+                                                    }
+                                                }
+                                                .border-solid {
+                                                    border-style: unset;
+                                                }
+                                            }
+                                    }
+                                #AddNewDocumentButtonSmall {
+                                    &:hover {
+                                        color: var(--darkmode-contrast);
+                                    }
+                                }
+                            }
+                        }
+                    // hierarchy-editor
+                        #hierarchy-editor {
+                            // Find / Filter / Replace - Ctrl(⌘) + F
+                                #hierarchy-editor__ctrl-f {
+                                    color: var(--darkmode-text);
+                                    background-color: var(--darkmode-background);
+                                    border: 2px solid white;
+
+                                    > div {
+                                        // Find
+                                            > span {
+                                                > div.bg-white {
+                                                    background-color: var(--darkmode-background-selected-darker);
+                                                }
+                                            }
+                                        // Input Area
+                                            > div.bg-gray-5 {
+                                                background-color: var(--darkmode-background-selected-darker);
+                                            }
+                                    }
+                                }
+                            // Sticky Top bar
+                                > .fixed {
+                                    background-color: var(--darkmode-background);
+
+                                    .bg-white {
+                                        background-color: unset;
+
+                                        .button {
+                                            background-color: var(--darkmode-background-button);
+                                            border-color: var(--line-color-dark) !important;
+                                        }
+                                    }
+                                }
+                            // remHierarchyTop
+                                // div:nth-of-type(1) {
+
+                                // }
+                            // HierarchyEditor
+                                div:nth-of-type(2) {
+                                    // Backlink
+                                        .button {
+                                            > div {
+                                                color: var(--darkmode-text);
+                                            }
+                                        }
+                                    // Checckbox
+                                        span.rem-checkbox {
+                                                border-color: #BBB !important;
+                                                background-color: #222 !important;
+                                            }
+                                }
+                            // Highlight Color
+                                [data-rem-tags~="highlight"] {
+                                    > div {
+                                        > span {
+                                            @include highlight-dark();
+                                        }
+                                    }
+                                }
+                                @include highlight-dark();
+                                @include highlight-text-dark();
+                                .EditorContainer {
+                                    @include highlight-color-notbold-dark();
+                                }
+                            // Rem Reference
+                                .rem-reference-container {
+                                    &:not(.hierarchy-editor__tag-bar .rem-reference-container) {
+                                        .rem-reference {
+                                            .RichTextViewer:not([data-rem-tags~="emoji"] .RichTextViewer) {
+                                                color: var(--reference-text-dark);
+                                                background-color: var(--reference-background-dark);
+                                                font-family: 'Roboto Mono', monospace !important;
+                                                padding: 0 2px;
+                                                margin: 0 2px;
+                                                border-radius: 4px;
+                                            }
+                                        }
+                                    }
+                                }
+                        }
+                }
+            .rem-container--focused {
+                .inline-flex {
+                    .text-gray-60 {
+                        color: var(--darkmode-text);
+                    }
+                }
+            }
+        }
+    }
+
+// Backlink
+    // Placement
+        #document {
+            #hierarchy-editor {
+                .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent) {
+                    .tree-node--parent {
+                        + .portal-tree-node-box {
+                            margin-left: -3px;
+                        }
+                    }
+                }
+                // Reference Breadcrumbs
+                    .rem-container--not-included-in-document-scope {
+                        .rem-text {
+                            opacity: 0.6;
+
+                            .RichTextViewer {
+                                display: inline-flex !important;
+                            }
+                        }
+                    }
+                    .portal-tree-transient-node-box {
+                        .EditorContainerInline,
+                        .EditorContainerInline > span > span {
+                            display: inline;
+                        }
+                    }
+            }
+        }
+    // Remove Creation Date
+        .hierarchy-editor__search-portal-section {
+            display: none;
+        }
+    // Darkmode Compatibility
+        .dark {
+            #document {
+                #hierarchy-editor {
+                    // Backlink Counter
+                        .backlink-counter {
+                            color: var(--darkmode-contrast);
+                            background-color: var(--darkmode-background-selected-darker);
+                            opacity: .8;
+                        }
+                        .highlight-color--red,
+                        .highlight-color--orange,
+                        .highlight-color--yellow,
+                        .highlight-color--green,
+                        .highlight-color--blue,
+                        .highlight-color--purple {
+                            .backlink-counter {
+                                    color: var(--darkmode-contrast);
+                                }
+                        }
+                    // Reference Breadcrumbs
+                        .rem-container--not-included-in-document-scope {
+                            .rem-text {
+                                color: var(--darkmode-text);
+                            }
+                            .float-right {
+                                .bg-white {
+                                    background-color: unset;
+                                }
+                            }
+                        }
+                    // Line Color
+                        .rem-container__top-level-rem-in-portal-border {
+                            .rem-container__top-level-rem-in-portal-border__inner {
+                                border-color: var(--line-color-dark);
+                            }
+                        }
+                    // 1.7~ Compatibility
+                        .tree-node--parent {
+                            .rem-container {
+                                .bg-white {
+                                    color: var(--darkmode-text);
+                                    background-color: var(--darkmode-background);
+
+                                    .button {
+                                        background-color: var(--darkmode-background-selected-darker);
+                                        border-color: #000 !important;
+
+                                        &:hover {
+                                            background-color: #636368;
+                                        }
+                                    }
+                                }
+                            }
+                            > .bg-white {
+                                color: var(--darkmode-text);
+                                background-color: var(--darkmode-background);
+
+                                .button {
+                                    background-color: var(--darkmode-background-selected-darker);
+                                    border-color: #000 !important;
+
+                                    &:hover {
+                                        background-color: #636368;
+                                    }
+                                }
+                            }
+                            #AutomaticSearchPortals {
+                                .text-base {
+                                    color: var(--darkmode-text);
+                                }
+                                .button {
+                                    background-color: var(--darkmode-background-selected-darker);
+                                    border-color: #000 !important;
+
+                                    &:hover {
+                                        background-color: #636368;
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+        }

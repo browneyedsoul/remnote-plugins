@@ -1,0 +1,36 @@
+// Rem-Bullet Container
+    // Darkmode Compatibility
+        .dark {
+            .rem-button__container {
+                .rem-bullet__container {
+                    // Toggle Collapse Button Hover effect
+                        .hover\:bg-hover-bg:hover {
+                            background-color: unset !important;
+                        }
+                    .rem-bullet--hidden-children {
+                        border-color: var(--darkmode-text);
+                        color: var(--darkmode-text);
+
+                        .perfect-circle__inner {
+                            > svg {
+                                .rem-bullet__ring {
+                                    fill: var(--bullet-ring-color-dark);
+                                }
+                                .rem-bullet__core {
+                                    fill: var(--bullet-core-color-dark);
+                                }
+                            }
+                        }
+                    }
+                    .rem-bullet--all-children-visible {
+                        .perfect-circle__inner {
+                            > svg {
+                                .rem-bullet__core {
+                                    fill: var(--bullet-ring-color-dark);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }

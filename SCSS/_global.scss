@@ -1,0 +1,518 @@
+// Global Elements
+    // hierarchy-editor & list-item
+        #hierarchy-editor {
+            margin-top: 0.5rem;
+
+            [data-rem-tags~="list-item"] {
+                .rem-text {
+                    .rem-bullet__number {
+                        margin-right: 1.2rem;
+                    }
+                }
+            }
+        }
+    // rem-text & Header
+        .rem-text {
+            > div {
+                width: 100%;
+            }
+        }
+        #hierarchy-editor {
+            .rem-text.rem-header--1 {
+                font-size: var(--font-size-header-1);
+            }
+            .rem-text.rem-header--2 {
+                font-size: var(--font-size-header-2);
+            }
+            .rem-text.rem-header--3 {
+                font-size: var(--font-size-header-3);
+            }
+        }
+    // Scrollbar
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+            width: 10px;
+            margin-right: 0.7rem;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #5A666A;
+            border: 2px solid transparent;
+            border-radius: 4px;
+        }
+    // Checkbox
+        // Box Style
+            .rem-checkbox, %checkbox-style {
+                border-radius: unset !important;
+            }
+        // Strikethrough Style
+            .rem-container--todo-finished {
+                color: #A2A2A2;
+                text-decoration: line-through;
+                text-decoration-style: double;
+            }
+    // Metadata Page
+        #RemPage {
+            background-color: #FFF;
+        }
+    // Span Element - Hyperlink
+        .text-blue-60 {
+            color: var(--link-node-color);
+
+            &.underline {
+                text-decoration: none !important;
+                font-family: 'Roboto Mono';
+            }
+        }
+    // Date Picker
+        .react-datepicker.search-results__date-picker {
+            background-color: #ffffff !important;
+        }
+    // Span Element - Inline Code & Codeblock
+        .quote {
+            font-family: var(--code-font-family);
+            font-size: var(--code-font-size);
+            color: var(--inline-code-color);
+            background-color: var(--inline-code-background);
+            margin-left: 0.125rem;
+            margin-right: 0.125rem;
+            padding-left: 0.125rem;
+            padding-right: 0.125rem;
+        }
+    // Tag bar
+        .hierarchy-editor__tag-bar {
+            line-height: 1rem;
+
+            .hierarchy-editor__tag-bar__tag {
+                // Remove # symbol
+                    > span.rn-tag__prefix {
+                        display: none;
+                    }
+                // Tag text
+                    > div:nth-of-type(1) {
+                        margin-left: 0.2rem;
+                    }
+                // Delete symbol
+                    .hierarchy-editor__tag-bar__tag__delete {
+                        opacity: .4;
+                        margin-left: unset;
+                    }
+                .RichTextViewer {
+                    .bold {
+                        &.highlight-color--red,
+                        &.highlight-color--orange,
+                        &.highlight-color--yellow,
+                        &.highlight-color--green,
+                        &.highlight-color--blue,
+                        &.highlight-color--purple {
+                            background-color: unset;
+                        }
+
+                        &.highlight-color--red {
+                            color: var(--red-text);
+                        }
+
+                        &.highlight-color--orange {
+                            color: var(--orange-text);
+                        }
+
+                        &.highlight-color--yellow {
+                            color: var(--yellow-text);
+                            text-shadow: var(--text-shadow-yellow);
+                        }
+
+                        &.highlight-color--green {
+                            color: var(--green-text);
+                        }
+
+                        &.highlight-color--blue {
+                            color: var(--blue-text);
+                        }
+
+                        &.highlight-color--purple {
+                            color: var(--purple-text);
+                        }
+                    }
+                    .highlight-color--red,
+                    .highlight-color--orange,
+                    .highlight-color--yellow,
+                    .highlight-color--green,
+                    .highlight-color--blue,
+                    .highlight-color--purple {
+                        margin-bottom: unset;
+                    }
+                }
+            }
+            > span[contenteditable~="false"] {
+                span.hierarchy-editor__tag-bar__tag {
+                    div.py-\[2px\] {
+                        display: flex;
+
+                        span.RichTextViewer {
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    // Highlight
+        // Basic Highlight Style
+            .highlight-color--red,
+            .highlight-color--orange,
+            .highlight-color--yellow,
+            .highlight-color--green,
+            .highlight-color--blue,
+            .highlight-color--purple {
+                border-radius: 3px;
+                margin-bottom: 1px;
+                color: black;
+            }
+            [data-rem-tags~=highlight] {
+                .rem-text,
+                .rem-text.rem-header--1,
+                .rem-text.rem-header--2,
+                .rem-text.rem-header--3 {
+                    color: black;
+                }
+            }
+            .rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) {
+                span {
+                    &.highlight-color--red,
+                    &.highlight-color--orange,
+                    &.highlight-color--yellow,
+                    &.highlight-color--green,
+                    &.highlight-color--blue,
+                    &.highlight-color--purple {
+                        font-weight: 550;
+                    }
+                }
+            }
+    // float-end Counter
+        .float-end {
+            right: 10px;
+        }
+    // Rem Console
+        .plus-button,
+        .six-dot,
+        .toggle-collapse-button {
+            background-color: transparent;
+
+            svg {
+                color: #000;
+            }
+        }
+    // Backlink & Portal
+        // Document Bottom Backlink Area
+            // Light
+                .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent):not(.animate-zoom-into-bullet.portal-tree-node-box) {
+                    border: 1px solid var(--line-color);
+                    border-radius: 4px;
+                    padding-left: 0.8rem;
+                    padding-right: 1rem;
+                    margin-bottom: 0.5rem;
+
+                    .rn-divider {
+                        display: none;
+                    }
+                }
+                .animate-zoom-into-bullet.portal-tree-node-box.portal-tree-node-box--focused {
+                    border: 0.15rem solid #6686FF;
+                    border-color: #6686FF;
+                }
+                .portal-tree-node-box {
+                    .rem-text {
+                        align-items: center;
+                    }
+                }
+            // Dark
+                .dark {
+                    .animate-zoom-into-bullet:not(.animate-zoom-into-bullet.bg-transparent):not(.animate-zoom-into-bullet.portal-tree-node-box) {
+                        border: 1px solid var(--line-color-dark);
+
+                        .rn-clr-background-primary {
+                            background: unset;
+                        }
+                        > div {
+                            background-color: unset !important;
+                        }
+                        .button {
+                            background: var(--rn-clr-background-primary);
+                        }
+                    }
+                    .rem-container--embedded-search-stub {
+                        > div {
+                            background-color: var(--darkmode-background);
+
+                            > div {
+                                background-color: var(--darkmode-background);
+                            }
+                        }
+                    }
+                }
+// Global Elements - Darkmode
+    .dark {
+    // Hightlight
+        .highlight-color--red {
+            background-color: var(--highlight-color--red-dark);
+        }
+        .highlight-color--orange {
+            background-color: var(--highlight-color--orange-dark);
+        }
+        .highlight-color--yellow {
+            background-color: var(--highlight-color--yellow-dark);
+        }
+        .highlight-color--green {
+            background-color: var(--highlight-color--green-dark);
+        }
+        .highlight-color--blue {
+            background-color: var(--highlight-color--blue-dark);
+        }
+        .highlight-color--purple {
+            background-color: var(--highlight-color--purple-dark);
+        }
+        .rem-text {
+            > .EditorContainer {
+                .RichTextViewer {
+                    .highlight-color--red:not(.bold.highlight-color--red) {
+                        background-color: var(--highlight-color--red-dark);
+                    }
+                    .highlight-color--orange:not(.bold.highlight-color--orange) {
+                        background-color: var(--highlight-color--orange-dark);
+                    }
+                    .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+                        background-color: var(--highlight-color--yellow-dark);
+                    }
+                    .highlight-color--green:not(.bold.highlight-color--green) {
+                        background-color: var(--highlight-color--green-dark);
+                    }
+                    .highlight-color--blue:not(.bold.highlight-color--blue) {
+                        background-color: var(--highlight-color--blue-dark);
+                    }
+                    .highlight-color--purple:not(.bold.highlight-color--purple) {
+                        background-color: var(--highlight-color--purple-dark);
+                    }
+                }
+            }
+            > .rich-text-editor {
+                > .EditorContainer {
+                    [data-slate-node="element"] {
+                        [data-slate-node~="text"] {
+                            .highlight-color--red:not(.bold.highlight-color--red) {
+                                background-color: var(--highlight-color--red-dark);
+                            }
+
+                            .highlight-color--orange:not(.bold.highlight-color--orange) {
+                                background-color: var(--highlight-color--orange-dark);
+                            }
+
+                            .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+                                background-color: var(--highlight-color--yellow-dark);
+                            }
+
+                            .highlight-color--green:not(.bold.highlight-color--green) {
+                                background-color: var(--highlight-color--green-dark);
+                            }
+
+                            .highlight-color--blue:not(.bold.highlight-color--blue) {
+                                background-color: var(--highlight-color--blue-dark);
+                            }
+
+                            .highlight-color--purple:not(.bold.highlight-color--purple) {
+                                background-color: var(--highlight-color--purple-dark);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    // Checkbox
+        .rem-container--todo-finished {
+            color: #A1A1A1;
+
+            .RichTextViewer,
+            [data-slate-node="text"] {
+                color: #909090;
+            }
+        }
+    // Katex
+        .katex,
+        .katex-display,
+        .latex-node--focused:not(.latex-node--block) .katex {
+            background-color: unset !important;
+        }
+    // Metadata Page
+        #RemPage {
+            background-color: #FFF;
+        }
+        .dark {
+            #RemPage {
+                color: var(--darkmode-text);
+                background-color: var(--darkmode-background);
+
+                [data-icon~="folder"] {
+                    color: var(--darkmode-text) !important;
+                    fill: var(--darkmode-text) !important;
+                }
+                .RichTextViewer {
+                    color: var(--darkmode-text);
+                }
+                .document-header-top-bar {
+                    color: var(--darkmode-text);
+
+                    .hover\:bg-gray-5:hover {
+                        background-color: var(--darkmode-background-selected-darker);
+                    }
+
+                    .bold {
+                        color: var(--darkmode-text);
+
+                        &.highlight-color--red,
+                        &.highlight-color--orange,
+                        &.highlight-color--yellow,
+                        &.highlight-color--green,
+                        &.highlight-color--blue,
+                        &.highlight-color--purple {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    // Span Element - General Text
+        .rem-text {
+            color: var(--darkmode-text);
+        }
+    // Span Element - Header
+        .rem-text.rem-header--1,
+        .rem-text.rem-header--2,
+        .rem-text.rem-header--3 {
+            color: var(--darkmode-text-header);
+
+            .EditorContainer {
+                .bold {
+                    color: var(--darkmode-text-header);
+                }
+            }
+        }
+    // Span Element - Hightlight Header
+        [data-rem-tags~="highlight"] {
+            .highlight-color--red,
+            .highlight-color--orange,
+            .highlight-color--yellow,
+            .highlight-color--green,
+            .highlight-color--blue,
+            .highlight-color--purple {
+                .rem-button__container {
+                    .rem-bullet__container {
+                        .rn-rem-icon-bullet {
+                            color: var(--bullet-ring-color);
+                        }
+                    }
+                }
+                .rem-text {
+                    color: var(--darkmode-text-header);
+                }
+            }
+        }
+    // Span Element - Bold Text
+        .rem-text:not(.rem-text.rem-header--1):not(.rem-text.rem-header--2):not(.rem-text.rem-header--3) {
+            .bold {
+                color: var(--darkmode-text-bold);
+                font-weight: 550;
+            }
+        }
+    // Span Element - Inline Code
+        .quote {
+            color: var(--inline-code-color-dark);
+            background-color: var(--inline-code-background-dark);
+        }
+    // Span Element - Hyperlink
+        .text-blue-60 {
+            color: var(--link-node-color-dark);
+            border-radius: 3px;
+            padding: 0 2px 1px 2px;
+
+            &.highlight-color--red,
+            &.highlight-color--orange,
+            &.highlight-color--yellow,
+            &.highlight-color--green,
+            &.highlight-color--blue,
+            &.highlight-color--purple {
+                color: #000;
+            }
+        }
+        [data-rem-tags~="highlight"] {
+            .text-blue-60 {
+                color: var(--link-node-color);
+            }
+        }
+    // TreeNode
+        .TreeNode {
+            border-width: 1.5px !important;
+            border-left-color: var(--line-color-dark) !important;
+        }
+    // Card
+        .separator-symbol:not(:empty):hover {
+            background-color: var(--darkmode-background-selected-darker);
+        }
+        .last_node_down_arrow:hover::after {
+            background-color: var(--darkmode-background-selected-darker);
+            border-radius: 3px;
+        }
+    // Icon
+        // Calendar icon
+            .rem-calendar-icon.text-text {
+                color: var(--darkmode-text);
+            }
+        // Power-up icon
+            .rem-powerup-icon {
+                .text-icon {
+                    color: var(--darkmode-text);
+                }
+            }
+    // Codeblock
+        #code-node {
+            background-color: var(--code-node-background-color-dark);
+
+            &::before {
+                background-color: var(--code-node-line-number-background-color-dark);
+            }
+        }
+        .codeLine::before {
+            color: var(--code-node-line-number-color-dark);
+        }
+    // Tag Searching Text
+        .work-in-progress-tag {
+            color: var(--darkmode-text);
+            background-color: var(--darkmode-background-selected-darker);
+        }
+    // Tag Bar
+        .hierarchy-editor__tag-bar {
+            .hierarchy-editor__tag-bar__tag {
+                color: var(--darkmode-text);
+                background-color: var(--darkmode-background-selected-darker);
+
+                .RichTextViewer {
+                    @include highlight-text-dark();
+                    @include highlight-color-notbold-dark();
+                }
+
+                .hierarchy-editor__tag-bar__tag__delete {
+                    color: var(--darkmode-text);
+                }
+            }
+        }
+        .cloze {
+            background-color: var(--darkmode-background-selected-darker);
+        }
+    // Rem Console
+        .plus-button,
+        .six-dot,
+        .toggle-collapse-button {
+            background-color: transparent;
+
+            svg {
+                color: var(--darkmode-text);
+            }
+        }
+    }

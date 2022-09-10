@@ -1,0 +1,110 @@
+// .popup-menu
+    .popup-menu {
+        > div.rn-popup__content {
+            @include highlight-text();
+            @include highlight-color-notbold-light();
+
+            > div.max-w-\[285px\] {
+                max-width: unset;
+            }
+        }
+    }
+    .dark {
+        .popup-menu {
+            > div.rn-popup__content {
+                @include highlight-text-dark();
+                @include highlight-color-notbold-dark();
+            }
+        }
+    }
+
+// #Popup - Delete, Disable Confirm, Highlight
+    .dark {
+        #Popup {
+            #PopupContent {
+                // Quick Add Popup
+                    > div:nth-of-type(2) {
+                        color: var(--darkmode-text);
+
+                        div.text-ellipsis {
+                            > div:nth-of-type(1) {
+                                .RichTextViewer {
+                                    color: var(--darkmode-contrast);
+                                }
+                            }
+                            > div:nth-of-type(2) {
+                                > svg {
+                                    fill: var(--darkmode-contrast) !important;
+                                    color: var(--darkmode-contrast) !important;
+                                }
+                            }
+                        }
+                    }
+                // Disable Cards
+                    .settings-page {
+                        > div {
+                            background-color: var(--darkmode-background);
+
+                            > div {
+                                div.popup__header {
+                                    background-color: var(--darkmode-background-selected-darker);
+                                }
+                                > div:nth-of-type(2) {
+                                    a {
+                                        color: var(--darkmode-text);
+
+                                        &.hover\:bg-gray-5:hover {
+                                            background-color: var(--darkmode-background-selected-darker);
+                                        }
+                                    }
+                                }
+                                div.popup__footer {
+                                    background-color: var(--darkmode-background);
+                                }
+                            }
+                        }
+                    }
+                // Delete Confirm
+                    #delete-confirm-popup {
+                        color: var(--darkmode-text);
+                        background-color: var(--darkmode-background);
+
+                        > div.popup__header {
+                            background-color: var(--darkmode-background-selected-darker);
+                        }
+                        > div:nth-of-type(2) {
+                            > div:nth-of-type(2) {
+                                > div {
+                                    color: var(--darkmode-text);
+                                }
+                            }
+                        }
+                        > div:nth-of-type(3) {
+                            .button.bg-white {
+                                background-color: var(--darkmode-background-selected-darker);
+                                border-color: unset !important;
+
+                                > div {
+                                    color: var(--darkmode-text);
+                                }
+
+                                &:hover {
+                                    background-color: var(--darkmode-background-selected);
+                                }
+                            }
+                        }
+                    }
+                // Highlight
+                    .document-popup-preview {
+                        #document {
+                            .rem-text {
+                                .EditorContainer {
+                                    @include highlight-span-text-dark();
+                                    @include highlight-text-dark();
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+    }

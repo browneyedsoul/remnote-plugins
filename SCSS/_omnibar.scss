@@ -1,0 +1,174 @@
+// Omnibar
+    [aria-label~="Omnibar"] {
+        max-width: 800px !important;
+        max-height: 1200px !important;
+        > div[data-omnibar-results~="true"] {
+            > div.flex {
+                > div:nth-child(2) {
+                    flex-direction: column-reverse !important;
+
+                    // > div:first-child {
+                    // 	zoom: 1.2;
+                    // }
+                    > div:last-child {
+                        zoom: .75;
+                        opacity: 0.4;
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+            // Thumbnail
+                span.RichTextViewer {
+                    > span.rem-reference-container {
+                        > span {
+                            > span.rem-reference {
+                                > span {
+                                    > span.RichTextViewer {
+                                        padding: unset;
+                                        margin: unset;
+                                        vertical-align: middle;
+                                        background-color: unset;
+                                        position: relative;
+                                        top: 0.05rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+    }
+    .dark {
+        [aria-label~="Omnibar"] {
+            color: var(--darkmode-text);
+            background-color: var(--darkmode-background);
+            border: 3px solid #FFF;
+            // Move Rem Input
+                input {
+                    color: var(--darkmode-text) !important;
+                }
+            // Top
+                > div:nth-of-type(1) {
+                    > div {
+                        background-color: var(--darkmode-background-selected-darker) !important;
+
+                        > span.RichTextViewer {
+                            color: var(--darkmode-text);
+                        }
+                    }
+                    // ⌘ + P Search Text
+                        > input {
+                            color: var(--darkmode-text);
+                        }
+                }
+            // Search Bar
+                > div:nth-of-type(2) {
+                    > div {
+                        > span.RichTextViewer {
+                            color: #000;
+                        }
+                    }
+
+                    > input {
+                        color: var(--darkmode-text);
+                    }
+                }
+            // Items
+                > div[data-omnibar-results~="true"] {
+                    // Focused item
+                        [data-cmdopt-selected~="true"] {
+                            background-color: var(--darkmode-background-selected) !important;
+
+                            > div:nth-of-type(1) {
+                                > div.rn-clr-content-secondary {
+                                    color: var(--darkmode-contrast);
+
+                                    > svg {
+                                        > g {
+                                            > path {
+                                                fill: var(--darkmode-contrast);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            > div:nth-of-type(2) {
+                                > div {
+                                    > div {
+                                        border-color: unset;
+                                        background-color: var(--darkmode-background-selected-darker);
+                                    }
+                                }
+                            }
+                        }
+                    // Unfocused item
+                        [data-cmdopt-selected~="false"] {
+                            > div:nth-of-type(1) {
+                                > div.rn-clr-content-secondary {
+                                    color: var(--darkmode-contrast);
+
+                                    > svg {
+                                        > g {
+                                            > path {
+                                                fill: var(--darkmode-contrast);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            > div:nth-of-type(2) {
+                                > div {
+                                    > div {
+                                        border-color: unset;
+                                        background-color: var(--darkmode-background-selected-darker);
+                                    }
+                                }
+                            }
+                        }
+                    // RightSide Description
+                        > div {
+                            > div:nth-of-type(2) {
+                                > div {
+                                    > div {
+                                        border-style: unset !important;
+                                        color: var(--darkmode-contrast) !important;
+                                        opacity: .9;
+                                        zoom: 1.1;
+                                    }
+                                }
+                            }
+                        }
+                }
+            // ⌘ + P Result
+                [data-omnibar-results~="true"] {
+                    > div {
+                        // Icon
+                            // > div:nth-of-type(1) {
+
+                            // }
+                        // Item
+                            > div:nth-of-type(2) {
+                                flex-direction: column-reverse !important;
+
+                                // Aimed Text
+                                    > div:nth-of-type(1) {
+                                        span.RichTextViewer {
+                                            span.rounded {
+                                                color: var(--red-text);
+                                            }
+                                        }
+                                    }
+                                // Hierarchy
+                                    > div:nth-of-type(2) {
+                                        opacity: .5;
+                                        zoom: 0.8;
+                                    }
+                            }
+                    }
+                }
+            // Bottom
+                // > div:nth-of-type(4) {
+
+                // }
+        }
+    }

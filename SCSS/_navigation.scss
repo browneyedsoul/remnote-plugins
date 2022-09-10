@@ -1,0 +1,19 @@
+// Navigation Bar
+    #content {
+        > div.content__page {
+            > div.top-bar-container {
+                > div {
+                    background-color: var(--darkmode-background);
+                }
+            }
+        }
+    }
+    .hierarchy-editor-list__sticky-top__rem-container {
+        position: relative;
+        top: -10px;
+
+        .rem-is-custom-rem-type--in-body,
+        .EditorContainer {
+            zoom: 90%;
+        }
+    }

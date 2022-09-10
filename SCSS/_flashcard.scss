@@ -1,0 +1,460 @@
+// Flashcard
+    // Preview Page
+        #Popup {
+            #PopupContent {
+                align-self: center;
+
+                .node-top-level-in-portal {
+                    z-index: 2;
+                }
+
+                > .document-popup-preview {
+                    > .document-header-top-bar {
+                        > div:nth-of-type(1) {
+                            overflow-x: auto;
+                        }
+                        // 3-Dots Option
+                        > div:nth-of-type(2) {
+                            position: relative;
+                            left: -1rem;
+                        }
+                    }
+                }
+                > #document {
+                    > #hierarchy-editor {
+                        > .fixed {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .dark {
+            #Popup {
+                #PopupContent {
+                    > div {
+                        .rn-close-button {
+                            &:hover {
+                                background-color: var(--darkmode-background-selected-darker);
+                            }
+                        }
+                    }
+                    > .document-popup-preview {
+                        background-color: var(--darkmode-background);
+
+                        > .document-header-top-bar {
+                            // Hierarchy
+                            > div:nth-of-type(1) {
+                                button {
+                                    color: var(--darkmode-text);
+
+                                    &:hover {
+                                        background-color: var(--darkmode-background-selected-darker);
+                                    }
+                                }
+                            }
+                            // 3-Dots Option
+                            > div:nth-of-type(2) {
+                                .icon-button {
+                                    &:hover {
+                                        background-color: var(--darkmode-background-selected-darker);
+                                    }
+                                }
+                            }
+                        }
+                        .tree-node--automatic-search-portal-header {
+                            .button {
+                                .w-max {
+                                    color: var(--darkmode-text);
+                                }
+                            }
+                        }
+                        #AutomaticSearchPortals {
+                            .button {
+                                .w-max {
+                                    color: var(--darkmode-text);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    // Queue Page
+        .queue-container {
+            .Queue {
+                // Image
+                    .react-transform-component {
+                        .react-transform-element {
+                            .inline-block {
+                                .group.inline-block.align-text-top {
+                                    width: 100% !important;
+                                    height: 100% !important;
+                                }
+                            }
+                        }
+                    }
+                // Question Title thumbnail
+                    .rem-bullet__document {
+                        display: flex;
+                        align-items: baseline;
+                        width: fit-content;
+
+                        .RichTextViewer {
+                            .thumbnail--with-width {
+                                height: 1em;
+                                width: auto;
+                            }
+                        }
+                    }
+                // Question Span
+                    .queue-text-large-font {
+                        font-size: 24px;
+                    }
+                // SRS Content
+                    .spacedRepetition {
+                        // Content
+                            > div {
+                                .spacedRepetitionContent {
+                                    height: 90%;
+                                    // Prompt
+                                        // .spaced-repetition__prompt {
+
+                                        // }
+                                    // Answer
+                                        .spacedRepetitionAnswer {
+                                            #hierarchy-editor {
+                                                > div {
+                                                    .tree-node-container {
+                                                        margin-right: 0.7rem;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                }
+                            }
+                        // Bottom
+                            .spaced-repetition__bottom {
+                                .spaced-repetition__accuracy-buttons {
+                                    .accuracy-button {
+
+                                        &:hover {
+                                            filter: brightness(110%);
+                                        }
+
+                                        .accuracy-button__label {
+                                            font-weight: 600;
+                                        }
+
+                                        // .accuracy-button__interval {
+
+                                        // }
+                                    }
+                                    // Too Soon
+                                        .accuracy-button:nth-of-type(1) {
+                                            background-color: var(--queue-bncolor-toosoon);
+                                        }
+                                    // Forgotten
+                                        .accuracy-button:nth-of-type(2) {
+                                            background-color: var(--queue-bncolor-hard);
+                                        }
+                                    // Partially Recalled
+                                        .accuracy-button:nth-of-type(3) {
+                                            background-color: var(--queue-bncolor-partial);
+                                        }
+                                    // Recalled with effort
+                                        .accuracy-button:nth-of-type(4) {
+                                            background-color: var(--queue-bncolor-done);
+                                        }
+                                    // Immediately
+                                        .accuracy-button:nth-of-type(5) {
+                                            background-color: var(--queue-bncolor-easy);
+                                        }
+                                }
+                            }
+                    }
+            }
+        }
+    // Dark Mode
+        .dark {
+            #content {
+            // Select Cluster
+                .queue-cluster-selector {
+                    color: var(--darkmode-text);
+                }
+                .hover\:bg-UI03:hover {
+                    background-color: var(--darkmode-background-selected);
+                }
+            // Search Popup - Flashcard
+                #SearchPopup {
+                    caret-color: var(--darkmode-text);
+                    color: var(--darkmode-text);
+                    background-color: var(--darkmode-background);
+
+                    .rich-text-editor,
+                    .EditorContainer {
+                        caret-color: var(--darkmode-text);
+                        color: var(--darkmode-text);
+                        background-color: var(--darkmode-background);
+                    }
+                }
+            // Flashcard
+                .Queue {
+                    // Overall Style
+                        background-color: var(--darkmode-background);
+                        // Border
+                            border: 2px solid black;
+                        // Bullet
+                            .rem-bullet__queue {
+                                background-color: var(--darkmode-text);
+                            }
+                        // Select Cluster Hover
+                            .hover\:bg-UI03:hover {
+                                background-color: var(--darkmode-background-selected);
+                            }
+                        // Katex
+                            .katex {
+                                background-color: unset;
+                            }
+                        // Highlight Style
+                            .queue-container {
+                                .spacedRepetition {
+                                    .rem-text {
+                                        .EditorContainer {
+                                            span.highlight-color--red {
+                                                color: #FFD2CE;
+                                                background-color: #572924;
+                                            }
+
+                                            span.highlight-color--orange {
+                                                color: #FFDAB8;
+                                                background-color: #553D24;
+                                            }
+
+                                            span.highlight-color--yellow {
+                                                color: #E8E48F;
+                                                background-color: #453E1E;
+                                            }
+
+                                            span.highlight-color--green {
+                                                color: #B3DDAB;
+                                                background-color: #253F27;
+                                            }
+
+                                            span.highlight-color--blue {
+                                                color: #B5DEE8;
+                                                background-color: #183C4D;
+                                            }
+
+                                            span.highlight-color--purple {
+                                                color: #DDC3EB;
+                                                background-color: #43273F;
+                                            }
+
+                                            .bold.highlight-color--red {
+                                                color: var(--red-text-dark);
+                                                background-color: unset;
+                                            }
+
+                                            .bold.highlight-color--orange {
+                                                color: var(--orange-text-dark);
+                                                background-color: unset;
+                                            }
+
+                                            .bold.highlight-color--yellow {
+                                                color: var(--yellow-text-dark);
+                                                background-color: unset;
+                                                text-shadow: unset;
+                                            }
+
+                                            .bold.highlight-color--green {
+                                                color: var(--green-text-dark);
+                                                background-color: unset;
+                                            }
+
+                                            .bold.highlight-color--blue {
+                                                color: var(--blue-text-dark);
+                                                background-color: unset;
+                                            }
+
+                                            .bold.highlight-color--purple {
+                                                color: var(--purple-text-dark);
+                                                background-color: unset;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                    // Queue Title Bar
+                        .queue__title {
+                            .queue__title__left {
+                                color: var(--darkmode-text);
+                            }
+                            .queue__title__middle {
+                                color: var(--darkmode-text);
+                                .queue__badge {
+                                    color: var(--darkmode-text);
+                                    background-color: var(--darkmode-background-selected);
+                                }
+                                > span:nth-of-type(1) {
+                                    color: var(--darkmode-text);
+                                }
+                                > span:nth-of-type(2) {
+                                    background-color: var(--darkmode-background-selected);
+
+                                    > div {
+                                        &:hover {
+                                            background-color: var(--darkmode-background-selected-darker);
+                                        }
+
+                                        > div:nth-of-type(1) {
+                                            color: var(--darkmode-text);
+                                        }
+                                        > div:nth-of-type(2) {
+                                            > svg {
+                                                fill: var(--darkmode-text) !important;
+                                                color: var(--darkmode-text) !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .queue__title__right {
+                                color: var(--darkmode-text);
+
+                                > span {
+                                    .icon-button {
+                                        &:hover {
+                                            background-color: var(--darkmode-background-selected-darker);
+                                        }
+                                    }
+                                }
+                            }
+                            .overflow-ellipsis {
+                                color: var(--darkmode-text);
+                                background-color: var(--darkmode-background-selected);
+
+                                .font-semibold {
+                                    color: var(--darkmode-text);
+                                    background-color: var(--darkmode-background-selected);
+                                }
+                            }
+                        }
+                    // SRS Contents
+                        .spacedRepetition {
+                            > div {
+                                background-color: var(--darkmode-background);
+
+                                .spacedRepetitionContent {
+                                    .spaced-repetition__prompt, %prompt-style {
+                                        color: var(--darkmode-text) !important;
+                                        background-color: var(--darkmode-background) !important;
+
+                                        .spaced-repetition__prompt__breadcrumbs {
+                                            @extend %prompt-style;
+                                        }
+                                        .rem-bullet__document {
+                                            @extend %prompt-style;
+
+                                            .file.text.small.icon {
+                                                @extend %prompt-style;
+                                            }
+                                        }
+                                    }
+                                    .spaced-repetition__prompt {
+                                        // Answer Part Text
+                                            .fill-in-the-blank {
+                                                // Answer
+                                                    &.bg-white {
+                                                        padding: 5px;
+                                                        border-radius: 5px;
+                                                    }
+                                            }
+                                            .fill-in-the-blank--revealed {
+                                                padding: 5px;
+                                                border-radius: 5px;
+                                            }
+                                        // Card Prompt
+                                            .rem-bullet__document {
+                                                font-weight: 550;
+                                            }
+                                            .rem-bullet__document,
+                                            .rem-bullet__document .file.text.small.icon {
+                                                color: var(--darkmode-text) !important;
+                                                background-color: var(--darkmode-background) !important;
+                                            }
+                                    }
+                                }
+                            }
+                            .spaced-repetition__bottom {
+                                .spaced-repetition__accuracy-buttons {
+                                    .accuracy-button {
+                                        color: var(--darkmode-text);
+                                        border-color: var(--darkmode-background-button);
+
+                                        &:hover {
+                                            filter: brightness(125%);
+                                        }
+
+                                        .accuracy-button__interval {
+                                            border: unset;
+                                            color: var(--darkmode-text-bold);
+                                            background-color: var(--darkmode-background-selected-darker);
+                                        }
+                                    }
+                                    // Too Soon
+                                        .accuracy-button:nth-of-type(1) {
+                                            background-color: var(--queue-bncolor-toosoon-dark);
+                                        }
+                                    // Forgotten
+                                        .accuracy-button:nth-of-type(2) {
+                                            background-color: var(--queue-bncolor-hard-dark);
+                                        }
+                                    // Partially Recalled
+                                        .accuracy-button:nth-of-type(3) {
+                                            background-color: var(--queue-bncolor-partial-dark);
+                                        }
+                                    // Recalled with effort
+                                        .accuracy-button:nth-of-type(4) {
+                                            background-color: var(--queue-bncolor-done-dark);
+                                        }
+                                    // Immediately
+                                        .accuracy-button:nth-of-type(5) {
+                                            background-color: var(--queue-bncolor-easy-dark);
+                                        }
+                                }
+                            }
+                        }
+                    // Flashcard for Select Menu
+                        .font-semibold.text-gray-100 {
+                            color: var(--darmode-text);
+                        }
+                        .queue__title .h-6 > svg {
+                            color: var(--darkmode-contrast);
+                            fill: var(--darkmode-contrast);
+                        }
+                    // Residue Card Number
+                        .queue__progress {
+                            .queue__progress-bar {
+                                background-color: var(--darkmode-selected-darker);
+                                border:  1px solid black;
+                            }
+                        }
+                    // Breadcrumbs Folder and File icon
+                        .icon--document,
+                        .RichTextViewer.px-1.truncate {
+                            color: var(--darkmode-text);
+                        }
+                    // Cloze
+                        .RichTextViewer .cloze {
+                            background-color: unset;
+                            padding: 5px;
+                            border-radius: 5px;
+                            border-bottom: 2px solid var(--darkmode-contrast);
+                        }
+                    // Highlight
+                        @include highlight-text-dark();
+                        @include highlight-color-notbold-dark();
+                }
+            }
+        }

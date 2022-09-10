@@ -1,0 +1,430 @@
+// Settings Page
+    .settings-page {
+        // Overall Style
+            // Checkbox
+                [data-cy~="checkbox"] {
+                    @extend %checkbox-style;
+                }
+        // Sidebar
+            .settings-page__sidebar {
+                    background-color: #E7E7EF;
+                    // Settings Left Top
+                        // .settings-page__sidebar__title {
+
+                        // }
+                    // Settings Page Sidebar
+                        // .settings-page__sidebar__link {
+                        //     &:hover {
+
+                        //     }
+                        // }
+                }
+        // Setting Page Content
+            .settings-page__content {
+                .settings-page__content__inner {
+                    // Header
+                        > div.popup__header {
+                            .rn-settings__content__title {
+                                justify-content: center;
+                                .rn-icon-button {
+                                    position: absolute;
+                                    right: 1rem;
+                                }
+                            }
+                            background-color: #E7E7EF;
+
+                            // Left Curve Trick
+                                &::after {
+                                    @media (min-width: 1030px) {
+                                        content: "";
+                                        position: absolute;
+                                        left: 282px;
+                                        z-index: 9;
+
+                                        background-color: transparent;
+                                        top: 55px;
+                                        height: 50px;
+                                        width: 25px;
+                                        border-top-left-radius: 25px;
+                                        box-shadow: 0 -25px 0 0 #E7E7EF;
+                                    }
+                                }
+                        }
+                    // Content
+                        > div:nth-of-type(2) {
+                            div.pt-8.px-6 {
+                                > div {
+                                    font-size: 28px !important;
+                                    font-weight: 700 !important;
+                                    font-family: 'Nunito', sans-serif !important;
+                                }
+                            }
+                            .settings-page__option {
+                                // Text
+                                    .settings-page__text {
+                                        // Head
+                                            > div:nth-of-type(1) {
+                                                font-size: 18px !important;
+                                                font-weight: 700 !important;
+                                                font-family: 'Nunito', sans-serif !important;
+                                            }
+                                        // Body
+                                            > div:nth-of-type(2) {
+                                                color: #959CA4;
+
+                                                // Scheduler Select
+                                                .bg-white {
+                                                    background-color: var(--darkmode-background-selected-darker);
+                                                }
+                                            }
+                                    }
+                            }
+                        }
+                        // Account
+                            .p-6 {
+                                > .pr-1 {
+                                    margin-top: 10px;
+
+                                    > svg {
+                                        // checkmark
+                                        fill: #06CA83 !important;
+                                    }
+                                }
+                            }
+                            div:nth-of-type(4) {
+                                > .settings-page__option {
+                                    .settings-page__text {
+                                        div:nth-of-type(2) {
+                                            color: #06CA83 !important;
+                                            font-weight: 700 !important;
+                                            font-family: 'Nunito', sans-serif !important;
+                                        }
+                                    }
+                                }
+                            }
+                        // Subscription page
+                            #subscription-page {
+                                // Most Popular
+                                .bg-mint-10 {
+                                    color: #000 !important;
+                                    background-color: #8BD1B9;
+                                }
+                                .settings__pricing-option-item {
+                                    .button {
+                                        background-color: #E6F3F6;
+                                        border-style: unset !important;
+                                        .w-max {
+                                            color: #4B73FF;
+                                            font-weight: 650;
+
+                                            .icon {
+                                                color: #4B73FF;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            // Invite Friends
+                                // .p-6 {
+                                //     // > .form-element {
+                                //     //     > div {
+
+                                //     //     }
+                                //     // }
+                                //     // > .px-0 {
+                                //     //     > div {
+
+                                //     //     }
+                                //     // }
+                                // }
+                            .w-min {
+                                width: unset;
+                            }
+                        // Custom Schedulers
+                            .spaced-repetition-scheduler-form {
+                                // > div:nth-of-type(1) {
+
+                                //     }
+                                > div:nth-of-type(2) {
+                                    // Scheduler Type
+                                    // Example
+                                        // > .spaced-repetition-scheduler-form__section--examples {
+                                        //     div.overflow-x-auto {
+                                        //         > div.spaced-repetition-scheduler-form__example {
+                                        //             > div.spaced-repetition-scheduler-form__example__number {
+
+                                        //             }
+                                        //             > div.spaced-repetition-scheduler-form__interaction {
+
+                                        //             }
+                                        //             > div.spaced-repetition-scheduler-form__interval {
+
+                                        //             }
+                                        //         }
+                                        //     }
+                                        // }
+                                    // Details
+                                        > div:nth-of-type(3) {
+                                            div:nth-of-type(1) {
+                                                > a {
+                                                    color: var(--link-node-color) !important;
+                                                }
+                                            }
+                                        }
+                                }
+                            }
+                }
+            }
+    }
+    // Darkmode Compatibility
+        .dark {
+            .settings-page {
+                background-color: var(--darkmode-background);
+                // Overall Style
+                    // Setting Page Button
+                        .button:not(.p-6 > .button) {
+                            color: var(--darkmode-text) !important;
+                            background-color: var(--darkmode-background-selected-darker);
+                            border-color: #000 !important;
+
+                            &:hover {
+                                background-color: var(--darkmode-background-selected);
+                            }
+                        }
+                    // Select
+                        .bg-white {
+                            color: var(--darkmode-text) !important;
+                            background-color: var(--darkmode-background-selected-darker);
+                        }
+                // Sidebar
+                    .settings-page__sidebar {
+                        background-color: var(--darkmode-background-sidebar) !important;
+                        border-style: unset;
+                        // Settings Left Top
+                            .settings-page__sidebar__title {
+                                color: var(--darkmode-contrast);
+                            }
+                        // Settings Page Sidebar
+                            .settings-page__sidebar__links {
+                                > div:nth-of-type(1) {
+                                    > input {
+                                        color: var(--darkmode-text);
+                                        background-color: #000;
+                                        border: unset;
+                                    }
+                                }
+                                .settings-page__sidebar__link {
+                                    &:hover {
+                                        background-color: var(--darkmode-background-selected-darker);
+                                    }
+                                    // Focused Item
+                                    &.text-primary {
+                                        > div {
+                                            > div {
+                                                color: var(--darkmode-contrast);
+
+                                                > svg {
+                                                    > path {
+                                                        color: var(--darkmode-contrast);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                    }
+                // Setting Page Content
+                    .settings-page__content {
+                        .settings-page__content__inner {
+                            background-color: var(--darkmode-background);
+                            // Header
+                                > div.popup__header {
+                                    background-color: var(--darkmode-background-sidebar) !important;
+                                    border-color: var(--darkmode-background-sidebar);
+
+                                    // Left Curve Trick
+                                        &::after {
+                                            @media (min-width: 1030px) {
+                                                content: "";
+                                                position: absolute;
+                                                left: 281px;
+                                                z-index: 9;
+
+                                                background-color: transparent;
+                                                top: 55px;
+                                                height: 50px;
+                                                width: 25px;
+                                                border-top-left-radius: 25px;
+                                                box-shadow: 0 -25px 0 0 var(--darkmode-background-sidebar);
+                                            }
+                                        }
+                                }
+                            // Content
+                                > div:nth-of-type(2) {
+                                    div.pt-8.px-6 {
+                                        > div {
+                                            color: #E4E4E4;
+                                        }
+                                    }
+                                    .settings-page__option {
+                                        // Text
+                                            .settings-page__text {
+                                                // Head
+                                                > div:nth-of-type(1) {
+                                                    color: var(--darkmode-text);
+                                                }
+                                                // Body
+                                                > div:nth-of-type(2) {
+                                                    color: #B7BEC9;
+
+                                                    // Scheduler Select
+                                                    .bg-white {
+                                                        background-color: var(--darkmode-background-selected-darker);
+                                                    }
+                                                }
+                                            }
+                                        // Context Menu
+                                        .ml-4 {
+                                            > span {
+                                                color: var(--darkmode-text) !important;
+                                                background-color: var(--darkmode-background-selected-darker);
+                                            }
+                                        }
+                                    }
+                                }
+                            // Account
+                                .p-6 {
+                                    > .pr-1 {
+                                        margin-top: 10px;
+
+                                        > svg {
+                                            // checkmark
+                                            fill: #06CA83 !important;
+                                        }
+                                    }
+                                    // Privacy Policy
+                                    > a {
+                                        color: var(--darkmode-contrast);
+                                    }
+                                }
+                            // Subscription page
+                                #subscription-page {
+                                    // Most Popular
+                                    .settings__pricing-option-item {
+                                        .button {
+                                            background-color: #183C4D;
+
+                                            .icon {
+                                                color: var(--darkmode-contrast);
+                                            }
+                                        }
+                                        .button {
+                                            background-color: #183C4D;
+                                            .w-max {
+                                                color: #B5DEE8;
+                                                font-weight: 650;
+
+                                                .icon {
+                                                    color: #B5DEE8;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                // Invite Friends
+                                    .text-gray-0 {
+                                        color: var(--darkmode-text);
+                                    }
+                                .w-min {
+                                    color: var(--darkmode-text) !important;
+                                    width: unset;
+                                }
+                            // Custom Schedulers
+                                .spaced-repetition-scheduler-form {
+                                    // > div:nth-of-type(1) {
+
+                                    // }
+                                    > div:nth-of-type(2) {
+                                        // Scheduler Type
+                                        // Example
+                                            // > .spaced-repetition-scheduler-form__section--examples {
+                                            //     div.overflow-x-auto {
+                                            //         > div.spaced-repetition-scheduler-form__example {
+                                            //             > div.spaced-repetition-scheduler-form__example__number {
+
+                                            //             }
+                                            //             > div.spaced-repetition-scheduler-form__interaction {
+
+                                            //             }
+                                            //             // > div.spaced-repetition-scheduler-form__interval {
+
+                                            //             // }
+                                            //         }
+                                            //     }
+                                            // }
+                                        // Details
+                                            > div:nth-of-type(3) {
+                                                // Anki SM-2 Settings
+                                                    div:nth-of-type(1) {
+                                                        > a {
+                                                            color: var(--link-node-color-dark) !important;
+                                                        }
+                                                    }
+                                                // Learning Phase, Exponenetial Phase, Re-Learning Phase
+                                                    .spaced-repetition-scheduler-form__section {
+                                                        // .spaced-repetition-scheduler-form__section__header {
+
+                                                        // }
+                                                        .spaced-repetition-scheduler-form__field {
+                                                            .spaced-repetition-scheduler-form__field__explanation {
+                                                                color: #B7BEC9;
+                                                            }
+                                                            div.flex.items-center {
+                                                                > input {
+                                                                    color: var(--darkmode-text);
+                                                                    background-color: var(--darkmode-background-selected-darker);
+                                                                    border: unset;
+                                                                    padding-top: 0.2rem;
+                                                                    padding-bottom: 0.2rem;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                            }
+                                    }
+                                }
+                            // Keyboard Shortcuts
+                                #SettingsPage {
+                                    #SettingsPageContent {
+                                        #change-keyboard-shortcuts {
+                                            #change-keyboard-shortcuts__section {
+                                                .change-keyboard-shortcut-list-item {
+                                                    > div {
+                                                        > div {
+                                                            > div {
+                                                                color: #D2D200 !important;
+                                                                background-color: var(--darkmode-background-selected-darker);
+                                                                border-color: #000 !important;
+                                                                zoom: 1.2;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            // Edditor Options
+                            // Search
+                            // Sidebar
+                            // Notification
+                            // Labs
+                            // Plugins
+                                #plugin_marketplace_header {
+                                    background: var(--darkmode-background);
+                                }
+                        }
+                    }
+            }
+        }

@@ -1,0 +1,9 @@
+// Error Message
+    .dark {
+        #ErrorBoundary {
+            color: var(--darkmode-contrast);
+            a {
+                color: var(--link-node-color-dark);
+            }
+        }
+    }
