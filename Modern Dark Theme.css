@@ -7,7 +7,7 @@
   --font-size-header-3: 1.25rem;
   --darkmode-background: #2F3437;
   --darkmode-background-button: #1B1F23;
-  --darkmode-background-sidebar: #2A2A2A;
+  --darkmode-background-sidebar: #23232A;
   --darkmode-background-selected: #4A5458;
   --darkmode-background-selected-darker: #1B1F23;
   --lightmode-background-selected: #B7B7B7;
@@ -276,19 +276,13 @@
   padding-left: unset;
 }
 #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable {
-  background: #161616;
-  border: 0.2rem solid #161616;
   border-radius: 1px;
 }
 #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div {
-  background: #161616;
   height: 25px;
 }
 #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div:hover {
   background-color: #000;
-}
-#content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div > div.float-right {
-  background: #161616;
 }
 #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable > div > div.float-right .icon-button {
   color: #FFF;

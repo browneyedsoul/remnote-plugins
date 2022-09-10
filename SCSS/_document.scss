@@ -36,12 +36,9 @@
             .mosaic-tile {
                 .mosaic-window {
                     .mosaic-window-toolbar.draggable {
-                        background: #161616;
-                        border: 0.2rem solid #161616;
                         border-radius: 1px;
 
                         > div {
-                            background: #161616;
                             height: 25px;
 
                             &:hover {
@@ -49,7 +46,6 @@
                             }
 
                             > div.float-right {
-                                background: #161616;
 
                                 .icon-button {
                                     color: #FFF;
