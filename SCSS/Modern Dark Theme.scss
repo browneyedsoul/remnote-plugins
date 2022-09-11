@@ -1,131 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,600&display=swap');
-@import "./_highlight.scss";
-
-:root {
-    --font-size-documenttitle: 36px;
-    --font-size-header-1: 1.75rem;
-    --font-size-header-2: 1.5rem;
-    --font-size-header-3: 1.25rem;
-    --darkmode-background: #2F3437;
-    --darkmode-background-button: #1B1F23;
-    --darkmode-background-sidebar: #23232A;
-    --darkmode-background-selected: #4A5458;
-    --darkmode-background-selected-darker: #1B1F23;
-    --lightmode-background-selected: #B7B7B7;
-    --darkmode-text: #DFDFD5;
-    --darkmode-text-header: #EAEAEA;
-    --darkmode-text-bold: #C6EAEA;
-    --darkmode-contrast: #ECED00;
-    --bullet-ring-color: #D8D8E4;
-    --bullet-ring-color-dark: #BDBDBD;
-    --bullet-core-color: #2A2A36;
-    --bullet-core-color-dark: #1B1F23;
-    --code-font-family: "Roboto Mono", monospace;
-    --code-font-size: 1em;
-    --inline-code-color: #E64400;
-    --inline-code-color-dark: #DCDA7A;
-    --inline-code-background: #F7F6F3;
-    --inline-code-background-dark: #282C30;
-    --reference-text: #000;
-    --reference-text-dark: #DFDFD5;
-    --reference-background: #F7F6F3;
-    --reference-background-dark: #282C30;
-    --alias-background: #ECECEC;
-    --popup-background-hover: #F4F4FA;
-    --line-color: #DDD;
-    --line-color-dark: #535353;
-    --link-node-color: #002DB1;
-    --link-node-color-dark: #94D2FF;
-    --red-text: #FF4A44;
-    --red-text-dark: #FD776F;
-    --orange-text: #C26F1C;
-    --orange-text-dark: #F0A264;
-    --yellow-text: #3E3C00;
-    --yellow-text-dark: #EFD10A;
-    --green-text: #34A853;
-    --green-text-dark: #3FCC5E;
-    --blue-text: #3C85FF;
-    --blue-text-dark: #98BFE2;
-    --purple-text: #A142F4;
-    --purple-text-dark: #C6A3F4;
-    --highlight-color--red: #FDDEE0;
-    --highlight-color--red-light: #FFE4DF;
-    --highlight-color--red-dark: #702D29;
-    --highlight-color--red-span-dark: #F0ADA4;
-    --highlight-color--red-bg-dark: #572924;
-    --highlight-color--red-text-dark: #FFC6BD;
-    --highlight-color--red-bar-dark: #FFB9AF;
-    --highlight-color--orange: #FBE2CA;
-    --highlight-color--orange-light: #FFE9CC;
-    --highlight-color--orange-dark: #603F17;
-    --highlight-color--orange-span-dark: #ECBA81;
-    --highlight-color--orange-bg-dark: #553D24;
-    --highlight-color--orange-text-dark: #FFDAB8;
-    --highlight-color--orange-bar-dark: #FFCA8C;
-    --highlight-color--yellow: #FFEFC0;
-    --highlight-color--yellow-light: #F8F9AA;
-    --highlight-color--yellow-dark: #615F14;
-    --highlight-color--yellow-span-dark: #DFE07E;
-    --highlight-color--yellow-bg-dark: #453E1E;
-    --highlight-color--yellow-text-dark: #E8E67D;
-    --highlight-color--yellow-bar-dark: #E5E579;
-    --highlight-color--green: #DDF7D9;
-    --highlight-color--green-light: #D8FFD1;
-    --highlight-color--green-dark: #2D4F2D;
-    --highlight-color--green-span-dark: #9FE39B;
-    --highlight-color--green-bg-dark: #253F27;
-    --highlight-color--green-text-dark: #B3DDAB;
-    --highlight-color--green-bar-dark: #95DB91;
-    --highlight-color--blue: #D6EEF8;
-    --highlight-color--blue-light: #D4EEFF;
-    --highlight-color--blue-dark: #224356;
-    --highlight-color--blue-span-dark: #BAD7EB;
-    --highlight-color--blue-bg-dark: #183C4D;
-    --highlight-color--blue-text-dark: #A7DCE8;
-    --highlight-color--blue-bar-dark: #A7DCE8;
-    --highlight-color--purple: #EAE0F4;
-    --highlight-color--purple-light: #F5E9FF;
-    --highlight-color--purple-dark: #614477;
-    --highlight-color--purple-span-dark: #E6C9EB;
-    --highlight-color--purple-bg-dark: #4A2B45;
-    --highlight-color--purple-text-dark: #DDC3EB;
-    --highlight-color--purple-bar-dark: #E5C0EB;
-    --pdf-highlight-color-red: #FFE4DF;
-    --pdf-highlight-color-orange: #FFE9CC;
-    --pdf-highlight-color-yellow: #F8F9AA;
-    --pdf-highlight-color-green: #D8FFD1;
-    --pdf-highlight-color-blue: #D4EEFF;
-    --pdf-highlight-color-purple: #F5E9FF;
-    --text-shadow: 0.01em 0.01em 0.01em #727E84;
-    --text-shadow-yellow: 0.1em 0.1em 0.1em #EAEB74;
-    --text-shadow-dark: 0.01em 0.01em 0.01em #727E84;
-    --queue-bncolor-toosoon: #DDD;
-    --queue-bncolor-toosoon-dark: #1B1F23;
-    --queue-bncolor-hard: #FFC9CC;
-    --queue-bncolor-hard-dark: #572924;
-    --queue-bncolor-partial: #FFDAB8;
-    --queue-bncolor-partial-dark: #453E1E;
-    --queue-bncolor-done: #B5CEF0;
-    --queue-bncolor-done-dark: #183C4D;
-    --queue-bncolor-easy: #A8E2B4;
-    --queue-bncolor-easy-dark: #253F27;
-}
-
-@import "./_browser.scss";
-@import "./_bullet.scss";
-@import "./_document.scss";
-@import "./_flashcard.scss";
-@import "./_global.scss";
-@import "./_menu.scss";
-@import "./_message.scss";
-@import "./_navigation.scss";
-@import "./_omnibar.scss";
-@import "./_patch.scss";
-@import "./_pdf.scss";
-@import "./_popup.scss";
-@import "./_portal.scss";
-@import "./_reference&alias.scss";
-@import "./_settings.scss";
-@import "./_sidebar.scss";
-@import "./_statistic.scss";
+@import
+    "var",
+    "highlight.scss",
+    "browser.scss",
+    "bullet.scss",
+    "document.scss",
+    "flashcard.scss",
+    "global.scss",
+    "menu.scss",
+    "message.scss",
+    "navigation.scss",
+    "omnibar.scss",
+    "patch.scss",
+    "pdf.scss",
+    "popup.scss",
+    "portal.scss",
+    "reference&alias.scss",
+    "settings.scss",
+    "sidebar.scss",
+    "statistic.scss";
