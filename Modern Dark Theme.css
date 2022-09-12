@@ -1037,10 +1037,6 @@
   display: inline;
 }
 
-.hierarchy-editor__search-portal-section {
-  display: none;
-}
-
 .dark #document #hierarchy-editor .backlink-counter {
   color: var(--darkmode-contrast);
   background-color: var(--darkmode-background-selected-darker);
