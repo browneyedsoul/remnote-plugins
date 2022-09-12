@@ -1025,7 +1025,6 @@
 }
 #document #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text {
   opacity: 0.6;
-  flex-wrap: unset;
 }
 #document #hierarchy-editor .rem-container--not-included-in-document-scope .rem-text .RichTextViewer {
   display: inline-flex;
