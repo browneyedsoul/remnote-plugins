@@ -2003,6 +2003,18 @@
   zoom: 0.8;
 }
 
+div.portal-tree-node-box.portal-tree-node-box--enable-buttons div.TreeNode.tree-node--children.flex.flex-grow.flex-col div.TreeNode.tree-node--children.flex.flex-grow.flex-col div.tree-node--parent.flex-grow div.w-full {
+  width: unset;
+}
+
+div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
+  width: unset;
+}
+
+#hierarchy-editor div.transition-none div.portal-tree-node-box div.tree-node--parent.flex-grow > div > div.rem-text > div.w-full {
+  width: unset;
+}
+
 .dark .thumbnail--with-width {
   background-color: transparent;
 }
