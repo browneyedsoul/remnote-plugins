@@ -304,9 +304,6 @@
   background-color: var(--darkmode-background);
   border-radius: 1rem;
 }
-.tile__document::-webkit-scrollbar-track {
-  margin-top: 3rem;
-}
 .tile__document::-webkit-scrollbar-thumb {
   background-color: #DDD;
   border-radius: 3px;
