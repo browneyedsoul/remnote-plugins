@@ -73,10 +73,10 @@
   width: 100%;
   border-bottom: 0.1rem solid var(--table-border-color);
 }
-#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet div.tree-node--children {
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children {
   padding-left: 0;
 }
-#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet div.tree-node--children > .animate-zoom-into-bullet {
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > .animate-zoom-into-bullet {
   margin-top: 0.1rem;
 }
 #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > .animate-zoom-into-bullet:last-of-type {
@@ -144,10 +144,10 @@
   width: 100%;
   border-bottom: 0.1rem solid var(--table-border-color-dark);
 }
-.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet div.tree-node--children {
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children {
   padding-left: 0;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet div.tree-node--children > .animate-zoom-into-bullet {
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > .animate-zoom-into-bullet {
   margin-top: 0.1rem;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > .animate-zoom-into-bullet:last-of-type {

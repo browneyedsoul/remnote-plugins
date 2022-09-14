@@ -92,7 +92,7 @@
                                 width: 100%;
                                 border-bottom: $border;
 
-                                div.tree-node--children {
+                                > div.tree-node--children {
                                     padding-left: 0;
 
                                     > .animate-zoom-into-bullet {
