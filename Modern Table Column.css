@@ -32,7 +32,7 @@
   border-width: 0 !important;
   margin-left: 0;
 }
-#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode {
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children {
   display: flex;
   flex-direction: row;
   left: 0px !important;
@@ -40,43 +40,46 @@
   margin-right: var(--table-container-right-margin) !important;
   padding-left: 0;
 }
-#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet {
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet {
   flex: 1 0 0;
   white-space: wrap;
   border: 0.1rem solid var(--table-border-color);
 }
-#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .rem-text,
-#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .EditorContainer,
-#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .rich-text-editor,
-#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .RichTextViewer {
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet .rem-text,
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet .EditorContainer,
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet .rich-text-editor,
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet .RichTextViewer {
   overflow-wrap: anywhere;
   flex-grow: 1;
   max-width: 100%;
   min-height: 25px;
 }
-#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > div:first-child {
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div:first-child {
   font-weight: 600;
   color: inherit;
   background-color: var(--table-header-background-color);
   text-align: center;
 }
-#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet:nth-child(n+1) {
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet:nth-child(n+1) {
   margin-left: -1px;
 }
-#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode {
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children {
   width: 100% !important;
   left: 0px !important;
 }
-#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet {
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet {
   position: relative;
   left: var(--table-container-cell-margin-left);
   width: 100%;
   border-bottom: 0.1rem solid var(--table-border-color);
 }
-#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet .TreeNode > .animate-zoom-into-bullet {
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet div.tree-node--children {
+  padding-left: 0;
+}
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet div.tree-node--children > .animate-zoom-into-bullet {
   margin-top: 0.1rem;
 }
-#hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet:last-of-type {
+#hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > .animate-zoom-into-bullet:last-of-type {
   border-bottom: unset;
 }
 #hierarchy-editor .hierarchy-editor--ltr [data-rem-container-tags~=table] .TreeNode {
@@ -100,7 +103,7 @@
   border-width: 0 !important;
   margin-left: 0;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode {
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children {
   display: flex;
   flex-direction: row;
   left: 0px !important;
@@ -108,43 +111,46 @@
   margin-right: var(--table-container-right-margin) !important;
   padding-left: 0;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet {
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet {
   flex: 1 0 0;
   white-space: wrap;
   border: 0.1rem solid var(--table-border-color-dark);
 }
-.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .rem-text,
-.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .EditorContainer,
-.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .rich-text-editor,
-.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet .RichTextViewer {
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet .rem-text,
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet .EditorContainer,
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet .rich-text-editor,
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet .RichTextViewer {
   overflow-wrap: anywhere;
   flex-grow: 1;
   max-width: 100%;
   min-height: 25px;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > div:first-child {
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div:first-child {
   font-weight: 600;
   color: var(--darkmode-text);
   background-color: var(--table-header-background-color-dark);
   text-align: center;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet:nth-child(n+1) {
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet:nth-child(n+1) {
   margin-left: -1px;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode {
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children {
   width: 100% !important;
   left: 0px !important;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet {
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet {
   position: relative;
   left: var(--table-container-cell-margin-left);
   width: 100%;
   border-bottom: 0.1rem solid var(--table-border-color-dark);
 }
-.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet .TreeNode > .animate-zoom-into-bullet {
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet div.tree-node--children {
+  padding-left: 0;
+}
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > div.animate-zoom-into-bullet div.tree-node--children > .animate-zoom-into-bullet {
   margin-top: 0.1rem;
 }
-.dark #hierarchy-editor [data-rem-container-tags~=table] > .TreeNode > .animate-zoom-into-bullet > .TreeNode > .animate-zoom-into-bullet:last-of-type {
+.dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--children > .animate-zoom-into-bullet:last-of-type {
   border-bottom: unset;
 }
 .dark #hierarchy-editor .hierarchy-editor--ltr [data-rem-container-tags~=table] .TreeNode {

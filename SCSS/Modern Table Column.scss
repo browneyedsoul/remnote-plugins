@@ -42,12 +42,12 @@
                     background-color: $title-bgcolor;
                 }
             // Remove Left TreeNode Line
-                .TreeNode.tree-node--children  {
+                .TreeNode.tree-node--children {
                     border-width: 0 !important;
                     margin-left: 0;
                 }
             // Structure
-                > .TreeNode {
+                > div.tree-node--children {
                     display: flex;
                     flex-direction: row;
                     left: 0px !important;
@@ -55,7 +55,7 @@
                     margin-right: var(--table-container-right-margin) !important;
                     padding-left: 0;
 
-                    > .animate-zoom-into-bullet {
+                    > div.animate-zoom-into-bullet {
                         flex: 1 0 0;
                         white-space: wrap;
                         // Line Color
@@ -82,17 +82,19 @@
                                 margin-left: -1px;
                             }
 
-                        > .TreeNode {
+                        > div.tree-node--children {
                             width: 100% !important;
                             left: 0px !important;
 
-                            > .animate-zoom-into-bullet {
+                            > div.animate-zoom-into-bullet {
                                 position: relative;
                                 left: var(--table-container-cell-margin-left);
                                 width: 100%;
                                 border-bottom: $border;
 
-                                .TreeNode {
+                                div.tree-node--children {
+                                    padding-left: 0;
+
                                     > .animate-zoom-into-bullet {
                                         margin-top: 0.1rem;
                                     }
