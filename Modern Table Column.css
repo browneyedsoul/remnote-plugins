@@ -25,12 +25,14 @@
   display: none;
 }
 #hierarchy-editor [data-rem-container-tags~=table] > .tree-node--parent {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   margin-right: var(--table-title-right-margin);
   background-color: var(--table-title-background-color);
 }
 #hierarchy-editor [data-rem-container-tags~=table] .TreeNode.tree-node--children {
   border-width: 0 !important;
-  margin-left: 0;
+  margin-left: 0.05rem;
 }
 #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children {
   display: flex;
@@ -96,12 +98,14 @@
   display: none;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > .tree-node--parent {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   margin-right: var(--table-title-right-margin);
   background-color: var(--table-title-background-color-dark);
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] .TreeNode.tree-node--children {
   border-width: 0 !important;
-  margin-left: 0;
+  margin-left: 0.05rem;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=table] > div.tree-node--children {
   display: flex;

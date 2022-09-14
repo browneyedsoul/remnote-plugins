@@ -36,6 +36,8 @@
                 }
             // Title Bar
                 > .tree-node--parent {
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
                     // margin-left: var(--table-title-left-margin) !important;
                     margin-right: var(--table-title-right-margin);
                     // padding-left: 11.5px;
@@ -44,7 +46,7 @@
             // Remove Left TreeNode Line
                 .TreeNode.tree-node--children {
                     border-width: 0 !important;
-                    margin-left: 0;
+                    margin-left: 0.05rem;
                 }
             // Structure
                 > div.tree-node--children {
