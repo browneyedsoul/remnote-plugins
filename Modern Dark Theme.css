@@ -30,6 +30,7 @@
   --reference-background: #F7F6F3;
   --reference-background-dark: #282C30;
   --alias-background: #ECECEC;
+  --alias-background-dark: #252525;
   --popup-background-hover: #F4F4FA;
   --line-color: #DDD;
   --line-color-dark: #535353;
@@ -2344,20 +2345,28 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   color: var(--darkmode-text);
 }
 
-.rem-reference-container .rem-reference .RichTextViewer div.image-node__container span.image-node + div {
-  display: none;
-}
-
 .work-in-progress-rem {
   color: var(--reference-text);
 }
 
-[data-rem-container-tags~=aliases] {
+[data-rem-container-property~=aliases] {
   border: 0.1rem solid var(--line-color);
   border-radius: 4px;
   background-color: var(--alias-background);
 }
-[data-rem-container-tags~=aliases] > .tree-node--children [data-rem-container-tags~=list-item] .tree-node--parent [data-rem-tags~=list-item] .rem-text span.rem-powerup-icon .text-icon {
+[data-rem-container-property~=aliases] > .tree-node--children [data-rem-container-tags~=list-item] .tree-node--parent [data-rem-tags~=list-item] .rem-text span.rem-powerup-icon .text-icon {
+  top: 0.2rem;
+}
+
+.dark .work-in-progress-rem {
+  color: var(--reference-text-dark);
+}
+.dark [data-rem-container-property~=aliases] {
+  border: 0.1rem solid var(--line-color-dark);
+  border-radius: 4px;
+  background-color: var(--alias-background-dark);
+}
+.dark [data-rem-container-property~=aliases] > .tree-node--children [data-rem-container-tags~=list-item] .tree-node--parent [data-rem-tags~=list-item] .rem-text span.rem-powerup-icon .text-icon {
   top: 0.2rem;
 }
 
@@ -2376,17 +2385,6 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
 }
 .dark .rem-reference-container .rem-reference .RichTextViewer {
   color: var(--reference-text-dark);
-}
-.dark [data-rem-container-tags~=aliases] {
-  border: 0.1rem solid var(--line-color-dark);
-  border-radius: 4px;
-  background-color: var(--reference-background-dark);
-}
-.dark [data-rem-container-tags~=aliases] > .tree-node--parent div[data-rem-tags~=aliases] .rem-text .EditorContainer span.descriptor_rem_type .RichTextViewer .rem-reference-container .rem-reference {
-  color: var(--darkmode-contrast);
-}
-.dark [data-rem-container-tags~=aliases] > .tree-node--parent div[data-rem-tags~=aliases] .rem-reference-container .rem-reference {
-  color: var(--darkmode-contrast);
 }
 
 .settings-page .settings-page__sidebar {
