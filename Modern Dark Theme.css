@@ -2895,7 +2895,7 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--blue > div > div {
   background-color: var(--highlight-color--blue-bg-dark);
   border-radius: 4px;
-  border: 0.1rem solid #2F4E61;
+  border: 0.1rem solid #3A5E76;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--blue .document-list-item__folder-icon {
   background-color: transparent;
@@ -2904,7 +2904,7 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--purple > div > div {
   background-color: var(--highlight-color--purple-bg-dark);
   border-radius: 4px;
-  border: 0.1rem solid #683E62;
+  border: 0.1rem solid #7B4874;
 }
 #document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--purple .document-list-item__folder-icon {
   background-color: transparent;
