@@ -1,21 +1,7 @@
-// Side Bar - Collapsed
-    #content {
-        > div.fade-on-hide-ui {
-            background-color: var(--darkmode-background);
-            position: inherit;
-        }
-    }
-    .dark {
-        #content {
-            > div.fade-on-hide-ui {
-                background-color: var(--darkmode-background-sidebar);
-            }
-        }
-    }
 // Side Bar
     #document-sidebar {
     // Global Style
-        background-color: var(--darkmode-background);
+        background-color: var(--sidebar-background);
         // Thumbnail
             .align-text-top {
                 vertical-align: sub;
@@ -40,7 +26,7 @@
         // Remove white-coloured line
             + div {
                 > div {
-                    background-color: var(--darkmode-background);
+                    background-color: var(--sidebar-background);
                 }
             }
         // Scrollbar
@@ -58,10 +44,10 @@
     // Sidebar Top
         // Account Capsule
             #document-sidebar__account-capsule {
-                background-color: var(--darkmode-background);
+                background-color: var(--sidebar-background);
 
                 &:hover {
-                    background-color: var(--darkmode-background-selected-darker);
+                    background-color: var(--sidebar-item-hover);
                 }
                 span {
                     color: var(--darkmode-text);
@@ -72,16 +58,18 @@
                 > div:nth-of-type(2) {
                 // Search
                     > div.rn-search-button {
-                            background: var(--darkmode-background-button);
+                        background: #000;
+
                         &:hover {
-                            background-color: #000;
+                            color: var(--darkmode-contrast);
                         }
                     }
                 // ⚡️
                     > div:nth-of-type(2) {
-                        background: var(--darkmode-background-button);
+                        background: #000;
+
                         &:hover {
-                            background-color: #000;
+                            color: var(--darkmode-contrast);
                         }
                     }
                 }
@@ -112,21 +100,15 @@
                             > div {
                                 // Icon
                                 > div:nth-of-type(1) {
-                                    color: var(--darkmode-contrast);
-
-
-                                    // > svg[data-icon~="all-notes"] {
-                                    //
-                                    // }
+                                    color: var(--sidebar-topitem);
                                 }
                                 // All Notes Text
                                 > div:nth-of-type(2) {
-                                    color: var(--darkmode-contrast);
-
+                                    color: var(--sidebar-topitem);
                                 }
 
                                 &:hover {
-                                    background-color: var(--darkmode-background-selected-darker);
+                                    background-color: var(--sidebar-item-hover);
                                     border-radius: 5px;
                                 }
                             }
@@ -135,18 +117,18 @@
                         > div.mb-1 {
                             // Icon
                                 > div:nth-of-type(1) {
-                                    color: var(--darkmode-contrast);
+                                    color: var(--sidebar-topitem);
 
                                 }
                             // Today's Note Text
                                 > div:nth-of-type(2) {
-                                    color: var(--darkmode-contrast);
+                                    color: var(--sidebar-topitem);
 
                                     overflow-x: hidden;
                                     white-space: nowrap;
                                 }
                             &:hover {
-                                background-color: var(--darkmode-background-selected-darker);
+                                background-color: var(--sidebar-item-hover);
                                 border-radius: 5px;
                             }
                         }
@@ -155,11 +137,11 @@
                             > div {
                                 // Icon
                                     > div:nth-of-type(1) {
-                                        color: var(--darkmode-contrast);
+                                        color: var(--sidebar-topitem);
                                     }
                                 // Flashcards Text
                                     > div:nth-of-type(2) {
-                                        color: var(--darkmode-contrast);
+                                        color: var(--sidebar-topitem);
                                         overflow-x: hidden;
                                         white-space: nowrap;
                                     }
@@ -178,7 +160,7 @@
                                         }
                                     }
                                 &:hover {
-                                    background-color: var(--darkmode-background-selected-darker);
+                                    background-color: var(--sidebar-item-hover);
                                     border-radius: 5px;
                                 }
                             }
@@ -188,12 +170,12 @@
                             > div {
                                 // Icon
                                     > div:nth-of-type(1) {
-                                        color: var(--darkmode-contrast);
+                                        color: var(--sidebar-topitem);
 
                                     }
                                 // Edit Later
                                     > div:nth-of-type(2) {
-                                        color: var(--darkmode-contrast);
+                                        color: var(--sidebar-topitem);
 
                                     }
                                 // Residue Number
@@ -204,7 +186,7 @@
                                     }
 
                                 &:hover {
-                                    background-color: var(--darkmode-background-selected-darker);
+                                    background-color: var(--sidebar-item-hover);
                                     border-radius: 5px;
                                 }
                             }
@@ -231,7 +213,7 @@
                         > div.flex {
                             // hover
                                 &:hover {
-                                    background-color: var(--darkmode-background-selected-darker);
+                                    background-color: var(--sidebar-item-hover);
                                 }
                             // Sidebar list item height
                                 height: 2.2rem;
@@ -247,10 +229,6 @@
                                             position: relative;
                                             top: 1px;
                                             color: var(--darkmode-text);
-
-                                            // > svg.text-icon {
-                                            //
-                                            // }
                                         }
                                     // Item Text area
                                         .RichTextViewer {
@@ -300,7 +278,7 @@
                             }
 
                             .group-hover\:rn-clr-background-light-accent--hovered {
-                                background: var(--darkmode-background-selected-darker);
+                                background: var(--sidebar-item-hover);
                             }
                         }
                         .rn-clr-background-light-accent {
