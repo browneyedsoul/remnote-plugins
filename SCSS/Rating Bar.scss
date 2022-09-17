@@ -36,6 +36,7 @@
             .rem-text {
                 &::before {
                     border: 1px solid #CDCECE;
+                    overflow-wrap: normal;
                 }
             }
         }

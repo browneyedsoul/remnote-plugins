@@ -48,4 +48,5 @@
 .dark-mode [data-rem-tags~="4star"] .rem-text::before,
 .dark-mode [data-rem-tags~="5star"] .rem-text::before {
   border: 1px solid #CDCECE;
+  overflow-wrap: normal;
 }
