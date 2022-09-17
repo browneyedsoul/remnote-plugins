@@ -29,6 +29,8 @@
   --reference-text-dark: #DFDFD5;
   --reference-background: #F7F6F3;
   --reference-background-dark: #282C30;
+  --alias-border: #CACAD9;
+  --alias-border-dark: #747474;
   --alias-background: #ECECEC;
   --alias-background-dark: #252525;
   --popup-background-hover: #F4F4FA;
@@ -96,6 +98,9 @@
   --pdf-highlight-color-green: #D8FFD1;
   --pdf-highlight-color-blue: #D4EEFF;
   --pdf-highlight-color-purple: #F5E9FF;
+  --sidebar-topitem: #CAE7EB;
+  --sidebar-background: #2B2D2E;
+  --sidebar-item-hover: #111;
   --text-shadow: 0.01em 0.01em 0.01em #727E84;
   --text-shadow-yellow: 0.1em 0.1em 0.1em #EAEB74;
   --text-shadow-dark: 0.01em 0.01em 0.01em #727E84;
@@ -2350,9 +2355,12 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
 }
 
 [data-rem-container-property~=aliases] {
-  border: 0.1rem solid var(--line-color);
+  border: 0.1rem solid var(--alias-border);
   border-radius: 4px;
   background-color: var(--alias-background);
+}
+[data-rem-container-property~=aliases] [data-rem-property~=aliases] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children {
+  width: 0.7rem;
 }
 [data-rem-container-property~=aliases] > .tree-node--children [data-rem-container-tags~=list-item] .tree-node--parent [data-rem-tags~=list-item] .rem-text span.rem-powerup-icon .text-icon {
   top: 0.2rem;
@@ -2362,9 +2370,12 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   color: var(--reference-text-dark);
 }
 .dark [data-rem-container-property~=aliases] {
-  border: 0.1rem solid var(--line-color-dark);
+  border: 0.1rem solid var(--alias-border-dark);
   border-radius: 4px;
   background-color: var(--alias-background-dark);
+}
+.dark [data-rem-container-property~=aliases] [data-rem-property~=aliases] .rem-button__container .rem-bullet__container .rem-bullet.rem-bullet--hidden-children {
+  width: 0.7rem;
 }
 .dark [data-rem-container-property~=aliases] > .tree-node--children [data-rem-container-tags~=list-item] .tree-node--parent [data-rem-tags~=list-item] .rem-text span.rem-powerup-icon .text-icon {
   top: 0.2rem;
@@ -2591,17 +2602,8 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   background: var(--darkmode-background);
 }
 
-#content > div.fade-on-hide-ui {
-  background-color: var(--darkmode-background);
-  position: inherit;
-}
-
-.dark #content > div.fade-on-hide-ui {
-  background-color: var(--darkmode-background-sidebar);
-}
-
 #document-sidebar {
-  background-color: var(--darkmode-background);
+  background-color: var(--sidebar-background);
 }
 #document-sidebar .align-text-top {
   vertical-align: sub;
@@ -2658,7 +2660,7 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   padding: 0 0.25rem;
 }
 #document-sidebar + div > div {
-  background-color: var(--darkmode-background);
+  background-color: var(--sidebar-background);
 }
 #document-sidebar .w-\[calc\(100\%-16px\)\] {
   width: calc(100% - 0.8rem);
@@ -2667,25 +2669,25 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   z-index: 1 !important;
 }
 #document-sidebar #document-sidebar__account-capsule {
-  background-color: var(--darkmode-background);
+  background-color: var(--sidebar-background);
 }
 #document-sidebar #document-sidebar__account-capsule:hover {
-  background-color: var(--darkmode-background-selected-darker);
+  background-color: var(--sidebar-item-hover);
 }
 #document-sidebar #document-sidebar__account-capsule span {
   color: var(--darkmode-text);
 }
 #document-sidebar > div:nth-of-type(1) > div:nth-of-type(2) > div.rn-search-button {
-  background: var(--darkmode-background-button);
+  background: #000;
 }
 #document-sidebar > div:nth-of-type(1) > div:nth-of-type(2) > div.rn-search-button:hover {
-  background-color: #000;
+  color: var(--darkmode-contrast);
 }
 #document-sidebar > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) {
-  background: var(--darkmode-background-button);
+  background: #000;
 }
 #document-sidebar > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2):hover {
-  background-color: #000;
+  color: var(--darkmode-contrast);
 }
 #document-sidebar > div > div.p-2 {
   font-family: "Nunito Sans", sans-serif;
@@ -2707,32 +2709,32 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   font-size: 1.1rem;
 }
 #document-sidebar > div > div.p-2 > a[href~="/notes"] > div > div:nth-of-type(1) {
-  color: var(--darkmode-contrast);
+  color: var(--sidebar-topitem);
 }
 #document-sidebar > div > div.p-2 > a[href~="/notes"] > div > div:nth-of-type(2) {
-  color: var(--darkmode-contrast);
+  color: var(--sidebar-topitem);
 }
 #document-sidebar > div > div.p-2 > a[href~="/notes"] > div:hover {
-  background-color: var(--darkmode-background-selected-darker);
+  background-color: var(--sidebar-item-hover);
   border-radius: 5px;
 }
 #document-sidebar > div > div.p-2 > div.mb-1 > div:nth-of-type(1) {
-  color: var(--darkmode-contrast);
+  color: var(--sidebar-topitem);
 }
 #document-sidebar > div > div.p-2 > div.mb-1 > div:nth-of-type(2) {
-  color: var(--darkmode-contrast);
+  color: var(--sidebar-topitem);
   overflow-x: hidden;
   white-space: nowrap;
 }
 #document-sidebar > div > div.p-2 > div.mb-1:hover {
-  background-color: var(--darkmode-background-selected-darker);
+  background-color: var(--sidebar-item-hover);
   border-radius: 5px;
 }
 #document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(1) {
-  color: var(--darkmode-contrast);
+  color: var(--sidebar-topitem);
 }
 #document-sidebar > div > div.p-2 > a[href="/flashcards"] > div > div:nth-of-type(2) {
-  color: var(--darkmode-contrast);
+  color: var(--sidebar-topitem);
   overflow-x: hidden;
   white-space: nowrap;
 }
@@ -2749,21 +2751,21 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   color: var(--green-text-dark);
 }
 #document-sidebar > div > div.p-2 > a[href="/flashcards"] > div:hover {
-  background-color: var(--darkmode-background-selected-darker);
+  background-color: var(--sidebar-item-hover);
   border-radius: 5px;
 }
 #document-sidebar > div > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(1) {
-  color: var(--darkmode-contrast);
+  color: var(--sidebar-topitem);
 }
 #document-sidebar > div > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(2) {
-  color: var(--darkmode-contrast);
+  color: var(--sidebar-topitem);
 }
 #document-sidebar > div > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div > div:nth-of-type(3) {
   color: var(--darkmode-contrast);
   background-color: var(--darkmode-background-selected-darker);
 }
 #document-sidebar > div > div.p-2 > a:not(a[href~="/notes"]):not(a[href="/flashcards"]) > div:hover {
-  background-color: var(--darkmode-background-selected-darker);
+  background-color: var(--sidebar-item-hover);
   border-radius: 5px;
 }
 #document-sidebar > div > div.p-2 .rn-clr-background-light-accent.rounded-md {
@@ -2781,7 +2783,7 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   height: 2.2rem;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex:hover {
-  background-color: var(--darkmode-background-selected-darker);
+  background-color: var(--sidebar-item-hover);
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex.group-hover\:rn-clr-background-light-accent--hovered {
   margin-left: -2px;
@@ -2830,7 +2832,7 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   color: white;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md.rn-clr-background-light-accent .group-hover\:rn-clr-background-light-accent--hovered {
-  background: var(--darkmode-background-selected-darker);
+  background: var(--sidebar-item-hover);
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .rn-clr-background-light-accent {
   background: var(--rn-clr-background-inverse-secondary);
