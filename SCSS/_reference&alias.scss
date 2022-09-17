@@ -11,6 +11,16 @@
         border-radius: 4px;
         background-color: $alias-background;
 
+        [data-rem-property~="aliases"] {
+            .rem-button__container {
+                .rem-bullet__container {
+                    .rem-bullet.rem-bullet--hidden-children {
+                        width: 0.7rem;
+                    }
+                }
+            }
+        }
+
         > .tree-node--children {
             [data-rem-container-tags~="list-item"] {
                 .tree-node--parent {
@@ -34,13 +44,13 @@
 
 @include alias(
     var(--reference-text),
-    var(--line-color),
+    var(--alias-border),
     var(--alias-background)
 );
 .dark {
     @include alias(
         var(--reference-text-dark),
-        var(--line-color-dark),
+        var(--alias-border-dark),
         var(--alias-background-dark)
     );
 }
