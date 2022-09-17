@@ -260,8 +260,11 @@
 }
 
 .dark #content > div.content__page > div.top-bar-container.fade-on-hide-ui > div {
-  border-radius: 5px;
-  background-color: var(--darkmode-background-sidebar);
+  background-color: #111;
+  border: 1px solid var(--line-color-dark);
+}
+.dark #content .rn-help-button {
+  border: 1px solid var(--line-color-dark);
 }
 
 #content .document-sidebar--collapsed--vertical {
@@ -273,13 +276,17 @@
   width: fit-content;
   position: absolute;
   bottom: 0.2rem;
-  right: 0.2rem;
+  right: 0.5rem;
   z-index: 6;
   transform: scale(0.75);
+  border-radius: 15px;
+  box-shadow: var(--rn-clr-shadow-elevation-20);
+  background: var(--rn-clr-background-primary);
 }
 #content > div.content__page > div.top-bar-container.fade-on-hide-ui > div {
-  border-radius: 5px;
+  border-radius: 15px;
   padding-left: unset;
+  background-color: unset;
 }
 #content .mosaic .mosaic-tile .mosaic-window .mosaic-window-toolbar.draggable {
   border-radius: 1px;
@@ -1910,19 +1917,6 @@
 }
 .dark #ErrorBoundary a {
   color: var(--link-node-color-dark);
-}
-
-#content > div.content__page > div.top-bar-container > div {
-  background-color: var(--darkmode-background);
-}
-
-.hierarchy-editor-list__sticky-top__rem-container {
-  position: relative;
-  top: -10px;
-}
-.hierarchy-editor-list__sticky-top__rem-container .rem-is-custom-rem-type--in-body,
-.hierarchy-editor-list__sticky-top__rem-container .EditorContainer {
-  zoom: 90%;
 }
 
 [aria-label~=Omnibar] {

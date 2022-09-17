@@ -5,10 +5,13 @@
             > div.content__page {
                 > div.top-bar-container.fade-on-hide-ui {
                     > div {
-                        border-radius: 5px;
-                        background-color: var(--darkmode-background-sidebar);
+                        background-color: #111;
+                        border: 1px solid var(--line-color-dark);
                     }
                 }
+            }
+            .rn-help-button {
+                border: 1px solid var(--line-color-dark);
             }
         }
     }
@@ -21,13 +24,17 @@
                 width: fit-content;
                 position: absolute;
                 bottom: 0.2rem;
-                right: 0.2rem;
+                right: 0.5rem;
                 z-index: 6;
-                transform: scale(.75);
+                transform: scale(0.75);
+                border-radius: 15px;
+                box-shadow: var(--rn-clr-shadow-elevation-20);
+                background: var(--rn-clr-background-primary);
 
                 > div {
-                    border-radius: 5px;
+                    border-radius: 15px;
                     padding-left: unset;
+                    background-color: unset;
                 }
             }
         }
