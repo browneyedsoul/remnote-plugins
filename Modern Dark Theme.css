@@ -531,7 +531,6 @@
   border: 2px solid white;
 }
 .tile__document #document #hierarchy-editor > .fixed {
-  margin-top: 3.2rem;
   width: calc(100% - 3.7rem) !important;
 }
 .tile__document #document #hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
