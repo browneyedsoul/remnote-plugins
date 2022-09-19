@@ -71,6 +71,7 @@
 #code-node {
   font-family: var(--code-font-family);
   font-size: var(--code-font-size);
+  background-color: var(--inline-code-background);
   border: 0;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
