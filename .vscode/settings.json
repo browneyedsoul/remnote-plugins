@@ -2,12 +2,18 @@
     "scss.hover.references": false,
     "scss.hover.documentation": false,
     "scss.validate": false,
-    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
     "liveSassCompile.settings.formats": [
         {
             "extensionName": ".css",
             "format": "expanded",
             "savePath": "~/..",
+        },
+        {
+            "extensionName": ".css",
+            "format": "compressed",
+            "savePath": "~/src/min",
         },
     ],
     "liveSassCompile.settings.excludeList": [
