@@ -2,28 +2,18 @@
     // Preview Page
         #Popup {
             #PopupContent {
-                align-self: center;
-
-                .node-top-level-in-portal {
-                    z-index: 2;
-                }
-
-                > .document-popup-preview {
-                    > .document-header-top-bar {
-                        > div:nth-of-type(1) {
-                            overflow-x: auto;
-                        }
-                        // 3-Dots Option
-                        > div:nth-of-type(2) {
-                            position: relative;
-                            left: -1rem;
-                        }
-                    }
-                }
-                > #document {
-                    > #hierarchy-editor {
-                        > .fixed {
-                            display: none;
+                > div.overflow-x-hidden {
+                    width: 75vw;
+                    min-width: 300px;
+                    max-width: 1200px;
+                    padding-right: 1rem;
+                    
+                    > #document {
+                        > #hierarchy-editor {
+                            > .fixed {
+                                // Remove sticky header
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -32,51 +22,7 @@
         .dark {
             #Popup {
                 #PopupContent {
-                    > div {
-                        .rn-close-button {
-                            &:hover {
-                                background-color: var(--darkmode-background-selected-darker);
-                            }
-                        }
-                    }
-                    > .document-popup-preview {
-                        background-color: var(--darkmode-background);
-
-                        > .document-header-top-bar {
-                            // Hierarchy
-                            > div:nth-of-type(1) {
-                                button {
-                                    color: var(--darkmode-text);
-
-                                    &:hover {
-                                        background-color: var(--darkmode-background-selected-darker);
-                                    }
-                                }
-                            }
-                            // 3-Dots Option
-                            > div:nth-of-type(2) {
-                                .icon-button {
-                                    &:hover {
-                                        background-color: var(--darkmode-background-selected-darker);
-                                    }
-                                }
-                            }
-                        }
-                        .tree-node--automatic-search-portal-header {
-                            .button {
-                                .w-max {
-                                    color: var(--darkmode-text);
-                                }
-                            }
-                        }
-                        #AutomaticSearchPortals {
-                            .button {
-                                .w-max {
-                                    color: var(--darkmode-text);
-                                }
-                            }
-                        }
-                    }
+                    background: var(--darkmode-background);
                 }
             }
         }
@@ -113,65 +59,38 @@
                     }
                 // SRS Content
                     .spacedRepetition {
-                        // Content
-                            > div {
-                                .spacedRepetitionContent {
-                                    height: 90%;
-                                    // Prompt
-                                        // .spaced-repetition__prompt {
-
-                                        // }
-                                    // Answer
-                                        .spacedRepetitionAnswer {
-                                            #hierarchy-editor {
-                                                > div {
-                                                    .tree-node-container {
-                                                        margin-right: 0.7rem;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                }
-                            }
-                        // Bottom
-                            .spaced-repetition__bottom {
-                                .spaced-repetition__accuracy-buttons {
-                                    .accuracy-button {
-
-                                        &:hover {
-                                            filter: brightness(110%);
-                                        }
-
-                                        .accuracy-button__label {
-                                            font-weight: 600;
-                                        }
-
-                                        // .accuracy-button__interval {
-
-                                        // }
+                        .spaced-repetition__bottom {
+                            .spaced-repetition__accuracy-buttons {
+                                .accuracy-button {
+                                    &:hover {
+                                        filter: brightness(110%);
                                     }
-                                    // Too Soon
-                                        .accuracy-button:nth-of-type(1) {
-                                            background-color: var(--queue-bncolor-toosoon);
-                                        }
-                                    // Forgotten
-                                        .accuracy-button:nth-of-type(2) {
-                                            background-color: var(--queue-bncolor-hard);
-                                        }
-                                    // Partially Recalled
-                                        .accuracy-button:nth-of-type(3) {
-                                            background-color: var(--queue-bncolor-partial);
-                                        }
-                                    // Recalled with effort
-                                        .accuracy-button:nth-of-type(4) {
-                                            background-color: var(--queue-bncolor-done);
-                                        }
-                                    // Immediately
-                                        .accuracy-button:nth-of-type(5) {
-                                            background-color: var(--queue-bncolor-easy);
-                                        }
+                                    .accuracy-button__label {
+                                        font-weight: 600;
+                                    }
                                 }
+                                // Too Soon
+                                    .accuracy-button:nth-of-type(1) {
+                                        background-color: var(--queue-bncolor-toosoon);
+                                    }
+                                // Forgotten
+                                    .accuracy-button:nth-of-type(2) {
+                                        background-color: var(--queue-bncolor-hard);
+                                    }
+                                // Partially Recalled
+                                    .accuracy-button:nth-of-type(3) {
+                                        background-color: var(--queue-bncolor-partial);
+                                    }
+                                // Recalled with effort
+                                    .accuracy-button:nth-of-type(4) {
+                                        background-color: var(--queue-bncolor-done);
+                                    }
+                                // Immediately
+                                    .accuracy-button:nth-of-type(5) {
+                                        background-color: var(--queue-bncolor-easy);
+                                    }
                             }
+                        }
                     }
             }
         }

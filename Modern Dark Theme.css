@@ -1104,43 +1104,18 @@
   background-color: #636368;
 }
 
-#Popup #PopupContent {
-  align-self: center;
+#Popup #PopupContent > div.overflow-x-hidden {
+  width: 75vw;
+  min-width: 300px;
+  max-width: 1200px;
+  padding-right: 1rem;
 }
-#Popup #PopupContent .node-top-level-in-portal {
-  z-index: 2;
-}
-#Popup #PopupContent > .document-popup-preview > .document-header-top-bar > div:nth-of-type(1) {
-  overflow-x: auto;
-}
-#Popup #PopupContent > .document-popup-preview > .document-header-top-bar > div:nth-of-type(2) {
-  position: relative;
-  left: -1rem;
-}
-#Popup #PopupContent > #document > #hierarchy-editor > .fixed {
+#Popup #PopupContent > div.overflow-x-hidden > #document > #hierarchy-editor > .fixed {
   display: none;
 }
 
-.dark #Popup #PopupContent > div .rn-close-button:hover {
-  background-color: var(--darkmode-background-selected-darker);
-}
-.dark #Popup #PopupContent > .document-popup-preview {
-  background-color: var(--darkmode-background);
-}
-.dark #Popup #PopupContent > .document-popup-preview > .document-header-top-bar > div:nth-of-type(1) button {
-  color: var(--darkmode-text);
-}
-.dark #Popup #PopupContent > .document-popup-preview > .document-header-top-bar > div:nth-of-type(1) button:hover {
-  background-color: var(--darkmode-background-selected-darker);
-}
-.dark #Popup #PopupContent > .document-popup-preview > .document-header-top-bar > div:nth-of-type(2) .icon-button:hover {
-  background-color: var(--darkmode-background-selected-darker);
-}
-.dark #Popup #PopupContent > .document-popup-preview .tree-node--automatic-search-portal-header .button .w-max {
-  color: var(--darkmode-text);
-}
-.dark #Popup #PopupContent > .document-popup-preview #AutomaticSearchPortals .button .w-max {
-  color: var(--darkmode-text);
+.dark #Popup #PopupContent {
+  background: var(--darkmode-background);
 }
 
 .queue-container .Queue .react-transform-component .react-transform-element .inline-block .group.inline-block.align-text-top {
@@ -1160,12 +1135,6 @@
 }
 .queue-container .Queue .queue-text-large-font {
   font-size: 24px;
-}
-.queue-container .Queue .spacedRepetition > div .spacedRepetitionContent {
-  height: 90%;
-}
-.queue-container .Queue .spacedRepetition > div .spacedRepetitionContent .spacedRepetitionAnswer #hierarchy-editor > div .tree-node-container {
-  margin-right: 0.7rem;
 }
 .queue-container .Queue .spacedRepetition .spaced-repetition__bottom .spaced-repetition__accuracy-buttons .accuracy-button:hover {
   filter: brightness(110%);
