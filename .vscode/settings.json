@@ -8,18 +8,19 @@
         {
             "extensionName": ".css",
             "format": "expanded",
-            "savePath": "~/..",
+            "savePath": "/src/css"
         },
         {
             "extensionName": ".css",
             "format": "compressed",
-            "savePath": "~/src/min",
+            "savePath": "~/..",
         },
     ],
     "liveSassCompile.settings.excludeList": [
         "/**/node_modules/**",
         "/.vscode/**",
         "/SCSS/_*.scss",
+        "/SCSS/Tag-based ImageResizer.scss",
     ],
     "liveSassCompile.settings.generateMap": false,
     "liveSassCompile.settings.watchOnLaunch": false,
