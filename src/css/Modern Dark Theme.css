@@ -1114,12 +1114,6 @@
   background-color: #636368;
 }
 
-#Popup #PopupContent > div.overflow-x-hidden {
-  width: 75vw;
-  min-width: 300px;
-  max-width: 1200px;
-  padding-right: 1rem;
-}
 #Popup #PopupContent > div.overflow-x-hidden > #document > #hierarchy-editor > .fixed {
   display: none;
 }
