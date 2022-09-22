@@ -1,0 +1,271 @@
+@charset "UTF-8";
+:root {
+  --callout-background-color: #F7F6F3;
+  --callout-background-color-dark: #505050;
+  --callout-text-color-dark: #DFDFD5;
+  --callout-text-bold-color-dark: #FFF;
+  --calloutred-background-color: #FFE9EC;
+  --calloutred-background-color-dark: #572924;
+  --calloutred-text-color: #721C25;
+  --calloutred-text-color-dark: #FFD2CE;
+  --calloutred-text-bold-color-dark: #FFEAE3;
+  --calloutorange-background-color: #FDEDD9;
+  --calloutorange-background-color-dark: #553D24;
+  --calloutorange-text-color: #572924;
+  --calloutorange-text-color-dark: #FFDAB8;
+  --calloutorange-text-bold-color-dark: #FFF0D6;
+  --calloutyellow-background-color: #FFF9DE;
+  --calloutyellow-background-color-dark: #453E1E;
+  --calloutyellow-text-color: #454501;
+  --calloutyellow-text-color-dark: #E8DDA7;
+  --calloutyellow-text-bold-color-dark: #FFFECA;
+  --calloutgreen-background-color: #D5EED7;
+  --calloutgreen-background-color-dark: #253F27;
+  --calloutgreen-text-color: #003E01;
+  --calloutgreen-text-color-dark: #B3DDAB;
+  --calloutgreen-text-bold-color-dark: #DCFFD9;
+  --calloutblue-background-color: #E6F3F6;
+  --calloutblue-background-color-dark: #183C4D;
+  --calloutblue-text-color: #00005B;
+  --calloutblue-text-color-dark: #B5DEE8;
+  --calloutblue-text-bold-color-dark: #DDFCFF;
+  --calloutpurple-background-color: #F1EEFE;
+  --calloutpurple-background-color-dark: #43273F;
+  --calloutpurple-text-color: #3B004D;
+  --calloutpurple-text-color-dark: #DDC3EB;
+  --calloutpurple-text-bold-color-dark: #F6ECFF;
+  --callout-padding: 15px 20px;
+  --callout-margin-top: 7px;
+  --callout-margin-bottom: 7px;
+  --callout-margin-left: 24px;
+  --callout-margin-right: Œ;
+  --callout-border-radius: 5px;
+}
+
+.rem-header--1:not(.document-title),
+.rem-header--2:not(.document-title),
+.rem-header--3:not(.document-title) {
+  color: unset;
+}
+
+[data-rem-tags~=callout] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup,
+[data-rem-tags~=calloutred] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup,
+[data-rem-tags~=calloutorange] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup,
+[data-rem-tags~=calloutyellow] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup,
+[data-rem-tags~=calloutgreen] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup,
+[data-rem-tags~=calloutblue] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup,
+[data-rem-tags~=calloutpurple] .rem-text .EditorContainer [data-rem-tags~=emoji] span.emoji-powerup {
+  position: absolute;
+  left: -1.5rem;
+  z-index: 0;
+  pointer-events: none;
+}
+
+[data-rem-container-tags~=callout],
+[data-rem-container-tags~=calloutred],
+[data-rem-container-tags~=calloutorange],
+[data-rem-container-tags~=calloutyellow],
+[data-rem-container-tags~=calloutgreen],
+[data-rem-container-tags~=calloutblue],
+[data-rem-container-tags~=calloutpurple] {
+  padding: var(--callout-padding);
+  margin-top: var(--callout-margin-top);
+  margin-bottom: var(--callout-margin-bottom);
+  margin-left: var(--callout-margin-left);
+  margin-right: var(--callout-margin-right);
+  border-radius: var(--callout-border-radius);
+}
+[data-rem-container-tags~=callout] .EditorContainer,
+[data-rem-container-tags~=calloutred] .EditorContainer,
+[data-rem-container-tags~=calloutorange] .EditorContainer,
+[data-rem-container-tags~=calloutyellow] .EditorContainer,
+[data-rem-container-tags~=calloutgreen] .EditorContainer,
+[data-rem-container-tags~=calloutblue] .EditorContainer,
+[data-rem-container-tags~=calloutpurple] .EditorContainer {
+  line-height: 180%;
+}
+[data-rem-container-tags~=callout] .rem-container--header-1 .rem-button__container,
+[data-rem-container-tags~=calloutred] .rem-container--header-1 .rem-button__container,
+[data-rem-container-tags~=calloutorange] .rem-container--header-1 .rem-button__container,
+[data-rem-container-tags~=calloutyellow] .rem-container--header-1 .rem-button__container,
+[data-rem-container-tags~=calloutgreen] .rem-container--header-1 .rem-button__container,
+[data-rem-container-tags~=calloutblue] .rem-container--header-1 .rem-button__container,
+[data-rem-container-tags~=calloutpurple] .rem-container--header-1 .rem-button__container {
+  margin-top: 15px;
+}
+[data-rem-container-tags~=callout] .rem-container--header-2 .rem-button__container,
+[data-rem-container-tags~=calloutred] .rem-container--header-2 .rem-button__container,
+[data-rem-container-tags~=calloutorange] .rem-container--header-2 .rem-button__container,
+[data-rem-container-tags~=calloutyellow] .rem-container--header-2 .rem-button__container,
+[data-rem-container-tags~=calloutgreen] .rem-container--header-2 .rem-button__container,
+[data-rem-container-tags~=calloutblue] .rem-container--header-2 .rem-button__container,
+[data-rem-container-tags~=calloutpurple] .rem-container--header-2 .rem-button__container {
+  margin-top: 8px;
+}
+[data-rem-container-tags~=callout] .rem-container--header-3 .rem-button__container,
+[data-rem-container-tags~=calloutred] .rem-container--header-3 .rem-button__container,
+[data-rem-container-tags~=calloutorange] .rem-container--header-3 .rem-button__container,
+[data-rem-container-tags~=calloutyellow] .rem-container--header-3 .rem-button__container,
+[data-rem-container-tags~=calloutgreen] .rem-container--header-3 .rem-button__container,
+[data-rem-container-tags~=calloutblue] .rem-container--header-3 .rem-button__container,
+[data-rem-container-tags~=calloutpurple] .rem-container--header-3 .rem-button__container {
+  margin-top: 7px;
+}
+[data-rem-container-tags~=callout] .rem-button__container,
+[data-rem-container-tags~=calloutred] .rem-button__container,
+[data-rem-container-tags~=calloutorange] .rem-button__container,
+[data-rem-container-tags~=calloutyellow] .rem-button__container,
+[data-rem-container-tags~=calloutgreen] .rem-button__container,
+[data-rem-container-tags~=calloutblue] .rem-button__container,
+[data-rem-container-tags~=calloutpurple] .rem-button__container {
+  margin-top: 6px;
+}
+
+[data-rem-container-tags~=callout] {
+  background-color: var(--callout-background-color);
+}
+
+[data-rem-container-tags~=calloutred] {
+  color: var(--calloutred-text-color);
+  background-color: var(--calloutred-background-color);
+}
+
+[data-rem-container-tags~=calloutorange] {
+  color: var(--calloutorange-text-color);
+  background-color: var(--calloutorange-background-color);
+}
+
+[data-rem-container-tags~=calloutyellow] {
+  color: var(--calloutyellow-text-color);
+  background-color: var(--calloutyellow-background-color);
+}
+
+[data-rem-container-tags~=calloutgreen] {
+  color: var(--calloutgreen-text-color);
+  background-color: var(--calloutgreen-background-color);
+}
+
+[data-rem-container-tags~=calloutblue] {
+  color: var(--calloutblue-text-color);
+  background-color: var(--calloutblue-background-color);
+}
+
+[data-rem-container-tags~=calloutpurple] {
+  color: var(--calloutpurple-text-color);
+  background-color: var(--calloutpurple-background-color);
+}
+
+.dark [data-rem-container-tags~=callout] {
+  background-color: var(--callout-background-color-dark);
+}
+.dark [data-rem-container-tags~=callout] .rem-text {
+  color: var(--callout-text-color-dark);
+}
+.dark [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=callout] .rem-text .bold:not(.highlight-color--purple) {
+  color: var(--callout-text-bold-color-dark) !important;
+}
+.dark [data-rem-container-tags~=calloutred] {
+  background-color: var(--calloutred-background-color-dark);
+}
+.dark [data-rem-container-tags~=calloutred] .rem-text {
+  color: var(--calloutred-text-color-dark);
+}
+.dark [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=calloutred] .rem-text .bold:not(.highlight-color--purple) {
+  color: var(--calloutred-text-bold-color-dark) !important;
+}
+.dark [data-rem-container-tags~=calloutorange] {
+  background-color: var(--calloutorange-background-color-dark);
+}
+.dark [data-rem-container-tags~=calloutorange] .rem-text {
+  color: var(--calloutorange-text-color-dark);
+}
+.dark [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=calloutorange] .rem-text .bold:not(.highlight-color--purple) {
+  color: var(--calloutorange-text-bold-color-dark) !important;
+}
+.dark [data-rem-container-tags~=calloutyellow] {
+  background-color: var(--calloutyellow-background-color-dark);
+}
+.dark [data-rem-container-tags~=calloutyellow] .rem-text {
+  color: var(--calloutyellow-text-color-dark);
+}
+.dark [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=calloutyellow] .rem-text .bold:not(.highlight-color--purple) {
+  color: var(--calloutyellow-text-bold-color-dark) !important;
+}
+.dark [data-rem-container-tags~=calloutgreen] {
+  background-color: var(--calloutgreen-background-color-dark);
+}
+.dark [data-rem-container-tags~=calloutgreen] .rem-text {
+  color: var(--calloutgreen-text-color-dark);
+}
+.dark [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=calloutgreen] .rem-text .bold:not(.highlight-color--purple) {
+  color: var(--calloutgreen-text-bold-color-dark) !important;
+}
+.dark [data-rem-container-tags~=calloutblue] {
+  background-color: var(--calloutblue-background-color-dark);
+}
+.dark [data-rem-container-tags~=calloutblue] .rem-text {
+  color: var(--calloutblue-text-color-dark);
+}
+.dark [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=calloutblue] .rem-text .EditorContainer .bold:not(.highlight-color--purple) {
+  color: var(--calloutblue-text-bold-color-dark) !important;
+}
+.dark [data-rem-container-tags~=calloutpurple] {
+  background-color: var(--calloutpurple-background-color-dark);
+}
+.dark [data-rem-container-tags~=calloutpurple] .rem-text {
+  color: var(--calloutpurple-text-color-dark);
+}
+.dark [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--red), .dark [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--orange), .dark [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--yellow), .dark [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--green), .dark [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--blue), .dark [data-rem-container-tags~=calloutpurple] .rem-text .bold:not(.highlight-color--purple) {
+  color: var(--calloutpurple-text-bold-color-dark) !important;
+}
+
+.node-card-item[data-rem-container-tags~=callout]::before,
+.node-card-item[data-rem-container-tags~=calloutred]::before,
+.node-card-item[data-rem-container-tags~=calloutorange]::before,
+.node-card-item[data-rem-container-tags~=calloutyellow]::before,
+.node-card-item[data-rem-container-tags~=calloutgreen]::before,
+.node-card-item[data-rem-container-tags~=calloutblue]::before,
+.node-card-item[data-rem-container-tags~=calloutpurple]::before {
+  top: -10px;
+  left: -24px;
+  height: 130%;
+}
+
+.spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=callout], .spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=calloutred], .spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=calloutorange], .spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=calloutyellow], .spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=calloutgreen], .spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=calloutblue], .spacedRepetitionAnswer .node-card-item[data-rem-container-tags~=calloutpurple] {
+  margin-left: var(--callout-margin-left);
+}
+
+[data-rem-container-tags~=callout] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~=calloutred] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~=calloutorange] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~=calloutyellow] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~=calloutgreen] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~=calloutblue] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag,
+[data-rem-container-tags~=calloutpurple] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag {
+  background-color: transparent !important;
+}
+[data-rem-container-tags~=callout] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=callout] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
+[data-rem-container-tags~=calloutred] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=calloutred] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
+[data-rem-container-tags~=calloutorange] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=calloutorange] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
+[data-rem-container-tags~=calloutyellow] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=calloutyellow] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
+[data-rem-container-tags~=calloutgreen] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=calloutgreen] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
+[data-rem-container-tags~=calloutblue] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=calloutblue] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span,
+[data-rem-container-tags~=calloutpurple] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > div:first-of-type,
+[data-rem-container-tags~=calloutpurple] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag > span {
+  display: none;
+}
+[data-rem-container-tags~=callout] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-container-tags~=calloutred] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-container-tags~=calloutorange] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-container-tags~=calloutyellow] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-container-tags~=calloutgreen] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-container-tags~=calloutblue] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete,
+[data-rem-container-tags~=calloutpurple] .float-end .hierarchy-editor__tag-bar span.hierarchy-editor__tag-bar__tag .hierarchy-editor__tag-bar__tag__delete {
+  opacity: 0.3;
+}

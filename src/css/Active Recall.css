@@ -1,0 +1,41 @@
+:root {
+  --hide-answer-filter: contrast(0%) brightness(1.5);
+}
+
+[data-rem-container-tags~=active-recall] span.cloze, [data-rem-container-tags~=active-recall] span.rem-container--forwards-practice-enabled span[data-linear-editor-text~=true]:nth-of-type(3) > span > span span.linear-editor-item.whitespace-pre-wrap:not(:hover), [data-rem-container-tags~=active-recall] span.rem-container--forwards-practice-disabled span[data-linear-editor-text~=true]:nth-of-type(3) > span > span span.linear-editor-item.whitespace-pre-wrap:not(:hover), [data-rem-container-tags~=active-recall] span.only_in_answer > span:not(:hover), [data-rem-container-tags~=active-recall] span.cloze:not(:hover) {
+  font-weight: 600;
+  border-radius: 5px;
+}
+[data-rem-container-tags~=active-recall] span.cloze:not(:hover) {
+  background-color: white;
+  filter: var(--hide-answer-filter);
+  position: relative;
+  top: -2px;
+}
+[data-rem-container-tags~=active-recall] span.only_in_answer > span:not(:hover) {
+  background-color: white;
+  filter: var(--hide-answer-filter);
+  position: relative;
+  top: -2px;
+}
+[data-rem-container-tags~=active-recall] span.rem-container--forwards-practice-enabled span[data-linear-editor-text~=true]:nth-of-type(3) > span > span span.linear-editor-item.whitespace-pre-wrap:not(:hover), [data-rem-container-tags~=active-recall] span.rem-container--forwards-practice-disabled span[data-linear-editor-text~=true]:nth-of-type(3) > span > span span.linear-editor-item.whitespace-pre-wrap:not(:hover) {
+  background-color: white;
+  filter: var(--hide-answer-filter);
+  position: relative;
+  top: -2px;
+}
+[data-rem-container-tags~=active-recall] div.tree-node--children .node-card-item:hover {
+  filter: unset !important;
+}
+[data-rem-container-tags~=active-recall] div.tree-node--children:not(:hover) .node-card-item {
+  background-color: white;
+  filter: var(--hide-answer-filter);
+  border-radius: 5px;
+}
+
+[data-rem-tags~=active-recall] .hierarchy-editor__tag-bar__tag {
+  background-color: transparent !important;
+}
+[data-rem-tags~=active-recall] .hierarchy-editor__tag-bar__tag span {
+  display: none;
+}
