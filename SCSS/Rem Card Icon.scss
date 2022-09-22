@@ -12,7 +12,8 @@
     $backward,
     $disabled) {
     .rem-container--default_type-rem-type,
-    .rem-container--concept-rem-type {
+    .rem-container--concept-rem-type,
+    .rem-container--descriptor-rem-type {
         &.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled {
             .rem-bullet {
                 background: $both;
