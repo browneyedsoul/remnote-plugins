@@ -480,6 +480,16 @@
   margin-left: 3rem;
   margin-right: 0.7rem;
 }
+.tile__document #document div.mt-4 > div #DocumentTitle > .rn-doc-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+.tile__document #document div.mt-4 > div #DocumentTitle > .rn-doc-title span.rem-checkbox {
+  margin-top: 0;
+  margin-right: 1rem;
+}
 .tile__document #document div.mt-4 > div #DocumentTitle .bold,
 .tile__document #document div.mt-4 > div #DocumentTitle .bold.highlight-color--red,
 .tile__document #document div.mt-4 > div #DocumentTitle .bold.highlight-color--orange,

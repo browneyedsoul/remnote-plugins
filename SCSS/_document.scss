@@ -325,6 +325,18 @@
 
                             > div {
                                 #DocumentTitle {
+                                    > .rn-doc-title {
+                                        display: flex;
+                                        align-items: center;
+                                        margin-bottom: 0;
+                                        padding-bottom: 1rem;
+
+                                        span.rem-checkbox {
+                                            margin-top: 0;
+                                            margin-right: 1rem;
+                                        }
+                                    }
+
                                     .bold,
                                     .bold.highlight-color--red,
                                     .bold.highlight-color--orange,
