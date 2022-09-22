@@ -2,6 +2,12 @@
     #document-sidebar {
     // Global Style
         background-color: var(--sidebar-background);
+        // Update sign
+            .w-full {
+                > .border-gray-10 {
+                    background-color: #FFF;
+                }
+            }
         // Thumbnail
             .align-text-top {
                 vertical-align: sub;
