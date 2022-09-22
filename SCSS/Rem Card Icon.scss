@@ -10,8 +10,7 @@
     $both,
     $forward,
     $backward,
-    $disabled
-) {
+    $disabled) {
     .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled {
         .rem-bullet {
             background: $both;
@@ -74,8 +73,7 @@
 @mixin icon-box(
     $width,
     $height,
-    $url
-) {
+    $url) {
     background: var(--no-practice-color);
     width: $width;
     height: $height;
@@ -90,6 +88,7 @@
         opacity: 0;
     }
 }
+
 .rem-container--default_type-rem-type.rem-container--forwards-practice-enabled,
 .rem-container--default_type-rem-type.rem-container--backwards-practice-enabled,
 .rem-container--default_type-rem-type.rem-container--forwards-practice-disabled {
@@ -101,6 +100,21 @@
         );
     }
 }
+
+.rem-container--default_type-rem-type {
+    .rem-bullet {
+        &.rem-bullet--hidden-children {
+            @include icon-box(
+                1em,
+                1em,
+                url("https://browneyedsoul.github.io/ImageRepository/List.svg")
+            );
+            position: relative;
+            left: -3px;
+        }
+    }
+}
+
 .rem-container--concept-rem-type {
     .rem-bullet {
         @include icon-box(

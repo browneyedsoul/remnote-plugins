@@ -26,6 +26,23 @@
   opacity: 0;
 }
 
+.rem-container--default_type-rem-type .rem-bullet.rem-bullet--hidden-children {
+  background: var(--no-practice-color);
+  width: 1em;
+  height: 1em;
+  -webkit-mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+  mask-image: url("https://browneyedsoul.github.io/ImageRepository/List.svg");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  position: relative;
+  left: -3px;
+}
+.rem-container--default_type-rem-type .rem-bullet.rem-bullet--hidden-children .perfect-circle__inner {
+  opacity: 0;
+}
+
 .rem-container--concept-rem-type .rem-bullet {
   background: var(--no-practice-color);
   width: 1em;
