@@ -11,61 +11,64 @@
     $forward,
     $backward,
     $disabled) {
-    .rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled {
-        .rem-bullet {
-            background: $both;
-        }
-        .separator-symbol,
-        .rn-card-delimiter {
-            color: $both;
-            > span {
+    .rem-container--default_type-rem-type,
+    .rem-container--concept-rem-type {
+        &.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled {
+            .rem-bullet {
+                background: $both;
+            }
+            .separator-symbol,
+            .rn-card-delimiter {
                 color: $both;
+                > span {
+                    color: $both;
+                }
             }
         }
-    }
-    .rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled {
-        .rem-bullet {
-            background: $forward;
-        }
-        .separator-symbol,
-        .rn-card-delimiter {
-            color: $forward;
-            > span {
+        &.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled {
+            .rem-bullet {
+                background: $forward;
+            }
+            .separator-symbol,
+            .rn-card-delimiter {
                 color: $forward;
+                > span {
+                    color: $forward;
+                }
             }
         }
-    }
-    .rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled {
-        .rem-bullet {
-            background: $backward;
-        }
-        .separator-symbol,
-        .rn-card-delimiter {
-            color: $backward;
-            > span {
+        &.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled {
+            .rem-bullet {
+                background: $backward;
+            }
+            .separator-symbol,
+            .rn-card-delimiter {
                 color: $backward;
+                > span {
+                    color: $backward;
+                }
             }
         }
-    }
-    .rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled {
-        .rem-bullet {
-            background: $disabled;
+        &.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled {
+            .rem-bullet {
+                background: $disabled;
 
-            &.rem-bullet--hidden-children {
-                @include icon-box(
-                    1em,
-                    1em,
-                    url("https://browneyedsoul.github.io/ImageRepository/List.svg")
-                );
-                position: relative;
-                left: -3px;
+                &.rem-bullet--hidden-children {
+                    @include icon-box(
+                        1em,
+                        1em,
+                        url("https://browneyedsoul.github.io/ImageRepository/List.svg")
+                    );
+                    position: relative;
+                    left: -3px;
+                }
             }
-        }
-        .separator-symbol,
-        .rn-card-delimiter {
-            color: $disabled;
-            > span {
+            .separator-symbol,
+            .rn-card-delimiter {
                 color: $disabled;
+                > span {
+                    color: $disabled;
+                }
             }
         }
     }
@@ -102,9 +105,9 @@
 }
 
 .rem-container--default_type-rem-type {
-    &.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled,
-    &.rem-container--default_type-rem-type.rem-container--backwards-practice-enabled,
-    &.rem-container--default_type-rem-type.rem-container--forwards-practice-disabled {
+    &.rem-container--forwards-practice-enabled,
+    &.rem-container--backwards-practice-enabled,
+    &.rem-container--forwards-practice-disabled {
         .rem-bullet {
             &.rem-bullet--hidden-children {
                 @include icon-box(

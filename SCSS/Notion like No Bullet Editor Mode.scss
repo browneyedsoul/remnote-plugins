@@ -317,6 +317,7 @@
                 .rem-bullet__container {
                     .rem-bullet--hidden-children {
                         width: .5em;
+                        height: 0;
                     }
                 }
             }
@@ -452,56 +453,3 @@
             }
         }
     }
-// Checkbox Alignment - Interim measure
-    // div.animate-zoom-into-bullet {
-    //     > div.tree-node--parent {
-    //         // focused
-    //         > span {
-    //             > div {
-    //                 > div.rem-text {
-    //                     > span.rem-checkbox {
-    //                         margin-top: 0.3rem;
-    //                     }
-    //                     &.rem-header--1 {
-    //                         > span.rem-checkbox {
-    //                             margin-top: 0.8rem;
-    //                         }
-    //                     }
-    //                     &.rem-header--2 {
-    //                         > span.rem-checkbox {
-    //                             margin-top: 0.6rem;
-    //                         }
-    //                     }
-    //                     &.rem-header--3 {
-    //                         > span.rem-checkbox {
-    //                             margin-top: 0.5rem;
-    //                         }
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //         // unfocused
-    //         > div {
-    //             > div.rem-text {
-    //                 > span.rem-checkbox {
-    //                     margin-top: -0.15rem;
-    //                 }
-    //                 &.rem-header--1 {
-    //                     > span.rem-checkbox {
-    //                         margin-top: -0.4rem;
-    //                     }
-    //                 }
-    //                 &.rem-header--2 {
-    //                     > span.rem-checkbox {
-    //                         margin-top: -0.4rem;
-    //                     }
-    //                 }
-    //                 &.rem-header--3 {
-    //                     >span.rem-checkbox {
-    //                         margin-top: -0.2rem;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
