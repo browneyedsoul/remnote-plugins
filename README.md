@@ -1,4 +1,4 @@
-<img src="Assets/Head.png">
+<img src="./public/readme/Head.png">
 
 # How to Use it?
 
@@ -28,28 +28,28 @@
         You can change a Highlight color to a text color by simple bolding
         <br>
         <br>
-        <img src ="Assets/Modern Dark Theme.gif">
+        <img src ="./public/readme/theme/Modern Dark Theme.gif">
     </details>
   </div>
   <div>
     <details>
         <summary>Displaying Long Page Breadcrumbs with scroll bar</summary>
         <br>
-        <img src ="Assets/Modern Dark Theme2.gif">
+        <img src ="./public/readme/theme/Modern Dark Theme2.gif">
     </details>
   </div>
 
  ## Display
 
-  <div style="margin-left: 24px;">
-    <img src="Assets/Modern Dark Theme - 1.png">
-    <img src="Assets/Modern Dark Theme - 2.png">
-    <img src="Assets/Modern Dark Theme - 3.png">
-    <img src="Assets/Modern Dark Theme - 4.png">
-    <img src="Assets/Modern Dark Theme - 5.png">
-    <img src="Assets/Modern Dark Theme - 6.png">
-    <img src="Assets/Modern Dark Theme - 7.png">
-    <img src="Assets/Modern Dark Theme - 8.png">
+  <div>
+    <img src="./public/readme/theme/Modern Dark Theme - 1.png">
+    <img src="./public/readme/theme/Modern Dark Theme - 2.png">
+    <img src="./public/readme/theme/Modern Dark Theme - 3.png">
+    <img src="./public/readme/theme/Modern Dark Theme - 4.png">
+    <img src="./public/readme/theme/Modern Dark Theme - 5.png">
+    <img src="./public/readme/theme/Modern Dark Theme - 6.png">
+    <img src="./public/readme/theme/Modern Dark Theme - 7.png">
+    <img src="./public/readme/theme/Modern Dark Theme - 8.png">
   </div>
   </details>
 
@@ -67,7 +67,7 @@
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20No%20Bullet%20Editor%20Mode.css"); 
   ```
 
-  <div style="margin-left: 24px;">
+  <div >
     <details>
         <summary>What is the purpose of this snip?</summary>
             <ul>
@@ -77,18 +77,18 @@
     </details>
     <details>
         <summary>If you need bullet points, Make them by tagging `bulletlist`</summary>
-        <img src="Assets/Notion like No Bullet Editor Mode-2.gif">
+        <img src="./public/readme/editormode/Notion like No Bullet Editor Mode-2.gif">
     </details>
     <details>
         <summary>And if you want just one tag for bulleted children, you can use `bulletlists`</summary>
-        <img src="Assets/Notion like No Bullet Editor Mode-3.gif">
+        <img src="./public/readme/editormode/Notion like No Bullet Editor Mode-3.gif">
     </details>
     <details>
         <summary>Use case</summary>
-        <img src="Assets/Notion like No Bullet Editor Mode-1.gif">
-        <img src="Assets/Notion like No Bullet Editor Mode-1.png">
-        <img src="Assets/Notion like No Bullet Editor Mode-2.png">
-        <img src="Assets/Notion like No Bullet Editor Mode-3.png">
+        <img src="./public/readme/editormode/Notion like No Bullet Editor Mode-1.gif">
+        <img src="./public/readme/editormode/Notion like No Bullet Editor Mode-1.png">
+        <img src="./public/readme/editormode/Notion like No Bullet Editor Mode-2.png">
+        <img src="./public/readme/editormode/Notion like No Bullet Editor Mode-3.png">
     </details>
   </div>
   </details>
@@ -107,10 +107,10 @@
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Scrollable%20Code%20Block.css");
   ```
 
-  <div style="margin-left: 24px;">
-    <img src ="Assets/ModernScrollableCodeblock-1.gif">
-    <img src ="Assets/ModernScrollableCodeblock-2.png">
-    <img src ="Assets/ModernScrollableCodeblock-3.png">
+  <div >
+    <img src ="./public/readme/tricks/codeblock/ModernScrollableCodeblock-1.gif">
+    <img src ="./public/readme/tricks/codeblock/ModernScrollableCodeblock-2.png">
+    <img src ="./public/readme/tricks/codeblock/ModernScrollableCodeblock-3.png">
   </div>
   </details>
 
@@ -124,13 +124,14 @@
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Thumbnail.css");
   ```
 
-  <div style="margin-left: 24px;">
+  <div >
     <h2>Use case</h2>
-    <img src ="Assets/RemThumbnail-2.png">
+    <img src ="./public/readme/tricks/rem-thumbnail/RemThumbnail-2.png">
   </div>
 
   - I'd recommend you to use Rem Thumbnail with a rem-reference, which image is saved somewhere else in the workspace neatly like this.
-  <img src ="Assets/RemThumbnail-1.png">
+  
+  <img src ="./public/readme/tricks/rem-thumbnail/RemThumbnail-1.png">
 
   </details>
 
@@ -144,8 +145,8 @@
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rem%20Card%20Icon.css");
   ```
 
-  <img src="Assets/rem-card-icon/light.png">
-  <img src="Assets/rem-card-icon/dark.png">
+  <img src="./public/readme/tricks/rem-card-icon/light.png">
+  <img src="./public/readme/tricks/rem-card-icon/dark.png">
   </details>
 
   ---
@@ -180,10 +181,10 @@
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Notion%20like%20Callout%20Rem.css");
   ```
 
-  <div style="margin-left: 24px;">
-    <img src="Assets/CalloutRem-1.png">
-    <img src="Assets/CalloutRem-2.png">
-    <img src="Assets/CalloutRem-3.png">
+  <div >
+    <img src="./public/readme/tricks-tag/callout-rem/CalloutRem-1.png">
+    <img src="./public/readme/tricks-tag/callout-rem/CalloutRem-2.png">
+    <img src="./public/readme/tricks-tag/callout-rem/CalloutRem-3.png">
   </div>
   </details>
 
@@ -197,7 +198,7 @@
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Divider.css"); 
   ```
 
-  <div style="margin-left: 24px;">
+  <div >
     <img src="https://user-images.githubusercontent.com/56161102/129580147-c0507bcc-a4d1-4522-b48d-d7efdf831e0f.gif">
     <img src="https://user-images.githubusercontent.com/56161102/146560349-4c0e41c1-49c5-4ebc-bb15-c1429f6ca7aa.gif">
   </div>
@@ -209,7 +210,7 @@
   <details>
     <summary>Active Recall</summary>
 
-  - Tag Name : `active recall`  (NOT the `active-recall`)
+  - Tag Name : `active recall`  (❌ `active-recall`)
   <details>
     <summary>Ver.1 - Reveal all the Answer-blocks in a List card Answer at the same time</summary>
  
@@ -217,7 +218,7 @@
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall.css");
   ```
 
-  <img src="Assets/ActiveRecall1.gif">
+  <img src="./public/readme/tricks-tag/active-recall/ActiveRecall1.gif">
   </details>
  
   <details>
@@ -227,7 +228,7 @@
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall2.css");
   ```
 
-  <img src="Assets/ActiveRecall2.gif">
+  <img src="./public/readme/tricks-tag/active-recall/ActiveRecall2.gif">
   </details>
  
   <details>
@@ -237,7 +238,7 @@
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Active%20Recall3.css");
   ```
 
-  <img src="Assets/ActiveRecall-legacy.gif">
+  <img src="./public/readme/tricks-tag/active-recall/ActiveRecall-legacy.gif">
   </details>
 
   <a href="https://hannesfrank.github.io/remnote-library/#/scroll/com.github.hannesfrank.remnote-library.active-recall">origin author : hannesfrank</a>
@@ -254,8 +255,8 @@
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Planner.css");
   ```
 
-  <div style="margin-left: 24px;">
-    <img src="Assets/Planner.png">
+  <div >
+    <img src="./public/readme/tricks-tag/rem-planner/Planner.png">
   </div>
   </details>
 
@@ -271,7 +272,7 @@
 
   - Tag Name : `Tree` , `Treec`
 
-  <img src="Assets/RemTree.png">
+  <img src="./public/readme/tricks-tag/rem-tree/RemTree.png">
   </details>
  
   ---
@@ -286,7 +287,7 @@
  
   - Tag Name : `blockquote`
 
-  <img src="Assets/Blockquote.png">
+  <img src="./public/readme/tricks-tag/blockquote/Blockquote.png">
  
   </details>
 
@@ -302,7 +303,7 @@
  
   ## Display
 
-  <img src="Assets/ModernTableRow.png">
+  <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow.png">
  
   ## How to make Modern Table Row
 
@@ -341,7 +342,7 @@
   | 1200px | `W1200` |
 
   <img src="https://forum.remnote.io/uploads/default/original/2X/8/8ae892cd66862b9115bbbe74a0a3f1246b8a79e3.gif">
-  <img src="Assets/ModernTableRow-2.gif">
+  <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-2.gif">
   </details>
 
   <details>
@@ -367,7 +368,7 @@
   - Tag Name : `fit`
 
  
-  <img src="Assets/ModernTableRow-fit.gif">
+  <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-fit.gif">
   </details>
 
  
@@ -377,20 +378,20 @@
 
   - Tag Name : `th`
 
-  <img src="Assets/ModernTableRow-thformatting.png">
-  <img src="Assets/ModernTableRow-thformatting.gif">
+  <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-thformatting.png">
+  <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-thformatting.gif">
   </details>
 
   ## Use case
 
   <details>
     <summary>Copy a Table from any sources</summary>
-    <img src="Assets/ModernTableRow-0.gif">
+    <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-0.gif">
   </details>
 
   <details>
     <summary>Paste it to RemNote and Tag the predefined-width Table Row Tags to the Table Title area</summary>
-    <img src="Assets/ModernTableRow-1.gif">
+    <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-1.gif">
   </details>
 
 
@@ -400,21 +401,22 @@
   <details>
     <summary>Turn a Row table cell into a Column Table cell</summary>
 
-  - Tag Nmae : ~~`lb`~~
+  - Tag Nmae : ~~`lb`~~(deprecated)
   
-  > You can make seperated table row by simple indenting top level rem in a table cell
+  > You can now make seperated table-row column by simple indenting under a top level rem in a table cell
     
   </details>
+
   <details>
     <summary>Convert Spreadsheet Table into RemNote Format Workaround</summary>
-    <img src="Assets/ModernTableRow-1.png">
-    <img src="Assets/ModernTableRow-2.png">
-    <img src="Assets/ModernTableRow-3.png">
-    <img src="Assets/ModernTableRow-4.png">
-    <img src="Assets/ModernTableRow-5.png">
-    <img src="Assets/ModernTableRow-6.png">
-    <img src="Assets/ModernTableRow-7.png">
-    <img src="Assets/ModernTableRow-8.png">
+    <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-1.png">
+    <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-2.png">
+    <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-3.png">
+    <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-4.png">
+    <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-5.png">
+    <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-6.png">
+    <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-7.png">
+    <img src="./public/readme/tricks-tag/modern-table-row/ModernTableRow-8.png">
   </details>
  
 
@@ -434,7 +436,7 @@
 
   > Please use this only in a simple case. If you want to make more sophisticated table, I would recommend you to use 'Modern Table Row' in most use cases instead, since it can cover more requirement you'd have
 
-  <img src="Assets/ModernTableColumn.gif">
+  <img src="./public/readme/tricks-tag/modern-table-column/ModernTableColumn.gif">
   </details>
 
   ---
@@ -445,12 +447,13 @@
  
  <div>
  <details>
-    <summary>Modern Kanban1 - Inbox → In Progress → Done → Archive</summary>
- <img src="Assets/ModernKanban.png">
+  <summary>Modern Kanban1 - Inbox → In Progress → Done → Archive</summary>
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Kanban.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Kanban.css");
+  ```
+
+  <img src="./public/readme/tricks-tag/kanban/ModernKanban.png">
 
  </details>
  </div>
@@ -458,12 +461,13 @@
  <div>
  <details>
     <summary>Modern Kanban2 - Fully Customizable</summary>
-    <img src="Assets/ModernKanban2.png">
-    <img src="Assets/ModernKanban2-dark.png">
 
- ```css
- @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Kanban2.css");
- ```
+  ```css
+  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Kanban2.css");
+  ```
+  <img src="./public/readme/tricks-tag/kanban/ModernKanban2.png">
+  <img src="./public/readme/tricks-tag/kanban/ModernKanban2-dark.png">
+
 
  </details>
  
@@ -481,7 +485,7 @@
  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Strikethrough.css");
  ```
  
- <img src="Assets/Strikethrough.gif">
+ <img src="./public/readme/tricks-tag/strikethrough/Strikethrough.gif">
  </details>
  
  ---
@@ -494,7 +498,7 @@
  @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Image%2C%20Codeblock%20Caption%20like%20in%20Notion.css");
  ```
  
- <img src="Assets/Caption.gif">
+ <img src="./public/readme/tricks-tag/caption/Caption.gif">
  </details>
  
  ---
@@ -507,7 +511,7 @@
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Rating%20Bar.css"); 
   ```
  
-  <img src="Assets/RatingBar.gif">
+  <img src="./public/readme/tricks-tag/rating-bar/RatingBar.gif">
   </details>
  
   ---
@@ -520,34 +524,35 @@
   /* Please Copy the .css file (Template) and paste to your KB Directly */
   ```
 
-  <div style="margin-left: 24px;">
-    <details>
-        <summary>Make a Cover Photo CSS Template</summary>
-        <div style="margin-left: 24px;">
-            <img src="Assets/CoverPhoto-1.png">
-        </div>
-    </details>
-    <details>
-        <summary>Add a image url, Name the tag properly</summary>
-        <div style="margin-left: 24px;">
-            <img src="Assets/CoverPhoto-2.png">
-        </div>
-    </details>
-    <details>
-        <summary>Tag to the Rem Document title area</summary>
-        <div style="margin-left: 24px;">
-            <img src="Assets/CoverPhoto.gif">
-        </div>
-    </details>
-    <details>
-        <summary>Adjust 'background-size' on your tastes.</summary>
-        <div style="margin-left: 24px;">
-            <br>➊ background-size: contain; (Preferred) ➞ Height fixed and Responsive. but some margins can be made (need subsidiary steps like adding background color or making background repetitive pattern).
-            <br>➋ background-size: cover; ➞ I don’t care about the cover image cropped. (suitable for cover images which have repetitive patterns)
-            <br>➌ background-size: 100% 100%; ➞ The cover image can be ugly according to a front window size. (not recommended, only for mono-colored cover)
-        </div>
-    </details>
-  </div>
+  <details>
+      <summary>Make a Cover Photo CSS Template</summary>
+      <div >
+          <img src="./public/readme/tricks-tag/cover-photo/CoverPhoto-1.png">
+      </div>
+  </details>
+  <details>
+      <summary>Add a image url, Name the tag properly</summary>
+      <div >
+          <img src="./public/readme/tricks-tag/cover-photo/CoverPhoto-2.png">
+      </div>
+  </details>
+  <details>
+      <summary>Tag to the Rem Document title area</summary>
+      <div >
+          <img src="./public/readme/tricks-tag/cover-photo/CoverPhoto.gif">
+      </div>
+  </details>
+  <details>
+      <summary>Adjust 'background-size' on your tastes.</summary>
+  
+  | properties | details |
+  |------------|---------|
+  | `background-size: contain;` (Preferred)| Height fixed and Responsive. but some margins can be made (need subsidiary steps like adding background color or making background repetitive pattern). |
+  | `background-size: cover;` | I don’t care about the cover image cropped. (suitable for cover images which have repetitive patterns) |
+  | `background-size: 100% 100%;` | The cover image can be ugly according to a front window size. (not recommended, only for mono-colored cover) |
+    
+  </details>
+
   </details>
 
   ---
@@ -560,7 +565,7 @@
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Terminal.css");
   ```
 
-  <img src="Assets/Terminal.png">
+  <img src="./public/readme/tricks-tag/terminal/Terminal.png">
   </details>
 
   ---
@@ -604,7 +609,8 @@
   <details>
     <summary>Hide Aliases until cursor hovered or focused (fixing)</summary>
 
-  ![d](Assets/UI-alias.gif)
+  <img src="./public/readme/uiux-declutter/UI-alias.gif">
+  
 
   ```css
   .tree-node-container > .tree-node--children > .tree-node-container[data-rem-container-tags~=aliases]:not(:hover):not(:focus-within) {
