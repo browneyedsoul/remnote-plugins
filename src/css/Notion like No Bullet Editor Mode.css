@@ -36,7 +36,7 @@
   opacity: 0;
 }
 
-.rem-container--default_type-rem-type .rem-bullet.rem-bullet--hidden-children {
+.rem-container--default_type-rem-type.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet.rem-bullet--hidden-children, .rem-container--default_type-rem-type.rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet.rem-bullet--hidden-children, .rem-container--default_type-rem-type.rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet.rem-bullet--hidden-children {
   background: var(--no-practice-color);
   width: 1em;
   height: 1em;
@@ -49,7 +49,7 @@
   position: relative;
   left: -3px;
 }
-.rem-container--default_type-rem-type .rem-bullet.rem-bullet--hidden-children .perfect-circle__inner {
+.rem-container--default_type-rem-type.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet.rem-bullet--hidden-children .perfect-circle__inner, .rem-container--default_type-rem-type.rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet.rem-bullet--hidden-children .perfect-circle__inner, .rem-container--default_type-rem-type.rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet.rem-bullet--hidden-children .perfect-circle__inner {
   opacity: 0;
 }
 

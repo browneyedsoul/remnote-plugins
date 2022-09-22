@@ -102,15 +102,19 @@
 }
 
 .rem-container--default_type-rem-type {
-    .rem-bullet {
-        &.rem-bullet--hidden-children {
-            @include icon-box(
-                1em,
-                1em,
-                url("https://browneyedsoul.github.io/ImageRepository/List.svg")
-            );
-            position: relative;
-            left: -3px;
+    &.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled,
+    &.rem-container--default_type-rem-type.rem-container--backwards-practice-enabled,
+    &.rem-container--default_type-rem-type.rem-container--forwards-practice-disabled {
+        .rem-bullet {
+            &.rem-bullet--hidden-children {
+                @include icon-box(
+                    1em,
+                    1em,
+                    url("https://browneyedsoul.github.io/ImageRepository/List.svg")
+                );
+                position: relative;
+                left: -3px;
+            }
         }
     }
 }
