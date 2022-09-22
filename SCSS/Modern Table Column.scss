@@ -12,15 +12,13 @@
     --table-title-right-margin: 0;
     --table-container-left-margin: 1.5rem;
     --table-container-right-margin: 0;
-    --table-container-cell-margin-left: -10px;
 }
 
 @mixin table(
     $title-bgcolor,
     $border,
     $header,
-    $header-text
-) {
+    $header-text) {
     #hierarchy-editor {
         [data-rem-container-tags~="table"] {
             margin-left: var(--table-container-left-margin);
@@ -46,7 +44,10 @@
             // Remove Left TreeNode Line
                 .TreeNode.tree-node--children {
                     border-width: 0 !important;
-                    margin-left: 0.05rem;
+                    margin-left: 0;
+                    &::-webkit-scrollbar-thumb {
+                        background-color: #C3C2BF;
+                    }
                 }
             // Structure
                 > div.tree-node--children {
@@ -56,12 +57,18 @@
                     margin-left: var(--table-container-left-margin);
                     margin-right: var(--table-container-right-margin) !important;
                     padding-left: 0;
+                    border-right: $border;
 
                     > div.animate-zoom-into-bullet {
                         flex: 1 0 0;
                         white-space: wrap;
-                        // Line Color
-                            border: $border;
+                        border-left: $border;
+                        border-bottom: $border;
+
+                        &:last-of-type {
+                            border-right: $border;
+                        }
+
                         // Constant Width
                             .rem-text,
                             .EditorContainer,
@@ -80,17 +87,16 @@
                                 text-align: center;
                             }
                         // Line Grid Adjustment
-                            &:nth-child(n+1) {
-                                margin-left: -1px;
-                            }
-
+                            // &:nth-child(n+1) {
+                            //     margin-left: -1px;
+                            // }
                         > div.tree-node--children {
                             width: 100% !important;
                             left: 0px !important;
+                            padding-left: unset;
 
                             > div.animate-zoom-into-bullet {
                                 position: relative;
-                                left: var(--table-container-cell-margin-left);
                                 width: 100%;
                                 border-bottom: $border;
 
@@ -215,7 +221,6 @@
         > .TreeNode {
             overflow: auto;
             white-space: pre;
-            margin-right: 0.5rem !important;
 
             > .animate-zoom-into-bullet {
                 > .TreeNode {
