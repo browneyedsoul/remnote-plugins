@@ -6,7 +6,7 @@
 
   - https://github.com/glenn2223/vscode-live-sass-compiler
 
-  - Since the node-sass has been deprecated. Thus in due season, it will gradually be a dart-sass based project.
+  - Since the node-sass has been deprecated, it will gradually be a dart-sass based project in due season.
 
 - the `*.css` files are only controlled and compiled by `*.scss` files in the `SCSS` directory.
 
