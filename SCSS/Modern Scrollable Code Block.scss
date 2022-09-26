@@ -64,6 +64,12 @@
         --code-node-url-color-dark: #A6FBDE;
 }
 // Basic Style
+    // State problem
+        .rich-text-editor {
+            #code-node {
+                margin-bottom: 1rem;
+            }
+        }
     // Inline Code
         .quote {
             font-family:		var(--code-font-family);
@@ -81,8 +87,8 @@
             padding-bottom:	1.5rem;
             padding-left:	40px;
             padding-right:	10px;
-            margin-top:		2px;
-            margin-bottom:	2px;
+            margin-top:		.55rem;
+            margin-bottom:	.55rem;
             border-radius:	0.3rem;
             overflow-x:		scroll;
             white-space:	pre;

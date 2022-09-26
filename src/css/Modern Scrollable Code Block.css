@@ -61,6 +61,10 @@
   --code-node-url-color-dark: #A6FBDE;
 }
 
+.rich-text-editor #code-node {
+  margin-bottom: 1rem;
+}
+
 .quote {
   font-family: var(--code-font-family);
   font-size: var(--code-font-size);
@@ -77,8 +81,8 @@
   padding-bottom: 1.5rem;
   padding-left: 40px;
   padding-right: 10px;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 0.55rem;
+  margin-bottom: 0.55rem;
   border-radius: 0.3rem;
   overflow-x: scroll;
   white-space: pre;
