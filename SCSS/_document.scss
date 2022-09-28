@@ -364,6 +364,10 @@
                             width: calc(100% - 3.7rem);
                             margin-left: 3rem;
                             margin-right: 0.7rem;
+
+                            .rem-text {
+                                align-items: center;
+                            }
                             // Find / Filter / Replace - Ctrl(⌘) + F
                                 #hierarchy-editor__ctrl-f {
                                     border: 2px solid white;
@@ -730,6 +734,7 @@
                                         span.rem-checkbox {
                                                 border-color: #BBB !important;
                                                 background-color: #222 !important;
+                                                margin-top: 0
                                             }
                                 }
                             // Highlight Color
