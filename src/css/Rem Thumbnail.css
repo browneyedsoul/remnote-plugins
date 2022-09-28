@@ -155,6 +155,9 @@
   -o-object-position: center;
      object-position: center;
 }
+.Queue .rem-bullet__document {
+  display: flex;
+}
 .Queue .rem-bullet__document span.inline-block {
   height: 1em;
   width: auto;

@@ -126,6 +126,7 @@
         // ?
             .rem-bullet__document {
                 @include thumbnail-set;
+                display: flex;
 
                 > span {
                     >div {
