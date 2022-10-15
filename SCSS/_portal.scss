@@ -1,3 +1,8 @@
+.portal-tree-node-box {
+    &.portal-tree-node-box--focused {
+        z-index: 6;
+    }
+}
 // Portal
     .dark {
         // Portal Breadcrumbs

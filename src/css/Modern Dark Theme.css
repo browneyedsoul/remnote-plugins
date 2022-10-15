@@ -2295,6 +2295,10 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   background-color: unset;
 }
 
+.portal-tree-node-box.portal-tree-node-box--focused {
+  z-index: 6;
+}
+
 .dark #hierarchy-editor .node-top-level-in-portal-container .node-top-level-in-portal {
   background-color: var(--darkmode-background);
   border: 1px solid var(--darkmode-contrast);
