@@ -947,7 +947,6 @@
 .dark .tile__document #document #hierarchy-editor div:nth-of-type(2) span.rem-checkbox {
   border-color: #BBB !important;
   background-color: #222 !important;
-  margin-top: 0;
 }
 .dark .tile__document #document #hierarchy-editor [data-rem-tags~=highlight] > div > span .highlight-color--red {
   background-color: var(--highlight-color--red-dark);
@@ -1977,6 +1976,10 @@
 .dark [aria-label~=Omnibar] [data-omnibar-results~=true] > div > div:nth-of-type(2) > div:nth-of-type(2) {
   opacity: 0.5;
   zoom: 0.8;
+}
+
+span.rem-checkbox {
+  margin-top: 0;
 }
 
 div.portal-tree-node-box.portal-tree-node-box--enable-buttons div.TreeNode.tree-node--children.flex.flex-grow.flex-col div.TreeNode.tree-node--children.flex.flex-grow.flex-col div.tree-node--parent.flex-grow div.w-full {
