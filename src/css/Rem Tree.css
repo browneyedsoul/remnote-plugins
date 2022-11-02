@@ -1,6 +1,6 @@
 :root {
-  --line-color: #CACAD9;
-  --line-color-dark: #747474;
+  --border-color: #DDD;
+  --border-color-dark: #747474;
   --darkmode-background: #2F3437;
 }
 
@@ -66,7 +66,7 @@
   flex-direction: row;
   line-height: 160%;
   margin: 0.5rem 0 0.5rem 1.6rem;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0;
   overflow-x: visible;
   overflow-y: hidden;
   white-space: pre;
@@ -129,7 +129,7 @@
   position: absolute;
   z-index: 2;
   left: -2px;
-  border-top: 1px solid var(--line-color);
+  border-top: 1px solid var(--border-color);
   margin-top: 16px;
 }
 #hierarchy-editor [data-rem-container-tags~=tree] .animate-zoom-into-bullet, #hierarchy-editor [data-rem-container-tags~=treec] .animate-zoom-into-bullet {
@@ -142,7 +142,7 @@
 #hierarchy-editor [data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty), #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty) {
   display: inline-block;
   z-index: 0;
-  border-left: 1px solid var(--line-color);
+  border-left: 1px solid var(--border-color);
   position: relative;
 }
 #hierarchy-editor [data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty)::before, #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty)::before {
@@ -156,7 +156,7 @@
   height: 1rem;
   border-top: unset;
   border-right: unset;
-  border-bottom: 1px solid var(--line-color);
+  border-bottom: 1px solid var(--border-color);
   border-left: 4px solid #FFF;
 }
 #hierarchy-editor [data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty)::after, #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty)::after {
@@ -170,7 +170,7 @@
   height: 1rem;
   border-bottom: unset;
   border-right: unset;
-  border-top: 1px solid var(--line-color);
+  border-top: 1px solid var(--border-color);
   border-left: 4px solid #FFF;
 }
 #hierarchy-editor [data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty) .tree-node-container, #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty) .tree-node-container {
@@ -198,7 +198,7 @@
   background-color: #2F3437;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=tree] #hierarchy-editor .TreeNode, .dark #hierarchy-editor [data-rem-container-tags~=treec] #hierarchy-editor .TreeNode {
-  border-color: var(--line-color-dark);
+  border-color: var(--border-color-dark);
 }
 .dark #hierarchy-editor [data-rem-container-tags~=tree]::-webkit-scrollbar-thumb, .dark #hierarchy-editor [data-rem-container-tags~=treec]::-webkit-scrollbar-thumb {
   background-color: #5A666A;
@@ -211,7 +211,7 @@
   position: absolute;
   z-index: 2;
   left: -2px;
-  border-top: 1px solid var(--line-color-dark);
+  border-top: 1px solid var(--border-color-dark);
   margin-top: 16px;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=tree] div.tree-node--parent::before, .dark #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--parent::before {
@@ -223,7 +223,7 @@
   top: 0;
 }
 .dark #hierarchy-editor [data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty), .dark #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty) {
-  border-left: 1px solid var(--line-color-dark);
+  border-left: 1px solid var(--border-color-dark);
 }
 .dark #hierarchy-editor [data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty)::before, .dark #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty)::before {
   content: "";
@@ -236,7 +236,7 @@
   height: 1rem;
   border-top: unset;
   border-right: unset;
-  border-bottom: 1px solid var(--line-color-dark);
+  border-bottom: 1px solid var(--border-color-dark);
   border-left: 4px solid var(--darkmode-background);
 }
 .dark #hierarchy-editor [data-rem-container-tags~=tree] div.tree-node--children:not(.tree-node--children:empty)::after, .dark #hierarchy-editor [data-rem-container-tags~=treec] div.tree-node--children:not(.tree-node--children:empty)::after {
@@ -250,17 +250,17 @@
   height: 1rem;
   border-bottom: unset;
   border-right: unset;
-  border-top: 1px solid var(--line-color-dark);
+  border-top: 1px solid var(--border-color-dark);
   border-left: 4px solid var(--darkmode-background);
 }
 
 [data-rem-container-tags~=treec] {
-  border: 0.1rem solid var(--line-color);
+  border: 0.1rem solid var(--border-color);
   border-radius: 4px;
 }
 
 .dark [data-rem-container-tags~=treec] {
-  border: 0.1rem solid var(--line-color-dark);
+  border: 0.1rem solid var(--border-color-dark);
 }
 
 [data-rem-container-tags~=tree][data-rem-container-tags~=w100] > div.tree-node--children > div.animate-zoom-into-bullet > div.tree-node--parent,

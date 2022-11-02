@@ -1,6 +1,6 @@
 :root {
-    --line-color: #CACAD9;
-    --line-color-dark: #747474;
+    --border-color: #DDD;
+    --border-color-dark: #747474;
     --darkmode-background: #2F3437;
 }
 
@@ -80,7 +80,7 @@
         flex-direction: row;
         line-height: 160%;
         margin: 0.5rem 0 0.5rem 1.6rem;
-        padding: 1rem;
+        padding: 1rem 1rem 1rem 0;
         overflow-x: visible;
         overflow-y: hidden;
         white-space: pre;
@@ -147,7 +147,7 @@
                         position: absolute;
                         z-index: 2;
                         left: -2px;
-                        border-top: 1px solid var(--line-color);
+                        border-top: 1px solid var(--border-color);
                         margin-top: 16px;
                     }
                 }
@@ -170,7 +170,7 @@
             div.tree-node--children:not(.tree-node--children:empty) {
                 display: inline-block;
                 z-index: 0;
-                border-left: 1px solid var(--line-color);
+                border-left: 1px solid var(--border-color);
                 position: relative;
                 // Crumbs Remover
                 &::before {
@@ -184,7 +184,7 @@
                     height: 1rem;
                     border-top: unset;
                     border-right: unset;
-                    border-bottom: 1px solid var(--line-color);
+                    border-bottom: 1px solid var(--border-color);
                     border-left: 4px solid #FFF;
                 }
                 &::after {
@@ -198,7 +198,7 @@
                     height: 1rem;
                     border-bottom: unset;
                     border-right: unset;
-                    border-top: 1px solid var(--line-color);
+                    border-top: 1px solid var(--border-color);
                     border-left: 4px solid #FFF;
                 }
 
@@ -245,7 +245,7 @@
 
                 #hierarchy-editor {
                     .TreeNode {
-                        border-color: var(--line-color-dark);
+                        border-color: var(--border-color-dark);
                     }
                 }
 
@@ -263,7 +263,7 @@
                             position: absolute;
                             z-index: 2;
                             left: -2px;
-                            border-top: 1px solid var(--line-color-dark);
+                            border-top: 1px solid var(--border-color-dark);
                             margin-top: 16px;
                         }
                     }
@@ -283,7 +283,7 @@
                     }
                 }
                 div.tree-node--children:not(.tree-node--children:empty) {
-                    border-left: 1px solid var(--line-color-dark);
+                    border-left: 1px solid var(--border-color-dark);
                     // Crumbs Remover
                     &::before {
                         content: "";
@@ -296,7 +296,7 @@
                         height: 1rem;
                         border-top: unset;
                         border-right: unset;
-                        border-bottom: 1px solid var(--line-color-dark);
+                        border-bottom: 1px solid var(--border-color-dark);
                         border-left: 4px solid var(--darkmode-background);
                     }
                     &::after {
@@ -310,7 +310,7 @@
                         height: 1rem;
                         border-bottom: unset;
                         border-right: unset;
-                        border-top: 1px solid var(--line-color-dark);
+                        border-top: 1px solid var(--border-color-dark);
                         border-left: 4px solid var(--darkmode-background);
                     }
                 }
@@ -321,13 +321,13 @@
 
 [data-rem-container-tags~="treec"] {
     @extend %tree;
-    border: 0.1rem solid var(--line-color);
+    border: 0.1rem solid var(--border-color);
     border-radius: 4px;
 }
 .dark {
     [data-rem-container-tags~="treec"] {
         @extend %tree-dark;
-        border: 0.1rem solid var(--line-color-dark);
+        border: 0.1rem solid var(--border-color-dark);
     }
 }
 
