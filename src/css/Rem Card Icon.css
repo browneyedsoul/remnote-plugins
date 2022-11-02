@@ -7,9 +7,7 @@
   --no-practice-color: #959595;
 }
 
-.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet,
-.rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet,
-.rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet {
+.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet, .rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet, .rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet {
   background: var(--no-practice-color);
   width: 1em;
   height: 1em;
@@ -20,12 +18,9 @@
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
-.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet .perfect-circle__inner,
-.rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet .perfect-circle__inner,
-.rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet .perfect-circle__inner {
+.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet .perfect-circle__inner, .rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet .perfect-circle__inner, .rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet .perfect-circle__inner {
   opacity: 0;
 }
-
 .rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet.rem-bullet--hidden-children, .rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet.rem-bullet--hidden-children, .rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet.rem-bullet--hidden-children {
   background: var(--no-practice-color);
   width: 1em;
@@ -299,4 +294,11 @@
 .dark .rem-container--descriptor-rem-type.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .separator-symbol > span,
 .dark .rem-container--descriptor-rem-type.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled .rn-card-delimiter > span {
   color: var(--disabled-practice-color);
+}
+
+.rem-container--default_type-rem-type .rn-bullet-container > span,
+.rem-container--concept-rem-type .rn-bullet-container > span,
+.rem-container--descriptor-rem-type .rn-bullet-container > span {
+  display: flex;
+  align-items: center;
 }
