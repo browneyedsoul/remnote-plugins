@@ -42,10 +42,6 @@
     border-radius: 3px;
 }
 
-// Rem Hierarchy Text Editor Line Height
-    .EditorContainer {
-        line-height: 160%;
-    }
 // Disable Bullet Event
     .rem-button__container {
         .rem-bullet__container {
@@ -90,21 +86,21 @@
         }
     }
 // Bullet Container Alignment
-    .rem-container--header-1 {
-        .rem-button__container {
-            margin-top: 8px;
-        }
-    }
-    .rem-container--header-2 {
-        .rem-button__container {
-            margin-top: 7px;
-        }
-    }
-    .rem-container--header-3 {
-        .rem-button__container {
-            margin-top: 6px;
-        }
-    }
+    // .rem-container--header-1 {
+    //     .rem-button__container {
+    //         margin-top: 8px;
+    //     }
+    // }
+    // .rem-container--header-2 {
+    //     .rem-button__container {
+    //         margin-top: 7px;
+    //     }
+    // }
+    // .rem-container--header-3 {
+    //     .rem-button__container {
+    //         margin-top: 6px;
+    //     }
+    // }
     .rem-button__container {
         margin-top: 5px;
     }
