@@ -1756,15 +1756,6 @@
 .dark .rem-powerup-icon .text-icon {
   color: var(--darkmode-text);
 }
-.dark #code-node {
-  background-color: var(--code-node-background-color-dark);
-}
-.dark #code-node::before {
-  background-color: var(--code-node-line-number-background-color-dark);
-}
-.dark .codeLine::before {
-  color: var(--code-node-line-number-color-dark);
-}
 .dark .work-in-progress-tag {
   color: var(--darkmode-text);
   background-color: var(--darkmode-background-selected-darker);

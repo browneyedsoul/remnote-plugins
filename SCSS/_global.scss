@@ -465,17 +465,6 @@
                     color: var(--darkmode-text);
                 }
             }
-    // Codeblock
-        #code-node {
-            background-color: var(--code-node-background-color-dark);
-
-            &::before {
-                background-color: var(--code-node-line-number-background-color-dark);
-            }
-        }
-        .codeLine::before {
-            color: var(--code-node-line-number-color-dark);
-        }
     // Tag Searching Text
         .work-in-progress-tag {
             color: var(--darkmode-text);
