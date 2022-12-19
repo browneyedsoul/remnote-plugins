@@ -17,9 +17,7 @@
   --no-practice-color: #959595;
 }
 
-.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet,
-.rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet,
-.rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet {
+.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet, .rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet, .rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet {
   background: var(--no-practice-color);
   width: 1em;
   height: 1em;
@@ -30,12 +28,9 @@
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
-.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet .perfect-circle__inner,
-.rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet .perfect-circle__inner,
-.rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet .perfect-circle__inner {
+.rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet .perfect-circle__inner, .rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet .perfect-circle__inner, .rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet .perfect-circle__inner {
   opacity: 0;
 }
-
 .rem-container--default_type-rem-type.rem-container--forwards-practice-enabled .rem-bullet.rem-bullet--hidden-children, .rem-container--default_type-rem-type.rem-container--backwards-practice-enabled .rem-bullet.rem-bullet--hidden-children, .rem-container--default_type-rem-type.rem-container--forwards-practice-disabled .rem-bullet.rem-bullet--hidden-children {
   background: var(--no-practice-color);
   width: 1em;
@@ -311,8 +306,11 @@
   color: var(--disabled-practice-color);
 }
 
-.EditorContainer {
-  line-height: 160%;
+.rem-container--default_type-rem-type .rn-bullet-container > span,
+.rem-container--concept-rem-type .rn-bullet-container > span,
+.rem-container--descriptor-rem-type .rn-bullet-container > span {
+  display: flex;
+  align-items: center;
 }
 
 .rem-button__container .rem-bullet__container .pointer-events-auto {
@@ -338,18 +336,6 @@
 #hierarchy-editor .rem-container .rem-button__container .six-dot {
   position: relative;
   left: 24px;
-}
-
-.rem-container--header-1 .rem-button__container {
-  margin-top: 8px;
-}
-
-.rem-container--header-2 .rem-button__container {
-  margin-top: 7px;
-}
-
-.rem-container--header-3 .rem-button__container {
-  margin-top: 6px;
 }
 
 .rem-button__container {
@@ -513,7 +499,7 @@
   transition-timing-function: linear;
   position: relative;
   background-color: transparent;
-  margin-left: 1.8rem;
+  margin-left: 1.6rem;
 }
 #hierarchy-editor > .fixed > .tree-node-container > .TreeNode {
   left: 16px !important;
