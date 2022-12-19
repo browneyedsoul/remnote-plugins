@@ -73,7 +73,10 @@
         }
     }
 }
-
+// Interim measure
+#DocumentTitle .EditorContainer span:nth-child(3) {
+	display: unset;
+}
 // All Notes Section
     .document-table {
         .ReactVirtualized__Grid__innerScrollContainer {
