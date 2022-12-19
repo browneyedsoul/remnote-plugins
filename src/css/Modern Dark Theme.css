@@ -2788,7 +2788,7 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div .RichTextViewer .rem-reference-container span.rem-reference span.RichTextViewer {
   background-color: unset;
 }
-#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div:only-child {
+#document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer > div.rounded-md > div.flex > div:only-of-type {
   margin-left: 24px;
 }
 #document-sidebar > div:nth-of-type(2) [data-type~=document_list_item] span.block.group.cursor-pointer .highlight-color--red,
