@@ -2631,14 +2631,6 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   border: 0.1rem solid #683E62;
   border-radius: 4px;
 }
-#document-sidebar .highlight-color--red,
-#document-sidebar .highlight-color--orange,
-#document-sidebar .highlight-color--yellow,
-#document-sidebar .highlight-color--green,
-#document-sidebar .highlight-color--blue,
-#document-sidebar .highlight-color--purple {
-  padding: 0 0.25rem;
-}
 #document-sidebar + div > div {
   background-color: var(--sidebar-background);
 }
