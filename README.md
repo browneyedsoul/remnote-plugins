@@ -13,7 +13,7 @@
 # Theme
 <!-- Modern Dark Theme -->
   <details>
-    <summary>Modern Dark Theme</summary>
+    <summary>Modern Dark Theme (🚧 Constant changes in the RemNote structure make it hard to maintain this theme. Please use the default theme)</summary>
 
   ```css
   @import url("https://browneyedsoul.github.io/RemNote-CSS-Library/Modern%20Dark%20Theme.css");
