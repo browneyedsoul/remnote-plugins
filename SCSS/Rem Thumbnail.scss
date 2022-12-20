@@ -77,8 +77,14 @@
 #DocumentTitle .EditorContainer span:nth-child(3) {
 	display: unset;
 }
-.dark #document-sidebar img.dark\:bg-black {
-    background-color: unset;
+.dark {
+    #document-sidebar,
+    [data-rem-tags~="header"],
+    .rn-doc-title {
+        img.dark\:bg-black {
+            background-color: unset;
+        }
+    }
 }
 // All Notes Section
     .document-table {

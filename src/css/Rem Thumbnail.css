@@ -2,7 +2,9 @@
   display: unset;
 }
 
-.dark #document-sidebar img.dark\:bg-black {
+.dark #document-sidebar img.dark\:bg-black,
+.dark [data-rem-tags~=header] img.dark\:bg-black,
+.dark .rn-doc-title img.dark\:bg-black {
   background-color: unset;
 }
 
