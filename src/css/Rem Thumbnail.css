@@ -2,6 +2,10 @@
   display: unset;
 }
 
+.dark #document-sidebar img.dark\:bg-black {
+  background-color: unset;
+}
+
 .document-table .ReactVirtualized__Grid__innerScrollContainer .RichTextViewer span.inline-block {
   height: 1em;
   width: auto;
