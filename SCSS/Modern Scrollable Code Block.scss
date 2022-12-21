@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 :root {
     // Global Code Style
-        --code-font-family: "Roboto Mono", "Fira code", monospace;
+        --code-font-family: "Roboto Mono", monospace;
         --code-font-size: 1em;
         --inline-code-color: #E64400;
         --inline-code-color-dark: #DCDA7A;
@@ -72,26 +73,26 @@
         }
     // Inline Code
         .quote {
-            font-family:		var(--code-font-family);
-            font-size:			var(--code-font-size);
-            color:				var(--inline-code-color);
-            background-color:	var(--inline-code-background);
+            font-family:        var(--code-font-family);
+            font-size:          var(--code-font-size);
+            color:              var(--inline-code-color);
+            background-color:   var(--inline-code-background);
         }
     // Code Block
         #code-node {
-            font-family:	var(--code-font-family);
-            font-size:		var(--code-font-size);
-            background-color:	var(--inline-code-background);
-            border:			0;
-            padding-top:	2rem;
-            padding-bottom:	1.5rem;
-            padding-left:	40px;
-            padding-right:	10px;
-            margin-top:		.55rem;
-            margin-bottom:	.55rem;
-            border-radius:	0.3rem;
-            overflow-x:		scroll;
-            white-space:	pre;
+            font-family:        var(--code-font-family);
+            font-size:	        var(--code-font-size);
+            background-color:   var(--inline-code-background);
+            border:	            0;
+            padding-top:        2rem;
+            padding-bottom:     1.5rem;
+            padding-left:       40px;
+            padding-right:      10px;
+            margin-top:         .55rem;
+            margin-bottom:      .55rem;
+            border-radius:      0.3rem;
+            overflow-x:	        scroll;
+            white-space:        pre;
 
             &::-webkit-scrollbar {
                 width: 8px;
@@ -114,18 +115,18 @@
                         counter-increment: codeLineNumber;
 
                         &::before {
-                            color:			var(--line-number-color);
-                            position:		absolute;
-                            left:			0px;
-                            width:			var(--line-number-width);
-                            box-sizing:		border-box;
-                            padding-right:	5px;
-                            padding-top:	1px;
-                            content:		counters(codeLineNumber, ".") " ";
-                            text-align:		center;
-                            font-family:	Helvetica;
-                            font-size:		13px;
-                            font-weight:	100;
+                            color:          var(--line-number-color);
+                            position:       absolute;
+                            left:           0px;
+                            width:          var(--line-number-width);
+                            box-sizing:	    border-box;
+                            padding-right:  5px;
+                            padding-top:    1px;
+                            content:        counters(codeLineNumber, ".") " ";
+                            text-align:     center;
+                            font-family:    Helvetica;
+                            font-size:      13px;
+                            font-weight:    100;
                             opacity: .8;
                         }
 
@@ -178,6 +179,8 @@
         // Code Block
         #code-node {
             background-color: var(--code-node-background-color-dark);
+            box-shadow: 1px 2px 5px #4E4E4E;
+
 
             &::before {
                 background-color: var(--code-node-plain);
