@@ -392,6 +392,9 @@
 #tile__document #document #DropToOpenAsDocument #DocumentTitle .inline-block.align-text-top > div {
   display: none;
 }
+#tile__document #document #DropToOpenAsDocument #DocumentTitle .inline-block > .group.inline-block.align-text-top {
+  top: 0.2rem;
+}
 #tile__document #document #hierarchy-editor > .fixed > div > .tree-node--children > .tree-node-container .EditorContainer span.inline-block {
   height: 1em;
   width: auto;

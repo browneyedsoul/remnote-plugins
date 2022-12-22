@@ -188,6 +188,11 @@
                 #DocumentTitle {
                     @include thumbnail-set;
                     @include console-declutter;
+                    .inline-block {
+                        > .group.inline-block.align-text-top {
+                            top: 0.2rem
+                        }
+                    }
                 }
             }
             // Sticky Header
