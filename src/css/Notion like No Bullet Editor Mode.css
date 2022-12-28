@@ -376,11 +376,11 @@
   opacity: 0.3;
 }
 
-[data-rem-container-tags~=list-item] span.rem-bullet__number {
+[data-rem-container-tags~=list-item] span.rem-bullet__number:not(.rn-list-number-wrapper) {
   position: relative;
   left: 16px;
 }
-[data-rem-container-tags~=list-item] span.rem-bullet__number + div {
+[data-rem-container-tags~=list-item] span.rem-bullet__number:not(.rn-list-number-wrapper) + div {
   position: relative;
   left: 16px;
 }
