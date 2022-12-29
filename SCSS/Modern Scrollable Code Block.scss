@@ -66,11 +66,11 @@
 }
 // Basic Style
     // State problem
-        // .rich-text-editor {
-        //     #code-node {
-        //         margin-bottom: 1rem;
-        //     }
-        // }
+        .rich-text-editor {
+            #code-node {
+                margin-bottom: 0.4rem;
+            }
+        }
     // Inline Code
         .quote {
             font-family:        var(--code-font-family);
@@ -89,7 +89,7 @@
             padding-left:       40px;
             padding-right:      10px;
             margin-top:         .55rem;
-            margin-bottom:      .55rem;
+            margin-bottom:      unset;
             border-radius:      0.3rem;
             overflow-x:	        scroll;
             white-space:        pre;
