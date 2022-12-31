@@ -16,10 +16,18 @@
 
 - *.scss : 4 space opinionated for consistency and readability.
 
-## Misc.
+## How to Contribute
 
-- If you are exploring long lines of code, you can use fold and collapse using the outdented first line `// blahblah`.
+1. Fork this repository
 
-## Multi-root workspace
+2. Clone to your local environment
 
-> If you are working in a [multi-root workspace](https://code.visualstudio.com/docs/editor/multi-root-workspaces), please copy and paste this settings .vscode/settings.json in the root of workspace
+```bash
+git clone 'https://github.com/YourGithubID/RemNote-CSS-Library.git'
+```
+3. Install dependency
+```bash
+npm install
+```
+4. Contribute
+5. PR
