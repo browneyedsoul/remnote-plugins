@@ -63,7 +63,51 @@
 }
 
 .rich-text-editor #code-node {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  margin-top: unset;
   margin-bottom: 0.4rem;
+}
+
+[data-rem-container-tags~=table90] #code-node,
+[data-rem-container-tags~=table120] #code-node,
+[data-rem-container-tags~=table150] #code-node,
+[data-rem-container-tags~=table180] #code-node,
+[data-rem-container-tags~=table210] #code-node,
+[data-rem-container-tags~=table240] #code-node,
+[data-rem-container-tags~=table270] #code-node,
+[data-rem-container-tags~=table300] #code-node,
+[data-rem-container-tags~=table330] #code-node,
+[data-rem-container-tags~=table360] #code-node,
+[data-rem-container-tags~=table390] #code-node,
+[data-rem-container-tags~=table420] #code-node,
+[data-rem-container-tags~=table450] #code-node,
+[data-rem-container-tags~=table480] #code-node,
+[data-rem-container-tags~=table510] #code-node,
+[data-rem-container-tags~=table540] #code-node,
+[data-rem-container-tags~=table570] #code-node,
+[data-rem-container-tags~=table600] #code-node,
+[data-rem-container-tags~=table630] #code-node,
+[data-rem-container-tags~=table660] #code-node,
+[data-rem-container-tags~=table690] #code-node,
+[data-rem-container-tags~=table720] #code-node,
+[data-rem-container-tags~=table750] #code-node,
+[data-rem-container-tags~=table780] #code-node,
+[data-rem-container-tags~=table810] #code-node,
+[data-rem-container-tags~=table840] #code-node,
+[data-rem-container-tags~=table870] #code-node,
+[data-rem-container-tags~=table900] #code-node,
+[data-rem-container-tags~=table930] #code-node,
+[data-rem-container-tags~=table960] #code-node,
+[data-rem-container-tags~=table990] #code-node,
+[data-rem-container-tags~=table1020] #code-node,
+[data-rem-container-tags~=table1050] #code-node,
+[data-rem-container-tags~=table1080] #code-node,
+[data-rem-container-tags~=table1110] #code-node,
+[data-rem-container-tags~=table1140] #code-node,
+[data-rem-container-tags~=table1170] #code-node,
+[data-rem-container-tags~=table1200] #code-node {
+  margin-bottom: 0.35rem;
 }
 
 .quote {
@@ -80,10 +124,10 @@
   border: 0;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
+  margin-top: unset;
+  margin-bottom: unset;
   padding-left: 40px;
   padding-right: 10px;
-  margin-top: 0.55rem;
-  margin-bottom: unset;
   border-radius: 0.3rem;
   overflow-x: scroll;
   white-space: pre;
