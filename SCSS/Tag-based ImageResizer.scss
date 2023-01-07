@@ -14,13 +14,16 @@
         }
     }
 }
-
+%content-overflow {
+    overflow-x: auto;
+}
 %w-100 {
     width: 100%;
 }
 
 @for $i from 1 through 40 {
     [data-rem-container-tags~="#{$i * 5}"] {
+        @extend %content-overflow;
         @extend %declutter;
         .inline-block {
             @extend %w-100;
@@ -34,6 +37,7 @@
 
 @for $i from 1 through 40 {
     [data-rem-container-tags~="#{$i * 50px}"] {
+        @extend %content-overflow;
         @extend %declutter;
         .inline-block {
             @extend %w-100;
