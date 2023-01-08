@@ -1,0 +1,70 @@
+:root {
+    --ref-text: #000;
+    --ref-text-dark: #DFDFD5;
+    --ref-bg: #F7F6F3;
+    --ref-bg-dark: #282C30;
+    --alias-border: #CACAD9;
+    --alias-border-dark: #747474;
+    --alias-bg: #ECECEC;
+    --alias-bg-dark: #252525;
+}
+
+@mixin alias(
+    $ref-text,
+    $alias-bg,
+    $alias-shadow) {
+
+    .work-in-progress-rem {
+        color: $ref-text;
+    }
+    [data-rem-container-property~="aliases"] {
+        border-radius: 4px;
+        background-color: $alias-bg;
+        box-shadow: $alias-shadow;
+        margin-right: 0.5rem;
+        margin-bottom: 1rem;
+
+        [data-rem-property~="aliases"] {
+            .rem-button__container {
+                .rem-bullet__container {
+                    .rem-bullet.rem-bullet--hidden-children {
+                        width: 0.7rem;
+                    }
+                }
+            }
+        }
+        .rem-reference {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        > .tree-node--children {
+            [data-rem-container-tags~="list-item"] {
+                .tree-node--parent {
+                    [data-rem-tags~="list-item"] {
+                        .rem-text {
+                            span.rem-powerup-icon {
+                                .text-icon {
+                                    top: .2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
+@include alias(
+    var(--ref-text),
+    var(--alias-bg),
+    1px 1px 2px #AAA
+);
+.dark {
+    @include alias(
+        var(--ref-text-dark),
+        var(--alias-bg-dark),
+        1px 1px 5px #4E4E4E
+    );
+}
