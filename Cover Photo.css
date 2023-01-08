@@ -1,4 +1,4 @@
-[data-document-tags~=""]::before {
+.mosaic-window-body:has([data-document-tags~=""])::before {
   content: "";
   display: block;
   height: 400px;
