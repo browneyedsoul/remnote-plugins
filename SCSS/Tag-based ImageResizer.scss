@@ -17,8 +17,8 @@
 %content-overflow {
     overflow-x: auto;
 }
-%w-100 {
-    width: 100%;
+%w-fit {
+    width: fit-content;
 }
 
 @for $i from 1 through 40 {
@@ -26,7 +26,7 @@
         @extend %content-overflow;
         @extend %declutter;
         .inline-block {
-            @extend %w-100;
+            @extend %w-fit;
             .inline-block.align-text-top {
                 @extend %fix;
                 width: #{$i * 5%} !important;
@@ -40,10 +40,23 @@
         @extend %content-overflow;
         @extend %declutter;
         .inline-block {
-            @extend %w-100;
+            @extend %w-fit;
             .inline-block.align-text-top {
                 @extend %fix;
                 width: #{$i * 50px} !important;
+            }
+        }
+    }
+}
+@for $i from 1 through 9 {
+    [data-rem-container-tags~="#{$i * 25px}"] {
+        @extend %content-overflow;
+        @extend %declutter;
+        .inline-block {
+            @extend %w-fit;
+            .inline-block.align-text-top {
+                @extend %fix;
+                width: #{$i * 25px} !important;
             }
         }
     }
