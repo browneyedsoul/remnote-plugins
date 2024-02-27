@@ -1,0 +1,9 @@
+{
+  "name": "callout",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "browneyedsoul/remnote-plugins",
+    "directory": "packages/callout"
+  }
+}

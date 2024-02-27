@@ -1,0 +1,12 @@
+{
+  "name": "divider",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "browneyedsoul/remnote-plugins",
+    "directory": "packages/callout"
+  },
+  "scripts": {
+    "sass": "sass --watch --style=compressed --no-source-map src/scss/snippet.scss:src/snippet.css"
+  }
+}

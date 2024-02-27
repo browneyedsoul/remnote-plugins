@@ -1,0 +1,15 @@
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.bracketSameLine": false,
+  "prettier.printWidth": 120,
+  "[scss]": {
+      "editor.foldingStrategy": "indentation",
+      "editor.suggest.insertMode": "replace",
+      "editor.formatOnSave": false
+  },
+}
