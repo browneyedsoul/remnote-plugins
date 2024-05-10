@@ -1,0 +1,22 @@
+{
+  "manifestVersion": 1,
+  "id": "remnote-aligner",
+  "name": "Aligner",
+  "author": "Min-Ki Park",
+  "repoUrl": "https://github.com/browneyedsoul/RemNote-Aligner",
+  "version": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "theme": [],
+  "enableOnMobile": true,
+  "description": "",
+  "requestNative": false,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModifyDelete"
+    }
+  ]
+}

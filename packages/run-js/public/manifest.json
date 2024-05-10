@@ -1,0 +1,26 @@
+{
+  "manifestVersion": 1,
+  "id": "runjs",
+  "name": "Run JS",
+  "author": "Min-Ki Park",
+  "repoUrl": "https://github.com/browneyedsoul/RemNote-RunJS",
+  "version": {
+    "major": 0,
+    "minor": 3,
+    "patch": 0
+  },
+  "theme": [],
+  "enableOnMobile": true,
+  "description": "Test your JavaScript code snippets within the RemNote environment with ease",
+  "requestNative": false,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModifyDelete"
+    },
+    {
+      "type": "FocusedSubtree",
+      "level": "ReadCreateModifyDelete"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "manifestVersion": 1,
+  "id": "active-recall",
+  "name": "Active Recall in Editor",
+  "author": "Min-Ki Park",
+  "repoUrl": "https://github.com/browneyedsoul/RemNote-ActiveRecall",
+  "version": {
+    "major": 0,
+    "minor": 2,
+    "patch": 4
+  },
+  "theme": [],
+  "enableOnMobile": true,
+  "description": "",
+  "requestNative": false,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModify"
+    }
+  ]
+}

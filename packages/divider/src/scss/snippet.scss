@@ -1,0 +1,86 @@
+:root {
+    --line-color: #DDD;
+    --line-color-focused: #E5F0FF;
+    --line-color-dark: #535353;
+    --line-color-focused-dark: #1E3248;
+}
+
+@mixin divider(
+    $divider-line-color,
+    $divider-line-color-focused
+) {
+    [data-rem-container-tags~="divider"] {
+        margin-left: 1.5rem;
+        > .tree-node--parent {
+            min-height: unset !important;
+        }
+        > .tree-node--children {
+            border: unset !important;
+        }
+        [data-rem-tags~="divider"] {
+            display: flex !important;
+            align-items: center;
+            color: transparent;
+            height: 1rem;
+            // .rem-button__container,
+            // .rem-bullet__icon,
+            // .rem-bullet__container,
+            .pointer-events-none,
+            .rem-checkbox,
+            .rem:not([data-rem-tags~="show-tags"]) .hierarchy-editor__tag-bar,
+            .float-end {
+                display: none;
+            }
+            > div {
+                width: 100%;
+            }
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                border-bottom: $divider-line-color;
+                left: 0;
+            }
+            &:focus-within {
+                background-color: $divider-line-color-focused;
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    border-bottom: 0.075rem solid $divider-line-color;
+                }
+            }
+            &:not(:focus-within) {
+                color: transparent;
+                position: relative;
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    border-bottom: 0.075rem solid $divider-line-color;
+                }
+            }
+        }
+        // .EditorContainer {
+        //     span {
+        //         visibility: hidden;
+        //     }
+        // }
+    }
+}
+
+@include divider(
+    var(--line-color),
+    var(--line-color-focused)
+);
+
+.dark {
+    @include divider(
+        var(--line-color-dark),
+        var(--line-color-focused-dark)
+    );
+}

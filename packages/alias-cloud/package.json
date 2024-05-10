@@ -1,0 +1,20 @@
+{
+  "name": "alias-cloud",
+  "author": "Min-Ki Park",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "browneyedsoul/remnote-plugins",
+    "directory": "packages/alias-cloud"
+  },
+  "scripts": {
+    "check-types": "tsc",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --color --progress --no-open",
+    "build": "npx remnote-plugin validate && shx rm -rf dist && cross-env NODE_ENV=production webpack --color --progress && shx cp README.md dist && cd dist && bestzip ../PluginZip.zip ./*",
+    "start": "http-server --cors -p 7000 dist -c-1",
+    "sass": "sass --watch --style=compressed --no-source-map src/scss/snippet.scss:src/snippet.css"
+  },
+  "dependencies": {
+    "@remnote/plugin-sdk": "^0.0.42"
+  }
+}

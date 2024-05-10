@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(0.937008,0,0,0.940711,7.12598,9)">
+        <path d="M256,63.25C256,28.341 227.547,0 192.5,0L65.5,0C30.453,0 2,28.341 2,63.25L2,189.75C2,224.659 30.453,253 65.5,253L192.5,253C227.547,253 256,224.659 256,189.75L256,63.25Z" style="fill:white;stroke:black;stroke-width:14.91px;"/>
+    </g>
+    <g transform="matrix(0.813333,0,0,0.84058,-21.1067,62.3043)">
+        <ellipse cx="90.5" cy="130.5" rx="37.5" ry="34.5" style="fill:white;stroke:black;stroke-width:2.42px;"/>
+    </g>
+    <g transform="matrix(0.913611,-0.241537,0.284639,1.07665,-64.8718,20.7078)">
+        <ellipse cx="133" cy="162" rx="50" ry="44" style="fill:white;stroke:black;stroke-width:1.94px;"/>
+    </g>
+    <g transform="matrix(1.15,0,0,1.03488,-41.6745,-18.4884)">
+        <ellipse cx="172" cy="143" rx="40" ry="43" style="fill:white;stroke:black;stroke-width:1.83px;"/>
+    </g>
+    <g transform="matrix(0.8,0,0,0.825581,63.5255,45.4419)">
+        <ellipse cx="172" cy="143" rx="40" ry="43" style="fill:white;stroke:black;stroke-width:2.46px;"/>
+    </g>
+    <g transform="matrix(0.8875,0,0,0.825581,2.97545,60.4419)">
+        <ellipse cx="172" cy="143" rx="40" ry="43" style="fill:white;stroke:black;stroke-width:2.33px;"/>
+    </g>
+    <rect x="177" y="127" width="24.125" height="68" style="fill:white;"/>
+    <g transform="matrix(1,0,0,1.02353,0,-3.75294)">
+        <rect x="106" y="117" width="71" height="85" style="fill:white;"/>
+    </g>
+    <g transform="matrix(1,0,0,1.04,0,-6.8)">
+        <rect x="54" y="145" width="18" height="50" style="fill:white;"/>
+    </g>
+    <g transform="matrix(1.16128,-0.340336,0.340336,1.16128,-32.0967,90.634)">
+        <text x="69.641px" y="103.037px" style="font-family:'AkayaTelivigala-Regular', 'AkayaTelivigala';font-size:144px;">A</text>
+    </g>
+</svg>

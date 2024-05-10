@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1.4386,0,0,1.15493,-35.2807,-1.92958)">
+        <path d="M199,59.25C199,29.861 179.844,6 156.25,6L70.75,6C47.156,6 28,29.861 28,59.25L28,165.75C28,195.139 47.156,219 70.75,219L156.25,219C179.844,219 199,195.139 199,165.75L199,59.25Z" style="fill:white;stroke:black;stroke-width:7.99px;"/>
+    </g>
+    <g transform="matrix(1.29965,0,0,1.29965,-49.9333,-54.6002)">
+        <circle cx="92.5" cy="140.5" r="32.5" style="stroke:black;stroke-width:8.02px;"/>
+    </g>
+    <g transform="matrix(1.89748,0,0,1.89748,-132.222,-9.62162)">
+        <text x="139.818px" y="90.029px" style="font-family:'AppleColorEmoji', 'Apple Color Emoji';font-size:50px;">❌</text>
+    </g>
+</svg>

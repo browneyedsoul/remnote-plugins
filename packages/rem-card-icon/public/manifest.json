@@ -1,0 +1,22 @@
+{
+  "manifestVersion": 1,
+  "id": "browneyedsoul-RemCardIcon",
+  "name": "Rem Card Icon",
+  "author": "Min-Ki Park",
+  "repoUrl": "https://github.com/browneyedsoul/RemNote-RemCardIcon",
+  "version": {
+    "major": 0,
+    "minor": 1,
+    "patch": 0
+  },
+  "theme": [],
+  "enableOnMobile": true,
+  "description": "Decorate your flashcards with noticeable icons",
+  "requestNative": true,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModify"
+    }
+  ]
+}

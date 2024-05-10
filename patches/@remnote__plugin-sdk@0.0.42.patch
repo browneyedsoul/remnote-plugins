@@ -1,0 +1,332 @@
+diff --git a/scripts/index.js b/scripts/index.js
+index f6fd3779e6b5cf5a28b8a02b365f355331380466..72991af1765f6a0f9a8aa792a5b9f4a78a77dbc9 100755
+--- a/scripts/index.js
++++ b/scripts/index.js
+@@ -1,43 +1,42 @@
+ #!/usr/bin/env node
+ 
+-const { exit } = require('process');
++const { exit } = require("process");
+ 
+-const [major, minor, patch] = process.version.substring(1).split('.');
++const [major, minor, patch] = process.version.substring(1).split(".");
+ if (major < 15) {
+-  console.log('Please upgrade to node v16 if you encounter any issues.');
++  console.log("Please upgrade to node v16 if you encounter any issues.");
+ }
+ 
+-const fs = require('fs');
+-const path = require('path');
+-const { parseManifest } = require('../dist/lib');
+-const colors = require('ansi-colors');
+-const sdkPackage = require('../package.json');
+-const { prompt } = require('enquirer');
+-const { execSync } = require('child_process');
++const fs = require("fs");
++const path = require("path");
++const { parseManifest } = require("../dist/lib");
++const colors = require("ansi-colors");
++const sdkPackage = require("../package.json");
++const { prompt } = require("enquirer");
++const { execSync } = require("child_process");
+ 
+ const warning = colors.yellow;
+ const success = colors.green;
+ const error = colors.red;
+ const bold = colors.bold;
+ 
+-const readmeIgnoreAfterMarker = '<!-- ignore-after -->';
++const readmeIgnoreAfterMarker = "<!-- ignore-after -->";
+ 
+-function logRequirement(requirement, message = '', status = 'error') {
+-  const color =
+-    status == 'fulfilled' ? success : status == 'recommended' ? warning : error;
+-  console.log(bold(requirement + ': ') + color(message));
+-  return status != 'error';
++function logRequirement(requirement, message = "", status = "error") {
++  const color = status == "fulfilled" ? success : status == "recommended" ? warning : error;
++  console.log(bold(requirement + ": ") + color(message));
++  return status != "error";
+ }
+ 
+ function findPluginBasePath() {
+   // TODO: Error check
+-  return execSync('git rev-parse --show-toplevel', {
+-    encoding: 'utf-8',
++  return execSync("git rev-parse --show-toplevel", {
++    encoding: "utf-8",
+   }).trim();
+ }
+ 
+ function getRepoUrlFromGitRepo() {
+-  const gitRemote = execSync('git remote -vv', { encoding: 'utf-8' });
++  const gitRemote = execSync("git remote -vv", { encoding: "utf-8" });
+   const userRepoRegex = /origin\s*git@github\.com:(.*)\.git\s*\(fetch\)/g;
+   const match = userRepoRegex.exec(gitRemote);
+   if (!match) return undefined;
+@@ -49,10 +48,10 @@ function getRepoUrlFromGitRepo() {
+ }
+ 
+ function parseReadme(pluginPath) {
+-  const readmePath = path.join(pluginPath, 'README.md');
++  const readmePath = path.join(pluginPath, "README.md");
+   const hasReadme = fs.existsSync(readmePath);
+   if (hasReadme) {
+-    const readme = fs.readFileSync(readmePath, 'utf-8');
++    const readme = fs.readFileSync(readmePath, "utf-8");
+     if (readme.includes(readmeIgnoreAfterMarker)) {
+       const [pluginReadme, sdkReadme] = readme.split(readmeIgnoreAfterMarker);
+       return { hasReadme, pluginReadme: pluginReadme.trim(), sdkReadme };
+@@ -70,57 +69,42 @@ function validateREADME(pluginPath) {
+ 
+   if (hasReadme) {
+     if (!pluginReadme) {
+-      ok =
+-        ok &&
+-        logRequirement(
+-          'README',
+-          'Missing plugin README. ' + bold('npx remnote-plugin init'),
+-        );
++      ok = ok && logRequirement("README", "Missing plugin README. " + bold("npx remnote-plugin init"));
+     } else {
+-      ok = ok && logRequirement('README', 'Custom Readme', 'fulfilled');
++      ok = ok && logRequirement("README", "Custom Readme", "fulfilled");
+     }
+     // TODO: Further checks?
+   } else {
+-    ok =
+-      ok &&
+-      logRequirement(
+-        'README',
+-        'Create README.md. ' + bold('npx remnote-plugin init'),
+-      );
++    ok = ok && logRequirement("README", "Create README.md. " + bold("npx remnote-plugin init"));
+   }
+   return ok;
+ }
+ 
+ function validateManifest(pluginPath) {
+   let ok = true;
+-  const manifestData = fs.readFileSync(
+-    path.join(pluginPath, 'public', 'manifest.json'),
+-    'utf-8',
+-  );
++  const manifestData = fs.readFileSync(path.join(pluginPath, "public", "manifest.json"), "utf-8");
+   const manifestJson = JSON.parse(manifestData);
+   const manifest = parseManifest(manifestJson);
+   if (!manifest.success) {
+-    ok = ok && logRequirement('Manifest');
+-    manifest.errors.forEach(({ field, message }) =>
+-      logRequirement(`  ${field}`, message),
+-    );
++    ok = ok && logRequirement("Manifest");
++    manifest.errors.forEach(({ field, message }) => logRequirement(`  ${field}`, message));
+   } else {
+     // TODO: Recommended entries
+-    ok = ok && logRequirement('Manifest', 'OK', 'fulfilled');
++    ok = ok && logRequirement("Manifest", "OK", "fulfilled");
+   }
+   return ok;
+ }
+ 
+ function validateAssets(pluginPath) {
+   let ok = true;
+-  const assets = fs.readdirSync(path.join(pluginPath, 'public'));
+-  const hasSVGLogo = assets.includes('logo.svg');
+-  const hasPngLogo = assets.includes('logo.png');
++  const assets = fs.readdirSync(path.join(pluginPath, "public"));
++  const hasSVGLogo = assets.includes("logo.svg");
++  const hasPngLogo = assets.includes("logo.png");
+ 
+   if (hasSVGLogo) {
+-    ok = ok && logRequirement('Logo', 'SVG', 'fulfilled');
++    ok = ok && logRequirement("Logo", "SVG", "fulfilled");
+   } else if (hasPngLogo) {
+-    ok = ok && logRequirement('Logo', 'PNG', 'fulfilled');
++    ok = ok && logRequirement("Logo", "PNG", "fulfilled");
+   } else {
+     // ok = ok && logRequirement(
+     //   'Logo',
+@@ -128,7 +112,7 @@ function validateAssets(pluginPath) {
+     //   // TODO: Reimplement autogenerated logos.
+     //   // 'recommended',
+     // );
+-    console.log(colors.dim('  Using autogenerated logo.'));
++    console.log(colors.dim("  Using autogenerated logo."));
+   }
+ 
+   //ok = ok && logRequirement('Banner', 'TODO', 'recommended');
+@@ -136,36 +120,36 @@ function validateAssets(pluginPath) {
+ }
+ 
+ async function initPlugin(pluginPath) {
+-  console.log('Initialising plugin in', bold(pluginPath), '...');
++  console.log("Initialising plugin in", bold(pluginPath), "...");
+   console.log();
+ 
+   let response;
+   try {
+     response = await prompt([
+       {
+-        type: 'input',
+-        name: 'author',
+-        message: 'Author Name?',
++        type: "input",
++        name: "author",
++        message: "Author Name?",
+       },
+       {
+-        type: 'input',
+-        name: 'name',
+-        message: 'Title of the plugin?',
++        type: "input",
++        name: "name",
++        message: "Title of the plugin?",
+       },
+       {
+-        type: 'input',
+-        name: 'description',
+-        message: 'Describe your plugin in 1-2 sentences:',
++        type: "input",
++        name: "description",
++        message: "Describe your plugin in 1-2 sentences:",
+       },
+ 
+       {
+-        type: 'confirm',
+-        name: 'enableOnMobile',
+-        message: 'Do you plan to support mobile apps?',
++        type: "confirm",
++        name: "enableOnMobile",
++        message: "Do you plan to support mobile apps?",
+       },
+     ]);
+   } catch (e) {
+-    console.log('Exiting');
++    console.log("Exiting");
+     exit(1);
+   }
+   const manifest = {
+@@ -183,8 +167,8 @@ async function initPlugin(pluginPath) {
+     requestNative: false,
+     requiredScopes: [
+       {
+-        type: 'All',
+-        level: 'Read',
++        type: "All",
++        level: "Read",
+       },
+     ],
+   };
+@@ -193,27 +177,18 @@ async function initPlugin(pluginPath) {
+ }
+ 
+ function createManifest(pluginPath, manifest) {
+-  fs.writeFileSync(
+-    path.join(pluginPath, 'public/manifest.json'),
+-    JSON.stringify(manifest, null, 2),
+-  );
++  fs.writeFileSync(path.join(pluginPath, "public/manifest.json"), JSON.stringify(manifest, null, 2));
+ }
+ 
+ function createReadme(pluginPath, manifest) {
+   const { hasReadme, pluginReadme, sdkReadme } = parseReadme(pluginPath);
+ 
+   if (!hasReadme) {
+-    fs.writeFileSync(
+-      path.join(pluginPath, 'README.md'),
+-      formatPluginReadme(manifest),
+-    );
++    fs.writeFileSync(path.join(pluginPath, "README.md"), formatPluginReadme(manifest));
+   } else if (pluginReadme) {
+-    console.log('README.md: Already exists.');
++    console.log("README.md: Already exists.");
+   } else {
+-    fs.writeFileSync(
+-      path.join(pluginPath, 'README.md'),
+-      formatPluginReadme(manifest) + sdkReadme,
+-    );
++    fs.writeFileSync(path.join(pluginPath, "README.md"), formatPluginReadme(manifest) + sdkReadme);
+   }
+ }
+ 
+@@ -235,36 +210,64 @@ ${readmeIgnoreAfterMarker}
+ `;
+ }
+ 
++const readFilesInDirectory = (directory) => {
++  return new Promise((resolve, reject) => {
++    fs.readdir(directory, (err, files) => {
++      if (directory) {
++        console.log("Files in the directory:");
++        files.forEach((file) => {
++          console.log(file);
++        });
++        resolve(files); // Resolve the promise with the list of files
++      } else if (err) {
++        console.error("Error reading directory:", err);
++        reject(err); // Reject the promise if there's an error
++        return;
++      }
++    });
++  });
++};
++
+ const main = async () => {
+-  const pluginPath = findPluginBasePath();
++  const filterArg = process.argv[2];
++  let filterValue;
++
++  const filterIndex = process.argv.indexOf("--filter");
++
++  if (filterIndex !== -1 && filterIndex + 1 < process.argv.length) {
++    filterValue = process.argv[filterIndex + 1];
++    console.log("Filter value:", filterValue);
++  } else {
++    console.log("Filter argument not provided or invalid.");
++    return;
++  }
++
++  const pluginPath = `${findPluginBasePath()}/packages/${filterValue}`;
+   if (!pluginPath) {
+-    console.log('Must run inside a RemNote plugin git repository!');
++    console.log("Must run inside a RemNote plugin git repository!");
+     exit(1);
+   }
+ 
+-  console.log(bold('@remnote/plugin-sdk:'), sdkPackage.version);
+-  console.log(bold('Plugin path:'), pluginPath);
+-  console.log();
++  console.log(bold("@remnote/plugin-sdk:"), sdkPackage.version);
++  console.log(bold("Plugin path:"), pluginPath);
++  console.log(await readFilesInDirectory(parentDir));
++  console.log(filterArg);
+ 
+   const arg = process.argv[2];
+-  if (arg == 'init') {
++  if (arg == "init") {
+     await initPlugin(pluginPath);
+     validateManifest(pluginPath);
+-  } else if (arg == 'validate') {
+-    const results = [
+-      validateREADME(pluginPath),
+-      validateAssets(pluginPath),
+-      validateManifest(pluginPath),
+-    ];
++  } else if (arg == "validate") {
++    const results = [validateREADME(pluginPath), validateAssets(pluginPath), validateManifest(pluginPath)];
+ 
+     if (!results.every((x) => x)) {
+-      console.log(bold('\nPlease fix errors before uploading!'));
++      console.log(bold("\nPlease fix errors before uploading!"));
+       exit(1);
+     } else {
+-      console.log('All good!');
++      console.log("All good!");
+     }
+   } else {
+-    console.log('Unrecognised argument: ' + arg);
++    console.log("Unrecognised argument: " + arg);
+     exit(1);
+   }
+ };

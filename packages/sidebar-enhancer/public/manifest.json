@@ -1,0 +1,22 @@
+{
+  "manifestVersion": 1,
+  "id": "browneyedsoul-SidebarEnhancer",
+  "name": "Sidebar Enhancer",
+  "author": "Min-Ki Park",
+  "repoUrl": "https://github.com/browneyedsoul/RemNote-Sidebar-Enhancer",
+  "version": {
+    "major": 1,
+    "minor": 1,
+    "patch": 3
+  },
+  "theme": [],
+  "enableOnMobile": true,
+  "description": "Make your sidebar more intuitive and straightforward!",
+  "requestNative": true,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModify"
+    }
+  ]
+}

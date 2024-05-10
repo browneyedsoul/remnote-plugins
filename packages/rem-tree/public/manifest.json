@@ -1,0 +1,22 @@
+{
+  "manifestVersion": 1,
+  "id": "browneyedsoul-RemTree",
+  "name": "Rem Tree",
+  "author": "Min-Ki Park",
+  "repoUrl": "https://github.com/browneyedsoul/RemNote-RemTree",
+  "version": {
+    "major": 1,
+    "minor": 6,
+    "patch": 6
+  },
+  "theme": [],
+  "enableOnMobile": true,
+  "description": "Structure your thoughts easily with Rem Tree!",
+  "requestNative": true,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModifyDelete"
+    }
+  ]
+}

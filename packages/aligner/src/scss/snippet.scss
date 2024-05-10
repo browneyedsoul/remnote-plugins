@@ -1,0 +1,46 @@
+%statelessC {
+    display: flex;
+    justify-content: center;
+}
+%statelessR {
+    display: flex;
+    justify-content: right;
+}
+%remover {
+    span.hierarchy-editor__tag-bar__tag {
+        background-color: unset;
+        opacity: .2;
+        > div:first-child {
+            display: none;
+        }
+    }
+}
+
+[data-rem-tags~="center"] {
+    .EditorContainer {
+        @extend %statelessC;
+        > div.w-full {
+            @extend %statelessC;
+        }
+    }
+    @extend %remover;
+}
+[data-rem-tags~="right"] {
+    .EditorContainer {
+        @extend %statelessR;
+        > div.w-full {
+            @extend %statelessR;
+        }
+    }
+    @extend %remover;
+}
+[data-queue-rem-container-tags~="center"] {
+    .w-full {
+        @extend %statelessC;
+    }
+}
+[data-queue-rem-container-tags~="right"] {
+    .w-full {
+        @extend %statelessR;
+    }
+}

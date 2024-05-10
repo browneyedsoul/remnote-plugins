@@ -1,0 +1,22 @@
+{
+  "manifestVersion": 1,
+  "id": "divider",
+  "name": "Divider",
+  "author": "Min-Ki Park",
+  "repoUrl": "https://github.com/browneyedsoul/RemNote-Divider",
+  "version": {
+    "major": 0,
+    "minor": 4,
+    "patch": 4
+  },
+  "theme": [],
+  "enableOnMobile": true,
+  "description": "A Rem for Dividing Paragraphs into Segments",
+  "requestNative": true,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModifyDelete"
+    }
+  ]
+}

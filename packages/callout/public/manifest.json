@@ -1,0 +1,21 @@
+{
+  "author": "Min-Ki Park",
+  "name": "Callout Rem",
+  "description": "Decorate your important rem texts with a simple but aesthetic box!",
+  "enableOnMobile": true,
+  "id": "browneyedsoul-callout",
+  "repoUrl": "https://github.com/browneyedsoul/RemNote-Callout",
+  "manifestVersion": 1,
+  "version": {
+    "major": 1,
+    "minor": 6,
+    "patch": 2
+  },
+  "requestNative": true,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModifyDelete"
+    }
+  ]
+}

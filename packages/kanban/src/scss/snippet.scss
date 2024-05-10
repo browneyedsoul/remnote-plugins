@@ -1,0 +1,323 @@
+:root {
+    --kanban-border: #DDD;
+    --kanban-border-dark: #535353;
+    --kanban-scroll-bg: #EEE;
+    --kanban-scroll-bg-dark: #000;
+    --kanban-sixdot: #000;
+    --kanban-sixdot-dark: #EEE;
+    --kanban-bg: #EEE;
+    --kanban-bg-dark: #4b4848;
+    --kanban-bg-rd: #FFEEEB;
+    --kanban-bg-rd-dark: #63322B;
+    --kanban-bg-or: #FFF0DD;
+    --kanban-bg-or-dark: #553D25;
+    --kanban-bg-yw: #FCF5D7;
+    --kanban-bg-yw-dark: #554700;
+    --kanban-bg-gr: #EBF2EC;
+    --kanban-bg-gr-dark: #253F27;
+    --kanban-bg-bl: #E6F1F8;
+    --kanban-bg-bl-dark: #183C4D;
+    --kanban-bg-vt: #F1E9F8;
+    --kanban-bg-vt-dark: #592C50;
+    --kanban-bg-input: #FFF;
+    --kanban-bg-input-dark: #232329;
+    --kanban-sdw: 1px 1px 2px #999;
+    --kanban-sdw-dark: 1px 1px 2px #000;
+    --kanban-sdw-cell: 0.05rem 0.05rem 0.15rem #777;
+    --kanban-sdw-cell-dark: 0.05rem 0.05rem 0.1rem #111;
+}
+
+$Tables: (
+    "90": 270px,
+    "120": 300px,
+    "150": 330px,
+    "180": 360px,
+    "210": 390px,
+    "240": 420px,
+    "270": 450px,
+    "300": 480px,
+    "330": 510px,
+    "360": 540px,
+    "390": 570px,
+    "420": 600px,
+    "450": 630px,
+    "480": 660px,
+    "510": 690px,
+    "540": 720px,
+    "570": 750px,
+    "600": 780px,
+);
+
+@mixin kanban(
+    $kanban-border,
+    $kanban-scroll-bg,
+    $kanban-bg,
+    $kanban-bg-rd,
+    $kanban-bg-or,
+    $kanban-bg-yw,
+    $kanban-bg-gr,
+    $kanban-bg-bl,
+    $kanban-bg-vt,
+    $kanban-bg-input,
+    $kanban-bg-inbox,
+    $kanban-bg-inprogress,
+    $kanban-bg-done,
+    $kanban-sixdot,
+    $kanban-sdw,
+    $kanban-sdw-cell
+) {
+
+    %KanbanCol {
+        display: flex;
+        flex-direction: row;
+        border: 0;
+        padding-left: 0;
+        overflow-x: auto;
+        white-space: pre;
+        margin-top: 1rem;
+        margin-left: 0;
+        padding-left: 1.5rem;
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: $kanban-scroll-bg;
+            border-radius: 2px;
+        }
+        // Kanban Column
+        > .animate-zoom-into-bullet {
+            background-color: $kanban-bg;
+            height: 100%;
+            margin-right: .7rem;
+            margin-bottom: .5rem;
+            padding-right: .7rem;
+            padding-bottom: .7rem;
+            position: relative;
+            white-space: pre-wrap;
+            border-radius: .5rem;
+            min-width: fit-content;
+            box-shadow: $kanban-sdw;
+            &:has(> .tree-node--parent > .highlight-color--red) {
+                background-color: $kanban-bg-rd;
+            }
+            &:has(> .tree-node--parent > .highlight-color--orange) {
+                background-color: $kanban-bg-or;
+            }
+            &:has(> .tree-node--parent > .highlight-color--yellow) {
+                background-color: $kanban-bg-yw;
+            }
+            &:has(> .tree-node--parent > .highlight-color--green) {
+                background-color: $kanban-bg-gr;
+            }
+            &:has(> .tree-node--parent > .highlight-color--blue) {
+                background-color: $kanban-bg-bl;
+            }
+            &:has(> .tree-node--parent > .highlight-color--purple) {
+                background-color: $kanban-bg-vt;
+            }
+
+            // Kanban Column Header
+            >.tree-node--parent {
+                min-width: 240px;
+                margin: 0;
+                border-top-left-radius: .5rem;
+                border-top-right-radius: .5rem;
+                overflow: hidden;
+                .perfect-circle {
+                    color: $kanban-bg;
+                }
+                > .highlight-color--red {
+                    background-color: $kanban-bg-rd;
+                    .perfect-circle {
+                        color: $kanban-bg-rd;
+                    }
+                }
+                > .highlight-color--orange {
+                    background-color: $kanban-bg-or;
+                    .perfect-circle {
+                        color: $kanban-bg-or;
+                    }
+                }
+                > .highlight-color--yellow {
+                    background-color: $kanban-bg-yw;
+                    .perfect-circle {
+                        color: $kanban-bg-yw;
+                    }
+                }
+                > .highlight-color--green {
+                    background-color: $kanban-bg-gr;
+                    .perfect-circle {
+                        color: $kanban-bg-gr;
+                    }
+                }
+                > .highlight-color--blue {
+                    background-color: $kanban-bg-bl;
+                    .perfect-circle {
+                        color: $kanban-bg-bl;
+                    }
+                }
+                > .highlight-color--purple {
+                    background-color: $kanban-bg-vt;
+                    .perfect-circle {
+                        color: $kanban-bg-vt;
+                    }
+                }
+                .rem-button__container {
+                    left: -1.8rem;
+                }
+                .rem-text {
+                    font-weight: 650;
+                    text-align: center;
+                    padding-left: 48px;
+                    padding-right: 48px;
+                }
+            }
+            // Kanban Cell
+            > .tree-node--children {
+                left: 0 !important;
+                width: 100%;
+                max-width: 1000px;
+                margin-left: 1rem;
+                margin: 0;
+                padding: 0;
+                border: unset;
+                // Input Area
+                > .animate-zoom-into-bullet {
+                    background-color: $kanban-bg-input;
+                    margin: .25rem 0 .25rem .2rem;
+                    border-radius: .3rem;
+                    box-shadow: $kanban-sdw-cell;
+                    margin-left: .7rem !important;
+                    &:not([data-rem-container-tags*="table"]) {
+                        > .tree-node--children {
+                            margin-right: .5rem;
+                            .rem {
+                                padding-right: 0.5rem;
+                            }
+                        }
+                    }
+                    > div:first-child {
+                        .rem-text {
+                            padding-left: 25px;
+                            margin-left: 0;
+                            margin-right: .5rem;
+                        }
+                    }
+                }
+                // Input Area - Portal
+                > .portal-tree-node-box {
+                    background-color: $kanban-bg-input;
+                    width: calc(100% - 2.55rem);
+                    margin: 5px;
+                    border-radius: .3rem !important;
+                    box-shadow: $kanban-sdw-cell !important;
+                    margin-left: 1.5rem !important;
+                    margin-right: .3rem !important;
+                    padding-right: 1rem;
+                    .node-top-level-in-portal {
+                        overflow-x: auto;
+                        .rn-editor__rem__body__text {
+                            flex-wrap: unset;
+                        }
+                    }
+                }
+            }
+        }
+        @each $table, $px in $Tables {
+            [data-rem-container-tags*="table#{$table}"] {
+                min-width: $px;
+            }
+        }
+    }
+
+    [data-rem-container-tags~=kanban] {
+        border: 0.075rem solid $kanban-border;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        margin: 0.5rem 0 0.5rem 0.2rem;
+        // Global
+            .animate-zoom-into-bullet.flex.flex-col {
+                display: block;
+            }
+        // Declutter
+            .bg-white {
+                background-color: transparent;
+            }
+        // Remove Placeholder
+        .EditorContainer {
+            > .text-gray-20 {
+                display: none;
+            }
+        }
+        .rem-button__container {
+            .six-dot {
+                .text-gray-15 {
+                    color: $kanban-sixdot;
+                }
+            }
+            .six-dot,
+            .rn-editor__insert-btn,
+            .toggle-collapse-button,
+            .rn-bullet-container {
+                background: transparent;
+            }
+        }
+        > .tree-node--children {
+            @extend %KanbanCol;
+        }
+        > .tree-node--children {
+            border-left: unset !important;
+            padding-left: 1.5rem !important;
+        }
+    }
+    [data-document-tags~=kanban] {
+        [data-rem-container-tags~=kanban]{
+            border: unset;
+            > div {
+                @extend %KanbanCol;
+                > .rn-editor-container {
+                    &:not([data-rem-container-id]) {
+                        display: none !important;
+                    }
+                }    
+            }
+        }
+    }
+}
+
+@include kanban(
+    var(--kanban-border),
+    var(--kanban-scroll-bg),
+    var(--kanban-bg),
+    var(--kanban-bg-rd),
+    var(--kanban-bg-or),
+    var(--kanban-bg-yw),
+    var(--kanban-bg-gr),
+    var(--kanban-bg-bl),
+    var(--kanban-bg-vt),
+    var(--kanban-bg-input),
+    var(--kanban-bg-inbox),
+    var(--kanban-bg-inprogress),
+    var(--kanban-bg-done),
+    var(--kanban-sixdot),
+    var(--kanban-sdw),
+    var(--kanban-sdw-cell)
+);
+.dark {
+    @include kanban(
+        var(--kanban-border-dark),
+        var(--kanban-scroll-bg-dark),
+        var(--kanban-bg-dark),
+        var(--kanban-bg-rd-dark),
+        var(--kanban-bg-or-dark),
+        var(--kanban-bg-yw-dark),
+        var(--kanban-bg-gr-dark),
+        var(--kanban-bg-bl-dark),
+        var(--kanban-bg-vt-dark),
+        var(--kanban-bg-input-dark),
+        var(--kanban-bg-inbox-dark),
+        var(--kanban-bg-inprogress-dark),
+        var(--kanban-bg-done-dark),
+        var(--kanban-sixdot-dark),
+        var(--kanban-sdw-dark),
+        var(--kanban-sdw-cell-dark)
+    );
+}

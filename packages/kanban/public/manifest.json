@@ -1,0 +1,22 @@
+{
+  "manifestVersion": 1,
+  "id": "kanban",
+  "name": "Kanban",
+  "author": "Min-Ki Park",
+  "repoUrl": "https://github.com/browneyedsoul/RemNote-Kanban",
+  "version": {
+    "major": 0,
+    "minor": 4,
+    "patch": 8
+  },
+  "theme": [],
+  "enableOnMobile": true,
+  "description": "",
+  "requestNative": true,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModify"
+    }
+  ]
+}

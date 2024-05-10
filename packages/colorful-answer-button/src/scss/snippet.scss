@@ -1,0 +1,104 @@
+:root {
+    --fc-btn-toosoon: #DDD;
+    --fc-btn-toosoon-dark: #1B1F23;
+    --fc-btn-hard: #FFC9CC;
+    --fc-btn-hard-dark: #572924;
+    --fc-btn-partial: #FFDAB8;
+    --fc-btn-partial-dark: #453E1E;
+    --fc-btn-done: #B5CEF0;
+    --fc-btn-done-dark: #183C4D;
+    --fc-btn-easy: #A8E2B4;
+    --fc-btn-easy-dark: #253F27;
+}
+
+@mixin flashcard(
+    $fc-btn-toosoon,
+    $fc-btn-hard,
+    $fc-btn-partial,
+    $fc-btn-done,
+    $fc-btn-easy
+) {
+    .queue-container {
+        .Queue {
+            // Image
+                .react-transform-component {
+                    .react-transform-element {
+                        .inline-block {
+                            .group.inline-block.align-text-top {
+                                width: 100% !important;
+                                height: 100% !important;
+                            }
+                        }
+                    }
+                }
+            // Question Title thumbnail
+                .rem-bullet__document {
+                    display: flex;
+                    align-items: baseline;
+                    width: fit-content;
+
+                    .RichTextViewer {
+                        .thumbnail--with-width {
+                            height: 1em;
+                            width: auto;
+                        }
+                    }
+                }
+            // Question Span
+                .queue-text-large-font {
+                    font-size: 24px;
+                }
+            // SRS Content
+            .spacedRepetition {
+                .spaced-repetition__bottom {
+                    .spaced-repetition__accuracy-buttons {
+                        .accuracy-button {
+                            &:hover {
+                                filter: brightness(105%);
+                            }
+                            .accuracy-button__label {
+                                font-weight: 600;
+                            }
+                        }
+                        // Too Soon
+                            .accuracy-button:nth-of-type(1) {
+                                background-color: $fc-btn-toosoon;
+                            }
+                        // Forgotten
+                            .accuracy-button:nth-of-type(2) {
+                                background-color: $fc-btn-hard;
+                            }
+                        // Partially Recalled
+                            .accuracy-button:nth-of-type(3) {
+                                background-color: $fc-btn-partial;
+                            }
+                        // Recalled with effort
+                            .accuracy-button:nth-of-type(4) {
+                                background-color: $fc-btn-done;
+                            }
+                        // Immediately
+                            .accuracy-button:nth-of-type(5) {
+                                background-color: $fc-btn-easy;
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
+@include flashcard(
+    var(--fc-btn-toosoon),
+    var(--fc-btn-hard),
+    var(--fc-btn-partial),
+    var(--fc-btn-done),
+    var(--fc-btn-easy)
+);
+.dark {
+    @include flashcard(
+        var(--fc-btn-toosoon-dark),
+        var(--fc-btn-hard-dark),
+        var(--fc-btn-partial-dark),
+        var(--fc-btn-done-dark),
+        var(--fc-btn-easy-dark)
+    );
+}

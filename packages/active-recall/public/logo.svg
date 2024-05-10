@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1.0082,0,0,1.00408,-7.09836,-4.03673)">
+        <path d="M256,70.25C256,36.445 228.667,9 195,9L73,9C39.333,9 12,36.445 12,70.25L12,192.75C12,226.555 39.333,254 73,254L195,254C228.667,254 256,226.555 256,192.75L256,70.25Z" style="fill:white;stroke:black;stroke-width:10.35px;"/>
+    </g>
+    <g transform="matrix(1.67756,0,0,1.67756,-31.9103,-36.6168)">
+        <text x="48.696px" y="123.145px" style="font-family:'Nunito-Bold', 'Nunito';font-weight:700;font-size:62.5px;">A</text>
+    </g>
+    <g transform="matrix(1.30313,0,0,1.76471,-65.5268,-94.8529)">
+        <path d="M239.061,92L140.022,92C127.316,92 117,99.617 117,109L117,143C117,152.383 127.316,160 140.022,160L239.061,160L239.061,92Z" style="fill:rgb(160,160,160);"/>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "author": "Min-Ki Park",
+  "name": "Minimal Table",
+  "description": "Make your rem table with simple tags!",
+  "enableOnMobile": true,
+  "id": "browneyedsoul-ModernTableRow",
+  "repoUrl": "https://github.com/browneyedsoul/RemNote-ModernTableRow",
+  "manifestVersion": 1,
+  "version": {
+    "major": 2,
+    "minor": 2,
+    "patch": 2
+  },
+  "requestNative": true,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModifyDelete"
+    }
+  ]
+}

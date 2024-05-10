@@ -1,0 +1,238 @@
+:root {
+    --text-rd: #FF4A44;
+    --text-rd-dark: #FD776F;
+    --text-or: #C26F1C;
+    --text-or-dark: #F0A264;
+    --text-yw: #A67F0E;
+    --text-yw-dark: #E0C616;
+    --text-yw-shadow: 0.025em 0.025em 0.025em #EAEB74;
+    --text-yw-shadow-dark: unset;
+    --text-gr: #34A853;
+    --text-gr-dark: #3FCC5E;
+    --text-bl: #3C85FF;
+    --text-bl-dark: #98BFE2;
+    --text-vt: #A142F4;
+    --text-vt-dark: #C6A3F4;
+    --hl-rd: #FDDEE0;
+    --hl-rd-bg: #FFEEEB;
+    --hl-rd-dark: #702D29;
+    --hl-rd-span-dark: #F0ADA4;
+    --hl-rd-bg-dark: #572924;
+    --hl-rd-text-dark: #FFC6BD;
+    --hl-rd-bar-dark: #FFB9AF;
+    --hl-or: #FBE2CA;
+    --hl-or-bg: #FFF0DD;
+    --hl-or-dark: #603F17;
+    --hl-or-span-dark: #ECBA81;
+    --hl-or-bg-dark: #553D24;
+    --hl-or-text-dark: #FFDAB8;
+    --hl-or-bar-dark: #FFCA8C;
+    --hl-yw: #FFEFC0;
+    --hl-yw-bg: #FAF4CD;
+    --hl-yw-dark: #615F14;
+    --hl-yw-span-dark: #DFE07E;
+    --hl-yw-bg-dark: #453E1E;
+    --hl-yw-text-dark: #E8E67D;
+    --hl-yw-bar-dark: #E5E579;
+    --hl-gr: #DDF7D9;
+    --hl-gr-bg: #E7F8E9;
+    --hl-gr-dark: #2D4F2D;
+    --hl-gr-span-dark: #9FE39B;
+    --hl-gr-bg-dark: #253F27;
+    --hl-gr-text-dark: #B3DDAB;
+    --hl-gr-bar-dark: #95DB91;
+    --hl-bl: #D6EEF8;
+    --hl-bl-bg: #E4F3FD;
+    --hl-bl-dark: #224356;
+    --hl-bl-span-dark: #BAD7EB;
+    --hl-bl-bg-dark: #183C4D;
+    --hl-bl-text-dark: #A7DCE8;
+    --hl-bl-bar-dark: #A7DCE8;
+    --hl-vt: #EAE0F4;
+    --hl-vt-bg: #F8EFFF;
+    --hl-vt-dark: #614477;
+    --hl-vt-span-dark: #E6C9EB;
+    --hl-vt-bg-dark: #4A2B45;
+    --hl-vt-text-dark: #DDC3EB;
+    --hl-vt-bar-dark: #E5C0EB;
+}
+
+// Basic Highlight Style
+.highlight-color--red,
+.highlight-color--orange,
+.highlight-color--yellow,
+.highlight-color--green,
+.highlight-color--blue,
+.highlight-color--purple {
+    border-radius: 3px;
+}
+.rem-text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3):not(.rn-doc-title) {
+    span {
+        &.highlight-color--red,
+        &.highlight-color--orange,
+        &.highlight-color--yellow,
+        &.highlight-color--green,
+        &.highlight-color--blue,
+        &.highlight-color--purple {
+            font-weight: 550;
+        }
+    }
+}
+.document-title {
+    span.bold {
+        font-weight: 700;
+    }
+}
+@mixin TextColorizer(
+    $hl-rd,
+    $hl-rd-text,
+    $hl-or,
+    $hl-or-text,
+    $hl-yw,
+    $hl-yw-text,
+    $hl-gr,
+    $hl-gr-text,
+    $hl-bl,
+    $hl-bl-text,
+    $hl-vt,
+    $hl-vt-text,
+    $text-rd,
+    $text-or,
+    $text-yw,
+    $text-yw-shadow,
+    $text-gr,
+    $text-bl,
+    $text-vt
+) {
+    .highlight-color--red {
+        background-color: $hl-rd;
+        color: $hl-rd-text;
+    }
+    .highlight-color--orange {
+        background-color: $hl-or;
+        color: $hl-or-text;
+    }
+    .highlight-color--yellow {
+        background-color: $hl-yw;
+        color: $hl-yw-text;
+    }
+    .highlight-color--green {
+        background-color: $hl-gr;
+        color: $hl-gr-text;
+    }
+    .highlight-color--blue {
+        background-color: $hl-bl;
+        color: $hl-bl-text;
+    }
+    .highlight-color--purple {
+        background-color: $hl-vt;
+        color: $hl-vt-text;
+    }
+    #main {
+        .highlight-color--red {
+            &.bold {
+                color: $text-rd;
+                background-color: unset;
+                span.whitespace-pre-wrap {
+                    color: $text-rd;
+                    background-color: unset;
+                }
+            }
+        }
+        .highlight-color--orange {
+            &.bold, %orange {
+                color: $text-or;
+                background-color: unset;
+                span.whitespace-pre-wrap {
+                    color: $text-or;
+                    background-color: unset;
+                }
+            }
+        }
+        .highlight-color--yellow {
+            &.bold {
+                color: $text-yw;
+                background-color: unset;
+                text-shadow: $text-yw-shadow;
+                span.whitespace-pre-wrap {
+                    color: $text-yw;
+                    background-color: unset;
+                }
+            }
+        }
+        .highlight-color--green {
+            &.bold {
+                color: $text-gr;
+                background-color: unset;
+                span.whitespace-pre-wrap {
+                    color: $text-gr;
+                    background-color: unset;
+                }
+            }
+        }
+        .highlight-color--blue {
+            &.bold {
+                color: $text-bl;
+                background-color: unset;
+                span.whitespace-pre-wrap {
+                    color: $text-bl;
+                    background-color: unset;
+                }
+            }
+        }
+        .highlight-color--purple {
+            &.bold {
+                color: $text-vt;
+                background-color: unset;
+                span.whitespace-pre-wrap {
+                    color: $text-vt;
+                    background-color: unset;
+                }
+            }
+        }
+    }
+}
+@include TextColorizer(
+    var(--hl-rd-bg),
+    inherit,
+    var(--hl-or-bg),
+    inherit,
+    var(--hl-yw-bg),
+    inherit,
+    var(--hl-gr-bg),
+    inherit,
+    var(--hl-bl-bg),
+    inherit,
+    var(--hl-vt-bg),
+    inherit,
+    var(--text-rd), 
+    var(--text-or), 
+    var(--text-yw), 
+    var(--text-yw-shadow), 
+    var(--text-gr), 
+    var(--text-bl), 
+    var(--text-vt)
+);
+.dark {
+    @include TextColorizer(
+        var(--hl-rd-bg-dark),
+        var(--hl-rd-text-dark),
+        var(--hl-or-bg-dark),
+        var(--hl-or-text-dark),
+        var(--hl-yw-bg-dark),
+        var(--hl-yw-text-dark),
+        var(--hl-gr-bg-dark),
+        var(--hl-gr-text-dark),
+        var(--hl-bl-bg-dark),
+        var(--hl-bl-text-dark),
+        var(--hl-vt-bg-dark),
+        var(--hl-vt-text-dark),
+        var(--text-rd-dark), 
+        var(--text-or-dark), 
+        var(--text-yw-dark), 
+        var(--text-yw-shadow-dark), 
+        var(--text-gr-dark), 
+        var(--text-bl-dark), 
+        var(--text-vt-dark)
+    );
+}

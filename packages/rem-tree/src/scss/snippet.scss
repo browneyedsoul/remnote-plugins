@@ -1,0 +1,314 @@
+:root {
+    --tree-border: #DDD;
+    --tree-border-dark: #535353;
+    --tree-bg: #FFF;
+    --tree-bg-dark: #23232A;
+    --tree-scroll-bg: #FFF;
+    --tree-scroll-bg-dark: #23232A;
+    --tree-scroll-thumb-bg: #EEE;
+    --tree-scroll-thumb-bg-dark: #5A666A;
+    --tree-portal-bg: transparent !important;
+    --tree-portal-bg-dark: #23232A;
+}
+
+@mixin RemTree(
+    $tree-bg,
+    $tree-scroll-bg,
+    $tree-scroll-thumb-bg,
+    $tree-border,
+    $tree-portal-bg
+) {
+    [data-document-tags~="tree"],
+    [data-document-tags~="treec"] {
+        [data-rem-container-tags~="tree"],
+        [data-rem-container-tags~="treec"] {
+            > div {
+                > div {
+                    flex-direction: row !important;
+                    &:not([data-rem-container-id]) {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+    [data-rem-container-tags~="treec"] {
+        border: 0.075rem solid $tree-border;
+        border-radius: 4px;
+    }
+    #hierarchy-editor {
+        .TreeNode {
+            border-color: $tree-border;
+        }
+        [data-rem-container-tags~="tree"],
+        [data-rem-container-tags~="treec"] {
+            background-color: $tree-bg;
+            display: flex;
+            flex-direction: row;
+            line-height: 160%;
+            margin: 0.5rem 0 0.5rem .2rem;
+            padding: 1rem 1rem 1rem 1.25rem;
+            overflow-x: visible;
+            overflow-y: hidden;
+            white-space: pre;
+            .whitespace-pre-wrap {
+                white-space: pre;
+            }
+            .rem {
+                background-color: $tree-bg;
+                min-width: calc(100% + 1rem);
+                .EditorContainer {
+                    position: relative;
+                    z-index: 4;
+                }
+            }
+            .hierarchy-editor__tag-bar {
+                opacity: .5;
+            }
+            .float-end {
+                > .rn-editor__rem__merge {
+                    display: none;
+                }
+                .backlink-counter {
+                    opacity: .3;
+                }
+                .rn-tag__close {
+                    opacity: .3;
+                }
+            }
+            .rem-reference-container {
+                .rem-reference {
+                    .RichTextViewer {
+                        display: inline-flex;
+                    }
+                }
+            }
+            .mr-\[100px\] {
+                margin-right: unset;  // Interim remedy
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: $tree-scroll-thumb-bg;
+                border-radius: 2px;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: $tree-scroll-bg;
+                margin-right: 0;
+            }
+            .rem-button__container {
+                z-index: 5;
+            }
+            .rem-container--header-1 {
+                top: -.35rem;
+            }
+            .rem-container--header-2 {
+                top: -.225rem;
+            }
+            .rem-container--header-3 {
+                top: -.125rem;
+            } 
+            // span.rn-code-node .perfect-circle {
+            //     top: -.475rem !important;
+            // } 
+            .animate-zoom-into-bullet {
+                display: flex;
+                flex-direction: row;
+                // &.flex.flex-col {
+                //     display: block;
+                // }
+                &:not(.animate-zoom-into-bullet.bg-transparent) {
+                    display: block;
+                }
+                &.portal-tree-node-box {
+                    margin-left: 1rem;
+                    align-items: center;
+                    // .tree-node--parent {
+                    //     &::before {
+                    //         background-color: $tree-portal-bg;
+                    //     }
+                    // }
+                }
+                &:nth-last-of-type(2) {
+                    > div.tree-node--parent:not(.portal-tree-node-box .tree-node--parent) {
+                        align-items: flex-start;
+
+                        &::before {
+                            content: "";
+                            width: 28px;
+                            background-color: $tree-bg;
+                            height: 100%;
+                            position: absolute;
+                            z-index: 1;
+                            left: -2px;
+                            margin-top: 16px;
+                            border-top: 1px solid $tree-border;
+                        }
+                    }
+                }
+            }
+            div.tree-node--parent {
+                background-color: $tree-bg;
+                &.flex-grow {
+                    flex-grow: unset; // Width tuning
+                }
+                &:not(.tree-node--parent.tree-node--automatic-search-portal-header) {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
+                    .rem-text {
+                        .EditorContainer {
+                            white-space: pre !important;
+                            .RichTextViewer {
+                                white-space: nowrap;
+                            }
+                            .last_node_down_arrow,
+                            .whitespace-pre {
+                                display: none;
+                            }
+                        }
+                    }
+                    [data-rem-tags~="tree"],
+                    [data-rem-tags~="treec"] {
+                        position: relative;
+                        right: 0;
+                        .hierarchy-editor__tag-bar__tag {
+                            background-color: transparent !important;
+                            span {display: none;}
+                            .hierarchy-editor__tag-bar__tag__delete {
+                                opacity: .3;
+                            }
+                        }
+                    }
+                }
+            }
+            div.tree-node--children {
+                padding-left: unset;
+                > div {
+                    padding-left: 11.5px;
+                }
+                .backlink-counter {
+                    opacity: .4;
+                }
+                &:empty,
+                &:has(> div.absolute:only-child) {
+                    border-left: unset !important;  // Border Declutter
+                }
+                &:not(.tree-node--children:empty):not(.tree-node--children:has(> div.absolute:only-child)) {
+                    display: inline-block;
+                    z-index: 0;
+                    border-left: 1px solid $tree-border;
+                    position: relative;
+                    // Crumbs Remover
+                    &::before {
+                        content: "";
+                        width: 2.6rem;
+                        background-color: $tree-bg;
+                        padding-right: 4px;
+                        padding-top: 0;
+                        position: absolute;
+                        z-index: 1;
+                        top: 0;
+                        left: -1.5rem;
+                        height: 1rem;
+                        border-top: unset;
+                        border-right: unset;
+                        border-bottom: 1px solid $tree-border;
+                        border-left: 4px solid $tree-bg;
+                    }
+                    &::after {
+                        content: "";
+                        padding-right: 24px;
+                        padding-top: 0;
+                        position: absolute;
+                        z-index: 0;
+                        bottom: 0;
+                        left: -0.15rem;
+                        height: 1rem;
+                        border-bottom: unset;
+                        border-right: unset;
+                        border-top: 1px solid $tree-border;
+                        border-left: 4px solid $tree-bg;
+
+                        content: "";
+                        padding-right: 24px;
+                        padding-top: 0;
+                        position: absolute;
+                        z-index: 0;
+                        bottom: 0;
+                        left: -0.15rem;
+                        height: 1rem;
+                        border-bottom: unset;
+                        border-right: unset;
+                        border-top: 1px solid $tree-border;
+                        border-left: 4px solid $tree-bg;
+                    }
+                    .tree-node-container {
+                        display: flex;
+                        z-index: 0;
+                        &:first-child:not(:only-child) {
+                            >.tree-node--parent {
+                                display: flex;
+                                align-items: baseline;
+                            }
+                        }
+                        &:last-child:not(:only-child) {
+                            > .tree-node--parent {
+                                display: flex;
+                            }
+                        }
+                        div.tree-node--children:only-of-type {
+                            display: none;
+                        }
+                    }
+                }
+                &:has(> div.absolute:only-of-type) {
+                    &::before {
+                        border-bottom: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+@include RemTree(
+    var(--tree-bg), 
+    var(--tree-scroll-bg), 
+    var(--tree-scroll-thumb-bg),
+    var(--tree-border), 
+    var(--tree-portal-bg)
+);
+.dark {
+    @include RemTree(
+        var(--rn-colors-gray-0),
+        var(--tree-scroll-bg-dark), 
+        var(--tree-scroll-thumb-bg-dark),
+        var(--tree-border-dark), 
+        var(--tree-portal-bg-dark)
+    );
+}
+$Widths: (
+    "w100": 100px,
+    "w200": 200px,
+    "w300": 300px,
+    "w400": 400px,
+    "w500": 500px,
+    "w600": 600px,
+    "w700": 700px,
+    "w800": 800px,
+    "w900": 900px,
+    "w1000": 1000px,
+);
+
+@each $width, $px in $Widths {
+    [data-rem-container-tags*="tree"] {
+        &[data-rem-container-tags~="#{$width}"],
+        [data-rem-container-tags~="#{$width}"] {
+            > div.tree-node--children  {
+                overflow-x: unset;
+                white-space: unset;
+                > div.animate-zoom-into-bullet > div.tree-node--parent {
+                    min-width: $px;
+                }
+            } 
+        }
+    }
+} 

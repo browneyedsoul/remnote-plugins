@@ -7,13 +7,11 @@
   ],
   "scripts": {
     "check-types": "tsc",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --color --progress --no-open",
-    "build": "npx remnote-plugin validate && shx rm -rf dist && cross-env NODE_ENV=production webpack --color --progress && shx cp README.md dist && cd dist && bestzip ../PluginZip.zip ./*",
     "sass": "pnpm run -r sass",
-    "sass-callout": "pnpm run sass --filter callout"
+    "kanban": "pnpm --filter kanban dev"
   },
   "dependencies": {
-    "@remnote/plugin-sdk": "^0.0.26",
+    "@remnote/plugin-sdk": "latest",
     "pnpm": "^8.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
@@ -32,11 +30,12 @@
     "esbuild-loader": "^2.19.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
-    "postcss": "^8.4.14",
+    "postcss": "^8.4.21",
     "postcss-import": "^14.1.0",
     "postcss-loader": "^7.0.0",
     "react-refresh": "^0.14.0",
     "sass": "^1.57.1",
+    "sass-loader": "^14.1.1",
     "shx": "^0.3.4",
     "style-loader": "^3.3.1",
     "tailwindcss": "^3.1.5",
@@ -45,5 +44,10 @@
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@remnote/plugin-sdk@0.0.42": "patches/@remnote__plugin-sdk@0.0.42.patch"
+    }
   }
 }

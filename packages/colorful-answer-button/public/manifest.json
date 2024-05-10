@@ -1,0 +1,22 @@
+{
+  "manifestVersion": 1,
+  "id": "browneyedsoul-ColorfulAnswerButton",
+  "name": "Colorful Answer Button",
+  "author": "Min-Ki Park",
+  "repoUrl": "https://github.com/browneyedsoul/RemNote-ColorfulAnswerButton",
+  "version": {
+    "major": 0,
+    "minor": 2,
+    "patch": 2
+  },
+  "theme": [],
+  "enableOnMobile": true,
+  "description": "Colorize your Buttons in Flashcard!",
+  "requestNative": true,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModify"
+    }
+  ]
+}

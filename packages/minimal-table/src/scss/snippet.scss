@@ -1,0 +1,635 @@
+:root {
+    --table-title-bg: #E6E6E4;
+    --table-title-bg-dark: #383838;
+    --table-columnrow-bg: #E6E6E4;
+    --table-columnrow-bg-dark: #383838;
+    --table-property-bg: #F7F5F3;
+    --table-property-bg-dark: #1D1D24;
+    --table-cell-bg: #FFFFFF;
+    --table-cell-bg-dark: #232329;
+    --table-border: #E6E6E4;
+    --table-border-dark: #383838;
+    --table-scrollbar: #BBB;
+    --table-scrollbar-dark: #222;
+    --table-bg-rd: #FFEEEB;
+    --table-bg-rd-dark: #572924;
+    --table-bg-or: #FFF0DD;
+    --table-bg-or-dark: #553D24;
+    --table-bg-yw: #FEFFD8;
+    --table-bg-yw-dark: #453E1E;
+    --table-bg-gr: #E7F8E9;
+    --table-bg-gr-dark: #253F27;
+    --table-bg-bl: #E4F3FD;
+    --table-bg-bl-dark: #183C4D;
+    --table-bg-vt: #F8EFFF;
+    --table-bg-vt-dark: #4A2B45;
+}
+// Fix cell dislocation
+[data-rem-container-tags*="table"] {
+    .rn-editor__rem__body__text {
+        span.whitespace-pre-wrap {
+            word-break: initial;
+        }
+    }
+}
+
+%bgcolorFix {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    .mr-\[100px\] {
+        margin-right: unset;
+    }
+}
+%TagDeclutter {
+    .hierarchy-editor__tag-bar__tag {
+        color: transparent;
+        background-color: transparent !important;
+        span {
+            display: none;
+        }
+        .hierarchy-editor__tag-bar__tag__delete {
+            opacity: 0.2;
+            left: 12px;
+        }
+    }
+}
+%rmvPlaceholder {
+    .rn-editor__rem__body__text {
+        > .rich-text-editor {
+            > .absolute {
+                color: transparent;
+            }
+        }
+    }
+}
+$Tables: (
+    "90": 90px,
+    "120": 120px,
+    "150": 150px,
+    "180": 180px,
+    "210": 210px,
+    "240": 240px,
+    "270": 270px,
+    "300": 300px,
+    "330": 330px,
+    "360": 360px,
+    "390": 390px,
+    "420": 420px,
+    "450": 450px,
+    "480": 480px,
+    "510": 510px,
+    "540": 540px,
+    "570": 570px,
+    "600": 600px,
+);
+$TableWidths: 90, 120, 150, 180, 210, 240, 270, 300, 330, 360, 390, 420, 450, 480, 510, 540, 570, 600;
+$GlobalWidths: 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 360, 390, 420, 450, 480, 510, 540, 570, 600;
+$LocalWidths: c1w100, c2w100, c3w100, c4w100, c5w100, c6w100, c7w100, c8w100, c9w100, c1w200, c2w200, c3w200, c4w200, c5w200, c6w200, c7w200, c8w200, c9w200, c1w300, c2w300, c3w300, c4w300, c5w300, c6w300, c7w300, c8w300, c9w300, c1w400, c2w400, c3w400, c4w400, c5w400, c6w400, c7w400, c8w400, c9w400, c1w500, c2w500, c3w500, c4w500, c5w500, c6w500, c7w500, c8w500, c9w500, c1w600, c2w600, c3w600,
+    c4w600, c5w600, c6w600, c7w600, c8w600, c9w600, c1w700, c2w700, c3w700, c4w700, c5w700, c6w700, c7w700, c8w700, c9w700, c1w800, c2w800, c3w800, c4w800, c5w800, c6w800, c7w800, c8w800, c9w800, c1w900, c2w900, c3w900, c4w900, c5w900, c6w900, c7w900, c8w900, c9w900, c1w1000, c2w1000, c3w1000, c4w1000, c5w1000, c6w1000,
+    c7w1000, c8w1000, c9w1000;
+$LocalLeft: (
+    "100": 100px,
+    "200": 200px,
+    "300": 300px,
+    "400": 400px,
+    "500": 500px,
+    "600": 600px,
+    "700": 700px,
+    "800": 800px,
+    "900": 900px,
+    "1000": 1000px,
+);
+[data-rem-container-tags~="fit"] {
+    display: inline-block;
+    width: -moz-fit-content;
+    width: fit-content;
+    > .tree-node--children {
+        > .animate-zoom-into-bullet:first-child {
+            > .tree-node--children {
+                .RichTextViewer,
+                .rich-text-editor > div {
+                    white-space: unset !important;
+                }
+            }
+        }
+    }
+}
+#hierarchy-editor {
+    div[data-rem-container-tags*="table"] {
+        .animate-zoom-into-bullet.flex.flex-col[data-rem-container-tags*="callout"] {
+            width: unset;
+            margin-right: 0.5rem;
+        }
+    }
+}
+@mixin ModernTableRow(
+    $table-title-bg,
+    $table-columnrow-bg,
+    $table-property-bg,
+    $table-cell-bg,
+    $table-border,
+    $table-scrollbar,
+    $table-bg-rd,
+    $table-bg-or,
+    $table-bg-yw,
+    $table-bg-gr,
+    $table-bg-bl,
+    $table-bg-vt
+) {
+    %InnerTable {
+        #hierarchy-editor-inner {
+            @for $i from 1 through 9 {
+                > [data-rem-container-tags*="table#{$i}"] {
+                    border-top: unset;
+                    border-left: unset;
+                    > div:last-of-type {
+                        > div.rn-editor-container {
+                            display: flex;
+                            flex-direction: row !important;
+                            border-top: 0.07rem solid $table-border;
+                            border-left: 0.07rem solid $table-border;
+                            border-right: 0.07rem solid $table-border;
+                            &:not([data-rem-container-id]) {
+                                display: none;
+                            }
+                            &:nth-last-child(3) {
+                                border-bottom: 0.04rem solid $table-border;
+                            }
+                            > div.tree-node--parent {
+                                border-right: 0.07rem solid $table-border;
+                                background-color: $table-property-bg;
+                                font-weight: 550;
+                                > .rem {
+                                    @extend %rmvPlaceholder;
+                                    .rn-editor__right__side {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            > div.tree-node--children {
+                                background-color: $table-property-bg;
+                                flex-direction: row;
+                                padding-left: 0;
+                                > div.rn-editor-container {
+                                    border-right: 0.07rem solid $table-border;
+                                    background-color: $table-cell-bg;
+                                    > div.tree-node--children {
+                                        padding-left: 0;
+                                        > .rn-editor-container {
+                                            .tree-node--children {
+                                                margin-left: 1.55rem;
+                                                border-left: 0.07rem solid $table-border;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            @each $table, $px in $Tables {
+                > [data-rem-container-tags*="table#{$table}"] {
+                    > div:last-of-type {
+                        > div.rn-editor-container {
+                            > div.tree-node--parent {
+                                min-width: $px;
+                                max-width: $px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .popup-menu {
+        @extend %InnerTable;
+    }
+    [data-document-tags*="table"] {
+        @extend %InnerTable;
+    }
+    #hierarchy-editor {
+        @each $width in $TableWidths {
+            [data-rem-container-tags~="table#{$width}"] {
+                margin: 0.5rem 0 0.5rem 0.2rem;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                background-color: $table-columnrow-bg;
+                border: 0.07rem solid $table-border;
+                // Fix Global Flaw
+                .EditorContainer {
+                    overflow-wrap: anywhere !important;
+                }
+                .rem-text {
+                    min-width: 50px;
+                }
+                // Remove Placeholder(Empty Rem)
+                .text-gray-20 {
+                    display: none;
+                }
+                // Codenode
+                #code-node {
+                    white-space: pre-wrap;
+                    > span[data-linear-editor-editable-leaf~="true"] {
+                        white-space: pre-wrap;
+                    }
+                }
+                // 1.8.18
+                .animate-zoom-into-bullet.flex.flex-col {
+                    display: block;
+                    width: 100%;
+                    &[data-rem-container-tags*="table"] {
+                        margin-right: 0.5rem;
+                        width: unset;
+                    }
+                }
+                // Card In Table
+                .node-card-item {
+                    &::before {
+                        margin-left: unset;
+                    }
+                }
+                // Remove Bullet
+                .perfect-circle__inner {
+                    // .rem-bullet__ring {
+
+                    // }
+                    .rem-bullet__core {
+                        fill: transparent;
+                    }
+                }
+                // Table Column Color Preset
+                .tree-node--children {
+                    border-color: $table-columnrow-bg;
+                    border-left: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    left: 0;
+                }
+                // Table Title
+                > :first-child {
+                    border: 0.07rem solid $table-border;
+                    border-bottom: unset;
+                    background-color: $table-title-bg;
+                    background-size: 100% 100%;
+                    border-top-left-radius: 4px;
+                    border-top-right-radius: 4px;
+                    .rem-button__container {
+                        z-index: 1;
+                    }
+                    &:focus-within {
+                        > .rem {
+                            overflow: hidden;
+                            .rn-editor__rem__body__text:not(.rn-editor__rem__body__text--h1):not(.rn-editor__rem__body__text--h2):not(.rn-editor__rem__body__text--h3) {
+                                &::after {
+                                    font-family: monospace;
+                                    content:"...╷.╽╷..╷╽.╷..╽..╷.╽╷..╷╽.╷..╽";
+                                    letter-spacing: 1.275rem;
+                                    position: absolute;
+                                    overflow-x: hidden;
+                                    white-space: pre;
+                                    left: -0.3rem;
+                                    top: 0.9rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                // Table Column Color Preset
+                [data-rem-container-tags~="th"] {
+                    background-color: $table-property-bg !important;
+                    font-weight: 550;
+                    text-align: center;
+                    > .tree-node--parent {
+                        [data-rem-tags~="th"] {
+                            text-align: left;
+                        }
+                    }
+                    > .tree-node--children {
+                        > .rn-editor-container {
+                            background-color: $table-property-bg !important;
+                            font-weight: 550;
+                            text-align: center;
+                        }
+                    }
+                    @extend %TagDeclutter;
+                }
+                // Table Grid Scrollable
+                > .tree-node--children {
+                    display: grid;
+                    grid-auto-rows: auto;
+                    border-left: unset !important;
+                    padding-left: 0;
+                    margin-left: 0 !important;
+                    overflow-y: hidden;
+                    @media screen and (min-width: 280px) {
+                        overflow-x: auto;
+                        .rem-text {
+                            min-width: 60px !important;
+                            word-break: break-all;
+                        }
+                    }
+                    > :first-child {
+                        border-right: unset;
+                    }
+                    // Scrollbar
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $table-scrollbar;
+                        border-radius: 2px;
+                    }
+                    &::-webkit-scrollbar-track {
+                        background-color: $table-title-bg;
+                    }
+                    // Remove Overflow Content
+                    .right-\[-4px\] {
+                        right: 4px;
+                    }
+                    .float-end {
+                        display: none;
+                    }
+                    [data-icon~="merge"] {
+                        display: none;
+                    }
+                    // Table Row and Column
+                    > .rn-editor-container {
+                        // Table all the horizontal lines
+                        border-bottom: 0.07rem solid $table-border;
+                        border-left: unset;
+
+                        &:last-of-type {
+                            border-bottom: unset;
+                        }
+                        // Table Left Cell
+                        > .tree-node--parent {
+                            float: left;
+                            font-weight: 550;
+                            background-color: $table-property-bg;
+                            text-align: left;
+                            padding-left: 0em;
+                            height: 100%;
+                            > .rem {
+                                @extend %rmvPlaceholder;
+                            }
+                            &:has(.highlight-color--red[data-rem-tags~="highlight"]) {
+                                background-color: $table-bg-rd;
+                                > span {
+                                    background-color: $table-bg-rd;
+                                }
+                                > .rem {
+                                    @extend %bgcolorFix;
+                                }
+                            }
+                            &:has(.highlight-color--orange[data-rem-tags~="highlight"]) {
+                                background-color: $table-bg-or;
+                                > span {
+                                    background-color: $table-bg-or;
+                                }
+                                > .rem {
+                                    @extend %bgcolorFix;
+                                }
+                            }
+                            &:has(.highlight-color--yellow[data-rem-tags~="highlight"]) {
+                                background-color: $table-bg-yw;
+                                > span {
+                                    background-color: $table-bg-yw;
+                                }
+                                > .rem {
+                                    @extend %bgcolorFix;
+                                }
+                            }
+                            &:has(.highlight-color--green[data-rem-tags~="highlight"]) {
+                                background-color: $table-bg-gr;
+                                > span {
+                                    background-color: $table-bg-gr;
+                                }
+                                > .rem {
+                                    @extend %bgcolorFix;
+                                }
+                            }
+                            &:has(.highlight-color--blue[data-rem-tags~="highlight"]) {
+                                background-color: $table-bg-bl;
+                                > span {
+                                    background-color: $table-bg-bl;
+                                }
+                                > .rem {
+                                    @extend %bgcolorFix;
+                                }
+                            }
+                            &:has(.highlight-color--purple[data-rem-tags~="highlight"]) {
+                                background-color: $table-bg-vt;
+                                > span {
+                                    background-color: $table-bg-vt;
+                                }
+                                > .rem {
+                                    @extend %bgcolorFix;
+                                }
+                            }
+
+                            > div[data-rem-tags~="highlight"] {
+                                height: 100%;
+
+                                > div {
+                                    height: 100%;
+                                    > span {
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        // Table Content Cell
+                        > .tree-node--children {
+                            display: flex;
+                            flex-direction: row;
+                            text-align: left;
+                            height: 100%;
+                            padding-left: 0;
+                            border-left: unset !important;
+                            background-color: $table-property-bg;
+                            &::-webkit-scrollbar-track {
+                                margin-left: 1rem;
+                            }
+                            > .animate-zoom-into-bullet {
+                                background-color: $table-cell-bg;
+                                border-left: 0.07rem solid $table-border;
+                                flex: 1 1 0;
+                                padding-right: 1px;
+                                min-width: 10rem;
+                                // width: 98%; This was a remedy for codeblock overflow but harmed whole table width control
+                                > div.tree-node--children {
+                                    padding-left: 0;
+                                    margin-left: 0 !important;
+                                    border-left: unset !important;
+                                    // > div {
+                                    //     > div {
+                                    //         > span {
+                                    //             padding-right: 1.2rem;
+                                    //         }
+                                    //     }
+                                    // }
+                                    > .rn-editor-container {
+                                        > .tree-node--children {
+                                            margin-left: 1.55rem;
+                                            border-left: 0.07rem solid $table-border;
+                                        }
+                                        .rn-editor-container {
+                                            > .tree-node--children {
+                                                margin-left: 1.55rem;
+                                            }
+                                            .tree-node--children {
+                                                border-left: 0.07rem solid $table-border;
+                                            }
+                                        }
+                                    }
+                                }
+                                // For Selecting Dense-width Cell Text Eclipsed with Rem-container
+                                .rich-text-editor {
+                                    z-index: 1;
+                                }
+                                // Codeblock Treatment
+                                #code-node {
+                                    overflow-x: unset;
+                                    white-space: unset;
+                                }
+                            }
+                        }
+                    }
+                    // Table Cell Hightlight Right Margin
+                    [data-rem-tags~="highlight"] {
+                        margin-right: 0;
+
+                        .highlight-color--red,
+                        .highlight-color--orange,
+                        .highlight-color--yellow,
+                        .highlight-color--green,
+                        .highlight-color--blue,
+                        .highlight-color--purple {
+                            padding: 0;
+                        }
+                    }
+                }
+                // Aliases in table cell
+                [data-rem-container-tags~="aliases"] {
+                    margin-right: 0;
+                }
+            }
+        }
+        [data-rem-container-tags*=table] {
+            >.tree-node--children {
+                >.rn-editor-container {
+                    >.tree-node--children {
+                        &:has(> [data-rem-container-tags*="table"]) {
+                            background-color: $table-cell-bg;
+                            border-left: 0.07rem solid $table-border !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include ModernTableRow(
+    var(--table-title-bg),
+    var(--table-columnrow-bg),
+    var(--table-property-bg),
+    var(--table-cell-bg),
+    var(--table-border),
+    var(--table-scrollbar),
+    var(--table-bg-rd),
+    var(--table-bg-or),
+    var(--table-bg-yw),
+    var(--table-bg-gr),
+    var(--table-bg-bl),
+    var(--table-bg-vt)
+);
+.dark {
+    @include ModernTableRow(
+        var(--table-title-bg-dark),
+        var(--table-columnrow-bg-dark),
+        var(--table-property-bg-dark),
+        var(--table-cell-bg-dark),
+        var(--table-border-dark),
+        var(--table-scrollbar-dark),
+        var(--table-bg-rd-dark),
+        var(--table-bg-or-dark),
+        var(--table-bg-yw-dark),
+        var(--table-bg-gr-dark),
+        var(--table-bg-bl-dark),
+        var(--table-bg-vt-dark)
+    );
+}
+// Table Row and Column Attribute Cell
+@for $i from 3 through 20 {
+    [data-rem-container-tags~="table#{$i * 30}"] > .tree-node--children > .animate-zoom-into-bullet > :first-child {
+        width: #{$i * 30px} !important;
+    }
+}
+// Table Grid Scrollable
+@each $width in $GlobalWidths {
+    [data-rem-container-tags~="w#{$width}"] {
+        > .tree-node--children {
+            overflow-x: auto;
+            white-space: pre;
+        }
+    }
+}
+// Width Adjustment of Whole Table Content Cell
+@for $i from 1 through 20 {
+    [data-rem-container-tags~="w#{$i * 30}"] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet {
+        width: #{$i * 30px} !important;
+    }
+    [data-document-tags~="w#{$i * 30}"] {
+        [data-rem-container-tags*="table"] {
+            > div {
+                overflow-x: auto;
+                > .rn-editor-container > .tree-node--children > .animate-zoom-into-bullet  {
+                    width: #{$i * 30px} !important;
+                }
+            }
+        }
+    }
+}
+@for $i from 1 through 12 {
+    [data-rem-container-tags~="w#{$i * 100}"] > .tree-node--children > .animate-zoom-into-bullet > .tree-node--children > .animate-zoom-into-bullet {
+        width: #{$i * 100px} !important;
+    }
+}
+// Width Adjustment of Individual Table Content Cell
+@each $width in $LocalWidths {
+    [data-rem-container-tags~="#{$width}"] {
+        > div.tree-node--children {
+            overflow-x: auto !important;
+            white-space: pre !important;
+        }
+    }
+}
+@for $i from 1 through 9 {
+    @each $width, $px in $LocalLeft {
+        #hierarchy-editor [data-rem-container-tags~="c#{$i}w#{$width}"] {
+            > div.tree-node--children {
+                > div.animate-zoom-into-bullet {
+                    > div.tree-node--children {
+                        > div.animate-zoom-into-bullet:nth-of-type(#{$i}) {
+                            min-width: $px;
+                            max-width: $px;
+                        }
+                    }
+                }
+            }
+        }
+        [data-document-tags~="c#{$i}w#{$width}"] {
+            [data-rem-container-tags*="table"] {
+                > div {
+                    > .rn-editor-container {
+                        > .tree-node--children {
+                            > .animate-zoom-into-bullet:nth-of-type(#{$i}) {
+                                min-width: $px;
+                                max-width: $px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

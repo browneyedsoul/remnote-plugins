@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(0.960937,0,0,0.960938,5,5)">
+        <path d="M256,64C256,28.677 227.323,0 192,0L64,0C28.677,0 0,28.677 0,64L0,192C0,227.323 28.677,256 64,256L192,256C227.323,256 256,227.323 256,192L256,64Z" style="fill:rgb(235,235,235);stroke:black;stroke-width:10.84px;"/>
+    </g>
+    <g transform="matrix(1.14118,0.0105733,-0.0122589,0.999944,-12.4205,159.555)">
+        <path d="M35,43L212,41" style="fill:none;stroke:black;stroke-width:2.72px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,14.6974,44)">
+        <text x="67.565px" y="115.89px" style="font-family:'Nunito-Bold', 'Nunito';font-weight:700;font-size:29.167px;">C<tspan x="86.378px " y="115.89px ">e</tspan>nt<tspan x="130.303px " y="115.89px ">e</tspan>r</text>
+    </g>
+    <g transform="matrix(1,0,0,1,87.9409,-27)">
+        <text x="67.565px" y="115.89px" style="font-family:'Nunito-Bold', 'Nunito';font-weight:700;font-size:29.167px;">Right</text>
+    </g>
+    <g transform="matrix(1.14118,0.0105733,-0.0122589,0.999944,-12.4205,19.5553)">
+        <path d="M35,43L212,41" style="fill:none;stroke:black;stroke-width:2.72px;"/>
+    </g>
+    <g transform="matrix(1.14118,0.0105733,-0.0122589,0.999944,-12.4205,54.5553)">
+        <path d="M35,43L212,41" style="fill:none;stroke:black;stroke-width:2.72px;"/>
+    </g>
+    <g transform="matrix(1.14118,0.0105733,-0.0122589,0.999944,-12.4205,89.5553)">
+        <path d="M35,43L212,41" style="fill:none;stroke:black;stroke-width:2.72px;"/>
+    </g>
+    <g transform="matrix(1.14118,0.0105733,-0.0122589,0.999944,-12.4205,124.555)">
+        <path d="M35,43L212,41" style="fill:none;stroke:black;stroke-width:2.72px;"/>
+    </g>
+</svg>

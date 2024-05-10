@@ -1,0 +1,22 @@
+{
+  "manifestVersion": 1,
+  "id": "browneyedsoul-TextColorizer",
+  "name": "Text Colorizer",
+  "author": "Min-Ki Park",
+  "repoUrl": "https://github.com/browneyedsoul/RemNote-TextColorizer",
+  "version": {
+    "major": 0,
+    "minor": 6,
+    "patch": 4
+  },
+  "theme": [],
+  "enableOnMobile": true,
+  "description": "Turn your highlight color into text color with simple text bolding.",
+  "requestNative": true,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModify"
+    }
+  ]
+}
