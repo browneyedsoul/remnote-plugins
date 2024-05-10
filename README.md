@@ -9,9 +9,9 @@
 3. Go back to your Knowledge Base. And then, paste the clipboard into a Custom CSS power-up page Code Block in which the language button is tuned to CSS.
 
 > PS: All the latest snippets are optimized for `Modern Dark Theme`
-
+<!-- 
 # Theme
-<!-- Modern Dark Theme -->
+## Modern Dark Theme
   <details>
     <summary>Modern Dark Theme (🚧 Constant changes in the RemNote structure make it hard to maintain this theme. Please use the default theme. When all the structures are stable, it will be completely rebuilt with different codes to support additional release. 😉)</summary>
 
@@ -55,7 +55,7 @@
 
   ---
   <br>
-  <br>
+  <br> -->
 
 # Editor Mode
 
@@ -174,7 +174,7 @@
   ---
 
 <!-- Callout Rem -->
-  <details>
+  <!-- <details>
     <summary>Callout Rem</summary>
 
   ```css
@@ -188,7 +188,7 @@
   </div>
   </details>
 
-  ---
+  --- -->
 
 <!-- Modern Divider -->
   <details>
@@ -263,7 +263,7 @@
   ---
 
 <!-- Rem Tree -->
-  <details>
+  <!-- <details>
     <summary>Rem Tree</summary>
 
   ```css
@@ -275,7 +275,7 @@
   <img src="./public/readme/tricks-tag/rem-tree/RemTree.png">
   </details>
  
-  ---
+  --- -->
 
 <!-- Blockquote -->
   <details>
@@ -294,7 +294,7 @@
   ---
 
 <!-- Modern Table Row -->
-  <details>
+  <!-- <details>
     <summary>Modern Table Row ⭐️</summary>
 
   ```css
@@ -422,10 +422,10 @@
 
   </details>
 
-  ---
+  --- -->
 
 <!-- Modern Table Column -->
-  <details>
+  <!-- <details>
   <summary>Modern Table Column</summary>
 
   - Tag Name : `Table`
@@ -439,7 +439,7 @@
   <img src="./public/readme/tricks-tag/modern-table-column/ModernTableColumn.gif">
   </details>
 
-  ---
+  --- -->
 
 <!-- Modern Kanban -->
  <details>
@@ -491,7 +491,7 @@
  ---
 
 <!-- Caption -->
- <details>
+ <!-- <details>
  <summary>Caption</summary>
  
  ```css
@@ -501,10 +501,10 @@
  <img src="./public/readme/tricks-tag/caption/Caption.gif">
  </details>
  
- ---
+ --- -->
 
 <!-- Rating Bar -->
-  <details>
+  <!-- <details>
   <summary>Rating bar</summary>
  
   ```css
@@ -514,7 +514,7 @@
   <img src="./public/readme/tricks-tag/rating-bar/RatingBar.gif">
   </details>
  
-  ---
+  --- -->
 
 <!-- Cover Photo -->
   <details>
@@ -558,7 +558,7 @@
   ---
 
 <!-- Terminal -->
-  <details>
+  <!-- <details>
     <summary>Terminal</summary>
 
   ```css
@@ -570,7 +570,7 @@
 
   ---
   <br>
-  <br>
+  <br> -->
 
 # UI UX Declutter Series
 <!-- Hide a Specific Tag -->

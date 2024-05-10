@@ -308,16 +308,16 @@
                 .rounded-md {
                     background-color: transparent;
 
-                    > div {
-                        > div.overflow-hidden {
-                            overflow: unset;
-                            > div.truncate {
-                                overflow: unset;
-                            }
-                        }
-                    }
+                    // > div {
+                    //     > div.overflow-hidden {
+                    //         overflow: unset;
+                    //         > div.truncate {
+                    //             overflow: unset;
+                    //         }
+                    //     }
+                    // }
 
-                    &.highlight-color--red {
+                    span.highlight-color--red {
                         > div {
                             > div {
                                 background-color: var(--highlight-color--red-bg-dark);
@@ -330,7 +330,7 @@
                             border: unset;
                         }
                     }
-                    &.highlight-color--orange {
+                    span.highlight-color--orange {
                         > div {
                             > div:not(.document-list-item__folder-icon) {
                                 background-color: var(--highlight-color--orange-bg-dark);
@@ -343,7 +343,7 @@
                             border: unset;
                         }
                     }
-                    &.highlight-color--yellow {
+                    span.highlight-color--yellow {
                         > div {
                             > div {
                                 background-color: var(--highlight-color--yellow-bg-dark);
@@ -356,7 +356,7 @@
                             border: unset;
                         }
                     }
-                    &.highlight-color--green {
+                    span.highlight-color--green {
                         > div {
                             > div {
                                 background-color: var(--highlight-color--green-bg-dark);
@@ -369,7 +369,7 @@
                             border: unset;
                         }
                     }
-                    &.highlight-color--blue {
+                    span.highlight-color--blue {
                         > div {
                             > div {
                                 background-color: var(--highlight-color--blue-bg-dark);
@@ -382,7 +382,7 @@
                             border: unset;
                         }
                     }
-                    &.highlight-color--purple {
+                    span.highlight-color--purple {
                         > div {
                             > div {
                                 background-color: var(--highlight-color--purple-bg-dark);

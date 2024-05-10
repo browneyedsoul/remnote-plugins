@@ -129,8 +129,6 @@
   padding-left: 40px;
   padding-right: 10px;
   border-radius: 0.3rem;
-  overflow-x: scroll;
-  white-space: pre;
 }
 #code-node::-webkit-scrollbar {
   width: 8px;
@@ -190,6 +188,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  position: absolute;
   top: 5px;
   left: 10px;
 }
@@ -207,10 +206,6 @@
 }
 .dark #code-node::before {
   background-color: var(--code-node-plain);
-}
-.dark #code-node:not(.token.property):not(.token.function):not(.token.string):not(.token.builtin):not(.token.comment):not(.token.selector):not(.token.keyword):not(.token.number):not(.token.operator):not(.token.punctuation),
-.dark #code-node .token.plain {
-  color: var(--code-node-plain-color-dark);
 }
 .dark #code-node .token.property {
   color: var(--code-node-property-color-dark);

@@ -136,8 +136,8 @@
             padding-left:       40px;
             padding-right:      10px;
             border-radius:      0.3rem;
-            overflow-x:	        scroll;
-            white-space:        pre;
+            // overflow-x:	        scroll;
+            // white-space:        pre;
 
             &::-webkit-scrollbar {
                 width: 8px;
@@ -206,6 +206,7 @@
                 #code-node__change-language-dropdown {
                     display: inline-flex;
                     height: fit-content;
+                    position: absolute;
                     top: 5px;
                     left: 10px;
 
@@ -231,10 +232,10 @@
                 background-color: var(--code-node-plain);
             }
             // Code Style
-                &:not(.token.property):not(.token.function):not(.token.string):not(.token.builtin):not(.token.comment):not(.token.selector):not(.token.keyword):not(.token.number):not(.token.operator):not(.token.punctuation),
-                .token.plain {
-                    color: var(--code-node-plain-color-dark);
-                }
+                // &:not(.token.property):not(.token.function):not(.token.string):not(.token.builtin):not(.token.comment):not(.token.selector):not(.token.keyword):not(.token.number):not(.token.operator):not(.token.punctuation),
+                // .token.plain {
+                //     color: var(--code-node-plain-color-dark);
+                // }
                 .token.property {color: var(--code-node-property-color-dark);}
                 .token.atrule {color: var(--code-node-atrule-color-dark);}
                 .token.tag {color: var(--code-node-tag-color-dark);}

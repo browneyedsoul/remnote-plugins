@@ -1,3 +1,14 @@
+:root {
+    --reference-text: #000;
+    --reference-text-dark: #DFDFD5;
+    --reference-background: #F7F6F3;
+    --reference-background-dark: #282C30;
+    --alias-border: #CACAD9;
+    --alias-border-dark: #747474;
+    --alias-background: #ECECEC;
+    --alias-background-dark: #252525;
+}
+
 @mixin alias(
     $reference-text,
     $line-color,
@@ -26,9 +37,6 @@
                 .tree-node--parent {
                     [data-rem-tags~="list-item"] {
                         .rem-text {
-                            // span.rem-bullet__number {
-
-                            // }
                             span.rem-powerup-icon {
                                 .text-icon {
                                     top: .2rem;

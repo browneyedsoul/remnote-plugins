@@ -33,6 +33,20 @@
   left: 24px;
 }
 
+[data-rem-container-tags~=quote] > .tree-node--parent > .rem {
+  padding-left: 0;
+}
+
+[data-rem-tags~=quote] > div > .rem-button__container {
+  left: -3.5rem !important;
+}
+[data-rem-tags~=quote] > div > .rem-button__container div.six-dot {
+  left: 3rem !important;
+}
+[data-rem-tags~=quote] > div > .rem-button__container span.toggle-collapse-button {
+  left: 3rem !important;
+}
+
 .rem-button__container {
   margin-top: 5px;
 }

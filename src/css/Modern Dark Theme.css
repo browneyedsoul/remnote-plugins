@@ -2010,57 +2010,27 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   margin-right: unset;
 }
 
-.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--red:not(.bold.highlight-color--red) {
-  background-color: var(--highlight-color--red-light);
-}
-.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--orange:not(.bold.highlight-color--orange) {
-  background-color: var(--highlight-color--orange-light);
-}
-.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
-  background-color: var(--highlight-color--yellow-light);
-}
-.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--green:not(.bold.highlight-color--green) {
-  background-color: var(--highlight-color--green-light);
-}
-.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--blue:not(.bold.highlight-color--blue) {
-  background-color: var(--highlight-color--blue-light);
-}
-.tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--purple:not(.bold.highlight-color--purple) {
-  background-color: var(--highlight-color--purple-light);
-}
-
-.dark .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--red:not(.bold.highlight-color--red) {
-  color: var(--highlight-color--red-text-dark);
-  background-color: var(--highlight-color--red-bg-dark);
-}
-.dark .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--orange:not(.bold.highlight-color--orange) {
-  color: var(--highlight-color--orange-text-dark);
-  background-color: var(--highlight-color--orange-bg-dark);
-}
-.dark .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
-  color: var(--highlight-color--yellow-text-dark);
-  background-color: var(--highlight-color--yellow-bg-dark);
-}
-.dark .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--green:not(.bold.highlight-color--green) {
-  color: var(--highlight-color--green-text-dark);
-  background-color: var(--highlight-color--green-bg-dark);
-}
-.dark .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--blue:not(.bold.highlight-color--blue) {
-  color: var(--highlight-color--blue-text-dark);
-  background-color: var(--highlight-color--blue-bg-dark);
-}
-.dark .tile__document #document #hierarchy-editor [data-rem-container-tags~=pdf-highlight] .highlight-color--purple:not(.bold.highlight-color--purple) {
-  color: var(--highlight-color--purple-text-dark);
-  background-color: var(--highlight-color--purple-bg-dark);
-}
-
-.pdf-highlight__pin-editor-button {
-  color: #000;
-  margin-right: 0.7rem;
-}
-
-.dark .pdf-highlight__pin-editor-button {
-  color: var(--darkmode-text);
+:root {
+  --pdf-pin-button: #000;
+  --pdf-pin-button-dark: #DDD;
+  --pdf-hl-bg-rd: #FFE4DF;
+  --pdf-hl-bg-or: #FFE9CC;
+  --pdf-hl-bg-yw: #F8F9AA;
+  --pdf-hl-bg-gr: #D8FFD1;
+  --pdf-hl-bg-bl: #D4EEFF;
+  --pdf-hl-bg-vt: #F5E9FF;
+  --pdf-hl-bg-rd-dark: #572924;
+  --pdf-hl-bg-or-dark: #553D24;
+  --pdf-hl-bg-yw-dark: #453E1E;
+  --pdf-hl-bg-gr-dark: #253F27;
+  --pdf-hl-bg-bl-dark: #183C4D;
+  --pdf-hl-bg-vt-dark: #4A2B45;
+  --pdf-hl-text-rd-dark: #FFC6BD;
+  --pdf-hl-text-or-dark: #FFDAB8;
+  --pdf-hl-text-yw-dark: #E8E67D;
+  --pdf-hl-text-gr-dark: #B3DDAB;
+  --pdf-hl-text-bl-dark: #A7DCE8;
+  --pdf-hl-text-vt-dark: #DDC3EB;
 }
 
 [data-rem-container-tags~=file] .rem-header--1,
@@ -2070,31 +2040,116 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   opacity: 0.7;
 }
 
-.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--red .Highlight__part,
-.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--orange .Highlight__part,
-.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--yellow .Highlight__part,
-.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--green .Highlight__part,
-.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--blue .Highlight__part,
-.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--purple .Highlight__part {
+.pdf-highlight__pin-editor-button {
+  color: var(--pdf-pin-button);
+  margin-right: 0.7rem;
+}
+
+[data-rem-container-tags~=pdf-highlight] .highlight-color--red:not(.bold.highlight-color--red) {
+  color: var(--pdf-hl-text-rd);
+  background-color: var(--pdf-hl-bg-rd);
+}
+[data-rem-container-tags~=pdf-highlight] .highlight-color--orange:not(.bold.highlight-color--orange) {
+  color: var(--pdf-hl-text-or);
+  background-color: var(--pdf-hl-bg-or);
+}
+[data-rem-container-tags~=pdf-highlight] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+  color: var(--pdf-hl-text-yw);
+  background-color: var(--pdf-hl-bg-yw);
+}
+[data-rem-container-tags~=pdf-highlight] .highlight-color--green:not(.bold.highlight-color--green) {
+  color: var(--pdf-hl-text-gr);
+  background-color: var(--pdf-hl-bg-gr);
+}
+[data-rem-container-tags~=pdf-highlight] .highlight-color--blue:not(.bold.highlight-color--blue) {
+  color: var(--pdf-hl-text-bl);
+  background-color: var(--pdf-hl-bg-bl);
+}
+[data-rem-container-tags~=pdf-highlight] .highlight-color--purple:not(.bold.highlight-color--purple) {
+  color: var(--pdf-hl-text-vt);
+  background-color: var(--pdf-hl-bg-vt);
+}
+
+.PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--red .Highlight__part,
+.PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--orange .Highlight__part,
+.PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--yellow .Highlight__part,
+.PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--green .Highlight__part,
+.PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--blue .Highlight__part,
+.PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--purple .Highlight__part {
   border-radius: 5px;
 }
-.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--red .Highlight__part {
-  background: var(--pdf-highlight-color-red);
+.PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--red .Highlight__part {
+  background: var(--pdf-hl-text-rd);
 }
-.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--orange .Highlight__part {
-  background: var(--pdf-highlight-color-orange);
+.PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--orange .Highlight__part {
+  background: var(--pdf-hl-text-or);
 }
-.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--yellow .Highlight__part {
-  background: var(--pdf-highlight-color-yellow);
+.PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--yellow .Highlight__part {
+  background: var(--pdf-hl-text-yw);
 }
-.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--green .Highlight__part {
-  background: var(--pdf-highlight-color-green);
+.PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--green .Highlight__part {
+  background: var(--pdf-hl-text-gr);
 }
-.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--blue .Highlight__part {
-  background: var(--pdf-highlight-color-blue);
+.PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--blue .Highlight__part {
+  background: var(--pdf-hl-text-bl);
 }
-.pdf-viewer .PdfHighlighter .pdfViewer .page .textLayer .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--purple .Highlight__part {
-  background: var(--pdf-highlight-color-purple);
+.PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--purple .Highlight__part {
+  background: var(--pdf-hl-text-vt);
+}
+
+.dark .pdf-highlight__pin-editor-button {
+  color: var(--pdf-pin-button-dark);
+  margin-right: 0.7rem;
+}
+.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--red:not(.bold.highlight-color--red) {
+  color: var(--pdf-hl-text-rd-dark);
+  background-color: var(--pdf-hl-bg-rd-dark);
+}
+.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--orange:not(.bold.highlight-color--orange) {
+  color: var(--pdf-hl-text-or-dark);
+  background-color: var(--pdf-hl-bg-or-dark);
+}
+.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+  color: var(--pdf-hl-text-yw-dark);
+  background-color: var(--pdf-hl-bg-yw-dark);
+}
+.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--green:not(.bold.highlight-color--green) {
+  color: var(--pdf-hl-text-gr-dark);
+  background-color: var(--pdf-hl-bg-gr-dark);
+}
+.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--blue:not(.bold.highlight-color--blue) {
+  color: var(--pdf-hl-text-bl-dark);
+  background-color: var(--pdf-hl-bg-bl-dark);
+}
+.dark [data-rem-container-tags~=pdf-highlight] .highlight-color--purple:not(.bold.highlight-color--purple) {
+  color: var(--pdf-hl-text-vt-dark);
+  background-color: var(--pdf-hl-bg-vt-dark);
+}
+.dark .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--red .Highlight__part,
+.dark .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--orange .Highlight__part,
+.dark .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--yellow .Highlight__part,
+.dark .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--green .Highlight__part,
+.dark .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--blue .Highlight__part,
+.dark .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--purple .Highlight__part {
+  border-radius: 5px;
+}
+.dark .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--red .Highlight__part {
+  background: var(--pdf-hl-text-rd-dark);
+}
+.dark .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--orange .Highlight__part {
+  background: var(--pdf-hl-text-or-dark);
+}
+.dark .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--yellow .Highlight__part {
+  background: var(--pdf-hl-text-yw-dark);
+}
+.dark .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--green .Highlight__part {
+  background: var(--pdf-hl-text-gr-dark);
+}
+.dark .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--blue .Highlight__part {
+  background: var(--pdf-hl-text-bl-dark);
+}
+.dark .PdfHighlighter__highlight-layer .pdf-viewer__highlight-container--purple .Highlight__part {
+  background: var(--pdf-hl-text-vt-dark);
 }
 
 .popup-menu > div.rn-popup__content .bold.highlight-color--red {
@@ -2123,22 +2178,22 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
   color: var(--purple-text);
 }
 .popup-menu > div.rn-popup__content .highlight-color--red:not(.bold.highlight-color--red) {
-  background-color: var(--highlight-color--red-light);
+  background-color: var(--pdf-hl-red-light);
 }
 .popup-menu > div.rn-popup__content .highlight-color--orange:not(.bold.highlight-color--orange) {
-  background-color: var(--highlight-color--orange-light);
+  background-color: var(--pdf-hl-orange-light);
 }
 .popup-menu > div.rn-popup__content .highlight-color--yellow:not(.bold.highlight-color--yellow) {
-  background-color: var(--highlight-color--yellow-light);
+  background-color: var(--pdf-hl-yellow-light);
 }
 .popup-menu > div.rn-popup__content .highlight-color--green:not(.bold.highlight-color--green) {
-  background-color: var(--highlight-color--green-light);
+  background-color: var(--pdf-hl-green-light);
 }
 .popup-menu > div.rn-popup__content .highlight-color--blue:not(.bold.highlight-color--blue) {
-  background-color: var(--highlight-color--blue-light);
+  background-color: var(--pdf-hl-blue-light);
 }
 .popup-menu > div.rn-popup__content .highlight-color--purple:not(.bold.highlight-color--purple) {
-  background-color: var(--highlight-color--purple-light);
+  background-color: var(--pdf-hl-purple-light);
 }
 .popup-menu > div.rn-popup__content > div.max-w-\[285px\] {
   max-width: unset;
@@ -2316,6 +2371,17 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
 }
 .dark .portal-tree-node-box [data-rem-tags~=highlight] .rem-container--not-included-in-document-scope .RichTextViewer {
   color: var(--darkmode-text);
+}
+
+:root {
+  --reference-text: #000;
+  --reference-text-dark: #DFDFD5;
+  --reference-background: #F7F6F3;
+  --reference-background-dark: #282C30;
+  --alias-border: #CACAD9;
+  --alias-border-dark: #747474;
+  --alias-background: #ECECEC;
+  --alias-background-dark: #252525;
 }
 
 .work-in-progress-rem {
@@ -2813,63 +2879,57 @@ div.portal-tree-node-box div.TreeNode.tree-node--children div.w-full {
 #document-sidebar > div:nth-of-type(2) .rounded-md {
   background-color: transparent;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md > div > div.overflow-hidden {
-  overflow: unset;
-}
-#document-sidebar > div:nth-of-type(2) .rounded-md > div > div.overflow-hidden > div.truncate {
-  overflow: unset;
-}
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--red > div > div {
+#document-sidebar > div:nth-of-type(2) .rounded-md span.highlight-color--red > div > div {
   background-color: var(--highlight-color--red-bg-dark);
   border-radius: 4px;
   border: 0.1rem solid #92463E;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--red .document-list-item__folder-icon {
+#document-sidebar > div:nth-of-type(2) .rounded-md span.highlight-color--red .document-list-item__folder-icon {
   background-color: transparent;
   border: unset;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--orange > div > div:not(.document-list-item__folder-icon) {
+#document-sidebar > div:nth-of-type(2) .rounded-md span.highlight-color--orange > div > div:not(.document-list-item__folder-icon) {
   background-color: var(--highlight-color--orange-bg-dark);
   border-radius: 4px;
   border: 0.1rem solid #795931;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--orange .document-list-item__folder-icon {
+#document-sidebar > div:nth-of-type(2) .rounded-md span.highlight-color--orange .document-list-item__folder-icon {
   background-color: transparent;
   border: unset;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--yellow > div > div {
+#document-sidebar > div:nth-of-type(2) .rounded-md span.highlight-color--yellow > div > div {
   background-color: var(--highlight-color--yellow-bg-dark);
   border-radius: 4px;
   border: 0.1rem solid #625F14;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--yellow .document-list-item__folder-icon {
+#document-sidebar > div:nth-of-type(2) .rounded-md span.highlight-color--yellow .document-list-item__folder-icon {
   background-color: transparent;
   border: unset;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--green > div > div {
+#document-sidebar > div:nth-of-type(2) .rounded-md span.highlight-color--green > div > div {
   background-color: var(--highlight-color--green-bg-dark);
   border-radius: 4px;
   border: 0.1rem solid #3D5D3D;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--green .document-list-item__folder-icon {
+#document-sidebar > div:nth-of-type(2) .rounded-md span.highlight-color--green .document-list-item__folder-icon {
   background-color: transparent;
   border: unset;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--blue > div > div {
+#document-sidebar > div:nth-of-type(2) .rounded-md span.highlight-color--blue > div > div {
   background-color: var(--highlight-color--blue-bg-dark);
   border-radius: 4px;
   border: 0.1rem solid #3A5E76;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--blue .document-list-item__folder-icon {
+#document-sidebar > div:nth-of-type(2) .rounded-md span.highlight-color--blue .document-list-item__folder-icon {
   background-color: transparent;
   border: unset;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--purple > div > div {
+#document-sidebar > div:nth-of-type(2) .rounded-md span.highlight-color--purple > div > div {
   background-color: var(--highlight-color--purple-bg-dark);
   border-radius: 4px;
   border: 0.1rem solid #7B4874;
 }
-#document-sidebar > div:nth-of-type(2) .rounded-md.highlight-color--purple .document-list-item__folder-icon {
+#document-sidebar > div:nth-of-type(2) .rounded-md span.highlight-color--purple .document-list-item__folder-icon {
   background-color: transparent;
   border: unset;
 }

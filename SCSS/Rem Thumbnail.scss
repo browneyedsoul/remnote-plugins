@@ -1,38 +1,8 @@
-@mixin thumbnail-set-display() {
-    span.inline-block {
-        height: 1em;
-        width: auto;
-
-        > div {
-            height: 1em !important;
-            width: unset !important;
-            max-width: 1em !important;
-            object-fit: contain;
-            object-position: center;
-            min-width: 1em !important;
-            min-height: unset !important;
-
-            > span.image-node {
-                object-fit: contain !important;
-                object-position: center;
-
-                > div:nth-of-type(2) {
-                    img.thumbnail--with-width {
-                        object-fit: contain;
-                        object-position: center;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@mixin thumbnail-set($margin-right: null) {
+@mixin icon($margin-right: null) {
     span.inline-block {
         height: 1em;
         width: auto;
         margin-right: $margin-right;
-
         > div {
             height: 1em !important;
             width: unset !important;
@@ -41,27 +11,24 @@
             object-position: center;
             min-width: 1em !important;
             min-height: unset !important;
-
             > span.image-node {
                 object-fit: contain !important;
                 object-position: center;
-
                 > div:nth-of-type(1):not(div[data-rmiz-wrap~="visible"]) {
                     display: none
                 }
-
                 > div:nth-of-type(2) {
                     img.thumbnail--with-width {
                         object-fit: contain;
                         object-position: center;
+                        background-color: transparent;
                     }
                 }
             }
         }
     }
 }
-
-@mixin console-declutter {
+%console-declutter {
     .inline-block.align-text-top {
         .image-node {
             [data-menu-type~="ImageNodeMenu"] {
@@ -74,29 +41,20 @@
     }
 }
 // Interim measure
-#DocumentTitle .EditorContainer span:nth-child(3) {
-	display: unset;
-}
-.dark {
-    #document-sidebar,
-    [data-rem-tags~="header"],
-    .rn-doc-title {
-        img.dark\:bg-black {
-            background-color: unset;
-        }
+    #DocumentTitle .EditorContainer span:nth-child(3) {
+        display: unset;
     }
-}
 // All Notes Section
     .document-table {
         .ReactVirtualized__Grid__innerScrollContainer {
             .RichTextViewer {
-                @include thumbnail-set();
+                @include icon();
             }
         }
     }
 // Card Browser
     .ReactVirtualized__Table__rowColumn {
-        @include thumbnail-set;
+        @include icon;
     }
 // Queue
     .Queue {
@@ -104,7 +62,7 @@
             .queue__title {
                 .queue__title__middle {
                     .RichTextViewer {
-                        @include thumbnail-set();
+                        @include icon();
                     }
                 }
             }
@@ -119,14 +77,14 @@
                         .RichTextViewer {
                             display: flex;
                         }
-                        @include thumbnail-set(3px);
+                        @include icon(3px);
                     }
                 }
 
                 .indented-rem:not(.basic_card_rem_type + .indented-rem):not(.concept_rem_type + .indented-rem) {
                     .RichTextViewer {
                         > div {
-                            @include thumbnail-set(3px);
+                            @include icon(3px);
                         }
 
                         .react-transform-component {
@@ -137,11 +95,10 @@
             }
         // ?
             .rem-bullet__document {
-                @include thumbnail-set;
+                @include icon;
                 display: flex;
-
                 > span {
-                    >div {
+                    > div {
                         display: inline;
                     }
                 }
@@ -155,74 +112,72 @@
                 .RichTextViewer {
                     .react-transform-component {
                         .react-transform-element {
-                            @include thumbnail-set;
+                            @include icon;
                         }
                     }
                 }
             }
         // Cluster
             .queue-cluster-selector {
-                @include thumbnail-set;
+                @include icon;
             }
         // Edir Later
             .queue__edit-later {
                 .document-header-top-bar {
                     .RichTextViewer {
-                        @include thumbnail-set();
+                        @include icon();
                     }
                 }
             }
     }
 // Document Top
-    #tile__document {
-        // Page Hierarchy
-        .document-header-top-bar {
-            @include thumbnail-set();
-        }
-        // Page
-        #document {
-            #DropToOpenAsDocument {
-                // Document Top Row Tag Bar
-                @include thumbnail-set;
+    // Page Hierarchy
+    .document-header-top-bar {
+        @include icon();
+    }
+    // Page
+    #document {
+        #DropToOpenAsDocument {
+            // Document Top Row Tag Bar
+            @include icon;
 
-                #DocumentTitle {
-                    @include thumbnail-set;
-                    @include console-declutter;
-                    .inline-block {
-                        > .group.inline-block.align-text-top {
-                            top: 0.2rem
-                        }
+            #DocumentTitle {
+                @include icon;
+                @extend %console-declutter;
+                .inline-block {
+                    > .group.inline-block.align-text-top {
+                        top: 0.2rem
                     }
                 }
             }
-            // Sticky Header
-                #hierarchy-editor {
-                    > .fixed {
-                        > div {
-                            > .tree-node--children {
-                                > .tree-node-container {
-                                    .EditorContainer {
-                                        @include thumbnail-set();
-                                    }
+        }
+        // Sticky Header
+            #hierarchy-editor {
+                > .fixed {
+                    > div {
+                        > .tree-node--children {
+                            > .tree-node-container {
+                                .EditorContainer {
+                                    @include icon();
                                 }
                             }
                         }
                     }
                 }
-        }
+            }
     }
 // Hidden Page Hierarchy Style
     .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
-        @include thumbnail-set;
+        @include icon;
     }
 // Document Sidebar
     #document-sidebar {
-        @include thumbnail-set;
-        @include console-declutter();
+        @include icon;
+        @extend %console-declutter;
     }
 // Document Hidden children
     .hierarchy-editor__hidden-children {
-        @include thumbnail-set;
+        @include icon;
     }
 // .popup-menu
     .popup-menu {
@@ -230,49 +185,49 @@
             > div.rn-popup__content.overflow-x-hidden {
                 > div.max-h-20 {
                     span.RichTextViewer {
-                        @include thumbnail-set;
+                        @include icon;
                     }
                 }
             }
         // Backlink Counter
             .rn-editor__rem__backlink-item {
                 span.RichTextViewer {
-                    @include thumbnail-set;
+                    @include icon;
                 }
             }
         // Static Popup
             .popup-menu__item--static {
                 span.RichTextViewer {
-                    @include thumbnail-set;
+                    @include icon;
                 }
             }
         // Image Thumbnail Tag
             [data-rem-tags*="tn"] {
                 #document-hover-preview {
                     .RichTextViewer {
-                        @include thumbnail-set;
+                        @include icon;
                     }
                 }
             }
         // Tag bar
             .rem.isSearchResult {
                 .hierarchy-editor__tag-bar {
-                    @include thumbnail-set;
+                    @include icon;
                 }
             }
         // Tags Backlink Popup- right side of a Rem
             div.search-result__rem-breadcrumbs + span,
             .rem-powerup-icon + span {
                 > .RichTextViewer {
-                    @include thumbnail-set;
+                    @include icon;
                 }
             }
         // Reference
             .EditorContainer.EditorContainerInline {
-                @include thumbnail-set;
+                @include icon;
             }
             .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
-                @include thumbnail-set;
+                @include icon;
             }
         // Rem Hierarchy bar
             > div {
@@ -281,7 +236,7 @@
                         span.rn-rem-stack-arrow {
                             + span {
                                 span.RichTextViewer {
-                                    @include thumbnail-set;
+                                    @include icon;
                                 }
                             }
                         }
@@ -293,7 +248,7 @@
                     > div {
                         > span {
                             > span.RichTextViewer {
-                                @include thumbnail-set;
+                                @include icon;
                             }
                         }
                     }
@@ -304,12 +259,12 @@
     #Popup {
         #PopupContent {
             .RichTextViewer {
-                @include thumbnail-set;
+                @include icon;
             }
             .document-popup-preview {
                 .document-header-top-bar {
                     .RichTextViewer {
-                        @include thumbnail-set;
+                        @include icon;
                     }
                 }
             }
@@ -321,8 +276,7 @@
     .rem-header--3,
     [data-rem-tags~="tn"] {
         .EditorContainer {
-            @include thumbnail-set;
-
+            @include icon;
             .pr-2.inline-block {
                 height: unset;
             }
@@ -333,7 +287,7 @@
             > .tree-node-container {
                 > .tree-node--parent {
                     .EditorContainer {
-                        @include thumbnail-set;
+                        @include icon;
                     }
                 }
             }
@@ -342,31 +296,31 @@
 // Tag bar
     .hierarchy-editor__tag-bar__tag {
         .RichTextViewer {
-            @include thumbnail-set(3px);
+            @include icon(3px);
         }
     }
 // Search Result
     // Tag Search Result
         .search-result__rem-breadcrumbs {
-            @include thumbnail-set();
+            @include icon();
         }
         #search-results__list {
-            @include thumbnail-set();
-            @include console-declutter();
+            @include icon();
+            @extend %console-declutter;
         }
 // Portal
     .portal-tree-node-box {
         .rem-text.rem-header--1,
         .rem-text.rem-header--2,
         .rem-text.rem-header--3 {
-            @include thumbnail-set;
+            @include icon;
         }
         > div {
             > .tree-node-container {
                 > .tree-node--children {
                     > .tree-node-container {
                         >.tree-node--parent {
-                            @include thumbnail-set;
+                            @include icon;
                         }
                     }
                 }
@@ -375,10 +329,10 @@
     }
 // Rem Reference
     .rem-reference {
-        @include thumbnail-set;
+        @include icon;
     }
     .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
-        @include thumbnail-set;
+        @include icon;
     }
     // Rem reference normal rem-text thumbnail adjustment
         .rem-text {
@@ -386,7 +340,7 @@
                 &:not(.rem-header--2) {
                     &:not(.rem-header--3) {
                         .rem-reference {
-                            @include thumbnail-set;
+                            @include icon;
                         }
                     }
                 }

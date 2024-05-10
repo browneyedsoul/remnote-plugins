@@ -1,0 +1,13 @@
+:root {
+    --card-bg-dark: #1C2023;
+}
+
+.dark {
+    .separator-symbol:not(:empty):hover {
+        background-color: var(--card-bg-dark);
+    }
+    .last_node_down_arrow:hover::after {
+        background-color: var(--card-bg-dark);
+        border-radius: 3px;
+    }
+}

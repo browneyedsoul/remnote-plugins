@@ -1,85 +1,161 @@
-// PDF
-    // Highlight Collection
-        .tile__document {
-            #document {
-                #hierarchy-editor {
-                    [data-rem-container-tags~="pdf-highlight"] {
-                        @include highlight-color-notbold-light();
-                    }
-                }
-            }
-        }
-        .dark {
-            .tile__document {
-                #document {
-                    #hierarchy-editor {
-                        [data-rem-container-tags~="pdf-highlight"] {
-                            @include highlight-color-notbold-dark();
-                        }
-                    }
-                }
-            }
-        }
-        // Rem Container
+:root {
+    --pdf-pin-button: #000;
+    --pdf-pin-button-dark: #DDD;
+    --pdf-hl-bg-rd: #FFE4DF;
+    --pdf-hl-bg-or: #FFE9CC;
+    --pdf-hl-bg-yw: #F8F9AA;
+    --pdf-hl-bg-gr: #D8FFD1;
+    --pdf-hl-bg-bl: #D4EEFF;
+    --pdf-hl-bg-vt: #F5E9FF;
+    --pdf-hl-bg-rd-dark: #572924;
+    --pdf-hl-bg-or-dark: #553D24;
+    --pdf-hl-bg-yw-dark: #453E1E;
+    --pdf-hl-bg-gr-dark: #253F27;
+    --pdf-hl-bg-bl-dark: #183C4D;
+    --pdf-hl-bg-vt-dark: #4A2B45;
+    --pdf-hl-text-rd-dark: #FFC6BD;
+    --pdf-hl-text-or-dark: #FFDAB8;
+    --pdf-hl-text-yw-dark: #E8E67D;
+    --pdf-hl-text-gr-dark: #B3DDAB;
+    --pdf-hl-text-bl-dark: #A7DCE8;
+    --pdf-hl-text-vt-dark: #DDC3EB;
+}
+@mixin highlight-color-notbold-light {
+    .highlight-color--red:not(.bold.highlight-color--red) {
+        background-color: var(--pdf-hl-red-light);
+    }
+    .highlight-color--orange:not(.bold.highlight-color--orange) {
+        background-color: var(--pdf-hl-orange-light);
+    }
+    .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+        background-color: var(--pdf-hl-yellow-light);
+    }
+    .highlight-color--green:not(.bold.highlight-color--green) {
+        background-color: var(--pdf-hl-green-light);
+    }
+    .highlight-color--blue:not(.bold.highlight-color--blue) {
+        background-color: var(--pdf-hl-blue-light);
+    }
+    .highlight-color--purple:not(.bold.highlight-color--purple) {
+        background-color: var(--pdf-hl-purple-light);
+    }
+}
 
-        // Pin
-            .pdf-highlight__pin-editor-button {
-                color: #000;
-                margin-right: 0.7rem;
-            }
-            .dark {
-                .pdf-highlight__pin-editor-button {
-                    color: var(--darkmode-text);
-                }
-            }
-        // Page Numbering & Color Formatting
-            [data-rem-container-tags~="file"] {
-                .rem-header--1,
-                .rem-header--2,
-                .rem-header--3 {
-                    // Page ***
-                    font-size: 0.9rem !important;
-                    opacity: .7;
-                }
-            }
-    // Viewer
-        .pdf-viewer {
-            .PdfHighlighter {
-                .pdfViewer {
-                    .page {
-                        .textLayer {
-                            .PdfHighlighter__highlight-layer {
-                                .pdf-viewer__highlight-container--red,
-                                .pdf-viewer__highlight-container--orange,
-                                .pdf-viewer__highlight-container--yellow,
-                                .pdf-viewer__highlight-container--green,
-                                .pdf-viewer__highlight-container--blue,
-                                .pdf-viewer__highlight-container--purple {
-                                    .Highlight__part {
-                                        border-radius: 5px;
-                                    }
-                                }
-                                .pdf-viewer__highlight-container--red .Highlight__part {
-                                    background: var(--pdf-highlight-color-red);
-                                }
-                                .pdf-viewer__highlight-container--orange .Highlight__part {
-                                    background: var(--pdf-highlight-color-orange);
-                                }
-                                .pdf-viewer__highlight-container--yellow .Highlight__part {
-                                    background: var(--pdf-highlight-color-yellow);
-                                }
-                                .pdf-viewer__highlight-container--green .Highlight__part {
-                                    background: var(--pdf-highlight-color-green);
-                                }
-                                .pdf-viewer__highlight-container--blue .Highlight__part {
-                                    background: var(--pdf-highlight-color-blue);
-                                }
-                                .pdf-viewer__highlight-container--purple .Highlight__part {
-                                    background: var(--pdf-highlight-color-purple);
-                                }
-                            }
-                        }
-                    }
-                }
+// Page Numbering & Color Formatting
+[data-rem-container-tags~="file"] {
+    .rem-header--1,
+    .rem-header--2,
+    .rem-header--3 {
+        // Page ***
+        font-size: 0.9rem !important;
+        opacity: .7;
+    }
+}
+@mixin PDF(
+    $pdf-pin-button,
+    $pdf-hl-text-rd,
+    $pdf-hl-bg-rd,
+    $pdf-hl-text-or,
+    $pdf-hl-bg-or,
+    $pdf-hl-text-yw,
+    $pdf-hl-bg-yw,
+    $pdf-hl-text-gr,
+    $pdf-hl-bg-gr,
+    $pdf-hl-text-bl,
+    $pdf-hl-bg-bl,
+    $pdf-hl-text-vt,
+    $pdf-hl-bg-vt
+) {
+    .pdf-highlight__pin-editor-button {
+        color: $pdf-pin-button;
+        margin-right: 0.7rem;
+    }
+    [data-rem-container-tags~="pdf-highlight"] {
+        .highlight-color--red:not(.bold.highlight-color--red) {
+            color: $pdf-hl-text-rd;
+            background-color: $pdf-hl-bg-rd;
+        }
+        .highlight-color--orange:not(.bold.highlight-color--orange) {
+            color: $pdf-hl-text-or;
+            background-color: $pdf-hl-bg-or;
+        }
+        .highlight-color--yellow:not(.bold.highlight-color--yellow) {
+            color: $pdf-hl-text-yw;
+            background-color: $pdf-hl-bg-yw;
+        }
+        .highlight-color--green:not(.bold.highlight-color--green) {
+            color: $pdf-hl-text-gr;
+            background-color: $pdf-hl-bg-gr;
+        }
+        .highlight-color--blue:not(.bold.highlight-color--blue) {
+            color: $pdf-hl-text-bl;
+            background-color: $pdf-hl-bg-bl;
+        }
+        .highlight-color--purple:not(.bold.highlight-color--purple) {
+            color: $pdf-hl-text-vt;
+            background-color: $pdf-hl-bg-vt;
+        }
+    }
+    .PdfHighlighter__highlight-layer {
+        .pdf-viewer__highlight-container--red,
+        .pdf-viewer__highlight-container--orange,
+        .pdf-viewer__highlight-container--yellow,
+        .pdf-viewer__highlight-container--green,
+        .pdf-viewer__highlight-container--blue,
+        .pdf-viewer__highlight-container--purple {
+            .Highlight__part {
+                border-radius: 5px;
             }
         }
+        .pdf-viewer__highlight-container--red .Highlight__part {
+            background: $pdf-hl-text-rd;
+        }
+        .pdf-viewer__highlight-container--orange .Highlight__part {
+            background: $pdf-hl-text-or;
+        }
+        .pdf-viewer__highlight-container--yellow .Highlight__part {
+            background: $pdf-hl-text-yw;
+        }
+        .pdf-viewer__highlight-container--green .Highlight__part {
+            background: $pdf-hl-text-gr;
+        }
+        .pdf-viewer__highlight-container--blue .Highlight__part {
+            background: $pdf-hl-text-bl;
+        }
+        .pdf-viewer__highlight-container--purple .Highlight__part {
+            background: $pdf-hl-text-vt;
+        }
+    }
+}
+@include PDF(
+    var(--pdf-pin-button),
+    var(--pdf-hl-text-rd),
+    var(--pdf-hl-bg-rd),
+    var(--pdf-hl-text-or),
+    var(--pdf-hl-bg-or),
+    var(--pdf-hl-text-yw),
+    var(--pdf-hl-bg-yw),
+    var(--pdf-hl-text-gr),
+    var(--pdf-hl-bg-gr),
+    var(--pdf-hl-text-bl),
+    var(--pdf-hl-bg-bl),
+    var(--pdf-hl-text-vt),
+    var(--pdf-hl-bg-vt)
+);
+.dark {
+    @include PDF(
+        var(--pdf-pin-button-dark),
+        var(--pdf-hl-text-rd-dark),
+        var(--pdf-hl-bg-rd-dark),
+        var(--pdf-hl-text-or-dark),
+        var(--pdf-hl-bg-or-dark),
+        var(--pdf-hl-text-yw-dark),
+        var(--pdf-hl-bg-yw-dark),
+        var(--pdf-hl-text-gr-dark),
+        var(--pdf-hl-bg-gr-dark),
+        var(--pdf-hl-text-bl-dark),
+        var(--pdf-hl-bg-bl-dark),
+        var(--pdf-hl-text-vt-dark),
+        var(--pdf-hl-bg-vt-dark)
+    );
+}
