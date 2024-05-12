@@ -3,14 +3,16 @@ import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
 let SidebarCSS: string;
 
 async function onActivate(plugin: ReactRNPlugin) {
-	try {
+  try {
     const response = await fetch("snippet.css");
     const text = await response.text();
     SidebarCSS = text;
     console.log("Sidebar Enhancer Installed from local");
     await plugin.app.registerCSS("SidebarCSS", SidebarCSS);
   } catch (error) {
-    const response = await fetch("https://cdn.jsdelivr.net/gh/browneyedsoul/RemNote-Sidebar-Enhancer@main/src/snippet.css");
+    const response = await fetch(
+      "https://raw.githubusercontent.com/browneyedsoul/remnote-plugins/main/packages/sidebar-enhancer/src/snippet.css"
+    );
     const text = await response.text();
     SidebarCSS = text;
     console.log("Sidebar Enhancer Installed from cdn");

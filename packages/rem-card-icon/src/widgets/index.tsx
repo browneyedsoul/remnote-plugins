@@ -1,6 +1,6 @@
 import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
 
-export const REMICON = "remicon_powerup"
+export const REMICON = "remicon_powerup";
 
 async function onActivate(plugin: ReactRNPlugin) {
   await plugin.app.registerPowerup({
@@ -8,14 +8,7 @@ async function onActivate(plugin: ReactRNPlugin) {
     code: REMICON,
     description: "A Power-up for storing card icon images",
     options: {
-      properties: [
-        {
-          code: "rem-card-icon",
-          name: "Rem Card Icon",
-          onlyProgrammaticModifying: true,
-          hidden: true,
-        },
-      ],
+      slots: [],
     },
   });
   await plugin.app.registerCommand({

@@ -33,147 +33,147 @@ async function onActivate(plugin: ReactRNPlugin) {
     revertHLVT,
     revertTextVT,
   ] = [
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--red span.linear-editor-item.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--red span.linear-editor-item.whitespace-pre-wrap {
   font-weight: 400;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--red.bold span.linear-editor-item.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--red.bold span.linear-editor-item.whitespace-pre-wrap {
   font-weight: 400;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--orange span.linear-editor-item.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--orange span.linear-editor-item.whitespace-pre-wrap {
   font-weight: 400;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--orange.bold span.linear-editor-item.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--orange.bold span.linear-editor-item.whitespace-pre-wrap {
   font-weight: 400;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--yellow span.linear-editor-item.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--yellow span.linear-editor-item.whitespace-pre-wrap {
   font-weight: 400;
 }`,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--yellow.bold span.linear-editor-item.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--yellow.bold span.linear-editor-item.whitespace-pre-wrap {
   font-weight: 400;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--green span.linear-editor-item.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--green span.linear-editor-item.whitespace-pre-wrap {
   font-weight: 400;
 }`,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--green.bold span.linear-editor-item.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--green.bold span.linear-editor-item.whitespace-pre-wrap {
   font-weight: 400;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--blue span.linear-editor-item.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--blue span.linear-editor-item.whitespace-pre-wrap {
   font-weight: 400;
 }`,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--blue.bold span.linear-editor-item.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--blue.bold span.linear-editor-item.whitespace-pre-wrap {
   font-weight: 400;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--purple span.linear-editor-item.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--purple span.whitespace-pre-wrap {
   font-weight: 400;
 }`,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--purple.bold span.linear-editor-item.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--purple.bold span.linear-editor-item.whitespace-pre-wrap {
   font-weight: 400;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--red span.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--red span.whitespace-pre-wrap {
   font-weight: 550;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--orange span.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--orange span.whitespace-pre-wrap {
   font-weight: 550;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--yellow span.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--yellow span.whitespace-pre-wrap {
   font-weight: 550;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--green span.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--green span.whitespace-pre-wrap{
   font-weight: 550;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--blue span.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--blue span.whitespace-pre-wrap {
   font-weight: 550;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--purple,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--purple {
   font-weight: 550;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--red.bold span.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--red.bold span.whitespace-pre-wrap {
   font-weight: 550;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--orange.bold span.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--orange.bold span.whitespace-pre-wrap {
   font-weight: 550;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--yellow.bold span.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--yellow.bold span.whitespace-pre-wrap {
   font-weight: 550;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--green.bold span.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--green.bold span.whitespace-pre-wrap {
   font-weight: 550;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--blue.bold span.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--blue.bold span.whitespace-pre-wrap {
   font-weight: 550;
 }
 `,
-    `
+      `
 #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--purple.bold span.whitespace-pre-wrap,
 .dark #main .rn-editor__rem__body__text:not(.rem-header--1):not(.rem-header--2):not(.rem-header--3) .highlight-color--purple.bold span.whitespace-pre-wrap {
   font-weight: 550;
 }
 `,
-  ];
+    ];
 
   try {
     await fetch("snippet.css");
@@ -371,13 +371,13 @@ async function onActivate(plugin: ReactRNPlugin) {
     title: "Reduce font weight in Purple Text",
     defaultValue: false,
   });
-  await plugin.track(async (reactivePlugin) => { 
+  await plugin.track(async (reactivePlugin) => {
     const redText = await reactivePlugin.settings.getSetting<string>("red-text");
     plugin.app.registerCSS(`
       #main span.highlight-color--yellow.bold span.whitespace-pre-wrap {color: ;}
     `, redText)
-  }
-
+  });
+}
 
 async function onDeactivate(_: ReactRNPlugin) {}
 
