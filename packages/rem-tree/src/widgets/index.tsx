@@ -1,64 +1,61 @@
-import { declareIndexPlugin, ReactRNPlugin } from '@remnote/plugin-sdk';
+import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
 
-export const [REMTREE_POWERUP, REMTREEC_POWERUP] = [
-  'remtree_powerup',
-  'remtreec_powerup',
-];
+export const [REMTREE_POWERUP, REMTREEC_POWERUP] = ["remtree_powerup", "remtreec_powerup"];
 
 async function onActivate(plugin: ReactRNPlugin) {
   let TreeCSS: string;
 
   try {
-    const response = await fetch('snippet.css');
+    const response = await fetch("snippet.css");
     TreeCSS = await response.text();
-    console.log('Rem Tree Installed');
-    await plugin.app.registerCSS('rem-tree', TreeCSS);
+    console.log("Rem Tree Installed");
+    await plugin.app.registerCSS("rem-tree", TreeCSS);
   } catch (error) {
     console.error(error);
     const cdnResponse = await fetch(
-      'https://raw.githubusercontent.com/browneyedsoul/RemNote-RemTree/main/src/snippet.css'
+      "https://raw.githubusercontent.com/browneyedsoul/remnote-plugins/main/packages/rem-tree/src/snippet.css"
     );
     TreeCSS = await cdnResponse.text();
-    console.log('Rem Tree Installed from cdn');
-    await plugin.app.registerCSS('rem-tree', TreeCSS);
+    console.log("Rem Tree Installed from cdn");
+    await plugin.app.registerCSS("rem-tree", TreeCSS);
   }
-
-  await plugin.app.registerPowerup(
-    'Tree',
-    REMTREE_POWERUP,
-    'A Power-up Block for decorating texts',
-    { slots: [] }
-  );
-  await plugin.app.registerPowerup(
-    'Treec',
-    REMTREEC_POWERUP,
-    'A Power-up Block for decorating texts',
-    { slots: [] }
-  );
+  await plugin.app.registerPowerup({
+    name: "Tree",
+    code: REMTREE_POWERUP,
+    description: "A Power-up Block for decorating texts",
+    options: {
+      slots: [],
+    },
+  });
+  await plugin.app.registerPowerup({
+    name: "Treec",
+    code: REMTREEC_POWERUP,
+    description: "A Power-up Block for decorating texts with a container line",
+    options: {
+      slots: [],
+    },
+  });
 
   await plugin.app.registerCommand({
-    id: 'remtree',
-    name: 'Tree',
-    quickCode: 'tr',
-    keyboardShortcut: 'opt+shift+t',
+    id: "rem-tree",
+    name: "Tree",
+    quickCode: "tr",
+    keyboardShortcut: "opt+shift+t",
     action: async () => {
       const rem = await plugin.focus.getFocusedRem();
       const remTag = (await rem?.getTagRems()) || [];
-      const remTagText = remTag.filter(
-        (item) =>
-          item.text.toString() === 'Tree' || item.text.toString() === 'Treec'
-      );
-      const remTarget = await remTagText[0]?.text.toString();
+      const remTagText = remTag[0];
+      const remTarget = remTagText?.text;
 
-      switch (remTarget) {
+      switch (remTarget ? remTarget[0] : undefined) {
         case undefined:
           await rem?.addPowerup(REMTREE_POWERUP);
           break;
-        case 'Tree':
+        case "Tree":
           await rem?.removePowerup(REMTREE_POWERUP);
           await rem?.addPowerup(REMTREEC_POWERUP);
           break;
-        case 'Treec':
+        case "Treec":
           await rem?.removePowerup(REMTREEC_POWERUP);
           break;
         default:

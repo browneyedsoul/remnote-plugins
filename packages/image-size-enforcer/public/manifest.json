@@ -1,13 +1,13 @@
 {
   "manifestVersion": 1,
-  "id": "no-bullet-editor-mode",
-  "name": "No Bullet Editor Mode",
+  "id": "image-size-enforcer",
+  "name": "Image Size Enforcer",
   "author": "Min-Ki Park",
-  "repoUrl": "https://github.com/browneyedsoul/remnote-plugins/tree/main/packages/no-bullet-editor-mode",
+  "repoUrl": "https://github.com/browneyedsoul/remnote-plugins/tree/main/packages/image-size-enforcer",
   "version": {
     "major": 0,
-    "minor": 6,
-    "patch": 3
+    "minor": 4,
+    "patch": 8
   },
   "theme": [],
   "enableOnMobile": true,

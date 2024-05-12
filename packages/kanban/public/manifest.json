@@ -3,7 +3,7 @@
   "id": "kanban",
   "name": "Kanban",
   "author": "Min-Ki Park",
-  "repoUrl": "https://github.com/browneyedsoul/RemNote-Kanban",
+  "repoUrl": "https://github.com/browneyedsoul/remnote-plugins/tree/main/packages/kanban",
   "version": {
     "major": 0,
     "minor": 4,

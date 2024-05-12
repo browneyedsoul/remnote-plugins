@@ -3,7 +3,7 @@
   "id": "remnote-aligner",
   "name": "Aligner",
   "author": "Min-Ki Park",
-  "repoUrl": "https://github.com/browneyedsoul/RemNote-Aligner",
+  "repoUrl": "https://github.com/browneyedsoul/remnote-plugins/tree/main/packages/aligner",
   "version": {
     "major": 0,
     "minor": 3,

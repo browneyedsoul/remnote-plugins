@@ -4,7 +4,7 @@
   "description": "Make your rem table with simple tags!",
   "enableOnMobile": true,
   "id": "browneyedsoul-ModernTableRow",
-  "repoUrl": "https://github.com/browneyedsoul/RemNote-ModernTableRow",
+  "repoUrl": "https://github.com/browneyedsoul/remnote-plugins/tree/main/packages/minimal-table",
   "manifestVersion": 1,
   "version": {
     "major": 2,

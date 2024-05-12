@@ -14,7 +14,7 @@ async function onActivate(plugin: ReactRNPlugin) {
   } catch (error) {
     try {
       const response = await fetch(
-        "https://raw.githubusercontent.com/browneyedsoul/RemNote-Divider/main/src/snippet.css"
+        "https://raw.githubusercontent.com/browneyedsoul/remnote-plugins/main/packages/divider/src/snippet.css"
       );
       const text = await response.text();
       DividerCSS = text;
@@ -43,11 +43,13 @@ async function onActivate(plugin: ReactRNPlugin) {
       `
     );
   });
-  await plugin.app.registerPowerup("Divider", DIVIDER, "Rem Containing Horizontal Line", { slots: [] });
-
-  // TODO 
-  await plugin.app.registerCallback("delete with keystroke", () => {
-
+  await plugin.app.registerPowerup({
+    name: "Divider",
+    code: DIVIDER,
+    description: "A Rem Containing Horizontal Line",
+    options: {
+      slots: [],
+    },
   });
 
   async function mkdiv() {

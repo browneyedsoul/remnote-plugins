@@ -89,7 +89,6 @@ const config = {
         { from: "public", to: "" },
         { from: "README.md", to: "" },
         { from: "src/snippet.css", to: "" },
-        { from: "src/untag.css", to: "" },
       ],
     }),
     fastRefresh,

@@ -12,13 +12,24 @@ async function onActivate(plugin: ReactRNPlugin) {
     console.log("Kanban plugin installed from local");
     await plugin.app.registerCSS("Kanban", Kanban);
   } catch (error) {
-    const response = await fetch("https://raw.githubusercontent.com/browneyedsoul/RemNote-Kanban/main/src/snippet.css");
+    const response = await fetch(
+      "https://raw.githubusercontent.com/browneyedsoul/remnote-plugins/main/packages/kanban/src/snippet.css"
+    );
     const text = await response.text();
     Kanban = text;
     console.log("Kanban plugin installed from cdn");
     await plugin.app.registerCSS("Kanban", Kanban);
   }
-  await plugin.app.registerPowerup("Kanban", KANBAN, "A Power-up Rem for making css-kanban", { slots: [] });
+
+  await plugin.app.registerPowerup({
+    name: "Kanban",
+    code: KANBAN,
+    description: "A Power-up Rem to make a kanban",
+    options: {
+      slots: [],
+    },
+  });
+
   await plugin.app.registerCommand({
     id: "kanban",
     name: "Kanban",
@@ -28,12 +39,14 @@ async function onActivate(plugin: ReactRNPlugin) {
       await focusedRem?.addPowerup(KANBAN);
     },
   });
+
   await plugin.settings.registerStringSetting({
     id: "colwidth",
     title: "Max Kanban Column Width",
     description: "Simply change the column width (px)",
     defaultValue: "1000",
   });
+
   plugin.track(async (reactivePlugin) => {
     const colwidthCtrl = await reactivePlugin.settings.getSetting<number>("colwidth");
     await reactivePlugin.app.registerCSS(
@@ -43,7 +56,7 @@ async function onActivate(plugin: ReactRNPlugin) {
 #tile__document [data-rem-container-tags~=kanban]>.tree-node--children>.animate-zoom-into-bullet>.tree-node--children {
   max-width: ${colwidthCtrl}px;
 }
-      `,
+      `
     );
   });
 }

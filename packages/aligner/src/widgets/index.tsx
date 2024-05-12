@@ -1,11 +1,31 @@
-import {declareIndexPlugin, ReactRNPlugin} from "@remnote/plugin-sdk";
+import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
+import { CENTER, RIGHT, LEFT } from "../constant/var";
 
-export const [CENTER, LEFT, RIGHT] = ["center_powerup", "left_powerup", "right_powerup"];
-
-async function onActivate(plugin: ReactRNPlugin) {
-  await plugin.app.registerPowerup("Center", CENTER, "A Power-up Block for aligning inline item", {slots: []});
-  await plugin.app.registerPowerup("Right", RIGHT, "A Power-up Block for aligning inline item", {slots: []});
-  await plugin.app.registerPowerup("Left", LEFT, "A Power-up Block for aligning inline item", {slots: []});
+async function onActivate(plugin: ReactRNPlugin) {  
+  await plugin.app.registerPowerup({
+    name: "Center",
+    code: CENTER,
+    description: "A Power-up Block for aligning inline item",
+    options: {
+      slots: [],
+    },
+  });
+  await plugin.app.registerPowerup({
+    name: "Right",
+    code: RIGHT,
+    description: "A Power-up Block for aligning inline item",
+    options: {
+      slots: [],
+    },
+  });
+  await plugin.app.registerPowerup({
+    name: "Left",
+    code: LEFT,
+    description: "A Power-up Block for aligning inline item",
+    options: {
+      slots: [],
+    },
+  });
 
   await plugin.app.registerCommand({
     id: "center",

@@ -3,7 +3,7 @@
   "id": "alias-cloud",
   "name": "Alias Cloud",
   "author": "Min-Ki Park",
-  "repoUrl": "https://github.com/browneyedsoul/RemNote-AliasCloud",
+  "repoUrl": "https://github.com/browneyedsoul/remnote-plugins/tree/main/packages/active-recall",
   "version": {
     "major": 0,
     "minor": 4,

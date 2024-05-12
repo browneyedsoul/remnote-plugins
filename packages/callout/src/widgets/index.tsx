@@ -1,6 +1,5 @@
 import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
-
-export const [
+import {
   CALLOUT_POWERUP,
   CALLOUTRD_POWERUP,
   CALLOUTOR_POWERUP,
@@ -8,41 +7,82 @@ export const [
   CALLOUTGR_POWERUP,
   CALLOUTBL_POWERUP,
   CALLOUTVT_POWERUP,
-] = [
-  "callout_powerup",
-  "calloutred_powerup",
-  "calloutorange_powerup",
-  "calloutyellow_powerup",
-  "calloutgreen_powerup",
-  "calloutblue_powerup",
-  "calloutpurple_powerup",
-];
+} from "../constant/var";
 
 let CalloutCSS: string;
 
 async function onActivate(plugin: ReactRNPlugin) {
   try {
-    const response = await fetch('snippet.css');
+    const response = await fetch("snippet.css");
     const text = await response.text();
     CalloutCSS = text;
-    console.log('Callout plugin installed from local');
+    console.log("Callout plugin installed from local");
   } catch (error) {
     console.error(error);
     const response = await fetch(
-      'https://raw.githubusercontent.com/browneyedsoul/RemNote-Callout/main/src/snippet.css'
+      "https://raw.githubusercontent.com/browneyedsoul/remnote-plugins/main/packages/callout/src/snippet.css"
     );
     const text = await response.text();
     CalloutCSS = text;
-    console.log('Callout plugin installed from cdn');
+    console.log("Callout plugin installed from cdn");
   }
 
-  await plugin.app.registerPowerup("Callout", CALLOUT_POWERUP, "Callout Basic", { slots: [] });
-  await plugin.app.registerPowerup("Callout Red", CALLOUTRD_POWERUP, "Callout Red", { slots: [] });
-  await plugin.app.registerPowerup("Callout Orange", CALLOUTOR_POWERUP, "Callout Orange", { slots: [] });
-  await plugin.app.registerPowerup("Callout Yellow", CALLOUTYW_POWERUP, "Callout Yellow", { slots: [] });
-  await plugin.app.registerPowerup("Callout Green", CALLOUTGR_POWERUP, "Callout Green", { slots: [] });
-  await plugin.app.registerPowerup("Callout Blue", CALLOUTBL_POWERUP, "Callout Blue", { slots: [] });
-  await plugin.app.registerPowerup("Callout Purple", CALLOUTVT_POWERUP, "Callout Purple", { slots: [] });
+  await plugin.app.registerPowerup({
+    name: "Callout",
+    code: CALLOUT_POWERUP,
+    description: "A Power-up Block for decorating texts",
+    options: {
+      slots: [],
+    },
+  });
+  await plugin.app.registerPowerup({
+    name: "Callout Red",
+    code: CALLOUTRD_POWERUP,
+    description: "A Power-up Block for decorating texts",
+    options: {
+      slots: [],
+    },
+  });
+  await plugin.app.registerPowerup({
+    name: "Callout Orange",
+    code: CALLOUTOR_POWERUP,
+    description: "A Power-up Block for decorating texts",
+    options: {
+      slots: [],
+    },
+  });
+  await plugin.app.registerPowerup({
+    name: "Callout Yellow",
+    code: CALLOUTYW_POWERUP,
+    description: "A Power-up Block for decorating texts",
+    options: {
+      slots: [],
+    },
+  });
+  await plugin.app.registerPowerup({
+    name: "Callout Green",
+    code: CALLOUTGR_POWERUP,
+    description: "A Power-up Block for decorating texts",
+    options: {
+      slots: [],
+    },
+  });
+  await plugin.app.registerPowerup({
+    name: "Callout Blue",
+    code: CALLOUTBL_POWERUP,
+    description: "A Power-up Block for decorating texts",
+    options: {
+      slots: [],
+    },
+  });
+  await plugin.app.registerPowerup({
+    name: "Callout Purple",
+    code: CALLOUTVT_POWERUP,
+    description: "A Power-up Block for decorating texts",
+    options: {
+      slots: [],
+    },
+  });
 
   await plugin.app.registerCommand({
     id: "basic",

@@ -1,6 +1,6 @@
 # Active Recall in Editor
 
-![Logo](https://raw.githubusercontent.com/browneyedsoul/RemNote-ActiveRecall/main/public/logo.png)
+![Logo](https://github.com/browneyedsoul/remnote-plugins/blob/main/packages/active-recall/public/logo.png?raw=true)
 
 ## Usage
 
