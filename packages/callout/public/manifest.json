@@ -4,7 +4,7 @@
   "description": "Decorate your important rem texts with a simple but aesthetic box!",
   "enableOnMobile": true,
   "id": "browneyedsoul-callout",
-  "repoUrl": "https://github.com/browneyedsoul/remnote-plugins/tree/main/packages/callout",
+  "repoUrl": "https://github.com/browneyedsoul/remnote-plugins",
   "manifestVersion": 1,
   "version": {
     "major": 1,
