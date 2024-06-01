@@ -2,5 +2,5 @@
 
 ## Display
 
-![ligiht](https://raw.githubusercontent.com/browneyedsoul/remnote-plugins/main/colorful-answer-button/public/button-light.png)
-![dark](https://raw.githubusercontent.com/browneyedsoul/remnote-plugins/main/colorful-answer-button/public/button-dark.png)
+![ligiht](https://github.com/browneyedsoul/remnote-plugins/blob/main/packages/colorful-answer-button/public/button-light.png?raw=true)
+![dark](https://github.com/browneyedsoul/remnote-plugins/blob/main/packages/colorful-answer-button/public/button-dark.png?raw=true)
