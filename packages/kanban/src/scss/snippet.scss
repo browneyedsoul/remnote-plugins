@@ -267,6 +267,10 @@ $Tables: (
             border-left: unset !important;
             padding-left: 1.5rem !important;
         }
+        // interim
+        [data-rem-container-tags*=table] > div > [data-rem-container-tags~=code] > div .EditorContainer {
+            box-shadow: none;
+        }
     }
     [data-document-tags~=kanban] {
         [data-rem-container-tags~=kanban]{
