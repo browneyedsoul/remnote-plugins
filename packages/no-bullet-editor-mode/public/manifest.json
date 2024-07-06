@@ -7,11 +7,11 @@
   "version": {
     "major": 0,
     "minor": 6,
-    "patch": 3
+    "patch": 5
   },
   "theme": [],
   "enableOnMobile": true,
-  "description": "",
+  "description": "Remove bullets from RemNote Outliner to make it look like a normal editor",
   "requestNative": true,
   "requiredScopes": [
     {
