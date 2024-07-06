@@ -37,7 +37,7 @@
     "table-build": "pnpm --filter minimal-table build",
     "nobullet": "pnpm --filter no-bullet-editor-mode dev",
     "nobullet-sass": "pnpm --filter no-bullet-editor-mode sass",
-    "nobullet-build": "pnpm --filter no-bullet-editor-mode dev",
+    "nobullet-build": "pnpm --filter no-bullet-editor-mode build",
     "card": "pnpm --filter rem-card-icon dev",
     "card-sass": "pnpm --filter rem-card-icon sass",
     "card-build": "pnpm --filter rem-card-icon build",
