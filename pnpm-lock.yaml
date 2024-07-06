@@ -140,6 +140,12 @@ importers:
         specifier: ^0.0.42
         version: 0.0.42(patch_hash=qsnukwd4z47ct4bgyk4iaoqaaq)(react-dom@17.0.2)(react@17.0.2)
 
+  packages/image-size-enforcer:
+    dependencies:
+      '@remnote/plugin-sdk':
+        specifier: ^0.0.42
+        version: 0.0.42(patch_hash=qsnukwd4z47ct4bgyk4iaoqaaq)(react-dom@17.0.2)(react@17.0.2)
+
   packages/kanban:
     dependencies:
       '@remnote/plugin-sdk':
