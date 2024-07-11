@@ -268,7 +268,7 @@ $LocalLeft: (
                     left: 0;
                 }
                 // Table Title
-                > :first-child {
+                > div:first-child {
                     border: 0.07rem solid $table-border;
                     border-bottom: unset;
                     background-color: $table-title-bg;
@@ -560,7 +560,7 @@ $LocalLeft: (
 }
 // Table Row and Column Attribute Cell
 @for $i from 3 through 20 {
-    [data-rem-container-tags~="table#{$i * 30}"] > .tree-node--children > .animate-zoom-into-bullet > :first-child {
+    [data-rem-container-tags~="table#{$i * 30}"] > .tree-node--children > .animate-zoom-into-bullet > div:first-child {
         width: #{$i * 30px} !important;
     }
 }
