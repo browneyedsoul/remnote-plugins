@@ -7,11 +7,11 @@
   "version": {
     "major": 0,
     "minor": 3,
-    "patch": 0
+    "patch": 1
   },
   "theme": [],
   "enableOnMobile": true,
-  "description": "",
+  "description": "Easily align your text to the center or right side of a Rem",
   "requestNative": false,
   "requiredScopes": [
     {

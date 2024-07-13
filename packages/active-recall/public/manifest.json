@@ -7,11 +7,11 @@
   "version": {
     "major": 0,
     "minor": 2,
-    "patch": 4
+    "patch": 5
   },
   "theme": [],
   "enableOnMobile": true,
-  "description": "",
+  "description": "Utilize the outliner to actively recall and reinforce the information you've learned",
   "requestNative": false,
   "requiredScopes": [
     {
