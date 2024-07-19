@@ -40,6 +40,20 @@
     padding: 0.5rem;
     border-radius: 4px;
 }
+@mixin highlight-color($color, $bg-color, $shadow) {
+    &.highlight-color--#{$color} {
+        background-color: unset;
+        > div {
+            > .dont-break-rich-text-viewer {
+                background-color: $bg-color !important;
+                box-shadow: $shadow;
+                border-radius: .2rem;
+                min-height: 1.6rem;
+            }
+        }
+    }
+}
+
 @mixin SidebarEnhancer(
     $sbitem-text-contrast,
     $sbitem-bg-rd,
@@ -117,69 +131,15 @@
         }
         .rounded-md.overflow-hidden {
             font-size: .9rem;
-            &.highlight-color--red {
-                background-color: unset;
-                > div {
-                    > .dont-break-rich-text-viewer {
-                        background-color: $sbitem-bg-rd !important;
-                        box-shadow: $sbitem-bg-rd-sdw;
-                        border-radius: .2rem;
-                    }
-                }
-            }
-            &.highlight-color--orange {
-                background-color: unset;
-                > div {
-                    > .dont-break-rich-text-viewer {
-                        background-color: $sbitem-bg-or !important;
-                        box-shadow: $sbitem-bg-or-sdw;
-                        border-radius: .2rem;
-                    }
-                }
-            }
-            &.highlight-color--yellow {
-                background-color: unset;
-                > div {
-                    > .dont-break-rich-text-viewer {
-                        background-color: $sbitem-bg-yw !important;
-                        box-shadow: $sbitem-bg-yw-sdw;
-                        border-radius: .2rem;
-                    }
-                }
-            }
-            &.highlight-color--green {
-                background-color: unset;
-                > div {
-                    > .dont-break-rich-text-viewer {
-                        background-color: $sbitem-bg-gr !important;
-                        box-shadow: $sbitem-bg-gr-sdw;
-                        border-radius: .2rem;
-                    }
-                }
-            }
-            &.highlight-color--blue {
-                background-color: unset;
-                > div {
-                    > .dont-break-rich-text-viewer {
-                        background-color: $sbitem-bg-bl !important;
-                        box-shadow: $sbitem-bg-bl-sdw;
-                        border-radius: .2rem;
-                    }
-                }
-            }
-            &.highlight-color--purple {
-                background-color: unset;
-                > div {
-                    > .dont-break-rich-text-viewer {
-                        background-color: $sbitem-bg-vt !important;
-                        box-shadow: $sbitem-bg-vt-sdw;
-                        border-radius: .2rem;
-                    }
-                }
-            }
             > .h-8 {
                 height: 1.75rem;
             }
+            @include highlight-color("red", $sbitem-bg-rd, $sbitem-bg-rd-sdw);
+            @include highlight-color("orange", $sbitem-bg-or, $sbitem-bg-or-sdw);
+            @include highlight-color("yellow", $sbitem-bg-yw, $sbitem-bg-yw-sdw);
+            @include highlight-color("green", $sbitem-bg-gr, $sbitem-bg-gr-sdw);
+            @include highlight-color("blue", $sbitem-bg-bl, $sbitem-bg-bl-sdw);
+            @include highlight-color("purple", $sbitem-bg-vt, $sbitem-bg-vt-sdw);
         }
     }
 }
