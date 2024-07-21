@@ -14,6 +14,7 @@
 
 - To change the color of a Kanban column, click on the header of the column you want to change.
 - Highlight the header and use the highlighter tool to choose a new color for the column.
+- A shortcut key for kanban entry is available and can be configured
 
 ## Demo
 

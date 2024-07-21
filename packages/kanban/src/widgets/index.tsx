@@ -1,24 +1,26 @@
 import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
-
-export const KANBAN = "powerup_kanban";
+import { KANBAN } from "../constant/var";
+import { cssURL } from "../api/url";
 
 let Kanban: string;
 
 async function onActivate(plugin: ReactRNPlugin) {
   try {
-    const response = await fetch("snippet.css");
-    const text = await response.text();
-    Kanban = text;
-    console.log("Kanban plugin installed from local");
-    await plugin.app.registerCSS("Kanban", Kanban);
+    const stored = localStorage.getItem("Kanban");
+
+    if (stored) {
+      await plugin.app.registerCSS("Kanban", Kanban);
+      console.log("Kanban plugin already exists in local storage");
+    } else {
+      const response = await fetch(cssURL);
+      const text = await response.text();
+      Kanban = text;
+      localStorage.setItem("Kanban", text);
+      await plugin.app.registerCSS("Kanban", Kanban);
+      console.log("Kanban plugin installed from cdn");
+    }
   } catch (error) {
-    const response = await fetch(
-      "https://raw.githubusercontent.com/browneyedsoul/remnote-plugins/main/packages/kanban/src/snippet.css"
-    );
-    const text = await response.text();
-    Kanban = text;
-    console.log("Kanban plugin installed from cdn");
-    await plugin.app.registerCSS("Kanban", Kanban);
+    console.error(error);
   }
 
   await plugin.app.registerPowerup({
@@ -33,10 +35,26 @@ async function onActivate(plugin: ReactRNPlugin) {
   await plugin.app.registerCommand({
     id: "kanban",
     name: "Kanban",
+    quickCode: "kb",
+    keyboardShortcut: "command+shift+k",
     description: "Add a power Kanban tag to the current focused Rem",
     action: async () => {
-      const focusedRem = await plugin.focus.getFocusedRem();
-      await focusedRem?.addPowerup(KANBAN);
+      const rem = await plugin.focus.getFocusedRem();
+      const remTag = (await rem?.getTagRems()) || [];
+      const remTagText = remTag[0];
+      const remTarget = remTagText?.text;
+
+      switch (remTarget ? remTarget[0] : undefined) {
+        case undefined:
+          await rem?.addPowerup(KANBAN);
+          break;
+        case "Kanban":
+          await rem?.removePowerup(KANBAN);
+          break;
+        default:
+          await rem?.addPowerup(KANBAN);
+          break;
+      }
     },
   });
 
