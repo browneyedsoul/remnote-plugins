@@ -6,8 +6,8 @@
   "repoUrl": "https://github.com/browneyedsoul/remnote-plugins",
   "version": {
     "major": 0,
-    "minor": 4,
-    "patch": 8
+    "minor": 5,
+    "patch": 0
   },
   "theme": [],
   "enableOnMobile": true,
@@ -16,7 +16,7 @@
   "requiredScopes": [
     {
       "type": "All",
-      "level": "ReadCreateModify"
+      "level": "ReadCreateModifyDelete"
     }
   ]
 }
