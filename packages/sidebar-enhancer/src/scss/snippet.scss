@@ -36,6 +36,16 @@
     --sbitem-star: #69C79C;
     --sbitem-star-dark: #89FAC6;
 }
+
+// Interim measure
+#document-sidebar {
+    img.\!px-0\.5 {
+        padding-top: unset !important;
+        padding-bottom: unset !important;
+    }
+}
+
+
 %docTitle {
     padding: 0.5rem;
     border-radius: 4px;
