@@ -1,22 +1,25 @@
 import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
+import { cssURL } from "../api/url";
 
 let SidebarCSS: string;
 
 async function onActivate(plugin: ReactRNPlugin) {
   try {
-    const response = await fetch("snippet.css");
-    const text = await response.text();
-    SidebarCSS = text;
-    console.log("Sidebar Enhancer Installed from local");
-    await plugin.app.registerCSS("SidebarCSS", SidebarCSS);
+    const stored = localStorage.getItem("SidebarCSS");
+
+    if (stored) {
+      await plugin.app.registerCSS("SidebarCSS", SidebarCSS);
+      console.log("SidebarCSS plugin already exists in local storage");
+    } else {
+      const response = await fetch(cssURL);
+      const text = await response.text();
+      SidebarCSS = text;
+      localStorage.setItem("SidebarCSS", text);
+      await plugin.app.registerCSS("SidebarCSS", SidebarCSS);
+      console.log("SidebarCSS plugin installed from cdn");
+    }
   } catch (error) {
-    const response = await fetch(
-      "https://raw.githubusercontent.com/browneyedsoul/remnote-plugins/main/packages/sidebar-enhancer/src/snippet.css"
-    );
-    const text = await response.text();
-    SidebarCSS = text;
-    console.log("Sidebar Enhancer Installed from cdn");
-    await plugin.app.registerCSS("SidebarCSS", SidebarCSS);
+    console.error(error);
   }
 
   await plugin.settings.registerStringSetting({
