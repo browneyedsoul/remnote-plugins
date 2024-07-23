@@ -40,6 +40,7 @@
 // Interim measure
 #document-sidebar {
     img.\!px-0\.5 {
+        display: flex;
         padding-top: unset !important;
         padding-bottom: unset !important;
     }
