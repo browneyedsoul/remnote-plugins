@@ -24,8 +24,12 @@
     --table-bg-vt: #F8EFFF;
     --table-bg-vt-dark: #4A2B45;
 }
-// Fix cell dislocation
 [data-rem-container-tags*="table"] {
+    // Fix overflow
+    .mix-blend-multiply {
+        width: 100% !important;
+    }
+    // Fix cell dislocation
     .rn-editor__rem__body__text {
         span.whitespace-pre-wrap {
             word-break: initial;
