@@ -324,7 +324,7 @@ $LocalLeft: (
                     display: grid;
                     grid-auto-rows: auto;
                     border-left: unset !important;
-                    padding-left: 0;
+                    padding-left: 0 !important;
                     margin-left: 0 !important;
                     overflow-y: hidden;
                     @media screen and (min-width: 280px) {
