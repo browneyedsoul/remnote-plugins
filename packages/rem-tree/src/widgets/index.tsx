@@ -26,7 +26,7 @@ async function onActivate(plugin: ReactRNPlugin) {
         const response = await fetch(cssURL);
         const text = await response.text();
         TreeCSS = text;
-        localStorage.setItem("rem-tree", text);
+        localStorage.setItem("rem-tree", TreeCSS);
         await plugin.app.registerCSS("rem-tree", TreeCSS);
         console.log("TreeCSS plugin installed from cdn");
       }
@@ -35,20 +35,6 @@ async function onActivate(plugin: ReactRNPlugin) {
     }
   }
 
-  // try {
-  //   const response = await fetch("snippet.css");
-  //   TreeCSS = await response.text();
-  //   console.log("Rem Tree Installed");
-  //   await plugin.app.registerCSS("rem-tree", TreeCSS);
-  // } catch (error) {
-  //   console.error(error);
-  //   const cdnResponse = await fetch(
-  //     "https://raw.githubusercontent.com/browneyedsoul/remnote-plugins/main/packages/rem-tree/src/snippet.css"
-  //   );
-  //   TreeCSS = await cdnResponse.text();
-  //   console.log("Rem Tree Installed from cdn");
-  //   await plugin.app.registerCSS("rem-tree", TreeCSS);
-  // }
   await plugin.app.registerPowerup({
     name: "Tree",
     code: REMTREE_POWERUP,
