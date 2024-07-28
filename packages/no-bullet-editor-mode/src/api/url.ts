@@ -1,0 +1,1 @@
+export const cssURL = "https://raw.githubusercontent.com/browneyedsoul/RemNote-NoBulletEditorMode/main/src/snippet.css";

@@ -1,26 +1,46 @@
 import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
+import { BULLET_LIST, BULLET_LISTS } from "../constant/var";
+import { cssURL } from "../api/url";
+import { customStyle } from "../scss/custom";
 
-export const [BULLET_LIST, BULLET_LISTS] = ["bulletlist_power-up", "bulletlists_power-up"];
+let NoBulletCSS: string;
 
 async function onActivate(plugin: ReactRNPlugin) {
-  let NoBulletCSS: string;
 
   try {
-    const response = await fetch("snippet.css");
-    const text = await response.text();
-    NoBulletCSS = text;
-    console.log("No Bullet Editor Mode Installed from local");
+    const stored = localStorage.getItem("noBullet");
+
+    if (stored) {
+      await plugin.app.registerCSS("noBullet", NoBulletCSS);
+      console.log("noBullet plugin already exists in local storage");
+    } else {
+      const response = await fetch(cssURL);
+      const text = await response.text();
+      NoBulletCSS = text;
+      localStorage.setItem("noBullet", NoBulletCSS);
+      await plugin.app.registerCSS("noBullet", NoBulletCSS);
+      console.log("noBullet plugin installed from cdn");
+    }
   } catch (error) {
-    const response = await fetch(
-      "https://raw.githubusercontent.com/browneyedsoul/RemNote-NoBulletEditorMode/main/src/snippet.css"
-    );
-    const text = await response.text();
-    NoBulletCSS = text;
-    console.log("No Bullet Editor Mode Installed from cdn");
+    console.error(error);
   }
 
-  await plugin.app.registerPowerup("Bulletlist", BULLET_LIST, "A Power-up Block for making a bullet", { slots: [] });
-  await plugin.app.registerPowerup("Bulletlists", BULLET_LISTS, "A Power-up Block for making bullets", { slots: [] });
+  await plugin.app.registerPowerup({
+    name: "Bulletlist",
+    code: BULLET_LIST,
+    description: "A Power-up Block for making bullet",
+    options: {
+      slots: [],
+    },
+  });
+  await plugin.app.registerPowerup({
+    name: "Bulletlists",
+    code: BULLET_LISTS,
+    description: "A Power-up Block for making bullets",
+    options: {
+      slots: [],
+    },
+  });
 
   await plugin.app.registerCommand({
     id: "bulletlist",
@@ -52,17 +72,7 @@ async function onActivate(plugin: ReactRNPlugin) {
   });
   plugin.track(async (reactivePlugin) => {
     const paddingCtrl = await reactivePlugin.settings.getSetting<number>("padding");
-    await reactivePlugin.app.registerCSS(
-      "padding",
-      `
-.hierarchy-editor--ltr .TreeNode, .hierarchy-editor--ltr .TreeNode--list {
-  padding-left: ${paddingCtrl}px;
-}
-.node-card-item::before {
-  margin-left: -${paddingCtrl}px;
-}
-      `
-    );
+    await reactivePlugin.app.registerCSS("padding", customStyle(paddingCtrl));
   });
 }
 
