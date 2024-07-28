@@ -15,7 +15,6 @@ async function onActivate(plugin: ReactRNPlugin) {
     console.log("Rem Tree Installed");
     await plugin.app.registerCSS("rem-tree", TreeCSS);
   } else {
-    console.warn("RemTree Production Mode");
     try {
       const stored = localStorage.getItem("rem-tree");
 

@@ -65,7 +65,7 @@
                 .perfect-circle {
                     visibility: hidden;
                 }
-                &:hover {
+                &:hover, &:focus-within {
                     .perfect-circle {
                         visibility: visible;
                     }
