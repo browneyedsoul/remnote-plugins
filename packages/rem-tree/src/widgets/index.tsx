@@ -1,24 +1,54 @@
 import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
+import { REMTREE_POWERUP, REMTREEC_POWERUP } from "../constant/var";
+import { isDev } from "../constant/env";
+import { cssURL } from "../api/url";
 
-export const [REMTREE_POWERUP, REMTREEC_POWERUP] = ["remtree_powerup", "remtreec_powerup"];
+let TreeCSS: string;
 
 async function onActivate(plugin: ReactRNPlugin) {
-  let TreeCSS: string;
 
-  try {
+  if (isDev) {
+    console.warn("RemTree Development Mode");
+
     const response = await fetch("snippet.css");
     TreeCSS = await response.text();
     console.log("Rem Tree Installed");
     await plugin.app.registerCSS("rem-tree", TreeCSS);
-  } catch (error) {
-    console.error(error);
-    const cdnResponse = await fetch(
-      "https://raw.githubusercontent.com/browneyedsoul/remnote-plugins/main/packages/rem-tree/src/snippet.css"
-    );
-    TreeCSS = await cdnResponse.text();
-    console.log("Rem Tree Installed from cdn");
-    await plugin.app.registerCSS("rem-tree", TreeCSS);
+  } else {
+    console.warn("RemTree Production Mode");
+    try {
+      const stored = localStorage.getItem("rem-tree");
+
+      if (stored) {
+        await plugin.app.registerCSS("rem-tree", TreeCSS);
+        console.log("rem-tree plugin already exists in local storage");
+      } else {
+        const response = await fetch(cssURL);
+        const text = await response.text();
+        TreeCSS = text;
+        localStorage.setItem("rem-tree", text);
+        await plugin.app.registerCSS("rem-tree", TreeCSS);
+        console.log("TreeCSS plugin installed from cdn");
+      }
+    } catch (error) {
+      console.error(error);
+    }
   }
+
+  // try {
+  //   const response = await fetch("snippet.css");
+  //   TreeCSS = await response.text();
+  //   console.log("Rem Tree Installed");
+  //   await plugin.app.registerCSS("rem-tree", TreeCSS);
+  // } catch (error) {
+  //   console.error(error);
+  //   const cdnResponse = await fetch(
+  //     "https://raw.githubusercontent.com/browneyedsoul/remnote-plugins/main/packages/rem-tree/src/snippet.css"
+  //   );
+  //   TreeCSS = await cdnResponse.text();
+  //   console.log("Rem Tree Installed from cdn");
+  //   await plugin.app.registerCSS("rem-tree", TreeCSS);
+  // }
   await plugin.app.registerPowerup({
     name: "Tree",
     code: REMTREE_POWERUP,

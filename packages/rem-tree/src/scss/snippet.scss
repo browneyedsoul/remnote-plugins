@@ -51,6 +51,7 @@
             overflow-x: visible;
             overflow-y: hidden;
             white-space: pre;
+            
             .whitespace-pre-wrap {
                 white-space: pre;
             }
@@ -60,6 +61,14 @@
                 .EditorContainer {
                     position: relative;
                     z-index: 4;
+                }
+                .perfect-circle {
+                    visibility: hidden;
+                }
+                &:hover {
+                    .perfect-circle {
+                        visibility: visible;
+                    }
                 }
             }
             .hierarchy-editor__tag-bar {
@@ -183,7 +192,7 @@
             div.tree-node--children {
                 padding-left: unset;
                 > div {
-                    padding-left: 11.5px;
+                    padding-left: 0.06rem !important;
                 }
                 .backlink-counter {
                     opacity: .4;
