@@ -1,26 +1,29 @@
 import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
-import { TABLE, WIDTH, createTableItem } from "../contents/preset";
-import { rulerStyle } from "../contents/style";
+import { TABLE, WIDTH } from "../constant/var";
+import { createTableItem } from "../function/preset";
+import { rulerStyle } from "../scss/custom";
 
 let TableCSS: string;
 
 async function onActivate(plugin: ReactRNPlugin) {
   try {
-    const response = await fetch("snippet.css");
-    console.warn(response);
-    const text = await response.text();
-    TableCSS = text;
-    await plugin.app.registerCSS("tableCSS", TableCSS);
-    console.warn("Table Installed from local");
+    const stored = localStorage.getItem("minimal-table");
+
+    if (stored) {
+      await plugin.app.registerCSS("minimal-table", TableCSS);
+      console.log("minimal-table plugin already exists in local storage");
+    } else {
+      const response = await fetch(TableCSS);
+      const text = await response.text();
+      TableCSS = text;
+      localStorage.setItem("minimal-table", text);
+      await plugin.app.registerCSS("minimal-table", TableCSS);
+      console.log("minimal-table plugin installed from cdn");
+    }
   } catch (error) {
-    const response = await fetch(
-      "https://raw.githubusercontent.com/browneyedsoul/RemNote-ModernTableRow/main/src/snippet.css"
-    );
-    const text = await response.text();
-    TableCSS = text;
-    await plugin.app.registerCSS("tableCSS", TableCSS);
-    console.log("Table Installed from cdn");
+    console.error(error);
   }
+
   await plugin.settings.registerStringSetting({
     id: "opacity",
     title: "Ruler Opacity",
