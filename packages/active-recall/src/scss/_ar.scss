@@ -22,7 +22,8 @@
             > span {
                 > span {
                     span.linear-editor-item.whitespace-pre-wrap {
-                        &:not(:hover) {
+                        &:not(:hover),
+                        &:not(:focus-within) {
                             @extend %filter;
                             @extend %rounded;
                         }
@@ -36,7 +37,8 @@
             @extend %rounded-left;
         }
         & ~ span  {
-            &:not(:hover) {
+            &:not(:hover),
+            &:not(:focus-within) {
                 @extend %filter;
             }
             &:last-child {
@@ -47,7 +49,8 @@
     span.only_in_answer {
         > span {
             @extend %rounded;
-            &:not(:hover) {
+            &:not(:hover),
+            &:not(:focus-within) {
                 @extend %filter;
             }
         }
@@ -59,13 +62,15 @@
             > span {
                 @extend %filter;
                 @extend %rounded;
-                &:hover {
+                &:hover,
+                &:not(:focus-within) {
                     filter: unset !important;
                     background: unset;
                 }
             }
         }
-        &:hover {
+        &:hover,
+        &:not(:focus-within) {
             filter: unset !important;
             background: unset;
         }
@@ -88,7 +93,8 @@
                 background: unset;
             }
         }
-        &:not(:hover) {
+        &:not(:hover),
+        &:not(:focus-within) {
             .node-card-item {
                 @extend %filter;
                 &:first-child {

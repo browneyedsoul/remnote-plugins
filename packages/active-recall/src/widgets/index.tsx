@@ -1,20 +1,19 @@
 import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
-import { fetchCSS } from "../function/fetchCSS";
-import  { ACTIVE_RECALL, ARCSS, ARTAGGED, setARCSS, setARTAGGED } from "../constant/var";
+import { ACTIVE_RECALL } from "../constant/var";
+import { ARCSS, ARUNTAGGED } from "../api/url";
+import { registerCSS } from "../function/registerCSS";
+
+let ActiveRecall: string;
+let ActiveRecallUntagged: string;
 
 async function onActivate(plugin: ReactRNPlugin) {
-  await setARCSS(
-    await fetchCSS(
-      "snippet.css",
-      "https://github.com/browneyedsoul/remnote-plugins/blob/main/packages/active-recall/src/snippet.css"
-    )
-  );
-  await setARTAGGED(
-    await fetchCSS(
-      "untag.css",
-      "https://raw.githubusercontent.com/browneyedsoul/RemNote-ActiveRecall/main/src/untag.css"
-    )
-  );
+  try {
+    await registerCSS("ActiveRecall", ARCSS, ActiveRecall, plugin);
+    await registerCSS("ActiveRecallUntagged", ARUNTAGGED, ActiveRecallUntagged, plugin);
+    console.log("ActiveRecall plugin processed");
+  } catch (error) {
+    console.error(error);
+  }
 
   await plugin.app.registerPowerup({
     name: "Active Recall",
@@ -28,6 +27,8 @@ async function onActivate(plugin: ReactRNPlugin) {
   await plugin.app.registerCommand({
     id: "active-recall",
     name: "Active Recall",
+    quickCode: "arc",
+    keyboardShortcut: "command+shift+a",
     action: async () => {
       const rem = await plugin.focus.getFocusedRem();
       await rem?.addPowerup(ACTIVE_RECALL);
@@ -44,8 +45,8 @@ async function onActivate(plugin: ReactRNPlugin) {
   await plugin.track(async (reactivePlugin) => {
     let arSetting = await reactivePlugin.settings.getSetting<boolean>("scope");
     arSetting === true
-      ? plugin.app.registerCSS("active-recall-untagged", ARTAGGED)
-      : plugin.app.registerCSS("active-recall-untagged", ARCSS);
+      ? plugin.app.registerCSS("active-recall-untagged", ARUNTAGGED)
+      : plugin.app.registerCSS("active-recall", ARCSS);
   });
 }
 
