@@ -7,13 +7,8 @@ let ActiveRecall: string;
 let ActiveRecallUntagged: string;
 
 async function onActivate(plugin: ReactRNPlugin) {
-  try {
-    await registerCSS("ActiveRecall", ARCSS, ActiveRecall, plugin);
-    await registerCSS("ActiveRecallUntagged", ARUNTAGGED, ActiveRecallUntagged, plugin);
-    console.log("ActiveRecall plugin processed");
-  } catch (error) {
-    console.error(error);
-  }
+  await registerCSS("ActiveRecall", ARCSS, ActiveRecall, plugin);
+  await registerCSS("ActiveRecallUntagged", ARUNTAGGED, ActiveRecallUntagged, plugin);
 
   await plugin.app.registerPowerup({
     name: "Active Recall",

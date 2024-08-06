@@ -22,8 +22,7 @@
             > span {
                 > span {
                     span.linear-editor-item.whitespace-pre-wrap {
-                        &:not(:hover),
-                        &:not(:focus-within) {
+                        &:not(:hover):not(:focus-within) {
                             @extend %filter;
                             @extend %rounded;
                         }
@@ -37,8 +36,7 @@
             @extend %rounded-left;
         }
         & ~ span  {
-            &:not(:hover),
-            &:not(:focus-within) {
+            &:not(:hover):not(:focus-within) {
                 @extend %filter;
             }
             &:last-child {
@@ -49,8 +47,7 @@
     span.only_in_answer {
         > span {
             @extend %rounded;
-            &:not(:hover),
-            &:not(:focus-within) {
+            &:not(:hover):not(:focus-within) {
                 @extend %filter;
             }
         }
@@ -62,15 +59,13 @@
             > span {
                 @extend %filter;
                 @extend %rounded;
-                &:hover,
-                &:not(:focus-within) {
+                &:hover:focus-within {
                     filter: unset !important;
                     background: unset;
                 }
             }
         }
-        &:hover,
-        &:not(:focus-within) {
+        &:hover:focus-within {
             filter: unset !important;
             background: unset;
         }
@@ -87,14 +82,12 @@
     // List Card
     div.tree-node--children {
         .node-card-item {
-            &:hover,
-            &:focus-within {
+            &:hover:focus-within {
                 filter: unset !important;
                 background: unset;
             }
         }
-        &:not(:hover),
-        &:not(:focus-within) {
+        &:not(:hover):not(:focus-within) {
             .node-card-item {
                 @extend %filter;
                 &:first-child {
@@ -112,8 +105,7 @@
         .rn-editor-container {
             > div:has(.node-card-item) {
                 @extend %filter;
-                &:hover,
-                &:focus-within {
+                &:hover:focus-within {
                     filter: unset !important;
                 }
             }
