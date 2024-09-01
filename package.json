@@ -54,7 +54,10 @@
     "sidebar-build": "pnpm --filter sidebar-enhancer build",
     "colorizer": "pnpm --filter text-colorizer dev",
     "colorizer-sass": "pnpm --filter text-colorizer sass",
-    "colorizer-build": "pnpm --filter text-colorizer build"
+    "colorizer-build": "pnpm --filter text-colorizer build",
+    "vertico": "pnpm --filter remacs-vertico dev",
+    "vertico-sass": "pnpm --filter remacs-vertico sass",
+    "vertico-build": "pnpm --filter remacs-vertico build"
   },
   "dependencies": {
     "@remnote/plugin-sdk": "latest",
