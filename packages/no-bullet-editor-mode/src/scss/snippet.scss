@@ -1,237 +1,239 @@
 :root {
-    --nobullet-triangle: #000;
-    --nobullet-triangle-dark: #D4D4DA;
-    --nobullet-quote-bg: #F4F4FB;
-    --nobullet-quote-bg-dark: #2B2B34;
-    --nobullet-quote-border: #222;
-    --nobullet-quote-border-dark: #666;
+  --nobullet-triangle: #000;
+  --nobullet-triangle-dark: #d4d4da;
+  --nobullet-quote-bg: #f4f4fb;
+  --nobullet-quote-bg-dark: #2b2b34;
+  --nobullet-quote-border: #222;
+  --nobullet-quote-border-dark: #666;
 }
 
 .hierarchy-editor--ltr {
-    .TreeNode,
-    .TreeNode--list {
-        margin-left: 1.55rem;
-    }
+  .TreeNode,
+  .TreeNode--list {
+    margin-left: 1.55rem;
+  }
 }
 %rmvTag {
-    .hierarchy-editor__tag-bar__tag {
-        background-color: transparent !important;
-        span {
-            display: none;
-        }
-        .rn-tag__close {
-            opacity: .3;
-        }
+  .hierarchy-editor__tag-bar__tag {
+    background-color: transparent !important;
+    span {
+      display: none;
     }
+    .rn-tag__close {
+      opacity: 0.3;
+    }
+  }
+}
+.node-card-item:before {
+  margin-left: unset;
 }
 
 @mixin Nobullet($nobullet-triangle, $nobullet-quote-bg, $nobullet-quote-border) {
-    .rn-rem-icon-bullet.rn-rem-bullet--hidden-children {
-        &::after {
-            content: "";
-            display: block;
-            position: relative;
-            left: 1.6rem;
-            width: 0;
-            height: 0;
-            border-top: 0.35rem solid transparent;
-            border-left: 0.35rem solid $nobullet-triangle;
-            border-bottom: 0.35rem solid transparent;
-            border-radius: 25px;
-            pointer-events: none;
-        }
+  .rn-rem-icon-bullet.rn-rem-bullet--hidden-children {
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      left: 1.6rem;
+      width: 0;
+      height: 0;
+      border-top: 0.35rem solid transparent;
+      border-left: 0.35rem solid $nobullet-triangle;
+      border-bottom: 0.35rem solid transparent;
+      border-radius: 25px;
+      pointer-events: none;
     }
-    .perfect-circle.rn-rem-bullet--hidden-children {
-        &::after {
-            content: "";
-            display: block;
-            position: relative;
-            left: 1.6rem;
-            width: 0;
-            height: 0;
-            border-top: 0.35rem solid transparent;
-            border-left: 0.35rem solid $nobullet-triangle;
-            border-bottom: 0.35rem solid transparent;
-            border-radius: 25px;
-            pointer-events: none;
-        }
+  }
+  .perfect-circle.rn-rem-bullet--hidden-children {
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      left: 1.6rem;
+      width: 0;
+      height: 0;
+      border-top: 0.35rem solid transparent;
+      border-left: 0.35rem solid $nobullet-triangle;
+      border-bottom: 0.35rem solid transparent;
+      border-radius: 25px;
+      pointer-events: none;
     }
-    [data-rem-container-tags~="quote"] {
-        left: 1.5rem !important;
-        background: $nobullet-quote-bg;
-        border-left: 4px solid $nobullet-quote-border;
-        width: calc(100% - 1.75rem);
-        .rn-quote-content {
-            // margin-left: 1.5rem;
-            --rn-quote-offset: unset !important;
-            border-left: unset;
-            .toggle-collapse-button {
-                left: 1rem;
-                background-color: unset !important;
+  }
+  [data-rem-container-tags~="quote"] {
+    left: 1.5rem !important;
+    background: $nobullet-quote-bg;
+    border-left: 4px solid $nobullet-quote-border;
+    width: calc(100% - 1.75rem);
+    .rn-quote-content {
+      // margin-left: 1.5rem;
+      --rn-quote-offset: unset !important;
+      border-left: unset;
+      .toggle-collapse-button {
+        left: 1rem;
+        background-color: unset !important;
+      }
+    }
+  }
+  #document {
+    .tree-node--parent {
+      > [data-rem-tags~="bulletlist"] {
+        margin-left: 1rem;
+        @extend %rmvTag;
+        .perfect-circle__inner {
+          visibility: visible;
+          .rem-bullet__core {
+            fill: $nobullet-triangle;
+          }
+        }
+      }
+    }
+    [data-rem-container-tags~="bulletlists"] {
+      @extend %rmvTag;
+      .tree-node--children {
+        .rem {
+          margin-left: 1rem;
+          .rn-bullet-container {
+            left: unset;
+          }
+          .perfect-circle {
+            .perfect-circle__inner {
+              visibility: visible;
+              .rem-bullet__core {
+                fill: $nobullet-triangle;
+              }
             }
+          }
         }
-    }
-    #document {
+        .toggle-collapse-button {
+          left: unset;
+        }
         .tree-node--parent {
-            > [data-rem-tags~="bulletlist"] {
-                margin-left: 1rem;
-                @extend %rmvTag;
-                .perfect-circle__inner {
-                    visibility: visible;
-                    .rem-bullet__core {
-                        fill: $nobullet-triangle;
-                    }
+          .rem {
+            .perfect-circle {
+              &.rn-rem-bullet--hidden-children {
+                &::after {
+                  display: none;
                 }
+              }
             }
+          }
         }
-        [data-rem-container-tags~="bulletlists"] {
-            @extend %rmvTag;
-            .tree-node--children {
-                .rem {
-                    margin-left: 1rem;
-                    .rn-bullet-container {
-                        left: unset;
-                    }
-                    .perfect-circle {
-                        .perfect-circle__inner {
-                            visibility: visible;
-                            .rem-bullet__core {
-                                fill: $nobullet-triangle;
-                            }
-                        }
-                    }
-                }
-                .toggle-collapse-button {
-                    left: unset;
-                }
-                .tree-node--parent {
-                    .rem {
-                        .perfect-circle {
-                            &.rn-rem-bullet--hidden-children {
-                                &::after {
-                                    display: none;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }
-@include Nobullet(
-    var(--nobullet-triangle),
-    var(--nobullet-quote-bg),
-    var(--nobullet-quote-border)
-);
+@include Nobullet(var(--nobullet-triangle), var(--nobullet-quote-bg), var(--nobullet-quote-border));
 .dark {
-    @include Nobullet(
-        var(--nobullet-triangle-dark),
-        var(--nobullet-quote-bg-dark),
-        var(--nobullet-quote-border-dark)
-    );
+  @include Nobullet(var(--nobullet-triangle-dark), var(--nobullet-quote-bg-dark), var(--nobullet-quote-border-dark));
 }
 
 @mixin scaleTransform($scale) {
   transform: scale($scale);
 }
 
-$scaling-values: (header-1: 2, header-2: 1.5, header-3: 1.25);
+$scaling-values: (
+  header-1: 2,
+  header-2: 1.5,
+  header-3: 1.25,
+);
 
 @each $header, $scale in $scaling-values {
   .rem-container--#{$header} {
-        .rem-button__container {
-            .rn-bullet-container {
-                > span {
-                    > span {
-                        @include scaleTransform($scale);
-                    }
-                }
-            }
+    .rem-button__container {
+      .rn-bullet-container {
+        > span {
+          > span {
+            @include scaleTransform($scale);
+          }
         }
+      }
     }
+  }
 }
 
-
 .rn-bullet-container > span {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .rn-bullet-container:has(.rn-rem-bullet--hidden-children) {
-    position: relative;
-    left: -1.5rem;
+  position: relative;
+  left: -1.5rem;
 }
 .toggle-collapse-button {
-    position: relative;
-    left: 1rem;
+  position: relative;
+  left: 1rem;
 }
 [data-rem-tags~="document"] {
-    .toggle-collapse-button {
-        position: relative;
-        left: 1.35rem;
-    }
-    // .toggle-collapse-button:not(.toggle-collapse-button:has(svg.rotate-0)) {
-    //     position: relative;
-    //     left: 1.35rem;
-    // }
+  .toggle-collapse-button {
+    position: relative;
+    left: 1.35rem;
+  }
+  // .toggle-collapse-button:not(.toggle-collapse-button:has(svg.rotate-0)) {
+  //     position: relative;
+  //     left: 1.35rem;
+  // }
 }
 [data-rem-tags~="list-item"] {
-    .toggle-collapse-button {
-        z-index: 2;
-        background-color: transparent;
-        opacity: .5;
-    }   
+  .toggle-collapse-button {
+    z-index: 2;
+    background-color: transparent;
+    opacity: 0.5;
+  }
 }
 
 .rn-editor-container {
-    .tree-node--parent {
-        &:has(.toggle-collapse-button) {
-            &:hover {
-                .rn-bullet-container {
-                    position: relative;
-                    left: -1.5rem;
-                }
-            }
+  .tree-node--parent {
+    &:has(.toggle-collapse-button) {
+      &:hover {
+        .rn-bullet-container {
+          position: relative;
+          left: -1.5rem;
         }
+      }
     }
+  }
 }
 
 .rem:not(:hover) .perfect-circle__inner {
   visibility: hidden;
 }
 .rn-rem-icon-bullet {
-    &.rn-rem-bullet--hidden-children {
-        svg[data-icon="document"],
-        svg[data-icon="folder"] {
-            position: relative;
-            left: 0.2rem;
-        }
+  &.rn-rem-bullet--hidden-children {
+    svg[data-icon="document"],
+    svg[data-icon="folder"] {
+      position: relative;
+      left: 0.2rem;
     }
+  }
 }
 [data-rem-tags~="document"] {
-    .rn-rem-icon-bullet {
-        border-style: unset;
+  .rn-rem-icon-bullet {
+    border-style: unset;
+  }
+  .rn-rem-icon-bullet {
+    display: flex;
+    align-items: center;
+  }
+  .tree-node--parent {
+    .perfect-circle.rn-rem-bullet--hidden-children::after {
+      left: 1.2rem;
     }
-    .rn-rem-icon-bullet {
-        display: flex;
-        align-items: center;
-    }
-    .tree-node--parent {
-        .perfect-circle.rn-rem-bullet--hidden-children::after {
-            left: 1.2rem;
-        }
-    }
+  }
 }
 
 // patch for 1.13.36
-.hierarchy-editor--ltr .rn-editor-container:not(.is-explicit-folder-and-root-explicit-folder) .TreeNode, 
+.hierarchy-editor--ltr .rn-editor-container:not(.is-explicit-folder-and-root-explicit-folder) .TreeNode,
 .hierarchy-editor--ltr .rn-editor-container:not(.is-explicit-folder-and-root-explicit-folder) .TreeNode--list {
-    margin-left: 1.6rem;
-    padding-left: unset;
+  margin-left: 1.6rem;
+  padding-left: unset;
 }
 
 .rn-rem-icon-bullet,
 .toggle-collapse-button {
-    background-color: unset;
-} 
+  background-color: unset;
+}
+
+.node-card-item:before {
+  margin-left: unset;
+}
