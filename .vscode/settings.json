@@ -8,8 +8,7 @@
   "prettier.bracketSameLine": false,
   "prettier.printWidth": 120,
   "[scss]": {
-      "editor.foldingStrategy": "indentation",
-      "editor.suggest.insertMode": "replace",
-      "editor.formatOnSave": false
-  },
+    "editor.foldingStrategy": "indentation",
+    "editor.suggest.insertMode": "replace",
+  }
 }
