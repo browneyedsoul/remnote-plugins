@@ -4,7 +4,7 @@ Inspired by an Emacs plugin named [vertico.el](https://github.com/minad/vertico)
 
 ## Display
 
-![i](./public/intro.gif)
+![i](https://raw.githubusercontent.com/browneyedsoul/remnote-plugins/main/packages/remacs-vertico/public/intro.gif)
 
 ## Purpose
 
