@@ -11,7 +11,7 @@
   },
   "theme": [],
   "enableOnMobile": true,
-  "description": "",
+  "description": "Convert Search and Omnibar menu style to Emacs Vertico plugin style",
   "requestNative": true,
   "requiredScopes": [
     {

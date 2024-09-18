@@ -1,0 +1,122 @@
+#search-results__result {
+  > div {
+    &:has(> [data-category="Text in Document"]) {
+      display: none;
+    }
+    > div {
+      > div.group {
+        // item Limit height
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        .box-border {
+          > img {
+            width: 100%;
+            height: 1em;
+            object-fit: unset;
+            aspect-ratio: unset;
+            
+          }
+        }
+        > .items-start {
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+// Omnibar Scoped Text Highlight
+[data-remopt-title] [data-cy="rn-clr-content-primary"] {
+  color: red;
+  font-weight: 600;
+}
+.dark [data-remopt-title] [data-cy="rn-clr-content-primary"] {
+  color: #0ae5e9;
+}
+
+#result_breadcrumbs {
+  display: none;
+}
+
+.query-search-wrapper {
+  > span {
+    padding-left: unset;
+    background-color: #ffffa6;
+  }
+  + .inline-code {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
+.dark {
+  .query-search-wrapper {
+    > span {
+      background-color: #6a0505;
+    }
+  }
+}
+
+// Omnibar remove height preset
+.rn-popup--desktop:has([data-cy="omnibar"]) {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+.rn-popup--full {
+  height: unset;
+}
+[data-cy~="omnibar"] {
+  border-top: 0.25rem solid #e2e2e2;
+  border-radius: unset !important;
+  width: 100vw !important;
+  max-width: unset !important;
+  max-height: 60vh;
+  margin-top: unset;
+}
+.dark [data-cy~="omnibar"] {
+  border-top: 0.25rem solid #666;
+}
+
+.rn-popup--top {
+  align-self: flex-end;
+}
+.rn-popup .overflow-hidden:not(.rn-omnibar__content),
+.rn-popup .overflow-y-hidden {
+  overflow: unset !important;
+}
+.rn-popup--desktop:not(:has(.rn-settings)) {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  overflow: unset !important;
+}
+.rn__search_omnibar--footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: unset;
+  > div.flex {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+#Popup .rn-clr-background-overlay-dark {
+  background: unset;
+}
+
+#search-results__result > div > div > .group .rn-popup--top {
+  align-self: flex-end;
+}
+.rn-popup .overflow-hidden:not(.rn-omnibar__content),
+.rn-popup .overflow-y-hidden {
+  overflow: unset !important;
+}
+.rn-popup--desktop:not(:has(.rn-settings)) {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  overflow: unset !important;
+}
+#Popup .rn-clr-background-overlay-dark {
+  background: unset;
+}

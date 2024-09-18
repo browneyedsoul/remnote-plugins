@@ -95,7 +95,8 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "@remnote/plugin-sdk@0.0.42": "patches/@remnote__plugin-sdk@0.0.42.patch"
+      "@remnote/plugin-sdk@0.0.42": "patches/@remnote__plugin-sdk@0.0.42.patch",
+      "@remnote/plugin-sdk@0.0.46": "patches/@remnote__plugin-sdk@0.0.46.patch"
     }
   }
 }

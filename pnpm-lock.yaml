@@ -4,6 +4,9 @@ patchedDependencies:
   '@remnote/plugin-sdk@0.0.42':
     hash: qsnukwd4z47ct4bgyk4iaoqaaq
     path: patches/@remnote__plugin-sdk@0.0.42.patch
+  '@remnote/plugin-sdk@0.0.46':
+    hash: z5hzvqawjn7j4tsi4pmyd6iqb4
+    path: patches/@remnote__plugin-sdk@0.0.46.patch
 
 importers:
 
@@ -11,7 +14,7 @@ importers:
     dependencies:
       '@remnote/plugin-sdk':
         specifier: latest
-        version: 0.0.42(patch_hash=qsnukwd4z47ct4bgyk4iaoqaaq)(react-dom@17.0.2)(react@17.0.2)
+        version: 0.0.46(patch_hash=z5hzvqawjn7j4tsi4pmyd6iqb4)(react-dom@17.0.2)(react@17.0.2)
       react:
         specifier: ^17.0.2
         version: 17.0.2
@@ -173,6 +176,16 @@ importers:
         specifier: ^0.0.42
         version: 0.0.42(patch_hash=qsnukwd4z47ct4bgyk4iaoqaaq)(react-dom@17.0.2)(react@17.0.2)
 
+  packages/remacs-vertico:
+    dependencies:
+      '@remnote/plugin-sdk':
+        specifier: ^0.0.46
+        version: 0.0.46(patch_hash=z5hzvqawjn7j4tsi4pmyd6iqb4)(react-dom@17.0.2)(react@17.0.2)
+    devDependencies:
+      raw-loader:
+        specifier: ^4.0.2
+        version: 4.0.2(webpack@5.87.0)
+
   packages/run-js:
     dependencies:
       '@remnote/plugin-sdk':
@@ -180,6 +193,12 @@ importers:
         version: 0.0.42(patch_hash=qsnukwd4z47ct4bgyk4iaoqaaq)(react-dom@17.0.2)(react@17.0.2)
 
   packages/sidebar-enhancer:
+    dependencies:
+      '@remnote/plugin-sdk':
+        specifier: ^0.0.42
+        version: 0.0.42(patch_hash=qsnukwd4z47ct4bgyk4iaoqaaq)(react-dom@17.0.2)(react@17.0.2)
+
+  packages/template:
     dependencies:
       '@remnote/plugin-sdk':
         specifier: ^0.0.42
@@ -362,6 +381,26 @@ packages:
 
   /@remnote/plugin-sdk@0.0.42(patch_hash=qsnukwd4z47ct4bgyk4iaoqaaq)(react-dom@17.0.2)(react@17.0.2):
     resolution: {integrity: sha512-z8De3OgrLXDWkv4xErHiwMM1PrmnR+wjlt6kYuCbPniduaHn738K3OcXlRWzfSK2GuD8/cSK6Zg+4W1I4EBxKQ==}
+    hasBin: true
+    peerDependencies:
+      react: ^17.0.2
+      react-dom: ^17.0.2
+    dependencies:
+      os: 0.1.2
+      ansi-colors: 4.1.3
+      enquirer: 2.3.6
+      mitt: 3.0.0
+      nanoid: 3.3.7
+      react: 17.0.2
+      react-dom: 17.0.2(react@17.0.2)
+      type-fest: 2.19.0
+      underscore: 1.13.6
+      zod: 3.23.6
+    dev: false
+    patched: true
+
+  /@remnote/plugin-sdk@0.0.46(patch_hash=z5hzvqawjn7j4tsi4pmyd6iqb4)(react-dom@17.0.2)(react@17.0.2):
+    resolution: {integrity: sha512-LrHxLeIDFfrpCFgN2+0n/uhGpZU2gQhCBUD2dDCLBR3AsyV0w95KR6flx4woYitJbHCIlVod8ByqCheDua8HsQ==}
     hasBin: true
     peerDependencies:
       react: ^17.0.2
@@ -3114,6 +3153,17 @@ packages:
       http-errors: 2.0.0
       iconv-lite: 0.4.24
       unpipe: 1.0.0
+    dev: true
+
+  /raw-loader@4.0.2(webpack@5.87.0):
+    resolution: {integrity: sha512-ZnScIV3ag9A4wPX/ZayxL/jZH+euYb6FcUinPcgiQW0+UBtEv0O6Q3lGd3cqJ+GHH+rksEv3Pj99oxJ3u3VIKA==}
+    engines: {node: '>= 10.13.0'}
+    peerDependencies:
+      webpack: ^4.0.0 || ^5.0.0
+    dependencies:
+      loader-utils: 2.0.4
+      schema-utils: 3.3.0
+      webpack: 5.87.0(webpack-cli@4.10.0)
     dev: true
 
   /react-dom@17.0.2(react@17.0.2):
