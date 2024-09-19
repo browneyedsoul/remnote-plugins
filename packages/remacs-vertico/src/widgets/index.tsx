@@ -15,8 +15,8 @@ async function onActivate(plugin: ReactRNPlugin) {
   await plugin.track(async (reactivePlugin) => {
     const verticoStatus = await reactivePlugin.settings.getSetting<boolean>("toggle-remacs-vertico");
     verticoStatus
-      ? await plugin.app.registerCSS("remacs-vertico", "")
-      : await plugin.app.registerCSS("remacs-vertico", REMACS_VERTICO);
+      ? await plugin.app.registerCSS("remacs-vertico", REMACS_VERTICO)
+      : await plugin.app.registerCSS("remacs-vertico", "");
   });
 }
 
