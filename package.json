@@ -97,6 +97,7 @@
     "postcss": "^8.4.47",
     "postcss-import": "^14.1.0",
     "postcss-loader": "^7.0.0",
+    "raw-loader": "^4.0.2",
     "react-refresh": "^0.14.0",
     "sass": "^1.79.2",
     "sass-loader": "^14.1.1",

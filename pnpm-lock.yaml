@@ -67,6 +67,9 @@ importers:
       postcss-loader:
         specifier: ^7.0.0
         version: 7.0.0(postcss@8.4.47)(webpack@5.94.0)
+      raw-loader:
+        specifier: ^4.0.2
+        version: 4.0.2(webpack@5.94.0)
       react-refresh:
         specifier: ^0.14.0
         version: 0.14.0

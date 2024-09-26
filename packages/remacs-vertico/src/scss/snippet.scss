@@ -54,8 +54,8 @@
         > div {
           > div.group {
             // item Limit height
-            padding-top: 0.2rem;
-            padding-bottom: 0.2rem;
+            padding-top: 0.1rem;
+            padding-bottom: 0.1rem;
             .box-border {
               > img {
                 width: 100%;
@@ -109,6 +109,14 @@
     > span {
       color: #ffef00;
       background-color: #700000;
+    }
+  }
+}
+// fix height
+.rn-settings {
+  .rn-settings__sidebar {
+    .settings-page__sidebar {
+      height: calc(100vh - 2rem);
     }
   }
 }
