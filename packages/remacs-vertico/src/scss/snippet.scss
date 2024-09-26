@@ -116,7 +116,14 @@
 .rn-settings {
   .rn-settings__sidebar {
     .settings-page__sidebar {
-      height: calc(100vh - 2rem);
+      height: calc(100vh - 4.5rem);
+    }
+  }
+}
+.rn-settings__subcategory__setting {
+  > .grid {
+    > div {
+      max-height: calc(100vh - 6rem);
     }
   }
 }
