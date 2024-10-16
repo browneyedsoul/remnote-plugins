@@ -1,0 +1,430 @@
+@mixin icon($margin-right: null) {
+    span.inline-block {
+        height: 1em;
+        width: auto;
+        margin-right: $margin-right;
+        > div:not(div.selected-items-wrapper) {
+            height: 1em !important;
+            width: unset !important;
+            max-width: 1em !important;
+            object-fit: contain;
+            object-position: center;
+            min-width: 1em !important;
+            min-height: unset !important;
+            > span.image-node {
+                object-fit: contain !important;
+                object-position: center;
+                > div:nth-of-type(1):not(div[data-rmiz-wrap~="visible"]) {
+                    display: none
+                }
+                > div:nth-of-type(2) {
+                    img.thumbnail--with-width {
+                        object-fit: contain;
+                        object-position: center;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+%console-declutter {
+    .inline-block.align-text-top {
+        .image-node {
+            [data-menu-type~="ImageNodeMenu"] {
+                display: none;
+            }
+        }
+        > div {
+            display: none;
+        }
+    }
+}
+// Interim measure
+    #DocumentTitle .EditorContainer span:nth-child(3) {
+        display: unset;
+    }
+    .spacedRepetition {
+        .rem-bullet__document {
+            display: flex;
+            > span.RichTextViewer {
+                display: flex;
+            }
+        }
+        .rn-queue__content {
+            overflow-x: auto;
+            &::-webkit-scrollbar-thumb {
+                background-color: #BBB;
+                border-radius: 4px;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
+        }
+        .indented-rem {
+            // .RichTextViewer {
+            //     display: flex;
+            // }
+            &.rn-question-rem {
+                display: flex;
+                gap: .25rem;
+                > .rn-queue-rem {
+                    > .RichTextViewer {
+                        display: inline;
+                        white-space: pre;
+                        &:has(span[class*="cloze-id"]) {
+                            white-space: pre-wrap;
+                        }
+                        .linear-editor-item.whitespace-pre-wrap {
+                            white-space: pre;
+                        }
+                    }
+                }
+                > .RichTextViewer {
+                    overflow-wrap: anywhere;
+                }
+            }
+            .w-full {
+                display: inline;
+            }
+            .rem-reference-container {
+                .RichTextViewer {
+                    white-space: pre;
+                }
+            }
+        }
+        .rn-queue__content {
+            > .spaced-repetition__prompt {
+                > .indented-rem {
+                    > .rn-queue-rem {
+                        > .RichTextViewer {
+                            display: inline;
+                            > .linear-editor-item {
+                                > .min-w-\[1px\] {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+// All Notes Section
+    .document-table {
+        .ReactVirtualized__Grid__innerScrollContainer {
+            .RichTextViewer {
+                @include icon();
+                pointer-events: none;
+            }
+        }
+    }
+// Card Browser
+    .ReactVirtualized__Table_spacedRepetition_rowColumn {
+        @include icon;
+    }
+// Queue
+    .Queue {
+        // Title bar
+            .queue__title {
+                .rn-queue__top-bar--center {
+                    .rn-button {
+                        .w-max {
+                            display: inline-flex;
+                        }
+                    }
+                }
+            }
+        // Prompt
+            .spaced-repetition__prompt {
+                > .indented-rem {
+                    > span {
+                        .RichTextViewer {
+                            display: inline;
+                        }
+                        @include icon(3px);
+                    }
+                }
+                .indented-rem:not(.basic_card_rem_type + .indented-rem):not(.concept_rem_type + .indented-rem) {
+                    .RichTextViewer {
+                        > div {
+                            @include icon(3px);
+                        }
+                    }
+                }
+            }
+        // ?
+            .rem-bullet__document {
+                @include icon;
+                display: flex;
+                > span {
+                    > div {
+                        display: inline;
+                    }
+                }
+            }
+        // Fill
+            .fill-in-the-blank {
+                display: inline-flex;
+                vertical-align: top;
+                span.RichTextViewer {
+                    .cloze {
+                        > span.cloze {
+                            overflow-wrap: anywhere;
+                        }
+                    }
+                }
+            }
+            .fill-in-the-blank--revealed {
+                .RichTextViewer {
+                    .react-transform-component {
+                        .react-transform-element {
+                            @include icon;
+                        }
+                    }
+                }
+            }
+        // Cluster
+            .queue-cluster-selector {
+                @include icon;
+            }
+        // Edir Later
+            .queue__edit-later {
+                .document-header-top-bar {
+                    .RichTextViewer {
+                        @include icon();
+                    }
+                }
+            }
+    }
+// Document Top
+    // Page Hierarchy
+    .document-header-top-bar {
+        @include icon();
+    }
+    // Page
+    #document {
+        #DropToOpenAsDocument {
+            // Document Top Row Tag Bar
+            @include icon;
+
+            #DocumentTitle {
+                @include icon;
+                @extend %console-declutter;
+                .inline-block {
+                    > .group.inline-block.align-text-top {
+                        top: 0.2rem
+                    }
+                }
+            }
+        }
+        // Sticky Header
+            #hierarchy-editor {
+                > .fixed {
+                    > div {
+                        > .tree-node--children {
+                            > .tree-node-container {
+                                .EditorContainer {
+                                    @include icon();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    }
+// Hidden Page Hierarchy Style
+    .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
+        @include icon;
+    }
+// Document Sidebar
+    #document-sidebar {
+        @include icon;
+        @extend %console-declutter;
+    }
+// Document Hidden children
+    .hierarchy-editor__hidden-children {
+        @include icon;
+    }
+// .popup-menu
+    .popup-menu {
+        // Title
+            > div.rn-popup__content.overflow-x-hidden {
+                > div.max-h-20 {
+                    span.RichTextViewer {
+                        @include icon;
+                    }
+                }
+            }
+        // Backlink Counter
+            .rn-editor__rem__backlink-item {
+                span.RichTextViewer {
+                    @include icon;
+                }
+            }
+        // Static Popup
+            .popup-menu__item--static {
+                span.RichTextViewer {
+                    @include icon;
+                }
+            }
+        // Image Thumbnail Tag
+            [data-rem-tags*="tn"] {
+                #document-hover-preview {
+                    .RichTextViewer {
+                        @include icon;
+                    }
+                }
+            }
+        // Tag bar
+            .rem.isSearchResult {
+                .hierarchy-editor__tag-bar {
+                    @include icon;
+                }
+            }
+        // Tags Backlink Popup- right side of a Rem
+            div.search-result__rem-breadcrumbs + span,
+            .rem-powerup-icon + span {
+                > .RichTextViewer {
+                    @include icon;
+                }
+            }
+        // Reference
+            .EditorContainer.EditorContainerInline {
+                @include icon;
+            }
+            .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
+                @include icon;
+            }
+        // Rem Hierarchy bar
+            > div {
+                > div {
+                    > div {
+                        span.rn-rem-stack-arrow {
+                            + span {
+                                span.RichTextViewer {
+                                    @include icon;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            > div {
+                > div {
+                    > div {
+                        > span {
+                            > span.RichTextViewer {
+                                @include icon;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+// #Popup
+    #Popup {
+        #PopupContent {
+            .RichTextViewer {
+                @include icon;
+            }
+            .document-popup-preview {
+                .document-header-top-bar {
+                    .RichTextViewer {
+                        @include icon;
+                    }
+                }
+            }
+        }
+    }
+// Header & Normal Rem-Text with "Thumbnail(TN)" Tag
+    .rem-header--1,
+    .rem-header--2,
+    .rem-header--3,
+    [data-rem-tags~="tn"] {
+        .EditorContainer {
+            @include icon;
+            .pr-2.inline-block {
+                height: unset;
+            }
+        }
+    }
+    [data-rem-container-tags~="tnc"] {
+        > .tree-node--children {
+            > .tree-node-container {
+                > .tree-node--parent {
+                    .EditorContainer {
+                        @include icon;
+                    }
+                }
+            }
+        }
+    }
+// Tag bar
+    .hierarchy-editor__tag-bar__tag {
+        .RichTextViewer {
+            @include icon(3px);
+        }
+    }
+// Search Result
+    // Tag Search Result
+        .search-result__rem-breadcrumbs {
+            @include icon();
+        }
+        #search-results__list {
+            @include icon();
+            @extend %console-declutter;
+        }
+// Portal
+    .portal-tree-node-box {
+        .rem-text.rem-header--1,
+        .rem-text.rem-header--2,
+        .rem-text.rem-header--3 {
+            @include icon;
+        }
+        > div {
+            > .tree-node-container {
+                > .tree-node--children {
+                    > .tree-node-container {
+                        >.tree-node--parent {
+                            @include icon;
+                        }
+                    }
+                }
+            }
+        }
+    }
+// Rem Reference
+    .rem-reference {
+        @include icon;
+    }
+    .RichTextViewer.notIncludedAncestor.notIncludedAncestorClickable {
+        @include icon;
+    }
+    // Rem reference normal rem-text thumbnail adjustment
+        .rem-text {
+            &:not(.rem-header--1) {
+                &:not(.rem-header--2) {
+                    &:not(.rem-header--3) {
+                        .rem-reference {
+                            @include icon;
+                        }
+                    }
+                }
+            }
+        }
+// Remove ImageNodeMenu
+    [data-rem-tags~="header"],
+    [data-rem-tags~="tn"] {
+        [data-menu-type="ImageNodeMenu"] {
+            display: none;
+        }
+    }
+
+.spacedRepetitionAnswer [data-rem-tags~="card-item"] {
+    .rem-text {
+        .EditorContainer > span {
+            display: inline-flex;
+        }
+    }
+}
