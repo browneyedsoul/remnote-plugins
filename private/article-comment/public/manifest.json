@@ -1,0 +1,23 @@
+{
+  "manifestVersion": 1,
+  "id": "article-comment2",
+  "name": "Article Comment",
+  "author": "Min-Ki Park",
+  "repoUrl": "https://github.com/browneyedsoul/remnote-plugins",
+  "version": {
+    "major": 0,
+    "minor": 4,
+    "patch": 0
+  },
+  "theme": [],
+  "enableOnMobile": true,
+  "unlisted": true,
+  "description": "",
+  "requestNative": true,
+  "requiredScopes": [
+    {
+      "type": "All",
+      "level": "ReadCreateModify"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+export const [COMMENT, AUTHOR, RATING] = ["comment_powerup", "author_powerup", "rating_powerup"];
