@@ -1,177 +1,145 @@
 :root {
-    --both-practice-color: #FFA344;
-    --forward-practice-color: #FF2600;
-    --forward-practice-color-dark: #E0CD00;
-    --backward-practice-color: #D783FF;
-    --disabled-practice-color: #959595;
-    --no-practice-color: #959595;
+  --both-practice-color: #ffa344;
+  --forward-practice-color: #ff2600;
+  --forward-practice-color-dark: #e0cd00;
+  --backward-practice-color: #d783ff;
+  --disabled-practice-color: #959595;
+  --no-practice-color: #959595;
 }
-@mixin card-icon-color(
-    $both,
-    $forward,
-    $backward,
-    $disabled) {
-    .rem-container--default_type-rem-type,
-    .rem-container--concept-rem-type,
-    .rem-container--descriptor-rem-type {
-        &.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled {
-            .rem-bullet {
-                background: $both;
-            }
-            .separator-symbol,
-            .rn-card-delimiter {
-                color: $both;
-                > span {
-                    color: $both;
-                }
-            }
+@mixin card-icon-color($both, $forward, $backward, $disabled) {
+  .rem-container--default_type-rem-type,
+  .rem-container--concept-rem-type,
+  .rem-container--descriptor-rem-type {
+    &.rem-container--backwards-practice-enabled.rem-container--forwards-practice-enabled {
+      .rem-bullet {
+        background: $both;
+      }
+      .separator-symbol,
+      .rn-card-delimiter {
+        color: $both;
+        > span {
+          color: $both;
         }
-        &.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled {
-            .rem-bullet {
-                background: $forward;
-            }
-            .separator-symbol,
-            .rn-card-delimiter {
-                color: $forward;
-                > span {
-                    color: $forward;
-                }
-            }
-        }
-        &.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled {
-            .rem-bullet {
-                background: $backward;
-            }
-            .separator-symbol,
-            .rn-card-delimiter {
-                color: $backward;
-                > span {
-                    color: $backward;
-                }
-            }
-        }
-        &.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled {
-            .rem-bullet {
-                background: $disabled;
-
-                &.rem-bullet--hidden-children {
-                    @include icon-box(
-                        1em,
-                        1em,
-                        url("https://browneyedsoul.github.io/ImageRepository/List.svg")
-                    );
-                    position: relative;
-                    left: -3px;
-                }
-            }
-            .separator-symbol,
-            .rn-card-delimiter {
-                color: $disabled;
-                > span {
-                    color: $disabled;
-                }
-            }
-        }
+      }
     }
-}
-@mixin icon-box(
-    $width,
-    $height,
-    $url) {
-    background: var(--no-practice-color);
-    width: $width;
-    height: $height;
-    -webkit-mask-image: $url;
-    mask-image: $url;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-
-    .perfect-circle__inner {
-        opacity: 0;
+    &.rem-container--backwards-practice-disabled.rem-container--forwards-practice-enabled {
+      .rem-bullet {
+        background: $forward;
+      }
+      .separator-symbol,
+      .rn-card-delimiter {
+        color: $forward;
+        > span {
+          color: $forward;
+        }
+      }
     }
-}
+    &.rem-container--forwards-practice-disabled.rem-container--backwards-practice-enabled {
+      .rem-bullet {
+        background: $backward;
+      }
+      .separator-symbol,
+      .rn-card-delimiter {
+        color: $backward;
+        > span {
+          color: $backward;
+        }
+      }
+    }
+    &.rem-container--forwards-practice-disabled.rem-container--backwards-practice-disabled {
+      .rem-bullet {
+        background: $disabled;
 
+        &.rem-bullet--hidden-children {
+          @include icon-box(1em, 1em, url("https://browneyedsoul.github.io/ImageRepository/List.svg"));
+          position: relative;
+          left: -3px;
+        }
+      }
+      .separator-symbol,
+      .rn-card-delimiter {
+        color: $disabled;
+        > span {
+          color: $disabled;
+        }
+      }
+    }
+  }
+}
+@mixin icon-box($width, $height, $url) {
+  background: var(--no-practice-color);
+  width: $width;
+  height: $height;
+  -webkit-mask-image: $url;
+  mask-image: $url;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  .perfect-circle__inner {
+    opacity: 0;
+  }
+}
 
 .rem-container--default_type-rem-type {
-    &.rem-container--forwards-practice-enabled,
-    &.rem-container--backwards-practice-enabled,
-    &.rem-container--forwards-practice-disabled {
-        .rem-bullet {
-            @include icon-box(
-                1em,
-                1em,
-                url("https://browneyedsoul.github.io/ImageRepository/Basic3.svg")
-            );
-            &.rem-bullet--hidden-children {
-                @include icon-box(
-                    1em,
-                    1em,
-                    url("https://browneyedsoul.github.io/ImageRepository/List.svg")
-                );
-                position: relative;
-                left: -3px;
-            }
-        }
+  &.rem-container--forwards-practice-enabled,
+  &.rem-container--backwards-practice-enabled,
+  &.rem-container--forwards-practice-disabled {
+    .rem-bullet {
+      @include icon-box(1em, 1em, url("https://browneyedsoul.github.io/ImageRepository/Basic3.svg"));
+      &.rem-bullet--hidden-children {
+        @include icon-box(1em, 1em, url("https://browneyedsoul.github.io/ImageRepository/List.svg"));
+        position: relative;
+        left: -3px;
+      }
     }
+  }
 }
 
 .rem-container--concept-rem-type {
-    .rem-bullet {
-        @include icon-box(
-            1em,
-            1em,
-            url("https://browneyedsoul.github.io/ImageRepository/Concept.svg")
-        );
+  .rem-bullet {
+    @include icon-box(1em, 1em, url("https://browneyedsoul.github.io/ImageRepository/Concept.svg"));
 
-        &.rem-bullet--hidden-children {
-            @include icon-box(
-                1em,
-                1em,
-                url("https://browneyedsoul.github.io/ImageRepository/List.svg")
-            );
-            position: relative;
-            left: -3px;
-        }
+    &.rem-bullet--hidden-children {
+      @include icon-box(1em, 1em, url("https://browneyedsoul.github.io/ImageRepository/List.svg"));
+      position: relative;
+      left: -3px;
     }
+  }
 }
 
 .rem-container--descriptor-rem-type {
-    .rem-bullet {
-        @include icon-box(
-            1em,
-            .75em,
-            url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg")
-        );
-        position: relative;
-        left: -3px;
-    }
+  .rem-bullet {
+    @include icon-box(1em, 0.75em, url("https://browneyedsoul.github.io/ImageRepository/Descriptor.svg"));
+    position: relative;
+    left: -3px;
+  }
 }
 
 @include card-icon-color(
-    var(--both-practice-color),
-    var(--forward-practice-color),
-    var(--backward-practice-color),
-    var(--disabled-practice-color)
+  var(--both-practice-color),
+  var(--forward-practice-color),
+  var(--backward-practice-color),
+  var(--disabled-practice-color)
 );
 
 .dark {
-    @include card-icon-color(
-        var(--both-practice-color),
-        var(--forward-practice-color-dark),
-        var(--backward-practice-color),
-        var(--disabled-practice-color)
-    )
-};
+  @include card-icon-color(
+    var(--both-practice-color),
+    var(--forward-practice-color-dark),
+    var(--backward-practice-color),
+    var(--disabled-practice-color)
+  );
+}
 
 .rem-container--default_type-rem-type,
 .rem-container--concept-rem-type,
 .rem-container--descriptor-rem-type {
-    .rn-bullet-container {
-        > span {
-            display: flex;
-            align-items: center;
-        }
+  .rn-bullet-container {
+    > span {
+      display: flex;
+      align-items: center;
     }
+  }
 }
