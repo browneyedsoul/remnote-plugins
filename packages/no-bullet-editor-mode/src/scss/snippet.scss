@@ -225,8 +225,11 @@ $scaling-values: (
 // patch for 1.13.36
 .hierarchy-editor--ltr .rn-editor-container:not(.is-explicit-folder-and-root-explicit-folder) .TreeNode,
 .hierarchy-editor--ltr .rn-editor-container:not(.is-explicit-folder-and-root-explicit-folder) .TreeNode--list {
-  margin-left: 1.6rem !important;
+  margin-left: 1.6rem;
   padding-left: unset;
+}
+.hierarchy-editor--ltr .rn-editor-container:not(.is-explicit-folder-and-root-explicit-folder) .TreeNode.portal-tree-node-box--tag-list-automatic {
+  margin-left: 1.6rem !important;
 }
 
 .rn-rem-icon-bullet,
