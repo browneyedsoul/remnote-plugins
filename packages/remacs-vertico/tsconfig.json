@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": true,
+    "noEmit": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}

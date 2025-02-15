@@ -1,5 +1,5 @@
 import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
-import verticoCSS from "../../src/snippet.module.css";
+import verticoCSS from "@/snippet.module.css";
 
 let REMACS_VERTICO: string;
 
