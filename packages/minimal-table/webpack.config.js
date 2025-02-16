@@ -32,6 +32,9 @@ const config = {
   },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
+    alias: {
+      "@": resolve(__dirname, "src"),
+    },
   },
   module: {
     rules: [
@@ -46,7 +49,7 @@ const config = {
       },
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, { loader: "css-loader", options: { url: false } }, "postcss-loader"],
+        use: "raw-loader",
       },
       {
         test: /\.s[ac]ss$/i,
@@ -88,7 +91,7 @@ const config = {
       patterns: [
         { from: "public", to: "" },
         { from: "README.md", to: "" },
-        { from: "src/snippet.css", to: "" },
+        { from: "src/snippet.module.css", to: "" },
       ],
     }),
     fastRefresh,

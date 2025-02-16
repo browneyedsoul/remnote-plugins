@@ -1,28 +1,27 @@
 import { declareIndexPlugin, ReactRNPlugin } from "@remnote/plugin-sdk";
-import { TABLE, WIDTH } from "../constant/var";
-import { createTableItem } from "../function/preset";
-import { rulerStyle } from "../scss/custom";
+import { TABLE, WIDTH } from "@/constant/var";
+import { createTableItem } from "@/function/preset";
+import { rulerStyle } from "@/function/custom";
+
+import snippet from "@/snippet.module.css";
 
 let TableCSS: string;
 
 async function onActivate(plugin: ReactRNPlugin) {
+  TableCSS = snippet.replace(/^export default "/, "").replace(/\\n";$/, "");
+
   try {
     const stored = localStorage.getItem("minimal-table");
-
     if (stored) {
-      await plugin.app.registerCSS("minimal-table", TableCSS);
       console.log("minimal-table plugin already exists in local storage");
     } else {
-      const response = await fetch(TableCSS);
-      const text = await response.text();
-      TableCSS = text;
-      localStorage.setItem("minimal-table", text);
-      await plugin.app.registerCSS("minimal-table", TableCSS);
-      console.log("minimal-table plugin installed from cdn");
+      localStorage.setItem("minimal-table", TableCSS);
     }
   } catch (error) {
     console.error(error);
   }
+  
+  await plugin.app.registerCSS("minimal-table", TableCSS);
 
   await plugin.settings.registerStringSetting({
     id: "opacity",
@@ -30,7 +29,18 @@ async function onActivate(plugin: ReactRNPlugin) {
     description: "Opacity of the Ruler for measuring left column width",
     defaultValue: "0.15",
   });
-  plugin.track(async (reactivePlugin) => {
+  await plugin.settings.registerBooleanSetting({
+    id: "toggle-minimal-table",
+    title: "Toggle Minimal Table",
+    defaultValue: false,
+  });
+  await plugin.track(async (reactivePlugin) => {
+    const verticoStatus = await reactivePlugin.settings.getSetting<boolean>("toggle-minimal-table");
+    verticoStatus
+      ? await plugin.app.registerCSS("minimal-table", TableCSS)
+      : await plugin.app.registerCSS("minimal-table", "");
+  });
+  await plugin.track(async (reactivePlugin) => {
     const opacityCtrl = await reactivePlugin.settings.getSetting<number>("opacity");
     await reactivePlugin.app.registerCSS("opacity", rulerStyle(opacityCtrl));
   });
@@ -63,7 +73,7 @@ async function onActivate(plugin: ReactRNPlugin) {
       ],
     },
   });
-  await plugin.app.registerPowerup({
+  plugin.app.registerPowerup({
     name: "Width",
     code: WIDTH,
     description: "Column Width",
@@ -343,6 +353,8 @@ async function onActivate(plugin: ReactRNPlugin) {
   });
 }
 
-async function onDeactivate(_: ReactRNPlugin) {}
+async function onDeactivate(_: ReactRNPlugin) {
+  localStorage.removeItem("minimal-table");
+}
 
 declareIndexPlugin(onActivate, onDeactivate);
