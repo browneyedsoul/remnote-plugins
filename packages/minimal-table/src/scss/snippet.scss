@@ -182,6 +182,7 @@ $LocalLeft: (
                                         padding-left: 0;
                                         > .rn-editor-container {
                                             .tree-node--children {
+                                                width: 100%;
                                                 margin-left: 1.55rem;
                                                 border-left: 0.07rem solid $table-border;
                                             }
@@ -473,6 +474,7 @@ $LocalLeft: (
                                     // }
                                     > .rn-editor-container {
                                         > .tree-node--children {
+                                            width: 100%;
                                             margin-left: 1.55rem;
                                             border-left: 0.07rem solid $table-border;
                                         }
