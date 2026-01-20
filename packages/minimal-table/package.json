@@ -15,7 +15,7 @@
     "sass": "sass --watch --style=compressed --no-source-map src/scss/snippet.scss:src/snippet.module.css"
   },
   "dependencies": {
-    "@remnote/plugin-sdk": "^0.0.42"
+    "@remnote/plugin-sdk": "^0.0.46"
   },
   "devDependencies": {
     "raw-loader": "^4.0.2"
