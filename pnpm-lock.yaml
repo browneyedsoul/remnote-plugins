@@ -87,8 +87,8 @@ importers:
         specifier: ^0.3.4
         version: 0.3.4
       style-loader:
-        specifier: ^3.3.4
-        version: 3.3.4(webpack@5.97.1(webpack-cli@4.10.0))
+        specifier: ^4.0.0
+        version: 4.0.0(webpack@5.97.1(webpack-cli@4.10.0))
       tailwindcss:
         specifier: ^3.4.17
         version: 3.4.17(ts-node@10.9.2(@types/node@18.19.69)(typescript@4.9.5))
@@ -2424,11 +2424,11 @@ packages:
     resolution: {integrity: sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==}
     engines: {node: '>=6'}
 
-  style-loader@3.3.4:
-    resolution: {integrity: sha512-0WqXzrsMTyb8yjZJHDqwmnwRJvhALK9LfRtRc6B4UTWe8AijYLZYZ9thuJTZc2VfQWINADW/j+LiJnfy2RoC1w==}
-    engines: {node: '>= 12.13.0'}
+  style-loader@4.0.0:
+    resolution: {integrity: sha512-1V4WqhhZZgjVAVJyt7TdDPZoPBPNHbekX4fWnCJL1yQukhCeZhJySUL+gL9y6sNdN95uEOS83Y55SqHcP7MzLA==}
+    engines: {node: '>= 18.12.0'}
     peerDependencies:
-      webpack: ^5.0.0
+      webpack: ^5.27.0
 
   sucrase@3.35.0:
     resolution: {integrity: sha512-8EbVDiu9iN/nESwxeSxDKe0dunta1GOlHufmSSXxMD2z2/tMZpDMpvXQGsc+ajGo8y2uYUmixaSRUc/QPoQ0GA==}
@@ -4879,7 +4879,7 @@ snapshots:
 
   strip-final-newline@2.0.0: {}
 
-  style-loader@3.3.4(webpack@5.97.1(webpack-cli@4.10.0)):
+  style-loader@4.0.0(webpack@5.97.1(webpack-cli@4.10.0)):
     dependencies:
       webpack: 5.97.1(webpack-cli@4.10.0)
 
