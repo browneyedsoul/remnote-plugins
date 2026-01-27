@@ -51,8 +51,8 @@ importers:
         specifier: ^7.0.3
         version: 7.0.3
       css-loader:
-        specifier: ^6.11.0
-        version: 6.11.0(webpack@5.97.1(webpack-cli@4.10.0))
+        specifier: ^7.0.0
+        version: 7.1.3(webpack@5.97.1(webpack-cli@4.10.0))
       esbuild-loader:
         specifier: ^2.21.0
         version: 2.21.0(webpack@5.97.1(webpack-cli@4.10.0))
@@ -1085,12 +1085,12 @@ packages:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
     engines: {node: '>= 8'}
 
-  css-loader@6.11.0:
-    resolution: {integrity: sha512-CTJ+AEQJjq5NzLga5pE39qdiSV56F8ywCIsqNIRF0r7BDgWsN25aazToqAFg7ZrtA/U016xudB3ffgweORxX7g==}
-    engines: {node: '>= 12.13.0'}
+  css-loader@7.1.3:
+    resolution: {integrity: sha512-frbERmjT0UC5lMheWpJmMilnt9GEhbZJN/heUb7/zaJYeIzj5St9HvDcfshzzOqbsS+rYpMk++2SD3vGETDSyA==}
+    engines: {node: '>= 18.12.0'}
     peerDependencies:
       '@rspack/core': 0.x || 1.x
-      webpack: ^5.0.0
+      webpack: ^5.27.0
     peerDependenciesMeta:
       '@rspack/core':
         optional: true
@@ -3557,7 +3557,7 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  css-loader@6.11.0(webpack@5.97.1(webpack-cli@4.10.0)):
+  css-loader@7.1.3(webpack@5.97.1(webpack-cli@4.10.0)):
     dependencies:
       icss-utils: 5.1.0(postcss@8.4.49)
       postcss: 8.4.49
