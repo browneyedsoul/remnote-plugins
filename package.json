@@ -93,7 +93,7 @@
     "bestzip": "^2.2.1",
     "concurrently": "^7.6.0",
     "copy-webpack-plugin": "^11.0.0",
-    "cross-env": "^7.0.3",
+    "cross-env": "^10.0.0",
     "css-loader": "^6.11.0",
     "esbuild-loader": "^2.21.0",
     "html-webpack-plugin": "^5.6.3",
