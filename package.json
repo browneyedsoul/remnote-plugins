@@ -5,7 +5,7 @@
   "workspaces": [
     "packages/*"
   ],
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@10.30.3",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "check-types": "tsc",
