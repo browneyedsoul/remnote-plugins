@@ -10,9 +10,10 @@
 .hierarchy-editor--ltr {
   .TreeNode,
   .TreeNode--list {
-    margin-left: 1.55rem;
+    margin-left: 1rem;
   }
 }
+
 %rmvTag {
   .hierarchy-editor__tag-bar__tag {
     background-color: transparent !important;
@@ -24,50 +25,58 @@
     }
   }
 }
-.node-card-item:before {
-  margin-left: unset;
+
+@mixin hiddenChildrenTriangle($left, $color) {
+  content: "";
+  display: block;
+  position: relative;
+  left: $left;
+  width: 0;
+  height: 0;
+  border-top: 0.35rem solid transparent;
+  border-left: 0.35rem solid $color;
+  border-bottom: 0.35rem solid transparent;
+  border-radius: 25px;
+  pointer-events: none;
 }
 
-@mixin Nobullet($nobullet-triangle, $nobullet-quote-bg, $nobullet-quote-border) {
+@mixin visibleBulletCore($color) {
+  .perfect-circle__inner {
+    visibility: visible;
+    .rem-bullet__core {
+      fill: $color;
+    }
+  }
+}
+
+@mixin relativeLeft($left) {
+  position: relative;
+  left: $left;
+}
+
+@mixin nobullet($nobullet-triangle, $nobullet-quote-bg, $nobullet-quote-border) {
   .rn-rem-icon-bullet.rn-rem-bullet--hidden-children {
     &::after {
-      content: "";
-      display: block;
-      position: relative;
-      left: 1.6rem;
-      width: 0;
-      height: 0;
-      border-top: 0.35rem solid transparent;
-      border-left: 0.35rem solid $nobullet-triangle;
-      border-bottom: 0.35rem solid transparent;
-      border-radius: 25px;
-      pointer-events: none;
+      @include hiddenChildrenTriangle(1rem, $nobullet-triangle);
     }
   }
+
   .perfect-circle.rn-rem-bullet--hidden-children {
     &::after {
-      content: "";
-      display: block;
-      position: relative;
-      left: 1.6rem;
-      width: 0;
-      height: 0;
-      border-top: 0.35rem solid transparent;
-      border-left: 0.35rem solid $nobullet-triangle;
-      border-bottom: 0.35rem solid transparent;
-      border-radius: 25px;
-      pointer-events: none;
+      @include hiddenChildrenTriangle(1.5rem, $nobullet-triangle);
     }
   }
+
   [data-rem-container-tags~="quote"] {
     left: 1.5rem !important;
     background: $nobullet-quote-bg;
     border-left: 4px solid $nobullet-quote-border;
     width: calc(100% - 1.75rem);
+
     .rn-quote-content {
-      // margin-left: 1.5rem;
       --rn-quote-offset: unset !important;
       border-left: unset;
+
       .toggle-collapse-button {
         left: 1rem;
         background-color: unset !important;
@@ -79,41 +88,35 @@
       > [data-rem-tags~="bulletlist"] {
         margin-left: 1rem;
         @extend %rmvTag;
-        .perfect-circle__inner {
-          visibility: visible;
-          .rem-bullet__core {
-            fill: $nobullet-triangle;
-          }
-        }
+        @include visibleBulletCore($nobullet-triangle);
       }
     }
+
     [data-rem-container-tags~="bulletlists"] {
       @extend %rmvTag;
+
       .tree-node--children {
         .rem {
           margin-left: 1rem;
+
           .rn-bullet-container {
             left: unset;
           }
+
           .perfect-circle {
-            .perfect-circle__inner {
-              visibility: visible;
-              .rem-bullet__core {
-                fill: $nobullet-triangle;
-              }
-            }
+            @include visibleBulletCore($nobullet-triangle);
           }
         }
+
         .toggle-collapse-button {
           left: unset;
         }
+
         .tree-node--parent {
           .rem {
-            .perfect-circle {
-              &.rn-rem-bullet--hidden-children {
-                &::after {
-                  display: none;
-                }
+            .perfect-circle.rn-rem-bullet--hidden-children {
+              &::after {
+                display: none;
               }
             }
           }
@@ -122,13 +125,9 @@
     }
   }
 }
-@include Nobullet(var(--nobullet-triangle), var(--nobullet-quote-bg), var(--nobullet-quote-border));
+@include nobullet(var(--nobullet-triangle), var(--nobullet-quote-bg), var(--nobullet-quote-border));
 .dark {
-  @include Nobullet(var(--nobullet-triangle-dark), var(--nobullet-quote-bg-dark), var(--nobullet-quote-border-dark));
-}
-
-@mixin scaleTransform($scale) {
-  transform: scale($scale);
+  @include nobullet(var(--nobullet-triangle-dark), var(--nobullet-quote-bg-dark), var(--nobullet-quote-border-dark));
 }
 
 $scaling-values: (
@@ -143,7 +142,7 @@ $scaling-values: (
       .rn-bullet-container {
         > span {
           > span {
-            @include scaleTransform($scale);
+            transform: scale($scale);
           }
         }
       }
@@ -151,29 +150,43 @@ $scaling-values: (
   }
 }
 
-.rn-bullet-container > span {
-  display: flex;
-  align-items: center;
+.rem-button__container {
+  .rn-bullet-container {
+    > span {
+      display: flex;
+      align-items: center;
+    }
+
+    &:has(.rn-rem-bullet--hidden-children) {
+      @include relativeLeft(-1.5rem);
+    }
+  }
+  .toggle-collapse-button {
+    @include relativeLeft(1rem);
+    background-color: unset;
+    margin-right: unset !important;
+  }
 }
 
-.rn-bullet-container:has(.rn-rem-bullet--hidden-children) {
-  position: relative;
-  left: -1.5rem;
-}
-.toggle-collapse-button {
-  position: relative;
-  left: 1rem;
-}
 [data-rem-tags~="document"] {
   .toggle-collapse-button {
-    position: relative;
     left: 1.35rem;
   }
-  // .toggle-collapse-button:not(.toggle-collapse-button:has(svg.rotate-0)) {
-  //     position: relative;
-  //     left: 1.35rem;
-  // }
+
+  .rn-rem-icon-bullet {
+    background-color: unset;
+    border-style: unset;
+    display: flex;
+    align-items: center;
+  }
+
+  .tree-node--parent {
+    .perfect-circle.rn-rem-bullet--hidden-children::after {
+      left: 1.2rem;
+    }
+  }
 }
+
 [data-rem-tags~="list-item"] {
   .toggle-collapse-button {
     z-index: 2;
@@ -187,8 +200,7 @@ $scaling-values: (
     &:has(.toggle-collapse-button) {
       &:hover {
         .rn-bullet-container {
-          position: relative;
-          left: -1.5rem;
+          @include relativeLeft(-1.5rem);
         }
       }
     }
@@ -198,7 +210,10 @@ $scaling-values: (
 .rem:not(:hover) .perfect-circle__inner {
   visibility: hidden;
 }
+
 .rn-rem-icon-bullet {
+  background-color: unset;
+
   &.rn-rem-bullet--hidden-children {
     svg[data-icon="document"],
     svg[data-icon="folder"] {
@@ -207,34 +222,20 @@ $scaling-values: (
     }
   }
 }
-[data-rem-tags~="document"] {
-  .rn-rem-icon-bullet {
-    border-style: unset;
-  }
-  .rn-rem-icon-bullet {
-    display: flex;
-    align-items: center;
-  }
-  .tree-node--parent {
-    .perfect-circle.rn-rem-bullet--hidden-children::after {
-      left: 1.2rem;
-    }
-  }
-}
 
 // patch for 1.13.36
-.hierarchy-editor--ltr .rn-editor-container:not(.is-explicit-folder-and-root-explicit-folder) .TreeNode,
-.hierarchy-editor--ltr .rn-editor-container:not(.is-explicit-folder-and-root-explicit-folder) .TreeNode--list {
-  margin-left: 1.6rem;
-  padding-left: unset;
-}
-.hierarchy-editor--ltr .rn-editor-container:not(.is-explicit-folder-and-root-explicit-folder) .TreeNode.portal-tree-node-box--tag-list-automatic {
-  margin-left: 1.6rem !important;
-}
+.hierarchy-editor--ltr {
+  .rn-editor-container:not(.is-explicit-folder-and-root-explicit-folder) {
+    .TreeNode,
+    .TreeNode--list {
+      margin-left: 1.6rem;
+      padding-left: unset;
+    }
 
-.rn-rem-icon-bullet,
-.toggle-collapse-button {
-  background-color: unset;
+    .TreeNode.portal-tree-node-box--tag-list-automatic {
+      margin-left: 1.6rem !important;
+    }
+  }
 }
 
 .node-card-item:before {
