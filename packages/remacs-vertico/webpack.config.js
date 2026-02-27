@@ -32,6 +32,9 @@ const config = {
   },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
+    alias: {
+      "@": resolve(__dirname, "src"),
+    },
   },
   module: {
     rules: [
