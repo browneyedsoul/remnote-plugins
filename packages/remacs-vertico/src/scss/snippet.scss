@@ -2,6 +2,7 @@
   .rn-popup {
     height: unset;
     max-height: 98vh;
+    max-width: 100vw !important;
     &:has([data-cy="omnibar"]) {
       position: absolute;
       bottom: 0;
