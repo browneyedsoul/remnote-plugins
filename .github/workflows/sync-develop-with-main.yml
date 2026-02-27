@@ -1,0 +1,68 @@
+name: Sync develop with main
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-develop-with-main
+  cancel-in-progress: true
+
+jobs:
+  sync-develop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Rebase develop onto main when main is 1 commit ahead
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          MAIN_REF="origin/main"
+          DEVELOP_REF="origin/develop"
+
+          if ! git show-ref --verify --quiet "refs/remotes/${DEVELOP_REF}"; then
+            echo "develop branch not found on origin. Skipping."
+            exit 0
+          fi
+
+          # Merge commit check: parent count >= 2
+          parent_count=$(git rev-list --parents -n 1 "${MAIN_REF}" | awk '{print NF-1}')
+          main_ahead=$(git rev-list --count "${DEVELOP_REF}..${MAIN_REF}")
+          develop_ahead=$(git rev-list --count "${MAIN_REF}..${DEVELOP_REF}")
+
+          echo "parent_count=${parent_count}"
+          echo "main_ahead=${main_ahead}"
+          echo "develop_ahead=${develop_ahead}"
+
+          if [[ "${parent_count}" -lt 2 ]]; then
+            echo "Latest main commit is not a merge commit. Skipping."
+            exit 0
+          fi
+
+          if [[ "${main_ahead}" -ne 1 ]]; then
+            echo "main is not exactly 1 commit ahead of develop. Skipping."
+            exit 0
+          fi
+
+          if [[ "${develop_ahead}" -ne 0 ]]; then
+            echo "develop has unique commits. Skipping to avoid history rewrite/force-push."
+            exit 0
+          fi
+
+          git checkout -B develop "${DEVELOP_REF}"
+          git rebase "${MAIN_REF}"
+          git push origin develop:develop
