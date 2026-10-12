@@ -100,7 +100,7 @@
     "mini-css-extract-plugin": "^2.9.2",
     "postcss": "^8.4.49",
     "postcss-import": "^14.1.0",
-    "postcss-loader": "^7.3.4",
+    "postcss-loader": "^8.0.0",
     "raw-loader": "^4.0.2",
     "react-refresh": "^0.14.2",
     "sass": "^1.83.1",
